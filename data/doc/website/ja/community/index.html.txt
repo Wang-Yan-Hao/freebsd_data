@@ -1,0 +1,125 @@
+[FreeBSD The Power to Serve]
+
+FreeBSD への寄付
+
+ 
+
+-   ホーム
+
+-   FreeBSD とは
+    -   FreeBSD が初めてという方へ
+    -   特徴
+    -   プロモーション活動
+    -   マーケティング活動
+    -   プライバシーポリシー
+    -   Projects
+    -   Ports
+
+-   FreeBSD の入手
+    -   リリース情報
+    -   リリースエンジニアリング
+
+-   ドキュメント
+    -   FAQ
+    -   ハンドブック
+    -   port 作成者のためのハンドブック
+    -   開発者のためのハンドブック
+    -   Committer's Guide
+    -   マニュアルページ
+    -   Presentations and Papers
+    -   新しい貢献者のためのドキュメンテーションプロジェクト入門
+    -   すべての Books と Articles
+
+-   コミュニティ
+    -   メーリングリスト
+    -   フォーラム
+    -   ユーザグループ
+    -   イベント
+    -   FreeBSD ジャーナル
+    -   Q&A (外部)
+
+-   開発
+    -   プロジェクトアイディア
+    -   Git リポジトリ
+    -   Subversion リポジトリ
+    -   GitHub ミラー
+    -   コードレビュー (Phabricator)
+    -   Wiki
+    -   継続的インテグレーションサービス
+
+-   サポート
+    -   ベンダ
+    -   セキュリティ情報
+    -   障害報告
+    -   障害報告の提出
+    -   ウェブ上の情報
+
+-   財団
+    -   寄付
+    -   ハードウェアの寄贈
+
+-   BSD Now
+-   Discord
+-   イベント
+-   フォーラム
+-   IRC
+-   メーリングリスト
+-   Reddit
+-   Twitter
+-   User Groups
+-   YouTube
+
+FreeBSD のコミュニティ
+
+FreeBSD には、開発を支える活発なコミュニティがあります。
+
+メーリングリスト の数は 100 を超えており、 たくさんのウェブベースの
+フォーラム や、 いくつもの ニュースグループ があります。 世界 32 ヵ国に
+72 を越えるユーザグループがあり、IRC のコミュニティも活発です。
+また、開発者や活発な貢献者は、FreeBSD
+の開発状況や関連プロジェクトの情報を wiki にまとめています。
+
+昨年は、世界 2 ヵ国で、FreeBSD に関連した 9
+ものイベントが開催されました。 イベントページでは、 今後開催される
+FreeBSD 関連イベントのカレンダや RSS フィードを提供しています。
+過去に開催されたイベントに関する数多くの動画が、YouTube の BSD
+Conferences チャネルで公開されています。
+
+最新動画
+
+發生錯誤。
+
+請前往 www.youtube.com 觀看這部影片，或是在瀏覽器中啟用 JavaScript
+(如果尚未啟用)。
+
+ソーシャルネットワーク
+
+FreeBSD はさまざまなソーシャルネットワークで表現されています。
+
+-   flickr では、 ユーザグループミーティング、
+    カンファレンスおよびハッカソンの数千もの写真に 'freebsd'
+    タグが付けられています。
+
+-   YouTube には、 何千もの FreeBSD に関連したカンファレンス、
+    スクリーンキャストおよびデモンストレーションのビデオがあります。
+    特に、新しい BSD Conferences チャネルでは、 FreeBSD
+    テクニカルカンファレンスの 1
+    時間規模のプレゼンテーションを省略なく見ることができます。
+
+-   Facebook には FreeBSD Users Group そして、 LinkedIn には FreeBSD
+    Group があります。
+
+-   Twitter で @freebsd, @freebsdhelp または @freebsdcore
+    をフォローしてください。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+最終更新日: 2021年6月19日 by Danilo G. Baio
+
+法律上の注意事項 | © 1995-2023 FreeBSD プロジェクト All rights reserved.
+The mark FreeBSD is a registered trademark of The FreeBSD Foundation and
+is used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact

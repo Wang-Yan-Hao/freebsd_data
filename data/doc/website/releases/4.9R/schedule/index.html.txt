@@ -1,0 +1,139 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 4.9 Release Process
+
+Introduction
+
+This is a specific schedule for the release of FreeBSD 4.9. For more
+general information about the release engineering process, please see
+the Release Engineering section of the web site.
+
+General discussions about the release engineering process or quality
+assurance issues should be sent to the public freebsd-qa mailing list.
+MFC requests should be sent to re@FreeBSD.org.
+
+Schedule
+
+  ---------------------------------------- ------------- ------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Action                                   Expected      Actual        Description
+  Reminder announcement                    28 Jul 2003   28 Jul 2003   Release Engineers send announcement email to developers@FreeBSD.org with a rough schedule for the FreeBSD 4.9 release.
+  Another Reminder announcement            18 Aug 2003   18 Aug 2003   1 week reminder.
+  Another Reminder announcement            24 Aug 2003   24 Aug 2003   Final reminder, with exact time (GMT) that freeze begins.
+  4.9-PRERELEASE Testing Guide published   25 Aug 2003   --            A testing guide should be published with information about recent changes and areas of the system that should be thoroughly tested during the pre-release/RC period.
+  4.9-PRERELEASE                           25 Aug 2003   25 Aug 2003   newvers.sh, and release.ent updated.
+  FTP site updated                         25 Aug 2003   25 Aug 2003   pkg_add -r works for 4.9-PRERELEASE machines.
+  Code freeze begins                       25 Aug 2003   25 Aug 2003   After this date, all commits to the RELENG_4 branch must be approved by re@FreeBSD.org. Certain highly active documentation committers are exempt from this rule for routine man page / release note updates. Heads-up emails should be sent to the developers@, stable@ and qa@ lists.
+  4.9-RC                                   12 Sep 2003   28 Sep 2003   newvers.sh and release.ent updated.
+  Announce the Ports Freeze                19 Aug 2003   19 Aug 2003   Someone from portmgr@ should email freebsd-ports@ and BCC: developers@ to set a date for the week long ports freeze and tagging of the ports tree.
+  First release candidate                  12 Sep 2003   28 Sep 2003   The first release candidate for the x86 and Alpha architecture is released. ISO images should be uploaded to ftp-master.FreeBSD.org and releng4.FreeBSD.org. A network install directory should be uploaded to ftp-master.FreeBSD.org. The packages/ directory should be a relative symlink, as described in the releng article. Send a note to mirror-announce@FreeBSD.org saying a "Normal Release Cycle" is beginning, RC ISOs and install directories will be coming through the next few weeks.
+  Heads up to -stable                      12 Sep 2003   28 Sep 2003   A message should be sent to qa@FreeBSD.org and stable@FreeBSD.org after the snapshot is uploaded.
+  Second release candidate                 17 Sep 2003   8 Oct 2003    Note: the release date of this candidate depends on the user experience with RC1.
+  Third release candidate                  17 Oct 2003   18 Oct 2003   
+  Ports tree frozen                        10 Sep 2003   10 Sep 2003   Only approved commits will be permitted to the ports/ tree during the freeze.
+  Announce doc/ tree slush                 17 Oct 2003   18 Oct 2003   Notification of the impending doc/ tree slush should be sent to doc@.
+  doc/ tree slush                          18 Oct 2003   18 Oct 2003   Non-essential commits to the en_US.ISO8859-1/ subtree should be delayed from this point until after the doc/ tree tagging, to give translation teams time to synchronize their work.
+  Ports tree tagged                        23 Sep 2003   24 Sep 2003   RELEASE_4_9_0 tag for ports/.
+  Ports tree unfrozen                      --            --            After the ports/ tree is tagged, the ports/ tree will be re-opened for commits, but commits made after tagging will not go in 4.9-RELEASE.
+  Final package build starts               19 Sep 2003   10 Oct 2003   The ports cluster and bento build final packages.
+  doc/ tree tagged.                        20 Oct 2003   21 Oct 2003   Version number bumps for doc/ subtree. RELEASE_4_9_0 tag for doc/. doc/ slush ends at this time.
+  RELENG_4_9 branch                        18 Oct 2003   22 Oct 2003   The release branch is created.
+  Note to freebsd-stable@                  18 Oct 2003   23 Oct 2003   A note should be sent to the freebsd-stable@ list to let over-anxious users know that the tags have been created but the release still isn't ready. Tags may be slid before the announcement goes out. Point users to freebsd-qa@ for details.
+  Version numbers bumped.                  18 Oct 2003   --            The files listed here are updated to reflect the fact that this is FreeBSD 4.9.
+  Update man.cgi on the website.           18 Oct 2003   19 Oct 2003   Make sure the 4.9 manual pages are being displayed by default for the man->web gateway. Also make sure these man pages are pointed to by docs.xml.
+  src tree tagged.                         21 Oct 2003   --            RELENG_4_9_0_RELEASE tag for src/.
+  Final builds.                            21 Oct 2003   --            Final builds for x86 and Alpha in a pristine environment.
+  Warn mirror-announce@FreeBSD.org         21 Oct 2003   --            Heads up email to mirror-announce@FreeBSD.org to give admins time to prepare for the load spike to come. The site administrators have frequently requested advance notice for new ISOs.
+  Upload to ftp-master.                    21 Oct 2003   --            Release (and packages?) uploaded to ftp-master.FreeBSD.org
+  Announcement                             23 Oct 2003   --            Announcement sent out after a majority of the mirrors have received the bits.
+  Unfreeze the tree                        23 Oct 2003   --            Announcement to developers@ explaining that the release is out, and commits to RELENG_4 no longer require approval. Also note the policy for commits to the RELENG_4_9 branch.
+  ---------------------------------------- ------------- ------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Additional Information
+
+-   FreeBSD 4.9 developer todo list.
+-   FreeBSD 4.9 Quality Assurance Guide.
+-   FreeBSD Release Engineering website.
+-   FreeBSD busdma driver project page.
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

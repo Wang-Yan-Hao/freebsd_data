@@ -1,0 +1,200 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 7.3-RELEASE Errata
+
+The FreeBSD Project
+
+Copyright © 2010 The FreeBSD Documentation Project
+
+$FreeBSD: stable/7/release/doc/en_US.ISO8859-1/errata/article.sgml
+206131 2010-04-03 10:07:10Z hrs $
+
+FreeBSD is a registered trademark of the FreeBSD Foundation.
+
+Intel, Celeron, EtherExpress, i386, i486, Itanium, Pentium, and Xeon are
+trademarks or registered trademarks of Intel Corporation or its
+subsidiaries in the United States and other countries.
+
+Sparc, Sparc64, SPARCEngine, and UltraSPARC are trademarks of SPARC
+International, Inc in the United States and other countries. Products
+bearing SPARC trademarks are based upon architecture developed by Sun
+Microsystems, Inc.
+
+Many of the designations used by manufacturers and sellers to
+distinguish their products are claimed as trademarks. Where those
+designations appear in this document, and the FreeBSD Project was aware
+of the trademark claim, the designations have been followed by the “™”
+or the “®” symbol.
+
+------------------------------------------------------------------------
+
+  This document lists errata items for FreeBSD 7.3-RELEASE, containing
+  significant information discovered after the release or too late in
+  the release cycle to be otherwise included in the release
+  documentation. This information includes security advisories, as well
+  as news relating to the software or documentation that could affect
+  its operation or usability. An up-to-date version of this document
+  should always be consulted before installing this version of FreeBSD.
+
+  This errata document for FreeBSD 7.3-RELEASE will be maintained until
+  the release of FreeBSD 7.4-RELEASE.
+
+------------------------------------------------------------------------
+
+1 Introduction
+
+This errata document contains “late-breaking news” about FreeBSD
+7.3-RELEASE. Before installing this version, it is important to consult
+this document to learn about any post-release discoveries or problems
+that may already have been found and fixed.
+
+Any version of this errata document actually distributed with the
+release (for example, on a CDROM distribution) will be out of date by
+definition, but other copies are kept updated on the Internet and should
+be consulted as the “current errata” for this release. These other
+copies of the errata are located at http://www.FreeBSD.org/releases/,
+plus any sites which keep up-to-date mirrors of this location.
+
+Source and binary snapshots of FreeBSD 7.3-STABLE also contain
+up-to-date copies of this document (as of the time of the snapshot).
+
+For a list of all FreeBSD CERT security advisories, see
+http://www.FreeBSD.org/security/ or
+ftp://ftp.FreeBSD.org/pub/FreeBSD/CERT/.
+
+------------------------------------------------------------------------
+
+2 Security Advisories
+
+No advisory.
+
+------------------------------------------------------------------------
+
+3 Open Issues
+
+No issue.
+
+------------------------------------------------------------------------
+
+4 Late-Breaking News and Corrections
+
+[20100402] The FreeBSD 7.3-RELEASE Release Notes incorrectly mentioned
+that a -p flag has been added to the ps(1) utility. It should have been
+a -d flag. The correct entry is:
+
+  The ps(1) command now supports a new flag -d. This displays descendant
+  info with the output similar to Linux's -H (or -f).
+
+[20100330] The libc of FreeBSD 7.3-RELEASE has the fdopendir(3) function
+but <dirent.h> header file does not contain the function prototype. This
+could cause programs compiled on the system to crash on platforms such
+as FreeBSD/amd64, where sizeof(void *) is greater than sizeof(int). This
+problem has been fixed in r205265 (RELENG_7). An Errata Notice for
+7.3-RELEASE is planned.
+
+[20100330] It turns out that the zfsloader in 7.3-RELEASE, a new boot
+loader similar to loader(8) but it supports ZFS, does not work properly.
+This problem has been fixed in r205539 (RELENG_7). An Errata Notice for
+7.3-RELEASE is planned.
+
+[20100323] The FreeBSD 7.3-RELEASE Release Notes incorrectly mentioned
+that the hwpmc(4) driver has been added though this driver has already
+been added in 7.0-RELEASE. The changes in 7.3-RELEASE are that
+pmcannotate(8) utility and support for Intel Core 2 and Core i7 have
+been added.
+
+------------------------------------------------------------------------
+
+This file, and other release-related documents, can be downloaded from
+http://www.FreeBSD.org/snapshots/.
+
+For questions about FreeBSD, read the documentation before contacting
+<questions@FreeBSD.org>.
+
+All users of FreeBSD 7.3-STABLE should subscribe to the
+<stable@FreeBSD.org> mailing list.
+
+For questions about this documentation, e-mail <doc@FreeBSD.org>.
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

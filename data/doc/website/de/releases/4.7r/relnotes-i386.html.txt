@@ -1,0 +1,626 @@
+FreeBSD/i386 4.7-RELEASE Release Notes
+
+The FreeBSD Project
+
+Copyright © 2000, 2001, 2002 The FreeBSD Documentation Project
+
+Copyright © 2002 The FreeBSD German Documentation Project
+
+$FreeBSD$
+
+Die Release Notes für FreeBSD 4.7-RELEASE enthalten eine Übersicht über
+alle Änderungen in FreeBSD seit der Version 4.6-RELEASE. Die Liste
+umfaßt sowohl die Änderungen des Kernels als auch Änderungen der
+Benutzerprogramme; dazu kommen alle Sicherheitshinweise, die seit der
+letzten Version herausgegeben wurden. Einige kurze Anmerkungen zum Thema
+Aktualisierung wurden ebenfalls aufgenommen.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Inhaltsverzeichnis
+
+1. Einführung
+
+2. Neuerungen
+
+2.1. Änderungen im Kernel
+
+2.1.1. Unterstützung für Prozessoren und Mainboards
+
+2.1.2. Änderungen im Bootloader
+
+2.1.3. Netzwerke und Netzwerkkarten
+
+2.1.4. Netzwerk-Protokolle
+
+2.1.5. Festplatten und Massenspeicher
+
+2.1.6. Dateisystem
+
+2.1.7. Unterstützung für PCCARD
+
+2.1.8. Multimedia
+
+2.1.9. Zusätzliche Software
+
+2.2. Sicherheit
+
+2.3. Benutzerprogramme
+
+2.3.1. Zusätzliche Software
+
+2.3.2. Ports/Packages Collection
+
+2.4. Erzeugung von Releases und Integration
+
+3. Aktualisierung einer älteren Version von FreeBSD
+
+1. Einführung
+
+Dieses Dokument enthält die Release Notes für FreeBSD 4.7-RELEASE auf
+IA-32 Systemen. Es beschreibt die Komponenten von FreeBSD, die seit
+4.6-RELEASE hinzugefügt (oder geändert) wurden. Außerdem erhalten Sie
+Hinweise für die Aktualisierung Ihres FreeBSD-Systems.
+
+Diese Distribution von FreeBSD 4.7-RELEASE ist eine release
+Distribution. Sie können Sie von ftp://ftp.FreeBSD.org/ und allen seinen
+Mirrors erhalten. Weitere Informationen, wie Sie diese (oder andere)
+release Distributionen von FreeBSD erhalten können, finden Sie im Anhang
+``Obtaining FreeBSD'' des FreeBSD Handbuchs.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2. Neuerungen
+
+Dieser Abschnitt beschreibt die für den Anwender offensichtlichsten
+Neuerungen und Änderungen in FreeBSD seit 4.6-RELEASE. Die Einträge
+dokumentieren neue Treiber bzw. Unterstützung für neue Hardware, neue
+Befehle oder Optionen, die Behebung wichtiger Fehler, und
+Aktualisierungen von Dritt-Software. Sicherheitshinweise, die nach dem
+Erscheinen von 4.6-RELEASE herausgegeben wurden, sind ebenfalls
+aufgeführt.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.1. Änderungen im Kernel
+
+acct(2) öffnet die Datei mit den Accounting-Daten jetzt im Modus
+``Anfügen'', damit das Accounting auch in diesem Fall mit accton(8)
+eingeschaltet werden kann.
+
+Mit dem neuen Ressource-Limit RLIMIT_VMEM kann die maximale Größe des
+von einem Prozess verwendeten virtuellen Speichers begrenzt werden,
+davon ist auch via mmap(2) angeforderter Speicher betroffen. Das Limit
+kann in login.conf(5) mit der neuen Variable vmemoryuse konfiguriert
+werden.
+
+In der Systemfunktion sendfile(2) wurde ein Fehler beseitigt, durch den
+die Länger des Headers auf die Dateigröße angerechnet wurde.
+
+Der neue Treiber ucom(4) unterstützt USB Modems, serielle Schnittstellen
+und andere Programme, die sich wie ein TTY verhalten sollen. Die beiden
+neuen Treiber uplcom(4) und uvscom(4) bauen darauf auf und unterstützen
+den Prolific PL-2303 bzw. den Slipper U VS-10U.
+
+Der neue Treiber uvisor(4) unterstützt via USB angeschlossene Handspring
+Visor.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.1.1. Unterstützung für Prozessoren und Mainboards
+
+Der AMD Élan SC520 wird jetzt unterstützt, dazu muß in der
+Konfigurationsdatei für den angepaßten Kernel die Zeile CPU_ELAN stehen.
+
+<<<<<<< HEAD
+
+2.1.2. Änderungen im Bootloader
+
+=======
+------------------------------------------------------------------------
+
+2.1.2. Änderungen im Bootloader
+
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.1.3. Netzwerke und Netzwerkkarten
+
+Der Treiber em(4) unterstützt jetzt auch die Intel 82545EM und 82545EP
+Chipsätze sowie VLANs.
+
+Der Treiber rp(4) wurde auf Version 3.02 aktualisiert und kann jetzt
+auch als Modul genutzt werden.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.1.4. Netzwerk-Protokolle
+
+Als Alternative zu den bekannten Lösungen steht jetzt mit ``IPFW2'' eine
+komplett überarbeitete Version von ipfw(4) zur Verfügung. Sie legt ihre
+Regeln in variablen Blöcken im Kernel ab, ähnlich wie bpf(4)
+Anweisungen. Bis auf die neue Option, Regeln mit or zu kombinieren,
+sollten die Änderungen nicht nach außen hin (also in ipfw(8)) sichtbar
+sein. Die neue Version ist allerdings standardmäßig nicht aktiviert. Zur
+Aktivierung sind die folgenden Schritte notwendig:
+
+1.  In der Konfigurationsdatei für den angepaßten Kernel muß der
+    (undokumentierte) Eintrag options IPFW2 stehen.
+
+2.  Beim Compilieren und Installieren von libalias und ipfw(8) muß
+    make(1) mit der Option -DIPFW2 aufgerufen werden.
+
+Die neue Netgraph Node ng_l2tp(4) implementiert das Encapsulation Layer
+des L2TP Protokolls, wie in RFC 2661 beschrieben.
+
+Der Timeout, nach dessen Ablauf tcp(4) ein Paket erneut versendet, kann
+jetzt mit den beiden sysctl-Variablen net.inet.tcp.rexmit_min und
+net.inet.tcp.rexmit_slop konfiguriert werden. Der Standardwert wurde von
+einer Sekunde auf 200 Millisekunden reduziert (ähnlich dem Default bei
+Linux), um besser auf Aussetzer bei interaktiven Verbindungen und
+Ausfälle bei unzuverlässigen schnellen Verbindungen (drahtlose
+Netzwerke) reagieren zu können.
+
+Das tcp(4) Protokoll ist jetzt in der Lage, die Anzahl der ausstehenden
+Pakete dynamisch anzupassen, um die Bandbreite der Verbindung optimal
+auszunutzen und die Verzögerungen zu minimieren. Diese Routinen werden
+mit der Sysctl-Variable net.inet.tcp.inflight_enable aktiviert.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.1.5. Festplatten und Massenspeicher
+
+Der neue Treiber ahd(4) unterstützt die Adaptec AIC7901, AIC7901A und
+AIC7902 Ultra320 PCI-X SCSI Controller Chips.
+
+Im Treiber ata(4) wurde ein Fehler behoben, durch den ``tagged
+queueing'' in einigen Fällen nicht korrekt funktionierte.
+
+Der Treiber ata(4) berechnet die maximale Transfergröße jetzt richtig,
+dadurch werden zahlreiche Probleme beim Zugriff auf diverse ATA-Geräte
+behoben, unter anderem die diversen READ_BIG Fehler.
+
+Der Treiber ata(4) unterstützt jetzt die Sil 0680 und VIA 8233/8235
+Controller.
+
+Der neue Treiber mpt unterstützt die LSI Logic Fusion/MP architecture
+Fiber Channel Controller.
+
+Der neue Treiber pst unterstützt die Promise SuperTrak ATA RAID
+Controller.
+
+<<<<<<< HEAD
+
+2.1.6. Dateisystem
+
+
+2.1.7. Unterstützung für PCCARD
+
+=======
+------------------------------------------------------------------------
+
+2.1.6. Dateisystem
+
+------------------------------------------------------------------------
+
+2.1.7. Unterstützung für PCCARD
+
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.1.8. Multimedia
+
+Es gibt jetzt einen spezialisierten Treiber für den VT8233 Audio
+Controller, der alle bekannten Versionen des Chips unterstützt. Der
+Treiber wird beim Start des Systems geladen, wenn in der
+Konfigurationsdatei für den angepaßten Kernel device pcm steht oder wenn
+in /boot/loader.conf die Zeile snd_via8233="YES" steht. Die für die
+Entwicklung notwendige Dokumentation wurde von VIA zur Verfügung
+gestellt.
+
+Der Audio-Treiber ich enthält jetzt minimalen Support für ich4 Audio.
+
+Der neue Treiber uaudio unterstützt USB Audio Geräte.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.1.9. Zusätzliche Software
+
+IPFilter wurde auf Version 3.4.29 aktualisiert.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2. Sicherheit
+
+Die Korrektur für den in SA-02:23 beschriebenen Fehler (der Nutzung von
+Datei-Handles durch set-user-id und set-group-id Programme) ist
+fehlerhaft. Der Fehler konnte immer noch auf Systemen ausgenutzt werden,
+die procfs(5) oder linprocfs(5) verwenden. Die zweite Version des
+Korrektur finden Sie in FreeBSD-SA-02:23.
+
+Im Resolver existierte ein Buffer-Überlauf, der von einem entsprechend
+programmierten Domain Name Server oder durch passende DNS-Anfragen eines
+Angreifers ausgenutzt werden konnte, dieser Fehler wurde entfernt.
+Weitere Informationen finden Sie in FreeBSD-SA-02:28.
+
+In tcpdump(1) wurde ein Buffer Overflow beseitigt, der durch defekte
+NFS-Pakete ausgenutzt werden konnte. Weitere Informationen finden Sie in
+FreeBSD-SA-02:29.
+
+Es ist nicht mehr möglich, ktrace(1) zur Verfolgung des Ablaufs von
+Prozessen zu benutzen, wenn diese vorher priveligiert waren. Falls ein
+Prozess sensitive Informationen erhalten hat, bevor er die Privilegien
+abgegeben hat, können diese nicht mehr an die Außenwelt gelangen.
+Weitere Informationen finden Sie in FreeBSD-SA-02:30.
+
+In pppd(8) existierte eine Race Condition, durch die es möglich war, die
+Berechtigungen einer beliebigen Datei zu ändern, dieser Fehler wurde
+korrigiert. Weitere Informationen finden Sie in FreeBSD-SA-02:32.
+
+In OpenSSL wurden mehrere Buffer Overflows gefunden, die Fehler wurden
+durch ein Update der von FreeBSD verwendeten Version von OpenSSL
+beseitigt. Weitere Informationen finden Sie in FreeBSD-SA-02:33.
+
+Ein Buffer Overflow im Heap des XDR Decoders wurde beseitigt. Weitere
+Informationen finden Sie in FreeBSD-SA-02:34.
+
+Ein Fehler, durch den ein Benutzer beliebige Blöcke auf einem
+FFS-Dateisystem lesen und schreiben konnte, wurde beseitigt. Weitere
+Informationen finden Sie in FreeBSD-SA-02:35.
+
+Im NFS Server wurde ein Fehler beseitigt, durch den es möglich war, über
+das Netzwerk einen Denial-of-Service Angriff durchzuführen. Weitere
+Informationen finden Sie in FreeBSD-SA-02:36.
+
+Im kqueue(2) System wurde ein Fehler beseitigt, durch den ein lokaler
+Benutzer einen Systemabsturz herbeiführen konnte. Weitere Informationen
+finden Sie in FreeBSD-SA-02:37.
+
+Bei mehrere Systemfunktionen wurden Fehler bei der Prüfung der Parameter
+beseitigt, durch die größere Teile des Kernel-Speichers an den Aufrufer
+zurückgegeben werden konnten. Weitere Informationen finden Sie in
+FreeBSD-SA-02:38.
+
+In libkvm wurde ein Fehler beseitigt, durch den Applikationen ungewollt
+schützenswerte Datei-Handles nach außen weiterleiten konnten. Weitere
+Informationen finden Sie in FreeBSD-SA-02:39
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.3. Benutzerprogramme
+
+biff(1) unterstützt jetzt die Option b für ``bell notification'' beim
+Eintreffen von neuen Mails, bei dieser Variante wird der Terminal-Inhalt
+nicht zerstört, wie das bei biff y passiert.
+
+Wird bei cp(1) die nicht dem Standard entsprechende Option -n angegeben,
+fragt es nicht mehr nach, ob eine Datei überschrieben werden soll; die
+Datei wird in diesem Fall nicht überschrieben.
+
+Mit daemon(8) steht jetzt ein über die Kommandozeile benutzbares
+Programm zur Nutzung von daemon(3) zur Verfügung. Das Programm löst die
+Verbindung zum kontrollierenden Terminal und startet dann das auf der
+Kommandozeile übergebene Programm. Dadurch können Sie beliebige
+Programme als Daemon-Prozeß laufen lassen.
+
+Bei Verwendung der neuen Option -S gibt dump(8) nur die erwartete Größe
+des Dumps aus und beendet sich dann.
+
+finger(1) unterstützt jetzt die Datei .pubkey.
+
+finger(1) unterstützt jetzt die Option -g, mit der nur der Name des
+Benutzers aus der GECOS Information ausgegeben wird.
+
+Bei finger(1) kann mit den neuen Optionen -4 und -6 eine Adressfamilie
+für Anfragen über das Netzwerk angegeben werden.
+
+Das Programm fold(1) unterstützt die Optionen -b und -s zum Umbruch an
+Byte- bzw. Wortgrenzen.
+
+Bei der Benutzung von ftp(1) kann jetzt bei IPv4-Verbindungen mit epsv4
+zwischen den den neueren Kommandos EPSV/EPRT und den älteren Kommandos
+PASV/PORT umgeschaltet werden. Dadurch sollten sich die Probleme lösen
+lassen, die bei der Verwendung von ftp(1) entstehen, falls IPFilter oder
+eine anderer Firewall ohne Unterstützung für die neueren Kommandos
+benutzt wird.
+
+Wird ftpd(8) mit der neuen Option -m aufgerufen, können Gäste
+existierende Dateien ändern, falls die Zugriffsrechte entsprechend
+gesetzt sind. Dies ermöglicht es Gästen, unterbrochene Uploads
+fortzusetzen.
+
+Wird ftpd(8) mit der neuen Option -M aufgerufen, können Gäste keine
+Verzeichnisse mehr anlegen.
+
+Wird ftpd(8) mit der neuen Option -W aufgerufen, werden FTP-Logins nicht
+mehr in wtmp(5) vermerkt.
+
+Bei ifconfig(8) können die untersten 64 Bit jetzt automatisch mit dem
+Kommando eui64 eingetragen werden, dadurch wird prefix(8) überflüssig.
+
+Bei ifconfig(8) ist es mit dem neuen Kommando promisc möglich, ein
+Interface in den Promiscuous Mode zu setzen.
+
+Bei inetd(8) ist es jetzt möglich, die maximale Anzahl simultaner
+Verbindungen von einer bestimmten IP-Adresse zu einem Service zu
+begrenzen.
+
+Wird lock(1) mit der neuen Option -v aufgerufen, wird zum einen das
+aktuelle VTY gesperrt, zum anderen ist es nicht mehr möglich, auf andere
+VTYs umzuschalten, so lange das aktuelle Terminal gesperrt ist. Damit
+ist es möglich, die Konsole von einem einzigen Terminal aus komplett zu
+sperren.
+
+Bei ls(1) gibt es drei neue Optionen: -m listet die Dateien auf einer
+Seite auf, -p erzwingt die Ausgabe / hinter einem Verzeichnisnamen, und
+-x führt dazu, daß die Dateinamen auf einer Seite formatiert werden.
+
+Wird mv(1) mit der neuen (nicht standardisierten) Option -n aufgerufen,
+wird bei jede Frage, ob eine Datei überschrieben werden soll, immer die
+Antwort ``no'' angenommen.
+
+Bei nice(1) kann man jetzt mit -n angeben, mit welcher ``niceness'' das
+aufgerufene Programm laufen soll.
+
+od(1) unterstützt jetzt die Optionen -A zur Angabe der Basisadresse der
+Eingabe, -N zur Angabe der Anzahl auszugebender Zeichen, -j zur Angabe
+der zu überspringenden Zeichen, -s um vorzeichenbehaftete Dezimalzahlen
+auszugeben und -t zur Festlegung des Ausgabeformates.
+
+pam_opie(8) gibt keine falschen Aufforderungen mehr aus, wenn die
+Variable no_fake_prompts gesetzt ist.
+
+Das Modul pam_opieaccess(8) ist jetzt verfügbar.
+
+pam_radius(8), pam_ssh(8) und pam_tacplus(8) wurden auf den Stand von
+FreeBSD -CURRENT vom 3. Juli 2002 gebracht.
+
+pam_unix(8) wurde auf den Stand von FreeBSD -CURRENT vom 9. März 2002
+gebracht (pre-OpenPAM).
+
+Bei pwd(1) kann jetzt mit der Option -L das logische Arbeitsverzeichnis
+ausgegeben werden.
+
+Bei renice(8) kann jetzt mit der Option -n angegeben werden, wie stark
+die Priorität eines Prozesses angehoben werden soll.
+
+Bei sed(1) kann jetzt die Option -i angegeben werden, um Dateien direkt
+zu ändern.
+
+Wird bei sh(1) die neue Option -C verwendet, können existierende Dateien
+nicht mehr durch Ein-/Ausgabeumleitung überschrieben werden; die neue
+Option -u erzeugt eine Fehlermeldung, wenn eine nicht gesetzte Variable
+expandiert werden soll.
+
+Bei sh(1) unterstützt das interne Kommando cd jetzt die Optionen -L und
+-P zur Aktivierung des logischen bzw. physikalischen Modus.
+Standardmäßig ist der logische Modus aktiviert, dieser Default kann mit
+der internen Variable physical geändert werden.
+
+Bei sh(1) unterstützt das interne Kommando jobs jetzt die beiden
+Optionen -s (gibt nur die PID aus) und -l (gibt die PID zusätzlich aus).
+
+Bei sh(1) unterstützen die internen Kommandos export und readonly jetzt
+die Option -p, mit denen ihre Ausgaben auf ein ``portables'' Format
+umgestellt werden.
+
+Bei sh(1) ist es nicht mehr möglich, illegale Ausdrücke für
+command & && command, && command oder || command zu verwenden.
+
+Bei split(1) kann mit der neuen Option -a festgelegt werden, wie viele
+Zeichen für die Extension der Teile verwendet werden sollen.
+
+su(1) unterstützt jetzt Kerberos V Authentifizierung.
+
+tr(1) hat jetzt minimalen Support für die Listen äquivalenter Zeichen,
+sofern die jeweilige Locale diese Listen bereitstellt.
+
+Bei unexpand(1) können die Tabulatorpositionen mit der neuen Option -t
+angegeben werden, ähnlich wie bei expand(1).
+
+vidcontrol(1) unterstützt jetzt die Option -S, um das Umschalten
+zwischen verschiedenen VTYs zu verhindern.
+
+Bei who(1) stehen mehrere neue Optionen zur Verfügung: -H erzeugt
+Überschriften; -T zeigt die Einstellung für mesg(1); -m bewirkt die
+gleiche Ausgabe wie am i; -u zeigt an, wie lange der Benutzer untätig
+war; -q zeigt die Namen in Spalten an.
+
+xargs(1) unterstützt jetzt die Option -I replstr, die es dem Benutzer
+erlaubt, xargs(1) die von stdin gelesen Daten an einen bestimmten Punkt
+der Kommandozeile einfügen zu lassen. (Die FreeBSD-spezifische Variante
+-J hat die gleiche Wirkung, sollte aber nicht mehr verwendet werden).
+
+xargs(1) unterstützt jetzt die neue Option -L, um den Start des
+aufzurufenden Programmes nach einer Anzahl Zeilen zu erzwingen.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.3.1. Zusätzliche Software
+
+BIND wurde auf Version 8.3.3 aktualisiert.
+
+Binutils wurden auf Version 2.12.1 aktualisiert (um genau zu sein, auf
+den Stand vom 20. Juli 2002, also einem Snapshot nach der Release).
+
+gcc wurde auf eine Version aus dem GCC 2.95 CVS Archiv vom 20. März 2002
+aktualisiert. Diese Version trägt die inoffizielle Versionsnummer
+2.95.4.
+
+libpcap wurde auf Version 0.7.1 aktualisiert.
+
+Heimdal Kerberos wurde auf eine prä-0.5 Zwischenversion mit Stand 29.
+August 2002 aktualisiert.
+
+Der von NetBSD genutzte FTP Dæmon lukemftpd 1.2 beta 1 steht jetzt als
+lukemftpd(8) zur Verfügung.
+
+Die von OpenBSD am 26. April 2002 genutzte Version von m4(1) wurde
+importiert.
+
+Die Programmsammlung OPIE (einmal verwendbare Paßwörter) wurde auf
+Version 2.4 aktualisiert.
+
+OpenSSH wurde auf Version 3.4p1 aktualisiert. Die wichtigsten Änderungen
+sind:
+
+-   Die *2 Dateien werden nicht mehr benötigt (zum Beispiel kann
+    ~/.ssh/known_hosts jetzt den Inhalt von ~/.ssh/known_hosts2
+    enthalten).
+
+-   ssh-keygen(1) kann Schlüssel jetzt im SECSH Public Key File Format
+    importieren und exportieren, um Schlüssel mit diversen kommerziellen
+    SSH-Version auszutauschen.
+
+-   ssh-add(1) wertet jetzt alle drei Standardschlüssel aus.
+
+-   ssh-keygen(1) verwendet keinen Standardardtyp mehr, der Typ der
+    Schlüssels muß mit der Option -t angegeben werden.
+
+-   Das neue Feature ``privilege separation'' nutzt unprivilegierte
+    Prozesse, um die Auswirkungen von Sicherheitslücken und
+    Programmierfehlern einzuschränken und zu begrenzen.
+
+-   Die Behebung diverser Fehler, dazu gehört eine Sicherheitslücke, die
+    zu einem Integer-Überlauf und dadurch zu einer nicht gewünschten
+    Vererbung von Privilegien führen konnte.
+
+-   Standardmäßig wird jetzt Version 2 des SSH Protokolls verwendet, bei
+    Bedarf wird auf Version 1 zurückgeschaltet.
+
+OpenSSL wurde auf Version 0.9.6g aktualisiert.
+
+sendmail wurde von Version 8.12.3 auf Version 8.12.6 aktualisiert.
+
+Die Version 1.4.5 der smbfs Benutzerprogramme wurde importiert.
+
+GNU tar wurde auf Version 1.13.25. aktualisiert.
+
+tcsh wurde auf Version 6.12 aktualisiert.
+
+texinfo wurde auf Version 4.1 aktualisiert.
+
+Die zur Verfügung gestellte Version der tcp_wrappers enthält jetzt das
+Hilfsprogramm tcpd(8). Dieser wird zwar von einer FreeBSD
+Standardinstallation nicht benötigt, da inetd(8) diese Funktionalität
+bereits enthält; er kann aber für inetd(8)-Alternativen wie z.B. xinetd
+nützlich sein.
+
+tcpdump wurde auf Version 3.7.1 aktualisiert.
+
+top wurde auf Version 3.5b12 aktualisiert.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.3.2. Ports/Packages Collection
+
+Die im Package emulators/linux_base enthaltenen Bibliotheken für die
+Linux Emulation entsprechen jetzt den Bibliotheken von Red Hat Linux
+7.1.
+
+XFree86 wurde auf Version 4.2.1 aktualisiert. Diese Version behebt
+Sicherheitsprobleme und Fehler aus Version 4.2.0.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.4. Erzeugung von Releases und Integration
+
+Ein Fehler, durch den bei einer Neuinstallation Dateien in
+/usr/share/examples fehlten, wurde behoben.
+
+Es ist jetzt möglich, eine Release von FreeBSD 5-CURRENT auf einem
+FreeBSD 4-STABLE System zu erzeugen, und umgekehrt. Es ist auch möglich,
+Releases für eine andere Architektur als die des Host-Systems zu
+erzeugen. Details finden Sie in release(7).
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3. Aktualisierung einer älteren Version von FreeBSD
+
+Wenn Sie eine ältere Version von FreeBSD aktualisieren wollen, haben Sie
+drei Möglichkeiten:
+
+-   Die binäre Aktualisierung mit sysinstall(8). Diese Variante benötigt
+    die wenigste Zeit, allerdings geht sie davon aus, daß Sie keine
+    Optionen zur Kompilierung von FreeBSD genutzt haben.
+
+-   Die komplette Neuinstallation von FreeBSD. Dadurch führen Sie
+    natürlich keine echte Aktualisierung durch und es ist auf jeden Fall
+    nicht so bequem wie die binäre Aktualisierung, da Sie ihre
+    Konfigurationsdaten in /etc selbst sichern und wiederherstellen
+    müssen. Dennoch kann diese Option sinnvoll sein, wenn Sie die
+    Aufteilung der Partitionen ändern wollen oder müssen.
+
+-   Mit dem Sourcecode in /usr/src. Diese Variante ist flexibler,
+    benötigt aber mehr Plattenplatz, Zeit, und Erfahrung. Weitere
+    Informationen zu diesem Thema finden Sie im Kapitel ``Using
+    make world'' des FreeBSD Handbuchs. Eine Aktualisierung einer sehr
+    alten Version von FreeBSD kann mit Problemen verbunden sein; in
+    diesen Fällen ist es effektiver, eine binäre Aktualisierung oder
+    eine komplette Neuinstallation durchzuführen.
+
+Bitte lesen Sie den Inhalt der Datei INSTALL.TXT, um weitere
+Informationen zu erhalten, und zwar bevor Sie mit der Aktualisierung
+beginnen. Wenn Sie den Sourcecode zur Aktualisierung nutzen, sollten Sie
+auf jeden Fall auch /usr/src/UPDATING lesen.
+
+Zum guten Schluß: Wenn Sie auf eine der möglichen Arten die
+FreeBSD-Entwicklungszweige -STABLE oder -CURRENT nutzen, sollten Sie auf
+jeden Fall das Kapitel ``-CURRENT vs. -STABLE'' im FreeBSD Handbuch
+lesen.
+
+  Wichtig: Sie sollten vor der Aktualisierung von FreeBSD auf jeden Fall
+  Sicherheitskopien aller Daten und Konfigurationsdateien anlegen.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Diese Datei und andere Dokumente zu dieser Version sind bei
+ftp://ftp.FreeBSD.org/verfuegbar.
+
+Wenn Sie Fragen zu FreeBSD haben, lesen Sie erst die Dokumentation,
+bevor Sie sich an <de-bsd-questions@de.FreeBSD.org> wenden.
+
+Wenn Sie Fragen zu dieser Dokumentation haben, wenden Sie sich an
+<de-bsd-translators@de.FreeBSD.org>.

@@ -1,0 +1,251 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   BSD Now
+-   Discord
+-   Events
+-   Forums
+-   IRC
+-   Mailing Lists
+-   Reddit
+-   Twitter
+-   User Groups
+-   YouTube
+
+-   RSS 2.0 Feed
+
+FreeBSD Past Events
+
+Please send details of any FreeBSD related events or events that are of
+interest for FreeBSD users which are not listed here to
+freebsd-doc@FreeBSD.org.
+
+Countries and regions displayed in dark red on the map below are hosting
+upcoming FreeBSD-related events. Countries that have hosted
+FreeBSD-related events in the past show up in yellow or orange, with
+darker colors representing a larger number of previous events.
+
+[events map]
+
+Past Events:
+
+December 2004
+
+-   21. Chaos Communication Congress, Berliner Congress Center, Berlin,
+    Germany
+    27 - 29 December, 2004
+    The Chaos Communication Congress is a three-day conference on
+    technology, society and utopia. FreeBSD will be present with a
+    booth. If you are interested in helping out, please contact
+    Christian Brueffer.
+
+-   Free Software Development and the FreeBSD Operating System, ODTU
+    Culture and Congress Center, Ankara, Turkey
+    10 - 10 December, 2004
+    This conference is organized with the cooperation of the EnderUNIX
+    Software Development Team and the Middle East Technical University
+    Computer Center. The conference will be a one-day event and the
+    official language for the conference is Turkish. For more
+    information and a schedule of talks, please see the website.
+
+October 2004
+
+-   EuroBSDCon 2004, Queens Hotel Karlsruhe, Karlsruhe, Germany
+    29 - 31 October, 2004
+    The third annual European BSD Conference. It is oriented to
+    developers and users of all BSD flavors, including FreeBSD of
+    course.
+
+-   BSDCon Japan 2004, Business Innovation Center Osaka, Osaka, Japan
+    23 - 23 October, 2004
+    BSD Conference Japan 2004, the third conference concerning *BSD in
+    Japan, will be held in Osaka on October 23th, 2004. Furthermore,
+    Kansai Open Source 2004 and Kansai Community Contest will be held in
+    the same place also.
+
+-   Systems 2004, New Munich Trade Fair Centre, Munich, Germany
+    18 - 22 October, 2004
+    Systems is a trade fair for IT, media and communications. There will
+    be a combined BSD booth. If you are interested in helping, please
+    contact Daniel Ettle.
+
+-   Italian FreeBSD User Group (GUFI) Conference 2004, , Milan, Italy
+    02 - 03 October, 2004
+    The Italian FreeBSD User Group (GUFI) Conference. Information
+    available (in Italian) from the conference website.
+
+September 2004
+
+-   Linux Expo Shanghai, , Shanghai, China
+    09 - 10 September, 2004
+    Linux Expo Shanghai is the biggest Linux/Open Source conference in
+    Shanghai this summer. Murray Stokely and members of the FreeBSD
+    China group will have a booth there both days.
+
+-   2nd Swiss Unix Conference, , Zürich, Switzerland
+    02 - 04 September, 2004
+    SUCON is an emerging conference focused on topics related to the
+    Unix operating system. Our goal is to bring together developers,
+    system administrators and users in the field of Unix to foster
+    projects, ideas and the knowledge of every individual. There will
+    also be some speeches related to FreeBSD. If you want to join the
+    FreeBSD booth, contact Josef El-Rayes.
+
+-   The AUUG'2004 Annual Conference, , Melbourne, Australia
+    01 - 03 September, 2004
+    AUUG'2004 is the annual technical conference of AUUG, the Australian
+    UNIX and Open Systems User Group. The conference will emphasise
+    issues of identity and authentication on the Internet, along with
+    issues of computer security and anonymity.
+
+July 2004
+
+-   2004 USENIX Annual Technical Conference, , Boston, USA
+    27 - 02 July, 2004
+    The 2004 USENIX ATC will have FREENIX and general refereed paper
+    session, along with new UseBSD Special Interest Group Sessions.
+    There will not be a separate Usenix-sponsored BSDCon in the U.S. in
+    2004, so this is THE big conference of the year for BSD enthusiasts
+    in the U.S.
+
+June 2004
+
+-   Linuxtag 2004, Kongresszentrum, Karlsruhe, Germany
+    23 - 26 June, 2004
+    The Linuxtag is one of Europe's biggest Linux and Open Source
+    related tradeshows and conferences. As in previous years, FreeBSD
+    will be present with a booth.
+
+May 2004
+
+-   Linuxwochen Wien, Museumsquartier, A-1070 Wien Museumsplatz 1,
+    Vienna, Austria
+    26 - 29 May, 2004
+    Linuxwochen is an annual roadshow of open source conferences, which
+    take place in all major cities in Austria. Vienna is the biggest
+    event. There will be a FreeBSD speech and a booth by Josef El-Rayes.
+
+-   BSDCan, University of Ottawa, Ottawa, Canada
+    13 - 15 May, 2004
+    BSDCan is a developers conference with a strong focus on emerging
+    technologies, research projects, and works in progress. It also
+    features Userland infrastructure projects and invite contribution
+    from both free software developers and those from commercial
+    vendors.
+
+March 2004
+
+-   Asia BSDCon 2004, Academica Sinica, Taipei, Taiwan (ROC)
+    12 - 15 March, 2004
+    The first BSDCon held in Asia, and sponsored by USENIX Association.
+    Two days of tutorials will precede two days of technical sessions
+    and a vendor exhibit.
+
+-   LinuxForum 2004, Symbion, Copenhagen, Denmark
+    05 - 06 March, 2004
+    Annual Danish Open Source conference. The Danish BSD user group
+    BSD-DK will present the BSD's.
+
+February 2004
+
+-   Fosdem 2004, Universite Libre de Bruxelles, Brussels, Belgium
+    21 - 22 February, 2004
+    A 2 day event to promote the widespread use of Free and Open Source
+    software. Among the projects present at the event will be Mozilla,
+    KDE and, of course, FreeBSD.
+
+-   Solutions Linux 2004, CNIT, Paris, France
+    03 - 05 February, 2004
+    A 3 day event to promote GNU/Linux and Open Source software. French
+    FreeBSD User Group will be present in the Association Village to
+    promote FreeBSD of course !
+
+Events from past years:
+
+-   2020
+-   2019
+-   2018
+-   2017
+-   2016
+-   2015
+-   2014
+-   2013
+-   2012
+-   2011
+-   2010
+-   2009
+-   2008
+-   2007
+-   2006
+-   2005
+-   2004
+-   2003
+
+------------------------------------------------------------------------
+
+Last modified on: March 22, 2022 by Li-Wen Hsu
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

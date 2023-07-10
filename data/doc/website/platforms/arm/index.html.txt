@@ -1,0 +1,271 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   
+-   Developer's Handbook
+-   Committer's Guide
+-   Porter's Handbook
+-   Source code repositories
+-   Release Engineering
+-   Platforms
+-   Project Ideas
+-   Contributing
+
+FreeBSD/ARM Project
+
+Introduction
+
+This page contains information about the FreeBSD port to the 32- and
+64-bit ARM architectures and hardware. Discussion of the ARM ports takes
+place on the freebsd-arm mailing list.
+
+Table of Contents
+
+-   Status
+
+-   Hardware Notes
+
+-   What Needs to be Done
+
+-   Related Links
+
+-   Mini-install Guide
+
+-   Mailing list
+
+Status
+
+32-bit ARMv6 and ARMv7 are officially a Tier 2 architecture, as the
+FreeBSD Project does not provide official releases or pre-built packages
+for this platform due to it primarily targeting the embedded arena.
+However, FreeBSD/ARM is being actively developed and maintained, is well
+supported, and provides an excellent framework for building ARM-based
+systems. FreeBSD/arm supported ARMv4 and ARMv5 processors, and is
+deprecated as of 13.0. FreeBSD/armv7 includes SMP support.
+
+FreeBSD/arm64 supports 64-bit ARMv8 processors and is a Tier 1
+architecture as of 13.0. 64-bit ARM platforms follow a set of standard
+conventions, and a single FreeBSD build will work on hardware from
+multiple vendors. As a result, FreeBSD provides official releases for
+FreeBSD/arm64 and packages are available.
+
+FreeBSD/ARM Hardware Notes
+
+FreeBSD/arm and FreeBSD/armv6 support a large range of ARM CPUs and
+development boards. Not every peripheral is supported on every CPU or
+board, though work continues towards this and contributions are always
+welcome. Conversely, many CPUs and boards not listed may work with only
+minimal changes needed.
+
+Listing all supported devices on all CPUs and boards is impractical
+here, however much information can be obtained from the mailing list and
+archives, the FreeBSD ARM wiki pages, and from the kernel configuration
+files
+
+Cores Supported
+
+-   ARM9E
+
+-   Most XScale
+
+-   Marvel Feroceon
+
+-   Marvel Sheeva
+
+-   ARM10E
+
+-   ARM11J
+
+-   Cortex A5
+
+-   Cortex A7
+
+-   Cortex A8
+
+-   Cortex A9
+
+-   Cortex A12
+
+-   Cortex A15
+
+SoCs
+
+-   Allwinner A10/A20
+
+-   Atmel AT91RM92 and AT91SAM9 families
+
+-   Broadcom BCM2835 (used in Raspberry Pi)
+
+-   Cavium CNS11xx
+
+-   Freescale i.MX51, i.MX53, i.MX6 and Vybrid Family
+
+-   Intel XSCALE
+
+-   Marvell Orion, Kirkwood and Discovery Innovation families of
+    systems-on-chip
+
+-   Marvell Armada 500 (ARMv6) and Armada XP (ARMv7)
+
+-   NXP LPC32x0
+
+-   Qualcomm Snapdragon
+
+-   Rockchip RK3188
+
+-   Samsung Exynos5 and S3C24xxx
+
+-   Texas Instruments DaVinci Digital Media SoC
+
+-   TI OMAP
+
+-   Xilinx Zynq7 family
+
+Note that not all peripherals are supported on all CPUs.
+
+Boards
+
+-   ArndaleBoard (Samsung Exynos5250)
+
+-   Atmel AT91RM9200
+
+-   BeagleBoard and BeagleBoard-xM (TI OMAP3)
+
+-   BeagleBone
+
+-   Colibri VF50 Evaluation Board
+
+-   Cubieboard(1,2) (Allwinner A10/A20)
+
+-   Device Solutions Quartz
+
+-   Gateworks Avila GW2348 and Cambria GW2358
+
+-   Genesi Efika MX Smarttop and Smartbook
+
+-   Globalscale Technologies OpenRD platform
+
+-   Google Chromebook
+
+-   Kwikbyte KB9202B (as well as the older KB9202 and KB9202A)
+
+-   Linksys NSLU2
+
+-   Marvell DB-88F5182, DB-88F5281, DB-88F6281, RD-88F6281, DB-78100
+
+-   Marvell DB-88F6781 (ARMv6)
+
+-   Marvell DB-78460 (ARMv7)
+
+-   Marvell Sheeva Plug and Dream Plug
+
+-   Pandaboard (OMAP4)
+
+-   Phytec Cosmic Board (Freescale Vybrid Family)
+
+-   Raspberry Pi
+
+-   Radxa Rock (Work in progress)
+
+-   SBC6045 with Atmel at91sam9g45
+
+-   Technologic Systems TS-7200 and TS-7800
+
+-   Wandboard
+
+-   Zedboard (Xilinx Zynq)
+
+Not all peripherals are supported on all boards.
+
+What Needs to be Done
+
+-   SATA support needs to be added for boards currently missing it.
+
+-   Other devices, such as watchdog, i2c and bus should be merged from
+    NetBSD.
+
+FreeBSD/ARM related Links
+
+-   Brief history of ARM
+
+-   Platforms supported by NetBSD: CPU architectures: Ports by CPU
+    architecture
+
+Mini-install Guide
+
+Olivier Houchard <cognet@FreeBSD.org> has written a mini-install guide
+for the current FreeBSD source. It is available here.
+
+FreeBSD/ARM mailing list
+
+To subscribe to this list, send mail to
+<freebsd-arm+subscribe@FreeBSD.org> or visit the web interface.
+
+------------------------------------------------------------------------
+
+Last modified on: July 9, 2023 by Graham Perrin
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

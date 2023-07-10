@@ -1,0 +1,277 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 4.10 Release Process
+
+Introduction
+
+This is a specific schedule for the release of FreeBSD 4.10. For more
+general information about the release engineering process, please see
+the Release Engineering section of the web site.
+
+General discussions about the release engineering process or quality
+assurance issues should be sent to the public freebsd-qa mailing list.
+MFC requests should be sent to re@FreeBSD.org.
+
+Schedule
+
+  ----------------------------- ----------------- ----------------- -----------------------------
+  Action                        Expected          Actual            Description
+
+  Reminder announcement         30 Mar 2004       30 Mar 2004       Release Engineers send
+                                                                    announcement email to
+                                                                    developers@FreeBSD.org with a
+                                                                    rough schedule for the
+                                                                    FreeBSD 4.10 release.
+
+  4.10-BETA Testing Guide       30 Mar 2004       30 Mar 2004       A testing guide should be
+  published                                                         published with information
+                                                                    about recent changes and
+                                                                    areas of the system that
+                                                                    should be thoroughly tested
+                                                                    during the pre-release/RC
+                                                                    period.
+
+  Announce the Ports Freeze     03 Apr 2004       03 Apr 2004       Someone from portmgr@ should
+                                                                    email freebsd-ports@ and BCC:
+                                                                    developers@ to set a date for
+                                                                    the week long ports freeze
+                                                                    and tagging of the ports
+                                                                    tree.
+
+  4.10-BETA                     7 Apr 2004        10 Apr 2004       newvers.sh, and release.ent
+                                                                    updated.
+
+  Code freeze begins            7 Apr 2004        7 Apr 2004        After this date, all commits
+                                                                    to the RELENG_4 branch must
+                                                                    be approved by
+                                                                    re@FreeBSD.org. Certain
+                                                                    highly active documentation
+                                                                    committers are exempt from
+                                                                    this rule for routine man
+                                                                    page / release note updates.
+                                                                    Heads-up emails should be
+                                                                    sent to the developers@,
+                                                                    stable@ and qa@ lists.
+
+  RELENG_4_10 branch            20 Apr 2004       21 Apr 2004       The release branch is
+                                                                    created.
+
+  Unfreeze the tree             20 Apr 2004       22 Apr 2004       Announcement to developers@
+                                                                    explaining that commits to
+                                                                    RELENG_4 no longer require
+                                                                    approval. Also note the
+                                                                    policy for commits to the
+                                                                    RELENG_4_10 branch.
+
+  4.10-RC                       20 Apr 2004       24 Apr 2004       newvers.sh and release.ent
+                                                                    updated.
+
+  First release candidate       21 Apr 2004       22 Apr 2004       The first release candidate
+                                                                    for the x86 and Alpha
+                                                                    architecture is released. ISO
+                                                                    images should be uploaded to
+                                                                    ftp-master.FreeBSD.org. A
+                                                                    network install directory
+                                                                    should be uploaded to
+                                                                    ftp-master.FreeBSD.org. The
+                                                                    packages/ directory should be
+                                                                    a relative symlink, as
+                                                                    described in the releng
+                                                                    article. When the builds
+                                                                    begin send a note to
+                                                                    mirror-announce@FreeBSD.org
+                                                                    saying a "Normal Release
+                                                                    Cycle" is beginning, RC ISOs
+                                                                    and install directories will
+                                                                    be coming through the next
+                                                                    few weeks.
+
+  Heads up to -stable           21 Apr 2004       23 Apr 2004       A message should be sent to
+                                                                    qa@FreeBSD.org and
+                                                                    stable@FreeBSD.org after the
+                                                                    first snapshot is uploaded.
+
+  Second release candidate      27 Apr 2004       2 May 2004        Note: the release date of
+                                                                    this candidate depends on the
+                                                                    user experience with RC1.
+
+  Heads up to -stable           28 Apr 2004       3 May 2004        A message should be sent to
+                                                                    qa@FreeBSD.org and
+                                                                    stable@FreeBSD.org after the
+                                                                    second snapshot is uploaded.
+
+  Third release candidate       --                17 May 2004       Note: the release date of
+                                                                    this candidate depends on the
+                                                                    user experience with RC2.
+
+  Heads up to -stable           --                17 May 2004       A message should be sent to
+                                                                    qa@FreeBSD.org and
+                                                                    stable@FreeBSD.org after the
+                                                                    third snapshot is uploaded.
+
+  Ports tree frozen             20 Apr 2004       20 Apr 2004       Only approved commits will be
+                                                                    permitted to the ports/ tree
+                                                                    during the freeze.
+
+  Announce doc/ tree slush      --                12 Apr 2004       Notification of the impending
+                                                                    doc/ tree slush should be
+                                                                    sent to doc@.
+
+  doc/ tree slush               17 Apr 2004       17 Apr 2004       Non-essential commits to the
+                                                                    en_US.ISO8859-1/ subtree
+                                                                    should be delayed from this
+                                                                    point until after the doc/
+                                                                    tree tagging, to give
+                                                                    translation teams time to
+                                                                    synchronize their work.
+
+  Ports tree tagged             27 Apr 2004       28 Apr 2004       RELEASE_4_10_0 tag for
+                                                                    ports/.
+
+  Ports tree unfrozen           27 Apr 2004       28 Apr 2004       After the ports/ tree is
+                                                                    tagged, the ports/ tree will
+                                                                    be re-opened for commits, but
+                                                                    commits made after tagging
+                                                                    will not go in 4.10-RELEASE.
+
+  Final package build starts    --                --                The ports cluster and bento
+                                                                    build final packages.
+
+  doc/ tree tagged.             24 Apr 2004       24 Apr 2004       Version number bumps for doc/
+                                                                    subtree. RELEASE_4_10_0 tag
+                                                                    for doc/. doc/ slush ends at
+                                                                    this time.
+
+  Version numbers bumped.       ~~4 May 2004~~    24 May 2004       The files listed here are
+                                22 May 2004                         updated to reflect the fact
+                                                                    that this is FreeBSD 4.10.
+
+  Update man.cgi on the         ~~4 May 2004~~    25 May 2004       Make sure the 4.10 manual
+  website.                      22 May 2004                         pages are being displayed by
+                                                                    default for the man->web
+                                                                    gateway. Also make sure these
+                                                                    man pages are pointed to by
+                                                                    docs.xml.
+
+  src tree tagged.              ~~4 May 2004~~    25 May 2004       RELENG_4_10_0_RELEASE tag for
+                                22 May 2004                         src/.
+
+  Final builds.                 ~~4 May 2004~~    26 May 2004       Final builds for x86 and
+                                22 May 2004                         Alpha in a pristine
+                                                                    environment.
+
+  Warn                          ~~4 May 2004~~    25 May 2004       Heads up email to
+  mirror-announce@FreeBSD.org   23 May 2004                         mirror-announce@FreeBSD.org
+                                                                    to give admins time to
+                                                                    prepare for the load spike to
+                                                                    come. The site administrators
+                                                                    have frequently requested
+                                                                    advance notice for new ISOs.
+
+  Upload to ftp-master.         ~~4 May 2004~~    26 May 2004       Release uploaded to
+                                23 May 2004                         ftp-master.FreeBSD.org
+                                                                    (packages should have been
+                                                                    done before now, otherwise it
+                                                                    chokes the mirror sites and
+                                                                    propagation of the release
+                                                                    bits takes too long)
+
+  Announcement                  ~~5 May 2004~~    27 May 2004       Announcement sent out after a
+                                24 May 2004                         majority of the mirrors have
+                                                                    received the bits.
+
+  Turn over to the secteam      --                3 June 2004       RELENG_4_10 branch is handed
+                                                                    over to the FreeBSD Security
+                                                                    Officer Team in one or two
+                                                                    weeks after the announcement.
+  ----------------------------- ----------------- ----------------- -----------------------------
+
+Additional Information
+
+-   FreeBSD 4.10 developer todo list.
+-   FreeBSD 4.10 Quality Assurance Guide.
+-   FreeBSD Release Engineering website.
+-   FreeBSD busdma driver project page.
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

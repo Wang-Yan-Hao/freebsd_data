@@ -1,0 +1,120 @@
+[FreeBSD The Power to Serve]
+
+An FreeBSD spenden
+
+ 
+
+-   Startseite
+
+-   Über FreeBSD
+    -   Für Einsteiger
+    -   Eigenschaften
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Bezugsquellen
+    -   Release Information
+    -   Release Engineering
+
+-   Dokumentation
+    -   FAQ
+    -   Handbuch
+    -   Porter-Handbuch
+    -   Entwickler-Handbuch
+    -   Committer's Guide
+    -   Manualpages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   Alle Bücher und Artikel
+
+-   Community
+    -   Mailinglisten
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Entwicklung
+    -   Projektideen
+    -   Git-Spiegelserver
+    -   Subversion-Repository
+    -   GitHub Mirror
+    -   Phabricator (Code Review)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Hilfe
+    -   Kommerzieller Support
+    -   Sicherheit
+    -   Problemberichte
+    -   Problembericht erstellen
+    -   Internet-Ressourcen
+
+-   Foundation
+    -   Geldspende
+    -   Hardwarespende
+
+-   BSD Now
+-   Discord
+-   Events
+-   Forums
+-   IRC
+-   Mailinglisten
+-   Reddit
+-   Twitter
+-   User Groups
+-   YouTube
+
+Internetressourcen
+
+Unsere Internetseiten sind die wichtigste Informationsquelle zu FreeBSD
+und werden weltweit auf zahlreichen Seiten gespiegelt. Versuchen Sie
+daher, als Adresse www.IHR_LAND.FreeBSD.org (beispielsweise
+www.de.FreeBSD.org für Deutschland oder www.au.FreeBSD.org für
+Australien) einzugeben. Alternativ können Sie auch einen Spiegelserver
+aus dem Auswahlmenü auf der Startseite wählen.
+
+Unsere Internetseiten werden in verschiedene Sprachen übersetzt. Links
+zu den übersetzten Seiten finden Sie ebenfalls auf der Startseite.
+
+Zusätzlich existieren weitere, nicht-englischsprachige, Ressourcen:
+
+-   Brasilianisch-portugiesische FAQ
+
+-   Chinesische FAQ
+
+-   Französisch
+
+-   Ungarisch
+
+-   Indonesisch
+
+-   Italienisch
+
+-   Japanisch
+
+-   Koreanisch
+
+-   Portugiesisch
+
+-   Russisch, FAQ
+
+Aktuelle Informationen zu neuen FreeBSD-Versionen und zur Entwicklung
+des Projekts im Allgemeinen finden Sie auf der Seite FreeBSD
+Ankündigungen.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26. Januar 2021 by Sergio Carlavilla Delgado
+
+Rechtliches | © 1995-2023 The FreeBSD Project Alle Rechte vorbehalten.
+Die Marke FreeBSD ist eine eingetragene Marke der FreeBSD Foundation und
+wird vom FreeBSD Project mit freundlicher Genehmigung der The FreeBSD
+Foundation. Kontakt

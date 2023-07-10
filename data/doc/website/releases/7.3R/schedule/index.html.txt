@@ -1,0 +1,195 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 7.3 Release Process
+
+Introduction
+
+This is a specific schedule for the release of FreeBSD 7.3. For more
+general information about the release engineering process, please see
+the Release Engineering section of the web site.
+
+General discussions about the pending release and known issues should be
+sent to the public freebsd-stable mailing list. MFC requests should be
+sent to re@FreeBSD.org.
+
+Schedule
+
+  ---------------------- ------------------ ------------------ ------------------
+  Action                 Expected           Actual             Description
+
+  Release schedule       —                  23 January 2010    Release Engineers
+  announcement                                                 send announcement
+                                                               email to
+                                                               freebsd-stable@
+                                                               with a rough
+                                                               schedule for the
+                                                               FreeBSD 7.3
+                                                               release.
+
+  Code freeze begins     22 January 2010    23 January 2010    After this date,
+                                                               all commits to
+                                                               RELENG_7 must be
+                                                               approved by
+                                                               re@FreeBSD.org.
+                                                               Certain highly
+                                                               active
+                                                               documentation
+                                                               committers are
+                                                               exempt from this
+                                                               rule for routine
+                                                               man page / release
+                                                               note updates.
+                                                               Heads-up emails
+                                                               should be sent to
+                                                               the developers, as
+                                                               well as stable@
+                                                               and qa@ lists.
+
+  BETA1 builds           25 January 2010    27 January 2010    Begin BETA1
+                                                               builds.
+
+  Announce doc/ tree     —                  31 January 2010    Notification of
+  slush                                                        the impending doc/
+                                                               tree slush should
+                                                               be sent to doc@.
+
+  doc/ tree slush        5 February 2010    5 February 2010    Non-essential
+                                                               commits to the
+                                                               en_US.ISO8859-1/
+                                                               subtree should be
+                                                               delayed from this
+                                                               point until after
+                                                               the doc/ tree
+                                                               tagging, to give
+                                                               translation teams
+                                                               time to
+                                                               synchronize their
+                                                               work.
+
+  doc/ tree tagged.      10 February 2010   10 February 2010   Version number
+                                                               bumps for doc/
+                                                               subtree.
+                                                               RELEASE_7_3_0 tag
+                                                               for doc/. doc/
+                                                               slush ends at this
+                                                               time.
+
+  Ports tree feature     8 February 2010    15 February 2010   Only feature safe
+  freeze                                                       commits will be
+                                                               permitted to the
+                                                               ports/ tree during
+                                                               the freeze.
+
+  RELENG_7_3 branch      —                  10 February 2010   The new release
+                                                               branch is created.
+                                                               Update newvers.sh
+                                                               and release.ent on
+                                                               various branches
+                                                               involved.
+
+  RC1 builds             8 February 2010    10 February 2010   Begin RC1 builds.
+
+  RC2 builds             22 February 2010   1 March 2010       Begin RC2 builds.
+
+  RELENG_7_3_0_RELEASE   —                  21 March 2010      The release tag
+  tagged                                                       for 7.3-RELEASE is
+                                                               set on RELENG_7_3
+                                                               branch.
+
+  RELEASE builds         —                  21 March 2010      Begin RELEASE
+                                                               builds.
+
+  Announcement           ~~1 March 2010~~   23 March 2010      Announcement sent
+                         23 March 2010                         out after a
+                                                               majority of the
+                                                               mirrors have
+                                                               received the bits.
+  ---------------------- ------------------ ------------------ ------------------
+
+Additional Information
+
+-   FreeBSD 7.3 status page.
+-   FreeBSD Release Engineering website
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

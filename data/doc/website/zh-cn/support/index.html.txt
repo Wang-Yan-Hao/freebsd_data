@@ -1,0 +1,107 @@
+[FreeBSD The Power to Serve]
+
+捐赠 FreeBSD
+
+ 
+
+-   首页
+
+-   关于
+    -   简介
+    -   特性
+    -   宣传
+    -   营销
+    -   隐私政策
+    -   Projects
+    -   Ports
+
+-   获取 FreeBSD
+    -   发行版本
+    -   发布工程
+
+-   文档
+    -   常见问题合集
+    -   使用手册
+    -   Porter' 手册
+    -   Developer' 手册
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   文档计划入门书
+    -   所有书籍和文档
+
+-   社区
+    -   邮件列表
+    -   论坛
+    -   用户群体
+    -   活动
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   开发
+    -   项目新点子
+    -   Git Repository
+    -   Subversion 仓库
+    -   Git 镜像
+    -   代码审查 (Phabricator)
+    -   Wiki
+    -   持续集成服务
+
+-   支持
+    -   供应商
+    -   安全公告
+    -   问题报告
+    -   提交问题报告
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   基金会
+    -   资金捐赠
+    -   硬件捐赠
+
+-   支持
+-   供应商
+    -   Software
+    -   Hardware
+    -   Consulting
+    -   Internet Service Providers
+    -   Miscellaneous
+-   Security Information
+    -   Advisories
+    -   Errata Notices
+    -   支持的版本
+    -   Unsupported Releases
+    -   How to read FreeBSD Security Advisories
+    -   Charter for the Security Officer and Team
+-   Bug Reports
+    -   Submit a Problem Report
+-   Web Resources
+
+FreeBSD 支持
+
+FreeBSD 拥有为数众多的社区和商业支持供其用户选择。 本站的 社区 栏目中，
+对于用户可以从 FreeBSD 社区， 包括众多 邮件列表 所获取的支持进行了介绍。
+
+许多 供应商 也提供了包括商业产品、 服务， 以及顾问咨询在内的 FreeBSD
+商业服务。
+
+反映问题
+
+您在 FreeBSD 中发现了 bug？ 或者注意到文档中存在纰漏？
+如果还没有人报告过这样的问题， 请告诉我们。
+
+要了解已经有人报告过的问题， 您可以按问题的分类、 责任人、 发起人、
+文本等等条件来 搜索 PR 数据库， 或 查看处于开放状态的全部问题报告。
+
+如果这个问题还没有其它人报告过， 请阅读我们的 问题报告指引 并使用
+问题报告表格 来提交报告。
+
+------------------------------------------------------------------------
+
+Last modified on: January 26, 2021 by Sergio Carlavilla Delgado
+
+法律信息 | © 1995-2023 FreeBSD 项目 保留所有权利。 The mark FreeBSD is a
+registered trademark of The FreeBSD Foundation and is used by The
+FreeBSD Project with the permission of The FreeBSD Foundation. 联系
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

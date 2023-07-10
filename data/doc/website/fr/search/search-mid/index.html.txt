@@ -1,0 +1,100 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   A propos
+-   Fonctionnalités
+-   Applications
+-   Prosélytisme
+-   Marketing
+-   Administration
+-   Nouvelles du projet
+-   Événements
+-   Presse
+-   Ressources artistiques
+-   Logo
+-   Donations
+-   Legal Notices
+-   Politique de confidentialité
+
+Recherche des Message-ID des listes de diffusion
+
+Message-ID:
+
+Answers to a Message-ID:
+
+Vous pouvez uniquement rechercher les en-têtes de courrier électronique
+Message-ID, Resent-Message-id, In-Reply-to, et References. Un Message-ID
+ressemble à <199802242058.MAA24843@monk.via.net>. Aucun autre en-tête de
+courrier électronique n’est supporté. La base de données des Message-ID
+est mise à jour toutes les heures.
+
+Archives au format texte des listes de diffusion.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26 janvier 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

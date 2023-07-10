@@ -1,0 +1,1296 @@
+
+-    Preface
+    -   Intended Audience
+    -   Fourth Edition
+    -   Third Edition
+    -   Second Edition (2004)
+    -   First Edition (2001)
+    -   Organization of This Book
+    -   Conventions used in this book
+    -   Acknowledgments
+-    Part I. Getting Started
+-    Chapter 1. Introduction
+    -   1.1. Synopsis
+    -   1.2. Welcome to FreeBSD!
+    -   1.3. About the FreeBSD Project
+-    Chapter 2. Installing FreeBSD
+    -   2.1. Synopsis
+    -   2.2. Minimum Hardware Requirements
+    -   2.3. Pre-Installation Tasks
+    -   2.4. Starting the Installation
+    -   2.5. Using bsdinstall
+    -   2.6. Allocating Disk Space
+    -   2.7. Fetching Distribution Files
+    -   2.8. Network Interfaces, Accounts, Time Zone, Services and
+        Hardening
+    -   2.9. Troubleshooting
+    -   2.10. Using the Live CD
+-    Chapter 3. FreeBSD Basics
+    -   3.1. Synopsis
+    -   3.2. Virtual Consoles and Terminals
+    -   3.3. Users and Basic Account Management
+    -   3.4. Permissions
+    -   3.5. Directory Structure
+    -   3.6. Disk Organization
+    -   3.7. Mounting and Unmounting File Systems
+    -   3.8. Processes and Daemons
+    -   3.9. Shells
+    -   3.10. Text Editors
+    -   3.11. Devices and Device Nodes
+    -   3.12. Manual Pages
+-    Chapter 4. Installing Applications: Packages and Ports
+    -   4.1. Synopsis
+    -   4.2. Overview of Software Installation
+    -   4.3. Finding Software
+    -   4.4. Using pkg for Binary Package Management
+    -   4.5. Using the Ports Collection
+    -   4.6. Building Packages with Poudriere
+    -   4.7. Post-Installation Considerations
+    -   4.8. Dealing with Broken Ports
+-    Chapter 5. The X Window System
+    -   5.1. Synopsis
+    -   5.2. Installing Xorg
+    -   5.3. Graphic card drivers
+    -   5.4. Xorg Configuration
+    -   5.5. Using Fonts in Xorg
+-    Chapter 6. Wayland
+    -   6.1. Wayland Synopsis
+    -   6.2. The Wayfire Compositor
+    -   6.3. The Hikari Compositor
+    -   6.4. The Sway Compositor
+    -   6.5. Using Xwayland
+    -   6.6. Remote Desktop Using VNC
+    -   6.7. Wayland Login Manager
+    -   6.8. Useful Utilities
+-    Chapter 7. Network
+    -   7.1. Synopsis
+    -   7.2. Setting up the Network
+    -   7.3. Wired Networks
+    -   7.4. Wireless Networks
+    -   7.5. Hostname
+    -   7.6. DNS
+    -   7.7. Troubleshooting
+-    Part II. Common Tasks
+-    Chapter 8. Desktop Environments
+    -   8.1. Synopsis
+    -   8.2. Desktop Environments
+    -   8.3. Browsers
+    -   8.4. Development tools
+    -   8.5. Desktop office productivity
+    -   8.6. Document Viewers
+    -   8.7. Finance
+-    Chapter 9. Multimedia
+    -   9.1. Synopsis
+    -   9.2. Setting Up the Sound Card
+    -   9.3. Audio players
+    -   9.4. Video players
+    -   9.5. Conferencing and Meetings
+    -   9.6. Image Scanners
+-    Chapter 10. Configuring the FreeBSD Kernel
+    -   10.1. Synopsis
+    -   10.2. Why Build a Custom Kernel?
+    -   10.3. Finding the System Hardware
+    -   10.4. The Configuration File
+    -   10.5. Building and Installing a Custom Kernel
+    -   10.6. If Something Goes Wrong
+-    Chapter 11. Printing
+    -   11.1. Quick Start
+    -   11.2. Printer Connections
+    -   11.3. Common Page Description Languages
+    -   11.4. Direct Printing
+    -   11.5. LPD (Line Printer Daemon)
+    -   11.6. Other Printing Systems
+-    Chapter 12. Linux Binary Compatibility
+    -   12.1. Synopsis
+    -   12.2. Configuring Linux Binary Compatibility
+    -   12.3. Linux userlands
+    -   12.4. Advanced Topics
+-    Chapter 13. WINE
+    -   13.1. Synopsis
+    -   13.2. WINE Overview & Concepts
+    -   13.3. Installing WINE on FreeBSD
+    -   13.4. Running a First WINE Program on FreeBSD
+    -   13.5. Configuring WINE Installation
+    -   13.6. WINE Management GUIs
+    -   13.7. WINE in Multi-User FreeBSD Installations
+    -   13.8. WINE on FreeBSD FAQ
+-    Part III. System Administration
+-    Chapter 14. Configuration and Tuning
+    -   14.1. Synopsis
+    -   14.2. Starting Services
+    -   14.3. Configuring cron(8)
+    -   14.4. Managing Services in FreeBSD
+    -   14.5. Configuring System Logging
+    -   14.6. Configuration Files
+    -   14.7. Tuning with sysctl(8)
+    -   14.8. Tuning Disks
+    -   14.9. Tuning Kernel Limits
+    -   14.10. Adding Swap Space
+    -   14.11. Power and Resource Management
+-    Chapter 15. The FreeBSD Booting Process
+    -   15.1. Synopsis
+    -   15.2. FreeBSD Boot Process
+    -   15.3. Device Hints
+    -   15.4. Shutdown Sequence
+-    Chapter 16. Security
+    -   16.1. Synopsis
+    -   16.2. Introduction
+    -   16.3. One-time Passwords
+    -   16.4. TCP Wrapper
+    -   16.5. Kerberos
+    -   16.6. OpenSSL
+    -   16.7. VPN over IPsec
+    -   16.8. OpenSSH
+    -   16.9. Access Control Lists
+    -   16.10. Monitoring Third Party Security Issues
+    -   16.11. FreeBSD Security Advisories
+    -   16.12. Process Accounting
+    -   16.13. Resource Limits
+    -   16.14. Shared Administration with Sudo
+    -   16.15. Using doas as an alternative to sudo
+-    Chapter 17. Jails
+    -   17.1. Synopsis
+    -   17.2. Terms Related to Jails
+    -   17.3. Creating and Controlling Jails
+    -   17.4. Fine Tuning and Administration
+    -   17.5. Updating Multiple Jails
+    -   17.6. Managing Jails with ezjail
+-    Chapter 18. Mandatory Access Control
+    -   18.1. Synopsis
+    -   18.2. Key Terms
+    -   18.3. Understanding MAC Labels
+    -   18.4. Planning the Security Configuration
+    -   18.5. Available MAC Policies
+    -   18.6. User Lock Down
+    -   18.7. Nagios in a MAC Jail
+    -   18.8. Troubleshooting the MAC Framework
+-    Chapter 19. Security Event Auditing
+    -   19.1. Synopsis
+    -   19.2. Key Terms
+    -   19.3. Audit Configuration
+    -   19.4. Working with Audit Trails
+-    Chapter 20. Storage
+    -   20.1. Synopsis
+    -   20.2. Adding Disks
+    -   20.3. Resizing and Growing Disks
+    -   20.4. USB Storage Devices
+    -   20.5. Creating and Using CD Media
+    -   20.6. Creating and Using DVD Media
+    -   20.7. Creating and Using Floppy Disks
+    -   20.8. Using NTFS Disks
+    -   20.9. Backup Basics
+    -   20.10. Memory Disks
+    -   20.11. File System Snapshots
+    -   20.12. Disk Quotas
+    -   20.13. Encrypting Disk Partitions
+    -   20.14. Encrypting Swap
+    -   20.15. Highly Available Storage (HAST)
+-    Chapter 21. GEOM: Modular Disk Transformation Framework
+    -   21.1. Synopsis
+    -   21.2. RAID0 - Striping
+    -   21.3. RAID1 - Mirroring
+    -   21.4. RAID3 - Byte-level Striping with Dedicated Parity
+    -   21.5. Software RAID Devices
+    -   21.6. GEOM Gate Network
+    -   21.7. Labeling Disk Devices
+    -   21.8. UFS Journaling Through GEOM
+-    Chapter 22. The Z File System (ZFS)
+    -   22.1. What Makes ZFS Different
+    -   22.2. Quick Start Guide
+    -   22.3. zpool Administration
+    -   22.4. zfs Administration
+    -   22.5. Delegated Administration
+    -   22.6. Advanced Topics
+<<<<<<< HEAD
+=======
+    -   22.7. Further Resources
+    -   22.8. ZFS Features and Terminology
+-    Chapter 23. Other File Systems
+    -   23.1. Synopsis
+    -   23.2. Linux® File Systems
+-    Chapter 24. Virtualization
+    -   24.1. Synopsis
+    -   24.2. FreeBSD as a Guest on Parallels Desktop for macOS®
+    -   24.3. FreeBSD as a Guest on VMware Fusion for macOS®
+    -   24.4. FreeBSD as a Guest on VirtualBox™
+    -   24.5. FreeBSD as a Host with VirtualBox™
+    -   24.6. FreeBSD as a Host with bhyve
+    -   24.7. FreeBSD as a Xen™-Host
+-    Chapter 25. Localization - i18n/L10n Usage and Setup
+    -   25.1. Synopsis
+    -   25.2. Using Localization
+    -   25.3. Finding i18n Applications
+    -   25.4. Locale Configuration for Specific Languages
+-    Chapter 26. Updating and Upgrading FreeBSD
+    -   26.1. Synopsis
+    -   26.2. FreeBSD Update
+    -   26.3. Updating Bootcode
+    -   26.4. Updating the Documentation Set
+    -   26.5. Tracking a Development Branch
+    -   26.6. Updating FreeBSD from Source
+    -   26.7. Tracking for Multiple Machines
+-    Chapter 27. DTrace
+    -   27.1. Synopsis
+    -   27.2. Implementation Differences
+    -   27.3. Enabling DTrace Support
+    -   27.4. Using DTrace
+-    Chapter 28. USB Device Mode / USB OTG
+    -   28.1. Synopsis
+    -   28.2. USB Virtual Serial Ports
+    -   28.3. USB Device Mode Network Interfaces
+    -   28.4. USB Virtual Storage Device
+-    Part IV. Network Communication
+-    Chapter 29. Serial Communications
+    -   29.1. Synopsis
+    -   29.2. Serial Terminology and Hardware
+    -   29.3. Terminals
+    -   29.4. Dial-in Service
+    -   29.5. Dial-out Service
+    -   29.6. Setting Up the Serial Console
+-    Chapter 30. PPP
+    -   30.1. Synopsis
+    -   30.2. Configuring PPP
+    -   30.3. Troubleshooting PPP Connections
+    -   30.4. Using PPP over Ethernet (PPPoE)
+    -   30.5. Using PPP over ATM (PPPoA)
+-    Chapter 31. Electronic Mail
+    -   31.1. Synopsis
+    -   31.2. Mail Components
+    -   31.3. Sendmail Configuration Files
+    -   31.4. Changing the Mail Transfer Agent
+    -   31.5. Troubleshooting
+    -   31.6. Advanced Topics
+    -   31.7. Setting Up to Send Only
+    -   31.8. Using Mail with a Dialup Connection
+    -   31.9. SMTP Authentication
+    -   31.10. Mail User Agents
+    -   31.11. Using fetchmail
+    -   31.12. Using procmail
+-    Chapter 32. Network Servers
+    -   32.1. Synopsis
+    -   32.2. The inetd Super-Server
+    -   32.3. Network File System (NFS)
+    -   32.4. Network Information System (NIS)
+    -   32.5. Lightweight Directory Access Protocol (LDAP)
+    -   32.6. Dynamic Host Configuration Protocol (DHCP)
+    -   32.7. Domain Name System (DNS)
+    -   32.8. Apache HTTP Server
+    -   32.9. File Transfer Protocol (FTP)
+    -   32.10. File and Print Services for Microsoft® Windows® Clients
+        (Samba)
+    -   32.11. Clock Synchronization with NTP
+    -   32.12. iSCSI Initiator and Target Configuration
+-    Chapter 33. Firewalls
+    -   33.1. Synopsis
+    -   33.2. Firewall Concepts
+    -   33.3. PF
+    -   33.4. IPFW
+    -   33.5. IPFILTER (IPF)
+    -   33.6. Blacklistd
+-    Chapter 34. Advanced Networking
+    -   34.1. Synopsis
+    -   34.2. Gateways and Routes
+    -   34.3. Virtual Hosts
+    -   34.4. Wireless Advanced Authentication
+    -   34.5. Wireless Ad-hoc Mode
+    -   34.6. USB Tethering
+    -   34.7. Bluetooth
+    -   34.8. Bridging
+    -   34.9. Link Aggregation and Failover
+    -   34.10. Diskless Operation with PXE
+    -   34.11. Common Address Redundancy Protocol (CARP)
+    -   34.12. VLANs
+-    Part V. Appendices
+-    Appendix A. Obtaining FreeBSD
+    -   A.1. Mirrors
+    -   A.2. Using Git
+    -   A.3. Using Subversion
+    -   A.4. CD and DVD Sets
+-    Appendix B. Bibliography
+    -   B.1. FreeBSD Bibliography
+    -   B.2. Security Reference
+    -   B.3. UNIX® History
+    -   B.4. Periodicals, Journals, and Magazines
+-    Appendix C. Resources on the Internet
+    -   C.1. Websites
+    -   C.2. Mailing Lists
+    -   C.3. Usenet Newsgroups
+-    Appendix D. OpenPGP Keys
+    -   D.1. Officers
+-    FreeBSD Glossary
+-    Colophon
+-   
+-   
+
+Book menu
+
+Chapter 7. Network
+
+Table of Contents
+
+-   7.1. Synopsis
+-   7.2. Setting up the Network
+-   7.3. Wired Networks
+-   7.4. Wireless Networks
+-   7.5. Hostname
+-   7.6. DNS
+-   7.7. Troubleshooting
+
+7.1. Synopsis
+
+This chapter delves into the topic of network configuration and
+performance, showcasing the robust networking capabilities of the
+FreeBSD operating system. Whether working with wired or wireless
+networks, this chapter provides a comprehensive guide to configuring and
+optimizing network connectivity in FreeBSD.
+
+Before diving into the details, it is beneficial for readers to have a
+basic understanding of networking concepts such as protocols, network
+interfaces, and addressing.
+
+This chapter covers:
+
+-   The ability to configure wired networks in FreeBSD, including
+    network interface setup, addressing, and customization options.
+
+-   The skills to configure wireless networks in FreeBSD, encompassing
+    wireless network interface setup, security protocols, and
+    troubleshooting techniques.
+
+-   FreeBSD’s networking capabilities and its reputation for excellent
+    network performance.
+
+-   An understanding of various network services and protocols supported
+    by FreeBSD, with configuration instructions for DNS, DHCP and more.
+
+More information about how to make advanced network configurations in
+Advanced Networking.
+
+7.2. Setting up the Network
+
+Setting up a wired or wireless connection is a common task for a FreeBSD
+user. This section will show how to identify the wired and wireless
+network adapters and how to configure them.
+
+Before starting with the configuration it is necessary to know the
+following network data:
+
+-   If the network has DHCP
+
+-   If the network does not have DHCP, the static IP to be used
+
+-   The netmask
+
+-   The IP address of the default gateway
+
++-----------------------------------+-----------------------------------+
+|                                   | The network connection may have   |
+|                                   | been configured at installation   |
+|                                   | time by bsdinstall(8).            |
++-----------------------------------+-----------------------------------+
+
+7.2.1. Identify Network Adapters
+
+FreeBSD supports a wide variety of network adapters for both wired and
+wireless networks. Check the Hardware Compatibility List for the used
+FreeBSD release to see if the network adapter is supported.
+
+To get the network adapters used by our system execute the following
+command:
+
+    % pciconf -lv | grep -A1 -B3 network
+
+The output should be similar to the following:
+
+    em0@pci0:0:25:0:        class=0x020000 rev=0x03 hdr=0x00 vendor=0x8086 device=0x10f5 subvendor=0x17aa subdevice=0x20ee
+        vendor     = 'Intel Corporation' (1)
+        device     = '82567LM Gigabit Network Connection' (2)
+        class      = network
+        subclass   = ethernet
+    --
+    iwn0@pci0:3:0:0:        class=0x028000 rev=0x00 hdr=0x00 vendor=0x8086 device=0x4237 subvendor=0x8086 subdevice=0x1211
+        vendor     = 'Intel Corporation' (1)
+        device     = 'PRO/Wireless 5100 AGN [Shiloh] Network Connection' (2)
+        class      = networ
+
+The text before the '@' symbol is the name of the driver controlling the
+device. In this case these are em(4) and iwn(4).
+
+  --- ------------------------------
+  1   Shows the name of the vendor
+  2   Shows the name of the device
+  --- ------------------------------
+
++-----------------------------------+-----------------------------------+
+|                                   | It is only necessary to load the  |
+|                                   | network interface card module if  |
+|                                   | FreeBSD has not detected it       |
+|                                   | correctly.                        |
+|                                   |                                   |
+|                                   | For example, to load the alc(4)   |
+|                                   | module, execute the following     |
+|                                   | command:                          |
+|                                   |                                   |
+|                                   |     # kldload if_alc              |
+|                                   |                                   |
+|                                   | Alternatively, to load the driver |
+|                                   | as a module at boot time, place   |
+|                                   | the following line in             |
+|                                   | /boot/loader.conf:                |
+|                                   |                                   |
+|                                   |     if_alc_load="YES"             |
++-----------------------------------+-----------------------------------+
+
+7.3. Wired Networks
+
+Once the right driver is loaded the network adapter needs to be
+configured. FreeBSD uses the driver name followed by a unit number to
+name the network interface adapter. The unit number represents the order
+in which the adapter is detected at boot time, or is later discovered.
+
+For example, em0 is the first network interface card (NIC) on the system
+using the em(4) driver.
+
+To display the network interface configuration, enter the following
+command:
+
+    % ifconfig
+
+The output should be similar to the following:
+
+    em0: flags=8863<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500
+            options=481249b<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,VLAN_HWCSUM,LRO,WOL_MAGIC,VLAN_HWFILTER,NOMAP>
+            ether 00:1f:16:0f:27:5a
+            inet6 fe80::21f:16ff:fe0f:275a%em0 prefixlen 64 scopeid 0x1
+            inet 192.168.1.19 netmask 0xffffff00 broadcast 192.168.1.255
+            media: Ethernet autoselect (1000baseT <full-duplex>)
+            status: active
+            nd6 options=23<PERFORMNUD,ACCEPT_RTADV,AUTO_LINKLOCAL>
+    lo0: flags=8049<UP,LOOPBACK,RUNNING,MULTICAST> metric 0 mtu 16384
+            options=680003<RXCSUM,TXCSUM,LINKSTATE,RXCSUM_IPV6,TXCSUM_IPV6>
+            inet6 ::1 prefixlen 128
+            inet6 fe80::1%lo0 prefixlen 64 scopeid 0x2
+            inet 127.0.0.1 netmask 0xff000000
+            groups: lo
+            nd6 options=21<PERFORMNUD,AUTO_LINKLOCAL>
+
+In this example, the following devices were displayed:
+
+-   em0: The Ethernet interface.
+
+-   lo0: The loop interface is a software loopback mechanism which may
+    be used for performance analysis, software testing, and/or local
+    communication. More information in lo(4).
+
+The example shows that em0 is up and running.
+
+The key indicators are:
+
+1.  UP means that the interface is configured and ready.
+
+2.  The interface has an IPv4 Internet (inet) address, 192.168.1.19.
+
+3.  The interface has an IPv6 Internet (inet6) address,
+    fe80::21f:16ff:fe0f:275a%em0.
+
+4.  It has a valid subnet mask (netmask), where 0xffffff00 is the same
+    as 255.255.255.0.
+
+5.  It has a valid broadcast address, 192.168.1.255.
+
+6.  The MAC address of the interface (ether) is 00:1f:16:0f:27:5a.
+
+7.  The physical media selection is on autoselection mode
+    (media: Ethernet autoselect (1000baseT <full-duplex>)).
+
+8.  The status of the link (status) is active, indicating that the
+    carrier signal is detected. For em0, the status: no carrier status
+    is normal when an Ethernet cable is not plugged into the interface.
+
+If the ifconfig(8) output had shown something similar to the next output
+it would indicate the interface has not been configured:
+
+    em0: flags=8822<BROADCAST,SIMPLEX,MULTICAST> metric 0 mtu 1500
+            options=481249b<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,VLAN_HWCSUM,LRO,WOL_MAGIC,VLAN_HWFILTER,NOMAP>
+            ether 00:1f:16:0f:27:5a
+            media: Ethernet autoselect
+            status: no carrier
+            nd6 options=29<PERFORMNUD,IFDISABLED,AUTO_LINKLOCAL>
+
+7.3.1. Configuring Static IPv4 Address
+
+This section provides a guide to configuring a static IPv4 address on a
+FreeBSD system.
+
+The network interface card (NIC) configuration can be performed from the
+command line with ifconfig(8) but will not persist after a reboot unless
+the configuration is also added to /etc/rc.conf.
+
++-----------------------------------+-----------------------------------+
+|                                   | If the network was configured     |
+|                                   | during installation by            |
+|                                   | bsdinstall(8), some entries for   |
+|                                   | the network interface card (NICs) |
+|                                   | may be already present. Double    |
+|                                   | check /etc/rc.conf before         |
+|                                   | executing sysrc(8).               |
++-----------------------------------+-----------------------------------+
+
+The IP address can be set executing the following command:
+
+    # ifconfig em0 inet 192.168.1.150/24
+
+To make the change persist across reboots execute the following command:
+
+    # sysrc ifconfig_em0="inet 192.168.1.150 netmask 255.255.255.0"
+
+Add the default router executing the following command:
+
+    # sysrc defaultrouter="192.168.1.1"
+
+Add the DNS records to /etc/resolv.conf:
+
+    nameserver 8.8.8.8
+    nameserver 8.8.4.4
+
+Then restart netif and routing executing the following command:
+
+    # service netif restart && service routing restart
+
+The connection can be tested using ping(8):
+
+    % ping -c2 www.FreeBSD.org
+
+The output should be similar to the following:
+
+    PING web.geo.FreeBSD.org (147.28.184.45): 56 data bytes
+    64 bytes from 147.28.184.45: icmp_seq=0 ttl=51 time=55.173 ms
+    64 bytes from 147.28.184.45: icmp_seq=1 ttl=51 time=53.093 ms
+
+    --- web.geo.FreeBSD.org ping statistics ---
+    2 packets transmitted, 2 packets received, 0.0% packet loss
+    round-trip min/avg/max/stddev = 53.093/54.133/55.173/1.040 ms
+
+7.3.2. Configuring Dynamic IPv4 Address
+
+If the network has a DHCP server, it is very easy to configure the
+network interface to use DHCP. FreeBSD uses dhclient(8) as the DHCP
+client. dhclient(8) will automatically provide the IP, the netmask and
+the default router.
+
+To make the interface work with DHCP execute the following command:
+
+    # sysrc ifconfig_em0="DHCP"
+
+dhclient(8) can be used manually by running the following command:
+
+    # dhclient em0
+
+The output should be similar to the following:
+
+    DHCPREQUEST on em0 to 255.255.255.255 port 67
+    DHCPACK from 192.168.1.1
+    unknown dhcp option value 0x7d
+    bound to 192.168.1.19 -- renewal in 43200 seconds.
+
+In this way it can be verified that the address assignment using DHCP
+works correctly.
+
++-----------------------------------+-----------------------------------+
+|                                   | dhclient(8) client can be started |
+|                                   | in background. This can cause     |
+|                                   | trouble with applications         |
+|                                   | depending on a working network,   |
+|                                   | but it will provide a faster      |
+|                                   | startup in many cases.            |
+|                                   |                                   |
+|                                   | To execute dhclient(8) in         |
+|                                   | background execute the following  |
+|                                   | command:                          |
+|                                   |                                   |
+|                                   |                                   |
+|                                   | # sysrc background_dhclient="YES" |
++-----------------------------------+-----------------------------------+
+
+Then restart netif executing the following command:
+
+    # service netif restart
+
+The connection can be tested using ping(8):
+
+    % ping -c2 www.FreeBSD.org
+
+The output should be similar to the following:
+
+    PING web.geo.FreeBSD.org (147.28.184.45): 56 data bytes
+    64 bytes from 147.28.184.45: icmp_seq=0 ttl=51 time=55.173 ms
+    64 bytes from 147.28.184.45: icmp_seq=1 ttl=51 time=53.093 ms
+
+    --- web.geo.FreeBSD.org ping statistics ---
+    2 packets transmitted, 2 packets received, 0.0% packet loss
+    round-trip min/avg/max/stddev = 53.093/54.133/55.173/1.040 ms
+
+7.3.3. IPv6
+
+IPv6 is the new version of the well-known IP protocol, also known as
+IPv4.
+
+IPv6 provides several advantages over IPv4 as well as many new features:
+
+-   Its 128-bit address space allows for
+    340,282,366,920,938,463,463,374,607,431,768,211,456 addresses. This
+    addresses the IPv4 address shortage and eventual IPv4 address
+    exhaustion.
+
+-   Routers only store network aggregation addresses in their routing
+    tables, thus reducing the average space of a routing table to 8192
+    entries. This addresses the scalability issues associated with IPv4,
+    which required every allocated block of IPv4 addresses to be
+    exchanged between Internet routers, causing their routing tables to
+    become too large to allow efficient routing.
+
+-   Address autoconfiguration (RFC2462).
+
+-   Mandatory multicast addresses.
+
+-   Built-in IPsec (IP security).
+
+-   Simplified header structure.
+
+-   Support for mobile IP.
+
+-   IPv6-to-IPv4 transition mechanisms.
+
+FreeBSD includes the KAME project IPv6 reference implementation and
+comes with everything needed to use IPv6.
+
+This section focuses on getting IPv6 configured and running.
+
+There are three different types of IPv6 addresses:
+
+Unicast
+
+    A packet sent to a unicast address arrives at the interface
+    belonging to the address.
+
+Anycast
+
+    These addresses are syntactically indistinguishable from unicast
+    addresses but they address a group of interfaces. The packet
+    destined for an anycast address will arrive at the nearest router
+    interface. Anycast addresses are only used by routers.
+
+Multicast
+
+    These addresses identify a group of interfaces. A packet destined
+    for a multicast address will arrive at all interfaces belonging to
+    the multicast group. The IPv4 broadcast address, usually
+    xxx.xxx.xxx.255, is expressed by multicast addresses in IPv6.
+
+When reading an IPv6 address, the canonical form is represented as
+x:x:x:x:x:x:x:x, where each x represents a 16 bit hex value. An example
+is FEBC:A574:382B:23C1:AA49:4592:4EFE:9982.
+
+Often, an address will have long substrings of all zeros. A :: (double
+colon) can be used to replace one substring per address. Also, up to
+three leading 0s per hex value can be omitted. For example, fe80::1
+corresponds to the canonical form
+fe80:0000:0000:0000:0000:0000:0000:0001.
+
+A third form is to write the last 32 bits using the well known IPv4
+notation. For example, 2002::10.0.0.1 corresponds to the hexadecimal
+canonical representation 2002:0000:0000:0000:0000:0000:0a00:0001, which
+in turn is equivalent to 2002::a00:1.
+
+To view a FreeBSD system’s IPv6 address execute the following command:
+
+    # ifconfig
+
+The output should be similar to the following:
+
+    em0: flags=8863<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500
+            options=481249b<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,VLAN_HWCSUM,LRO,WOL_MAGIC,VLAN_HWFILTER,NOMAP>
+            ether 00:1f:16:0f:27:5a
+            inet 192.168.1.150 netmask 0xffffff00 broadcast 192.168.1.255
+            inet6 fe80::21f:16ff:fe0f:275a%em0 prefixlen 64 scopeid 0x1
+            media: Ethernet autoselect (1000baseT <full-duplex>)
+            status: active
+            nd6 options=23<PERFORMNUD,ACCEPT_RTADV,AUTO_LINKLOCAL>
+
+In this example, the em0 interface is using
+fe80::21f:16ff:fe0f:275a%em0, an auto-configured link-local address
+which was automatically generated from the MAC address.
+
+Some IPv6 addresses are reserved. A list of reserved addresses can be
+checked in the following table:
+
++-----------------+-----------------+-----------------+-----------------+
+| IPv6 address    | Prefixlength    | Description     | Notes           |
+|                 | (Bits)          |                 |                 |
++=================+=================+=================+=================+
+| ::              | 128 bits        | unspecified     | Equivalent to   |
+|                 |                 |                 | 0.0.0.0 in      |
+|                 |                 |                 | IPv4.           |
++-----------------+-----------------+-----------------+-----------------+
+| ::1             | 128 bits        | loopback        | Equivalent to   |
+|                 |                 | address         | 127.0.0.1 in    |
+|                 |                 |                 | IPv4.           |
++-----------------+-----------------+-----------------+-----------------+
+| :               | 96 bits         | embedded IPv4   | The lower 32    |
+| :00:xx:xx:xx:xx |                 |                 | bits are the    |
+|                 |                 |                 | compatible IPv4 |
+|                 |                 |                 | address.        |
++-----------------+-----------------+-----------------+-----------------+
+| :               | 96 bits         | IPv4 mapped     | The lower 32    |
+| :ff:xx:xx:xx:xx |                 | IPv6 address    | bits are the    |
+|                 |                 |                 | IPv4 address    |
+|                 |                 |                 | for hosts which |
+|                 |                 |                 | do not support  |
+|                 |                 |                 | IPv6.           |
++-----------------+-----------------+-----------------+-----------------+
+| fe80::/10       | 10 bits         | link-local      | Equivalent to   |
+|                 |                 |                 | 169.254.0.0/16  |
+|                 |                 |                 | in IPv4.        |
++-----------------+-----------------+-----------------+-----------------+
+| fc00::/7        | 7 bits          | unique-local    | Unique local    |
+|                 |                 |                 | addresses are   |
+|                 |                 |                 | intended for    |
+|                 |                 |                 | local           |
+|                 |                 |                 | communication   |
+|                 |                 |                 | and are only    |
+|                 |                 |                 | routable within |
+|                 |                 |                 | a set of        |
+|                 |                 |                 | cooperating     |
+|                 |                 |                 | sites.          |
++-----------------+-----------------+-----------------+-----------------+
+| ff00::          | 8 bits          | multicast       |                 |
++-----------------+-----------------+-----------------+-----------------+
+| 2000::-3fff::   | 3 bits          | global unicast  | All global      |
+|                 |                 |                 | unicast         |
+|                 |                 |                 | addresses are   |
+|                 |                 |                 | assigned from   |
+|                 |                 |                 | this pool. The  |
+|                 |                 |                 | first 3 bits    |
+|                 |                 |                 | are 001.        |
++-----------------+-----------------+-----------------+-----------------+
+
+: Table 1. Example IPv6 Reserved Addresses
+
+For further information on the structure of IPv6 addresses, refer to
+RFC3513.
+
+7.3.3.1. Configuring Static IPv6 Address
+
+To configure a FreeBSD system as an IPv6 client with a static IPv6
+address it is necessary to set the IPv6 address.
+
+Execute the following commands to meet the requirements:
+
+    # sysrc ifconfig_em0_ipv6="inet6 2001:db8:4672:6565:2026:5043:2d42:5344 prefixlen 64"
+
+To assign a default router, specify its address executing the following
+command:
+
+    # sysrc ipv6_defaultrouter="2001:db8:4672:6565::1"
+
+7.3.4. Configuring Dynamic IPv6 Address
+
+If the network has a DHCP server, it is very easy to configure the
+network interface to use DHCP. FreeBSD uses dhclient(8) as the DHCP
+client. dhclient(8) will provide automatically the IP, the netmask and
+the default router.
+
+To make the interface works with DHCP execute the following command:
+
+    # sysrc ifconfig_em0_ipv6="inet6 DHCP accept_rtadv"
+    # sysrc rtsold_enable="YES"
+
+7.3.5. Router Advertisement and Host Auto Configuration
+
+This section demonstrates how to setup rtadvd(8) to advertise the IPv6
+default route.
+
+To enable rtadvd(8), execute the following command:
+
+    # sysrc rtadvd_enable="YES"
+
+It is important to specify the interface on which to do IPv6 router
+advertisement. For example, to tell rtadvd(8) to use em0:
+
+    # sysrc rtadvd_interfaces="em0"
+
+Next, create the configuration file, /etc/rtadvd.conf as seen in this
+example:
+
+    em0:\
+        :addrs#1:addr="2001:db8:1f11:246::":prefixlen#64:tc=ether:
+
+Replace em0 with the interface to be used and 2001:db8:1f11:246:: with
+the prefix of the allocation.
+
+For a dedicated /64 subnet, nothing else needs to be changed. Otherwise,
+change the prefixlen# to the correct value.
+
+7.3.6. IPv6 and IPv4 Address mapping
+
+When IPv6 is enabled on a server, there may be a need to enable IPv4
+mapped IPv6 address communication. This compatibility option allows for
+IPv4 addresses to be represented as IPv6 addresses. Permitting IPv6
+applications to communicate with IPv4 and vice versa may be a security
+issue.
+
+This option may not be required in most cases and is available only for
+compatibility. This option will allow IPv6-only applications to work
+with IPv4 in a dual stack environment. This is most useful for third
+party applications which may not support an IPv6-only environment.
+
+To enable this feature execute the following command:
+
+    # sysrc ipv6_ipv4mapping="YES"
+
+7.4. Wireless Networks
+
+Most wireless networks are based on the IEEE® 802.11 standards.
+
+FreeBSD supports networks that operate using 802.11a, 802.11b, 802.11g
+and 802.11n.
+
++-----------------------------------+-----------------------------------+
+|                                   | 802.11ac support on FreeBSD is    |
+|                                   | currently under development.      |
++-----------------------------------+-----------------------------------+
+
+A basic wireless network consists of multiple stations communicating
+with radios that broadcast in either the 2.4GHz or 5GHz band, though
+this varies according to the locale and is also changing to enable
+communication in the 2.3GHz and 4.9GHz ranges.
+
+There are three basic steps to configure a wireless network:
+
+1.  Scan and select an access point
+
+2.  Authenticate the station
+
+3.  Configure an IP address or use DHCP.
+
+The following sections discuss each step.
+
+7.4.1. Quick Start to Connect to a Wireless Network
+
+Connecting FreeBSD to an existing wireless network is a very common
+situation.
+
+This procedure shows the steps required:
+
+-   The first step will be to obtain the SSID (Service Set Identifier)
+    and PSK (Pre-Shared Key) for the wireless network from the network
+    administrator.
+
+-   The second step will be to add an entry for this network to
+    /etc/wpa_supplicant.conf. If the file does not exist, create it:
+
+    network={
+     ssid="myssid" (1)
+     psk="mypsk" (2)
+    }
+
++-----------------------------------+-----------------------------------+
+| 1                                 | Is the SSID of the wireless       |
+|                                   | network. Replace it with the name |
+|                                   | of the wireless network.          |
++-----------------------------------+-----------------------------------+
+| 2                                 | Is the PSK of the wireless        |
+|                                   | network. Replace it with the      |
+|                                   | password of the wireless network. |
+|                                   |                                   |
+|                                   | -   The third step will be to add |
+|                                   |     the network entry to          |
+|                                   |     configure the network on      |
+|                                   |     startup:                      |
++-----------------------------------+-----------------------------------+
+
+    # sysrc wlans_iwn0="wlan0"
+    # sysrc ifconfig_wlan0="WPA DHCP"
+
+-   And the last step will be the restart netif service executing the
+    following command:
+
+    # service netif restart
+
+7.4.2. Basic Wireless Configuration
+
+The first step will be to configure the wireless network card to an
+interface. To find out what wireless network cards are in the system
+check the section Identify Network Adapters.
+
+    # ifconfig wlan0 create wlandevice iwm0
+
+To make the change persist across reboots execute the following command:
+
+    # sysrc wlans_iwn0="wlan0"
+
++-----------------------------------+-----------------------------------+
+|                                   | Since the regulatory situation is |
+|                                   | different in various parts of the |
+|                                   | world, it is necessary to         |
+|                                   | correctly set the domains that    |
+|                                   | apply to your location to have    |
+|                                   | the correct information about     |
+|                                   | what channels can be used.        |
+|                                   |                                   |
+|                                   | The available region definitions  |
+|                                   | can be found in                   |
+|                                   | /etc/regdomain.xml. To set the    |
+|                                   | data at runtime, use ifconfig:    |
+|                                   |                                   |
+|                                   |     # ifconfi                     |
+|                                   | g wlan0 regdomain ETSI country AT |
+|                                   |                                   |
+|                                   | To persist the settings, add it   |
+|                                   | to /etc/rc.conf:                  |
+|                                   |                                   |
+|                                   |     # sysrc create_args_          |
+|                                   | wlan0="country AT regdomain ETSI" |
++-----------------------------------+-----------------------------------+
+
+7.4.3. Scan Wireless Networks
+
+Available wireless networks can be scanned using ifconfig(8).
+
+To list the wireless networks execute the following command:
+
+    # ifconfig wlan0 up list scan
+
+The output should be similar to the following:
+
+    SSID/MESH ID                      BSSID              CHAN RATE    S:N     INT CAPS
+    FreeBSD                           e8:d1:1b:1b:58:ae    1   54M  -47:-96   100 EP   RSN BSSLOAD HTCAP WPS WME
+    NetBSD                            d4:b9:2f:35:fe:08    1   54M  -80:-96   100 EP   RSN BSSLOAD HTCAP WPS WME
+    OpenBSD                           fc:40:09:c6:31:bd   36   54M  -94:-96   100 EPS  VHTPWRENV APCHANREP RSN WPS BSSLOAD HTCAP VHTCAP VHTOPMODE WME
+    GNU-Linux                         dc:f8:b9:a0:a8:e0   44   54M  -95:-96   100 EP   WPA RSN WPS HTCAP VHTCAP VHTOPMODE WME VHTPWRENV
+    Windows                           44:48:b9:b3:c3:ff   44   54M  -84:-96   100 EP   BSSLOAD VHTPWRENV HTCAP WME RSN VHTCAP VHTOPMODE WPS
+    MacOS                             46:48:b9:b3:c3:ff   44   54M  -84:-96   100 EP   BSSLOAD VHTPWRENV HTCAP WME RSN VHTCAP VHTOPMODE WPS
+
+1.  SSID/MESH ID identifies the name of the network.
+
+2.  BSSID identifies the MAC address of the access point.
+
+3.  CAPS field identifies the type of each network and the capabilities
+    of the stations operating there (see the definition of list scan in
+    ifconfig(8) for more details).
+
+7.4.4. Connection and Authentication to a Wireless Network
+
+Once a wireless network has been selected from the list of scanned
+networks, it is necessary to perform the connection ant the
+authentication. In the vast majority of wireless networks,
+authentication is done with a password configured in the router. Other
+schemes require cryptographic handshakes to be completed before data
+traffic can flow, either using pre-shared keys or secrets, or more
+complex schemes that involve backend services such as RADIUS.
+
+7.4.4.1. Authenticate with WPA2/WPA/Personal
+
+The authentication process in a wireless network is managed by
+wpa_supplicant(8).
+
+The wpa_supplicant(8) configuration will be made in the
+/etc/wpa_supplicant.conf file. For more information, see
+wpa_supplicant.conf(5).
+
+Once the scanning of the wireless networks has been carried out, a
+network has been chosen and have the password (PSK), that information
+will be added to the file /etc/wpa_supplicant.conf as in the following
+example:
+
+    network={
+            scan_ssid=1 (1)
+            ssid="FreeBSD" (2)
+            psk="12345678" (3)
+    }
+
+  --- -----------------------------------------------------------------------------
+  1   SSID scan technique. Only need to use this option if the network is hidden.
+  2   Network name.
+  3   Passwork of the wireless network.
+  --- -----------------------------------------------------------------------------
+
+The next step will be to configure the wireless connection in the file
+/etc/rc.conf.
+
+To use a static address it will be necessary to execute the following
+command:
+
+    # sysrc ifconfig_wlan0="inet 192.168.1.20 netmask 255.255.255.0"
+
+To use a dynamic address it will be necessary to execute the following
+command:
+
+    # ifconfig_wlan0="WPA DHCP"
+
+Then restart the network executing the following command:
+
+    # service netif restart
+
++-----------------------------------+-----------------------------------+
+|                                   | More information on how to        |
+|                                   | perform more advanced methods of  |
+|                                   | authentication can be obtained at |
+|                                   | Wireless Advanced Authentication. |
++-----------------------------------+-----------------------------------+
+
+7.4.4.2. Authenticate with Open Networks
+
++-----------------------------------+-----------------------------------+
+|                                   | It is important that the user is  |
+|                                   | very careful when connecting to   |
+|                                   | open networks without any kind of |
+|                                   | authentication.                   |
++-----------------------------------+-----------------------------------+
+
+Once the wireless network scan is done and the SSID of the wireless
+network is selected, execute the following command:
+
+    # ifconfig wlan0 SSID
+
+And then execute dhclient(8) to get the address configured:
+
+    # dhclient wlan0
+
+7.4.5. Using Both Wired and Wireless Connections
+
+A wired connection provides better performance and reliability, while a
+wireless connection provides flexibility and mobility. Laptop users
+typically want to roam seamlessly between the two types of connections.
+
+On FreeBSD, it is possible to combine two or even more network
+interfaces together in a "failover" fashion. This type of configuration
+uses the most preferred and available connection from a group of network
+interfaces, and the operating system switches automatically when the
+link state changes.
+
+Link aggregation and failover is covered in Link Aggregation and
+Failover and an example for using both wired and wireless connections is
+provided at Failover Mode Between Ethernet and Wireless Interfaces.
+
+7.5. Hostname
+
+The hostname represents the fully qualified domain name (FQDN) of the
+host on the network.
+
++-----------------------------------+-----------------------------------+
+|                                   | If no hostname has been set for   |
+|                                   | the host FreeBSD will assign the  |
+|                                   | value Amnesiac.                   |
++-----------------------------------+-----------------------------------+
+
+7.5.1. Check The Current Hostname
+
+hostname(1) can be used to check the current hostname:
+
+    $ hostname
+
+The output should be similar to the following:
+
+    freebsdhostname
+
+7.5.2. Change Hostname
+
+To change the hostname of the host and persist it across reboots execute
+the following command:
+
+    # sysrc hostname="newhostname"
+
+7.6. DNS
+
+The DNS could be understanded as a telephone directory in which an IP is
+identified to a hostname and vice versa.
+
+There are three files who handle how a FreeBSD system interact with the
+DNS. These three files are hosts(5), resolv.conf(5) and nsswitch.conf(5)
+
+Unless otherwise stated in the /etc/nsswitch.conf file, FreeBSD will
+look at the addresses in the /etc/hosts file and then the
+/etc/resolv.conf file.
+
++-----------------------------------+-----------------------------------+
+|                                   | The nsswitch.conf(5) file         |
+|                                   | specifies how the nsdispatch      |
+|                                   | (name-service switch dispatcher)  |
+|                                   | should operate.                   |
+|                                   |                                   |
+|                                   | By default, the hosts section of  |
+|                                   | the /etc/nsswitch.conf file will  |
+|                                   | be as follows:                    |
+|                                   |                                   |
+|                                   |     hosts: files dns              |
+|                                   |                                   |
+|                                   | For example, in case of using the |
+|                                   | nscd(8) service. The order of     |
+|                                   | preference could be changed by    |
+|                                   | leaving the line as follows:      |
+|                                   |                                   |
+|                                   |     hosts: files cache dns        |
++-----------------------------------+-----------------------------------+
+
+7.6.1. Local addresses
+
+The /etc/hosts file is a simple text database who provide host name to
+IP address mappings. Entries for local computers connected via a LAN can
+be added to this file for simplistic naming purposes instead of setting
+up a DNS server. Additionally, /etc/hosts can be used to provide a local
+record of Internet names, reducing the need to query external DNS
+servers for commonly accessed names.
+
+For example, in the case of having a local instance of www/gitlab-ce in
+a local environment, it could be added as follows to the file
+/etc/hosts:
+
+    192.168.1.150 git.example.com git
+
+7.6.2. Configuring the Nameserver
+
+How a FreeBSD system accesses the Internet Domain Name System (DNS) is
+controlled by resolv.conf(5).
+
+The most common entries to /etc/resolv.conf are:
+
++-----------------------------------+-----------------------------------+
+| nameserver                        | The IP address of a name server   |
+|                                   | the resolver should query. The    |
+|                                   | servers are queried in the order  |
+|                                   | listed with a maximum of three.   |
++-----------------------------------+-----------------------------------+
+| search                            | Search list for hostname lookup.  |
+|                                   | This is normally determined by    |
+|                                   | the domain of the local hostname. |
++-----------------------------------+-----------------------------------+
+| domain                            | The local domain name.            |
++-----------------------------------+-----------------------------------+
+
+A typical /etc/resolv.conf looks like this:
+
+    search example.com
+    nameserver 147.11.1.11
+    nameserver 147.11.100.30
+
++-----------------------------------+-----------------------------------+
+|                                   | Only one of the search and domain |
+|                                   | options should be used.           |
++-----------------------------------+-----------------------------------+
+
+When using DHCP, dhclient(8) usually rewrites /etc/resolv.conf with
+information received from the DHCP server.
+
++-----------------------------------+-----------------------------------+
+|                                   | If the machine in which the       |
+|                                   | configuration is being made is    |
+|                                   | not a DNS server,                 |
+|                                   | local-unbound(8) can be used to   |
+|                                   | improve DNS lookup performance.   |
+|                                   |                                   |
+|                                   | To enable it at boot time execute |
+|                                   | the following command:            |
+|                                   |                                   |
+|                                   |     #                             |
+|                                   |  sysrc local_unbound_enable="YES" |
+|                                   |                                   |
+|                                   | To start the local-unbound(8)     |
+|                                   | service execute the following     |
+|                                   | command:                          |
+|                                   |                                   |
+|                                   |     # service local_unbound start |
++-----------------------------------+-----------------------------------+
+
+7.7. Troubleshooting
+
+When troubleshooting hardware and software configurations, check the
+simple things first.
+
+-   Is the network cable plugged in?
+
+-   Are the network services properly configured?
+
+-   Is the firewall configured correctly?
+
+-   Is the NIC supported by FreeBSD?
+
+-   Is the router working correctly?
+
++-----------------------------------+-----------------------------------+
+|                                   | Before sending a bug report,      |
+|                                   | always check the Hardware Notes   |
+|                                   | in the FreeBSD release page,      |
+|                                   | update the version of FreeBSD to  |
+|                                   | the latest STABLE version, check  |
+|                                   | the mailing list archives, and    |
+|                                   | search the Internet.              |
++-----------------------------------+-----------------------------------+
+
+7.7.1. Troubleshooting in Wired Networks
+
+If the card works, yet performance is poor, read through tuning(7).
+Also, check the network configuration as incorrect network settings can
+cause slow connections.
+
+No route to host messages occur if the system is unable to route a
+packet to the destination host. This can happen if no default route is
+specified or if a cable is unplugged. Check the output of netstat -rn
+and make sure there is a valid route to the host. If there is not, read
+Gateways and Routes.
+
+ping: sendto: Permission denied error messages are often caused by a
+misconfigured firewall. If a firewall is enabled on FreeBSD but no rules
+have been defined, the default policy is to deny all traffic, even
+ping(8). Refer to Firewalls for more information.
+
+7.7.2. Troubleshooting in Wireless Networks
+
+This section describes a number of steps to help troubleshoot common
+wireless networking problems.
+
+-   If the access point is not listed when scanning, check that the
+    configuration has not limited the wireless device to a limited set
+    of channels.
+
+-   If the device cannot associate with an access point, verify that the
+    configuration matches the settings on the access point. This
+    includes the authentication scheme and any security protocols.
+    Simplify the configuration as much as possible. If using a security
+    protocol such as WPA2 or WPA, configure the access point for open
+    authentication and no security to see if traffic will pass.
+
+-   Once the system can associate with the access point, diagnose the
+    network configuration using tools like ping(8).
+
+-   There are many lower-level debugging tools. Debugging messages can
+    be enabled in the 802.11 protocol support layer using wlandebug(8).
+
+------------------------------------------------------------------------
+
+Last modified on: July 6, 2023 by Sergio Carlavilla Delgado
+
+Prev
+
+Home
+
+Next
+
+Table of Contents
+
+-   7.1. Synopsis
+-   7.2. Setting up the Network
+-   7.3. Wired Networks
+-   7.4. Wireless Networks
+-   7.5. Hostname
+-   7.6. DNS
+-   7.7. Troubleshooting
+
+------------------------------------------------------------------------
+
+Resources
+
+-   Download PDF
+-   Edit this page
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+

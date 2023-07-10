@@ -1,0 +1,1160 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 10.1-RELEASE Release Notes
+
+Abstract
+
+The release notes for FreeBSD 10.1-RELEASE contain a summary of the
+changes made to the FreeBSD base system on the 10.1-STABLE development
+line. This document lists applicable security advisories that were
+issued since the last release, as well as significant changes to the
+FreeBSD kernel and userland. Some brief remarks on upgrading are also
+presented.
+
+Table of Contents
+
+-   Introduction
+
+-   What’s New
+
+-   Upgrading from previous releases of FreeBSD
+
+Introduction
+
+This document contains the release notes for FreeBSD 10.1-RELEASE. It
+describes recently added, changed, or deleted features of FreeBSD. It
+also provides some notes on upgrading from previous versions of FreeBSD.
+
+This distribution of FreeBSD 10.1-RELEASE is a release distribution. It
+can be found at http://www.FreeBSD.org/releases/ or any of its mirrors.
+More information on obtaining this (or other) release distributions of
+FreeBSD can be found in the Obtaining FreeBSD' appendix to the FreeBSD
+Handbook.
+
+All users are encouraged to consult the release errata before installing
+FreeBSD. The errata document is updated with "late-breaking" information
+discovered late in the release cycle or after the release. Typically, it
+contains information on known bugs, security advisories, and corrections
+to documentation. An up-to-date copy of the errata for FreeBSD
+10.1-RELEASE can be found on the FreeBSD Web site.
+
+What’s New
+
+This section describes the most user-visible new or changed features in
+FreeBSD since 10.0-RELEASE.
+
+Typical release note items document recent security advisories issued
+after 10.0-RELEASE, new drivers or hardware support, new commands or
+options, major bug fixes, or contributed software upgrades. They may
+also list changes to major ports/packages or release engineering
+practices. Clearly the release notes cannot list every single change
+made to FreeBSD between releases; this document focuses primarily on
+security advisories, user-visible changes, and major architectural
+improvements.
+
+Security Advisories
+
+The following security advisories have been issued since FreeBSD
+10.0-RELEASE:
+
++----------------------+----------------------+-----------------------+
+| Advisory             | Date                 | Topic                 |
++======================+======================+=======================+
+| SA-13:14.openssh     | 19 November 2013     | OpenSSH AES-GCM       |
+|                      |                      | memory corruption     |
+|                      |                      | vulnerability         |
++----------------------+----------------------+-----------------------+
+| SA-14:01.bsnmpd      | 14 January 2014      | bsnmpd remote denial  |
+|                      |                      | of service            |
+|                      |                      | vulnerability         |
++----------------------+----------------------+-----------------------+
+| SA-14:02.ntpd        | 14 January 2014      | ntpd distributed      |
+|                      |                      | reflection Denial of  |
+|                      |                      | Service vulnerability |
++----------------------+----------------------+-----------------------+
+| SA-14:03.openssl     | 14 January 2014      | OpenSSL multiple      |
+|                      |                      | vulnerabilities       |
++----------------------+----------------------+-----------------------+
+| SA-14:04.bind        | 14 January 2014      | BIND remote denial of |
+|                      |                      | service vulnerability |
++----------------------+----------------------+-----------------------+
+| SA-14:05.nfsserver   | 8 April 2014         | Deadlock in the NFS   |
+|                      |                      | server                |
++----------------------+----------------------+-----------------------+
+| SA-14:06.openssl     | 8 April 2014         | OpenSSL multiple      |
+|                      |                      | vulnerabilities       |
++----------------------+----------------------+-----------------------+
+| SA-14:07.devfs       | 30 April 2014        | Fix devfs rules not   |
+|                      |                      | applied by default    |
+|                      |                      | for jails             |
++----------------------+----------------------+-----------------------+
+| SA-14:08.tcp         | 30 April 2014        | Fix TCP reassembly    |
+|                      |                      | vulnerability         |
++----------------------+----------------------+-----------------------+
+| SA-14:09.openssl     | 30 April 2014        | Fix OpenSSL           |
+|                      |                      | use-after-free        |
+|                      |                      | vulnerability         |
++----------------------+----------------------+-----------------------+
+| SA-14:10.openssl     | 15 May 2014          | Fix OpenSSL NULL      |
+|                      |                      | pointer deference     |
+|                      |                      | vulnerability         |
++----------------------+----------------------+-----------------------+
+| SA-14:11.sendmail    | 3 June 2014          | Fix sendmail improper |
+|                      |                      | close-on-exec flag    |
+|                      |                      | handling              |
++----------------------+----------------------+-----------------------+
+| SA-14:13.pam         | 3 June 2014          | Fix incorrect error   |
+|                      |                      | handling in PAM       |
+|                      |                      | policy parser         |
++----------------------+----------------------+-----------------------+
+| SA-14:14.openssl     | 5 June 2014          | Multiple              |
+|                      |                      | vulnerabilities       |
++----------------------+----------------------+-----------------------+
+| SA-14:15.iconv       | 24 June 2014         | NULL pointer          |
+|                      |                      | dereference and       |
+|                      |                      | out-of-bounds array   |
+|                      |                      | access                |
++----------------------+----------------------+-----------------------+
+| SA-14:16.file        | 24 June 2014         | Multiple              |
+|                      |                      | vulnerabilities       |
++----------------------+----------------------+-----------------------+
+| SA-14:17.kmem        | 8 July 2014          | Kernel memory         |
+|                      |                      | disclosure in control |
+|                      |                      | messages and SCTP     |
+|                      |                      | notifications         |
++----------------------+----------------------+-----------------------+
+| SA-14:18.openssl     | 9 September 2014     | Multiple              |
+|                      |                      | vulnerabilities       |
++----------------------+----------------------+-----------------------+
+| SA-14:19.tcp         | 16 September 2014    | Denial of Service in  |
+|                      |                      | TCP packet            |
+|                      |                      | processing.           |
++----------------------+----------------------+-----------------------+
+| SA-14:20.rtsold      | 21 October 2014      | Remote buffer         |
+|                      |                      | overflow              |
+|                      |                      | vulnerability.        |
++----------------------+----------------------+-----------------------+
+| SA-14:21.routed      | 21 October 2014      | Remote denial of      |
+|                      |                      | service               |
+|                      |                      | vulnerability.        |
++----------------------+----------------------+-----------------------+
+| SA-14:22.namei       | 21 October 2014      | Memory leak in        |
+|                      |                      | sandboxed namei       |
+|                      |                      | lookup.               |
++----------------------+----------------------+-----------------------+
+| SA-14:23.openssl     | 21 October 2014      | Multiple              |
+|                      |                      | vulerabilities.       |
++----------------------+----------------------+-----------------------+
+| SA-14:25.setlogin    | 04 November 2014     | Kernel stack          |
+|                      |                      | disclosure.           |
++----------------------+----------------------+-----------------------+
+| SA-14:26.ftp         | 04 November 2014     | Remote code           |
+|                      |                      | execution.            |
++----------------------+----------------------+-----------------------+
+
+Kernel Changes
+
+A new sysctl(8), kern.panic_reboot_wait_time, has been added, which
+allows controlling how long the system will wait after panic(9) before
+rebooting. (r260431)
+
+The vt(4) driver has been merged from FreeBSD-CURRENT. To enable vt(4),
+enter set kern.vty=vt at the loader(8) prompt during boot, or add
+kern.vty=vt to loader.conf(5) and reboot the system. (r262861)
+
+Support for hwpmc(4) has been added for PowerPC® 970 class processors.
+(r263122)
+
+Support for ADT7460 and ADT7467 fan controllers found in newer
+PowerBooks™ and iBooks™ has been added to the iicbus(4) driver.
+(r263197)
+
+A panic triggered by removing a urtwn(4) device has been fixed.
+(r263256)
+
+A potential deadlock in the usb(4) stack triggered by detaching USB
+devices that create character devices has been fixed. (r263799)
+
+Support for AMD® Family 16h sensor devices has been added to amdtemp(4).
+(r263869)
+
+The uslcom(4) driver has been updated to support 26 new devices.
+(r265610)
+
+A kernel bug that inhibited proper functionality of the dev.cpu.0.freq
+sysctl(8) on Intel® processors with Turbo Boost™ enabled has been fixed.
+(r266165)
+
+The uart(4) driver has been updated to include support for the Intel®
+Lynx Point KT AMT serial port. (r266436)
+
+The radeonkms(4) driver has been updated to include 32-bit ioctl(2)
+support, allowing 32-bit applications to run on a 64-bit system.
+(r266594)
+
+A bug that would prevent a jail(8) from setting the correct IPv4 source
+address with some operations that required
+security.jail.allow_raw_sockets has been fixed. (r266718)
+
+The hwpmc(4) driver has been updated to support core events from the
+Atom™ Silvermont architecture. (r266911)
+
+The oce(4) driver has been updated with vendor-supplied fixes for big
+endian support, and 20GB/s and 25GB/s link speeds. (r268046)
+
+The FreeBSD virtual memory subsystem has been updated to implement "fast
+path" for the page fault handler. (r270630)
+
+The asmc(4) driver has been updated to support the Apple® Mac Mini 3,1.
+(r271069)
+
+The FreeBSD/powerpc64 default kernel configuration, GENERIC64, has been
+updated to enable the vt(4) console driver for the Sony Playstation 3™
+platform. (r271111)
+
+The FreeBSD/powerpc ofwfb driver, used to provide a graphics console
+when the vt(4) console driver is used, has been modified to work with
+the x11-drivers/xf86-video-scfb port. (r271116) (Sponsored by The
+FreeBSD Foundation)
+
+Note:
+If using an ATI graphics card with the vt(4) driver, the
+x11-servers/xorg-server package must be updated to version 1.12.4_8 or
+newer.
+
+Several performance enchancements to the vt(4) driver have been merged
+from FreeBSD-CURRENT. (r271128) (Sponsored by The FreeBSD Foundation)
+
+The default stack size (KSTACK_PAGES) has been increased from 4 to 8 for
+the powerpc64 architecture. (r271153)
+
+The FreeBSD/powerpc ATI driver has been updated to support enabling and
+disabling the Radeon 9700 backlight, found in the Apple® PowerBook™ G4.
+(r271205)
+
+Hardware context support has been added to the drm/i915 driver, adding
+support for Mesa 9.2 and later. (r271816)
+
+Virtualization support
+
+Support for Microsoft® Hyper-V has been added to FreeBSD/i386 as
+loadable modules, however not available in the GENERIC kernel
+configuration. (r259450)
+
+The bhyve(4) hypervisor now supports soft power-off functionality via
+the ACPI S5 state. (r261090)
+
+Support for FreeBSD/i386 guests has been added to bhyve(4). (r267399)
+
+Support for virtualized XSAVE has been added to bhyve(4), allowing guest
+operating systems to use XSAVE and XSAVE-enabled features, such as AVX.
+(r267427)
+
+The bhyve(4) hypervisor now supports booting from a zfs(8) filesystem.
+(r268932)
+
+A new driver, virtio_random(4), has been added, which allows FreeBSD
+virtual machines to harvest entropy from the hypervisor. (r268933)
+
+The bhyve(4) hypervisor has been synced with the version in
+FreeBSD-CURRENT. (r270159)
+
+A number of enhancements have been added, and several bug fixes,
+including:
+
+-   Post-mortem debugging has been added when a guest virtual machine
+    exits with an "EPT Misconfiguration" error.
+
+-   The hypervisor virtio(4) API has been expanded from 32- to 64-bit.
+
+-   Support for identifying capabilities of the virtual CPU has been
+    added.
+
+-   Support for emulating legacy x86 task switching has been added.
+
+-   Support to list the VT-x features in base kernel dmesg(8) has been
+    added.
+
+-   Support for extended PCI configuration space has been added.
+
+ARM support
+
+The WANDBOARD kernel configuration file has been added. (r259355)
+
+Boot devices may now be specified by setting a u-boot environment
+variable. If a boot device is not specified, the probe mechanism will be
+used. To specify the boot device, set the loaderdev=device u-boot
+environment variable. (r265067)
+
+The nexus(4) driver has been updated to include "Flattened Device Tree"
+support, replacing the fdtbus(4) driver in most cases. (r266000)
+
+The gpioiic(4) and gpioled(4) have been merged from FreeBSD-CURRENT.
+(r266105)
+
+Support for hardware floating point was added to the kernel, and enabled
+by default in the configuration files for all platforms that contain the
+required hardware.
+
+C++ exception handling now works with GCC.
+
+Support for SMP was added to the kernel, and enabled by default in the
+configuration files for all platforms that contain multi-core CPUs.
+
+Support was added for:
+
+-   CHROMEBOOK (Samsung Exynos 5250)
+
+-   COLIBRI (Freescale Vybrid)
+
+-   COSMIC (Freescale Vybrid)
+
+-   IMX53-QSB (Freescale i.MX53)
+
+-   QUARTZ (Freescale Vybrid)
+
+-   RADXA (Rockchip rk30xx)
+
+-   WANDBOARD (Freescale i.MX6)
+
+An I2C driver was added for the RaspberryPi.
+
+Drivers have been added to support TI platforms, such as BEAGLEBONE and
+PANDABOARD:
+
+-   PRUSS (Programmable Realtime Unit Subsystem)
+
+-   MBOX (Mailbox hardware)
+
+-   SDHCI (new faster driver for MMC/SD storage)
+
+-   PPS (Pulse Per Second input on a GPIO/timer pin)
+
+-   PWM (Pulse Width Modulation output)
+
+-   ADC (Analog to Digital converter)
+
+Boot Loader Changes
+
+A kernel selection menu has been added to loader(8). If the "beastie
+menu" is enabled, the kernel to boot may be selected from the kernel
+selection menu. Additional kernels may be listed in loader.conf(5) as a
+comma- or space-separated list. By default, kernel and kernel.old are
+listed. (r262701)
+
+The sys/boot/ sources have been rearranged, moving libstand(3) to a
+directory indicating the library is built as 32-bit. (r271130)
+(Sponsored by The FreeBSD Foundation)
+
+The libstand(3) library has been updated to produce a 64-bit shared
+library for the FreeBSD/amd64 and FreeBSD/powerpc64 architectures.
+(r271135) (Sponsored by The FreeBSD Foundation)
+
+Initial support for UEFI boot has been added. (r271135) (Sponsored by
+The FreeBSD Foundation)
+
+Three new files are installed to /boot, supporting UEFI boot: (r271136)
+(Sponsored by The FreeBSD Foundation)
+
+-   boot1.efi: The UEFI first stage bootstrap file.
+
+-   boot1.efifat: A FAT filesystem image containing an EFI system
+    partition.
+
+-   loader.efi: The third stage bootstrap file.
+
+Serial console and null console support has been added to the UEFI boot
+loader. (r271880)
+
+Support has been added to cache geli(8) passphrases during system boot.
+When a system is configured with multiple GEOM_ELI providers all using
+the same passphrase, the passphrase that is cached after the first entry
+is used for the subsequent GEOM_ELI provider. If the passphrase in the
+cache is incorrect, then a prompt for the passphrase for the next
+provider is displayed. (r272006)
+
+Hardware Support
+
+Network Interface Support
+
+Support for Ralink RT5370 and RT5372 chipsets has been added to the
+run(4) driver. (r259453)
+
+Firmware for the run(4) driver has been updated to version 0.33.
+(r260120)
+
+Support for the Ralink RT3593 chipset has been added to the run(4)
+driver. (r261868)
+
+The nve(4) driver is now deprecated, and the nfe(4) driver should be
+used instead. (r261972)
+
+Support for the axge(4) driver has been added. This driver supports the
+ASIX AX88178A and AX88179 USB ethernet adapters. The AX88178A supports
+USB 2.0, and the AX88179 supports USB 2.0 and 3.0. (r262137)
+
+The urndis(4) driver has been imported from OpenBSD. (r262363)
+
+Support for multiple transmitter/receiver queues has been added to the
+vmx(4) driver. (r264866)
+
+Note:
+The FreeBSD guest operating system must have MSIX enabled as a
+prerequisite for multiple queues.
+
+Support for the ASUS USB-N10 Nano wireless card has been added to the
+urtwn(4) driver. (r265345)
+
+Transmission checksum offloading has been disabled for the RTL8168C and
+RTL8168CP chipsets in the re(4) driver for TCP and UDP frames. This is
+due to a report of UDP datagrams with IP options generating corrupt
+frames. (r266212)
+
+Preliminary support has been added to the urtwn(4) driver for the
+Realtek RTL8188EUS and RTL8188ETV chipsets. (r266578)
+
+A bug in the fast receiver buffer recycle path has been fixed in the
+cxgbe(4) driver. (r267694)
+
+The bundled cxgbe(4) firmware for T4 and T5 cards has been updated to
+version 1.11.27.0. (r267849) (Contributed / provided by Chelsio)
+
+The em(4) driver has been updated to version 7.4.2. (r269196)
+
+The ixgbe(4) tunables have been renamed to match their sysctl(8)
+counterparts: (r269975)
+
++-----------------------------------+-----------------------------------+
+| Old Name                          | New Name                          |
++===================================+===================================+
+| hw.ixgbe.enable_aim               | hw.ix.enable_aim                  |
++-----------------------------------+-----------------------------------+
+| hw.ixgbe.max_interrupt_rate       | hw.ix.max_interrupt_rate          |
++-----------------------------------+-----------------------------------+
+| hw.ixgbe.rx_process_limit         | hw.ix.rx_process_limit            |
++-----------------------------------+-----------------------------------+
+| hw.ixgbe.tx_process_limit         | hw.ix.tx_process_limit            |
++-----------------------------------+-----------------------------------+
+| hw.ixgbe.enable_msix              | hw.ix.enable_msix                 |
++-----------------------------------+-----------------------------------+
+| hw.ixgbe.num_queues               | hw.ix.num_queues                  |
++-----------------------------------+-----------------------------------+
+| hw.ixgbe.txd                      | hw.ix.txd                         |
++-----------------------------------+-----------------------------------+
+| hw.ixgbe.rxd                      | hw.ix.rxd                         |
++-----------------------------------+-----------------------------------+
+| hw.ixgbe.unsupported_sfp          | hw.ix.unsupported_sfp             |
++-----------------------------------+-----------------------------------+
+
+Be sure to update loader.conf(5) if using the old tunables before
+upgrading to FreeBSD 10.1-RELEASE.
+
+The if_nf10bmac(4) driver has been merged from FreeBSD-CURRENT to
+support the NetFPGA-10G Embedded CPU Ethernet Core. (r270061)
+
+The cxgbe(4) driver has been updated to support netmap(4) for the T5
+10G/40G cards. (r270297)
+
+The vtnet(4) driver has been updated to support netmap(4). (r270509)
+
+The urtwn(4) driver has been updated to support the ASUS USB-AC51
+wireless card. (r270514)
+
+The Intel® XL710 ethernet controller driver, ixlv(4), has been merged
+from FreeBSD-CURRENT. (r270631)
+
+Network Protocols
+
+Support for the UDP-Lite protocol (RFC 3828) has been added to the IPv4
+and IPv6 stacks. (r265946)
+
+A bug in sctp(4) that would allow two listening sockets bound to the
+same port has been fixed. (r267771)
+
+Kernel RPC code, which is a base of NFS server took multiple
+optimizations, that significantly improved its performance and SMP
+scalability. (Sponsored by iXsystems)
+
+The iSCSI initiator has been updated to support redirection handling
+when an iSCSI device is configured with multiple IP addresses across
+different network interfaces. Previously, clients connecting to such
+iSCSI devices could require additional client-side configuration.
+(r269065) (Sponsored by The FreeBSD Foundation)
+
+A new sysctl(8), kern.iscsi.fail_on_disconnection, has been added, which
+allows iSCSI clients to remove the attached disk device when the
+connection to the target is dropped, where previously I/O would stop
+until the connection is restored. (r265523) (Sponsored by The FreeBSD
+Foundation)
+
+The iSCSI transmit code has been optimized to coalesce PDUs and avoid
+lock contention. (r265524) (Sponsored by The FreeBSD Foundation)
+
+Several performance optimizations have been made to the iSCSI subsystem,
+including deferring wakeup until enough data has been received to read
+or write a file, reducing CPU usage and throughput performance with
+large I/O workloads. (r265524) (Sponsored by iXsystems)
+
+Support for hostname- and IP-based access restriction has been added to
+the iSCSI ctld(8) daemon. (r263720) (Sponsored by The FreeBSD
+Foundation)
+
+The ctld(8) daemon has been updated to allow overriding the "default"
+portal-group configuration. (r263725) (Sponsored by The FreeBSD
+Foundation)
+
+The ctld(8) daemon now includes a new auth-group, "default", defaulting
+to deny, which is possible to override. (r263726) (Sponsored by The
+FreeBSD Foundation)
+
+Disks and Storage
+
+The geom(4) subsystem has been updated to support I/O direct dispatch.
+When safety requirements are met, it enables avoiding passing I/O
+requests to GEOM g_up/g_down thread, executing them directly in the
+caller context, avoiding CPU bottlenecks in g_up/g_down threads, plus
+avoid several context switches per I/O. (r260385) (Sponsored by
+iXsystems)
+
+The geom(4) RAID driver has been updated to support unmapped I/O.
+(r260385) (Sponsored by iXsystems)
+
+The cam(4) subsystem has been updated to support finer-grained locking,
+direct dispatch and multi-queue, which combined with geom(4) direct
+dispatch, reduces lock congestion and improves SMP scalability of the
+SCSI/ATA stack. (r260387) (Sponsored by iXsystems)
+
+The geom(8) GEOM_MULTIPATH class has been updated to support automatic
+live partition resizing. (r260478)
+
+The virtio_blk(4) driver has been updated to support unmapped I/O.
+(r260857)
+
+The virtio_scsi(4) driver has been updated to support unmapped I/O.
+(r260858)
+
+Support for LUN-based CD changers has been removed from the cd(4)
+driver. (r264522)
+
+Support for BIO_DELETE has been added to zfs(8) zvol volumes. (r264732)
+
+Support for 9th generation HP host bus adapter cards has been added to
+ciss(4). (r264734)
+
+The mpr(4) device has been added, providing support for LSI Fusion-MPT 3
+12Gb SCSI/SATA controllers. (r265388) (Sponsored by LSI)
+
+A new zvol property volmode and sysctl(8) vfs.zfs.vol.mode has been
+added to allow switching zvol between three different ways of exposing
+it to a user: geom, dev and none. (r265678)
+
+The mrsas(4) driver has been added, providing support for LSI MegaRAID
+SAS controllers. The mfi(4) driver will attach to the controller, by
+default. To enable mrsas(4) add hw.mfi.mrsas_enable=1 to
+/boot/loader.conf, which turns off mfi(4) device probing. (r265922)
+(Sponsored by LSI)
+
+Note:
+At this time, the mfiutil(8) utility and the FreeBSD version of MegaCLI
+and StorCli do not work with mrsas(4).
+
+Fixed accounting of BIO_FLUSH operation in geom(8) GEOM_DISK class
+(r266608)
+
+The gstat(8) utility now has an -o option, to display "other"
+operations, such as BIO_FLUSH. (r266610)
+
+The mfi(4) driver has been updated to include support for unmapped I/O.
+(r267084)
+
+The hpt27xx(4) driver has been updated with various vendor-supplied bug
+fixes. (r267457)
+
+Support for unmapped I/O has been added to the xen(4) blkfront driver.
+(r270130) (Sponsored by Citrix Systems R&D)
+
+The geom(8) label class is now aware of resized partitions. This
+corrects an issue where geom resize would resize the partition, but the
+label provider in /dev/gptid/ would not be resized. (r259328) (Sponsored
+by The FreeBSD Foundation)
+
+The gmirror(8) utility now has a resize command, making it easier to
+resize the size of a mirror when all of its components have been
+replaced. (r260502)
+
+Support for MegaRAID Fury cards has been added to the mfi(4) driver.
+(r262967)
+
+The aacraid(4) driver has been updated to version 3.2.5. (r263024)
+
+The GEOM_VINUM option is now able to be built both directly into the
+kernel or as a kldload(8) loadable module. (r265536)
+
+The geom(8) GEOM_PART class has been updated to support automatic
+partition resizing. Changes to the partition size are not saved to disk
+until gpart commit is run, and prior to saving, can be reverted with
+gpart undo. (r265912)
+
+The geom_uncompress(4) module is built by default which, similar to
+geom_uzip(4), provides support for compressed, read-only disk images.
+(r266220)
+
+Support for the disklabel64 partitioning scheme has been added to
+gpart(8). (r268091)
+
+A new sysctl(8) and loader(8) tunable, kern.geom.part.mbr.enforce_chs
+has been added to the geom(8) MBR partition class. When set to a
+non-zero value, GEOM_PART_MBR will automatically recalculate the
+user-specified offset and size for alignment with the disk geometry.
+(r270552)
+
+Many improvements to the CAM Target Layer (CTL): (Sponsored by
+iXsystems)
+
+-   Support for UNMAP, WRITE SAME, COMPARE AND WRITE, XCOPY and some
+    other SCSI commands was added to support VMWare VAAI and Microsoft
+    ODX storage acceleration.
+
+-   The READ/WRITE size limitations were removed by supporting multiple
+    data moves per command. (r265642)
+
+-   Finer-grained per-LUN locking and multiple worker threads for better
+    SMP scapability. (r268556)
+
+-   Memory consumption reduced by several times by disabling some never
+    used functionality. (r269297)
+
+-   The maximum number of SCSI ports increased from 32 to 128. (r269298)
+
+-   Improved zvol integration for better performance. (r269429)
+
+The hptnr(4) driver has been updated to version 1.0.1. (r270810)
+(Contributed / provided by HighPoint)
+
+The mrsas(4) driver has been added to the GENERIC kernel configuration
+on amd64 and i386 architectures. (r271234)
+
+File Systems
+
+The vfs.zfs.zio.use_uma sysctl(8) has been re-enabled. On multi-CPU
+machines with enough RAM, this can easily double zfs(8) performance or
+reduce CPU usage in half. It was originally disabled due to memory and
+KVA exhaustion problem reports, which should be resolved due to several
+changes in the VM subsystem. (r260338)
+
+A new flag, -R, has been added to the fsck_ffs(8) utility. When used,
+fsck_ffs(8) will restart itself when too many critical errors have been
+detected. (r260178) (Contributed / provided by Netflix)
+
+The zfs(8) filesystem has been updated to implement "bookmarks". See
+zfs(8) for further details. (r263407)
+
+The zfs(8) filesystem has been updated to allow tuning the minimum
+"ashift" value when creating new top-level virtual devices (vdevs). To
+set the minimum ashift value, for example when creating a zpool(8) on
+"Advanced Format" drives, set the vfs.zfs.min_auto_ashift sysctl(8)
+accordingly. (r266122)
+
+The libzfs thread pool API has been imported from OpenSolaris, and
+adapted for FreeBSD. This change allows parallel disk scanning, which
+can reduce zpool(8) overall import time in some workloads. (r266612)
+
+The restore(8) utility has been updated to prevent assertion failures
+when restoring a UFS filesystem dump to a ZFS filesystem by writing
+restored files in block sizes that are a multiple of 1024. (r269651)
+
+Two sysctl(8)s have been added to the zfs(8) filesystem: (r269774)
+
+-   vfs.zfs.mg_fragmentation_threshold: The percentage of the metaslab
+    group size that should be considered eligible for allocation, unless
+    all metaslab groups within the metaslab class have also crossed this
+    threshold.
+
+-   vfs.zfs.metaslab.fragmentation_threshold: The maximum percentage of
+    metaslab fragmentation level to keep their active state
+
+The default zfs(8) ARC hash table size has been increased, and a new
+loader(8) tunable, vfs.zfs.arc_average_blocksize, has been added.
+Previously, the hash table could be too small, which would lead to long
+hash chains and limit performance for cached reads. The
+vfs.zfs.arc_average_blocksize tunable allows overriding the default
+block size. The previous default was 65536, and default of the new
+loader(8) tunable is 8192. (r269846)
+
+The Fast File System (FFS) has been updated to support multi-threaded
+soft updates. Previously, soft updates were handled by a single thread,
+and as of this change, now have one thread per FFS mountpoint. (r270157)
+
+The new filesystem automount facility, autofs(5), has been merged from
+FreeBSD-CURRENT. The new autofs(5) facility is similar to that found in
+other UNIX® -like operating systems, such as OS X™ and Solaris™. The
+autofs(5) facility uses a Sun™-compatible auto_master(5) configuration
+file, and is administered with the automount(8) userland utility, and
+the automountd(8) and autounmountd(8) daemons. (r270892) (Sponsored by
+The FreeBSD Foundation)
+
+Userland Changes
+
+A new flag is added to camcontrol(8), -b, which outputs the existing
+buses and their parents. (r260177) (Sponsored by Netflix)
+
+The newsyslog(8) utility has been updated to rotate files based on the
+actual file size instead of the blocks on disk. This matches the
+behavior documented in newsyslog.conf(5). (r262075)
+
+The location of the rctl(8) configuration file can now be overridden in
+rc.conf(5). To use a non-default location, set rctl_rules in rc.conf(5)
+to the location of the file. (r262384)
+
+The ATF test suite has been updated to version 0.20. The test suite is
+disabled by default in FreeBSD 10.1, and can be enabled by adding
+WITH_TESTS=yes to src.conf(5). (r262855)
+
+The libucl library (Unified Configuration Library) has been merged from
+FreeBSD-CURRENT. (r263019)
+
+The pkg(7) bootstrapping utility has been synced with the version in
+FreeBSD-CURRENT. (r263020)
+
+The zfs(8) userland utility has been updated to include aliases for
+snapshot, which allows use of zfs list -t snap and zfs snap. (r263403)
+
+The zfs(8) userland utility has been updated to include a new flag to
+zfs list, -p, which when specified, prints the output in a parsable
+format. (r263405)
+
+The Blowfish password format implementation has been updated. Support
+for $2b$ has been added, allowing use of passwords greater than 256
+characters long. (r263783)
+
+The iconv(3) library has been updated to match NetBSD, providing several
+bug fixes. (r264497)
+
+The date(1) utility has been updated to include a new flag, -R, which
+prints the date and time output as specified in RFC 2822. (r265265)
+
+The bc(1) utility has been updated to version 1.1, in sync with the
+version in OpenBSD. (r265533)
+
+The pmcstat(8) utility has been updated to include a new flag, -a, which
+when specified, produces a full stack track on the sampled points.
+(r265604) (Contributed / provided by Netflix)
+
+The netstat(8) and route(8) utilities have been updated to include a
+shorthand equivalent to the -f inet and -f inet6 address specifiers, -4
+and -6, respectively. (r265701)
+
+The crypt(3) library now defaults to SHA512 for password hashing.
+(r265879)
+
+The gvinum(8) utility has been updated to allow forceful configuration
+reset with the -f flag. Additionally, a bug that would prevent -f from
+properly creating a gvinum(8) configuration has been fixed. (r266014)
+
+The login.conf(5) file now takes precedence over the shell-specific
+environment files. In particular, the PATH, BLOCKSIZE variables are
+commented from /usr/share/skel/dot.profile, and the path, BLOCKSIZE, and
+umask variables have been commented from /usr/share/skel/dot.cshrc.
+(r266029)
+
+The binmiscctl(8) userland utility and related image activator features
+have been merged from FreeBSD-CURRENT. (r266272)
+
+The ps(1) utility has been updated to include the -J flag, used to
+filter output by matching jail(8) IDs and names. Additionally, argument
+0 can be used to -J to only list processes running on the host system.
+(r266279)
+
+The top(1) utility has been updated to filter by jail(8) ID or name, in
+followup to the ps(1) change in r265229. (r266280)
+
+The gstat(8) utility has been updated to include a new flag, -o. When
+set, gstat(8) will display statistics for operations such as BIO_FLUSH.
+(r266610)
+
+The fetch(3) library has been updated to look for root SSL certificates
+in /usr/local/etc/ssl/ before /etc/ssl/. (r266632)
+
+The clang(1)/llvm suite has been updated to version 3.4.1. (r266715)
+
+The Blowfish password format has been changed to $2b$ by default.
+(r266816)
+
+The amount of data collected for hwpmc(4) has been updated to work with
+modern processors and larger amounts of available memory. (r266888)
+
+The pmcstat(8) utility has been updated to include a new flag, -l, which
+ends event collection after the specified number of seconds. (r266890)
+
+The mergemaster(8) utility has been updated to avoid printing
+"/var/tmp/temproot disappeared" if there is nothing to compare.
+(r266953)
+
+The FreeBSD installer, bsdinstall(8), has been updated to include
+optional geli(8)-encrypted or gmirror(8)-mirrored swap devices when
+installing onto a full zfs(8) filesystem. Additionally, the parent
+zfs(8) dataset is now configured with lz4 compression enabled. (r267056)
+
+The default newsyslog.conf(5) now includes files in the
+/etc/newsyslog.conf.d/ and /usr/local/etc/newsyslog.conf.d/ directories
+by default for newsyslog(8). (r267113)
+
+The realpath(1) utility has been updated to return ENOTDIR on paths
+components "." and ".." that are not directories, such as /dev/null/. or
+/dev/null/... (r267161)
+
+A new flag, "onifconsole" has been added to /etc/ttys. This allows the
+system to provide a login prompt via serial console if the device is an
+active kernel console, otherwise it is equivalent to off. (r267236)
+
+Support for legacy PCI devices has been removed from bhyve(8). (r267341)
+
+The bhyve(8) userland utility has been updated to include SMBIOS
+support. A new flag has been added, -U, which allows specifying the UUID
+of the guest in the System Information structure. (r267450)
+
+The FreeBSD Project has migrated from the GNATS bug tracking system to
+Bugzilla. The send-pr(1) utility used for submitting problem reports has
+been replaced with a stub shell script that instructs to use the
+Bugzilla web interface. (r267734)
+
+The patch(1) utility has been updated to include a --dry-run flag, which
+is equivalent to --check and -C. (r267747)
+
+A bug in bsdgrep(1) that would prevent patterns from being matched under
+certain conditions has been fixed. (r267878)
+
+The procstat(1) utility has been updated to include two new flags, -r
+and -H. When -r is specified, procstat(1) will print current resource
+usage about the process(es). When -H is specified, procstat(1) will
+print information about threads rather than the process(es). (r267979)
+
+Note:
+The -H flag is currently only used with -r to display resource usage for
+individual threads, rather than the entire process.
+
+The sed(1) utility has been updated to include a new flag, -u, which
+enables unbuffered output when specified. (r268019)
+
+The mkimg(1) utility has been merged from FreeBSD-CURRENT. (r268161)
+
+The camcontrol(8) has been updated to include a new persist command,
+which allows issuing SCSI PERSISTENT RESERVE IN and
+SCSI PERSISTENT RESERVE OUT. (r268700) (Sponsored by Spectra Logic)
+
+The gstat(8) utility has been updated to include a new flag, -p, which
+displays only physical providers when specified. (r268791)
+
+The kldstat(8) utility has been updated to allow -q to be specified when
+also specifying -n module.ko. (r268903)
+
+The mkimg(1) utility has been updated to include support for both fixed-
+and dynamically-allocated images for the VHD and VMDK formats. (r269177)
+
+The random(4) entropy collection script, /usr/libexec/save-entropy, no
+longer runs within jail(8) environments. (r269220)
+
+The bhyve(8) wrapper script, /usr/share/examples/bhyve/vmrun.sh, has
+been synced with FreeBSD-CURRENT. (r269397)
+
+This update includes:
+
+-   A new flag, -e, has been added, which is used to set loader(8)
+    environment variables.
+
+-   A new flag, -C, has been added, which is used to specify the guest
+    console device.
+
+-   A new flag, -H, has been added, which is used to pass the host path
+    to bhyveload(8).
+
+-   Support for multiple disk and tap(4) devices has been added.
+
+-   The -I flag has been removed.
+
+The nfsd(8) server update to 4.1, adding support for RFC5661, has merged
+from FreeBSD-CURRENT. (r269398)
+
+The ping6(8) utility has been updated to reset itimer when the maximum
+number of packets to send have been reached. This prevents ping6(8) from
+exiting when the interval in set to a small value and a low number of
+packets to send has been specified. (r269800)
+
+The jail(8) utility has been updated to support extra ifconfig(8)
+arguments for the ip4.addr and ip6.addr parameters. This change allows
+carp(4) interfaces to be used within the jail(8). (r269805)
+
+Support for generating and compiling USDT DTrace probes has been
+improved. DTrace USDT files are now handled similar to lex(1) and
+yacc(1) files, meaning support for handling D files as part of the build
+process is built into the SRCS make(1) environment variable. (r269946)
+
+The iscsictl(8) utility has been updated to include a new flag, -M,
+which allows modifying the iSCSI session parameters without requiring
+the session to be removed and added back. (r269968)
+
+The mount_nfs(8) utility has been updated to support specifying the NFS
+version as a key=value pair argument to the -o flag. For example, to
+specify NFS version 4, the syntax to use is -o vers=4. (r270043)
+
+The devd(8) client socket type has been changed to SOCK_SEQPACKET,
+providing sequential packet support. (r270242) (Sponsored by Spectra
+Logic)
+
+Support for the "account" facility has been added to the pam_group(8)
+module. (r270401)
+
+The pathchk(1) utility has been updated to ensure bytes greater than or
+equal to 128 are considered non-portable. (r270890)
+
+The zdb(8) utility is now included in the set of applications installed
+in the /rescue environment, making it possible to examine zfs(8)
+filesystems when /usr is unavailable. (r270997) (Contributed / provided
+by FreeNAS)
+
+Several libc improvements have been merged from illumos™ and Apple®,
+providing better internationalization support and POSIX® compliance.
+
+Support for adding empty partitions has been added to the mkimg(1)
+utility. (r271967)
+
+Support for QCOW and QCOW2 disk image formats has been added to the
+mkimg(1) utility. (r272819)
+
+The mkimg(1) utility has been updated to include three options used to
+print information about mkimg(1) itself: (r273098)
+
++-----------------------------------+-----------------------------------+
+| Option                            | Output                            |
++===================================+===================================+
+| --version                         | The current version of the        |
+|                                   | mkimg(1) utility                  |
++-----------------------------------+-----------------------------------+
+| --formats                         | The disk image file formats       |
+|                                   | supported by mkimg(1)             |
++-----------------------------------+-----------------------------------+
+| --schemes                         | The partition schemes supported   |
+|                                   | by mkimg(1)                       |
++-----------------------------------+-----------------------------------+
+
+[(rc-scripts]] == /etc/rc.d Scripts
+
+The network.subr rc(8) script has been updated to loosen the requirement
+of listing network aliases in numeric order. Previously, a network alias
+of _alias2 would not be created if _alias1 was not defined. (r264438)
+
+The service(8) utility has been updated to check that the rc.d(8)
+directory exists before traversing the directory. (r268098)
+
+A regression introduced in FreeBSD 10.0-RELEASE that would prevent
+proper IPv6 allocation via the jail(8) rc(8) startup script has been
+fixed. (r259141)
+
+The rc(8) restriction requiring mdconfig(8) devices defined in
+rc.conf(5) to be listed sequentially has been removed. (r264438)
+
+The sshd(8) rc.d(8) startup script now generates ED25519 sshd(8) host
+keys if keys do not already exist when ssh_keygen_alg() is invoked.
+(r262566)
+
+Support for vt(4) keyboard maps has been added to the syscons rc.d(8)
+startup script. (r271095)
+
+Support for subdirectories within /etc/rc.conf.d/service/ has been added
+the rc.d(8). This allows creating separate configuration files for
+services such as netif, for example, where each network interface can
+have a separate configuration file. (r271260)
+
+The default rc.conf(5), /etc/defaults/rc.conf, has been updated to
+include /usr/lib32/compat in the default ld-elf32.so.1 search path.
+(r272078)
+
+/etc/periodic Scripts
+
+The daily periodic(8) script 110.clean-tmps has been updated to avoid
+crossing filesystem mount boundaries when cleaning files in /tmp.
+(r272430)
+
+Contributed Software
+
+The xz(1) utility has been updated to a post-5.0.5 snapshot. (r263285)
+
+OpenSSH has been updated to version 6.6p1. (r264377)
+
+The nc(1) utility has been updated to match the version in OpenBSD 5.5.
+(r264911)
+
+Sendmail has been updated to 8.14.9. (r266692)
+
+The file(1) utility and libmagic(3) library have been updated to 5.19.
+(r268515)
+
+The byacc(1) parser has been updated to version 20140422. (r268899)
+
+The lldb(1) debugging library has been updated to the r202189 snapshot.
+(r269024) (Sponsored by DARPA, AFRL)
+
+The unbound(8) caching resolver and ldns have been updated to version
+1.4.22. (r269257)
+
+The "lite" version of Subversion included in the FreeBSD base system and
+its dependencies have been updated: (r269847)
+
+-   apr has been updated to version 1.5.1.
+
+-   apr-util has been updated to version 1.5.3.
+
+-   serf has been updated to version 1.3.7.
+
+-   svnlite has been updated to version 1.8.10.
+
+The nvi(1) editor has been update to version 2.1.2-c80f493b038.
+(r270026)
+
+The fparseln(3) library has been updated to version 1.7. (r270031)
+
+The lukemftpd FTP server has been removed from the FreeBSD base system.
+(r270415)
+
+The timezone database has been updated to version tzdata2014f. (r270817)
+
+OpenPAM has been updated to Ourouparia (20140912). (r271947)
+
+OpenSSL has been updated to version 1.0.1j. (r273399)
+
+Ports/Packages Collection Infrastructure
+
+The pkg(8) package management utility has been updated to version 1.3.8.
+
+Release Engineering and Integration
+
+The services.mkdb(8) utility has been updated to include endianness
+awareness, allowing the services.db database to be created as part of
+the release build, regardless of native- or cross-built releases.
+(r263028)
+
+The release/ scripts have been updated to produce UEFI-capable and
+BIOS-capable CD-ROM ISOs as well as memory stick images for the
+FreeBSD/amd64 architecture. (r271470) (Sponsored by The FreeBSD
+Foundation)
+
+The release/scripts/pkg-stage.sh script has been updated to include a
+symlink to the on-disc version of pkg(8) in the packages/ structure on
+the DVD installer. This allows the pkg(7) bootstrap utility to properly
+locate the Latest/pkg.txz package on the DVD when REPOS_DIR is set to
+/dist/packages/repos, eliminating the need for a network connection or
+explicitly providing the path to the version included on the DVD
+installation medium. (r271943) (Sponsored by The FreeBSD Foundation)
+
+The FreeBSD Release Engineering build tools have been updated to provide
+support for building virtual machine disk images as part of the release
+build process using mkimg(1). The disk image formats currently supported
+include QCOW2, VHD, VMDK, and raw formats. See release(7) for additional
+information. (r273101) (Sponsored by The FreeBSD Foundation)
+
+The FreeBSD Release Engineering build tools have been updated to provide
+support for building FreeBSD virtual machine disk images for the
+Microsoft® Azure cloud hosting platform. This functionality is not
+connected directly to the default release make(1) target, however can be
+invoked by specifying the vm-azure target directly. (r273199)
+#(Sponsored by The FreeBSD Foundation)
+
+Upgrading from previous releases of FreeBSD
+
+[amd64,i386] Binary upgrades between RELEASE versions (and snapshots of
+the various security branches) are supported using the freebsd-update(8)
+utility. The binary upgrade procedure will update unmodified userland
+utilities, as well as unmodified GENERIC kernel distributed as a part of
+an official FreeBSD release. The freebsd-update(8) utility requires that
+the host being upgraded have Internet connectivity.
+
+Source-based upgrades (those based on recompiling the FreeBSD base
+system from source code) from previous versions are supported, according
+to the instructions in /usr/src/UPDATING.
+
+Important:
+Upgrading FreeBSD should only be attempted after backing up all data and
+configuration files.
+
+------------------------------------------------------------------------
+
+Last modified on: June 19, 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

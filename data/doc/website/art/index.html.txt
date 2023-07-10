@@ -1,0 +1,149 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+FreeBSD Art
+
+-   BSD Daemon
+
+-   "Powered by FreeBSD" Logos
+
+-   Old advertisement banners
+
+-   Graphics use
+
+This page contains miscellaneous FreeBSD "art". Suggestions for
+additions can be sent to www@FreeBSD.org. Please note the usage policy
+for these graphics.
+
+BSD Daemon
+
+[BSD Daemon]
+
+Created by Poul-Henning Kamp
+Source: /usr/share/examples/BSD_daemon/ on FreeBSD systems.
+
+[BSD Daemon wielding a hammer] [BSD Daemon waiting tables]
+
+[BSD Daemon editing the news] [BSD Daemon reading documentation] [BSD
+Daemon delivering the latest release]
+
+"Powered by FreeBSD" Logos
+
+[Powered by FreeBSD Logo] [Powered by FreeBSD Logo]
+
+[Powered by FreeBSD Logo] [Powered by FreeBSD Logo] [FreeBSD Hardware
+Partner Logo]
+
+[FreeBSD The Power To Serve Logo]
+
+[FreeBSD The Power To Serve Logo]
+
+[FreeBSD The Power To Serve Logo]
+
+[FreeBSD The Power To Serve Logo]
+
+Old Advertisement Banners
+
+[Adv Banner1] [Adv Banner2]
+
+Graphics Use
+
+The "Powered by FreeBSD" logos above may be downloaded and displayed on
+personal or commercial home pages served by FreeBSD machines. Use of
+this logo or the likeness of the BSD Daemon for profitable gain requires
+the consent of Brian Tao (creator of the "power" logo) and Marshall Kirk
+McKusick (copyright holder for the BSD Daemon image).
+
+Poul-Henning Kamp’s rendering of the BSD Daemon is released under "THE
+BEER-WARE LICENSE". See the README for more information.
+
+Trademarks
+
+The FreeBSD Foundation holds several FreeBSD related trademarks (among
+them the trademark for the term "FreeBSD" itself). For more information
+about these trademarks read the FreeBSD Trademark Usage Terms and
+Conditions.
+
+------------------------------------------------------------------------
+
+Last modified on: March 11, 2023 by Graham Perrin
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

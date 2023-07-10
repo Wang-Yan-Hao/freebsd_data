@@ -1,0 +1,329 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   A propos
+-   Fonctionnalités
+-   Applications
+-   Prosélytisme
+-   Marketing
+-   Administration
+-   Nouvelles du projet
+-   Événements
+-   Presse
+-   Ressources artistiques
+-   Logo
+-   Donations
+-   Legal Notices
+-   Politique de confidentialité
+
+-   RSS 2.0 Feed
+
+FreeBSD News Flash
+
+Novembre 2002
+
+-    25 Novembre, 2002: Le rapport sur le projet FreeBSD de Septembre et
+    Octobre est disponible; voyez la page sur les rapports du projet
+    pour plus d’informations.
+
+-    23 Novembre, 2002: La conférence BSD Japonaise 2002 s’est tenue à
+    Tokyo le 23 Novembre 2002. Lors de cette conférence les utilisateurs
+    FreeBSD/NetBSD/OpenBSD ont pu discuter ensemble sur différents
+    sujets. De plus Apple Computer, Inc. leur a offert d’excellentes
+    conférences sur Mac OS X et Rendezvous. Matsui Securities Co.,Ltd,
+    Yahoo Japan Corporation, et SRS SAKURA Internet Inc. ont décrit des
+    exemples d’utilisation de FreeBSD dans leur environnement de
+    production. Brains Corporation a décrit mmEye, qui est équipé d’un
+    processeur 32bit RISC SH-3 et qui fonctionne sous NetBSD.
+
+    Le résumé de la conférence publié par Mainichi Communications inc.,
+    est disponible à MYCOM PCWEB (mais uniquement en Japonais). Il y
+    avait 172 personnes à cette conférence. Nous sommes enchantés de ce
+    chiffre, si l’on considère que c’était le premier événement
+    Japonais.
+
+-    18 Novembre, 2002: La seconde pré-version développeurs de
+    5.0-CURRENT est maintenant disponible. Consultez les notes de
+    version, l’errata et le nouveau Guide pour les testeurs pour plus
+    d’informations.
+
+-    7 Novembre, 2002: nVidia sort des drivers Geforce pour FreeBSD !
+    Consultez le fichier README pour plus d’informations.
+
+-    1 Novembre, 2002: Nouveau participant : Stéphane Legrand (Projet de
+    Documentation)
+
+Octobre 2002
+
+-    31 Octobre, 2002: Le navigateur web Opera porté sur FreeBSD !
+    Consultez le communiqué de presse officiel pour plus d’informations.
+
+-    22 Octobre, 2002: Nouveau participant : Edwin Groothuis (Ports)
+
+-    18 Octobre, 2002: Nouveau participant : Tilman Linneweh (Ports)
+
+-    18 Octobre, 2002: Nouveau participant : Daichi GOTO (Ports)
+
+-    18 Octobre, 2002: Nouveau participant : Maho Nakata (Ports)
+
+-    16 Octobre, 2002: Nouveau participant : Adam Weinberger (Ports)
+
+-    11 Octobre, 2002: Nouveau participant : Olivier Houchard
+
+-    10 Octobre, 2002: FreeBSD 4.7-RELEASE est sorti. Veuillez consulter
+    la page d’information sur les versions pour plus de détails.
+    Consultez également l’errata après installation pour connaître les
+    dernières informations et/ou les problèmes de dernière minute
+    concernant cette version 4.7.
+
+-    9 Octobre, 2002: Nouveau participant : Eric Moore
+
+-    4 Octobre, 2002: Nouveau participant : Martin Heinen (Projet de
+    Documentation)
+
+-    3 Octobre, 2002: Le rapport de statut pour Juillet-Août est
+    disponible; consultez la page web des rapports de statuts pour plus
+    d’informations.
+
+Septembre 2002
+
+-    10 Septembre, 2002: Nouveau participant : Peter Grehan (PowerPC)
+
+-    2 Septembre, 2002: Notes à propos de USENIX ATC 2002 La conférence
+    des développeurs FreeBSD est maintenant disponible.
+
+-    1 Septembre, 2002: La branche FreeBSD-STABLE de l’arbre des sources
+    est maintenant gelée en préparation de la sortie de FreeBSD 4.7.
+    Cela signifie que toute nouvelle modification à l’arbre des sources
+    de la branche -stable doit tout d’abord être approuvée par l’équipe
+    en charge des versions. La date de sortie prévue pour la 4.7 est le
+    1er Octobre 2002.
+
+-    1 Septembre, 2002: Nouveau participant : David Xu (KSE)
+
+Août 2002
+
+-    21 Août, 2002: Nouveau participant: Oliver Braun (Ports)
+
+-    20 Août, 2002: Nouveau participant: Thomas Quinot
+
+-    15 Août, 2002: Le rapport de status du projet FreeBSD Mai-Juin 2002
+    est disponible; voyez la page Web sur les rapports de status pour
+    plus d’information.
+
+-    15 Août, 2002: FreeBSD 4.6.2-RELEASE est sorti. Veuillez consulter
+    la page d’information sur les versions pour plus de détails.
+    Consultez également l’errata après installation pour connaître les
+    dernières informations et/ou les problèmes de dernière minute
+    concernant cette version 4.6.2.
+
+-    15 Août, 2002: Nouveau participant: Sean Chittenden (Ports)
+
+-    14 Août, 2002: Nouveau participant: Yen-Ming Lee (Ports)
+
+-    8 Août, 2002: Nouveau participant: Jennifer Jihui Yang
+
+-    7 Août, 2002: Nouveau participant: Nate Lawson
+
+-    1 Août, 2002: L’Open Group a généreusement donné plusieurs copies
+    de livres et CD-ROM de "the Authorized Guide to The Single UNIX
+    Specification, Version 3" au Projet de conformité POSIX C99 . Nous
+    apprécions ce don.
+
+Juillet 2002
+
+-    19 Juillet, 2002: Nouveau participant: Alexander Kabaev
+
+-    1 Juillet, 2002: Nouveau participant: Johan Karlsson
+
+Juin 2002
+
+-    25 Juin, 2002: Nouveau participant : Hye-Shik Chang (Ports)
+
+-    18 Juin, 2002: Nouveau participant : Ville Skyttä (projets/cvsweb)
+
+-    16 Juin, 2002: Nouveau participant : Marc Fonvieille (Projet de
+    Documentation)
+
+-    15 Juin, 2002: FreeBSD 4.6-RELEASE est sorti. Veuillez consulter la
+    page d’information sur les versions pour plus de détails. Consultez
+    également l’errata après installation pour connaître les dernières
+    informations et/ou les problèmes de dernière minute concernant cette
+    version 4.6.
+
+-    12 Juin, 2002: Nouveau participant : Alan Eldridge (Ports)
+
+Mai 2002
+
+-    23 Mai, 2002: The Ces directives décrivent les pratiques
+    recommandées d’utilisation des rapports de bogues de FreeBSD.
+
+-    18 Mai, 2002: Le rapport de statut pour Février - Avril est
+    disponible; consultez la page web des rapports de statuts pour plus
+    d’informations.
+
+-    16 Mai, 2002: Nouveau participant : Gordon Tetlow
+
+-    7 Mai, 2002: Nouveau participant : Tony Finch
+
+-    1 Mai, 2002: La branche FreeBSD-STABLE a été gelée en préparation
+    de la version 4.6 de FreeBSD. Cela veut dire que les nouvelles
+    modifications à la branche -stable doivent être approuvées au
+    préalable par l’équipe en charge des versions (release engineering
+    team). Cette version sortira vers le 1er Juin 2002.
+
+Avril 2002
+
+-    29 Avril, 2002: Nouveau participant : Katsushi Kobayashi
+
+-    21 Avril, 2002: Nouveau participant : Eric Anholt
+
+-    15 Avril, 2002: Nouveau participant : Jonathan Mini
+
+-    12 Avril, 2002: Nouveau participant : Tim Robbins
+
+-    11 Avril, 2002: Nouveau participant : Greg Lewis (Ports)
+
+-    8 Avril, 2002: Une version développeur de 5.0-CURRENT est
+    maintenant disponible. Voyez les notes de version pour plus
+    d’informations. Vérifiez aussi l' errata pour la liste des problèmes
+    connus.
+
+-    8 Avril, 2002: Nouveau participant : Gerald Pfeifer (Ports)
+
+-    5 Avril, 2002: Nouveau participant : Joe Marcus Clarke (Ports)
+
+-    1 Avril, 2002: Nouveau participant : Norikatsu Shigemura (Ports)
+
+Mars 2002
+
+-    30 Mars, 2002: Le compte rendu du Sommet des Développeurs FreeBSD
+    du BSDCon 2002 est disponible.
+
+-    29 Mars, 2002: Nouveau participant : SUZUKI Shinsuke (IPv6)
+
+-    28 Mars, 2002: Nouveau participant : Tom Rhodes (Projet de
+    Documentation)
+
+-    19 Mars, 2002: Nouveau participant : Alexander Leidinger (Ports)
+
+-    17 Mars, 2002: Nouveau participant : Ceri Davies (Documentation)
+
+-    12 Mars, 2002: Une nouvelle zone du site de FreeBSD dédiée à la
+    création des versions a été créée. Cette nouvelle section contient
+    des informations au sujet des futures versions de FreeBSD, un agenda
+    spécifique aux versions FreeBSD 4.6 et 5.0, et plus encore.
+
+-    9 Mars, 2002: FreeBSD fonctionne maintenant sur les machines
+    multiprocesseurs sparc64 grâce aux efforts de Jake Burkholder et de
+    Thomas Moestl
+
+-    3 Mars, 2002: Nouveau participant : Maxime Henrion (VFS, SMP, …​)
+
+Février 2002
+
+-    25 Février, 2002: Le rapport de statut de Décembre et de Janvier
+    est disponible; consultez la page web des rapports de statuts pour
+    plus d’informations.
+
+-    25 Février, 2002: Nouveau participant : J.Mallett
+
+-    18 Février, 2002: Nouveau participant: Bernd Walter (Alpha)
+
+-    11 Février, 2002: L’équipe GNOME de FreeBSD est fière de vous
+    annoncer la nouvelle section du site FreeBSD.org dédiée aux
+    différents aspects du GNOME Desktop ainsi que de son environnement
+    de développement sous FreeBSD. Cliquez ici
+
+-    7 Février, 2002: Nouveau participant : Maxim Konovalov
+
+Janvier 2002
+
+-    31 Janvier, 2002: L’annonce et l’appel à contributions pour la
+    session 2002 du BSDCon Europe sont disponibles. Cette conférence se
+    déroulera à Amsterdam, Pays-Bas, en Novembre 2002. Les personnes
+    désirant présenter un article à la conférence devront soumettre un
+    résumé avant le 24 Juin 2002.
+
+-    29 Janvier, 2002: FreeBSD 4.5 est disponible. Merci de consulter la
+    page des informations sur les versions pour plus de détails.
+    N’oubliez pas de consulter l’errata après l’installation pour les
+    informations de dernières minutes au sujet de la version 4.5.
+
+-    12 Janvier, 2002: L’équipe technique de FreeBSD 4.5 a préparé un
+    guide de tests pour la future version 4.5 de FreeBSD. Aidez nous à
+    faire en sorte que FreeBSD 4.5 soit notre version la plus stable et
+    la plus performante que nous ayons jamais eu.
+
+-    10 Janvier, 2002: Aaron Kaplan a réalisé un nouvel article qui
+    explique comment configurer votre système pour utiliser le nouveau
+    symbole Euro sur FreeBSD.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 juin 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

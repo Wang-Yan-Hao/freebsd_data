@@ -1,0 +1,276 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   Documentation
+-   FAQ
+-   Manuel de référence
+-   Pages de manuel
+-   Présentations et papiers
+-   Livres et articles en ligne
+-   Publications
+-   Ressources Web
+-   Pour les débutants
+-   Projet de documentation
+-   Archive
+
+Livres et Articles en ligne
+
+Sur ce site
+
+Toutes les documentations de ce site peuvent être téléchargées dans
+différents formats (HTML, Postscript, PDF et plus encore) et
+compressions (BZip2, Zip) depuis Le site FTP FreeBSD.
+
+Cette documentation est fournie et maintenue par le Projet de
+Documentation FreeBSD, et nous sommes toujours à la recherche de gens
+qui pourraient écrire de nouvelles documentations et maintenir celles
+qui existent déjà.
+
+Livres
+
+Un modèle de développement pour le projet FreeBSD (dev-model)
+Une étude formelle de l’organisation du projet FreeBSD.
+
+La FAQ FreeBSD (faq)
+Questions fréquemment posées, avec les réponses, couvrant tous les
+aspects de FreeBSD.
+
+Le Manuel de Référence FreeBSD (handbook)
+Un document détaillé et toujours en évolution pour les utilisateurs
+FreeBSD.
+
+Le manuel des développeurs FreeBSD (developers-handbook)
+Pour les personnes qui veulent développer des logiciels pour FreeBSD (et
+pas uniquement pour ceux qui développent le système FreeBSD).
+
+Le manuel de l’architecture de FreeBSD (arch-handbook)
+Pour les développeurs système de FreeBSD. Ce livre traite les détails
+architecturaux de nombreux et importants sous-systèmes du noyau FreeBSD.
+
+Le manuel du porteur d’applications (porters-handbook)
+Une lecture indispensable si vous désirez créer un port FreeBSD d’un
+logiciel.
+
+Chapitre 2 du "Conception et implémentation du système d’exploitation
+4.4BSD" (design-44bsd)
+Don de Addison-Wesley. Apporte une vue d’ensemble de la conception de
+4.4BSD dont FreeBSD est à l’origine dérivé.
+
+Introduction au projet de documentation FreeBSD pour les nouveaux
+participants (fdp-primer)
+Tout ce que vous devez savoir pour commencer à participer au projet de
+documentation FreeBSD.
+
+Articles
+
+Pourquoi devriez-vous utiliser une licence de type BSD pour votre projet
+de logiciel libre (bsdl-gpl)
+Décrit les avantages à publier du code sous une licence BSD.
+
+Créer des Produits avec FreeBSD (building-products)
+Comment FreeBSD peut vous aider à créer un produit meilleur.
+
+Le Guide du "Committer" (committers-guide)
+Informations pour les "committers" FreeBSD.>
+
+Participer à FreeBSD (contributing)
+Comment participer au Projet FreeBSD.
+
+Contribuer au catalogue des logiciels portés de FreeBSD
+(contributing-ports)
+Comment aider à la maintenance du catalogue des logiciels portés de
+FreeBSD.
+
+La liste des participants à FreeBSD (contributors)
+Une liste d’organisations et d’individus qui ont aidé au développement
+de FreeBSD.
+
+Expliquer BSD (explaining-bsd)
+Une réponse à la question "Qu’est-ce que BSD?"
+
+Ponts Filtrant (filtering-bridges)
+Configuration des firewalls et du filtrage sur des machines FreeBSD
+agissant en tant que ponts plutôt qu’en tant que routeurs.
+
+Les Fontes et FreeBSD (fonts)
+Une description des diverses technologies pour les fontes sous FreeBSD
+et comment les utiliser avec différents programmes.
+
+Comment obtenir les meilleurs résultats sur la liste de diffusion
+FreeBSD-questions (freebsd-questions)
+Astuces et trucs pour vous aider à augmenter vos chances d’obtenir des
+informations utiles sur la liste de diffusion -questions.
+
+Créer un site miroir de FreeBSD (hubs)
+Le guide complet pour créer un miroir du site web FreeBSD, des serveurs
+CVSup, des serveurs FTP et plus encore.
+
+Vérification indépendante des fonctions IPsec de FreeBSD (ipsec-must)
+Une méthode pour vérifier expérimentalement les fonctions IPsec.
+
+FreeBSD: une alternative libre à Linux (linux-comparison)
+Un document expliquant les différences entre Linux et FreeBSD.
+
+Les questions les plus fréquements posées au sujet des listes de
+diffusion de FreeBSD (mailing-list-faq)
+Comment utiliser les listes de diffusion de la meilleure manière, comme
+par exemple éviter les discussions redondantes et répétées.
+
+Premiers Pas avec FreeBSD (new-users)
+Pour les nouveaux venus à FreeBSD et UNIX®.
+
+Modules d’authentification (pam)
+Un guide sur le système et les modules PAM sous FreeBSD.
+
+Guide sur la gestion des rapports de bogues FreeBSD (pr-guidelines)
+Recommandations sur la gestion des rapport de bogues FreeBSD.
+
+Ecrire des rapports de bogues FreeBSD (problem-reports)
+La meilleure façon de formuler et de soumettre un rapport de bogue au
+projet FreeBSD.
+
+Création des versions FreeBSD (releng)
+Décrit l’approche utilisé par l’équipe en charge des nouvelles versions
+de FreeBSD pour garantir la qualité du système FreeBSD. Il décrit les
+outils disponibles pour ceux qui seraient intéressés par la création de
+versions personnalisées dans le cadre d’une entreprise ou dans un but
+commercial.
+
+Périphériques Séries et UART (serial-uart)
+Informations détaillées sur l’utilisation des ports séries sur FreeBSD,
+avec notamment plusieurs cartes séries multi-ports.
+
+FreeBSD et les Périphériques à Etat Solide (solid-state)
+L’utilisation des périphériques disques à état solide sous FreeBSD.
+
+Conception du système de mémoire virtuelle de FreeBSD (vm-design)
+Une description simple d’accès de la conception du système de mémoire
+virtuelle de FreeBSD.
+
+Sur d’autres sites web
+
+Divers efforts indépendants ont aussi produit une grande quantité
+d’informations utiles sur FreeBSD.
+
+Livres
+
+-   Un guide détaillé de FreeBSD - un essai pour un didacticiel plus
+    lisible, plus "littéraire", expliquant le système d’exploitation
+    FreeBSD. Destiné aux personnes novices sur FreeBSD et UNIX.
+    Actuellement en cours de réalisation.
+
+Articles
+
+-   Niels Jorgensen a écrit une étude sur la dynamique du processus de
+    développement FreeBSD: ``Putting it All in the Trunk, Incremental
+    Software Development in the FreeBSD Open Source Project''
+    [Information Systems Journal (2001) 11, 321-336].
+
+-   Kirk McKusick, l’un des premiers architectes de BSD à l’Université
+    de Berkeley, donne deux cours sur le noyau de BSD 4.4 en utilisant
+    FreeBSD. Pour ceux qui ne peuvent assister physiquement aux cours,
+    une série de cassettes vidéos est aussi disponible.
+
+-   Guide FreeBSD pour les paresseux et les désespérés est un autre
+    manuel plus abordable tentant de fournir des informations de type
+    "how-to" plus lisible sur l’installation et la configuration de
+    FreeBSD.
+
+-   Le mini-guide Linux+FreeBSD décrit comment utiliser Linux et FreeBSD
+    sur le même système. Il présente FreeBSD et traite de la manière
+    dont les deux systèmes d’exploitation peuvent coopérer, par exemple
+    en partageant l’espace de pagination.
+
+-   Introduction à AMD sur FreeBSD
+
+-   Détails sur l’installation de FreeBSD pour les débutants. Ce
+    document est maintenant inclus dans Le Manuel de Référence FreeBSD.
+
+-   Guide de programmation pour les liens dynamiques côté noyau (KLD).
+
+-   Comment écrire des pilotes noyau avec Newbus.
+
+-   Ecrire un gestionnaire de périphérique ISA. Ce document est
+    maintenant inclus dans Le Manuel des Développeurs.
+
+-   Guide de la Programmation en Assembleur sous FreeBSD. Ce document
+    est maintenant inclus dans Le Manuel des Développeurs.
+
+-   Mise en place d’un DNS partagé sur FreeBSD
+
+-   La page SMP contient des informations sur le support SMP avec
+    FreeBSD 4.X et antérieures.
+
+-   L’appendice A du manuel Operating Systems Concepts de Silberschatz,
+    Galvin et Gagne est maintenant disponible en ligne au format PDF.
+    Cet appendice est dédié à FreeBSD et constitue une bonne
+    introduction aux mécanismes internes de FreeBSD.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 juin 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

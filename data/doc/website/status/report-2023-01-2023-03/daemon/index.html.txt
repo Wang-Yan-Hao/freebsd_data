@@ -1,0 +1,124 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+daemon(8) improvements
+
+Links:
+daemon(8) URL: https://man.freebsd.org/daemon/8
+Libera IRC URL: https://libera.chat/
+
+Contact: Ihor Antonov <ihor@antonovs.family>
+Contact: Kyle Evans <kevans@FreeBSD.org>
+
+An ongoing effort to improve code quality and supervision capabilities
+of the daemon utility. Daemon is a tool that can daemonize (send to
+background) or supervise any running process, automatically restarting
+it if it crashes. Daemon is widely used in the ports tree and can be
+used more in base.
+
+This quarter long_opts support was added and the codebase went through
+an initial refactoring phase to prepare it for further changes. There
+are no functional changes so far but more changes are coming. Please
+contact directly or on #freebsd-dev on Libera IRC if you encounter
+unexpected bugs.
+
+Planned work items for the next quarter:
+
+-   use of kqueue for all event sources
+
+-   fix Bug #268580
+
+-   fix Bug #236117
+
+-   fix Bug #254511
+
+-   fix Bug #212829
+
+-   procctl PROC_REAP_ACQUIRE
+
+We are looking for feedback, bug reports (old and new) and feature
+requests.
+
+------------------------------------------------------------------------
+
+Last modified on: April 18, 2023 by Lorenzo Salvadore
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

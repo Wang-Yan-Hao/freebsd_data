@@ -1,0 +1,115 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+GCC in the Ports Tree (lang/gcc*)
+
+Links:
+GCC Project URL: https://gcc.gnu.org
+GCC 10 release series URL: https://gcc.gnu.org/gcc-10/
+
+Contact: Gerald Pfeifer <gerald@pfeifer.com>
+
+With the great help of linimon@ GCC 10 became the default version of GCC
+in the Ports Collection bringing many improvements and fixes.
+
+Looking one step ahead, GCC 11 is now available as a port and even for
+use as GCC_DEFAULT via Mk/bsd.default-versions.mk .
+
+Modern GCC ports like this now feature support for powerpcle, and most
+related changes also made it it upstream.
+
+On the infrastructure side, USE_GCC now allows for a build time-only
+dependency, e.g. USE_GCC=yes:build .
+
+And in case you are developing other ports, USE_GCC=any is a thing of
+the past and USE_GCC no longer tries to use the old 4.2-based system
+compiler (/usr/bin/gcc) even if present.
+
+Finally, after some two decades of maintaining FreeBSD’s lang/gcc*
+ports, the time has come to hand over the baton and largely step back.
+Please reach out if you are want to help - we’d hate to simply drop
+maintainership and would be happy to collaborate and transition.
+
+------------------------------------------------------------------------
+
+Last modified on: July 24, 2021 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

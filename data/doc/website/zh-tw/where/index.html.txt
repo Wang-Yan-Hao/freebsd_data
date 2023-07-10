@@ -1,0 +1,283 @@
+[FreeBSD The Power to Serve]
+
+捐贈 FreeBSD
+
+ 
+
+-   首頁
+
+-   關於
+    -   簡介
+    -   特色
+    -   宣傳
+    -   行銷
+    -   隱私政策
+    -   Projects
+    -   Ports
+
+-   取得 FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   文件
+    -   常見問題集
+    -   使用手冊
+    -   Porter 手冊
+    -   Developer 手冊
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   文件計畫入門書
+    -   所有書籍與文章
+
+-   社群
+    -   郵件論壇
+    -   論壇
+    -   愛用者組織
+    -   活動
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   開發者
+    -   計畫構想
+    -   Git 檔案庫
+    -   Subversion 檔案庫
+    -   Git 鏡像站
+    -   程式碼審查 (Phabricator)
+    -   Wiki
+    -   持續整合服務
+
+-   支援
+    -   供應商
+    -   安全資訊
+    -   問題回報
+    -   提交問題回報
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   基金會
+    -   資金捐贈
+    -   硬體捐贈
+
+-   取得 FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+下載 FreeBSD
+
+選擇一個架構
+
+大多數 FreeBSD 使用者所擁有的硬體設備是 amd64, i386, 或是 armv6
+其中一種架構。
+
+最新的個人電腦使用 amd64 架構，包含 Intel® 的處理器。擁有超過 3 GB
+記憶體的電腦應該使用 amd64 架構。 如果電腦比較舊型，僅支援 32
+位元，請使用 i386。 對於嵌入式和單板電腦(SBC) 像是 Raspberry Pi、 Beagle
+Bone Black、 Panda Board 和 Zed Board，請使用支援 ARMv6 和 ARMv7
+處理器的 armv6 SD 卡映像檔。
+
+所有其他的使用者應參考支援 FreeBSD 平台的 完整清單
+
+選擇一個映像檔
+
+FreeBSD 安裝程式有許多不同的格式可供下載，包含 CD (disc1)、DVD (dvd1)
+及網路安裝 (bootonly) 大小的 ISO
+光碟映像檔，以及一般或迷你大小的隨身碟映像檔。最近版本的 FreeBSD 也提供
+可延展的虛擬機映像檔與嵌入式平台使用的 SD 卡映像檔。
+
+FreeBSD 部署統計資訊
+
+雖然 FreeBSD 不蒐集部屬統計資訊，但擁有這些統計資訊卻相當重要。
+請考慮安裝sysutils/bsdstats
+來蒐集硬體與軟體統計資訊，協助開發人員了解該如何最好的集中精力。收集的資訊可以在bsdstats.org網站取得。
+
+FreeBSD 13.1-RELEASE
+
++-----------------+-----------------+-----------------+-----------------+
+| 安裝程式映像檔  | 虛擬機映像檔    | SD 卡映像檔     | 文件            |
++=================+=================+=================+=================+
+| -   amd64       | -   README      | -   aarch64     | -   發行於: May |
+|                 |                 |                 |     16, 2022    |
+| -   i386        | -   amd64       | -   -   PINE64  |                 |
+|                 |                 |                 | -   發行說明    |
+| -   powerpc     | -   i386        |                 |                 |
+|                 |                 |  -   PINE64-LTS | -   Readme      |
+| -   powerpc64   | -   aarch64     |                 |                 |
+|                 |                 |     -   ROCK64  | -               |
+| -   powerpc64le | -   riscv64     |                 |    硬體相容性表 |
+|                 |                 |                 |                 |
+| -   powerpcspe  | -   amd64       |   -   ROCKPRO64 | -   安裝說明    |
+|                 |     (BASIC-CI)  |                 |                 |
+| -   armv6       |                 |     -   RPI     | -   勘誤        |
+|                 |                 |         (3/4)   |                 |
+| -   armv7       |                 |                 | -   校驗值      |
+|                 |                 | -   armv6/armv7 |                 |
+| -   aarch64     |                 |                 |                 |
+|                 |                 | -               |                 |
+| -   riscv64     |                 |   -   GENERICSD |                 |
+|                 |                 |                 |                 |
+|                 |                 |     -   RPI-B   |                 |
+|                 |                 |                 |                 |
+|                 |                 | -   riscv64     |                 |
+|                 |                 |                 |                 |
+|                 |                 | -               |                 |
+|                 |                 |   -   GENERICSD |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+FreeBSD 13.0-RELEASE
+
++-----------------+-----------------+-----------------+-----------------+
+| 安裝程式映像檔  | 虛擬機映像檔    | SD 卡映像檔     | 文件            |
++=================+=================+=================+=================+
+| -   amd64       | -   README      | -   aarch64     | -   發行於:     |
+|                 |                 |                 |     April 13,   |
+| -   i386        | -   amd64       | -   -   PINE64  |     2021        |
+|                 |                 |                 |                 |
+| -   powerpc     | -   i386        |                 | -   發行說明    |
+|                 |                 |  -   PINE64-LTS |                 |
+| -   powerpc64   | -   aarch64     |                 | -   Readme      |
+|                 |                 |     -   ROCK64  |                 |
+| -   powerpc64le | -   riscv64     |                 | -               |
+|                 |                 |                 |    硬體相容性表 |
+| -   powerpcspe  |                 |   -   ROCKPRO64 |                 |
+|                 |                 |                 | -   安裝說明    |
+| -   armv6       |                 |     -   RPI     |                 |
+|                 |                 |         (3/4)   | -   勘誤        |
+| -   armv7       |                 |                 |                 |
+|                 |                 | -   armv6/armv7 | -   校驗值      |
+| -   aarch64     |                 |                 |                 |
+|                 |                 | -               |                 |
+| -   riscv64     |                 |   -   GENERICSD |                 |
+|                 |                 |                 |                 |
+|                 |                 |     -   RPI-B   |                 |
+|                 |                 |                 |                 |
+|                 |                 | -   riscv64     |                 |
+|                 |                 |                 |                 |
+|                 |                 | -               |                 |
+|                 |                 |   -   GENERICSD |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+FreeBSD 12.3-RELEASE
+
++-----------------+-----------------+-----------------+-----------------+
+| 安裝程式映像檔  | 虛擬機映像檔    | SD 卡映像檔     | 文件            |
++=================+=================+=================+=================+
+| -   amd64       | -   README      | -   RPI-B       | -               |
+|                 |                 |                 |                 |
+| -   i386        | -   amd64       | -   BANANAPI    | -   發行於:     |
+|                 |                 |                 |     December 7, |
+| -   powerpc     | -   i386        | -   CUBIEBOARD  |     2021        |
+|                 |                 |                 |                 |
+| -   powerpc64   | -   aarch64     | -   CUBIEBOARD2 | -   發行說明    |
+|                 |                 |                 |                 |
+| -   powerpcspe  |                 | -   CUB         | -   Readme      |
+|                 |                 | OX-HUMMINGBOARD |                 |
+| -   sparc64     |                 |                 | -               |
+|                 |                 | -   GENERICSD   |    硬體相容性表 |
+| -   aarch64     |                 |                 |                 |
+|                 |                 | -   RPI2        | -   安裝說明    |
+|                 |                 |                 |                 |
+|                 |                 | -   PANDABOARD  | -   勘誤        |
+|                 |                 |                 |                 |
+|                 |                 | -   WANDBOARD   | -   校驗值      |
+|                 |                 |                 |                 |
+|                 |                 | -   PINE64      |                 |
+|                 |                 |                 |                 |
+|                 |                 | -   PINE64-LTS  |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+開發快照
+
+如果您對僅針對開發者和骨灰級測試人員的 FreeBSD-CURRENT (也就是
+&rel.head;-CURRENT) 純實驗性 快照 版本感興趣，請參考 FreeBSD 的快照版本
+頁面。 想大致了解更多關於過去、現在及未來的發行版本的發行資訊，請參考
+發行版本資訊頁面。
+
+FreeBSD 14.0-CURRENT
+
+Installer and SD card images are available for amd64, i386, powerpc,
+powerpc64, powerpc64le, powerpcspe, armv6, armv7, aarch64, and riscv64.
+
+VM images are available for amd64, i386, aarch64, and riscv64.
+
+FreeBSD 13.1-STABLE
+
+Installer and SD card images are available for amd64, i386, powerpc,
+powerpc64, powerpc64le, powerpcspe, armv6, armv7, aarch64, and riscv64.
+
+VM images are available for amd64, i386, aarch64, and riscv64.
+
+FreeBSD 12.3-STABLE
+
+Installer and SD card images are available for amd64, i386, powerpc,
+powerpc64, powerpcspe, sparc64, armv6, armv7, and aarch64.
+
+VM images are available for amd64 and i386.
+
+如果您打算從 HTTP 或 FTP 取得 FreeBSD，請查閱手冊中的鏡像站點清單來找尋
+是否有更靠近您的鏡像站
+
+安裝 FreeBSD
+
+安裝 FreeBSD 有許多選擇，包含從 CD-ROM, DVD, USB 隨身碟或甚至直接使用
+匿名 FTP, HTTP 或 NFS。在下載完整的 FreeBSD 之前，請先閱讀FreeBSD
+安裝說明
+
+購買 FreeBSD
+
+FreeBSD 可以在 FreeBSD Mall 或其他的 CD-ROM 與 DVD 發行商那裡取得 CD-ROM
+或 DVD。
+
+過去的發行版
+
+欲下載過去的發行版，請至 FTP 存檔下載。
+
+FreeBSD衍生的作業系統發行版
+
+FreeBSD 被廣泛用作其他商業及開源作業系統的建構模塊。以下的項目
+被廣泛使用且特別令 FreeBSD 使用者感興趣。
+
+-   FreeNAS 是一個基於 FreeBSD 的 開源儲存平台，其支援在 Windows、 Apple
+    與 UNIX-like 作業系統上共用。
+
+-   TrueOS （前身為 PC-BSD）是一個具備圖形化安裝界面的 FreeBSD
+    衍生作業系統，其桌面選項安裝 Lumina 桌面環境， 一個完全 BSD
+    許可的桌面環境, 其令人印象深刻的桌面工具旨在方便一般電腦使用者使用。
+
+-   pfSense 是一個 基於 FreeBSD 訂製發行版，專門用作防火牆與路由器。
+
+應用和實用軟體
+
+Ports 套件庫
+
+FreeBSD Ports 套件庫是各種已經移植到 FreeBSD 的軟體和應用軟體集合。
+
+請見使用手冊中的 安裝應用程式：套件與 Port 章節
+
+-   下載 FreeBSD Ports 套件庫
+
+-   Ports 套件庫的網頁界面
+
+-   FreshPorts - 一個更進階的 Ports 套件庫網頁界面
+
+想知道 您 如何將 您 喜愛的軟體加入到 Ports 套件庫，請參考 The Porter’s
+Handbook 以及 為 FreeBSD 貢獻這篇文章。
+
+------------------------------------------------------------------------
+
+Last modified on: June 25, 2022 by Sergio Carlavilla Delgado
+
+法律聲明 | © 1995-2023 FreeBSD 計劃 保留所有權利。 FreeBSD 標誌是
+FreeBSD 基金會的註冊商標，由 FreeBSD 基金會授權 FreeBSD 計畫使用 The
+FreeBSD Foundation. 聯絡資訊
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

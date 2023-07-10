@@ -1,0 +1,1530 @@
+Skip site navigation (1) Skip section navigation (2)
+
+Header And Logo
+
+[FreeBSD]
+
+.
+
+Donate to FreeBSD
+
+.
+
+Peripheral Links
+
+Search
+
+ 
+
+Site Navigation
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+Section Navigation
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Multimedia
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Introduction
+
+This report covers FreeBSD-related projects between April and June 2013.
+This is the second of four reports planned for 2013.
+
+The last three months have been very active for the FreeBSD developer
+community, including events such as BSDCan and the FreeBSD Developer
+Summit collocated with it (covered in a separate report, see the BSDCan
+Developer Summit Special) and BSD-Day 2013. It has also seen
+improvements from the top to the bottom of the FreeBSD system. Desktop
+users will be pleased to note work on improving the state of AMD GPUs
+and making the console interaction with kernel mode setting — required
+for recent xorg drivers — cleaner and from continued work to make binary
+packages easier to use. Developers will note continued improvements to
+our toolchain, with a new debugger being prepared for integration.
+Server users will benefit from various improvements to virtualization
+support and scalability in the kernel. Of course, the FreeBSD system is
+nothing without applications to run atop it, and this quarter has seen
+some tireless work by members of the ports team to ensure that users
+have a wide choice of desktop and development environments, with
+highlights from the GNOME, KDE, Xfce, and Haskell teams in this report.
+
+Thanks to all the reporters for the excellent work! This report contains
+33 entries and we hope you enjoy reading it.
+
+The deadline for submissions covering between July and September 2013 is
+October 7th, 2013.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD Team Reports
+
+-   FreeBSD Core Team
+-   FreeBSD Postmaster Team
+-   FreeBSD Release Engineering Team
+-   FreeBSD Security Team
+
+Projects
+
+-   PC-BSD
+-   Virtual Private Systems
+
+Kernel
+
+-   AMD GPU Kernel Mode-setting Support
+-   Improved TCP SYN Cookies
+-   Multi-threaded Pagedaemon
+-   Native iSCSI Stack
+-   Newcons Reboot
+-   Realtek RTL8188CU/RTL8192CU USB Wireless Driver
+-   SDIO Driver
+-   V4L2 Update in the Linuxulator
+-   Wireless Networking Improvements
+-   Xen Support Improvements
+-   ZFS TRIM and Enhanced BIO_DELETE Support
+
+Architectures
+
+-   Intel IOMMU (VT-d, DMAR) Support
+-   Superpages for ARMv7
+
+Userland Programs
+
+-   bsdconfig(8) and sysrc(8)
+-   bsnmpd(1) Support in hastd(8)
+-   Capsicum
+-   LLDB Debugger Port
+
+Ports
+
+-   FreeBSD Haskell Ports
+-   GNOME/FreeBSD
+-   KDE/FreeBSD
+-   Xfce/FreeBSD
+-   xorg on FreeBSD
+
+Documentation
+
+-   Upgrading the Documentation Set to DocBook 5.0
+
+Events
+
+-   BSD-Day 2013
+
+Google Summer of Code
+
+-   New Capsicum Features
+-   Qt and GTK+ Frontends for pkg(8)
+
+Miscellaneous
+
+-   The FreeBSD Foundation
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD Team Reports
+
+FreeBSD Core Team
+
+Contact: FreeBSD Core Team <core@FreeBSD.org>
+
+In the second quarter of 2013, the Core Team approved a new Security
+Officer, Dag-Erling Smørgrav and his deputy, Xin Li. The Core Team
+acknowledges Simon Nielsen, the outgoing Security Officer, for his work
+in the role. Peter Wemm took the lead on the reorganization and
+administration of the FreeBSD cluster, and with the Core Team's
+approval, Glen Barber and Ryan Steinmetz were welcomed to the cluster
+administration team.
+
+Based on the recommendation and experiences of Martin Wilke, the Core
+Team also supported establishing a liaison role between port managers
+and release engineers in order to improve their communication,
+especially for preparing releases. The Core Team welcomes Bryan Drewery
+to this role.
+
+Following up on the request from Eitan Adler, the Core Team agreed to
+remove CVS from the base system, which was soon followed by importing a
+lightweight version of Subversion tools, implemented by Peter Wemm.
+
+There were src commit bits issued for 3 new developers and 1 existing
+committer received extension in this quarter.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD Postmaster Team
+
+  -------
+  Links
+  -------
+
+Contact: FreeBSD Postmaster Team <postmaster@FreeBSD.org>
+
+In the second quarter of 2013, the FreeBSD Postmaster Team has
+implemented the following items that may be interest of the general
+public:
+
+-   With help from clusteradm, found that unbound (the resolver used on
+    mx1 and mx2) is configured to perform DNSSEC validation which
+    implies that if a signed zone fails validation, unbound refuses to
+    use the information. This had caused one person to be unable to
+    exchange email with FreeBSD.org until the zone signatures were
+    refreshed.
+-   Created the freebsd-dtrace mailing list, requested by George
+    Neville-Neil.
+-   Resurrected the freebsd-testing mailing list, requested by Garrett
+    Cooper.
+-   Created the freebsd-tex mailing list, requested by Hiroki Sato.
+-   In response to another comment that our message rejection message
+    was unclear in the case that greylisting was the reason, re-worded
+    that message.
+-   Augmented the allowable MIME types for secteam with the following to
+    permit sending encrypted messages:
+    -   application/pgp-encrypted
+    -   application/pkcs7-encrypted
+    -   application/x-pkcs7-encrypted
+    -   multipart/encrypted
+-   Began replacing freebsd-mozilla with freebsd-gecko.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD Release Engineering Team
+
+  ------- ---------------------------------------------------------
+  Links   
+          URL: http://www.freebsd.org/releases/8.4R/errata.html
+          URL: http://www.freebsd.org/releases/9.2R/schedule.html
+  ------- ---------------------------------------------------------
+
+Contact: FreeBSD Release Engineering Team <re@FreeBSD.org>
+
+The FreeBSD 8.4-RELEASE cycle completed on June 7, 2013, approximately
+two months behind the original schedule. Please be sure to read the
+Errata Notices for any post-release issues discovered after 8.4-RELEASE.
+
+The FreeBSD 9.2-RELEASE process will begin July 6, 2013. Unless any
+critical issues arise, FreeBSD 9.2-RELEASE is expected to be available
+late August or early September.
+
+Users tracking the FreeBSD 9.X branch are encouraged to test the -BETA
+and -RC builds whenever possible, and provide feedback and report issues
+to the freebsd-stable mailing list.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD Security Team
+
+  -------
+  Links
+  -------
+
+Contact: FreeBSD Security Team <secteam@FreeBSD.org>
+
+On April 15th Dag-Erling Smørgrav and Xin Li took over as security
+officers for the FreeBSD Project, and the team welcomed Qing Li back to
+the team in June. This report briefly summarizes the work of the
+Security Team from April until the end of June.
+
+The Security Team has released the following advisories:
+
+-   FreeBSD-SA-13:05.nfsserver: Insufficient input validation in the NFS
+    server (nfsd(8)), reported by Adam Nowacki.
+-   FreeBSD-SA-13:06.mmap: Privilege escalation via mmap(), reported by
+    Konstantin Belousov.
+
+The Security Team has contributed to the following errata notices:
+
+-   FreeBSD-EN-13:02.vtnet: Frames are not properly forwarded to
+    vtnet(4) when two or more MAC addresses are configured on QEMU 1.4.0
+    and later in 8.4-RELEASE, reported by Julian Stecklina.
+-   FreeBSD-EN-13:01.fxp: Initialization of fxp(4) network interfaces
+    results in an infinite loop with dhclient(8) in 8.4-RELEASE,
+    reported by Michael L. Squires.
+
+Per the request of Baptiste Daroussin, the Security Team has also
+reviewed the source code of Poudriere, the port build and test system
+which is planned to be used for producing pkg(8) ("new-style") packages
+on the FreeBSD cluster.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Projects
+
+PC-BSD
+
+  ------------------ ---------------------------
+  Links              
+  PC-BSD Home Page   URL: http://www.pcbsd.org
+  ------------------ ---------------------------
+
+Contact: Kris Moore <kmoore@FreeBSD.org>
+
+Progress on moving PC-BSD & TrueOS to a "rolling release" is happening
+quickly. We have implemented our own package repository, fully based on
+pkg(8), which is updated twice monthly, and are now hosting dedicated
+freebsd-update(8) systems. In addition to the 9.1-RELEASE ISO images, we
+have begun to create a 9-STABLE branch as well, using freebsd-update(8)
+to push out the latest world and kernel binaries on a monthly basis.
+
+We are currently working on an implementation of ZFS Boot Environments
+for desktops and servers. These users to install updates or experimental
+versions in separate ZFS clones and select the one to run at boot time,
+providing an easy way of testing upgrades before deployment.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Virtual Private Systems
+
+  ------- ---------------------------------------------------
+  Links   
+          URL: http://www.7he.at/freebsd/vps/
+          URL: http://svnweb.freebsd.org/base/projects/vps/
+  ------- ---------------------------------------------------
+
+Contact: Klaus Ohrhallinger <k@7he.at>
+
+VPS for FreeBSD is an OS-level based virtualization implementation that
+supports advanced features like live migration. It has been recently
+imported into the Project's Subversion repository as a project branch.
+The code is currently of alpha quality.
+
+Open tasks:
+
+1.  Test with many different guest setups/applications. All feedback is
+    highly appreciated.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Kernel
+
+AMD GPU Kernel Mode-setting Support
+
+  ---------------------------- ---------------------------------------
+  Links                        
+  Project status on the wiki   URL: https://wiki.freebsd.org/AMD_GPU
+  ---------------------------- ---------------------------------------
+
+Contact: Jean-Sébastien Pédron <dumbbell@FreeBSD.org>
+Contact: Konstantin Belousov <kib@FreeBSD.org>
+
+Due to non-FreeBSD-related activities from April to end of June, the
+project progressed slowly:
+
+-   Some important problems in TTM were fixed and several others are
+    being worked out. Applications affected by these bugs are non-linear
+    video editing software (which do not use Xv to preview the video) or
+    "screen" of VirtualBox, for instance.
+-   Regarding the locking issue with OpenGL, no work has been done yet.
+    glxgears works but some modern desktop environments or WebGL demos
+    hang. Once TTM bugs described above are fixed, this is the next
+    target.
+-   Patches to Mesa to make it build out-of-the-box were submitted
+    upstream. As of writing, some were committed but not all of them.
+    Additionally, as result of a joint work with Jonathan Gray (of
+    OpenBSD), Mesa should work on FreeBSD, OpenBSD, and hopefully on
+    other BSD flavors without additional patches.
+
+Several users tested the driver. Andriy Gapon, Jonathan Gray, and Mark
+Kettenis (of OpenBSD) submitted patches. kyzh kindly donated several
+discrete cards from different series. A big thanks to all those
+contributors!
+
+The driver is still not stable enough for a wider call for testers.
+
+Open tasks:
+
+1.  Write instructions for the wiki to explain how to test the driver.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Improved TCP SYN Cookies
+
+  ------------- -------------------------------------------------------------------------------
+  Links         
+  Description   URL: http://docs.freebsd.org/cgi/getmsg.cgi?fetch=28838+0+current/freebsd-net
+  Patch         URL: http://people.freebsd.org/~andre/syncookie-20130708.diff
+  ------------- -------------------------------------------------------------------------------
+
+Contact: Andre Oppermann <andre@FreeBSD.org>
+
+We have had a SYN cookie implementation for quite some time now but it
+has some limitations with current realities for window scaling and SACK
+encoding the in the few available bits.
+
+This patch updates and improves SYN cookies mainly by:
+
+1.  Encoding of MSS, WSCALE (window scaling) and SACK into the ISN
+    (initial sequence number) without the use of timestamp bits.
+2.  Switching to the very fast and cryptographically strong SipHash-2-4
+    hash MAC algorithm to protect the SYN cookie against forgery.
+
+The common parameters used on TCP sessions have changed quite a bit
+since SYN cookies were invented some 17 years ago. Today we have a lot
+more bandwidth which makes use of window scaling almost mandatory. Also
+SACK has become standard as it makes recovering from packet loss much
+more efficient.
+
+The original SYN cookies method only stored an indexed MSS value in the
+cookie. This obviously is not sufficient any more and breaks in the
+presence of WSCALE. WSCALE information is only exchanged during SYN and
+SYN-ACK. If we cannot keep track of it then we severely underestimate
+the available send or receive window, compounded with the fact that with
+large window scaling the window size information on the TCP segment
+header would be even lower numerically.
+
+A number of years back, SYN cookies were extended to store the
+additional state in the TCP timestamp fields, if available on a
+connection. It has been adopted by Linux as well. While timestamps are
+common among the BSD, Linux and other Unix systems, Windows never
+enabled them by default, thus they are not present for the vast majority
+of clients seen on the Internet.
+
+The new improvement in this patch moves all necessary information into
+the ISN again, removing the need for timestamps. Both the MSS and send
+WSCALE are stored in 3 bit indexed form together with a single bit for
+SACK. While we cannot represent all possible MSS and WSCALE values in
+only 3 bits each (both are 16-bit fields in the TCP header), it turns
+out that is not actually necessary.
+
+These improvements allow one to run with SYN cookies only on
+Internet-facing servers. However while SYN cookies are calculated and
+sent all the time, they are only used when the syn cache overflows due
+to attacks or overload. In that case though, you can rest assured that
+no significant degradation in TCP connection setup happens any more and
+that even Windows clients can make use of window scaling and SACK.
+
+Open tasks:
+
+1.  Additional testing on busy servers.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Multi-threaded Pagedaemon
+
+  ------- ------------------------------------------------------------------
+  Links   
+          URL: http://people.freebsd.org/~kib/misc/pagedaemon-numa.1.patch
+  ------- ------------------------------------------------------------------
+
+Contact: Konstantin Belousov <kib@FreeBSD.org>
+
+This project aims to improve scalability of the virtual memory
+subsystem. Based on a prototype change from Jeff Roberson, per-domain
+page queues and per-domain pagedaemon working threads have been
+implemented to enable this. At the moment, the domains coincide with the
+NUMA proximity domains, but this is not neccessary and could be improved
+with further separation to allow more parallelism in the pagedaemon.
+
+The patch is relatively simple, with the most delicate parts being the
+page laundry and OOM logic, which requires coordination between all
+pagedaemon threads to prevent false triggering.
+
+Testing on diverse workloads and on real multi-socket machines is
+required.
+
+This project is sponsored by The FreeBSD Foundation.
+
+Open tasks:
+
+1.  Debug on multi-domain NUMA machine.
+2.  Test, get review and commit.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Native iSCSI Stack
+
+  ------- -------------------------------------------------------
+  Links   
+          URL: https://wiki.freebsd.org/Native%20iSCSI%20target
+  ------- -------------------------------------------------------
+
+Contact: Edward Tomasz Napierała <trasz@FreeBSD.org>
+
+The native kernel iSCSI target and initiator project progressed well
+over the April to June period. The primary focus was to introduce
+support for iSER (iSCSI over RDMA) in both the initiator and the target.
+Prerequisite for this was merging some common parts together and
+implementing a workaround for the lack of iSER support in userspace.
+Apart from that, there were a myriad of smaller improvements. Such as
+creating more user-friendly administration utilities, for example
+iscsictl(8) which displays SCSI device nodes for each iSCSI session.
+This frees the user from getting the same information through
+camcontrol(8). There are also improvements in logging and manual pages.
+
+Once the iSER support becomes stable, the work will focus on performance
+optimizations. The plan is to commit both the new initiator and target
+in August to allow shipping them in 10.0. The project will continue with
+implementing support for software iWARP stack (useful mostly for testing
+and development), SCSI passthrough and various other improvements.
+
+This project is being sponsored by The FreeBSD Foundation.
+
+Open tasks:
+
+1.  Performance optimization.
+2.  Merge to FreeBSD head.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Newcons Reboot
+
+Contact: Aleksandr Rybalko <ray@FreeBSD.org>
+
+The purpose of the Newcons project is to provide a new interface for
+console and video output to graphic devices. This will allow simple
+drivers access the console and terminal mode early, and framebuffer
+access for xorg. Drivers will not need embedded font bitmaps, color
+maps, or mouse cursor bitmaps, as the whole infrastructure will be
+provided by the vt(4) Newcons driver.
+
+As the project includes Kernel Mode Setting (KMS) integration, one of
+the goals is support for modern Xorg releases, allowing the kernel to
+switch back to virtual terminal mode after graphics mode or resolution
+used with xorg changes.
+
+There are a lot of changes involved in the project. Main tasks include:
+
+-   Core functionality (almost done).
+-   Mouse support.
+-   KMS (kernel mode setting) support.
+-   USB keyboard support.
+-   Splash screen support (partially working).
+-   Driver support.
+-   vidcontrol(1) support.
+
+The first deliverables of the project, including moused(8), ukbd(4), and
+KMS support are expected to arrive around the middle or end of August
+2013. The whole project is expected to complete in November 2013.
+
+This project is being sponsored by The FreeBSD Foundation.
+
+Many thanks to Ed Schouten who started Newcons project and did most of
+the work.
+
+Open tasks:
+
+1.  Provide different flavors of hardware for testing the
+    implementation. Do not hesitate to volunteer when a call for testing
+    is announced.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Realtek RTL8188CU/RTL8192CU USB Wireless Driver
+
+Contact: Rui Paulo <rpaulo@FreeBSD.org>
+Contact: Kevin Lo <kevlo@FreeBSD.org>
+
+The urtwn(4) driver was imported from OpenBSD. This is a driver for very
+small Realtek USB WiFi cards which are pretty inexpensive and can do
+802.11n at the maximum theoretical speed of 150 Mbps. They make a good
+addition to embedded systems such as the Raspberry Pi and the
+BeagleBone. The driver requires firmware that is available in the
+FreeBSD Ports Collection (net/urtwn-firmware-kmod). Note that 802.11n is
+not yet supported.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+SDIO Driver
+
+  --------------------------------------- --------------------------------------------------------
+  Links                                   
+  SDIO project page on the FreeBSD wiki   URL: https://wiki.freebsd.org/SDIO
+  Source code                             URL: https://github.com/kibab/freebsd/tree/kibab-dplug
+  --------------------------------------- --------------------------------------------------------
+
+Contact: Ilya Bakulin <ilya@bakulin.de>
+
+SDIO is an interface designed as an extension for the existing SD card
+standard, to allow connecting different peripherals to the host with the
+standard SD controller. Peripherals currently sold at the general market
+include WLAN/BT modules, cameras, fingerprint readers, barcode scanners.
+The driver is implemented as an extension to the existing MMC bus,
+adding a lot of new SDIO-specific bus methods. Getting information about
+the card works, including querying all the supported I/O functions.
+Simple byte transfers and multi-byte reads work.
+
+A prototype of the driver for Marvell SDIO WLAN/BT module is also being
+developed, using the existing Linux driver as a reference.
+
+Open tasks:
+
+1.  Extend MMC bus interface with more SDIO-specific bus methods to
+    allow child drivers to perform multi-byte in/out transfers.
+2.  Write firmware loading code for the prototype of the WLAN driver.
+    Further work on the WLAN driver should probably be done as a
+    separate project.
+3.  Implement detach path. It has not been tested yet because the
+    DreamPlug hardware available does not have an external SDIO-capable
+    slot.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+V4L2 Update in the Linuxulator
+
+  -------
+  Links
+  -------
+
+Contact: Alexander Leidinger <netchild@FreeBSD.org>
+
+The V4L2 support in the linuxulator was updated in FreeBSD head. This
+lets Skype v4 display video.
+
+Open tasks:
+
+1.  Find out why audio in Skype v4 stops working after some calls.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Wireless Networking Improvements
+
+  -------
+  Links
+  -------
+
+Contact: Adrian Chadd <adrian@FreeBSD.org>
+
+Recently the FreeBSD wireless networking stack has received updates in
+the following areas:
+
+-   Improved transmit locking in net80211(4) to eliminate a whole class
+    of subtle race conditions leading to out-of-order packets being
+    handed to the driver.
+-   Spectral scan (FFT) information is now available for the AR9280,
+    AR9285, AR9287 series NICs.
+-   Added support for AR93xx, AR94xx, AR95xx NICs — hostap, adhoc and
+    station modes have been tested, including 3x3 stream support for the
+    those NICs where appropriate.
+-   Implemented ps-poll handling in hostap mode. This was required for
+    correct behaviour with stations that implement aggressive power
+    save.
+-   Added AR933x SoC support — including all on-board peripherals — the
+    8devices.com Carambola-2 board is now fully supported and will run
+    FreeBSD from NOR flash.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Xen Support Improvements
+
+  ---------------- ---------------------------------------------------------------------------
+  Links            
+  Git repository   URL: http://xenbits.xen.org/gitweb/?p=people/royger/freebsd.git;a=summary
+  ---------------- ---------------------------------------------------------------------------
+
+Contact: Justin T. Gibbs <gibbs@FreeBSD.org>
+Contact: Will Andrews <will@FreeBSD.org>
+Contact: Andre Oppermann <andre@FreeBSD.org>
+Contact: Roger Pau Monné <roger.pau@citrix.com>
+
+FreeBSD Xen HVM can be further improved by using more PV interfaces
+inside a HVM guest. So far the following items have been completed:
+
+-   Update Xen interface files. (Merged into head)
+-   Add support for the vector callback injection mechanism. This
+    replaces the PCI interrupt and provides a per-cpu callback, which
+    was not possible when using the PCI interrupt.
+-   Rework event channel implementation and use the same code paths for
+    both PV and PVHVM.
+-   Implement PV one-shot event timers and timecounters.
+-   Implement PV IPIs.
+-   Live migration support for PV timers and PV IPIs.
+
+With this changes, FreeBSD will have a complete PVHVM port, this will
+also set the ground for a future PVH port (when PVH support is merged
+into Xen).
+
+PVHVM allows a virtual machine that boots as a native guest to be able
+to take full advantage of paravirtualized drivers, giving a performance
+improvement in most I/O related tasks. PVH allows a guest to take
+advantage of hardware assistance for memory management, but uses fully
+paravirtualized events and boot procedure, which brings two significant
+advantages beyond performance. The first is that domain 0 does not have
+to run a QEMU instance for emulated boot for PVH guests, which is a
+common reason for hosting providers to charge more for Windows and other
+HVM guests. The second is that PVH domains can be used as domain 0,
+without requiring different pmap (memory management) code from the
+conventional kernel. This will allow us to ship a single kernel binary
+supporting bare metal hardware, running as a Xen unprivileged guest, and
+eventually as Xen domain 0.
+
+Further improvements on blkfront and netfront have also been commited:
+
+-   Fix netfront crash when detaching an interface.
+-   Enable netfront to specify a maximum TSO length limiting the segment
+    chain to what the Xen host side can handle after defragmentation.
+-   Add barriers and flush support to blkfront.
+
+Netfront changes have been merged to stable branches, blkfront changes
+are only in head.
+
+Open tasks:
+
+1.  Merge remaining changes into head.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+ZFS TRIM and Enhanced BIO_DELETE Support
+
+Contact: Pawel Jakub Dawidek <pjd@FreeBSD.org>
+Contact: Steven Hartland <smh@FreeBSD.org>
+
+As of the end of June, FreeBSD's ZFS implementation now includes TRIM
+support in head, stable/9, and stable/8 branches. This allows ZFS to
+help maintain high performance on flash-based devices such as SSD's even
+under high-load conditions.
+
+When creating new pools and adding new devices to existing pools it
+first performs a full-device level TRIM to help ensure optimum starting
+performance. This behaviour can be overridden by setting the
+vfs.zfs.vdev.trim_on_init sysctl variable to 0 if for example the disks
+are new or have already been secure erased, which can also now be done
+using camcontrol(8) security actions.
+
+In order to support TRIM, the kernel requires the underlying device
+driver supports BIO_DELETE. This is currently mapped through to hardware
+methods such as ATA TRIM and SCSI UNMAP, which are commonly supported by
+SSDs via CAM.
+
+In order to increase the supported hardware base, CAM's SCSI layer was
+also enhanced to allow ATA TRIM via SATL ATA Passthrough to be used in
+addition to the existing UNMAP and WS methods. This allows SATA disks
+attached to SCSI controllers with CAM based drivers such as mps(4) and
+mpt(4) to provide delete support.
+
+Stats for ZFS TRIM can be monitored by looking at the sysctl variables
+under kstat.zfs.misc.zio_trim in addition to live GEOM delete stats via
+the gstat -d command.
+
+This project was sponsored by Multiplay and implemented by Pawel Jakub
+Dawidek.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Architectures
+
+Intel IOMMU (VT-d, DMAR) Support
+
+  ------- -----------------------------------------------------------------------------------------------------------
+  Links   
+          URL: http://www.intel.com/content/www/us/en/intelligent-systems/intel-technology/vt-directed-io-spec.html
+          URL: http://lists.freebsd.org/pipermail/freebsd-arch/2013-May/014368.html
+          URL: http://people.freebsd.org/~kib/misc/dmar.1.patch
+  ------- -----------------------------------------------------------------------------------------------------------
+
+Contact: Konstantin Belousov <kib@FreeBSD.org>
+
+Intel VT-d is a set of extensions that were originally designed to allow
+virtualizing devices. It allows safe access to physical devices from
+virtual machines and can also be used for better isolation and
+performance increases. A VT-d driver was developed that implements the
+busdma(9) interface using the DMA Remap units (DMARs) found in current
+Intel chipsets. The driver provides reliability and security
+improvements for the system by facilitating restricted access to main
+memory from busmastering devices.
+
+It also eliminates bounce buffering (copying) by allocating remapped
+regions that satisfy a device's access limitations.
+
+With additional work to define a suitable interface the VT-d driver will
+also provide PCI pass-through functionality for hypervisors.
+
+This project is sponsored by The FreeBSD Foundation.
+
+Open tasks:
+
+1.  Implement workarounds for chipset errata.
+2.  Commit to HEAD after additional testing.
+3.  Rebalance MSI/MSI-X using interrupt remapping unit, also required
+    for x2APIC use on big machines.
+4.  Integrate with the Intel GPU MMU and handle Ironlake and SandyBridge
+    errata for the GFXVTd unit.
+5.  Provide an interface for VMM (hypervisors).
+6.  Consider implementing a driver for AMD's IOMMU.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Superpages for ARMv7
+
+  ------- ----------------------------------------------------------------------------------
+  Links   
+          URL: http://static.usenix.org/events/osdi02/tech/full_papers/navarro/navarro.pdf
+          URL: https://wiki.freebsd.org/ARMSuperpages
+          URL: https://github.com/semihalf-bodek-zbigniew/freebsd-arm-superpages.git
+  ------- ----------------------------------------------------------------------------------
+
+Contact: Zbigniew Bodek <zbb@semihalf.com>
+Contact: Grzegorz Bernacki <gjb@semihalf.com>
+Contact: Rafal Jaworowski <raj@semihalf.com>
+
+The ARM architecture is becoming more and more prevalent, with
+increasing usage beyond the mobile and embedded space. Among the more
+interesting industry trends emerging in the recent months, there has
+been the concept of "ARM server". Some top-tier companies, e.g. Dell and
+HP, have already started to develop such systems.
+
+Key to success of FreeBSD in these new areas is dealing with the
+sophisticated features of the platform, for example adding support for
+superpages.
+
+The objective of this project is to enable FreeBSD/arm to utilize
+superpages which would allow efficient use of TLB translations (by
+enlarging TLB coverage), leading to improved performance in many
+applications and scalability. This is intended to work on ARMv7-based
+processors, however compatibility with ARMv6 will be preserved.
+
+The following steps have been made since the last status report:
+
+-   Implement pmap_copy() to support fork() system calls.
+-   Support for multiple page sizes.
+-   Implement superpage creation, promotion, demotion, and eviction
+    mechanisms.
+-   Implement PV entry management for superpages.
+-   Partially integrate code to the head branch.
+
+Next steps:
+
+-   Test and benchmark.
+-   Complete integration into FreeBSD head.
+
+This project is jointly sponsored by The FreeBSD Foundation and
+Semihalf.
+
+Open tasks:
+
+1.  Start utilizing superpages on ARMv6/v7.
+2.  Find bugs and debug.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Userland Programs
+
+bsdconfig(8) and sysrc(8)
+
+  ------- ---------------------------------------
+  Links   
+          URL: http://druidbsd.sourceforge.net/
+  ------- ---------------------------------------
+
+Contact: Devin Teske <dteske@FreeBSD.org>
+
+New utilities have been introduced in FreeBSD base system: bsdconfig(8)
+and sysrc(8). bsdconfig(8) is a replacement for the post-install
+abilities of deprecated sysinstall(8), while sysrc(8) is a robust
+utility for managing rc.conf(5) from the command line without a text
+editor.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+bsnmpd(1) Support in hastd(8)
+
+  -------
+  Links
+  -------
+
+Contact: Mikolaj Golub <trociny@FreeBSD.org>
+
+A hastd(8) module for bsnmpd(1) has been committed to FreeBSD head and
+merged to the stable/8 and stable/9 branches recently. This module makes
+it possible to monitor and manage hastd(8) via the SNMP protocol.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Capsicum
+
+  ------- -------------------------------------------------------------------
+  Links   
+          URL: http://www.cl.cam.ac.uk/research/security/capsicum/
+          URL: https://lists.cam.ac.uk/mailman/listinfo/cl-capsicum-discuss
+  ------- -------------------------------------------------------------------
+
+Contact: Pawel Jakub Dawidek <pjd@FreeBSD.org>
+Contact: Capsicum Mailing List <cl-capsicum-discuss@lists.cam.ac.uk>
+
+Capsicum, a lightweight OS capability and sandboxing framework, is being
+actively worked on. In the last few months the following tasks have been
+completed:
+
+-   Committed Capsicum overhaul to FreeBSD head (r247602). This allows
+    to use capability rights in more places, simplifies kernel code and
+    implements ability to limit ioctl(2) and fcntl(2) system calls.
+-   hastd(8) is now using Capsicum for sandboxing, as whitelisting
+    ioctls is possible (r248297).
+-   auditdistd(8) is now using Capsicum for sandboxing, as it is now
+    possible to setup append-only restriction on file descriptor
+    (available in Perforce).
+-   Implemented connectat(2) and bindat(2) system calls for UNIX domain
+    sockets that are allowed in capability mode (r247667).
+-   Implemented chflagsat(2) system call (r248599).
+-   Revised the Casper daemon for application capabilities.
+-   Implemented libcapsicum for application capabilities.
+-   Implemented various Casper services to be able to use more
+    functionality within a sandbox: system.dns, system.pwd, system.grp,
+    system.random, system.filesystem, system.socket, system.sysctl.
+-   Implemented Capsicum sandboxing for kdump(1) (from r251073 to
+    r251167). The version in Perforce also supports sandboxing for the
+    -r flag, using Casper services.
+-   Implemented Capsicum sandboxing for dhclient(8) (from r252612 to
+    r252697).
+-   Implemented Capsicum sandboxing for tcpdump(8) (available in
+    Perforce).
+-   Implemented Capsicum sandboxing for libmagic(3) (available in
+    Perforce).
+-   Implemented the libnv library for name/value pairs handling in the
+    hope of wider adaptation across FreeBSD.
+
+For Capsicum-based sandboxing in the FreeBSD base system, the commits
+referenced above and the provided code aim to serve as examples. We
+would like to see more FreeBSD tools to be sandboxed — every tool that
+can parse data from untrusted sources, for example. This requires deep
+understanding of how the tool in question works, not necessarily only
+Capsicum.
+
+This work is being sponsored by The FreeBSD Foundation.
+
+Open tasks:
+
+1.  Get involved, make the Internet finally(!) a secure place. Contact
+    us at the cl-capsicum-discuss mailing list, where we can provide
+    guidelines on how to do sandboxing properly. The fame is there,
+    waiting.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+LLDB Debugger Port
+
+  ------- ------------------------------------
+  Links   
+          URL: https://wiki.freebsd.org/lldb
+  ------- ------------------------------------
+
+Contact: Ed Maste <emaste@FreeBSD.org>
+
+LLDB is the the debugger project in the LLVM family. It supports the Mac
+OS X, Linux, and FreeBSD platforms, but the latter has recently suffered
+under a lack of maintenance.
+
+After cleaning bit rot in LLDB's FreeBSD support, it again builds and
+can be used for basic debugging of single-threaded applications. The
+test suite also runs to completion, although it experiences a large
+number of failures.
+
+Ed Maste has been granted an LLDB commit bit, and is now committing
+ongoing bug fixes and development directly to the upstream repository.
+There is a significant amount of work still to be done, with one goal
+being the incorporation of lldb into the base system.
+
+This project is sponsored by DARPA/AFRL in collaboration with SRI
+International and the University of Cambridge.
+
+Open tasks:
+
+1.  Add support for multithreaded processes.
+2.  Fix watchpoints.
+3.  Add support for remote debuging (gdbserver / debugserver).
+4.  Add support for core files.
+5.  Add support for kernel debugging.
+6.  Verify i386 and ARM architectures.
+7.  Implement MIPS target support.
+8.  Verify cross-debugging.
+9.  Investigate and fix test suite failures.
+10. Prepare lldb for incorporation into the base system.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Ports
+
+FreeBSD Haskell Ports
+
+  ------------------------------------------ ------------------------------------------------
+  Links                                      
+  FreeBSD Haskell wiki page                  URL: http://wiki.freebsd.org/Haskell
+  FreeBSD Haskell ports repository           URL: https://github.com/freebsd-haskell/ports/
+  Experimental pkg(8) package repositories   URL: http://haskell.inf.elte.hu/packages/
+  ------------------------------------------ ------------------------------------------------
+
+Contact: Gábor Páli <pgj@FreeBSD.org>
+Contact: Ashish SHUKLA <ashish@FreeBSD.org>
+
+We are proud to announce that the FreeBSD Haskell Team has updated the
+Haskell Platform to 2013.2.0.0, GHC to 7.6.3, as well as updated
+existing ports to their latest stable versions. In this update, we
+provided experimental support for LLVM-based code generation (disabled
+by default) to Haskell ports. We also added a number of new ports, which
+brings their count in the FreeBSD Ports Collection to 402, and now
+Haskell ports play nicer with portmaster(8)-based upgrades.
+
+In cooperation with Konstantin Belousov and Dimitry Andric, we have
+managed to unbreak the build of GHC on 32-bit 10.x systems, so we have
+packages for 10.x again. However, it turned out that this bug (in thread
+signal delivery) can also affect the building process for other
+platforms as well, which explains some of the strange build breakages
+our users experienced in the past.
+
+We have also learned that there is ongoing work in the GHC upstream
+which will allow us to provide support for building with Clang natively
+once GHC 7.8 becomes part of the Haskell Platform.
+
+Open tasks:
+
+1.  Test experimental Clang/LLVM code generation support to enable it by
+    default.
+2.  Commit pending Haskell ports to the ports tree.
+3.  Port more (popular) Cabal packages.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+GNOME/FreeBSD
+
+  ------- ------------------------------------
+  Links   
+          URL: http://www.FreeBSD.org/gnome/
+  ------- ------------------------------------
+
+Contact: FreeBSD GNOME Team <gnome@FreeBSD.org>
+
+The GNOME 3.6 work is moving along slowly but steadily. Almost all the
+GNOME 3 desktop ports were updated to their corresponding 3.6 versions.
+
+A big challenge was taken by getting the webkit-gtk3 port updated to
+2.0.3. Currently programs using webkit-gtk3 crash on launch. It is hard
+to find the causes as the debug build of webkit-gtk either runs out of
+memory or disk space on the developement system used.
+
+Open tasks:
+
+1.  Update the FreeBSD GNOME website with recent changes in the ports
+    tree, add new items in preparation for GNOME 3 and Mate, etc.
+2.  Merge Glib 2.36, GTK+ 3.8 and related ports back to the Ports
+    Collection.
+3.  Continue work on GNOME 3.6, fix bugs and write code for missing
+    features.
+4.  Complete the port of MATE.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+KDE/FreeBSD
+
+  ----------------------- ----------------------------------------
+  Links                   
+  KDE/FreeBSD home page   URL: http://FreeBSD.kde.org
+  area51                  URL: http://FreeBSD.kde.org/area51.php
+  ----------------------- ----------------------------------------
+
+Contact: KDE FreeBSD <kde@FreeBSD.org>
+
+The KDE/FreeBSD Team has continued to improve the experience of KDE
+software and Qt under FreeBSD. During this quarter, the team has kept
+most of the KDE and Qt ports up-to-date, working on the following
+releases:
+
+-   KDE SC: 4.10.2, 4.10.3, 4.10.4
+-   Qt: 5.0.2 (area51)
+-   PyQt: 4.10.2; QScintilla 2.7.2; SIP: 4.14.7
+-   KDevelop: 4.5.1
+-   Calligra: 2.6.2
+-   CMake: 2.8.11.1
+-   Digikam (and KIPI-plugins): 3.1.0, 3.2.0
+-   KDE Telepathy: 0.6.0, 0.6.1
+
+As a result — according to PortScout — kde@ has 473 ports (up from 431),
+of which 98.73% are up-to-date (up from 93.5%). iXsystems Inc. continues
+to provided a machine for the team to build packages and to test
+updates. iXsystems Inc. has been providing the KDE/FreeBSD Team with
+support for quite a long time and we are very grateful for that. This
+quarter, we would also like to thank Steve Wills (swills@) for providing
+access to another machine so that we can do our work even faster.
+
+While a great deal of the team's efforts are focused towards packaging
+released code, we also take a proactive stand in making sure future
+versions of the software we port is also going to work well on FreeBSD.
+This involves being in close contact with upstream, raising awareness of
+FreeBSD as an active project and also sending actual patches that most
+of the time benefit many other operating systems besides FreeBSD itself.
+In this regard, we have been dedicating a lot of time making sure both
+clang and libc++ are fully supported in KDE and Qt. Not only has this
+resulted in many patches being sent to these projects, but the exposure
+to these large code bases have been beneficial to the Clang-on-FreeBSD
+project as well. Dimitry Andric (dim@) has been of great help as a point
+of contact for all the issues we have faced.
+
+As usual, the team is always looking for more testers and porters so
+please contact us and visit our home page. It would be especially useful
+to have more helping hands on tasks such as getting rid of the
+dependency on the defunct HAL project and providing integration with
+KDE's Bluedevil Bluetooth interface.
+
+Open tasks:
+
+1.  Update out-of-date ports, see PortScout for a list.
+2.  Work on KDE 4.11 and Qt 5.
+3.  Make sure the whole KDE stack (including Qt) builds and works
+    correctly with clang and libc++.
+4.  Remove the dependency on HAL.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Xfce/FreeBSD
+
+  ------- ------------------------------------
+  Links   
+          URL: https://wiki.freebsd.org/Xfce
+  ------- ------------------------------------
+
+Contact: FreeBSD Xfce Team <xfce@FreeBSD.org>
+
+The FreeBSD Xfce Team has updated its ports to the latest stable
+releases, especially:
+
+-   Core (mostly bugfixes and translation updates):
+
+-   -   deskutils/xfce4-tumbler (0.1.29)
+    -   x11-wm/xfce4-panel (4.10.1)
+    -   sysutils/xfce4-settings (4.10.1)
+    -   x11-wm/xfce4-session (4.10.1)
+    -   sysutils/garcon (0.2.1)
+    -   x11/libxfce4util (4.10.1)
+    -   x11-wm/xfce4-wm (4.10.1)
+
+-   Applications:
+
+-   -   multimedia/xfce4-parole (0.5.1)
+    -   www/midori (0.5.2)
+    -   deskutils/xfce4-notifyd (0.2.4)
+    -   misc/xfce4-appfinder (4.10.1)
+    -   x11/xfce4-terminal (0.6.2)
+    -   x11-fm/thunar (1.6.3)
+
+-   Panel plugins:
+
+-   -   deskutils/xfce4-xkb-plugin (0.5.6)
+    -   textproc/xfce4-dict-plugin (0.7.0)
+    -   x11-clocks/xfce4-timer-plugin (1.5.0)
+    -   x11/xfce4-embed-plugin (new)
+
+-   Thunar plugins:
+
+-   -   audio/thunar-media-tags-plugin (0.2.1)
+    -   archivers/thunar-archive-plugin (0.3.1)
+
+-   x11/xfce4-embed-plugin can integrate any application window into the
+    Xfce panel.
+
+-   A new plugin is also available which monitors and displays
+    earthquakes, it is called xfce4-equake-plugin.
+
+Open tasks:
+
+1.  Fix CPU issue with textproc/xfce4-dict-plugin (bug #10103).
+2.  Investigate why midori-gtk3 crashes too often. (The port is
+    finished, but some libraries are not present by default in ports
+    tree).
+3.  Fix x11-themes/gtk-xfce-engine with Gtk+ >=3.6.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+xorg on FreeBSD
+
+  ------- ---------------------------------------------------------
+  Links   
+          URL: http://wiki.freebsd.org/Xorg
+          URL: http://trillian.chruetertee.ch/ports/browser/trunk
+  ------- ---------------------------------------------------------
+
+Contact: <x11@FreeBSD.org>
+Contact: Niclas Zeising <zeising@FreeBSD.org>
+Contact: Koop Mast <kwm@FreeBSD.org>
+
+During the beginning of this quarter, work focused on making the xorg
+update as robust and stable as possible in preparation for the merge to
+ports. As a part of this, ports exp-runs were performed to find and
+resolve regressions and other issues. Once this was completed, xorg was
+updated to version 7.7 on May 25, after more than a year of hard work.
+
+After the update, work immediately shifted to focus on updating and
+patching xorg client libraries, since numerous security issues had been
+identified in those. Unfortunately, this took a little longer than
+anticipated, but all fixes were comitted eventually.
+
+There has also been work on making the new xorg distribution the default
+for FreeBSD 9.1 and later. A patch was sent out and tested with good
+results, but this is currently postponed because switching virtual
+terminals is not working with the KMS driver.
+
+Currently, work is focusing on keeping xorg drivers and libraries up to
+date. Instead of making big updates every year or less, minor updates to
+some libraries, applications and drivers happen fairly regularly. Focus
+is also starting to shift towards newer versions of MESA and
+xorg-server, but this is still very experimental.
+
+Open tasks:
+
+1.  Continue the porting effort of recent versions of MESA. This is
+    ongoing work, but integrating this into the development repo is hard
+    work. Once this is completed, and KMS support for ATI is more
+    mature, more testing can be done.
+2.  Port Wayland. The future of graphical environments in open source
+    operating system seems to be Wayland. This needs to be ported to
+    FreeBSD so that a wider audience can test it, and so that it
+    eventually can be integrated into the ports tree, perhaps as a
+    replacement for the current xorg.
+3.  Look into replacements for HAL. HAL is used for hot-plugging of
+    devices, but it has been long abandoned by Linux. A replacement,
+    perhaps built on top of devd(8), would be nice to have. This work
+    should be coordinated with the FreeBSD GNOME and KDE teams.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Documentation
+
+Upgrading the Documentation Set to DocBook 5.0
+
+Contact: Gábor Kövesdán <gabor@FreeBSD.org>
+
+The Documentation Project has been using old versions of markup
+standards until recently when we switched to a real XML toolchain and
+DocBook 4.5. However, we still depend on obsolete technologies — DSSSL
+and Jade. DocBook 5.0 provides cleaner markup and some nice new
+features.
+
+The objective of this project is to upgrade the documentation set to
+DocBook 5.0 and to find a way to properly render our sources without
+using DSSSL, since the DSSSL stylesheets are discontinued and cannot
+render DocBook 5.0. The documentation sources have already been
+successfully transformed to DocBook 5.0 and updates to the rendering
+process are under development. The common opinion among FreeBSD
+developers is that Java is a heavy dependency that should be avoided.
+This has suggested the transformation of DocBook sources to TeX and use
+TeX as a rendering backend. There are two ways to do this; the sources
+can be transformed either directly or through the XSL FO output
+generated by the stylesheets provided for the DocBook Project. The
+latter approach has been chosen as a preferred way since it better fits
+the existing documentation infrastructure and provides easier
+customization.
+
+This project is generously funded by The FreeBSD Foundation.
+
+Open tasks:
+
+1.  Finish the implementation of the rendering process.
+2.  Integrate the rendering solution into the infrastructure.
+3.  Merge back changes to head.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Events
+
+BSD-Day 2013
+
+  --------------------------- -------------------------------------------------------------------------------------------------
+  Links                       
+  BSD-Day 2013 web site       URL: http://bsdday.eu/2013
+  YouTube playlist of talks   URL: http://www.youtube.com/playlist?list=PLJJHfhjb5TOjB-sHRwJBGWd8XA7nc1gk_
+  Event photo album           URL: https://picasaweb.google.com/116452848880746560170/BSDDay2013?authkey=Gv1sRgCNvIoMWoxNTRYw
+  --------------------------- -------------------------------------------------------------------------------------------------
+
+Contact: Gábor Páli <pgj@FreeBSD.org>
+
+The BSD-Day is a now recurring excuse for BSD developers and users to
+meet up in person, share some beers and talk about what they are working
+on these days. There was a detour this year to visit the beautiful city
+of Naples of Italy, the home of pizza. Fortunately, the event has again
+gained support from numerous and generous sponsors, such as The FreeBSD
+Foundation, the EMC Corporation, iXsystems, FreeBSDMall, BSD Magazine,
+and many others which enabled us to cover the costs of travel and
+accommodation for the speakers. We are really grateful for this.
+
+Similarly to the previous years, the whole event started with a dinner
+in the downtown (somewhere around the Irish Pub) on Friday which
+suddenly turned into a do-it-yourself pizza-fest. Then it was followed
+by the Saturday event at the Institute of Biostructures and Bioimaging.
+There we had a lot of attendees for the associated BSDA exam in the
+morning — 8 persons. The event itself had many interesting topics as
+well, for example moving MCLinker into the BSD world, organization and
+culture of the FreeBSD Project, the new callout(9) framework, building
+and testing ports with Poudriere and Tinderbox, FreeBSD in the embedded
+space, or building reliable VPN networks with OpenBSD. See the links in
+the report for more.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Google Summer of Code
+
+New Capsicum Features
+
+  ------- -----------------------------------------------------------------
+  Links   
+          URL: https://wiki.freebsd.org/SummerOfCode2013/CapsicumFeatures
+  ------- -----------------------------------------------------------------
+
+Contact: Mariusz Zaborski <oshogbo@FreeBSD.org>
+Contact: Pawel Jakub Dawidek <pjd@FreeBSD.org>
+
+Capsicum is a lightweight OS capability and sandboxing framework
+implemented in FreeBSD. This is still a new technology, so there is a
+lot of space for improvements. Thanks to the Google Summer of Code
+program and Pawel Jakub Dawidek for volunteering as mentor, Mariusz will
+have the chance to work on this project in the summer.
+
+The work on sandboxing the rwho(1) and rwhod(8) utilities was completed
+recently. There is also a plan to implement two new modules for Casper.
+Casper is a daemon to provide services for applications using Capsicum's
+capability mode. Some experimentation with implementing two new
+capability rights is in progress, so is porting one more program to use
+the existing features of the Capsicum framework.
+
+Open tasks:
+
+1.  system.unix — a Casper module provides connect and listen on Unix
+    domain socket.
+2.  system.udp — a Casper module enabling connect, listen, send, and
+    receive of UDP packets.
+3.  Implementing sandboxing for fetch(1).
+4.  Introduce new capability rights: CAP_SEND_RIGHTS and
+    CAP_RECV_RIGHTS.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Qt and GTK+ Frontends for pkg(8)
+
+  ------- ---------------------------------------------------------
+  Links   
+          URL: https://wiki.freebsd.org/SummerOfCode2013/pkgQtGtk
+  ------- ---------------------------------------------------------
+
+Contact: Justin Muniz <jmuniz@FreeBSD.org>
+Contact: Eitan Adler <eadler@FreeBSD.org>
+
+This project is part of Google Summer of Code. Work has only just begun,
+and the code is in its infancy. The Subversion repository holds
+experimental code that is actively being developed. Development should
+be concluded before the end of September, and the project will enter the
+maintenance phase of its life cycle.
+
+Open tasks:
+
+1.  Work with Matt Windsor to create a pkg(8) backend for PackageKit.
+2.  Extend PackageKit's Qt frontend to offer more functionality through
+    pkg(8).
+3.  Extend PackageKit's GKT+ frontend to offer more functionality
+    through pkg(8).
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Miscellaneous
+
+The FreeBSD Foundation
+
+  ------- ----------------------------------------
+  Links   
+          URL: http://www.FreeBSDFoundation.org/
+  ------- ----------------------------------------
+
+Contact: Deb Goodkin <deb@FreeBSDFoundation.org>
+
+We started the quarter with our "Raise a Million — Spend a Million"
+Spring Fundraiser. This was the first of three major fundraisers
+scheduled for the year. We were pleased to have raised $365,291 by the
+end of the campaign — May 31. Last year, by the same time, we had raised
+only $56,196. We have started this year off with a much better
+fundraising strategy. We want to send a big thank you to everyone out
+there that has made a donation in 2013. Your early donations have made a
+significant impact on our fundraising endeavors so far this year.
+
+Some things we accomplished this last quarter are:
+
+-   Attended BSDCan in Ottawa, Texas LinuxFest in Austin, SouthEast
+    LinuxFest in Charlotte, and ICANN 46 meeting in Beijing.
+-   We were a Gold Sponsor for BSDCan 2013 and sponsored 7 developers to
+    attend the conference.
+-   We signed up to be a Platinum Sponsor for EuroBSDCon 2013.
+-   We sponsored 1 developer to attend OpenHelp.
+-   Recognized Mark Linimon, Simon L. B. Nielsen, Bjoern A. Zeeb, and
+    Ken Smith, at BSDCan, for their significant contributions to
+    FreeBSD. We also recognized Dan Langille for his tireless effort of
+    putting on BSDCan for 10 years.
+-   We sponsored the developer and vendor summits at BSDCan, with 100
+    and 30 attendees respectively.
+-   We sponsored BSD-Day 2013 that was held in Naples, Italy on April 6.
+-   We held our annual board meeting in Ottawa.
+-   We sponsored the following projects: Capsicum, ARM Superpages,
+    iSCSI, Page Queue Locking, Input/Output Memory Management Unit,
+    Documentation project infrastructure, and writing white papers.
+-   We hired Edward Tomasz Napierała as the second member of our
+    technical staff to work on FreeBSD projects full-time.
+-   We hired Ed Maste as Director of Project Development.
+-   With our continued support of building out the FreeBSD
+    infrastructure, we purchased high-end servers for the Sentex Lab to
+    be used with the latest 40 Gbps Ethernet cards from Chelsio to do
+    performance testing and analysis, smaller servers for firewalls for
+    NYI and ISC, and cables to connect our Juniper switches together
+    into a bigger Juniper switch we purchased for NYI.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+News Home | Status Home
+
+Site Map | Legal Notices | © 1995–2021 The FreeBSD Project. All rights
+reserved.

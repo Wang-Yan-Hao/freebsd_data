@@ -1,0 +1,102 @@
+[FreeBSD The Power to Serve]
+
+Donar a FreeBSD
+
+ 
+
+-   Inicio
+
+-   Acerca de FreeBSD
+    -   Introduccion
+    -   Características
+    -   Apoyo
+    -   Marketing
+    -   Política de privacidad
+    -   Proyectos
+    -   Ports
+
+-   Descargar FreeBSD
+    -   Información de Versiones
+    -   Ingeniería de Versiones
+
+-   Documentación
+    -   FAQ
+    -   Manual
+    -   Manual del Porter
+    -   Manual del desarrollador
+    -   Guía del Committer
+    -   Manuales en línea
+    -   Presentaciones y Trabajos
+    -   Introducción al Proyecto de Documentación
+    -   Todos los libros y artículos
+
+-   Comunidad
+    -   Listas de correo
+    -   Foros
+    -   Grupos de usuarios
+    -   Eventos
+    -   FreeBSD Journal
+    -   Q&A (externo)
+
+-   Desarrolladores
+    -   Ideas para proyectos
+    -   Git Repository
+    -   Repositorio Subversion
+    -   Git Mirror
+    -   Revisiones de Código (Phabricator)
+    -   Wiki
+    -   Servicio de integración continua
+
+-   Soporte
+    -   Distribuidores comerciales
+    -   Información de seguridad
+    -   Informes de errores
+    -   Envío informes de error
+    -   Recursos Web
+
+-   Fundación
+    -   Donaciones monetarias
+    -   Donaciones hardware
+
+-   Acerca de FreeBSD
+-   Características
+-   Aplicaciones
+-   Apoyo
+-   Marketing
+-   Administración
+-   Noticias
+-   Eventos
+-   Prensa
+-   Material gráfico
+-   Logotipo
+-   Donaciones
+-   Legal Notices
+-   Política de Privacidad
+
+Información del Copyright de FreeBSD
+
+El Copyright FreeBSD
+
+El Copyright de documentación de FreeBSD
+
+<<<<<<< HEAD
+=======
+Lista de trademarks
+
+El Copyright BSD
+
+El demonio BSD
+
+LICENCIA PÚBLICA GENERAL DE GNU
+
+LICENCIA PÚBLICA GENERAL DE LIBRERÍA GNU
+
+------------------------------------------------------------------------
+
+Last modified on: 9 de abril de 2023 by Jindong Li
+
+Legal Notices | © 1995-2023 El Proyecto FreeBSD Todos los derechos
+reservados. La marca FreeBSD es una marca registrada de la Fundación
+FreeBSD es es utilizada por el Proyecto FreeBSD con su permiso La
+Fundación FreeBSD. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

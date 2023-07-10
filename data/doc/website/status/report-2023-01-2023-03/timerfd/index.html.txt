@@ -1,0 +1,114 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Native Linux timerfd
+
+Links:
+Differential revision URL: https://reviews.freebsd.org/D38459
+
+Contact: Jake Freeland <jfree@FreeBSD.org>
+
+The timerfd facility is a set of Linux-standard system calls that
+operate on interval timers. These timers are analogous to per-process
+timers but are represented by a file descriptor, rather than a process.
+These file descriptors may be passed to other processes, are preserved
+across fork(2), and may be monitored via kevent(2), poll(2), or
+select(2).
+
+A timerfd implementation in FreeBSD already exists for Linux
+compatibility, but this differential revision makes the interface
+native. The goal behind this change is to ease the FreeBSD porting
+process for programs that include timerfd.
+
+This specific implementation avoids adding new names to the system call
+table. Instead, timerfd_create() is wrapped by the specialfd() system
+call. The timerfd_gettime() and `timerfd_settime() calls are wrapped
+ioctl() s.
+
+Developers that wish to support FreeBSD should avoid using timerfd. The
+kqueue() EVFILT_TIMER filter is preferred for establishing arbitrary
+timers.
+
+------------------------------------------------------------------------
+
+Last modified on: April 14, 2023 by Lorenzo Salvadore
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

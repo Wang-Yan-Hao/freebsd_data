@@ -1,0 +1,206 @@
+[FreeBSD The Power to Serve]
+
+An FreeBSD spenden
+
+ 
+
+-   Startseite
+
+-   Über FreeBSD
+    -   Für Einsteiger
+    -   Eigenschaften
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Bezugsquellen
+    -   Release Information
+    -   Release Engineering
+
+-   Dokumentation
+    -   FAQ
+    -   Handbuch
+    -   Porter-Handbuch
+    -   Entwickler-Handbuch
+    -   Committer's Guide
+    -   Manualpages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   Alle Bücher und Artikel
+
+-   Community
+    -   Mailinglisten
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Entwicklung
+    -   Projektideen
+    -   Git-Spiegelserver
+    -   Subversion-Repository
+    -   GitHub Mirror
+    -   Phabricator (Code Review)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Hilfe
+    -   Kommerzieller Support
+    -   Sicherheit
+    -   Problemberichte
+    -   Problembericht erstellen
+    -   Internet-Ressourcen
+
+-   Foundation
+    -   Geldspende
+    -   Hardwarespende
+
+-   
+-   Entwickler-Handbuch
+-   Committer's Guide
+-   Porter-Handbuch
+-   Source code repositories
+-   Release Engineering
+-   Platforms
+-   Project Ideas
+-   Contributing
+
+FreeBSD Java® Project
+
+[Jump to Java®]
+
+Java beziehen
+
+Für FreeBSD existieren zwei verschiedene Java Development Kits:
+
+OpenJDK
+
+Das OpenJDK® Project bietet ihnen eine native Open
+Source-Implementierung der Java® SE-Plattform und ist für alle aktuell
+unterstützten FreeBSD-Versionen in den folgenden Versionen (sortiert
+nach Plattform) verfügbar:
+
+aarch64: openjdk8, openjdk11, openjdk12, openjdk13
+
+amd64: openjdk7, openjdk8, openjdk11, openjdk12, openjdk13
+
+arm6: openjdk8
+
+arm7: openjdk8
+
+i386: openjdk7, openjdk8, openjdk11, openjdk12, openjdk13
+
+powerpc: openjdk8
+
+powerpc64: openjdk8, openjdk11, openjdk12, openjdk13
+
+OpenJDK® wird regelmäßig aktualisiert. Lesen sie bitte das Revisionlog,
+um sich über Änderungen zu informieren. Weitere Informationen sind auf
+FreshPorts verfügbar.
+
+OpenJDK® kann über pkg oder die Ports-Sammlung installiert werden:
+
+pkg install openjdk[version]
+
+oder
+
+cd /usr/ports/java/openjdk[version]
+
+make install clean
+
+wobei [version] für 7, 8, 11, 12 oder 13 steht. Am Beispiel openjdk11:
+
+pkg install openjdk11
+
+oder
+
+cd /usr/ports/java/openjdk11
+
+make install clean
+
+Oracle JDK für Linux
+
+Dieser Port installiert das für Linux gebaute Java Development Kit von
+Oracle. Unter FreeBSD läuft es daher im Linux-Kompatibilitätsmodus.
+
+pkg install linux-oracle-jdk18
+
+oder
+
+cd /usr/ports/java/linux-oracle-jdk18
+
+make install clean
+
+Anmerkung: Bitte beachten Sie, dass es die aktuellen Lizenzbedingungen
+von Oracle es nicht erlauben, Binärpakete für FreeBSD anzubieten.
+Außerdem dürfen Sie das Oracle JDK nur für den persönlichen Gebrauch
+einsetzen. Aus diesem Grund muss auch der Quellcode vor der Installation
+manuell heruntergeladen werden.
+
+Dokumentation
+
+-   Ports erstellen
+
+Ich will helfen, indem ich …​
+
+…​ Bugs behebe und neue Features hinzufüge.
+
+Die Repositories für den BSD-Port von OpenJDK sind auf GitHub verfügbar,
+wobei Pull-Requests erlaubt sind. Weitere Informationen finden Sie im
+OpenJDK-Wiki.
+
+…​ Software teste.
+
+Dann laden Sie bitte die aktuelle Version herunter, installieren Sie sie
+und versuchen Sie, Ihre Java-Anwendungen damit auszuführen. Sollte eine
+Anwendung nicht funktionieren, lesen Sie bitte den nächsten Punkt.
+
+…​ Problemberichte einreiche.
+
+Wenn eine Ihrer Anwendungen nicht funktioniert oder abstürzt, sollten
+Sie die folgenden Schritte ausführen, bevor Sie einen Problembericht
+erstellen:
+
+1.  Versuchen Sie nochmals, die Anwendung zu starten.
+
+2.  Überprüfen Sie die Konfiguration Ihrer Anwendung. Vergewissern Sie
+    sich, dass diese korrekt ist.
+
+3.  Versuchen Sie, die Anwendung auf einem anderen System oder einer
+    anderen Plattform zu starten. Haben Sie Zugriff auf eine
+    Referenzplattform, versuchen Sie es auch dort. Dies dient dazu,
+    einzugrenzen, ob es sich um ein Problem innerhalb der Anwendung,
+    einen Java-Bug oder ein FreeBSD-spezifisches Problem handelt.
+
+4.  Versuchen Sie, das Problem einzugrenzen. Handelt es sich dabei um
+    von Ihnen entwickelten Code, versuchen Sie ihn zu debuggen. Falls
+    dies nicht möglich ist, finden Sie heraus, welche Schritte notwendig
+    sind, um das Problem zu reproduzieren.
+
+5.  Informieren Sie das JKD-Porting-Team. Dazu senden Sie bitte eine
+    E-Mail an freebsd-java@FreeBSD.org. Achten Sie darauf, dass Sie alle
+    bereits durchgeführten Schritte dokumentieren.
+
+6.  Zuletzt und extrem wichtig: Seien Sie bereit, mit dem Team an der
+    Lösung des Problems zu arbeiten.
+
+…​ Dokumentation erstelle.
+
+Jeder kann bei der Dokumentation helfen. Wenn Sie etwas in der
+Dokumenation vermissen, schreiben Sie eine Anleitung und senden Sie
+diese an freebsd-java@FreeBSD.org.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19. Juni 2021 by Danilo G. Baio
+
+Rechtliches | © 1995-2023 The FreeBSD Project Alle Rechte vorbehalten.
+Die Marke FreeBSD ist eine eingetragene Marke der FreeBSD Foundation und
+wird vom FreeBSD Project mit freundlicher Genehmigung der The FreeBSD
+Foundation. Kontakt

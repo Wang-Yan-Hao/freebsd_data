@@ -1,0 +1,105 @@
+[FreeBSD The Power to Serve]
+
+An FreeBSD spenden
+
+ 
+
+-   Startseite
+
+-   Über FreeBSD
+    -   Für Einsteiger
+    -   Eigenschaften
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Bezugsquellen
+    -   Release Information
+    -   Release Engineering
+
+-   Dokumentation
+    -   FAQ
+    -   Handbuch
+    -   Porter-Handbuch
+    -   Entwickler-Handbuch
+    -   Committer's Guide
+    -   Manualpages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   Alle Bücher und Artikel
+
+-   Community
+    -   Mailinglisten
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Entwicklung
+    -   Projektideen
+    -   Git-Spiegelserver
+    -   Subversion-Repository
+    -   GitHub Mirror
+    -   Phabricator (Code Review)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Hilfe
+    -   Kommerzieller Support
+    -   Sicherheit
+    -   Problemberichte
+    -   Problembericht erstellen
+    -   Internet-Ressourcen
+
+-   Foundation
+    -   Geldspende
+    -   Hardwarespende
+
+-   Allgemeines
+-   Installing
+-   Aktualisierung
+-   Durchsuchen
+-   Weitere Informationen
+-   FreshPorts
+
+Die FreeBSD Ports-Sammlung durchsuchen
+
+Search ports for: All Package Name Description Long description
+Maintainer Requires
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Das Formular auf dieser Seite erlaubt es Ihnen, nach bestimmten Ports zu
+suchen. Wenn Sie eine Suche starten, werden Sie auf eine erweiterte
+Version der Suchfunktion umgeleitet.
+
+Haben Sie die Ports-Sammlung bereits installiert, können Sie die Suche
+auch lokal im Verzeichnis /usr/ports oder einem Unterverzeichnis davon
+durchführen. Dazu geben Sie einfach make search name= Suchbegriff ein.
+Statt nach name können Sie auch nach port (Portname), path (Pfad im
+Ports-System), ìnfo` (einzeilige Beschreibung), cat (Kategorie),
+maint(Maintainer), bdeps (Abhängigkeiten beim Bauen), rdeps
+(Abhängigkeiten zur Laufzeit) oder www (Web-Site) suchen. Mit
+make quicksearch …​ wird die Ausgabe auf Port, Pfad und einzeilige
+Beschreibung beschränkt.
+
+Alternativ können Sie auch die Seite FreshPorts.org besuchen oder die
+von den Betreibern angebotenen Mailinglisten abonnieren.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 29. April 2021 by Stefan Eßer
+
+Rechtliches | © 1995-2023 The FreeBSD Project Alle Rechte vorbehalten.
+Die Marke FreeBSD ist eine eingetragene Marke der FreeBSD Foundation und
+wird vom FreeBSD Project mit freundlicher Genehmigung der The FreeBSD
+Foundation. Kontakt

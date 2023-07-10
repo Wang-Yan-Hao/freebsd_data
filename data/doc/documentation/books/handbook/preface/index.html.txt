@@ -1,0 +1,824 @@
+
+-    Preface
+    -   Intended Audience
+    -   Fourth Edition
+    -   Third Edition
+    -   Second Edition (2004)
+    -   First Edition (2001)
+    -   Organization of This Book
+    -   Conventions used in this book
+    -   Acknowledgments
+-    Part I. Getting Started
+-    Chapter 1. Introduction
+    -   1.1. Synopsis
+    -   1.2. Welcome to FreeBSD!
+    -   1.3. About the FreeBSD Project
+-    Chapter 2. Installing FreeBSD
+    -   2.1. Synopsis
+    -   2.2. Minimum Hardware Requirements
+    -   2.3. Pre-Installation Tasks
+    -   2.4. Starting the Installation
+    -   2.5. Using bsdinstall
+    -   2.6. Allocating Disk Space
+    -   2.7. Fetching Distribution Files
+    -   2.8. Network Interfaces, Accounts, Time Zone, Services and
+        Hardening
+    -   2.9. Troubleshooting
+    -   2.10. Using the Live CD
+-    Chapter 3. FreeBSD Basics
+    -   3.1. Synopsis
+    -   3.2. Virtual Consoles and Terminals
+    -   3.3. Users and Basic Account Management
+    -   3.4. Permissions
+    -   3.5. Directory Structure
+    -   3.6. Disk Organization
+    -   3.7. Mounting and Unmounting File Systems
+    -   3.8. Processes and Daemons
+    -   3.9. Shells
+    -   3.10. Text Editors
+    -   3.11. Devices and Device Nodes
+    -   3.12. Manual Pages
+-    Chapter 4. Installing Applications: Packages and Ports
+    -   4.1. Synopsis
+    -   4.2. Overview of Software Installation
+    -   4.3. Finding Software
+    -   4.4. Using pkg for Binary Package Management
+    -   4.5. Using the Ports Collection
+    -   4.6. Building Packages with Poudriere
+    -   4.7. Post-Installation Considerations
+    -   4.8. Dealing with Broken Ports
+-    Chapter 5. The X Window System
+    -   5.1. Synopsis
+    -   5.2. Installing Xorg
+    -   5.3. Graphic card drivers
+    -   5.4. Xorg Configuration
+    -   5.5. Using Fonts in Xorg
+-    Chapter 6. Wayland
+    -   6.1. Wayland Synopsis
+    -   6.2. The Wayfire Compositor
+    -   6.3. The Hikari Compositor
+    -   6.4. The Sway Compositor
+    -   6.5. Using Xwayland
+    -   6.6. Remote Desktop Using VNC
+    -   6.7. Wayland Login Manager
+    -   6.8. Useful Utilities
+-    Chapter 7. Network
+    -   7.1. Synopsis
+    -   7.2. Setting up the Network
+    -   7.3. Wired Networks
+    -   7.4. Wireless Networks
+    -   7.5. Hostname
+    -   7.6. DNS
+    -   7.7. Troubleshooting
+-    Part II. Common Tasks
+-    Chapter 8. Desktop Environments
+    -   8.1. Synopsis
+    -   8.2. Desktop Environments
+    -   8.3. Browsers
+    -   8.4. Development tools
+    -   8.5. Desktop office productivity
+    -   8.6. Document Viewers
+    -   8.7. Finance
+-    Chapter 9. Multimedia
+    -   9.1. Synopsis
+    -   9.2. Setting Up the Sound Card
+    -   9.3. Audio players
+    -   9.4. Video players
+    -   9.5. Conferencing and Meetings
+    -   9.6. Image Scanners
+-    Chapter 10. Configuring the FreeBSD Kernel
+    -   10.1. Synopsis
+    -   10.2. Why Build a Custom Kernel?
+    -   10.3. Finding the System Hardware
+    -   10.4. The Configuration File
+    -   10.5. Building and Installing a Custom Kernel
+    -   10.6. If Something Goes Wrong
+-    Chapter 11. Printing
+    -   11.1. Quick Start
+    -   11.2. Printer Connections
+    -   11.3. Common Page Description Languages
+    -   11.4. Direct Printing
+    -   11.5. LPD (Line Printer Daemon)
+    -   11.6. Other Printing Systems
+-    Chapter 12. Linux Binary Compatibility
+    -   12.1. Synopsis
+    -   12.2. Configuring Linux Binary Compatibility
+    -   12.3. Linux userlands
+    -   12.4. Advanced Topics
+-    Chapter 13. WINE
+    -   13.1. Synopsis
+    -   13.2. WINE Overview & Concepts
+    -   13.3. Installing WINE on FreeBSD
+    -   13.4. Running a First WINE Program on FreeBSD
+    -   13.5. Configuring WINE Installation
+    -   13.6. WINE Management GUIs
+    -   13.7. WINE in Multi-User FreeBSD Installations
+    -   13.8. WINE on FreeBSD FAQ
+-    Part III. System Administration
+-    Chapter 14. Configuration and Tuning
+    -   14.1. Synopsis
+    -   14.2. Starting Services
+    -   14.3. Configuring cron(8)
+    -   14.4. Managing Services in FreeBSD
+    -   14.5. Configuring System Logging
+    -   14.6. Configuration Files
+    -   14.7. Tuning with sysctl(8)
+    -   14.8. Tuning Disks
+    -   14.9. Tuning Kernel Limits
+    -   14.10. Adding Swap Space
+    -   14.11. Power and Resource Management
+-    Chapter 15. The FreeBSD Booting Process
+    -   15.1. Synopsis
+    -   15.2. FreeBSD Boot Process
+    -   15.3. Device Hints
+    -   15.4. Shutdown Sequence
+-    Chapter 16. Security
+    -   16.1. Synopsis
+    -   16.2. Introduction
+    -   16.3. One-time Passwords
+    -   16.4. TCP Wrapper
+    -   16.5. Kerberos
+    -   16.6. OpenSSL
+    -   16.7. VPN over IPsec
+    -   16.8. OpenSSH
+    -   16.9. Access Control Lists
+    -   16.10. Monitoring Third Party Security Issues
+    -   16.11. FreeBSD Security Advisories
+    -   16.12. Process Accounting
+    -   16.13. Resource Limits
+    -   16.14. Shared Administration with Sudo
+    -   16.15. Using doas as an alternative to sudo
+-    Chapter 17. Jails
+    -   17.1. Synopsis
+    -   17.2. Terms Related to Jails
+    -   17.3. Creating and Controlling Jails
+    -   17.4. Fine Tuning and Administration
+    -   17.5. Updating Multiple Jails
+    -   17.6. Managing Jails with ezjail
+-    Chapter 18. Mandatory Access Control
+    -   18.1. Synopsis
+    -   18.2. Key Terms
+    -   18.3. Understanding MAC Labels
+    -   18.4. Planning the Security Configuration
+    -   18.5. Available MAC Policies
+    -   18.6. User Lock Down
+    -   18.7. Nagios in a MAC Jail
+    -   18.8. Troubleshooting the MAC Framework
+-    Chapter 19. Security Event Auditing
+    -   19.1. Synopsis
+    -   19.2. Key Terms
+    -   19.3. Audit Configuration
+    -   19.4. Working with Audit Trails
+-    Chapter 20. Storage
+    -   20.1. Synopsis
+    -   20.2. Adding Disks
+    -   20.3. Resizing and Growing Disks
+    -   20.4. USB Storage Devices
+    -   20.5. Creating and Using CD Media
+    -   20.6. Creating and Using DVD Media
+    -   20.7. Creating and Using Floppy Disks
+    -   20.8. Using NTFS Disks
+    -   20.9. Backup Basics
+    -   20.10. Memory Disks
+    -   20.11. File System Snapshots
+    -   20.12. Disk Quotas
+    -   20.13. Encrypting Disk Partitions
+    -   20.14. Encrypting Swap
+    -   20.15. Highly Available Storage (HAST)
+-    Chapter 21. GEOM: Modular Disk Transformation Framework
+    -   21.1. Synopsis
+    -   21.2. RAID0 - Striping
+    -   21.3. RAID1 - Mirroring
+    -   21.4. RAID3 - Byte-level Striping with Dedicated Parity
+    -   21.5. Software RAID Devices
+    -   21.6. GEOM Gate Network
+    -   21.7. Labeling Disk Devices
+    -   21.8. UFS Journaling Through GEOM
+-    Chapter 22. The Z File System (ZFS)
+    -   22.1. What Makes ZFS Different
+    -   22.2. Quick Start Guide
+    -   22.3. zpool Administration
+    -   22.4. zfs Administration
+    -   22.5. Delegated Administration
+    -   22.6. Advanced Topics
+<<<<<<< HEAD
+=======
+    -   22.7. Further Resources
+    -   22.8. ZFS Features and Terminology
+-    Chapter 23. Other File Systems
+    -   23.1. Synopsis
+    -   23.2. Linux® File Systems
+-    Chapter 24. Virtualization
+    -   24.1. Synopsis
+    -   24.2. FreeBSD as a Guest on Parallels Desktop for macOS®
+    -   24.3. FreeBSD as a Guest on VMware Fusion for macOS®
+    -   24.4. FreeBSD as a Guest on VirtualBox™
+    -   24.5. FreeBSD as a Host with VirtualBox™
+    -   24.6. FreeBSD as a Host with bhyve
+    -   24.7. FreeBSD as a Xen™-Host
+-    Chapter 25. Localization - i18n/L10n Usage and Setup
+    -   25.1. Synopsis
+    -   25.2. Using Localization
+    -   25.3. Finding i18n Applications
+    -   25.4. Locale Configuration for Specific Languages
+-    Chapter 26. Updating and Upgrading FreeBSD
+    -   26.1. Synopsis
+    -   26.2. FreeBSD Update
+    -   26.3. Updating Bootcode
+    -   26.4. Updating the Documentation Set
+    -   26.5. Tracking a Development Branch
+    -   26.6. Updating FreeBSD from Source
+    -   26.7. Tracking for Multiple Machines
+-    Chapter 27. DTrace
+    -   27.1. Synopsis
+    -   27.2. Implementation Differences
+    -   27.3. Enabling DTrace Support
+    -   27.4. Using DTrace
+-    Chapter 28. USB Device Mode / USB OTG
+    -   28.1. Synopsis
+    -   28.2. USB Virtual Serial Ports
+    -   28.3. USB Device Mode Network Interfaces
+    -   28.4. USB Virtual Storage Device
+-    Part IV. Network Communication
+-    Chapter 29. Serial Communications
+    -   29.1. Synopsis
+    -   29.2. Serial Terminology and Hardware
+    -   29.3. Terminals
+    -   29.4. Dial-in Service
+    -   29.5. Dial-out Service
+    -   29.6. Setting Up the Serial Console
+-    Chapter 30. PPP
+    -   30.1. Synopsis
+    -   30.2. Configuring PPP
+    -   30.3. Troubleshooting PPP Connections
+    -   30.4. Using PPP over Ethernet (PPPoE)
+    -   30.5. Using PPP over ATM (PPPoA)
+-    Chapter 31. Electronic Mail
+    -   31.1. Synopsis
+    -   31.2. Mail Components
+    -   31.3. Sendmail Configuration Files
+    -   31.4. Changing the Mail Transfer Agent
+    -   31.5. Troubleshooting
+    -   31.6. Advanced Topics
+    -   31.7. Setting Up to Send Only
+    -   31.8. Using Mail with a Dialup Connection
+    -   31.9. SMTP Authentication
+    -   31.10. Mail User Agents
+    -   31.11. Using fetchmail
+    -   31.12. Using procmail
+-    Chapter 32. Network Servers
+    -   32.1. Synopsis
+    -   32.2. The inetd Super-Server
+    -   32.3. Network File System (NFS)
+    -   32.4. Network Information System (NIS)
+    -   32.5. Lightweight Directory Access Protocol (LDAP)
+    -   32.6. Dynamic Host Configuration Protocol (DHCP)
+    -   32.7. Domain Name System (DNS)
+    -   32.8. Apache HTTP Server
+    -   32.9. File Transfer Protocol (FTP)
+    -   32.10. File and Print Services for Microsoft® Windows® Clients
+        (Samba)
+    -   32.11. Clock Synchronization with NTP
+    -   32.12. iSCSI Initiator and Target Configuration
+-    Chapter 33. Firewalls
+    -   33.1. Synopsis
+    -   33.2. Firewall Concepts
+    -   33.3. PF
+    -   33.4. IPFW
+    -   33.5. IPFILTER (IPF)
+    -   33.6. Blacklistd
+-    Chapter 34. Advanced Networking
+    -   34.1. Synopsis
+    -   34.2. Gateways and Routes
+    -   34.3. Virtual Hosts
+    -   34.4. Wireless Advanced Authentication
+    -   34.5. Wireless Ad-hoc Mode
+    -   34.6. USB Tethering
+    -   34.7. Bluetooth
+    -   34.8. Bridging
+    -   34.9. Link Aggregation and Failover
+    -   34.10. Diskless Operation with PXE
+    -   34.11. Common Address Redundancy Protocol (CARP)
+    -   34.12. VLANs
+-    Part V. Appendices
+-    Appendix A. Obtaining FreeBSD
+    -   A.1. Mirrors
+    -   A.2. Using Git
+    -   A.3. Using Subversion
+    -   A.4. CD and DVD Sets
+-    Appendix B. Bibliography
+    -   B.1. FreeBSD Bibliography
+    -   B.2. Security Reference
+    -   B.3. UNIX® History
+    -   B.4. Periodicals, Journals, and Magazines
+-    Appendix C. Resources on the Internet
+    -   C.1. Websites
+    -   C.2. Mailing Lists
+    -   C.3. Usenet Newsgroups
+-    Appendix D. OpenPGP Keys
+    -   D.1. Officers
+-    FreeBSD Glossary
+-    Colophon
+-   
+-   
+
+Book menu
+
+Preface
+
+Table of Contents
+
+-   Intended Audience
+-   Fourth Edition
+-   Third Edition
+-   Second Edition (2004)
+-   First Edition (2001)
+-   Organization of This Book
+-   Conventions used in this book
+-   Acknowledgments
+
+Intended Audience
+
+The FreeBSD newcomer will find that the first section of this book
+guides the user through the FreeBSD installation process and gently
+introduces the concepts and conventions that underpin UNIX®. Working
+through this section requires little more than the desire to explore,
+and the ability to take on board new concepts as they are introduced.
+
+Once you have traveled this far, the second, far larger, section of the
+Handbook is a comprehensive reference to all manner of topics of
+interest to FreeBSD system administrators. Some of these chapters may
+recommend that you do some prior reading, and this is noted in the
+synopsis at the beginning of each chapter.
+
+For a list of additional sources of information, please see
+Bibliography.
+
+Fourth Edition
+
+The current version of the Handbook represents the cumulative effort of
+a working group that has been reviewing and updating all Handbook
+content. These are the major updates since the fourth edition of the
+Handbook.
+
+-   The Handbook has been converted from Docbook to Hugo and AsciiDoctor
+
+-   The FreeBSD Documentation Portal has been created.
+
+-   Wayland has been added with information about installing and
+    configuring Wayland under FreeBSD.
+
+-   The Bibliography has been extensively updated.
+
+Third Edition
+
+The current online version of the Handbook represents the cumulative
+effort of many hundreds of contributors over the past 10 years. The
+following are some of the significant changes since the two volume third
+edition was published in 2004:
+
+-   WINE has been added with information about how to run Windows®
+    applications on FreeBSD.
+
+-   DTrace has been added with information about the powerful DTrace
+    performance analysis tool.
+
+-   Other File Systems have been added with information about non-native
+    file systems in FreeBSD, such as ZFS from Sun™.
+
+-   Security Event Auditing has been added to cover the new auditing
+    capabilities in FreeBSD and explain its use.
+
+-   Virtualization has been added with information about installing
+    FreeBSD on virtualization software.
+
+-   Installing FreeBSD has been added to cover installation of FreeBSD
+    using the new installation utility, bsdinstall.
+
+Second Edition (2004)
+
+The third edition was the culmination of over two years of work by the
+dedicated members of the FreeBSD Documentation Project. The printed
+edition grew to such a size that it was necessary to publish as two
+separate volumes. The following are the major changes in this new
+edition:
+
+-   Configuration and Tuning has been expanded with new information
+    about the ACPI power and resource management, the cron system
+    utility, and more kernel tuning options.
+
+-   Security has been expanded with new information about virtual
+    private networks (VPNs), file system access control lists (ACLs),
+    and security advisories.
+
+-   Mandatory Access Control is a new chapter with this edition. It
+    explains what MAC is and how this mechanism can be used to secure a
+    FreeBSD system.
+
+-   Storage has been expanded with new information about USB storage
+    devices, file system snapshots, file system quotas, file and network
+    backed filesystems, and encrypted disk partitions.
+
+-   A troubleshooting section has been added to PPP.
+
+-   Electronic Mail has been expanded with new information about using
+    alternative transport agents, SMTP authentication, UUCP, fetchmail,
+    procmail, and other advanced topics.
+
+-   Network Servers is all new with this edition. This chapter includes
+    information about setting up the Apache HTTP Server, ftpd, and
+    setting up a server for Microsoft® Windows® clients with Samba. Some
+    sections from Advanced Networking were moved here to improve the
+    presentation.
+
+-   Advanced Networking has been expanded with new information about
+    using Bluetooth® devices with FreeBSD, setting up wireless networks,
+    and Asynchronous Transfer Mode (ATM) networking.
+
+-   A glossary has been added to provide a central location for the
+    definitions of technical terms used throughout the book.
+
+-   A number of aesthetic improvements have been made to the tables and
+    figures throughout the book.
+
+First Edition (2001)
+
+The second edition was the culmination of over two years of work by the
+dedicated members of the FreeBSD Documentation Project. The following
+were the major changes in this edition:
+
+-   A complete Index has been added.
+
+-   All ASCII figures have been replaced by graphical diagrams.
+
+-   A standard synopsis has been added to each chapter to give a quick
+    summary of what information the chapter contains, and what the
+    reader is expected to know.
+
+-   The content has been logically reorganized into three parts:
+    "Getting Started", "System Administration", and "Appendices".
+
+-   FreeBSD Basics has been expanded to contain additional information
+    about processes, daemons, and signals.
+
+-   Installing Applications: Packages and Ports has been expanded to
+    contain additional information about binary package management.
+
+-   The X Window System has been completely rewritten with an emphasis
+    on using modern desktop technologies such as KDE and GNOME on
+    XFree86™ 4.X.
+
+-   The FreeBSD Booting Process has been expanded.
+
+-   Storage has been written from what used to be two separate chapters
+    on "Disks" and "Backups". We feel that the topics are easier to
+    comprehend when presented as a single chapter. A section on RAID
+    (both hardware and software) has also been added.
+
+-   Serial Communications has been completely reorganized and updated
+    for FreeBSD 4.X/5.X.
+
+-   PPP has been substantially updated.
+
+-   Many new sections have been added to Advanced Networking.
+
+-   Electronic Mail has been expanded to include more information about
+    configuring sendmail.
+
+-   Linux® Binary Compatibility has been expanded to include information
+    about installing Oracle® and SAP® R/3®.
+
+-   The following new topics are covered in this second edition:
+
+    -   Configuration and Tuning.
+
+    -   Multimedia.
+
+Organization of This Book
+
+This book is split into five logically distinct sections. The first
+section, Getting Started, covers the installation and basic usage of
+FreeBSD. It is expected that the reader will follow these chapters in
+sequence, possibly skipping chapters covering familiar topics. The
+second section, Common Tasks, covers some frequently used features of
+FreeBSD. This section, and all subsequent sections, can be read out of
+order. Each chapter begins with a succinct synopsis that describes what
+the chapter covers and what the reader is expected to already know. This
+is meant to allow the casual reader to skip around to find chapters of
+interest. The third section, System Administration, covers
+administration topics. The fourth section, Network Communication, covers
+networking and server topics. The fifth section contains appendices of
+reference information.
+
+Introduction
+
+    Introduces FreeBSD to a new user. It describes the history of the
+    FreeBSD Project, its goals and development model.
+
+Installing FreeBSD
+
+    Walks a user through the entire installation process of FreeBSD 9.x
+    and later using bsdinstall.
+
+FreeBSD Basics
+
+    Covers the basic commands and functionality of the FreeBSD operating
+    system. If you are familiar with Linux® or another flavor of UNIX®
+    then you can probably skip this chapter.
+
+Installing Applications: Packages and Ports
+
+    Covers the installation of third-party software with both FreeBSD’s
+    innovative "Ports Collection" and standard binary packages.
+
+The X Window System
+
+    Describes the X Window System in general and using X11 on FreeBSD in
+    particular. Also describes common desktop environments such as KDE
+    and GNOME.
+
+Wayland
+
+    Describes the Wayland display server in general and using Wayland on
+    FreeBSD in particular. Also describes common compositors such as
+    Wayfire, Hikari and Sway.
+
+Desktop Applications
+
+    Lists some common desktop applications, such as web browsers and
+    productivity suites, and describes how to install them on FreeBSD.
+
+Multimedia
+
+    Shows how to set up sound and video playback support for your
+    system. Also describes some sample audio and video applications.
+
+Configuring the FreeBSD Kernel
+
+    Explains why you might need to configure a new kernel and provides
+    detailed instructions for configuring, building, and installing a
+    custom kernel.
+
+Printing
+
+    Describes managing printers on FreeBSD, including information about
+    banner pages, printer accounting, and initial setup.
+
+Linux® Binary Compatibility
+
+    Describes the Linux® compatibility features of FreeBSD. Also
+    provides detailed installation instructions for many popular Linux®
+    applications such as Oracle® and Mathematica®.
+
+WINE
+
+    Describes WINE and provides detailed installation instructions. Also
+    describes how WINE operates, how to install a GUI helper, how to run
+    Windows® applications on FreeBSD, and offers other tips and
+    solutions.
+
+Configuration and Tuning
+
+    Describes the parameters available for system administrators to tune
+    a FreeBSD system for optimum performance. Also describes the various
+    configuration files used in FreeBSD and where to find them.
+
+The FreeBSD Booting Process
+
+    Describes the FreeBSD boot process and explains how to control this
+    process with configuration options.
+
+Security
+
+    Describes many different tools available to help keep your FreeBSD
+    system secure, including Kerberos, IPsec and OpenSSH.
+
+Jails
+
+    Describes the jails framework, and the improvements of jails over
+    the traditional chroot support of FreeBSD.
+
+Mandatory Access Control
+
+    Explains what Mandatory Access Control (MAC) is and how this
+    mechanism can be used to secure a FreeBSD system.
+
+Security Event Auditing
+
+    Describes what FreeBSD Event Auditing is, how it can be installed,
+    configured, and how audit trails can be inspected or monitored.
+
+Storage
+
+    Describes how to manage storage media and filesystems with FreeBSD.
+    This includes physical disks, RAID arrays, optical and tape media,
+    memory-backed disks, and network filesystems.
+
+GEOM: Modular Disk Transformation Framework
+
+    Describes what the GEOM framework in FreeBSD is and how to configure
+    various supported RAID levels.
+
+The OpenZFS storage platform
+
+    Describes the OpenZFS storage platform and provides a quick-start
+    guide and information about advanced topics running OpenZFS under
+    FreeBSD.
+
+Other File Systems
+
+    Examines support for non-native file systems under FreeBSD like
+    ext2, ext3 and ext4.
+
+Virtualization
+
+    Describes what virtualization systems offer, and how they can be
+    used with FreeBSD.
+
+Localization - i18n/L10n Usage and Setup
+
+    Describes how to use FreeBSD in languages other than English. Covers
+    both system and application level localization.
+
+Updating and Upgrading FreeBSD
+
+    Explains the differences between FreeBSD-STABLE, FreeBSD-CURRENT,
+    and FreeBSD releases. Describes which users would benefit from
+    tracking a development system and outlines that process. Covers the
+    methods users may take to update their system to the latest security
+    release.
+
+DTrace
+
+    Describes how to configure and use the DTrace tool from Sun™ on
+    FreeBSD. Dynamic tracing can help locate performance issues, by
+    performing real time system analysis.
+
+USB Device Mode / USB OTG
+
+    Explains the use of USB Device Mode and USB On The Go (USB OTG) on
+    FreeBSD.
+
+PPP
+
+    Describes how to use PPP to connect to remote systems in FreeBSD.
+
+Electronic Mail
+
+    Explains the different components of an email server and dives into
+    simple configuration topics for the most popular mail server
+    software: sendmail.
+
+Network Servers
+
+    Provides detailed instructions and example configuration files to
+    set up your FreeBSD machine as a network filesystem server, domain
+    name server, network information system server, or time
+    synchronization server.
+
+Firewalls
+
+    Explains the philosophy behind software-based firewalls and provides
+    detailed information about the configuration of the different
+    firewalls available for FreeBSD.
+
+Advanced Networking
+
+    Describes many networking topics, including sharing an Internet
+    connection with other computers on your LAN, advanced routing
+    topics, wireless networking, Bluetooth®, ATM, IPv6, and much more.
+
+Obtaining FreeBSD
+
+    Lists different sources for obtaining FreeBSD media on CDROM or DVD
+    as well as different sites on the Internet that allow you to
+    download and install FreeBSD.
+
+Bibliography
+
+    This book touches on many different subjects that may leave you
+    hungry for a more detailed explanation. The bibliography lists many
+    excellent books that are referenced in the text.
+
+Resources on the Internet
+
+    Describes the many forums available for FreeBSD users to post
+    questions and engage in technical conversations about FreeBSD.
+
+OpenPGP Keys
+
+    Lists the PGP fingerprints of several FreeBSD Developers.
+
+Conventions used in this book
+
+To provide a consistent and easy to read text, several conventions are
+followed throughout the book.
+
+Typographic Conventions
+
+Italic
+
+    An italic font is used for filenames, URLs, emphasized text, and the
+    first usage of technical terms.
+
+Monospace
+
+    A monospaced font is used for error messages, commands, environment
+    variables, names of ports, hostnames, user names, group names,
+    device names, variables, and code fragments.
+
+Bold
+
+    A bold font is used for applications, commands, and keys.
+
+User Input
+
+Keys are shown in bold to stand out from other text. Key combinations
+that are meant to be typed simultaneously are shown with + between the
+keys, such as:
+
+Ctrl+Alt+Del
+
+Meaning the user should type the Ctrl, Alt, and Del keys at the same
+time.
+
+Keys that are meant to be typed in sequence will be separated with
+commas, for example:
+
+Ctrl+X, Ctrl+S
+
+Would mean that the user is expected to type the Ctrl and X keys
+simultaneously and then to type the Ctrl and S keys simultaneously.
+
+Examples
+
+Examples starting with C:\> indicate a MS-DOS® command. Unless otherwise
+noted, these commands may be executed from a "Command Prompt" window in
+a modern Microsoft® Windows® environment.
+
+    C:\> tools\fdimage floppies\kern.flp A:
+
+Examples starting with # indicate a command that must be invoked as the
+superuser in FreeBSD. You can login as root to type the command, or
+login as your normal account and use su(1) to gain superuser privileges.
+
+    # dd if=kern.flp of=/dev/fd0
+
+Examples starting with % indicate a command that should be invoked from
+a normal user account. Unless otherwise noted, C-shell syntax is used
+for setting environment variables and other shell commands.
+
+    % top
+
+Acknowledgments
+
+The book you are holding represents the efforts of many hundreds of
+people around the world. Whether they sent in fixes for typos, or
+submitted complete chapters, all the contributions have been useful.
+
+Several companies have supported the development of this document by
+paying authors to work on it full-time, paying for publication, etc. In
+particular, BSDi (subsequently acquired by Wind River Systems) paid
+members of the FreeBSD Documentation Project to work on improving this
+book full time leading up to the publication of the first printed
+edition in March 2000 (ISBN 1-57176-241-8). Wind River Systems then paid
+several additional authors to make a number of improvements to the
+print-output infrastructure and to add additional chapters to the text.
+This work culminated in the publication of the second printed edition in
+November 2001 (ISBN 1-57176-303-1). In 2003-2004, FreeBSD Mall, Inc,
+paid several contributors to improve the Handbook in preparation for the
+third printed edition. The third printed edition has been split into two
+volumes. Both volumes have been published as The FreeBSD Handbook 3rd
+Edition Volume 1: User Guide (ISBN 1-57176-327-9) and The FreeBSD
+Handbook 3rd Edition Volume 2: Administrators Guide (ISBN
+1-57176-328-7).
+
+------------------------------------------------------------------------
+
+Last modified on: January 8, 2023 by Sergio Carlavilla Delgado
+
+Prev
+
+Home
+
+Next
+
+Table of Contents
+
+-   Intended Audience
+-   Fourth Edition
+-   Third Edition
+-   Second Edition (2004)
+-   First Edition (2001)
+-   Organization of This Book
+-   Conventions used in this book
+-   Acknowledgments
+
+------------------------------------------------------------------------
+
+Resources
+
+-   Download PDF
+-   Edit this page
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+

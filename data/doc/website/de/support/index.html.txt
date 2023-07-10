@@ -1,0 +1,117 @@
+[FreeBSD The Power to Serve]
+
+An FreeBSD spenden
+
+ 
+
+-   Startseite
+
+-   Über FreeBSD
+    -   Für Einsteiger
+    -   Eigenschaften
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Bezugsquellen
+    -   Release Information
+    -   Release Engineering
+
+-   Dokumentation
+    -   FAQ
+    -   Handbuch
+    -   Porter-Handbuch
+    -   Entwickler-Handbuch
+    -   Committer's Guide
+    -   Manualpages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   Alle Bücher und Artikel
+
+-   Community
+    -   Mailinglisten
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Entwicklung
+    -   Projektideen
+    -   Git-Spiegelserver
+    -   Subversion-Repository
+    -   GitHub Mirror
+    -   Phabricator (Code Review)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Hilfe
+    -   Kommerzieller Support
+    -   Sicherheit
+    -   Problemberichte
+    -   Problembericht erstellen
+    -   Internet-Ressourcen
+
+-   Foundation
+    -   Geldspende
+    -   Hardwarespende
+
+-   Hilfe
+-   Kommerzieller Support
+    -   Software
+    -   Hardware
+    -   Consulting
+    -   Internet Service Providers
+    -   Miscellaneous
+-   Security Information
+    -   Advisories
+    -   Errata Notices
+    -   Unterstützte Versionen:
+    -   Unsupported Releases
+    -   How to read FreeBSD Security Advisories
+    -   Charter for the Security Officer and Team
+-   Bug Reports
+    -   Submit a Problem Report
+-   Internet-Ressourcen
+
+Unterstützung
+
+Für FreeBSD gibt es sowohl Hilfestellung durch die FreeBSD-Gemeinde als
+auch durch kommerzielle Anbieter. Der Abschnitt Community dieser
+Internetseiten beschreibt, wie man die Hilfe der FreeBSD-Gemeinde
+(beispielsweise über eine der Mailinglisten) in Anspruch nehmen kann.
+
+Benötigen Sie kommerziellen Support, können Sie auf einen der
+zahlreichen Anbieter zurückgreifen, die kommerzielle Produkte, Dienste
+und/oder Beratung für FreeBSD anbieten.
+
+Problemberichte
+
+Sie haben einen Bug in FreeBSD entdeckt? Oder Ihnen ist ein Fehler
+innerhalb der Dokumentation aufgefallen? Wurde dieser Fehler noch nicht
+gemeldet, so teilen Sie uns dies bitte mit.
+
+Um festzustellen, ob ein Fehler bereits gemeldet wurde, können Sie die
+Problemberichte-Datenbank durchsuchen (beispielsweise nach einer
+bestimmten Kategorie, nach dem für die Behebung des Fehlers Zuständigen,
+dem Einreicher des Problemberichts oder auch nach einem bestimmten
+Begriff). Alternativ können Sie sich auch alle offenen Problemberichte
+anzeigen lassen.
+
+Wurde der Fehler noch nicht gemeldet, lesen Sie bitte zuerst unsere
+Richtlinien zur Erstellung von Problemberichten und melden Sie danach
+den Fehler über unser Problembericht-Formular.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26. Januar 2021 by Sergio Carlavilla Delgado
+
+Rechtliches | © 1995-2023 The FreeBSD Project Alle Rechte vorbehalten.
+Die Marke FreeBSD ist eine eingetragene Marke der FreeBSD Foundation und
+wird vom FreeBSD Project mit freundlicher Genehmigung der The FreeBSD
+Foundation. Kontakt

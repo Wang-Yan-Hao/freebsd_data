@@ -1,0 +1,143 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Ports Collection
+
+Links:
+About FreeBSD Ports URL:https://www.FreeBSD.org/ports/
+Contributing to Ports URL:
+https://docs.freebsd.org/en/articles/contributing/ports-contributing/
+FreeBSD Ports Monitoring URL: http://portsmon.freebsd.org/
+Ports Management Team URL: https://www.freebsd.org/portmgr/
+Ports Tarball URL: http://ftp.freebsd.org/pub/FreeBSD/ports/ports/
+
+Contact: René Ladan <portmgr-secretary@FreeBSD.org>
+Contact: FreeBSD Ports Management Team <portmgr@FreeBSD.org>
+
+The Ports Management Team is responsible for overseeing the overall
+direction of the Ports Tree, building packages, and personnel matters.
+Below is what happened in the last quarter.
+
+According to FreshPorts, we currently enjoy a little over 44,200 ports
+in the Ports Collection. These are accompanied by 2,532 PRs of which 526
+are unassigned. During the last quarter, there were 10,428 commits on
+main by 164 committers and 618 commits on 2021Q2 by 59 committers.
+Compared to 2021Q1, the number of ports and PRs remained roughly the
+same and the main tree saw 10% more commits this quarter.
+
+During the last quarter, we welcomed Charlie Li (vishwin@) and Guangyuan
+Yang (ygy@) and said goodbye to jlaffaye@, jpaetzel@, kmoore@, lifanov@,
+miwi@ and shurd@.
+
+On the infrastructure side, a new USES, ansible, was added so that
+Ansible-related ports can more easily define plugins and modules.
+Several default versions were updated:
+
+-   Default version of PYTHON and PYTHON3 switched to 3.8
+
+-   Default version of librsvg2 on PowerPC switched to rust
+
+Regarding the license framework, the badly maintained LEGAL was removed
+in favor of per-port LICENSEs and the BSD0CLAUSE license was added. In
+the options framework, pre-defined shared version control OPTIONS and
+descriptions were added.
+
+Some notable port updates:
+
+-   Firefox 89.0.2
+
+-   Firefox-esr 78.11.0
+
+-   Chromium 91.0.4472.114
+
+-   Ruby 3.0.1
+
+-   Xorg server 1.20.11
+
+Finally, antoine@ ran 18 exp-runs to test updates for cmake, expat2,
+KDE, meson, poppler, rust, Xorg and the lapack family, to switch the
+default version of Python to 3.8, and to remove the outdated qtchooser.
+
+------------------------------------------------------------------------
+
+Last modified on: July 24, 2021 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

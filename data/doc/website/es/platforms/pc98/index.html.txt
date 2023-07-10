@@ -1,0 +1,119 @@
+[FreeBSD The Power to Serve]
+
+Donar a FreeBSD
+
+ 
+
+-   Inicio
+
+-   Acerca de FreeBSD
+    -   Introduccion
+    -   Características
+    -   Apoyo
+    -   Marketing
+    -   Política de privacidad
+    -   Proyectos
+    -   Ports
+
+-   Descargar FreeBSD
+    -   Información de Versiones
+    -   Ingeniería de Versiones
+
+-   Documentación
+    -   FAQ
+    -   Manual
+    -   Manual del Porter
+    -   Manual del desarrollador
+    -   Guía del Committer
+    -   Manuales en línea
+    -   Presentaciones y Trabajos
+    -   Introducción al Proyecto de Documentación
+    -   Todos los libros y artículos
+
+-   Comunidad
+    -   Listas de correo
+    -   Foros
+    -   Grupos de usuarios
+    -   Eventos
+    -   FreeBSD Journal
+    -   Q&A (externo)
+
+-   Desarrolladores
+    -   Ideas para proyectos
+    -   Git Repository
+    -   Repositorio Subversion
+    -   Git Mirror
+    -   Revisiones de Código (Phabricator)
+    -   Wiki
+    -   Servicio de integración continua
+
+-   Soporte
+    -   Distribuidores comerciales
+    -   Información de seguridad
+    -   Informes de errores
+    -   Envío informes de error
+    -   Recursos Web
+
+-   Fundación
+    -   Donaciones monetarias
+    -   Donaciones hardware
+
+-   
+-   Manual del desarrollador
+-   Guía del Committer
+-   Manual del Porter
+-   Repositorios de código fuente
+-   Ingeniería de Versiones
+-   Plataformas
+-   Ideas del Proyecto
+-   Contribuir
+
+Proyecto FreeBSD/pc98
+
+FreeBSD/pc98 es un port de FreeBSD para la arquitectura NEC PC-98x1
+(pc98). El objetivo del proyecto es lograr que FreeBSD/pc98 funcione de
+la misma manera que FreeBSD en otras arquitecturas. Gran parte del
+código fuente del kernel ya está incluido en el árbol de código de
+FreeBSD y la mayoría de las herramientas de usuario compiladas funcionan
+bien.
+
+Notas de hardware para FreeBSD/pc98
+
+14-CURRENT Hardware Notes
+
+Tareas pendientes
+
+-   Mejorar el sistema de gestión de recursos para el soporte de
+    recursos discontínuos
+
+-   Restablecer el soporte para la tarjeta de sonido PC-9801-86
+
+-   Restablecer el soporte para el controlador PCMCIA NECIA
+
+-   Soporte para máquinas SMP
+
+-   Soporte para el controlador SASI
+
+-   Reescribir boot[12] para admita el formato binario ELF
+
+Enlaces relacionados con FreeBSD/pc98
+
+-   Proyecto FreeBSD(98)
+
+-   Guía no oficial de FreeBSD(98), por karl (en japonés)
+
+-   Notas personales de FreeBSD(98) escritas por Chi (en japonés)
+
+-   Página de Kato
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 de junio de 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 El Proyecto FreeBSD Todos los derechos
+reservados. La marca FreeBSD es una marca registrada de la Fundación
+FreeBSD es es utilizada por el Proyecto FreeBSD con su permiso La
+Fundación FreeBSD. Contact

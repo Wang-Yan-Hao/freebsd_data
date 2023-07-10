@@ -1,0 +1,302 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 9.0-RELEASE Release Notes
+
+  Important: If you are upgrading from a previous release of FreeBSD,
+  please read upgrading section in the Release Notes for notable
+  incompatibilities carefully.
+
+Release Highlights
+
+The highlights in the 9.0-RELEASE are the following. For more details,
+please see the Detailed Release Notes.
+
+-   The FreeBSD kernel now supports Capsicum Capability Mode. Capsicum
+    is a set of features for sandboxing support, using a capability
+    model in which the capabilities are file descriptors. Two new kernel
+    options CAPABILITIES and CAPABILITY_MODE have been added to the
+    GENERIC kernel. For more information about Capsicum, see
+    http://www.cl.cam.ac.uk/research/security/capsicum/.[r219129]
+
+-   The hhook(9) (Helper Hook) and khelp(9) (Kernel Helpers) KPIs have
+    been implemented. These are a kind of superset of pfil(9) framework
+    for more general use in the kernel. The hhook(9) KPI provides a way
+    for kernel subsystems to export hook points that khelp(9) modules
+    can hook to provide enhanced or new functionality to the kernel. The
+    khelp(9) KPI provides a framework for managing khelp(9) modules,
+    which indirectly use the hhook(9) KPI to register their hook
+    functions with hook points of interest within the kernel. These
+    allow a structured way to dynamically extend the kernel at runtime
+    in an ABI preserving manner.[r216758, r216615]
+
+-   A new resource accounting API has been implemented. It can keep
+    per-process, per-jail, and per-loginclass resource accounting
+    information. Note that this is not built nor installed by default.
+    To build and install them, specify options RACCT in the kernel
+    configuration file and rebuild the base system as described in the
+    FreeBSD Handbook.[r220137]
+
+-   A new resource-limiting API has been implemented. It works in
+    conjunction with the RACCT resource accounting implementation and
+    takes user-configurable actions based on the set of rules it
+    maintains and the current resource usage. The rctl(8) utility has
+    been added to manage the rules in userland. Note that this is not
+    built nor installed by default. To build and install them, specify
+    options RCTL in the kernel configuration file and rebuild the base
+    system as described in the FreeBSD Handbook.[r220163]
+
+-   [powerpc] FreeBSD/powerpc now supports Sony Playstation 3 using the
+    OtherOS feature available on firmwares 3.15 and earlier.[r217044]
+
+-   [amd64, i386] The FreeBSD usb(4) subsystem now supports USB 3.0 by
+    default.[r223098]
+
+-   The FreeBSD usb(4) subsystem now supports USB packet filter. This
+    allows to capture packets which go through each USB host controller.
+    The implementation is almost based on bpf(4) code. The userland
+    program usbdump(8) has been added.[r215649]
+
+-   A bxe(4) driver for Broadcom NetXtreme II 10GbE controllers
+    (BCM57710, BCM57711, BCM57711E) has been added.[r219647]
+
+-   A cxgbe(4) driver for Chelsio T4 (Terminator 4) based 10Gb/1Gb
+    adapters has been added.[r218794]
+
+-   The em(4) driver has been updated to version 7.3.2.[r219753]
+
+-   The igb(4) driver has been updated to version 2.2.5.[r223350]
+
+-   The igb(4) driver now supports Intel I350 PCIe Gigabit Ethernet
+    controllers.[r218530]
+
+-   The ixgbe(4) driver has been updated to version 2.3.8.[r217593]
+
+-   The re(4) driver now supports RTL8168E/8111E-VL PCIe Gigabit
+    Ethernet controllers and RTL8401E PCIe Fast Ethernet
+    controllers.[r217498, r218760]
+
+-   A vte(4) driver for RDC R6040 Fast Ethernet controllers, which are
+    commonly found on the Vortex86 System On a Chip, has been
+    added.[r216829]
+
+-   A vxge(4) driver for the Neterion X3100 10GbE Server/Storage adapter
+    has been added.[r221167]
+
+-   ipfw(8) now supports IPv6 in the fwd action.[r225044]
+
+-   ipfw(8) now supports the call and return actions. Upon the
+    call number action, the current rule number is saved in the internal
+    stack and ruleset processing continues with the first rule numbered
+    number or higher. The return action takes the rule number saved to
+    internal stack by the latest call action and returns ruleset
+    processing to the first rule with number greater than that saved
+    number.[r223666]
+
+-   For Infiniband support, OFED (OpenFabrics Enterprise Distribution)
+    version 1.5.3 has been imported into the base system. Note that this
+    is not built nor installed by default. To build and install them,
+    specify WITH_OFED=yes in /etc/src.conf and rebuild the base system
+    as described in the FreeBSD Handbook.[r219820]
+
+-   The FreeBSD TCP/IP network stack now supports IPv4 prefixes with /31
+    as described in RFC 3021, “Using 31-Bit Prefixes on IPv4
+    Point-to-Point Links”.[r226572]
+
+-   The FreeBSD TCP/IP network stack now supports the mod_cc(9)
+    pluggable congestion control framework. This allows TCP congestion
+    control algorithms to be implemented as dynamically loadable kernel
+    modules. The following kernel modules are available as of
+    9.0-RELEASE: cc_chd(4) for the CAIA-Hamilton-Delay algorithm,
+    cc_cubic(4) for the CUBIC algorithm, cc_hd(4) for the Hamilton-Delay
+    algorithm, cc_htcp(4) for the H-TCP algorithm, cc_newreno(4) for the
+    NewReno algorithm, and cc_vegas(4) for the Vegas algorithm. The
+    default algorithm can be set by a new sysctl(8) variable
+    net.inet.tcp.cc.algorithm. The value must be set to one of the names
+    listed by net.inet.tcp.cc.available, and newreno is the default set
+    at boot time. For more detail, see the mod_cc(4) and mod_cc(9)
+    manual pages.[r216109, r216114, r216115, r218152, r218153, r218155]
+
+-   An h_ertt(4) (Enhanced Round Trip Time) khelp(9) module has been
+    added. This module allows per-connection, low noise estimates of the
+    instantaneous RTT in the TCP/IP network stack with a robust
+    implementation even in the face of delayed acknowledgments and/or
+    TSO (TCP Segmentation Offload) being in use for a
+    connection.[r217806]
+
+-   A new tcp(4) socket option TCP_CONGESTION has been added. This
+    allows to select or query the congestion control algorithm that the
+    TCP/IP network stack will use for connections on the
+    socket.[r218912]
+
+-   The ng_netflow(4) netgraph(4) node now supports NetFlow version 9. A
+    new export9 hook has been added for NetFlow v9 data. Note that data
+    export can be done simultaneously in both version 5 and version
+    9.[r219183]
+
+-   The geom_map(4) GEOM class has been added. This allows to generate
+    multiple geom providers based on a hard-coded layout of a device
+    with no explicit partition table such as embedded flash storage. For
+    more information, see the geom_map(4) manual page.[r220559]
+
+-   The graid(8) GEOM class has been added. This is a replacement of the
+    ataraid(4) driver supporting various BIOS-based software
+    RAID.[r219974]
+
+-   A tws(4) driver for 3ware 9750 SATA+SAS 6Gb/s RAID controllers has
+    been added.[r226115]
+
+-   The FreeBSD Fast File System now supports softupdates journaling. It
+    introduces a intent log into a softupdates-enabled file system which
+    eliminates the need for background fsck(8) even on unclean shutdown.
+    This can be enabled in a per-filesystem basis by using the -j flag
+    of the newfs(8) utility or the -j enable option of the tunefs(8)
+    utility. Note that the 9.0-RELEASE installer automatically enables
+    softupdates journaling for newly-created UFS file systems.[r207141,
+    r218726]
+
+-   The FreeBSD Fast File System now supports the TRIM command when
+    freeing data blocks. A new flag -t in the newfs(8) and tunefs(8)
+    utilities sets the TRIM-enable flag for a file system. The
+    TRIM-enable flag makes the file system send a delete request to the
+    underlying device for each freed block. The TRIM command is
+    specified as a Data Set Management Command in the ATA8-ACS2 standard
+    to carry the information related to deleted data blocks to a device,
+    especially for a SSD (Solid-State Drive) for optimization.[r216796]
+
+-   The FreeBSD NFS subsystem has been updated. The new implementation
+    supports NFS version 4 in addition to 2 and 3. The kernel options
+    for the NFS server and client are changed from NFSSERVER and
+    NFSCLIENT to NFSD and NFSCL. sysctl(8) variables which start with
+    vfs.nfssrv. have been renamed to vfs.nfsd.. The NFS server now
+    supports vfs.nfsd.server_max_nfsvers and vfs.nfsd.server_min_nfsvers
+    sysctl(8) variables to specify the maximum and the minimum NFS
+    version number which the server accepts. The default value is set to
+    3 and 2, respectively.[r221124]
+
+-   The FreeBSD ZFS subsystem has been updated to the SPA (Storage Pool
+    Allocator, also known as zpool) version 28. It now supports data
+    deduplication, triple parity RAIDZ (raidz3), snapshot holds, log
+    device removal, zfs diff, zpool split, zpool import -F, and
+    read-only zpool import.[r219089]
+
+-   An implementation of iconv() API libraries and utilities which are
+    standardized in Single UNIX Specification has been imported. These
+    are based on NetBSD's Citrus implementation. Note that these are not
+    built nor installed by default. To build and install them, specify
+    WITH_ICONV=yes in /etc/src.conf and rebuild the base system as
+    described in the FreeBSD Handbook.[r219019]
+
+-   A readline(3) API set has been imported into libedit. This is based
+    on NetBSD's implementation and BSD licensed utilities now use it
+    instead of GNU libreadline.[r220370]
+
+-   The rtsold(8) and rtadvd(8) daemons now support the RDNSS and DNSSL
+    options described in RFC 6106, “IPv6 Router Advertisement Options
+    for DNS Configuration”. A rtadvctl(8) utility to control the
+    rtadvd(8) daemon has been added.[r222732, r224006]
+
+-   The rtld(1) runtime linker now supports shared objects as filters in
+    ELF shared libraries. Both standard and auxiliary filtering have
+    been supported. The rtld(1) linker's processing of a filter defers
+    loading a filtee until a filter symbol is referenced unless the
+    LD_LOADFLTR environment variable is defined or a -z loadfltr option
+    was specified when the filter was created.[r216695]
+
+-   A bug in the tftpd(8) daemon has been fixed. It had an
+    interoperability issue when transferring a large file.[r224536]
+
+-   The utmp(5) user accounting database has been replaced by utmpx(3).
+    User accounting utilities will now use utmpx database files
+    exclusively. The wtmpcvt(1) utility can be used to convert wtmp
+    files to the new format, making it possible to read them using the
+    updated utilities.[r202188]
+
+-   The zpool(8): utility now supports a zpool labelclear command. This
+    allows to wipe the label data from a drive that is not active in a
+    pool.[r224171]
+
+A list of all platforms currently under development can be found on the
+Supported Platforms page.
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

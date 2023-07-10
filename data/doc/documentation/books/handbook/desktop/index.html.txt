@@ -1,0 +1,1202 @@
+
+-    Preface
+    -   Intended Audience
+    -   Fourth Edition
+    -   Third Edition
+    -   Second Edition (2004)
+    -   First Edition (2001)
+    -   Organization of This Book
+    -   Conventions used in this book
+    -   Acknowledgments
+-    Part I. Getting Started
+-    Chapter 1. Introduction
+    -   1.1. Synopsis
+    -   1.2. Welcome to FreeBSD!
+    -   1.3. About the FreeBSD Project
+-    Chapter 2. Installing FreeBSD
+    -   2.1. Synopsis
+    -   2.2. Minimum Hardware Requirements
+    -   2.3. Pre-Installation Tasks
+    -   2.4. Starting the Installation
+    -   2.5. Using bsdinstall
+    -   2.6. Allocating Disk Space
+    -   2.7. Fetching Distribution Files
+    -   2.8. Network Interfaces, Accounts, Time Zone, Services and
+        Hardening
+    -   2.9. Troubleshooting
+    -   2.10. Using the Live CD
+-    Chapter 3. FreeBSD Basics
+    -   3.1. Synopsis
+    -   3.2. Virtual Consoles and Terminals
+    -   3.3. Users and Basic Account Management
+    -   3.4. Permissions
+    -   3.5. Directory Structure
+    -   3.6. Disk Organization
+    -   3.7. Mounting and Unmounting File Systems
+    -   3.8. Processes and Daemons
+    -   3.9. Shells
+    -   3.10. Text Editors
+    -   3.11. Devices and Device Nodes
+    -   3.12. Manual Pages
+-    Chapter 4. Installing Applications: Packages and Ports
+    -   4.1. Synopsis
+    -   4.2. Overview of Software Installation
+    -   4.3. Finding Software
+    -   4.4. Using pkg for Binary Package Management
+    -   4.5. Using the Ports Collection
+    -   4.6. Building Packages with Poudriere
+    -   4.7. Post-Installation Considerations
+    -   4.8. Dealing with Broken Ports
+-    Chapter 5. The X Window System
+    -   5.1. Synopsis
+    -   5.2. Installing Xorg
+    -   5.3. Graphic card drivers
+    -   5.4. Xorg Configuration
+    -   5.5. Using Fonts in Xorg
+-    Chapter 6. Wayland
+    -   6.1. Wayland Synopsis
+    -   6.2. The Wayfire Compositor
+    -   6.3. The Hikari Compositor
+    -   6.4. The Sway Compositor
+    -   6.5. Using Xwayland
+    -   6.6. Remote Desktop Using VNC
+    -   6.7. Wayland Login Manager
+    -   6.8. Useful Utilities
+-    Chapter 7. Network
+    -   7.1. Synopsis
+    -   7.2. Setting up the Network
+    -   7.3. Wired Networks
+    -   7.4. Wireless Networks
+    -   7.5. Hostname
+    -   7.6. DNS
+    -   7.7. Troubleshooting
+-    Part II. Common Tasks
+-    Chapter 8. Desktop Environments
+    -   8.1. Synopsis
+    -   8.2. Desktop Environments
+    -   8.3. Browsers
+    -   8.4. Development tools
+    -   8.5. Desktop office productivity
+    -   8.6. Document Viewers
+    -   8.7. Finance
+-    Chapter 9. Multimedia
+    -   9.1. Synopsis
+    -   9.2. Setting Up the Sound Card
+    -   9.3. Audio players
+    -   9.4. Video players
+    -   9.5. Conferencing and Meetings
+    -   9.6. Image Scanners
+-    Chapter 10. Configuring the FreeBSD Kernel
+    -   10.1. Synopsis
+    -   10.2. Why Build a Custom Kernel?
+    -   10.3. Finding the System Hardware
+    -   10.4. The Configuration File
+    -   10.5. Building and Installing a Custom Kernel
+    -   10.6. If Something Goes Wrong
+-    Chapter 11. Printing
+    -   11.1. Quick Start
+    -   11.2. Printer Connections
+    -   11.3. Common Page Description Languages
+    -   11.4. Direct Printing
+    -   11.5. LPD (Line Printer Daemon)
+    -   11.6. Other Printing Systems
+-    Chapter 12. Linux Binary Compatibility
+    -   12.1. Synopsis
+    -   12.2. Configuring Linux Binary Compatibility
+    -   12.3. Linux userlands
+    -   12.4. Advanced Topics
+-    Chapter 13. WINE
+    -   13.1. Synopsis
+    -   13.2. WINE Overview & Concepts
+    -   13.3. Installing WINE on FreeBSD
+    -   13.4. Running a First WINE Program on FreeBSD
+    -   13.5. Configuring WINE Installation
+    -   13.6. WINE Management GUIs
+    -   13.7. WINE in Multi-User FreeBSD Installations
+    -   13.8. WINE on FreeBSD FAQ
+-    Part III. System Administration
+-    Chapter 14. Configuration and Tuning
+    -   14.1. Synopsis
+    -   14.2. Starting Services
+    -   14.3. Configuring cron(8)
+    -   14.4. Managing Services in FreeBSD
+    -   14.5. Configuring System Logging
+    -   14.6. Configuration Files
+    -   14.7. Tuning with sysctl(8)
+    -   14.8. Tuning Disks
+    -   14.9. Tuning Kernel Limits
+    -   14.10. Adding Swap Space
+    -   14.11. Power and Resource Management
+-    Chapter 15. The FreeBSD Booting Process
+    -   15.1. Synopsis
+    -   15.2. FreeBSD Boot Process
+    -   15.3. Device Hints
+    -   15.4. Shutdown Sequence
+-    Chapter 16. Security
+    -   16.1. Synopsis
+    -   16.2. Introduction
+    -   16.3. One-time Passwords
+    -   16.4. TCP Wrapper
+    -   16.5. Kerberos
+    -   16.6. OpenSSL
+    -   16.7. VPN over IPsec
+    -   16.8. OpenSSH
+    -   16.9. Access Control Lists
+    -   16.10. Monitoring Third Party Security Issues
+    -   16.11. FreeBSD Security Advisories
+    -   16.12. Process Accounting
+    -   16.13. Resource Limits
+    -   16.14. Shared Administration with Sudo
+    -   16.15. Using doas as an alternative to sudo
+-    Chapter 17. Jails
+    -   17.1. Synopsis
+    -   17.2. Terms Related to Jails
+    -   17.3. Creating and Controlling Jails
+    -   17.4. Fine Tuning and Administration
+    -   17.5. Updating Multiple Jails
+    -   17.6. Managing Jails with ezjail
+-    Chapter 18. Mandatory Access Control
+    -   18.1. Synopsis
+    -   18.2. Key Terms
+    -   18.3. Understanding MAC Labels
+    -   18.4. Planning the Security Configuration
+    -   18.5. Available MAC Policies
+    -   18.6. User Lock Down
+    -   18.7. Nagios in a MAC Jail
+    -   18.8. Troubleshooting the MAC Framework
+-    Chapter 19. Security Event Auditing
+    -   19.1. Synopsis
+    -   19.2. Key Terms
+    -   19.3. Audit Configuration
+    -   19.4. Working with Audit Trails
+-    Chapter 20. Storage
+    -   20.1. Synopsis
+    -   20.2. Adding Disks
+    -   20.3. Resizing and Growing Disks
+    -   20.4. USB Storage Devices
+    -   20.5. Creating and Using CD Media
+    -   20.6. Creating and Using DVD Media
+    -   20.7. Creating and Using Floppy Disks
+    -   20.8. Using NTFS Disks
+    -   20.9. Backup Basics
+    -   20.10. Memory Disks
+    -   20.11. File System Snapshots
+    -   20.12. Disk Quotas
+    -   20.13. Encrypting Disk Partitions
+    -   20.14. Encrypting Swap
+    -   20.15. Highly Available Storage (HAST)
+-    Chapter 21. GEOM: Modular Disk Transformation Framework
+    -   21.1. Synopsis
+    -   21.2. RAID0 - Striping
+    -   21.3. RAID1 - Mirroring
+    -   21.4. RAID3 - Byte-level Striping with Dedicated Parity
+    -   21.5. Software RAID Devices
+    -   21.6. GEOM Gate Network
+    -   21.7. Labeling Disk Devices
+    -   21.8. UFS Journaling Through GEOM
+-    Chapter 22. The Z File System (ZFS)
+    -   22.1. What Makes ZFS Different
+    -   22.2. Quick Start Guide
+    -   22.3. zpool Administration
+    -   22.4. zfs Administration
+    -   22.5. Delegated Administration
+    -   22.6. Advanced Topics
+<<<<<<< HEAD
+=======
+    -   22.7. Further Resources
+    -   22.8. ZFS Features and Terminology
+-    Chapter 23. Other File Systems
+    -   23.1. Synopsis
+    -   23.2. Linux® File Systems
+-    Chapter 24. Virtualization
+    -   24.1. Synopsis
+    -   24.2. FreeBSD as a Guest on Parallels Desktop for macOS®
+    -   24.3. FreeBSD as a Guest on VMware Fusion for macOS®
+    -   24.4. FreeBSD as a Guest on VirtualBox™
+    -   24.5. FreeBSD as a Host with VirtualBox™
+    -   24.6. FreeBSD as a Host with bhyve
+    -   24.7. FreeBSD as a Xen™-Host
+-    Chapter 25. Localization - i18n/L10n Usage and Setup
+    -   25.1. Synopsis
+    -   25.2. Using Localization
+    -   25.3. Finding i18n Applications
+    -   25.4. Locale Configuration for Specific Languages
+-    Chapter 26. Updating and Upgrading FreeBSD
+    -   26.1. Synopsis
+    -   26.2. FreeBSD Update
+    -   26.3. Updating Bootcode
+    -   26.4. Updating the Documentation Set
+    -   26.5. Tracking a Development Branch
+    -   26.6. Updating FreeBSD from Source
+    -   26.7. Tracking for Multiple Machines
+-    Chapter 27. DTrace
+    -   27.1. Synopsis
+    -   27.2. Implementation Differences
+    -   27.3. Enabling DTrace Support
+    -   27.4. Using DTrace
+-    Chapter 28. USB Device Mode / USB OTG
+    -   28.1. Synopsis
+    -   28.2. USB Virtual Serial Ports
+    -   28.3. USB Device Mode Network Interfaces
+    -   28.4. USB Virtual Storage Device
+-    Part IV. Network Communication
+-    Chapter 29. Serial Communications
+    -   29.1. Synopsis
+    -   29.2. Serial Terminology and Hardware
+    -   29.3. Terminals
+    -   29.4. Dial-in Service
+    -   29.5. Dial-out Service
+    -   29.6. Setting Up the Serial Console
+-    Chapter 30. PPP
+    -   30.1. Synopsis
+    -   30.2. Configuring PPP
+    -   30.3. Troubleshooting PPP Connections
+    -   30.4. Using PPP over Ethernet (PPPoE)
+    -   30.5. Using PPP over ATM (PPPoA)
+-    Chapter 31. Electronic Mail
+    -   31.1. Synopsis
+    -   31.2. Mail Components
+    -   31.3. Sendmail Configuration Files
+    -   31.4. Changing the Mail Transfer Agent
+    -   31.5. Troubleshooting
+    -   31.6. Advanced Topics
+    -   31.7. Setting Up to Send Only
+    -   31.8. Using Mail with a Dialup Connection
+    -   31.9. SMTP Authentication
+    -   31.10. Mail User Agents
+    -   31.11. Using fetchmail
+    -   31.12. Using procmail
+-    Chapter 32. Network Servers
+    -   32.1. Synopsis
+    -   32.2. The inetd Super-Server
+    -   32.3. Network File System (NFS)
+    -   32.4. Network Information System (NIS)
+    -   32.5. Lightweight Directory Access Protocol (LDAP)
+    -   32.6. Dynamic Host Configuration Protocol (DHCP)
+    -   32.7. Domain Name System (DNS)
+    -   32.8. Apache HTTP Server
+    -   32.9. File Transfer Protocol (FTP)
+    -   32.10. File and Print Services for Microsoft® Windows® Clients
+        (Samba)
+    -   32.11. Clock Synchronization with NTP
+    -   32.12. iSCSI Initiator and Target Configuration
+-    Chapter 33. Firewalls
+    -   33.1. Synopsis
+    -   33.2. Firewall Concepts
+    -   33.3. PF
+    -   33.4. IPFW
+    -   33.5. IPFILTER (IPF)
+    -   33.6. Blacklistd
+-    Chapter 34. Advanced Networking
+    -   34.1. Synopsis
+    -   34.2. Gateways and Routes
+    -   34.3. Virtual Hosts
+    -   34.4. Wireless Advanced Authentication
+    -   34.5. Wireless Ad-hoc Mode
+    -   34.6. USB Tethering
+    -   34.7. Bluetooth
+    -   34.8. Bridging
+    -   34.9. Link Aggregation and Failover
+    -   34.10. Diskless Operation with PXE
+    -   34.11. Common Address Redundancy Protocol (CARP)
+    -   34.12. VLANs
+-    Part V. Appendices
+-    Appendix A. Obtaining FreeBSD
+    -   A.1. Mirrors
+    -   A.2. Using Git
+    -   A.3. Using Subversion
+    -   A.4. CD and DVD Sets
+-    Appendix B. Bibliography
+    -   B.1. FreeBSD Bibliography
+    -   B.2. Security Reference
+    -   B.3. UNIX® History
+    -   B.4. Periodicals, Journals, and Magazines
+-    Appendix C. Resources on the Internet
+    -   C.1. Websites
+    -   C.2. Mailing Lists
+    -   C.3. Usenet Newsgroups
+-    Appendix D. OpenPGP Keys
+    -   D.1. Officers
+-    FreeBSD Glossary
+-    Colophon
+-   
+-   
+
+Book menu
+
+Chapter 8. Desktop Environments
+
+Table of Contents
+
+-   8.1. Synopsis
+-   8.2. Desktop Environments
+-   8.3. Browsers
+-   8.4. Development tools
+-   8.5. Desktop office productivity
+-   8.6. Document Viewers
+-   8.7. Finance
+
+8.1. Synopsis
+
+While FreeBSD is popular as a server for its performance and stability,
+it is also well suited for day-to-day use as a desktop. With over 36000
+applications available in the FreeBSD ports tree, it is straightforward
+to build a customized desktop that can run a wide variety of desktop
+applications. This chapter demonstrates how to install popular desktop
+environments as well as desktop applications such as web browsers,
+productivity software, document viewers, and financial software.
+
+Prerequisites:
+
+-   Readers of this chapter should already understand how to install
+    either the X Window System or Wayland on FreeBSD.
+
+-   Readers are instructed throughout this chapter to install official
+    packages. Refer to the section on using the ports collection to
+    build customized packages from ports.
+
+8.2. Desktop Environments
+
+This section describes how to install and configure some popular desktop
+environments on a FreeBSD system. A desktop environment can range from a
+simple window manager to a complete suite of desktop applications.
+
++----------------------+----------------------+-----------------------+
+| Name                 | License              | Package               |
++======================+======================+=======================+
+| KDE Plasma           | GPL 2.0 or later     | x11/kde5              |
++----------------------+----------------------+-----------------------+
+| GNOME                | GPL 2.0 or later     | x11/gnome             |
++----------------------+----------------------+-----------------------+
+| XFCE                 | GPL, LGPL, BSD       | x11-wm/xfce4          |
++----------------------+----------------------+-----------------------+
+| MATE                 | GPL 2.0, LGPL 2.0    | x11/mate              |
++----------------------+----------------------+-----------------------+
+| Cinnamon             | GPL 2.0 or later     | x11/cinnamon          |
++----------------------+----------------------+-----------------------+
+| LXQT                 | GPL, LGPL            | x11-wm/lxqt           |
++----------------------+----------------------+-----------------------+
+
+: Table 1. Supported desktop environments
+
+8.2.1. KDE Plasma
+
+KDE Plasma is an easy-to-use desktop environment. This desktop provides
+a suite of applications with a consistent look and feel, a standardized
+menu and toolbars, keybindings, color-schemes, internationalization, and
+a centralized, dialog-driven desktop configuration. More information on
+KDE can be found at the KDE homepage. For FreeBSD-specific information,
+consult the FreeBSD homepage at KDE.
+
+8.2.1.1. Install KDE Plasma meta package
+
+To install the KDE Plasma meta package with KDE Frameworks, Plasma
+Desktop and Applications execute:
+
+    # pkg install kde5
+
+8.2.1.2. Minimal KDE Plasma installation
+
+To install a minimal KDE Plasma execute:
+
+    # pkg install plasma5-plasma
+
++-----------------------------------+-----------------------------------+
+|                                   | This installation is really       |
+|                                   | minimal. Konsole must be          |
+|                                   | installed separately executing:   |
+|                                   |                                   |
+|                                   |     # pkg install konsole         |
++-----------------------------------+-----------------------------------+
+
+8.2.1.3. Configure KDE Plasma
+
+KDE Plasma uses dbus-daemon(1) for a message bus and hardware
+abstraction. This application is automatically installed as a dependency
+of KDE Plasma.
+
+Enable D-BUS service in /etc/rc.conf to start at system boot:
+
+    # sysrc dbus_enable="YES"
+
+To increase messages size execute:
+
+    sysctl net.local.stream.recvspace=65536
+    sysctl net.local.stream.sendspace=65536
+
+8.2.1.4. Start KDE Plasma
+
+The preferred KDE Plasma display manager is x11/sddm. To install
+x11/sddm, execute:
+
+    # pkg install sddm
+
+Enable SDDM service in /etc/rc.conf to start at system boot:
+
+    # sysrc sddm_enable="YES"
+
+The keyboard language can be set in SDDM by running the following
+command (for Spanish, for example):
+
+    # sysrc sddm_lang="es_ES"
+
+A second method to start KDE Plasma is by manually invoking startx(1).
+For this to work, the following line is needed in ~/.xinitrc:
+
+    % echo "exec ck-launch-session startplasma-x11" > ~/.xinitrc
+
+8.2.2. GNOME
+
+GNOME is a user-friendly desktop environment. It includes a panel for
+starting applications and displaying status, a desktop, a set of tools
+and applications, and a set of conventions that make it easy for
+applications to cooperate and be consistent with each other.
+
+8.2.2.1. Install GNOME meta pacakge
+
+To install the GNOME meta package with GNOME Desktop and Applications,
+execute:
+
+    # pkg install gnome
+
+8.2.2.2. Minimal GNOME installation
+
+To install the GNOME-lite meta package with a GNOME desktop slimmed down
+for only the basics, execute:
+
+    # pkg install gnome-lite
+
+8.2.2.3. Configure GNOME
+
+GNOME requires /proc to be mounted. Add this line to /etc/fstab to mount
+this file system automatically during system startup:
+
+    # Device                Mountpoint      FStype  Options         Dump    Pass#
+    proc                    /proc           procfs  rw              0       0
+
+GNOME uses dbus-daemon(1) for a message bus and hardware abstraction.
+This application is automatically installed as a dependency of GNOME.
+
+Enable D-BUS service in /etc/rc.conf to start at system boot:
+
+    # sysrc dbus_enable="YES"
+
+8.2.2.4. Start GNOME
+
+GNOME Display Manager is the preferred display manager for GNOME. GDM is
+installed as part of the GNOME package.
+
+Enable GDM in /etc/rc.conf to start at system boot:
+
+    # sysrc gdm_enable="YES"
+
+A second method to start GNOME is by manually invoking startx(1). For
+this to work, the following line is needed in ~/.xinitrc:
+
+    % echo "exec gnome-session" > ~/.xinitrc
+
+8.2.3. XFCE
+
+XFCE is a desktop environment based on the GTK+, lightweight and
+provides a simple, efficient, easy-to-use desktop. It is fully
+configurable, has a main panel with menus, applets, and application
+launchers, provides a file manager and sound manager, and is themeable.
+Since it is fast, light, and efficient, it is ideal for older or slower
+machines with memory limitations.
+
+8.2.3.1. Install XFCE
+
+To install the XFCE meta package, execute:
+
+    # pkg install xfce
+
+8.2.3.2. Configure XFCE
+
+XFCE requires /proc to be mounted. Add this line to /etc/fstab to mount
+this file system automatically during system startup:
+
+    # Device                Mountpoint      FStype  Options         Dump    Pass#
+    proc                    /proc           procfs  rw              0       0
+
+XFCE uses dbus-daemon(1) for a message bus and hardware abstraction.
+This application is automatically installed as a dependency of XFCE.
+
+Enable D-BUS in /etc/rc.conf to start at system boot:
+
+    # sysrc dbus_enable="YES"
+
+8.2.3.3. Start XFCE
+
+x11/lightdm is a display manager that supports different display
+technologies and is a good choice as it is very lightweight, requires
+little memory usage, and has fast performance.
+
+To install it, execute:
+
+    # pkg install lightdm lightdm-gtk-greeter
+
+Enable lightdm in /etc/rc.conf to start at system boot:
+
+    # sysrc lightdm_enable="YES"
+
+A second method to start XFCE is by manually invoking startx(1). For
+this to work, the following line is needed in ~/.xinitrc:
+
+    % echo '. /usr/local/etc/xdg/xfce4/xinitrc' > ~/.xinitrc
+
+8.2.4. MATE
+
+The MATE Desktop Environment is the continuation of GNOME 2. It provides
+an intuitive and attractive desktop environment using traditional
+metaphors.
+
+8.2.4.1. Install MATE meta package
+
+To install the MATE meta package that includes the MATE Desktop with
+some extra applications such as text editor, archiver manager, etc.,
+execute:
+
+    # pkg install mate
+
+8.2.4.2. Minimal MATE installation
+
+To install the MATE lite meta package with MATE desktop slimmed down for
+only the basics, execute:
+
+    # pkg install mate-base
+
+8.2.4.3. Configure MATE
+
+MATE requires /proc to be mounted. Add this line to /etc/fstab to mount
+this file system automatically during system startup:
+
+    # Device                Mountpoint      FStype  Options         Dump    Pass#
+    proc                    /proc           procfs  rw              0       0
+
+MATE uses dbus-daemon(1) for a message bus and hardware abstraction.
+This application is automatically installed as a dependency of MATE.
+Enable D-BUS in /etc/rc.conf to start at system boot:
+
+    # sysrc dbus_enable="YES"
+
+8.2.4.4. Start MATE
+
+x11/lightdm is a display manager that supports different display
+technologies and is a good choice as it is very lightweight, requires
+little memory usage, and has fast performance.
+
+To install it, execute:
+
+    # pkg install lightdm lightdm-gtk-greeter
+
+Enable lightdm in /etc/rc.conf to start at system boot:
+
+    # sysrc lightdm_enable="YES"
+
+A second method to start MATE is by manually invoking startx(1). For
+this to work, the following line is needed in ~/.xinitrc:
+
+    % echo "exec ck-launch-session mate-session" > ~/.xinitrc
+
+8.2.5. Cinnamon
+
+Cinnamon is a UNIX® desktop which provides advanced innovative features
+and a traditional user experience. The desktop layout is similar to
+Gnome 2. The underlying technology is forked from Gnome Shell. The
+emphasis is put on making users feel at home and providing them with an
+easy to use and comfortable desktop experience.
+
+8.2.5.1. Install Cinnamon
+
+To install the Cinnamon package, execute:
+
+    # pkg install cinnamon
+
+8.2.5.2. Configure Cinnamon
+
+Cinnamon requires /proc to be mounted. Add this line to /etc/fstab to
+mount this file system automatically during system startup:
+
+    # Device                Mountpoint      FStype  Options         Dump    Pass#
+    proc                    /proc           procfs  rw              0       0
+
+Cinnamon uses dbus-daemon(1) for a message bus and hardware abstraction.
+This application is automatically installed as a dependency of Cinnamon.
+Enable D-BUS in /etc/rc.conf to start at system boot:
+
+    # sysrc dbus_enable="YES"
+
+8.2.5.3. Start Cinnamon
+
+x11/lightdm is a display manager that supports different display
+technologies and is a good choice as it is very lightweight, requires
+little memory usage, and has fast performance.
+
+To install it execute:
+
+    # pkg install lightdm lightdm-gtk-greeter
+
+Enable lightdm in /etc/rc.conf to start at system boot:
+
+    # sysrc lightdm_enable="YES"
+
+A second method to start Cinnamon is by manually invoking startx(1). For
+this to work, the following line is needed in ~/.xinitrc:
+
+    % echo "exec ck-launch-session cinnamon-session" > ~/.xinitrc
+
+8.2.6. LXQT
+
+LXQt is an advanced, easy-to-use, and fast desktop environment based on
+Qt technologies. It has been tailored for users who value simplicity,
+speed, and an intuitive interface. Unlike most desktop environments,
+LXQt also works fine with less powerful machines.
+
+8.2.6.1. Install LXQT
+
+To install the LXQT meta package, execute:
+
+    # pkg install lxqt
+
+8.2.6.2. Configure LXQT
+
+LXQT requires /proc to be mounted. Add this line to /etc/fstab to mount
+this file system automatically during system startup:
+
+    # Device                Mountpoint      FStype  Options         Dump    Pass#
+    proc                    /proc           procfs  rw              0       0
+
+LXQT uses dbus-daemon(1) for a message bus and hardware abstraction.
+This application is automatically installed as a dependency of LXQT.
+
+Enable D-BUS in /etc/rc.conf to start at system boot:
+
+    # sysrc dbus_enable="YES"
+
+8.2.6.3. Start LXQT
+
+The preferred LXQT display manager is x11/sddm. To install x11/sddm,
+execute:
+
+    # pkg install sddm
+
+Enable SDDM service in /etc/rc.conf to start at system boot:
+
+    # sysrc sddm_enable="YES"
+
+The keyboard language can be set in SDDM by running the following
+command (for example, for Spanish):
+
+    # sysrc sddm_lang="es_ES"
+
+A second method to start LXQT is by manually invoking startx(1). For
+this to work, the following line is needed in ~/.xinitrc:
+
+    % echo "exec ck-launch-session startlxqt" > ~/.xinitrc
+
+8.3. Browsers
+
+This section describes how to install and configure some popular web
+browsers on a FreeBSD system, from full web browsers with high resource
+consumption to command line web browsers with reduced resource usage.
+
++-----------------+-----------------+-----------------+-----------------+
+| Name            | License         | Package         | Resources       |
+|                 |                 |                 | Needed          |
++=================+=================+=================+=================+
+| Firefox         | MPL 2.0         | www/firefox     | Heavy           |
++-----------------+-----------------+-----------------+-----------------+
+| Chromium        | BSD-3 and       | www/chromium    | Heavy           |
+|                 | others          |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Iridium browser | BSD-3 and       | www/iridium     | Heavy           |
+|                 | others          |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Falkon          | MPL 2.0         | www/falkon      | Heavy           |
++-----------------+-----------------+-----------------+-----------------+
+| Konqueror       | GPL 2.0 or      | x               | Medium          |
+|                 | later           | 11-fm/konqueror |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Gnome Web       | GPL 3.0 or      | www/epiphany    | Medium          |
+| (Epiphany)      | later           |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| qutebrowser     | GPL 3.0 or      | www/qutebrowser | Medium          |
+|                 | later           |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Dillo           | GPL 3.0 or      | www/dillo2      | Light           |
+|                 | later           |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Links           | GPL 2.0 or      | www/links       | Light           |
+|                 | later           |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| w3m             | MIT             | www/w3m         | Light           |
++-----------------+-----------------+-----------------+-----------------+
+
+: Table 2. Supported browsers
+
+8.3.1. Firefox
+
+Firefox is an open source browser that features a standards-compliant
+HTML display engine, tabbed browsing, popup blocking, extensions,
+improved security, and more. Firefox is based on the Mozilla codebase.
+
+To install the package of the latest release version of Firefox,
+execute:
+
+    # pkg install firefox
+
+To instead install Firefox Extended Support Release (ESR) version,
+execute:
+
+    # pkg install firefox-esr
+
+8.3.2. Chromium
+
+Chromium is an open source browser project that aims to build a safer,
+faster, and more stable web browsing experience. Chromium features
+tabbed browsing, popup blocking, extensions, and much more. Chromium is
+the open source project upon which the Google Chrome web browser is
+based.
+
+To install Chromium, execute:
+
+    # pkg install chromium
+
++-----------------------------------+-----------------------------------+
+|                                   | The executable for Chromium is    |
+|                                   | /usr/local/bin/chrome, not        |
+|                                   | /usr/local/bin/chromium.          |
++-----------------------------------+-----------------------------------+
+
+8.3.3. Iridium browser
+
+Iridium is a free, open, and libre browser modification of the Chromium
+code base, with privacy being enhanced in several key areas. Automatic
+transmission of partial queries, keywords, metrics to central services
+is inhibited and only occurs with consent.
+
+To install Iridium, execute:
+
+    # pkg install iridium
+
+8.3.4. Falkon
+
+Falkon is a new-ish and very fast QtWebEngine browser. It aims to be a
+lightweight web browser available on all major platforms. Falkon has all
+standard functions you expect from a web browser. It includes bookmarks,
+history (both also in sidebar) and tabs. Beyond that, you block ads with
+a builtin AdBlock plugin, block Flash content with Click2Flash and edit
+the local CA Certificates database with an SSL Manager.
+
+To install Falkon, execute:
+
+    # pkg install falkon
+
+8.3.5. Konqueror
+
+Konqueror is more than a web browser as it is also a file manager and a
+multimedia viewer. It supports WebKit, a rendering engine used by many
+modern browsers including Chromium, as well as its own KHTML engine.
+
+To install Konqueror, execute:
+
+    # pkg install konqueror
+
+8.3.6. Gnome Web (Epiphany)
+
+Gnome Web (Epiphany) is a web browser designed to be as lightweight and
+fast as possible, at the expense of many of the features found in other
+browsers.
+
+To install Gnome Web (Epiphany), execute:
+
+    # pkg install epiphany
+
+8.3.7. qutebrowser
+
+Qutebrowser is a keyboard-focused browser with a minimal GUI. It is
+based on Python and PyQt5 and free software, licensed under the GPL. It
+was inspired by other browsers/addons like dwb and
+Vimperator/Pentadactyl.
+
+To install qutebrowser, execute:
+
+    # pkg install qutebrowser
+
+8.3.8. Dillo
+
+Dillo aims to be a multiplatform alternative browser that is small,
+stable, developer-friendly, usable, fast, and extensible. This new,
+experimental version of Dillo is based upon FLTK toolkit, rather than
+GTK1, and has been substantially rewritten.
+
+To install Dillo, execute:
+
+    # pkg install dillo2
+
+8.3.9. Links
+
+A lynx-like WWW browser with text and graphics modes with many features
+like displaying tables, menus, etc.
+
+To install Links, execute:
+
+    # pkg install links
+
+8.3.10. w3m
+
+w3m is a pager/text-based web browser. It is a similar application to
+Lynx, but it has several features Lynx doesn’t have like rendering
+tables and rendering frames.
+
+To install w3m, execute:
+
+    # pkg install w3m
+
+8.4. Development tools
+
+This section describes how to install and configure some popular
+development tools on a FreeBSD system.
+
++-----------------+-----------------+-----------------+-----------------+
+| Name            | License         | Package         | Resources       |
+|                 |                 |                 | Needed          |
++=================+=================+=================+=================+
+| Visual Studio   | MIT             | editors/vscode  | Heavy           |
+| Code            |                 |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Qt Creator      | QtGPL           | devel/qtcreator | Heavy           |
++-----------------+-----------------+-----------------+-----------------+
+| Kdevelop        | GPL 2.0 or      | devel/kdevelop  | Heavy           |
+|                 | later and LGPL  |                 |                 |
+|                 | 2.0 or later    |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Eclipse IDE     | EPL             | java/eclipse    | Heavy           |
++-----------------+-----------------+-----------------+-----------------+
+| Vim             | VIM             | editors/vim     | Light           |
++-----------------+-----------------+-----------------+-----------------+
+| Neovim          | Apache 2.0      | editors/neovim  | Light           |
++-----------------+-----------------+-----------------+-----------------+
+| GNU Emacs       | GPL 3.0 or      | editors/emacs   | Light           |
+|                 | later           |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+: Table 3. Supported development tools
+
+8.4.1. Visual Studio Code
+
+Visual Studio Code is a type of tool that combines the simplicity of a
+code editor with what developers need for their core edit-build-debug
+cycle. It provides comprehensive editing and debugging support, an
+extensibility model, and lightweight integration with existing tools.
+
+To install Visual Studio Code, execute:
+
+    # pkg install vscode
+
+8.4.2. Qt Creator
+
+Qt Creator is a cross-platform IDE (integrated development environment)
+tailored to the needs of Qt developers. Functionalities included with Qt
+Creator are:
+
+-   code editor with C++, QML and ECMAscript support;
+
+-   rapid code navigation tools;
+
+-   static code checking and style hints as you type;
+
+-   context sensitive help;
+
+-   visual debugger;
+
+-   integrated GUI layout and forms designer.
+
+To install Qt Creator, execute:
+
+    # pkg install qtcreator
+
+8.4.3. kdevelop
+
+Open source, feature-full, plugin extensible IDE for C/C++ and other
+programming languages. It is based on KDevPlatform and the KDE and Qt
+libraries, and it has been under development since 1998.
+
+To install kdevelop, execute:
+
+    # pkg install kdevelop
+
+8.4.4. Eclipse IDE
+
+The Eclipse Platform is an open extensible IDE for anything and yet
+nothing in particular. The Eclipse Platform provides building blocks and
+a foundation for constructing and running integrated
+software-development tools. The Eclipse Platform allows tool builders to
+independently develop tools that integrate with other people’s tools.
+
+To install Eclipse IDE, execute:
+
+    # pkg install eclipse
+
+8.4.5. Vim
+
+Vim is a highly configurable text editor built to enable efficient text
+editing. It is an improved version of the vi editor distributed with
+most UNIX systems.
+
+Vim is often called a "programmer’s editor," and so useful for
+programming that many consider it an entire IDE. It’s not just for
+programmers, though. Vim is perfect for all kinds of text editing, from
+composing email to editing configuration files.
+
+To install Vim, execute:
+
+    # pkg install vim
+
+8.4.6. Neovim
+
+Neovim is an aggressive refactor of editors/vim. It represents a
+complete overhaul of the codebase with many sanity improvements,
+including sensible defaults, a built-in terminal emulator, asynchronous
+plugin architecture, and powerful APIs designed for speed and
+extensibility. It retains full compatibility with almost all Vim plugins
+and scripts.
+
+To install Neovim, execute:
+
+    # pkg install neovim
+
+8.4.7. GNU Emacs
+
+GNU Emacs is an extensible, customizable, free/libre text editor. At its
+core is an interpreter for Emacs Lisp, a dialect of the Lisp programming
+language with extensions to support text editing.
+
+To install GNU Emacs, execute:
+
+    # pkg install emacs
+
+8.5. Desktop office productivity
+
+When it comes to productivity, users often look for an office suite or
+an easy-to-use word processor. While some desktop environments like KDE
+Plasma provide an office suite, there is no default productivity
+package. Several office suites and graphical word processors are
+available for FreeBSD, regardless of the installed desktop environments.
+
+This section demonstrates how to install the following popular
+productivity software and indicates if the application is
+resource-heavy, takes time to compile from ports, or has any major
+dependencies.
+
++-----------------+-----------------+-----------------+-----------------+
+| Name            | License         | Package         | Resources       |
+|                 |                 |                 | Needed          |
++=================+=================+=================+=================+
+| LibreOffice     | MPL 2.0         | edit            | Heavy           |
+|                 |                 | ors/libreoffice |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Calligra Suite  | LGPL and GPL    | e               | Medium          |
+|                 |                 | ditors/calligra |                 |
++-----------------+-----------------+-----------------+-----------------+
+| AbiWord         | GPL 2.0 or      | editors/abiword | Medium          |
+|                 | later           |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+: Table 4. Supported Desktop office productivity suites
+
+8.5.1. LibreOffice
+
+LibreOffice is a free software office suite developed by The Document
+Foundation. It is compatible with other major office suites and
+available on a variety of platforms. It is a rebranded fork of Apache
+OpenOffice and includes applications found in a complete office
+productivity suite: a word processor, spreadsheet, presentation manager,
+drawing program, database management program, and a tool for creating
+and editing mathematical formulæ. It is available in a number of
+different languages and internationalization has been extended to
+interfaces, spell checkers, and dictionaries. More information about
+LibreOffice can be found at libreoffice.org.
+
+To install LibreOffice, execute:
+
+    # pkg install libreoffice
+
+The LibreOffice package comes by default only in English. To have a
+localized version of LibreOffice it is necessary to install a language
+pack. For example, for the version localized in Spanish, it is necessary
+to install the package editors/libreoffice-es with the command:
+
+    # pkg install libreoffice-es
+
+8.5.2. Calligra
+
+The KDE Plasma desktop environment includes an office suite which can be
+installed separately from KDE Plasma. Calligra includes standard
+components that can be found in other office suites. Words is the word
+processor, Sheets is the spreadsheet program, Stage manages slide
+presentations, and Karbon is used to draw graphical documents.
+
+To install Calligra, execute:
+
+    # pkg install calligra
+
+8.5.3. AbiWord
+
+AbiWord is a free word processing program similar in look and feel to
+Microsoft® Word. It is fast, contains many features, and is
+user-friendly.
+
+AbiWord can import or export many file formats, including some
+proprietary ones like Microsoft® .rtf.
+
+To install AbiWord, execute:
+
+    # pkg install abiword
+
+8.6. Document Viewers
+
+Some new document formats have gained popularity since the advent of
+UNIX® and the viewers they require may not be available in the base
+system. This section demonstrates how to install the following document
+viewers:
+
++-----------------+-----------------+-----------------+-----------------+
+| Name            | License         | Package         | Resources       |
+|                 |                 |                 | Needed          |
++=================+=================+=================+=================+
+| Okular          | GPL 2.0         | graphics/okular | Heavy           |
++-----------------+-----------------+-----------------+-----------------+
+| Evince          | GPL 2.0         | graphics/evince | Medium          |
++-----------------+-----------------+-----------------+-----------------+
+| ePDFView        | GPL 2.0         | gr              | Medium          |
+|                 |                 | aphics/epdfview |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Xpdf            | GPL 2.0         | graphics/xpdf   | light           |
++-----------------+-----------------+-----------------+-----------------+
+
+: Table 5. Supported Document Viewers
+
+8.6.1. Okular
+
+Okular is a universal document viewer, part of the KDE Plasma project.
+
+Okular combines excellent functionality with the versatility of
+supporting different kind of documents, like PDF, Postscript, DjVu, CHM,
+XPS, ePub and others.
+
+To install Okular, execute:
+
+    # pkg install okular
+
+8.6.2. Evince
+
+Evince is a document viewer for multiple document formats including PDF
+and Postscript. Part of the GNOME project. The goal of evince is to
+replace document viewers such as ggv and gpdf with a single, simple
+application.
+
+To install Evince, execute:
+
+    # pkg install evince
+
+8.6.3. ePDFView
+
+ePDFView is a lightweight PDF document viewer that only uses the Gtk+
+and Poppler libraries. The aim of ePDFView is to make a simple PDF
+document viewer, similar to Evince but without using the GNOME
+libraries.
+
+To install ePDFView, execute:
+
+    # pkg install epdfview
+
+8.6.4. Xpdf
+
+For users that prefer a small FreeBSD PDF viewer, Xpdf provides a
+light-weight and efficient viewer which requires few resources. It uses
+the standard X fonts and does not require any additional toolkits.
+
+To install Xpdf, execute:
+
+    # pkg install xpdf
+
+8.7. Finance
+
+For managing personal finances on a FreeBSD desktop, some powerful and
+easy-to-use applications can be installed. Some are compatible with
+widespread file formats, such as the formats used by Quicken and Excel.
+
+This section covers these programs:
+
++-----------------+-----------------+-----------------+-----------------+
+| Name            | License         | Package         | Resources       |
+|                 |                 |                 | Needed          |
++=================+=================+=================+=================+
+| KMyMoney        | GPL 2.0         | f               | Heavy           |
+|                 |                 | inance/kmymoney |                 |
++-----------------+-----------------+-----------------+-----------------+
+| GnuCash         | GPL 2.0 and GPL | finance/gnucash | Heavy           |
+|                 | 3.0             |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+: Table 6. Supported Finance programs
+
+8.7.1. KMyMoney
+
+KMyMoney is a personal finance application created by the KDE community.
+KMyMoney aims to provide the important features found in commercial
+personal finance manager applications. It also highlights ease-of-use
+and proper double-entry accounting among its features. KMyMoney imports
+from standard Quicken QIF files, tracks investments, handles multiple
+currencies, and provides a wealth of reports.
+
+To install KMyMoney, execute:
+
+    # pkg install kmymoney
+
+8.7.2. GnuCash
+
+GnuCash is part of the GNOME effort to provide user-friendly, yet
+powerful, applications to end-users. GnuCash can be used to keep track
+of income and expenses, bank accounts, and stocks. It features an
+intuitive interface while remaining professional.
+
+GnuCash provides a smart register, a hierarchical system of accounts,
+and many keyboard accelerators and auto-completion methods. It can split
+a single transaction into several more detailed pieces. GnuCash can
+import and merge Quicken QIF files. It also handles most international
+date and currency formats.
+
+To install GnuCash, execute:
+
+    # pkg install gnucash
+
+------------------------------------------------------------------------
+
+Last modified on: July 6, 2023 by Sergio Carlavilla Delgado
+
+Prev
+
+Home
+
+Next
+
+Table of Contents
+
+-   8.1. Synopsis
+-   8.2. Desktop Environments
+-   8.3. Browsers
+-   8.4. Development tools
+-   8.5. Desktop office productivity
+-   8.6. Document Viewers
+-   8.7. Finance
+
+------------------------------------------------------------------------
+
+Resources
+
+-   Download PDF
+-   Edit this page
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+

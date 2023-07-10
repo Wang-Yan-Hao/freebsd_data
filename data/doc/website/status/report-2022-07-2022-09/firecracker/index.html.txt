@@ -1,0 +1,116 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+FreeBSD/Firecracker
+
+Links:
+Firecracker VM
+
+Contact: Colin Percival <cperciva@FreeBSD.org>
+
+Firecracker is an open source "microVM" developed by Amazon Web
+Services; it is designed for the needs of "serverless" compute
+environments and has a particular focus on security and minimalism.
+
+Starting in June 2022, Colin Percival has been working to port FreeBSD
+to run in the Firecracker environment, with significant assistance from
+other FreeBSD developers. As of this quarterly report, a set of patches
+are pending review which collectively add the needed support to make
+FreeBSD functional in a patched version of Firecracker.
+
+In Q4 Colin intends to finish committing the relevant patches to
+FreeBSD, release a kernel and disk image so other FreeBSD users can
+experiment with Firecracker, and update and merge Firecracker patches
+which add PVH boot support (used by FreeBSD).
+
+This work has already produced "spinoff" benefits in revealing ways to
+speed up the FreeBSD boot process; due to its low overhead and minimal
+environment, Firecracker is an excellent context to work on this.
+
+This work is supported by Colin’s FreeBSD/EC2 Patreon.
+
+Sponsor: https://www.patreon.com/cperciva
+
+------------------------------------------------------------------------
+
+Last modified on: October 18, 2022 by Lorenzo Salvadore
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

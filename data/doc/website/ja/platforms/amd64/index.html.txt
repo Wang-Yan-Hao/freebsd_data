@@ -1,0 +1,139 @@
+[FreeBSD The Power to Serve]
+
+FreeBSD への寄付
+
+ 
+
+-   ホーム
+
+-   FreeBSD とは
+    -   FreeBSD が初めてという方へ
+    -   特徴
+    -   プロモーション活動
+    -   マーケティング活動
+    -   プライバシーポリシー
+    -   Projects
+    -   Ports
+
+-   FreeBSD の入手
+    -   リリース情報
+    -   リリースエンジニアリング
+
+-   ドキュメント
+    -   FAQ
+    -   ハンドブック
+    -   port 作成者のためのハンドブック
+    -   開発者のためのハンドブック
+    -   Committer's Guide
+    -   マニュアルページ
+    -   Presentations and Papers
+    -   新しい貢献者のためのドキュメンテーションプロジェクト入門
+    -   すべての Books と Articles
+
+-   コミュニティ
+    -   メーリングリスト
+    -   フォーラム
+    -   ユーザグループ
+    -   イベント
+    -   FreeBSD ジャーナル
+    -   Q&A (外部)
+
+-   開発
+    -   プロジェクトアイディア
+    -   Git リポジトリ
+    -   Subversion リポジトリ
+    -   GitHub ミラー
+    -   コードレビュー (Phabricator)
+    -   Wiki
+    -   継続的インテグレーションサービス
+
+-   サポート
+    -   ベンダ
+    -   セキュリティ情報
+    -   障害報告
+    -   障害報告の提出
+    -   ウェブ上の情報
+
+-   財団
+    -   寄付
+    -   ハードウェアの寄贈
+
+-   
+-   開発者のためのハンドブック
+-   Committer's Guide
+-   port 作成者のためのハンドブック
+-   ソースコードリポジトリ
+-   Release Engineering
+-   Platforms
+-   Project Ideas
+-   Contributing
+
+FreeBSD/amd64 プロジェクト
+
+[大槌を振る BSD デーモン]
+
+このページは AMD 社 の AMD64 アーキテクチャ、および Intel® 64
+アーキテクチャへの FreeBSD の移植に関する情報をまとめたものです。
+これらのプラットフォームは “x86-64” または “x64”
+としても知られています。 FreeBSD/amd64 は、最近の AMD および Intel CPU
+のすべてに適しています。
+
+AMD64 アーキテクチャは、以前は “Hammer” として知られていました。 Intell
+64 アーキテクチャは、以前は Yamhill, Clackamas Techchnology (CT),
+IA-32e、および EM64T (Extended Memory 64-bit Technology)
+として知られていました。
+
+新しい AMD Sempron™, AMD Opteron™, AMD Athlon™ 64, AMD Turion™ および
+AMD Phenom™ プロセッサ、そして AMD “Bulldozer” および “Bobcat”
+コアのプロセッサはすべて AMD64 アーキテクチャを採用しています。
+
+Intel vPro™, Intel Celeron D (一部のモデルは “Prescott” を採用), Intel
+Centrino® Duo, Intel Centrino® Pro, Intel Viiv™, Intel Core™2 Extreme,
+Intel Core™2 Quad, Intel Core™2 Duo, Intel Xeon (3000 系、5000
+系、および 7000 系)、 そして Intel Core™ i プロセッサは、Intel®64
+アーキテクチャを採用しています。
+
+現状
+
+FreeBSD/amd64
+は単一プロセッサモード、マルチプロセッサモードの両方において、 64
+ビットのマルチユーザーモードで動作します。
+
+AMD64 プラットフォームは、Tier 1 FreeBSD プラットフォームです。
+
+FreeBSD/amd64 関連情報
+
+-   FreeBSD/amd64 メーリングリスト
+
+その他の有用なリンク
+
+AMD64 関連文書
+
+-   AMD x86-64 アーキテクチャ仕様
+
+-   AMD64 アーキテクチャアプリケーションプログラマ向けマニュアル
+
+-   AMD64 アーキテクチャシステムプログラマ向けマニュアル
+
+-   AMD x86-64 プロセッサー固有アプリケーションバイナリインタフェース
+    (ABI) 仕様草案
+
+ソフトウェアツール
+
+-   Bochs および Simics シミュレータやツール
+
+関連プロジェクト
+
+-   NetBSD/amd64
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+最終更新日: 2023年6月7日 by Ed Maste
+
+法律上の注意事項 | © 1995-2023 FreeBSD プロジェクト All rights reserved.
+The mark FreeBSD is a registered trademark of The FreeBSD Foundation and
+is used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact

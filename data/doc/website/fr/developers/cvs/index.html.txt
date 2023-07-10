@@ -1,0 +1,116 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   
+-   Manuel du développeur
+-   Committer's Guide
+-   Manuel du porteur d'application
+-   Dépôt des codes source
+-   Production des versions
+-   Plates-formes
+-   Idées de projet
+-   Contribuer
+
+Dépôt CVS
+
+Subversion
+
+CVS (Concurrent Version System) est l’outil que nous utilisons pour
+pouvoir gérer le code source. Tous les changements (accompagnés des
+explications de chacune des modifications) depuis FreeBSD 2.0 jusqu’à la
+version actuelle sont stockés dans la base CVS. Ils peuvent être
+facilement consultés via l’interface web mentionnée ci-dessus. Pour
+obtenir une copie complète de la base CVS de FreeBSD ou de n’importe
+quelle branche de la base CVS, utilisez:
+
+-   CVSup si vous désirez un accès à la demande, nécessitant peu de
+    ressources et utilisant un utilitaire propre (écrit en Modula-3,
+    rien que ça).
+
+-   anoncvs si vous désirez un accès à la demande nécessitant davantage
+    de ressources que cvsup (en terme d’octets transférés et de
+    disponibilité du CPU) mais plus simple d’utilisation pour des
+    petites parties de l’arbre CVS et qui ne demande rien de plus que
+    les outils CVS livrés directement avec FreeBSD.
+
+-   CTM si vous recherchez un accès nécessitant très peu de ressources,
+    et en mode batch (en fait, des patches par courrier électronique).
+
+-   L’interface web si vous voulez simplement explorer le dépôt CVS à la
+    recherche d’un changement ou d’une révision de fichier spécifique.
+
+-   Enfin, si vous disposez d’une grosse bande passante ou si vous
+    préférez/devez utiliser le protocole FTP, vous pouvez faire un
+    miroir du dépôt CVS depuis ftp.FreeBSD.org.
+
+Des miroirs de l’interface web CVS sont disponibles au Canada, au Japon,
+au Portugal, aux Etats-Unis/Californie et en Ukraine.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 juin 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

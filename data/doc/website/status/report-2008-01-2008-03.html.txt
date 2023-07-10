@@ -1,0 +1,646 @@
+Skip site navigation (1) Skip section navigation (2)
+
+Header And Logo
+
+[FreeBSD]
+
+.
+
+Donate to FreeBSD
+
+.
+
+Peripheral Links
+
+Search
+
+ 
+
+Site Navigation
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+Section Navigation
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Multimedia
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Introduction
+
+This Status Report covers FreeBSD related projects between January and
+March 2008. During this time FreeBSD 7.0 was released. BSDCan is upon us
+with the Developer Summit starting the 14th and the Conference starting
+the 16th.
+
+Thanks to all the reporters for the excellent work! We hope you enjoy
+reading.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Google Summer of Code
+
+-   finstall - Graphical installer for FreeBSD
+-   Summer of Code
+
+Projects
+
+-   ProPolice support for FreeBSD
+-   Rewriting the TTY layer
+-   USB
+
+FreeBSD Team Reports
+
+-   FreeBSD Bugbusting Team
+-   The FreeBSD Foundation
+-   The Ports Collection
+
+Kernel
+
+-   Multi-IPv4/v6/no-IP jails
+-   UnionFS Improvements
+
+Documentation
+
+-   Ideas Web Application
+-   The Hungarian Documentation Project
+-   The Spanish Documentation Project
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Google Summer of Code
+
+finstall - Graphical installer for FreeBSD
+
+  ------- -----------------------------------------------
+  Links   
+          URL: http://wiki.freebsd.org/finstall
+          URL: http://sourceforge.net/projects/finstall
+  ------- -----------------------------------------------
+
+Contact: Ivan Voras <ivoras@freebsd.org>
+
+"finstall" is a graphical installer project for FreeBSD, sponsored by
+Google during the 2007 Summer of Code. Its goal is to create a modern
+installer, usable by both novice users and experts. Because it is
+divided into front end and back end, it can potentially be used for
+advanced purposes as system configuration, remote and custom installs,
+etc. The project has resulted in a simple installer ISO image for i386
+that can be used for new installations on empty hard drives. Development
+has continued post-SoC but somewhat slowly; recently implemented
+features include ZFS support and BSDStats support. To attract more
+potential developers (especially those without an account on FreeBSD's
+official development systems), the project has moved to SourceForge.
+Future development plans include support for headless / remote installs,
+partitioning, etc. Talks about finstall will be given at BSDCan 2008.
+
+Open tasks:
+
+1.  Remote / headless install support.
+2.  Better partitioning support in the front end.
+3.  GPT boot support.
+4.  Fine grained package selection support.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Summer of Code
+
+  ------- --------------------------------------------------------
+  Links   
+          URL: http://www.FreeBSD.org/projects/summerofcode.html
+          URL: http://wiki.freebsd.org/SummerOfCode
+  ------- --------------------------------------------------------
+
+Contact: Murray Stokely <murray@FreeBSD.org>
+Contact: Robert Watson <rwatson@FreeBSD.org>
+
+The student application period for the Summer of Code is over and the
+mentors and administrators are carefully reviewing the applications,
+clarifying the project parameters, and deciding which students to
+recommend for funding from Google.
+
+This year we received over 100 student applications from students in 26
+different countries. We also have over 60 potential mentors that we are
+currently matching up with students. We will soon announce the winning
+students on the summer of code website and the process of bringing these
+students into our development community will begin.
+
+Each student will again be given Perforce and wiki access and all
+developers are encouraged to contact any students working in related
+areas, as we don't want the students to have access to our community
+only through their formal assigned mentor.
+
+Open tasks:
+
+1.  Help introduce our new summer of code students to FreeBSD
+    development. Some students are very experienced at developing on
+    FreeBSD and others are new to our environment and could use more
+    assistance.
+2.  Update the ideas database with new project ideas that you'd like to
+    see for next year's Summer of Code.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Projects
+
+ProPolice support for FreeBSD
+
+  ------------- ---------------------------------------------------
+  Links         
+  FreeBSD/SSP   URL: http://tataz.chchile.org/~tataz/FreeBSD/SSP/
+  ------------- ---------------------------------------------------
+
+Contact: Jérémie Le Hen <jeremie@le-hen.org>
+
+This patch modifies the build infrastructure in order to use GCC's
+stack-smashing protection (SSP, aka ProPolice) when building world,
+kernel and ports. Don't forget to see the website and especially the FAQ
+for a list of ports that fail to build with ProPolice. The patch extends
+the meaning of src.conf(5) WITHOUT_SSP so as to prevent both building
+libssp and using ProPolice when compiling. An interesting thing to note
+is that libssp is GNU licensed (it is provided with GCC 4.2.1) but since
+libc includes the mandatory symbols, programs won't be linked against
+GNU libssp. A new knob USE_SSP has been also added for the ports
+infrastructure, you can set it to "yes" in make.conf(5) and use USE_SSP=
+on command-line to disable ProPolice for some ports. The patch has been
+reviewed and should hopefully be committed soon. The port part hasn't
+been reviewed yet, though.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Rewriting the TTY layer
+
+  ----------------- ----------------------------------------------------------------------------------
+  Links             
+  Perforce branch   URL: http://p4web.freebsd.org/@md=d&cd=//&c=7ru@//depot/user/ed/mpsafetty/?ac=83
+  ----------------- ----------------------------------------------------------------------------------
+
+Contact: Ed Schouten <ed@80386.nl>
+
+About 10 weeks ago I started rewriting the TTY layer. The existing TTY
+code is about 20-25 years old and has been extended over and over,
+without really improving its design.
+
+The new TTY layer will allow us to remove usage of the Giant from
+drivers. It also includes an improved buffering mechanism, which has
+more constant-time operations and prevents copying data multiple times
+when moving data to userspace.
+
+Right now the code should work quite well for most users. The code in
+Perforce includes a new pseudo-TTY driver, which is finally capable of
+destroying TTY's and their associated buffers when needed. The syscons,
+uart and ucom drivers have also been ported to the new TTY layer.
+
+The code is quite complete, but it still misses driver interaction for
+carrier/connection detection and sending breaks. Many drivers still need
+to be ported.
+
+Open tasks:
+
+1.  People who are willing to test. Contact me if you cannot perform
+    Perforce checkouts.
+2.  Not all drivers have been ported. Patches or hardware are welcome.
+3.  Some changes could already be backported.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+USB
+
+  ----------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Links                         
+  Current USB files             URL: http://p4web.freebsd.org/@md=d&cd=//depot/projects/usb/src/sys/dev/usb/&c=A2y@//depot/projects/usb/src/sys/dev/usb/?ac=83
+  Current USB API README file   URL: http://p4web.freebsd.org/@md=d&cd=//depot/projects/usb/src/sys/dev/usb/&cdf=//depot/projects/usb/src/sys/dev/usb/README&sr=136513&c=2Ro@//depot/projects/usb/src/sys/dev/usb/README
+  Install instructions          URL: http://www.selasky.org/hans_petter/usb4bsd
+  ----------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Contact: Hans Petter Sirevaag Selasky <hselasky@freebsd.org>
+
+During the last three months there has mostly been bugfix and
+documentation commits. The code is currently in a stable and full
+featured state. The FreeBSD P4 USB project now has a fully symmetric USB
+stack at API level and has been tested to work with AT91RM9200 ARM based
+boards and USS820 based devices. There are currently two USB device side
+drivers implemented, namely CDC Ethernet and Mass Storage (SCSI+BBB) so
+that you can now make your custom USB Flash Disk using FreeBSD. Don't
+confuse USB device side drivers with USB host side drivers.
+
+Currently the USB P4 project is under review.
+
+Ideas and comments with regard to the new USB API are welcome on the
+FreeBSD USB Mailing List .
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD Team Reports
+
+FreeBSD Bugbusting Team
+
+  ------------------------------------------ -------------------------------------------------------------------------
+  Links                                      
+  GNATS                                      URL: http://www.freebsd.org/support.html#gnats
+<<<<<<< HEAD
+=======
+  BugBusting Resources                       URL: http://wiki.freebsd.org/BugBusting/Resources
+  February 2008 Bugathon                     URL: http://wiki.freebsd.org/Bugathons/February2008
+  new PRs in the last 7 days                 URL: http://people.freebsd.org/~linimon/studies/prs/recentprs.txt
+  PRs recommended for committer evaluation   URL: http://people.freebsd.org/~linimon/studies/prs/recommended_prs.txt
+  feedback PRs with no change in 2 months    URL: http://people.freebsd.org/~linimon/studies/prs/stalefeedback.txt
+  ------------------------------------------ -------------------------------------------------------------------------
+
+Contact: Ceri Davies <bugmeister_at_freebsd_dot_org>
+Contact: Remko Lodder <bugmeister_at_freebsd_dot_org>
+Contact: Mark Linimon <bugmeister_at_freebsd_dot_org>
+
+As one of the results of our January and February bugathons, we have
+granted Volker Werth (vwe@) direct access to GNATS. During the past few
+months he has been instrumental in working on several hundred PRs
+(mainly src-related), and either closing them or helping users work
+through issues they are having. There have been several commits to the
+src tree that directly resulted from this. Welcome Volker!
+
+As well, several new people are assisting us in classifying incoming
+PRs, working with users, and reviewing patches. Among the most active
+are Bruce Cran, Dylan Cochran, and Harrison Grundy. We appreciate
+everyone's efforts.
+
+As a direct result of the above, we have been able to hold the overall
+PR count down to around 5300 (the peak was around 5500). despite the
+facts that PR submissions have jumped recently, and the ports PR backlog
+is a little higher than recent trends (due to the long freeze/slush
+cycle). What is most encouraging, however, is not the absolute number,
+as much as that we are handling incoming PRs much more quickly and
+completely. While we are still not where we need to be, this trend is
+very encouraging.
+
+As well, The Bugbusting Team has learned some lessons about how we can
+best involve new people in bugbusting, e.g., how to best leverage people
+who have varying levels of experience and areas of interest. Our old
+response of "just look through the bug reports and let us know if you
+see anything that needs doing" tends to discourage all but the most
+highly-motivated. Some of these ideas are being studied to figure how to
+change our process flow.
+
+There are still a number of good technical suggestions from the two
+Bugathons that need to be written up and discussed. The first few have
+resulted in the following: there are a few new web pages that include:
+new PRs in the last 7 days; the web representation of the "recommended
+by bugbusting team" list; and "PRs in feedback with no change for 2
+months". (See above). Many more need to be added.
+
+Much of the work of the second Bugathon was in identifying and closing
+PRs for which fixes had already been committed. Others were identified
+and relabled as 'patched' to move them along.
+
+Open tasks:
+
+1.  Think of some way for committers to only view PRs that have been in
+    some way 'vetted' or 'confirmed.'
+2.  Generate more publicity for what we've already got in place, and for
+    what we intend to do next.
+3.  Define new categories, classifications, and states for PRs, that
+    will better match our workflow.
+
+------------------------------------------------------------------------
+
+The FreeBSD Foundation
+
+  --------------------------------- -------------------------------------------------------
+  Links                             
+  The FreeBSD Foundation Website    URL: http://www.freebsdfoundation.org
+  FreeBSD Foundation Mailing List   URL: http://www.freebsdfoundation.org/subscribe.shtml
+  --------------------------------- -------------------------------------------------------
+
+Contact: Deb Goodkin <deb@FreeBSD.org>
+
+The foundation provided legal counsel for the project to understand the
+impact of GPLv3 on the project and to create a policy on software
+licenses. We approved a budget of $250,000 for 2008. We were a sponsor
+for AsiaBSDCon and provided travel grants to three people to attend the
+conference. We are a sponsor for BSDCan and the BSDCan Developer Summit.
+We have approved travel grants for 10 people to attend BSDCan. We are
+supporting projects that will provide Java 1.6 binaries for FreeBSD 6.3
+and 7.0. Join our mailing list to receive monthly updates. See you at
+BSDCan!
+
+------------------------------------------------------------------------
+
+The Ports Collection
+
+  ------------------------------------------------------------------ ------------------------------------------------------------------------------
+  Links                                                              
+  The FreeBSD Ports Collection                                       URL: http://www.freebsd.org/ports/
+  Contributing to the FreeBSD Ports Collection                       URL: http://www.freebsd.org/doc/en_US.ISO8859-1/articles/contributing-ports/
+  FreeBSD ports unfetchable distfile survey (Bill Fenner's report)   URL: http://people.freebsd.org/~fenner/portsurvey/
+  FreeBSD ports monitoring system                                    URL: http://portsmon.FreeBSD.org/index.html
+  The FreeBSD Ports Management Team                                  URL: http://www.freebsd.org/portmgr/index.html
+  marcuscom Tinderbox                                                URL: http://tinderbox.marcuscom.com
+  ------------------------------------------------------------------ ------------------------------------------------------------------------------
+
+Contact: Mark Linimon <linimon@FreeBSD.org>
+
+portmgr is pleased to announce that Florent Thoumie (flz) has joined us.
+We immediately put him to work on cleaning up the pkg_* tools.
+
+After the extended freeze and then slush for 7.0R, we have finally been
+able to start catching up on the backlog that built up during that time.
+
+The ports count is now over 18,200. The PR count has only dropped to
+around 1000. We are still turning around PRs fairly quickly, but are not
+making progress on the backlog.
+
+We have only been able to do 2 -exp runs recently. Although a number of
+PRs have been closed, we are still at 57 portmgr PRs.
+
+During this period, GNOME has been updated to 2.22.0. Also, a new port
+for linux emulation (emulators/linux_base-f8) has been introduced for
+general testing.
+
+XFree86 has been removed. (It had been deprecated for quite some time;
+modern development seems to be happening in X.Org.) This simplifies the
+infrastructure. A few other stale ports have been reaped.
+
+The following large changes are in the pipeline:
+
+-   Upgrade of KDE to 4.0 (being tested)
+-   Upgrade of automake to 1.10.1
+-   Upgrade of gettext to 0.17
+-   Upgrade of libtool to 1.5.26 (not 2.x at this time)
+-   Upgrade of m4 to 1.14.11
+-   Introduction of Perl 5.10
+
+We are currently building packages for amd64-5, amd64-6, amd64-7,
+amd64-8, i386-5, i386-6, i386-7, i386-8, sparc64-6, and sparc64-7. Note,
+however, that RELENG_5 will reach end of its supported life May 31,
+2008, and package builds for those 2 buildenvs will stop as of that
+date.
+
+We have been able to use some new machines to speed up the package
+builds (in particular, amd64) -- in fact, to the point that we are now
+outrunning the capacity of some of the mirrors to stay current. A
+solution for the problem is being investigated.
+
+We have added 4 new committers since the last report.
+
+Open tasks:
+
+1.  Most of the remaining ports PRs are "existing port/PR assigned to
+    committer". Although the maintainer-timeout policy is helping to
+    keep the backlog down, we are going to need to do more to get the
+    ports in the shape they really need to be in.
+2.  Although we have added many maintainers, we still have over 4,000
+    unmaintained ports (see, for instance, the list on portsmon). We are
+    always looking for dedicated volunteers to adopt at least a few
+    unmaintained ports. As well, the packages on amd64 and sparc64 lag
+    behind i386, and we need more testers for those.
+
+------------------------------------------------------------------------
+
+Kernel
+
+Multi-IPv4/v6/no-IP jails
+
+  ------------------------------------------- -----------------------------------------------------------------------------------------------------------
+  Links                                       
+  Webpage for regularly updates and patches   URL: http://sources.zabbadoz.net/freebsd/jail.html
+  Perforce tree                               URL: http://p4web.freebsd.org/@md=d&cd=//depot/user/bz/jail/&rc=s&c=kmz@//depot/user/bz/jail/?ac=43&mx=50
+  ------------------------------------------- -----------------------------------------------------------------------------------------------------------
+
+Contact: Bjoern A. Zeeb <bz@FreeBSD.org>
+
+The multi-IPv4/v6 jails project was resumed in early January after
+previous work had been abandoned in 2006.
+
+As an alternate solution to full network stack virtualization, this work
+shall provide a lightweight solution for multi-IP virtualization. The
+changes are even more important because of the emerging demand for IPv6.
+
+The current status includes updated user space utilities. Kernel side
+has grown support for multiple IP addresses for both address families in
+jails, as well as no IP addresses at all. 32bit and jail version 1
+backward compatibility support were implemented.
+
+The development was moved to perforce and patches for early adopters are
+available.
+
+Open tasks:
+
+1.  The TODO list can be found in the TODO file in perforce.
+2.  Regression tests and review.
+
+------------------------------------------------------------------------
+
+UnionFS Improvements
+
+  ------- -------------------------------------------------
+  Links   
+          URL: http://people.freebsd.org/~daichi/unionfs/
+  ------- -------------------------------------------------
+
+Contact: Daichi GOTO <daichi@freebsd.org>
+Contact: Masanori OZAWA <ozawa@ongs.co.jp>
+
+Our implementation of UnionFS has been merged into HEAD, 7-stable and
+6-stable already. Now we are working on UnionFS stability improvement.
+We have developed the following 5 patches. If you are interested, please
+try them and report your results.
+
+-   unionfs-p20-1.diff
+-   unionfs-p20-2.diff
+-   unionfs-p20-3.diff
+-   unionfs-p20-4.diff
+-   unionfs-p20-5.diff
+
+Open tasks:
+
+1.  Robert Watson has pointed out that unionfs-p20-5.diff has some
+    problems around how it treats sockets. We are researching those.
+
+------------------------------------------------------------------------
+
+Documentation
+
+Ideas Web Application
+
+  ----------------- ------------------------------------------
+  Links             
+  Idea Database     URL: http://apps.stokely.org/ideas/
+  Design Document   URL: http://wiki.freebsd.org/IdeasWebApp
+  ----------------- ------------------------------------------
+
+Contact: Murray Stokely <murray@FreeBSD.org>
+
+A prototype web application has been written for the
+http://www.FreeBSD.org website which allows authenticated users to add
+new development ideas or comment and vote on ideas added by others. This
+application is a proposed replacement for the static webpage that is
+currently maintained with project ideas for summer of code students and
+others looking to get involved with FreeBSD.
+
+Some of the features currently available include:
+
+-   Allows anyone to propose a new idea.
+-   Allows anyone to comment and vote on previously proposed ideas.
+-   Provides an RSS feed of the newest ideas.
+-   Provides an RSS feed of the comments/votes for any specific idea.
+-   Allows one to sort and search the ideas list by category, proposer,
+    votes, summary title, or full text, and subscribe to RSS feed of
+    search results.
+-   Anonymous ideas/comments are hidden by default until cleared by a
+    moderator.
+-   Moderator bits to be set for certain users so that they can moderate
+    the above (can subscribe to an rss file for unmoderated ideas and
+    comments needing their attention).
+-   Import functionality to import the current ideas.xml file.
+-   Graphs and statistics about the ideas in the database are provided.
+
+The code is checked into perforce under
+//depot/user/murray/www/apps/django/ideas/... and I would eventually
+like to see this hosted on FreeBSD.org hardware, linked from the main
+website, and checked into www/apps/django/ideas.
+
+Open tasks:
+
+1.  A thorough security review of the code is needed. If you have
+    experience with reviewing web applications for sql injection,
+    cross-site scripting, and other vulnerabilities please contact me.
+    The application uses the Django framework.
+2.  Better import/export tools to get the data from our current
+    ideas.xml web app into the database and back out again.
+3.  More usability review and suggestions needed to make this a
+    compelling replacement to the current static XML system.
+
+------------------------------------------------------------------------
+
+The Hungarian Documentation Project
+
+  -------------------- -----------------------------------------------------------
+  Links                
+  Hungarian website    URL: http://FreeBSD.org/hu
+  Hungarian articles   URL: http://www.freebsd.org/doc/hu_HU.ISO8859-2/articles/
+  -------------------- -----------------------------------------------------------
+
+Contact: Gábor Kövesdán <gabor@FreeBSD.org>
+Contact: Gábor Páli <pgj@FreeBSD.org>
+
+We are pleased to welcome Gábor Páli as a doc committer. He has
+successfully completed the translation of the FreeBSD Handbook. The
+final review of his work is pending now and we will import it soon to
+the repository. We consider the translation of the release notes the
+next important milestone of this translation project.
+
+Open tasks:
+
+1.  Review the translated Handbook.
+2.  Translate release notes for -CURRENT and 7.X.
+
+------------------------------------------------------------------------
+
+The Spanish Documentation Project
+
+  ------------------------- --------------------------------------------------
+  Links                     
+  FreeBSD Spanish Website   URL: http://FreeBSD.org/es
+  Spanish Translations      URL: http://www.freebsd.org/doc/es_ES.ISO8859-1/
+  ------------------------- --------------------------------------------------
+
+Contact: José Vicente Carrasco Vayá <carvay@FreeBSD.org>
+Contact: Gábor Kövesdán <gabor@FreeBSD.org>
+
+We are progressing better these days again. We have made some updates to
+the website and to the Handbook, including the complete translation of
+the jails chapter. We have also added a new translation of an article
+and an another one is under review.
+
+Open tasks:
+
+1.  Complete updating of the website.
+2.  Update the Handbook and translate new chapters.
+
+------------------------------------------------------------------------
+
+News Home | Status Home
+
+Site Map | Legal Notices | © 1995–2021 The FreeBSD Project. All rights
+reserved.
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

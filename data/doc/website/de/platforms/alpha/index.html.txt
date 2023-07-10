@@ -1,0 +1,116 @@
+[FreeBSD The Power to Serve]
+
+An FreeBSD spenden
+
+ 
+
+-   Startseite
+
+-   Über FreeBSD
+    -   Für Einsteiger
+    -   Eigenschaften
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Bezugsquellen
+    -   Release Information
+    -   Release Engineering
+
+-   Dokumentation
+    -   FAQ
+    -   Handbuch
+    -   Porter-Handbuch
+    -   Entwickler-Handbuch
+    -   Committer's Guide
+    -   Manualpages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   Alle Bücher und Artikel
+
+-   Community
+    -   Mailinglisten
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Entwicklung
+    -   Projektideen
+    -   Git-Spiegelserver
+    -   Subversion-Repository
+    -   GitHub Mirror
+    -   Phabricator (Code Review)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Hilfe
+    -   Kommerzieller Support
+    -   Sicherheit
+    -   Problemberichte
+    -   Problembericht erstellen
+    -   Internet-Ressourcen
+
+-   Foundation
+    -   Geldspende
+    -   Hardwarespende
+
+-   
+-   Entwickler-Handbuch
+-   Committer's Guide
+-   Porter-Handbuch
+-   Source code repositories
+-   Release Engineering
+-   Platforms
+-   Project Ideas
+-   Contributing
+
+FreeBSD/alpha Project
+
+Diese Seite enthält Informationen über das Portieren von FreeBSD auf
+HP/Compaq-Alpha-Systeme.
+
+Status
+
+Hinweis: Seit FreeBSD 7.0 wird die Alpha-Plattform nicht mehr
+unterstützt, da die Entwicklung neuer Alphasysteme vom Hersteller
+eingestellt wurde. Zusätzlich führte die Verbreitung von 64-Bit-Systemen
+wie den AMD64- und Intel EM64T-Architekturen zu einem drastischen
+Rückgang des Benutzer- und Entwicklerinteresses an dieser Plattform.
+
+Mailingliste FreeBSD/alpha
+
+Da die Unterstützung für die Alpha-Plattform eingestellt wurde, wurde
+auch die Mailingliste freebsd-alpha geschlossen. Es ist also nicht mehr
+möglich, diese Liste zu abonnieren oder neue Nachrichten an die Liste zu
+schicken. Der Inhalte der Archive kann aber weiterhin durchsucht oder
+durchstöbert werden.
+
+Weitere nützliche Links
+
+Hardware
+
+-   HP-AlphaServer
+
+-   HP-AlphaStation
+
+Projekte
+
+-   NetBSD/alpha
+
+-   OpenBSD/alpha
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26. Januar 2021 by Sergio Carlavilla Delgado
+
+Rechtliches | © 1995-2023 The FreeBSD Project Alle Rechte vorbehalten.
+Die Marke FreeBSD ist eine eingetragene Marke der FreeBSD Foundation und
+wird vom FreeBSD Project mit freundlicher Genehmigung der The FreeBSD
+Foundation. Kontakt

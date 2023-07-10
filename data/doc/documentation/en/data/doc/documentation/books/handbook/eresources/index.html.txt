@@ -1,0 +1,246 @@
+
+<<<<<<< HEAD
+=======
+Appendix C. Resources on the Internet
+
+The rapid pace of FreeBSD progress makes print media impractical as a
+means of following the latest developments. Electronic resources are the
+best, if not often the only, way to stay informed of the latest
+advances. Since FreeBSD is a volunteer effort, the user community itself
+also generally serves as a "technical support department" of sorts, with
+electronic mail, web forums, and USENET news being the most effective
+way of reaching that community.
+
+The most important points of contact with the FreeBSD user community are
+outlined below. There is a possibly more up to date list on the
+community portal on the FreeBSD Wiki. Please send other resources not
+mentioned here to the FreeBSD documentation project mailing list so that
+they may also be included.
+
+C.1. Websites
+
+-   The FreeBSD Forums provide a web based discussion forum for FreeBSD
+    questions and technical discussion.
+
+-   The FreeBSD Wiki provides various bits of information that hadn’t
+    yet made it into the Handbook.
+
+-   The FreeBSD Documentation website doesn’t provide just the Users’s
+    Handbook; there are other handbooks and articles that are worth a
+    read.
+
+-   The FreeBSD Journal is a free, professionally-edited, bi-monthly
+    technical magazine released by FreeBSD Foundation.
+
+-   The BSDConferences YouTube Channel provides a collection of high
+    quality videos from BSD conferences around the world. This is a
+    great way to watch key developers give presentations about new work
+    in FreeBSD.
+
+-   FreeBSD Status Reports are released every three months and track
+    progress of FreeBSD development.
+
+-   There’s a FreeBSD-focused Reddit group at r/freebsd.
+
+-   Super User and Server Fault, the Stack Exchange services for system
+    administrators.
+
+-   FreeBSD Discord server, a communications and community-building
+    service, where FreeBSD community members can socialise, obtain
+    support or support others, learn, contribute, collaborate, and stay
+    up to date with all things FreeBSD-related.
+
+-   IRC channels, a widely implemented, technically mature, open
+    standard text chat.
+
+C.2. Mailing Lists
+
+The mailing lists are the most direct way of addressing questions or
+opening a technical discussion to a concentrated FreeBSD audience. There
+are a wide variety of lists on a number of different FreeBSD topics.
+Sending questions to the most appropriate mailing list will invariably
+assure a faster and more accurate response.
+
++-----------------------------------+-----------------------------------+
+|                                   | To test the ability to send email |
+|                                   | to FreeBSD lists, send a test     |
+|                                   | message to FreeBSD test mailing   |
+|                                   | list. Please do not send test     |
+|                                   | messages to any other list.       |
++-----------------------------------+-----------------------------------+
+
+When in doubt about what list to post a question to, see How to get best
+results from the FreeBSD-questions mailing list.
+
+Before posting to any list, please:
+
+-   learn about how to best use the mailing lists, such as how to help
+    avoid frequently-repeated discussions, by reading the Mailing List
+    Frequently Asked Questions (FAQ) document
+
+-   search the archives, to tell whether someone else has already posted
+    what you intend to post.
+
+Archive search interfaces include:
+
+-   https://www.freebsd.org/search/ (DuckDuckGo)
+
+-   https://lists.freebsd.org/search (Experimental search engine)
+
+Note that this also means that messages sent to FreeBSD mailing lists
+are archived in perpetuity. When protecting privacy is a concern,
+consider using a disposable secondary email address and posting only
+public information.
+
+FreeBSD-provided archives:
+
+-   do not present links as links
+
+-   do not present inline images
+
+-   do not present HTML content of HTML messages.
+
+The FreeBSD public mailing lists can be consulted here.
+
+C.2.1. How to Subscribe
+
+To subscribe to a list, click the list name at
+https://lists.freebsd.org. The page that is displayed should contain all
+of the necessary subscription instructions for that list.
+
+To actually post to a given list, send mail to listname@FreeBSD.org. It
+will then be redistributed to mailing list members world-wide.
+
+To unsubscribe from a list, click on the URL found at the bottom of
+every email received from the list. It is also possible to send an email
+to listname+unsubscribe@FreeBSD.org to unsubscribe.
+
+It is important to keep discussion in the technical mailing lists on a
+technical track. To only receive important announcements, instead join
+the FreeBSD announcements mailing list, which is intended for infrequent
+traffic.
+
+C.2.2. Lists Basic Rules
+
+All FreeBSD mailing lists have certain basic rules which must be adhered
+to by anyone using them. Failure to comply with these guidelines will
+result in two (2) written warnings from the FreeBSD Postmaster
+postmaster@FreeBSD.org, after which, on a third offense, the poster will
+removed from all FreeBSD mailing lists and filtered from further posting
+to them. We regret that such rules and measures are necessary at all,
+but today’s Internet is a pretty harsh environment, it would seem, and
+many fail to appreciate just how fragile some of its mechanisms are.
+
+Rules of the road:
+
+-   The topic of any posting should adhere to the basic description of
+    the list it is posted to. If the list is about technical issues, the
+    posting should contain technical discussion. Ongoing irrelevant
+    chatter or flaming only detracts from the value of the mailing list
+    for everyone on it and will not be tolerated. For free-form
+    discussion on no particular topic, the FreeBSD chat mailing list is
+    freely available and should be used instead.
+
+-   No posting should be made to more than 2 mailing lists, and only to
+    2 when a clear and obvious need to post to both lists exists. For
+    most lists, there is already a great deal of subscriber overlap and
+    except for the most esoteric mixes (say "-stable & -scsi"), there
+    really is no reason to post to more than one list at a time. If a
+    message is received with multiple mailing lists on the Cc line, trim
+    the Cc line before replying. The person who replies is still
+    responsible for cross-posting, no matter who the originator might
+    have been.
+
+-   Personal attacks and profanity (in the context of an argument) are
+    not allowed, and that includes users and developers alike. Gross
+    breaches of netiquette, like excerpting or reposting private mail
+    when permission to do so was not and would not be forthcoming, are
+    frowned upon but not specifically enforced.
+
+-   Advertising of non-FreeBSD related products or services is strictly
+    prohibited and will result in an immediate ban if it is clear that
+    the offender is advertising by spam.
+
+C.2.3. Filtering on the Mailing Lists
+
+The FreeBSD mailing lists are filtered in multiple ways to avoid the
+distribution of spam, viruses, and other unwanted emails. The filtering
+actions described in this section do not include all those used to
+protect the mailing lists.
+
+Only certain types of attachments are allowed on the mailing lists. All
+attachments with a MIME content type not found in the list below will be
+stripped before an email is distributed on the mailing lists.
+
+-   application/octet-stream
+
+-   application/pdf
+
+-   application/pgp-signature
+
+-   application/x-pkcs7-signature
+
+-   message/rfc822
+
+-   multipart/alternative
+
+-   multipart/related
+
+-   multipart/signed
+
+-   text/html
+
+-   text/plain
+
+-   text/x-diff
+
+-   text/x-patch
+
++-----------------------------------+-----------------------------------+
+|                                   | Some of the mailing lists might   |
+|                                   | allow attachments of other MIME   |
+|                                   | content types, but the above list |
+|                                   | should be applicable for most of  |
+|                                   | the mailing lists.                |
++-----------------------------------+-----------------------------------+
+
+If an email contains both an HTML and a plain text version, the HTML
+version will be removed. If an email contains only an HTML version, it
+will be converted to plain text.
+
+C.3. Usenet Newsgroups
+
+In addition to two FreeBSD specific newsgroups, there are many others in
+which FreeBSD is discussed or are otherwise relevant to FreeBSD users.
+
+C.3.1. BSD Specific Newsgroups
+
+-   comp.unix.bsd.freebsd.announce
+
+-   comp.unix.bsd.freebsd.misc
+
+-   de.comp.os.unix.bsd (German)
+
+-   fr.comp.os.bsd (French)
+
+C.3.2. Other UNIX® Newsgroups of Interest
+
+-   comp.unix
+
+-   comp.unix.questions
+
+-   comp.unix.admin
+
+-   comp.unix.programmer
+
+-   comp.unix.shell
+
+-   comp.unix.misc
+
+-   comp.unix.bsd
+
+C.3.3. X Window System
+
+-   comp.windows.x
+
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

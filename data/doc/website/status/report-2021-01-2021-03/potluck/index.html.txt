@@ -1,0 +1,120 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Potluck & Potman
+
+Links:
+Potluck Repository & Project URL: https://potluck.honeyguide.net/
+Potluck on github URL: https://github.com/hny-gd/potluck
+Potman on github URL: https://github.com/grembo/potman
+Pot Project URL https://pot.pizzamig.dev
+
+Contact: Stephan Lichtenauer (Potluck) <sl@honeyguide.eu>
+Contact: Michael Gmelin (Potman) <grembo@FreeBSD.org>
+
+Pot is a jail management tool that also supports orchestration through
+Nomad.
+
+Potluck aims to be to FreeBSD and Pot what Dockerhub is to Linux and
+Docker: A repository of Pot flavours and complete images for usage with
+Pot and in many cases Nomad.
+
+The new Potman project aims to simplify building Pot images with Vagrant
+and VirtualBox based on the Potluck approach, e.g. as part of a DevOps
+workflow for software development and testing. That way, Pot images can
+more easily be created as part of a Jenkins workflow to be deployed with
+Nomad and Consul.
+
+In the last two quarters, FreeBSD 12.2 Potluck images have been built
+and the 11.4 images have been upgraded with the new packages.
+Furthermore, new images like Wordpress and an improved flavour script
+(which squashes a nasty network problem) have been created.
+
+Future plans include further Potman workflow features, new and improved
+Potluck images and publishing FreeBSD 13-based images.
+
+As always, feedback and patches are welcome.
+
+------------------------------------------------------------------------
+
+Last modified on: May 1, 2021 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

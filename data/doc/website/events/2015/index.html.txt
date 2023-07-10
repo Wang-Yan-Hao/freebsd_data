@@ -1,0 +1,217 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   BSD Now
+-   Discord
+-   Events
+-   Forums
+-   IRC
+-   Mailing Lists
+-   Reddit
+-   Twitter
+-   User Groups
+-   YouTube
+
+-   RSS 2.0 Feed
+
+FreeBSD Past Events
+
+Please send details of any FreeBSD related events or events that are of
+interest for FreeBSD users which are not listed here to
+freebsd-doc@FreeBSD.org.
+
+Countries and regions displayed in dark red on the map below are hosting
+upcoming FreeBSD-related events. Countries that have hosted
+FreeBSD-related events in the past show up in yellow or orange, with
+darker colors representing a larger number of previous events.
+
+[events map]
+
+Past Events:
+
+November 2015
+
+-   Paris Open Source Submit 2015, , ,
+    18 - 19 November, 2015
+    The Paris Open Source Submit is one of the major professional open
+    source events in France, a unique place to meet the companies who
+    built, or wants to build solutions based on open source. A team of
+    FreeBSD commiters and contributors will be there to introduce
+    peoples to FreeBSD.
+
+October 2015
+
+-   BSDCon Brazil 2015, , Fortaleza, Brazil
+    09 - 10 October, 2015
+    BSDCon Brazil is the Brazilian BSD powered and flavored conference.
+    The first edition was in 2005 and it brought together a great mix of
+    *BSD developers and users for a nice blend of both developer-centric
+    and user-centric presentations, and activities.
+
+-   EuroBSDCon 2015, Stockholm University, Stockholm, Sweden
+    01 - 04 October, 2015
+    EuroBSDcon is the premier European conference on the open source BSD
+    operating systems attracting about 250 highly skilled engineering
+    professionals, software developers, computer science students and
+    professors, and users from all over Europe and other parts of the
+    world. The goal of EuroBSDcon is to exchange knowledge about the BSD
+    operating systems, facilitate coordination and cooperation among
+    users and developers. The dates for EuroBSDCon 2015 in Stockholm
+    have been set to October 1-2nd for tutorials and October 3-4th for
+    the main conference.
+
+September 2015
+
+-   vBSDCon 2015, Sheraton Reston Hotel, Reston, United States
+    11 - 13 September, 2015
+    This exciting weekend will bring together members of the BSD
+    community for a series of roundtable discussions, educational
+    sessions, best practice conversations, and exclusive networking
+    opportunities.
+
+June 2015
+
+-   BSDCan 2015, University of Ottawa, Ottawa, Canada
+    10 - 13 June, 2015
+    BSDCan is a technical conference for people working on and with BSD
+    operating systems and related projects. It is a developers
+    conference with a strong focus on emerging technologies, research
+    projects, and works in progress. It also features Userland
+    infrastructure projects and invites contributions from both free
+    software developers and those from commercial vendors. BSDCan is
+    followed immediately by PGCon at the same location.
+
+May 2015
+
+-   Solutions Linux'15, CNIT, Paris - La Défense, France
+    20 - 21 May, 2015
+    Solutions Linux is one of the major corporate events in France about
+    Linux and Open Source solutions. The event will also host an open
+    source community 'village'. A group of BSD enthusiasts led by BSD
+    France will be there to promote BSD solutions.
+
+-   FreeBSD Kernel Class, Hillside Club, Berkeley, United States
+    22 - 21 May, 2015
+    Marshall Kirk McKusick will be teaching his FreeBSD kernel class
+    based on the second edition of "The Design and Implementation of the
+    FreeBSD Operating System". The class is being taught at the historic
+    Hillside Club in Berkeley, California. The class will be taught
+    weekly, mostly on Thursday nights from January 22nd through May
+    21st. Details on the class and a link to the registration page can
+    be found at https://www.mckusick.com/courses/introeveclass.html.
+    Those not living in the Bay Area that would like to take the class
+    remotely can sign up for a subscription to receive the classes
+    week-by-week as they are recorded at
+    https://www.mckusick.com/courses/introorderform.html.
+
+March 2015
+
+-   AsiaBSDCon 2015, Tokyo University of Science, Tokyo, Japan
+    12 - 15 March, 2015
+    AsiaBSDCon is a conference for users and developers on BSD based
+    systems. The conference is for anyone developing, deploying and
+    using systems based on FreeBSD, NetBSD, OpenBSD, DragonFlyBSD,
+    Darwin and MacOS X. AsiaBSDCon is a technical conference and aims to
+    collect the best technical papers and presentations available to
+    ensure that the latest developments in our open source community are
+    shared with the widest possible audience.
+
+February 2015
+
+-   FOSDEM '15, ULB Campus Solbosh, Brussels, Belgium
+    31 - 01 February, 2015
+    FOSDEM '15 is a free and non-commercial event organized by the
+    community, for the community. Its goal is to provide Free and Open
+    Source developers a place to meet. A BSD devroom is organized to
+    host talks about all BSD systems, to participate follow the CFP.
+    Several FreeBSD developers will be present.
+
+Events from past years:
+
+-   2020
+-   2019
+-   2018
+-   2017
+-   2016
+-   2015
+-   2014
+-   2013
+-   2012
+-   2011
+-   2010
+-   2009
+-   2008
+-   2007
+-   2006
+-   2005
+-   2004
+-   2003
+
+------------------------------------------------------------------------
+
+Last modified on: March 22, 2022 by Li-Wen Hsu
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

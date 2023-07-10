@@ -1,0 +1,721 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Support
+-   Vendors
+    -   Software
+    -   Hardware
+    -   Consulting
+    -   Internet Service Providers
+    -   Miscellaneous
+-   Security Information
+    -   Advisories
+    -   Errata Notices
+    -   Supported Releases
+    -   Unsupported Releases
+    -   How to read FreeBSD Security Advisories
+    -   Charter for the Security Officer and Team
+-   Bug Reports
+    -   Submit a Problem Report
+-   Web Resources
+
+A FreeBSD Projekt biztonsági figyelmeztetései
+
+Ezen az oldalon találhatjuk a FreeBSD Projekt részérõl kiadott
+biztonsági figyelmeztetéseket. Az általános biztonsággal kapcsolatos
+tudnivalókat a FreeBSD Projekt biztonsági információs oldalán
+találhatjuk meg.
+
+A FreeBSD Portgyûjteményére vonatkozó biztonsági problémákat a FreeBSD
+Projekt VuXML dokumentumában olvashatjuk.
+
+  Date         Advisory name
+  ------------ ----------------------------------------
+  2023-06-21   FreeBSD-SA-23:05.openssh
+  2023-06-21   FreeBSD-SA-23:04.pam_krb5
+  2023-02-16   FreeBSD-SA-23:03.openssl
+  2023-02-16   FreeBSD-SA-23:02.openssh
+  2023-02-08   FreeBSD-SA-23:01.geli
+  2022-11-29   FreeBSD-SA-22:15.ping
+  2022-11-15   FreeBSD-SA-22:14.heimdal
+  2022-08-30   FreeBSD-SA-22:13.zlib
+  2022-08-09   FreeBSD-SA-22:12.lib9p
+  2022-08-09   FreeBSD-SA-22:11.vm
+  2022-08-09   FreeBSD-SA-22:10.aio
+  2022-08-09   FreeBSD-SA-22:09.elf
+  2022-04-06   FreeBSD-SA-22:08.zlib
+  2022-04-06   FreeBSD-SA-22:07.wifi_meshid
+  2022-04-06   FreeBSD-SA-22:06.ioctl
+  2022-04-06   FreeBSD-SA-22:05.bhyve
+  2022-04-06   FreeBSD-SA-22:04.netmap
+  2022-03-15   FreeBSD-SA-22:03.openssl
+  2022-03-15   FreeBSD-SA-22:02.wifi
+  2022-01-11   FreeBSD-SA-22:01.vt
+  2021-08-24   FreeBSD-SA-21:17.openssl
+  2021-08-24   FreeBSD-SA-21:16.openssl
+  2021-08-24   FreeBSD-SA-21:15.libfetch
+  2021-08-24   FreeBSD-SA-21:14.ggatec
+  2021-08-24   FreeBSD-SA-21:13.bhyve
+  2021-05-26   FreeBSD-SA-21:12.libradius
+  2021-05-26   FreeBSD-SA-21:11.smap
+  2021-04-06   FreeBSD-SA-21:10.jail_mount
+  2021-04-06   FreeBSD-SA-21:09.accept_filter
+  2021-04-06   FreeBSD-SA-21:08.vm
+  2021-03-25   FreeBSD-SA-21:07.openssl
+  2021-02-24   FreeBSD-SA-21:06.xen
+  2021-02-24   FreeBSD-SA-21:05.jail_chdir
+  2021-02-24   FreeBSD-SA-21:04.jail_remove
+  2021-02-24   FreeBSD-SA-21:03.pam_login_access
+  2021-01-29   FreeBSD-SA-21:02.xenoom
+  2021-01-29   FreeBSD-SA-21:01.fsdisclosure
+  2020-12-08   FreeBSD-SA-20:33.openssl
+  2020-12-01   FreeBSD-SA-20:32.rtsold
+  2020-12-01   FreeBSD-SA-20:31.icmp6
+  2020-09-15   FreeBSD-SA-20:30.ftpd
+  2020-09-15   FreeBSD-SA-20:29.bhyve_svm
+  2020-09-15   FreeBSD-SA-20:28.bhyve_vmcs
+  2020-09-15   FreeBSD-SA-20:27.ure
+  2020-09-02   FreeBSD-SA-20:26.dhclient
+  2020-09-02   FreeBSD-SA-20:25.sctp
+  2020-09-02   FreeBSD-SA-20:24.ipv6
+  2020-08-05   FreeBSD-SA-20:23.sendmsg
+  2020-08-05   FreeBSD-SA-20:22.sqlite
+  2020-08-05   FreeBSD-SA-20:21.usb_net
+  2020-07-08   FreeBSD-SA-20:20.ipv6
+  2020-07-08   FreeBSD-SA-20:19.unbound
+  2020-07-08   FreeBSD-SA-20:18.posix_spawnp
+  2020-06-09   FreeBSD-SA-20:17.usb
+  2020-05-12   FreeBSD-SA-20:16.cryptodev
+  2020-05-12   FreeBSD-SA-20:15.cryptodev
+  2020-05-12   FreeBSD-SA-20:14.sctp
+  2020-05-12   FreeBSD-SA-20:13.libalias
+  2020-05-12   FreeBSD-SA-20:12.libalias
+  2020-04-21   FreeBSD-SA-20:11.openssl
+  2020-04-21   FreeBSD-SA-20:10.ipfw
+  2020-03-19   FreeBSD-SA-20:09.ntp
+  2020-03-19   FreeBSD-SA-20:08.jail
+  2020-03-19   FreeBSD-SA-20:07.epair
+  2020-03-19   FreeBSD-SA-20:06.if_ixl_ioctl
+  2020-03-19   FreeBSD-SA-20:05.if_oce_ioctl
+  2020-03-19   FreeBSD-SA-20:04.tcp
+  2020-01-28   FreeBSD-SA-20:03.thrmisc
+  2020-01-28   FreeBSD-SA-20:02.ipsec
+  2020-01-28   FreeBSD-SA-20:01.libfetch
+  2019-11-12   FreeBSD-SA-19:26.mcu
+  2019-11-12   FreeBSD-SA-19:25.mcepsc
+  2019-08-20   FreeBSD-SA-19:24.mqueuefs
+  2019-08-20   FreeBSD-SA-19:23.midi
+  2019-08-20   FreeBSD-SA-19:22.mbuf
+  2019-08-06   FreeBSD-SA-19:21.bhyve
+  2019-08-06   FreeBSD-SA-19:20.bsnmp
+  2019-08-06   FreeBSD-SA-19:19.mldv2
+  2019-08-06   FreeBSD-SA-19:18.bzip2
+  2019-07-24   FreeBSD-SA-19:17.fd
+  2019-07-24   FreeBSD-SA-19:16.bhyve
+  2019-07-24   FreeBSD-SA-19:15.mqueuefs
+  2019-07-24   FreeBSD-SA-19:14.freebsd32
+  2019-07-24   FreeBSD-SA-19:13.pts
+  2019-07-24   FreeBSD-SA-19:12.telnet
+  2019-07-02   FreeBSD-SA-19:11.cd_ioctl
+  2019-07-02   FreeBSD-SA-19:10.ufs
+  2019-07-02   FreeBSD-SA-19:09.iconv
+  2019-06-19   FreeBSD-SA-19:08.rack
+  2019-05-14   FreeBSD-SA-19:07.mds
+  2019-05-14   FreeBSD-SA-19:06.pf
+  2019-05-14   FreeBSD-SA-19:05.pf
+  2019-05-14   FreeBSD-SA-19:04.ntp
+  2019-05-14   FreeBSD-SA-19:03.wpa
+  2019-02-05   FreeBSD-SA-19:02.fd
+  2019-02-05   FreeBSD-SA-19:01.syscall
+  2018-12-19   FreeBSD-SA-18:15.bootpd
+  2018-12-04   FreeBSD-SA-18:14.bhyve
+  2018-11-27   FreeBSD-SA-18:13.nfs
+  2018-09-12   FreeBSD-SA-18:12.elf
+  2018-08-14   FreeBSD-SA-18:11.hostapd
+  2018-08-14   FreeBSD-SA-18:10.ip
+  2018-08-14   FreeBSD-SA-18:09.l1tf
+  2018-08-06   FreeBSD-SA-18:08.tcp
+  2018-06-21   FreeBSD-SA-18:07.lazyfpu
+  2018-05-08   FreeBSD-SA-18:06.debugreg
+  2018-04-04   FreeBSD-SA-18:05.ipsec
+  2018-04-04   FreeBSD-SA-18:04.vt
+  2018-03-14   FreeBSD-SA-18:03.speculative_execution
+  2018-03-07   FreeBSD-SA-18:02.ntp
+  2018-03-07   FreeBSD-SA-18:01.ipsec
+  2017-12-09   FreeBSD-SA-17:12.openssl
+  2017-11-29   FreeBSD-SA-17:11.openssl
+  2017-11-15   FreeBSD-SA-17:10.kldstat
+  2017-11-15   FreeBSD-SA-17:09.shm
+  2017-11-15   FreeBSD-SA-17:08.ptrace
+  2017-10-17   FreeBSD-SA-17:07.wpa
+  2017-08-10   FreeBSD-SA-17:06.openssh
+  2017-07-12   FreeBSD-SA-17:05.heimdal
+  2017-04-27   FreeBSD-SA-17:04.ipfilter
+  2017-04-12   FreeBSD-SA-17:03.ntp
+  2017-02-23   FreeBSD-SA-17:02.openssl
+  2017-01-11   FreeBSD-SA-17:01.openssh
+  2016-12-22   FreeBSD-SA-16:39.ntp
+  2016-12-06   FreeBSD-SA-16:38.bhyve
+  2016-12-06   FreeBSD-SA-16:37.libc
+  2016-12-06   FreeBSD-SA-16:36.telnetd
+  2016-11-02   FreeBSD-SA-16:35.openssl
+  2016-11-02   FreeBSD-SA-16:34.bind
+  2016-11-02   FreeBSD-SA-16:33.openssh
+  2016-10-25   FreeBSD-SA-16:32.bhyve
+  2016-10-10   FreeBSD-SA-16:31.libarchive
+  2016-10-10   FreeBSD-SA-16:30.portsnap
+  2016-10-10   FreeBSD-SA-16:29.bspatch
+  2016-10-10   FreeBSD-SA-16:28.bind
+  2016-10-10   FreeBSD-SA-16:27.openssl
+  2016-09-23   FreeBSD-SA-16:26.openssl
+  2016-07-25   FreeBSD-SA-16:25.bspatch
+  2016-06-04   FreeBSD-SA-16:24.ntp
+  2016-05-31   FreeBSD-SA-16:23.libarchive
+  2016-05-31   FreeBSD-SA-16:22.libarchive
+  2016-05-31   FreeBSD-SA-16:21.43bsd
+  2016-05-31   FreeBSD-SA-16:20.linux
+  2016-05-17   FreeBSD-SA-16:19.sendmsg
+  2016-05-17   FreeBSD-SA-16:18.atkbd
+  2016-05-04   FreeBSD-SA-16:17.openssl
+  2016-04-29   FreeBSD-SA-16:16.ntp
+  2016-03-16   FreeBSD-SA-16:15.sysarch
+  2016-03-16   FreeBSD-SA-16:14.openssh
+  2016-03-10   FreeBSD-SA-16:13.bind
+  2016-03-10   FreeBSD-SA-16:12.openssl
+  2016-01-30   FreeBSD-SA-16:11.openssl
+  2016-01-27   FreeBSD-SA-16:10.linux
+  2016-01-27   FreeBSD-SA-16:09.ntp
+  2016-01-27   FreeBSD-SA-16:08.bind
+  2016-01-14   FreeBSD-SA-16:07.openssh
+  2016-01-14   FreeBSD-SA-16:06.bsnmpd
+  2016-01-14   FreeBSD-SA-16:05.tcp
+  2016-01-14   FreeBSD-SA-16:04.linux
+  2016-01-14   FreeBSD-SA-16:03.linux
+  2016-01-14   FreeBSD-SA-16:02.ntp
+  2016-01-14   FreeBSD-SA-16:01.sctp
+  2015-12-16   FreeBSD-SA-15:27.bind
+  2015-12-06   FreeBSD-SA-15:26.openssl
+  2015-10-26   FreeBSD-SA-15:25.ntp
+  2015-09-29   FreeBSD-SA-15:24.rpcbind
+  2015-09-02   FreeBSD-SA-15:23.bind
+  2015-08-25   FreeBSD-SA-15:22.openssh
+  2015-08-25   FreeBSD-SA-15:21.amd64
+  2015-08-18   FreeBSD-SA-15:20.expat
+  2015-08-05   FreeBSD-SA-15:19.routed
+  2015-08-05   FreeBSD-SA-15:18.bsdpatch
+  2015-07-28   FreeBSD-SA-15:17.bind
+  2015-07-28   FreeBSD-SA-15:16.openssh
+  2015-07-28   FreeBSD-SA-15:15.tcp
+  2015-07-28   FreeBSD-SA-15:14.bsdpatch
+  2015-07-21   FreeBSD-SA-15:13.tcp
+  2015-07-09   FreeBSD-SA-15:12.openssl
+  2015-07-07   FreeBSD-SA-15:11.bind
+  2015-06-12   FreeBSD-SA-15:10.openssl
+  2015-04-07   FreeBSD-SA-15:09.ipv6
+  2015-04-07   FreeBSD-SA-15:08.bsdinstall
+  2015-04-07   FreeBSD-SA-15:07.ntp
+  2015-03-19   FreeBSD-SA-15:06.openssl
+  2015-02-25   FreeBSD-SA-15:05.bind
+  2015-02-25   FreeBSD-SA-15:04.igmp
+  2015-01-27   FreeBSD-SA-15:03.sctp
+  2015-01-27   FreeBSD-SA-15:02.kmem
+  2015-01-14   FreeBSD-SA-15:01.openssl
+  2014-12-23   FreeBSD-SA-14:31.ntp
+  2014-12-17   FreeBSD-SA-14:30.unbound
+  2014-12-10   FreeBSD-SA-14:29.bind
+  2014-12-10   FreeBSD-SA-14:28.file
+  2014-12-10   FreeBSD-SA-14:27.stdio
+  2014-11-04   FreeBSD-SA-14:26.ftp
+  2014-11-04   FreeBSD-SA-14:25.setlogin
+  2014-11-04   FreeBSD-SA-14:24.sshd
+  2014-10-21   FreeBSD-SA-14:23.openssl
+  2014-10-21   FreeBSD-SA-14:22.namei
+  2014-10-21   FreeBSD-SA-14:21.routed
+  2014-10-21   FreeBSD-SA-14:20.rtsold
+  2014-09-16   FreeBSD-SA-14:19.tcp
+  2014-09-09   FreeBSD-SA-14:18.openssl
+  2014-07-08   FreeBSD-SA-14:17.kmem
+  2014-06-24   FreeBSD-SA-14:16.file
+  2014-06-24   FreeBSD-SA-14:15.iconv
+  2014-06-05   FreeBSD-SA-14:14.openssl
+  2014-06-03   FreeBSD-SA-14:13.pam
+  2014-06-03   FreeBSD-SA-14:12.ktrace
+  2014-06-03   FreeBSD-SA-14:11.sendmail
+  2014-05-13   FreeBSD-SA-14:10.openssl
+  2014-04-30   FreeBSD-SA-14:09.openssl
+  2014-04-30   FreeBSD-SA-14:08.tcp
+  2014-04-30   FreeBSD-SA-14:07.devfs
+  2014-04-08   FreeBSD-SA-14:06.openssl
+  2014-04-08   FreeBSD-SA-14:05.nfsserver
+  2014-01-14   FreeBSD-SA-14:04.bind
+  2014-01-14   FreeBSD-SA-14:03.openssl
+  2014-01-14   FreeBSD-SA-14:02.ntpd
+  2014-01-14   FreeBSD-SA-14:01.bsnmpd
+  2013-11-19   FreeBSD-SA-13:14.openssh
+  2013-09-10   FreeBSD-SA-13:13.nullfs
+  2013-09-10   FreeBSD-SA-13:12.ifioctl
+  2013-09-10   FreeBSD-SA-13:11.sendfile
+  2013-08-22   FreeBSD-SA-13:10.sctp
+  2013-08-22   FreeBSD-SA-13:09.ip_multicast
+  2013-07-26   FreeBSD-SA-13:08.nfsserver
+  2013-07-26   FreeBSD-SA-13:07.bind
+  2013-06-18   FreeBSD-SA-13:06.mmap
+  2013-04-29   FreeBSD-SA-13:05.nfsserver
+  2013-04-02   FreeBSD-SA-13:04.bind
+  2013-04-02   FreeBSD-SA-13:03.openssl
+  2013-02-19   FreeBSD-SA-13:02.libc
+  2013-02-19   FreeBSD-SA-13:01.bind
+  2012-11-22   FreeBSD-SA-12:08.linux
+  2012-11-22   FreeBSD-SA-12:07.hostapd
+  2012-11-22   FreeBSD-SA-12:06.bind
+  2012-08-06   FreeBSD-SA-12:05.bind
+  2012-06-12   FreeBSD-SA-12:04.sysret
+  2012-06-12   FreeBSD-SA-12:03.bind
+  2012-05-30   FreeBSD-SA-12:02.crypt
+  2012-05-30   FreeBSD-SA-12:01.openssl
+  2011-12-23   FreeBSD-SA-11:10.pam
+  2011-12-23   FreeBSD-SA-11:09.pam_ssh
+  2011-12-23   FreeBSD-SA-11:08.telnetd
+  2011-12-23   FreeBSD-SA-11:07.chroot
+  2011-12-23   FreeBSD-SA-11:06.bind
+  2011-09-28   FreeBSD-SA-11:05.unix
+  2011-09-28   FreeBSD-SA-11:04.compress
+  2011-09-28   FreeBSD-SA-11:03.bind
+  2011-05-28   FreeBSD-SA-11:02.bind
+  2011-04-20   FreeBSD-SA-11:01.mountd
+  2010-11-29   FreeBSD-SA-10:10.openssl
+  2010-11-10   FreeBSD-SA-10:09.pseudofs
+  2010-09-20   FreeBSD-SA-10:08.bzip2
+  2010-07-13   FreeBSD-SA-10:07.mbuf
+  2010-05-27   FreeBSD-SA-10:06.nfsclient
+  2010-05-27   FreeBSD-SA-10:05.opie
+  2010-05-27   FreeBSD-SA-10:04.jail
+  2010-01-06   FreeBSD-SA-10:03.zfs
+  2010-01-06   FreeBSD-SA-10:02.ntpd
+  2010-01-06   FreeBSD-SA-10:01.bind
+  2009-12-03   FreeBSD-SA-09:17.freebsd-update
+  2009-12-03   FreeBSD-SA-09:16.rtld
+  2009-12-03   FreeBSD-SA-09:15.ssl
+  2009-10-02   FreeBSD-SA-09:14.devfs
+  2009-10-02   FreeBSD-SA-09:13.pipe
+  2009-07-29   FreeBSD-SA-09:12.bind
+  2009-06-10   FreeBSD-SA-09:11.ntpd
+  2009-06-10   FreeBSD-SA-09:10.ipv6
+  2009-06-10   FreeBSD-SA-09:09.pipe
+  2009-04-22   FreeBSD-SA-09:08.openssl
+  2009-04-22   FreeBSD-SA-09:07.libc
+  2009-03-23   FreeBSD-SA-09:06.ktimer
+  2009-02-16   FreeBSD-SA-09:05.telnetd
+  2009-01-13   FreeBSD-SA-09:04.bind
+  2009-01-13   FreeBSD-SA-09:03.ntpd
+  2009-01-07   FreeBSD-SA-09:02.openssl
+  2009-01-07   FreeBSD-SA-09:01.lukemftpd
+  2008-12-23   FreeBSD-SA-08:13.protosw
+  2008-12-23   FreeBSD-SA-08:12.ftpd
+  2008-11-24   FreeBSD-SA-08:11.arc4random
+  2008-10-02   FreeBSD-SA-08:10.nd6
+  2008-09-03   FreeBSD-SA-08:09.icmp6
+  2008-09-03   FreeBSD-SA-08:08.nmount
+  2008-09-03   FreeBSD-SA-08:07.amd64
+  2008-07-13   FreeBSD-SA-08:06.bind
+  2008-04-17   FreeBSD-SA-08:05.openssh
+  2008-02-14   FreeBSD-SA-08:04.ipsec
+  2008-02-14   FreeBSD-SA-08:03.sendfile
+  2008-01-14   FreeBSD-SA-08:02.libc
+  2008-01-14   FreeBSD-SA-08:01.pty
+  2007-11-29   FreeBSD-SA-07:10.gtar
+  2007-11-29   FreeBSD-SA-07:09.random
+  2007-10-03   FreeBSD-SA-07:08.openssl
+  2007-08-01   FreeBSD-SA-07:07.bind
+  2007-08-01   FreeBSD-SA-07:06.tcpdump
+  2007-07-12   FreeBSD-SA-07:05.libarchive
+  2007-05-23   FreeBSD-SA-07:04.file
+  2007-04-26   FreeBSD-SA-07:03.ipv6
+  2007-02-09   FreeBSD-SA-07:02.bind
+  2007-01-11   FreeBSD-SA-07:01.jail
+  2006-12-06   FreeBSD-SA-06:26.gtar
+  2006-12-06   FreeBSD-SA-06:25.kmem
+  2006-11-08   FreeBSD-SA-06:24.libarchive
+  2006-09-30   FreeBSD-SA-06:22.openssh
+  2006-09-28   FreeBSD-SA-06:23.openssl
+  2006-09-19   FreeBSD-SA-06:21.gzip
+  2006-09-06   FreeBSD-SA-06:20.bind
+  2006-09-06   FreeBSD-SA-06:19.openssl
+  2006-08-23   FreeBSD-SA-06:18.ppp
+  2006-06-14   FreeBSD-SA-06:17.sendmail
+  2006-05-31   FreeBSD-SA-06:16.smbfs
+  2006-05-31   FreeBSD-SA-06:15.ypserv
+  2006-04-19   FreeBSD-SA-06:14.fpu
+  2006-03-22   FreeBSD-SA-06:13.sendmail
+  2006-03-22   FreeBSD-SA-06:12.opie
+  2006-03-22   FreeBSD-SA-06:11.ipsec
+  2006-03-01   FreeBSD-SA-06:10.nfs
+  2006-03-01   FreeBSD-SA-06:09.openssh
+  2006-02-01   FreeBSD-SA-06:08.sack
+  2006-01-25   FreeBSD-SA-06:07.pf
+  2006-01-25   FreeBSD-SA-06:06.kmem
+  2006-01-18   FreeBSD-SA-06:05.80211
+  2006-01-11   FreeBSD-SA-06:04.ipfw
+  2006-01-11   FreeBSD-SA-06:03.cpio
+  2006-01-11   FreeBSD-SA-06:02.ee
+  2006-01-11   FreeBSD-SA-06:01.texindex
+  2005-10-11   FreeBSD-SA-05:21.openssl
+  2005-09-07   FreeBSD-SA-05:20.cvsbug
+  2005-07-27   FreeBSD-SA-05:19.ipsec
+  2005-07-27   FreeBSD-SA-05:18.zlib
+  2005-07-20   FreeBSD-SA-05:17.devfs
+  2005-07-06   FreeBSD-SA-05:16.zlib
+  2005-06-29   FreeBSD-SA-05:15.tcp
+  2005-06-29   FreeBSD-SA-05:14.bzip2
+  2005-06-29   FreeBSD-SA-05:13.ipfw
+  2005-06-09   FreeBSD-SA-05:12.bind9
+  2005-06-09   FreeBSD-SA-05:11.gzip
+  2005-06-09   FreeBSD-SA-05:10.tcpdump
+  2005-05-13   FreeBSD-SA-05:09.htt
+  2005-05-06   FreeBSD-SA-05:08.kmem
+  2005-05-06   FreeBSD-SA-05:07.ldt
+  2005-05-06   FreeBSD-SA-05:06.iir
+  2005-04-22   FreeBSD-SA-05:05.cvs
+  2005-04-15   FreeBSD-SA-05:04.ifconf
+  2005-04-06   FreeBSD-SA-05:03.amd64
+  2005-04-04   FreeBSD-SA-05:02.sendfile
+  2005-03-28   FreeBSD-SA-05:01.telnet
+  2004-12-01   FreeBSD-SA-04:17.procfs
+  2004-11-18   FreeBSD-SA-04:16.fetch
+  2004-10-04   FreeBSD-SA-04:15.syscons
+  2004-09-19   FreeBSD-SA-04:14.cvs
+  2004-06-30   FreeBSD-SA-04:13.linux
+  2004-06-07   FreeBSD-SA-04:12.jailroute
+  2004-05-19   FreeBSD-SA-04:11.msync
+  2004-05-19   FreeBSD-SA-04:10.cvs
+  2004-05-05   FreeBSD-SA-04:09.kadmind
+  2004-05-05   FreeBSD-SA-04:08.heimdal
+  2004-04-15   FreeBSD-SA-04:07.cvs
+  2004-03-29   FreeBSD-SA-04:06.ipv6
+  2004-03-17   FreeBSD-SA-04:05.openssl
+  2004-03-02   FreeBSD-SA-04:04.tcp
+  2004-02-25   FreeBSD-SA-04:03.jail
+  2004-02-05   FreeBSD-SA-04:02.shmat
+  2004-01-30   FreeBSD-SA-04:01.mksnap_ffs
+  2003-11-28   FreeBSD-SA-03:19.bind
+  2003-10-05   FreeBSD-SA-03:15.openssh
+  2003-10-03   FreeBSD-SA-03:18.openssl
+  2003-10-03   FreeBSD-SA-03:17.procfs
+  2003-10-02   FreeBSD-SA-03:16.filedesc
+  2003-09-23   FreeBSD-SA-03:14.arp
+  2003-09-17   FreeBSD-SA-03:13.sendmail
+  2003-09-16   FreeBSD-SA-03:12.openssh
+  2003-08-26   FreeBSD-SA-03:11.sendmail
+  2003-08-10   FreeBSD-SA-03:10.ibcs2
+  2003-08-10   FreeBSD-SA-03:09.signal
+  2003-08-03   FreeBSD-SA-03:08.realpath
+  2003-04-08   FreeBSD-SN-03:02
+  2003-04-07   FreeBSD-SN-03:01
+  2003-03-30   FreeBSD-SA-03:07.sendmail
+  2003-03-21   FreeBSD-SA-03:06.openssl
+  2003-03-20   FreeBSD-SA-03:05.xdr
+  2003-03-03   FreeBSD-SA-03:04.sendmail
+  2003-02-24   FreeBSD-SA-03:03.syncookies
+  2003-02-24   FreeBSD-SA-03:02.openssl
+  2003-02-04   FreeBSD-SA-03:01.cvs
+  2003-01-07   FreeBSD-SA-02:44.filedesc
+  2002-11-15   FreeBSD-SA-02:43.bind
+  2002-11-15   FreeBSD-SA-02:41.smrsh
+  2002-11-12   FreeBSD-SA-02:42.resolv
+  2002-11-12   FreeBSD-SA-02:40.kadmind
+  2002-10-10   FreeBSD-SN-02:06
+  2002-09-16   FreeBSD-SA-02:39.libkvm
+  2002-08-28   FreeBSD-SN-02:05
+  2002-08-19   FreeBSD-SA-02:38.signed-error
+  2002-08-05   FreeBSD-SA-02:37.kqueue
+  2002-08-05   FreeBSD-SA-02:36.nfs
+  2002-08-05   FreeBSD-SA-02:35.ffs
+  2002-08-05   FreeBSD-SA-02:33.openssl
+  2002-08-01   FreeBSD-SA-02:34.rpc
+  2002-07-31   FreeBSD-SA-02:32.pppd
+  2002-07-15   FreeBSD-SA-02:31.openssh
+  2002-07-12   FreeBSD-SA-02:30.ktrace
+  2002-07-12   FreeBSD-SA-02:29.tcpdump
+  2002-06-26   FreeBSD-SA-02:28.resolv
+  2002-06-19   FreeBSD-SN-02:04
+  2002-05-29   FreeBSD-SA-02:27.rc
+  2002-05-29   FreeBSD-SA-02:26.accept
+  2002-05-28   FreeBSD-SN-02:03
+  2002-05-20   FreeBSD-SA-02:25.bzip2
+  2002-05-20   FreeBSD-SA-02:24.k5su
+  2002-05-13   FreeBSD-SN-02:02
+  2002-04-22   FreeBSD-SA-02:23.stdio
+  2002-04-18   FreeBSD-SA-02:22.mmap
+  2002-04-17   FreeBSD-SA-02:21.tcpip
+  2002-04-16   FreeBSD-SA-02:20.syncache
+  2002-03-30   FreeBSD-SN-02:01
+  2002-03-26   FreeBSD-SA-02:19.squid
+  2002-03-18   FreeBSD-SA-02:18.zlib
+  2002-03-12   FreeBSD-SA-02:17.mod_frontpage
+  2002-03-12   FreeBSD-SA-02:16.netscape
+  2002-03-12   FreeBSD-SA-02:15.cyrus-sasl
+  2002-03-12   FreeBSD-SA-02:14.pam-pgsql
+  2002-03-07   FreeBSD-SA-02:13.openssh
+  2002-02-21   FreeBSD-SA-02:12.squid
+  2002-02-12   FreeBSD-SA-02:11.snmp
+  2002-02-06   FreeBSD-SA-02:10.rsync
+  2002-02-06   FreeBSD-SA-02:09.fstatfs
+  2002-01-24   FreeBSD-SA-02:08.exec
+  2002-01-18   FreeBSD-SA-02:07.k5su
+  2002-01-16   FreeBSD-SA-02:06.sudo
+  2002-01-04   FreeBSD-SA-02:05.pine
+  2002-01-04   FreeBSD-SA-02:04.mutt
+  2002-01-04   FreeBSD-SA-02:03.mod_auth_pgsql
+  2002-01-04   FreeBSD-SA-02:02.pw
+  2002-01-04   FreeBSD-SA-02:01.pkg_add
+  2001-12-04   FreeBSD-SA-01:64.wu-ftpd
+  2001-12-02   FreeBSD-SA-01:63.openssh
+  2001-10-08   FreeBSD-SA-01:62.uucp
+  2001-10-08   FreeBSD-SA-01:61.squid
+  2001-09-24   FreeBSD-SA-01:60.procmail
+  2001-09-04   FreeBSD-SA-01:59.rmuser
+  2001-08-30   FreeBSD-SA-01:58.lpd
+  2001-08-27   FreeBSD-SA-01:57.sendmail
+  2001-08-23   FreeBSD-SA-01:56.tcp_wrappers
+  2001-08-21   FreeBSD-SA-01:55.procfs
+  2001-08-20   FreeBSD-SA-01:54.ports-telnetd
+  2001-08-17   FreeBSD-SA-01:53.ipfw
+  2001-08-06   FreeBSD-SA-01:52.fragment
+  2001-07-30   FreeBSD-SA-01:51.openssl
+  2001-07-27   FreeBSD-SA-01:50.windowmaker
+  2001-07-23   FreeBSD-SA-01:49.telnetd
+  2001-07-17   FreeBSD-SA-01:48.tcpdump
+  2001-07-10   FreeBSD-SA-01:47.xinetd
+  2001-07-10   FreeBSD-SA-01:46.w3m
+  2001-07-10   FreeBSD-SA-01:45.samba
+  2001-07-10   FreeBSD-SA-01:44.gnupg
+  2001-07-10   FreeBSD-SA-01:43.fetchmail
+  2001-07-10   FreeBSD-SA-01:42.signal
+  2001-07-09   FreeBSD-SA-01:41.hanterm
+  2001-06-04   FreeBSD-SA-01:40.fts
+  2001-05-02   FreeBSD-SA-01:39.tcp-isn
+  2001-04-23   FreeBSD-SA-01:38.sudo
+  2001-04-23   FreeBSD-SA-01:37.slrn
+  2001-04-23   FreeBSD-SA-01:36.samba
+  2001-04-23   FreeBSD-SA-01:35.licq
+  2001-04-23   FreeBSD-SA-01:34.hylafax
+  2001-04-17   FreeBSD-SA-01:33.ftpd-glob
+  2001-04-16   FreeBSD-SA-01:32.ipfilter
+  2001-04-06   FreeBSD-SA-01:31.ntpd
+  2001-03-22   FreeBSD-SA-01:30.ufs-ext2fs
+  2001-03-12   FreeBSD-SA-01:29.rwhod
+  2001-03-12   FreeBSD-SA-01:28.timed
+  2001-03-12   FreeBSD-SA-01:27.cfengine
+  2001-03-12   FreeBSD-SA-01:26.interbase
+  2001-03-12   FreeBSD-SA-01:23.icecast
+  2001-02-14   FreeBSD-SA-01:25.kerberosIV
+  2001-02-12   FreeBSD-SA-01:24.ssh
+  2001-02-07   FreeBSD-SA-01:22.dc20ctrl
+  2001-02-07   FreeBSD-SA-01:21.ja-elvis
+  2001-02-07   FreeBSD-SA-01:20.mars_nwe
+  2001-02-07   FreeBSD-SA-01:19.ja-klock
+  2001-01-31   FreeBSD-SA-01:18.bind
+  2001-01-29   FreeBSD-SA-01:17.exmh
+  2001-01-29   FreeBSD-SA-01:16.mysql
+  2001-01-29   FreeBSD-SA-01:15.tinyproxy
+  2001-01-29   FreeBSD-SA-01:14.micq
+  2001-01-29   FreeBSD-SA-01:13.sort
+  2001-01-29   FreeBSD-SA-01:12.periodic
+  2001-01-29   FreeBSD-SA-01:11.inetd
+  2001-01-23   FreeBSD-SA-01:10.bind
+  2001-01-23   FreeBSD-SA-01:09.crontab
+  2001-01-23   FreeBSD-SA-01:08.ipfw
+  2001-01-23   FreeBSD-SA-01:07.xfree86
+  2001-01-15   FreeBSD-SA-01:06.zope
+  2001-01-15   FreeBSD-SA-01:05.stunnel
+  2001-01-15   FreeBSD-SA-01:04.joe
+  2001-01-15   FreeBSD-SA-01:03.bash1
+  2001-01-15   FreeBSD-SA-01:02.syslog-ng
+  2001-01-15   FreeBSD-SA-01:01.openssh
+  2000-12-20   FreeBSD-SA-00:81.ethereal
+  2000-12-20   FreeBSD-SA-00:80.halflifeserver
+  2000-12-20   FreeBSD-SA-00:79.oops
+  2000-12-20   FreeBSD-SA-00:78.bitchx
+  2000-12-18   FreeBSD-SA-00:77.procfs
+  2000-11-20   FreeBSD-SA-00:76.tcsh-csh
+  2000-11-20   FreeBSD-SA-00:75.php
+  2000-11-20   FreeBSD-SA-00:74.gaim
+  2000-11-20   FreeBSD-SA-00:73.thttpd
+  2000-11-20   FreeBSD-SA-00:72.curl
+  2000-11-20   FreeBSD-SA-00:71.mgetty
+  2000-11-14   FreeBSD-SA-00:70.ppp-nat
+  2000-11-14   FreeBSD-SA-00:69.telnetd
+  2000-11-13   FreeBSD-SA-00:68.ncurses
+  2000-11-10   FreeBSD-SA-00:67.gnupg
+  2000-11-06   FreeBSD-SA-00:66.netscape
+  2000-11-06   FreeBSD-SA-00:65.xfce
+  2000-11-06   FreeBSD-SA-00:64.global
+  2000-11-01   FreeBSD-SA-00:63.getnameinfo
+  2000-11-01   FreeBSD-SA-00:62.top
+  2000-10-31   FreeBSD-SA-00:61.tcpdump
+  2000-10-30   FreeBSD-SA-00:60.boa
+  2000-10-30   FreeBSD-SA-00:59.pine
+  2000-10-30   FreeBSD-SA-00:58.chpass
+  2000-10-13   FreeBSD-SA-00:57.muh
+  2000-10-13   FreeBSD-SA-00:56.lprng
+  2000-10-13   FreeBSD-SA-00:55.xpdf
+  2000-10-13   FreeBSD-SA-00:54.fingerd
+  2000-10-06   FreeBSD-SA-00:52.tcp-iss
+  2000-09-27   FreeBSD-SA-00:53.catopen
+  2000-09-13   FreeBSD-SA-00:51.mailman
+  2000-09-13   FreeBSD-SA-00:50.listmanager
+  2000-09-13   FreeBSD-SA-00:49.eject
+  2000-09-13   FreeBSD-SA-00:48.xchat
+  2000-09-13   FreeBSD-SA-00:47.pine
+  2000-09-13   FreeBSD-SA-00:46.screen
+  2000-08-31   FreeBSD-SA-00:45.esound
+  2000-08-28   FreeBSD-SA-00:44.xlock
+  2000-08-28   FreeBSD-SA-00:43.brouted
+  2000-08-28   FreeBSD-SA-00:42.linux
+  2000-08-28   FreeBSD-SA-00:41.elf
+  2000-08-28   FreeBSD-SA-00:40.mopd
+  2000-08-28   FreeBSD-SA-00:39.netscape
+  2000-08-14   FreeBSD-SA-00:38.zope
+  2000-08-14   FreeBSD-SA-00:37.cvsweb
+  2000-08-14   FreeBSD-SA-00:36.ntop
+  2000-08-14   FreeBSD-SA-00:35.proftpd
+  2000-08-14   FreeBSD-SA-00:34.dhclient
+  2000-07-12   FreeBSD-SA-00:33.kerberosIV
+  2000-07-05   FreeBSD-SA-00:32.bitchx
+  2000-07-05   FreeBSD-SA-00:31.canna
+  2000-07-05   FreeBSD-SA-00:30.openssh
+  2000-07-05   FreeBSD-SA-00:29.wu-ftpd
+  2000-07-05   FreeBSD-SA-00:28.majordomo
+  2000-07-05   FreeBSD-SA-00:27.XFree86-4
+  2000-07-05   FreeBSD-SA-00:26.popper
+  2000-07-05   FreeBSD-SA-00:24.libedit
+  2000-06-19   FreeBSD-SA-00:23.ip-options
+  2000-06-12   FreeBSD-SA-00:25.alpha-random
+  2000-06-07   FreeBSD-SA-00:22.apsfilter
+  2000-06-07   FreeBSD-SA-00:21.ssh
+  2000-05-26   FreeBSD-SA-00:20.krb5
+  2000-05-23   FreeBSD-SA-00:19.semconfig
+  2000-05-09   FreeBSD-SA-00:18.gnapster.knapster
+  2000-05-09   FreeBSD-SA-00:17.libmytinfo
+  2000-05-09   FreeBSD-SA-00:16.golddig
+  2000-04-24   FreeBSD-SA-00:15.imap-uw
+  2000-04-24   FreeBSD-SA-00:14.imap-uw
+  2000-04-19   FreeBSD-SA-00:13.generic-nqs
+  2000-04-10   FreeBSD-SA-00:12.healthd
+  2000-04-10   FreeBSD-SA-00:11.ircii
+  2000-03-15   FreeBSD-SA-00:10.orville-write
+  2000-03-15   FreeBSD-SA-00:09.mtr
+  2000-03-15   FreeBSD-SA-00:08.lynx
+  2000-03-15   FreeBSD-SA-00:07.mh
+  2000-03-01   FreeBSD-SA-00:06.htdig
+  2000-02-28   FreeBSD-SA-00:05.mysql
+  2000-02-19   FreeBSD-SA-00:04.delegate
+  2000-02-19   FreeBSD-SA-00:03.asmon
+  2000-01-24   FreeBSD-SA-00:02.procfs
+  2000-01-19   FreeBSD-SA-00:01.make
+  1999-09-16   FreeBSD-SA-99:06.amd
+  1999-09-15   FreeBSD-SA-99:05.fts
+  1999-09-15   FreeBSD-SA-99:04.core
+  1999-09-05   FreeBSD-SA-99:03.ftpd
+  1999-09-04   FreeBSD-SA-99:02.profil
+  1999-09-04   FreeBSD-SA-99:01.chflags
+  1998-11-04   FreeBSD-SA-98:08.fragment
+  1998-10-13   FreeBSD-SA-98:07.rst
+  1998-06-10   FreeBSD-SA-98:06.icmp
+  1998-06-04   FreeBSD-SA-98:05.nfs
+  1998-06-02   FreeBSD-SA-98:04.mmap
+  1998-05-14   FreeBSD-SA-98:03.ttcp
+  1998-03-12   FreeBSD-SA-98:02.mmap
+  1997-12-09   FreeBSD-SA-97:06.f00f
+  1997-12-01   FreeBSD-SA-98:01.land
+  1997-10-29   FreeBSD-SA-97:05.open
+  1997-08-19   FreeBSD-SA-97:04.procfs
+  1997-04-07   FreeBSD-SA-97:03.sysinstall
+  1997-03-26   FreeBSD-SA-97:02.lpd
+  1997-02-05   FreeBSD-SA-97:01.setlocale
+  1997-01-18   FreeBSD-SA-96:21.talkd
+  1996-12-16   FreeBSD-SA-96:20.stack-overflow
+  1996-12-10   FreeBSD-SA-96:19.modstat
+  1996-11-25   FreeBSD-SA-96:18.lpr
+  1996-07-16   FreeBSD-SA-96:17.rzsz
+  1996-07-12   FreeBSD-SA-96:16.rdist
+  1996-07-04   FreeBSD-SA-96:15.ppp
+  1996-06-28   FreeBSD-SA-96:12.perl
+  1996-06-24   FreeBSD-SA-96:14.ipfw
+  1996-06-05   FreeBSD-SA-96:13.comsat
+  1996-05-21   FreeBSD-SA-96:11.man
+  1996-05-17   FreeBSD-SA-96:10.mount_union
+  1996-05-17   FreeBSD-SA-96:09.vfsload
+  1996-04-22   FreeBSD-SA-96:02.apache
+  1996-04-21   FreeBSD-SA-96:08.syslog
+  1996-04-21   FreeBSD-SA-96:01.sliplogin
+  1996-04-20   FreeBSD-SA-96:03.sendmail-suggestion
+
+------------------------------------------------------------------------
+
+Last modified on: 2021. január 26. by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

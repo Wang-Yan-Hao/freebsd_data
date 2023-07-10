@@ -1,0 +1,131 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+ENA FreeBSD Driver Update
+
+Links:
+ENA README URL:
+https://github.com/amzn/amzn-drivers/blob/master/kernel/fbsd/ena/README
+
+Contact: Michal Krawczyk <mk@semihalf.com>
+Contact: Artur Rojek <ar@semihalf.com>
+Contact: Marcin Wojtas <mw@semihalf.com>
+
+ENA (Elastic Network Adapter) is the smart NIC available in the
+virtualized environment of Amazon Web Services (AWS). The ENA driver
+supports multiple transmit and receive queues and can handle up to 100
+Gb/s of network traffic, depending on the instance type on which it is
+used.
+
+Completed since the last update:
+
+-   Update ENA driver to v2.4.1
+
+-   Introduce full kernel RSS API support
+
+-   Allow reconfiguration of the RSS indirection table and hash key
+
+-   Support netmap on the c6gn/m6i AWS instance types
+
+-   Fix race between detach function and some of the procedural sysctl
+    nodes
+
+-   Add new statistics counters
+
+-   Improve safety of the reset handling routine
+
+-   Avoid mbuf collapse on Tx path for the LLQ condition
+
+Work in progress:
+
+-   Prototype the driver port to the iflib framework
+
+-   MFC the ENA v2.4.1 driver to the FreeBSD 11/12/13-STABLE branches
+
+-   Add IPv6 L4 checksum offload support to the driver
+
+Sponsor: Amazon.com Inc
+
+------------------------------------------------------------------------
+
+Last modified on: November 15, 2021 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

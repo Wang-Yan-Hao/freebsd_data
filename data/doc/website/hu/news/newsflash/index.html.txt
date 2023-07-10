@@ -1,0 +1,340 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+-   RSS 2.0 Feed
+
+FreeBSD hírek
+
+[FreeBSD News]
+
+A FreeBSD operációs rendszer dinamikusan és gyorsan fejlődik, ezért a
+legfrissebb fejlesztések nyomonkövetése nem mindig könnyű feladat. Ha
+kíváncsiak vagyunk a rendszerrel kapcsolatos legújabb információkra,
+térjünk vissza erre az oldalra gyakran. Emellett érdemes lehet még
+feliratkoznunk a freebsd-announce levelezési listára, vagy a hozzá
+tartozó RSS feedre.
+
+Továbbá az alábbi projektek rendelkeznek saját külön híroldallal,
+amelyek figyelemmel kísérésével pedig az adott projektben végzett
+munkáról tudhatunk meg többet.
+
+-   FreeBSD Java®
+
+-   FreeBSD KDE
+
+-   FreeBSD GNOME
+
+A korábbi, a jelenlegi és a jövőbeni kiadásokról bővebben a kiadások
+információs oldalán olvashatunk.
+
+A FreeBSD Projekt biztonságával kapcsolatos információkat és a
+biztonsági figyelmeztetéseket összefoglaló listát a biztonsági
+információk oldalon találjuk meg.
+
+September 2010
+
+-    3 September: Új tag: Steve Wills (ports)
+
+August 2010
+
+-    31 August: Új tag: Glen Barber (teljes doc/www)
+
+-    30 August: Új tag: Dimitry Andric (src)
+
+-    1 August: Új tag: Oliver Hauer (ports)
+
+July 2010
+
+-    27 July:
+
+    A FreeBSD Alapítvány nemrég megjelentette a 2010 júliusi féléves
+    hírlevelét, amelyben röviden beszámol arról, hogy eddig miként
+    segítette a FreeBSD Projekt és az azt övezõ közösség munkáját.
+
+-    27 July: Új tag: Baptiste Daroussin (ports)
+
+-    23 July:
+
+    Mostantól letölthetõ a FreeBSD 8.1-RELEASE. Telepítés elõtt ne
+    felejtsük el a Kiadási jegyzetekbõl és a Hibajegyzékbõl tájékozódni
+    a kiadással kapcsolatos esetleges problémákról vagy fontosabb
+    tudnivalókról. A FreeBSD kiadásokról részletesebben a kiadási
+    információkat tartalmazó oldalon olvashatunk.
+
+-    22 July:
+
+    A 2010 áprilisa és júniusa közti idõszakról beszámoló, 47 bejegyzést
+    tartalmazó negyedéves helyzetjelentés megjelent.
+
+-    21 July: Új tag: Andrew Turner (src)
+
+-    20 July:
+
+    Megérkezett a PC-BSD 8.1. A PC-BSD egy FreeBSD alapú, népszerû
+    operációs rendszer, amely elsõsorban az alkalmi felhasználók számára
+    is könnyen érhetõ asztali rendszer kialakítására összpontosít. A
+    legutóbbi kiadás óta hozzáadott újításokról és frissítésekrõl a
+    honlapján olvashatunk bõvebben.
+
+-    17 July: Új tag: Tijl Coosemans (src)
+
+-    15 July: Új tag: Joseph S. Atkinson (ports)
+
+-    14 July:
+
+    A FreeBSD Projekt örömmel teszi közzé a 2010. évi Core Team
+    választásának eredményét. A FreeBSD Core Team tulajdonképpen a
+    projekt vezetõségének tekinthetõ, amelynek feladata az új src tagok
+    felvételének engedélyezése, a fejlesztõ közti problémák feloldása, a
+    különbözõ specializált albizottságok kijelölése (biztonsági
+    felelõsök, kiadássszervezõk, portmenedzserek, webmesterek stb.), és
+    igény szerint egyéb adminisztratív vagy házirendi döntések
+    meghozása. A Core Team tagjait 2000 óta a FreeBSD fejlesztõk
+    választják minden második évben.
+
+    A választásokról (az új Core Team tagjainak felsorolásával együtt)
+    bõvebben a hivatalos bejelentésben olvashatunk.
+
+-    2 July:
+
+    Megjelent a FreeBSD 8.1 kiadási ciklusának második (és egyben
+    várhatóan utolsó) kiadásra jelölt változata. Az ISO lemezképek a
+    FreeBSD tükrözések legtöbbjérõl már letölthetõek amd64, i386,
+    powerpc és sparc64 architektúrákra. A kiadással kapcsolatos további
+    tudnivalókról a hivatalos bejelentésben olvashatunk.
+
+June 2010
+
+-    18 June:
+
+    A FreeBSD 8.1 kiadási ciklusának elsõ kiadásra jelölt változata
+    megérkezett. Az ISO lemezképek letölthetõek a tükrözésekrõl az
+    összes Tier 1 szintû architektúrához. További információkért lásd a
+    hivatalos bejelentést.
+
+-    10 June: Új tag: Ashish SHUKLA (ports)
+
+-    9 June: Új tag: Brendan Fabeny (ports)
+
+-    4 June: Új tag: Matthew Fleming (src)
+
+-    3 June: Új tag: Andrey V. Elsukov (src)
+
+-    3 June: Új tag: Taras Korenko (doc/ru, www/ru)
+
+May 2010
+
+-    29 May:
+
+    Megjelent a FreeBSD 8.1 kiadási ciklusának elsõ tesztelésre szánt
+    változata. Az összes Tier 1 architektúrához már letölthetõek az ISO
+    lemezképek a legtöbb FreeBSD tükrözésrõl.
+
+-    24 May:
+
+    A FreeBSD Projekthez ezévben is számos nagyon jó pályázat érkezett
+    be a Google Summer of Code programjának keretében. A FreeBSD Projekt
+    számára ezúttal 18 pályázatot hagytak jóvá az idei program
+    részeként. Szeretnénk megjegyezni, hogy ne adják fel azok, akiknek
+    idén nem sikerült bejutniuk, mert a FreeBSD Projekt a program
+    keretein kívül is szívesen lát és támogat hallgatókat a megszokott
+    levelezési listákon és fejlesztõi fórumokon.
+
+    A részletekkel kapcsolatban olvassuk el a hivatalos bejelentést. A
+    támogatásra kiválasztott FreeBSD projektek listáját a Summer of Code
+    wiki oldalán olvashatjuk. A projektek május 24-én indultak útjukra,
+    köszöntsük hát közösségünkben a 18 új hallgatót.
+
+-    19 May: Új tag: Jayachandran C. (src)
+
+April 2010
+
+-    29 April: Bõvebb commit jogosultság: Martin Matuška (src, ports)
+
+-    22 April:
+
+    Mostantól elérhetõ a 2010 januártól márciusig tartó idõszakról
+    szóló, 46 bejegyzést tartalmazó negyedéves helyzetjelentés.
+
+-    20 April: Új tag: Randi Harper (src)
+
+-    19 April: Új tag: Ryan Stone (src)
+
+-    14 April: Új tag: Ana Kukec (src)
+
+-    11 April: Bõvebb commit jogosultság: René Ladan (doc-nl, ports)
+
+-    11 April: Új tag: Sahil Tandon (ports)
+
+-    5 April: Új tag: Giuseppe Pilichi (ports)
+
+-    4 April:
+
+    A FreeBSD Projekt immáron hatodik éve vesz részt a Google Summer of
+    Code programjában. Idén is invitálunk minden felsõoktatásban tanuló
+    hallgatót, hogy töltsön el velünk egy nyarat a FreeBSD operációs
+    rendszer fejlesztésében! A felhívás részleteirõl a FreeBSD Summer of
+    Code honlapján olvashatunk. Itt megtalálhatjuk a hivatalos plakátot
+    is, amely csak arra vár, hogy kiragasszuk kedvenc egyetemünkön vagy
+    fõiskolánkon!
+
+March 2010
+
+-    31 March: Új tag: Bernhard Fröhlich (ports)
+
+-    23 March:
+
+    Letölthetõvé vált a FreeBSD 7.3-RELEASE. A 7.3 kiadás telepítése
+    elõtt a legfrissebb tudnivalókkal kapcsolatban ne felejtsük el
+    átnézni az hozzá tartozó Kiadási jegyzeteket és Hibajegyzéket. A
+    FreeBSD kiadásairól a Kiadási információk oldalon tájékozódhatunk
+    részletesebben.
+
+-    18 March:
+
+    A FreeBSD Ports Management Team örömmel jelenti be, hogy csapatukban
+    Thomas Abthorpe vette át a titkár szerepét.
+
+-    7 March: Visszatérõ tag: Niels Heinen (ports)
+
+-    4 March:
+
+    A FreeBSD 7.3 második kiadásra jelölt (Release Candidate) változata
+    mostantól letölthetõ. Már a legtöbb FreeBSD tükrözésrõl elérhetõek
+    az ISO lemezképek az összes Tier 1 architektúrára.
+
+-    3 March: Új tag: Neel Natu (src)
+
+February 2010
+
+-    22 February:
+
+    Örömmel jelentjük be, hogy megjelent a PC-BSD 8.0-ás kiadása. A
+    PC-BSD egy FreeBSD alapú, széles körû népszerûségnek örvendõ asztali
+    számítógépekre fejlesztett operációs rendszer, amely elsõsorban az
+    alkalmi felhasználók számára szeretne könnyen használható
+    munkakörnyezetet nyújtani. A legutóbbi kiadás óta megjelent újítások
+    és frissítések listáját a fejlesztõk honlapján olvashatjuk.
+
+-    15 February:
+
+    Mostantól letölthetõvé vált a FreeBSD 7.3 elsõ kiadásra jelölt
+    (Release Candidate) változata. A FreeBSD tükrözések többségérõl már
+    elérhetõek ISO formátumú lemezképek az összes Tier 1 architektúrára.
+
+-    12 February: Bõvebb commit jogosultság: Benedict Reuschling (teljes
+    doc/www)
+
+-    6 February: Új tag: Bernhard Schmidt (src)
+
+-    2 February:
+
+    Kövesdán Gábor 2008-ban és 2009-ban résztvett a Google Summer of
+    Code programban, és munkájának eredményeképpen most commit jogot
+    kapott az alaprendszer forrásaihoz. Elsõként a nyári munkájának
+    eredményét szeretné integrálni.
+
+January 2010
+
+-    30 January:
+
+    Megérkezett a FreeBSD 7.3 kiadási ciklusának elsõ béta változata.
+    Már az összes Tier 1 architektúrára elérhetõek ISO lemezképek a
+    legtöbb FreeBSD tükrözésrõl.
+
+-    29 January: Új tag: Bruce Cran (src)
+
+-    28 January: Új tag: Ulrich Spörlein (src)
+
+-    26 January: Új tag: Romain Tartière (ports)
+
+-    26 January: Új tag: Alberto Villa (ports)
+
+-    17 January:
+
+    A 2009 októberétõl decemberéig tartó idõszakot összefoglaló, 38
+    bejegyzést tartalmazó negyedéves helyzetjelentés immáron elérhetõ.
+
+------------------------------------------------------------------------
+
+Last modified on: 2021. június 19. by Danilo G. Baio
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

@@ -1,0 +1,174 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   
+-   Manuel du développeur
+-   Committer's Guide
+-   Manuel du porteur d'application
+-   Dépôt des codes source
+-   Production des versions
+-   Plates-formes
+-   Idées de projet
+-   Contribuer
+
+Projet Java® pour FreeBSD : Comment aider
+
+Je voudrais :
+
+travailler sur le port lui-même aider aux tests signaler un bug écrire
+de la documentation
+
+Donc, vous voulez nous aider, n’est-ce pas ?
+
+Travailler sur le portage de JDK® demande une solide connaissance du C
+et de l’architecture de FreeBSD ainsi que beaucoup de temps à y
+consacrer. Les modifications à apporter au code sont liées aux
+différences qui existent entre FreeBSD et Solaris™, donc si vous ne les
+connaissez pas, vous n’irez pas très loin dans le portage. Déja beaucoup
+de personnes se sont manifestées pour nous aider mais quand elles ont vu
+ce que cela implique, elles se sont désistées.
+
+Maintenant que vous êtes prévenus, voici ce que vous avez à faire pour
+participer :
+
+1.  Obtenir une licence d’utilisation du code source auprès de Sun
+
+2.  Pour JDK 1.1.x Vous avez besoin d’une "licence non-commerciale".
+    Elle peut être obtenue ici :
+    http://www.javasoft.com/nav/business/source_form.html
+
+3.  Pour Java 2 Vous devrez accepter et signer la "Licence de Source
+    Collective" qui se trouve sur le centre de téléchargement de Sun
+
+4.  Télécharger le code source
+
+5.  Pour JDK 1.1.x Les instructions vous seront données par Sun.
+
+6.  Pour Java 2 Vous pouvez les télécharger à partir de
+    http://www.sun.com/software/java2/download.html
+
+7.  Utiliser les Patches Les Patches et les instructions de compilation
+    peuvent être téléchargés à l’adresse suivante :
+    http://www.eyesbeyond.com/freebsd-jdk122-patches-latest.tar.gz. Les
+    problèmes non résolus et les résultats des tests se trouvent ici :
+    http://kjkoster.org/java/index.html
+
+ET/OU
+
+1.  Obtenir les "diffs" du code source Prévenez Nate Williams
+    nate@yogotech.com que vous avez la licence et arrangez-vous pour
+    avoir accès à l’arborescence CVS.
+
+ET/OU
+
+1.  Commencez à travailler sur les sources Commencez votre portage.
+    Jetez-vous à l’eau et commencez à creuser.
+
+2.  Annoncez au monde entier que vous avez terminé !
+
+Vous voulez participer mais vous ne connaissez pas si bien le C ou FreeBSD ?
+
+Le mieux que vous puissiez faire est de télécharger la dernière version,
+de l’installer et de tester toutes vos applications Java favorites. Si
+elles ne fonctionnent pas, voyez ci-dessous.
+
+J’ai un bug !
+
+Si vous trouvez une application qui ne fonctionne pas ou qui plante,
+voici les étapes à suivre avant de le signaler :
+
+1.  Ré-essayez à nouveau.
+
+2.  Vérifiez les paramètres de votre application. Assurez-vous que vous
+    n’avez pas fait d’erreur en la lançant.
+
+3.  Essayez-la sur une plate-forme différente. Si vous avez accès à une
+    plate-forme de référence, essayez-la sur celle-ci. (Nous avons
+    besoin de savoir si c’est une erreur de l’application, un bug Java
+    ou un bug spécifique à FreeBSD).
+
+4.  Cernez le problème. Si c’est votre propre code, cernez le problème
+    dans le code incriminé. Sinon, déterminez les étapes qui permettent
+    de reproduire le problème.
+
+5.  Avertissez l’équipe de portage du JDK. Envoyez un courriel à
+    freebsd-java@FreeBSD.org. Assurez-vous d’avoir inclus les étapes que
+    vous avez suivies.
+
+6.  Enfin, et le plus important, soyez disponible pour coopérer avec
+    l’équipe afin de corriger le problème.
+
+Je peux aider pour le site web ou la documentation !
+
+Tout le monde peut aider dans ce domaine. Si vous avez des suggestions
+pour complèter la documentation, rédigez-les et envoyez-les à
+freebsd-java@FreeBSD.org.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 juin 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

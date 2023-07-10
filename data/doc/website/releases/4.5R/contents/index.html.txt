@@ -1,0 +1,112 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 4.5 Contents
+
+Contents of the FreeBSD Official 4-CDROM set.
+
+The FreeBSD Project now releases the full 4-CDROM set formerly produced
+by Walnut Creek CDROM / BSDi. This CDROM set may be replicated by
+vendors wishing to sell "Official" copies of FreeBSD.
+
+Contents of Disc 1
+
+4.5-install.iso - This is a bootable CDROM image that contains the base
+system, XFree86 3.3.6, a 'tools' directory of software for users
+performing an installation from other operating systems, and 2,210
+third-party software packages. [ file listing ]
+
+Contents of Disc 2
+
+4.5-disc2.iso - This is a bootable CDROM that may be used as a live
+filesystem disc. This disc also contains a compressed copy of the CVS
+repository in the CVS-REPO directory, and some commercial software demos
+for FreeBSD in the commerce directory. [ file listing ]
+
+Contents of Discs #3 and #4
+
+4.5-disc3.iso, 4.5-disc4.iso - The remaining two discs contain the most
+popular third-party software package that users have requested. [ Disc 3
+listing ] [ Disc 4 listing ]
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

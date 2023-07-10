@@ -1,0 +1,128 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 4.11 Errata Processing Policy
+
+Introduction
+
+The following is the general policy for submitting requests to have
+Errata Fixes applied to FreeBSD 4.11.
+
+Procedures
+
+The Errata fixes will be applied by a member of the Release Engineering
+Team, coordinating the fix with the Security Officer who owns the
+branch. An Errata Notice will also be issued. The Release Engineering
+Team may choose to handle several Errata with one Errata Notice if
+several are being processed at roughly the same time.
+
+Policy
+
+Errata Candidates
+
+The classification of things that are Errata candidates are things that
+are severe service-disrupting bugs for which there is no known
+work-around. Things like bugs in device drivers that impair their
+expected functionality, things that can cause kernel panics, etc.
+
+Initial Patch
+
+During the initial phases the fix for Errata should be handled exactly
+like any other fix. It should initially be committed to HEAD if possible
+and go through the normal testing period there. The fix should then be
+MFCed as usual. Since HEAD and RELENG_5 have become dramatically
+different from RELENG_4 in many areas this may not be possible, and the
+initial commit may need to be applied straight to RELENG_4. At this
+point if you feel a fix is an Errata Notice candidate please contact the
+Release Engineering Team to make them aware of it.
+
+The fix should then sit in RELENG_4 for one to two weeks. During this
+period please try to have the fix reviewed by another senior Developer
+familiar with the section of the code you are working with. You should
+also get confirmation that the fix solves the problem from someone who
+had reported the problem. Assuming no problems come up during this
+testing period then send in the formal request to re@FreeBSD.org. Please
+include the patch that will need to be applied to 4.11 and who has
+reviewed the fix.
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

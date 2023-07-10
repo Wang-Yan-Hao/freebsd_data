@@ -1,0 +1,164 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   A propos
+-   Fonctionnalités
+-   Applications
+-   Prosélytisme
+-   Marketing
+-   Administration
+-   Nouvelles du projet
+-   Événements
+-   Presse
+-   Ressources artistiques
+-   Logo
+-   Donations
+-   Legal Notices
+-   Politique de confidentialité
+
+A propos de FreeBSD
+
+Qu’est-ce que FreeBSD ?
+
+FreeBSD est un système d’exploitation avancé pour les architectures
+compatibles x86 (y compris Pentium® et Athlon™), compatibles amd64 (y
+compris Opteron™, Athlon™64 et EM64T), ARM, IA-64, PowerPC, PC-98 et
+UltraSPARC® Il est dérivé de UNIX BSD, la version d’UNIX® développée à
+l’Université de Californie, Berkeley. Il est développé et maintenu par
+une importante équipe de personnes. D’autres plates-formes sont à divers
+stades de développement.
+
+Des fonctions avancées
+
+FreeBSD offre aujourd’hui des fonctions avancées pour le réseau, les
+performances, la sécurité et la compatibilité qui sont encore absentes
+d’autres systèmes d’exploitation, y compris certains des meilleurs
+systèmes commerciaux.
+
+Des solutions performantes pour Internet
+
+FreeBSD est idéal dans le cadre d’un serveur Internet ou Intranet. Il
+offre des services réseaux robustes, même sous de fortes charges, et
+utilise efficacement la mémoire afin de maintenir des temps de réponses
+corrects pour des milliers de processus utilisateurs simultanés.
+
+Une plate-forme embarquée avancée
+
+FreeBSD apporte les fonctions réseau avancées de systèmes d’exploitation
+pour les plates-formes embarquées ou applicatives allant des systèmes
+Intel de haut niveau jusqu’aux plates-formes matérielles Arm, PowerPc et
+récemment MIPS. Dans les serveurs applicatifs de messagerie ou web aux
+routeurs, serveurs de temps, et points d’accès sans fil, des
+constructeurs dans le monde entier font confiance aux environnements de
+compilation intégrés et croisés et ainsi qu’aux fonctionnalités avancées
+pour base de leur produits embarqués. Et la licence libre Berkeley les
+laisse libres de décider quels sont leurs modifications locales qu’ils
+rendront disponibles à tous.
+
+Une grande variété d’applications
+
+Avec plus de 20000 bibliothèques logicielles et d’applications portées,
+FreeBSD supporte les applications pour station de travail, serveur,
+serveur applicatif et environnements embarqués.
+
+Facile à installer
+
+FreeBSD peut s’installer depuis divers supports comme des CD-ROM, des
+DVDs, ou directement par le réseau en utilisant FTP ou NFS. Tout ce dont
+vous avez besoin est de suivre ces instructions.
+
+FreeBSD est libre et gratuit
+
+[The BSD Daemon]
+
+Alors que vous pourriez vous attendre à ce qu’un système d’exploitation
+avec ce type de fonctions soit vendu à un prix élevé, FreeBSD est
+disponible gratuitement et est fourni avec l’intégralité de son code
+source. Si vous voulez acheter ou télécharger une copie afin de
+l’essayer, de plus amples informations sont disponibles.
+
+Contribuer à FreeBSD
+
+Il est facile de contribuer à FreeBSD. Tout ce que vous avez à faire est
+de trouver une partie de FreeBSD dont vous pensez qu’elle pourrait être
+améliorée et de faire ces changements (avec soin) puis de les soumettre
+au projet par l’intermédiaire du programme "send-pr" ou d’une personne y
+participant déjà, si vous en connaissez une. Cela peut être de la
+documentation, du graphisme ou du code. Consultez l’article Contribuer à
+FreeBSD pour plus d’informations.
+
+Même si vous n’êtes pas un programmeur, il existe d’autres façons de
+contribuer à FreeBSD. La Fondation FreeBSD est une organisation à but
+non-lucratif pour laquelle les dons directs sont entièrement
+déductibles. Veuillez contacter board@FreeBSDFoundation.org pour plus
+d’informations ou écrivez à : The FreeBSD Foundation, P.O. Box 20247,
+Boulder, CO. 80303. USA
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 juin 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

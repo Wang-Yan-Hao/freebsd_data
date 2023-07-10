@@ -1,0 +1,378 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   A propos
+-   Fonctionnalités
+-   Applications
+-   Prosélytisme
+-   Marketing
+-   Administration
+-   Nouvelles du projet
+-   Événements
+-   Presse
+-   Ressources artistiques
+-   Logo
+-   Donations
+-   Legal Notices
+-   Politique de confidentialité
+
+-   RSS 2.0 Feed
+
+FreeBSD News Flash
+
+[FreeBSD News]
+
+FreeBSD est un système d’exploitation en constante évolution. Se tenir
+informé des derniers développements peut devenir une corvée ! Pour
+rester à jour, consultez cette page régulièrement. Vous pouvez également
+vous inscrire à la liste de diffusion freebsd-announce ou au RSS feed.
+
+Les projets suivants ont leurs propres pages de nouvelles, vous pouvez
+les consulter pour les mises à jour spécifiques à ces projets.
+
+-   KDE sur FreeBSD
+
+-   GNOME sur FreeBSD
+
+Pour une description détaillée des versions passées, présentes et
+futures, consultez la page d’information sur les versions.
+
+Les informations sur la sécurité et une liste des avis de sécurité
+concernant FreeBSD sont disponibles sur la Page d’information sur la
+sécurité.
+
+Octobre 2022
+
+-    21 Octobre: La première version BETA du cycle de publication de
+    FreeBSD 12.4 est disponible. Les images ISO pour les architectures
+    amd64, armv6, armv7, arm64, i386, powerpc, powerpc64, powerpcspe, et
+    sparc64 sont disponibles sur la plupart des sites miroirs FreeBSD.
+
+-    21 Octobre: Le Rapport de situation de juillet à septembre 2022 est
+    désormais disponible avec 24 entrées.
+
+-    8 Octobre: Droits de commit étendus: Muhammad Moinur Rahman (doc,
+    ports)
+
+-    6 Octobre: New committer: Ronald Klop (ports)
+
+Août 2022
+
+-    9 Août: Le Rapport de situation de avril à juin 2022 est désormais
+    disponible avec 26 entrées.
+
+-    1 Août: Nouveau participant: Felix Palmen (ports)
+
+Juin 2022
+
+-    29 Juin: Nouveau participant: Dmitry Salychev (src)
+
+-    22 Juin: Nouveau participant: Kornel Dulęba (src)
+
+-    18 Juin: Les participants actifs du projet ont élu la douzième
+    équipe de base FreeBSD. Pour plus de détails, veuillez consulter
+    l'annonce officielle.
+
+-    9 Juin: Le Rapport de situation de Janvier à Mars 2022 est
+    désormais disponible avec 22 entrées.
+
+-    3 Juin: Nouveau participant: Pau Amma (doc)
+
+-    1 Juin: Nouveau participant: Graham Perrin (doc)
+
+Mai 2022
+
+-    12 Mai: FreeBSD 13.1-RELEASE est sortie. Veuillez consulter les
+    Notes de version et l'errata avant l'installation pour connaître les
+    dernières informations et/ou les problèmes de dernière minute
+    concernant cette version 13.1. Plus de détails à propos des
+    différentes versions de FreeBSD peuvent être trouvés sur la page
+    d'Information sur les versions page.
+
+-    5 Mai: La sixième version RC du cycle de publication de FreeBSD
+    13.1 est disponible. Les images ISO pour les architectures amd64,
+    arm64, powerpc64, powerpcspe, powerpc64le, et riscv64 sont
+    disponibles sur la plupart des sites miroirs FreeBSD.
+
+Avril 2022
+
+-    28 Avril: La cinquième version RC du cycle de publication de
+    FreeBSD 13.1 est disponible. Les images ISO pour les architectures
+    amd64, arm64, powerpc64, powerpcspe, powerpc64le, et riscv64 sont
+    disponibles sur la plupart des sites miroirs FreeBSD.
+
+-    21 Avril: La quatrième version RC du cycle de publication de
+    FreeBSD 13.1 est disponible. Les images ISO pour les architectures
+    amd64, arm64, powerpc64, powerpcspe, powerpc64le, et riscv64 sont
+    disponibles sur la plupart des sites miroirs FreeBSD.
+
+-    14 Avril: La troisième version RC du cycle de publication de
+    FreeBSD 13.1 est disponible. Les images ISO pour les architectures
+    amd64, arm64, powerpc64, powerpcspe, powerpc64le, et riscv64 sont
+    disponibles sur la plupart des sites miroirs FreeBSD.
+
+-    7 Avril: La deuxième version RC du cycle de publication de FreeBSD
+    13.1 est disponible. Les images ISO pour les architectures amd64,
+    arm64, powerpc64, powerpcspe, powerpc64le, et riscv64 sont
+    disponibles sur la plupart des sites miroirs FreeBSD.
+
+-    1 Avril: La première version RC du cycle de publication de FreeBSD
+    13.1 est disponible. Les images ISO pour les architectures amd64,
+    arm64, powerpc64, powerpcspe, powerpc64le, et riscv64 sont
+    disponibles sur la plupart des sites miroirs FreeBSD.
+
+Mars 2022
+
+-    24 Mars: La troisième version BETA du cycle de publication de
+    FreeBSD 13.1 est disponible. Les images ISO pour les architectures
+    amd64, arm64, powerpc64, powerpcspe, powerpc64le, et riscv64 sont
+    disponibles sur la plupart des sites miroirs FreeBSD.
+
+-    23 Mars: L'équipe Portmgr a relancé son programme d'observateurs de
+    l'équipe et a sélectionné les deux premiers observateurs: Luca
+    Pizzamiglio et Stefan Eßer. Ils rejoindront l'équipe portmgr durant
+    les mois à venir et apprendront le fonctionnement interne à
+    l'équipe.
+
+-    17 Mars: La deuxième version BETA du cycle de publication de
+    FreeBSD 13.1 est disponible. Les images ISO pour les architectures
+    amd64, arm64, powerpc64, powerpcspe, powerpc64le, et riscv64 sont
+    disponibles sur la plupart des sites miroirs FreeBSD.
+
+-    10 Mars: La première version BETA du cycle de publication de
+    FreeBSD 13.1 est disponible. Les images ISO pour les architectures
+    amd64, arm64, powerpc64, powerpcspe, powerpc64le, et riscv64 sont
+    disponibles sur la plupart des sites miroirs FreeBSD.
+
+-    10 Mars: Le Rapport de situation Octobre-Décember 2021 est
+    désormais disponible avec 19 entrées.
+
+Février 2022
+
+-    9 Février: Nouveau participant: Alfonso S. Siciliano (src)
+
+Décembre 2021
+
+-    7 Décembre: FreeBSD 12.3-RELEASE est sortie. Veuillez consulter les
+    Notes de version et l'errata avant l'installation pour connaître les
+    dernières informations et/ou les problèmes de dernière minute
+    concernant cette version 12.3. Plus de détails à propos des
+    différentes versions de FreeBSD peuvent être trouvés sur la page
+    d'Information sur les versions page.
+
+Novembre 2021
+
+-    18 Novembre: La deuxième version RC du cycle de publication de
+    FreeBSD 12.3 est disponible. Les images ISO pour les architectures
+    amd64, armv6, armv7, arm64, i386, powerpc, powerpc64, powerpcspe, et
+    sparc64 sont disponibles sur la plupart des sites miroirs FreeBSD.
+
+-    15 Novembre: Le Rapport de situation Juillet-Septembre 2021 est
+    désormais disponible avec 42 entrées.
+
+-    11 Novembre: La première version RC du cycle de publication de
+    FreeBSD 12.3 est disponible. Les images ISO pour les architectures
+    amd64, armv6, armv7, arm64, i386, powerpc, powerpc64, powerpcspe, et
+    sparc64 sont disponibles sur la plupart des sites miroirs FreeBSD.
+
+-    6 Novembre: Nouveau participant: Dries Michiels (ports)
+
+-    4 Novembre: La troisième version BETA du cycle de publication de
+    FreeBSD 12.3 est disponible. Les images ISO pour les architectures
+    amd64, armv6, armv7, arm64, i386, powerpc, powerpc64, powerpcspe, et
+    sparc64 sont disponibles sur la plupart des sites miroirs FreeBSD.
+
+Octobre 2021
+
+-    29 Octobre: La deuxième version BETA du cycle de publication de
+    FreeBSD 12.3 est disponible. Les images ISO pour les architectures
+    amd64, armv6, armv7, arm64, i386, powerpc, powerpc64, powerpcspe, et
+    sparc64 sont disponibles sur la plupart des sites miroirs FreeBSD.
+
+-    22 Octobre: La première version BETA du cycle de publication de
+    FreeBSD 12.3 est disponible. Les images ISO pour les architectures
+    amd64, armv6, armv7, arm64, i386, powerpc, powerpc64, powerpcspe, et
+    sparc64 sont disponibles sur la plupart des sites miroirs FreeBSD.
+
+Août 2021
+
+-    27 Août: Nouveau participant: Yasuhiro Kimura (ports)
+
+-    18 Août: Droits de commit étendus: Ed Maste (doc, src)
+
+Juillet 2021
+
+-    31 Juillet: Droits de commit étendus: Li-Wen Hsu (doc, ports, src)
+
+-    24 Juillet: Le Rapport de situation Avril-Juin 2021 est disponible
+    avec 45 entrées.
+
+-    13 Juillet: Droits de commit étendus: Philip Paeps (src, ports,
+    doc)
+
+-    6 Juillet: Nouveau participant: Daniel Engberg (ports)
+
+Mai 2021
+
+-    17 Mai: Droits de commit étendus: Guangyuan Yang (doc, ports)
+
+-    6 Mai: Le Rapport de situation Janvier-Mars 2021 est disponible
+    avec 28 entrées.
+
+Avril 2021
+
+-    29 Avril: Nouveau participant: Charlie Li (ports)
+
+-    21 Avril: Nouveau participant: Oskar Holmlund (src)
+
+-    13 Avril: FreeBSD 13.0-RELEASE est sortie. Veuillez consulter les
+    Notes de version et l'errata avant l'installation pour connaître les
+    dernières informations et/ou les problèmes de dernière minute
+    concernant cette version 13.0. Plus de détails à propos des
+    différentes versions de FreeBSD peuvent être trouvés sur la page
+    d'Information sur les versions.
+
+-    3 Avril: The fifth RC build for the FreeBSD 13.0 release cycle is
+    now available. ISO images for the amd64, arm64, armv6, armv7, i386,
+    powerpc, powerpc64, powerpcspe, powerpc64le, and riscv64
+    architectures are available on most of our FreeBSD mirror sites.
+
+Mars 2021
+
+-    29 Mars: The fourth RC build for the FreeBSD 13.0 release cycle is
+    now available. ISO images for the amd64, arm64, armv6, armv7, i386,
+    powerpc, powerpc64, powerpcspe, powerpc64le, and riscv64
+    architectures are available on most of our FreeBSD mirror sites.
+
+-    21 Mars: After the migration to Hugo/AsciiDoctor the weblate tool
+    it's opened again. To get more information check the announcement.
+
+-    20 Mars: The third RC build for the FreeBSD 13.0 release cycle is
+    now available. ISO images for the amd64, arm64, armv6, armv7, i386,
+    powerpc, powerpc64, powerpcspe, powerpc64le, and riscv64
+    architectures are available on most of our FreeBSD mirror sites.
+
+-    15 Mars: Nouveau participant: Ka Ho Ng (src)
+
+-    12 Mars: The second RC build for the FreeBSD 13.0 release cycle is
+    now available. ISO images for the amd64, arm64, armv6, armv7, i386,
+    powerpc, powerpc64, powerpcspe, powerpc64le, and riscv64
+    architectures are available on most of our FreeBSD mirror sites.
+
+-    6 Mars: The first RC build for the FreeBSD 13.0 release cycle is
+    now available. ISO images for the amd64, arm64, armv6, armv7, i386,
+    powerpc, powerpc64, powerpcspe, powerpc64le, and riscv64
+    architectures are available on most of our FreeBSD mirror sites.
+
+Février 2021
+
+-    27 Février: The fourth BETA build for the FreeBSD 13.0 release
+    cycle is now available. ISO images for the amd64, arm64, armv6,
+    armv7, i386, powerpc, powerpc64, powerpcspe, powerpc64le, and
+    riscv64 architectures are available on most of our FreeBSD mirror
+    sites.
+
+-    20 Février: The third BETA build for the FreeBSD 13.0 release cycle
+    is now available. ISO images for the amd64, arm64, armv6, armv7,
+    i386, powerpc, powerpc64, powerpcspe, powerpc64le, and riscv64
+    architectures are available on most of our FreeBSD mirror sites.
+
+-    12 Février: The second BETA build for the FreeBSD 13.0 release
+    cycle is now available. ISO images for the amd64, arm64, armv6,
+    armv7, i386, powerpc, powerpc64, powerpcspe, powerpc64le, and
+    riscv64 architectures are available on most of our FreeBSD mirror
+    sites.
+
+-    7 Février: Nouveau participant: Fernando Apesteguia Santiago (doc)
+
+-    6 Février: The first BETA build for the FreeBSD 13.0 release cycle
+    is now available. ISO images for the amd64, arm64, powerpc64,
+    powerpcspe, powerpc64le, and riscv64 architectures are available on
+    most of our FreeBSD mirror sites.
+
+Janvier 2021
+
+-    27 Janvier: Nouveau participant: Rajesh Kumar M A (src)
+
+-    27 Janvier: Nouveau participant: Nuno Teixeira (ports)
+
+-    25 Janvier: Conversion du site Web et de la documentation vers Hugo
+    et AsciiDoctor
+
+-    21 Janvier: Nouveau participant: Lewis Cook (ports)
+
+-    16 Janvier: Le Rapport de situation Octobre-Décembre 2020 est
+    disponible avec 42 éléments.
+
+-    14 Janvier: Nouveau participant: Lutz Donnerhacke (src)
+
+-    2 Janvier: Nouveau participant: Neel Chauhan (ports)
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 4 juillet 2022 by Marc Fonvieille
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

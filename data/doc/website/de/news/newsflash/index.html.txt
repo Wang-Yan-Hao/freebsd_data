@@ -1,0 +1,2934 @@
+[FreeBSD The Power to Serve]
+
+An FreeBSD spenden
+
+ 
+
+-   Startseite
+
+-   Über FreeBSD
+    -   Für Einsteiger
+    -   Eigenschaften
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Bezugsquellen
+    -   Release Information
+    -   Release Engineering
+
+-   Dokumentation
+    -   FAQ
+    -   Handbuch
+    -   Porter-Handbuch
+    -   Entwickler-Handbuch
+    -   Committer's Guide
+    -   Manualpages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   Alle Bücher und Artikel
+
+-   Community
+    -   Mailinglisten
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Entwicklung
+    -   Projektideen
+    -   Git-Spiegelserver
+    -   Subversion-Repository
+    -   GitHub Mirror
+    -   Phabricator (Code Review)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Hilfe
+    -   Kommerzieller Support
+    -   Sicherheit
+    -   Problemberichte
+    -   Problembericht erstellen
+    -   Internet-Ressourcen
+
+-   Foundation
+    -   Geldspende
+    -   Hardwarespende
+
+-   Über FreeBSD
+-   Eigenschaften
+-   Anwendungen
+-   Advocacy
+-   Marketing
+-   Administration
+-   Neuigkeiten
+-   Events
+-   Aus der Presse
+-   Kunst
+-   Logo
+-   Spenden
+-   Rechtliches
+-   Privacy Policy
+
+-   RSS 2.0 Feed
+
+FreeBSD News Flash
+
+[Nouvelles FreeBSD]
+
+Manchmal ist es mühsam, mit der schnellen Entwicklung des FreeBSD
+Betriebssystems Schritt zu halten. Besuchen Sie diese Seite öfter, um
+informiert zu bleiben. Weiterhin können Sie die Mailingliste
+freebsd-announce abonnieren oder den RSS Ticker benutzen.
+
+Die nachstehenden Projekte besitzen eigene Seiten, auf denen Sie
+projektbezogene Ankündigungen finden:
+
+-   Java® unter FreeBSD
+
+-   KDE unter FreeBSD
+
+-   GNOME unter FreeBSD
+
+Informationen über frühere, aktuelle und künftige Releases finden Sie
+auf der Seite Release Information.
+
+Die FreeBSD Sicherheitshinweise finden Sie auf der Seite
+
+Oktober 2020
+
+-    21 Oktober:
+
+    Der Statusreport Juli bis September 2020 mit 35 Einträgen ist nun
+    verfügbar.
+
+-    17 Oktober:
+
+    Der dritte Release Candidate aus dem FreeBSD 12.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, armv7,
+    arm64, i386, powerpc, powerpc64, powerpcspe sowie sparc64 sind
+    inzwischen auf den meisten FreeBSD-Spiegelservern vorhanden.
+
+-    10 Oktober:
+
+    Der zweite Release Candidate aus dem FreeBSD 12.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, armv7,
+    arm64, i386, powerpc, powerpc64, powerpcspe sowie sparc64 sind
+    inzwischen auf den meisten FreeBSD-Spiegelservern vorhanden.
+
+-    3 Oktober:
+
+    Der erste Release Candidate aus dem FreeBSD 12.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, armv7,
+    arm64, i386, powerpc, powerpc64, powerpcspe sowie sparc64 sind
+    inzwischen auf den meisten FreeBSD-Spiegelservern vorhanden.
+
+September 2020
+
+-    26 September:
+
+    Die dritte BETA-Version aus dem FreeBSD 12.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, armv7,
+    arm64, i386, powerpc, powerpc64 sowie powerpcspe sind inzwischen auf
+    den meisten FreeBSD-Spiegelservern vorhanden.
+
+-    18 September:
+
+    Die zweite BETA-Version aus dem FreeBSD 12.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, armv7,
+    arm64, i386, powerpc, powerpc64, powerpcspe sowie sparc64 sind
+    inzwischen auf den meisten FreeBSD-Spiegelservern vorhanden.
+
+-    12 September:
+
+    Die erste BETA-Version aus dem FreeBSD 12.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, armv7,
+    arm64, i386, powerpc, powerpc64, powerpcspe sowie sparc64 sind
+    inzwischen auf den meisten FreeBSD-Spiegelservern vorhanden.
+
+August 2020
+
+-    31 August: Neuer Committer: Rainer Hurling(ports)
+
+Juli 2020
+
+-    26 Juli: Neuer Committer: Daniel Ebdrup Jensen (doc)
+
+-    23 Juli: Neuer Committer: Robert Wing (src)
+
+-    15 Juli:
+
+    Der Statusreport April-Juni 2020 mit 51 Einträgen ist nun verfügbar.
+
+-    1 Juli:
+
+    Die derzeit aktiven FreeBSD-Committer haben das elfte FreeBSD Core
+    Team gewählt. Weitere Informationen finden Sie in der offiziellen
+    Ankündigung.
+
+Juni 2020
+
+-    16 Juni:
+
+    FreeBSD 11.4-RELEASE ist ab sofort verfügbar. Lesen Sie bitte die
+    Release Notes sowie die Release Errata, bevor Sie mit der
+    Installation beginnen, um sich über Änderungen und eventuelle
+    Probleme mit 11.4 zu informieren. Weitere Informationen zu den
+    verschiedenen FreeBSD-Versionen finden Sie auf der Seite Release
+    Information.
+
+-    9 Juni:
+
+    Den aktuelle Version des Verhaltenskodex finden Sie hier.
+
+-    8 Juni: Neuer Committer: Gordon Bergling (doc)
+
+-    2 Juni:
+
+    Die FreeBSD Community-Umfrage 2020 hat begonnen. Teilen Sie diese
+    Information bitte mit ihrem Arbeitgeber, Ihren Kollegen, Freunden
+    und allen an FreeBSD interessierten Personen. Die Umfrage läuft noch
+    bis 16. Juni 2020 17:00 UTC (18:00 MESZ).
+
+Mai 2020
+
+-    29 Mai:
+
+    Der zweite Release Candidate aus dem FreeBSD 11.4-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, arm64,
+    i386, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    22 Mai:
+
+    Der erste Release Candidate aus dem FreeBSD 11.4-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, arm64,
+    i386, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    16 Mai:
+
+    Die zweite BETA-Version aus dem FreeBSD 11.4-Releasezyklus ist nun
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, arm64,
+    i386, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    16 Mai:
+
+    Das FreeBSD Project nimmt erneut als Mentoren-Organisation an
+    Google's Season of Docs teil. Ziel dieses Programms ist es, Open
+    Source-Entwickler und technische Autoren zusammen zu bringen. Die
+    Autoren arbeiten dabei für drei Monate eng mit den Entwicklern
+    zusammen, um diese bei der Erstellung hochwertiger Dokumentation zu
+    unterstützen. Die Liste der geplanten Aufgaben sowie
+    Kontaktinformationen sind im FreeBSD Wiki verfügbar.
+
+-    9 Mai:
+
+    Die erste BETA-Version aus dem FreeBSD 11.4-Releasezyklus ist nun
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, arm64,
+    i386, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+April 2020
+
+-    12 April:
+
+    Der Statusreport Januar-März 2020 ist verfügbar.
+
+-    6 April: Neuer Committer: Richard Scheffenegger (src)
+
+-    1 April: Neuer Committer: Hiroki Tagato (ports)
+
+März 2020
+
+-    10 März: Neuer Committer: Aleksandr Fedorov (src)
+
+-    9 März: Neuer Committer: Nick O'Brien (src)
+
+Februar 2020
+
+-    18 Februar: Neuer Committer: Lorenzo Salvadore (ports)
+
+-    10 Februar: Neuer Committer: Ryan Moeller (src)
+
+Januar 2020
+
+-    27 Januar: Neuer Committer: Alfredo Dal'Ava Júnior (src)
+
+-    27 Januar:
+
+    Der Statusreport Oktober bis Dezember 2019 ist nun verfügbar.
+
+-    21 Januar:
+
+    Um neuen Unterstützern die Übersetzung der offizielllen FreeBSD
+    Handbücher und Artikel zu erleichtern, wird das FreeBSD Project
+    künftig Weblate als web-basierte Lokalisierungsplattform einsetzen.
+
+    Diese Plattform wird bereits seit mehreren Monaten von einigen
+    unserer Übersetzerteams (pt_BR, es_ES und zh_CN) verwendet. Aufgrund
+    der exzellenten Resultate und des inzwischen ausgereiften Workflows
+    sind wir nun bereit, diese Plattform auch neuen Unterstützern
+    zugänglich zu machen.
+
+    Durch den Einsatz dieses neuen Werkzeugs hat sich die Arbeit an der
+    Dokumentation drastisch vereinfacht. Auch wenn jemand nur ein paar
+    Minuten zur Verfügung hat, kann er nun an der Verbesserung der
+    Dokumentation mitarbeiten!
+
+    Wenn Sie daran interessiert sind, bei der Übersetzung der
+    offiziellen Dokumentation zu helfen, können Sie sich in unserem Wiki
+    sowie über die offizielle Ankündigung auf der
+    freebsd-translators-Mailingliste über weitere Details informieren.
+
+-    10 Januar: Neuer Committer: Mikaël Urankar (ports)
+
+-    2 Januar: Neuer Committer: Loïc Bartoletti (ports)
+
+November 2019
+
+-    25 November:
+
+    Der Statusreport Juli-September 2019 ist verfügbar.
+
+-    4 November:
+
+    FreeBSD 12.1-RELEASE ist ab sofort verfügbar. Lesen Sie bitte die
+    Release Notes sowie die Release Errata, bevor Sie mit der
+    Installation beginnen, um sich über Änderungen und eventuelle
+    Probleme mit 12.1 zu informieren. Weitere Informationen zu den
+    verschiedenen FreeBSD-Versionen finden Sie auf der Seite Release
+    Information.
+
+Oktober 2019
+
+-    18 Oktober:
+
+    Der zweite Release Candidate aus dem FreeBSD 12.1-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, armv7,
+    arm64, i386, powerpc, powerpc64, powerpcspe sowie sparc64 sind
+    inzwischen auf den meisten FreeBSD-Spiegelservern vorhanden.
+
+-    11 Oktober:
+
+    Der erste Release Candidate aus dem FreeBSD 12.1-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, armv7,
+    arm64, i386, powerpc, powerpc64, powerpcspe sowie sparc64 sind
+    inzwischen auf den meisten FreeBSD-Spiegelservern vorhanden.
+
+-    11 Oktober: Neuer Committer: Alex Samorukov (ports)
+
+-    4 Oktober:
+
+    Die dritte BETA-Version aus dem FreeBSD 12.1-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, armv7,
+    arm64, i386, powerpc, powerpc64, powerpcspe sowie sparc64 sind
+    inzwischen auf den meisten FreeBSD-Spiegelservern vorhanden.
+
+September 2019
+
+-    28 September:
+
+    Die zweite BETA-Version aus dem FreeBSD 12.1-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, armv7,
+    arm64, i386, powerpc, powerpc64, powerpcspe sowie sparc64 sind
+    inzwischen auf den meisten FreeBSD-Spiegelservern vorhanden.
+
+-    26 September: Neuer Committer: Pawel Biernacki (src)
+
+-    20 September:
+
+    Die erste BETA-Version aus dem FreeBSD 12.1-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, armv7,
+    arm64, i386, powerpc, powerpc64, powerpcspe sowie sparc64 sind
+    inzwischen auf den meisten FreeBSD-Spiegelservern vorhanden.
+
+-    15 September: Neuer Committer: Dmitri Goutnik (ports)
+
+-    10 September: Neuer Committer: Stephen Gregoratto (src). Arbeitet
+    an der Verbesserung der FreeBSD-Handbücher zu Google's Season of
+    Docs.
+
+August 2019
+
+-    28 August: Neuer Committer: Santhosh Raju (ports)
+
+-    25 August:
+
+    Der Statusreport April-Juni 2019 ist verfügbar.
+
+Juli 2019
+
+-    16 Juli:
+
+    Aufgrund von Umständen, auf die wir keinen Einfluss haben, müssen
+    wir die SMTP-Server-Adresse für FreeBSD.org-E-Mails ändern. Wir sind
+    uns bewusst, dass es durch diese Umstellung vorübergehend zu
+    Problemen bei der STMP-Server-Reputation kommen wird.
+
+    Lesen Sie bitte die Ankündigung für weitere Informationen.
+
+-    9 Juli:
+
+    FreeBSD 11.3-RELEASE ist ab sofort verfügbar. Lesen Sie bitte die
+    Release Notes sowie die Release Errata, bevor Sie mit der
+    Installation beginnen, um sich über Änderungen und eventuelle
+    Probleme mit 11.3 zu informieren. Weitere Informationen zu den
+    verschiedenen FreeBSD-Versionen finden Sie auf der Seite Release
+    Information.
+
+Juni 2019
+
+-    28 Juni:
+
+    Der dritte Release Candidate aus dem FreeBSD 11.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, arm64,
+    i386, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    21 Juni:
+
+    Der zweite Release Candidate aus dem FreeBSD 11.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, arm64,
+    i386, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    14 Juni:
+
+    Der erste Release Candidate aus dem FreeBSD 11.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, arm64,
+    i386, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    7 Juni:
+
+    Die dritte BETA-Version aus dem FreeBSD 11.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, arm64,
+    i386, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    4 Juni:
+
+    Der Statusreport Januar bis März 2019 ist verfügbar.
+
+Mai 2019
+
+-    31 Mai:
+
+    Die zweite BETA-Version aus dem FreeBSD 11.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, arm64,
+    i386, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    31 Mai: Neuer Committer: Brandon Bergren (src)
+
+-    29 Mai: Neuer Committer: Chuck Silvers (src)
+
+-    28 Mai: Neuer Committer: D Scott Phillips (src)
+
+-    24 Mai:
+
+    Die erste BETA-Version aus dem FreeBSD 11.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, arm64,
+    i386, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    16 Mai: Neuer Committer: Sergio Carlavilla Delgado (docs, Spanish
+    Translation Team)
+
+April 2019
+
+-    30 April: Neuer Committer: Doug Moore (src)
+
+-    28 April:
+
+    Das FreeBSD Project hat damit begonnen, einen neuen Ansatz für
+    pkgbase zu testen. Lesen Sie bitte die offizielle Ankündigung für
+    weitere Informationen.
+
+-    27 April:
+
+    Die FreeBSD 2019 Community-Umfrage wurde durchgeführt
+    (Teilnahmeschluß war der 13. Mai 2019). Teilen Sie diese Information
+    bitte mit allen Kollegen, Freunden und anderen Personen, die an
+    FreeBSD interessiert sind.
+
+-    19 April:
+
+    FreeBSD hat damit begonnen, einen neuen Upstream seiner
+    ZFS-Implementierung zu testen - ZFS on Linux (ZoL). Dazu wurden
+    entsprechende Images für FreeBSD 12-STABLE sowie 13-CURRENT
+    bereitgestellt. Lesen Sie bitte die offizielle CFT FreeBSD +
+    ZoL-Ankündigung für weitere Informationen.
+
+-    14 April: Neuer Committer: Piotr Kubaj (ports)
+
+-    14 April: Erweiterte Commit-Privilegien: Pedro Giffuni (ports, src)
+
+März 2019
+
+-    20 März: Neuer Committer: Mitchell Horne(src)
+
+Februar 2019
+
+-    1 Februar: Neuer Committer: Kai Knoblich (ports)
+
+Januar 2019
+
+-    19 Januar: Neuer Committer: Johannes Lundberg (src)
+
+Dezember 2018
+
+-    24 Dezember:
+
+    Der Statusreport für die Monate Januar bis September 2018 ist
+    verfügbar.
+
+-    11 Dezember:
+
+    FreeBSD 12.0-RELEASE ist ab sofort verfügbar. Lesen Sie bitte die
+    Release Notes sowie die Release Errata, bevor Sie mit der
+    Installation beginnen, um sich über Änderungen und eventuelle
+    Probleme mit 12.0 zu informieren. Weitere Informationen zu den
+    verschiedenen FreeBSD-Versionen finden Sie auf der Seite Release
+    Information.
+
+-    11 Dezember:
+
+    Das Cirrus CI-System unterstützt seit Kurzem auch FreeBSD. Cirrus CI
+    beschleunigt Ihren Entwicklungszyklus und macht ihn durch den
+    Einsatz moderner Cloud-Technien effizienter und sicherer. Cirrus CI
+    skaliert mit Ihrem Team und macht den Vertrieb von Software
+    einfacher und kostengünstiger. Lesen Sie den FreeBSD Virtual
+    Machines-Guide für weitere Informationen.
+
+-    1 Dezember:
+
+    Der dritte Release Candidate aus dem FreeBSD 12.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, armv7,
+    arm64, i386, powerpc, powerpc64, powerpcspe sowie sparc64 sind
+    inzwischen auf den meisten FreeBSD-Spiegelservern vorhanden.
+
+November 2018
+
+-    25 November:
+
+    Der zweite Release Candidate aus dem FreeBSD 12.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, armv7,
+    arm64, i386, powerpc, powerpc64, powerpcspe sowie sparc64 sind
+    inzwischen auf den meisten FreeBSD-Spiegelservern vorhanden.
+
+-    17 November:
+
+    Der erste Release Candidate aus dem FreeBSD 12.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, armv7,
+    arm64, i386, powerpc, powerpc64, powerpcspe sowie sparc64 sind
+    inzwischen auf den meisten FreeBSD-Spiegelservern vorhanden.
+
+-    10 November:
+
+    Die vierte BETA-Version aus dem FreeBSD 12.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, armv7,
+    arm64, i386, powerpc, powerpc64, powerpcspe sowie sparc64 sind
+    inzwischen auf den meisten FreeBSD-Spiegelservern vorhanden.
+
+-    3 November:
+
+    Die dritte BETA-Version aus dem FreeBSD 12.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, armv7,
+    arm64, i386, powerpc, powerpc64 sowie sparc64 sind inzwischen auf
+    den meisten FreeBSD-Spiegelservern vorhanden.
+
+Oktober 2018
+
+-    27 Oktober:
+
+    Die zweite BETA-Version aus dem FreeBSD 12.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, armv7,
+    arm64, i386, powerpc, powerpc64, powerpcspe sowie sparc64 sind
+    inzwischen auf den meisten FreeBSD-Spiegelservern vorhanden.
+
+-    20 Oktober:
+
+    Die erste BETA-Version aus dem FreeBSD 12.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, armv7,
+    arm64, i386, powerpc, powerpc64, powerpcspe sowie sparc64 sind
+    inzwischen auf den meisten FreeBSD-Spiegelservern vorhanden.
+
+-    16 Oktober: Neuer Committer: Thomas Munro (src)
+
+-    9 Oktober: Neuer Committer: Yuri Pankov (src)
+
+-    8 Oktober: Neuer Committer: Vinícius Zavam (ports)
+
+-    1 Oktober: Neuer Committer: Alexandre C. Guimaraes (ports)
+
+September 2018
+
+-    21 September: Neuer Committer: Sergey Kozlov (ports)
+
+-    6 September: Neuer Committer: Emmanuel Vadot
+
+-    2 September: Neuer Committer: Kevin Bowling (ports)
+
+August 2018
+
+-    9 August: Erweiterte Commit-Privilegien: Li-Wen Hsu (ports, src)
+
+Juli 2018
+
+-    16 Juli: Neuer Committer: John Hixson (ports)
+
+-    4 Juli:
+
+    Das 10. FreeBSD Core Team wurde gewählt. Wahlberechtigt waren alle
+    aktiven Committer. Weitere Informationen finden Sie in der
+    offiziellen Ankündigung.
+
+Juni 2018
+
+-    30 Juni: Neuer Committer: Jesper Schmitz Mouridsen (ports)
+
+-    27 Juni:
+
+    FreeBSD 11.2-RELEASE ist ab sofort verfügbar. Lesen Sie bitte die
+    Release Notes sowie die Release Errata, bevor Sie mit der
+    Installation beginnen, um sich über Änderungen und eventuelle
+    Probleme mit 11.2 zu informieren. Weitere Informationen zu den
+    verschiedenen FreeBSD-Versionen finden Sie auf der Seite Release
+    Information.
+
+-    27 Juni: Neuer Committer: Ben Widawsky (src)
+
+-    19 Juni:
+
+    Am 19. Juni 1993 wurde entschieden, das Projekt künftig als FreeBSD
+    zu bezeichnen. Finden Sie heraus, wie Sie diesen wichtigen Tag mit
+    uns feiern können.
+
+-    16 Juni:
+
+    Der dritte Release Candidate aus dem FreeBSD 11.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, arm64,
+    i386, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    16 Juni: Neuer Committer: Mateusz Piotrowski (ports)
+
+-    9 Juni:
+
+    Der zweite Release Candidate aus dem FreeBSD 11.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, arm64,
+    i386, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    8 Juni:
+
+    Teile des FreeBSD-Clusters werden am Samstag, 9. Juni 2018 aufgrund
+    von Wartungsarbeiten nicht verfügbar sein. Mehrere Dienste, darunter
+    die Mailinglisten sowie ein Teil unserer Webservices werden während
+    dieser Zeit nur eingeschränkt verfügbar sein.
+
+    Die Wartungsarbeiten beginnen am 9. Juni 2018 um 11:00 UTC (04:00
+    US-Pacific) und werden bis 20:00 UTC (13:00 US-Pacific) andauern.
+
+-    2 Juni:
+
+    Der erste Release Candidate aus dem FreeBSD 11.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, arm64,
+    i386, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+Mai 2018
+
+-    26 Mai:
+
+    Die dritte BETA-Version aus dem FreeBSD 11.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, arm64,
+    i386, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    22 Mai: Neuer Committer: Breno Leitao (src)
+
+-    21 Mai: Neuer Committer: Leandro Lupori (src)
+
+-    19 Mai:
+
+    Die zweite BETA-Version aus dem FreeBSD 11.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, arm64,
+    i386, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    15 Mai: Neuer Committer: Gleb Popov (ports)
+
+-    12 Mai:
+
+    Die erste BETA-Version aus dem FreeBSD 11.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, arm64,
+    i386, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+April 2018
+
+-    17 April: Neuer Committer: Sean Eric Fagan (src)
+
+-    7 April: Neuer Committer: Tom Jones (src)
+
+-    4 April: Neuer Committer: Ram Kishore Vegesna (src)
+
+März 2018
+
+-    23 März: Neuer Committer: Matthias Fechner (ports)
+
+-    17 März: Neuer Committer: Eric Turgeon (ports)
+
+-    16 März: Neuer Committer: Vincenzo Maffione (src)
+
+-    14 März: Neuer Committer: Koichiro Iwao (ports)
+
+-    3 März: Neuer Committer: Fernando Apesteguia (ports)
+
+-    1 März: Neuer Committer: Devin Teske (ports)
+
+Februar 2018
+
+-    14 Februar:
+
+    Das FreeBSD Project freut sich, bekanntgeben zu dürfen, dass es auch
+    2018 an Google's Summer of Code-Programm teilnimmt. Durch dieses
+    Programm wird die Arbeit von Studenten im Rahmen von Open
+    Source-Projekten gefördert. Das FreeBSD Project nimmt bereits
+    zum 14. Mal hintereinander an diesem Programm teil und hat seit der
+    ersten Teilnahme 2005 mehr als 210 Studenten erfolgreich durch deren
+    Arbeiten begleitet.
+
+    Zu den erfolgreich abgeschlossenen Projekten gehören Verbesserungen
+    an der Linux-ABI-Emulation, NFSv4 ACLs, TCP-Regressionstests, die
+    Unterstützung für das FUSE-Dateisytem sowie zahlreiche andere
+    Projekte. Viele Studenten, die an diesem Programm teilnahmen, sind
+    inzwischen aktive FreeBSD-Entwickler und/oder nehmen (nicht zuletzt
+    dank der Unterstützung der FreeBSD Foundation) weiterhin aktiv an
+    verschiedenen FreeBSD-Veranstaltungen auf der ganzen Welt teil.
+
+    Wir laden alle Studenten ein, während des Sommers gegen Bezahlung an
+    der Weiterentwicklung von FreeBSD zu arbeiten! Weitere Informationen
+    zu möglichen Projektvorschlägen sowie zum Ablauf finden sich auf der
+    Seite FreeBSD Summer Projects.
+
+-    8 Februar: Neuer Committer: Slava Shwartsman (src)
+
+Januar 2018
+
+-    25 Januar: Neuer Committer: Jeb Cramer (src)
+
+-    4 Januar:
+
+    FreeBSD wurde Ende Dezember 2017 über die Meltdown und
+    Spectre-Angriffe informiert. Wir arbeiten gemeinsam mit den
+    CPU-Herstellern daran, die bisher bekannten Sicherheitslücken zu
+    schließen. Aufgrund der Schwere der entdeckten Lücken ist es
+    allerdings nicht möglich abzuschätzen, wann Patches verfügbar sein
+    werden.
+
+Dezember 2017
+
+-    25 Dezember:
+
+    Der Statusreport Juli-September 2017 ist verfügbar.
+
+November 2017
+
+-    11 November: Neuer Committer: Jason W. Bacon (ports)
+
+Oktober 2017
+
+-    30 Oktober: Neuer Committer: Alex Richardson (src)
+
+-    29 Oktober: Neuer Committer: Yuri Victorovich (ports)
+
+-    4 Oktober:
+
+    FreeBSD 10.4-RELEASE ist ab sofort verfügbar. Lesen Sie bitte die
+    Release Notes sowie die Release Errata, bevor Sie mit der
+    Installation beginnen, um sich über Änderungen und eventuelle
+    Probleme mit 10.4 zu informieren. Weitere Informationen zu den
+    verschiedenen FreeBSD-Versionen finden Sie auf der Seite Release
+    Information.
+
+September 2017
+
+-    27 September:
+
+    Der Statusreport für die Monate April bis Juni 2017 ist verfügbar.
+
+-    23 September:
+
+    Der zweite Release Candidate aus dem FreeBSD 10.4 Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    19 September: Neuer Committer: Eugene Grosbein (src)
+
+-    18 September: Neuer Committer: Guangyuan Yang (doc)
+
+-    17 September:
+
+    Der erste Release Candidate aus dem FreeBSD 10.4 Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    11 September: Neuer Committer: Craig Leres (ports)
+
+-    9 September: Neuer Committer: Dave Cottlehuber (ports)
+
+-    9 September:
+
+    Die vierte BETA-Version aus dem FreeBSD 10.4-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    8 September: Neuer Committer: Adriaan de Groot (ports)
+
+-    6 September: Neuer Committer: Chuck Tuffli (src)
+
+-    2 September: Neuer Committer: Stephen Hurd (src)
+
+-    2 September:
+
+    Die dritte BETA-Version aus dem FreeBSD 10.4-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+August 2017
+
+-    28 August: Neuer Committer: Fedor Uporov (src)
+
+-    26 August:
+
+    Die zweite BETA-Version aus dem FreeBSD 10.4-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    25 August: Neuer Committer: Luca Pizzamiglio (ports)
+
+-    19 August:
+
+    Die erste BETA-Version aus dem FreeBSD 10.4-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+Juli 2017
+
+-    26 Juli:
+
+    FreeBSD 11.1-RELEASE ist ab sofort verfügbar. Lesen Sie bitte die
+    Release Notes sowie die Release Errata, bevor Sie mit der
+    Installation beginnen, um sich über Änderungen und eventuelle
+    Probleme mit 11.1 zu informieren. Weitere Informationen zu den
+    verschiedenen FreeBSD-Versionen finden Sie auf der Seite Release
+    Information.
+
+-    18 Juli: Neuer Committer: Marcin Wojtas (src)
+
+-    15 Juli:
+
+    Der dritte RC-Build aus dem FreeBSD 11.1 Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    aarch64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    12 Juli: Neuer Committer: Matt Joras (src)
+
+-    8 Juli:
+
+    Der zweite RC-Build aus dem FreeBSD 11.1 Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    aarch64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    1 Juli:
+
+    Der erste RC-Build aus dem FreeBSD 11.1 Releasezyklus ist verfügbar.
+    ISO-Images für die Architekturen amd64, armv6, i386, aarch64,
+    powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+Juni 2017
+
+-    24 Juni:
+
+    Die dritte BETA-Version aus dem FreeBSD 11.1-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    aarch64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    20 Juni: Neuer Committer: Kyle Evans (src)
+
+-    17 Juni:
+
+    Die zweite BETA-Version aus dem FreeBSD 11.1-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    powerpc, aarch64, powerpc, powerpc64 sowie sparc64 sind auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    10 Juni:
+
+    Die erste BETA-Version aus dem FreeBSD 11.1-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    powerpc, aarch64, powerpc, powerpc64 sowie sparc64 sind auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    7 Juni: Neuer Committer: Ryan Libby (src)
+
+Mai 2017
+
+-    31 Mai: Neuer Committer: Richard Gallamore (ports)
+
+-    16 Mai: Neuer Committer: Jochen Neumeister (ports)
+
+-    15 Mai:
+
+    Der Statusreport für die Monate Januar bis März 2017 ist verfügbar.
+
+-    3 Mai: Neuer Committer: Danilo G. Baio (ports)
+
+April 2017
+
+-    27 April: Neuer Committer: Vladimir Kondratyev (src)
+
+-    18 April: Neuer Committer: Bradley T. Hughes (ports)
+
+März 2017
+
+-    4 März: Neuer Committer: Eugene Grosbein (ports)
+
+-    3 März: Zurückgekehrter Committer: Rodney W. Grimes (src)
+
+Februar 2017
+
+-    27 Februar:
+
+    Das FreeBSD Project freut sich, bekanntgeben zu dürfen, dass es auch
+    2017 an Google's Summer of Code-Programm teilnimmt. Durch dieses
+    Programm wird die Arbeit von Studenten im Rahmen von Open
+    Source-Projekten gefördert. Das FreeBSD Project nimmt bereits
+    zum 13. Mal hintereinander an diesem Programm teil und hat seit der
+    ersten Teilnahme 2005 mehr als 200 Studenten erfolgreich durch deren
+    Arbeiten begleitet.
+
+    Zu den erfolgreich abgeschlossenen Projekten gehören Verbesserungen
+    an der Linux-ABI-Emulation, NFSv4 ACLs, TCP-Regressionstests, die
+    Unterstützung für das FUSE-Dateisytem sowie zahlreiche andere
+    Projekte. Viele Studenten, die an diesem Programm teilnahmen, sind
+    inzwischen aktive FreeBSD-Entwickler und/oder nehmen (nicht zuletzt
+    dank der Unterstützung der FreeBSD Foundation) weiterhin aktiv an
+    verschiedenen FreeBSD-Veranstaltungen auf der ganzen Welt teil.
+
+    Wir laden alle Studenten ein, während des Sommers gegen Bezahlung an
+    der Weiterentwicklung von FreeBSD zu arbeiten! Weitere Informationen
+    zu möglichen Projektvorschlägen sowie zum Ablauf finden sich auf der
+    Seite FreeBSD Summer Projects.
+
+-    13 Februar:
+
+    Der Statusreport für die Monate Oktober bis Dezember 2016 ist
+    verfügbar.
+
+-    10 Februar: Neuer Committer: Mahdi Mokhtari (ports)
+
+-    8 Februar: Neuer Committer: Tobias Kortkamp (ports)
+
+Januar 2017
+
+-    10 Januar: Erweiterte Commit-Privilegien: Jean-Sébastien Pédron
+    (ports)
+
+-    9 Januar: Neuer Committer: Matthew Rezny (ports)
+
+-    9 Januar: Neuer Committer: Larry Rosenman (ports)
+
+-    9 Januar: Neuer Committer: Johannes Dieterich (ports)
+
+Dezember 2016
+
+-    11 Dezember: Neuer Committer: Piotr Pawe? Stefaniak (src)
+
+-    11 Dezember: Neuer Committer: Nikolai Lifanov (ports)
+
+November 2016
+
+-    15 November: Neuer Committer: Mikhail Pchelin (ports)
+
+-    13 November:
+
+    Der Statusreport für die Monate Juli bis September 2016 ist
+    verfügbar.
+
+-    2 November: Neuer Committer: Konrad Witaszczyk (src)
+
+-    2 November: Neuer Committer: Michael Dexter (doc)
+
+Oktober 2016
+
+-    22 Oktober: Neuer Committer: David Bright (src)
+
+-    10 Oktober:
+
+    FreeBSD 11.0-RELEASE ist ab sofort verfügbar. Lesen Sie bitte die
+    Release Notes sowie die Release Errata, bevor Sie mit der
+    Installation beginnen, um sich über Änderungen und eventuelle
+    Probleme mit 11.0 zu informieren. Weitere Informationen zu den
+    verschiedenen FreeBSD-Versionen finden Sie auf der Seite Release
+    Information.
+
+September 2016
+
+-    28 September:
+
+    Die Erstellung der finalen Version von 11.0-RELEASE verzögert sich,
+    da nach dem Releasetagging einige Probleme entdeckt wurden, die vor
+    dem endgültigen Release behoben werden müssen. Lesen Sie bitte die
+    offizielle Ankündigung des Release Engineering Teams für weitere
+    Informationen.
+
+-    17 September: Neuer Committer: Ruey-Cherng Yu (doc)
+
+-    17 September: Neuer Committer: Joseph Mingrone (ports)
+
+-    17 September:
+
+    Der dritte Release Candidate aus dem FreeBSD 11.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    aarch64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    16 September: Neuer Committer: Sevan Janiyan (doc)
+
+August 2016
+
+-    25 August:
+
+    Der zweite Release Candidate aus dem FreeBSD 11.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    aarch64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    13 August:
+
+    Der erste Release Candidate aus dem FreeBSD 11.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    aarch64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    10 August: Neuer Committer: Toomas Soome (src)
+
+-    10 August: Das FreeBSD Core Team hat sich zu den kürzlich
+    entdeckten Sicherheitslücken in freebsd-update geäußert.
+
+-    6 August:
+
+    Die vierte BETA-Version aus dem FreeBSD 11.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    aarch64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+Juli 2016
+
+-    30 Juli:
+
+    Die dritte BETA-Version aus dem FreeBSD 11.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    aarch64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    27 Juli:
+
+    Der Statusreport April-Juni 2016 ist verfügbar.
+
+-    24 Juli:
+
+    Die zweite BETA-Version aus dem FreeBSD 11.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    aarch64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    19 Juli: Neuer Committer: Michael Zhilin (src)
+
+-    19 Juli: Neuer Committer: Imre Vadasz (src)
+
+-    18 Juli: Neuer Committer: Stephen J. Kiernan (src)
+
+-    11 Juli: Neuer Committer: Carlos J. Puga Medina (ports)
+
+-    10 Juli:
+
+    Die erste BETA-Version aus dem FreeBSD 11.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    aarch64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    6 Juli:
+
+    Das FreeBSD Project freut sich, die Wahl des Core Teams 2016
+    bekanntgeben zu dürfen. Das FreeBSD Core Team bildet den "Vorstand"
+    des Projekts und ist für die Aufnahme neuer src-Committer, die
+    Klärung von Meinungsverschiedenheiten unter den Committern, Politik
+    und Verwaltung des Projekts sowie die Einrichtung von Unter-Komitees
+    für verschiedene Aufgabenbereiche (Security Officer, Release
+    Engineers, Port Managers, Webmasters und andere mehr)
+    verantwortlich. Seit 2000 wird das Core Team alle zwei Jahre
+    demokratisch durch die aktiven FreeBSD Committer gewählt.
+
+    Das FreeBSD Core Team freut sich in diesem Zusammenhang bekanntgeben
+    zu können, dass Matthew Seaman weiterhin als Core Team Secretary
+    tätig sein wird.
+
+    Weitere Informationen zur Wahl (sowie eine Liste der neuen
+    Mitglieder des FreeBSD Core Teams) finden Sie in der offiziellen
+    Ankündigung.
+
+-    6 Juli: Neuer Committer: Tobias C. Berner (ports)
+
+-    1 Juli: Neuer Committer: Eric Badger (src)
+
+Juni 2016
+
+-    9 Juni: Neuer Committer: Mike Karels (src)
+
+-    4 Juni: Neuer Committer: Torsten Zuehlsdorff (ports)
+
+Mai 2016
+
+-    31 Mai: Neuer Committer: Landon Fuller (src)
+
+-    9 Mai: Neuer Committer: Ben Woods (ports)
+
+-    1 Mai:
+
+    Der Statusreport Januar-März 2016 ist verfügbar.
+
+April 2016
+
+-    23 April: Neuer Committer: Emmanuel Vadot (src)
+
+-    4 April:
+
+    FreeBSD 10.3-RELEASE is ab sofort verfügbar. Lesen Sie bitte die
+    Release Notes sowie die Release Errata, bevor Sie mit der
+    Installation beginnen, um sich über Änderungen und eventuelle
+    Probleme mit 10.3 zu informieren. Weitere Informationen zu den
+    verschiedenen FreeBSD-Versionen finden Sie auf der Seite Release
+    Information.
+
+März 2016
+
+-    20 März:
+
+    Der dritte Release Candidate aus dem FreeBSD 10.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    13 März:
+
+    Der zweite Release Candidate aus dem FreeBSD 10.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    5 März:
+
+    Der erste Release Candidate aus dem FreeBSD 10.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    1 März: Neuer Committer: Christoph Moench-Tegeder (ports)
+
+-    1 März:
+
+    Das FreeBSD Project freut sich, bekanntgeben zu dürfen, dass es auch
+    2016 an Google's Summer of Code-Programm teilnimmt. Durch dieses
+    Programm wird die Arbeit von Studenten im Rahmen von Open
+    Source-Projekten gefördert. Das FreeBSD Project nimmt bereits zum
+    zwölften Mal hintereinander an diesem Programm teil und hat seit der
+    ersten Teilnahme 2005 mehr als 180 Studenten erfolgreich durch deren
+    Arbeiten begleitet.
+
+    Zu den erfolgreich abgeschlossenen Projekten gehören Verbesserungen
+    an der Linux-ABI-Emulation, NFSv4 ACLs, TCP-Regressionstests, die
+    Unterstützung für das FUSE-Dateisytem sowie zahlreiche andere
+    Projekte. Viele Studenten, die an diesem Programm teilnahmen, sind
+    inzwischen aktive FreeBSD-Entwickler und/oder nehmen (nicht zuletzt
+    dank der Unterstützung der FreeBSD Foundation) weiterhin aktiv an
+    verschiedenen FreeBSD-Veranstaltungen auf der ganzen Welt teil.
+
+    Wir laden alle Studenten ein, während des Sommers gegen Bezahlung an
+    der Weiterentwicklung von FreeBSD zu arbeiten! Weitere Informationen
+    zu möglichen Projektvorschlägen sowie zum Ablauf finden sich auf der
+    Seite FreeBSD Summer Projects.
+
+Februar 2016
+
+-    28 Februar: Neuer Committer: Phil Shafer (src)
+
+-    28 Februar:
+
+    Die dritte BETA-Version aus dem FreeBSD 10.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    24 Februar: Neuer Committer: Jared McNeill (src)
+
+-    24 Februar: Neuer Committer: Stanislav Galabov (src)
+
+-    17 Februar:
+
+    Dag-Erling Smörgrav hat Informationen zu den Auswirkungen der
+    kürzlich entdeckten glibc-Sicherheitslücke (CVE-2015-7547) auf
+    FreeBSD bereitgestellt.
+
+-    17 Februar:
+
+    Das Entwicklerteam des Code-Analysetools PVS-Studio hat den
+    FreeBSD-Kernel untersucht und einen Artikel veröffentlicht, der die
+    am ehesten problematischen Codefragmente beschreibt.
+
+-    14 Februar:
+
+    Die zweite BETA-Version aus dem FreeBSD 10.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    6 Februar:
+
+    Die erste BETA-Version aus dem FreeBSD 10.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    powerpc, powerpc64 sowie sparc64 sind auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    2 Februar: Neuer Committer: Olivier Cochard-Labbé (ports)
+
+-    1 Februar:
+
+    Der Statusreport für Oktober-Dezember 2015 ist ab sofort verfügbar.
+
+Januar 2016
+
+-    18 Januar: Neuer Committer: Wojciech Macek (src)
+
+-    6 Januar:
+
+    Die FreeBSD Foundation hat ihren Standpunkt zu Mobbing in der
+    FreeBSD-Gemeinde klar gestellt.
+
+-    3 Januar: Das FreeBSD Core Team hat seinen Standpunkt zu Mobbing in
+    der FreeBSD-Gemeinde klar gestellt.
+
+Dezember 2015
+
+-    13 Dezember: Neuer Committer: Anish Gupta (src)
+
+November 2015
+
+-    13 November: Neuer Committer: Ravi Pokala (src)
+
+-    1 November: Neuer Committer: Michal Meloun (src)
+
+Oktober 2015
+
+-    26 Oktober: Neuer Committer: Jonathan T. Looney (src)
+
+-    25 Oktober:
+
+    Der Statusreport Juli-September 2015 ist verfügbar.
+
+-    23 Oktober: Neuer Committer: Svatopluk Kraus (src)
+
+-    21 Oktober: Neuer Committer: Kurt Lidl (src)
+
+September 2015
+
+-    24 September: Neuer Committer: Andriy Voskoboinyk (src)
+
+August 2015
+
+-    13 August:
+
+    FreeBSD 10.2-RELEASE ist verfügbar. Lesen Sie bitte die Release
+    Notes und Release Errata, bevor Sie mit der Installation beginnen,
+    um sich über aktuelle Neuigkeiten und/oder eventuelle Probleme im
+    Umgang mit 10.2-RELEASE zu informieren. Weitere Informationen zu
+    verschiedenen FreeBSD-Versionen finden Sie auf der Seite Release
+    Information.
+
+-    8 August: Erweiterte Commit-Privilegien: Marcelo Araujo (ports,
+    src)
+
+-    7 August:
+
+    Der dritte Release Candidate aus dem FreeBSD 10.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    1 August:
+
+    Der zweite Release Candidate aus dem FreeBSD 10.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+Juli 2015
+
+-    30 Juli: Erweiterte Commit-Privilegien: Allan Jude (src)
+
+-    27 Juli: Neuer Committer: Jason Unovitch (ports)
+
+-    26 Juli:
+
+    Der Statusreport April-Juni 2015 ist ab sofort verfügbar.
+
+-    24 Juli:
+
+    Der erste Release Candidate aus dem FreeBSD 10.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    17 Juli:
+
+    Die zweite BETA-Version aus dem FreeBSD 10.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    11 Juli:
+
+    Die erste BETA-Version aus dem FreeBSD 10.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    5 Juli: Neuer Committer: Conrad Meyer (src)
+
+Juni 2015
+
+-    26 Juni:
+
+    Ein neuer Artikel, FreeBSD Support for Leap Seconds, erklärt, wie
+    Schaltsekunden von FreeBSD gehandhabt werden. Die nächste
+    Schaltsekunde wird am 30. Juni 2015 um 23:59:60 UTC eingefügt.
+
+Mai 2015
+
+-    24 Mai: Neuer Committer: Bernard Spil (ports)
+
+April 2015
+
+-    30 April:
+
+    Der Statusreport für die Monate Januar-März 2015 ist verfügbar.
+
+-    27 April: Neuer Committer: Mariusz Zaborski (src)
+
+-    21 April: Neuer Committer: Michael Moll (ports)
+
+-    2 April: Erweiterte Commit-Privilegien: Mathieu Arnold (ports, doc)
+
+März 2015
+
+-    31 März: Neuer Committer: Matthew Ahrens (src)
+
+-    22 März: Neuer Committer: Kristof Provost (src)
+
+-    8 März: Neuer Committer: Eric van Gyzen (src)
+
+-    8 März: Neuer Committer: Jason Harmening (src)
+
+Februar 2015
+
+-    11 Februar: Neuer Committer: Wei Hu (src)
+
+Januar 2015
+
+-    19 Januar: Neuer Committer: Jan Beich (ports)
+
+-    15 Januar:
+
+    Der Statusreport für die Monate Oktober bis Dezember 2014 ist ab
+    sofort verfügbar.
+
+Dezember 2014
+
+-    14 Dezember: Neuer Committer: Muhammad Moinur Rahman (ports)
+
+-    14 Dezember: Neuer Committer: Eric Joyner (src)
+
+November 2014
+
+-    14 November:
+
+    FreeBSD 10.1-RELEASE ist ab sofort verfügbar. Lesen Sie bitte die
+    Release Notes sowie die Release Errata, bevor Sie mit der
+    Installation beginnen, um sich über aktuelle Neuigkeiten und/oder
+    eventuelle Probleme im Umgang mit 10.1-RELEASE zu informieren.
+    Weitere Informationen zu verschiedenen FreeBSD-Versionen finden Sie
+    auf der Seite Release Information.
+
+-    2 November:
+
+    Der vierte Release Candidate aus dem FreeBSD 10.1-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    2 November:
+
+    FreeBSD 1.0, das erste Release von FreeBSD wurde auf den Tag genau
+    heute vor 21 Jahren am 2. November 1993 veröffentlicht. Die
+    originale Ankündigung finden Sie hier.
+
+Oktober 2014
+
+-    23 Oktober:
+
+    Der dritte Release Candidate aus dem FreeBSD 10.1-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    23 Oktober: Neuer Committer: Björn Heidotting (doc)
+
+-    14 Oktober:
+
+    Der Statusreport für die Monate Juli-September 2014 ist verfügbar.
+
+-    13 Oktober:
+
+    Der zweite Release Candidate aus dem FreeBSD 10.1-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    12 Oktober: Neuer Committer: Andrew Rybchenko (src)
+
+-    4 Oktober:
+
+    Der erste Release Candidate aus dem FreeBSD 10.1-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+September 2014
+
+-    28 September:
+
+    Die dritte BETA-Version aus dem FreeBSD 10.1-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    24 September: Neuer Committer: Julien Charbon (src)
+
+-    21 September:
+
+    Die zweite BETA-Version aus dem FreeBSD 10.1-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+-    14 September:
+
+    Die erste BETA-Version aus dem FreeBSD 10.1-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, armv6, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD-Spiegelservern vorhanden.
+
+August 2014
+
+-    21 August:
+
+    Alles startete am 21. August 1994 mit dem folgenden Commit von
+    Jordan Hubbard:
+
+    "Commit my new ports make macros. Still not 100% complete yet by any
+    means but fairly usable at this stage."
+
+    Um diesen Anlass zu feiern, haben wir ein Video erstellt.
+
+-    14 August: Neuer Committer: Alonso Schaich (ports)
+
+-    10 August: Neuer Committer: Dan Langille (ports)
+
+Juli 2014
+
+-    31 Juli:
+
+    Wir freuen uns, bekanntgeben zu dürfen, dass wir unseren Newsletter
+    für das erste Halbjahr 2014 veröffentlicht haben. Lesen Sie den
+    Newsletter, um sich darüber zu informieren, wie die Foundation dabei
+    hilft, FreeBSD zum besten verfügbaren Betriebssystem zu machen.
+
+    Informieren Sie sich über von uns gesponserte Entwicklungsprojekte
+    und Konferenzen sowie über Entwickler- und Verkäufertreffen zur
+    direkten Kommunikation, über den Stand unserer Spendenkampagne und
+    vieles andere mehr.
+
+    Der Newsletter für das erste Halbjahr 2013 ist ab sofort hier
+    verfügbar.
+
+-    27 Juli: Neuer Committer: Ngie Cooper (src)
+
+-    24 Juli:
+
+    Der Statusreport für die Monate April bis Juni 2014 mit 24 Einträgen
+    ist ab sofort verfügbar.
+
+-    16 Juli:
+
+    Um das Upgrade von FreeBSD 9.1 und 9.2 auf FreeBSD 9.3 zu
+    erleichtern, wurde das EOL (End-of-Life)-Datum für FreeBSD 9.2 auf
+    den 31. Dezember 2014 nach hinten verschoben.
+
+-    16 Juli:
+
+    FreeBSD 9.3-RELEASE is verfügbar. Bitte lesen Sie die Release Notes
+    sowie die Release Errata, bevor Sie mit der Installation beginnen,
+    um sich über aktuelle Neuigkeiten und/oder eventuelle Probleme im
+    Umgang mit 9.3-RELEASE zu informieren. Weitere Informationen zu
+    verschiedenen FreeBSD-Versionen finden Sie auf der Seite Release
+    Information.
+
+-    9 Juli:
+
+    Das FreeBSD Core Team freut sich, bekanntgeben zu dürfen, dass
+    Matthew Seaman seine Arbeit als Core Team Secretary aufgenommen hat.
+
+-    9 Juli:
+
+    Das FreeBSD Project freut sich, das Ergebnis der Wahl des neuen Core
+    Teams 2014 bekanntgeben zu dürfen. Das FreeBSD Core Team bildet den
+    "Vorstand" des Projekts und ist für die Aufnahme neuer
+    src-Committer, die Klärung von Meinungsverschiedenheiten unter den
+    Committern, Politik und Verwaltung des Projekts sowie die
+    Einrichtung von Unter-Komitees für verschiedene Aufgabenbereiche
+    (Security Officer, Release Engineers, Port Managers, Webmasters und
+    andere mehr) verantwortlich. Seit 2000 wird das Core Team alle zwei
+    Jahre demokratisch durch die aktiven FreeBSD Committer gewählt.
+
+    Weitere Informationen zur Wahl (sowie zu den gewählten Mitgliedern
+    des Core Teams) finden Sie in der offiziellen Ankündigung.
+
+-    6 Juli:
+
+    Der dritte Release Candidate aus dem FreeBSD-9.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    4 Juli:
+
+    Für Benutzer, die die Option WITH_NEW_XORG in Ports benötigen,
+    wurden neue temporäre pkg(8)-Repositories angelegt. Diese beinhalten
+    nur die von dieser Option betroffenen Ports. Für weitere
+    Informationen lesen Sie bitte die offizielle Ankündigung.
+
+Juni 2014
+
+-    28 Juni:
+
+    Der zweite Release Candidate aus dem FreeBSD-9.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    21 Juni:
+
+    Der erste Release Candidate aus dem FreeBSD-9.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    17 Juni: Neuer Committer: Bartek Rutkowski (ports)
+
+-    14 Juni:
+
+    Die dritte Betaversion aus dem FreeBSD-9.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    11 Juni: Neuer Committer: Stephen Hurd (ports)
+
+-    7 Juni:
+
+    Die zweite Betaversion aus dem FreeBSD-9.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+-    1 Juni:
+
+    Die erste Betaversion aus dem FreeBSD-9.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD-Spiegelservern vorhanden.
+
+Mai 2014
+
+-    29 Mai: Neuer Committer: Patrick Kelsey (src)
+
+-    17 Mai: Neuer Committer: Allan Jude (doc)
+
+-    7 Mai: Neuer Committer: Stephen McConnell (src)
+
+April 2014
+
+-    24 April: Neuer Committer: Kurt Jaeger (ports)
+
+-    17 April:
+
+    Der Statusreport für die Monate Januar bis März 2014 mit 41
+    Einträgen ist ab sofort verfügbar.
+
+-    7 April: Neuer Committer: Johannes Jost Meixner (ports)
+
+März 2014
+
+-    11 März:
+
+    Das FreeBSD Project freut sich, bekanntgeben zu dürfen, dass es auch
+    2014 an Google's Summer of Code-Programm teilnimmt. Durch dieses
+    Programm wird die Arbeit von Studenten im Rahmen von Open
+    Source-Projekten gefördert. Das FreeBSD Project nimmt bereits zum
+    zehnten Mal hintereinander an diesem Programm teil und hat seit der
+    ersten Teilnahme 2005 mehr als 160 Studenten erfolgreich durch deren
+    Arbeiten begleitet.
+
+    Zu den erfolgreich abgeschlossenen Projekten gehören Verbesserungen
+    an der Linux-ABI-Emulation, NFSv4 ACLs, TCP-Regressionstests, die
+    Unterstützung für das FUSE-Dateisytem sowie zahlreiche andere
+    Projekte. Viele Studenten, die an diesem Programm teilnahmen, sind
+    inzwischen aktive FreeBSD-Entwickler und/oder nehmen (nicht zuletzt
+    dank der Unterstützung der FreeBSD Foundation) weiterhin aktiv an
+    verschiedenen FreeBSD-Veranstaltungen auf der ganzen Welt teil.
+
+    Wir laden alle Studenten ein, während des Sommers gegen Bezahlung an
+    der Weiterentwicklung von FreeBSD zu arbeiten! Weitere Informationen
+    zu möglichen Projektvorschlägen sowie zum Ablauf finden sich auf der
+    Seite FreeBSD Summer Projects.
+
+Februar 2014
+
+-    10 Februar:
+
+    Wir freuen uns, bekanntgeben zu dürfen, dass die erste Ausgabe des
+    FreeBSD Journals erschienen ist! Dabei handelt es sich um ein neues
+    Online-Journal, das von der FreeBSD Foundation herausgegeben wird
+    und sich ausschließlich mit FreeBSD beschäftigt. Klicken Sie hier,
+    um herauszufinden, wie Sie die erste Ausgabe beziehen können (deren
+    Schwerpunkt auf FreeBSD 10 liegt).
+
+Januar 2014
+
+-    25 Januar:
+
+    Der Statusreport für die Monate Oktober bis Dezember 2013 mit 37
+    Einträgen ist ab sofort verfügbar.
+
+-    23 Januar: Neuer Committer: Rodrigo Osorio (ports)
+
+-    21 Januar: Neuer Committer: Tycho Nightingale (src)
+
+-    21 Januar: Neuer Committer: Michael Gmelin (ports)
+
+-    20 Januar:
+
+    FreeBSD 10.0-RELEASE ist verfügbar. Lesen bitte unbedingt die
+    Release Notes und die Release Errata, bevor Sie mit der Installation
+    von 10.0 beginnen. Weitere Informationen zu verschiedenen
+    FreeBSD-Versionen finden Sie auf der Seite Release Information.
+
+-    20 Januar: Erweiterte Commit-Privilegien: Jason Helfman (ports,
+    doc)
+
+-    15 Januar: Erweiterte Commit-Privilegien: Steven Kreuzer (ports,
+    doc)
+
+-    13 Januar: Zurückgekehrter Committer: Bruce A. Mah (ports)
+
+-    10 Januar: Neuer Committer: Thomas Zander (ports)
+
+-    9 Januar:
+
+    Der fünfte Release Candidate aus dem FreeBSD-10.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD Spiegelservern vorhanden.
+
+-    2 Januar:
+
+    Der vierte Release Candidate aus dem FreeBSD-10.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD Spiegelservern vorhanden.
+
+Dezember 2013
+
+-    26 Dezember:
+
+    Der dritte Release Candidate aus dem FreeBSD-10.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD Spiegelservern vorhanden.
+
+-    18 Dezember: Erweiterte Commit-Privilegien: Ganbold Tsagaankhuu
+    (doc, src)
+
+-    16 Dezember: Neuer Committer: Jonathan Chu (ports)
+
+-    16 Dezember: Erweiterte Commit-Privilegien: Bryan Drewery (ports,
+    src)
+
+-    16 Dezember:
+
+    Der zweite Release Candidate aus dem FreeBSD-10.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD Spiegelservern vorhanden.
+
+-    9 Dezember:
+
+    Der erste Release Candidate aus dem FreeBSD-10.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD Spiegelservern vorhanden.
+
+-    9 Dezember:
+
+    Ein Ein Statusreport mit den Ergebnissen des EuroBSDcon 2013 FreeBSD
+    Developer Summits mit 13 Einträgen ist verfügbar.
+
+-    3 Dezember:
+
+    Die vierte BETA-Version aus dem FreeBSD-10.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD Spiegelservern vorhanden.
+
+November 2013
+
+-    27 November: Neuer Committer: Roger Pau Monné (src)
+
+-    8 November: Neuer Committer: Alexey Degtyarev (ports)
+
+-    5 November:
+
+    Die dritte BETA-Version aus dem FreeBSD-10.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD Spiegelservern vorhanden.
+
+-    2 November: Neuer Committer: Julio Merino (src)
+
+Oktober 2013
+
+-    30 Oktober:
+
+    Offizielle Binärpakete sind ab sofort für die FreeBSD-Versionen 8.3,
+    8.4, 9.1, 9.2, 10.0 sowie head verfügbar. Lesen Sie bitte die
+    offizielle Ankündigung für weitere Informationen.
+
+-    28 Oktober:
+
+    Die zweite BETA-Version aus dem FreeBSD-10.0-Releasezyklus ist nun
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD Spiegelservern vorhanden.
+
+-    20 Oktober:
+
+    Der Statusreport für die Monate Juli bis September 2013 mit 30
+    Einträgen ist ab sofort verfügbar.
+
+-    14 Oktober:
+
+    Die erste BETA-Version aus dem FreeBSD-10.0-Releasezyklus ist nun
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD Spiegelservern vorhanden.
+
+-    9 Oktober: Neuer Committer: Eric Davis (src)
+
+-    7 Oktober:
+
+    Die fünfte ALPHA-Version aus dem FreeBSD-10.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD Spiegelservern vorhanden.
+
+September 2013
+
+-    30 September:
+
+    FreeBSD 9.2-RELEASE ist verfügbar. Lesen Sie unbedingt die Release
+    Notes sowie die Release Errata, bevor Sie mit der Installation
+    beginnen, um sich über aktuelle Neuigkeiten und/oder eventuelle
+    Probleme im Umgang mit 9.2-RELEASE zu informieren. Weitere
+    Informationen zu verschiedenen FreeBSD-Versionen finden Sie auf der
+    Seite Release Information.
+
+-    29 September:
+
+    Die vierte ALPHA-Version aus dem FreeBSD-10.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc sowie sparc64 sind inzwischen auf den meisten FreeBSD
+    Spiegelservern vorhanden.
+
+-    23 September: Neuer Committer: Danilo Egêa Gondolfo (ports)
+
+-    18 September:
+
+    Die zweite ALPHA-Version aus dem FreeBSD-10.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc sowie sparc64 sind inzwischen auf den meisten FreeBSD
+    Spiegelservern vorhanden.
+
+-    13 September:
+
+    Die erste ALPHA-Version aus dem FreeBSD-10.0-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc sowie sparc64 sind inzwischen auf den meisten FreeBSD
+    Spiegelservern vorhanden.
+
+-    12 September:
+
+    Der vierte Release Candidate aus dem FreeBSD-9.2 Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD Spiegelservern vorhanden.
+
+-    2 September: Neuer Committer: Ruslan Bukin (src)
+
+-    2 September: Neuer Committer: Zbigniew Bodek (src)
+
+August 2013
+
+-    26 August:
+
+    Der dritte Release Candidate aus dem FreeBSD-9.2 Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD Spiegelservern vorhanden.
+
+-    16 August:
+
+    Der zweite Release Candidate aus dem FreeBSD-9.2 Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD Spiegelservern vorhanden.
+
+-    6 August:
+
+    Wir freuen uns, bekanntgeben zu dürfen, dass wir unseren Newsletter
+    für das erste Halbjahr 2013 veröffentlicht haben. Lesen Sie den
+    Newsletter, um sich darüber zu informieren, wie die Foundation dabei
+    hilft, FreeBSD zum besten verfügbaren Betriebssystem zu machen.
+
+    Informieren Sie sich über von uns gesponserte Entwicklungsprojekte
+    und Konferenzen sowie über Entwickler- und Verkäufertreffen zur
+    direkten Kommunikation, über den Stand unserer Spendenkampagne und
+    vieles andere mehr.
+
+    Der Newsletter für das erste Halbjahr 2013 ist ab sofort hier
+    verfügbar.
+
+-    5 August:
+
+    Der erste Release Candidate aus dem FreeBSD-9.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD Spiegelservern vorhanden.
+
+Juli 2013
+
+-    31 Juli: Neuer Committer: Rusmir Dusko (ports)
+
+-    29 Juli:
+
+    Die zweite Betaversion aus dem FreeBSD-9.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, powerpc64
+    sowie sparc64 sind inzwischen auf den meisten FreeBSD Spiegelservern
+    vorhanden.
+
+-    22 Juli:
+
+    Die erste Betaversion aus dem FreeBSD-9.2-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386 sowie ia64
+    sind inzwischen auf den meisten FreeBSD Spiegelservern vorhanden.
+
+-    16 Juli:
+
+    Der Statusreport für die Monate April bis Juni 2013 mit 33 Einträgen
+    ist verfügbar.
+
+-    4 Juli: Neuer Committer: John Marino (ports)
+
+-    3 Juli: Neuer Committer: Luiz Otavio O Souza (src)
+
+-    2 Juli:
+
+    Ein Statusreport mit den Ergebnissen des BSDCan 2013 FreeBSD
+    Developer Summits mit 6 Einträgen ist verfügbar.
+
+Juni 2013
+
+-    25 Juni: Neuer Committer: Mark Felder (ports)
+
+-    19 Juni:
+
+    FreeBSD ist seit heute 20 Jahre alt. Am 19. Juni 1993 kündigten
+    Jordan Hubbard, Rod Grimes sowie and David Greenman die Entwicklung
+    eines auf BSD 4.3 basierenden Betriebssystems an.
+
+    FreeBSD 1.0 basiert auf 386BSD 0.1 von Bill und Lynne Jolitz und
+    wurde im November 1993 veröffentlicht. Als Projektziel wurde die
+    Entwicklung eines schnellen, stabilen und zuverlässigen
+    Serverbetriebssystems für i386-Systeme angegeben.
+
+    Seit damals hat sich FreeBSD zur Basis von unzähligen Produkten
+    weiterentwickelt und unterstützt nun auch 64-Bit-Architekturen,
+    eingebundene Geräte sowie Desktopbenutzer.
+
+-    11 Juni: Neuer Committer: Veniamin Gvozdikov (ports)
+
+-    7 Juni:
+
+    FreeBSD 8.4-RELEASE ist verfügbar. Lesen Sie unbedingt die Release
+    Notes (ausführliche Version) sowie die Release Errata, bevor Sie mit
+    der Installation beginnen, um sich über aktuelle Neuigkeiten
+    und/oder eventuelle Probleme im Umgang mit 8.4-RELEASE zu
+    informieren. Weitere Informationen zu verschiedenen
+    FreeBSD-Versionen finden Sie auf der Seite Release Information.
+
+-    4 Juni: Erweiterte Commit-Privilegien: Glen Barber (doc, ports,
+    src)
+
+Mai 2013
+
+-    27 Mai: Erweiterte Commit-Privilegien: Chris Rees (doc, ports)
+
+-    14 Mai:
+
+    Sechs Monate sind seit dem Angriffsversuch auf die
+    FreeBSD-Infrastruktur vergangen, als Folge dessen die Produktion von
+    Binärpakete vorübergehend eingestellt werden musste. Wir freuen uns
+    daher, bekanntgeben zu dürfen, dass nun alle Dienste (inklusive der
+    Produktion von Binärpaketen) vollständig wiederhergestellt wurden.
+
+    Lesen Sie dazu bitte auch die offizielle Ankündigung.
+
+-    12 Mai:
+
+    Der Statusreport für die Monate Januar bis März 2013 mit 31
+    Einträgen ist ab sofort verfügbar.
+
+-    9 Mai:
+
+    Die FreeBSD Foundation freut sich, bekanntgeben zu dürfen, dass Ed
+    Maste ab sofort in Teilzeit als Director of Project Development für
+    die FreeBSD Foundation tätig ist. Ed war die zwei letzten Jahre im
+    Vorstand der Foundation und hat den Vorstand verlassen, um seinen
+    neuen Aufgabenbereich zu übernehmen.
+
+    Weitere Informationen zu dieser Neubesetzung finden Sie hier.
+
+-    8 Mai:
+
+    Der dritte Release Candidate aus dem FreeBSD-8.4-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386 sowie pc98
+    sind inzwischen auf den meisten FreeBSD Spiegelservern vorhanden.
+
+April 2013
+
+-    29 April:
+
+    Die FreeBSD Foundation freut sich, bekanntgeben zu dürfen, dass mit
+    Edward Tomasz Napiera?a ein weiterer technischer Mitarbeiter in
+    Vollzeit für die Foundation tätig sein wird. Damit setzt die
+    Foundation die für 2013 geplanten Investitionen in Personal fort.
+
+    Weitere Informationen hierzu finden Sie hier.
+
+-    24 April: Neuer Committer: Alan Somers (src)
+
+-    24 April:
+
+    Das FreeBSD Project freut sich, bekanntgeben zu dürfen, das es auch
+    dieses Jahr an Google's Summer of Code-Programm teilnimmt. Durch
+    dieses Programm wird die Arbeit von Studenten im Rahmen von Open
+    Source-Projekten gefördert. Das FreeBSD Project nimmt bereits zum
+    neunten Mal hintereinander an diesem Programm teil und hat seit der
+    ersten Teilnahme 2005 mehr als 150 Studenten erfolgreich durch deren
+    Arbeiten begleitet.
+
+    Zu den erfolgreich abgeschlossenen Projekten gehören Verbesserungen
+    an der Linux-ABI-Emulation, NFSv4 ACLs, TCP-Regressionstests, die
+    Unterstützung für das FUSE-Dateisytem sowie zahlreiche andere
+    Projekte. Viele Studenten, die an diesem Programm teilnahmen, sind
+    inzwischen aktive FreeBSD-Entwickler und/oder nehmen (nicht zuletzt
+    dank der Unterstützung der FreeBSD Foundation) weiterhin aktiv an
+    verschiedenen FreeBSD-Veranstaltungen auf der ganzen Welt teil.
+
+    Wir laden alle Studenten ein, während des Sommers gegen Bezahlung an
+    der Weiterentwicklung von FreeBSD zu arbeiten! Weitere Informationen
+    zu möglichen Projektvorschlägen sowie zum Ablauf finden sich auf der
+    Seite FreeBSD Summer Projects.
+
+-    22 April:
+
+    Der zweite Release Candidate aus dem FreeBSD-8.4-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386 sowie pc98
+    sind inzwischen auf den meisten FreeBSD Spiegelservern vorhanden.
+
+-    18 April: Erweiterte Commit-Privilegien: Cy Schubert (src, ports)
+
+-    12 April: Neuer Committer: Hiren Panchasara (src)
+
+-    10 April:
+
+    Der erste Release Candidate aus dem FreeBSD-8.4-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386 sowie pc98
+    sind inzwischen auf den meisten FreeBSD Spiegelservern vorhanden.
+
+-    3 April: Erweiterte Commit-Privilegien: Antoine Brodin (src, ports)
+
+-    1 April: Neuer Committer: William Grzybowski (ports)
+
+März 2013
+
+-    27 März: Erweiterte Commit-Privilegien: Tijl Coosemans (src, ports)
+
+-    22 März:
+
+    Die erste BETA-Version aus dem FreeBSD-8.4-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386 sowie pc98
+    sind inzwischen auf den meisten FreeBSD Spiegelservern vorhanden.
+
+-    14 März:
+
+    Die FreeBSD Foundation freut sich, bekanntgeben zu dürfen, dass
+    Konstantin Belousov als erster technischer Mitarbeiter in Vollzeit
+    für die Foundation tätig sein wird. Dies ist ein wichtiger
+    Meilenstein auf unserem Weg, FreeBSD auch 2013 zu unterstützen.
+
+    Weitere Informationen hierzu finden Sie hier.
+
+-    12 März: Neues Mitglied im Ports Management Team: Bryan Drewery
+
+-    3 März:
+
+    Der Statusreport für die Monate Oktober bis Dezember 2012 mit 27
+    Einträgen ist verfügbar.
+
+-    3 März:
+
+    Der Statusreport für die Monate Juli bis September 2012 mit 12
+    Einträgen ist verfügbar.
+
+Februar 2013
+
+-    10 Februar: Neuer Committer: Po-Chien Lin (ports)
+
+-    1 Februar: Neuer Committer: Thomas-Martin Seck (ports)
+
+Januar 2013
+
+-    23 Januar: Neuer Committer: Achim Leubner (src)
+
+-    22 Januar: Neuer Committer: Dru Lavigne (doc)
+
+-    16 Januar: Neuer Committer: Carl Delsey (src)
+
+-    15 Januar: Erweiterte Commit-Privilegien: René Ladan (ports, full
+    doc/www)
+
+-    14 Januar: Neuer Committer: David Naylor (ports)
+
+-    13 Januar:
+
+    Der Statusreport für die Monate April bis Juni 2012 mit 17 Einträgen
+    ist ab sofort verfügbar.
+
+-    10 Januar:
+
+    Die Entwicklung von FreeBSD-Ports erfolgt seit einiger Zeit
+    ausschließlich in Subversion. Ab 28. Februar 2013 wird daher der
+    FreeBSD-Portsbaum nicht mehr nach CVS exportiert werden. Ab diesem
+    Zeitpunkt wird es nicht mehr möglich sein, den Portsbaum via CVS,
+    CVSup oder csup(1) zu aktualisieren. Anwendern, die diese Programme
+    derzeit noch nutzen, wird empfohlen, künftig portsnap(8)
+    einzusetzen. Alternativ können Sie Subversion auch direkt verwenden.
+    Weitere Informationen zu diesem Thema finden sich in der offiziellen
+    Ankündigung auf der Mailingliste freebsd-ports-announce.
+
+    Eine Anleitung zur Migration von CVSup oder csup(1) nach portsnap(8)
+    finden Sie im FreeBSD-Handbuch.
+
+-    8 Januar:
+
+    Wir freuen uns, Ihnen unsere nächste Geschichte aus der Reihe "Faces
+    of FreeBSD" präsentieren zu können. Diese Reihe erlaubt es uns zu
+    zeigen, wie wir verschiedene Personen bei Ihrer Arbeit an/für
+    FreeBSD unterstützen. Diese Unterstützung besteht beispielsweise in
+    der Finanzierung von Entwicklungsprojekten, der Organisation von
+    Konferenzen, der Übernahme von Reisekosten sowie der allgemeinen
+    Förderung von FreeBSD.
+
+    Diesmal stellen wir Ihnen Thomas Abthorpe vor. Wir haben es ihm
+    ermöglicht, an der BSDCan 2009, 2011 und 2012 teilzunehmen, indem
+    wir uns an seinen Reisekosten beteiligt haben. Lesen Sie seine
+    Geschichte hier.
+
+-    7 Januar: Neuer Committer: Ian Lepore (src)
+
+Dezember 2012
+
+-    31 Dezember:
+
+    FreeBSD 9.1-RELEASE ist ab sofort verfügbar. Lesen Sie unbedingt die
+    Release Notes (ausführliche Version) sowie die Release Errata, bevor
+    Sie mit der Installation beginnen, um sich über aktuelle Neuigkeiten
+    und/oder eventuelle Probleme im Umgang mit 9.1-RELEASE zu
+    informieren. Weitere Informationen zu verschiedenen
+    FreeBSD-Versionen finden Sie auf der Seite Release Information.
+
+-    24 Dezember: Neuer Committer: Kubilay Kocak (ports)
+
+-    20 Dezember:
+
+    Die FreeBSD Foundation hat ihren End-of-Year Newsletter für das Jahr
+    2012 veröffentlicht.
+
+-    18 Dezember: Neuer Committer: Mark Johnston (src)
+
+-    18 Dezember:
+
+    Das PC-BSD Team hat PC-BSD 9.1 veröffentlicht.
+
+-    18 Dezember: Neuer Committer: Steven Hartland (src)
+
+-    17 Dezember:
+
+    Wir freuen uns, Ihnen unsere nächste Geschichte aus der Reihe "Faces
+    of FreeBSD" präsentieren zu können. Diese Reihe erlaubt es uns zu
+    zeigen, wie wir verschiedene Personen bei Ihrer Arbeit an/für
+    FreeBSD unterstützen. Diese Unterstützung besteht beispielsweise in
+    der Finanzierung von Entwicklungsprojekten, der Organisation von
+    Konferenzen, der Übernahme von Reisekosten sowie der allgemeinen
+    Förderung von FreeBSD.
+
+    Diesmal stellen wir Ihnen Dan Langille vor. Wir unterstützen ihn
+    seit 2006 durch das Sponsering der jährlichen BSDCan. Lesen Sie
+    seine Geschichte hier.
+
+-    12 Dezember:
+
+    Aufmerksame Leser des Blogs der FreeBSD Foundation wissen, dass wir
+    letzte Woche mit unserer jährlichen Spendenaktion begonnen haben,
+    mit der wir in der Regel mehr als 50 Prozent aller Spenden erzielen.
+    Weitere Informationen zu dieser Aktion finden Sie hier.
+
+-    10 Dezember:
+
+    Wissen Sie, wie die FreeBSD Foundation die FreeBSD-Gemeinde im
+    letzten Jahr unterstützt hat? Im Rahmen unserer jährlichen
+    Spendenkampagne stellen wir Ihnen auf unserer Webseite, in unserem
+    Blog sowie auf Facebook verschiedene Personen vor, die wir durch die
+    Finanzierung von Entwicklungsprojekten, die Organisation von
+    Konferenzen, die Übernahme von Reisekosten sowie die generelle
+    Förderung von FreeBSD unterstützt haben. Weitere Information finden
+    Sie hier.
+
+-    5 Dezember:
+
+    Ihre Spenden haben uns dabei geholfen, FreeBSD zum besten derzeit
+    verfügbaren Betriebssystem zu machen. Indem Sie die FreeBSD
+    Foundation unterstützen, helfen Sie uns dabei, FreeBSD als
+    leistungsfähiges, sicheres und stabiles Betriebssystem
+    weiterzuentwickeln.
+
+    Dank Personen wie Ihnen konnte die FreeBSD Foundation das FreeBSD
+    Project sowie die FreeBSD-Gemeinde in den letzten zwölf Jahren
+    kontinuierlich unterstützen. Weitere Informationen zu unserer
+    jährlichen Spendenkampagne finden Sie hier.
+
+-    5 Dezember:
+
+    Das FreeBSD Project hat Google Analytics aktiviert, um anonymisierte
+    Statistiken über die Nutzung der Webseiten zu erhalten. Weitere
+    Informationen zu dieser Umstellung finden Sie in der offiziellen
+    Ankündigung.
+
+November 2012
+
+-    26 November: Neuer Committer: Takuya ASADA (src)
+
+-    25 November: Neuer Committer: Barbara Guida (ports)
+
+-    17 November:
+
+    Am 11. November 2012 wurde ein unerlaubter Zugriff auf zwei Systeme
+    innerhalb des FreeBSD.org-Clusters entdeckt. Wir konnten zwar keinen
+    Hinweis darauf finden, dass Dateien manipuliert wurden, dennoch
+    empfehlen wir allen Benutzern, den dazu erstellten Bericht zu lesen
+    und selbst zu entscheiden, ob Handlungsbedarf besteht.
+
+-    5 November: Neuer Committer: Bryan Venteicher (src)
+
+-    4 November: Neuer Committer: Grzegorz Blach (ports)
+
+-    3 November:
+
+    Der dritte Release Candidate aus dem FreeBSD-9.1-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, sparc64
+    sowie powerpc64 sind inzwischen auf den meisten FreeBSD
+    Spiegelservern vorhanden.
+
+Oktober 2012
+
+-    24 Oktober: Erweiterte Commit-Privilegien: Erwin Lansing (src,
+    ports)
+
+-    23 Oktober: Neuer Committer: Simon J. Gerraty (src)
+
+-    20 Oktober: Erweiterte Commit-Privilegien: Eitan Adler (src, ports,
+    doc)
+
+-    19 Oktober: Neues Mitglied im Ports Management Team: Bernhard
+    Fröhlich
+
+-    10 Oktober:
+
+    Der zweite Release Candidate aus dem FreeBSD-9.1-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc sowie powerpc64 sind inzwischen auf den meisten FreeBSD
+    Spiegelservern vorhanden.
+
+September 2012
+
+-    15 September: Neuer Committer: Peter Jeremy (src)
+
+-    13 September: Neuer Committer: Edson Brandi (doc/pt_BR, www/pt_BR)
+
+-    10 September: Neuer Committer: Jason E. Hale (ports)
+
+August 2012
+
+-    23 August:
+
+    Der erste Release Candidate aus dem FreeBSD-9.1-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386, powerpc64
+    sowie sparc64 sind inzwischen auf den meisten FreeBSD Spiegelservern
+    vorhanden.
+
+-    21 August: Neuer Committer: Andrey Zonov (src)
+
+-    1 August: Neuer Committer: Bryan Drewery (ports)
+
+Juli 2012
+
+-    24 Juli:
+
+    Das FreeBSD Core Team freut sich, bekanntgeben zu dürfen, dass Gábor
+    Páli die Position des Core Team Secretary übernommen hat.
+
+-    16 Juli:
+
+    Die erste Testversion aus dem FreeBSD-9.1-Releasezyklus ist ab
+    sofort verfügbar. ISO-Images für die Architekturen amd64, i386,
+    powerpc64 sowie sparc64 sind inzwischen auf den meisten FreeBSD
+    Spiegelservern vorhanden.
+
+-    11 Juli:
+
+    Das FreeBSD Project freut sich, die Wahl des Core Teams 2012
+    bekanntgeben zu dürfen. Das FreeBSD Core Team bildet den "Vorstand"
+    des Projekts und ist für die Aufnahme neuer src-Committer, die
+    Klärung von Meinungsverschiedenheiten unter den Committern, Politik
+    und Verwaltung des Projekts sowie die Einrichtung von Unter-Komitees
+    für verschiedene Aufgabenbereiche (Security Officer, Release
+    Engineers, Port Managers, Webmasters und andere mehr)
+    verantwortlich. Seit 2000 wird das Core Team alle zwei Jahre
+    demokratisch durch die aktiven FreeBSD Committer gewählt.
+
+    Weitere Informationen zur Wahl (sowie eine Liste der neuen
+    Mitglieder des FreeBSD Core Teams) finden Sie in der offiziellen
+    Ankündigung.
+
+-    3 Juli: Neuer Committer: Niclas Zeising (doc/www, ports)
+
+Juni 2012
+
+-    19 Juni: Erweiterte Commit-Privilegien: Glen Barber (doc, ports)
+
+-    4 Juni: Neuer Committer: Mateusz Guzik (src)
+
+Mai 2012
+
+-    30 Mai: Neuer Committer: Jase Thew (ports)
+
+-    29 Mai: Neuer Committer: Olivier Duchateau (ports)
+
+-    28 Mai: Neuer Committer: Tom Judge (ports)
+
+-    12 Mai:
+
+    Der Statusreport für die Monate Januar bis März 2012 mit 27
+    Einträgen ist ab sofort verfügbar.
+
+April 2012
+
+-    26 April: Neuer Committer: Isabell Long (doc/www)
+
+-    22 April: Neuer Committer: Jeremie Le Hen (src)
+
+-    18 April:
+
+    FreeBSD 8.3-RELEASE ist erschienen. Lesen Sie bitte die Release
+    Notes und die Release Errata, bevor Sie mit der Installation
+    beginnen, um sich über aktuelle Neuigkeiten und/oder eventuelle
+    Probleme im Umgang mit 8.3-RELEASE zu informieren. Weitere
+    Informationen zu verschiedenen FreeBSD-Versionen finden Sie auf der
+    Seite Release Information.
+
+-    18 April: Neuer Committer: Devin Teske (src)
+
+-    15 April: Neuer Committer: Armin Pirkovitsch (ports)
+
+-    13 April: Neuer Committer: Monthadar Al Jaberi (src)
+
+-    12 April: Neuer Committer: Guido Falsi (ports)
+
+-    2 April:
+
+    Der zweite Release Candidate aus dem FreeBSD-8.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386 sowie pc98
+    sind inzwischen auf den meisten FreeBSD Spiegelservern verfügbar.
+
+März 2012
+
+-    23 März: Neuer Committer: Cherry G. Mathew (src)
+
+-    12 März: Neuer Committer: Benjamin Kaduk (doc/www)
+
+-    6 März:
+
+    Der erste Release Candidate aus dem FreeBSD-8.3-Releasezyklus ist
+    verfügbar. ISO-Images für die Architekturen amd64, i386 sowie pc98
+    sind inzwischen auf den meisten FreeBSD Spiegelservern verfügbar.
+
+-    1 März: Neuer Committer: Alex Kozlov (ports)
+
+Februar 2012
+
+-    20 Februar:
+
+    Die erste Testversion aus dem FreeBSD-8.3-Releasezyklus ist ab
+    sofort verfügbar. ISO-Images für die Plattformen amd64, i386 sowie
+    pc98 sind inzwischen auf den meisten FreeBSD Spiegelservern
+    vorhanden.
+
+-    16 Februar: Neuer Committer: Damjan Marion (src)
+
+-    16 Februar: Neuer Committer: Ben Gray (src)
+
+-    14 Februar: Erweiterte Commit-Privilegien: Sergey Kandaurov (src,
+    doc)
+
+-    7 Februar: Neuer Committer: Matthew Seaman (ports)
+
+Januar 2012
+
+-    27 Januar: Neuer Committer: Davide Italiano (src)
+
+-    27 Januar:
+
+    Der Statusreport für die Monate Oktober bis Dezember 2011 mit 32
+    Einträgen ist ab sofort verfügbar.
+
+-    12 Januar:
+
+    FreeBSD 9.0-RELEASE ist verfügbar. Lesen Sie bitte die Release Notes
+    und die Release Errata, bevor Sie mit der Installation beginnen, um
+    sich über aktuelle Neuigkeiten und/oder eventuelle Probleme im
+    Umgang mit 9.0-RELEASE zu informieren. Weitere Informationen zu
+    verschiedenen FreeBSD-Versionen finden Sie auf der Seite Release
+    Information.
+
+Dezember 2011
+
+-    16 Dezember: Neuer Committer: Jason Helfman (ports)
+
+-    9 Dezember:
+
+    Der dritte (und voraussichtlich letzte) Release Candidate aus dem
+    FreeBSD-9.0-Releasezyklus ist ab sofort verfügbar. ISO-Images für
+    die Architekturen amd64, i386, ia64, powerpc, powerpc64 sowie
+    sparc64 finden Sie wie immer auf unseren FreeBSD Spiegelservern.
+    Eine der zahlreichen neuen Funktionen in FreeBSD 9.0 ist das neue
+    Installationsprogramm. Wir bitten daher unser Nutzer, dieses zu
+    testen, und eine Neuinstallation durchzuführen. Alternativ ist es
+    aber auch möglich, ein System über freebsd-update(8) zu
+    aktualisieren.
+
+-    8 Dezember: Neuer Committer: Pedro Giffuni (src)
+
+-    2 Dezember: Neues Mitglied im Ports Management Team: Beat Gätzi
+
+November 2011
+
+-    30 November: Neuer Committer: Justin Hibbits (src)
+
+-    17 November:
+
+    Der zweite Release Candidate aus dem FreeBSD-9.0-Releasezyklus ist
+    ab sofort verfügbar. ISO-Images für die Architekturen amd64, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 finden Sie wie immer auf
+    unseren FreeBSD Spiegelservern. Eine der zahlreichen neuen
+    Funktionen in FreeBSD 9.0 ist das neue Installationsprogramm. Wir
+    bitten daher unser Nutzer, dieses zu testen, und eine
+    Neuinstallation durchzuführen. Alternativ ist es aber auch möglich,
+    ein System über freebsd-update(8) zu aktualisieren.
+
+-    12 November: Neuer Committer: Michael Scheidell (ports)
+
+-    11 November: Neuer Committer: David Chisnall (src)
+
+-    9 November: Neuer Committer: Ruslan Makhmatkhanov (ports)
+
+-    8 November:
+
+    Der Statusreport für die Monate Juli bis September 2011 mit 28
+    Einträgen ist ab sofort verfügbar.
+
+Oktober 2011
+
+-    23 Oktober:
+
+    Der erste Release Candidate aus dem FreeBSD-9.0-Releasezyklus ist ab
+    sofort verfügbar. ISO-Images für die Architekturen amd64, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 finden Sie wie immer auf
+    unseren FreeBSD Spiegelservern. Eine der zahlreichen neuen
+    Funktionen in FreeBSD 9.0 ist das neue Installationsprogramm. Wir
+    bitten daher unser Nutzer, dieses zu testen, und eine
+    Neuinstallation durchzuführen. Alternativ ist es aber auch möglich,
+    ein System über freebsd-update(8) zu aktualisieren.
+
+-    6 Oktober: Neuer Committer: Alexander V. Chernikov (src)
+
+September 2011
+
+-    28 September:
+
+    Die dritte BETA-Version aus dem FreeBSD-9.0-Releasezyklus ist ab
+    sofort verfügbar. ISO-Images für die Architekturen amd64, i386,
+    ia64, powerpc, powerpc64 sowie sparc64 sind inzwischen auf den
+    meisten FreeBSD Spiegelservern vorhanden. Eine der zahlreichen neuen
+    Funktionen in FreeBSD 9.0 ist das neue Installationsprogramm. Wir
+    bitten daher unser Nutzer, dieses zu testen, und eine
+    Neuinstallation durchzuführen.
+
+-    27 September: Neuer Committer: Jakub Klama (src)
+
+-    19 September: Neuer Committer: Gleb Kurtsou (src)
+
+-    18 September: Neuer Committer: Robert Millan (src)
+
+-    14 September: Neuer Committer: Warren Block (doc/www)
+
+-    14 September:
+
+    Der Statusreport für die Monate April bis Juni 2011 mit 36 Einträgen
+    ist ab sofort verfügbar.
+
+-    13 September: Neuer Committer: Carlo Strub (ports)
+
+-    7 September:
+
+    Die zweite BETA-Version aus dem FreeBSD-9.0-Releasezyklus ist nun
+    verfügbar. ISO-Images für die Architekturen amd64, i386, powerpc,
+    powerpc64 sowie sparc64 sind inzwischen auf den meisten FreeBSD
+    Spiegelservern vorhanden. Eine der zahlreichen neuen Funktionen in
+    FreeBSD 9.0 ist das neue Installationsprogramm. Wir bitten daher
+    unser Nutzer, dieses zu testen, und eine Neuinstallation
+    durchzuführen.
+
+August 2011
+
+-    22 August: Neuer Committer: Raphael Kubo da Costa (ports)
+
+-    17 August: Neuer Committer: Eitan Adler (ports)
+
+-    9 August:
+
+    Die FreeBSD Foundation hat ihren ersten Newsletter für 2011
+    veröffentlicht, in dem sie beschreibt, wie sie das FreeBSD Project
+    seit Jahresbeginn unterstützt hat.
+
+-    1 August:
+
+    Die erste BETA-Version aus dem FreeBSD-9.0-Releasezyklus ist nun
+    verfügbar. ISO-Images für die Architekturen amd64, i386, ia64,
+    powerpc, powerpc64 sowie sparc64 sind inzwischen auf den meisten
+    FreeBSD Spiegelservern vorhanden. Eine der zahlreichen neuen
+    Funktionen in FreeBSD 9.0 ist das neue Installationsprogramm. Wir
+    bitten daher unser Nutzer, dieses zu testen, und eine
+    Neuinstallation durchzuführen.
+
+Juli 2011
+
+-    17 Juli: Erweiterte Commit-Privilegien: Gavin Atkinson (src, doc)
+
+-    15 Juli: Neuer Committer: Ryan Steinmetz (ports)
+
+Juni 2011
+
+-    14 Juni: Neuer Committer: Grzegorz Bernacki (src)
+
+-    13 Juni: Neuer Committer: Stephen Montgomery-Smith (ports)
+
+-    11 Juni: Neuer Committer: Chris Rees (ports)
+
+-    6 Juni:
+
+    Die FreeBSD Foundation und iXsystems haben reine IPv6-Test-Images
+    für FreeBSD und PC-BSD bereitgestellt.
+
+-    6 Juni: Neuer Committer: Julien Laffaye (ports)
+
+Mai 2011
+
+-    25 Mai: Neuer Committer: Aleksandr Rybalko (src)
+
+-    18 Mai: Neuer Committer: Ben Laurie (src)
+
+-    12 Mai:
+
+    Das Ports Management Team freut sich bekanntgeben zu können, dass
+    Baptiste Daroussin als neues Mitglied in das Team aufgenommen wurde.
+
+April 2011
+
+-    27 April:
+
+    Der Statusreport für die Monate Januar bis März 2011 mit 34
+    Einträgen ist ab sofort verfügbar.
+
+    .
+
+März 2011
+
+-    29 März: Neuer Committer: Artem Belevich (src)
+
+-    27 März:
+
+    Das FreeBSD Project freut sich, bekanntgeben zu dürfen, das es auch
+    dieses Jahr an Google's Summer of Code-Programm teilnimmt. Durch
+    dieses Programm wird die Arbeit von Studenten im Rahmen von Open
+    Source-Projekten gefördert. Das FreeBSD Project nimmt bereits zum
+    siebten Mal hintereinander an diesem Programm teil und hat seit der
+    ersten Teilnahme 2005 mehr als 100 Studenten erfolgreich durch deren
+    Arbeiten begleitet.
+
+    Zu den erfolgreich abgeschlossenen Projekten gehören Verbesserungen
+    an der Linux-ABI-Emulation, NFSv4 ACLs, TCP-Regressionstests, die
+    Unterstützung für das FUSE-Dateisytem sowie zahlreiche andere
+    Projekte. Viele Studenten, die an diesem Programm teilnahmen, sind
+    inzwischen aktive FreeBSD-Entwickler und/oder nehmen (nicht zuletzt
+    dank der Unterstützung der FreeBSD Foundation) weiterhin aktiv an
+    verschiedenen FreeBSD-Veranstaltungen auf der ganzen Welt teil.
+
+    Wir laden alle Studenten ein, während des Sommers gegen Bezahlung an
+    der Weiterentwicklung von FreeBSD zu arbeiten! Weitere Informationen
+    zu möglichen Projektvorschlägen sowie zum Ablauf finden sich auf der
+    Seite FreeBSD Summer Projects.
+
+-    18 März: Neuer Committer: Sofian Brabez (ports)
+
+-    13 März: Neuer Committer: Pawel Pekala (ports)
+
+-    10 März: Das FreeBSD Ports Management Team freut sich, bekannt
+    geben zu dürfen, dass Thomas Abthorpe ab sofort Mitglied des Teams
+    ist.
+
+-    5 März: Neuer Committer: Steven G. Kargl (src)
+
+Februar 2011
+
+-    24 Februar:
+
+    FreeBSD 8.2-RELEASE wurde veröffentlicht. Lesen Sie bitte die
+    Release Notes und die Release Errata, bevor Sie mit der Installation
+    beginnen, um sich über aktuelle Neuigkeiten und/oder eventuelle
+    Probleme im Umgang mit 8.2-RELEASE zu informieren. Weitere
+    Informationen zu verschiedenen FreeBSD-Versionen finden Sie auf der
+    Seite Release Information.
+
+-    24 Februar:
+
+    FreeBSD 7.4-RELEASE wurde veröffentlicht. Lesen Sie bitte die
+    Release Notes und die Release Errata, bevor Sie mit der Installation
+    beginnen, um sich über aktuelle Neuigkeiten und/oder eventuelle
+    Probleme im Umgang mit 7.4-RELEASE zu informieren. Weitere
+    Informationen zu verschiedenen FreeBSD-Versionen finden Sie auf der
+    Seite Release Information.
+
+-    18 Februar: Erweiterte Commit-Privilegien: Martin Wilke (src,
+    ports, doc)
+
+-    3 Februar:
+
+    Die dritten (und voraussichtlich letzten) Release Candidates der
+    Releasezyklen von FreeBSD-7.4/8.2 sind ab sofort verfügbar. 8.2-RC3
+    steht für die Architekturen amd64, i386, ia64, pc98, powerpc, sowie
+    sparc64 bereit. 7.4-RC3 ist für die Architekturen amd64, i386, pc98,
+    sowie sparc64 verfügbar. ISO-Images für diese Architekturen stehen
+    inzwischen auf den meisten FreeBSD Spiegelservern zum Download
+    bereit. Weitere Informationen entnehmen Sie bitte der offiziellen
+    Ankündigung.
+
+Januar 2011
+
+-    25 Januar:
+
+    Der Statusreport für die Monate Oktober bis December 2010 mit 37
+    Einträgen ist ab sofort verfügbar.
+
+-    23 Januar:
+
+    Der zweite Release Candidate aus dem FreeBSD-7.4 Releasezyklus ist
+    ab sofort verfügbar. ISO-Images für Tier-1-Architekturen stehen
+    inzwischen auf den meisten FreeBSD Spiegelservern zum Download
+    bereit. Weitere Informationen entnehmen Sie bitte der offiziellen
+    Ankündigung.
+
+-    16 Januar:
+
+    Der zweite Release Candidate aus dem FreeBSD-8.2 Releasezyklus ist
+    ab sofort verfügbar. ISO-Images für Tier-1-Architekturen stehen
+    inzwischen auf den meisten FreeBSD Spiegelservern zum Download
+    bereit. Weitere Informationen entnehmen Sie bitte der offiziellen
+    Ankündigung.
+
+Dezember 2010
+
+-    27 Dezember:
+
+    Die ersten Release Candidates der Releasezyklen von FreeBSD-7.4/8.2
+    sind ab sofort verfügbar. ISO-Images für Tier-1-Architekturen stehen
+    inzwischen auf den meisten FreeBSD Spiegelservern zum Download
+    bereit. Weitere Informationen entnehmen Sie bitte der offiziellen
+    Ankündigung.
+
+-    16 Dezember:
+
+    Die FreeBSD Foundation hat ihren End-of-Year Newsletter
+    veröffentlicht, in dem sie beschreibt, wie sie das FreeBSD Project
+    und die FreeBSD-Gemeinde 2010 unterstützt hat.
+
+-    11 Dezember:
+
+    Die ersten Testversionen der Releasezyklen von FreeBSD-7.4/8.2 sind
+    ab sofort verfügbar. ISO-Images für Tier-1-Architekturen stehen
+    inzwischen auf den meisten FreeBSD Spiegelservern zum Download
+    bereit.
+
+-    7 Dezember: Neuer Committer: Florian Smeets (ports)
+
+November 2010
+
+-    15 November: Neuer Committer: Eygene Ryabinkin (ports)
+
+-    5 November: Neuer Committer: Zack Kirsch (src)
+
+Oktober 2010
+
+-    27 Oktober:
+
+    Der Statusreport für die Monate Juli bis September 2010 mit 55
+    Einträgen ist ab sofort verfügbar.
+
+-    16 Oktober: Neuer Committer: Frederic Culot (ports)
+
+-    7 Oktober: Neuer Committer: Jonathan Anderson (src)
+
+-    5 Oktober: Neuer Committer: Sergey Kandaurov (src)
+
+September 2010
+
+-    25 September: Neuer Committer: Ganael Laplanche (ports)
+
+-    21 September: Neuer Committer: Po-Chuan Hsieh (ports)
+
+-    5 September: Neuer Committer: Andreas Tobler (src)
+
+-    3 September: Neuer Committer: Steve Wills (ports)
+
+August 2010
+
+-    31 August: Neuer Committer: Glen Barber (full doc/www)
+
+-    30 August: Neuer Committer: Dimitry Andric (src)
+
+-    1 August: Neuer Committer: Oliver Hauer (ports)
+
+Juli 2010
+
+-    27 Juli:
+
+    Die FreeBSD Foundation hat ihren Newsletter für Juli 2010
+    veröffentlicht, in dem sie beschreibt, wie sie das FreeBSD Project
+    und die FreeBSD-Gemeinde in diesem Jahr bisher unterstützt hat.
+
+-    27 Juli: Neuer Committer: Baptiste Daroussin (ports)
+
+-    23 Juli:
+
+    FreeBSD 8.1-RELEASE ist ab sofort verfügbar. Bitte lesen Sie die
+    Release Notes sowie die Release Errata, bevor Sie die Installation
+    beginnen, um sich über aktuelle Neuigkeiten oder Probleme beim
+    Einsatz von FreeBSD 8.1 zu informieren. Weitere Informationen zu den
+    verschiedenen FreeBSD-Versionen finden Sie auf der Seite Release
+    Information.
+
+-    22 Juli:
+
+    Der Statusreport für die Monate April bis Juni 2010 mit 47 Einträgen
+    ist ab sofort verfügbar.
+
+-    21 Juli: Neuer Committer: Andrew Turner (src)
+
+-    20 Juli:
+
+    PC-BSD 8.1 ist erschienen. Bei PC-BSD handelt es sich um ein
+    erfolgreiches, auf FreeBSD basierendes Desktop-Betriebssystem,
+    dessen Ziel es ist, einen einfach zu verwendenden Desktop
+    bereitzustellen. Eine Liste aller neuen Funktionen bzw. aller
+    Aktualisierungen seit der letzten Version finden Sie hier.
+
+    Die neue Version kann von der Projektseite heruntergeladen oder als
+    DVD gekauft werden.
+
+-    17 Juli: Neuer Committer: Tijl Coosemans (src)
+
+-    15 Juli: Neuer Committer: Joseph S. Atkinson (ports)
+
+-    14 Juli:
+
+    Das FreeBSD Project freut sich, die Wahl des Core Teams 2010
+    bekanntgeben zu dürfen. Das FreeBSD Core Team bildet den "Vorstand"
+    des Projekts und ist für die Aufnahme neuer src-Committer, die
+    Klärung von Meinungsverschiedenheiten unter den Committern, Politik
+    und Verwaltung des Projekts sowie die Einrichtung von Unter-Komitees
+    für verschiedene Aufgabenbereiche (Security Officer, Release
+    Engineers, Port Managers, Webmasters und andere mehr)
+    verantwortlich. Seit 2000 wird das Core Team alle zwei Jahre
+    demokratisch durch die aktiven FreeBSD Committer gewählt.
+
+    Weitere Informationen zur Wahl (sowie eine Liste der neuen
+    Mitglieder des FreeBSD Core Teams) finden Sie in der offiziellen
+    Ankündigung.
+
+-    2 Juli:
+
+    Der zweite (und voraussichtlich letzte) Release Candidate aus dem
+    FreeBSD-8.1-Releasezyklus ist nun verfügbar. CD-ISO-Images für die
+    Architekturen amd64, i386, ia64, powerpc, sowie sparc64 sind
+    inzwischen auf den meisten FreeBSD Spiegelservern vorhanden. Lesen
+    Sie bitte auch die offizielle Ankündigung für weitere Informationen
+    zu dieser neuen Version.
+
+Juni 2010
+
+-    18 Juni:
+
+    Der erste Release Candidate aus dem FreeBSD-8.1-Releasezyklus ist
+    nun verfügbar. ISO-Images für Tier-1-Architekturen finden Sie wie
+    immer auf den verschiedenen FreeBSD Spiegelservern. Lesen Sie bitte
+    auch die offizielle Ankündigung für weitere Informationen zu dieser
+    neuen Version.
+
+-    10 Juni: Neuer Committer: Ashish SHUKLA (ports)
+
+-    9 Juni: Neuer Committer: Brendan Fabeny (ports)
+
+-    4 Juni: Neuer Committer: Matthew Fleming (src)
+
+-    3 Juni: Neuer Committer: Andrey V. Elsukov (src)
+
+-    3 Juni: Neuer Committer: Taras Korenko (doc/ru, www/ru)
+
+Mai 2010
+
+-    29 Mai:
+
+    Die erste BETA-Version des FreeBSD-8.1-Releasezyklus ist nun
+    verfügbar. ISO-Images für Tier-1-Architekturen finden Sie wie immer
+    auf den verschiedenen FreeBSD Spiegelservern.
+
+-    24 Mai:
+
+    Das FreeBSD Project hat erneut zahlreiche qualitativ hochwertige
+    Bewerbungen für eine Teilnahme an Google's Summer of Code erhalten.
+    Heuer wurden 18 Projektvorschläge ausgewählt, die im Rahmen dieses
+    Programms bearbeitet werden sollen. Bewerber, deren Projekte nicht
+    ausgewählt wurden, möchten wir daran erinnern, dass das FreeBSD
+    Project jederzeit dazu bereit ist, Studenten, die etwas über die
+    Entwicklung von Betriebssystemen lernen wollen, über die
+    Mailinglisten und Entwicklerforen des FreeBSD Projects zu
+    unterstützen.
+
+    Weitere Informationen finden Sie in der offiziellen Ankündigung, die
+    komplette Liste aller unterstützten Projekte hingegen im FreeBSD
+    Summer of Code Wiki. Die Arbeit an den verschiedenen Projekten hat
+    am 24. Mai 2010 begonnen. Wir möchten daher alle 18 neuen Studenten
+    herzlich in unserer Gemeinschaft willkommen heißen.
+
+-    19 Mai: Neuer Committer: Jayachandran C. (src)
+
+April 2010
+
+-    29 April: Erweiterte Commit-Privilegien: Martin Matuška (src,
+    ports)
+
+-    22 April:
+
+    Der Statusreport für die Monate Januar bis März 2010 mit 46
+    Einträgen ist ab sofort verfügbar.
+
+-    20 April: Neuer Committer: Randi Harper (src)
+
+-    19 April: Neuer Committer: Ryan Stone (src)
+
+-    14 April: Neuer Committer: Ana Kukec (src)
+
+-    11 April: Erweiterte Commit-Privilegien: René Ladan (doc-nl, ports)
+
+-    11 April: Neuer Committer: Sahil Tandon (ports)
+
+-    5 April: Neuer Committer: Giuseppe Pilichi (ports)
+
+-    4 April:
+
+    Das FreeBSD Project nimmt zum bereits sechsten Mal an Google's
+    Summer of Code-Programm teil. Wir laden alle Studenten ein, während
+    des Sommers gegen Bezahlung an der Weiterentwicklung von FreeBSD zu
+    arbeiten! Weitere Informationen (sowie ein Poster, das Sie an Ihrer
+    Universität aufhängen können) finden sich auf der Seite FreeBSD
+    Summer Projects.
+
+März 2010
+
+-    31 März: Neuer Committer: Bernhard Fröhlich (ports)
+
+-    23 März:
+
+    FreeBSD 7.3-RELEASE ist ab sofort verfügbar. Lesen Sie bitte die
+    Release Notes und Release Errata, um sich über aktuelle Neuigkeiten
+    und/oder eventuelle Probleme im Umgang mit FreeBSD 7.3-RELEASE zu
+    informieren. Weitere Informationen zu verschiedenen
+    FreeBSD-Versionen finden Sie auf der Seite Release Information.
+
+-    18 März:
+
+    Das FreeBSD Ports Management Team freut sich, bekanntgeben zu
+    dürfen, dass Thomas Abthorpe ab sofort die Postition des Ports
+    Management Team Secretary bekleidet.
+
+-    7 März: Reaktiviertes Commit-Bit: Niels Heinen (ports)
+
+-    4 März:
+
+    Der zweite Release Candidate des FreeBSD-7.3-Releasezyklus ist
+    verfügbar. ISO-Images für Tier-1-Architekturen finden Sie wie immer
+    auf den verschiedenen FreeBSD Spiegelservern.
+
+-    3 März: Neuer Committer: Neel Natu (src)
+
+Februar 2010
+
+-    22 Februar:
+
+    PC-BSD 8.0 ist erschienen. Bei PC-BSD handelt es sich um ein
+    erfolgreiches, auf FreeBSD basierendes Desktop-Betriebssystem,
+    dessen Ziel es ist, einen einfach zu verwendenden Desktop
+    bereitzustellen. Eine Liste aller neuen Funktionen bzw. aller
+    Aktualisierungen seit der letzten Version finden Sie hier.
+
+    Die neue Version kann von der Projektseite heruntergeladen oder als
+    DVD gekauft werden.
+
+-    15 Februar:
+
+    Der erste Release Candidate des FreeBSD-7.3-Releasezyklus ist nun
+    verfügbar. ISO-Images für Tier-1-Architekturen finden Sie wie immer
+    auf den verschiedenen FreeBSD Spiegelservern.
+
+-    12 Februar: Erweiterte Commit-Privilegien: Benedict Reuschling
+    (kompletter doc/www-Bereich)
+
+-    6 Februar: Neuer Committer: Bernhard Schmidt (src)
+
+-    2 Februar:
+
+    Gábor Kövesdán nahm 2008/2009 an Google's Summer of Code teil. Für
+    seine Beiträge hat er nun Commit-Rechte für den Quellcode erhalten.
+    Seine erste Aufgabe wird es sein, die Ergebnisse seiner Arbeit in
+    den FreeBSD-Quellcodebaum einzubringen.
+
+Januar 2010
+
+-    30 Januar:
+
+    Die erste BETA-Version für FreeBSD 7.3 ist ab sofort verfügbar.
+    ISO-Images für Tier-1-Architekturen sind inzwischen auf den meisten
+    FreeBSD Spiegelservern verfügbar.
+
+-    29 Januar: Neuer Committer: Bruce Cran (src)
+
+-    28 Januar: Neuer Committer: Ulrich Spörlein (src)
+
+-    26 Januar: Neuer Committer: Romain Tartière (ports)
+
+-    26 Januar: Neuer Committer: Alberto Villa (ports)
+
+-    17 Januar:
+
+    Der Statusreport für die Monate Oktober-Dezember 2009 mit 38
+    Einträgen ist ab sofort verfügbar.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26. Januar 2021 by Sergio Carlavilla Delgado
+
+Rechtliches | © 1995-2023 The FreeBSD Project Alle Rechte vorbehalten.
+Die Marke FreeBSD ist eine eingetragene Marke der FreeBSD Foundation und
+wird vom FreeBSD Project mit freundlicher Genehmigung der The FreeBSD
+Foundation. Kontakt

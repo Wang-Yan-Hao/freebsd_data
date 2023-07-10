@@ -1,0 +1,112 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+PortConfig
+
+Links:
+Repository portconfig URL: https://gitlab.com/alfix/portconfig/
+
+Contact: Alfonso Sabato Siciliano (upstream) <asiciliano@FreeBSD.org>
+Contact: Baptiste Daroussin (port) <bapt@FreeBSD.org>
+
+FreeBSD provides the Ports Collection to give users and administrators a
+simple way to install applications. It is possible to configure a port
+before the building and installation. PortConfig is an utility for
+setting the port options via a Text User Interface.
+
+As each terminal has different properties PortConfig can be customized
+via environment variables to set up the User Interface, for example:
+menu size, theme, borders, and so on; each feature is documented inside
+the manual. Further, if a port has a specific 'pkg-help' file,
+PortConfig will show a Help button to open a "popup" with help
+information.
+
+FreeBSD provides thousands of ports therefore it is not feasible to test
+PortConfig for each use; please report any problem.
+
+Alfonso would like to thank Baptiste Daroussin for the port,
+suggestions, help, and testing for this utility and its library.
+
+------------------------------------------------------------------------
+
+Last modified on: June 10, 2022 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

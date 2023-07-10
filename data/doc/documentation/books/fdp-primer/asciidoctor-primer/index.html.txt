@@ -1,0 +1,345 @@
+
+-    Preface
+    -   Shell Prompts
+    -   Typographic Conventions
+    -   Notes, Tips, Important Information, Warnings, and Examples
+    -   Acknowledgments
+-    Chapter 1. Overview
+    -   1.1. Documentation in the FreeBSD Ecosystem
+    -   1.2. Quick Start
+    -   1.3. The FreeBSD Documentation Set
+-    Chapter 2. Tools
+    -   2.1. Required Tools
+    -   2.2. Optional Tools
+-    Chapter 3. The Working Copy
+    -   3.1. Documentation and Manual Pages
+    -   3.2. Choosing a Directory
+    -   3.3. Checking Out a Copy
+    -   3.4. Updating a Working Copy
+    -   3.5. Reverting Changes
+    -   3.6. Making a Diff
+    -   3.7. Git References
+-    Chapter 4. Documentation Directory Structure
+    -   4.1. The Top Level, doc/
+    -   4.2. The Directories
+    -   4.3. Document-Specific Information
+    -   4.4. The Books: books/
+    -   4.5. The Articles: articles/
+-    Chapter 5. The FreeBSD Documentation Build Process
+    -   5.1. Rendering AsciiDoc into Output
+    -   5.2. The FreeBSD Documentation Build Toolset
+    -   5.3. Understanding the Makefile in the Documentation Tree
+-    Chapter 6. AsciiDoctor Primer
+    -   6.1. Overview
+    -   6.2. Headings
+    -   6.3. Paragraphs
+    -   6.4. Lists
+    -   6.5. Links
+    -   6.6. Conclusion
+-    Chapter 7. Rosetta Stone
+    -   7.1. Comparison between Docbook and AsciiDoc
+-    Chapter 8. Translations
+    -   8.1. What do i18n and l10n mean?
+    -   8.2. Is there a mailing list for translators?
+    -   8.3. Are more translators needed?
+    -   8.4. What languages do I need to know?
+    -   8.5. What software do I need to know?
+    -   8.6. How do I find out who else might be translating to the same
+        language?
+    -   8.7. No one else is translating to my language. What do I do?
+    -   8.8. I have translated some documentation, where do I send it?
+    -   8.9. I am the only person working on translating to this
+        language, how do I submit my translation?
+    -   8.10. Can I include language or country specific text in my
+        translation?
+-    Chapter 9. PO Translations
+    -   9.1. Introduction
+    -   9.2. Quick Start
+    -   9.3. Creating New Translations
+    -   9.4. Translating
+    -   9.5. Tips for Translators
+    -   9.6. Building a Translated Document
+    -   9.7. Submitting the New Translation
+-    Chapter 10. Weblate Translations
+    -   10.1. Introduction
+    -   10.2. How to Become a FreeBSD Translator
+    -   10.3. Introduce Yourself
+    -   10.4. Login to Weblate
+    -   10.5. Find a Language Team to Join In
+    -   10.6. Translating Online on Weblate
+    -   10.7. Translating Offline
+    -   10.8. Translation based on Automatic Suggestions
+    -   10.9. Proofreading and Weblate Quality Checks
+    -   10.10. Building the Translated Document
+    -   10.11. Submitting Translations
+    -   10.12. FAQ (Frequently Asked Questions)
+-    Chapter 11. Manual Pages
+    -   11.1. Introduction
+    -   11.2. Sections
+    -   11.3. Markup
+    -   11.4. Sample Manual Page Structures
+    -   11.5. Testing
+    -   11.6. Example Manual Pages to Use as Templates
+<<<<<<< HEAD
+=======
+    -   11.7. Resources
+-    Chapter 12. Writing Style
+    -   12.1. Tips
+    -   12.2. Guidelines
+    -   12.3. Style Guide
+    -   12.4. One sentence per line
+    -   12.5. Acronyms
+    -   12.6. Special Character List
+    -   12.7. Linting with Vale
+-    Chapter 13. Editor Configuration
+    -   13.1. Vim
+    -   13.2. Emacs
+    -   13.3. nano
+-    Chapter 14. Trademarks
+    -   14.1. Trademark Symbols
+    -   14.2. Trademark Citing
+-    Chapter 15. See Also
+    -   15.1. The FreeBSD Documentation Project
+    -   15.2. Hugo
+    -   15.3. AsciiDoctor
+    -   15.4. HTML
+-    Appendix A. Examples
+    -   A.1. AsciiDoctor book
+    -   A.2. AsciiDoctor article
+-   
+
+Book menu
+
+Chapter 6. AsciiDoctor Primer
+
+Table of Contents
+
+-   6.1. Overview
+-   6.2. Headings
+-   6.3. Paragraphs
+-   6.4. Lists
+-   6.5. Links
+-   6.6. Conclusion
+
+Most FDP documentation is written with AsciiDoc. This chapter explains
+what that means, how to read and understand the documentation source,
+and the techniques used. To get a complete reference of the AsciiDoctor
+capabilities please consult the Asciidoctor documentation. Some of the
+examples used in this chapter have been taken from the AsciiDoc Syntax
+Quick Reference.
+
+6.1. Overview
+
+In the original days of computers, electronic text was simple. There
+were a few character sets like ASCII or EBCDIC, but that was about it.
+Text was text, and what you saw really was what you got. No frills, no
+formatting, no intelligence.
+
+Inevitably, this was not enough. When text is in a machine-usable
+format, machines are expected to be able to use and manipulate it
+intelligently. Authors want to indicate that certain phrases should be
+emphasized, or added to a glossary, or made into hyperlinks. Filenames
+could be shown in a “typewriter” style font for viewing on screen, but
+as “italics” when printed, or any of a myriad of other options for
+presentation.
+
+It was once hoped that Artificial Intelligence (AI) would make this
+easy. The computer would read the document and automatically identify
+key phrases, filenames, text that the reader should type in, examples,
+and more. Unfortunately, real life has not happened quite like that, and
+computers still require assistance before they can meaningfully process
+text.
+
+More precisely, they need help identifying what is what. Consider this
+text:
+
+To remove /tmp/foo, use rm(1).
+
+    % rm /tmp/foo
+
+It is easy for the reader to see which parts are filenames, which are
+commands to be typed in, which parts are references to manual pages, and
+so on. But the computer processing the document cannot reliably
+determine this. For this we need markup.
+
+The previous example is actually represented in this document like this:
+
+    To remove */tmp/foo*, use man:rm[1].
+
+    [source,shell]
+    ----
+    % rm /tmp/foo
+    ----
+
+6.2. Headings
+
+AsciiDoctor supports six headings levels. If the document type is
+article only one level 0 (=) can be used. If the document type is book
+then there can be multiple level 0 (=) headings.
+
+This is an example of headings in an article.
+
+    = Document Title (Level 0)
+
+    == Level 1 Section Title
+
+    === Level 2 Section Title
+
+    ==== Level 3 Section Title
+
+    ===== Level 4 Section Title
+
+    ====== Level 5 Section Title
+
+    == Another Level 1 Section Title
+
++-----------------------------------+-----------------------------------+
+|                                   | Section levels cannot be skipped  |
+|                                   | when nesting sections.            |
+|                                   |                                   |
+|                                   | The following syntax is not       |
+|                                   | correct.                          |
+|                                   |                                   |
+|                                   |     = Document Title              |
+|                                   |                                   |
+|                                   |     == Level 2                    |
+|                                   |                                   |
+|                                   |     ==== Level 4                  |
++-----------------------------------+-----------------------------------+
+
+6.3. Paragraphs
+
+Paragraphs don’t require special markup in AsciiDoc. A paragraph is
+defined by one or more consecutive lines of text. To create a new
+paragraph leave one blank line.
+
+For example, this is a heading with two paragraphs.
+
+    = This is the heading
+
+    This is the first paragraph.
+    This is also the first paragraph.
+
+    And this is the second paragraph.
+
+6.4. Lists
+
+AsciiDoctor supports a few types of lists, the most common are ordered
+and unordered. To get more information about lists, see AsciiDoc Syntax
+Quick Reference.
+
+6.4.1. Ordered lists
+
+To create an ordered list use the . character.
+
+For example, this is an ordered list.
+
+    . First item
+    . Second item
+    .. Subsecond item
+    . Third item
+
+And this would be rendered as.
+
+1.  First item
+
+2.  Second item
+
+    a.  Subsecond item
+
+3.  Third item
+
+6.4.2. Unordered lists
+
+To create an unordered list use the * character.
+
+For example, this is an unordered list.
+
+    * First item
+    * Second item
+    ** Subsecond item
+    * Third item
+
+And this would be rendered as.
+
+-   First item
+
+-   Second item
+
+    -   Subsecond item
+
+-   Third item
+
+6.5. Links
+
+6.5.1. External links
+
+To point to another website the link macro should be used.
+
+    link:https://www.FreeBSD.org[FreeBSD]
+
++-----------------------------------+-----------------------------------+
+|                                   | As the AsciiDoctor documentation  |
+|                                   | describes, the link macro is not  |
+|                                   | required when the target starts   |
+|                                   | with a URL scheme like https.     |
+|                                   | However, it is a good practice to |
+|                                   | do this anyway to ensure that     |
+|                                   | AsciiDoctor renders the link      |
+|                                   | correctly, especially in          |
+|                                   | non-latin languages like          |
+|                                   | Japanese.                         |
++-----------------------------------+-----------------------------------+
+
+6.5.2. Internal link
+
+To point to another book or article the AsciiDoctor variables should be
+used. For example, if we are in the cups article and we want to point to
+ipsec-must these steps should be used.
+
+1.  Include the urls.adoc file from ~/doc/shared folder.
+
+        include::shared/{lang}/urls.adoc[]
+
+2.  Then create a link using the AsciiDoctor variable to the ipsec-must
+    article.
+
+        extref:{ipsec-must}[IPSec-Must article]
+
+    And this would be rendered as.
+
+    IPSec-Must article
+
+6.6. Conclusion
+
+This is the conclusion of this AsciiDoctor primer. For reasons of space
+and complexity, several things have not been covered in depth (or at
+all).
+
+------------------------------------------------------------------------
+
+Last modified on: December 19, 2021 by Sergio Carlavilla Delgado
+
+Prev
+
+Home
+
+Next
+
+Table of Contents
+
+-   6.1. Overview
+-   6.2. Headings
+-   6.3. Paragraphs
+-   6.4. Lists
+-   6.5. Links
+-   6.6. Conclusion
+
+------------------------------------------------------------------------
+
+Resources
+
+-   Download PDF
+-   Edit this page
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+

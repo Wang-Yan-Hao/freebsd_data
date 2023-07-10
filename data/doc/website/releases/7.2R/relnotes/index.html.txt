@@ -1,0 +1,164 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 7.2-RELEASE Release Notes
+
+Release Highlights
+
+The highlights in the 7.2-RELEASE are the following:
+
+-   [amd64, i386] The FreeBSD virtual memory subsystem now supports
+    fully transparent use of superpages for application memory;
+    application memory pages are dynamically promoted to or demoted from
+    superpages without any modification to application code. This change
+    offers the benefit of large page sizes such as improved virtual
+    memory efficiency and reduced TLB (translation lookaside buffer)
+    misses without downsides like application changes and virtual memory
+    inflexibility. This is disabled by default and can be enabled by
+    setting a loader tunable vm.pmap.pg_ps_enabled to 1.
+
+-   [amd64] The FreeBSD kernel virtual address space has been increased
+    to 6GB. This allows subsystems to use larger virtual memory space
+    than before. For example, zfs(8) adaptive replacement cache (ARC)
+    requires large kernel memory space to cache file system data, so it
+    benefits from the increased address space. Note that the ceiling on
+    the kernel map size is now 60% of the size rather than an absolute
+    quantity.
+
+-   [sparc64] The FreeBSD now supports Ultra SPARC III (Cheetah)
+    processor family.
+
+-   [i386] The boot(8) BTX loader has been improved. This fixes several
+    boot issues on recent machines reported for 7.1-RELEASE and before.
+
+-   A bug in the ciss(4) driver which caused low “max device openings”
+    count and led to poor performance has been fixed.
+
+-   The sdhci(4) driver has been added. This supports PCI devices with
+    class 8 and subclass 5 according to the SD Host Controller
+    Specification.
+
+-   Various network interface drivers have been improved, including
+    ae(4), ath_hal(4), axe(4), bce(4), cxgb(4), fxp(4), igb(4), jme(4),
+    msk(4), mxge(4), nfe(4), re(4), rl(4), sis(4), and txp(4).
+
+-   The btpand(8) daemon from NetBSD has been added. This daemon
+    provides support for Bluetooth Network Access Point (NAP), Group
+    Ad-hoc Network (GN) and Personal Area Network User (PANU) profiles.
+
+-   The jail(8) subsystem has been updated. Changes include:
+
+    -   Multiple addresses of both IPv4 and IPv6 per jail has been
+        supported. It is even possible to have jails without an IP
+        address at all, which basically gives one a chrooted environment
+        with restricted process view and no networking.
+
+    -   SCTP (sctp(4)) with IPv6 in jails has been implemented.
+
+    -   Specific CPU binding by using cpuset(1) has been implemented.
+        Note that the current implementation allows the superuser inside
+        of the jail to change the CPU bindings specified. This behavior
+        will be fixed in the next release.
+
+    -   A jail(8) can start with a specific route FIB now.
+
+    -   A show jails subcommand in ddb(8) has been added.
+
+    -   Compatibility support which permits 32-bit jail binaries to be
+        used on 64-bit systems to manage jails has been added.
+
+    -   Note that both version numbers of jail and prison in the jail(8)
+        have been updated for the new features.
+
+-   The supported version of the GNOME desktop environment (x11/gnome2)
+    has been updated from 2.22 to 2.26.
+
+-   The supported version of the KDE desktop environment has been
+    updated from 3.5.10 (x11/kde3) to 4.2.2 (x11/kde4).
+
+For more details, please see the Detailed Release Notes.
+
+A list of all platforms currently under development can be found on the
+Supported Platforms page.
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

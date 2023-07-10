@@ -1,0 +1,128 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+PortsDB: Program that imports the ports tree into an SQLite database
+
+Links:
+PortsDB URL: https://github.com/yurivict/freebsd-portsdb/
+
+Contact: Yuri Victorovich <yuri@FreeBSD.org>
+
+I developed the PortsDB project that imports FreeBSD ports into an
+SQLite database. The port is ports-mgmt/portsdb.
+
+The database can be fully rebuilt in around 20 minutes, after which it
+can be quickly (in seconds) updated with new commits.
+
+The database is currently updated hourly:
+https://people.freebsd.org/~yuri/ports.sqlite.
+
+PortsDB can be used to query ports using SQL, as a relational database.
+External services like Repology, FreshPorts, Portscout, and other
+similar services can use PortsDB to access information in the ports
+tree.
+
+Users can, for example, easily find their broken ports, or port
+duplicates, or all ports that they maintain that use gmake, among many
+other possible queries. Such queries aren’t easy to perform by grepping
+the ports tree.
+
+Cross-DB queries are also easy to do. They can combine PortsDB,
+/var/db/pkg/repo-FreeBSD.sqlite, and /var/db/pkg/local.sqlite.
+
+All that needs to be done to run PortsDB is ./import.sh, and then
+./update.sh after more commits are pulled into the ports repository.
+
+The periodic script is provided that can simplify integration with cron.
+Multiple ready to use SQL queries are also included.
+
+One particular immediate problem that PortsDB aims to solve is to fix
+incorrect FreeBSD port versions displayed by Repology. Repology uses
+ports INDEX which is missing some required information. This leads to
+Repology not being able to distinguish between real versions, and
+intermediate and made-up versions. PortsDB should allow Repology to
+solve this problem.
+
+------------------------------------------------------------------------
+
+Last modified on: January 23, 2023 by Lorenzo Salvadore
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

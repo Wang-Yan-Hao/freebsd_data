@@ -1,0 +1,455 @@
+
+-    Preface
+    -   Intended Audience
+    -   Fourth Edition
+    -   Third Edition
+    -   Second Edition (2004)
+    -   First Edition (2001)
+    -   Organization of This Book
+    -   Conventions used in this book
+    -   Acknowledgments
+-    Part I. Getting Started
+-    Chapter 1. Introduction
+    -   1.1. Synopsis
+    -   1.2. Welcome to FreeBSD!
+    -   1.3. About the FreeBSD Project
+-    Chapter 2. Installing FreeBSD
+    -   2.1. Synopsis
+    -   2.2. Minimum Hardware Requirements
+    -   2.3. Pre-Installation Tasks
+    -   2.4. Starting the Installation
+    -   2.5. Using bsdinstall
+    -   2.6. Allocating Disk Space
+    -   2.7. Fetching Distribution Files
+    -   2.8. Network Interfaces, Accounts, Time Zone, Services and
+        Hardening
+    -   2.9. Troubleshooting
+    -   2.10. Using the Live CD
+-    Chapter 3. FreeBSD Basics
+    -   3.1. Synopsis
+    -   3.2. Virtual Consoles and Terminals
+    -   3.3. Users and Basic Account Management
+    -   3.4. Permissions
+    -   3.5. Directory Structure
+    -   3.6. Disk Organization
+    -   3.7. Mounting and Unmounting File Systems
+    -   3.8. Processes and Daemons
+    -   3.9. Shells
+    -   3.10. Text Editors
+    -   3.11. Devices and Device Nodes
+    -   3.12. Manual Pages
+-    Chapter 4. Installing Applications: Packages and Ports
+    -   4.1. Synopsis
+    -   4.2. Overview of Software Installation
+    -   4.3. Finding Software
+    -   4.4. Using pkg for Binary Package Management
+    -   4.5. Using the Ports Collection
+    -   4.6. Building Packages with Poudriere
+    -   4.7. Post-Installation Considerations
+    -   4.8. Dealing with Broken Ports
+-    Chapter 5. The X Window System
+    -   5.1. Synopsis
+    -   5.2. Installing Xorg
+    -   5.3. Graphic card drivers
+    -   5.4. Xorg Configuration
+    -   5.5. Using Fonts in Xorg
+-    Chapter 6. Wayland
+    -   6.1. Wayland Synopsis
+    -   6.2. The Wayfire Compositor
+    -   6.3. The Hikari Compositor
+    -   6.4. The Sway Compositor
+    -   6.5. Using Xwayland
+    -   6.6. Remote Desktop Using VNC
+    -   6.7. Wayland Login Manager
+    -   6.8. Useful Utilities
+-    Chapter 7. Network
+    -   7.1. Synopsis
+    -   7.2. Setting up the Network
+    -   7.3. Wired Networks
+    -   7.4. Wireless Networks
+    -   7.5. Hostname
+    -   7.6. DNS
+    -   7.7. Troubleshooting
+-    Part II. Common Tasks
+-    Chapter 8. Desktop Environments
+    -   8.1. Synopsis
+    -   8.2. Desktop Environments
+    -   8.3. Browsers
+    -   8.4. Development tools
+    -   8.5. Desktop office productivity
+    -   8.6. Document Viewers
+    -   8.7. Finance
+-    Chapter 9. Multimedia
+    -   9.1. Synopsis
+    -   9.2. Setting Up the Sound Card
+    -   9.3. Audio players
+    -   9.4. Video players
+    -   9.5. Conferencing and Meetings
+    -   9.6. Image Scanners
+-    Chapter 10. Configuring the FreeBSD Kernel
+    -   10.1. Synopsis
+    -   10.2. Why Build a Custom Kernel?
+    -   10.3. Finding the System Hardware
+    -   10.4. The Configuration File
+    -   10.5. Building and Installing a Custom Kernel
+    -   10.6. If Something Goes Wrong
+-    Chapter 11. Printing
+    -   11.1. Quick Start
+    -   11.2. Printer Connections
+    -   11.3. Common Page Description Languages
+    -   11.4. Direct Printing
+    -   11.5. LPD (Line Printer Daemon)
+    -   11.6. Other Printing Systems
+-    Chapter 12. Linux Binary Compatibility
+    -   12.1. Synopsis
+    -   12.2. Configuring Linux Binary Compatibility
+    -   12.3. Linux userlands
+    -   12.4. Advanced Topics
+-    Chapter 13. WINE
+    -   13.1. Synopsis
+    -   13.2. WINE Overview & Concepts
+    -   13.3. Installing WINE on FreeBSD
+    -   13.4. Running a First WINE Program on FreeBSD
+    -   13.5. Configuring WINE Installation
+    -   13.6. WINE Management GUIs
+    -   13.7. WINE in Multi-User FreeBSD Installations
+    -   13.8. WINE on FreeBSD FAQ
+-    Part III. System Administration
+-    Chapter 14. Configuration and Tuning
+    -   14.1. Synopsis
+    -   14.2. Starting Services
+    -   14.3. Configuring cron(8)
+    -   14.4. Managing Services in FreeBSD
+    -   14.5. Configuring System Logging
+    -   14.6. Configuration Files
+    -   14.7. Tuning with sysctl(8)
+    -   14.8. Tuning Disks
+    -   14.9. Tuning Kernel Limits
+    -   14.10. Adding Swap Space
+    -   14.11. Power and Resource Management
+-    Chapter 15. The FreeBSD Booting Process
+    -   15.1. Synopsis
+    -   15.2. FreeBSD Boot Process
+    -   15.3. Device Hints
+    -   15.4. Shutdown Sequence
+-    Chapter 16. Security
+    -   16.1. Synopsis
+    -   16.2. Introduction
+    -   16.3. One-time Passwords
+    -   16.4. TCP Wrapper
+    -   16.5. Kerberos
+    -   16.6. OpenSSL
+    -   16.7. VPN over IPsec
+    -   16.8. OpenSSH
+    -   16.9. Access Control Lists
+    -   16.10. Monitoring Third Party Security Issues
+    -   16.11. FreeBSD Security Advisories
+    -   16.12. Process Accounting
+    -   16.13. Resource Limits
+    -   16.14. Shared Administration with Sudo
+    -   16.15. Using doas as an alternative to sudo
+-    Chapter 17. Jails
+    -   17.1. Synopsis
+    -   17.2. Terms Related to Jails
+    -   17.3. Creating and Controlling Jails
+    -   17.4. Fine Tuning and Administration
+    -   17.5. Updating Multiple Jails
+    -   17.6. Managing Jails with ezjail
+-    Chapter 18. Mandatory Access Control
+    -   18.1. Synopsis
+    -   18.2. Key Terms
+    -   18.3. Understanding MAC Labels
+    -   18.4. Planning the Security Configuration
+    -   18.5. Available MAC Policies
+    -   18.6. User Lock Down
+    -   18.7. Nagios in a MAC Jail
+    -   18.8. Troubleshooting the MAC Framework
+-    Chapter 19. Security Event Auditing
+    -   19.1. Synopsis
+    -   19.2. Key Terms
+    -   19.3. Audit Configuration
+    -   19.4. Working with Audit Trails
+-    Chapter 20. Storage
+    -   20.1. Synopsis
+    -   20.2. Adding Disks
+    -   20.3. Resizing and Growing Disks
+    -   20.4. USB Storage Devices
+    -   20.5. Creating and Using CD Media
+    -   20.6. Creating and Using DVD Media
+    -   20.7. Creating and Using Floppy Disks
+    -   20.8. Using NTFS Disks
+    -   20.9. Backup Basics
+    -   20.10. Memory Disks
+    -   20.11. File System Snapshots
+    -   20.12. Disk Quotas
+    -   20.13. Encrypting Disk Partitions
+    -   20.14. Encrypting Swap
+    -   20.15. Highly Available Storage (HAST)
+-    Chapter 21. GEOM: Modular Disk Transformation Framework
+    -   21.1. Synopsis
+    -   21.2. RAID0 - Striping
+    -   21.3. RAID1 - Mirroring
+    -   21.4. RAID3 - Byte-level Striping with Dedicated Parity
+    -   21.5. Software RAID Devices
+    -   21.6. GEOM Gate Network
+    -   21.7. Labeling Disk Devices
+    -   21.8. UFS Journaling Through GEOM
+-    Chapter 22. The Z File System (ZFS)
+    -   22.1. What Makes ZFS Different
+    -   22.2. Quick Start Guide
+    -   22.3. zpool Administration
+    -   22.4. zfs Administration
+    -   22.5. Delegated Administration
+    -   22.6. Advanced Topics
+<<<<<<< HEAD
+=======
+    -   22.7. Further Resources
+    -   22.8. ZFS Features and Terminology
+-    Chapter 23. Other File Systems
+    -   23.1. Synopsis
+    -   23.2. Linux® File Systems
+-    Chapter 24. Virtualization
+    -   24.1. Synopsis
+    -   24.2. FreeBSD as a Guest on Parallels Desktop for macOS®
+    -   24.3. FreeBSD as a Guest on VMware Fusion for macOS®
+    -   24.4. FreeBSD as a Guest on VirtualBox™
+    -   24.5. FreeBSD as a Host with VirtualBox™
+    -   24.6. FreeBSD as a Host with bhyve
+    -   24.7. FreeBSD as a Xen™-Host
+-    Chapter 25. Localization - i18n/L10n Usage and Setup
+    -   25.1. Synopsis
+    -   25.2. Using Localization
+    -   25.3. Finding i18n Applications
+    -   25.4. Locale Configuration for Specific Languages
+-    Chapter 26. Updating and Upgrading FreeBSD
+    -   26.1. Synopsis
+    -   26.2. FreeBSD Update
+    -   26.3. Updating Bootcode
+    -   26.4. Updating the Documentation Set
+    -   26.5. Tracking a Development Branch
+    -   26.6. Updating FreeBSD from Source
+    -   26.7. Tracking for Multiple Machines
+-    Chapter 27. DTrace
+    -   27.1. Synopsis
+    -   27.2. Implementation Differences
+    -   27.3. Enabling DTrace Support
+    -   27.4. Using DTrace
+-    Chapter 28. USB Device Mode / USB OTG
+    -   28.1. Synopsis
+    -   28.2. USB Virtual Serial Ports
+    -   28.3. USB Device Mode Network Interfaces
+    -   28.4. USB Virtual Storage Device
+-    Part IV. Network Communication
+-    Chapter 29. Serial Communications
+    -   29.1. Synopsis
+    -   29.2. Serial Terminology and Hardware
+    -   29.3. Terminals
+    -   29.4. Dial-in Service
+    -   29.5. Dial-out Service
+    -   29.6. Setting Up the Serial Console
+-    Chapter 30. PPP
+    -   30.1. Synopsis
+    -   30.2. Configuring PPP
+    -   30.3. Troubleshooting PPP Connections
+    -   30.4. Using PPP over Ethernet (PPPoE)
+    -   30.5. Using PPP over ATM (PPPoA)
+-    Chapter 31. Electronic Mail
+    -   31.1. Synopsis
+    -   31.2. Mail Components
+    -   31.3. Sendmail Configuration Files
+    -   31.4. Changing the Mail Transfer Agent
+    -   31.5. Troubleshooting
+    -   31.6. Advanced Topics
+    -   31.7. Setting Up to Send Only
+    -   31.8. Using Mail with a Dialup Connection
+    -   31.9. SMTP Authentication
+    -   31.10. Mail User Agents
+    -   31.11. Using fetchmail
+    -   31.12. Using procmail
+-    Chapter 32. Network Servers
+    -   32.1. Synopsis
+    -   32.2. The inetd Super-Server
+    -   32.3. Network File System (NFS)
+    -   32.4. Network Information System (NIS)
+    -   32.5. Lightweight Directory Access Protocol (LDAP)
+    -   32.6. Dynamic Host Configuration Protocol (DHCP)
+    -   32.7. Domain Name System (DNS)
+    -   32.8. Apache HTTP Server
+    -   32.9. File Transfer Protocol (FTP)
+    -   32.10. File and Print Services for Microsoft® Windows® Clients
+        (Samba)
+    -   32.11. Clock Synchronization with NTP
+    -   32.12. iSCSI Initiator and Target Configuration
+-    Chapter 33. Firewalls
+    -   33.1. Synopsis
+    -   33.2. Firewall Concepts
+    -   33.3. PF
+    -   33.4. IPFW
+    -   33.5. IPFILTER (IPF)
+    -   33.6. Blacklistd
+-    Chapter 34. Advanced Networking
+    -   34.1. Synopsis
+    -   34.2. Gateways and Routes
+    -   34.3. Virtual Hosts
+    -   34.4. Wireless Advanced Authentication
+    -   34.5. Wireless Ad-hoc Mode
+    -   34.6. USB Tethering
+    -   34.7. Bluetooth
+    -   34.8. Bridging
+    -   34.9. Link Aggregation and Failover
+    -   34.10. Diskless Operation with PXE
+    -   34.11. Common Address Redundancy Protocol (CARP)
+    -   34.12. VLANs
+-    Part V. Appendices
+-    Appendix A. Obtaining FreeBSD
+    -   A.1. Mirrors
+    -   A.2. Using Git
+    -   A.3. Using Subversion
+    -   A.4. CD and DVD Sets
+-    Appendix B. Bibliography
+    -   B.1. FreeBSD Bibliography
+    -   B.2. Security Reference
+    -   B.3. UNIX® History
+    -   B.4. Periodicals, Journals, and Magazines
+-    Appendix C. Resources on the Internet
+    -   C.1. Websites
+    -   C.2. Mailing Lists
+    -   C.3. Usenet Newsgroups
+-    Appendix D. OpenPGP Keys
+    -   D.1. Officers
+-    FreeBSD Glossary
+-    Colophon
+-   
+-   
+
+Book menu
+
+FreeBSD Handbook
+
+Copyright © 1995-2023 The FreeBSD Documentation Project
+
+trademarks
+
+FreeBSD is a registered trademark of the FreeBSD Foundation.
+
+IBM, AIX, OS/2, PowerPC, PS/2, S/390, and ThinkPad are trademarks of
+International Business Machines Corporation in the United States, other
+countries, or both.
+
+IEEE, POSIX, and 802 are registered trademarks of Institute of
+Electrical and Electronics Engineers, Inc. in the United States.
+
+Red Hat, RPM, are trademarks or registered trademarks of Red Hat, Inc.
+in the United States and other countries.
+
+3Com and HomeConnect are registered trademarks of 3Com Corporation.
+
+Adobe, Acrobat, Acrobat Reader, Flash and PostScript are either
+registered trademarks or trademarks of Adobe Systems Incorporated in the
+United States and/or other countries.
+
+Apple, AirPort, FireWire, iMac, iPhone, iPad, Mac, Macintosh, Mac OS,
+Quicktime, and TrueType are trademarks of Apple Inc., registered in the
+U.S. and other countries.
+
+Intel, Celeron, Centrino, Core, EtherExpress, i386, i486, Itanium,
+Pentium, and Xeon are trademarks or registered trademarks of Intel
+Corporation or its subsidiaries in the United States and other
+countries.
+
+Linux is a registered trademark of Linus Torvalds.
+
+Microsoft, IntelliMouse, MS-DOS, Outlook, Windows, Windows Media and
+Windows NT are either registered trademarks or trademarks of Microsoft
+Corporation in the United States and/or other countries.
+
+Motif, OSF/1, and UNIX are registered trademarks and IT DialTone and The
+Open Group are trademarks of The Open Group in the United States and
+other countries.
+
+Sun, Sun Microsystems, Java, Java Virtual Machine, JDK, JRE, JSP, JVM,
+Netra, OpenJDK, Solaris, StarOffice, SunOS and VirtualBox are trademarks
+or registered trademarks of Sun Microsystems, Inc. in the United States
+and other countries.
+
+RealNetworks, RealPlayer, and RealAudio are the registered trademarks of
+RealNetworks, Inc.
+
+Oracle is a registered trademark of Oracle Corporation.
+
+3ware is a registered trademark of 3ware Inc.
+
+ARM is a registered trademark of ARM Limited.
+
+Adaptec is a registered trademark of Adaptec, Inc.
+
+Android is a trademark of Google Inc.
+
+Heidelberg, Helvetica, Palatino, and Times Roman are either registered
+trademarks or trademarks of Heidelberger Druckmaschinen AG in the U.S.
+and other countries.
+
+Intuit and Quicken are registered trademarks and/or registered service
+marks of Intuit Inc., or one of its subsidiaries, in the United States
+and other countries.
+
+LSI Logic, AcceleRAID, eXtremeRAID, MegaRAID and Mylex are trademarks or
+registered trademarks of LSI Logic Corp.
+
+MATLAB is a registered trademark of The MathWorks, Inc.
+
+SpeedTouch is a trademark of Thomson.
+
+VMware is a trademark of VMware, Inc.
+
+Mathematica is a registered trademark of Wolfram Research, Inc.
+
+Ogg Vorbis and Xiph.Org are trademarks of Xiph.Org.
+
+XFree86 is a trademark of The XFree86 Project, Inc.
+
+Many of the designations used by manufacturers and sellers to
+distinguish their products are claimed as trademarks. Where those
+designations appear in this document, and the FreeBSD Project was aware
+of the trademark claim, the designations have been followed by the “™”
+or the “®” symbol.
+
+Table of Contents
+
+[ Split HTML / Single HTML ]
+
+Abstract
+
+Welcome to FreeBSD! This handbook covers the installation and day to day
+use of FreeBSD 13.2-RELEASE and FreeBSD 12.4-RELEASE. This book is the
+result of ongoing work by many individuals. Some sections might be
+outdated. Those interested in helping to update and expand this document
+should send email to the FreeBSD documentation project mailing list.
+
+The latest version of this book is available from the FreeBSD web site.
+Previous versions can be obtained from https://docs.FreeBSD.org/doc/.
+The book can be downloaded in a variety of formats and compression
+options from the FreeBSD download server or one of the numerous mirror
+sites. Searches can be performed on the handbook and other documents on
+the search page.
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+Last modified on: December 31, 2022 by Ganbold Tsagaankhuu
+
+Home
+
+Next
+
+Table of Contents
+
+------------------------------------------------------------------------
+
+Resources
+
+-   Download PDF
+-   Edit this page
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+

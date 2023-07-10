@@ -1,0 +1,131 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   
+-   Developer's Handbook
+-   Committer's Guide
+-   Porter's Handbook
+-   Source code repositories
+-   Release Engineering
+-   Platforms
+-   Project Ideas
+-   Contributing
+
+A FreeBSD/xbox projekt
+
+Bevezetés
+
+A FreeBSD/xbox a FreeBSD Microsoft® Xbox® rendszereken futó portja. A
+projektet Rink Springer <rink@FreeBSD.org> indította el, õ végezte a
+portolási munka nagy részét. Ed Schouten segített a patchek
+ellenõrzésével és szolgáltatott néhány információt az Xbox® belsõ
+mûködésével kapcsolatban.
+
+Helyzet
+
+A FreeBSD/xbox a 6-STABLE és a 7-CURRENT ágakban támogatott. A
+framebuffer, Ethernet, hang és USB eszközök (mint például az USB
+billentyûzet a konzolhoz), mind támogatottak.
+
+A FreeBSD/xbox port telepítéséhez egy kombinált telepítõ/livecd lemez
+használható. Elérhetõ itt.
+
+FreeBSD-CURRENT rendszermagok indítása
+
+A CVS-ben található FreeBSD 7-CURRENT rendszermag elindításához
+szükségünk lesz a Linux/xbox BIOS friss, Cromwell névre hallgató
+verziójára (hiba esetén a rendszermag rögtön lefagy a betöltõdés után).
+A Cromwell a FreeBSD UFS kiegészítéseivel (ez lehetõvé teszi a
+rendszermag közvetlen betöltését UFS állományrendszerrõl) elérhetõ a
+Portgyûjteményben a /usr/ports/sysutils/cromwell alatt. Az EEPROM-ba az
+/usr/ports/sysutils/raincoat alatt található porttal tölthetõ be
+(feltéve, hogy 1.6-nál alacsonyabb verziójú Xbox® rendszerrel
+rendelkezünk).
+
+Megjegyzés: Több Xbox® meghajtó köztudottan nem olvas bizonyos típusú
+lemezeket. Ha véletlenszerû lassulást, összeomlást vagy egyéb hibát
+tapasztalunk a telepítés közben, próbálkozzunk másfajta, bizonyítottan
+mûködõ DVD/CD-ROM lemezzel.
+
+Telepítés merevlemezre
+
+A Live CD-k segítségével is véghezvihetjük a telepítést, de mindent
+manuálisan kell végeznünk. Javasoljuk, hogy készítsük elõ a lemezt egy
+FreeBSD/i386 telepítéssel és állítsuk be a /boot/xboxlinux.cfg
+konfiguráció manuálisan, hogy a Cromwell el tudja dönteni, melyik
+rendszermagot kell betöltenie.
+
+Linkek
+
+-   A Linux Xbox projekt
+
+-   A FreeBSD/xbox projekt
+
+------------------------------------------------------------------------
+
+Last modified on: 2021. január 26. by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

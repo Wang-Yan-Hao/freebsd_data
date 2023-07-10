@@ -1,0 +1,119 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   
+-   Developer's Handbook
+-   Committer's Guide
+-   Porter's Handbook
+-   Source code repositories
+-   Release Engineering
+-   Platforms
+-   Project Ideas
+-   Contributing
+
+A FreeBSD/ia64 projekt
+
+[McKinley die]
+
+Keresés az ia64 levelezési lista archívumában:
+
+Tartalomjegyzék
+
+-   Bevezetés
+
+-   Helyzet
+
+-   További teendõk
+
+-   Hardverlista
+
+-   Hivatkozások
+
+Bevezetés
+
+Ez az oldal az Intel IA-64 architektúrán - hivatalosan Intel Itanium®
+Processor Family (IPF) - futó FreeBSD portról tartalmaz információkat.
+Ahogyan a port is, úgy ez az oldal is folyamatos fejlesztés alatt áll.
+
+Helyzet
+
+Az ia64 port jelenleg még Tier 2 platformnak minõsül. Ez azt jelenti,
+hogy még nem támogatják teljes mértékben a Security Officer, Release
+Engineer csapatok és a toolchainek karbantartói sem. A gyakorlatban
+azonban a Tier 1 (teljesen támogatott) és Tier 2 szintû platformok közt
+nem olyan nagy a különbség, mint amekkorának elsõre tûnik. Sok
+szempontból az ia64 port lényegében egy Tier 1 szintû platform.
+
+A fejlesztõk szemszögébõl azonban elõnyös, hogy az ia64 port hosszabb
+ideig marad Tier 2 platform. Sok, az ABI-t érintõ változtatás van
+folyamatban, és a kompatibilitás feltétlen megtartása még nem célszerû
+ebben a kezdeti szakaszban.
+
+------------------------------------------------------------------------
+
+Last modified on: 2021. január 26. by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

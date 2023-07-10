@@ -1,0 +1,125 @@
+[FreeBSD The Power to Serve]
+
+捐赠 FreeBSD
+
+ 
+
+-   首页
+
+-   关于
+    -   简介
+    -   特性
+    -   宣传
+    -   营销
+    -   隐私政策
+    -   Projects
+    -   Ports
+
+-   获取 FreeBSD
+    -   发行版本
+    -   发布工程
+
+-   文档
+    -   常见问题合集
+    -   使用手册
+    -   Porter' 手册
+    -   Developer' 手册
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   文档计划入门书
+    -   所有书籍和文档
+
+-   社区
+    -   邮件列表
+    -   论坛
+    -   用户群体
+    -   活动
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   开发
+    -   项目新点子
+    -   Git Repository
+    -   Subversion 仓库
+    -   Git 镜像
+    -   代码审查 (Phabricator)
+    -   Wiki
+    -   持续集成服务
+
+-   支持
+    -   供应商
+    -   安全公告
+    -   问题报告
+    -   提交问题报告
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   基金会
+    -   资金捐赠
+    -   硬件捐赠
+
+-   关于
+-   特性
+-   Applications
+-   宣传
+-   营销
+-   Administration
+-   News
+-   活动
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   法律信息
+-   Privacy Policy
+
+-   RSS 2.0 Feed
+
+FreeBSD 新闻发布
+
+2005 年 11 月 25 日
+
+    惠普向 FreeBSD 捐赠刀片集群
+
+2005 年 11 月 4 日
+
+    FreeBSD Project 发行 FreeBSD 6.0
+
+2003 年 1 月 20 日
+
+    FreeBSD Project 宣布 FreeBSD 5.0
+
+2002 年 10 月 31 日
+
+    Opera 之 Daemon： Opera Software 发布了 FreeBSD 版本
+
+2000 年 10 月 18 日： 新的核心团队
+
+    首届 FreeBSD 核心团队选举
+
+2000 年 3 月 9 日
+
+    BSD 供应商联合提供全球最为流行的 Internet 操作系统
+
+1999 年 6 月 7 日
+
+    BSD 社区欢迎 Apple 的新开放源代码操作系统。
+
+1999 年 4 月 29 日
+
+    FreeBSD 中集成了完整的 XML 开发系统。
+
+1999 年 4 月 22 日： 骇客帝国
+
+    FreeBSD 被用于生成华纳兄弟的电影 The Matrix(骇客帝国) 中的特效。
+
+------------------------------------------------------------------------
+
+Last modified on: August 5, 2021 by Guangyuan Yang
+
+法律信息 | © 1995-2023 FreeBSD 项目 保留所有权利。 The mark FreeBSD is a
+registered trademark of The FreeBSD Foundation and is used by The
+FreeBSD Project with the permission of The FreeBSD Foundation. 联系
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

@@ -1,0 +1,111 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Realtek rtw88 support
+
+Links:
+Rtw88 status FreeBSD wiki page URL: https://wiki.freebsd.org/WiFi/Rtw88
+
+Contact: Bjoern A. Zeeb <bz@FreeBSD.ORG>
+
+This project aims to bring in support for Realtek’s rtw88 chips.
+
+With the growing LinuxKPI compatibility code an initial port of the
+Realtek rtw88 driver was done. This gives us support for a second driver
+after Intel and helps to validate and grow the LinuxKPI code base.
+Changes and overall time needed to get the driver compiling were very
+little. At the moment we are seeing DMA issues which prevent most people
+from loading firmware or using the driver later on.
+
+Thanks to everyone who was brave enough to give this initial code drop a
+try.
+
+While this is a leasure time project we would love to better support
+Realtek wireless devices and will keep working on this.
+
+For the latest state of the development or code, please follow the
+referenced wiki page or the freebsd-wireless mailing list.
+
+------------------------------------------------------------------------
+
+Last modified on: November 15, 2021 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

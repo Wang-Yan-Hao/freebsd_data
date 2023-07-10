@@ -1,0 +1,136 @@
+
+-    Part I. Kernel
+-    Chapter 1. Bootstrapping and Kernel Initialization
+    -   1.1. Synopsis
+    -   1.2. Overview
+    -   1.3. The BIOS
+    -   1.4. The Master Boot Record (boot0)
+    -   1.5. boot1 Stage
+    -   1.6. The BTX Server
+    -   1.7. boot2 Stage
+    -   1.8. loader Stage
+    -   1.9. Kernel Initialization
+-    Chapter 2. Locking Notes
+    -   2.1. Mutexes
+    -   2.2. Shared Exclusive Locks
+    -   2.3. Atomically Protected Variables
+-    Chapter 3. Kernel Objects
+    -   3.1. Terminology
+    -   3.2. Kobj Operation
+    -   3.3. Using Kobj
+-    Chapter 4. The Jail Subsystem
+    -   4.1. Architecture
+    -   4.2. Restrictions
+-    Chapter 5. The SYSINIT Framework
+    -   5.1. Terminology
+    -   5.2. SYSINIT Operation
+    -   5.3. Using SYSINIT
+-    Chapter 6. The TrustedBSD MAC Framework
+    -   6.1. MAC Documentation Copyright
+    -   6.2. Synopsis
+    -   6.3. Introduction
+    -   6.4. Policy Background
+    -   6.5. MAC Framework Kernel Architecture
+    -   6.6. MAC Policy Architecture
+    -   6.7. MAC Policy Entry Point Reference
+    -   6.8. Userland Architecture
+    -   6.9. Conclusion
+-    Chapter 7. Virtual Memory System
+    -   7.1. Management of Physical Memory vm_page_t
+    -   7.2. The Unified Buffer Cache vm_object_t
+    -   7.3. Filesystem I/O struct buf
+    -   7.4. Mapping Page Tables vm_map_t, vm_entry_t
+    -   7.5. KVM Memory Mapping
+    -   7.6. Tuning the FreeBSD VM System
+-    Chapter 8. SMPng Design Document
+    -   8.1. Introduction
+    -   8.2. Basic Tools and Locking Fundamentals
+    -   8.3. General Architecture and Design
+    -   8.4. Specific Locking Strategies
+    -   8.5. Implementation Notes
+    -   8.6. Miscellaneous Topics
+    -   Glossary
+-    Part II. Device Drivers
+-    Chapter 9. Writing FreeBSD Device Drivers
+    -   9.1. Introduction
+    -   9.2. Dynamic Kernel Linker Facility - KLD
+    -   9.3. Character Devices
+    -   9.4. Block Devices (Are Gone)
+    -   9.5. Network Drivers
+-    Chapter 10. ISA Device Drivers
+    -   10.1. Synopsis
+    -   10.2. Basic Information
+    -   10.3. device_t Pointer
+    -   10.4. Configuration File and the Order of Identifying and
+        Probing During Auto-Configuration
+<<<<<<< HEAD
+=======
+    -   10.5. Resources
+    -   10.6. Bus Memory Mapping
+    -   10.7. DMA
+    -   10.8. xxx_isa_probe
+    -   10.9. xxx_isa_attach
+    -   10.10. xxx_isa_detach
+    -   10.11. xxx_isa_shutdown
+    -   10.12. xxx_intr
+-    Chapter 11. PCI Devices
+    -   11.1. Probe and Attach
+    -   11.2. Bus Resources
+-    Chapter 12. Common Access Method SCSI Controllers
+    -   12.1. Synopsis
+    -   12.2. General Architecture
+    -   12.3. Globals and Boilerplate
+    -   12.4. Device configuration: xxx_attach
+    -   12.5. Processing CAM messages: xxx_action
+    -   12.6. Polling xxx_poll
+    -   12.7. Asynchronous Events
+    -   12.8. Interrupts
+    -   12.9. Errors Summary
+    -   12.10. Timeout Handling
+-    Chapter 13. USB Devices
+    -   13.1. Introduction
+    -   13.2. Host Controllers
+    -   13.3. USB Device Information
+    -   13.4. Device Probe and Attach
+    -   13.5. USB Drivers Protocol Information
+-    Chapter 14. Newbus
+    -   14.1. Device Drivers
+    -   14.2. Overview of Newbus
+    -   14.3. Newbus API
+-    Chapter 15. Sound Subsystem
+    -   15.1. Introduction
+    -   15.2. Files
+    -   15.3. Probing, Attaching, etc.
+    -   15.4. Interfaces
+-    Chapter 16. PC Card
+    -   16.1. Adding a Device
+-    Part III. Appendices
+-    Bibliography
+-   
+
+Book menu
+
+Part II. Device Drivers
+
+Table of Contents
+
+------------------------------------------------------------------------
+
+Last modified on: December 11, 2021 by Sergio Carlavilla Delgado
+
+Prev
+
+Home
+
+Next
+
+Table of Contents
+
+------------------------------------------------------------------------
+
+Resources
+
+-   Download PDF
+-   Edit this page
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+

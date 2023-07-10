@@ -1,0 +1,166 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 2.2.6 Release Notes
+
+    ================================================================
+                             RELEASE NOTES
+                      FreeBSD 2.2.6-RELEASE VERSION
+    ================================================================
+
+    What's new since 2.2.5
+    ----------------------
+
+    Kernel features:
+
+    o Added support for SMC EtherPower II 10/100 Fast Ethernet card
+      (aka SMC9432TX based on SMC83c170 EPIC chip).
+
+    o Added support for DPT SCSI RAID controllers (see LINT).
+
+    o New Plug and Play (PnP) support that allows you to (re)configure
+      PnP devices.  Also support modems being detected by the PnP
+      part and automatically attached.
+
+    o Alternate sound driver (/sys/i386/isa/snd) from Luigi Rizzo;
+      it does not yet support MIDI (for that, use the old sound
+      driver) but it does have much better support for PNP sound
+      cards and is much easier to configure (only one device).
+      See /sys/i386/conf/LINT for more info.
+
+    o Better Linux emulation (applications like RealVideo 5.0 for
+      Linux now work).
+
+    o Added support for ATAPI floppy drives (LS-120)
+
+    o The psm, mse and sysmouse drivers are improved to provide
+      better mouse support.  moused(8) has been modified to support
+      various mice with a ``wheel''.  It also automatically
+      recognizes mice which support the PnP COM device standard so
+      that the user is no longer required to supply a mouse protocol
+      type on the command line.
+
+    Userland features:
+
+    o popen() library call now uses and offers bidirectional pipes.
+
+    o Added support for parallel makes in /usr/src (-j n works
+      now with   world target, particularly useful with SMP
+      machines).
+
+    o tcpdump(1) utility enhanced
+
+    o Support for ldconfig -R (remove) added.
+
+    o Various bugfixes and enhancements to pthread support.
+
+    o calendar(1) program brought more up-to-date.
+
+    o KerberosIV updated to latest version.
+
+    o Various curses(3) bugs fixed.
+
+    o Various IEEE754 conformance changes to libm(3).
+
+    o Much cleanup and general improvements to the documentation.
+
+    o Various improvements to the NIS code.
+
+
+    Security issues:
+
+    o Fixed /dev/io and mmap security holes.
+
+    o Better protection against "LAND attacks"
+
+    o Various buffer overruns detected and extra checks added.
+
+    o Pentium "F00F bug" is detected and a work-around installed to
+      prevent hangs.
+
+    o srandomdev() support merged from -current and utilities updated
+      to use it.
+
+Release Home
+
+------------------------------------------------------------------------
+
+Last modified on: February 21, 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

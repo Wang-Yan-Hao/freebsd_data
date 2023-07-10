@@ -1,0 +1,122 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Graphics Driver Update from Linux 5.7
+
+Links: WIP GitHub Repository URL:
+https://github.com/neelchauhan/drm-kmod/tree/5.7-wip
+
+Contact: Neel Chauhan <nc@FreeBSD.org>
+Contact: Hans Petter Selasky <hselasky@FreeBSD.org>
+Contact: Emmanuel Vadot <manu@FreeBSD.org>
+Contact: Mark Linimon <linimon@FreeBSD.org>
+
+We are attempting to update the drm-kmod graphics drivers to the Linux
+5.7 code, based on the existing drm-kmod 5.5-wip branch.
+
+Right now, the current version of drm-kmod do not support newer GPU such
+as Intel’s Tiger Lake/Iris Xe, used on laptops such as the 2020 HP
+Spectre x360. This prevents us from supporting accelerated graphics on
+newer hardware containing Intel or AMD GPUs.
+
+Some tasks have already been completed, including:
+
+-   amdgpu bring-up
+
+-   i915kms console bring-up
+
+Some tasks need to be completed, including:
+
+-   i915kms Xorg bring-up (currently pagefaults on remap_io_sg() page
+    address)
+
+-   amdgpu VA-API bring-up
+
+-   radeonkms bring-up
+
+We welcome help for the incomplete tasks, especially from users wanting
+to use newer hardware (or support FreeBSD-as-a-desktop in general).
+
+------------------------------------------------------------------------
+
+Last modified on: July 24, 2021 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

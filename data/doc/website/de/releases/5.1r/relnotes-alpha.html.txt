@@ -1,0 +1,848 @@
+FreeBSD/alpha 5.1-RELEASE Release Notes
+
+The FreeBSD Project
+
+Copyright © 2000, 2001, 2002, 2003 von The FreeBSD Documentation Project
+
+Copyright © 2002, 2003 von The FreeBSD German Documentation Project
+
+$FreeBSD$
+
+Die Release Notes für FreeBSD 5.1-RELEASE enthalten eine Übersicht über
+aktuelle Änderungen in FreeBSD im Entwicklungszweig 5-CURRENT. Dieses
+Dokument enthält die Liste aller Sicherheitshinweise, die seit der
+letzten Version herausgegeben wurden, sowie eine Übersicht über die
+wichtigsten Änderungen am Kernel und an den Benutzerprogrammen. Einige
+kurze Anmerkungen zum Thema Aktualisierung wurden ebenfalls aufgenommen.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Inhaltsverzeichnis
+
+1. Einführung
+
+2. Neuerungen
+
+2.1. Sicherheit
+
+2.2. Änderungen im Kernel
+
+2.2.1. Unterstützung für Prozessoren und Mainboards
+
+2.2.2. Änderungen im Bootloader
+
+2.2.3. Netzwerke und Netzwerkkarten
+
+2.2.4. Netzwerk-Protokolle
+
+2.2.5. Festplatten und Massenspeicher
+
+2.2.6. Dateisystem
+
+2.2.7. Unterstützung für PCCARD
+
+2.2.8. Multimedia
+
+2.3. Benutzerprogramme
+
+2.4. Zusätzliche Software
+
+2.5. Infrastruktur für Ports und Packages
+
+2.6. Erzeugung von Releases und Integration
+
+2.7. Dokumentation
+
+3. Aktualisierung einer älteren Version von FreeBSD
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+1. Einführung
+
+Dieses Dokument enthält die Release Notes für FreeBSD 5.1-RELEASE auf
+Alpha/AXP Systemen. Es beschreibt die Komponenten von FreeBSD, die in
+letzter Zeit hinzugefügt, geändert, oder gelöscht wurden. Außerdem
+erhalten Sie Hinweise für die Aktualisierung Ihres FreeBSD-Systems.
+
+Diese Distribution von FreeBSD 5.1-RELEASE ist eine release
+Distribution. Sie können Sie von ftp://ftp.FreeBSD.org/ und allen seinen
+Mirrors erhalten. Weitere Informationen, wie Sie diese (oder andere)
+release Distributionen von FreeBSD erhalten können, finden Sie im Anhang
+``Obtaining FreeBSD'' des FreeBSD Handbuchs.
+
+Anwender, die noch keine Erfahrung mit einer 5-CURRENT Version eines
+FreeBSD release haben, sollten auf jeden Fall die ``Hinweise für die
+ersten Anwender von FreeBSD 5.1-RELEASE'' lesen. Dieses Dokument sollte
+überall dort verfügbar sein, wo auch die Release Notes verfügbar sind;
+entweder als Teil einer FreeBSD Distribution oder auf den FreeBSD
+Webseiten. Es enthält wichtige Informationen über die Vor- und Nachteile
+des Betriebs von FreeBSD 5.1-RELEASE im Vergleich zum Betrieb eines
+Systems auf der Basis der Entwicklungszweiges 4-STABLE.
+
+Alle Anwender sollten vor der Installation von FreeBSD die Release Notes
+lesen. Die Errata enthalten ``brandheiße'' Informationen, die erst kurz
+vor oder nach der Veröffentlichung bekannt wurden. Dies sind
+typischerweise Informationen über bekannte Probleme, Hinweise zum Thema
+Sicherheit und Korrekturen der Dokumentation. Die jeweils aktuelle
+Version der Errata zu FreeBSD 5.1-RELEASE finden Sie auf den FreeBSD
+Webseiten.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2. Neuerungen
+
+In diesem Artikel finden Sie viele der für den Anwender
+offensichtlichsten Neuerungen und Änderungen in FreeBSD seit
+5.0-RELEASE. Dazu gehören sowohl die Änderungen, die nur 5.0-RELEASE
+betreffen, als auch Änderungen in den anderen Entwicklungszweigen seit
+FreeBSD 5.0-RELEASE. Letztere sind als [MERGED] gekennzeichnet.
+
+Die Einträge umfassen alle Sicherheitshinweise, die nach dem Erscheinen
+von 5.0-RELEASE herausgegeben wurden, neue Treiber bzw. Unterstützung
+für neue Hardware, neue Befehle oder Optionen, die Behebung wichtiger
+Fehler, und Aktualisierungen von zusätzlicher Software. Sie können
+ebenfalls Änderungen bei den wichtigeren Ports/Packages und bei der
+Erzeugung der Releases dokumentieren. Es sollte offensichtlich sein, daß
+die Release Notes nicht jede einzelne Änderung in FreeBSD aufführen
+können; dieses Dokument konzentriert sich auf Sicherheitshinweise, für
+den Anwender sichtbare Änderungen und die wichtigsten Verbesserungen der
+Infrastruktur.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.1. Sicherheit
+
+Ein über das Netzwerk nutzbarer Fehler in CVS könnte dazu führen, daß
+ein Angreifer beliebige Programme auf dem CVS Server ausführen kann.
+Weitere Informationen finden Sie in FreeBSD-SA-03:01. [MERGED]
+
+Durch Auswertung der Antwortzeiten von OpenSSL wäre es einem Angreifer
+mit sehr viel Rechenleistung möglich gewesen, unter bestimmten Umständen
+den Klartext der übermittelten Daten zu erhalten. Dieser Fehler durch
+die neue OpenSSL Version 0.9.7 behoben. Weitere Informationen finden Sie
+in FreeBSD-SA-03:02. [MERGED]
+
+Die Sicherheit und Leistung der Erweiterung ``syncookies'' wurde
+verbessert, damit Angreifer es schwerer haben, eine Verbindung zu
+fälschen. Weitere Informationen finden Sie in FreeBSD-SA-03:03. [MERGED]
+
+Diverse über das Netzwerk nutzbare Puffer-Überläufe in sendmail wurden
+durch die Aktualisierung von sendmail behoben. Weitere Information
+finden Sie in FreeBSD-SA-03:04 und FreeBSD-SA-03:07. [MERGED]
+
+In der XDR-Implementierung wurde ein Fehler behoben, der es einem
+Angreifer möglich machte, den Dienst abstürzen zu lassen. Weitere
+Informationen finden Sie in FreeBSD-SA-03:05. [MERGED]
+
+In OpenSSL wurden zwei vor kurzem veröffentlichte Schwachstellen
+repariert. Weitere Informationen finden Sie in FreeBSD-SA-03:06.
+[MERGED]
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2. Änderungen im Kernel
+
+devfs(5) ist nicht mehr optional, die Option NODEVFS kann nicht mehr für
+die Konfigurationsdatei für einen angepaßten Kernel verwendet werden.
+
+Bei der Behandlung der Zugriffsrechte für /dev/tty wurde ein kleiner
+Fehler behoben. Dadurch ist es jetzt auch wieder möglich, ssh(1) zu
+verwenden, nachdem man su(1) benutzt hat.
+
+In fstat(2) wurde ein Fehler beseitigt, durch den bei der Benutzung von
+TCP Sockets immer 0 zum Lesen verfügbare Zeichen gemeldet wurden. Die
+Option NOTE_LOWAT für EVFILT_READ funktioniert auch wieder.
+
+Bei madvise(2) unterstützt jetzt MADV_PROTECT, mit dem ein Prozeß das
+Virtual Memory System darüber informieren kann, daß er "wichtig" ist und
+nicht beendet werden sollte, wenn kein Swapspace mehr zur Verfügung
+steht. Diese Option steht nur für Prozesse zur Verfügung, die mit
+Superuser-Rechten laufen.
+
+Die Scheduler-Infrastruktur wurde um einen zweiten Scheduler ergänzt,
+der für alle Anwendungsbereiche einsetzbar ist und viele Vorteile für
+SMP bietet. In der Konfigurationsdatei für den Kernel muß genau ein
+Scheduler ausgewählt werden. Der bisher verwendete Scheduler wird mit
+options SCHED_4BSD aktiviert. Der neue (noch experimentelle) Scheduler
+kann mit options SCHED_ULE aktiviert werden.
+
+Die Major Numbers für Geräte werden jetzt dynamisch alloziert. Dadurch
+sinkt die Notwendigkeit für eine zentrale, statische Tabelle mit den
+Zuordnungen von Major Numbers zu Gerätetreibern (einige Treiber behalten
+aus Gründen der Kompatibilität ihre alten Major Numbers), außerdem ist
+es nicht mehr so wahrscheinlich, daß der Nummernkreis für die Major
+Numbers erschöpft wird.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2.1. Unterstützung für Prozessoren und Mainboards
+
+Mit dem neuen Treiber vpd(4) können auf IBM ThinkPad Laptops die
+Hardware-Informationen aus der Vital Product Data Stuktur ausgelesen
+werden.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2.2. Änderungen im Bootloader
+
+Der Alpha Bootloader (boot1) kann jetzt auch boot genannt werden,
+dadurch verringern sich die Unterschiede zu den anderen Plattformen.
+
+Das Verzeichnis /modules war in FreeBSD 4.X das Standard-Verzeichnis für
+Module. Es ist nicht mehr Teil des Standard-Pfades für kern.module_path.
+Module anderer Hersteller sollten in /boot/modules abgelegt werden.
+
+  Anmerkung: Für FreeBSD 4.X vorgesehene Module bringen das System in
+  der Regel zum Absturz, wenn sie von FreeBSD 5.1-RELEASE Kernel geladen
+  werden und sollten nur mit äußerster Vorsicht eingesetzt werden.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2.3. Netzwerke und Netzwerkkarten
+
+Der Treiber cm unterstützt jetzt IPX.
+
+Das neue wlan(4) Modul bietet Unterstützung für die 802.11
+Verbindungsschicht. Die Treiber wi(4) und an(4) wurden geändert, um
+dieses Modul nutzen zu können.
+
+Im Treiber xl(4) wurde ein Zeitfehler beseitigt, durch den es bei der
+Konfiguration eines Netzwerkanschlusses zu einer Kernel Panic und
+anderen Fehlern kommen konnte.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2.4. Netzwerk-Protokolle
+
+Es ist jetzt wieder möglich, bei ipfw(4) skipto zusammen mit dem
+Schlüsselwort log zu benutzen. Auch die ipfw(4) uid Regeln funktionieren
+jetzt wieder.
+
+Es ist jetzt möglich, bei der Konfiguration des Kernels die beiden
+Optionen FAST_IPSEC und INET6 anzugeben. Allerdings ist es immer noch
+nicht möglich, beide Optionen gleichzeitig zu nutzen.
+
+In TCP NewReno wurde ein Fehler behoben, durch den der ``Fast Recovery''
+Modus zu früh beendet wurde, falls NewReno aktiviert war. [MERGED]
+
+TCP unterstützt jetzt den in RFC 3042 vorgeschlagenen Mechanismus
+``Limited Transmit'', der in bestimmten Fällen die Effektivität der TCP
+Loss Recovery verbessern kann. Die Erweiterung ist standardmäßig
+deaktiviert und kann mit der Sysctl-Variablen net.inet.tcp.rfc3042
+aktiviert werden. Weitere Informationen finden Sie in tcp(4).
+
+TCP unterstützt jetzt die größere initiale Congestion Windows, wie in
+RFC 3390 beschrieben. Durch diese Erweiterung kann sich der
+Datendurchsatz bei kurzen Transfers und Verbindungen mit großer
+Bandbreite und hoher Verbindungszeit verbessern. Die Erweiterung ist
+standardmäßig deaktiviert und kann mit der Sysctl-Variablen
+net.inet.tcp.rfc3390 aktiviert werden. Weitere Informationen finden Sie
+in tcp(4).
+
+Die Routinen zum Zusammensetzen von fragmentierten IP-Paketen arbeiten
+jetzt besser, wenn eine große Anzahl Fragmente empfangen wird. Ziel der
+Änderung war, eine bessere Resistenz gegen Denial-of-Service Angriffe
+mit Paket-Fragmenten zu erreichen.
+
+TCP-Verbindungen im Status TIME_WAIT nutzen jetzt einen speziellen
+Protocol Control Block, der kleiner als der übliche TCP PCB ist. Dadurch
+ist es möglich, einige der von einer solchen Verbindung genutzten
+Datenstrukturen und Ressourcen früher freizugeben.
+
+Es ist jetzt möglich, die Ports zu definieren, die als ``privilegiert''
+gelten (TCP und UDP Ports, für die nur der Super-User bind(2) aufrufen
+darf). Der Bereich kann mit den Sysctl-Variablen
+net.inet.ip.portrange.reservedlow und net.inet.ip.portrange.reservedhigh
+angegeben werden, diese sind standardmäßig auf die vorher verwendeten
+Werte gesetzt. Diese Erweiterung soll es ermöglichen, daß sich
+Server-Prozesse an eigentlich privilegierte Ports binden können, ohne
+Superuser-Rechte zu benötigen. Weitere Informationen finden Sie in
+ip(4).
+
+Im nicht-blockierenden RPC Code wurden diverse Fehler beseitigt. Dadurch
+können Anwender von amd(8) wieder Dateisysteme von einem 5.1-RELEASE
+Server mounten.
+
+Die XNS Protokollfamilie funktioniert seit über sieben Jahren nicht
+mehr, darum wurde die Unterstützung dafür jetzt entfernt.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2.5. Festplatten und Massenspeicher
+
+Der Treiber aac(4) läuft jetzt völlig unabhängig vom Giant Kernel Lock.
+Dadurch ergibt sich auf SMP-Systemen mit mehreren gleichzeitig
+stattfindenden I/O-Operationen eine Leistungssteigerung von fast 20%.
+
+Der Treiber ata(4) unterstützt jetzt alle bekannten Chipsätze von SiS,
+eine detaillierte Liste finden Sie in den Hardware Notes.
+
+Der Treiber ata(4) unterstützt jetzt die Promise SATA150 TX2 und TX4
+Serial ATA/150 Controller.
+
+Beim Herunterfahren des Systems weist der Treiber ata(4) jetzt alle
+Geräte an, eventuell noch ausstehende Schreiboperationen sofort zu
+tätigen (flush). Geräte, die diese Operation nicht unterstützen,
+reagieren darauf eventuell mit einer Fehlermeldung, die auf der
+Systemkonsole angezeigt wird.
+
+Die CAM Schicht unterstützt jetzt Geräte mit mehr als 2³² Blöcken, was
+bei einer Blockgröße von 512 Byte einer Größte von 2 TByte entspricht.
+
+  Anmerkung: Anwender, die diese Änderung in ihr System aufnehmen,
+  müssen alle Programme neu kompilieren, die pass(4) oder xpt(4)
+  verwenden. Dazu gehören unter anderem camcontrol(8) aus dem
+  Basissystem und die Ports sysutils/cdrtools und multimedia/xmms.
+
+Der Treiber cd(4) wurde in diversen Punkten überarbeitet. Das wichtigste
+sichtbare Ergebnis ist eine verbesserte Kompatibilität zu diversen
+ATAPI/USB/Firewire CD-ROM Laufwerken.
+
+geom(4) ist nicht mehr optional, die Option NO_GEOM kann nicht mehr in
+der Konfigurationsdatei für einen angepaßten Kernel angegeben werden.
+
+Der Treiber iir(4) wurde aktualisiert, dadurch sollten die bei der
+Installation aufgetretenen Probleme mit nicht erkannten Festplatten
+behoben sein.
+
+Im Treiber mly(4) wurde ein Fehler beseitigt, der zu ``Hängern'' führen
+konnte.
+
+UFS und UFS2 Dateisysteme können jetzt mit Namen versehen werden. Diese
+Namen sind Zeichenketten, die ein Dateisystem identifizieren und nicht
+vom verwendeten Gerät abhängen. Die Namen können bei newfs(8) und
+tunefs(8) mit der neuen Option -L angegeben werden. Wird das Modul
+GEOM_VOL genutzt, können die Dateisysteme in /dev/vol direkt über ihren
+Namen angesprochen werden.
+
+Das Root-Dateisystem kann jetzt auch auf einer vinum(4)-Partition
+liegen. Weitere Informationen finden Sie in der Onlinehilfe zu vinum(4).
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2.6. Dateisystem
+
+Mit der neuen Kernel-Option DIRECTIO ist es möglich, Daten direkt (unter
+Umgehung des Buffer Cache im Kernel) in den Speicherbereich eines
+Programms zu lesen. Um diese Erweiterung nutzen zu können, muß bei dem
+entsprechenden Dateideskriptor das Flag O_DIRECT gesetzt sein, außerdem
+müssen sowohl der Offset als auch die Länge der Leseoperation ein
+ganzzahliges Vielfaches der physikalischen Sektorgröße sein.
+
+NETNCP und die Unterstützung für Netware Dateisysteme (nwfs)
+funktionieren wieder.
+
+Beim Versuch, die Verbindung zu einem smbfs Share zu trennen, konnte es
+zu Fehlermeldungen und Kernel Panics kommen; diese Fehler wurden
+beseitigt.
+
+<<<<<<< HEAD
+
+2.2.7. Unterstützung für PCCARD
+
+
+2.2.8. Multimedia
+
+=======
+------------------------------------------------------------------------
+
+2.2.7. Unterstützung für PCCARD
+
+------------------------------------------------------------------------
+
+2.2.8. Multimedia
+
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.3. Benutzerprogramme
+
+adduser(8) geht jetzt korrekt mit Paßwörtern um, die Shell-Sonderzeichen
+enthalten.
+
+Bei adduser(8) kann jetzt mit der Option -g die Standardgruppe eines
+Benutzers gesetzt werden.
+
+Mit bsdlabel(8) steht ein Ersatz für das früher genutzte disklabel zur
+Verfügung. Es kann wie sein Vorgänger das BSD-Label auf einer
+Festplattenpartition installieren, untersuchen und modifizieren sowie
+die Routinen für den Systemstart installieren. Im Vergleich zu disklabel
+wurden einige Optionen und Parameter entfernt, die nicht mehr benötigt
+werden. Mit dem neuen Parameter -m kann bsdlabel(8) angewiesen werden,
+das Layout auf eine bestimmte Maschine anzupassen.
+
+Die Distribution compat4x enthält jetzt die in FreeBSD 4.7-RELEASE
+enthaltenen Versionen der Bibliotheken libcrypto.so.2, libgmp.so.3 und
+libssl.so.2.
+
+Wird bei chgrp(1) und chown(8) der Parameter -v mehrfach angegeben,
+geben sie bei jeder Änderung der UID und GID den alten und neuen Wert
+aus.
+
+> config(8) kennt jetzt das Schlüselwort nodevice, das bei der
+Konfiguration eines angepaßten Kernels verwendet werden kann, um die
+Wirkung einer vorher gesetzten device Anweisung aufzuheben. Die neuen
+Schlüsselworte nooption und nomakeoption heben die Wirkung von vorher
+gesetzten options bzw. makeoptions Anweisungen auf.
+
+Das neue Programm diskinfo(8) zeigt Informationen über Festplatten und
+vergleichbare Geräte an. Es kann auch für einen extrem simplen
+Leistungstest genutzt werden.
+
+Das Programm disklabel wurde durch bsdlabel(8) ersetzt. Auf den
+Plattformen alpha, i386 und pc98 ist disklabel jetzt ein Link auf
+bsdlabel(8).
+
+Wird bei dump(8) die neue Option -C angegeben, wird ein Cache für
+Datenblöcke der Festplatte eingerichtet. Dadurch steigt die Performance
+von dump(8), kann aber dazu führen, daß zwischen den einzelnen Läufen
+erfolgende Änderungen des Dateisystems nicht erkannt werden.
+
+Wird dumpfs(8) mit der neuen Option -m aufgerufen, zeigt es die
+Dateisystemparameter in Form einer Befehlszeile für newfs(8) an.
+
+Das neue Programm elfdump(1) kann Informationen über ausführbare Dateien
+im elf(5) Format anzeigen.
+
+fetch(1) nutzt die aus der Bibliothek fetch(3) stammende Unterstützung
+für .netrc Dateien; außerdem kann mit der neuen Option -N eine andere
+.netrc Datei angegeben werden.
+
+fetch(3) unterstützt jetzt .netrc Dateien; weitere Informationen dazu
+finden Sie in ftp(1).
+
+Wird ftpd(8) mit der neuen Option -h aufgerufen, werden in den
+Server-Meldungen keine Informationen über das System (wie die ftpd(8)
+Versionsnummer oder der Systemname) angegeben. [MERGED]
+
+Bei ftpd(8) kann jetzt mit der neuen Option -P angegeben werden, auf
+welchem Port eingehende Verbindungen erwartet werden sollen. Die
+Portnummer für den Daten-Port ist nicht mehr hart verdraht, sondern
+immer eins kleiner als die des Ports für die Kommandos. [MERGED]
+
+ftpd(8) unterstützt jetzt eine erweiterte Version der Datei
+/etc/ftpchroot. Weitere Informationen finden Sie in der ebenfalls neuen
+Online-Hilfe zu ftpchroot(5). [MERGED]
+
+ftpd(8) unterstützt jetzt ein erweitertes Format für die Namen der
+Home-Verzeichnis, das gleichzeitig ein Startverzeichnis für chroot(2)
+definiert; dieses Verzeichnis wird dann als Startpunkt für eine
+chroot(2)-Umgebung genutzt. Zu diesem Zweck wird die Sequenz /./
+genutzt, die auch von anderen FTP-Servern für diesen Zweck genutzt wird.
+Diese Sequenz kann sowohl in ftpchroot(5) als auch in passwd(5) genutzt
+werden. [MERGED]
+
+fwcontrol(8) unterstützt jetzt die Optionen -R und -S zum Empfang und
+Senden von DV-Datenströmen. [MERGED]
+
+Das neue Programm gstat(8) zeigt Daten über die Festplattenzugriffe
+innerhalb des geom(4) Subsystems.
+
+Die neuen ipfw(8)-Befehle enable und disable können zur Kontrolle
+verschiedener Aspekte der ipfw(4)-Funktionalität genutzt werden, bis hin
+zur Aktivierung und Deaktivierung der gesamten Firewall. Im Vergleich
+mit den bereits existierenden sysctl-Variablen ist dieses Interface
+einfacher zu bedienen und besser zugänglich.
+
+Wird jail(8) mit dem Parameter -i aufgerufen, gibt es einen Namen für
+das gerade erzeugte Jail aus.
+
+Mit dem neuen Programm jexec(8) kann ein Befehl innerhalb eines
+existierenden Jail ausgeführt werden.
+
+Das neue Programm jls(8) zeigt die Liste der existierenden Jails an.
+
+kenv(1) wurde von /usr/bin nach /bin verschoben, damit es auch in den
+ersten Phasen des Systemstarts zur Verfügung steht, wenn lediglich das
+Root-Dateisystem gemountet ist.
+
+Bei killall(1) kann man jetzt mit dem neuen Parameter -j alle Prozesse
+innerhalb eines Jails beenden.
+
+Die neue Bibliothek libgeom(3) erlaubt normalen Programmen den Zugriff
+auf einige Funktionen des geom(4) Subsystems.
+
+Das neue MAC Policy Modul mac_portacl ist jetzt verfügbar. Es stellt
+einen einfachen ACL-Mechanismus zur Verfügung, mit dem Benutzern und
+Gruppen erlaubt werden kann, bind(2) für TCP oder UDP Ports aufzurufen.
+Das Modul soll in der Regel zusammen mit der neuen Sysctl-Variablen
+net.inet.ip.portrange.reservedhigh eingesetzt werden.
+
+Das Skript MAKEDEV wird nicht mehr benötigt und wurde entfernt, da
+devfs(5) jetzt auf allen Systemen verwendet werden muß.
+
+Wird mergemaster(8) mit der neuen Option -P aufgerufen, legt es eine
+Sicherheitskopie der ersetzten Dateien an.
+
+mixer(8) unterstützt relative Änderungen der Lautstärke.
+
+Das neue Programm mksnap_ffs(8) vereinfacht die Erzeugung von FFS
+Snapshots. Das Programm ist SUID root und soll von Mitgliedern der
+Gruppe operator aufgerufen werden.
+
+Bei mount(8) und umount(8) kann jetzt mit -F eine andere Tabelle der
+Dateisysteme als Alternative zu fstab(5) angegeben werden.
+
+Wird mount_nfs(8) mit der neuen Option -c aufgerufen, ruft es für UDP
+Mount Points nicht mehr connect(2) auf. Diese Option muß gesetzt sein,
+wenn ein Server die Antworten nicht vom Standardport 2049 verschickt
+oder die Antworten von einer anderen IP-Adresse verschickt (dies kann
+bei Systemen mit mehreren Netzwerkkarten auftreten). Wird die
+Sysctl-Variable vfs.nfs.nfs_ip_paranoia auf 0 gesetzt, ist diese Option
+standardmäßig aktiv. [MERGED]
+
+Bei mount_nfs(8) kann man jetzt mit mit noinet4 und noinet6 die
+Verwendung von IPv4 beziehungsweise IPv6 verhindern.
+
+newfs(8) erzeugt jetzt standardmäßig UFS2 Dateisysteme, UFS1
+Dateisysteme werden nur noch erzeugt, wenn der Parameter -O1 angegeben
+wird.
+
+newsyslog(8) wurde in vielen Punkten erweitert:
+
+-   Wird bei einem Eintrag (bzw. einer Gruppe von Einträgen, bei denen
+    die Option G gesetzt ist) die neue Option W angeben, wird das
+    Programm zur Kompression des Logfiles erst gestartet, wenn er die
+    vorher gestarteten Packprogramme durchgelaufen sind. Dadurch soll
+    verhindert werden, daß Systeme durch die gleichzeitige Kompression
+    mehrerer großer Logfiles überlastet werden. [MERGED]
+
+-   Die ``default rotate action'' legt fest, wie Daten behandelt werden,
+    die zwar rotiert werden sollen, aber nicht explizit in der
+    Konfiguration erwähnt wurden. [MERGED]
+
+-   Die Angabe des Parameters -s auf der Kommandozeile sorgt dafür, daß
+    bei der Rotation von Logfiles keine Signale an Prozesse gesendet
+    werden sollen. [MERGED]
+
+-   Ist bei einem Eintrag in der Konfigurationsdatei die Option N
+    gesetzt, wird bei der Rotation dieses Logfiles kein Signal an einen
+    Prozeß geschickt. [MERGED]
+
+-   Ist bei einem Eintrag in der Konfigurationsdatei die Option N
+    gesetzt, wird nach der Rotation dieses Logfiles ein Signal an eine
+    Gruppe von Prozessen statt eines einzelnen Prozesses geschickt.
+    [MERGED]
+
+nsdispatch(3) kann jetzt von Threads genutzt werden und unterstützt
+jetzt auch Name Service Switch (NSS) Module. NSS Module können fest in
+libc eingebunden werden oder mit dlopen(3) dynamisch nachgeladen werden.
+Sie werden bei der Konfiguration geladen und initialisiert, das heißt
+wenn nsdispatch(3) aufgerufen wird oder nsswitch.conf(5) zum ersten Mal
+oder nach einer Änderung eingelesen wird.
+
+Das neue Modul pam_chroot(8) führt eine chroot(2) Operation in ein
+vorgegebenes Verzeichnis oder in ein aus dem Heimatverzeichnis des
+Benutzers abgeleitetes Verzeichnis aus.
+
+pam_ssh(8) wurde komplett überarbeitet. Eine der Konsequenzen ist, daß
+es jetzt für jede Sitzung einen ssh-agent(1) startet; die alte Version
+versuchte, jede Sitzung mit dem ssh-agent(1) zu verbinden, der von der
+ersten Sitzung gestartet wrude.
+
+Wird bei ping(8) die neue Option -D genutzt, wird bei den versendeten
+Paketen das Bit ``Don't Fragment'' gesetzt.
+
+Wird ping(8) mit der neuen Option -M aufgerufen, verschickt es ``ICMP
+mask'' oder ``ICMP timestamp request'' statt der üblichen ``ICMP echo''
+Anfragen.
+
+Bei ping(8) können mit der neuen Option -z die ``Type of Service'' Bits
+der versendeten Pakete definiert werden.
+
+pw(8) kann jetzt auch User anlegen, deren Namen mit dem Zeichen $ endet,
+diese Änderung dient zur Vereinfachung der Administration von Samba
+Servern. [MERGED]
+
+pwd_mkdb(8) erzeugt die Paßwort-Datenbanken /etc/pwd.db und /etc/spwd.db
+jetzt in einem Format, das nicht mehr von der Byte-Order des Systems
+abhängig ist. Dadurch ist es möglich, diese Datenbanken zwischen
+Maschinen mit unterschiedlichen Architekturen auszutauschen. Das Format
+enthält Versionsnummern für jeden Eintrag, um die Kompatibilität mit
+alten Versionen zu gewährleisten.
+
+In rand(3) wurde ein Fehler beseitigt, der dazu führen konnte, daß die
+Folge der Zufallszahlen beim Wert 0 steckenblieb. Davon unabhängig
+sollte rand(3) nur für triviale Zwecke genutzt werden.
+
+rtld(1) unterstützt jetzt dynamische Mappings für Anhängigkeiten
+zwischen shared Objects. Diese optionale Erweiterung ist sehr nützlich,
+wenn man mit den verschiedenen Thread-Bibliotheken experimentieren will.
+Allerdings ist es standardmäßig nicht im Basissystem enthalten. Weitere
+Informationen über die Aktivierung und Benutzung dieser Erweiterung
+finden Sie in libmap.conf(5).
+
+sem_open(3) arbeitet jetzt korrekt, wenn eine Semaphore mehrfach
+geöffnet wird; dadurch kann ein Aufruf von sem_close(3) das aufrufende
+Programm nicht mehr zum Absturz bringen.
+
+Die Logik zur Initialisierung von srandom(3) wurde verbessert.
+
+sysinstall(8) legt neue Dateisysteme standardmäßig im Format UFS2 an,
+sofern der Benutzer im Schritt "Label Disk" nichts explizit auf UFS1
+umstellt.
+
+Mit dem neuen Programm swapoff(8) ist es möglich, Swapping und Paging
+auf einem Gerät abzuschalten. Das ebenfalls neue Kommando swapctl(8)
+stellt die von den anderen BSDs bekannte Benutzer-Interface für
+swapon(8) und swapoff(8) zur Verfügung.
+
+  Anmerkung: Das Programm swapoff(8) ist noch im Versuchsstadium.
+
+Bei syslogd(8) ist jetzt möglich, bei der Angabe einer System- oder
+Programmspezifikation in der Konfigurationsdatei syslog.conf(5) mehrere
+Systeme oder Programme anzugeben.
+
+Wird systat(1) mit der neuen Option -ifstat aufgerufen, zeigt es den
+Datenfluß auf den aktiven Netzwerk-Interfaces des Systems.
+
+Das neue Programm usbhidaction(1) kann auf Aktionen von USB HID Geräten
+und die konfigurierten Aktionen ausführen.
+
+Der neue Parameter -r von uudecode(1) und b64decode(1) erlaubt es, auch
+unvollständige oder defekte Dateien zu bearbeiten, bei denen der
+Vorspann oder auch die letzten Zeilen fehlen.
+
+Bei vmstat(8) wurde die Implementierung für den Parameter -f (zur
+Anzeige der fork(2) Statistiken) überarbeitet.
+
+xargs(1) unterstützt jetzt die neue Option -P, um mehrere Versionen des
+gleichen Programms parallel ausführen zu lassen.
+
+Wird xargs(1) mit dem Parameter -o verwendet, reinitialisiert es
+/dev/tty für das aufgerufene Programm, bevor es aufgerufen wird. Diese
+Erweiterung wird benötigt, wenn das aufgerufene Programm interaktiv ist.
+
+Die altbekannten BSD-Startscripte in /etc wurden durch das von NetBSD
+übernommene rc.d System (auch ``rcNG'' genannt) ersetzt. Die
+Funktionalität der alten Skripte wurde vollständig erhalten und Dateien
+wie /etc/rc.conf bleiben auch weiterhin der bevorzugte Weg zur
+Konfiguration des Systems. Das rc.d System wurde seit 5.0-RELEASE
+standardmäßig benutzt, daher sollte diese Änderung für die meisten
+Anwender transparent sein. Anwender, die die alten Skripte modifiziert
+haben, müssen sich darauf einstellen, daß die folgenden Dateien aus dem
+Verzeichnis /etc entfernt wurden: rc.atm, rc.devfs, rc.diskless1,
+rc.diskless2, rc.i386, rc.alpha, rc.amd64, rc.ia64, rc.sparc64, rc.isdn,
+rc.network, rc.network6, rc.pccard, rc.serial, rc.syscons, rc.sysctl.
+Bei der Anwendung von mergemaster(8) ist es möglich, diese Dateien
+automatisch entfernen zu lassen. Weitere Informationen finden Sie in
+rc.subr(8).
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.4. Zusätzliche Software
+
+Die ACPI-CA Routinen wurden von Version 20021118 auf Version 20030228
+aktualisiert.
+
+Die awk-Variante von Bell Labs ist jetzt in der Version vom
+14. März 2003 verfügbar.
+
+BIND steht jetzt in der Version 8.3.4 zur Verfügung. [MERGED]
+
+Alle Anwendungen aus dem bzip2 Paket sind jetzt im Basissystem verfügbar
+(dies betrifft speziell bzip2recover, das jetzt erzeugt und installiert
+wird). [MERGED]
+
+CVS steht jetzt in der Version 1.11.5 zur Verfügung. [MERGED]
+
+FILE steht jetzt in der Version 3.41 zur Verfügung. [MERGED]
+
+GCC steht jetzt in der Version 3.2.2 zur Verfügung.
+
+Die Bibliothek gdtoa stellt Funktionen zur Umwandlung von Zeichenketten
+in Fließkommazahlen und umgekehrt zur Verfügung. Die zur Zeit genutzte
+Version ist vom 24. März 2003.
+
+groff und die dazugehörigen Programmen wurden von Version 1.18.1 auf
+Version 1.19 aktualisiert.
+
+IPFilter steht jetzt in der Version 3.4.31 zur Verfügung. [MERGED]
+
+Der ISC DHCP Client steht jetzt in der Version 3.0.1RC11 zur Verfügung.
+[MERGED]
+
+Der ISC DHCP Client enthält jetzt das Programm omshell(1) und die
+Bibliothek dhcpctl(3), mit denen das Verhalten des Client während des
+Betriebs beeinflußt werden kann.
+
+Kerberos IV (in Form von KTH eBones) wird nicht mehr unterstützt.
+Anwender, die diese Funktionalität benötigen, können den Port oder das
+Package security/krb4 installieren. Der Kerberos IV Kompatibilitätsmodus
+wurde aus Kerberos 5 entfernt, und die Namen der Benutzerprogramme
+wurden von k5program in kprogram geändert.
+
+Kerberos 5 wird jetzt beim buildworld standardmäßig mit erzeugt und
+installiert. Es macht keinen Unterschied mehr, ob MAKE_KERBEROS5 gesetzt
+ist oder nicht. Wenn Kerberos 5 nicht im Basissystem enthalten sein
+soll, muß die Variable NO_KERBEROS im Makefile gesetzt werden.
+
+libpcap ist jetzt in der Lage, eine Auswahl unter den verschiedenen Data
+Link Typen eines Interfaces zu treffen.
+
+lukemftpd ist jetzt auf dem Stand vom 22. Januar 2003. Hinweis: Dieses
+Programm wird standardmäßig weder erzeugt noch installiert.
+
+OpenPAM wurde von der Version ``Citronella'' auf die Version der
+``Dianthus'' Release aktualisiert.
+
+OpenSSH steht jetzt in der Version 3.6.1p1. zur Verfügung.
+
+OpenSSL steht jetzt in der Version 0.9.7a zur Verfügung. Die wichtigsten
+Neuerungen sind die Unterstützung für AES und crypto(4) Geräte. [MERGED]
+
+sendmail steht jetzt in der Version 8.12.9 zur Verfügung. [MERGED]
+
+tcpdump(1) steht jetzt in der Version 3.7.2 zur Verfügung. [MERGED] Wird
+tcpdump(1) mit der neuen Option -L aufgerufen, zeigt es eine Liste der
+Data Link Typen an, die auf einem Interface zur Verfügung stehen; mit
+der neuen Option -y kann angegeben werden, welcher Data Link Typ bei der
+Aufzeichnung der Pakete genutzt werden soll.
+
+texinfo wurde von der Version 4.2 auf die Version 4.5 aktualisiert.
+
+Die Datenbank der Zeitzonen wurde von der Version tzdata2002d auf die
+Version tzdata2003a aktualisiert. [MERGED]
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.5. Infrastruktur für Ports und Packages
+
+Die nur eine Zeile langen pkg-comment Dateien wurden aus allen Ports
+entfernt und in das Makefile des jeweiligen Ports integriert. Dadurch
+sinken die Plattenbelegung und der Inode-Verbrauch der Ports-Sammlung
+erheblich. [MERGED]
+
+Beim Download der Distributionsdateien für einen Port kann jetzt im
+Makefile mit der Variablen FETCH_REGET angegeben werden, wie oft
+versucht werden soll, den Download einer Datei fortzusetzen, wenn die
+MD5 Prüfsumme nicht stimmt. Die Infrastruktur für die Ports unterstützt
+ebenfalls die Wiederaufnahme unterbrochener Downloads.
+
+Bei pkg_create(1) kann jetzt mit -C eine Liste von Packages definiert
+werden, die nicht zu diesem Package kompatibel sind. Ist eines dieser
+Pakete bereits installiert, weigert sich pkg_add(1), das Paket zu
+installieren. Wenn das Paket trotzdem installiert werden soll, muß
+pkg_add(1) mit dem Parameter -f aufgerufen werden.
+
+pkg_info(1) beachtet jetzt den Wert der Environment-Variable BLOCKSIZE,
+wenn es mit dem Parameter -b aufgerufen wird.
+
+Bei pkg_info(1) kann jetzt der Parameter -Q angegeben werden. Er bewirkt
+ein ähnliches Verhalten wie der Parameter -q (quiet), allerdings wird
+vor jeder Ausgabe der Name des gerade bearbeiteten Paketes ausgegeben.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.6. Erzeugung von Releases und Integration
+
+GNOME steht jetzt in der Version 2.2.1 zur Verfügung. [MERGED]
+
+KDE steht jetzt in der Version 3.1.2 zur Verfügung. [MERGED]
+
+Es gibt keine separate krb5 Distribution mehr. Die Kerberos 5
+Bibliotheken und Programme sind jetzt Bestandteile der crypto
+Distribution.
+
+In sysinstall(8) ist es jetzt wieder möglich, Die Installation einzelner
+Komponenten von XFree86 zu installieren. Um dies zu unterstützen, gab es
+mehrere für den Anwender nicht sichtbare Änderungen, die es ganz
+allgemein erlauben, Teile einer Distribution als Packages installieren
+zu lassen.
+
+XFree86 steht jetzt in der Version 4.3.0 zur Verfügung. [MERGED]
+
+Diverse Routinen zur Aktualisierung von FreeBSD von 2.X auf 3.X
+beziehungsweise von 3.X auf 4.X wurden entfernt.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.7. Dokumentation
+
+Die Dokumentation wurde um die beiden Artikel ``FreeBSD From Scratch''
+und ``The Roadmap for 5-STABLE'' ergänzt. Für beide Dokumente werden
+noch Übersetzer gesucht.
+
+Im Rahmen eines neuen Projektes haben die Arbeiten an einer dänischen
+(da_DK.ISO8859-1) Überstzung begonnen.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3. Aktualisierung einer älteren Version von FreeBSD
+
+Anwender, die schon ein FreeBSD-System im Einsatz haben, sollten auf
+jeden Fall die ``Hinweise für die ersten Anwender von FreeBSD
+5.1-RELEASE'' lesen. Dieses Dokument ist auf den Distributionen in der
+Regel in der Datei EARLY.TXT verfügbar; ansonsten sollte es überall dort
+verfügbar sein, wo auch die anderen Dokumente der Release Notes
+verfügbar sind. Das Dokument enthält einige Tips für die Aktualisierung;
+viel wichtiger ist aber die Analyse der beiden Optionen Wechsel zu
+FreeBSD 5.X oder Weitere Verwendung von FreeBSD 4.X.
+
+  Wichtig: Sie sollten vor der Aktualisierung von FreeBSD auf jeden Fall
+  Sicherheitskopien aller Daten und Konfigurationsdateien anlegen.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Diese Datei und andere Dokumente zu dieser Version sind bei
+ftp://ftp.FreeBSD.org/verfuegbar.
+
+Wenn Sie Fragen zu FreeBSD haben, lesen Sie erst die Dokumentation,
+bevor Sie sich an <de-bsd-questions@de.FreeBSD.org> wenden.
+
+Alle Anwender von FreeBSD 5-CURRENT sollten sich in die Mailingliste
+<current@FreeBSD.org> eintragen.
+
+Wenn Sie Fragen zu dieser Dokumentation haben, wenden Sie sich an
+<de-bsd-translators@de.FreeBSD.org>.

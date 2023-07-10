@@ -1,0 +1,204 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   
+-   Manuel du développeur
+-   Committer's Guide
+-   Manuel du porteur d'application
+-   Dépôt des codes source
+-   Production des versions
+-   Plates-formes
+-   Idées de projet
+-   Contribuer
+
+Projet Java® pour FreeBSD : API
+
+API - Extensions par Sun Microsystems
+
+La liste suivante contient un extrait des définitions et des
+implémentations des API disponibles réalisées par SUN (pour commencer
+consultez Produits Java et allez par exemple sur Extensions Standards)
+
+-   JFC (Classes de Base Java)
+    C’est de là que provient Swing. Pour plus d’informations consultez
+    La Connexion Swing.
+
+-   Structure Média pour Java™
+    L’API Structure Média pour Java (JMF) 1.0 spécifie une architecture
+    simple et unifiée, un protocole d’envoi de messages et une interface
+    de programmation pour la lecture de médias. Cette API a été
+    développée par Sun Microsystems, Inc., Silicon Graphics Inc., et
+    Intel Corporation.
+    L’API Structure Média pour Java (JMF) 2.0 étends l’API 1.0 API en
+    fournissant des fonctions de capture, des modules codecs, la
+    sauvegarde de fichiers, la diffusion d’émissions radio/télé et la
+    capacité d’accéder et de manipuler les données média avant de les
+    diffuser. Cette API est disponible publiquement et a été développée
+    par Sun Microsystems, Inc. et IBM.
+
+-   Traitement d’Images Avancé Java™
+    L’API de Traitement d’Images Avancé Java (JAI) est l’interface de
+    programmation extensible et avec possibilité d’utiliser des
+    fonctions réseaux pour la création d’applications et d’applets
+    avancées de traitement d’images en Java. L’API de Traitement
+    d’Images Avancé Java offre un jeu complet de fonctions pour le
+    traitement d’images comme le "tiling", l’exécution différée et
+    l’utilisation de plusieurs processeurs. Entièrement compatible avec
+    l’API Java 2D, les développeurs peuvent facilement étendre les
+    fonctions de traitement d’images et les performances des
+    applications Java 2D standards avec l’API de Traitement d’Images
+    Avancé Java.
+
+-   Port Série (COMM) Java™
+    Le Port Série Java peut être utilisé pour écrire des applications de
+    communications indépendantes de la plate-forme pour des technologies
+    telles que l’envoi de messages parlés, le fax et les cartes à puce.
+    La version actuelle supporte les ports séries RS232 et les ports
+    parallèles IEEE 1284.
+
+-   Java 3D™
+    L’API Java 3D TM 1.1 est un ensemble de classes pour écrire des
+    applications graphiques en 3-dimensions et des applets 3D. Elle
+    apporte aux développeurs des fonctions de haut niveau pour la
+    création et la manipulation de la géométrie 3D et pour la
+    construction des structures utilisées dans le rendu de cette
+    géometrie. Les développeurs d’applications peuvent décrire de très
+    grands mondes virtuels avec ces fonctions, qui fournissent à la
+    librairie Java 3D suffisamment d’informations pour produire un rendu
+    optimal de ces mondes.
+
+-   JavaMail
+    L’API JavaMail fournit un ensemble de classes abstraites qui
+    représente un sytème de courrier électronique. L’API a été élaborée
+    afin de fournir une structure indépendante de la plate-forme et
+    indépendante du protocole pour construire des applications Java de
+    courrier électronique et d’envoi de messages.
+
+-   JavaHelp™
+    JavaHelp est le système d’aide pour la plate-forme Java : c’est un
+    système d’aide basé sur Java et indépendant de la plate-forme qui
+    permet aux développeurs Java d’inclure une aide en ligne dans de
+    nombreux cas, comme les composants Java, les applications (en réseau
+    ou non), les gestionnaires de bureaux et les pages HTML.
+
+-   Structure d’Activation JavaBeans™ (JAF)
+    Avec la Structure d’Activation JavaBeans (JAF) les développeurs
+    peuvent tirer avantage de services standards pour déterminer le type
+    de données quelconques, d’encapsuler l’accès à ces données, de
+    découvrir les opérations possibles sur ces données et de créer le
+    composant JavaBeans approprié pour réaliser ces opérations.
+
+-   Servlet Java™
+    Les Servlet Java fournissent une interface uniformisée et supportée
+    par les professionnels pour étendre un serveur web avec des
+    composants indépendants de la plate-forme et du serveur écrits en
+    langage Java.
+
+-   Chiffrement en Java™ (JCE)
+    L’Extension Chiffrement en Java (JCE) 1.2 fournir la structure et
+    les implantations pour le chiffrement, la génération et la gestion
+    de clefs et les algorithmes de Code d’Authentification de Message
+    (MAC). Le support du chiffrement inclu les chiffrements symétriques,
+    asymétriques, en blocs et en flux. La librairie supporte aussi les
+    flux sécurisés et les objets "scellés".
+
+-   InfoBus
+    InfoBus permet un échange dynamique de données entre des composants
+    JavaBeans en définissant un petit nombre d’interfaces entre les
+    Beans en coopération et en spécifiant le protocole pour utiliser ces
+    interfaces.
+    Les protocoles sont basés sur une notion de bus d’information. Tous
+    les composants qui implémentent ces interfaces peuvent se connecter
+    sur le bus. En tant que membre du bus n’importe quel composant peut
+    échanger des données avec n’importe quel autre composant de manière
+    structurée, y compris des tableaux, des tables et des données
+    provenant d’une base de données.
+
+-   Nommage Java et Interface pour les Annuaires™ (JNDI)
+    Fournit une connectivité uniformisée, standard et directe d’une
+    plate-forme Java vers l’ensemble des informations de l’entreprise,
+    permettant ainsi aux développeurs de concevoir des applications Java
+    avec un accès unifié aux multiples services de nommage et
+    d’annuaires de l’entreprise.
+
+-   Le Projet XML
+    Le site de Sun pour l’alliance du XML et de Java
+
+Logiciels de tiers…​
+
+-   JGL (Librairie Générique Java)
+    Une collection d’API avec par exemple les listes liées etc. La
+    collection d’API avant l’invention de la collection d’API dans
+    JDK1.2
+
+-   XML4J
+    Parser XML pour java réalisé par IBM
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 juin 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

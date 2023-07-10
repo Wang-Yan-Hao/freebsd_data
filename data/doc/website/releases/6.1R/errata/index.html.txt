@@ -1,0 +1,302 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 6.1-RELEASE Errata
+
+The FreeBSD Project
+
+Copyright © 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007 The FreeBSD
+Documentation Project
+
+$FreeBSD: src/release/doc/en_US.ISO8859-1/errata/article.sgml,v
+1.73.2.37 2007/01/11 20:11:49 bmah Exp $
+
+FreeBSD is a registered trademark of the FreeBSD Foundation.
+
+Intel, Celeron, EtherExpress, i386, i486, Itanium, Pentium, and Xeon are
+trademarks or registered trademarks of Intel Corporation or its
+subsidiaries in the United States and other countries.
+
+Sparc, Sparc64, SPARCEngine, and UltraSPARC are trademarks of SPARC
+International, Inc in the United States and other countries. Products
+bearing SPARC trademarks are based upon architecture developed by Sun
+Microsystems, Inc.
+
+Many of the designations used by manufacturers and sellers to
+distinguish their products are claimed as trademarks. Where those
+designations appear in this document, and the FreeBSD Project was aware
+of the trademark claim, the designations have been followed by the “™”
+or the “®” symbol.
+
+------------------------------------------------------------------------
+
+  This document lists errata items for FreeBSD 6.1-RELEASE, containing
+  significant information discovered after the release or too late in
+  the release cycle to be otherwise included in the release
+  documentation. This information includes security advisories, as well
+  as news relating to the software or documentation that could affect
+  its operation or usability. An up-to-date version of this document
+  should always be consulted before installing this version of FreeBSD.
+
+  This errata document for FreeBSD 6.1-RELEASE will be maintained until
+  the release of FreeBSD 6.2-RELEASE.
+
+------------------------------------------------------------------------
+
+1 Introduction
+
+This errata document contains “late-breaking news” about FreeBSD
+6.1-RELEASE. Before installing this version, it is important to consult
+this document to learn about any post-release discoveries or problems
+that may already have been found and fixed.
+
+Any version of this errata document actually distributed with the
+release (for example, on a CDROM distribution) will be out of date by
+definition, but other copies are kept updated on the Internet and should
+be consulted as the “current errata” for this release. These other
+copies of the errata are located at http://www.FreeBSD.org/releases/,
+plus any sites which keep up-to-date mirrors of this location.
+
+Source and binary snapshots of FreeBSD 6-STABLE also contain up-to-date
+copies of this document (as of the time of the snapshot).
+
+For a list of all FreeBSD CERT security advisories, see
+http://www.FreeBSD.org/security/ or
+ftp://ftp.FreeBSD.org/pub/FreeBSD/CERT/.
+
+------------------------------------------------------------------------
+
+2 Update Information
+
+No news.
+
+------------------------------------------------------------------------
+
+3 Security Advisories
+
+The following security advisories pertain to FreeBSD 6.1-RELEASE. For
+more information, consult the individual advisories available from
+http://security.FreeBSD.org/.
+
++-------------+-------------+------------------------------------------+
+| Advisory    | Date        | Topic                                    |
++=============+=============+==========================================+
+| SA-0        | 31 May 2006 | Inoperative access controls in ypserv(8) |
+| 6:15.ypserv |             |                                          |
++-------------+-------------+------------------------------------------+
+| SA-         | 31 May 2006 | smbfs chroot escape                      |
+| 06:16.smbfs |             |                                          |
++-------------+-------------+------------------------------------------+
+| SA-06:      | 1           | Incorrect multipart message handling in  |
+| 17.sendmail | 4 June 2006 | Sendmail                                 |
++-------------+-------------+------------------------------------------+
+| S           | 23          | Buffer overflow in sppp(4)               |
+| A-06:18.ppp | August 2006 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-06       | 06 Sep      | Incorrect PKCS#1 v1.5 padding validation |
+| :19.openssl | tember 2006 | in crypto(3)                             |
++-------------+-------------+------------------------------------------+
+| SA          | 06 Sep      | Denial of Service in named(8)            |
+| -06:20.bind | tember 2006 |                                          |
++-------------+-------------+------------------------------------------+
+| SA          | 19 Sep      | Multiple vulnerabilities in gzip(1)      |
+| -06:21.gzip | tember 2006 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-06       | 30 Sep      | Multiple vulnerabilities in OpenSSH      |
+| :22.openssh | tember 2006 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-06       | 28 Sep      | Multiple problems in crypto(3)           |
+| :23.openssl | tember 2006 |                                          |
++-------------+-------------+------------------------------------------+
+| SA          | 6 De        | Kernel memory disclosure in firewire(4)  |
+| -06:25.kmem | cember 2006 |                                          |
++-------------+-------------+------------------------------------------+
+| SA          | 11 J        | Jail rc.d script privilege escalation    |
+| -07:01.jail | anuary 2007 |                                          |
++-------------+-------------+------------------------------------------+
+
+------------------------------------------------------------------------
+
+4 Known Problems and Solutions
+
+(2006/05/10) The errata file distributed with FreeBSD 6.1-RELEASE
+mistakenly contained the errata applicable to FreeBSD 6.0-RELEASE.
+
+(2006/05/10) The release notes for FreeBSD 6.1-RELEASE gave the wrong
+name for the KDE port in the item documenting the KDE upgrade. The
+correct name is x11/kde3.
+
+(2006/05/10) The release notes for FreeBSD 6.1-RELEASE should have
+mentioned changes that enable the second core of dual-core i386 and
+amd64 CPUs by default when running an SMP kernel.
+
+(2006/05/13) A change in the ata(4) driver in FreeBSD 6.1-RELEASE
+modified a software interface visible from userland programs. Programs
+that use the IOCATAREQUEST ioctl(2) interface will need to be
+recompiled. Typically, these programs communicate directly with ATA and
+ATAPI drives, such as CDROM burning or ripping tools, or monitoring
+utilities. One known example is smartd from the sysutils/smartmontools
+port.
+
+(2006/05/27, updated 2006/06/01) On FreeBSD/alpha, sysinstall(8)
+sometimes does not allow a disk to be labeled. The disk is presented in
+sysinstall(8) but actions like Auto do not result in a disklabel being
+presented. One workaround is to boot the install CD, then select Fixit.
+From the Fixit# prompt, run disklabel(8) manually. For example:
+disklabel -rw da1 auto ensures a valid disklabel is written onto da1.
+Reboot from the install media. sysinstall(8) will now detect a valid
+disklabel on the disk and allow it to be partitioned to your preference.
+
+(2006/05/27) FreeBSD 6.1-RELEASE includes a change to some definitions
+in src/sys/net/if_media.h (revision 1.30.2.1). This could break
+source-level compatibility with externally-maintained 10Gb Ethernet
+network drivers written for FreeBSD 6.0-RELEASE. This change should have
+been documented in the release notes.
+
+(2006/06/01, updated 2006/07/07) A bug in the rc.d/jail startup script
+could cause various problems for users attempting to configure jail(2)
+environments at system startup time. A fix has been committed to HEAD,
+RELENG_6, and RELENG_6_1. More details can be found in errata notice
+FreeBSD-EN-06:01.jail.
+
+(2006/06/01, updated 2006/08/30) Deadlocks have been observed (and can
+be reproduced) in some cases where snapshots and quotas are both being
+used on a file system. This problem has been fixed on the HEAD and
+RELENG_6 branches.
+
+(2006/06/01, updated 2006/08/28) A bug in the Neighbor Discovery
+Protocol (NDP) implementation causes spurious error messages for
+point-to-point IPv6 links on FreeBSD 6.1-RELEASE. This behavior is a
+regression from FreeBSD 6.0-RELEASE. A solution for this problem has
+been committed to HEAD, RELENG_6, and RELENG_6_1. Further details can be
+found in errata notice FreeBSD-EN-06:02.net.
+
+(2006/06/01, updated 2006/11/22) Problems have been observed when trying
+to load packages from multiple CDROMs inside the sysinstall(8)
+environment. Specifically, the disk-switching functionality in
+sysinstall(8) seems to become confused about the contents of a disk that
+has just been requested. This situation has been seen primarily when
+installing the base system without Xorg (which lives on the first CDROM
+of a multi-disk set), and then later using sysinstall(8) to load some
+packages (such as the GNOME or KDE desktop environments) from a
+subsequent CDROM that depend on Xorg. As a workaround during a new
+install, one should try to install Xorg along with the base system, or
+at least before any other packages that depend on it. This problem has
+been corrected on HEAD and RELENG_6.
+
+(2006/06/01, updated 2006/08/28) An error in the statistics-keeping
+logic in the UMA kernel memory allocator has led to the number of
+requests for mbufs denied (as reported by netstat -m) to increase
+erroneously. A fix for this problem has been committed to HEAD,
+RELENG_6, and RELENG_6_1. More information is contained in errata notice
+FreeBSD-EN-06:02.net.
+
+(2006/06/01, update 2006/10/07) A longstanding bug in the i386
+bootloader can cause root file system corruption when the nextboot(8)
+utility is used and the /boot/nextboot.conf configuration file happens
+to be located after cylinder 1023 on the boot disk. A bugfix has been
+committed to HEAD and has been merged to RELENG_6.
+
+(2006/06/16, updated 2006/10/07) A locking-related bug has been observed
+to cause noticeable slowdowns in NFS server performance. A fix has been
+committed to HEAD and RELENG_6.
+
+(2006/08/28) A local kernel panic in the network stack could be caused
+by not checking the validity of a pointer before use. This problem has
+been fixed on HEAD, RELENG_6, and RELENG_6_1, as described in
+FreeBSD-EN-06:02.net.
+
+------------------------------------------------------------------------
+
+This file, and other release-related documents, can be downloaded from
+http://www.FreeBSD.org/snapshots/.
+
+For questions about FreeBSD, read the documentation before contacting
+<questions@FreeBSD.org>.
+
+All users of FreeBSD 6-STABLE should subscribe to the
+<stable@FreeBSD.org> mailing list.
+
+For questions about this documentation, e-mail <doc@FreeBSD.org>.
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

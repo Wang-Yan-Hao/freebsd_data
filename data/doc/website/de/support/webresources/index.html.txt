@@ -1,0 +1,147 @@
+[FreeBSD The Power to Serve]
+
+An FreeBSD spenden
+
+ 
+
+-   Startseite
+
+-   Über FreeBSD
+    -   Für Einsteiger
+    -   Eigenschaften
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Bezugsquellen
+    -   Release Information
+    -   Release Engineering
+
+-   Dokumentation
+    -   FAQ
+    -   Handbuch
+    -   Porter-Handbuch
+    -   Entwickler-Handbuch
+    -   Committer's Guide
+    -   Manualpages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   Alle Bücher und Artikel
+
+-   Community
+    -   Mailinglisten
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Entwicklung
+    -   Projektideen
+    -   Git-Spiegelserver
+    -   Subversion-Repository
+    -   GitHub Mirror
+    -   Phabricator (Code Review)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Hilfe
+    -   Kommerzieller Support
+    -   Sicherheit
+    -   Problemberichte
+    -   Problembericht erstellen
+    -   Internet-Ressourcen
+
+-   Foundation
+    -   Geldspende
+    -   Hardwarespende
+
+-   Hilfe
+-   Kommerzieller Support
+    -   Software
+    -   Hardware
+    -   Consulting
+    -   Internet Service Providers
+    -   Miscellaneous
+-   Security Information
+    -   Advisories
+    -   Errata Notices
+    -   Unterstützte Versionen:
+    -   Unsupported Releases
+    -   How to read FreeBSD Security Advisories
+    -   Charter for the Security Officer and Team
+-   Bug Reports
+    -   Submit a Problem Report
+-   Internet-Ressourcen
+
+Internet-Ressourcen
+
+-   Allgemeine UNIX®-Informationen
+
+-   Das X Window-System
+
+-   Hardware
+
+-   Betriebssystem-Projekte
+
+Allgemeine UNIX®-Informationen
+
+-   Unix Guru Universe
+
+-   O’Reilly & Associates, Inc.
+
+Das X Window-System
+
+-   Das X.Org-Projekt bietet Anwendern verschiedener Intel-basierter
+    UNIX®-Systeme, darunter auch FreeBSD, ein exzellentes X
+    Window-System.
+
+-   Das WINE-Projekt ermöglicht es, verschiedene Microsoft
+    Windows®-Programme auf Intel-basierten UNIX-Systemen wie FreeBSD,
+    NetBSD oder Linux auszuführen.
+
+Hardware
+
+-   Die comp.answers pc-hardware-faq enthalten wertvolle Informationen
+    für Personen, die einen eigenen Rechner bauen wollen.
+
+-   Aad Offerman’s Chip List - Referenzmaterial für in PC-Clones
+    verwendete Computerchips.
+
+Betriebssystem-Projekte
+
+-   NetBSD ist ein weiteres freies auf 4.4BSD Lite basierendes
+    Betriebssystem, das auf vielen verschiedenen Architekturen lauffähig
+    ist.
+
+-   OpenBSD stammt ebenfalls von 4.4BSD ab, legt den Schwerpunkt aber
+    auf die Systemsicherheit.
+
+-   Auch Linux ist ein freies UNIX®-artiges System.
+
+-   Lites ist eine auf 4.4BSD Lite basierende Server- und
+    Emulationsbibliothek, die freie UNIX-Fähigkeiten auf einem
+    Mach-basierten System bietet.
+
+-   Das GNU HURD-Projekt ist ein weiterer Versuch zur Entwicklung eines
+    freien UNIX®-artigen Betriebssystems.
+
+-   DragonFly BSD basiert zwar auf FreeBSD 4.X, die Entwicklungsziele
+    unterscheiden sich aber von denen von FreeBSD.
+
+-   illumos ist ein Fork von OpenSolaris, welches wiederum seine Wurzeln
+    in einem als SunOS bekannten BSD-Derivat hat.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26. Januar 2021 by Sergio Carlavilla Delgado
+
+Rechtliches | © 1995-2023 The FreeBSD Project Alle Rechte vorbehalten.
+Die Marke FreeBSD ist eine eingetragene Marke der FreeBSD Foundation und
+wird vom FreeBSD Project mit freundlicher Genehmigung der The FreeBSD
+Foundation. Kontakt

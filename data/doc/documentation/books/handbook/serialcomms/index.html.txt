@@ -1,0 +1,1555 @@
+
+-    Preface
+    -   Intended Audience
+    -   Fourth Edition
+    -   Third Edition
+    -   Second Edition (2004)
+    -   First Edition (2001)
+    -   Organization of This Book
+    -   Conventions used in this book
+    -   Acknowledgments
+-    Part I. Getting Started
+-    Chapter 1. Introduction
+    -   1.1. Synopsis
+    -   1.2. Welcome to FreeBSD!
+    -   1.3. About the FreeBSD Project
+-    Chapter 2. Installing FreeBSD
+    -   2.1. Synopsis
+    -   2.2. Minimum Hardware Requirements
+    -   2.3. Pre-Installation Tasks
+    -   2.4. Starting the Installation
+    -   2.5. Using bsdinstall
+    -   2.6. Allocating Disk Space
+    -   2.7. Fetching Distribution Files
+    -   2.8. Network Interfaces, Accounts, Time Zone, Services and
+        Hardening
+    -   2.9. Troubleshooting
+    -   2.10. Using the Live CD
+-    Chapter 3. FreeBSD Basics
+    -   3.1. Synopsis
+    -   3.2. Virtual Consoles and Terminals
+    -   3.3. Users and Basic Account Management
+    -   3.4. Permissions
+    -   3.5. Directory Structure
+    -   3.6. Disk Organization
+    -   3.7. Mounting and Unmounting File Systems
+    -   3.8. Processes and Daemons
+    -   3.9. Shells
+    -   3.10. Text Editors
+    -   3.11. Devices and Device Nodes
+    -   3.12. Manual Pages
+-    Chapter 4. Installing Applications: Packages and Ports
+    -   4.1. Synopsis
+    -   4.2. Overview of Software Installation
+    -   4.3. Finding Software
+    -   4.4. Using pkg for Binary Package Management
+    -   4.5. Using the Ports Collection
+    -   4.6. Building Packages with Poudriere
+    -   4.7. Post-Installation Considerations
+    -   4.8. Dealing with Broken Ports
+-    Chapter 5. The X Window System
+    -   5.1. Synopsis
+    -   5.2. Installing Xorg
+    -   5.3. Graphic card drivers
+    -   5.4. Xorg Configuration
+    -   5.5. Using Fonts in Xorg
+-    Chapter 6. Wayland
+    -   6.1. Wayland Synopsis
+    -   6.2. The Wayfire Compositor
+    -   6.3. The Hikari Compositor
+    -   6.4. The Sway Compositor
+    -   6.5. Using Xwayland
+    -   6.6. Remote Desktop Using VNC
+    -   6.7. Wayland Login Manager
+    -   6.8. Useful Utilities
+-    Chapter 7. Network
+    -   7.1. Synopsis
+    -   7.2. Setting up the Network
+    -   7.3. Wired Networks
+    -   7.4. Wireless Networks
+    -   7.5. Hostname
+    -   7.6. DNS
+    -   7.7. Troubleshooting
+-    Part II. Common Tasks
+-    Chapter 8. Desktop Environments
+    -   8.1. Synopsis
+    -   8.2. Desktop Environments
+    -   8.3. Browsers
+    -   8.4. Development tools
+    -   8.5. Desktop office productivity
+    -   8.6. Document Viewers
+    -   8.7. Finance
+-    Chapter 9. Multimedia
+    -   9.1. Synopsis
+    -   9.2. Setting Up the Sound Card
+    -   9.3. Audio players
+    -   9.4. Video players
+    -   9.5. Conferencing and Meetings
+    -   9.6. Image Scanners
+-    Chapter 10. Configuring the FreeBSD Kernel
+    -   10.1. Synopsis
+    -   10.2. Why Build a Custom Kernel?
+    -   10.3. Finding the System Hardware
+    -   10.4. The Configuration File
+    -   10.5. Building and Installing a Custom Kernel
+    -   10.6. If Something Goes Wrong
+-    Chapter 11. Printing
+    -   11.1. Quick Start
+    -   11.2. Printer Connections
+    -   11.3. Common Page Description Languages
+    -   11.4. Direct Printing
+    -   11.5. LPD (Line Printer Daemon)
+    -   11.6. Other Printing Systems
+-    Chapter 12. Linux Binary Compatibility
+    -   12.1. Synopsis
+    -   12.2. Configuring Linux Binary Compatibility
+    -   12.3. Linux userlands
+    -   12.4. Advanced Topics
+-    Chapter 13. WINE
+    -   13.1. Synopsis
+    -   13.2. WINE Overview & Concepts
+    -   13.3. Installing WINE on FreeBSD
+    -   13.4. Running a First WINE Program on FreeBSD
+    -   13.5. Configuring WINE Installation
+    -   13.6. WINE Management GUIs
+    -   13.7. WINE in Multi-User FreeBSD Installations
+    -   13.8. WINE on FreeBSD FAQ
+-    Part III. System Administration
+-    Chapter 14. Configuration and Tuning
+    -   14.1. Synopsis
+    -   14.2. Starting Services
+    -   14.3. Configuring cron(8)
+    -   14.4. Managing Services in FreeBSD
+    -   14.5. Configuring System Logging
+    -   14.6. Configuration Files
+    -   14.7. Tuning with sysctl(8)
+    -   14.8. Tuning Disks
+    -   14.9. Tuning Kernel Limits
+    -   14.10. Adding Swap Space
+    -   14.11. Power and Resource Management
+-    Chapter 15. The FreeBSD Booting Process
+    -   15.1. Synopsis
+    -   15.2. FreeBSD Boot Process
+    -   15.3. Device Hints
+    -   15.4. Shutdown Sequence
+-    Chapter 16. Security
+    -   16.1. Synopsis
+    -   16.2. Introduction
+    -   16.3. One-time Passwords
+    -   16.4. TCP Wrapper
+    -   16.5. Kerberos
+    -   16.6. OpenSSL
+    -   16.7. VPN over IPsec
+    -   16.8. OpenSSH
+    -   16.9. Access Control Lists
+    -   16.10. Monitoring Third Party Security Issues
+    -   16.11. FreeBSD Security Advisories
+    -   16.12. Process Accounting
+    -   16.13. Resource Limits
+    -   16.14. Shared Administration with Sudo
+    -   16.15. Using doas as an alternative to sudo
+-    Chapter 17. Jails
+    -   17.1. Synopsis
+    -   17.2. Terms Related to Jails
+    -   17.3. Creating and Controlling Jails
+    -   17.4. Fine Tuning and Administration
+    -   17.5. Updating Multiple Jails
+    -   17.6. Managing Jails with ezjail
+-    Chapter 18. Mandatory Access Control
+    -   18.1. Synopsis
+    -   18.2. Key Terms
+    -   18.3. Understanding MAC Labels
+    -   18.4. Planning the Security Configuration
+    -   18.5. Available MAC Policies
+    -   18.6. User Lock Down
+    -   18.7. Nagios in a MAC Jail
+    -   18.8. Troubleshooting the MAC Framework
+-    Chapter 19. Security Event Auditing
+    -   19.1. Synopsis
+    -   19.2. Key Terms
+    -   19.3. Audit Configuration
+    -   19.4. Working with Audit Trails
+-    Chapter 20. Storage
+    -   20.1. Synopsis
+    -   20.2. Adding Disks
+    -   20.3. Resizing and Growing Disks
+    -   20.4. USB Storage Devices
+    -   20.5. Creating and Using CD Media
+    -   20.6. Creating and Using DVD Media
+    -   20.7. Creating and Using Floppy Disks
+    -   20.8. Using NTFS Disks
+    -   20.9. Backup Basics
+    -   20.10. Memory Disks
+    -   20.11. File System Snapshots
+    -   20.12. Disk Quotas
+    -   20.13. Encrypting Disk Partitions
+    -   20.14. Encrypting Swap
+    -   20.15. Highly Available Storage (HAST)
+-    Chapter 21. GEOM: Modular Disk Transformation Framework
+    -   21.1. Synopsis
+    -   21.2. RAID0 - Striping
+    -   21.3. RAID1 - Mirroring
+    -   21.4. RAID3 - Byte-level Striping with Dedicated Parity
+    -   21.5. Software RAID Devices
+    -   21.6. GEOM Gate Network
+    -   21.7. Labeling Disk Devices
+    -   21.8. UFS Journaling Through GEOM
+-    Chapter 22. The Z File System (ZFS)
+    -   22.1. What Makes ZFS Different
+    -   22.2. Quick Start Guide
+    -   22.3. zpool Administration
+    -   22.4. zfs Administration
+    -   22.5. Delegated Administration
+    -   22.6. Advanced Topics
+<<<<<<< HEAD
+=======
+    -   22.7. Further Resources
+    -   22.8. ZFS Features and Terminology
+-    Chapter 23. Other File Systems
+    -   23.1. Synopsis
+    -   23.2. Linux® File Systems
+-    Chapter 24. Virtualization
+    -   24.1. Synopsis
+    -   24.2. FreeBSD as a Guest on Parallels Desktop for macOS®
+    -   24.3. FreeBSD as a Guest on VMware Fusion for macOS®
+    -   24.4. FreeBSD as a Guest on VirtualBox™
+    -   24.5. FreeBSD as a Host with VirtualBox™
+    -   24.6. FreeBSD as a Host with bhyve
+    -   24.7. FreeBSD as a Xen™-Host
+-    Chapter 25. Localization - i18n/L10n Usage and Setup
+    -   25.1. Synopsis
+    -   25.2. Using Localization
+    -   25.3. Finding i18n Applications
+    -   25.4. Locale Configuration for Specific Languages
+-    Chapter 26. Updating and Upgrading FreeBSD
+    -   26.1. Synopsis
+    -   26.2. FreeBSD Update
+    -   26.3. Updating Bootcode
+    -   26.4. Updating the Documentation Set
+    -   26.5. Tracking a Development Branch
+    -   26.6. Updating FreeBSD from Source
+    -   26.7. Tracking for Multiple Machines
+-    Chapter 27. DTrace
+    -   27.1. Synopsis
+    -   27.2. Implementation Differences
+    -   27.3. Enabling DTrace Support
+    -   27.4. Using DTrace
+-    Chapter 28. USB Device Mode / USB OTG
+    -   28.1. Synopsis
+    -   28.2. USB Virtual Serial Ports
+    -   28.3. USB Device Mode Network Interfaces
+    -   28.4. USB Virtual Storage Device
+-    Part IV. Network Communication
+-    Chapter 29. Serial Communications
+    -   29.1. Synopsis
+    -   29.2. Serial Terminology and Hardware
+    -   29.3. Terminals
+    -   29.4. Dial-in Service
+    -   29.5. Dial-out Service
+    -   29.6. Setting Up the Serial Console
+-    Chapter 30. PPP
+    -   30.1. Synopsis
+    -   30.2. Configuring PPP
+    -   30.3. Troubleshooting PPP Connections
+    -   30.4. Using PPP over Ethernet (PPPoE)
+    -   30.5. Using PPP over ATM (PPPoA)
+-    Chapter 31. Electronic Mail
+    -   31.1. Synopsis
+    -   31.2. Mail Components
+    -   31.3. Sendmail Configuration Files
+    -   31.4. Changing the Mail Transfer Agent
+    -   31.5. Troubleshooting
+    -   31.6. Advanced Topics
+    -   31.7. Setting Up to Send Only
+    -   31.8. Using Mail with a Dialup Connection
+    -   31.9. SMTP Authentication
+    -   31.10. Mail User Agents
+    -   31.11. Using fetchmail
+    -   31.12. Using procmail
+-    Chapter 32. Network Servers
+    -   32.1. Synopsis
+    -   32.2. The inetd Super-Server
+    -   32.3. Network File System (NFS)
+    -   32.4. Network Information System (NIS)
+    -   32.5. Lightweight Directory Access Protocol (LDAP)
+    -   32.6. Dynamic Host Configuration Protocol (DHCP)
+    -   32.7. Domain Name System (DNS)
+    -   32.8. Apache HTTP Server
+    -   32.9. File Transfer Protocol (FTP)
+    -   32.10. File and Print Services for Microsoft® Windows® Clients
+        (Samba)
+    -   32.11. Clock Synchronization with NTP
+    -   32.12. iSCSI Initiator and Target Configuration
+-    Chapter 33. Firewalls
+    -   33.1. Synopsis
+    -   33.2. Firewall Concepts
+    -   33.3. PF
+    -   33.4. IPFW
+    -   33.5. IPFILTER (IPF)
+    -   33.6. Blacklistd
+-    Chapter 34. Advanced Networking
+    -   34.1. Synopsis
+    -   34.2. Gateways and Routes
+    -   34.3. Virtual Hosts
+    -   34.4. Wireless Advanced Authentication
+    -   34.5. Wireless Ad-hoc Mode
+    -   34.6. USB Tethering
+    -   34.7. Bluetooth
+    -   34.8. Bridging
+    -   34.9. Link Aggregation and Failover
+    -   34.10. Diskless Operation with PXE
+    -   34.11. Common Address Redundancy Protocol (CARP)
+    -   34.12. VLANs
+-    Part V. Appendices
+-    Appendix A. Obtaining FreeBSD
+    -   A.1. Mirrors
+    -   A.2. Using Git
+    -   A.3. Using Subversion
+    -   A.4. CD and DVD Sets
+-    Appendix B. Bibliography
+    -   B.1. FreeBSD Bibliography
+    -   B.2. Security Reference
+    -   B.3. UNIX® History
+    -   B.4. Periodicals, Journals, and Magazines
+-    Appendix C. Resources on the Internet
+    -   C.1. Websites
+    -   C.2. Mailing Lists
+    -   C.3. Usenet Newsgroups
+-    Appendix D. OpenPGP Keys
+    -   D.1. Officers
+-    FreeBSD Glossary
+-    Colophon
+-   
+-   
+
+Book menu
+
+Chapter 29. Serial Communications
+
+Table of Contents
+
+-   29.1. Synopsis
+-   29.2. Serial Terminology and Hardware
+-   29.3. Terminals
+-   29.4. Dial-in Service
+-   29.5. Dial-out Service
+-   29.6. Setting Up the Serial Console
+
+29.1. Synopsis
+
+UNIX® has always had support for serial communications as the very first
+UNIX® machines relied on serial lines for user input and output. Things
+have changed a lot from the days when the average terminal consisted of
+a 10-character-per-second serial printer and a keyboard. This chapter
+covers some of the ways serial communications can be used on FreeBSD.
+
+After reading this chapter, you will know:
+
+-   How to connect terminals to a FreeBSD system.
+
+-   How to use a modem to dial out to remote hosts.
+
+-   How to allow remote users to login to a FreeBSD system with a modem.
+
+-   How to boot a FreeBSD system from a serial console.
+
+Before reading this chapter, you should:
+
+-   Know how to configure and install a custom kernel.
+
+-   Understand FreeBSD permissions and processes.
+
+-   Have access to the technical manual for the serial hardware to be
+    used with FreeBSD.
+
+29.2. Serial Terminology and Hardware
+
+The following terms are often used in serial communications:
+
+bps
+
+    Bits per Second (bps) is the rate at which data is transmitted.
+
+DTE
+
+    Data Terminal Equipment (DTE) is one of two endpoints in a serial
+    communication. An example would be a computer.
+
+DCE
+
+    Data Communications Equipment (DCE) is the other endpoint in a
+    serial communication. Typically, it is a modem or serial terminal.
+
+RS-232
+
+    The original standard which defined hardware serial communications.
+    It has since been renamed to TIA-232.
+
+When referring to communication data rates, this section does not use
+the term baud. Baud refers to the number of electrical state transitions
+made in a period of time, while bps is the correct term to use.
+
+To connect a serial terminal to a FreeBSD system, a serial port on the
+computer and the proper cable to connect to the serial device are
+needed. Users who are already familiar with serial hardware and cabling
+can safely skip this section.
+
+29.2.1. Serial Cables and Ports
+
+There are several different kinds of serial cables. The two most common
+types are null-modem cables and standard RS-232 cables. The
+documentation for the hardware should describe the type of cable
+required.
+
+These two types of cables differ in how the wires are connected to the
+connector. Each wire represents a signal, with the defined signals
+summarized in RS-232C Signal Names. A standard serial cable passes all
+of the RS-232C signals straight through. For example, the "Transmitted
+Data" pin on one end of the cable goes to the "Transmitted Data" pin on
+the other end. This is the type of cable used to connect a modem to the
+FreeBSD system, and is also appropriate for some terminals.
+
+A null-modem cable switches the "Transmitted Data" pin of the connector
+on one end with the "Received Data" pin on the other end. The connector
+can be either a DB-25 or a DB-9.
+
+A null-modem cable can be constructed using the pin connections
+summarized in DB-25 to DB-25 Null-Modem Cable, DB-9 to DB-9 Null-Modem
+Cable, and DB-9 to DB-25 Null-Modem Cable. While the standard calls for
+a straight-through pin 1 to pin 1 "Protective Ground" line, it is often
+omitted. Some terminals work using only pins 2, 3, and 7, while others
+require different configurations. When in doubt, refer to the
+documentation for the hardware.
+
++-----------------------------------+-----------------------------------+
+| Acronyms                          | Names                             |
++===================================+===================================+
+| RD                                | Received Data                     |
++-----------------------------------+-----------------------------------+
+| TD                                | Transmitted Data                  |
++-----------------------------------+-----------------------------------+
+| DTR                               | Data Terminal Ready               |
++-----------------------------------+-----------------------------------+
+| DSR                               | Data Set Ready                    |
++-----------------------------------+-----------------------------------+
+| DCD                               | Data Carrier Detect               |
++-----------------------------------+-----------------------------------+
+| SG                                | Signal Ground                     |
++-----------------------------------+-----------------------------------+
+| RTS                               | Request to Send                   |
++-----------------------------------+-----------------------------------+
+| CTS                               | Clear to Send                     |
++-----------------------------------+-----------------------------------+
+
+: Table 1. RS-232C Signal Names
+
++-------------+-------------+-------------+-------------+-------------+
+| Signal      | Pin #       |             | Pin #       | Signal      |
++=============+=============+=============+=============+=============+
+| SG          | 7           | connects to | 7           | SG          |
++-------------+-------------+-------------+-------------+-------------+
+| TD          | 2           | connects to | 3           | RD          |
++-------------+-------------+-------------+-------------+-------------+
+| RD          | 3           | connects to | 2           | TD          |
++-------------+-------------+-------------+-------------+-------------+
+| RTS         | 4           | connects to | 5           | CTS         |
++-------------+-------------+-------------+-------------+-------------+
+| CTS         | 5           | connects to | 4           | RTS         |
++-------------+-------------+-------------+-------------+-------------+
+| DTR         | 20          | connects to | 6           | DSR         |
++-------------+-------------+-------------+-------------+-------------+
+| DTR         | 20          | connects to | 8           | DCD         |
++-------------+-------------+-------------+-------------+-------------+
+| DSR         | 6           | connects to | 20          | DTR         |
++-------------+-------------+-------------+-------------+-------------+
+| DCD         | 8           | connects to | 20          | DTR         |
++-------------+-------------+-------------+-------------+-------------+
+
+: Table 2. DB-25 to DB-25 Null-Modem Cable
+
++-------------+-------------+-------------+-------------+-------------+
+| Signal      | Pin #       |             | Pin #       | Signal      |
++=============+=============+=============+=============+=============+
+| RD          | 2           | connects to | 3           | TD          |
++-------------+-------------+-------------+-------------+-------------+
+| TD          | 3           | connects to | 2           | RD          |
++-------------+-------------+-------------+-------------+-------------+
+| DTR         | 4           | connects to | 6           | DSR         |
++-------------+-------------+-------------+-------------+-------------+
+| DTR         | 4           | connects to | 1           | DCD         |
++-------------+-------------+-------------+-------------+-------------+
+| SG          | 5           | connects to | 5           | SG          |
++-------------+-------------+-------------+-------------+-------------+
+| DSR         | 6           | connects to | 4           | DTR         |
++-------------+-------------+-------------+-------------+-------------+
+| DCD         | 1           | connects to | 4           | DTR         |
++-------------+-------------+-------------+-------------+-------------+
+| RTS         | 7           | connects to | 8           | CTS         |
++-------------+-------------+-------------+-------------+-------------+
+| CTS         | 8           | connects to | 7           | RTS         |
++-------------+-------------+-------------+-------------+-------------+
+
+: Table 3. DB-9 to DB-9 Null-Modem Cable
+
++-------------+-------------+-------------+-------------+-------------+
+| Signal      | Pin #       |             | Pin #       | Signal      |
++=============+=============+=============+=============+=============+
+| RD          | 2           | connects to | 2           | TD          |
++-------------+-------------+-------------+-------------+-------------+
+| TD          | 3           | connects to | 3           | RD          |
++-------------+-------------+-------------+-------------+-------------+
+| DTR         | 4           | connects to | 6           | DSR         |
++-------------+-------------+-------------+-------------+-------------+
+| DTR         | 4           | connects to | 8           | DCD         |
++-------------+-------------+-------------+-------------+-------------+
+| SG          | 5           | connects to | 7           | SG          |
++-------------+-------------+-------------+-------------+-------------+
+| DSR         | 6           | connects to | 20          | DTR         |
++-------------+-------------+-------------+-------------+-------------+
+| DCD         | 1           | connects to | 20          | DTR         |
++-------------+-------------+-------------+-------------+-------------+
+| RTS         | 7           | connects to | 5           | CTS         |
++-------------+-------------+-------------+-------------+-------------+
+| CTS         | 8           | connects to | 4           | RTS         |
++-------------+-------------+-------------+-------------+-------------+
+
+: Table 4. DB-9 to DB-25 Null-Modem Cable
+
++-----------------------------------+-----------------------------------+
+|                                   | When one pin at one end connects  |
+|                                   | to a pair of pins at the other    |
+|                                   | end, it is usually implemented    |
+|                                   | with one short wire between the   |
+|                                   | pair of pins in their connector   |
+|                                   | and a long wire to the other      |
+|                                   | single pin.                       |
++-----------------------------------+-----------------------------------+
+
+Serial ports are the devices through which data is transferred between
+the FreeBSD host computer and the terminal. Several kinds of serial
+ports exist. Before purchasing or constructing a cable, make sure it
+will fit the ports on the terminal and on the FreeBSD system.
+
+Most terminals have DB-25 ports. Personal computers may have DB-25 or
+DB-9 ports. A multiport serial card may have RJ-12 or RJ-45/ ports. See
+the documentation that accompanied the hardware for specifications on
+the kind of port or visually verify the type of port.
+
+In FreeBSD, each serial port is accessed through an entry in /dev. There
+are two different kinds of entries:
+
+-   Call-in ports are named /dev/ttyuN where N is the port number,
+    starting from zero. If a terminal is connected to the first serial
+    port (COM1), use /dev/ttyu0 to refer to the terminal. If the
+    terminal is on the second serial port (COM2), use /dev/ttyu1, and so
+    forth. Generally, the call-in port is used for terminals. Call-in
+    ports require that the serial line assert the "Data Carrier Detect"
+    signal to work correctly.
+
+-   Call-out ports are named /dev/cuauN on FreeBSD versions 8.X and
+    higher and /dev/cuadN on FreeBSD versions 7.X and lower. Call-out
+    ports are usually not used for terminals, but are used for modems.
+    The call-out port can be used if the serial cable or the terminal
+    does not support the "Data Carrier Detect" signal.
+
+FreeBSD also provides initialization devices (/dev/ttyuN.init and
+/dev/cuauN.init or /dev/cuadN.init) and locking devices (/dev/ttyuN.lock
+and /dev/cuauN.lock or /dev/cuadN.lock). The initialization devices are
+used to initialize communications port parameters each time a port is
+opened, such as crtscts for modems which use RTS/CTS signaling for flow
+control. The locking devices are used to lock flags on ports to prevent
+users or programs changing certain parameters. Refer to termios(4),
+uart(4), and stty(1) for information on terminal settings, locking and
+initializing devices, and setting terminal options, respectively.
+
+29.2.2. Serial Port Configuration
+
+By default, FreeBSD supports four serial ports which are commonly known
+as COM1, COM2, COM3, and COM4. FreeBSD also supports dumb multi-port
+serial interface cards, such as the BocaBoard 1008 and 2016, as well as
+more intelligent multi-port cards such as those made by Digiboard.
+However, the default kernel only looks for the standard COM ports.
+
+To see if the system recognizes the serial ports, look for system boot
+messages that start with uart:
+
+    # grep uart /var/run/dmesg.boot
+
+If the system does not recognize all of the needed serial ports,
+additional entries can be added to /boot/device.hints. This file already
+contains hint.uart.0.* entries for COM1 and hint.uart.1.* entries for
+COM2. When adding a port entry for COM3 use 0x3E8, and for COM4 use
+0x2E8. Common IRQ addresses are 5 for COM3 and 9 for COM4.
+
+To determine the default set of terminal I/O settings used by the port,
+specify its device name. This example determines the settings for the
+call-in port on COM2:
+
+    # stty -a -f /dev/ttyu1
+
+System-wide initialization of serial devices is controlled by
+/etc/rc.d/serial. This file affects the default settings of serial
+devices. To change the settings for a device, use stty. By default, the
+changed settings are in effect until the device is closed and when the
+device is reopened, it goes back to the default set. To permanently
+change the default set, open and adjust the settings of the
+initialization device. For example, to turn on CLOCAL mode, 8 bit
+communication, and XON/XOFF flow control for ttyu5, type:
+
+    # stty -f /dev/ttyu5.init clocal cs8 ixon ixoff
+
+To prevent certain settings from being changed by an application, make
+adjustments to the locking device. For example, to lock the speed of
+ttyu5 to 57600 bps, type:
+
+    # stty -f /dev/ttyu5.lock 57600
+
+Now, any application that opens ttyu5 and tries to change the speed of
+the port will be stuck with 57600 bps.
+
+29.3. Terminals
+
+Terminals provide a convenient and low-cost way to access a FreeBSD
+system when not at the computer’s console or on a connected network.
+This section describes how to use terminals with FreeBSD.
+
+The original UNIX® systems did not have consoles. Instead, users logged
+in and ran programs through terminals that were connected to the
+computer’s serial ports.
+
+The ability to establish a login session on a serial port still exists
+in nearly every UNIX®-like operating system today, including FreeBSD. By
+using a terminal attached to an unused serial port, a user can log in
+and run any text program that can normally be run on the console or in
+an xterm window.
+
+Many terminals can be attached to a FreeBSD system. An older spare
+computer can be used as a terminal wired into a more powerful computer
+running FreeBSD. This can turn what might otherwise be a single-user
+computer into a powerful multiple-user system.
+
+FreeBSD supports three types of terminals:
+
+Dumb terminals
+
+    Dumb terminals are specialized hardware that connect to computers
+    over serial lines. They are called "dumb" because they have only
+    enough computational power to display, send, and receive text. No
+    programs can be run on these devices. Instead, dumb terminals
+    connect to a computer that runs the needed programs.
+
+    There are hundreds of kinds of dumb terminals made by many
+    manufacturers, and just about any kind will work with FreeBSD. Some
+    high-end terminals can even display graphics, but only certain
+    software packages can take advantage of these advanced features.
+
+    Dumb terminals are popular in work environments where workers do not
+    need access to graphical applications.
+
+Computers Acting as Terminals
+
+    Since a dumb terminal has just enough ability to display, send, and
+    receive text, any spare computer can be a dumb terminal. All that is
+    needed is the proper cable and some terminal emulation software to
+    run on the computer.
+
+    This configuration can be useful. For example, if one user is busy
+    working at the FreeBSD system’s console, another user can do some
+    text-only work at the same time from a less powerful personal
+    computer hooked up as a terminal to the FreeBSD system.
+
+    There are at least two utilities in the base-system of FreeBSD that
+    can be used to work through a serial connection: cu(1) and tip(1).
+
+    For example, to connect from a client system that runs FreeBSD to
+    the serial connection of another system:
+
+        # cu -l /dev/cuauN
+
+    Ports are numbered starting from zero. This means that COM1 is
+    /dev/cuau0.
+
+    Additional programs are available through the Ports Collection, such
+    as comms/minicom.
+
+X Terminals
+
+    X terminals are the most sophisticated kind of terminal available.
+    Instead of connecting to a serial port, they usually connect to a
+    network like Ethernet. Instead of being relegated to text-only
+    applications, they can display any Xorg application.
+
+    This chapter does not cover the setup, configuration, or use of X
+    terminals.
+
+29.3.1. Terminal Configuration
+
+This section describes how to configure a FreeBSD system to enable a
+login session on a serial terminal. It assumes that the system
+recognizes the serial port to which the terminal is connected and that
+the terminal is connected with the correct cable.
+
+In FreeBSD, init reads /etc/ttys and starts a getty process on the
+available terminals. The getty process is responsible for reading a
+login name and starting the login program. The ports on the FreeBSD
+system which allow logins are listed in /etc/ttys. For example, the
+first virtual console, ttyv0, has an entry in this file, allowing logins
+on the console. This file also contains entries for the other virtual
+consoles, serial ports, and pseudo-ttys. For a hardwired terminal, the
+serial port’s /dev entry is listed without the /dev part. For example,
+/dev/ttyv0 is listed as ttyv0.
+
+The default /etc/ttys configures support for the first four serial
+ports, ttyu0 through ttyu3:
+
+    ttyu0   "/usr/libexec/getty std.9600"   dialup  off secure
+    ttyu1   "/usr/libexec/getty std.9600"   dialup  off secure
+    ttyu2   "/usr/libexec/getty std.9600"   dialup  off secure
+    ttyu3   "/usr/libexec/getty std.9600"   dialup  off secure
+
+When attaching a terminal to one of those ports, modify the default
+entry to set the required speed and terminal type, to turn the device on
+and, if needed, to change the port’s secure setting. If the terminal is
+connected to another port, add an entry for the port.
+
+Configuring Terminal Entries configures two terminals in /etc/ttys. The
+first entry configures a Wyse-50 connected to COM2. The second entry
+configures an old computer running Procomm terminal software emulating a
+VT-100 terminal. The computer is connected to the sixth serial port on a
+multi-port serial card.
+
+Example 1. Configuring Terminal Entries
+
+    ttyu1  "/usr/libexec/getty std.38400"  wy50   on insecure
+    ttyu5   "/usr/libexec/getty std.19200"  vt100  on insecure
+
+The first field specifies the device name of the serial terminal.
+
+The second field tells getty to initialize and open the line, set the
+line speed, prompt for a user name, and then execute the login program.
+The optional getty type configures characteristics on the terminal line,
+like bps rate and parity. The available getty types are listed in
+/etc/gettytab. In almost all cases, the getty types that start with std
+will work for hardwired terminals as these entries ignore parity. There
+is a std entry for each bps rate from 110 to 115200. Refer to
+gettytab(5) for more information. When setting the getty type, make sure
+to match the communications settings used by the terminal. For this
+example, the Wyse-50 uses no parity and connects at 38400 bps. The
+computer uses no parity and connects at 19200 bps.
+
+The third field is the type of terminal. For dial-up ports, unknown or
+dialup is typically used since users may dial up with practically any
+type of terminal or software. Since the terminal type does not change
+for hardwired terminals, a real terminal type from /etc/termcap can be
+specified. For this example, the Wyse-50 uses the real terminal type
+while the computer running Procomm is set to emulate a VT-100.
+
+The fourth field specifies if the port should be enabled. To enable
+logins on this port, this field must be set to on.
+
+The final field is used to specify whether the port is secure. Marking a
+port as secure means that it is trusted enough to allow root to login
+from that port. Insecure ports do not allow root logins. On an insecure
+port, users must login from unprivileged accounts and then use su or a
+similar mechanism to gain superuser privileges, as described in “The
+Superuser Account”. For security reasons, it is recommended to change
+this setting to insecure.
+
+After making any changes to /etc/ttys, send a SIGHUP (hangup) signal to
+the init process to force it to re-read its configuration file:
+
+    # kill -HUP 1
+
+Since init is always the first process run on a system, it always has a
+process ID of 1.
+
+If everything is set up correctly, all cables are in place, and the
+terminals are powered up, a getty process should now be running on each
+terminal and login prompts should be available on each terminal.
+
+29.3.2. Troubleshooting the Connection
+
+Even with the most meticulous attention to detail, something could still
+go wrong while setting up a terminal. Here is a list of common symptoms
+and some suggested fixes.
+
+If no login prompt appears, make sure the terminal is plugged in and
+powered up. If it is a personal computer acting as a terminal, make sure
+it is running terminal emulation software on the correct serial port.
+
+Make sure the cable is connected firmly to both the terminal and the
+FreeBSD computer. Make sure it is the right kind of cable.
+
+Make sure the terminal and FreeBSD agree on the bps rate and parity
+settings. For a video display terminal, make sure the contrast and
+brightness controls are turned up. If it is a printing terminal, make
+sure paper and ink are in good supply.
+
+Use ps to make sure that a getty process is running and serving the
+terminal. For example, the following listing shows that a getty is
+running on the second serial port, ttyu1, and is using the std.38400
+entry in /etc/gettytab:
+
+    # ps -axww|grep ttyu
+    22189  d1  Is+    0:00.03 /usr/libexec/getty std.38400 ttyu1
+
+If no getty process is running, make sure the port is enabled in
+/etc/ttys. Remember to run kill -HUP 1 after modifying /etc/ttys.
+
+If the getty process is running but the terminal still does not display
+a login prompt, or if it displays a prompt but will not accept typed
+input, the terminal or cable may not support hardware handshaking. Try
+changing the entry in /etc/ttys from std.38400 to 3wire.38400, then run
+kill -HUP 1 after modifying /etc/ttys. The 3wire entry is similar to
+std, but ignores hardware handshaking. The bps may also need to be
+reduced or software flow control enabled when using 3wire to prevent
+buffer overflows.
+
+If garbage appears instead of a login prompt, make sure the terminal and
+FreeBSD agree on the bps rate and parity settings. Check the getty
+processes to make sure the correct getty type is in use. If not, edit
+/etc/ttys and run kill -HUP 1.
+
+If characters appear doubled and the password appears when typed, switch
+the terminal, or the terminal emulation software, from "half duplex" or
+"local echo" to "full duplex."
+
+29.4. Dial-in Service
+
+Configuring a FreeBSD system for dial-in service is similar to
+configuring terminals, except that modems are used instead of terminal
+devices. FreeBSD supports both external and internal modems.
+
+External modems are more convenient because they often can be configured
+via parameters stored in non-volatile RAM and they usually provide
+lighted indicators that display the state of important RS-232 signals,
+indicating whether the modem is operating properly.
+
+Internal modems usually lack non-volatile RAM, so their configuration
+may be limited to setting DIP switches. If the internal modem has any
+signal indicator lights, they are difficult to view when the system’s
+cover is in place.
+
+When using an external modem, a proper cable is needed. A standard
+RS-232C serial cable should suffice.
+
+FreeBSD needs the RTS and CTS signals for flow control at speeds above
+2400 bps, the CD signal to detect when a call has been answered or the
+line has been hung up, and the DTR signal to reset the modem after a
+session is complete. Some cables are wired without all of the needed
+signals, so if a login session does not go away when the line hangs up,
+there may be a problem with the cable. Refer to Serial Cables and Ports
+for more information about these signals.
+
+Like other UNIX®-like operating systems, FreeBSD uses the hardware
+signals to find out when a call has been answered or a line has been
+hung up and to hangup and reset the modem after a call. FreeBSD avoids
+sending commands to the modem or watching for status reports from the
+modem.
+
+FreeBSD supports the NS8250, NS16450, NS16550, and NS16550A-based
+RS-232C (CCITT V.24) communications interfaces. The 8250 and 16450
+devices have single-character buffers. The 16550 device provides a
+16-character buffer, which allows for better system performance. Bugs in
+plain 16550 devices prevent the use of the 16-character buffer, so use
+16550A devices if possible. As single-character-buffer devices require
+more work by the operating system than the 16-character-buffer devices,
+16550A-based serial interface cards are preferred. If the system has
+many active serial ports or will have a heavy load, 16550A-based cards
+are better for low-error-rate communications.
+
+The rest of this section demonstrates how to configure a modem to
+receive incoming connections, how to communicate with the modem, and
+offers some troubleshooting tips.
+
+29.4.1. Modem Configuration
+
+As with terminals, init spawns a getty process for each configured
+serial port used for dial-in connections. When a user dials the modem’s
+line and the modems connect, the "Carrier Detect" signal is reported by
+the modem. The kernel notices that the carrier has been detected and
+instructs getty to open the port and display a login: prompt at the
+specified initial line speed. In a typical configuration, if garbage
+characters are received, usually due to the modem’s connection speed
+being different than the configured speed, getty tries adjusting the
+line speeds until it receives reasonable characters. After the user
+enters their login name, getty executes login, which completes the login
+process by asking for the user’s password and then starting the user’s
+shell.
+
+There are two schools of thought regarding dial-up modems. One
+configuration method is to set the modems and systems so that no matter
+at what speed a remote user dials in, the dial-in RS-232 interface runs
+at a locked speed. The benefit of this configuration is that the remote
+user always sees a system login prompt immediately. The downside is that
+the system does not know what a user’s true data rate is, so full-screen
+programs like Emacs will not adjust their screen-painting methods to
+make their response better for slower connections.
+
+The second method is to configure the RS-232 interface to vary its speed
+based on the remote user’s connection speed. As getty does not
+understand any particular modem’s connection speed reporting, it gives a
+login: message at an initial speed and watches the characters that come
+back in response. If the user sees junk, they should press Enter until
+they see a recognizable prompt. If the data rates do not match, getty
+sees anything the user types as junk, tries the next speed, and gives
+the login: prompt again. This procedure normally only takes a keystroke
+or two before the user sees a good prompt. This login sequence does not
+look as clean as the locked-speed method, but a user on a low-speed
+connection should receive better interactive response from full-screen
+programs.
+
+When locking a modem’s data communications rate at a particular speed,
+no changes to /etc/gettytab should be needed. However, for a
+matching-speed configuration, additional entries may be required in
+order to define the speeds to use for the modem. This example configures
+a 14.4 Kbps modem with a top interface speed of 19.2 Kbps using 8-bit,
+no parity connections. It configures getty to start the communications
+rate for a V.32bis connection at 19.2 Kbps, then cycles through 9600
+bps, 2400 bps, 1200 bps, 300 bps, and back to 19.2 Kbps. Communications
+rate cycling is implemented with the nx= (next table) capability. Each
+line uses a tc= (table continuation) entry to pick up the rest of the
+settings for a particular data rate.
+
+    #
+    # Additions for a V.32bis Modem
+    #
+    um|V300|High Speed Modem at 300,8-bit:\
+            :nx=V19200:tc=std.300:
+    un|V1200|High Speed Modem at 1200,8-bit:\
+            :nx=V300:tc=std.1200:
+    uo|V2400|High Speed Modem at 2400,8-bit:\
+            :nx=V1200:tc=std.2400:
+    up|V9600|High Speed Modem at 9600,8-bit:\
+            :nx=V2400:tc=std.9600:
+    uq|V19200|High Speed Modem at 19200,8-bit:\
+            :nx=V9600:tc=std.19200:
+
+For a 28.8 Kbps modem, or to take advantage of compression on a 14.4
+Kbps modem, use a higher communications rate, as seen in this example:
+
+    #
+    # Additions for a V.32bis or V.34 Modem
+    # Starting at 57.6 Kbps
+    #
+    vm|VH300|Very High Speed Modem at 300,8-bit:\
+            :nx=VH57600:tc=std.300:
+    vn|VH1200|Very High Speed Modem at 1200,8-bit:\
+            :nx=VH300:tc=std.1200:
+    vo|VH2400|Very High Speed Modem at 2400,8-bit:\
+            :nx=VH1200:tc=std.2400:
+    vp|VH9600|Very High Speed Modem at 9600,8-bit:\
+            :nx=VH2400:tc=std.9600:
+    vq|VH57600|Very High Speed Modem at 57600,8-bit:\
+            :nx=VH9600:tc=std.57600:
+
+For a slow CPU or a heavily loaded system without 16550A-based serial
+ports, this configuration may produce uart "silo" errors at 57.6 Kbps.
+
+The configuration of /etc/ttys is similar to Configuring Terminal
+Entries, but a different argument is passed to getty and dialup is used
+for the terminal type. Replace xxx with the process init will run on the
+device:
+
+    ttyu0   "/usr/libexec/getty xxx"   dialup on
+
+The dialup terminal type can be changed. For example, setting vt102 as
+the default terminal type allows users to use VT102 emulation on their
+remote systems.
+
+For a locked-speed configuration, specify the speed with a valid type
+listed in /etc/gettytab. This example is for a modem whose port speed is
+locked at 19.2 Kbps:
+
+    ttyu0   "/usr/libexec/getty std.19200"   dialup on
+
+In a matching-speed configuration, the entry needs to reference the
+appropriate beginning "auto-baud" entry in /etc/gettytab. To continue
+the example for a matching-speed modem that starts at 19.2 Kbps, use
+this entry:
+
+    ttyu0   "/usr/libexec/getty V19200"   dialup on
+
+After editing /etc/ttys, wait until the modem is properly configured and
+connected before signaling init:
+
+    # kill -HUP 1
+
+High-speed modems, like V.32, V.32bis, and V.34 modems, use hardware
+(RTS/CTS) flow control. Use stty to set the hardware flow control flag
+for the modem port. This example sets the crtscts flag on COM2's dial-in
+and dial-out initialization devices:
+
+    # stty -f /dev/ttyu1.init crtscts
+    # stty -f /dev/cuau1.init crtscts
+
+29.4.2. Troubleshooting
+
+This section provides a few tips for troubleshooting a dial-up modem
+that will not connect to a FreeBSD system.
+
+Hook up the modem to the FreeBSD system and boot the system. If the
+modem has status indication lights, watch to see whether the modem’s DTR
+indicator lights when the login: prompt appears on the system’s console.
+If it lights up, that should mean that FreeBSD has started a getty
+process on the appropriate communications port and is waiting for the
+modem to accept a call.
+
+If the DTR indicator does not light, login to the FreeBSD system through
+the console and type ps ax to see if FreeBSD is running a getty process
+on the correct port:
+
+      114 ??  I      0:00.10 /usr/libexec/getty V19200 ttyu0
+
+If the second column contains a d0 instead of a ?? and the modem has not
+accepted a call yet, this means that getty has completed its open on the
+communications port. This could indicate a problem with the cabling or a
+misconfigured modem because getty should not be able to open the
+communications port until the carrier detect signal has been asserted by
+the modem.
+
+If no getty processes are waiting to open the port, double-check that
+the entry for the port is correct in /etc/ttys. Also, check
+/var/log/messages to see if there are any log messages from init or
+getty.
+
+Next, try dialing into the system. Be sure to use 8 bits, no parity, and
+1 stop bit on the remote system. If a prompt does not appear right away,
+or the prompt shows garbage, try pressing Enter about once per second.
+If there is still no login: prompt, try sending a BREAK. When using a
+high-speed modem, try dialing again after locking the dialing modem’s
+interface speed.
+
+If there is still no login: prompt, check /etc/gettytab again and
+double-check that:
+
+-   The initial capability name specified in the entry in /etc/ttys
+    matches the name of a capability in /etc/gettytab.
+
+-   Each nx= entry matches another gettytab capability name.
+
+-   Each tc= entry matches another gettytab capability name.
+
+If the modem on the FreeBSD system will not answer, make sure that the
+modem is configured to answer the phone when DTR is asserted. If the
+modem seems to be configured correctly, verify that the DTR line is
+asserted by checking the modem’s indicator lights.
+
+If it still does not work, try sending an email to the FreeBSD general
+questions mailing list describing the modem and the problem.
+
+29.5. Dial-out Service
+
+The following are tips for getting the host to connect over the modem to
+another computer. This is appropriate for establishing a terminal
+session with a remote host.
+
+This kind of connection can be helpful to get a file on the Internet if
+there are problems using PPP. If PPP is not working, use the terminal
+session to FTP the needed file. Then use zmodem to transfer it to the
+machine.
+
+29.5.1. Using a Stock Hayes Modem
+
+A generic Hayes dialer is built into tip. Use at=hayes in /etc/remote.
+
+The Hayes driver is not smart enough to recognize some of the advanced
+features of newer modems messages like BUSY, NO DIALTONE, or
+CONNECT 115200. Turn those messages off when using tip with ATX0&W.
+
+The dial timeout for tip is 60 seconds. The modem should use something
+less, or else tip will think there is a communication problem. Try
+ATS7=45&W.
+
+29.5.2. Using AT Commands
+
+Create a "direct" entry in /etc/remote. For example, if the modem is
+hooked up to the first serial port, /dev/cuau0, use the following line:
+
+    cuau0:dv=/dev/cuau0:br#19200:pa=none
+
+Use the highest bps rate the modem supports in the br capability. Then,
+type tip cuau0 to connect to the modem.
+
+Or, use cu as root with the following command:
+
+    # cu -lline -sspeed
+
+line is the serial port, such as /dev/cuau0, and speed is the speed,
+such as 57600. When finished entering the AT commands, type ~. to exit.
+
+29.5.3. The @ Sign Does Not Work
+
+The @ sign in the phone number capability tells tip to look in
+/etc/phones for a phone number. But, the @ sign is also a special
+character in capability files like /etc/remote, so it needs to be
+escaped with a backslash:
+
+    pn=\@
+
+29.5.4. Dialing from the Command Line
+
+Put a "generic" entry in /etc/remote. For example:
+
+    tip115200|Dial any phone number at 115200 bps:\
+            :dv=/dev/cuau0:br#115200:at=hayes:pa=none:du:
+    tip57600|Dial any phone number at 57600 bps:\
+            :dv=/dev/cuau0:br#57600:at=hayes:pa=none:du:
+
+This should now work:
+
+    # tip -115200 5551234
+
+Users who prefer cu over tip, can use a generic cu entry:
+
+    cu115200|Use cu to dial any number at 115200bps:\
+            :dv=/dev/cuau1:br#57600:at=hayes:pa=none:du:
+
+and type:
+
+    # cu 5551234 -s 115200
+
+29.5.5. Setting the bps Rate
+
+Put in an entry for tip1200 or cu1200, but go ahead and use whatever bps
+rate is appropriate with the br capability. tip thinks a good default is
+1200 bps which is why it looks for a tip1200 entry. 1200 bps does not
+have to be used, though.
+
+29.5.6. Accessing a Number of Hosts Through a Terminal Server
+
+Rather than waiting until connected and typing CONNECT host each time,
+use tip's cm capability. For example, these entries in /etc/remote will
+let you type tip pain or tip muffin to connect to the hosts pain or
+muffin, and tip deep13 to connect to the terminal server.
+
+    pain|pain.deep13.com|Forrester's machine:\
+            :cm=CONNECT pain\n:tc=deep13:
+    muffin|muffin.deep13.com|Frank's machine:\
+            :cm=CONNECT muffin\n:tc=deep13:
+    deep13:Gizmonics Institute terminal server:\
+            :dv=/dev/cuau2:br#38400:at=hayes:du:pa=none:pn=5551234:
+
+29.5.7. Using More Than One Line with tip
+
+This is often a problem where a university has several modem lines and
+several thousand students trying to use them.
+
+Make an entry in /etc/remote and use @ for the pn capability:
+
+    big-university:\
+            :pn=\@:tc=dialout
+    dialout:\
+            :dv=/dev/cuau3:br#9600:at=courier:du:pa=none:
+
+Then, list the phone numbers in /etc/phones:
+
+    big-university 5551111
+    big-university 5551112
+    big-university 5551113
+    big-university 5551114
+
+tip will try each number in the listed order, then give up. To keep
+retrying, run tip in a while loop.
+
+29.5.8. Using the Force Character
+
+Ctrl+P is the default "force" character, used to tell tip that the next
+character is literal data. The force character can be set to any other
+character with the ~s escape, which means "set a variable."
+
+Type ~sforce=single-char followed by a newline. single-char is any
+single character. If single-char is left out, then the force character
+is the null character, which is accessed by typing Ctrl+2 or Ctrl+Space.
+A pretty good value for single-char is Shift+Ctrl+6, which is only used
+on some terminal servers.
+
+To change the force character, specify the following in ~/.tiprc:
+
+    force=single-char
+
+29.5.9. Upper Case Characters
+
+This happens when Ctrl+A is pressed, which is tip's "raise character",
+specially designed for people with broken caps-lock keys. Use ~s to set
+raisechar to something reasonable. It can be set to be the same as the
+force character, if neither feature is used.
+
+Here is a sample ~/.tiprc for Emacs users who need to type Ctrl+2 and
+Ctrl+A:
+
+    force=^^
+    raisechar=^^
+
+The ^^ is Shift+Ctrl+6.
+
+29.5.10. File Transfers with tip
+
+When talking to another UNIX®-like operating system, files can be sent
+and received using ~p (put) and ~t (take). These commands run cat and
+echo on the remote system to accept and send files. The syntax is: ~p
+local-file [ remote-file ] ~t remote-file [ local-file ]
+
+There is no error checking, so another protocol, like zmodem, should
+probably be used.
+
+29.5.11. Using zmodem with tip?
+
+To receive files, start the sending program on the remote end. Then,
+type ~C rz to begin receiving them locally.
+
+To send files, start the receiving program on the remote end. Then, type
+~C sz files to send them to the remote system.
+
+29.6. Setting Up the Serial Console
+
+FreeBSD has the ability to boot a system with a dumb terminal on a
+serial port as a console. This configuration is useful for system
+administrators who wish to install FreeBSD on machines that have no
+keyboard or monitor attached, and developers who want to debug the
+kernel or device drivers.
+
+As described in The FreeBSD Booting Process, FreeBSD employs a three
+stage bootstrap. The first two stages are in the boot block code which
+is stored at the beginning of the FreeBSD slice on the boot disk. The
+boot block then loads and runs the boot loader as the third stage code.
+
+In order to set up booting from a serial console, the boot block code,
+the boot loader code, and the kernel need to be configured.
+
+29.6.1. Quick Serial Console Configuration
+
+This section provides a fast overview of setting up the serial console.
+This procedure can be used when the dumb terminal is connected to COM1.
+
+Procedure: Configuring a Serial Console on COM1
+
+1.  Connect the serial cable to COM1 and the controlling terminal.
+
+2.  To configure boot messages to display on the serial console, issue
+    the following command as the superuser:
+
+        # echo 'console="comconsole"' >> /boot/loader.conf
+
+3.  Edit /etc/ttys and change off to on and dialup to vt100 for the
+    ttyu0 entry. Otherwise, a password will not be required to connect
+    via the serial console, resulting in a potential security hole.
+
+4.  Reboot the system to see if the changes took effect.
+
+If a different configuration is required, see the next section for a
+more in-depth configuration explanation.
+
+29.6.2. In-Depth Serial Console Configuration
+
+This section provides a more detailed explanation of the steps needed to
+setup a serial console in FreeBSD.
+
+Procedure: Configuring a Serial Console
+
+1.  Prepare a serial cable.
+
+    Use either a null-modem cable or a standard serial cable and a
+    null-modem adapter. See Serial Cables and Ports for a discussion on
+    serial cables.
+
+2.  Unplug the keyboard.
+
+    Many systems probe for the keyboard during the Power-On Self-Test
+    (POST) and will generate an error if the keyboard is not detected.
+    Some machines will refuse to boot until the keyboard is plugged in.
+
+    If the computer complains about the error, but boots anyway, no
+    further configuration is needed.
+
+    If the computer refuses to boot without a keyboard attached,
+    configure the BIOS so that it ignores this error. Consult the
+    motherboard’s manual for details on how to do this.
+
+    +-----------------------------------+-----------------------------------+
+    |                                   | Try setting the keyboard to "Not  |
+    |                                   | installed" in the BIOS. This      |
+    |                                   | setting tells the BIOS not to     |
+    |                                   | probe for a keyboard at power-on  |
+    |                                   | so it should not complain if the  |
+    |                                   | keyboard is absent. If that       |
+    |                                   | option is not present in the      |
+    |                                   | BIOS, look for an "Halt on Error" |
+    |                                   | option instead. Setting this to   |
+    |                                   | "All but Keyboard" or to "No      |
+    |                                   | Errors" will have the same        |
+    |                                   | effect.                           |
+    +-----------------------------------+-----------------------------------+
+
+    If the system has a PS/2® mouse, unplug it as well. PS/2® mice share
+    some hardware with the keyboard and leaving the mouse plugged in can
+    fool the keyboard probe into thinking the keyboard is still there.
+
+    +-----------------------------------+-----------------------------------+
+    |                                   | While most systems will boot      |
+    |                                   | without a keyboard, quite a few   |
+    |                                   | will not boot without a graphics  |
+    |                                   | adapter. Some systems can be      |
+    |                                   | configured to boot with no        |
+    |                                   | graphics adapter by changing the  |
+    |                                   | "graphics adapter" setting in the |
+    |                                   | BIOS configuration to "Not        |
+    |                                   | installed". Other systems do not  |
+    |                                   | support this option and will      |
+    |                                   | refuse to boot if there is no     |
+    |                                   | display hardware in the system.   |
+    |                                   | With these machines, leave some   |
+    |                                   | kind of graphics card plugged in, |
+    |                                   | even if it is just a junky mono   |
+    |                                   | board. A monitor does not need to |
+    |                                   | be attached.                      |
+    +-----------------------------------+-----------------------------------+
+
+3.  Plug a dumb terminal, an old computer with a modem program, or the
+    serial port on another UNIX® box into the serial port.
+
+4.  Add the appropriate hint.uart.* entries to /boot/device.hints for
+    the serial port. Some multi-port cards also require kernel
+    configuration options. Refer to uart(4) for the required options and
+    device hints for each supported serial port.
+
+5.  Create boot.config in the root directory of the a partition on the
+    boot drive.
+
+    This file instructs the boot block code how to boot the system. In
+    order to activate the serial console, one or more of the following
+    options are needed. When using multiple options, include them all on
+    the same line:
+
+    -h
+
+        Toggles between the internal and serial consoles. Use this to
+        switch console devices. For instance, to boot from the internal
+        (video) console, use -h to direct the boot loader and the kernel
+        to use the serial port as its console device. Alternatively, to
+        boot from the serial port, use -h to tell the boot loader and
+        the kernel to use the video display as the console instead.
+
+    -D
+
+        Toggles between the single and dual console configurations. In
+        the single configuration, the console will be either the
+        internal console (video display) or the serial port, depending
+        on the state of -h. In the dual console configuration, both the
+        video display and the serial port will become the console at the
+        same time, regardless of the state of -h. However, the dual
+        console configuration takes effect only while the boot block is
+        running. Once the boot loader gets control, the console
+        specified by -h becomes the only console.
+
+    -P
+
+        Makes the boot block probe the keyboard. If no keyboard is
+        found, the -D and -h options are automatically set.
+
+        +-----------------------------------+-----------------------------------+
+        |                                   | Due to space constraints in the   |
+        |                                   | current version of the boot       |
+        |                                   | blocks, -P is capable of          |
+        |                                   | detecting extended keyboards      |
+        |                                   | only. Keyboards with less than    |
+        |                                   | 101 keys and without F11 and F12  |
+        |                                   | keys may not be detected.         |
+        |                                   | Keyboards on some laptops may not |
+        |                                   | be properly found because of this |
+        |                                   | limitation. If this is the case,  |
+        |                                   | do not use -P.                    |
+        +-----------------------------------+-----------------------------------+
+
+        Use either -P to select the console automatically or -h to
+        activate the serial console. Refer to boot(8) and boot.config(5)
+        for more details.
+
+        The options, except for -P, are passed to the boot loader. The
+        boot loader will determine whether the internal video or the
+        serial port should become the console by examining the state of
+        -h. This means that if -D is specified but -h is not specified
+        in /boot.config, the serial port can be used as the console only
+        during the boot block as the boot loader will use the internal
+        video display as the console.
+
+6.  Boot the machine.
+
+    When FreeBSD starts, the boot blocks echo the contents of
+    /boot.config to the console. For example:
+
+        /boot.config: -P
+        Keyboard: no
+
+    The second line appears only if -P is in /boot.config and indicates
+    the presence or absence of the keyboard. These messages go to either
+    the serial or internal console, or both, depending on the option in
+    /boot.config:
+
+    +-----------------------------------+-----------------------------------+
+    | Options                           | Message goes to                   |
+    +===================================+===================================+
+    | none                              | internal console                  |
+    +-----------------------------------+-----------------------------------+
+    | -h                                | serial console                    |
+    +-----------------------------------+-----------------------------------+
+    | -D                                | serial and internal consoles      |
+    +-----------------------------------+-----------------------------------+
+    | -Dh                               | serial and internal consoles      |
+    +-----------------------------------+-----------------------------------+
+    | -P, keyboard present              | internal console                  |
+    +-----------------------------------+-----------------------------------+
+    | -P, keyboard absent               | serial console                    |
+    +-----------------------------------+-----------------------------------+
+
+    After the message, there will be a small pause before the boot
+    blocks continue loading the boot loader and before any further
+    messages are printed to the console. Under normal circumstances,
+    there is no need to interrupt the boot blocks, but one can do so in
+    order to make sure things are set up correctly.
+
+    Press any key, other than Enter, at the console to interrupt the
+    boot process. The boot blocks will then prompt for further action:
+
+        >> FreeBSD/i386 BOOT
+        Default: 0:ad(0,a)/boot/loader
+        boot:
+
+    Verify that the above message appears on either the serial or
+    internal console, or both, according to the options in /boot.config.
+    If the message appears in the correct console, press Enter to
+    continue the boot process.
+
+    If there is no prompt on the serial terminal, something is wrong
+    with the settings. Enter -h then Enter or Return to tell the boot
+    block (and then the boot loader and the kernel) to choose the serial
+    port for the console. Once the system is up, go back and check what
+    went wrong.
+
+During the third stage of the boot process, one can still switch between
+the internal console and the serial console by setting appropriate
+environment variables in the boot loader. See loader(8) for more
+information.
+
++-----------------------------------+-----------------------------------+
+|                                   | This line in /boot/loader.conf or |
+|                                   | /boot/loader.conf.local           |
+|                                   | configures the boot loader and    |
+|                                   | the kernel to send their boot     |
+|                                   | messages to the serial console,   |
+|                                   | regardless of the options in      |
+|                                   | /boot.config:                     |
+|                                   |                                   |
+|                                   |     console="comconsole"          |
+|                                   |                                   |
+|                                   | That line should be the first     |
+|                                   | line of /boot/loader.conf so that |
+|                                   | boot messages are displayed on    |
+|                                   | the serial console as early as    |
+|                                   | possible.                         |
+|                                   |                                   |
+|                                   | If that line does not exist, or   |
+|                                   | if it is set to                   |
+|                                   | console="vidconsole", the boot    |
+|                                   | loader and the kernel will use    |
+|                                   | whichever console is indicated by |
+|                                   | -h in the boot block. See         |
+|                                   | loader.conf(5) for more           |
+|                                   | information.                      |
+|                                   |                                   |
+|                                   | At the moment, the boot loader    |
+|                                   | has no option equivalent to -P in |
+|                                   | the boot block, and there is no   |
+|                                   | provision to automatically select |
+|                                   | the internal console and the      |
+|                                   | serial console based on the       |
+|                                   | presence of the keyboard.         |
++-----------------------------------+-----------------------------------+
+
++-----------------------------------+-----------------------------------+
+|                                   | While it is not required, it is   |
+|                                   | possible to provide a login       |
+|                                   | prompt over the serial line. To   |
+|                                   | configure this, edit the entry    |
+|                                   | for the serial port in /etc/ttys  |
+|                                   | using the instructions in         |
+|                                   | Terminal Configuration. If the    |
+|                                   | speed of the serial port has been |
+|                                   | changed, change std.9600 to match |
+|                                   | the new setting.                  |
++-----------------------------------+-----------------------------------+
+
+29.6.3. Setting a Faster Serial Port Speed
+
+By default, the serial port settings are 9600 baud, 8 bits, no parity,
+and 1 stop bit. To change the default console speed, use one of the
+following options:
+
+-   Edit /etc/make.conf and set BOOT_COMCONSOLE_SPEED to the new console
+    speed. Then, recompile and install the boot blocks and the boot
+    loader:
+
+        # cd /sys/boot
+        # make clean
+        # make
+        # make install
+
+    If the serial console is configured in some other way than by
+    booting with -h, or if the serial console used by the kernel is
+    different from the one used by the boot blocks, add the following
+    option, with the desired speed, to a custom kernel configuration
+    file and compile a new kernel:
+
+        options CONSPEED=19200
+
+-   Add the -S19200 boot option to /boot.config, replacing 19200 with
+    the speed to use.
+
+-   Add the following options to /boot/loader.conf. Replace 115200 with
+    the speed to use.
+
+        boot_multicons="YES"
+        boot_serial="YES"
+        comconsole_speed="115200"
+        console="comconsole,vidconsole"
+
+29.6.4. Entering the DDB Debugger from the Serial Line
+
+To configure the ability to drop into the kernel debugger from the
+serial console, add the following options to a custom kernel
+configuration file and compile the kernel using the instructions in
+Configuring the FreeBSD Kernel. Note that while this is useful for
+remote diagnostics, it is also dangerous if a spurious BREAK is
+generated on the serial port. Refer to ddb(4) and ddb(8) for more
+information about the kernel debugger.
+
+    options BREAK_TO_DEBUGGER
+    options DDB
+
+------------------------------------------------------------------------
+
+Last modified on: July 6, 2023 by Sergio Carlavilla Delgado
+
+Prev
+
+Home
+
+Next
+
+Table of Contents
+
+-   29.1. Synopsis
+-   29.2. Serial Terminology and Hardware
+-   29.3. Terminals
+-   29.4. Dial-in Service
+-   29.5. Dial-out Service
+-   29.6. Setting Up the Serial Console
+
+------------------------------------------------------------------------
+
+Resources
+
+-   Download PDF
+-   Edit this page
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+

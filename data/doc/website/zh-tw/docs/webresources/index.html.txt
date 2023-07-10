@@ -1,0 +1,145 @@
+[FreeBSD The Power to Serve]
+
+捐贈 FreeBSD
+
+ 
+
+-   首頁
+
+-   關於
+    -   簡介
+    -   特色
+    -   宣傳
+    -   行銷
+    -   隱私政策
+    -   Projects
+    -   Ports
+
+-   取得 FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   文件
+    -   常見問題集
+    -   使用手冊
+    -   Porter 手冊
+    -   Developer 手冊
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   文件計畫入門書
+    -   所有書籍與文章
+
+-   社群
+    -   郵件論壇
+    -   論壇
+    -   愛用者組織
+    -   活動
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   開發者
+    -   計畫構想
+    -   Git 檔案庫
+    -   Subversion 檔案庫
+    -   Git 鏡像站
+    -   程式碼審查 (Phabricator)
+    -   Wiki
+    -   持續整合服務
+
+-   支援
+    -   供應商
+    -   安全資訊
+    -   問題回報
+    -   提交問題回報
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   基金會
+    -   資金捐贈
+    -   硬體捐贈
+
+-   文件
+-   FAQ
+-   使用手冊
+-   Manual Pages
+-   Presentations and Papers
+-   Books and Articles Online
+-   Publications
+-   Web Resources
+-   新手上路
+-   文件計畫
+-   Archive
+
+網頁資源
+
+連結
+
+-   Open Directory 計劃 有列出一堆不錯的 FreeBSD 連結，
+    包括一些有助於推廣市場的 知名用戶。
+
+現實生活中…​
+
+FreeBSD 相關報導
+
+FreeBSD 的相關報導。
+
+Newsgroups
+
+以下是 FreeBSD 使用者較常參與的討論區：
+
+-   comp.unix.bsd.freebsd.announce (有管制)
+
+-   comp.unix.bsd.freebsd.misc
+
+-   comp.unix.bsd.misc
+
+額外資源
+
+The Source Code
+
+若想挖掘原始碼來看的話，這邊有現成的 FreeBSD kernel 原始碼的網頁版。
+這是由 Robert Watson 所製作的。
+
+Daemon News
+
+BSD 新聞網站的龍頭
+
+就像 FreeBSD，每篇文章都是志工所提供的。 該計劃目標就是矢志成為BSD
+新聞網站的龍頭， 並也提供發佈更正稿、新聞來源的管道。
+
+The FreeBSD Diary
+
+The FreeBSD Diary 收錄許多初學者必讀的 how-to 優良文件，
+該站矢志成為提供 step-by-step 文件(說明如何安裝、設定各種 port
+軟體)的匯集地。
+
+The O’Reilly Network BSD Dev Center
+
+The BSD Dev Center 有兩個 FreeBSD 專欄， 著重於各類技巧以及上手說明。
+
+BSDForums.org
+
+BSDForums.org 有活躍的討論區以及 FreeBSD 及各類 BSD 的新聞、 社群網站。
+
+BSD Guides
+
+BSDGuides.org 有放許多 BSD 相關的上手說明文件。
+
+其他文件
+
+4.4BSD Documents: 乃是 4.4BSD 文件的 HTML 版，也可以在每台 FreeBSD
+機器上的 /usr/share/doc 目錄內瀏覽( 若有裝 doc 套件的話)。
+
+Info Documents: 乃是 Info 文件的 HTML 版，也可以在每台 FreeBSD 機器上的
+/usr/share/info 目錄內瀏覽( 若有裝 info 套件的話)。
+
+------------------------------------------------------------------------
+
+Last modified on: January 26, 2021 by Sergio Carlavilla Delgado
+
+法律聲明 | © 1995-2023 FreeBSD 計劃 保留所有權利。 FreeBSD 標誌是
+FreeBSD 基金會的註冊商標，由 FreeBSD 基金會授權 FreeBSD 計畫使用 The
+FreeBSD Foundation. 聯絡資訊
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

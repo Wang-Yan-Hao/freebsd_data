@@ -1,0 +1,111 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   
+-   Manuel du développeur
+-   Committer's Guide
+-   Manuel du porteur d'application
+-   Dépôt des codes source
+-   Production des versions
+-   Plates-formes
+-   Idées de projet
+-   Contribuer
+
+Projet Java® pour FreeBSD : Ressources Java spécifiques à FreeBSD
+
+-   L’API JavaComm
+    Port de l’API JavaComm sur FreeBSD
+
+-   shuJIT - http://www.shudo.net/jit/ - un compilateur "Juste à Temps"
+    pour FreeBSD et Linux.
+
+-   TYA - ftp://gonzalez.cyberus.ca/pub/Linux/java/ - un compilateur
+    "Juste à Temps" pour FreeBSD.
+
+-   Kaffe - http://www.kaffe.org - une implémentation "pure" de Java.
+
+-   Ports Linux
+    Le site du port de Java sur Linux
+
+-   Etat d’avancement du port…​
+
+-   JDK 1.2
+
+-   JAF
+
+-   JMF
+
+-   JAI
+
+-   Java3D
+
+-   JavaPlugin 1.2
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 juin 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

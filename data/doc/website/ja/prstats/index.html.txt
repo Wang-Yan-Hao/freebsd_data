@@ -1,0 +1,112 @@
+[FreeBSD The Power to Serve]
+
+FreeBSD への寄付
+
+ 
+
+-   ホーム
+
+-   FreeBSD とは
+    -   FreeBSD が初めてという方へ
+    -   特徴
+    -   プロモーション活動
+    -   マーケティング活動
+    -   プライバシーポリシー
+    -   Projects
+    -   Ports
+
+-   FreeBSD の入手
+    -   リリース情報
+    -   リリースエンジニアリング
+
+-   ドキュメント
+    -   FAQ
+    -   ハンドブック
+    -   port 作成者のためのハンドブック
+    -   開発者のためのハンドブック
+    -   Committer's Guide
+    -   マニュアルページ
+    -   Presentations and Papers
+    -   新しい貢献者のためのドキュメンテーションプロジェクト入門
+    -   すべての Books と Articles
+
+-   コミュニティ
+    -   メーリングリスト
+    -   フォーラム
+    -   ユーザグループ
+    -   イベント
+    -   FreeBSD ジャーナル
+    -   Q&A (外部)
+
+-   開発
+    -   プロジェクトアイディア
+    -   Git リポジトリ
+    -   Subversion リポジトリ
+    -   GitHub ミラー
+    -   コードレビュー (Phabricator)
+    -   Wiki
+    -   継続的インテグレーションサービス
+
+-   サポート
+    -   ベンダ
+    -   セキュリティ情報
+    -   障害報告
+    -   障害報告の提出
+    -   ウェブ上の情報
+
+-   財団
+    -   寄付
+    -   ハードウェアの寄贈
+
+-   サポート
+-   ベンダ
+    -   ソフトウェア
+    -   ハードウェア
+    -   コンサルティング
+    -   インターネットサービスプロバイダ
+    -   その他
+-   セキュリティ情報
+    -   セキュリティ勧告
+    -   Errata 情報
+    -   サポートされているリリース
+    -   サポートが終了したリリース
+    -   FreeBSD セキュリティ勧告の読み方
+    -   セキュリティオフィサとチームの憲章
+-   バグ報告
+    -   障害報告 (PR) の提出
+-   ウェブ上の情報
+
+PR Statistics
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+障害報告 (PR) を処理しましょう!
+
+やることは簡単です。この Bugzilla データベースへのリンクをたどって PR
+を探して どういう作業が必要とされているのか調べ、
+それを実際にこなせばよいのです。
+
+もしあなたがコミッターなら、 ウェブインタフェースを使って PR
+をクローズできます。
+
+あなたがコミッターでないなら、次の一文 (注: もちろん英語)
+を含むフォローを submit してください。
+
+    This PR can be closed
+
+これが書かれていれば、 後でコミッターが処理するときの助けになります。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+最終更新日: 2021年1月26日 by Sergio Carlavilla Delgado
+
+法律上の注意事項 | © 1995-2023 FreeBSD プロジェクト All rights reserved.
+The mark FreeBSD is a registered trademark of The FreeBSD Foundation and
+is used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact

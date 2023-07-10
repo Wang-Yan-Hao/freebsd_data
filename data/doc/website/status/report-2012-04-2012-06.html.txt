@@ -1,0 +1,829 @@
+Skip site navigation (1) Skip section navigation (2)
+
+Header And Logo
+
+[FreeBSD]
+
+.
+
+Donate to FreeBSD
+
+.
+
+Peripheral Links
+
+Search
+
+ 
+
+Site Navigation
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+Section Navigation
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Multimedia
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Introduction
+
+This report covers FreeBSD-related projects between April and June 2012.
+This quarter was highlighted by having a new Core Team elected, which
+took office on July 11th to start its work with a relatively high number
+of new members. Note that this is the second of the four reports planned
+for 2012.
+
+Thanks to all the reporters for the excellent work! This report contains
+17 entries and we hope you enjoy reading it.
+
+Please note that the deadline for submissions covering the period
+between July and December 2012 is February 17th, 2013.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Projects
+
+Userland Programs
+
+-   FreeBSD Services Control (fsc)
+-   Replacing the Regular Expression Code
+
+FreeBSD Team Reports
+
+-   FreeBSD Documentation Project
+-   The FreeBSD Core Team
+-   The FreeBSD Ports Management Team
+
+Kernel
+
+-   FreeBSD/at91 Improvements
+
+Network Infrastructure
+
+-   Multipath TCP (MPTCP) for FreeBSD
+-   SMP-Friendly pf(4)
+
+Documentation
+
+-   The FreeBSD Japanese Documentation Project
+
+Architectures
+
+-   FreeBSD/arm on ARM Fast Models Simulator for Cortex-A15 MPCore
+    Processor
+
+Ports
+
+-   BSD-licensed Sort Utility (GNU sort(1) Replacement)
+-   FreeBSD Haskell Ports
+-   KDE/FreeBSD
+-   Portbuilder
+-   Redports
+-   Xorg on FreeBSD
+
+Miscellaneous
+
+-   BSD-Day 2012
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Projects
+
+Userland Programs
+
+FreeBSD Services Control (fsc)
+
+Contact: Tom Rhodes <trhodes@FreeBSD.org>
+
+FSC has been moved into the ports system (see sysutils/fsc) and
+continues to improve outside of the ports tree. Some interesting work is
+being done in the area of services control, system boot, and a
+simplification of the process. Stay tuned for more information in status
+reports that follow.
+
+Open tasks:
+
+1.  Test, test, test. Feedback is really important to this project.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Replacing the Regular Expression Code
+
+  --------------- --------------------------------
+  Links           
+  TRE home page   URL: http://laurikari.net/tre/
+  --------------- --------------------------------
+
+Contact: Gábor Kövesdán <gabor@FreeBSD.org>
+
+It has been decided to implement the optimizations and extensions as a
+more isolated layer and not directly in TRE itself. Since the last
+report there has been some progress in this direction and the code has
+been significantly refactored. It does not work yet in this new form but
+it is close to a working state. Apart from this, the multiple pattern
+matching needs some debugging and some minor features are missing.
+
+Open tasks:
+
+1.  Finish multiple pattern heuristic regex matching.
+2.  Implement GNU-specific regex extensions.
+3.  Test performance, standard-compliance and correct behavior.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD Team Reports
+
+FreeBSD Documentation Project
+
+  ------- ------------------------------------------------------
+  Links   
+          URL: http://wiki.freebsd.org/GoogleCodeIn/2011Status
+          URL: http://wiki.freebsd.org/201208DevSummit
+          URL: http://wiki.freebsd.org/DocIdeaList
+  ------- ------------------------------------------------------
+
+Contact: <freebsd-doc@FreeBSD.org>
+
+We continue to make progress in committing the work produced as part of
+Google Code-In 2011; an overview of the status is at
+http://wiki.freebsd.org/GoogleCodeIn/2011Status. Doc committers and GCIN
+mentors are encouraged to go through the list and help shepherd
+outstanding tasks into the tree.
+
+We are planning a full day of Documentation Summit on the day preceding
+the August 2012 DevSummit in Cambridge, UK. This follows a successful
+DocSummit day held at BSDCan in May 2012. Further details are available
+at: http://wiki.freebsd.org/201208DevSummit.
+
+A doc sprint took place over IRC (#bsddocs on EFnet) in early July,
+setting out plans for reviving the marketing team and a strong desire
+for a new, more organized website.
+
+A lot of progress and momentum has built up with creating and updating
+documentation and website content over the last few months. Also read
+the doceng report for the recent infrastructure improvements.
+
+Anyone wishing to help with this effort is welcome to join us and say
+hello either on the freebsd-doc mailing list, or #bsddocs on EFnet IRC.
+
+Open tasks:
+
+1.  Review the website content and remove outdated parts or update when
+    applicable.
+2.  Go through the doc idea list on the wiki and start working them out.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+The FreeBSD Core Team
+
+  -------------- -------------------------------------------------------------------
+  Links          
+  Announcement   URL: http://docs.FreeBSD.org/cgi/mid.cgi?1342030291.6001.80.camel
+  -------------- -------------------------------------------------------------------
+
+Contact: Core Team <core@FreeBSD.org>
+
+The FreeBSD Project is pleased to announce the completion of the 2012
+Core Team election. The FreeBSD Core Team acts as the project's "Board
+of Directors" and is responsible for approving new src committers,
+resolving disputes between developers, appointing sub-committees for
+specific purposes (security officer, release engineering, port managers,
+webmaster, et cetera), and making any other administrative or policy
+decisions as needed. The Core Team has been elected by FreeBSD
+developers every 2 years since 2000.
+
+Peter Wemm rejoins the Core Team after a two-year hiatus, with new
+members Thomas Abthorpe, Gavin Atkinson, David Chisnall, Attilio Rao and
+Martin Wilke joining incumbents John Baldwin, Konstantin Belousov and
+Hiroki Sato.
+
+The complete newly elected core team is:
+
+-   Thomas Abthorpe <tabthorpe@FreeBSD.org>
+-   Gavin Atkinson <gavin@FreeBSD.org>
+-   John Baldwin <jhb@FreeBSD.org>
+-   Konstantin Belousov <kib@FreeBSD.org>
+-   David Chisnall <theraven@FreeBSD.org>
+-   Attilio Rao <attilio@FreeBSD.org>
+-   Hiroki Sato <hrs@FreeBSD.org>
+-   Peter Wemm <peter@FreeBSD.org>
+-   Martin Wilke <miwi@FreeBSD.org>
+
+The new Core Team would like to thank outgoing members Wilko Bulte,
+Brooks Davis, Warner Losh, Pav Lucistnik, Colin Percival and Robert
+Watson for their service over the past two (and in some cases, many
+more) years.
+
+The Core Team would also especially like to thank Dag-Erling Smørgrav
+for running the election.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+The FreeBSD Ports Management Team
+
+  ------- ------------------------------------------------------------------------------
+  Links   
+          URL: http://www.FreeBSD.org/ports/
+          URL: http://www.freebsd.org/doc/en_US.ISO8859-1/articles/contributing-ports/
+          URL: http://portsmon.freebsd.org/index.html
+          URL: http://www.freebsd.org/portmgr/index.html
+          URL: http://blogs.freebsdish.org/portmgr/
+          URL: http://www.twitter.com/freebsd_portmgr/
+          URL: http://www.facebook.com/portmgr
+  ------- ------------------------------------------------------------------------------
+
+Contact: Thomas Abthorpe <portmgr-secretary@FreeBSD.org>
+Contact: Port Management Team <portmgr@FreeBSD.org>
+
+The ports tree slowly approaches 24,000 ports. The PR count still is
+close to 1200.
+
+In Q2 we added 7 new committers and took in one commit bit for safe
+keeping.
+
+The Ports Management team have been running -exp runs on an ongoing
+basis, verifying how base system updates may affect the ports tree, as
+well as providing QA runs for major ports updates. Of note, -exp runs
+were done for:
+
+-   automake update
+-   cmake update
+-   xorg update
+-   png update
+-   Fix make reinstall
+-   Implement USE_QT4 in bsd.ports.mk
+-   KDE4 update
+-   XFCE4 update
+-   bison update
+-   perl5.14 as default
+-   ruby1.9 as default
+-   ruby1.8 update
+-   bsdsort regression test
+
+A lot of focus during this period was put into getting the ports tree
+into a ready state for FreeBSD 9.1.
+
+A significant step forward was the implementation of OptionsNG.
+
+A record number of Port Managers attended BSDCan 2012, with five being
+present to partake in the week of events, culminating in a portmgr PR
+closing session that dealt with 18 PRs in one day. You can see a group
+photo at . While you are there, please click on the "Like" icon.
+
+Beat Gaetzi has been doing ongoing tests with the ports tree to ensure a
+smooth transition from CVS to Subversion. The tree was successfully
+migrated the weekend of June 14, 2012.
+
+Open tasks:
+
+1.  Looking for help getting ports to build with clang.
+2.  Looking for help fixing ports broken on CURRENT. (List needs
+    updating, too.)
+3.  Looking for help with Tier-2 architectures.
+4.  ports broken by src changes.
+5.  ports failing on pointyhat.
+6.  ports failing on pointyhat-west.
+7.  ports that are marked as BROKEN.
+8.  When did that port break?
+9.  Most ports PRs are assigned, we now need to focus on testing,
+    committing and closing.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Kernel
+
+FreeBSD/at91 Improvements
+
+  ---------------------------- -------------------------------------------
+  Links                        
+  FreeBSD on ATMEL AT91 Wiki   URL: http://wiki.freebsd.org/FreeBSDAtmel
+  ---------------------------- -------------------------------------------
+
+Contact: Warner Losh <imp@FreeBSD.org>
+
+FreeBSD's Atmel support has languished for some time. A number of
+improvements were urgently needed as demand for newer SoCs has
+materialized. New SoC support is not hard, but it does wind up copying a
+lot of code. I have started down the path to make it easier to do. I had
+planned on making it table driven. But then I discovered with dts files
+that Atmel was producing.
+
+So, I plan on moving to using Atmel's .dsti files, or variations on
+them. They have .dsti files for all the AT91SAM9 parts. This should
+allow us to support new SoCs and boards faster.
+
+However, there are some challenges with this approach. Pin multiplexing
+seems undefined in Atmel's dts file. Only a few of the devices are
+well-defined at the present time. And the encoding seems to be immature.
+
+So we have a target-rich port that is quite ripe for refactoring.
+
+Open tasks:
+
+1.  Update the base system libfdt to a version that supports include.
+2.  Write a .dtsi for Atmel AT91RM9200.
+3.  Write .dti files for all supported boards.
+4.  Help sort out the pin multiplexing issue.
+5.  Refactor existing board files to make new ones easier in the
+    interim.
+6.  Knock yourself out and implement board support for new CPUs.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Network Infrastructure
+
+Multipath TCP (MPTCP) for FreeBSD
+
+  ------------------------------------------------------------------------ --------------------------------------------------------------------
+  Links                                                                    
+                                                                           URL: http://caia.swin.edu.au/newtcp/mptcp/
+  TCP Extensions for Multipath Operation with Multiple Addresses (draft)   URL: http://tools.ietf.org/html/draft-ietf-mptcp-multiaddressed-09
+  "MultiPath TCP — Linux Kernel implementation" home page                  URL: http://mptcp.info.ucl.ac.be/
+  ------------------------------------------------------------------------ --------------------------------------------------------------------
+
+Contact: Nigel Williams <njwilliams@swin.edu.au>
+Contact: Lawrence Stewart <lastewart@swin.edu.au>
+Contact: Grenville Armitage <garmitage@swin.edu.au>
+
+Work is underway to create an IETF draft-compatible Multipath TCP
+implementation for the FreeBSD kernel.
+
+A key goal of the project is to create a research platform to
+investigate a range of multipath related transport issues including
+congestion control, retransmission strategy and packet scheduling
+policy. We also aim to provide full interoperability with the Linux
+kernel implementation being developed at Université catholique de
+Louvain.
+
+We expect to release code and results at the project's home page as it
+progresses.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+SMP-Friendly pf(4)
+
+  --------------------------------- --------------------------------------------------------------------------
+  Links                             
+  Project SVN branch                URL: http://svnweb.freebsd.org/base/projects/pf/head/
+  Alpha announcement email thread   URL: http://lists.freebsd.org/pipermail/freebsd-pf/2012-June/006643.html
+  --------------------------------- --------------------------------------------------------------------------
+
+Contact: Gleb Smirnoff <glebius@FreeBSD.org>
+
+The project is aimed at moving the pf(4) packet filter out of single
+mutex, as well as in general improving of its FreeBSD port.
+
+The project is near its finish, the code is planned to go into head
+after more testing and benchmarking. If you are interested in details,
+please see the corresponding email thread on freebsd-pf (see links).
+
+Open tasks:
+
+1.  Rewrite the pf(4) ioctl() interface so that it does not utilize
+    in-kernel structures. That would make ABI more stable and ease
+    future development.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Documentation
+
+The FreeBSD Japanese Documentation Project
+
+  ----------------------------------------------------- ----------------------------------------
+  Links                                                 
+  Japanese FreeBSD Web Page                             URL: http://www.FreeBSD.org/ja/
+  The FreeBSD Japanese Documentation Project Web Page   URL: http://www.jp.FreeBSD.org/doc-jp/
+  ----------------------------------------------------- ----------------------------------------
+
+Contact: Hiroki Sato <hrs@FreeBSD.org>
+Contact: Ryusuke Suzuki <ryusuke@FreeBSD.org>
+
+Our translation work has slightly moved on to handbook from the www/ja
+(CVS) or htdocs (SVN) subtree, since almost translated web page contents
+were updated to the latest English counterparts.
+
+During this period, we translated the 8.3-RELEASE announcement and
+published it in a timely manner. Newsflash and some other updates in the
+English version were also translated as soon as possible.
+
+For FreeBSD Handbook, translation work of the "cutting-edge" and
+"printing" sections have been completed. Some updates in the "linuxemu"
+and "serialcomms" section were done. At this moment, "bsdinstall",
+"cutting-edge", "desktop", "install", "introduction", "kernelconfig",
+"mirrors", "multimedia", "pgpkeys", "ports", "printing", and "x11"
+chapters are synchronized with the English versions.
+
+Open tasks:
+
+1.  Further translation work of outdated documents in ja_JP.eucJP
+    subtree.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Architectures
+
+FreeBSD/arm on ARM Fast Models Simulator for Cortex-A15 MPCore Processor
+
+  -------------------------- ---------------------------------------------------------------------
+  Links                      
+  Cortex-A15 product page    URL: http://www.arm.com/products/processors/cortex-a/cortex-a15.php
+  Fast Models product page   URL: http://www.arm.com/products/tools/models/fast-models.php
+  -------------------------- ---------------------------------------------------------------------
+
+Contact: Zbigniew Bodek <zbb@semihalf.com>
+Contact: Rafal Jaworowski <raj@semihalf.com>
+Contact: Tomasz Nowicki <tn@semihalf.com>
+
+ARM Fast Models is platform which helps software developers debug
+systems in parallel with SoC design, speeding up and improving system
+development. This work is bringing up FreeBSD on ARM Fast Models system
+based on ARM Cortex-A15 and peripheral components. It works in single
+user mode, using a compiled-in kernel RAM disk minimal root file system.
+
+Current FreeBSD support includes:
+
+-   L1, L2 cache, Branch Predictor
+-   Dual-core (SMP) support setup in WB cache mode
+-   Cortex-A15 integrated Generic Timer
+-   Drivers for ARM peripheral components:
+    -   PL011 UART controller
+    -   PL390 GIC - Generic Interrupt Controller
+    -   SP804 Dual Timer
+
+Next steps:
+
+-   Quad-core (SMP) support
+-   Multi-user mode
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Ports
+
+BSD-licensed Sort Utility (GNU sort(1) Replacement)
+
+  -------------------------------------------- --------------------------------------------------------------------------
+  Links                                        
+  FreeBSD port of BSD sort(1)                  URL: http://www.freebsd.org/cgi/cvsweb.cgi/ports/textproc/bsdsort/
+  IEEE Std 1003.1-2008 sort(1) specification   URL: http://pubs.opengroup.org/onlinepubs/9699919799/utilities/sort.html
+  -------------------------------------------- --------------------------------------------------------------------------
+
+Contact: Oleg Moskalenko <oleg.moskalenko@citrix.com>
+Contact: Gábor Kövesdán <gabor@FreeBSD.org>
+
+BSD sort(1) has been made the default sort utility in 10-CURRENT. It is
+compatible with the latest GNU sort(1), version 8.15, except that the
+multi-threaded mode is not enabled by default.
+
+Open tasks:
+
+1.  When the track record of the BSD sort(1) allows, remove GNU sort(1)
+    from -CURRENT.
+2.  Improve reliability of the multi-threaded sort and investigate the
+    possibility of making it the default compilation mode.
+3.  Investigate possibility of factoring out the sort functionality into
+    a standalone library so that other utilities can also make use of
+    it.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD Haskell Ports
+
+  ---------------------------------- ----------------------------------------------------------
+  Links                              
+  FreeBSD Haskell wiki page          URL: http://wiki.freebsd.org/Haskell
+  FreeBSD Haskell ports repository   URL: https://github.com/freebsd-haskell/freebsd-haskell/
+  ---------------------------------- ----------------------------------------------------------
+
+Contact: Gábor PÁLI <pgj@FreeBSD.org>
+Contact: Ashish SHUKLA <ashish@FreeBSD.org>
+
+We are proud to announce that the FreeBSD Haskell Team has updated the
+Haskell Platform to 2012.2.0.0, GHC to 7.4.1 as well as updated existing
+ports to their latest stable versions. We also added a number of new
+Haskell ports, and their count in FreeBSD Ports tree is now 336.
+
+Open tasks:
+
+1.  Test GHC to work with clang/LLVM.
+2.  Add an option to the lang/ghc port to be able to build it with
+    already installed GHC instead of requiring a separate GHC bootstrap
+    tarball.
+3.  Commit pending Haskell ports to the FreeBSD Ports tree.
+4.  Add more ports to the Ports Collection.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+KDE/FreeBSD
+
+  ----------------------- ----------------------------------------
+  Links                   
+  KDE/FreeBSD home page   URL: http://FreeBSD.kde.org
+  area51                  URL: http://FreeBSD.kde.org/area51.php
+  ----------------------- ----------------------------------------
+
+Contact: KDE FreeBSD <kde@FreeBSD.org>
+
+The team has made many releases and upstreamed many fixes and patches.
+The latest round of releases include:
+
+-   KDE SC: 4.8.3, 4.8.4 (in ports) and 4.8.95 (in area51)
+-   Qt: 4.8.1, 4.8.2
+-   PyQt: 4.9.1; SIP: 4.13.2; QScintilla 2.6.1
+-   KDevelop: 2.3.1; KDevPlatform: 1.3.1
+-   Calligra: 2.4.2, 2.4.3
+-   Amarok: 2.5.90 (in area51)
+-   CMake: 2.8.8
+-   Digikam (and KIPI-plugins): 2.6.0
+
+As a result — according to PortScout — kde@ has 393 ports, of which 91%
+are up-to-date.
+
+The team is always looking for more testers and porters so please
+contact us and visit our home page.
+
+Open tasks:
+
+1.  Test KDE SC 4.8.95.
+2.  Test KDE PIM 4.8.95.
+3.  Update out-of-date ports, see PortScout for a list.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Portbuilder
+
+  ---------------- ------------------------------------------------------------------
+  Links            
+  Git Repository   URL: https://github.com/DragonSA/portbuilder
+  README           URL: https://github.com/DragonSA/portbuilder/blob/0.1.5.2/README
+  TODO             URL: https://github.com/DragonSA/portbuilder/blob/0.1.5.2/TODO
+  ---------------- ------------------------------------------------------------------
+
+Contact: David Naylor <naylor.b.david@gmail.com>
+
+Since the last update there has been 2 feature releases and 4 bug-fix
+releases. A highlight of the changes made:
+
+-   Support has been added for:
+
+-   -   -j: controlling concurrency per stage
+    -   pkgng: next generation package manager
+    -   installing packages via repository
+    -   dynamic defaults (loaded from /etc/make.conf)
+    -   new options framework (aka OptionsNG)
+
+-   Some of the fixes include:
+
+-   -   correct assertions
+    -   correct build logic
+    -   retry when kevent receives EINTR
+    -   correctly detecting installed ports
+    -   many fixes in the build logic
+
+A benchmark was run timing portbuilder against a standard ports build of
+KDE (x11/kde4) in a clean chroot(8) environment. Portbuilder achieved a
+build time of 2:21:16 compared to ports build time of 4:47:21 for an
+decreased build time of 51% from using portbuilder.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Redports
+
+  ------- -------------------------------
+  Links   
+          URL: http://www.redports.org/
+  ------- -------------------------------
+
+Contact: Bernhard Froehlich <decke@FreeBSD.org>
+
+There was good progress in the last half a year and a lot of support
+from different parties to make redports a stable and fast service.
+
+A long known security concern within tinderbox was raised at the BSD-Day
+in Vienna which was addressed by beat. That improves security and
+isolation of the concurrent running jobs a lot and gives me peace of
+mind.
+
+We also recently got two beefy machines from the FreeBSD Foundation
+which increases computing power a lot. So no more backlogs and your jobs
+finish much quicker.
+
+But as usual now that we have enough power I was able to make another
+promise come true and integrated Ports QAT functionality into redports.
+Ports QAT was an automated services that did a buildtest after each
+commit to the official FreeBSD ports tree. If a build fails it sends out
+mails and logfiles to the committer. That finds bad commits quickly and
+allows the committer to fix it before the first user notices. The former
+service stopped about 2 years ago and we had no proper replacement for
+that task at hand. Now that this is fully integrated into redports it
+also gives us all the nice benefits of a common platform.
+
+Open tasks:
+
+1.  Automatic build incoming patches from Ports PRs in redports and send
+    results to GNATS database.
+2.  People want an GCC testing environment on redports where all ports
+    are build with lang/gcc47. To make that happen we need to patch the
+    ports framework to handle that and correctly bootstrap with base
+    GCC. This also gives us the possibility to build all our binary
+    packages with a modern gcc and is easy to use for regular users.
+    Contributors?
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Xorg on FreeBSD
+
+  ------- ---------------------------------------------------------
+  Links   
+          URL: http://wiki.freebsd.org/Xorg
+          URL: http://trillian.chruetertee.ch/ports/browser/trunk
+  ------- ---------------------------------------------------------
+
+Contact: Martin Wilke <miwi@FreeBSD.org>
+Contact: Koop Mast <kwm@FreeBSD.org>
+Contact: Niclas Zeising <zeising@FreeBSD.org>
+Contact: Eitan Adler <eadler@FreeBSD.org>
+
+During the beginning of this period, an update to the xorg distribution
+for FreeBSD was made, dubbed xorg 7.5.2. This update included a new
+flag, WITH_NEW_XORG, to get a more recent xorg distribution for those
+with modern hardware. To get KMS support for recent Intel graphics
+chipsets WITH_KMS must also be set. This requires a recent FreeBSD
+10-CURRENT or FreeBSD 9-STABLE.
+
+Open tasks:
+
+1.  Switch to use FreeGLUT instead of libGLUT, since the latter is old
+    and has there is no upstream support or releases any more. Work on
+    this is mostly done.
+2.  Update the xorg distribution to what is in the development
+    repository. The xorg project recently did a new release, and the
+    development repository contains this release. It needs more testing
+    before it can be merged, and a CFT was sent out in the beginning of
+    June. Work on this is ongoing.
+3.  Decide how to handle the new and old xorg distributions. In recent
+    xorg, a lot of legacy driver support has been dropped, therefore we
+    need to maintain two xorg distributions to not loose a lot of
+    hardware drivers. Currently, this is done by setting the flag
+    WITH_NEW_XORG in /etc/make.conf, but a more practical solution is
+    needed. This is especially important since the flag is not very user
+    friendly, and since there currently will be no official packages for
+    the new distribution.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Miscellaneous
+
+BSD-Day 2012
+
+  ------------------------------------------ --------------------------------------------------------------------------------------------------
+  Links                                      
+  BSD-Day 2012 web site                      URL: http://bsdday.eu/2012
+  Video recordings of the talks at YouTube   URL: http://www.youtube.com/playlist?list=PL13D5471D8ECF08C9
+  Event photo album                          URL: https://picasaweb.google.com/116452848880746560170/BSDDay2012?authkey=Gv1sRgCN3twLrxuaeongE
+  ------------------------------------------ --------------------------------------------------------------------------------------------------
+
+Contact: Gábor Páli <pgj@FreeBSD.org>
+
+For this year, we moved the time of the event earlier by six months, so
+it was held on May 5, 2012 and it was co-located with the Austrian
+Linuxweeks (Linuxwochen Österreich) in Vienna. We had many sponsors,
+like the freshly joined FreeBSD Foundation, iXsystems, FreeBSDMall, BSD
+Magazine, allBSD.de Projekt, that enabled us to continue our previously
+launched series of multi-project BSD developer summits all around
+Central Europe.
+
+To kick off, there was a "stammtisch" (local beer meetup) organized in
+the downtown of Vienna, at Kolar on the Friday evening before the event
+— as usual. Then it was followed by the event on Saturday that brought
+many interesting topics from the world of FreeBSD, OpenBSD and NetBSD:
+running NetBSD as an embedded system for managing VOIP applications,
+introduction to the Capsicum security framework, relayd(8), the load
+balancer and proxy solution for OpenBSD, status update of the
+developments around the FreeBSD ports tree, using DVCSs in clouds,
+firewalling with pfSense, and mfsBSD. Please consult the links in the
+report for the details.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+News Home | Status Home
+
+Site Map | Legal Notices | © 1995–2021 The FreeBSD Project. All rights
+reserved.

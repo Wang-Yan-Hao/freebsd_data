@@ -1,0 +1,360 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   A propos
+-   Fonctionnalités
+-   Applications
+-   Prosélytisme
+-   Marketing
+-   Administration
+-   Nouvelles du projet
+-   Événements
+-   Presse
+-   Ressources artistiques
+-   Logo
+-   Donations
+-   Legal Notices
+-   Politique de confidentialité
+
+-   RSS 2.0 Feed
+
+Nouvelles FreeBSD ! (2000)
+
+Décembre 2000
+
+-   28-Dec-2000 Nouveau participant : FUJISHIMA Satsuki (ports)
+
+-   06-Dec-2000 Nouveau participant : Clive T. Lin
+
+-   04-Dec-2000 Nouveaux participants : Christoph Herrmann et
+    Thomas-Henning von Kamptz (growfs)
+
+-   01-Dec-2000 Nouveau participant : Ian Dowse
+
+Novembre 2000
+
+-   30-Nov-2000 Les différents efforts de portages sont maintenant dans
+    le répertoire plates-formes. Des pages distinctes pour les projets
+    de portages sur Alpha, IA-64, PowerPC et SPARC se trouvent dans ce
+    répertoire.
+
+-   22-Nov-2000 Sortie de FreeBSD 4.2. Veuillez consulter la page
+    d’informations sur les versions pour plus de détails. N’oubliez pas
+    aussi de consulter l’errata après l’installation pour connaître les
+    éventuels problèmes de dernière minute pour cette version 4.2.
+
+-   22-Nov-2000 Et encore un autre nouveau participant : Peter Pentchev
+    (ports)
+
+-   13-Nov-2000 Encore un autre nouveau participant : OKAZAKI Tetsurou
+    (ports)
+
+-   13-Nov-2000 Un autre nouveau participant : Kazuhiko Kiriyama (ports)
+
+-   13-Nov-2000 Nouveau participant : Dmitry Sivachenko (principalement
+    les ports)
+
+-   12-Nov-2000 Un autre nouveau participant : Issei Suzuki (Ports)
+
+-   06-Nov-2000 Un autre nouveau participant : Jing-Tang Keith Jang
+    (ports, principalement dans la catégorie "Chinois")
+
+-   02-Nov-2000 Un autre nouveau participant : Benno Rice (Portage sur
+    PowerPC et /boot/loader OpenFirmware)
+
+Octobre 2000
+
+-   26-Oct-2000 Encore un autre nouveau participant : Doug Barton
+    (mergemaster, et toutes les autres difficultés que je pourrais
+    avoir)
+
+-   26-Oct-2000 Un nouveau participant : Garance A Drosehn (lpr et
+    consorts)
+
+-   18-Oct-2000 Election de la nouvelle équipe principale FreeBSD !
+    Consultez le communiqué de presse officiel pour plus d’informations.
+
+-   16-Oct-2000 Nouveau participant : Jonathan Chen (nouveau cardbus)
+
+-   03-Oct-2000 Le programme complet de la convention BSDCon est
+    disponible. BSDCon est la première conférence technique annuelle
+    destinée aux utilisateurs BSD et se déroulera du 14 au 20 Octobre à
+    Monterey, CA.
+
+-   02-Oct-2000 Doug Rabson a intégré plusieurs modifications à la
+    branche -CURRENT pour un début de support du IA64. Le noyau atteint
+    maintenant l’invite du montage de la racine. Veuillez suivre les
+    discussions de la liste de diffusion ia64 pour plus d’informations.
+
+-   01-Oct-2000 Un nouveau participant : Trevor Johnson (divers ports,
+    principalement dans la catégorie audio)
+
+-   01-Oct-2000 Un nouveau participant : James Housley (ports, et
+    spécialement RTEMS. Egalement intéressé par IPv6)
+
+-   01-Oct-2000 Un nouveau participant : Mário Sérgio Fujikawa Ferreira
+
+Septembre 2000
+
+-   29-Sep-2000 TeraSolutions, Inc. et Lightning Internet Services ont
+    annoncé aujoud’hui que le très populaire site d’archives de
+    logiciels open-source ftp.freesoftware.com (également connu sous le
+    nom de ftp.FreeBSD.org) a dépassé la barre des 2 billions d’octets
+    (2 teraoctets) de fichiers téléchargés en une seule journée depuis
+    un unique serveur.
+
+-   27-Sep-2000 Sortie de FreeBSD 4.1.1. Veuillez consultez la page
+    d’information sur les versions pour plus de détails. N’oubliez pas
+    de consulter également l’errata après l’installation pour connaître
+    les éventuels problèmes de dernière minute pour cette version 4.1.1.
+
+-   21-Sep-2000 Un nouveau participant : Bosko Milekic
+
+Août 2000
+
+-   22-Août-2000 Un nouveau participant : Bruce A. Mah (docs,
+    pkg_version, divers ports)
+
+-   15-Août-2000 Un nouveau participant : Rajesh Vaidheeswarran
+    (ports/devel/cons)
+
+-   05-Août-2000 Un nouveau participant : Atsushi Onoe (gestionnaire de
+    périphérique awi)
+
+Juillet 2000
+
+-   27-Juillet-2000 Sortie de FreeBSD 4.1. Veuillez consulter la page
+    d’information sur les versions pour plus de détails. N’oubliez pas
+    de consulter également l’errata après l’installation pour connaître
+    les éventuels problèmes de dernière minute pour cette version 4.1.
+
+-   12-Juillet-2000 Un nouveau participant : Mark Ovens
+
+-   11-Juillet-2000 Un nouveau participant : Kelly Yancey
+
+-   11-July-2000 Un nouveau participant : David Malone
+
+-   11-July-2000 Un nouveau participant : Noriaki Mitsunaga (PC-Card)
+
+-   10-July-2000 Un nouveau participant : Ben Smithurst (Docs)
+
+-   08-July-2000 Un nouveau participant : Daniel Harris (Docs)
+
+-   07-July-2000 Un nouveau participant : Takanori Watanabe (ACPI)
+
+-   06-July-2000 Un nouveau participant : Hiroki Sato (Docs en Japonais)
+
+-   05-July-2000 Un nouveau participant : Kazuo Horikawa (Manuels en
+    ligne en Japonais)
+
+-   03-July-2000 Un nouveau participant : Adrian Chadd
+
+Juin 2000
+
+-   30-Juin-2000 Mise à jour de http://freshports.org/ avec la version
+    1.1. Le site web FreshPorts contient les dernières informations sur
+    les ports créés/mis à jour/supprimés. Cette mise à jour, la première
+    depuis la création de FreshPorts début Mai, a permise d’améliorer la
+    page d’accueil ce qui, avec l’historique des changements sur les
+    ports, permet de trouver les informations recherchées plus
+    rapidement et plus facilement.
+
+-   29-Juin-2000 Tucows a ajouté une section BSD.
+
+-   26-Juin-2000 Un nouveau participant : Shunsuke Akiyama (pilotes pour
+    les disques optiques)
+
+-   24-Juin-2000 Sortie de FreeBSD 3.5. Veuillez consulter la page
+    d’information sur les versions pour plus d’informations. N’oubliez
+    pas de consulter également l’errata après l’installation pour
+    connaître les éventuels problèmes de dernière minute pour cette
+    version 3.5.
+
+-   20-Juin-2000 Un nouveau participant : MIHIRA Sanpei Yoshiro
+    (PC-Card)
+
+    Un nouveau participant : Coleman Kane (3dfx voodoo pour glide/Mesa)
+
+-   19-Juin-2000 Un nouveau participant : CHOI Junho (Ports)
+
+-   08-Juin-2000 Jordan Hubbard et Warner Losh seront au Japon début
+    Juin 2000. Ils donneront des conférences : au BSD BOF de
+    Networld+Interop 2000 à Tokyo (le 8), au séminaire JUS à Tokyo (le
+    9), au NBUG à Nagoya (le 10) et au séminaire K*BUG à Osaka (le 10).
+    Veuillez consulter http://www.jp.FreeBSD.org/.
+
+    Nouvel article qui explique comment utiliser PPP, natd, et ipfw pour
+    mettre en place un firewall avec une connexion PPP en dialup.
+
+    Un nouveau participant : Alexander Langer (Ports, Docs)
+
+-   06-Juin-2000 Le premier Conspectus FreeBSD est en place. Il donne un
+    résumé des messages postés durant ces dernières semaines sur la
+    liste de diffusion -stable.
+
+Mai 2000
+
+-   19-Mai-2000 Un nouveau participant : Chuck Paterson (SMP)
+
+-   18-Mai-2000 Une version imprimée du Manuel de Référence FreeBSD est
+    maintenant disponible. Si vous souhaitez en commander un exemplaire,
+    veuillez consulter FreeBSDMall ou le site web de BSDi.
+
+-   15-Mai-2000 Un nouveau participant : Jake Burkholder ("anciens"
+    gestionnaires de périphériques)
+
+-   14-Mai-2000 Le numéro 4 de The FreeBSD 'zine est disponible.
+
+-   09-Mai-2000 Freshports: similaire dans le principe à Freshmeat, ce
+    site s’occupe exclusivement des ports FreeBSD et vous permet de
+    créer votre propre liste de ports favoris à "surveiller".
+
+Avril 2000
+
+-   16-Avr-2000 Nouvelles listes de diffusion : freebsd-i18n
+    (Internationalisation de FreeBSD) et freebsd-ppc (Portage de FreeBSD
+    sur PowerPC)
+
+-   04-Avr-2000 Un nouveau participant : Murray Stokely (programme
+    sysinstall)
+
+Mars 2000
+
+-   22-Mar-2000 Un nouveau participant : Akinori MUSHA (Ports)
+
+-   21-Mar-2000 Bill Swingle a écrit un article sur le système des Ports
+    et des Packages pour 32bitsonline.com
+
+-   20-Mar-2000 Un nouveau participant : Will Andrews (Ports)
+
+-   15-Mar-2000 Le numéro 2 de The FreeBSD 'zine est disponible.
+
+-   13-Mar-2000 Sortie de FreeBSD 4.0. Veuillez consulter la page
+    d’information sur les versions pour plus de détails. N’oubliez pas
+    de consultez également l’errata après l’installation pour connaître
+    les éventuels problèmes de dernière minute pour cette version 4.0.
+
+-   09-Mar-2000 Walnut Creek CDROM et BSDI fusionnent ! Consultez le
+    communiqué de presse officiel pour plus d’informations.
+
+Février 2000
+
+-   26-Fév-2000 Un nouveau participant : Hajimu UMEMOTO (IPv6)
+
+-   23-Fév-2000 Un nouveau participant : Paul Saab
+
+-   22-Fév-2000 32BitsOnline.com propose un test de FreeBSD 3.4 réalisé
+    par Clifford Smith. L’un dans l’autre, un bon article.
+
+-   18-Fév-2000 Un nouveau participant : Brian S Dean (support noyau des
+    registres de debug matériel du IA32, divers
+    corrections/améliorations dans d’autres parties)
+
+-   17-Fév-2000 Un nouveau numéro de The FreeBSD 'zine est paru le 15.
+    C’est le premier numéro du fanzine en 7 mois; beaucoup de
+    changements et d’améliorations ont été apportés. N’oubliez pas de le
+    consulter.
+
+-   10-Fév-2000 Michael Lucas a écrit un excellent article à propos des
+    différences entre les licences BSD et GPL. Cet article vaut
+    définitivement le coup d’oeil.
+
+    Nouveaux participants : Greg Sutter et Bill Swingle (Docs)
+
+Janvier 2000
+
+-   22-Jan-2000 L’agenda FreeBSD, une chronique de ce qu’un utilisateur
+    fait avec FreeBSD, existe depuis maintenant presque 2 ans. Jusqu’à
+    présent, il était caché dans un coin de son site. Comme cet agenda
+    est de plus en plus étoffé, un nouveau site a été lancé aujourd’hui.
+    Il contient un grand nombre de guides à destination des utilisateurs
+    FreeBSD mais aussi NetBSD, OpenBSD et Linux.
+
+-   13-Jan-2000 Un nouveau participant : Wilko Bulte
+
+-   04-Jan-2000 Le programme de tests Testdrive de Compaq est désormais
+    disponible avec la dernière version de FreeBSD 4.0-20000101-CURRENT
+    sur un Alpha XP1000 EV6.7. cadencé à 667MHz avec 2 Go de mémoire
+    vive. Pour obtenir un compte gratuit afin de participer à ce projet
+    d’évaluation, il vous suffit de vous enregistrer sur le site. Ces
+    comptes ne sont pas conçus pour jouer, le but du projet étant de
+    rendre accessibles des systèmes dernier cri aux développeurs afin
+    que ceux-ci puissent tester, compiler et porter leurs applications
+    sur les ordinateurs les plus rapides du monde. Le programme de test
+    comprend aussi d’autres systèmes sous FreeBSD tels qu’un Proliant
+    5500 bi-Xeon à 450 MHz et un DPW500a.
+
+-   03-Jan-2000 Un nouveau participant : Patrick Gardella (JDK/WWW)
+
+-   02-Jan-2000 Un nouveau participant : Ade Lovett (Ports)
+
+-   01-Jan-2000 Un nouveau participant : Jeremy Lea (Ports)
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 juin 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

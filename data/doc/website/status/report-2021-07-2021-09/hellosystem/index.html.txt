@@ -1,0 +1,123 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+helloSystem
+
+Links:
+Documentation URL: https://hellosystem.github.io/
+
+Contact: Simon Peter <probono@puredarwin.org>
+Contact: #helloSystem on irc.libera.chat, mirrored to
+#helloSystem:matrix.org on Matrix
+
+What is helloSystem?
+
+helloSystem is FreeBSD preconfigured as a desktop operating system with
+a focus on simplicity, elegance, and usability. Its design follows the
+“Less, but better” philosophy.
+
+Q3 2021 Status
+
+-   Version 0.6.0 of helloSystem has been published including many
+    contributed features and bugfixes
+
+    -   Improved window management with KWin as the window manager
+
+    -   Simplified Filer file manager
+
+-   Contributors have started to port the helloSystem desktop
+    environment, helloDesktop, to the FreeBSD Ports and Packages
+    Collection (see changelog at
+    https://github.com/helloSystem/ISO/releases/tag/r0.6.0 for details)
+
+Installable Live ISO images and a full changelog are available at
+https://github.com/helloSystem/ISO/releases/tag/r0.6.0
+
+Contributing
+
+Help is wanted in a number of areas, especially in the areas of the
+FreeBSD core OS and kernel, and Qt/C++.
+
+------------------------------------------------------------------------
+
+Last modified on: November 15, 2021 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

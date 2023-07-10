@@ -1,0 +1,170 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Continuous Integration
+
+Links:
+FreeBSD Jenkins Instance URL: https://ci.FreeBSD.org
+FreeBSD CI artifact archive URL: https://artifact.ci.FreeBSD.org
+FreeBSD Jenkins wiki URL: https://wiki.FreeBSD.org/Jenkins
+Hosted CI wiki URL: https://wiki.FreeBSD.org/HostedCI
+3rd Party Software CI URL: https://wiki.FreeBSD.org/3rdPartySoftwareCI
+Tickets related to freebsd-testing@ URL:
+https://preview.tinyurl.com/y9maauwg
+FreeBSD CI Repository URL: https://github.com/freebsd/freebsd-ci
+dev-ci Mailing List URL: https://lists.FreeBSD.org/subscription/dev-ci
+
+Contact: Jenkins Admin <jenkins-admin@FreeBSD.org>
+Contact: Li-Wen Hsu <lwhsu@FreeBSD.org>
+Contact: freebsd-testing Mailing List
+Contact: IRC #freebsd-ci channel on EFNet
+
+The FreeBSD CI team maintains the continuous integration system of the
+FreeBSD project. The CI system checks the committed changes can be
+successfully built, then performs various tests and analysis over the
+newly built results. The artifacts from those builds are archived in the
+artifact server for further testing and debugging needs. The CI team
+members examine the failing builds and unstable tests and work with the
+experts in that area to fix the code or adjust test infrastructure.
+
+During the fourth quarter of 2022, we continued working with the
+contributors and developers in the project to fulfill their testing
+needs and also keep collaborating with external projects and companies
+to improve their products and FreeBSD.
+
+Important completed tasks:
+
+-   FreeBSD-main-amd64-gcc9_build now sends failing reports to the
+    committers whose commits may be related.
+
+-   FreeBSD-main-amd64-gcc12_build has been added.
+
+-   FreeBSD-main-powerpc64-images now also builds bootable APM disk
+    image for Apple G5 baremetal and QEMU -M mac99 (by alfredo@)
+
+Work in progress tasks:
+
+-   Designing and implementing pre-commit CI building and testing (to
+    support the workflow working group)
+
+-   Designing and implementing use of CI cluster to build release
+    artifacts as release engineering does
+
+-   Simplifying CI/test environment setting up for contributors and
+    developers
+
+-   Setting up the CI stage environment and putting the experimental
+    jobs on it
+
+-   Organizing the scripts in freebsd-ci repository to prepare for
+    merging to src repository
+
+-   Improving the hardware test lab and adding more hardware for testing
+
+Open or queued tasks:
+
+-   Collecting and sorting CI tasks and ideas
+
+-   Setting up public network access for the VM guest running tests
+
+-   Implementing use of bare-metal hardware to run test suites
+
+-   Adding drm ports building tests against -CURRENT
+
+-   Planning to run ztest tests
+
+-   Adding more external toolchain related jobs
+
+-   Helping more software get FreeBSD support in its CI pipeline (Wiki
+    pages: 3rdPartySoftwareCI, HostedCI)
+
+-   Working with hosted CI providers to have better FreeBSD support
+
+Please see freebsd-testing@ related tickets for more WIP information,
+and don’t hesitate to join the effort!
+
+Sponsor: The FreeBSD Foundation
+
+------------------------------------------------------------------------
+
+Last modified on: January 23, 2023 by Lorenzo Salvadore
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

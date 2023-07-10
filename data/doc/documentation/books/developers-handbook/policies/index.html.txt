@@ -1,0 +1,502 @@
+
+-    Part I. Basics
+-    Chapter 1. Introduction
+    -   1.1. Developing on FreeBSD
+    -   1.2. The BSD Vision
+    -   1.3. Architectural Guidelines
+    -   1.4. The Layout of /usr/src
+-    Chapter 2. Programming Tools
+    -   2.1. Synopsis
+    -   2.2. Introduction
+    -   2.3. Introduction to Programming
+    -   2.4. Compiling with cc
+    -   2.5. Make
+    -   2.6. Debugging
+    -   2.7. Using Emacs as a Development Environment
+    -   2.8. Further Reading
+-    Chapter 3. Secure Programming
+    -   3.1. Synopsis
+    -   3.2. Secure Design Methodology
+    -   3.3. Buffer Overflows
+    -   3.4. SetUID issues
+    -   3.5. Limiting your program’s environment
+    -   3.6. Trust
+    -   3.7. Race Conditions
+-    Chapter 4. Localization and Internationalization - L10N and I18N
+    -   4.1. Programming I18N Compliant Applications
+    -   4.2. Localized Messages with POSIX.1 Native Language Support
+        (NLS)
+-    Chapter 5. Source Tree Guidelines and Policies
+    -   5.1. Style Guidelines
+    -   5.2. MAINTAINER on Makefiles
+    -   5.3. Contributed Software
+    -   5.4. Encumbered Files
+    -   5.5. Shared Libraries
+-    Chapter 6. Regression and Performance Testing
+    -   6.1. Micro Benchmark Checklist
+    -   6.2. The FreeBSD Source Tinderbox
+    -   6.3. The index.cgi Script
+    -   6.4. Official Build Servers
+    -   6.5. Official Summary Site
+-    Part II. Interprocess Communication
+-    Chapter 7. Sockets
+    -   7.1. Synopsis
+    -   7.2. Networking and Diversity
+    -   7.3. Protocols
+    -   7.4. The Sockets Model
+    -   7.5. Essential Socket Functions
+    -   7.6. Helper Functions
+    -   7.7. Concurrent Servers
+-    Chapter 8. IPv6 Internals
+    -   8.1. IPv6/IPsec Implementation
+-    Part III. Kernel
+-    Chapter 9. Building and Installing a FreeBSD Kernel
+    -   9.1. Building the Faster but Brittle Way
+-    Chapter 10. Kernel Debugging
+    -   10.1. Obtaining a Kernel Crash Dump
+    -   10.2. Debugging a Kernel Crash Dump with kgdb
+    -   10.3. On-Line Kernel Debugging Using DDB
+    -   10.4. On-Line Kernel Debugging Using Remote GDB
+    -   10.5. Debugging a Console Driver
+    -   10.6. Debugging Deadlocks
+    -   10.7. Kernel debugging with Dcons
+    -   10.8. Glossary of Kernel Options for Debugging
+-    Part IV. Architectures
+-    Chapter 11. x86 Assembly Language Programming
+    -   A.1. Synopsis
+    -   A.2. The Tools
+    -   A.3. System Calls
+    -   A.4. Return Values
+    -   A.5. Creating Portable Code
+    -   A.6. Our First Program
+    -   A.7. Writing UNIX® Filters
+    -   A.8. Buffered Input and Output
+    -   A.9. Command Line Arguments
+    -   A.10. UNIX® Environment
+    -   A.11. Working with Files
+    -   A.12. One-Pointed Mind
+    -   A.13. Using the FPU
+    -   A.14. Caveats
+    -   A.15. Acknowledgements
+-    Part V. Appendices
+-    Appendices
+-   
+
+Book menu
+
+Chapter 5. Source Tree Guidelines and Policies
+
+Table of Contents
+
+-   5.1. Style Guidelines
+-   5.2. MAINTAINER on Makefiles
+-   5.3. Contributed Software
+-   5.4. Encumbered Files
+-   5.5. Shared Libraries
+
+This chapter documents various guidelines and policies in force for the
+FreeBSD source tree.
+
+5.1. Style Guidelines
+
+Consistent coding style is extremely important, particularly with large
+projects like FreeBSD. Code should follow the FreeBSD coding styles
+described in style(9) and style.Makefile(5).
+
+5.2. MAINTAINER on Makefiles
+
+If a particular portion of the FreeBSD src/ distribution is being
+maintained by a person or group of persons, this is communicated through
+an entry in src/MAINTAINERS. Maintainers of ports within the Ports
+Collection express their maintainership to the world by adding a
+MAINTAINER line to the Makefile of the port in question:
+
+    MAINTAINER= email-addresses
+
++-----------------------------------+-----------------------------------+
+|                                   | For other parts of the            |
+|                                   | repository, or for sections not   |
+|                                   | listed as having a maintainer, or |
+|                                   | when you are unsure who the       |
+|                                   | active maintainer is, try looking |
+|                                   | at the recent commit history of   |
+|                                   | the relevant parts of the source  |
+|                                   | tree. It is quite often the case  |
+|                                   | that a maintainer is not          |
+|                                   | explicitly named, but the people  |
+|                                   | who are actively working in a     |
+|                                   | part of the source tree for, say, |
+|                                   | the last couple of years are      |
+|                                   | interested in reviewing changes.  |
+|                                   | Even if this is not specifically  |
+|                                   | mentioned in the documentation or |
+|                                   | the source itself, asking for a   |
+|                                   | review as a form of courtesy is a |
+|                                   | very reasonable thing to do.      |
++-----------------------------------+-----------------------------------+
+
+The role of the maintainer is as follows:
+
+-   The maintainer owns and is responsible for that code. This means
+    that he or she is responsible for fixing bugs and answering problem
+    reports pertaining to that piece of the code, and in the case of
+    contributed software, for tracking new versions, as appropriate.
+
+-   Changes to directories which have a maintainer defined shall be sent
+    to the maintainer for review before being committed. Only if the
+    maintainer does not respond for an unacceptable period of time, to
+    several emails, will it be acceptable to commit changes without
+    review by the maintainer. However, it is suggested that you try to
+    have the changes reviewed by someone else if at all possible.
+
+-   It is of course not acceptable to add a person or group as
+    maintainer unless they agree to assume this duty. On the other hand
+    it does not have to be a committer and it can easily be a group of
+    people.
+
+5.3. Contributed Software
+
+Some parts of the FreeBSD distribution consist of software that is
+actively being maintained outside the FreeBSD project. For historical
+reasons, we call this contributed software. Some examples are sendmail,
+gcc and patch.
+
+Over the last couple of years, various methods have been used in dealing
+with this type of software and all have some number of advantages and
+drawbacks. No clear winner has emerged.
+
+Since this is the case, after some debate one of these methods has been
+selected as the "official" method and will be required for future
+imports of software of this kind. Furthermore, it is strongly suggested
+that existing contributed software converge on this model over time, as
+it has significant advantages over the old method, including the ability
+to easily obtain diffs relative to the "official" versions of the source
+by everyone (even without direct repository access). This will make it
+significantly easier to return changes to the primary developers of the
+contributed software.
+
+Ultimately, however, it comes down to the people actually doing the
+work. If using this model is particularly unsuited to the package being
+dealt with, exceptions to these rules may be granted only with the
+approval of the core team and with the general consensus of the other
+developers. The ability to maintain the package in the future will be a
+key issue in the decisions.
+
++-----------------------------------+-----------------------------------+
+|                                   | Because it makes it harder to     |
+|                                   | import future versions minor,     |
+|                                   | trivial and/or cosmetic changes   |
+|                                   | are strongly discouraged on files |
+|                                   | that are still tracking the       |
+|                                   | vendor branch.                    |
++-----------------------------------+-----------------------------------+
+
+5.3.1. Vendor Imports with SVN
+
+This section describes the vendor import procedure with Subversion in
+details.
+
+1.  Preparing the Tree
+
+    If this is your first import after the switch to SVN, you will have
+    to flatten and clean up the vendor tree, and bootstrap merge history
+    in the main tree. If not, you can safely omit this step.
+
+    During the conversion from CVS to SVN, vendor branches were imported
+    with the same layout as the main tree. For example, the foo vendor
+    sources ended up in vendor/foo/dist/contrib/foo, but it is pointless
+    and rather inconvenient. What we really want is to have the vendor
+    source directly in vendor/foo/dist, like this:
+
+        % cd vendor/foo/dist/contrib/foo
+        % svn move $(svn list) ../..
+        % cd ../..
+        % svn remove contrib
+        % svn propdel -R svn:mergeinfo
+        % svn commit
+
+    Note that, the propdel bit is necessary because starting with 1.5,
+    Subversion will automatically add svn:mergeinfo to any directory you
+    copy or move. In this case, you will not need this information,
+    since you are not going to merge anything from the tree you deleted.
+
+    +-----------------------------------+-----------------------------------+
+    |                                   | You may want to flatten the tags  |
+    |                                   | as well. The procedure is exactly |
+    |                                   | the same. If you do this, put off |
+    |                                   | the commit until the end.         |
+    +-----------------------------------+-----------------------------------+
+
+    Check the dist tree and perform any cleanup that is deemed to be
+    necessary. You may want to disable keyword expansion, as it makes no
+    sense on unmodified vendor code. In some cases, it can be even be
+    harmful.
+
+        % svn propdel svn:keywords -R .
+        % svn commit
+
+    Bootstrapping of svn:mergeinfo on the target directory (in the main
+    tree) to the revision that corresponds to the last change was made
+    to the vendor tree prior to importing new sources is also needed:
+
+        % cd head/contrib/foo
+        % svn merge --record-only ^/vendor/foo/dist@12345678 .
+        % svn commit
+
+    With some shells, the ^ in the above command may need to be escaped
+    with a backslash.
+
+2.  Importing New Sources
+
+    Prepare a full, clean tree of the vendor sources. With SVN, we can
+    keep a full distribution in the vendor tree without bloating the
+    main tree. Import everything but merge only what is needed.
+
+    Note that you will need to add any files that were added since the
+    last vendor import, and remove any that were removed. To facilitate
+    this, you should prepare sorted lists of the contents of the vendor
+    tree and of the sources you are about to import:
+
+        % cd vendor/foo/dist
+        % svn list -R | grep -v '/$' | sort > ../old
+        % cd ../foo-9.9
+        % find . -type f | cut -c 3- | sort > ../new
+
+    With these two files, the following command will list removed files
+    (files only in old):
+
+        % comm -23 ../old ../new
+
+    While the command below will list added files (files only in new):
+
+        % comm -13 ../old ../new
+
+    Let us put this together:
+
+        % cd vendor/foo/foo-9.9
+        % tar cf - . | tar xf - -C ../dist
+        % cd ../dist
+        % comm -23 ../old ../new | xargs svn remove
+        % comm -13 ../old ../new | xargs svn add
+
+    +-----------------------------------+-----------------------------------+
+    |                                   | If there are new directories in   |
+    |                                   | the new distribution, the last    |
+    |                                   | command will fail. You will have  |
+    |                                   | to add the directories, and run   |
+    |                                   | it again. Conversely, if any      |
+    |                                   | directories were removed, you     |
+    |                                   | will have to remove them          |
+    |                                   | manually.                         |
+    +-----------------------------------+-----------------------------------+
+
+    Check properties on any new files:
+
+    -   All text files should have svn:eol-style set to native.
+
+    -   All binary files should have svn:mime-type set to
+        application/octet-stream, unless there is a more appropriate
+        media type.
+
+    -   Executable files should have svn:executable set to *.
+
+    -   There should be no other properties on any file in the tree.
+
+        +-----------------------------------+-----------------------------------+
+        |                                   | You are ready to commit, but you  |
+        |                                   | should first check the output of  |
+        |                                   | svn stat and svn diff to make     |
+        |                                   | sure everything is in order.      |
+        +-----------------------------------+-----------------------------------+
+
+        Once you have committed the new vendor release, you should tag
+        it for future reference. The best and quickest way is to do it
+        directly in the repository:
+
+            % svn copy ^/vendor/foo/dist svn_base/vendor/foo/9.9
+
+        To get the new tag, you can update your working copy of
+        vendor/foo.
+
+        +-----------------------------------+-----------------------------------+
+        |                                   | If you choose to do the copy in   |
+        |                                   | the checkout instead, do not      |
+        |                                   | forget to remove the generated    |
+        |                                   | svn:mergeinfo as described above. |
+        +-----------------------------------+-----------------------------------+
+
+3.  Merging to -HEAD
+
+    After you have prepared your import, it is time to merge. Option
+    --accept=postpone tells SVN not to handle merge conflicts yet,
+    because they will be taken care of manually:
+
+        % cd head/contrib/foo
+        % svn update
+        % svn merge --accept=postpone ^/vendor/foo/dist
+
+    Resolve any conflicts, and make sure that any files that were added
+    or removed in the vendor tree have been properly added or removed in
+    the main tree. It is always a good idea to check differences against
+    the vendor branch:
+
+        % svn diff --no-diff-deleted --old=^/vendor/foo/dist --new=.
+
+    --no-diff-deleted tells SVN not to check files that are in the
+    vendor tree but not in the main tree.
+
+    +-----------------------------------+-----------------------------------+
+    |                                   | With SVN, there is no concept of  |
+    |                                   | on or off the vendor branch. If a |
+    |                                   | file that previously had local    |
+    |                                   | modifications no longer does,     |
+    |                                   | just remove any left-over cruft,  |
+    |                                   | such as FreeBSD version tags, so  |
+    |                                   | it no longer shows up in diffs    |
+    |                                   | against the vendor tree.          |
+    +-----------------------------------+-----------------------------------+
+
+    If any changes are required for the world to build with the new
+    sources, make them now - and test until you are satisfied that
+    everything build and runs correctly.
+
+4.  Commit
+
+    Now, you are ready to commit. Make sure you get everything in one
+    go. Ideally, you would have done all steps in a clean tree, in which
+    case you can just commit from the top of that tree. That is the best
+    way to avoid surprises. If you do it properly, the tree will move
+    atomically from a consistent state with the old code to a consistent
+    state with the new code.
+
+5.4. Encumbered Files
+
+It might occasionally be necessary to include an encumbered file in the
+FreeBSD source tree. For example, if a device requires a small piece of
+binary code to be loaded to it before the device will operate, and we do
+not have the source to that code, then the binary file is said to be
+encumbered. The following policies apply to including encumbered files
+in the FreeBSD source tree.
+
+1.  Any file which is interpreted or executed by the system CPU(s) and
+    not in source format is encumbered.
+
+2.  Any file with a license more restrictive than BSD or GNU is
+    encumbered.
+
+3.  A file which contains downloadable binary data for use by the
+    hardware is not encumbered, unless (1) or (2) apply to it.
+
+4.  Any encumbered file requires specific approval from the Core Team
+    before it is added to the repository.
+
+5.  Encumbered files go in src/contrib or src/sys/contrib.
+
+6.  The entire module should be kept together. There is no point in
+    splitting it, unless there is code-sharing with non-encumbered code.
+
+7.  In the past binary files were typically uuencoded, and named
+    arch/filename.o.uu. This is no longer necessary, and binary files
+    may be added to the repository unchanged.
+
+8.  Kernel files:
+
+    a.  Should always be referenced in conf/files.* (for build
+        simplicity).
+
+    b.  Should always be in LINT, but the Core Team decides per case if
+        it should be commented out or not. The Core Team can, of course,
+        change their minds later on.
+
+    c.  The Release Engineer decides whether or not it goes into the
+        release.
+
+9.  User-land files:
+
+    a.  The Core team decides if the code should be part of make world.
+
+    b.  The Release Engineering decides if it goes into the release.
+
+5.5. Shared Libraries
+
+If you are adding shared library support to a port or other piece of
+software that does not have one, the version numbers should follow these
+rules. Generally, the resulting numbers will have nothing to do with the
+release version of the software.
+
+For ports:
+
+-   Prefer using the number already selected by upstream
+
+-   If upstream provides symbol versioning, ensure that we use their
+    script
+
+For the base system:
+
+-   Start library version from 1
+
+-   It is strongly recommended to add symbol versioning to the new
+    library
+
+-   If there is an incompatible change, handle it with symbol
+    versioning, maintaining backward ABI compatibility
+
+-   If this is impossible, or the library does not use symbol
+    versioning, bump the library version
+
+-   Before even considering bumping library version for symbol-versioned
+    library, consult with Release Engineering team, providing reasons
+    why the change is so important that it should be allowed despite
+    breaking the ABI
+
+For instance, added functions and bugfixes not changing the interfaces
+are fine, while deleted functions, changed function call syntax, etc.
+should either provide backward-compat symbols, or will force the major
+version number to change.
+
+It is the duty of the committer making the change to handle library
+versioning.
+
+The ELF dynamic linker matches library names literally. There is a
+popular convention where library version is written in the form
+libexample.so.x.y, where x is the major version, and y is minor. Common
+practice is to set the library' soname (DT_SONAME ELF tag) to
+libexample.so.x, and set up symlinks libexample.so.x→libexample.so.x.y,
+libexample.so→libexample.so.x on library installation for the latest
+minor version y. Then, since the static linker searches for
+libexample.so when the -lexample command line option is specified,
+objects linked with libexample get a dependency on the right library.
+Almost all popular build systems use this scheme automatically.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: December 11, 2021 by Sergio Carlavilla Delgado
+
+Prev
+
+Home
+
+Next
+
+Table of Contents
+
+-   5.1. Style Guidelines
+-   5.2. MAINTAINER on Makefiles
+-   5.3. Contributed Software
+-   5.4. Encumbered Files
+-   5.5. Shared Libraries
+
+<<<<<<< HEAD
+
+=======
+------------------------------------------------------------------------
+
+Resources
+
+-   Download PDF
+-   Edit this page
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+

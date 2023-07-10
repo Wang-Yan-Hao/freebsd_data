@@ -1,0 +1,184 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   Git Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Uitgavedocumentatie
+
+[BSD daemon reading documentation]
+
+Iedere distributie van FreeBSD bevat een aantal bestanden met
+documentatie waarin de distributie wordt beschreven (RELEASE, SNAPSHOT,
+enzovoort). Deze bestanden bevatten normaliter:
+
+-   README: Algemene inleiding.
+
+-   Uitgavenotities: Informatie over wijzigingen ten opzichte van de
+    vorige uitgave van FreeBSD.
+
+-   Hardware-notities: Een list met hardware-apparaten waarvan bekend is
+    dat ze werken met FreeBSD.
+
+-   Installatie-instructies: Een korte installatiegids voor FreeBSD.
+
+-   Errata: Allerlaatste nieuwe, inclusief correcties,
+    beveiligingswaarschuwingen en potentiële problemen die gevonden zijn
+    na de uitgave.
+
+Van de bovenstaande bestanden zijn de uitgavenotities, hardware-notities
+en installatie-instructies aangepast voor iedere architectuur die door
+FreeBSD wordt ondersteund.
+
+RELEASE versies van FreeBSD
+
+De uitgavedocumentatie voor iedere -RELEASE versie van FreeBSD
+(bijvoorbeeld &rel.current;-RELEASE) staat op de pagina uitgaven van de
+FreeBSD website en ook op de mirrors.
+
+Deze bestanden (meestal in zowel HTML-formaat als platte tekst) staan in
+de bovenste map van iedere distributie (of het nu om CD-ROM, een
+FTP-site of installatiefloppies gaat).
+
+Snapshot-versies van FreeBSD
+
+De uitgavedocumentatiebestanden voor snapshots staan meestal in de
+bovenste map van iedere snapshot.
+
+Documentatie voor -CURRENT en -STABLE
+
+Automatisch gemaakte HTML versies van de uitgavedocumentatie voor
+FreeBSD-CURRENT en FreeBSD-STABLE zijn beschikbaar op de
+FreeBSD-website. Deze documenten wijzigen voortdurend. De versies op de
+website worden tegelijkertijd met de rest van de website opnieuw
+samengesteld (dagelijks).
+
+FreeBSD-CURRENT uitgavedocumentatie
+
+-   README
+
+-   Uitgavenotities
+
+-   Hardware-notities
+
+-   Errata
+
+FreeBSD 8-STABLE uitgavedocumentatie
+
+-   README
+
+-   Uitgavenotities
+
+-   Hardware-notities
+
+-   Errata
+
+FreeBSD 7-STABLE uitgavedocumentatie
+
+-   README
+
+-   Uitgavenotities
+
+-   Hardware-notities
+
+-   Errata
+
+FreeBSD 6-STABLE uitgavedocumentatie
+
+-   README
+
+-   Uitgavenotities: alpha, amd64, i386, ia64, pc98, sparc64
+
+-   Hardware-notities: alpha, amd64, i386, ia64, pc98, sparc64
+
+-   Installatie-instructies: alpha, amd64, i386, ia64, pc98, sparc64
+
+-   Errata
+
+Andere sites
+
+HTML in een enkel bestand, PDF en platte tekstversies van de
+uitgavedocumentatie voor FreeBSD-CURRENT, -STABLE en recente -RELEASE
+versies staan op de Uitgavedocumentatie Snapshot Site. De versies op
+deze site worden vaak bijgewerkt, maar niet met regelmaat.
+
+------------------------------------------------------------------------
+
+Last modified on: 26 januari 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

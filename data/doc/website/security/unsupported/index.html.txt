@@ -1,0 +1,231 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Support
+-   Vendors
+    -   Software
+    -   Hardware
+    -   Consulting
+    -   Internet Service Providers
+    -   Miscellaneous
+-   Security Information
+    -   Advisories
+    -   Errata Notices
+    -   Supported Releases
+    -   Unsupported Releases
+    -   How to read FreeBSD Security Advisories
+    -   Charter for the Security Officer and Team
+-   Bug Reports
+    -   Submit a Problem Report
+-   Web Resources
+
+Unsupported FreeBSD Releases
+
+The following releases are no longer supported but are listed here for
+reference purposes.
+
++-------------+-------------+-------------+-------------+-------------+
+| Branch      | Release     | Type        | Release     | EoL         |
+|             |             |             | Date        |             |
++=============+=============+=============+=============+=============+
+| stable/4    | n/a         | n/a         | n/a         | January 31, |
+|             |             |             |             | 2007        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/4.11 | 4           | Extended    | January 25, | January 31, |
+|             | .11-RELEASE |             | 2005        | 2007        |
++-------------+-------------+-------------+-------------+-------------+
+| stable/5    | n/a         | n/a         | n/a         | May 31,     |
+|             |             |             |             | 2008        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/5.3  | 5.3-RELEASE | Extended    | November 6, | October 31, |
+|             |             |             | 2004        | 2006        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/5.4  | 5.4-RELEASE | Normal      | May 9, 2005 | October 31, |
+|             |             |             |             | 2006        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/5.5  | 5.5-RELEASE | Extended    | May 25,     | May 31,     |
+|             |             |             | 2006        | 2008        |
++-------------+-------------+-------------+-------------+-------------+
+| stable/6    | n/a         | n/a         | n/a         | November    |
+|             |             |             |             | 30, 2010    |
++-------------+-------------+-------------+-------------+-------------+
+| releng/6.0  | 6.0-RELEASE | Normal      | November 4, | January 31, |
+|             |             |             | 2005        | 2007        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/6.1  | 6.1-RELEASE | Extended    | May 9, 2006 | May 31,     |
+|             |             |             |             | 2008        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/6.2  | 6.2-RELEASE | Normal      | January 15, | May 31,     |
+|             |             |             | 2007        | 2008        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/6.3  | 6.3-RELEASE | Extended    | January 18, | January 31, |
+|             |             |             | 2008        | 2010        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/6.4  | 6.4-RELEASE | Extended    | November    | November    |
+|             |             |             | 28, 2008    | 30, 2010    |
++-------------+-------------+-------------+-------------+-------------+
+| stable/7    | n/a         | n/a         | n/a         | February    |
+|             |             |             |             | 28, 2013    |
++-------------+-------------+-------------+-------------+-------------+
+| releng/7.0  | 7.0-RELEASE | Normal      | February    | April 30,   |
+|             |             |             | 27, 2008    | 2009        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/7.1  | 7.1-RELEASE | Extended    | January 4,  | February    |
+|             |             |             | 2009        | 28, 2011    |
++-------------+-------------+-------------+-------------+-------------+
+| releng/7.2  | 7.2-RELEASE | Normal      | May 4, 2009 | June 30,    |
+|             |             |             |             | 2010        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/7.3  | 7.3-RELEASE | Extended    | March 23,   | March 31,   |
+|             |             |             | 2010        | 2012        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/7.4  | 7.4-RELEASE | Extended    | February    | February    |
+|             |             |             | 24, 2011    | 28, 2013    |
++-------------+-------------+-------------+-------------+-------------+
+| stable/8    | n/a         | n/a         | n/a         | August 1,   |
+|             |             |             |             | 2015        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/8.0  | 8.0-RELEASE | Normal      | November    | November    |
+|             |             |             | 25, 2009    | 30, 2010    |
++-------------+-------------+-------------+-------------+-------------+
+| releng/8.1  | 8.1-RELEASE | Extended    | July 23,    | July 31,    |
+|             |             |             | 2010        | 2012        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/8.2  | 8.2-RELEASE | Normal      | February    | July 31,    |
+|             |             |             | 24, 2011    | 2012        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/8.3  | 8.3-RELEASE | Extended    | April 18,   | April 30,   |
+|             |             |             | 2012        | 2014        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/8.4  | 8.4-RELEASE | Extended    | June 9,     | August 1,   |
+|             |             |             | 2013        | 2015        |
++-------------+-------------+-------------+-------------+-------------+
+| stable/9    | n/a         | n/a         | n/a         | December    |
+|             |             |             |             | 31, 2016    |
++-------------+-------------+-------------+-------------+-------------+
+| releng/9.0  | 9.0-RELEASE | Normal      | January 10, | March 31,   |
+|             |             |             | 2012        | 2013        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/9.1  | 9.1-RELEASE | Extended    | December    | December    |
+|             |             |             | 30, 2012    | 31, 2014    |
++-------------+-------------+-------------+-------------+-------------+
+| releng/9.2  | 9.2-RELEASE | Normal      | September   | December    |
+|             |             |             | 30, 2013    | 31, 2014    |
++-------------+-------------+-------------+-------------+-------------+
+| releng/9.3  | 9.3-RELEASE | Extended    | July 16,    | December    |
+|             |             |             | 2014        | 31, 2016    |
++-------------+-------------+-------------+-------------+-------------+
+| releng/10.0 | 1           | Normal      | January 20, | February    |
+|             | 0.0-RELEASE |             | 2014        | 28, 2015    |
++-------------+-------------+-------------+-------------+-------------+
+| releng/10.1 | 1           | Extended    | November    | December    |
+|             | 0.1-RELEASE |             | 14, 2014    | 31, 2016    |
++-------------+-------------+-------------+-------------+-------------+
+| releng/10.2 | 1           | Normal      | August 13,  | December    |
+|             | 0.2-RELEASE |             | 2015        | 31, 2016    |
++-------------+-------------+-------------+-------------+-------------+
+| releng/10.3 | 1           | Extended    | April 4,    | April 30,   |
+|             | 0.3-RELEASE |             | 2016        | 2018        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/10.4 | 1           | Normal      | October 3,  | October 31, |
+|             | 0.4-RELEASE |             | 2017        | 2018        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/11.0 | 1           | n/a         | October 10, | November    |
+|             | 1.0-RELEASE |             | 2016        | 30, 2017    |
++-------------+-------------+-------------+-------------+-------------+
+| releng/11.1 | 1           | n/a         | July 26,    | September   |
+|             | 1.1-RELEASE |             | 2017        | 30, 2018    |
++-------------+-------------+-------------+-------------+-------------+
+| releng/11.2 | 1           | n/a         | June 28,    | October 31, |
+|             | 1.2-RELEASE |             | 2018        | 2019        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/11.3 | 1           | n/a         | July 9,     | September   |
+|             | 1.3-RELEASE |             | 2019        | 30, 2020    |
++-------------+-------------+-------------+-------------+-------------+
+| releng/11.4 | 1           | n/a         | June 16,    | September   |
+|             | 1.4-RELEASE |             | 2020        | 30, 2021    |
++-------------+-------------+-------------+-------------+-------------+
+| releng/12.0 | 1           | n/a         | December    | February    |
+|             | 2.0-RELEASE |             | 11, 2018    | 29, 2020    |
++-------------+-------------+-------------+-------------+-------------+
+| releng/12.1 | 1           | n/a         | November 4, | January 31, |
+|             | 2.1-RELEASE |             | 2019        | 2021        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/12.2 | 1           | n/a         | October 27, | March 31,   |
+|             | 2.2-RELEASE |             | 2020        | 2022        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/12.3 | 1           | n/a         | December 7, | March 31,   |
+|             | 2.3-RELEASE |             | 2021        | 2023        |
++-------------+-------------+-------------+-------------+-------------+
+| releng/13.0 | 1           | n/a         | April 13,   | August 31,  |
+|             | 3.0-RELEASE |             | 2021        | 2022        |
++-------------+-------------+-------------+-------------+-------------+
+
+------------------------------------------------------------------------
+
+Last modified on: April 4, 2023 by Muhammad Moinur Rahman
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

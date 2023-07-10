@@ -1,0 +1,637 @@
+Skip site navigation (1) Skip section navigation (2)
+
+Header And Logo
+
+[FreeBSD]
+
+.
+
+Donate to FreeBSD
+
+.
+
+Peripheral Links
+
+Search
+
+ 
+
+Site Navigation
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+Section Navigation
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Multimedia
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Introduction:
+
+Another busy two months have passed in the FreeBSD project. With 5.0
+released, attention is focusing on making it faster via more
+fine-grained locking, adding more high-end features like large memory
+(PAE) support for i386, and further progress on many other projects.
+FreeBSD 5.1 is expected to ship in late May or early June, with 5.2
+following at the end of summer. A roadmap for the push to 5-STABLE is
+available at
+http://docs.freebsd.org/doc/5.2-RELEASE/usr/share/doc/en_US.ISO8859-1/articles/5-roadmap/index.html.
+Although the 5.x series isn't expected to fully stabilize until the 5.2
+release, 5.1 promises to be an exciting release and a significant
+improvement over 5.0 in terms of speed and stability.
+
+Not to be forgotten, FreeBSD 4.8, the latest in the 4-STABLE series, is
+nearing release. Lots of last minute work is going into to it to deliver
+features like XFree86 4.3.0, Intel HyperThreading(tm) support, and of
+course many more bug fixes. Don't forget to support the FreeBSD vendors
+and developers by buying a copy of the CD set when it comes out!.
+
+Thanks,
+
+Scott Long, Robert Watson
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+-   Bluetooth stack for FreeBSD (Netgraph implementation)
+-   BSDCon 2003
+-   Buffer Cache lockdown
+-   Disk I/O improvements
+-   FreeBSD 4.8 Release Engineering
+-   FreeBSD C99 & POSIX Conformance Project
+-   FreeBSD GNOME Project
+-   FreeBSD Security Officer Team
+-   FreeBSD/MIPS Status Report
+-   jpman project
+-   KGI/FreeBSD Status Report
+-   New Doceng Body Formed
+-   PowerPC Port
+-   Read-ahead performance
+-   SMP locking for network stack
+-   Status Report for Newbus lockdown
+-   Support for PAE and >4G ram on x86
+-   TCP congestion control
+-   ULE Scheduler
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Bluetooth stack for FreeBSD (Netgraph implementation)
+
+  ------------------- ------------------------------------------------
+  Links               
+  Latest snapshot     URL: http://www.geocities.com/m_evmenkin/
+  Linux BlueZ stack   URL: http://bluez.sf.net
+  OpenOBEX            URL: http://sourceforge.net/projects/openobex/
+  ------------------- ------------------------------------------------
+
+Contact: Maksim Yevmenkin <m_evmenkin@yahoo.com>
+
+I'm very pleased to announce that another release is available for
+download at
+http://www.geocities.com/m_evmenkin/ngbt-fbsd-20030305.tar.gz
+
+This release features new in-kernel RFCOMM implementation that provides
+SOCK_STREAM sockets interface. This makes old user-space RFCOMM daemon
+obsolete. People should not use old user-space RFCOMM daemon any longer.
+The release features new RFCOMM PPP daemon that supports DUN and LAN
+profiles. Note: PPP patch (support for chat scripts in -direct mode) is
+required for DUN support. Look for it in the mailing list archive or
+contact me directly. People with Bluetooth enabled cell phones can now
+use them to access Internet.
+
+The Bluetooth sockets layer has been cleaned up. People should not see
+any WITNESS complaints with new code. Locking issues have been revisited
+and code in much better shape now, although it probably is not 100% SMP
+ready just yet. The code should work on SMP system anyway because
+sockets layer is still under Giant.
+
+The simple OBEX server and client (based on OpenOBEX library) is
+complete. OBEX File Push and OBEX File Transfer profiles work and have
+been tested with Sony Ericsson T68i cell phone and Bluetooth 3COM stack
+on Windows2K. It is now possible to send pictures, address book and
+calendar entries from the cell phone via Bluetooth. Minor bug in
+OpenOBEX library has been fixed and OPEX Put-Empty command now works.
+
+Due to changes in API userland tools must be in sync with the kernel.
+People should install new include files, recompile and reinstall all
+userland tools as part of upgrade. I'm sorry about that.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+BSDCon 2003
+
+  ----------------------------- -------------------------------------------------
+  Links                         
+  BSDCon 2003 Call For Papers   URL: http://www.usenix.org/events/bsdcon03/cfp/
+  ----------------------------- -------------------------------------------------
+
+Contact: Gregory Shapiro <gshapiro@FreeBSD.org>
+
+The BSDCon 2003 Program Committee invites you to contribute original and
+innovative papers on topics related to BSD-derived systems and the Open
+Source world. Topics of interest include but are not limited to:
+
+-   Embedded BSD application development and deployment
+-   Real world experiences using BSD systems
+-   Using BSD in a mixed OS environment
+-   Comparison with non-BSD operating systems; technical, practical,
+    licensing (GPL vs. BSD)
+-   Tracking open source development on non-BSD systems
+-   BSD on the desktop
+-   I/O subsystem and device driver development
+-   SMP and kernel threads
+-   Kernel enhancements
+-   Internet and networking services
+-   Security
+-   Performance analysis and tuning
+-   System administration
+-   Future of BSD
+
+Submissions in the form of extended abstracts are due by April 1, 2003.
+Be sure to review the extended abstract expectations before submitting.
+Selection will be based on the quality of the written submission and
+whether the work is of interest to the community.
+
+We look forward to receiving your submissions!
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Buffer Cache lockdown
+
+Contact: Jeff Roberson <jeff@FreeBSD.org>
+
+Most of the file system buffer cache has been reviewed and protected.
+The vnode interlock was extended to cover some buffer flag fields so
+that a separate interlock was not required. The global buffer queue data
+structures were locked and counters were converted to atomic ops. The
+BUF_*LOCK functions grew an interlock argument so that buffers could be
+safely removed from the vnode clean and dirty lists. The lockmgr lock is
+now required for all access to buf fields. This was not strictly
+followed before because splbio provided the needed protection.
+
+There are a few areas of code that need to be protected and cleaned up
+before giant can be pushed down. Most notably the background write code
+is currently unsafe without giant. Also, many of the VM bits that the
+buffer cache relies on are not safe. This work has been done with the
+expectation that the VM and VFS subsystems will be giant free soon.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Disk I/O improvements
+
+  -------
+  Links
+  -------
+
+Contact: Poul-Henning Kamp <phk@FreeBSD.org>
+
+We have the first disk device driver (aac) out from under Giant now, and
+in certain scenarios it gives improvements up to 20%. The device driver
+API was pruned to reflect that NO_GEOM compatibility is unnecessary,
+this resulted in approx 1000 lines less source code, the majority of
+which were removed from the device drivers. The new API for cdevsw is a
+lot simpler and hopefully less likely to confuse people. The ability to
+automatically allocate a device major number has been introduced and is
+already used by a handful of drivers. Checks introduced with this
+facility has shown that the uniqueness of manually allocated major
+numbers had already broken down.
+
+Work continues on the statistics collection API and on a unified API for
+manual configuration of GEOM nodes.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD 4.8 Release Engineering
+
+  ------------------------------- ---------------------------------------------------------
+  Links                           
+  FreeBSD 4.8 Release Schedule.   URL: http://www.FreeBSD.org/releases/4.8R/schedule.html
+  ------------------------------- ---------------------------------------------------------
+
+Contact: Murray Stokely <re@FreeBSD.org>
+
+The FreeBSD 4.8 Release Process is well underway. The RELENG_4 branch
+has been under code freeze since February 15, and the first release
+candidates were made available in early March. A testing guide has been
+put together and is available from
+http://www.FreeBSD.org/releases/4.8R/qa.html.
+
+Developers should coordinate with re@FreeBSD.org about any changes they
+would like to include in this release, and users are encouraged to try
+out the release candidates and help find as many bugs as possible now,
+before the final release is made.
+
+FreeBSD 4.8 represents the newest production release from the stable
+'4.X' branch. It does not include all of the features that were made
+available in the "new technology" 5.0 release in January.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD C99 & POSIX Conformance Project
+
+  ------- ---------------------------------------------------------------
+  Links   
+          URL: http://www.FreeBSD.org/projects/c99/
+          URL: http://people.FreeBSD.org/~schweikh/posix-utilities.html
+  ------- ---------------------------------------------------------------
+
+Contact: Mike Barcroft <mike@FreeBSD.org>
+Contact: FreeBSD-Standards Mailing List <standards@FreeBSD.org>
+
+January and February were quiet months that saw with them the addition
+of some C99 math functions and macros, which include: fpclassify(),
+isfinite(), isgreater(), isgreaterequal(), isinf(), isless(),
+islessequal(), islessgreater(), isnan(), isnormal(), and signbit().
+Additional C99 math library support is in the works.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD GNOME Project
+
+  --------------------------------- ------------------------------------
+  Links                             
+  FreeBSD GNOME Project Homepage.   URL: http://www.FreeBSD.org/gnome/
+  --------------------------------- ------------------------------------
+
+Contact: Joe Marcus <marcus@FreeBSD.org>
+Contact: Maxim Sobolev <sobomax@FreeBSD.org>
+Contact: Adam Weinberger <adamw@FreeBSD.org>
+
+FreeBSD 4.8-RELEASE will continue in the tradition of 5.0-RELEASE, and
+include GNOME 2 as the default GNOME desktop. This means that 4.8 will
+ship with GNOME 2.2.
+
+Following on the heels of the recent GNOME 2.2 release, GNOME 2.3
+snapshots are gearing up. The development schedule is available from
+http://www.gnome.org/start/2.3/. Ports will be made available the same
+way they were for the 2.1 development releases. Stay tuned to
+freebsd-gnome@ for more details.
+
+We are currently in another ports freeze in preparation for 4.8-RELEASE.
+Following the freeze, a new bsd.gnome.mk will be committed that
+effectively removes the USE_GNOMENG macro. This new version will add
+support for GNOME 2 as well as setup backward compatibility for ports
+that have not yet been converted to the new GNOME infrastructure. People
+interested in testing this new Mk file, can check out the ``ports''
+module following the instructions at
+http://www.marcuscom.com:8080/cgi-bin/cvsweb.cgi.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD Security Officer Team
+
+  ------- ---------------------------------------
+  Links   
+          URL: http://www.FreeBSD.org/security/
+  ------- ---------------------------------------
+
+Contact: Jacques Vidrine <nectar@FreeBSD.org>
+
+In the period from September 2002 through February 2003, the FreeBSD
+Security Team email aliases saw 1297 messages, a much smaller volume
+than over the summer (remember the Apache and OpenSSL worms? 4.6.1 oops
+I mean 4.6.2-RELEASE?).
+
+Also during this period: 95 items were added to the SO issue-tracking
+database; 39 of these involved the FreeBSD base system while the rest
+involved ports. 9 new Security Advisories were published, 2 of which
+covered issues unique to FreeBSD.
+
+In January, the SO published a new PGP key (ID 0xCA6CDFB2, found on the
+FTP site and in the Handbook). This aligned the set of those who possess
+the corresponding private key with the membership of the
+security-officer alias published on the FreeBSD Security web site. It
+also worked around an issue with the deprecated PGP key being found
+corrupted on some public key servers.
+
+In February, Mike Tancsa of Sentex donated two machines to the Security
+Officer. These have been a great help already in testing the security
+branches, preparing patches, and generating updated binaries. Thank you
+very much, Mike!
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD/MIPS Status Report
+
+  ----------------------------- -------------------------------------------------
+  Links                         
+  FreeBSD/MIPS project page.    URL: http://www.FreeBSD.org/projects/mips/
+  FreeBSD/MIPS platform page.   URL: http://www.FreeBSD.org/platforms/mips.html
+  ----------------------------- -------------------------------------------------
+
+Contact: Juli Mallett <jmallett@FreeBSD.org>
+
+Large portions of headers have been filled in, all have been stubbed
+out. Minimal functions and data elements have been stubbed out or filled
+in. Machinery added to support some requisite tunables for building real
+kernels. GCC fixed to generate correct local label prefixes making it
+possible to link real kernels. Work begun on providing enough to create
+and boot real kernels, on real hardware. Decision to only support
+MIPS-III and above made.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+jpman project
+
+  ---------------------------- ------------------------------------------------------------------------------------------
+  Links                        
+  jpman project                URL: http://www.jp.FreeBSD.org/man-jp/
+  package ja-man-doc-5.0.tbz   URL: ftp://daemon.jp.FreeBSD.org/pub/FreeBSD-jp/man-jp/packages-5.0.0/ja-man-doc-5.0.tbz
+  ---------------------------- ------------------------------------------------------------------------------------------
+
+Contact: Kazuo Horikawa <horikawa@FreeBSD.org>
+
+We have released Japanese translation of 5.0-RELEASE online manual pages
+on February 2nd. Most of entries which did not exist on RELENG_4 were
+not yet translated. I hope we can finish such entries soon.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+KGI/FreeBSD Status Report
+
+  ------- --------------------------------------------------
+  Links   
+          URL: http://www.FreeBSD.org/~nsouch/ggiport.html
+          URL: http://kgi-wip.sf.org
+  ------- --------------------------------------------------
+
+Contact: Nicholas Souchu <nsouch@FreeBSD.org>
+
+The later months have been very busy on KGI. Most of the framework has
+been debugged for typical usage (fb, no accel). I got KII (the input
+interface) connected to syscons through atkbd. Opening /dev/graphic
+works and framebuffer resource access is permitted. Finally, the KGIM
+(KGI module) framework has a better building tree for board / monitor
+drivers and board drivers are now loading with resource allocation.
+
+Most important on the TODO list: 5.0-RELEASE move (I currently work with
+a May-2002 5.0-current). Most of debug is now done. Let's validate!
+
+Note that KGI project homepage has changed since the last report.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+New Doceng Body Formed
+
+  ------- --------------------------------------------------
+  Links   
+          URL: http://www.FreeBSD.org/internal/doceng.html
+  ------- --------------------------------------------------
+
+Contact: Murray Stokely <doceng@FreeBSD.org>
+
+The doceng@ team is a new body to handle some of the meta-project issues
+associated with the FreeBSD Documentation Project. The main
+responsibilities of this team are to grant approval of new doc
+committers, to manage the doc release process, to ensure the
+documentation toolchains are functional, to maintain the doc project
+primer, and to maintain the sanctity of the doc/ and www/ trees. The
+current members of this team are Nik Clayton, Ruslan Ermilov, Jun
+Kuriyama, Bruce A. Mah, and Murray Stokely.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+PowerPC Port
+
+Contact: Peter Grehan <grehan@FreeBSD.org>
+
+Work on PowerPC is progressing steadily. The system can now boot
+multi-user from the net and disk. ATA-DMA is being integrated with the
+ATAng code, and support for older G3 machines is being added.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Read-ahead performance
+
+Contact: Jeff Roberson <jeff@FreeBSD.org>
+
+Some improvements have been made to the clustered read ahead code. They
+allow for many more outstanding IO requests when an application does
+sequential access. This has a larger impact on RAID systems than on
+single disk systems. The maximum number of file system blocks that we
+will read ahead is tunable via the 'vfs.read_max' sysctl. This
+optimization has shown a 20% improvement in simple tests.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+SMP locking for network stack
+
+  -------
+  Links
+  -------
+
+Contact: Jeffrey Hsu <hsu@FreeBSD.org>
+
+The list of subsystems locked up include IP, UDP, TCP, ifaddr reference
+counting, syncache, the ifnet list, routing radix trees, and ARP. These
+have already been committed into the tree. In addition, SMP locking for
+raw IP, divert socket processing, and Unix domain sockets have also
+recently been completed and tested. Work is currently being done in some
+of the subsystems required to make parallel networking processing
+SMP-safe.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Status Report for Newbus lockdown
+
+Contact: Warner Losh <imp@FreeBSD.org>
+
+Locking of the non-obj parts of newbus is nearing completion. A single
+lock is used for the device tree. Minimal changes to subr_bus have so
+far been necessary to make this work, however some lock order issues
+remain. After this work, it will no longer be necessary to hold Giant to
+call device_* routines safely. kobj work is being done by others and
+will likely require more extensive design work to make SMP friendly.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Support for PAE and >4G ram on x86
+
+Contact: Jake Burkholder <jake@FreeBSD.org>
+
+Support for PAE is mostly complete, and has been checked into the
+jake_pae branch. The approach that is being taken to add support for PAE
+is to allow the pmap module to view the page table directory as 4 pages
+instead of 1, and to avoid using the 3rd level structure, the page
+directory pointer table, as much as possible. Due to its small size, 32
+bytes, the PDPT cannot be uniformly recursively mapped, and as such does
+not provide a regular multi level structure like the page tables used by
+the alpha or x86-64 architectures. What remains to be done for PAE
+support is to develop an API for manipulating page table entries which
+will allow idempotent 64 bit loads and stores to be used where
+necessary.
+
+Experimental support for >4G ram using PAE has been developed and
+checked into the jake_pae_test branch in Perforce. This involved adding
+a physical address type separate from virtual addresses, for use by the
+vm system and bus code which needs to use physical addresses directly.
+Initial testing has shown good results with device drivers that can dma
+to 64 bit physical addresses.
+
+Funding for this project is being provided by DARPA and Network
+Associate Laboratories, and hardware support by FreeBSD Systems.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+TCP congestion control
+
+  -------
+  Links
+  -------
+
+Contact: Jeffrey Hsu <hsu@FreeBSD.org>
+
+The objective of this effort is to improve the performance, stability,
+and correctness of the BSD networking stack by adding support for new
+standards and standards track proposals while maintaining compliance
+with existing specifications. The upcoming 4.8 and 5.1 releases will be
+the first ones using the new NewReno logic. Recently, we implemented the
+Limited Transmit algorithm (RFC 3042) which benefits connections with
+small congestion windows, as happens, for example, on many short web
+connections. We also recently added support for larger sized starting
+congestion windows as described in RFC 3390. This helps short TCP
+connections as well as those with large round-trip delays, such as those
+over satellite links.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+ULE Scheduler
+
+Contact: Jeff Roberson <jeff@FreeBSD.org>
+
+The ULE scheduler has been committed to the 5.0-CURRENT branch. Early
+adopters and experimenters are welcome to try it and submit bug reports.
+It has shown noticeable performance improvements over the old scheduler
+under some workloads. There are currently problems with nice fairness
+but otherwise the interactive performance is very good. More work to
+improve the load balancing algorithm is required as well. This should be
+ready for use by the general FreeBSD user base in the next month or so.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+News Home | Status Home
+
+Site Map | Legal Notices | © 1995–2021 The FreeBSD Project. All rights
+reserved.

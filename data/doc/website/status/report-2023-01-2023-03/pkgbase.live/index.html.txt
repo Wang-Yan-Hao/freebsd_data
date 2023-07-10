@@ -1,0 +1,117 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+PkgBase.live
+
+Links:
+Website (archive.org) URL:
+https://web.archive.org/web/20221220222828/https://alpha.pkgbase.live/
+Website source URL: https://codeberg.org/pkgbase/website
+
+Contact: Mina Galić <freebsd@igalic.co>
+
+PkgBase.live was an unofficial repository for the FreeBSD PkgBase
+project. As a service, PkgBase.live was inspired by https://up.bsd.lv/,
+which provides freebsd-update(8) for STABLE and CURRENT branches.
+
+Hardware for PkgBase was kindly sponsored by a member of the FreeBSD
+community. However, as life and projects moved on, they had to
+decommission the hardware, giving me three months' notice. In that time,
+my own life was rather turbulent after a recent move to a different
+country so I haven’t been able to find a replacement.
+
+For the time being, PkgBase.live is dead.
+
+The website, and with it the How Did She Do it?! are still available in
+Git. I highly encourage copy-cats.
+
+I will also happily accept a new hardware sponsor!
+
+Please note that I have contacted the FreeBSD Project, and they are
+working on integrating PkgBase into release engineering. However, they
+are not yet ready, they also cannot "simply" take over PkgBase.live
+because it uses a completely different process.
+
+------------------------------------------------------------------------
+
+Last modified on: April 14, 2023 by Lorenzo Salvadore
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

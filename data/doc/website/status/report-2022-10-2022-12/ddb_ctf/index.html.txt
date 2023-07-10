@@ -1,0 +1,109 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Adding basic CTF support to ddb
+
+Links:
+Differential 1 URL: https://reviews.freebsd.org/D37898
+Differential 2 URL: https://reviews.freebsd.org/D37899
+
+Contact: Bojan Novković <bojan.novkovic@kset.org>
+
+The goal of this project was to extend the ddb kernel debugger to use
+the kernel’s Compact C Type Format (CTF) data and use the newly added
+features to implement a pretty-printing command in ddb.
+
+Due to a restrictive execution environment (no IO or memory allocation),
+ddb can not use existing kernel linker methods to retrieve the kernel’s
+CTF data. Instead, the first patch adds the ability to load the kernel’s
+CTF data during boot and adds a new kernel linker method used for
+accessing CTF data from ddb. The second patch adds a basic interface for
+using CTF data in ddb and a pretty-printing command built using the
+newly added interfaces.
+
+Any feedback, comments, and reviews are welcome and would be greatly
+appreciated.
+
+------------------------------------------------------------------------
+
+Last modified on: January 23, 2023 by Lorenzo Salvadore
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

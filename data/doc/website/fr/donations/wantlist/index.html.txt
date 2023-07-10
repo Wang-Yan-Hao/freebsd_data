@@ -1,0 +1,642 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   A propos
+-   Fonctionnalités
+-   Applications
+-   Prosélytisme
+-   Marketing
+-   Administration
+-   Nouvelles du projet
+-   Événements
+-   Presse
+-   Ressources artistiques
+-   Logo
+-   Donations
+-   Legal Notices
+-   Politique de confidentialité
+
+Liste des besoins des développeurs FreeBSD
+
+Cette page liste les divers besoins en matériels des développeurs. Si
+vous souhaitez aider le Projet FreeBSD, vous pouvez envisager de faire
+don de certains des matériels indiqués dans cette liste.
+
+Nous donnons le nom d’utilisateur FreeBSD du développeur qui a besoin du
+matériel, le pays où il réside (pour la livraison), l’équipement qu’il
+recherche ainsi que son utilisation prévue.
+
+Pour les informations concernant les déductions fiscales et la marche à
+suivre, merci de consulter la page principale du Bureau de Liaison des
+Donations FreeBSD.
+
+Si vous désirez faire don de quelque chose dans cette liste, veuillez
+contacter donations@FreeBSD.org.
+
+De manière plus générale, nous avons besoin de diverses machines Sparc
+64 afin de tester et améliorer notre nouveau portage sur Sparc. Même les
+petites, anciennes (ou récentes !) machines Sparc 64 nous seront utiles.
+Le pays où vous résidez n’a pas d’importance, il y a certainement un
+développeur sur place qui pourra l’utiliser. Nous pouvons aussi utiliser
+les Sparcs en rack 1U (tels que les E220R, E420R, Fire V100, Fire V120
+ou Netra T1 AC200) pour nos clusters de développement et de compilation
+des paquetages situés aux USA.
+
++-----------------+-----------------+-----------------+-----------------+
+| Développeur     | Pays où réside  | Equipement      | Utilisation     |
+|                 | le développeur  | souhaité        | prévue          |
++=================+=================+=================+=================+
+| anholt          | USA             | matériel avec   | portage DRI et  |
+|                 |                 | carte graphique | maintenance de  |
+|                 |                 | intégrée Intel  | X               |
+|                 |                 | i8xx            |                 |
++-----------------+-----------------+-----------------+-----------------+
+| bmilekic        | Canada          | une machine x86 | développement   |
+|                 |                 | SMP             | et tests de la  |
+|                 |                 | raisonnablement | 5.x.            |
+|                 |                 | rapide pour     |                 |
+|                 |                 | remplacer un    |                 |
+|                 |                 | bi-pentium-pro  |                 |
+|                 |                 | 180Mhz          |                 |
++-----------------+-----------------+-----------------+-----------------+
+| ceri            | Royaume-Uni     | Un adaptateur   | Faire en sorte  |
+|                 |                 | 13W3 (femelle)  | que mon         |
+|                 |                 | vers DB15HD     | moniteur Sun    |
+|                 |                 | (mâle)          | soit plus       |
+|                 |                 | (moniteur Sun   | utile.          |
+|                 |                 | vers VGA)       |                 |
++-----------------+-----------------+-----------------+-----------------+
+| des             | Norvège         | N’importe quel  | Développer et   |
+|                 |                 | matériel        | maintenir le    |
+|                 |                 | d’a             | support de      |
+|                 |                 | uthentification | matériels       |
+|                 |                 | (clefs USB,     | d’a             |
+|                 |                 | lecteurs de     | uthentification |
+|                 |                 | smart card,     |                 |
+|                 |                 | smart cards,    |                 |
+|                 |                 | scanners        |                 |
+|                 |                 | d’empreinte     |                 |
+|                 |                 | digitale,       |                 |
+|                 |                 | etc.) +         |                 |
+|                 |                 | documentation   |                 |
++-----------------+-----------------+-----------------+-----------------+
+| hmp             | Royaume-Uni     | Un ordinateur   | Divers projets  |
+|                 |                 | portable        | de              |
+|                 |                 | raisonnablement | développement   |
+|                 |                 | rapide          | FreeBSD /       |
+|                 |                 |                 | machine de test |
++-----------------+-----------------+-----------------+-----------------+
+| imp             | USA             | matériel pccard | faire           |
+|                 |                 | basé sur EISA   | fonctionner le  |
+|                 |                 |                 | driver de       |
+|                 |                 |                 | pccard EISA     |
++-----------------+-----------------+-----------------+-----------------+
+| imp             | USA             | matériel pccard | faire           |
+|                 |                 | basé sur sbus   | fonctionner le  |
+|                 |                 |                 | driver de       |
+|                 |                 |                 | pccard sbus     |
++-----------------+-----------------+-----------------+-----------------+
+| imp             | USA             | machine sparc64 | faire           |
+|                 |                 | avec            | fonctionner les |
+|                 |                 | connecteurs PCI | pccard/cardbus  |
+|                 |                 | et sbus         |                 |
++-----------------+-----------------+-----------------+-----------------+
+| imp             | USA             | carte réseau    | faire           |
+|                 |                 | sans fil 3Com   | fonctionner le  |
+|                 |                 | Xjack           | driver          |
++-----------------+-----------------+-----------------+-----------------+
+| imp             | USA             | standard PCMCIA | support PCMCIA  |
+|                 |                 | version 8.0     |                 |
++-----------------+-----------------+-----------------+-----------------+
+| imp             | USA             | carte série PCI | gérer le nombre |
+|                 |                 | multi-ports (>= | croissant de    |
+|                 |                 | 4)              | machines dans   |
+|                 |                 |                 | mon sous-sol.   |
++-----------------+-----------------+-----------------+-----------------+
+| imp             | USA             | portable avec   | le support      |
+|                 |                 | O2 Micro        | O2Micro est à   |
+|                 |                 | CardBus         | la traîne et a  |
+|                 |                 |                 | besoin          |
+|                 |                 |                 | d’attention.    |
++-----------------+-----------------+-----------------+-----------------+
+| jake            | Canada          | 2 processeurs   | une machine de  |
+|                 |                 | UltraSPARC II   | test sparc64    |
+|                 |                 | 450MHz          | plus rapide     |
++-----------------+-----------------+-----------------+-----------------+
+| jake            | Canada          | Serveur ou      | Support du      |
+|                 |                 | station de      | Sparc64         |
+|                 |                 | travail Sun     | UltraSPARCIII   |
+|                 |                 | avec            |                 |
+|                 |                 | processeurs     |                 |
+|                 |                 | UltraSPARCIII,  |                 |
+|                 |                 | Blade 1000,     |                 |
+|                 |                 | Blade 2000,     |                 |
+|                 |                 | V280R, V480 ou  |                 |
+|                 |                 | V880, de        |                 |
+|                 |                 | préférence avec |                 |
+|                 |                 | 2 processeurs   |                 |
++-----------------+-----------------+-----------------+-----------------+
+| jesper          | Royaume-Uni     | Cartes Ethernet | Mise au point / |
+|                 |                 | Gigabit         | mesures des     |
+|                 |                 | supportés sous  | performances de |
+|                 |                 | FreeBSD, de     | la pile réseau  |
+|                 |                 | préférence avec |                 |
+|                 |                 | interface       |                 |
+|                 |                 | 1000baseSX,     |                 |
+|                 |                 | mais une        |                 |
+|                 |                 | interface       |                 |
+|                 |                 | 1000baseT est   |                 |
+|                 |                 | aussi           |                 |
+|                 |                 | acceptable      |                 |
++-----------------+-----------------+-----------------+-----------------+
+| jkoshy          | Inde            | AlphaServer     | (1) Maintenir   |
+|                 |                 | DS10            | des             |
+|                 |                 |                 | applications    |
+|                 |                 |                 | (en particulier |
+|                 |                 |                 | Standard ML de  |
+|                 |                 |                 | New Jersey).    |
+|                 |                 |                 | (2) Support du  |
+|                 |                 |                 | profilage basé  |
+|                 |                 |                 | sur le compteur |
+|                 |                 |                 | de performance  |
+|                 |                 |                 | matériel.       |
+|                 |                 |                 | (3) Participer  |
+|                 |                 |                 | au              |
+|                 |                 |                 | développement   |
+|                 |                 |                 | de              |
+|                 |                 |                 | FreeBSD/alpha.  |
++-----------------+-----------------+-----------------+-----------------+
+| jkoshy          | Inde            | une machine AMD | (1) Support du  |
+|                 |                 | x86-64          | profilage basé  |
+|                 |                 | (At             | sur le compteur |
+|                 |                 | hlon64/Opteron) | de performance  |
+|                 |                 |                 | matériel.       |
+|                 |                 |                 | (2) Participer  |
+|                 |                 |                 | au              |
+|                 |                 |                 | développement   |
+|                 |                 |                 | de              |
+|                 |                 |                 | FreeBSD/amd64.  |
++-----------------+-----------------+-----------------+-----------------+
+| jkoshy          | Inde            | une             | Ajouter le      |
+|                 |                 | machine/carte   | profilage basé  |
+|                 |                 | mère            | sur le compteur |
+|                 |                 | bi-processeur   | de performance  |
+|                 |                 | Intel           | matériel.       |
+|                 |                 | P-I/P-II/P-III  |                 |
+|                 |                 | ou P-IV         |                 |
++-----------------+-----------------+-----------------+-----------------+
+| josef           | Autriche        | Livre "XML in a | Approfondir ma  |
+|                 |                 | Nutshell"       | connaissance du |
+|                 |                 | (O’Reilly)      | XML             |
++-----------------+-----------------+-----------------+-----------------+
+| josef           | Autriche        | une carte wlan  | remplacer ma    |
+|                 |                 | PCMCIA          | carte           |
+|                 |                 | supportée par   | défectueuse     |
+|                 |                 | FreeBSD         |                 |
++-----------------+-----------------+-----------------+-----------------+
+| jwd             | USA, Caroline   | Cyclades        | Consoles séries |
+|                 | du Nord         | TS800/1000 (ou  | pour les        |
+|                 |                 | équivalent)     | machines du     |
+|                 |                 |                 | cluster         |
+|                 |                 |                 | rtp.FreeBSD.org |
++-----------------+-----------------+-----------------+-----------------+
+| krion           | Allemagne       | 1 Sparc64       | Améliorer la    |
+|                 |                 | (UltraSPARC II) | compilation des |
+|                 |                 | 600-650Mhz,     | ports sous      |
+|                 |                 | pouvant         | sparc           |
+|                 |                 | fonctionner     |                 |
+|                 |                 | sous            |                 |
+|                 |                 | FreeBSD-CURRENT |                 |
++-----------------+-----------------+-----------------+-----------------+
+| lioux           | Brésil          | Un processeur   | Avoir à nouveau |
+|                 |                 | AMD K6 à 450Mhz | une machine à   |
+|                 |                 | ou plus. Un     | base de K6 et   |
+|                 |                 | switch réseau   | l’ajouter comme |
+|                 |                 | 10/100 Mbits.   | terminal        |
+|                 |                 | Une carte       | supplémentaire  |
+|                 |                 | réseau Intel    | à mon réseau    |
+|                 |                 | EtherExpress    | FreeBSD         |
+|                 |                 | PCI 10/100      | personnel       |
+|                 |                 | Mbits           |                 |
++-----------------+-----------------+-----------------+-----------------+
+| lioux           | Brésil          | Livres sur      | Améliorer mes   |
+|                 |                 | n’importe       | connaissances   |
+|                 |                 | lequel des      | sur les         |
+|                 |                 | sujets suivants | systèmes        |
+|                 |                 | :               | opérationnels   |
+|                 |                 | ordonnancement  | et les          |
+|                 |                 | pour les        | tec             |
+|                 |                 | protocoles      | hnologies/défis |
+|                 |                 | réseaux         | de              |
+|                 |                 | (efficacité des | l’informatique  |
+|                 |                 | t               | moderne. Par    |
+|                 |                 | ransmissions/de | exemple, je     |
+|                 |                 | la bande        | veux écrire un  |
+|                 |                 | passante),      | meilleur        |
+|                 |                 | ordonnancement  | système de      |
+|                 |                 | des processus,  | téléchargement  |
+|                 |                 | théorie         | pour la         |
+|                 |                 | générale de     | distribution de |
+|                 |                 | l’              | FreeBSD (les    |
+|                 |                 | ordonnancement, | ports et le     |
+|                 |                 | condensés       | système de      |
+|                 |                 | (sommes de      | base) qui       |
+|                 |                 | contrôle, en    | supporterait la |
+|                 |                 | particulier à   | détection et la |
+|                 |                 | granularité     | correction de   |
+|                 |                 | fine pour la    | corruption, le  |
+|                 |                 | détection d’une | FTP             |
+|                 |                 | corruption      | /HTTP/autre/son |
+|                 |                 | partielle d’un  | propre          |
+|                 |                 | fichier; par    | protocole, le   |
+|                 |                 | exemple, les    | téléchargement  |
+|                 |                 | arbres "tiger", | en plusieurs    |
+|                 |                 | les arbres      | parties, les    |
+|                 |                 | "sha1"),        | serveurs        |
+|                 |                 | détection et    | multiples, la   |
+|                 |                 | correction de   | répartition de  |
+|                 |                 | corruption      | charge. Il n’y  |
+|                 |                 | (pour les       | aurait pas      |
+|                 |                 | fichiers, les   | toutes ces      |
+|                 |                 | protocoles      | fonctions dès   |
+|                 |                 | réseaux, etc),  | le départ mais  |
+|                 |                 | calcul          | c’est           |
+|                 |                 | distribué       | l’objectif à    |
+|                 |                 | (transparence   | long terme. La  |
+|                 |                 | dans la         | plupart de ces  |
+|                 |                 | localisation,   | connaissances   |
+|                 |                 | migration,      | me seraient     |
+|                 |                 | redondance,     | utiles pour     |
+|                 |                 | répartition,    | FreeBSD si j’en |
+|                 |                 | ordonnancement, | ai la           |
+|                 |                 | passage de      | possibilité.    |
+|                 |                 | messages,       |                 |
+|                 |                 | mémoire         |                 |
+|                 |                 | partagée, etc), |                 |
+|                 |                 | technologie     |                 |
+|                 |                 | point-à-point,  |                 |
+|                 |                 | écriture d’un   |                 |
+|                 |                 | gestionnaire de |                 |
+|                 |                 | périphérique et |                 |
+|                 |                 | théorie des     |                 |
+|                 |                 | systèmes        |                 |
+|                 |                 | opérationnels   |                 |
++-----------------+-----------------+-----------------+-----------------+
+| lioux           | Brésil          | Une carte TV à  | ajouter le      |
+|                 |                 | base de         | support         |
+|                 |                 | composant       | BrookTree à     |
+|                 |                 | BrookTree :     | graphics/ffmpeg |
+|                 |                 | BT848 ou BT878  | et à plusieurs  |
+|                 |                 | (de préférence) | autres          |
+|                 |                 | qui est déjà    | programmes de   |
+|                 |                 | supportée par   | traitement      |
+|                 |                 | FreeBSD.        | vidéo           |
++-----------------+-----------------+-----------------+-----------------+
+| marcel          | CA, USA         | Intel Tiger 4   | Développement   |
+|                 |                 | (machine        | ia64            |
+|                 |                 | Itanium 2       |                 |
+|                 |                 | quad            |                 |
+|                 |                 | ri-processeurs) |                 |
++-----------------+-----------------+-----------------+-----------------+
+| marcus          | RTP, Caroline   | Dans le cadre   | Un meilleur     |
+|                 | du Nord, USA    | du projet GNOME | support de      |
+|                 |                 | pour FreeBSD,   | GNOME/M         |
+|                 |                 | j’aurais besoin | ozilla/Firebird |
+|                 |                 | d’une ou deux   | sous FreeBSD    |
+|                 |                 | machines Alpha  | avec ces        |
+|                 |                 | 21164 ou plus   | architectures   |
+|                 |                 | rapide et d’une |                 |
+|                 |                 | UltraSparc II.  |                 |
+|                 |                 | Les Alpha       |                 |
+|                 |                 | devront         |                 |
+|                 |                 | supporter       |                 |
+|                 |                 | -STABLE et      |                 |
+|                 |                 | -CURRENT tandis |                 |
+|                 |                 | que             |                 |
+|                 |                 | l’UltraSparc    |                 |
+|                 |                 | devra supporter |                 |
+|                 |                 | FreeBSD         |                 |
+|                 |                 | -CURRENT.       |                 |
++-----------------+-----------------+-----------------+-----------------+
+| markm           | Cambridge, UK   | Flexelint v8.   | Nettoyage       |
+|                 |                 | (               | (s              |
+|                 |                 | www.gimpel.com) | emi)-automatisé |
+|                 |                 |                 | du code et du   |
+|                 |                 |                 | compilateur     |
+|                 |                 |                 | mul             |
+|                 |                 |                 | ti-plate-formes |
+|                 |                 |                 | qui a besoin    |
+|                 |                 |                 | d’un nettoyage. |
++-----------------+-----------------+-----------------+-----------------+
+| matusita        | Japon           | 2-3 machines    | remettre sur    |
+|                 |                 | pour les        | pieds           |
+|                 |                 | compilations :  | snapshots       |
+|                 |                 | Pentium4 2GHz+, | .jp.FreeBSD.org |
+|                 |                 | disque dur      |                 |
+|                 |                 | 20Go+ ATA66+,   |                 |
+|                 |                 | 256Mo+ de RAM,  |                 |
+|                 |                 | carte réseau    |                 |
+|                 |                 | 100base-TX,     |                 |
+|                 |                 | port série,     |                 |
+|                 |                 | etc.            |                 |
++-----------------+-----------------+-----------------+-----------------+
+| matusita        | Japon           | serveur FTP :   | remettre sur    |
+|                 |                 | P               | pieds           |
+|                 |                 | entium3/Celeron | snapshots       |
+|                 |                 | 1GHz+, disque   | .jp.FreeBSD.org |
+|                 |                 | dur 10Go+       |                 |
+|                 |                 | ATA66+,         |                 |
+|                 |                 | stockage 100Go+ |                 |
+|                 |                 | (RAID0+1 si     |                 |
+|                 |                 | possible),      |                 |
+|                 |                 | 256Mo+ RAM,     |                 |
+|                 |                 | carte réseau    |                 |
+|                 |                 | 100base-TX,     |                 |
+|                 |                 | port série,     |                 |
+|                 |                 | etc.            |                 |
++-----------------+-----------------+-----------------+-----------------+
+| mbr             | Suisse          | Cartes réseaux  | Ajouter un      |
+|                 |                 | RealTek         | support pour    |
+|                 |                 | 8129/8139 et    | les drivers non |
+|                 |                 | clones,         | supportés et    |
+|                 |                 | DEC/Intel 21143 | corriger ceux   |
+|                 |                 | et similaires,  | qui ne          |
+|                 |                 | SiS 900/7016 et | fonctionnent    |
+|                 |                 | clones, NatSemi | plus.           |
+|                 |                 | DP83815/DP83820 |                 |
+|                 |                 | et similaires.  |                 |
+|                 |                 | Je peux         |                 |
+|                 |                 | préciser si     |                 |
+|                 |                 | j’ai toujours   |                 |
+|                 |                 | besoin d’une    |                 |
+|                 |                 | carte. Les      |                 |
+|                 |                 | cartes dont le  |                 |
+|                 |                 | driver aura été |                 |
+|                 |                 | corrigé iront   |                 |
+|                 |                 | au projet       |                 |
+|                 |                 | busdma.         |                 |
++-----------------+-----------------+-----------------+-----------------+
+| mikeh           | VA, USA         | un modeste      | test et         |
+|                 |                 | poste de        | développement   |
+|                 |                 | travail,        | sur -current    |
+|                 |                 | Pentium         |                 |
+|                 |                 | 400MHz+,        |                 |
+|                 |                 | bi-processeur   |                 |
+|                 |                 | si possible,    |                 |
+|                 |                 | 256Mo RAM,      |                 |
+|                 |                 | disque dur 20Go |                 |
++-----------------+-----------------+-----------------+-----------------+
+| mikeh           | VA, USA         | claviers/souris | Améliorer le    |
+|                 |                 | PS/2 sans fil   | support des     |
+|                 |                 | (en particulier | claviers/souris |
+|                 |                 | les produits    | PS/2 sous       |
+|                 |                 | Gyration et     | FreeBSD         |
+|                 |                 | Microsoft sans  |                 |
+|                 |                 | fil) ou         |                 |
+|                 |                 | n’importe quel  |                 |
+|                 |                 | autre           |                 |
+|                 |                 | clavier/souris  |                 |
+|                 |                 | PS/2 et         |                 |
+|                 |                 | produits KVM    |                 |
+|                 |                 | non encore      |                 |
+|                 |                 | supportés par   |                 |
+|                 |                 | FreeBSD.        |                 |
++-----------------+-----------------+-----------------+-----------------+
+| mux             | France          | Cartes réseaux  | conversion      |
+|                 |                 | indiquées sur   | busdma des      |
+|                 |                 | la page du      | cartes réseaux  |
+|                 |                 | projet busdma.  |                 |
++-----------------+-----------------+-----------------+-----------------+
+| mux             | France          | un système plus | développement   |
+|                 |                 | rapide qu’un    | plus rapide     |
+|                 |                 | k6-2 400 ou un  |                 |
+|                 |                 | processeur      |                 |
+|                 |                 | socket 7 plus   |                 |
+|                 |                 | rapide ou un    |                 |
+|                 |                 | ensemble carte  |                 |
+|                 |                 | mère/pro        |                 |
+|                 |                 | cesseur/mémoire |                 |
++-----------------+-----------------+-----------------+-----------------+
+| mux             | France          | portable avec   | correction en   |
+|                 |                 | port série      | direct du noyau |
++-----------------+-----------------+-----------------+-----------------+
+| obrien          | Californie, USA | 7 DEC           | Tests disques   |
+|                 |                 | StorageWorks    | et RAID.        |
+|                 |                 | HD68 à câbles   |                 |
+|                 |                 | flexibles (de   |                 |
+|                 |                 | préférence) ou  |                 |
+|                 |                 | bien 2 SCA à    |                 |
+|                 |                 | câbles          |                 |
+|                 |                 | flexibles pour  |                 |
+|                 |                 | SBBs. Les       |                 |
+|                 |                 | boîtiers        |                 |
+|                 |                 | plastiques des  |                 |
+|                 |                 | disques SBB ne  |                 |
+|                 |                 | sont pas        |                 |
+|                 |                 | nécessaires.    |                 |
++-----------------+-----------------+-----------------+-----------------+
+| obrien          | Silicon Valley, | Carte réseau    | Tests sous      |
+|                 | USA             | 3CR990 de la    | AMD64, Sparc64  |
+|                 |                 | famille         |                 |
+|                 |                 | Ty              |                 |
+|                 |                 | phoon/Sidewinde |                 |
+|                 |                 | (txp(4)).       |                 |
++-----------------+-----------------+-----------------+-----------------+
+| obrien          | Silicon Valley, | Au maximum 3    | Développement   |
+|                 | USA             | DIMM PC133 ECC  | et tests de     |
+|                 |                 | [pour Sun Blade | FreeBSD/sparc64 |
+|                 |                 | 100].           |                 |
++-----------------+-----------------+-----------------+-----------------+
+| obrien          | Silicon Valley, | Pegasos II/G4   | Développement   |
+|                 | USA             | (http://w       | et tests de     |
+|                 |                 | ww.ultraspec.co | FreeBSD/PowerPC |
+|                 |                 | m/hardware.htm) |                 |
++-----------------+-----------------+-----------------+-----------------+
+| peter           | Californie, USA | Un système      | Pour l’ajouter  |
+|                 |                 | AMD64 Opteron   | au cluster des  |
+|                 |                 | en rack.        | développeurs.   |
++-----------------+-----------------+-----------------+-----------------+
+| phk             | Danemark        | N’importe quel  | Notre port s390 |
+|                 |                 | processeur IBM  | est maintenant  |
+|                 |                 | s390 ou un      | bien avancé et  |
+|                 |                 | accès à une     | il est          |
+|                 |                 | machine         | maintenant      |
+|                 |                 | similaire.      | temps de le     |
+|                 |                 |                 | tester sur du   |
+|                 |                 |                 | vrai matériel.  |
++-----------------+-----------------+-----------------+-----------------+
+| rwatson         | USA             | 4 cartes        | Etoffer         |
+|                 |                 | ethernet        | l’environnement |
+|                 |                 | (cuivre)        | de test pour    |
+|                 |                 | gigabit         | l’amélioration  |
+|                 |                 | supportées par  | des             |
+|                 |                 | le driver       | performances    |
+|                 |                 | if_em.          | réseaux en SMP. |
++-----------------+-----------------+-----------------+-----------------+
+| rwatson         | USA             | carte mère SGI  | Pour            |
+|                 |                 | 1100.           | l’utilisation   |
+|                 |                 |                 | dans les tests  |
+|                 |                 |                 | de performance  |
+|                 |                 |                 | réseau en SMP;  |
+|                 |                 |                 | la carte mère   |
+|                 |                 |                 | d’origine est   |
+|                 |                 |                 | endommagée et   |
+|                 |                 |                 | j’ai besoin de  |
+|                 |                 |                 | trouver une     |
+|                 |                 |                 | autre carte.    |
++-----------------+-----------------+-----------------+-----------------+
+| sam             | USA             | périphériques   | Améliorer le    |
+|                 |                 | de chiffrement  | support du      |
+|                 |                 | (cartes pci,    | matériel de     |
+|                 |                 | pcmcia, cardbus | chiffrement     |
+|                 |                 | et processeurs  |                 |
+|                 |                 | avec support du |                 |
+|                 |                 | chiffrement     |                 |
+|                 |                 | intégré)        |                 |
++-----------------+-----------------+-----------------+-----------------+
+| sam             | USA             | station de      | développement   |
+|                 |                 | travail Sun     | mult            |
+|                 |                 | avec US II ou   | i-plates-formes |
+|                 |                 | mieux et slots  | de              |
+|                 |                 | PCI             | périphériques   |
+|                 |                 |                 | et de           |
+|                 |                 |                 | chiffrement     |
++-----------------+-----------------+-----------------+-----------------+
+| sos             | Danemark        | matériels       | Garder le       |
+|                 |                 | Serial ATA :    | support ATA à   |
+|                 |                 | disques,        | jour.           |
+|                 |                 | contrôleurs (y  |                 |
+|                 |                 | compris les     |                 |
+|                 |                 | docs), cables,  |                 |
+|                 |                 | convertisseurs  |                 |
+|                 |                 | Serial ATA-ATA. |                 |
++-----------------+-----------------+-----------------+-----------------+
+| tanimura        | Japon           | N’importe quel  | Pour remplacer  |
+|                 |                 | ordinateur      | un IBM          |
+|                 |                 | portable        | récemment volé. |
+|                 |                 | japonais (de    |                 |
+|                 |                 | préférence IBM  |                 |
+|                 |                 | Thinkpad A30 ou |                 |
+|                 |                 | A31).           |                 |
++-----------------+-----------------+-----------------+-----------------+
+| thomas          | France          | contrôleur      | s’assurer que   |
+|                 |                 | UDMA, lecteur   | ces             |
+|                 |                 | de disquette    | périphériques   |
+|                 |                 | ATAPI, lecteur  | ATAPI           |
+|                 |                 | de bande ATAPI  | fonctionnent    |
+|                 |                 |                 | avec ATAPI/CAM  |
+|                 |                 |                 | avec le même    |
+|                 |                 |                 | niveau de       |
+|                 |                 |                 | fonctionnalités |
+|                 |                 |                 | que celui       |
+|                 |                 |                 | actuellement    |
+|                 |                 |                 | disponible avec |
+|                 |                 |                 | les drivers     |
+|                 |                 |                 | afd/ast.        |
++-----------------+-----------------+-----------------+-----------------+
+| tobez           | Danemark        | système i386,   | Tests des ports |
+|                 |                 | 400MHz ou plus, | (principalement |
+|                 |                 | 256Mo RAM ou    | liés à perl)    |
+|                 |                 | plus, 20Go de   | sur -current    |
+|                 |                 | disque ou plus  |                 |
++-----------------+-----------------+-----------------+-----------------+
+| wilko           | Arnhem,         | Un réplicateur  | Avoir un port   |
+|                 | Pays-Bas        | de port pour un | série pour      |
+|                 |                 | portable Compaq | l’utiliser      |
+|                 |                 | EVO N160.       | comme console   |
+|                 |                 | Compaq part#    | afin d’essayer  |
+|                 |                 | 238686-001      | de faire        |
+|                 |                 |                 | fonctionner     |
+|                 |                 |                 | l’ACPI sur      |
+|                 |                 |                 | cette machine.  |
++-----------------+-----------------+-----------------+-----------------+
+| will            | In              | Cartes réseaux  | conversion en   |
+|                 | diana/Michigan, | indiquées sur   | busdma des      |
+|                 | USA             | la page du      | cartes réseaux  |
+|                 |                 | projet busdma.  |                 |
++-----------------+-----------------+-----------------+-----------------+
+| will            | In              | Dans le cadre   | Un meilleur     |
+|                 | diana/Michigan, | du Projet       | support de      |
+|                 | USA             | FruitSalad      | KDE/FreeBSD sur |
+|                 |                 | (basé en        | cette           |
+|                 |                 | Suède), je      | architecture.   |
+|                 |                 | cherche 1 ou 2  |                 |
+|                 |                 | machines        |                 |
+|                 |                 | sparc64         |                 |
+|                 |                 | (UltraSPARC     |                 |
+|                 |                 | II). Ces        |                 |
+|                 |                 | machines        |                 |
+|                 |                 | doivent pouvoir |                 |
+|                 |                 | faire           |                 |
+|                 |                 | fonctionner     |                 |
+|                 |                 | FreeBSD.        |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26 janvier 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

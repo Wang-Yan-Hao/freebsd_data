@@ -1,0 +1,1904 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 8.0-RELEASE Release Notes
+
+The FreeBSD Project
+
+Copyright © 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009
+The FreeBSD Documentation Project
+
+$FreeBSD: stable/8/release/doc/en_US.ISO8859-1/relnotes/article.sgml
+199849 2009-11-26 22:09:37Z hrs $
+
+FreeBSD is a registered trademark of the FreeBSD Foundation.
+
+IBM, AIX, EtherJet, Netfinity, OS/2, PowerPC, PS/2, S/390, and ThinkPad
+are trademarks of International Business Machines Corporation in the
+United States, other countries, or both.
+
+IEEE, POSIX, and 802 are registered trademarks of Institute of
+Electrical and Electronics Engineers, Inc. in the United States.
+
+Intel, Celeron, EtherExpress, i386, i486, Itanium, Pentium, and Xeon are
+trademarks or registered trademarks of Intel Corporation or its
+subsidiaries in the United States and other countries.
+
+Sparc, Sparc64, SPARCEngine, and UltraSPARC are trademarks of SPARC
+International, Inc in the United States and other countries. Products
+bearing SPARC trademarks are based upon architecture developed by Sun
+Microsystems, Inc.
+
+Many of the designations used by manufacturers and sellers to
+distinguish their products are claimed as trademarks. Where those
+designations appear in this document, and the FreeBSD Project was aware
+of the trademark claim, the designations have been followed by the “™”
+or the “®” symbol.
+
+The release notes for FreeBSD 8.0-RELEASE contain a summary of the
+changes made to the FreeBSD base system on the 8-STABLE development
+line. This document lists applicable security advisories that were
+issued since the last release, as well as significant changes to the
+FreeBSD kernel and userland. Some brief remarks on upgrading are also
+presented.
+
+------------------------------------------------------------------------
+
+Table of Contents
+
+1 Introduction
+
+2 What's New
+
+2.1 Security Advisories
+
+2.2 Kernel Changes
+
+2.2.1 Boot Loader Changes
+
+2.2.2 Hardware Support
+
+2.2.3 Network Protocols
+
+2.2.4 Disks and Storage
+
+2.2.5 File Systems
+
+2.3 Userland Changes
+
+2.3.1 /etc/rc.d Scripts
+
+2.4 Contributed Software
+
+2.5 Ports/Packages Collection Infrastructure
+
+2.6 Release Engineering and Integration
+
+3 Upgrading from previous releases of FreeBSD
+
+1 Introduction
+
+This document contains the release notes for FreeBSD 8.0-RELEASE. It
+describes recently added, changed, or deleted features of FreeBSD. It
+also provides some notes on upgrading from previous versions of FreeBSD.
+
+This distribution of FreeBSD 8.0-RELEASE is a release distribution. It
+can be found at ftp://ftp.FreeBSD.org/ or any of its mirrors. More
+information on obtaining this (or other) release distributions of
+FreeBSD can be found in the “Obtaining FreeBSD” appendix to the FreeBSD
+Handbook.
+
+All users are encouraged to consult the release errata before installing
+FreeBSD. The errata document is updated with “late-breaking” information
+discovered late in the release cycle or after the release. Typically, it
+contains information on known bugs, security advisories, and corrections
+to documentation. An up-to-date copy of the errata for FreeBSD
+8.0-RELEASE can be found on the FreeBSD Web site.
+
+------------------------------------------------------------------------
+
+2 What's New
+
+This section describes the most user-visible new or changed features in
+FreeBSD since 7.0-RELEASE, and changes shown in Release Notes for the
+previous releases are marked as [7.1R] and [7.2R].
+
+Typical release note items document recent security advisories issued
+after 7.0-RELEASE, new drivers or hardware support, new commands or
+options, major bug fixes, or contributed software upgrades. They may
+also list changes to major ports/packages or release engineering
+practices. Clearly the release notes cannot list every single change
+made to FreeBSD between releases; this document focuses primarily on
+security advisories, user-visible changes, and major architectural
+improvements.
+
+------------------------------------------------------------------------
+
+2.1 Security Advisories
+
+Problems described in the following security advisories have been fixed.
+For more information, consult the individual advisories available from
+http://security.FreeBSD.org/.
+
++-------------+-------------+------------------------------------------+
+| Advisory    | Date        | Topic                                    |
++=============+=============+==========================================+
+| SA-08       | 17          | OpenSSH X11-forwarding privilege         |
+| :05.openssh |  April 2008 | escalation                               |
++-------------+-------------+------------------------------------------+
+| SA          | 1           | DNS cache poisoning                      |
+| -08:06.bind | 3 July 2008 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-         | 3 Sep       | amd64 swapgs local privilege escalation  |
+| 08:07.amd64 | tember 2008 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-0        | 3 Sep       | nmount(2) local arbitrary code execution |
+| 8:08.nmount | tember 2008 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-         | 3 Sep       | Remote kernel panics on IPv6 connections |
+| 08:09.icmp6 | tember 2008 |                                          |
++-------------+-------------+------------------------------------------+
+| S           | 1 O         | IPv6 Neighbor Discovery Protocol routing |
+| A-08:10.nd6 | ctober 2008 | vulnerability                            |
++-------------+-------------+------------------------------------------+
+| SA-08:11    | 24 No       | arc4random(9) predictable sequence       |
+| .arc4random | vember 2008 | vulnerability                            |
++-------------+-------------+------------------------------------------+
+| SA          | 23 De       | Cross-site request forgery in ftpd(8)    |
+| -08:12.ftpd | cember 2008 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-08       | 23 De       | netgraph / bluetooth privilege           |
+| :13.protosw | cember 2008 | escalation                               |
++-------------+-------------+------------------------------------------+
+| SA-09:0     | 07 J        | Cross-site request forgery in            |
+| 1.lukemftpd | anuary 2009 | lukemftpd(8)                             |
++-------------+-------------+------------------------------------------+
+| SA-09       | 07 J        | OpenSSL incorrectly checks for malformed |
+| :02.openssl | anuary 2009 | signatures                               |
++-------------+-------------+------------------------------------------+
+| SA          | 13 J        | ntpd cryptographic signature bypass      |
+| -09:03.ntpd | anuary 2009 |                                          |
++-------------+-------------+------------------------------------------+
+| SA          | 13 J        | BIND DNSSEC incorrect checks for         |
+| -09:04.bind | anuary 2009 | malformed signatures                     |
++-------------+-------------+------------------------------------------+
+| SA-09       | 16 Fe       | telnetd code execution vulnerability     |
+| :05.telnetd | bruary 2009 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-0        | 23          | Local privilege escalation               |
+| 9:06.ktimer |  March 2009 |                                          |
++-------------+-------------+------------------------------------------+
+| SA          | 04          | Information leak in db(3)                |
+| -09:07.libc |  April 2009 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-09       | 22          | Remotely exploitable crash in OpenSSL    |
+| :08.openssl |  April 2009 |                                          |
++-------------+-------------+------------------------------------------+
+| SA          | 1           | Local information disclosure via direct  |
+| -09:09.pipe | 0 June 2009 | pipe writes                              |
++-------------+-------------+------------------------------------------+
+| SA          | 1           | Missing permission check on              |
+| -09:10.ipv6 | 0 June 2009 | SIOCSIFINFO_IN6 ioctl                    |
++-------------+-------------+------------------------------------------+
+| SA          | 1           | ntpd stack-based buffer-overflow         |
+| -09:11.ntpd | 0 June 2009 | vulnerability                            |
++-------------+-------------+------------------------------------------+
+| SA          | 2           | BIND named(8) dynamic update message     |
+| -09:12.bind | 9 July 2009 | remote DoS                               |
++-------------+-------------+------------------------------------------+
+| SA-         | 2 Oct 2009  | Devfs / VFS NULL pointer race condition  |
+| 09:14.devfs |             |                                          |
++-------------+-------------+------------------------------------------+
+
+------------------------------------------------------------------------
+
+2.2 Kernel Changes
+
+The FreeBSD GENERIC kernel now includes Trusted BSD MAC (Mandatory
+Access Control) support. No MAC policy module is loaded by default.
+
+[i386] A loader tunable hw.clflush_disable has been added to avoid panic
+(trap 9) at map_invalidate_cache_range() even if Intel CPU is used. This
+tunable can be set to -1 (default), 0 and 1. The -1 is same as the
+current behavior, which automatically disables CLFLUSH on Intel CPUs
+without CPUID_SS (this should occurr on Xen only). You can specify 1
+when this panic happens on non-Intel CPUs (such as AMD's). Because
+disabling CLFLUSH can reduce performance, you can try with setting 0 on
+Intel CPUs without SS to use CLFLUSH feature.
+
+The jail(8) subsystem has been updated. Changes include:
+
+-   A new virtualization container named “vimage” has been implemented.
+    This is not enabled by default. To enable this, add the following
+    kernel options to your kernel configuration file and rebuild the
+    kernel:
+
+        options    VIMAGE
+
+    Note that options SCTP in the GENERIC kernel is not compatible with
+    options VIMAGE. This limitation will be fixed in the next release.
+
+    The vimage is a jail with a virtualized instance of the FreeBSD
+    network stack. It can be created by using jail(8) command like this:
+
+        # jail -c vnet name=vnet1 host.hostname=vnet1.example.net path=/ persist
+
+    The vimage has own loopback interface and a separated network stack
+    including the L3 routing tables. Network interfaces on the system
+    can be moved by using ifconfig(8) vnet option between the different
+    vimage jails and outside of them.
+
+    Furthermore, the epair(4) pseudo-interface driver has been added to
+    help communication between vimage jails. It emulates a pair of
+    back-to-back connected Ethernet interfaces. For example, the
+    following commands create an interface pair of epair(4):
+
+        # ifconfig epair0 create
+        epair0a
+        # ifconfig epair0a
+        epair0a: flags=8842<BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500
+            ether 02:c0:64:00:07:0a
+        # ifconfig epair0b
+        epair0b: flags=8842<BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500
+            ether 02:c0:64:00:08:0b
+
+    The epair(4) pseudo-interfaces and any physical interfaces on the
+    system can be moved between vimage jails by using ifconfig(8) vnet
+    option as described above. Even after half of an epair(4) pair is
+    moved, the back-to-back connection still valid and can be used for
+    inter-jail communication.
+
+    Note that vimage is still considered as an experimental feature.
+
+-   A jail can now have arbitrary named parameters similar to
+    environmental variables and the fixed jail parameters in the
+    previous releases have been replaced with them. The jail name can
+    now be used for identifying the jail in jexec(8) and killall(1).
+
+-   Multiple IPv4 and/or IPv6 addresses per jail are now supported. It
+    is even possible to have jails without an IP address at all, which
+    basically gives one a chrooted environment with restricted process
+    view and no networking.
+
+-   SCTP ( sctp(4)) with IPv6 in jails has been implemented.
+
+-   Specific CPU binding by using cpuset(1) has been implemented. Note
+    that the current implementation allows the superuser inside of the
+    jail to change the CPU bindings specified.
+
+-   A jail(8) can start with a specific route FIB now.
+
+-   The ddb(8) kernel debugger now supports a show jails subcommand.
+
+-   Compatibility support which permits 32-bit jail binaries to be used
+    on 64-bit systems to manage jails has been added.
+
+-   Note that both version numbers of jail and prison in the jail(8)
+    have been updated for the new features.
+
+The ksyms(4), kernel symbol table interface driver has been added. It
+creates a character device /dev/ksyms and provides read-only access to a
+snapshot of the kernel symbol table.
+
+[amd64, i386] The FreeBSD Linux emulation layer has been updated to
+version 2.6.16 and the default Linux infrastructure port is
+emulators/linux_base-f10 (Fedora 10).
+
+[arm] The FreeBSD/arm now supports mini dump.
+
+[powerpc] The FreeBSD/powerpc now supports kernel core dump.
+
+[amd64, i386] The FreeBSD virtual memory subsystem now supports fully
+transparent use of superpages for application memory; application memory
+pages are dynamically promoted to or demoted from superpages without any
+modification to application code. This change offers the benefit of
+large page sizes such as improved virtual memory efficiency and reduced
+TLB (translation lookaside buffer) misses without downsides like
+application changes and virtual memory inflexibility. This can be
+enabled by setting a loader tunable vm.pmap.pg_ps_enabled to 1 and is
+enabled by default on amd64.
+
+[7.2R] The ddb(8) kernel debugger now supports a show mount subcommand.
+
+[7.2R] The FreeBSD DTrace subsystem now supports a probe for process
+execution.
+
+[7.2R] [amd64] The FreeBSD kernel virtual address space has been
+increased to 6GB. This allows subsystems to use larger virtual memory
+space than before. For example, the zfs(8) adaptive replacement cache
+(ARC) requires large kernel memory space to cache file system data, so
+it benefits from the increased address space. Note that the ceiling on
+the kernel map size is now 60% of the size of physical memory rather
+than an absolute quantity.
+
+[7.2R] The kld(4) now supports installing 32-bit system calls to the
+FreeBSD syscall translation layer from kernel modules.
+
+[7.2R] The ktr(4) now supports a new KTR tracepoint in the KTR_CALLOUT
+class to note when a callout routine finishes executing.
+
+[7.2R] Types of variables used to track the amount of allocated System V
+shared memory have been changed from int to size_t. This makes it
+possible to use more than 2 GB of memory for shared memory segments on
+64-bit architectures. Please note the new BUGS section in shmctl(2) and
+/usr/src/UPDATING for limitations of this temporary solution.
+
+[7.2R] The sysctl(3) leaf nodes have a flag to tag themselves as MPSAFE
+now.
+
+[7.2R] The FreeBSD 32-bit system call translation layer now supports
+installing 32-bit system calls for VFS_AIO.
+
+[7.1R] The clock_gettime(2) and the related system calls now support a
+clock ID CLOCK_THREAD_CPUTIME_ID, as defined in POSIX.
+
+[7.1R] The cpuset(2) system call has been added. This is an API for
+thread to CPU binding and CPU resource grouping and assignment.
+
+[7.1R] The DTrace, a comprehensive dynamic tracing framework and
+dtrace(1) userland utility have been imported from OpenSolaris. DTrace
+provides a powerful infrastructure to permit administrators, developers,
+and service personnel to concisely answer arbitrary questions about the
+behavior of the operating system and user programs.
+
+[7.1R] The ddb(4) kernel debugger now has an output capture facility.
+Input and output from ddb(4) can now be captured to a memory buffer for
+later inspection using sysctl(8) or a textdump. The new capture command
+controls this feature.
+
+[7.1R] The ddb(4) debugger now supports a simple scripting facility,
+which supports a set of named scripts consisting of a set of ddb(4)
+commands. These commands can be managed from within ddb(4) or with the
+use of the new ddb(8) utility. More details can be found in the ddb(4)
+manual page.
+
+[7.1R] The ddb(4) ex command now supports an /S mode which interprets
+and prints the value at the requested address as a symbol. For example,
+ex /S aio_swake prints the name of the function currently registered in
+via aio_swake hook.
+
+[7.1R] The ddb(4) show conifhk command has been added. This lists hooks
+currently waiting for completion in run_interrupt_driven_config_hooks().
+
+[7.1R] The fcntl(2) system call now supports F_DUP2FD command. This is
+equivalent to dup(2), and compatible with the Sun Solaris and the IBM
+AIX.
+
+[7.1R] The FreeBSD's linux(4) ABI support now implements
+sched_setaffinity() and sched_getaffinity() using real CPU affinity
+setting primitives.
+
+[7.1R] The procstat(1) utility has been added. This is a process
+inspection utility which provides some of the missing functionality from
+procfs(5) and new functionality for monitoring and debugging specific
+processes.
+
+[7.1R] The client side functionality of rpc.lockd(8) has been
+implemented in the FreeBSD kernel. This implementation provides the
+correct semantics for flock(2) style locks which are used by the
+lockf(1) command line tool and the pidfile(3) library. It also
+implements recovery from server restarts and ensures that dirty cache
+blocks are written to the server before obtaining locks (allowing
+multiple clients to use file locking to safely share data). Also, a new
+kernel option options NFSLOCKD has been added and enabled by default. If
+the kernel support is enabled, rpc.lockd(8) automatically detects and
+uses the functionality.
+
+[7.1R] The FreeBSD kernel now supports a new textdump format of kernel
+dumps. A textdump provides higher-level information via mechanically
+generated/extracted debugging output, rather than a simple memory dump.
+This facility can be used to generate brief kernel bug reports that are
+rich in debugging information, but are not dependent on kernel symbol
+tables or precisely synchronized source code. More information can be
+found in the textdump(4) manual page.
+
+[7.1R] The wait4(2) system call now supports WNOWAIT flag to keep the
+process whose status is returned in a waitable state and WSTOPPED which
+is equivalent to WUNTRACED.
+
+[7.1R] [amd64, i386, sparc64] The FreeBSD kernel now has initial support
+of binding interrupts to CPUs.
+
+[7.1R] [amd64, i386] The sched_ule(4) scheduler is now the default
+process scheduler in GENERIC kernels.
+
+[7.1R] The sysctl variables kern.features.compat_freebsd[456] have been
+added. These are corresponding to the kernel options
+COMPAT_FREEBSD[456].
+
+------------------------------------------------------------------------
+
+2.2.1 Boot Loader Changes
+
+The boot0 boot loader now preserves volume ID at offset 0x1b8 used in
+other operating systems
+
+The boot0cfg(8) utility now supports a new -i option to set the volume
+ID.
+
+[arm, powerpc] The loader(8) now supports U-Boot support library.
+
+[7.2R] The boot(8) now supports 4-byte volume ID that certain versions
+of Windows® put into the MBR and invoking PXE by pressing the F6 key on
+some supported BIOSes.
+
+[7.2R] [i386] The boot(8) BTX loader has been improved. This fixes
+several boot issues on recent machines reported for 7.1-RELEASE and
+before.
+
+[7.2R] The loader(8) is now able to obtain DHCP options from network
+boot via kenv(2) variables.
+
+[7.2R] A bug in the loader(8) has been fixed. Now the following line
+works as expected:
+
+    loader_conf_files="foo bar ${variable}"
+
+[7.1R] [amd64, i386] The BTX kernel used by the boot loader has been
+changed to invoke BIOS routines from real mode. This change makes it
+possible to boot FreeBSD from USB devices.
+
+[7.1R] [amd64, i386] A new gptboot boot loader has been added to support
+booting from a GPT labeled disk. A new boot command has been added to
+gpt(8), which makes a GPT disk bootable by writing the required bits of
+the boot loader, creating a new boot partition if required.
+
+------------------------------------------------------------------------
+
+2.2.2 Hardware Support
+
+The FreeBSD now includes experimental support for MIPS platform.
+
+Support for RTC on Dallas Semiconductor chips has been improved. The
+DS133x and DS1553 are now supported.
+
+[arm] The FreeBSD/arm now supports Feroceon and Sheeva embedded CPU,
+Marvell Orion (88F5281), Kirkwood (88F6281), Discovery Innovation
+(MV-78100) systems-on-chip CPU.
+
+[powerpc] The FreeBSD/powerpc now supports SMP machines
+
+[powerpc] The FreeBSD/powerpc now supports E500 (Book-E) embedded CPU
+and Freescale PowerQUICCIII MPC85xx system-on-chip (including single and
+dual-core).
+
+The acpi(4) subsystem now supports the System Resource Affinity Table
+(SRAT) used to describe affinity relationships between CPUs and memory,
+ACPI 3.0 fields in the MADT including X2APIC entries and UIDs for local
+SAPICs, and ACPI 3.0 flags in the FADT.
+
+[powerpc] The cpufreq(4) framework now supports PowerPC G5, along with a
+skeleton SMU driver in order to slew CPU voltage during frequency
+changes.
+
+The sec(4) driver has been added to provide support for the integrated
+security engine found in Freescale system-on-chip devices.
+
+The FreeBSD TTY layer has been replaced with a new one which has better
+support for SMP and robust resource handling. A tty now has own mutex
+and it is expected to improve scalability when compared to the old
+implementation based on the Giant lock.
+
+[amd64, i386] The uart(4) driver is now the default driver for serial
+port devices in favor of the sio(4) driver. Note that the device nodes
+have been renamed from /dev/cuadN and /dev/ttydN to /dev/cuauN and
+/dev/ttyuN.
+
+  Important: Users who are upgrading will need to change their kernel
+  configurations and possibly also /boot/loader.conf and
+  /boot/device.hints.
+
+The FreeBSD USB subsystem has been reimplemented to support modern
+devices and better SMP scalability. The new implementation includes
+Giant-lock-free device drivers, a Linux compatibility layer,
+usbconfig(8) utility, full support for split transaction and isochronous
+transaction, and more. Device node names for USB devices are now in a
+the form of /dev/usb/bus.dev.endpoint, and /dev/usbctl is the master
+device node. Note that the ugen(4) driver has nodes for each device as
+/dev/ugenbus.dev for backward compatibility.
+
+[7.2R] [sparc64] FreeBSD now supports Ultra SPARC III (Cheetah)
+processor family.
+
+[7.2R] The acpi(4) subsystem now supports a sysctl(8) variable
+debug.batt.batt_sleep_ms. On some laptops with smart batteries, enabling
+battery monitoring software causes keystrokes from atkbd(4) to be lost.
+This sysctl variable adds a delay in millisecond to the status checking
+code as a workaround.
+
+[7.2R] The acpi_asus(4) driver now supports Asus A8Sr notebooks.
+
+[7.2R] [powerpc] Support for the AltiVec, a floating point and integer
+SIMD instruction set has been added.
+
+[7.2R] The cpuctl(4) driver, which provides a special device /dev/cpuctl
+as an interface to the system CPU has been added. The cpuctl(4)
+functionality includes the ability to retrieve CPUID information,
+read/write machine specific registers (MSR), and perform CPU firmware
+updates.
+
+[7.2R] The cpufreq(4) driver now supports an hw.est.msr_info loader
+tunable. When this is set to 1, it attempts to build a simple list
+containing just the high and low frequencies if it cannot obtain a
+frequency list from either ACPI or the static tables. This is disabled
+by default.
+
+[7.2R] [amd64, i386] CPU frequency change notifiers are now disabled
+when the TSC is P-state invariant. Also, a new loader tunable
+kern.timecounter.invariant_tsc has been added to force this behavior by
+setting it to non-zero.
+
+[7.2R] The atkbd(4) driver now disables the interrupt handler which is
+called from the keyboard callback function when polled mode is enabled.
+This fixes the problem of duplicated/missing characters at the mountroot
+prompt on multi CPU systems while kbdmux(4) is enabled.
+
+[7.2R] In the pci(4) subsystem INTx is now disabled when MSI/MSIX is
+enabled. This change fixes interrupt storm related issues.
+
+[7.2R] [sparc64] The schizo(4) driver for Schizo Fireplane/Safari to PCI
+2.1 and Tomatillo JBus to PCI 2.2 bridges has been added.
+
+[7.2R] The u3g(4) driver for USB based 3G cards and dongles including
+Vodafone Mobile Connect Card 3G, Qualcomm CDMA MSM, Huawei E220, Novatel
+U740, Sierra MC875U, and more has been added. This provides support for
+the multiple USB-to-serial interfaces exposed by many 3G USB/PC Card
+modems, and the device is accessed through the ucom(4) driver which
+makes it behave like a tty(4).
+
+[7.2R] The sched_ule(4) scheduler now supports the loader tunable
+machdep.hyperthreading_enabled just like sched_4bsd(4). Note that it
+cannot be modified at run-time.
+
+[7.1R] The cmx(4) driver, a driver for Omnikey CardMan 4040 PCMCIA
+smartcard readers, has been added.
+
+[7.1R] [sparc64] The kbdmux(4) driver now supports sparc64. The
+sunkbd(4) driver now supports atkbd(4) emulation like ukbd(4).
+
+[7.1R] The nvram(4) driver is now MPSAFE.
+
+[7.1R] An option of the puc(4) driver, PUC_FASTINTR, is no longer
+supported.
+
+[7.1R] The psm(4) driver now attempts detection of Synaptics touchpad
+before IntelliMouse. Some touchpads will pretend to be IntelliMouse
+causing the IntelliMouse probe to work and the Synaptics detection never
+to be done.
+
+[7.1R] The uslcom(4) driver, a driver for Silicon Laboratories
+CP2101/CP2102-based USB serial adapters, has been imported from OpenBSD.
+
+------------------------------------------------------------------------
+
+2.2.2.1 Multimedia Support
+
+The FreeBSD audio subsystem has been improved. The changes include
+volume per channel, high quality fixed-point band-limited SINC sampling
+rate converter, bit-perfect mode, transparent/adaptive virtual channel,
+and exclusive stream. For more details, see the snd(4) manual page.
+
+[7.2R] The agp(4) driver now supports Intel G4X series graphics
+chipsets.
+
+[7.2R] The Direct Rendering Manager (DRM), a kernel module that gives
+direct hardware access to DRI clients, has been updated. Support for
+AMD/ATI r500, r600, r700, and IGP based chips, XGI V3XE/V5/V8, and Intel
+i915 chipsets has been improved.
+
+[7.2R] A new loader tunable hw.drm.msi has been added to control if DRM
+uses MSI or not. This is set to 1 (enabled) by default.
+
+[7.2R] The snd_au88x0(4) driver for Aureal Vortex 1/2/Advantage PCI has
+been removed because it has been broken for a long time.
+
+[7.2R] The snd_hda(4) driver has been updated. These changes include
+support for multiple codecs per HDA bus, multiple functional groups per
+codec, multiple audio devices per functional group, digital (SPDIF/HDMI)
+audio input/output, suspend/resume, and part of multichannel audio.
+
+[7.2R] Note that due to added HDMI audio and logical audio devices
+support, the updated driver often provides several PCM devices. This
+means that in some cases the system default audio device no longer
+corresponds to the users's habitual audio connectors. In such cases the
+default device can be specified in audio applications' setup or defined
+globally via hw.snd.default_unit sysctl variable, as described in the
+sound(4) manual page.
+
+[7.1R] The agp(4) driver now supports the Intel G33 and G45.
+
+[7.1R] [i386] The dpms(4) driver has been added to use the VESA BIOS for
+DPMS during suspend and resume.
+
+[7.1R] The DRM kernel driver now supports i915 GME devices.
+
+------------------------------------------------------------------------
+
+2.2.2.2 Network Interface Support
+
+The bwi(4) driver has been added to provide support for Broadcom BCM43xx
+IEEE 802.11b/g wireless network interfaces.
+
+[sparc64] The cas(4) driver has been added to provide support for Sun
+Cassini/Cassini+ and National Semiconductor DP83065 Saturn Gigabit
+Ethernet devices.
+
+The cxgbtool(8) now supports an interactive mode for scripting of
+repeatedly performed tasks.
+
+The fxp(4) driver has been improved. Changes include:
+
+-   The multicast filter re-programming is now more robust.
+
+-   [7.2R] The checksum offload feature can be controlled by ifconfig(8)
+    now.
+
+-   [7.2R] Rx checksum offload support for 82559 or later controllers
+    has been added.
+
+-   [7.2R] TSO (TCP Segmentation Offload) support for 82550 and 82551
+    controllers has been added.
+
+-   [7.2R] WoL (Wake on LAN) support for 82550, 82551, 82558, and
+    82559-based controllers has been added. Note that ICH based
+    controllers are treated as 82559, and 82557, earlier revisions of
+    82558, and 82559ER have no WoL capability.
+
+-   [7.2R] VLAN hardware tag insertion/stripping support and Tx/Rx
+    checksum offload for VLAN frames support has been added. Note that
+    the VLAN hardware assistance is available only on 82550 or
+    82551-based controllers.
+
+[arm, powerpc] The mge(4) driver has been added to provide support for
+Marvell Gigabit Ethernet controllers found on ARM-based SOCs (Orion,
+Kirkwood, Discovery), as well as on system controllers for PowerPC
+processors (MV64430, MV6446x).
+
+The miibus(4) driver now supports the Marvell 88E3016.
+
+The msk(4) driver now supports Yukon FE+ A0 including 88E8040, 88E8040T,
+88E8048 and 88E8070.
+
+The mwl(4) driver has been added to provide support for Marvell 88W8363
+IEEE 802.11n wireless network devices.
+
+The mxge(4) driver now supports some newer revisions and 10GBASE-LRM and
+10GBASE-Twinax media types. The firmware version has been updated to
+1.4.43.
+
+The nge(4) driver has been improved and now works on all platforms.
+
+The tsec(4) driver has been added to provide support for Freescale
+integrated Three-Speed Ethernet Controller (TSEC). This driver also
+works with the enhanced version of the controller (eTSEC).
+
+The uath(4) driver for USB wireless LAN adapter based on Atheros
+AR5005UG and AR5005UX chipsets has been added. The uathload(8) utility,
+a firmware loader for the Atheros USB wireless driver has also been
+added.
+
+The urtw(4) driver has been added to provide support for Realtek
+RTL8187B/L USB IEEE 802.11b/g wireless network devices.
+
+The xl(4) driver now supports TX checksum offload.
+
+[7.2R] The ae(4) driver now supports WoL (Wake on LAN).
+
+[7.2R] [amd64, i386] The ale(4) driver is now included in the GENERIC
+kernel.
+
+[7.2R] The ath_hal(4), Atheros Hardware Access Layer, has been updated
+to the open source version.
+
+[7.2R] The axe(4) driver has been improved in performance by eliminating
+extra context switches and now supports the Apple USB Ethernet adapter.
+
+[7.2R] The bce(4) driver's firmware has been updated to the latest
+version (4.6.X).
+
+[7.2R] The ciphy(4) driver now supports Vitesse VSC8211 PHY.
+
+[7.2R] The cxgb(4) driver has been updated to firmware revision 4.7 and
+now supports hardware MAC statistics.
+
+[7.2R] A bug in the igb(4) driver, which prevented the loader tunable
+hw.igb.ave_latency from working, has been fixed.
+
+[7.2R] The ixgbe(4) driver has been updated to version 1.7.4.
+
+[7.2R] The jme(4) driver now supports newer JMicron JMC250/JMC260
+revisions.
+
+[7.2R] The msk(4) driver has been improved. An issue which made it hang
+up in a certain condition has been fixed. Hardware MAC statistics
+support has been added and users can get the information via sysctl
+variables named dev.msk.N.stats.
+
+[7.2R] The nfe(4) driver now supports hardware MAC statistics.
+
+[7.2R] The re(4) driver has been improved. It now detects the link
+status. A new loader tunable hw.re.prefer_iomap has been added, to
+disable memory register mapping. This tunable is 0 for all controllers
+except RTL8169SC family.
+
+[7.2R] The rl(4) driver has been improved. It now detects the link
+status and a bug which prevented it from working on systems with more
+than 4GB memory has been fixed.
+
+[7.2R] A bug in sis(4) on VLAN tagged frame handling has been fixed.
+
+[7.2R] The txp(4) driver now works on all supported architectures.
+Support has been added for altq(4), WoL, checksum offload when VLAN
+enabled, and link state change handling has been improved, and new
+sysctl variables dev.txp.N.stats for MAC statistics have been added. New
+sysctl variables dev.txp.N.process_limit has been added, to control how
+many received frames should be served in Rx handler (set to 64 by
+default and valid ranges are 16 to 128 in unit of frames). The firmware
+has been updated to the latest version.
+
+[7.1R] The ae(4) driver has been added to provide support for the
+Attansic/Atheros L2 FastEthernet controllers.
+
+[7.1R] The jme(4) driver has been added to provide support for PCIe
+adapters based on JMicron JMC250 gigabit Ethernet and JMC260 fast
+Ethernet controllers.
+
+[7.1R] The age(4) driver has been added to provide support for
+Attansic/Atheros L1 gigabit Ethernet controller.
+
+[7.1R] The malo(4) driver has been added to provide support for Marvell
+Libertas 88W8335 based PCI network adapters.
+
+[7.1R] The bm(4) driver has been added to provide support for Apple Big
+Mac (BMAC) Ethernet controller, found on various Apple G3 models.
+
+[7.1R] The et(4) driver has been added to provide support for Agere
+ET1310 10/100/Gigabit Ethernet controller.
+
+[7.1R] The glxsb(4) driver has been added to provide support for the
+Security Block in AMD Geode LX processors.
+
+[7.1R] The ale(4) driver has been added to provide support for Atheros
+AR8121/AR8113/AR8114 Gigabit/Fast Ethernet controllers. This driver is
+not enabled in GENERIC kernels for this release.
+
+[7.1R] The em(4) driver has been split into two drivers with some common
+parts. The em(4) driver will continue to support adapters up to the
+82575, as well as new client/desktop adapters. A new igb(4) driver will
+support new server adapters.
+
+[7.1R] The hme(4) driver has been improved.
+
+[7.1R] A bug in some of the miibus(4) supported drivers that IEEE 802.3
+auto-negotiation was performed in a wrong order, has been fixed. Now it
+chooses the correct technologies supported by IEEE 802.3 in the order
+described in Annex 28B.3.
+
+[7.1R] A workaround has been added for a bug in TCP/UDP hardware
+checksum offload of the msk(4) driver for short frames. Note that for
+frames that requires hardware VLAN tag insertion, the checksum offload
+workaround does not work due to changes of checksum offset in mbuf after
+the VLAN tag. So disabling hardware checksum offload for the VLAN
+interface is needed in such cases.
+
+[7.1R] The ndis(4) NDIS miniport driver wrapper has been improved.
+
+[7.1R] The sf(4) driver has been improved and now supports checksum
+offloading.
+
+[7.1R] The stge(4) driver now supports WOL (Wake on LAN).
+
+[7.1R] The vr(4) driver has been improved.
+
+[7.1R] [amd64, i386] The wpi(4) driver has been updated to include a
+number of stability fixes.
+
+------------------------------------------------------------------------
+
+2.2.3 Network Protocols
+
+The FreeBSD netisr framework has been reimplemented for parallel
+threading support. This is a kernel network dispatch interface which
+allows device drivers (and other packet sources) to direct packets to
+protocols for directly dispatched or deferred processing. The new
+implementation supports up to one netisr thread per CPU, and several
+benchmarks on SMP machines show substantial performance improvement over
+the previous version.
+
+A bug in the gif(4) that EtherIP packets sent by combination of
+if_bridge(4) and gif(4) have a reversed version field has been fixed. If
+you need to communicate with older FreeBSD releases via EtherIP, use new
+flags accept_rev_ethip_ver and send_rev_ethip_ver to control handling
+the reversed version field. These can be set by ifconfig(8) utility to
+gif(4) interfaces. The EtherIP implementation found on FreeBSD 6.1, 6.2,
+6.3, 7.0, 7.1, and 7.2 had an interoperability issue because it sent the
+incorrect EtherIP packets and discarded the correct ones. For more
+details, see gif(4) manual page.
+
+The IGMPv3 and SSM (Source-Specific Multicast) including IPv6 SSM and
+MLDv2 have been added. Although the old KAME MLDv2 hooks have been
+replaced with the new implementation, the related kernel programming
+interfaces have been preserved.
+
+The multicast routing code has been improved and the IPv4 and IPv6
+support has been split.
+
+The FreeBSD now supports the upcoming Wireless Mesh standard, IEEE
+802.11s. The current implementation is based on the March 2009 D3.0
+draft version.
+
+The wireless network support layer (net80211) now uses pseudo-interfaces
+named as wlanN instead of a device driver name like em0 directly. The
+wlanN interface is created by ifconfig(8) as an instance of the parent
+interface and used for actual communication similar to vlan(4), IEEE
+802.1Q VLAN network interface. Note that multiple instances (to realize
+multiple BSSes with a single AP device, for example) can be created if
+the parent interface supports it. For more details, see ifconfig(8)
+manual page.
+
+The net80211 layer now supports TDMA for long distance point-to-point
+links using ath(4) devices.
+
+An infrastructure for caching flows as a means of accelerating L2 and L3
+lookups has been added. This is called “flow table” and enabled by
+default on amd64 and i386 platforms. This also provides stateful load
+balancing when used with RADIX_MPATH
+
+The FreeBSD L2 address translation table has been reimplemented to
+reduce lock contention on parallel processing and simplify the routing
+logic. The new implementation has L2 address translation tables for both
+ARP (for IPv4) and NDP (for IPv6) which are separated from the L3
+routing tables, and supports flow table caches for both the routing
+table and the L2 information. One of the user-visible changes is that a
+concept of cloned route (a route generated by an entry with RTF_CLONING
+flag) is deprecated. This means routing flags RTF_CLONING, RTF_WASCLONE,
+and RTF_LLINFO are obsolete.
+
+The ipsec(4) subsystem now supports NAT-Traversal (RFC 3948). This is
+disabled by default. To enable this add the following kernel option and
+rebuild the kernel:
+
+    device crypto
+    options IPSEC
+    options IPSEC_NAT_T
+
+[7.2R] IPv4 source address selection for unbound sockets has been
+implemented as follows:
+
+1.  If we found a route, use the address corresponding to the outgoing
+    interface.
+
+2.  [7.2R] Otherwise we assume the foreign address is reachable on a
+    directly connected network and try to find a corresponding interface
+    to take the source address from.
+
+3.  [7.2R] As a last resort use the default jail address.
+
+[7.2R] This also changes the semantics of selecting the IP for processes
+within a jail(8) as it now uses the same logic as outside the jail(8).
+
+[7.2R] The TCP MD5 Signature Option (RFC 2385) for IPv6 has been
+implemented in the same way it has been implemented for IPv4.
+
+[7.2R] The ng_netflow(4) Netgraph node now includes support for
+generating egress netflow instead or in addition to ingress. An
+NGM_NETFLOW_SETCONFIG control message has been added to control the new
+functionality.
+
+[7.2R] The tap(4) Ethernet tunnel software network interface now
+supports a new TAPGIFNAME character device ioctl. This is a convenient
+shortcut to obtain the network interface name using a file descriptor to
+a character device.
+
+[7.2R] The tap(4) now supports SIOCSIFMTU ioctl to set a higher MTU than
+1500 (ETHERMTU). This allows tap(4) devices to be added to the same
+bridge (which requires all interface members to have the same MTU) with
+an interface configured for jumbo frames.
+
+[7.2R] The domains list for handling the list of supported domains in
+the unix(4) (UNIX domain protocol family) subsystem is now MPSAFE.
+
+[7.1R] The arp(8) utility now supports reject and blackhole keywords. In
+the entry marked as reject, traffic to the host will be discarded and
+the sender will be notified the host is unreachable. In the entry marked
+as blackhole, traffic is discarded but the sender is not notified.
+
+[7.1R] The bpf(4) now supports an ioctl BIOCSETFNR. This is just like
+BIOCSETF, but it does not drop all the packets buffered on the
+descriptor and reset the statistics.
+
+[7.1R] The if_bridge(4) interface can limit the number of source MACs
+that can be behind a bridge interface via ifmaxaddr parameter of
+ifconfig(8).
+
+[7.1R] A bug in the carp(4) interface configuration which leads to a
+system panic has been fixed.
+
+[7.1R] The dummynet(4) subsystem now supports fast mode operation which
+allows certain packets to bypass the dummynet scheduler. This can
+achieve lower latency and lower overhead when the packet flow is under
+the pipe bandwidth, and eliminate recursion in the subsystem. The new
+sysctl variable net.inet.ip.dummynet.io_fast has been added to enable
+this feature.
+
+[7.1R] The enc(4) interface now supports sysctl variables to control
+whether the firewalls or bpf(4) will see inner and outer headers or just
+inner or outer headers for incoming and outgoing IPsec packets.
+
+[7.1R] The gre(4) now supports ioctls GRESKEY and GREGKEY which allows
+set or get GRE key used for outgoing packets.
+
+[7.1R] A bug in the ipsec(4) subsystem that PMTU was broken in those
+cases when there was a route with a lower MTU than the MTU of the
+outgoing interface, has been fixed.
+
+[7.1R] The netatm subsystem has been removed due to lacking
+multiprocessor support.
+
+[7.1R] The ng_nat(4) now supports redirect functionality in libalias.
+For more details, see the manual page.
+
+[7.1R] The ng_pptpgre(4) now supports multiple hooks like ng_l2tp(4), to
+use one pair of pptpgre and ksocket nodes for all calls between two
+peers.
+
+[7.1R] The resolver(3) now allows underscore in domain names. Although
+this is a violation of RFC 1034 [STD 13], it is accepted by certain name
+servers as well as other popular operating systems' resolver library.
+
+[7.1R] A socket option TCP_CONGESTION for TCP sockets has been added.
+This is for setting and retrieving the congestion control algorithm. The
+name used is to allow compatibility with Linux.
+
+[7.1R] The rwlock(9) has been used throughout the inpcbinfo and inpcb
+infrastructure, and protocols that depend on that infrastructure,
+including UDP, TCP, and IP raw sockets to reduce the lock contentions.
+
+[7.1R] The FreeBSD now supports multiple routing tables. To enable this,
+the following steps are needed:
+
+-   Add the following kernel configuration option and rebuild the
+    kernel. The 2 is the number of FIB (Forward Information Base,
+    synonym for a routing table here). The maximum value is 16.
+
+        options    ROUTETABLES=2
+
+    The procedure for rebuilding the FreeBSD kernel is described in the
+    FreeBSD Handbook.
+
+    This number can be modified on boot time. To do so, add the
+    following to /boot/loader.conf and reboot the system:
+
+        net.fibs=6
+
+-   Set a loader tunable net.my_fibnum if needed. This means the default
+    number of routing tables. If not specified, 0 will be used.
+
+-   Set a loader tunable net.add_addr_allfibs if needed. This enables to
+    add routes to all FIBs for new interfaces by default. When this is
+    set to 0, it will only allocate routes on interface changes for the
+    FIB of the caller when adding a new set of addresses to an
+    interface. Note that this tunable is set to 1 by default.
+
+To select one of the FIBs, the new setfib(1) utility can be used. This
+set an associated FIB with the process. For example:
+
+    # setfib -3 ping target.example.com
+
+The FIB #3 will be used for the ping(8) command.
+
+The FIB which the packet will be associated with will be determined in
+the following rules:
+
+-   All packets which have a FIB associated with them will use the FIB.
+    If not, FIB #0 will be used.
+
+-   A packet received on an interface for forwarding uses FIB #0.
+
+-   A TCP listen socket associated with an FIB will generate accept
+    sockets which are associated with the same FIB.
+
+-   A packet generated in response to other packet uses the FIB
+    associated with the packet being responded to.
+
+-   A packet generated on tunnel interfaces such as gif(4) and tun(4)
+    will be encapsulated using the FIB of the process which set up the
+    tunnel.
+
+-   Routing messages will be associated with the process's FIB.
+
+Also, the ipfw(8) now supports an action rule setfib. The following
+action:
+
+    setfib fibnum
+
+will make the matched packet use the FIB specified in fibnum. The rule
+processing continues at the next rule.
+
+------------------------------------------------------------------------
+
+2.2.4 Disks and Storage
+
+The FreeBSD CAM SCSI subsystem ( cam(4)) now includes experimental
+support for ATA/SATA/AHCI-compliant devices. This is disabled by
+default. To enable this, adding the following kernel options to your
+kernel configuration file and rebuild the kernel:
+
+    device    ahci
+    device    siis
+
+The current implementation supports AHCI-compliant controllers and
+SiliconImage SiI3124/SiI3132/SiI3531 controllers. The device node of an
+ATA drive is ada and an ATAPI drive is cd.
+
+The FreeBSD iSCSI initiator implementation has been improved and
+supports IPv6.
+
+A userland utility mfiutil(8) for the mfi(4) devices has been added.
+This includes basic features to monitor controller, array, and drive
+status, change basic attributes, create/delete arrays and spares, and
+flush the controller firmware. Note that this is a small utility, not a
+replacement of MegaCLI in the Ports Collection which is supported
+officially and provides more functionality.
+
+A userland utility mptutil(8) for the mpi(4) devices has been added.
+This includes basic features to monitor controller, array, and drive
+status, change basic attributes, and create/delete arrays and spares.
+
+The siis(4) driver has been added to provide support for SiliconImage
+SiI3124/3132/3531 SATA2 controllers. It supports Serial ATA and ATAPI
+devices, port multipliers (including FIS-based switching), hardware
+command queues (31 commands per port) and Native Command Queuing.
+
+[7.2R] The ata(4) driver now supports Marvell PATA M88SX6121.
+
+[7.2R] The ata(4) driver now recognizes nForce MCP67 and MCP73 SATA
+controllers as AHCI.
+
+[7.2R] The ataraid(4) driver now includes preliminary support for DDF
+metadata found on Adaptec HostRAID controllers. Note that spares and
+rebuilds are not supported yet.
+
+[7.2R] The cam(4) SCSI subsystem now supports a new sysctl variable
+kern.cam.cd.retry_count. This controls the number of retries for the CD
+media. When trying to read scratched or damaged CDs and DVDs, the
+default mechanism is sub-optimal, and programs like ddrescue do much
+better if you turn off the retries entirely since their algorithms do it
+by themselves. This value is set to 4 (for a total of 5 attempts) by
+default. Setting it to 0 turns off all retry attempts.
+
+[7.2R] A bug in the ciss(4) driver which caused low “max device
+openings” count and led to poor performance has been fixed.
+
+[7.2R] The glabel(8) GEOM class now supports a new UFS-based label
+called ufsid that can be used to reference UFS-carrying devices by the
+unique file system ID. This file system ID is automatically generated
+and detected when the glabel(8) GEOM class is enabled. An example of
+this new label is: /dev/ufsid/48e69c8b5c8e1b43. The benefit of using
+GEOM labels in general is to avoid problems of device renaming when
+shifting drives or controllers.
+
+[7.2R] The gjournal(8) GEOM class now supports the root file system.
+Previously, an unclean shutdown would make it impossible to mount the
+root file system at boot.
+
+[7.2R] The gpart(8) utility has been updated. The APM scheme now
+supports Tivo Series 1 partitions (read only), a new EBR scheme to
+support Extended Boot Records has been added, the BSD scheme now support
+bootcode, and bugs in the PC98 and VTOC8 schemes have been fixed.
+
+[7.2R] An issue in gvinum(8) with access permissions to underlying disks
+used by a gvinum plex has been fixed. If the plex is a raid5 plex and is
+being written to, parity data might have to be read from the underlying
+disks, requiring them to be opened for reading as well as writing.
+
+[7.2R] The hptmv(4) driver has been updated to version 1.16 from
+HighPoint.
+
+[7.2R] The mmc(4) and mmcsd(4) drivers now support MMC and SDHC cards,
+high speed timing, wide bus, and multiblock transfers.
+
+[7.2R] [sparc64] The mpt(4) driver is now in the GENERIC kernel.
+
+[7.2R] The sdhci(4) driver has been added. This supports PCI devices
+with class 8 and subclass 5 according to the SD Host Controller
+Specification.
+
+[7.2R] The sdhci(4) driver now supports kernel dumping and a sysctl
+variable hw.sdhci.debug for debug level.
+
+[7.2R] The twa(4) driver now supports 64-bit DMA.
+
+[7.2R] The mmc(4) mmcsd(4), and sdhci(4) driver are now included as
+kernel modules.
+
+[7.1R] The aac(4) driver now supports 64-bit array support for RAIDs
+larger than 2TB and simultaneous opens of the device for issuing
+commands to the controller.
+
+[7.1R] The ata(4) driver now supports a loader variable
+hw.ata.ata_dma_check_80pin. This can be used to disable the 80pin cable
+check on broken systems such as certain laptops and Soekris boards. The
+default value is 1.
+
+[7.1R] A data corruption problem of the ata(4) driver on ServerWorks
+HT1000 chipsets has been fixed.
+
+[7.1R] The ciss(4) driver now supports a loader tunable
+hw.ciss.nop_message_heartbeat for NOP-message polling in
+ciss_periodic(). This can be used as a workaround for
+ADAPTER HEARTBEAT FAILED issue. The default value is 0 (disabled).
+
+[7.1R] The geom_part GEOM class can be built as a kernel module.
+
+[7.1R] The geom_linux_lvm GEOM class can be built as a kernel module.
+
+[7.1R] The hptrr(4) driver has been updated to version 1.2 from
+Highpoint.
+
+[7.1R] A buffer overflow in the iir(4) driver has been fixed. This
+likely fixes a great number of weird problems that have been reported
+with this driver.
+
+[7.1R] The mpt(4) driver now supports mpt_user personality.
+
+[7.1R] The rr232x(4) driver has been superseded by hptrr(4) driver.
+
+[7.1R] The twa(4) driver has been improved with regard to stability on
+machines with a plenty of memory and high CPU load.
+
+------------------------------------------------------------------------
+
+2.2.5 File Systems
+
+“dangerously dedicated” mode for the UFS file system is no longer
+supported.
+
+  Important: Such disks will need to be reformatted to work with this
+  release.
+
+The gvinum(8) now supports commands found in the old vinum
+implementation including attach, detach, start, stop, concat, mirror,
+stripe, and raid5.
+
+The gvinum(8) now supports grow command to make it easier for users to
+extend plexes without having to understand all of the implementation
+internals.
+
+The FreeBSD NFS subsystem now supports RPCSEC_GSS authentication on both
+the client and server. This replaces the RPC implementation of the NFS
+client and server with the newer RPC implementation originally developed
+to support the NFS Lock Manager. It supports both the new RPC
+implementation and the older legacy implementation inherited from the
+original NFS codebase and the default is to use the new one. To use
+RPCSEC_GSS on either client or server, you must build a kernel which
+includes the KGSSAPI option and the crypto(4) device. For more details,
+see gssd(8) manual page.
+
+The FreeBSD NFS subsystem now includes a new, experimental
+implementation with support for NFSv2, NFSv3, and NFSv4. This is not
+enabled by default. To enable this, add the following kernel options to
+your kernel configuration file and rebuild the kernel:
+
+    options    NFSCL   # for NFS client
+    options NFSD    # for NFS server
+
+The fstype for mount(8) program is newnfs, and mount_newnfs(8) program
+has also been added. The old, unmaintained NFSv4 client based on an
+implementation from the University of Michigan was removed from the
+FreeBSD source tree.
+
+The FreeBSD NFS subsystem now uses TCP as the default transport.
+
+The shared vnode locking for pathname lookups in the VFS(9) subsystem
+has been improved. This is enabled by default. Setting a sysctl variable
+vfs.lookup_shared to 0 disables it. Note that the LOOKUP_SHARED kernel
+option equivalent to the sysctl variable has been removed.
+
+The ZFS file system has been updated to version 13. The changes include
+ZFS operations by a regular user, L2ARC, ZFS Intent Log on separated
+disks (slog), sparse volumes, and so on.
+
+[7.2R] The semantics of acl(3) extended access control lists has been
+changed as follows:
+
+-   The inode modification time (mtime) is not updated when extended
+    attributes are added, modified, or removed.
+
+-   The inode access time (atime) is not updated when extended
+    attributes are queried.
+
+[7.2R] The FreeBSD NFS file system now supports a sysctl variable
+vfs.nfs.prime_access_cache to determine whether or not nfs_getattr()
+will use an ACCESS RPC to prime the access cache instead of a simple
+GETATTR RPC. This is because on many NFS servers an ACCESS RPC is much
+more expensive to service than a GETATTR RPC for files in an NFSv3
+mount. The sysctl variable is enabled by default to maintain the
+previous behavior.
+
+[7.2R] The FreeBSD UDF file system now supports a fifo.
+
+[7.1R] The fdescfs(5) is now MPSAFE.
+
+[7.1R] The gpart(8) now supports BSD disklabels (option GEOM_PART_BSD)
+and VTOC8 disklabels (option GEOM_PART_VTOC8).
+
+[7.1R] The gvinum(8) now accepts volume parameter when creating a plex.
+
+[7.1R] A pathname lookup bug of a UNIX domain socket in the unionfs(7)
+has been fixed.
+
+------------------------------------------------------------------------
+
+2.3 Userland Changes
+
+The GCC stack protection (also known as ProPolice) has been enabled in
+the FreeBSD base system.
+
+A BSD-licensed ar(1) utility has been added in favor of one in GNU
+binutils and it is now the default utility for building the FreeBSD base
+system.
+
+The awk(1) utility now supports 64 files. The upper limit was 20 in
+prior releases.
+
+The bsnmpd(1) program now supports OIDs for ZFS.
+
+The camcontrol(8) program now supports a new modularized ATA kernel
+module and various ATA commands.
+
+The cat(1) and cp(1) now use a larger buffer if the number of pages of
+the physical memory on the system is grater than 32k. This reduces the
+number of context switches.
+
+A new BSD-licensed cpio(1) utility has been added in favor of GNU cpio
+and it is now the default utility in the FreeBSD base system.
+
+A script for the crashinfo(8) utility for simple analysis of crash dump
+has been added. It generates a text file containing the output of
+several commands run against the core dump such as kgdb(1) (stack
+trace), ps(1), netstat(1), vmstat(8), iostat(8), dmesg(8), and fstat(1).
+
+The df(1) utility's -h flag now supports displaying inode counts in a
+human-readable format when a flag -i is specified.
+
+The df(1) utility now supports a -T flag to display file system type in
+each entry.
+
+A bug in the dhclient(8) that can create a malformed /etc/resolv.conf
+has been fixed.
+
+The dhclient(8) now uses an -n flag when invoking route(8) command. This
+eliminates a long delay in the case that it gets a lease but DNS service
+is not working.
+
+The dhclient(8) utility now uses 68 (bootpc) as the source port for
+unicast DHCPREQUEST packets instead of allowing the protocol stack to
+pick a random source port. This fixes the behavior where dhclient(8)
+would never transition from RENEWING to BOUND without going through
+REBINDING in some networks which has a tight policy on DHCP spoofing.
+
+The env(1) utility now supports a -u name option that completely unsets
+the given name instead of setting it to a null value.
+
+The find(1) utility now supports a number of primaries found in GNU find
+including -ignore_readdir_race, -noignore_readdir_race, -noleaf, -gid,
+-uid, -wholename, -iwholename, -mount, -d, -lname, -ilname, -quit,
+-samefile, and -true.
+
+The fsck(8) utility now supports a -r flag to free up excess unused
+inodes. Decreasing the number of preallocated inodes reduces the running
+time of future runs of fsck and frees up space that can allocated to
+files. This flag is ignored when running in preen mode.
+
+The freebsd-update(8) now supports backing up the old kernel when
+installing a new kernel. The backup kernel will be written to
+/boot/kernel.old if the directory does not exist or the directory was
+created by freebsd-update in a previous backup. Otherwise the
+freebsd-update(8) will generate a new directory name for use by the
+backup. This is enabled by default.
+
+The gdbserver(1) now supports arm and powerpc platforms.
+
+The gpt(8) program has been removed in favor of gpart(8).
+
+The gzip(1) utility now supports uncompressing files which are created
+by pack found in some commercial UNIX-like systems.
+
+The i2c(8) utility for diagnostics of I2C has been added.
+
+The ifconfig(8) now supports vnet and -vnet option to allow moving
+interfaces between jails with vimage.
+
+A BSD-licensed libdwarf library has been added for DTrace clients.
+
+The libmsun library now supports acosl(), asinl(), atanl(), atan2l(),
+cargl(), csqrtl(), fmodl(), hypotl(), and remquol() functions.
+
+The libproc library has been added for DTrace clients.
+
+The mtest(8) utility now supports IPv6.
+
+The mount(8) program now supports an -o mountprog=filename option to
+allow an alternative program to be used for mounting a file system. This
+is useful for non- nmount(2) based file systems such as FUSE.
+
+The nfscbd(8), nfsuserd(8), nfsdumpstate(8), and nfsrevoke(8) utilities
+for the new NFSv4 subsystem has been added.
+
+The pmcannotate(8) utility has been added. This prints out sources of a
+tool (in C or assembly) with inlined profiling informations retrieved by
+a prior pmcstat(8) analysis.
+
+The route(8) utility now supports show, weights, and sticky commands.
+For more details, see the route(8) manual page.
+
+The rtld(1) now supports a new environment variable LD_ELF_HINTS_PATH
+for overriding the rtld hints file. This environment variable would be
+ignored if the process uses setuid and/or setgid. This feature gives a
+convenient way to use a custom set of shared library that is not in the
+default location.
+
+The rtld(1) now supports the dynamic string token substitution in the
+rpath and soneeded pathes. The $ORIGIN, $OSNAME, $OSREL and $PLATFORM
+tokens are supported. Enabling the substitution requires DF_ORIGIN flag
+in DT_FLAGS or DF_1_ORIGIN if DF_FLAGS_1, that may be set with -z origin
+GNU ld flag. This translation is unconditionally disabled for
+setuid/setgid processes. The $ORIGIN translation relies on the
+AT_EXECPATH auxinfo supplied by the FreeBSD kernel.
+
+It is no longer possible to create UFS filesystems in “dangerously
+dedicated” mode using sysinstall(8) since this mode is no longer
+supported.
+
+sysinstall(8) menus have been simplified to reduce confusion and
+duplication with other parts of the system. The Xorg window system
+should be installed just like any other package. Configuration of Linux
+and OSF/1 emulation should be done via kernel rebuilds. Support for
+installation from tape media was removed as it was believed to be
+broken. Obsolete code to support OLDCARD was also removed.
+
+sysinstall(8) now understands how to use unsliced USB drives as
+installation source media via /dev/daXa
+
+sysinstall(8) now recognizes the new /dev/adaX disk devices, if compiled
+into the kernel.
+
+sysinstall(8) now uses the freebsd-doc-* packages for localized
+documents.
+
+sysinstall(8) now ejects the CDROM after installation if it was used as
+source media.
+
+The traceroute(8) and traceroute6(8) now support an -a flag to display
+AS number corresponding to the lookup IP address on each hop. It will
+query the number to WHOIS server specified in -A option. If no -A is
+specified, whois.radb.net will be used as the default value.
+
+The tzsetup(8) now supports an -s flag to skip the question about
+adjusting the clock to UTC.
+
+The wake(8) utility, a tool to send Wake on LAN frames to hosts on a
+local Ethernet network has been added.
+
+The ypserv(8) program now supports shadow.byname and shadow.byuid maps.
+
+[7.2R] A bug in the atacontrol(8) utility, which prevents it from
+working when /usr is not mounted or invoked from /rescue, has been
+fixed.
+
+[7.2R] The btpand(8) daemon from NetBSD has been added. This daemon
+provides support for Bluetooth Network Access Point (NAP), Group Ad-hoc
+Network (GN) and Personal Area Network User (PANU) profiles.
+
+[7.2R] The cpucontrol(8) utility has been added to control cpuctl(4)
+pseudo-device.
+
+[7.2R] The ncal(1) utility now supports multibyte characters.
+
+[7.2R] The newfs(8) utility now supports operations on a regular file.
+
+[7.2R] The config(8) utility now supports multiple makeoption lines.
+
+[7.2R] The csup(1) utility now supports CVSMode to fetch a complete CVS
+repository. Note that the rsync transfer mode is currently disabled.
+
+[7.2R] The dirname(1) utility now accepts multiple arguments in the same
+way that basename(1) does.
+
+[7.2R] The du(1) utility now supports an -l flag. When specified, the
+du(1) utility counts a file with multiple hard links as multiple
+different files.
+
+[7.2R] The du(1) utility now supports an -A flag to display the apparent
+size instead of the disk usage. This can be helpful when operating on
+compressed volumes or sparse files.
+
+[7.2R] The du(1) utility now supports a -B blocksize option to calculate
+block counts in blocks of blocksize bytes. This is different from the -k
+or -m options or setting BLOCKSIZE and gives an estimate of how much
+space the examined file hierarchy would require on a file system with
+the given blocksize. Unless in -A mode, blocksize is rounded up to the
+next multiple of 512.
+
+[7.2R] The dumpfs(8) utility now supports an -f flag, which causes it to
+list all free fragments in the file system by fragment (block) number.
+This new mode does the necessary arithmetic to generate absolute
+fragment numbers rather than the cg-relative numbers printed in the
+default mode.
+
+[7.2R] If -f is passed once, contiguous fragment ranges are collapsed
+into an X-Y format as free block lists are currently printed in regular
+dumpfs output. If specified twice, all block numbers are printed
+individually, allowing both compact and more script-friendly
+representation.
+
+[7.2R] The fetch(1) utility now supports an -i flag which supports the
+If-Modified-Since HTTP 1.1 request. If specified it will cause the file
+to be downloaded only if it is more recent than the mtime of the local
+file. Also, libfetch now accepts the mtime in the url structure and a
+flag to indicate when this behavior is desired.
+
+[7.2R] The fsck(8) utility now supports a -C flag for check clean mode.
+This checks if the file system was dismounted cleanly first and then
+skip file system checks if true. Otherwise it does full checks.
+
+[7.2R] The fsck(8) utility now supports a -D flag for damaged recovery
+mode, which will enable certain aggressive operations that can make
+fsck(8) to survive with file systems that has very serious data damage.
+This is a useful last resort when on disk data damage is very serious
+and causes fsck(8) to crash.
+
+[7.2R] The getaddrinfo(3) function now supports SCTP.
+
+[7.2R] A bug was fixed in the ipfw(8) utility which displays extra
+messages for a NAT rule even when a -q flag is specified.
+
+[7.2R] The ln(1) utility now supports a -w flag to check if the source
+file actually exists. When the flag is specified and the file does not
+exist, ln(1) will issue a warning message.
+
+The ln(1) utility now allows creating hard links to symbolic links
+because the POSIX.1-2008 requires this behavior for -L and -P flag.
+
+The lpr(1) utility now support an -m flag to send an email after the job
+is completed and a -t option to set the job title.
+
+[7.2R] The make(1) utility now supports a -p flag to print the input
+graph only, without executing any commands. The output is the same as
+-d g1. When combined with -f /dev/null, only the built-in rules of make
+are displayed.
+
+[7.2R] The make(1) utility now supports a -Q flag to cause file banners
+not to be generated in addition to the same effect of a -q flag when a
+-j option is specified.
+
+[7.2R] The make(1) utility now supports the .MAKE.JOB.PREFIX variable.
+If -j and -v are specified, its output for each target is prefixed with
+a token --- target --- the first part of which can be controlled via the
+variable.
+
+[7.2R] The make(1) utility now supports .MAKE.PID and .MAKE.PPID
+variable. These are set to process ID of the make(1) process and its
+parent process respectively.
+
+[7.2R] The makefs(8) utility to create a file system image from a
+directory tree has been added.
+
+[7.2R] The mergemaster(8) utility now supports an -F option to
+automatically install files that differ only in their version control ID
+strings.
+
+[7.2R] The mount(8) utility now supports an
+-o mountprog=/somewhere/mount_xxx option to force it to use the
+specified program to mount the file system instead of calling nmount(2)
+directly. This is useful when you want to use third party programs such
+as FUSE, for example.
+
+[7.2R] The netstat(1) utility now reports unix(4) sockets' listen queue
+statistics when an -L flag is specified.
+
+[7.2R] A bug in the netstat(1) utility has been fixed. It crashed with
+the following options in the previous versions:
+
+    % netstat -m -N foo
+
+[7.2R] A bug in the netstat(1) utility has been fixed. The -ss option
+now works in the icmp6 section as expected.
+
+[7.2R] The pciconf(8) utility now supports a -b flag, which lists any
+base address registers (BAR) that are assigned resources for each
+device.
+
+[7.2R] The powerd(8) program has been improved. Changes include
+reasonable CPU load estimation on SMP systems and a new mode named as
+hiadaptive for AC-powered systems. The hiadaptive mode raises the CPU
+frequency twice as fast as adaptive, it drops the CPU frequency 4 times
+slower, prefers twice lower CPU load and has an additional delay before
+leaving the highest frequency after the period of maximum load.
+
+The revoke(1) utility has been added. This is a wrapper of revoke(2)
+syscall.
+
+[7.2R] The stat(1) utility now displays an octal representation of suid,
+sgid and sticky bits when the -x flag is specified.
+
+[7.2R] The strndup(3) function has been added.
+
+The tftpd(8) program now supports a -W option. This is almost the same
+as a -w option but will generate unique named based on the submitted
+filename, a strftime(3) format string, and a two digit sequence number.
+The time format string can be set by an -F option.
+
+[7.2R] The wc(1) utility now supports an -L flag to output the number of
+characters in the longest input line.
+
+[7.2R] A bug in the rpc.yppasswdd(8) program, which causes it to leave a
+zombie process when a password or default shell is changed, has been
+fixed.
+
+[7.1R] The adduser(8) utility now supports a -M option to set the mode
+of a new user's home directory.
+
+[7.1R] The atacontrol(8) utility now supports a spindown command to set
+or report timeout after which the device will be spun down.
+
+[7.1R] The chflags(1) now supports a -v flag for verbose output, a -f
+flag to ignore errors, and -h to allow setting flags on symbolic links
+with the same semantics as (for example) chmod(1).
+
+[7.1R] The cp(1) now supports a -a flag, which is equivalent to -RpP
+flags.
+
+[7.1R] A bug in the cp(1) utility which prevents POSIX.1e ACL (see also
+acl(3)) from copying properly has been fixed.
+
+[7.1R] The cron(8) utility now supports -m flag which overrides the
+default mail recipient for cron mails unless explicitly provided by
+MAILTO= line in crontab file.
+
+[7.1R] The dhclient(8) now supports more options described in
+dhcp-options(5).
+
+[7.1R] The dhclient(8) now supports is_default_interface() function
+which determines if this interface is one with the default route.
+
+[7.1R] A bug in the dhclient(8) that prevents removal of the default
+route from working has been fixed.
+
+[7.1R] The environ(7), environment array of strings now supports
+unsetting a variable by setting the first character to NULL. This is
+required by third-party software such as Dovecot and Postfix.
+
+[7.1R] The fdisk(8) now supports a -q flag to not display any warnings.
+
+[7.1R] The fetch(1) program and libfetch library now supports a NO_PROXY
+environment variable. This specifies comma- or whitespace-separated list
+of host names for which proxies should not be used. If a single asterisk
+is specified, the use of proxies is disabled.
+
+[7.1R] The ffsll(3) and flsll(3) functions have been added. These
+functions are the same as ffs(3) and fls(3) except that they accept long
+long as the arguments.
+
+[7.1R] The fortune(6) program now supports FORTUNE_PATH environment
+variable to specify search path of the fortune files.
+
+[7.1R] A bug in the fortune(6) program that prevents -e option with
+multiple files from working has been fixed.
+
+[7.1R] The freebsd-update.conf(5) now supports IDSIgnorePaths statement.
+
+[7.1R] The fwcontrol(8) utility now supports -f node option which
+specifies node as the root node on the next bus reset.
+
+[7.1R] [sparc64] The gcc(1) now accepts -mcpu option properly; it was
+hardcoded as -mcpu=ultrasparc.
+
+[7.1R] The ifconfig(8) command now supports display of WPS IE (Wireless
+Provisioning Services Information Element).
+
+[7.1R] The kgdb(1) command now supports an add-kld kld command to locate
+a kld(4) and load its symbols.
+
+[7.1R] The kgdb(1) command now has a shared library backend for kernel
+files that treats kld(4) as shared libraries and auto-loading symbols
+for kld(4) on startup.
+
+[7.1R] The kgdb(1) now supports a tid command and other kernel module
+related commands even for a remote target.
+
+[7.1R] The kvm_getcptime(3) function to obtain the global CPU time
+statistics from the kernel has been added.
+
+[7.1R] The libalias library now supports PORT and EPRT FTP commands in
+lowercase.
+
+[7.1R] The man(1) now includes a limited support of bzip2(1)-compressed
+manual pages.
+
+[7.1R] The mdconfig(8) command now supports a -v (verbose) flag to -l
+command. It shows size and backing store of all md(4) devices at one
+time.
+
+[7.1R] The memrchr(3) function has been added. This behaves like
+memchr(3) except that it locates the last occurrence of the specified
+character in the string.
+
+[7.1R] The incorrect output grammar of morse(6) program has been fixed.
+
+[7.1R] The mountd(8) utility now supports -h bindip option which
+specifies IP addresses to bind to for TCP and UDP requests. This option
+may be specified multiple times. If no -h option is specified,
+INADDR_ANY will be used. Note that when specifying IP addresses with
+this option, it will automatically add 127.0.0.1 and if IPv6 is enabled,
+::1 to the list.
+
+[7.1R] The moused(8) utility now supports -L flag which changes the
+speed of scrolling and changes -U option behavior to only affect the
+scroll threshold.
+
+[7.1R] The mv(1) command now support POSIX specification when moving a
+directory to an existing directory across devices.
+
+[7.1R] The periodic(8) now supports daily_status_mail_rejects_shorten
+configuration variable in periodic.conf(5). This allows the rejected
+mail reports to tally the rejects per blacklist without providing
+details about individual sender hosts. The default configuration keeps
+the reports in their original form.
+
+[7.1R] The ping6(8) now uses exit status of 0 and 2 in the same manner
+as ping(8).
+
+[7.1R] The ping6(8) now supports an -o flag, which makes ping6(8) exit
+successfully after receiving one reply packet.
+
+[7.1R] The ping6(8) now supports -r and -R flags, which are equivalent
+to ping(8)'s -a and -A flags, respectively.
+
+[7.1R] The minimum allowed interval of ping6(8) has been decreased to
+0.000001 from 0.01.
+
+[7.1R] The realpath(1) utility now supports a -q flag to suppress
+warnings and accepts multiple paths on its command line.
+
+[7.1R] The rfcomm_pppd(8) now supports a -D flag to register DUN
+(Dial-Up Networking) service in addition to the LAN (LAN Access Using
+PPP) service.
+
+[7.1R] The sdpd(8) now supports a NAP, GN, and PANU profiles.
+
+[7.1R] The setkey(8) utility now accepts esp as a protocol name for the
+spdadd command.
+
+[7.1R] A bug in telnetd(8) that caused it to attempt authentication even
+when -a off option is specified has been fixed.
+
+[7.1R] The top(1) and vmstat(8) commands now support -P flag which
+displays per-CPU statistics.
+
+[7.1R] The uuid_enc_le(3), uuid_dec_le(3), uuid_enc_be(3), and
+uuid_dec_be(3) functions have been added. These functions encode/decode
+a binary representation of a UUID.
+
+[7.1R] The watch(8) utility now supports more than 10 snp(4) devices at
+a time.
+
+[7.1R] The ypserv(8) daemon now supports a -P option to specify the port
+number on which it should listen.
+
+------------------------------------------------------------------------
+
+2.3.1 /etc/rc.d Scripts
+
+[7.1R] The rc.conf(5) now supports dummynet_enable variable which allow
+dummynet(4) kernel module to be loaded when firewall_enable is YES.
+
+[7.1R] The ntpd rc(8) script can work with no configuration file
+/etc/ntp.conf now.
+
+[7.1R] The ppp rc(8) script now supports multiple instances. For more
+details, see the description of ppp_profile variable in rc.conf(5).
+
+[7.1R] The sysctl rc(8) script now supports loading
+/etc/sysctl.conf.local in addition to /etc/sysctl.conf.
+
+[7.1R] The rc.conf(5) now supports configuration of interfaces and
+attached networks for firewall rule set by rc.firewall when
+firewall_type is simple or client. See firewall_client_net,
+firewall_simple_iif, firewall_simple_inet, firewall_simple_oif, and
+firewall_simple_onet.
+
+------------------------------------------------------------------------
+
+2.4 Contributed Software
+
+ISC BIND has been updated to version 9.6.1rc1.
+
+The ACPI-CA has been updated to 20090521.
+
+The ee (easy editor) has been updated to 1.5.0. This version is now
+licensed under a 2-clause BSD license, instead of the Artistic license.
+
+The hostapd has been updated to version 0.6.8 + radius ACL support.
+
+The less has been updated to version v436.
+
+The libarchive library has been updated to version 2.7.0.
+
+The libexpat library has been updated from version 1.95.5 to version
+2.0.1.
+
+The ncurses library has been updated to version 5.7-20081102.
+
+OpenBSM 1.1 from Trusted BSD Project has been merged.
+
+TCPDUMP has been updated to 4.0.0.
+
+The timezone database has been updated to the tzdata2009f release.
+
+wpa_supplicant has been updated to version 0.6.8
+
+The ZFS file system has been updated from version 6 to version 13.
+
+[7.1R] The am-utils has been updated from version 6.0.10p1 to version
+6.1.5.
+
+[7.1R] The awk has been updated from 1 May 2007 release to the 23
+October 2007 release.
+
+[7.1R] The bzip2 has been updated from version 1.0.4 to version 1.0.5.
+
+[7.1R] The CVS has been updated to version 1.11.22.1.
+
+[7.1R] NTP has been updated to version 4.2.4p5.
+
+[7.1R] OpenPAM has been updated from the Figwort release to the
+Hydrangea release.
+
+[7.1R] OpenSSH has been updated from version 4.5p1 to version 5.1p1.
+
+[7.1R] The resolver(3) library has been updated to one of ISC BIND
+9.4.3.
+
+[7.1R] sendmail has been updated from version 8.14.2 to version 8.14.3.
+
+------------------------------------------------------------------------
+
+2.5 Ports/Packages Collection Infrastructure
+
+[7.2R] A bug in the pkg_create(1) utility, which prevented the -n flag
+from working has been fixed.
+
+[7.2R] The FreeBSD Ports Collection now supports multiple make(1) jobs
+in some supported ports. This is automatically enabled when a port is
+marked as MAKE_JOBS_SAFE and improves CPU utilization at the build stage
+by passing an option -jX to the top level Makefile from the vendor. The
+number X is set to the number of CPUs by default, and can be set by
+users via a make(1) variable MAKE_JOBS_NUMBER. For more details, see
+ports/Mk/bsd.port.mk.
+
+------------------------------------------------------------------------
+
+2.6 Release Engineering and Integration
+
+The supported version of the GNOME desktop environment (x11/gnome2) has
+been updated to 2.26.3.
+
+The supported version of the KDE desktop environment (x11/kde4) has been
+updated to 4.3.1.
+
+------------------------------------------------------------------------
+
+3 Upgrading from previous releases of FreeBSD
+
+[amd64, i386] Upgrades between RELEASE versions (and snapshots of the
+various security branches) are supported using the freebsd-update(8)
+utility. The binary upgrade procedure will update unmodified userland
+utilities, as well as unmodified GENERIC or SMP kernels distributed as a
+part of an official FreeBSD release. The freebsd-update(8) utility
+requires that the host being upgraded has Internet connectivity.
+
+An older form of binary upgrade is supported through the Upgrade option
+from the main sysinstall(8) menu on CDROM distribution media. This type
+of binary upgrade may be useful on non-i386, non-amd64 machines or on
+systems with no Internet connectivity.
+
+Source-based upgrades (those based on recompiling the FreeBSD base
+system from source code) from previous versions are supported, according
+to the instructions in /usr/src/UPDATING.
+
+  Important: Upgrading FreeBSD should, of course, only be attempted
+  after backing up all data and configuration files.
+
+------------------------------------------------------------------------
+
+This file, and other release-related documents, can be downloaded from
+ftp://ftp.FreeBSD.org/.
+
+For questions about FreeBSD, read the documentation before contacting
+<questions@FreeBSD.org>.
+
+For questions about this documentation, e-mail <doc@FreeBSD.org>.
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

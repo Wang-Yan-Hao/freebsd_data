@@ -1,0 +1,211 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Documentation Engineering Team
+
+Links:
+FreeBSD Documentation Project URL: https://www.freebsd.org/docproj/
+FreeBSD Documentation Project Primer for New Contributors URL:
+https://docs.freebsd.org/en/books/fdp-primer/
+Documentation Engineering Team URL:
+https://www.freebsd.org/administration/#t-doceng
+
+Contact: FreeBSD Doceng Team <doceng@FreeBSD.org>
+
+The doceng@ team is a body to handle some of the meta-project issues
+associated with the FreeBSD Documentation Project; for more information,
+see FreeBSD Doceng Team Charter.
+
+During the last quarter:
+
+-   The doc commit bit for Pau Amma was taken in.
+
+-   Lorenzo Salvadore has been proposed as doc committer. carlavilla@
+    and dbaio@ will mentor him.
+
+-   Ryusuke SUZUKI steps down from doceng. doceng would like to thank
+    ryusuke@ for his service.
+
+Items pending and in the discussion:
+
+-   A new document about licensing has been added to the documentation
+    set.
+
+Porter’s Handbook:
+
+Three new Uses knobs have been added to the Handbook:
+
+-   New Uses = ruby.
+
+-   New Uses = ldap.
+
+-   New Uses = budgie.
+
+Also:
+
+-   The NVIDIA install and configure options have been fixed
+
+-   The Advanced Networking chapter has been improved
+
+FreeBSD Translations on Weblate
+
+Link: Translate FreeBSD on Weblate
+Link: FreeBSD Weblate Instance
+
+Q4 2022 Status
+
+-   12 languages
+
+-   150 registered users
+
+Languages
+
+-   Chinese (Simplified) (zh-cn) (progress: 14%)
+
+-   Chinese (Traditional) (zh-tw) (progress: 11%)
+
+-   Dutch (nl) (progress: 1%)
+
+-   French (fr) (progress: 1%)
+
+-   German (de) (progress: 1%)
+
+-   Indonesian (id) (progress: 1%)
+
+-   Italian (it) (progress: 10%)
+
+-   Korean (ko) (progress: 11%)
+
+-   Norwegian (nb-no) (progress: 1%)
+
+-   Persian (fa-ir) (progress: 6%)
+
+-   Portuguese (pt-br) (progress: 29%)
+
+-   Sinhala (si) (progress: 1%)
+
+-   Spanish (es) (progress: 37%)
+
+-   Turkish (tr) (progress: 5%)
+
+We want to thank everyone that contributed, translating or reviewing
+documents.
+
+And please, help promote this effort on your local user group, we always
+need more volunteers.
+
+FreeBSD Handbook working group
+
+Contact: Sergio Carlavilla <carlavilla@FreeBSD.org>
+
+Chapters 1 to 6 have been updated. Chapter 7 is work in progress.
+
+FreeBSD Website Revamp - WebApps working group
+
+Contact: Sergio Carlavilla <carlavilla@FreeBSD.org>
+
+Working group in charge of creating the new FreeBSD Documentation Portal
+and redesigning the FreeBSD main website and its components. FreeBSD
+developers can follow and join the working group on the FreeBSD Slack
+channel #wg-www21. The work will be divided into four phases:
+
+1.  Redesign of the Documentation Portal
+
+    Create a new design, responsive and with global search. (Complete)
+
+2.  Redesign of the Manual Pages on web
+
+    Scripts to generate the HTML pages using mandoc. (Complete) Public
+    instance on https://man-dev.FreeBSD.org
+
+3.  Redesign of the Ports page on web
+
+    Ports scripts to create an applications portal. (Work in progress)
+
+4.  Redesign of the FreeBSD main website
+
+    New design, responsive and dark theme. (Work in progress)
+
+------------------------------------------------------------------------
+
+Last modified on: April 14, 2023 by Lorenzo Salvadore
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

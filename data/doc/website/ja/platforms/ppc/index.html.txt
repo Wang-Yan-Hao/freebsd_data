@@ -1,0 +1,287 @@
+[FreeBSD The Power to Serve]
+
+FreeBSD への寄付
+
+ 
+
+-   ホーム
+
+-   FreeBSD とは
+    -   FreeBSD が初めてという方へ
+    -   特徴
+    -   プロモーション活動
+    -   マーケティング活動
+    -   プライバシーポリシー
+    -   Projects
+    -   Ports
+
+-   FreeBSD の入手
+    -   リリース情報
+    -   リリースエンジニアリング
+
+-   ドキュメント
+    -   FAQ
+    -   ハンドブック
+    -   port 作成者のためのハンドブック
+    -   開発者のためのハンドブック
+    -   Committer's Guide
+    -   マニュアルページ
+    -   Presentations and Papers
+    -   新しい貢献者のためのドキュメンテーションプロジェクト入門
+    -   すべての Books と Articles
+
+-   コミュニティ
+    -   メーリングリスト
+    -   フォーラム
+    -   ユーザグループ
+    -   イベント
+    -   FreeBSD ジャーナル
+    -   Q&A (外部)
+
+-   開発
+    -   プロジェクトアイディア
+    -   Git リポジトリ
+    -   Subversion リポジトリ
+    -   GitHub ミラー
+    -   コードレビュー (Phabricator)
+    -   Wiki
+    -   継続的インテグレーションサービス
+
+-   サポート
+    -   ベンダ
+    -   セキュリティ情報
+    -   障害報告
+    -   障害報告の提出
+    -   ウェブ上の情報
+
+-   財団
+    -   寄付
+    -   ハードウェアの寄贈
+
+-   
+-   開発者のためのハンドブック
+-   Committer's Guide
+-   port 作成者のためのハンドブック
+-   ソースコードリポジトリ
+-   Release Engineering
+-   Platforms
+-   Project Ideas
+-   Contributing
+
+FreeBSD/ppc プロジェクト
+
+はじめに
+
+FreeBSD/ppc プロジェクトのページには、FreeBSD の PowerPC®
+アーキテクチャへの移植に関する情報がまとめてあります。
+移植そのものと同じく、このページはまだ大部分が作成中です。
+
+目次
+
+-   現在の状況
+
+-   最近の情報
+
+-   よくある質問
+
+-   ハードウェアリスト
+
+-   FreeBSD/ppc メーリングリスト
+
+-   既知の問題
+
+-   ドキュメント、ホワイトペーパー、ユーティリティ
+
+-   その他の有用なリンク
+
+現在の状況
+
+FreeBSD/ppc は、まだ Tier 2 プラットフォームです。
+すなわち、セキュリティオフィサやリリースエンジニア、
+ツールチェーンメンテナによる全面的なサポートはありません。
+しかしながら、portmgr によって package の構築はサポートされています。
+
+サポートされているハードウェアについての最新の情報は、 現在 wiki
+で管理されています。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+最近の情報
+
+-   2019 年 5 月 5 日: FreeBSD の試験 Raptor Blackbird
+    上で行われ、動作しました。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+よくある質問
+
+1.  FreeBSD/ppc のインストール方法は?
+
+2.  どのようにして FreeBSD/ppc で ports を利用するのですか？
+
+3.  powerpc と powerpc64 のどちらをインストールすればよいですか?
+
+4.  誰に連絡すればよいですか?
+
+FreeBSD/ppc のインストール方法は?
+
+FreeBSD 12.0 の ISO イメージは、ダウンロード可能です。
+入手方法の詳細については、 リリースアナウンスメント をご覧ください。
+
+どのように port を FreeBSD/ppc で利用できますか?
+
+FreeBSD で最も簡単に ports を利用する方法は、portsnap (FreeBSD 11.4
+または 12.1 を使っている場合) もしくは Subversion (FreeBSD -CURRENT
+を使用している場合) を使うことです。 説明が必要であれば、ハンドブックの
+Ports Collection の利用 を参照してください。
+
+powerpc と powerpc64 のどちらをインストールすればよいですか?
+
+powerpc64 は、64 ビットのカーネルとユーザランドを提供し、 すべての 64
+ビット CPU に対応しています。 32 ビット CPU (Apple G3/G4) のユーザは、
+32 ビット powerpc プラットフォームを使用してください。 32
+ビットオペレーティングシステムに対応している 64 ビット CPU (Apple G5)
+のユーザは、どちらを使うかを選択できますが、 32 ビットに対応していない
+64 ビット CPU を利用するには powerpc64 を使う必要があります。
+両方のプラットフォームを利用できるユーザは、 powerpc64
+を採用すると、より多くの機能 (2 GBを超える RAM、ZFS に対応)
+を利用できるようになります。
+他のプラットフォームと同様、FreeBSD/powerpc64 は、 64
+ビットのバイナリだけではなく、 32 ビットのバイナリにも対応しています。
+
+誰に連絡すればよいですか?
+
+FreeBSD/ppc メーリングリスト は主要な情報源です。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+ハードウェアリスト
+
+サポートされているハードウェアについての最新の情報は、 現在 wiki
+で管理されています。
+
+FreeBSD/ppc は、どんな New-World Apple マシン (USB
+ポート内臓のアップルマシン) と Sony Playstation 3 で動作します。
+
+これまでに、以下のシステムで FreeBSD が動作したことが報告されています。
+
++-----------------+-----------------+-----------------+-----------------+
+| メーカー        | モデル          | 報告者 (リンク) | 備考            |
++=================+=================+=================+=================+
+| Apple           | iMac G3 350 MHz | Martin Minkus   | Rage 128VR      |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | iMac G3 DV      | David S. Besade | None            |
+|                 | Special Edition | (dmesg)         |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | iMac G3         | Peter Grehan    | Rage 3D Pro     |
+|                 | Revision B      |                 | 215GP, accel    |
+|                 |                 |                 | disabled        |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | eMac 700 MHz    | Peter Grehan    | Nvidia GeForce2 |
+|                 |                 |                 | MX              |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | Mac Mini G4 1.4 | Tilman Linneweh | None            |
+|                 | GHz             | (dmesg)         |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | Powerbook G4    | Peter Grehan    | Nvidia GeForce  |
+|                 | 1.33 GHz        |                 | G5200           |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | Aluminium       | Andreas Tobler  | None            |
+|                 | Powerbook G4    |                 |                 |
+|                 | 1.5 GHz         |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | PowerMac G5     |                 | FreeBSD 8.0     |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | iMac G5         |                 | FreeBSD 8.0     |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | Xserve G5       |                 | FreeBSD 8.1     |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | PowerMac G5     |                 | FreeBSD 8.1     |
+|                 | (late 2005)     |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD/ppc メーリングリスト
+
+このメーリングリストを購読するには、<freebsd-ppc-subscribe@FreeBSD.org>
+にメールを送るか、 mailman インタフェースを利用してください。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+既知の問題
+
+-   New-World Apples において、ブートローダに既知の問題があります。
+    このバグのため別のカーネルを読み込むことができないので、
+    カーネルのテストには危険が少し伴います。 Open Firmware
+    プロンプトからローダを起動すると、
+    存在しないパーティションを示すか、
+    ロードするカーネルが存在しない、または、 UFS
+    ではないパーティションを示します。
+
+    0 > boot hd:loader hd:0
+
+ここで、currdev を設定でき、手動でカーネルをロードしてください。
+
+    OK set currdev="hd":14
+    OK load /boot/kernel/kernel.save
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+ドキュメント、ホワイトペーパー、ユーティリティ
+
+-   PowerPC 32 ビット chip ドキュメント
+
+-   Open Firmware Quick リファレンス
+
+-   "TN1061: Fundamentals of Open Firmware, Part 1 - The User Interface"
+
+-   "TN1062: Fundamentals of Open Firmware, Part 2 - The Device Tree"
+
+-   Apple hardware developer 文書
+
+-   "TN2004: Debugging Open Firmware Using Telnet"
+
+-   "TN2023: Open Firmware Ethernet Debugging II - Telnet Downloading"
+
+-   "TN2001: Running Files from a Hard Drive in Open Firmware"
+
+その他の有用なリンク
+
+-   FreeBSD/ppc wiki page
+
+-   Garance A. Drosehn による Mac Mini での FreeBSD に関する記述
+
+-   NetBSD/macppc
+
+-   OpenBSD/macppc
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+最終更新日: 2021年6月19日 by Danilo G. Baio
+
+法律上の注意事項 | © 1995-2023 FreeBSD プロジェクト All rights reserved.
+The mark FreeBSD is a registered trademark of The FreeBSD Foundation and
+is used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact

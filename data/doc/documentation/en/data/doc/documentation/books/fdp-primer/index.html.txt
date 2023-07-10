@@ -1,0 +1,20 @@
+
+FreeBSD Documentation Project Primer for New Contributors
+
+Abstract
+
+Thank you for becoming a part of the FreeBSD Documentation Project. Your
+contribution is extremely valuable, and we appreciate it.
+
+This primer covers details needed to start contributing to the FreeBSD
+Documentation Project, or FDP, including tools, software, and the
+philosophy behind the Documentation Project.
+
+This is a work in progress. Corrections and additions are always
+welcome.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+

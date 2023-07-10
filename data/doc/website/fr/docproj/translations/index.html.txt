@@ -1,0 +1,430 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   Documentation
+-   FAQ
+-   Manuel de référence
+-   Pages de manuel
+-   Présentations et papiers
+-   Livres et articles en ligne
+-   Publications
+-   Ressources Web
+-   Pour les débutants
+-   Projet de documentation
+-   Archive
+
+FreeBSD Documentation Project: Translations
+
+Projet de documentation en brésilien-portugais Projet de documentation
+en bulgare Projet de documentation en chinois simplifié Projet de
+documentation en chinois traditionnel Projet de documentation en
+hollandais Projet de documentation en estonien Projet de documentation
+en français Projet de documentation en allemand Projet de documentation
+en italien Projet de documentation en japonais Projet de documentation
+en coréen Projet de documentation en polonais Projet de documentation en
+roumain Projet de documentation en russe Projet de documentation en
+espagnol Projet de documentation en turc]
+
+Le projet de documentation FreeBSD en brésilien-portugais
+
+Web : http://doc.fugspbr.org/
+E-Mail : lioux@FreeBSD.org
+
+Listes de diffusion
+
+    Consultez l’URL
+    http://lists.fugspbr.org/listinfo.cgi/doc-fugspbr.org/ pour savoir
+    comment s’inscrire à la liste de diffusion du groupe de traduction
+    brésilien-portugais.
+    Ou bien envoyez un courrier électronique à doc-request@fugspbr.org
+    avec le mot "subscribe" dans le sujet du message.
+    Les messages (autorisés uniquement pour les personnes inscrites)
+    sont à envoyer à l’adresse doc@fugspbr.org
+
+Documents disponibles
+
+    FAQ
+
+    Contribuer à FreeBSD
+
+Documents en cours de traduction
+
+    Introduction au Projet de Documentation de FreeBSD pour les nouveaux
+    participants
+
+    Manuel de référence FreeBSD
+
+Le projet de documentation FreeBSD en bulgare
+
+Web: http://fdp.bg-freebsd.org/
+E-Mail: freebsd-fdp@bg-freebsd.org
+
+Listes de diffusion disponibles
+
+    Consultez l’URL http://lists.bg-freebsd.org/ pour savoir comment
+    s’inscrire à la liste de diffusion du groupe de traduction bulgare.
+    Ou bien envoyez un courrier électronique à
+    freebsd-fdp-subscribe@bg-freebsd.org.
+    Les messages (autorisés uniquement pour les personnes inscrites)
+    sont à envoyer à l’adresse freebsd-fdp@bg-freebsd.org
+
+Documents disponibles
+
+    Introduction au Projet de Documentation de FreeBSD pour les nouveaux
+    participants
+
+Documents en cours de traduction
+
+    Manuel de référence FreeBSD
+
+    Site web FreeBSD
+
+    Conception et Implémentation du Système d’Exploitation 4.4BSD
+    (chapitre 2)
+
+    Questions Fréquemment Posées sur FreeBSD
+
+Le projet de documentation FreeBSD en chinois traditionnel
+
+Web: -
+E-Mail: foxfair@FreeBSD.org
+
+Listes de diffusion disponibles
+
+    Envoyer un courrier à l’adresse majordomo@freebsd.sinica.edu.tw
+    comportant "subscribe freebsd-chinese-doc" dans le corps du message.
+    L’envoi de messages est authorisé aux membres à l’adresse
+    freebsd-chinese-doc@freebsd.sinica.edu.tw
+
+Documents disponibles
+
+    FAQ
+
+Document en cours de traduction
+
+    Le manuel de référence
+
+Le projet de documentation FreeBSD en chinois simplifié
+
+Web: www.FreeBSD.org.cn
+E-Mail: delphij@FreeBSD.org
+
+Liste de diffusion
+
+    Les instructions pour s’inscrire à la liste de diffusion du projet
+    de documentation en chinois simplifié sont disponibles sur
+    http://lists.FreeBSD.org.cn/mailman/listinfo
+
+Documents en cours de traduction
+
+    Manuel de l’architecture FreeBSD
+
+    Manuel de référence FreeBSD
+
+    Manuel du porteur d’applications
+
+    Questions Fréquemment Posées sur FreeBSD
+
+Le projet de documentation FreeBSD en hollandais
+
+E-Mail: remko@FreeBSD.org
+
+Listes de diffusion
+
+    Envoyez un courrier électronique à majordomo@majordomo.elvandar.org
+    avec "subscribe freebsd-doc-nl" dans le corps du message pour vous
+    inscrire à la liste de diffusion en hollandais FreeBSD-doc-nl.
+
+    Envoyez un courrier électronique à majordomo@majordomo.elvandar.org
+    avec "subscribe freebsd-doc-nl-cvs" dans le corps du message pour
+    vous inscrire à la liste de diffusion CVS FreeBSD-doc-nl-cvs.
+
+Documents parus
+
+    Manuel de référence (complet à 80%)
+
+Documents en cours de traduction
+
+    Manuel de référence
+
+    Pages Web
+
+Le projet de documentation FreeBSD en estonien
+
+Web: http://www.bsd.ee/tolge.php
+
+Document disponible
+
+    Manuel de référence FreeBSD
+
+Le projet de documentation FreeBSD en français
+
+Web: http://www.freebsd-fr.org
+
+Listes de diffusion disponibles
+
+    Envoyer un courrier à l’adresse listserver@freebsd-fr.org comportant
+    "SUB freebsd-questions" dans le corps du message afin de souscrire à
+    la liste de diffusion française dédiée aux questions d’ordres
+    générales.
+
+    Envoyer un courrier à l’adresse listserver@freebsd-fr.org comportant
+    "SUB annonces" dans le corps du message afin de souscrire à la liste
+    de diffusion française dédiée aux annonces.
+
+Documents disponibles
+
+    FAQ
+
+    Certains articles et guides
+
+    Des nouvelles (vraiment) brèves
+
+    PicoBSD
+
+Document en cours de traduction
+
+    Le Manuel de référence FreeBSD, Site web
+
+Dépôt CVS
+
+    Site web CVS
+
+    Envoyer un courrier à l’adresse listserver@freebsd-fr.org comportant
+    "SUB cvs" dans le corps du message afin de souscrire à la liste de
+    diffusion française dédiée aux modifications CVS.
+
+Le projet de documentation FreeBSD en allemand
+
+Web:
+http://people.FreeBSD.org/~mheinen/de-bsd-translators/de-bsd-translators.html
+E-Mail: de-bsd-translators@de.FreeBSD.org
+
+Documents disponibles
+
+    FAQ, quelques articles
+
+Documents en cours de traduction
+
+    Manuel de référence FreeBSD, Introduction au Projet de Documentation
+    de FreeBSD pour les nouveaux participants, Web
+
+Le projet de documentation FreeBSD en italien
+
+Web: http://www.gufi.org/~alex/
+E-Mail: ale@freebsd.org
+
+Listes de diffusion disponibles
+
+    Consulter l’adresse
+    http://liste.gufi.org/mailman/listinfo/traduzioni pour savoir
+    comment s’inscrire à la liste de diffusion du groupe de traduction
+    italien.
+    Ou, envoyer un courrier électronique à traduzioni-request@gufi.org
+    avec le mot "subscribe" dans le sujet du message.
+    L’envoi est permis aux membres à l’adresse traduzioni@gufi.org
+
+Documents disponibles
+
+    Introduction à Unix
+
+    Quelques Articles
+
+Documents en cours de traduction
+
+    Manuel de référence FreeBSD
+
+    Web
+
+Dépôt CVS
+
+    CVS web
+
+    Envoyer un courrier électronique à cvs-all-request@gufi.org avec le
+    mot "subscribe" dans le sujet du message pour s’inscrire à la liste
+    de diffusion des mises à jour du CVS italien en italien.
+
+Le projet de documentation FreeBSD en japonais
+
+Web: http://www.jp.FreeBSD.org/doc-jp/
+E-Mail: doc-jp@jp.FreeBSD.org
+
+Documents disponibles
+
+    Le manuel de référence, FAQ, Web, Bulletin d’information FreeBSD
+    numéro 2
+
+Documents en cours de traduction
+
+    Guides FreeBSD
+
+Le projet de documentation FreeBSD en coréen
+
+Web: http://www.kr.FreeBSD.org/projects/doc-kr/
+E-Mail: doc@kr.FreeBSD.org
+
+Document en cours de traduction
+
+    Le manuel de référence
+
+Le projet de documentation FreeBSD en polonais
+
+Web : http://tlumaczenie.freebsd.pl
+E-Mail : ni@merkury.pol.lublin.pl
+
+Documents disponibles
+
+    Quelques guides
+
+Documents en cours de traduction
+
+    Guides FreeBSD
+
+    Manuel de référence
+
+    Introduction au Projet de Documentation de FreeBSD pour les nouveaux
+    participants
+
+Le projet de documentation FreeBSD en roumain
+
+Web: http://www.rofug.ro/projects/ro-l10n/
+E-Mail: ady@rofug.ro
+
+Listes de diffusion disponibles
+
+    Pour souscrire à la liste de diffusion ro-l10n, consultez la page
+    web du projet ou envoyez un courrier à l’adresse listar@rofug.ro
+    comportant "subscribe ro-l10n" dans le corps du message.
+    Seuls les membres de la liste de diffusion ro-l10n sont autorisés à
+    envoyer des messages.
+
+Document en cours de traduction
+
+    Manuel de référence
+
+Le projet de documentation FreeBSD en russe
+
+Web: http://www.FreeBSD.org.ua
+E-Mail: frdp@FreeBSD.org.ua
+
+Documents disponibles
+
+    FAQ
+
+    WWW
+
+    Liste des autres documents
+
+Documents en cours de traduction
+
+    Le manuel de référence
+
+Le projet de documentation FreeBSD en espagnol
+
+Web: http://www.es.FreeBSD.org/es/
+E-Mail: jesusr@FreeBSD.org
+
+Listes de diffusion disponibles
+
+    Documentation en espagnol
+
+Documents disponibles
+
+    FAQ
+
+    Le manuel de référence
+
+    Articles
+
+Le projet de documentation FreeBSD en turc
+
+Web: http://www.enderunix.org/ftdp/
+E-Mail: ofsen@enderunix.org
+
+Listes de diffusion disponibles
+
+    Pour s’inscrire à la liste de diffusion du projet, consultez la page
+    web ou envoyer un courrier électronique vide à
+    ftdp-subscribe@lists.enderunix.org">ftpd-subscribe@lists.enderunix.org.
+
+Documents disponibles
+
+    WWW
+
+    Liste des autres documents
+
+Documents en cours de traduction
+
+    Introduction au Projet de Documentation de FreeBSD pour les nouveaux
+    participants
+
+Site du projet de documentation FreeBSD
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26 janvier 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

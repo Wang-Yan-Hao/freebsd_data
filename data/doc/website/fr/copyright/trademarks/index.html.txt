@@ -1,0 +1,149 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   A propos
+-   Fonctionnalités
+-   Applications
+-   Prosélytisme
+-   Marketing
+-   Administration
+-   Nouvelles du projet
+-   Événements
+-   Presse
+-   Ressources artistiques
+-   Logo
+-   Donations
+-   Legal Notices
+-   Politique de confidentialité
+
+Légende des marques
+
+FreeBSD est une marque déposée de la fondation FreeBSD.
+
+Le logo FreeBSD est une marque déposée de la fondation FreeBSD.
+
+Consultez la page de modalités d’utilisation de la marque de la
+fondation FreeBSD pour plus d’informations sur l’utilisation des marques
+FreeBSD.
+
+Adobe, Acrobat, Acrobat Reader, et PostScript sont soit des marques
+déposées soit des marques de Adobe Systems Incorporated aux États-Unis
+et/ou dans d’autres pays.
+
+AMD, Am486, Am5X86, AMD Athlon, AMD Duron, AMD Opteron, AMD-K6, Athlon,
+Élan, Opteron, et PCnet sont des marques de Advanced Micro Devices, Inc.
+
+Apple, FireWire, Mac, Macintosh, Mac OS, Quicktime, et TrueType sont des
+marques d’Apple Computer, Inc., déposées aux États-Unis et dans d’autres
+pays.
+
+CVSup est une marque déposée de John D. Polstra.
+
+IBM et PowerPC sont des marques d’International Business Machines
+Corporation aux États-Unis et/ou dans d’autres pays.
+
+IEEE, POSIX, et 802 sont des marques déposées de The Institute of
+Electrical and Electronics Engineers, Inc.
+
+Intel, Celeron, EtherExpress, i386, i486, Itanium, Pentium, et Xeon sont
+des marques ou des marques déposées de Intel Corporation ou de ses
+filiales aux États-Unis et dans d’autres pays.
+
+Linux est une marque déposée de Linus Torvalds aux États-Unis.
+
+Motif, OSF/1, et UNIX sont des marques déposées et IT DialTone et The
+Open Group sont des marques de The Open Group aux États-Unis et dans
+d’autres pays.
+
+MySQL est une marque déposée de MySQL AB aux États-Unis, dans l’Union
+Européenne et dans d’autres pays.
+
+Silicon Graphics, SGI, et OpenGL sont des marques déposées de Silicon
+Graphics, Inc., aux États-Unis et/ou dans d’autres pays dans le monde
+entier.
+
+Sparc, Sparc64, SPARCEngine, et UltraSPARC sont des marques de SPARC
+International, Inc aux États-Unis et dans d’autres pays. Les produits
+portant les marques SPARC sont basés sur l’architecture développée par
+Sun Microsystems, Inc.
+
+Sun, Sun Microsystems, SunOS, Solaris, et Java sont des marques ou des
+marques déposées de Sun Microsystems, Inc. aux États-Unis et dans
+d’autres pays.
+
+XFree86 est une marque de The XFree86 Project, Inc.
+
+De nombreuses désignations employées par des fabricants ou des vendeurs
+pour distinguer leurs produits sont des marques. Lorsque ces
+désignations apparaissent sur ce site, et que le Projet FreeBSD était au
+courant de cette marque, les désignations ont été suivies du symbole '™'
+ou '®'.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26 janvier 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

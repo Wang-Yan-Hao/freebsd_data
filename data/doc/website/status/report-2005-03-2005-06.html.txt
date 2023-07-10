@@ -1,0 +1,1612 @@
+Skip site navigation (1) Skip section navigation (2)
+
+Header And Logo
+
+[FreeBSD]
+
+.
+
+Donate to FreeBSD
+
+.
+
+Peripheral Links
+
+Search
+
+ 
+
+Site Navigation
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+Section Navigation
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Multimedia
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Introduction
+
+The second quarter of 2005 has again been very exciting. The BSDCan and
+MeetBSD conferences were both very interesting and the sources of very
+good times. I highly recommend attending them again next year.
+
+The Google Summer of Code project has also generated quite a bit of
+excitement. FreeBSD has been granted 19 funded mentorship spots, the
+fourth most of all of participating organizations. Projects being worked
+on range from UFS Journaling to porting the new BSD Installer to
+redesigning the venerable www.FreeBSD.org website. We are quite pleased
+to be working with so many talented students, and eagerly await the
+results of their work. More information and status can be found at the
+Wiki site at http://wiki.freebsd.org/moin.cgi/SummerOfCode2005 .
+
+The FreeBSD 6.0 release cycle is also starting up. The purpose of
+quickly jumping from 5.x to 6.0 is to reduce the amount of transition
+pain that most users and developers felt when switching from 4-STABLE to
+5.x. 6.0 will feature improved performance and stability over 5.x,
+experimental PowerPC support, and many new WiFi/802.11 features. The 5.x
+series will continue for at least one more release this fall, and will
+then be supported by the security team for at least 2 years after that.
+We encourage everyone to give the 6.0-BETA snapshots a try and help us
+make it ready for production. We hope to release FreeBSD 6.0 by the end
+of August.
+
+Thanks again to everyone who submitted reports, and thanks to Max Laier
+for running the show and putting the reports together. Enjoy reading!
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Google summer of code
+
+-   FreeBSD Summer of Code
+-   FreeBSD website improvements
+-   FreeSBIE toolkit integration
+-   gjournal
+-   gvinum 'move', 'rename'
+-   Improve libalias
+-   Integrate the BSD Installer into FreeBSD
+-   launchd(8) for FreeBSD
+-   Network Interface API Cleanup
+-   Nsswitch / Caching daemon
+-   SEBSD
+-   UFSJ -- Journaling for UFS
+
+Projects
+
+-   Fundraising - TCP & IP Routing Optimization
+-   GEOM Gate rewrite
+-   TODO list for volunteers
+-   VFS SMP
+
+Documentation
+
+-   The FreeBSD Dutch Documentation Project
+
+Kernel
+
+-   Autotuning of the page queue coloring algorithm
+-   CPU Cache Prefetching
+-   libmemstat(3), UMA(9) and malloc(9) statistics
+-   Low-overhead performance monitoring for FreeBSD
+-   Removable interface improvements
+-   SMP Network Stack
+-   Transparent support for superpages in the FreeBSD Kernel
+-   TrustedBSD Audit
+
+Network infrastructure
+
+-   Dingo
+-   if_bridge
+-   IPv6 Support for IPFW
+-   Move ARP out of routing table
+-   TCP Reassembly Rewrite and Optimization
+-   TTCPv2: Transactional TCP version 2
+-   Wireless Networking Support
+
+Userland programs
+
+-   OpenBSD dhclient import.
+-   Removing of old basesystem files and directories
+
+Architectures
+
+-   PowerPC Port
+
+Ports
+
+-   FreshPorts
+-   Porting v9 of Intels C/C++ Compiler
+-   Update of the Linux userland infrastructure
+
+Vendor / 3rd Party Software
+
+-   OpenBSD packet filter - pf
+
+Miscellaneous
+
+-   BSDCan
+-   EuroBSDCon 2005 - Basel
+-   FreeBSD Security Officer and Security Team
+-   TrustedBSD SEBSD
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Google summer of code
+
+FreeBSD Summer of Code
+
+  ------- --------------------------------------------------------
+  Links   
+          URL: http://wiki.freebsd.org/moin.cgi/SummerOfCode2005
+  ------- --------------------------------------------------------
+
+Contact: Summer of Code Mentors <soc-mentors@FreeBSD.org>
+
+Google has generously funded 19 students to spend the summer working on
+FreeBSD related projects. Each student is working with one or more
+mentors to learn about how open source software development is done with
+FreeBSD. This development work is happening in the Perforce repository
+as //depot/projects/soc2005. This tree will soon be exported via CVSup
+-- check the Wiki for more information.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD website improvements
+
+  -------
+  Links
+  -------
+
+Contact: Emily Boyd <soc-emily@freebsd.org>
+
+As part of the Google Summer of Code, I'm working on improvements to the
+FreeBSD website (including a proposed website redesign). My mentor for
+this project is Murray Stokely.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeSBIE toolkit integration
+
+  ------------------------- --------------------------------------------------
+  Links                     
+  FreeSBIE main site        URL: http://www.freesbie.org
+  My page on FreeBSD wiki   URL: http://wiki.freebsd.org/moin.cgi/DarioFreni
+  ------------------------- --------------------------------------------------
+
+Contact: Dario Freni <saturnero@freesbie.org>
+
+My Summer of Code project is reengineering and rewrite of FreeSBIE
+toolkit, in order to include it in the source tree. Let's call it
+FreeSBIE 2
+
+Before being accepted, I worked hard on the FreeSBIE 1 toolkit to make
+it more flexible. It now supports amd64 and PowerPC architecture. The
+built filesystem can now boot from almost every media, from DVD to
+compact flash or hard disk. Also on i386 it is now possible to include
+the BSD Installer on the livefs. We've received reports that our toolkit
+is successfully used for the install CD of pfSense and PC-BSD projects.
+
+My future goals are to make the toolkit even more flexible, capable to
+build embedded images (like nanoBSD) or big Live-DVD systems, depending
+on user's choice, to support all the architectures supported by FreeBSD
+and to write a set of tools for making a netboot server with a FreeSBIE
+image.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+gjournal
+
+  --------------- ------------------------------------------------
+  Links           
+  gjournal wiki   URL: http://wiki.freebsd.org/moin.cgi/gjournal
+  --------------- ------------------------------------------------
+
+Contact: Ivan Voras <ivoras@gmail.com>
+
+The schedule (as stated on the wiki page) is honoured, which means that
+the development has started, but there's not enough code for testing.
+Many details have been thought-out and the development is ongoing.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+gvinum 'move', 'rename'
+
+  ------------------------------------ --------------------------------------------------------
+  Links                                
+  gvinum 'move', 'rename' wiki entry   URL: http://wiki.freebsd.org/moin.cgi/GvinumMoveRename
+  ------------------------------------ --------------------------------------------------------
+
+Contact: Chris Jones <soc-cjones@freebsd.org>
+
+With the releases of FreeBSD 5.3 and 5.4, FreeBSD has been moving away
+from "old-style" vinum towards GEOM-enabled gvinum for logical volume
+management. While gvinum is a mostly feature-complete replacement for
+vinum, it does not implement the 'move' or 'rename' verbs which are
+rather useful when reorganizing one's volume layout, the alternative
+being a tedious process of deleting and recreating subdisks, plexes, or
+volumes. Additionally, gvinum is nearly completely undocumented, which
+contributes to the perception of gvinum as an unfinished project.
+
+I'm working on implementing 'move' (being able to move a subdisk from
+one drive to another) and 'rename' (being able to rename an subdisk,
+plex, volume, or drive), as well as on documentation for gvinum.
+
+So far, I've come up with a plan of attack with le@ and phk@, and
+implemented the bulk of the userland code for gvinum 'move' and
+'rename'. Still to come are the kernel-side code and documentation.
+
+Open tasks:
+
+1.  'move' and 'rename' userland implementation
+2.  'move' and 'rename' kernel-side implementation
+3.  Outline new handbook section and man page
+4.  Implement new handbook section and man page
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Improve libalias
+
+  -------------------------------- ---------------------------------------------------
+  Links                            
+  Wiki page about libalias work.   URL: http://wiki.freebsd.org/moin.cgi/PaoloPisati
+  -------------------------------- ---------------------------------------------------
+
+Contact: Paolo Pisati <soc-pisati@freebsd.org>
+
+My SoC project is about improving libalias and integrating it with
+ipfw2, adding nat support into the firewall. Till now I ported libalias
+(as a kld) and ng_nat to 4.x and 5.x branches, and I've already a first
+working patchset that adds 'nat' action into ipfw. Next step will be to
+add a complete syntax to ipfw that will let us manipulate libalias
+operations, much like we already do with queue and pipes for dummynet.
+In the end the entire work will compile and work out of the box for 4.x,
+5.x and 6.x. More details about the project and its status are available
+on wiki page.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Integrate the BSD Installer into FreeBSD
+
+  ----------------------------- --------------------------------------------------------------------------------------------------
+  Links                         
+  The BSD Installer             URL: http://www.bsdinstaller.org
+  BSD Installer Wiki page       URL: http://wiki.freebsd.org/moin.cgi/BSDInstaller
+  BSD Installer Perforce tree   URL: http://perforce.freebsd.org/depotTreeBrowser.cgi?FSPC=//depot/projects/soc2005/bsdinstaller
+  ----------------------------- --------------------------------------------------------------------------------------------------
+
+Contact: Andrew Turner <soc-andrew@FreeBSD.org>
+
+Progress towards integrating the BSD Installer for Google's Summer of
+Code is coming along nicely. The installation CD will boot to multi-user
+mode and run both the front and back ends. It can then partition a hard
+drive, install the base distribution and make the disk bootable.
+
+Open tasks:
+
+1.  Test in non-i386
+2.  Investigate installing from other media
+3.  Many more tasks
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+launchd(8) for FreeBSD
+
+  ----------------------------- ---------------------------------------------------------------------------------------------
+  Links                         
+  Wiki Project Page             URL: http://wiki.freebsd.org/moin.cgi/launchd
+  Apple's launchd(8) man page   URL: http://developer.apple.com/documentation/Darwin/Reference/ManPages/man8/launchd.8.html
+  ----------------------------- ---------------------------------------------------------------------------------------------
+
+Contact: R. Tyler Ballance <tyler@tamu.edu>
+
+So far progress has been slow, the autoconf build system has been
+removed from all of the launchd(8) code, and launchctl(1) is building
+and semi-functional on FreeBSD-CURRENT (i.e. CoreFoundation hooks have
+been removed).
+
+I'm currently working on porting "liblaunch" which is the core backend
+to both launchd(8) (the actual daemon) and launchctl(1), there are some
+mach/xnu specific hooks and calls that need to be remove and either
+reimplemented or worked around.
+
+We're also waiting on a response from Apple on a possible BSD-licensed
+version of the code (it's currently under the APSL) Progress is slow,
+but steady.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Network Interface API Cleanup
+
+  ------- --------------------------------------------------------------------
+  Links   
+          URL: http://wiki.freebsd.org/moin.cgi/CleanupOfNetworkIterfaceApis
+  ------- --------------------------------------------------------------------
+
+Contact: Anders Persson <soc-anders@freebsd.org>
+
+The goal of this project is to review the network interface API and try
+to remove references to kernel-only data structures by removing the use
+of libkvm and instead rely on other interfaces to provide information.
+If there are no adequate interfaces, they would be created.
+
+Currently netstat is being reviewed and parts of it have been modified
+to use sysctl rather than libkvm to provide the information.
+
+A big thank you to Brooks Davis for mentoring :-)
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Nsswitch / Caching daemon
+
+  ------- --------------------------------------------------------------------------
+  Links   
+          URL: http://wiki.freebsd.org/moin.cgi/NsswitchAndCachingTechnicalDetails
+          URL: http://wiki.freebsd.org/moin.cgi/MichaelBushkov
+  ------- --------------------------------------------------------------------------
+
+Contact: Michael Bushkov <soc-bushman@rsu.ru>
+
+The nsswitch / caching daemon project is being developed within the
+Google's Summer Of Code program. The first goal of this project is to
+implement a set of patches to extend the use of nsswitch subsystem. The
+second goal is the development of the caching library and daemon to add
+the caching ability to the nsswitch.
+
+Currently services, protocols, rpc and openssh patches are finished.
+Support for services, services_compat, rpc, protocols, and ssh_host_keys
+databases is added with 'files', 'nis' and 'compat' (for services)
+sources possible. The nsswitch-friendly openssh port is almost
+completed.
+
+Open tasks:
+
+1.  Implement set of patches to make nsswitch support globus grid
+    security files , MAC and audit related configuration files
+    databases.
+2.  Implement the caching library and the caching daemon and patch
+    nsdispatch function to support caching.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+SEBSD
+
+  ---------------------------------------------- ------------------------------------------------
+  Links                                          
+  Show status in wiki, update more frequently.   URL: http://wiki.freebsd.org/moin.cgi/YanjunWu
+  ---------------------------------------------- ------------------------------------------------
+
+Contact: Yanjun Wu <yanjun03@ios.cn>
+
+1.  Setup a local P4 workspace of SEBSD source and Setup lxr for
+    TrustedBSD source for studying source code.
+2.  Test a simple policy configuration for vsftpd.
+3.  Writing a HOWTO document Getting Started with SEBSD HOWTO by
+    deriving the existing Getting Started with SELinux HOWTO.
+
+Thanks Robert Watson and Scott Long for their kind help.
+
+Open tasks:
+
+1.  When writing the document, try to figure out the sebsd userland
+    utils that need to be ported.
+2.  Test and edit more policies for BSD environment.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+UFSJ -- Journaling for UFS
+
+  -------
+  Links
+  -------
+
+Contact: Brian Wilson <polytopes@gmail.com>
+Contact: Scott Long <scottl@FreeBSD.org>
+
+filesystem. Journaling helps ensure the filesystem's integrity should
+the system crash. Journaling eliminates the need for fsck'ing a
+filesystem, as the filesystem is never in an inconsistent state (barring
+hardware failure). This implementation is inspired by Darwin's HFS+
+filesystem and the SGI XFS filesystem. This is a Summer of Code project,
+with Scott Long as the mentor and Brian Wilson as the developer/mentee.
+Currently this project is still in the early stages, but will be in a
+usable state by September 1 (the Google Summer of Code completion date).
+
+Open tasks:
+
+1.  Finish making the file system log metadata updates.
+2.  Add facilities to replay the log on dirty file systems.
+3.  Make snapshots work with journaling.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Projects
+
+Fundraising - TCP & IP Routing Optimization
+
+  ------- ------------------------------------------------------------
+  Links   
+          URL: http://people.freebsd.org/~andre/tcpoptimization.html
+  ------- ------------------------------------------------------------
+
+Contact: Andre Oppermann <andre@freebsd.org>
+
+The TCP code in FreeBSD has evolved significantly since the fork from
+4.4BSD-Lite2 in 1994 primarily due to new features and refinements of
+the TCP specifications.
+
+The TCP code now needs a general overhaul, streamlining and cleanup to
+make it easily comprehensible, maintainable and extensible again. In
+addition there are many little optimizations that can be done during
+such an operation, propelling FreeBSD back at the top of the best
+performing TCP/IP stacks again, a position it has held for the longest
+time in the 90's.
+
+This overhaul is a very involved and delicate matter and needs extensive
+formal and actual testing to ensure no regressions compared to the
+current code. The effort needed for this work is about three man-month
+of fully focused and dedicated time. To get it done I need funding to
+take time off my day job and to dedicate me to FreeBSD work much the way
+PHK did with his buffer cache and vnode rework projects.
+
+I've got the opportunity to work up to three man-month exclusively
+full-time on FreeBSD during the second half of 2005. That means up to
+720 hours of full-steam coding (at 60 hours/week)! I will work as much
+time as the fundraise provides.
+
+I need to raise enough money for each month from donations from the
+FreeBSD community to cover my fixed cost of living, office and
+associated overhead. These fixed cost amount to US$6,300/month (EUR5,200
+or CHF8,000). Yes, Switzerland is not the cheapest place to live. :)
+
+A detailed description of the tasks involved and the code I will write
+is on my FreeBSD website; Follow the link above.
+
+Open tasks:
+
+1.  Raise enough money to get all the almost finished TCP and IP code
+    into the tree.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+GEOM Gate rewrite
+
+  ------- ---------------------------------------------------
+  Links   
+          URL: http://cvsweb.freebsd.org/src/sys/geom/gate/
+          URL: http://cvsweb.freebsd.org/src/sbin/ggate/
+  ------- ---------------------------------------------------
+
+Contact: Pawel Jakub Dawidek <pjd@FreeBSD.org>
+
+GGATE is a mechanism for exporting storage devices over the network. It
+was reimplemented to be much faster and to handle network failures
+better. The ggatec uses two threads now: sendtd, which takes I/O request
+from the kernel and sends it to ggated; recvtd, which receives finished
+requests and forwards them to the kernel. The ggated uses three threads:
+recvtd, which receives I/O requests from ggatec; disktd, which executes
+I/O requests (reads or writes data); sendtd, which sends finished
+requests to ggatec. The new ggate has been committed to 6.x.
+
+The work was sponsored by Wheel Sp. z o.o.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+TODO list for volunteers
+
+  -------
+  Links
+  -------
+
+Contact: Alexander Leidinger <netchild@FreeBSD.org>
+
+Since Google's "Summer of Code" resulted in a lot of interest in open
+projects, I'm in the process of compiling a list of nice projects for
+volunteers. Unlike Google's SoC those projects aren't backed with money
+(but this doesn't means nobody is allowed to sponsor one of those
+projects), so we can only guarantee the social aspects (some "Thank
+you!" and "That's great!" messages). So far the list has several entries
+where the difficulty ranges from "someone just has to sit down and spend
+some time on it" up to "we need a guru for this".
+
+Open tasks:
+
+1.  Merging untaken entries from the SoC list as soon as the official
+    participants/tasks in the SoC are announced.
+2.  Sending the document to some doc people for review.
+3.  Commit the list.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+VFS SMP
+
+  -------
+  Links
+  -------
+
+Contact: Jeff Roberson <jeff@freebsd.org>
+
+FreeBSD's VFS layer has been fine grain locked along with the FFS
+filesystem for the FreeBSD 6.0 release. The locking has been underway
+for several years, with the project really picking up over the last 6
+months thanks largely to sponsorship provided by Isilon Systems, Inc. a
+leading vendor of clustered storage systems. The project has entered a
+stabilization phase, with a few bugs being reported in extreme
+circumstances while the majority of users have seen no problems. Tests
+on a 8 and 16 way machines yield reasonable parallelization, however, it
+will be beneficial to do lock contention analysis once things are fully
+stable.
+
+For those interested in technical details, there have been a few
+relatively significant changes with vnode life-cycle management. Vnode
+reference counting and recycling is now no longer an ad-hoc process
+involving a variety of flags, a use count and the hold count. A single
+hold count is used to track all vnode references and a destroyed vnode
+is freed in the context of the caller when the last ref is lost. The old
+system would never reclaim memory used by vnodes and also had
+pathlogical behavior with unreferenced vnode caching under pressure. The
+new system is much simpler than the old one, however, callers are now
+required to vhold a vnode that they lock directly without going through
+vget to prevent it from being recycled while they are waiting on a lock.
+Relying on 'location stable storage', which is a more strict version of
+'type stable storage' is no longer a valid approach.
+
+Some other side effects include a much simpler and faster nullfs
+implementation, an improved buf daemon flushing algorithm which
+eliminated high latency that caused audio skipping, and a lots of minor
+cleanups and debugging aids.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Documentation
+
+The FreeBSD Dutch Documentation Project
+
+  --------------------------------- -----------------------------------------------------
+  Links                             
+  The Dutch Handbook                URL: http://www.freebsd.org/doc/nl/books/handbook
+  The Dutch Project Site            URL: http://www.evilcoder.org/content/section/6/39/
+  The Dutch Preview Documentation   URL: http://www.evilcoder.org/freebsd_html/
+  The Dutch FreeBSD Flyer           URL: http://www.evilcoder.org/freebsd/flyer.pdf
+  --------------------------------- -----------------------------------------------------
+
+Contact: Remko Lodder <remko@FreeBSD.org>
+Contact: Siebrand Mazeland <siebrand.mazeland@xs4all.nl>
+Contact: Rene Ladan <r.c.ladan@student.tue.nl>
+
+The FreeBSD Dutch Documentation Project is a ongoing project in
+translating the english documentation to the Dutch language. Currently
+we are almost done with the FreeBSD Handbook. Finishing the Handbook is
+our first priority, and we could use your help. Please contact Siebrand
+or myself if you want to helpout. After the handbook we will focus on
+other documents as well, so feel free to help us there as well
+
+Open tasks:
+
+1.  FreeBSD Handbook translation. Finish the translation from English to
+    Dutch
+2.  FreeBSD Handbook review. Finish the review of the translated
+    documents
+3.  FreeBSD Articles. Start translating the articles from English to the
+    Dutch Language
+4.  FreeBSD www. Start translating the website from English to the Dutch
+    Language
+5.  The rest of the FreeBSD Documents. Start translating them from
+    English to the Dutch Language.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Kernel
+
+Autotuning of the page queue coloring algorithm
+
+  ------- ---------------------------------------------------------------
+  Links   
+  Patch   URL: http://www.Leidinger.net/FreeBSD/current-patches/pq.diff
+  ------- ---------------------------------------------------------------
+
+Contact: Alexander Leidinger <netchild@FreeBSD.org>
+
+The VM subsystem has code to reduce the amount of cache collisions of VM
+pages. Currently this code needs to be tuned with a kernel option. I
+have a patch which changes this to auto-tuning at boot time. The
+auto-tuning is MI, the cache size detection is MD. Cache size detection
+is currently available for x86/amd64 (on other systems it uses default
+values).
+
+Open tasks:
+
+1.  Add cache-detection code for other arches too (Marius told me how to
+    do this for sparc64).
+2.  Analyze why the cache detection on Athlons doesn't work (no problems
+    on a P4, but it uses a different code-path).
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+CPU Cache Prefetching
+
+  ------- ---------------------------------------------------------------------
+  Links   
+          URL: http://people.freebsd.org/~andre/tcpoptimization.html
+          URL: http://www.nrg4u.com/freebsd/tcp_reass+prefetch-20041216.patch
+  ------- ---------------------------------------------------------------------
+
+Contact: Andre Oppermann <andre@freebsd.org>
+
+Modern CPU's can only perform to their maximum if their working code is
+in fast L1-3 cache memory instead of the bulk main memory. All of
+today's CPU's support certain L1-3 cache prefetching instructions which
+cause data to be retrieved from main memory to the cache ahead of the
+time that it is already in place when it is eventually accessed by the
+CPU.
+
+CPU Cache Prefetching however is not a silver bullet and has to be used
+with extreme care and only in very specific places to be beneficial.
+Incorrect usage can lead to massive cache pollution and a drop in
+effective performance. Correct and very carefully usage on the other can
+lead to drastic performance increases in common operations.
+
+In the linked patch CPU cache prefetching has been used to prefetch the
+packet header (OSI layer 2 to 4) into the CPU caches right after
+entering into the network stack. This avoids a complete CPU stall on the
+first access to the packet header because packets get DMA'd into main
+memory and thus never are already pre-cache in the CPU caches. A second
+use in the patch is in the TCP input code to prefetch the entire struct
+tcpcb which is very large and used with a very high probability. Use in
+both of these places show a very significant performance gain but not
+yet fully quantified.
+
+The final patch will include documentation and a guide to evaluate and
+assess the use of CPU cache prefetch instructions in the kernel.
+
+Open tasks:
+
+1.  Need funding, see "Fundraising - TCP & IP Routing Optimization".
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+libmemstat(3), UMA(9) and malloc(9) statistics
+
+  ----------------------------- --------------------------------------------------------
+  Links                         
+  libmemstat(3)-derived tools   URL: http://www.watson.org/~robert/freebsd/libmemstat/
+  ----------------------------- --------------------------------------------------------
+
+Contact: Robert Watson <rwatson@FreeBSD.org>
+
+libmemstat(3) provides a user space library API to monitor kernel memory
+allocators, currently uma(9) and malloc(9), with the following benefits:
+
+-   ABI-robust interface making use of accessor functions, in order to
+    divorce monitoring applications from kernel/user ABI changes.
+-   Allocator-independent interfaces, allowing monitoring of multiple
+    allocators using the same interface.
+-   CPU-cache awareness, allowing tracking of memory use across multiple
+    CPUs for allocators aware of caches. Unlike previous interfaces,
+    libmemstat(3) coalesces per-CPU stats in user space rather than
+    kernel, and exposes per-CPU stats to interested applications.
+-   Ability to track memory types over multiple queries, and update
+    existing structures, allowing easy tracking of statistics over time.
+
+libmemstat(3) and the appropriate allocator changes for uma(9) and
+malloc(9) are currently in HEAD (7-CURRENT), and MFC has been approved
+to RELENG_6 for inclusion in 6.0-RELEASE. These changes may also be
+backported to 5.x.
+
+Sample applications include memstat(8), an allocator-independent
+statistics viewing tool, memtop(8), which provides a top(1)-like
+interface for monitoring kernel memory use and active memory types. None
+of these are "pretty".
+
+netstat -mb has also been updated to use libmemstat(3) to track network
+memory use using uma(9), rather than the less reliable mbuf allocator
+statistics interface. As a result, the statistics are now more reliable
+on SMP systems (this corrects the bug in which mbuf statistics sometimes
+"leaked", even though memory didn't), and more informative (cache
+information is now displayed, as well as mbuf tag information).
+
+Open tasks:
+
+1.  Teach libmemstat(3) to speak libkvm(3) in order to allow tools
+    linked -lmemstat to interogate kernel core dumps.
+2.  Teach libmemstat(3) to interface with user space malloc and track
+    malloc allocations for user space applications.
+3.  Update vmstat(8) -m and -z implementations to use libmemstat(3)
+    instead of the old monitoring interfaces. Code to do this exists in
+    the sample libmemstat(3) applications.
+4.  Identify how to make streams or the library endian-aware so that
+    streams dumped from a kernel of alternative endian could be
+    processed using libmemstat(3) on another system.
+5.  Identify any remaining caching allocators in the kernel, such as the
+    sfbuf allocator, and teach libmemstat(3) how to interface with them.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Low-overhead performance monitoring for FreeBSD
+
+  ------------------- ------------------------------------------------------------------
+  Links               
+  Project home page   URL: http://people.freebsd.org/~jkoshy/projects/perf-measurement
+  ------------------- ------------------------------------------------------------------
+
+Contact: Joseph Koshy <jkoshy@FreeBSD.org>
+
+Modern CPUs have on-chip performance monitoring counters (PMCs) that may
+be used to count low-level hardware events like instruction retirals,
+branch mispredictions, and cache misses. PMC architectures and
+capabilities vary between CPU vendors and between CPU generations from
+the same vendor, making the creation of portable applications difficult.
+This project implements a cross-platform PMC management API for
+applications, and implements the infrastructure to "virtualize" and
+manage these PMCs. The creation of performance analysis tools that use
+this infrastructure is also part of the project's goals.
+
+Work since the last status report:
+
+-   Sampling mode support for P4 and AMD64 PMCs has been implemented.
+-   A pmclog(3) API for parsing hwpmc(4) log files has been added.
+-   A number of bugs in libpmc(3), hwpmc(4) and pmcstat(8) have been
+    fixed.
+
+Future work:
+
+-   Creating user documentation showing a few real-world uses of the
+    currently available tools.
+-   Testing, improving the stability of the code, and characterizing its
+    overheads.
+-   Implementing P5 PMC support.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Removable interface improvements
+
+  ------- -------------------------------------------------------------
+  Links   
+          URL: http://people.freebsd.org/~brooks/pubs/eurobsdcon2004/
+          URL: http://www.freebsd.org/projects/dingo/
+  ------- -------------------------------------------------------------
+
+Contact: Brooks Davis <brooks@FreeBSD.org>
+
+This project is an attempt to clean up handling of network interfaces in
+order to allow interfaces to be removed reliably. Current problems
+include panics if Dummynet is delaying packets to an interface when it
+is removed.
+
+I have removed struct ifnet's and layer two common structures from
+device driver structures. This will eventually allow them to be managed
+properly upon device removal. This code has been committed and will
+appear in 6.0. Popular drivers have generally been fixed, but more
+testing is needed.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+SMP Network Stack
+
+  ------------------- -----------------------------------------------
+  Links               
+  Netperf home page   URL: http://www.FreeBSD.org/projects/netperf/
+  ------------------- -----------------------------------------------
+
+Contact: Robert Watson <rwatson@FreeBSD.org>
+
+Significant work has occurred over the last few months relating to the
+SMP network stack work. A few of the highlights are covered here at a
+high level:
+
+-   The UMA(9) per-CPU caches have been modified to use critical
+    sections instead of mutexes. Recent critical section optimizations
+    make this a performance win for both UP and SMP systems. This
+    results in a several percent improvement in a number of user space
+    benchmarks, and larger improvement for kernel-only network
+    forwarding and processing benchmarks.
+-   The malloc(9) allocator has been modified to store statistics
+    per-CPU instead of using a cross-CPU statistics pool, with each
+    per-CPU pool now using critical sections to synchronize access. This
+    results in a measurable performance win, especially on SMP systems
+-   The netnatm ATM code is now MPSAFE.
+-   netipx MPSAFEty has been merged to RELENG_5.
+-   The netperf cluster has now been expanded to include two additional
+    quad-CPU systems (one dual dual-core AMD system, one quad-CPU PIII
+    system).
+-   libmemsetat(3) (see separate report) now corrects SMP-related races
+    in the measuring of mbuf allocator statistics, as well as
+    substantially improving kernel memory monitoring capabilities and
+    tools.
+-   A range of locking bug fixes, and general network stack bug fixes.
+-   Significant updates to the SMPng web page (still more to do!).
+-   Identification of all non-MPSAFE network device drivers, with
+    ultimatum issued, on freebsd-arch. Quite a bit of new driver locking
+    work as a result (if_ed, if_de, ...).
+-   Lots of other stuff.
+
+In most cases, these changes will appear in FreeBSD 6.0-RELEASE; some
+have been, or will be, merged to FreeBSD 5.x.
+
+On-going tasks include:
+
+-   Review and improvement of ifnet locking, such as address lists and
+    flags.
+-   Optimization of interface start hand-off.
+-   Prototyping of queue-oriented packet hand-off in the stack.
+-   Performance measurement and analysis.
+-   Prototype rewrite and simplification of socket locking.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Transparent support for superpages in the FreeBSD Kernel
+
+  -------
+  Links
+  -------
+
+Contact: Alan L. Cox <alc@cs.rice.edu>
+Contact: Olivier Crameri <olivier.crameri@epfl.ch>
+
+We are currently working on an updated implementation of Juan Navarro's
+transparent support for superpages in FreeBSD.
+
+The idea is to take advantage of the architectural support for big
+memory pages (superpages) by using a reservation mechanism allowing us
+to transparently promote groups of base pages into superpages and demote
+superpages into several smaller superpages or base pages.
+
+The advantage of using superpages vs. base pages is to significantly
+improve the TLB coverage of the physical memory, thus improving the
+peformance by reducing the number of TLB misses.
+
+The modification of the FreeBSD kernel that we are working on involves
+the replacement of the current list based page allocation mechanism with
+a system using a buddy allocator to reserve groups of pages for a memory
+object. The promotion and demotion of the pages occur directly within
+the pmap module.
+
+The former implementation was supporting the alpha and IA64
+architectures. We are adding the support for amd64. We currently have an
+almost complete implementation. Once completed we will make a
+performance study with a particular emphasis on TLB and cache misses.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+TrustedBSD Audit
+
+  ------- ------------------------------------------------------
+  Links   
+          URL: http://www.trustedbsd.org/components.html#audit
+  ------- ------------------------------------------------------
+
+Contact: Robert Watson <rwatson@FreeBSD.org>
+Contact: Wayne Salamon <wsalmon@FreeBSD.org>
+Contact: <trustedbsd-discuss@TrustedBSD.org>
+
+In the past few months, significant work has been done relating to the
+TrustedBSD audit implementation, including preparatory work to merge
+audit into the FreeBSD CVS repository for FreeBSD 6.x. In particular:
+
+-   The user space components, such as libbsm, include files, and
+    command line utilities have been broken out into an OpenBSM
+    distribution in Perforce. Improvements in OpenBSM will be made
+    available separately for use by projects such as Darwin, and
+    imported into the contrib area of FreeBSD.
+-   The system call table format has been updated to include an audit
+    event identifier for each system call across all hardware platforms
+    and ABIs (merged), and all system calls have been assigned event
+    identifiers (not yet merged).
+-   The audit management daemon has been rewritten to run on FreeBSD
+    (originally derived from Darwin) using /dev/audit to track kernel
+    events.
+-   Many system calls now properly audit their arguments.
+-   The TrustedBSD audit3 branch has been updated to a recent
+    6.x-CURRENT.
+-   Significant work has gone into synchronizing the audit event tables
+    between FreeBSD, Darwin, and OpenSolaris to make sure file formats
+    and events are portable.
+-   OpenBSM has been adapted to consume and generate endian-independent
+    event streams.
+-   OpenBSM documentation has been created.
+
+The hope is still to provide audit as "experimental" in 6.0; the primary
+blocking factor is our awaiting relicensing of the last remaining audit
+files from Apple's APSL license to BSDL so that they can be included in
+the FreeBSD kernel. This is anticipated to complete in the near future.
+Once this is done, the changes can be merged to CVS, and then MFC'd to
+RELENG_6. If this is not complete by 6.0-RELEASE, the work will be
+merged shortly after the release, as all ABI-sensitive data structures
+have been updated as needed.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Network infrastructure
+
+Dingo
+
+  ---------------------- ---------------------------------------------
+  Links                  
+  somewhat out of date   URL: http://www.freebsd.org/projects/dingo/
+  ---------------------- ---------------------------------------------
+
+Contact: Several <>
+
+Currently trying to restart bits of the project. Cleaning up the p4
+branch. Recently more people have volunteered to help as well. Brooks
+Davis has completed removing the ifnet from the softc.
+
+Open tasks:
+
+1.  See the web page.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+if_bridge
+
+  -------
+  Links
+  -------
+
+Contact: Andrew Thompson <thompsa@freebsd.org>
+
+This was committed to current on 5 Jun 2005 and will first appear in the
+6.0 release, thanks to everyone who tested. Recent improvements include:
+
+-   IPFW layer2 filtering
+-   DUMMYNET support
+-   IP header alignment checking
+
+There is ongoing work to bring in some of the advanced features from
+OpenBSD such as IPSec bridging. People are encouraged to use if_bridge
+and report any problems to the mailing lists.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+IPv6 Support for IPFW
+
+  -------
+  Links
+  -------
+
+Contact: Max Laier <mlaier@freebsd.org>
+Contact: Brooks Davis <brooks@freebsd.org>
+
+At the developer summit before BSDCan it was decided to remove IP6FW
+from the tree as it has a couple of problems. The most pressing one is
+the lack of synchronization and thus the need for debug.mpsafenet=0. As
+a replacement Brooks Davis has imported patches to teach the existing
+and well-locked IPFW2 code about IPv6.
+
+Since the initial import I have added some features required to manage
+IPv4 and IPv6 in a single ruleset. I have also extended existing opcodes
+to work with IPv6. There are, however, still some opcodes that do not
+work with IPv6 and most of the more exotic ones haven't been tested. As
+long as IPFW2+v6 does not provide enough functionality and stability to
+work as a drop-in replacement for IP6FW, we won't remove IP6FW.
+
+In order to get the new code to that point we really need more testers
+with real world IPv6 deployment and interest in IPFW+v6. The lack
+thereof (I haven't received a single answer on my requests to various
+FreeBSD mailing lists) has made it hard to progress.
+
+Open tasks:
+
+1.  Properly implement O_REJECT for IPv6
+2.  Maybe implement O_LOG
+3.  Test new(er) IPFW2 opcodes with IPv6
+4.  Test
+5.  Test
+6.  Test
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Move ARP out of routing table
+
+  ------- -----------------------------------------
+  Links   
+          URL: http://people.freebsd.org/~qingli/
+  ------- -----------------------------------------
+
+Contact: Qing Li <qingli@freebsd.org>
+
+I've sent the patch to jinmei@isl.rdc.toshiba.co.jp @KAME for review.
+I'm still waiting for feedback from Andre. There hasn't been any major
+change since the last report. I've kept the code in sync with CURRENT.
+Gleb has created a separate P4 branch and has been helping out on the
+locking side. Gleb is also helping out on the testing front.
+
+Open tasks:
+
+1.  I'm waiting for review feedback from my mentor Andre on the overall
+    design and code. I'm waiting for feedback from Andre on Gleb's
+    suggested modification.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+TCP Reassembly Rewrite and Optimization
+
+  ------- -------------------------------------------------------------------------------
+  Links   
+          URL: http://people.freebsd.org/~andre/tcpoptimization.html
+          URL: http://www.nrg4u.com/freebsd/tcp_reass-20041213.patch
+          URL: http://lists.freebsd.org/pipermail/freebsd-net/2004-December/005918.html
+  ------- -------------------------------------------------------------------------------
+
+Contact: Andre Oppermann <andre@freebsd.org>
+
+Currently TCP segment reassembly is implemented as a linked list of
+segments. With today's high bandwidth links and large bandwidth*delay
+products this doesn't scale and perform well.
+
+The rewrite optimizes a large number of operational aspects of the
+segments reassembly process. For example it is very likely that the just
+arrived segment attaches to the end of the reassembly queue, so we check
+that first. Second we check if it is the missing segment or
+alternatively attaches to the start of the reassembly queue. Third
+consecutive segments are merged together (logically) and are skipped
+over in one jump for linear searches instead of each segment at a time.
+
+Further optimizations prototyped merge consecutive segments on the mbuf
+level instead of only logically. This is expected to give another
+significant performance gain. The new reassembly queue is tracking all
+holes in the queue and it may be beneficial to integrate this with the
+scratch pad of SACK in the future.
+
+Andrew Gallatin was able to get 3.7Gb/sec TCP performance on dual-2Gbit
+Myrinet cards with severe packet reordering (due to a firmware bug) with
+the new TCP reassembly code. See second link.
+
+Open tasks:
+
+1.  Need funding, see "Fundraising - TCP & IP Routing Optimization".
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+TTCPv2: Transactional TCP version 2
+
+  ------- ---------------------------------------------------------------------------
+  Links   
+          URL: http://people.freebsd.org/~andre/tcpoptimization.html
+          URL: http://lists.freebsd.org/pipermail/cvs-all/2004-November/089939.html
+  ------- ---------------------------------------------------------------------------
+
+Contact: Andre Oppermann <andre@freebsd.org>
+
+The old TTCP according to RFC1644 was insecure, intrusive, complicated
+and has been removed from FreeBSD >= 5.3. Although the idea and
+semantics behind it are still sound and valid.
+
+The rewrite uses a much easier and more secure system with 24bit long
+client and server cookies which are transported in the TCP options.
+Client cookies protect against various kinds of blind injection attacks
+and can be used as well to generally secure TCP sessions (for BGP for
+example). Server cookies are only exchanged during the SYN-SYN/ACK phase
+and allow a server to ensure that it has communicated with this
+particular client before. The first connection is always performing a
+3WHS and assigning a server cookie to a client. Subsequent connections
+can send the cookie back to the server and short-cut the 3WHS to
+SYN->OPEN on the server.
+
+TTCPv2 is fully configurable per-socket via the setsockopt() system
+call. Clients and server not capable of TTCPv2 remain fully compatible
+and just continue using the normal 3WHS without any delay or other
+complications.
+
+Work on implementing TTCPv2 is done to 90% and expected to be available
+by early February 2005. Writing the implementation specification (RFC
+Draft) has just started.
+
+Open tasks:
+
+1.  Need funding, see "Fundraising - TCP & IP Routing Optimization".
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Wireless Networking Support
+
+  -------
+  Links
+  -------
+
+Contact: Sam Leffler <sam@freebsd.org>
+
+A lot of bugs were fixed in preparation for the 6.0 release. 6.0 will be
+the first release to include full WPA support (both supplicant and
+authenticator).
+
+A presentation on the forthcoming multi-bss support was given at BSDCan
+2005. The slides from the talk are available at
+http://www.freebsd.org/~sam/BSDCan2005.pdf. The plan is to commit this
+work to HEAD after 6.0 is released which means the first release that
+will have it is 7.0.
+
+Open tasks:
+
+1.  hostapd needs work to support the IAPP and 802.11i preauthentication
+    protocols (these are simple conversions of existing Linux code).
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Userland programs
+
+OpenBSD dhclient import.
+
+  -------
+  Links
+  -------
+
+Contact: Brooks Davis <brooks@FreeBSD.org>
+Contact: Sam Leffler <sam@FreeBSD.org>
+
+The OpenBSD rewrite of dhclient has been imported, replacing the ISC
+dhclient. The OpenBSD client provides better support for roaming on
+wireless networks and a simpler model of operation. Instead of a single
+dhclient process per system, there is one per network interface. This
+instance automatically goes away in the even of link loss and is
+restarted via devd when link is reacquired. To support this change, many
+aspects of the network interface configuration process were overhauled.
+
+The current code works well in most circumstances, but more testing and
+polishing is needed.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Removing of old basesystem files and directories
+
+  ------- -----------------------------------------------------------------------------
+  Links   
+  Patch   URL: http://www.Leidinger.net/FreeBSD/current-patches/obsolete_removal.diff
+  ------- -----------------------------------------------------------------------------
+
+Contact: Alexander Leidinger <netchild@FreeBSD.org>
+
+FreeBSD lacks a way to remove old/outdated files and directories in the
+basesystem. I have a patch which removes obsolete files in a safe way
+(interactively, since only the administrator really knows if there's a
+need to keep an old file or not; there's a switch for batch-processing).
+This feature may or may not be available for 6.0-RELEASE, depending on
+the decision from the Release Engineering team.
+
+Open tasks:
+
+1.  Respect the NO_* switches and remove those files too. This is easy
+    to do with the current implementation, but isn't needed to commit
+    the removal of obsolete files feature.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Architectures
+
+PowerPC Port
+
+  ---------------------------- ------------------------------------------------
+  Links                        
+  FreeBSD/PPC Platform page.   URL: http://www.freebsd.org/platforms/ppc.html
+  ---------------------------- ------------------------------------------------
+
+Contact: Peter Grehan <grehan@FreeBSD.org>
+
+Florent Thoumie has updated the massively out-of-date platform page.
+Work continues to creating a 6.0 release of the PowerPC port.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Ports
+
+FreshPorts
+
+  ------- ---------------------------------
+  Links   
+          URL: http://www.freshports.org/
+  ------- ---------------------------------
+
+Contact: Dan Langille <dan@langille.org>
+
+The following new features have been added to FreshPorts:
+
+-   Deprecated Ports
+-   Expired Ports
+-   Ports Set To Expire
+-   Display relevant entries from ports/UPDATING on your watch list
+
+Open tasks:
+
+1.  I've noticed that FreshPorts is incorrectly reporting
+    vulnerabilities under a very specific situation . The fix is sitting
+    in BETA, waiting to be moved to production.
+2.  I've been working on added Last-Modified to the headers. At present,
+    there are none. Most of the pages on the BETA website have been
+    completed. I need to move this to production soon.
+3.  Customized news feeds are in the works. You'll be able to create a
+    news feed for each of your watch lists. This work is contingent upon
+    finishing the Last-Modified headers.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Porting v9 of Intels C/C++ Compiler
+
+  -------
+  Links
+  -------
+
+Contact: Alexander Leidinger <netchild@FreeBSD.org>
+
+Intel released version 9 of its C/C++ compiler. Work to port the x86
+version to FreeBSD is in progress as time permits. Porting the EM64T
+(amd64) version is on the TODO list too, but is subject to enough free
+time and access to appropriate hardware.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Update of the Linux userland infrastructure
+
+  -------
+  Links
+  -------
+
+Contact: Alexander Leidinger <netchild@FreeBSD.org>
+Contact: Emulation Mailinglist <emulation@FreeBSD.org>
+
+The cleanup/streamlining and the possibility of overriding the default
+Linux base as reported in the last report happened without major
+problems. Work on the open tasks hasn't started yet, but is scheduled to
+start "soon". If a volunteer wants to spend some hours on one of the
+open tasks, he should tell it on the emulation mailinglist.
+
+Open tasks:
+
+1.  Refactoring the common RPM code in x11-toolkits/linux-gtk/Makefile
+    into bsd.rpm.mk.
+2.  Determining which up-to-date Linux distribution to use as the next
+    default Linux base. Important criteria:
+    -   RPM based (to be able to use the existing infrastructure)
+    -   good track record regarding availability of security fixes
+    -   packages available from several mirror sites
+    -   available for several hardware architectures (e.g. i386, amd64,
+        sparc64; Note: not all architectures have a working linuxolator
+        for their native bit with, but as long as there are no userland
+        bits available, no motivation regarding writing the kernel bits
+        will arise)
+3.  Moving the linuxolator userland to an up-to-date version (see
+    above).
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Vendor / 3rd Party Software
+
+OpenBSD packet filter - pf
+
+  -------
+  Links
+  -------
+
+Contact: Max Laier <mlaier@freebsd.org>
+
+We will have pf as of OpenBSD 3.7 for RELENG_6. Import has been
+completed in early May and FreeBSD release 6.0 will ship with it.
+
+A few serious issues with pfsync on SMP have been discovered since CARP
+is around and more and more people use it on big iron. Everything that
+has been discovered is fixed in HEAD and (if applicable) MFCed back to
+RELENG_5. Some functional changes are undergoing testing right now and
+will be MFCed in the coming days.
+
+With the import of if_bridge from Net/OpenBSD we finally have a bridge
+implementation that allows for stateful filtering as well as IPv6
+filtering. Please see the respective report.
+
+Open tasks:
+
+1.  Shared lock implementation?
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Miscellaneous
+
+BSDCan
+
+  ------- ----------------------------------
+  Links   
+          URL: http://www.bsdcan.org/2005/
+  ------- ----------------------------------
+
+Contact: Dan Langille <dan@langille.org>
+
+The second annual BSDCan conference was well presented, well attended,
+and everyone went away with good stories to tell. If you know anything
+that attended, get them to tell you what they did, who they met with,
+and talks they listened to.
+
+We had 197 people from 15 different countries. That's a strong turnout
+by any definition.
+
+We'll be adding more people to the program committee for BSDCan 2006.
+This job involves prodding and poking people from your respective
+projects. You get them to submit papers. There are a lot of very
+interesting projects out there and not all of them submit a paper.
+
+If you know someone doing interesting work, please let me know and urge
+them to start thinking about BSDCan 2006.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+EuroBSDCon 2005 - Basel
+
+  ----------------- ----------------------------------------
+  Links             
+  Homepage          URL: http://www.eurobsdcon.org/
+  Call for papers   URL: http://www.eurobsdcon.org/cfp.php
+  ----------------- ----------------------------------------
+
+Contact: Information <info@eurobsdcon.org>
+
+The fourth European BSD conference in Basel, Switzerland is a great
+opportunity to present new ideas to the community and to meet some of
+the developers behind the different BSDs.
+
+The two day conference program (Nov 26 and 27) will be complemented by a
+tutorial day preceding the conference (Nov 25).
+
+The program committee is looking for tutorial and paper submissions. For
+details, please see: The call for papers online.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD Security Officer and Security Team
+
+  ------- -----------------------------------------------------------
+  Links   
+          URL: http://www.freebsd.org/security/
+          URL: http://www.freebsd.org/administration.html#t-secteam
+          URL: http://vuxml.freebsd.org/
+  ------- -----------------------------------------------------------
+
+Contact: Security Officer <security-officer@FreeBSD.org>
+Contact: Security Team <security-team@FreeBSD.org>
+
+In May 2005, Remko Lodder joined the FreeBSD Security Team, followed by
+Christian S.J. Peron in July 2005. In the same time period, Gregory
+Shapiro and Josef El-Rayes resigned from the team in order to devote
+their time to other projects. The current Security Team membership is
+published on the web site.
+
+In the time since the last FreeBSD status report, twelve security
+advisories have been issued concerning problems in the base system of
+FreeBSD; of these, six problems were in "contributed" code, while five
+problems were in code maintained within FreeBSD. The Vulnerabilities and
+Exposures Markup Language (VuXML) document has continued to be updated
+by the Security Team and the Ports Committers documenting new
+vulnerabilities in the FreeBSD Ports Collection; since the last status
+report, 97 new entries have been added, bringing the total up to 519.
+
+The following FreeBSD releases are supported by the FreeBSD Security
+Team: FreeBSD 4.10, FreeBSD 4.11, FreeBSD 5.3, and FreeBSD 5.4. Their
+respective End of Life dates are listed on the web site.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+TrustedBSD SEBSD
+
+  --------------------------- -------------------------------------------
+  Links                       
+  TrustedBSD/SEBSD web page   URL: http://www.TrustedBSD.org/sebsd.html
+  --------------------------- -------------------------------------------
+
+Contact: Robert Watson <rwatson@FreeBSD.org>
+
+The TrustedBSD Project has released a new snapshot of "SEBSD", a port of
+NSA's SELinux FLASK and Type Enforcement implementation to FreeBSD based
+on a late 2005 FreeBSD 6.x snapshot. The SEBSD distribution has now been
+updated in Perforce to a recent 6.x snapshot, and a new distribution
+will be made available in the near future.
+
+Work has been performed to merge additional dependencies for SEBSD back
+into the base FreeBSD tree, including most recently, changes to devfs,
+and System V and POSIX IPC.
+
+Open tasks:
+
+1.  Update to new NSA FLASK implementation, which has improved MLS
+    support.
+2.  Merge remaining kernel changes to support SEBSD back to the base
+    FreeBSD CVS repository, including file descriptor labeling and
+    access control (in contrast to file labeling and access control),
+    and categorization of kernel privileges.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+News Home | Status Home
+
+Site Map | Legal Notices | © 1995–2021 The FreeBSD Project. All rights
+reserved.

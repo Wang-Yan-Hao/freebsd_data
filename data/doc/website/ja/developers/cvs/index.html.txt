@@ -1,0 +1,128 @@
+[FreeBSD The Power to Serve]
+
+FreeBSD への寄付
+
+ 
+
+-   ホーム
+
+-   FreeBSD とは
+    -   FreeBSD が初めてという方へ
+    -   特徴
+    -   プロモーション活動
+    -   マーケティング活動
+    -   プライバシーポリシー
+    -   Projects
+    -   Ports
+
+-   FreeBSD の入手
+    -   リリース情報
+    -   リリースエンジニアリング
+
+-   ドキュメント
+    -   FAQ
+    -   ハンドブック
+    -   port 作成者のためのハンドブック
+    -   開発者のためのハンドブック
+    -   Committer's Guide
+    -   マニュアルページ
+    -   Presentations and Papers
+    -   新しい貢献者のためのドキュメンテーションプロジェクト入門
+    -   すべての Books と Articles
+
+-   コミュニティ
+    -   メーリングリスト
+    -   フォーラム
+    -   ユーザグループ
+    -   イベント
+    -   FreeBSD ジャーナル
+    -   Q&A (外部)
+
+-   開発
+    -   プロジェクトアイディア
+    -   Git リポジトリ
+    -   Subversion リポジトリ
+    -   GitHub ミラー
+    -   コードレビュー (Phabricator)
+    -   Wiki
+    -   継続的インテグレーションサービス
+
+-   サポート
+    -   ベンダ
+    -   セキュリティ情報
+    -   障害報告
+    -   障害報告の提出
+    -   ウェブ上の情報
+
+-   財団
+    -   寄付
+    -   ハードウェアの寄贈
+
+-   
+-   開発者のためのハンドブック
+-   Committer's Guide
+-   port 作成者のためのハンドブック
+-   ソースコードリポジトリ
+-   Release Engineering
+-   Platforms
+-   Project Ideas
+-   Contributing
+
+ソースコードリポジトリ
+
+Git
+
+FreeBSD プロジェクトは、ソースを管理するツールに Git を使っています。
+すべての変更は、(その変更目的を説明するログメッセージと共に)
+リポジトリに記録され、以下で述べるウェブインタフェースで簡単に見ることができます。
+
+2020 年 12 月、ベースシステムの開発は Subversion から Git
+に移行しました。 ウェブインタフェース
+を利用してリポジトリを見ることができます。
+
+2020 年 12 月、FreeBSD ドキュメンテーションプロジェクトは、Subversion
+から Git へと移行しました。 ウェブインタフェース を利用して FreeBSD
+ドキュメンテーションプロジェクトの Git
+リポジトリの内容を見ることができます。
+
+2021 年 4 月、FreeBSD の Ports ツリーは、Subversion から Git
+へと移行しました。 ウェブインタフェース
+を利用してリポジトリを見ることができます。
+
+Subversion
+
+FreeBSD プロジェクトは、ソースを管理するツールとして Subversion (略して
+SVN) を使っていました。
+すべての変更は、(その目的を説明するログメッセージと共に)
+リポジトリに記録され、
+以下で述べるウェブインタフェースで簡単に見ることができます。
+
+2008 年 6 月に、ベースシステムの開発は CVS から Subversion
+に移行しました。 2020 年 12 月に Git に開発が移行した後は、stable/11,
+stable/12 およびサポートしているリリースブランチに対する変更を git2svn
+によって変換したコミットのみ記録しています。 ウェブインタフェース
+を利用してリポジトリを見ることができます。
+
+2012 年 5 月に、FreeBSD ドキュメンテーションプロジェクトは CVS から
+Subversion に移行しました。 2020 年 12 月に Subversion から Git
+へ移行後、doc subversion リポジトリには変更は行われていません。
+ウェブインタフェース を利用して FreeBSD
+ドキュメンテーションプロジェクトの SVN
+リポジトリの内容を見ることができます。
+
+2012 年 6 月に、FreeBSD Ports ツリーは、CVS から Subversion
+に移行しました。 2021 年 4 月に Subversion から Git へ移行後、ports
+subversion リポジトリには変更は行われていません。 ウェブインタフェース
+を利用してリポジトリの内容を見ることができます。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+最終更新日: 2021年4月7日 by Ryusuke SUZUKI
+
+法律上の注意事項 | © 1995-2023 FreeBSD プロジェクト All rights reserved.
+The mark FreeBSD is a registered trademark of The FreeBSD Foundation and
+is used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact

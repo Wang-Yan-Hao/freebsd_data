@@ -1,0 +1,947 @@
+
+-    Preface
+    -   Intended Audience
+    -   Fourth Edition
+    -   Third Edition
+    -   Second Edition (2004)
+    -   First Edition (2001)
+    -   Organization of This Book
+    -   Conventions used in this book
+    -   Acknowledgments
+-    Part I. Getting Started
+-    Chapter 1. Introduction
+    -   1.1. Synopsis
+    -   1.2. Welcome to FreeBSD!
+    -   1.3. About the FreeBSD Project
+-    Chapter 2. Installing FreeBSD
+    -   2.1. Synopsis
+    -   2.2. Minimum Hardware Requirements
+    -   2.3. Pre-Installation Tasks
+    -   2.4. Starting the Installation
+    -   2.5. Using bsdinstall
+    -   2.6. Allocating Disk Space
+    -   2.7. Fetching Distribution Files
+    -   2.8. Network Interfaces, Accounts, Time Zone, Services and
+        Hardening
+    -   2.9. Troubleshooting
+    -   2.10. Using the Live CD
+-    Chapter 3. FreeBSD Basics
+    -   3.1. Synopsis
+    -   3.2. Virtual Consoles and Terminals
+    -   3.3. Users and Basic Account Management
+    -   3.4. Permissions
+    -   3.5. Directory Structure
+    -   3.6. Disk Organization
+    -   3.7. Mounting and Unmounting File Systems
+    -   3.8. Processes and Daemons
+    -   3.9. Shells
+    -   3.10. Text Editors
+    -   3.11. Devices and Device Nodes
+    -   3.12. Manual Pages
+-    Chapter 4. Installing Applications: Packages and Ports
+    -   4.1. Synopsis
+    -   4.2. Overview of Software Installation
+    -   4.3. Finding Software
+    -   4.4. Using pkg for Binary Package Management
+    -   4.5. Using the Ports Collection
+    -   4.6. Building Packages with Poudriere
+    -   4.7. Post-Installation Considerations
+    -   4.8. Dealing with Broken Ports
+-    Chapter 5. The X Window System
+    -   5.1. Synopsis
+    -   5.2. Installing Xorg
+    -   5.3. Graphic card drivers
+    -   5.4. Xorg Configuration
+    -   5.5. Using Fonts in Xorg
+-    Chapter 6. Wayland
+    -   6.1. Wayland Synopsis
+    -   6.2. The Wayfire Compositor
+    -   6.3. The Hikari Compositor
+    -   6.4. The Sway Compositor
+    -   6.5. Using Xwayland
+    -   6.6. Remote Desktop Using VNC
+    -   6.7. Wayland Login Manager
+    -   6.8. Useful Utilities
+-    Chapter 7. Network
+    -   7.1. Synopsis
+    -   7.2. Setting up the Network
+    -   7.3. Wired Networks
+    -   7.4. Wireless Networks
+    -   7.5. Hostname
+    -   7.6. DNS
+    -   7.7. Troubleshooting
+-    Part II. Common Tasks
+-    Chapter 8. Desktop Environments
+    -   8.1. Synopsis
+    -   8.2. Desktop Environments
+    -   8.3. Browsers
+    -   8.4. Development tools
+    -   8.5. Desktop office productivity
+    -   8.6. Document Viewers
+    -   8.7. Finance
+-    Chapter 9. Multimedia
+    -   9.1. Synopsis
+    -   9.2. Setting Up the Sound Card
+    -   9.3. Audio players
+    -   9.4. Video players
+    -   9.5. Conferencing and Meetings
+    -   9.6. Image Scanners
+-    Chapter 10. Configuring the FreeBSD Kernel
+    -   10.1. Synopsis
+    -   10.2. Why Build a Custom Kernel?
+    -   10.3. Finding the System Hardware
+    -   10.4. The Configuration File
+    -   10.5. Building and Installing a Custom Kernel
+    -   10.6. If Something Goes Wrong
+-    Chapter 11. Printing
+    -   11.1. Quick Start
+    -   11.2. Printer Connections
+    -   11.3. Common Page Description Languages
+    -   11.4. Direct Printing
+    -   11.5. LPD (Line Printer Daemon)
+    -   11.6. Other Printing Systems
+-    Chapter 12. Linux Binary Compatibility
+    -   12.1. Synopsis
+    -   12.2. Configuring Linux Binary Compatibility
+    -   12.3. Linux userlands
+    -   12.4. Advanced Topics
+-    Chapter 13. WINE
+    -   13.1. Synopsis
+    -   13.2. WINE Overview & Concepts
+    -   13.3. Installing WINE on FreeBSD
+    -   13.4. Running a First WINE Program on FreeBSD
+    -   13.5. Configuring WINE Installation
+    -   13.6. WINE Management GUIs
+    -   13.7. WINE in Multi-User FreeBSD Installations
+    -   13.8. WINE on FreeBSD FAQ
+-    Part III. System Administration
+-    Chapter 14. Configuration and Tuning
+    -   14.1. Synopsis
+    -   14.2. Starting Services
+    -   14.3. Configuring cron(8)
+    -   14.4. Managing Services in FreeBSD
+    -   14.5. Configuring System Logging
+    -   14.6. Configuration Files
+    -   14.7. Tuning with sysctl(8)
+    -   14.8. Tuning Disks
+    -   14.9. Tuning Kernel Limits
+    -   14.10. Adding Swap Space
+    -   14.11. Power and Resource Management
+-    Chapter 15. The FreeBSD Booting Process
+    -   15.1. Synopsis
+    -   15.2. FreeBSD Boot Process
+    -   15.3. Device Hints
+    -   15.4. Shutdown Sequence
+-    Chapter 16. Security
+    -   16.1. Synopsis
+    -   16.2. Introduction
+    -   16.3. One-time Passwords
+    -   16.4. TCP Wrapper
+    -   16.5. Kerberos
+    -   16.6. OpenSSL
+    -   16.7. VPN over IPsec
+    -   16.8. OpenSSH
+    -   16.9. Access Control Lists
+    -   16.10. Monitoring Third Party Security Issues
+    -   16.11. FreeBSD Security Advisories
+    -   16.12. Process Accounting
+    -   16.13. Resource Limits
+    -   16.14. Shared Administration with Sudo
+    -   16.15. Using doas as an alternative to sudo
+-    Chapter 17. Jails
+    -   17.1. Synopsis
+    -   17.2. Terms Related to Jails
+    -   17.3. Creating and Controlling Jails
+    -   17.4. Fine Tuning and Administration
+    -   17.5. Updating Multiple Jails
+    -   17.6. Managing Jails with ezjail
+-    Chapter 18. Mandatory Access Control
+    -   18.1. Synopsis
+    -   18.2. Key Terms
+    -   18.3. Understanding MAC Labels
+    -   18.4. Planning the Security Configuration
+    -   18.5. Available MAC Policies
+    -   18.6. User Lock Down
+    -   18.7. Nagios in a MAC Jail
+    -   18.8. Troubleshooting the MAC Framework
+-    Chapter 19. Security Event Auditing
+    -   19.1. Synopsis
+    -   19.2. Key Terms
+    -   19.3. Audit Configuration
+    -   19.4. Working with Audit Trails
+-    Chapter 20. Storage
+    -   20.1. Synopsis
+    -   20.2. Adding Disks
+    -   20.3. Resizing and Growing Disks
+    -   20.4. USB Storage Devices
+    -   20.5. Creating and Using CD Media
+    -   20.6. Creating and Using DVD Media
+    -   20.7. Creating and Using Floppy Disks
+    -   20.8. Using NTFS Disks
+    -   20.9. Backup Basics
+    -   20.10. Memory Disks
+    -   20.11. File System Snapshots
+    -   20.12. Disk Quotas
+    -   20.13. Encrypting Disk Partitions
+    -   20.14. Encrypting Swap
+    -   20.15. Highly Available Storage (HAST)
+-    Chapter 21. GEOM: Modular Disk Transformation Framework
+    -   21.1. Synopsis
+    -   21.2. RAID0 - Striping
+    -   21.3. RAID1 - Mirroring
+    -   21.4. RAID3 - Byte-level Striping with Dedicated Parity
+    -   21.5. Software RAID Devices
+    -   21.6. GEOM Gate Network
+    -   21.7. Labeling Disk Devices
+    -   21.8. UFS Journaling Through GEOM
+-    Chapter 22. The Z File System (ZFS)
+    -   22.1. What Makes ZFS Different
+    -   22.2. Quick Start Guide
+    -   22.3. zpool Administration
+    -   22.4. zfs Administration
+    -   22.5. Delegated Administration
+    -   22.6. Advanced Topics
+<<<<<<< HEAD
+=======
+    -   22.7. Further Resources
+    -   22.8. ZFS Features and Terminology
+-    Chapter 23. Other File Systems
+    -   23.1. Synopsis
+    -   23.2. Linux® File Systems
+-    Chapter 24. Virtualization
+    -   24.1. Synopsis
+    -   24.2. FreeBSD as a Guest on Parallels Desktop for macOS®
+    -   24.3. FreeBSD as a Guest on VMware Fusion for macOS®
+    -   24.4. FreeBSD as a Guest on VirtualBox™
+    -   24.5. FreeBSD as a Host with VirtualBox™
+    -   24.6. FreeBSD as a Host with bhyve
+    -   24.7. FreeBSD as a Xen™-Host
+-    Chapter 25. Localization - i18n/L10n Usage and Setup
+    -   25.1. Synopsis
+    -   25.2. Using Localization
+    -   25.3. Finding i18n Applications
+    -   25.4. Locale Configuration for Specific Languages
+-    Chapter 26. Updating and Upgrading FreeBSD
+    -   26.1. Synopsis
+    -   26.2. FreeBSD Update
+    -   26.3. Updating Bootcode
+    -   26.4. Updating the Documentation Set
+    -   26.5. Tracking a Development Branch
+    -   26.6. Updating FreeBSD from Source
+    -   26.7. Tracking for Multiple Machines
+-    Chapter 27. DTrace
+    -   27.1. Synopsis
+    -   27.2. Implementation Differences
+    -   27.3. Enabling DTrace Support
+    -   27.4. Using DTrace
+-    Chapter 28. USB Device Mode / USB OTG
+    -   28.1. Synopsis
+    -   28.2. USB Virtual Serial Ports
+    -   28.3. USB Device Mode Network Interfaces
+    -   28.4. USB Virtual Storage Device
+-    Part IV. Network Communication
+-    Chapter 29. Serial Communications
+    -   29.1. Synopsis
+    -   29.2. Serial Terminology and Hardware
+    -   29.3. Terminals
+    -   29.4. Dial-in Service
+    -   29.5. Dial-out Service
+    -   29.6. Setting Up the Serial Console
+-    Chapter 30. PPP
+    -   30.1. Synopsis
+    -   30.2. Configuring PPP
+    -   30.3. Troubleshooting PPP Connections
+    -   30.4. Using PPP over Ethernet (PPPoE)
+    -   30.5. Using PPP over ATM (PPPoA)
+-    Chapter 31. Electronic Mail
+    -   31.1. Synopsis
+    -   31.2. Mail Components
+    -   31.3. Sendmail Configuration Files
+    -   31.4. Changing the Mail Transfer Agent
+    -   31.5. Troubleshooting
+    -   31.6. Advanced Topics
+    -   31.7. Setting Up to Send Only
+    -   31.8. Using Mail with a Dialup Connection
+    -   31.9. SMTP Authentication
+    -   31.10. Mail User Agents
+    -   31.11. Using fetchmail
+    -   31.12. Using procmail
+-    Chapter 32. Network Servers
+    -   32.1. Synopsis
+    -   32.2. The inetd Super-Server
+    -   32.3. Network File System (NFS)
+    -   32.4. Network Information System (NIS)
+    -   32.5. Lightweight Directory Access Protocol (LDAP)
+    -   32.6. Dynamic Host Configuration Protocol (DHCP)
+    -   32.7. Domain Name System (DNS)
+    -   32.8. Apache HTTP Server
+    -   32.9. File Transfer Protocol (FTP)
+    -   32.10. File and Print Services for Microsoft® Windows® Clients
+        (Samba)
+    -   32.11. Clock Synchronization with NTP
+    -   32.12. iSCSI Initiator and Target Configuration
+-    Chapter 33. Firewalls
+    -   33.1. Synopsis
+    -   33.2. Firewall Concepts
+    -   33.3. PF
+    -   33.4. IPFW
+    -   33.5. IPFILTER (IPF)
+    -   33.6. Blacklistd
+-    Chapter 34. Advanced Networking
+    -   34.1. Synopsis
+    -   34.2. Gateways and Routes
+    -   34.3. Virtual Hosts
+    -   34.4. Wireless Advanced Authentication
+    -   34.5. Wireless Ad-hoc Mode
+    -   34.6. USB Tethering
+    -   34.7. Bluetooth
+    -   34.8. Bridging
+    -   34.9. Link Aggregation and Failover
+    -   34.10. Diskless Operation with PXE
+    -   34.11. Common Address Redundancy Protocol (CARP)
+    -   34.12. VLANs
+-    Part V. Appendices
+-    Appendix A. Obtaining FreeBSD
+    -   A.1. Mirrors
+    -   A.2. Using Git
+    -   A.3. Using Subversion
+    -   A.4. CD and DVD Sets
+-    Appendix B. Bibliography
+    -   B.1. FreeBSD Bibliography
+    -   B.2. Security Reference
+    -   B.3. UNIX® History
+    -   B.4. Periodicals, Journals, and Magazines
+-    Appendix C. Resources on the Internet
+    -   C.1. Websites
+    -   C.2. Mailing Lists
+    -   C.3. Usenet Newsgroups
+-    Appendix D. OpenPGP Keys
+    -   D.1. Officers
+-    FreeBSD Glossary
+-    Colophon
+-   
+-   
+
+Book menu
+
+Chapter 9. Multimedia
+
+Table of Contents
+
+-   9.1. Synopsis
+-   9.2. Setting Up the Sound Card
+-   9.3. Audio players
+-   9.4. Video players
+-   9.5. Conferencing and Meetings
+-   9.6. Image Scanners
+
+9.1. Synopsis
+
+The multimedia chapter provides an overview of multimedia support on
+FreeBSD. Multimedia applications and technologies have become an
+integral part of modern computing, and FreeBSD provides robust and
+reliable support for a wide range of multimedia hardware and software.
+This chapter covers various multimedia components such as audio, video,
+and image processing. It also discusses various media formats and
+codecs, as well as tools and applications for multimedia creation and
+playback. Additionally, the chapter covers multimedia system
+configuration, troubleshooting, and optimization. Whether you are a
+multimedia enthusiast or a professional content creator, FreeBSD offers
+a robust platform for multimedia work. This chapter aims to help get the
+most out of FreeBSD’s multimedia capabilities, providing useful
+information and practical examples to help get started.
+
+9.2. Setting Up the Sound Card
+
+By default, FreeBSD will automatically detect the sound card used by the
+system. FreeBSD supports a wide variety of sound cards. The list of
+supported sound cards can be consulted in sound(4).
+
++-----------------------------------+-----------------------------------+
+|                                   | It is only necessary to load the  |
+|                                   | sound card module if FreeBSD has  |
+|                                   | not detected it correctly.        |
++-----------------------------------+-----------------------------------+
+
+Where it is not known which sound card the system has, or which module
+to use, the snd_driver metadriver can be loaded by executing the
+following command:
+
+    # kldload snd_driver
+
+Alternatively, to load the driver as a module at boot time, place the
+following line in /boot/loader.conf:
+
+    snd_driver_load="YES"
+
+9.2.1. Testing Sound
+
+To confirm the sound card is detected the following command can be
+executed:
+
+    % dmesg | grep pcm
+
+The output should be similar to the following:
+
+    pcm0: <Conexant CX20561 (Hermosa) (Analog 2.0+HP/2.0)> at nid 26,22 and 24 on hdaa0
+    pcm1: <Conexant CX20561 (Hermosa) (Internal Analog Mic)> at nid 29 on hdaa0
+
+The status of the sound card may also be checked using this command:
+
+    # cat /dev/sndstat
+
+The output should be similar to the following:
+
+    Installed devices:
+    pcm0: <Conexant CX20561 (Hermosa) (Analog 2.0+HP/2.0)> (play/rec) default
+    pcm1: <Conexant CX20561 (Hermosa) (Internal Analog Mic)> (rec)
+
+If no pcm devices are listed, double-check that the correct device
+driver was loaded. If all goes well, the sound card should now work in
+FreeBSD.
+
+beep(1) can be used to produce some noise, confirming that the sound
+card is working:
+
+    % beep
+
+9.2.2. Mixer
+
+FreeBSD has different utilities to set and display sound card mixer
+values built on the FreeBSD Sound System:
+
++-----------------+-----------------+-----------------+-----------------+
+| Name            | License         | Package         | Toolkit         |
++=================+=================+=================+=================+
+| mixer(8)        | BSD-2           | Included in     | CLI             |
+|                 |                 | base system     |                 |
++-----------------+-----------------+-----------------+-----------------+
+| dsbmixer        | BSD-2           | audio/dsbmixer  | Qt              |
++-----------------+-----------------+-----------------+-----------------+
+| KDE Plasma      | GPL 2.0         | audio/pl        | Qt              |
+| audio widget    |                 | asma5-plasma-pa |                 |
++-----------------+-----------------+-----------------+-----------------+
+| mixertui        | BSD-2           | audio/mixertui  | TUI             |
++-----------------+-----------------+-----------------+-----------------+
+
+: Table 1. Supported mixer packages
+
+9.2.3. Graphics Card Sound
+
+Graphics cards often come with their own integrated sound devices, and
+it may be unclear which is being used as the default device. To confirm,
+run dmesg and look for the pcm entries to identify how the system is
+enumerating the outputs. Execute the following command:
+
+    % dmesg | grep pcm
+
+The output looks something like this:
+
+    pcm0: <HDA NVidia (Unknown) PCM #0 DisplayPort> at cad 0 nid 1 on hdac0
+    pcm1: <HDA NVidia (Unknown) PCM #0 DisplayPort> at cad 1 nid 1 on hdac0
+    pcm2: <HDA NVidia (Unknown) PCM #0 DisplayPort> at cad 2 nid 1 on hdac0
+    pcm3: <HDA NVidia (Unknown) PCM #0 DisplayPort> at cad 3 nid 1 on hdac0
+    hdac1: HDA Codec #2: Realtek ALC889
+    pcm4: <HDA Realtek ALC889 PCM #0 Analog> at cad 2 nid 1 on hdac1
+    pcm5: <HDA Realtek ALC889 PCM #1 Analog> at cad 2 nid 1 on hdac1
+    pcm6: <HDA Realtek ALC889 PCM #2 Digital> at cad 2 nid 1 on hdac1
+    pcm7: <HDA Realtek ALC889 PCM #3 Digital> at cad 2 nid 1 on hdac1
+
+The graphics card (NVIDIA®) has been enumerated before the sound card
+(Realtek®), with the sound card appearing as pcm4. The system can be
+configured to use the sound card as the default device by executing the
+following command:
+
+    # sysctl hw.snd.default_unit=4
+
+To make this change permanent add the next line to /etc/sysctl.conf:
+
+    hw.snd.default_unit=4
+
+9.2.4. Automatically Switching to Headphones
+
+Some systems may struggle with switching between audio outputs, but
+fortunately FreeBSD allows automatic switchover to be configured in
+device.hints.
+
+Identify how the system is enumerating the audio outputs by executing
+the following command:
+
+    % dmesg | grep pcm
+
+The output looks something like this:
+
+    pcm0: <Realtek ALC892 Analog> at nid 23 and 26 on hdaa0
+    pcm1: <Realtek ALC892 Right Analog Headphones> at nid 22 on hdaa0
+
+Add the following lines to /boot/device.hints:
+
+    hint.hdac.0.cad0.nid22.config="as=1 seq=15 device=Headphones"
+    hint.hdac.0.cad0.nid26.config="as=2 seq=0 device=speakers"
+
++-----------------------------------+-----------------------------------+
+|                                   | Keep in mind that these values    |
+|                                   | are for the example indicated     |
+|                                   | above. They may vary depending on |
+|                                   | the system.                       |
++-----------------------------------+-----------------------------------+
+
+9.2.5. Troubleshooting Sound
+
+Some common error messages and their solutions:
+
++-----------------------------------+-----------------------------------+
+| Error                             | Solution                          |
++===================================+===================================+
+| xxx: can’t open /dev/dsp!         | Type fstat | grep dsp to check if |
+|                                   | another application is holding    |
+|                                   | the device open. Noteworthy       |
+|                                   | troublemakers are esound and      |
+|                                   | KDE’s sound support.              |
++-----------------------------------+-----------------------------------+
+
+: Table 2. Common Error Messages
+
+Programs using audio/pulseaudio might need to restart the
+audio/pulseaudio daemon for the changes in hw.snd.default_unit to take
+effect. Alternatively, audio/pulseaudio settings can be changed on the
+fly. pacmd(1) opens a command line connection to the audio/pulseaudio
+daemon:
+
+    # pacmd
+    Welcome to PulseAudio 14.2! Use "help" for usage information.
+    >>>
+
+The following command changes the default sink to card number 4 as in
+the previous example:
+
+    set-default-sink 4
+
++-----------------------------------+-----------------------------------+
+|                                   | Do not use the exit command to    |
+|                                   | exit the command line interface.  |
+|                                   | That will kill the                |
+|                                   | audio/pulseaudio daemon. Use      |
+|                                   | Ctrl+D instead.                   |
++-----------------------------------+-----------------------------------+
+
+9.3. Audio players
+
+This section introduces some of the software available from the FreeBSD
+Ports Collection which can be used for audio playback.
+
++-----------------+-----------------+-----------------+-----------------+
+| Name            | License         | Package         | Toolkit         |
++=================+=================+=================+=================+
+| Elisa           | LGPL 3.0        | audio/elisa     | Qt              |
++-----------------+-----------------+-----------------+-----------------+
+| GNOME Music     | GPL 2.0         | au              | GTK+            |
+|                 |                 | dio/gnome-music |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Audacious       | BSD-2           | multi           | Qt              |
+|                 |                 | media/audacious |                 |
++-----------------+-----------------+-----------------+-----------------+
+| MOC (music on   | GPL 2.0         | audio/moc       | TUI             |
+| console)        |                 |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+: Table 3. Audio players packages
+
+9.3.1. Elisa
+
+Elisa is a music player developed by the KDE community that strives to
+be simple and nice to use.
+
+To install Elisa, execute:
+
+    # pkg install elisa
+
+9.3.2. GNOME Music
+
+GNOME Music is the new GNOME music playing application. It aims to
+combine an elegant and immersive browsing experience with simple and
+straightforward controls.
+
+To install GNOME Music, execute:
+
+    # pkg install gnome-music
+
+9.3.3. Audacious
+
+Audacious is an open source audio player. A descendant of XMMS, it plays
+your music how you want it, without stealing away your computer’s
+resources from other tasks.
+
+To install Audacious, execute:
+
+    # pkg install audacious-qt6 audacious-plugins-qt6
+
++-----------------------------------+-----------------------------------+
+|                                   | Audacious supports OSS natively,  |
+|                                   | but must be configured in the     |
+|                                   | settings on the Audio tab.        |
++-----------------------------------+-----------------------------------+
+
+9.3.4. MOC (music on console)
+
+MOC (music on console) is a console audio player designed to be powerful
+and easy to use.
+
+MOC plays smoothly, regardless of system or I/O load, because it handles
+the output buffer in a separate thread. It does not cause gaps between
+files, because the next file to be played is pre-cached while playing
+the current file.
+
+To install MOC (music on console), execute:
+
+    # pkg install moc
+
+9.4. Video players
+
+This section introduces some of the software available from the FreeBSD
+Ports Collection which can be used for video playback.
+
++-----------------+-----------------+-----------------+-----------------+
+| Name            | License         | Package         | Toolkit         |
++=================+=================+=================+=================+
+| MPlayer         | GPL 2.0         | mul             | CLI             |
+|                 |                 | timedia/mplayer |                 |
++-----------------+-----------------+-----------------+-----------------+
+| SMPlayer        | GPL 2.0         | mult            | Qt              |
+|                 |                 | imedia/smplayer |                 |
++-----------------+-----------------+-----------------+-----------------+
+| VLC media       | GPL 2.0         | multimedia/vlc  | Qt              |
+| player          |                 |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Kodi (XBMC)     | GPL 2.0         | multimedia/kodi | X11             |
++-----------------+-----------------+-----------------+-----------------+
+
+: Table 4. Video players packages
+
+9.4.1. MPlayer
+
+MPlayer is a multimedia player and encoder suite which runs on many
+platforms and works on the command line. It plays a terrific number of
+different file formats and codecs including popular DivX, XviD, H.264
+streams as well as DVD and SVCDs along with many popular audio codecs.
+
+To install MPlayer, execute:
+
+    # pkg install mplayer
+
+For examples of how MPlayer works see mplayer(1).
+
+9.4.2. SMPlayer
+
+SMPlayer intends to be a complete front-end for MPlayer, from basic
+features like playing videos, DVDs, and VCDs to more advanced features
+like support for MPlayer filters and more.
+
+To install SMPlayer, execute:
+
+    # pkg install smplayer
+
+9.4.3. VLC media player
+
+VLC media player is a highly portable multimedia player for various
+audio and video formats (MPEG-1, MPEG-2, MPEG-4, DivX, mp3, ogg, and
+more) as well as DVD’s, VCD’s, and various streaming protocols. It can
+also be used as a server to stream in unicast or multicast in IPv4 or
+IPv6 on a high-bandwidth network. VLC also has the ability to transcode
+media on-the-fly for streaming or saving to disk.
+
+To install VLC, execute:
+
+    # pkg install vlc
+
+9.4.4. Kodi (XBMC)
+
+Kodi (formerly known as XBMC) is a free and open source cross-platform
+media-player and entertainment hub. It allows users to play and view
+most videos, music, podcasts, and other digital media files from local
+and network storage media and the internet.
+
+To install Kodi, execute:
+
+    # pkg install kodi
+
+9.5. Conferencing and Meetings
+
+A FreeBSD desktop environment can be used to join video conferences.
+This section will explain how to configure the webcam and which
+videoconferencing applications are supported on FreeBSD.
+
+9.5.1. Setting Up the Webcam
+
+To allow FreeBSD access to the webcam and perform its configuration it
+is necessary to install certain utilities:
+
+-   multimedia/webcamd is a daemon that enables the use of hundreds of
+    different USB based webcam and DVB USB devices.
+
+-   multimedia/pwcview is an application that can be used to view the
+    video stream of the webcam.
+
+To install the required utilities, execute:
+
+    # pkg install webcamd pwcview
+
+Enable the webcamd(8) service in /etc/rc.conf to start it at system
+boot:
+
+    # sysrc webcamd_enable="YES"
+
+The user must belong to the webcamd group. To add the user to webcamd
+group execute the following command:
+
+    # pw groupmod webcamd -m username
+
+Since multimedia/webcamd needs the cuse(3) module this module must be
+loaded by executing the following command:
+
+    # kldload cuse
+
+To load cuse(3) at system boot, execute the command:
+
+    # sysrc kld_list += "cuse"
+
+Once the utilities have been installed the list of available webcams can
+be shown with webcamd(8):
+
+    # webcamd -l
+
+The output should be similar to the following:
+
+    webcamd [-d ugen0.2] -N SunplusIT-Inc-HP-TrueVision-HD-Camera -S unknown -M 0 (1)
+    webcamd [-d ugen1.3] -N Realtek-802-11n-WLAN-Adapter -S 00e04c000001 -M 0
+
+  --- ------------------
+  1   Available webcam
+  --- ------------------
+
+Configure the available webcam executing the following command:
+
+    # sysrc webcamd_0_flags="-d ugen0.2" (1)
+
++-----------------------------------+-----------------------------------+
+|                                   | Note here that if this is a       |
+|                                   | plug-and-play USB webcam,         |
+|                                   | changing the USB port to which it |
+|                                   | is connected will change the      |
+|                                   | output from webcamd -l, and the   |
+|                                   | entry in rc.conf might need to be |
+|                                   | updated. For laptops that use USB |
+|                                   | integrated webcams, this should   |
+|                                   | not be an issue.                  |
++-----------------------------------+-----------------------------------+
+
+The webcamd(8) service must be started by executing the following
+command:
+
+    # service webcamd start
+
+The output should be similar to the following:
+
+    Starting webcamd.
+    webcamd 1616 - - Attached to ugen0.2[0]
+
+multimedia/pwcview can be used to check the proper functioning of the
+webcam. The following command can be used to execute multimedia/pwcview:
+
+    % pwcview -f 30 -s vga
+
+Then multimedia/pwcview will display the webcam:
+
+[pwcview showing Absolute FreeBSD 3rd edition as an example]
+
+9.5.2. Meetings software status
+
+FreeBSD currently supports the following tools used to carry out
+videoconferences.
+
++-----------------+-----------------+-----------------+-----------------+
+| Name            | Firefox status  | Chromium status | Website         |
++=================+=================+=================+=================+
+| Microsoft Teams | Does not work   | Works           | https:/         |
+|                 |                 |                 | /teams.live.com |
++-----------------+-----------------+-----------------+-----------------+
+| Google Meet     | Does not work   | Works           | https://m       |
+|                 |                 |                 | eet.google.com/ |
++-----------------+-----------------+-----------------+-----------------+
+| Zoom            | Works           | Works           | https://zoom.us |
++-----------------+-----------------+-----------------+-----------------+
+| Jitsi           | Does not work   | Works           | https           |
+|                 |                 |                 | ://meet.jit.si/ |
++-----------------+-----------------+-----------------+-----------------+
+| BigBlueButton   | Does not work   | Works           | https://big     |
+|                 |                 |                 | bluebutton.org/ |
++-----------------+-----------------+-----------------+-----------------+
+
+: Table 5. Meeting software
+
+9.6. Image Scanners
+
+In FreeBSD, access to image scanners is provided by SANE (Scanner Access
+Now Easy), which is available in the FreeBSD Ports Collection.
+
+9.6.1. Checking the Scanner
+
+Before attempting any configuration it is important to check the scanner
+is supported by SANE.
+
+With the scanner connected, run the following command to get all
+connected USB devices:
+
+    # usbconfig list
+
+The output should be similar to the following:
+
+    ugen4.2: <LITE-ON Technology USB NetVista Full Width Keyboard.> at usbus4, cfg=0 md=HOST spd=LOW (1.5Mbps) pwr=ON (70mA)
+    ugen4.3: <Logitech USB Optical Mouse> at usbus4, cfg=0 md=HOST spd=LOW (1.5Mbps) pwr=ON (100mA)
+    ugen3.2: <HP Deskjet 1050 J410 series> at usbus3, cfg=0 md=HOST spd=HIGH (480Mbps) pwr=ON (2mA)
+
+Run the following command to obtain the idVendor and the idProduct:
+
+    # usbconfig -d 3.2 dump_device_desc
+
++-----------------------------------+-----------------------------------+
+|                                   | Note here that the scanner is a   |
+|                                   | plug-and-play device, and         |
+|                                   | changing the USB port to which it |
+|                                   | is connected will change the      |
+|                                   | output from usbconfig list.       |
++-----------------------------------+-----------------------------------+
+
+The output should be similar to the following:
+
+    ugen3.2: <HP Deskjet 1050 J410 series> at usbus3, cfg=0 md=HOST spd=HIGH (480Mbps) pwr=ON (2mA)
+
+    bLength = 0x0012
+    bDescriptorType = 0x0001
+    bcdUSB = 0x0200
+    bDeviceClass = 0x0000  <Probed by interface class>
+    bDeviceSubClass = 0x0000
+    bDeviceProtocol = 0x0000
+    bMaxPacketSize0 = 0x0040
+    idVendor = 0x03f0
+    idProduct = 0x8911
+    bcdDevice = 0x0100
+    iManufacturer = 0x0001  <HP>
+    iProduct = 0x0002  <Deskjet 1050 J410 series>
+    bNumConfigurations = 0x0001
+
+Once the idVendor and the idProduct have been obtained, it is necessary
+to check in the list of supported devices of SANE if the scanner is
+supported by filtering by the idProduct.
+
+9.6.2. SANE Configuration
+
+SANE provides the access to the scanner via backends. To be able to scan
+with FreeBSD the graphics/sane-backends package must be installed by
+running the following command:
+
+    # pkg install sane-backends
+
++-----------------------------------+-----------------------------------+
+|                                   | Some USB scanners require         |
+|                                   | firmware to be loaded. Like the   |
+|                                   | HP scanner used in the example    |
+|                                   | above, which needs the package    |
+|                                   | print/hplip installed.            |
++-----------------------------------+-----------------------------------+
+
+After installing the necessary packages devd(8) must be configured to
+allow FreeBSD access to the scanner.
+
+Add the saned.conf file to /usr/local/etc/devd/saned.conf with the
+following content:
+
+    notify 100 {
+            match "system" "USB";
+            match "subsystem" "INTERFACE";
+            match "type" "ATTACH";
+            match "cdev" "ugen[0-9].[0-9]";
+            match "vendor" "0x03f0"; (1)
+            match "product" "0x8911"; (2)
+            action "chown -L cups:saned /dev/\$cdev && chmod -L 660 /dev/\$cdev";
+    };
+
+  --- ---------------------------------------------------------------------------------------------------------
+  1   vendor: Is the idVendor obtained previously by running the usbconfig -d 3.2 dump_device_desc command.
+  2   product: Is the idProduct obtained previously by running the usbconfig -d 3.2 dump_device_desc command.
+  --- ---------------------------------------------------------------------------------------------------------
+
+After that devd(8) must be restarted by running the following command:
+
+    # service devd restart
+
+The SANE backends include scanimage(1) which can be used to list the
+devices and perform an image acquisition.
+
+Execute scanimage(1) with -L argument to list the scanner devices:
+
+    # scanimage -L
+
+The output should be similar to the following:
+
+    device `hpaio:/usb/Deskjet_1050_J410_series?serial=XXXXXXXXXXXXXX' is a Hewlett-Packard Deskjet_1050_J410_series all-in-one
+
+If scanimage(1) is not able to identify the scanner, this message will
+appear:
+
+    No scanners were identified. If you were expecting something different,
+    check that the scanner is plugged in, turned on and detected by the
+    sane-find-scanner tool (if appropriate). Please read the documentation
+    which came with this software (README, FAQ, manpages).
+
+Once scanimage(1) sees the scanner, the configuration is complete and
+the scanner is now ready to use.
+
+To activate the service and have it run at boot execute the following
+command:
+
+    # sysrc saned_enable="YES"
+
+While scanimage(1) can be used to perform an image acquisition from the
+command line, it is often preferable to use a graphical interface to
+perform image scanning.
+
++----------------------+----------------------+-----------------------+
+| Name                 | License              | Package               |
++======================+======================+=======================+
+| skanlite             | GPL 2.0              | graphics/skanlite     |
++----------------------+----------------------+-----------------------+
+| GNOME Simple Scan    | GPL 3.0              | graphics/simple-scan  |
++----------------------+----------------------+-----------------------+
+| XSANE                | GPL 2.0              | graphics/xsane        |
++----------------------+----------------------+-----------------------+
+
+: Table 6. Graphical scanner programs
+
+------------------------------------------------------------------------
+
+Last modified on: July 6, 2023 by Sergio Carlavilla Delgado
+
+Prev
+
+Home
+
+Next
+
+Table of Contents
+
+-   9.1. Synopsis
+-   9.2. Setting Up the Sound Card
+-   9.3. Audio players
+-   9.4. Video players
+-   9.5. Conferencing and Meetings
+-   9.6. Image Scanners
+
+------------------------------------------------------------------------
+
+Resources
+
+-   Download PDF
+-   Edit this page
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+

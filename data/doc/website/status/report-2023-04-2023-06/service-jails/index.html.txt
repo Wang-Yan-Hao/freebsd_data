@@ -1,0 +1,128 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Service Jails - automatic jailing of rc.d services
+
+Links:
+
+D40369: Extend /usr/bin/service with the possibility to set ENV vars
+URL: https://reviews.freebsd.org/D40369
+D40370: Infrastructure for automatic jailing of rc.d-services URL:
+https://reviews.freebsd.org/D40370
+D40371: automatic service jails: some setup for full functionality of
+the services in automatic service jails URL:
+https://reviews.freebsd.org/D40371
+
+Contact: Alexander Leidinger <netchild@FreeBSD.org>
+
+Service Jails are an extension to the rc system which allows automatic
+jailing of rc.d services. Service jails inherit the filesystem of the
+parent host or jail, but use all the other limits of a jail (process
+visibility, restricted network access, filesystem mounting permissions,
+sysvipc, …​) by default. Additional configuration allows to inherit the
+IPs of the parent, sysvipc, memory page locking, and use of the bhyve
+virtual machine monitor (vmm(4)).
+
+If you want to put e.g. local_unbound into a service jail and allow IPv4
+and IPv6 access, you simply have to change rc.conf to have
+
+    local_unbound_svcj_options=net_basic
+    local_unbound_svcj=YES
+
+While this doesn’t have the same security benefits of a manual jail
+setup with a separate filesystem and IP/VNET, it is much easier to setup
+while providing some of the security benefits of a jail like hiding
+other processes of the same user.
+
+The patches in the links are a rewrite of what I presented in 2019. The
+main difference is that an ENV variable is used to do some more rational
+tracking and as such requires a change to service(8).
+
+My intent is to commit D40369 before the branch of 14-stable (which may
+have happened already when you read this). I will not commit D40370 and
+D40371 before 14.0 is released and both would benefit of some more eyes
+looking at them.
+
+------------------------------------------------------------------------
+
+Last modified on: July 5, 2023 by Alexander Leidinger
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

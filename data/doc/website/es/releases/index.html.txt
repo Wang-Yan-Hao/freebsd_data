@@ -1,0 +1,165 @@
+[FreeBSD The Power to Serve]
+
+Donar a FreeBSD
+
+ 
+
+-   Inicio
+
+-   Acerca de FreeBSD
+    -   Introduccion
+    -   Características
+    -   Apoyo
+    -   Marketing
+    -   Política de privacidad
+    -   Proyectos
+    -   Ports
+
+-   Descargar FreeBSD
+    -   Información de Versiones
+    -   Ingeniería de Versiones
+
+-   Documentación
+    -   FAQ
+    -   Manual
+    -   Manual del Porter
+    -   Manual del desarrollador
+    -   Guía del Committer
+    -   Manuales en línea
+    -   Presentaciones y Trabajos
+    -   Introducción al Proyecto de Documentación
+    -   Todos los libros y artículos
+
+-   Comunidad
+    -   Listas de correo
+    -   Foros
+    -   Grupos de usuarios
+    -   Eventos
+    -   FreeBSD Journal
+    -   Q&A (externo)
+
+-   Desarrolladores
+    -   Ideas para proyectos
+    -   Git Repository
+    -   Repositorio Subversion
+    -   Git Mirror
+    -   Revisiones de Código (Phabricator)
+    -   Wiki
+    -   Servicio de integración continua
+
+-   Soporte
+    -   Distribuidores comerciales
+    -   Información de seguridad
+    -   Informes de errores
+    -   Envío informes de error
+    -   Recursos Web
+
+-   Fundación
+    -   Donaciones monetarias
+    -   Donaciones hardware
+
+-   Descargar FreeBSD
+-   Información de Versiones
+    -   Versiones de Producción:
+        12.4
+    -   Versiones de Producción:
+        13.1
+    -   Versiones de Producción:
+        13.2
+-   Versiones Instantáneas
+    -   Próxima Versión:
+        14.0
+-   Aplicaciones Portadas
+
+Información de releases
+
+[FreeBSD Releases]
+
+Para conocer las últimas noticias sobre las releases de FreeBSD, por
+favor, mira la página Newsflash.
+
+Releases actuales
+
+Release 12.0 (Octubre 2003) Anuncio : Notas de la Release : Errata
+
+La última release de la rama FreeBSD-stable también está disponible. Por
+favor, mira en Obtener FreeBSD para los detalles.
+
+Releases futuras
+
+Continuaremos creando nuevas releases de nuestras ramas FreeBSD-stable y
+FreeBSD-current.
+
+Releases Pasadas
+
+-   4.2 (Noviembre, 2000) Anuncio: Notas de la Release: Errata
+
+-   4.1.1 (Septiembre, 2000) Anuncio : Notas de la Release : Errata
+
+-   4.1 (Julio, 2000) Anuncio: Notas de la Release: Errata
+
+-   4.0 (Marzo, 2000) Anuncio: Notas de la Release: Errata
+
+-   3.5 (Junio, 2000) Anuncio: Notas de la Release: Errata
+
+-   3.4 (Diciembre, 1999) Anuncio: Notas de la Release: Errata
+
+-   Release 3.3 (Sep, 1999) Anuncio : Notas de la Release : Errata.
+
+-   Release 3.2 (Mayo, 1999) Anuncio : Notas de la Release : Errata.
+
+-   3.1 (Febrero, 1999) Anuncio : Notas de la Release : Errata
+
+-   3.0 (Octubre, 1998) Anuncio : Notas de la Release : Errata.
+
+-   2.2.8 (Diciembre, 1998 [final 2.2.x release]) Anuncio : Notas de la
+    Release : Errata.
+
+-   2.2.7 (Julio, 1998) Anuncio : Notas de la Release : Errata.
+
+-   2.2.6 (Marzo, 1998) Anuncio : Notas de la Release : Errata List
+
+-   2.2.5 (Octubre, 1997) Anuncio : Notas de la Release : Errata
+
+-   2.2.2 (Mayo, 1997) Notas de la Release : Errata
+
+-   2.2.1 (Abril, 1997) Notas de la Release
+
+-   2.2 (Marzo, 1997) Anuncio : Notas de la Release
+
+-   2.1.7 (Febrero, 1997) Anuncio : Notas de la Release
+
+-   2.1.6 (Diciembre, 1996) Anuncio : Notas de la Release
+
+-   2.1.5 (Julio, 1996) Anuncio : Notas de la Release
+
+-   2.1 (Noviembre, 1995) Anuncio : Notas de la Release
+
+-   2.0.5 (Junio, 1995) Anuncio : Notas de la Release
+
+-   2.0 (Noviembre, 1994) Anuncio : Notas de la Release
+
+-   1.1.5.1 (Julio, 1994)
+
+-   1.1.5 Notas de la Release
+
+-   1.1 (Mayo, 1994) Notas de la Release
+
+-   1.0 (Diciembre, 1993)
+
+Estadísticas de uso de las Releases
+
+Una muestra del uso de la release actual del FreeBSD estáa disponible en
+http://www.freebsd.org/statistic/release_usage/1999/.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 de junio de 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 El Proyecto FreeBSD Todos los derechos
+reservados. La marca FreeBSD es una marca registrada de la Fundación
+FreeBSD es es utilizada por el Proyecto FreeBSD con su permiso La
+Fundación FreeBSD. Contact

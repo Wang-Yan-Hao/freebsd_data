@@ -1,0 +1,645 @@
+
+-    Chapter 1. Introduction
+-    Chapter 2. Making a New Port
+-    Chapter 3. Quick Porting
+    -   3.1. Writing the Makefile
+    -   3.2. Writing the Description Files
+    -   3.3. Creating the Checksum File
+    -   3.4. Testing the Port
+    -   3.5. Checking the Port with portlint
+    -   3.6. Submitting the New Port
+-    Chapter 4. Slow Porting
+    -   4.1. How Things Work
+    -   4.2. Getting the Original Sources
+    -   4.3. Modifying the Port
+    -   4.4. Patching
+    -   4.5. Configuring
+    -   4.6. Handling User Input
+-    Chapter 5. Configuring the Makefile
+    -   5.1. The Original Source
+    -   5.2. Naming
+    -   5.3. Categorization
+    -   5.4. The Distribution Files
+    -   5.5. MAINTAINER
+    -   5.6. COMMENT
+    -   5.7. Project website
+    -   5.8. Licenses
+    -   5.9. PORTSCOUT
+    -   5.10. Dependencies
+    -   5.11. Slave Ports and MASTERDIR
+    -   5.12. Man Pages
+    -   5.13. Info Files
+    -   5.14. Makefile Options
+    -   5.15. Specifying the Working Directory
+    -   5.16. Conflict Handling
+    -   5.17. Installing Files
+    -   5.18. Use BINARY_ALIAS to Rename Commands Instead of Patching
+        the Build
+-    Chapter 6. Special Considerations
+    -   6.1. Staging
+    -   6.2. Bundled Libraries
+    -   6.3. Shared Libraries
+    -   6.4. Ports with Distribution Restrictions or Legal Concerns
+    -   6.5. Building Mechanisms
+    -   6.6. Using GNU Autotools
+    -   6.7. Using GNU gettext
+    -   6.8. Using Perl
+    -   6.9. Using X11
+    -   6.10. Using GNOME
+    -   6.11. GNOME Components
+    -   6.12. Using Qt
+    -   6.13. Using KDE
+    -   6.14. Using LXQt
+    -   6.15. Using Java
+    -   6.16. Web Applications, Apache and PHP
+    -   6.17. Using Python
+    -   6.18. Using Tcl/Tk
+    -   6.19. Using SDL
+    -   6.20. Using wxWidgets
+    -   6.21. Using Lua
+    -   6.22. Using iconv
+    -   6.23. Using Xfce
+    -   6.24. Using Budgie
+    -   6.25. Using Databases
+    -   6.26. Starting and Stopping Services (rc Scripts)
+    -   6.27. Adding Users and Groups
+    -   6.28. Ports That Rely on Kernel Sources
+    -   6.29. Go Libraries
+    -   6.30. Haskell Libraries
+    -   6.31. Shell Completion Files
+-    Chapter 7. Flavors
+    -   7.1. An Introduction to Flavors
+    -   7.2. Using FLAVORS
+    -   7.3. USES=php and Flavors
+    -   7.4. USES=python and Flavors
+    -   7.5. USES=lua and Flavors
+-    Chapter 8. Advanced pkg-plist Practices
+    -   8.1. Changing pkg-plist Based on Make Variables
+    -   8.2. Empty Directories
+    -   8.3. Configuration Files
+    -   8.4. Dynamic Versus Static Package List
+    -   8.5. Automated Package List Creation
+    -   8.6. Expanding Package List with Keywords
+-    Chapter 9. pkg-*
+    -   9.1. pkg-message
+    -   9.2. pkg-install, pkg-pre-install, and pkg-post-install
+    -   9.3. pkg-deinstall, pkg-pre-deinstall, and pkg-post-deinstall
+    -   9.4. Changing the Names of pkg-*
+    -   9.5. Making Use of SUB_FILES and SUB_LIST
+-    Chapter 10. Testing the Port
+    -   10.1. Running make describe
+    -   10.2. Portclippy / Portfmt
+    -   10.3. Portlint
+    -   10.4. Port Tools
+    -   10.5. PREFIX and DESTDIR
+    -   10.6. poudriere
+-    Chapter 11. Upgrading a Port
+    -   11.1. Using Git to Make Patches
+    -   11.2. UPDATING and MOVED
+-    Chapter 12. Security
+    -   12.1. Why Security is So Important
+    -   12.2. Fixing Security Vulnerabilities
+    -   12.3. Keeping the Community Informed
+-    Chapter 13. Dos and Don'ts
+    -   13.1. Introduction
+    -   13.2. WRKDIR
+    -   13.3. WRKDIRPREFIX
+    -   13.4. Differentiating Operating Systems and OS Versions
+    -   13.5. Writing Something After bsd.port.mk
+    -   13.6. Use the exec Statement in Wrapper Scripts
+    -   13.7. Do Things Rationally
+    -   13.8. Respect Both CC and CXX
+    -   13.9. Respect CFLAGS
+    -   13.10. Verbose Build Logs
+    -   13.11. Feedback
+    -   13.12. README.html
+    -   13.13. Marking a Port Not Installable with BROKEN, FORBIDDEN, or
+        IGNORE
+    -   13.14. Architectural Considerations
+    -   13.15. Marking a Port for Removal with DEPRECATED or
+        EXPIRATION_DATE
+    -   13.16. Avoid Use of the .error Construct
+    -   13.17. Usage of sysctl
+    -   13.18. Rerolling Distfiles
+    -   13.19. Use POSIX Standards
+    -   13.20. Miscellanea
+-    Chapter 14. A Sample Makefile
+-    Chapter 15. Order of Variables in Port Makefiles
+    -   15.1. PORTNAME Block
+    -   15.2. PATCHFILES Block
+    -   15.3. MAINTAINER Block
+    -   15.4. LICENSE Block
+    -   15.5. Generic BROKEN/IGNORE/DEPRECATED Messages
+    -   15.6. The Dependencies Block
+    -   15.7. Flavors
+    -   15.8. USES and USE_x
+    -   15.9. Standard bsd.port.mk Variables
+    -   15.10. Options and Helpers
+    -   15.11. The Rest of the Variables
+    -   15.12. The Targets
+-    Chapter 16. Keeping Up
+    -   16.1. FreshPorts
+    -   16.2. The Web Interface to the Source Repository
+    -   16.3. The FreeBSD Ports Mailing List
+    -   16.4. The FreeBSD Port Building Cluster
+    -   16.5. Portscout: the FreeBSD Ports Distfile Scanner
+-    Chapter 17. Using USES Macros
+    -   17.1. An Introduction to USES
+    -   17.2. 7z
+    -   17.3. ada
+    -   17.4. autoreconf
+    -   17.5. blaslapack
+    -   17.6. bdb
+    -   17.7. bison
+    -   17.8. budgie
+    -   17.9. cabal
+    -   17.10. cargo
+    -   17.11. charsetfix
+    -   17.12. cmake
+    -   17.13. compiler
+    -   17.14. cpe
+    -   17.15. cran
+    -   17.16. desktop-file-utils
+    -   17.17. desthack
+    -   17.18. display
+    -   17.19. dos2unix
+    -   17.20. drupal
+    -   17.21. eigen
+    -   17.22. elfctl
+    -   17.23. erlang
+    -   17.24. fakeroot
+    -   17.25. fam
+    -   17.26. firebird
+    -   17.27. fonts
+    -   17.28. fortran
+    -   17.29. fuse
+    -   17.30. gem
+    -   17.31. gettext
+    -   17.32. gettext-runtime
+    -   17.33. gettext-tools
+    -   17.34. ghostscript
+    -   17.35. gl
+    -   17.36. gmake
+    -   17.37. gnome
+    -   17.38. go
+    -   17.39. gperf
+    -   17.40. grantlee
+    -   17.41. groff
+    -   17.42. gssapi
+    -   17.43. gstreamer
+    -   17.44. horde
+    -   17.45. iconv
+    -   17.46. imake
+    -   17.47. kde
+    -   17.48. kmod
+    -   17.49. ldap
+    -   17.50. lha
+    -   17.51. libarchive
+    -   17.52. libedit
+    -   17.53. libtool
+    -   17.54. linux
+    -   17.55. llvm
+    -   17.56. localbase
+    -   17.57. lua
+    -   17.58. luajit
+    -   17.59. lxqt
+    -   17.60. magick
+    -   17.61. makeinfo
+    -   17.62. makeself
+    -   17.63. mate
+    -   17.64. meson
+    -   17.65. metaport
+    -   17.66. minizip
+    -   17.67. mysql
+    -   17.68. mono
+    -   17.69. motif
+    -   17.70. ncurses
+    -   17.71. nextcloud
+    -   17.72. ninja
+    -   17.73. nodejs
+    -   17.74. objc
+    -   17.75. octave
+    -   17.76. openal
+    -   17.77. pathfix
+    -   17.78. pear
+    -   17.79. perl5
+    -   17.80. pgsql
+    -   17.81. php
+    -   17.82. pkgconfig
+    -   17.83. pure
+    -   17.84. pyqt
+    -   17.85. pytest
+    -   17.86. python
+    -   17.87. qmail
+    -   17.88. qmake
+    -   17.89. qt
+    -   17.90. qt-dist
+    -   17.91. readline
+    -   17.92. ruby
+    -   17.93. samba
+    -   17.94. scons
+    -   17.95. shared-mime-info
+    -   17.96. shebangfix
+    -   17.97. sqlite
+    -   17.98. ssl
+    -   17.99. tar
+    -   17.100. tcl
+    -   17.101. terminfo
+    -   17.102. tex
+    -   17.103. tk
+    -   17.104. uidfix
+    -   17.105. uniquefiles
+    -   17.106. vala
+    -   17.107. varnish
+    -   17.108. webplugin
+    -   17.109. xfce
+    -   17.110. xorg
+    -   17.111. xorg-cat
+    -   17.112. zip
+-    Chapter 18. __FreeBSD_version Values
+    -   18.1. FreeBSD 14 Versions
+    -   18.2. FreeBSD 13 Versions
+    -   18.3. FreeBSD 12 Versions
+    -   18.4. FreeBSD 11 Versions
+    -   18.5. FreeBSD 10 Versions
+    -   18.6. FreeBSD 9 Versions
+    -   18.7. FreeBSD 8 Versions
+    -   18.8. FreeBSD 7 Versions
+    -   18.9. FreeBSD 6 Versions
+    -   18.10. FreeBSD 5 Versions
+    -   18.11. FreeBSD 4 Versions
+    -   18.12. FreeBSD 3 Versions
+    -   18.13. FreeBSD 2.2 Versions
+    -   18.14. FreeBSD 2 Before 2.2-RELEASE Versions
+-   
+
+Book menu
+
+Chapter 3. Quick Porting
+
+Table of Contents
+
+-   3.1. Writing the Makefile
+-   3.2. Writing the Description Files
+-   3.3. Creating the Checksum File
+-   3.4. Testing the Port
+-   3.5. Checking the Port with portlint
+-   3.6. Submitting the New Port
+
+This section describes how to quickly create a new port. For
+applications where this quick method is not adequate, the full "Slow
+Porting" process is described in Slow Porting.
+
+First, get the original tarball and put it into DISTDIR, which defaults
+to /usr/ports/distfiles.
+
++-----------------------------------+-----------------------------------+
+|                                   | These steps assume that the       |
+|                                   | software compiled out-of-the-box. |
+|                                   | In other words, absolutely no     |
+|                                   | changes were required for the     |
+|                                   | application to work on a FreeBSD  |
+|                                   | system. If anything had to be     |
+|                                   | changed, refer to Slow Porting.   |
++-----------------------------------+-----------------------------------+
+
++-----------------------------------+-----------------------------------+
+|                                   | It is recommended to set the      |
+|                                   | DEVELOPER make(1) variable in     |
+|                                   | /etc/make.conf before getting     |
+|                                   | into porting.                     |
+|                                   |                                   |
+|                                   |     # ech                         |
+|                                   | o DEVELOPER=yes >> /etc/make.conf |
+|                                   |                                   |
+|                                   | This setting enables the          |
+|                                   | "developer mode" that displays    |
+|                                   | deprecation warnings and          |
+|                                   | activates some further quality    |
+|                                   | checks on calling make.           |
++-----------------------------------+-----------------------------------+
+
+3.1. Writing the Makefile
+
+The minimal Makefile would look something like this:
+
+    PORTNAME=   oneko
+    DISTVERSION=    1.1b
+    CATEGORIES= games
+    MASTER_SITES=   ftp://ftp.rediris.es/sites/ftp.freebsd.org/pub/FreeBSD/
+
+    MAINTAINER= youremail@example.com
+    COMMENT=    Cat chasing a mouse all over the screen
+    WWW=        http://www.daidouji.com/oneko/
+
+    .include <bsd.port.mk>
+
+Try to figure it out. A more detailed example is shown in the sample
+Makefile section.
+
+3.2. Writing the Description Files
+
+There are two description files that are required for any port, whether
+they actually package or not. They are pkg-descr and pkg-plist. Their
+pkg- prefix distinguishes them from other files.
+
+3.2.1. pkg-descr
+
+This is a longer description of the port. One to a few paragraphs
+concisely explaining what the port does is sufficient.
+
++-----------------------------------+-----------------------------------+
+|                                   | This is not a manual or an        |
+|                                   | in-depth description on how to    |
+|                                   | use or compile the port! Please   |
+|                                   | be careful when copying from the  |
+|                                   | README or manpage. Too often they |
+|                                   | are not a concise description of  |
+|                                   | the port or are in an awkward     |
+|                                   | format. For example, manpages     |
+|                                   | have justified spacing, which     |
+|                                   | looks particularly bad with       |
+|                                   | monospaced fonts.                 |
+|                                   |                                   |
+|                                   | On the other hand, the content of |
+|                                   | pkg-descr must be longer than the |
+|                                   | COMMENT line from the Makefile.   |
+|                                   | It must explain in more depth     |
+|                                   | what the port is all about.       |
++-----------------------------------+-----------------------------------+
+
+A well-written pkg-descr describes the port completely enough that users
+would not have to consult the documentation or visit the website to
+understand what the software does, how it can be useful, or what
+particularly nice features it has. Mentioning certain requirements like
+a graphical toolkit, heavy dependencies, runtime environment, or
+implementation languages help users decide whether this port will work
+for them.
+
++-----------------------------------+-----------------------------------+
+|                                   | The URL that used to be included  |
+|                                   | as the last line of the pkg-descr |
+|                                   | file has been moved to the        |
+|                                   | Makefile.                         |
++-----------------------------------+-----------------------------------+
+
+3.2.2. pkg-plist
+
+This file lists all the files installed by the port. It is also called
+the "packing list" because the package is generated by packing the files
+listed here. The pathnames are relative to the installation prefix
+(usually /usr/local).
+
+Here is a small example:
+
+    bin/oneko
+    man/man1/oneko.1.gz
+    lib/X11/app-defaults/Oneko
+    lib/X11/oneko/cat1.xpm
+    lib/X11/oneko/cat2.xpm
+    lib/X11/oneko/mouse.xpm
+
+Refer to the pkg-create(8) manual page for details on the packing list.
+
++-----------------------------------+-----------------------------------+
+|                                   | It is recommended to keep all the |
+|                                   | filenames in this file sorted     |
+|                                   | alphabetically. It will make      |
+|                                   | verifying changes when upgrading  |
+|                                   | the port much easier.             |
++-----------------------------------+-----------------------------------+
+
++-----------------------------------+-----------------------------------+
+|                                   | Creating a packing list manually  |
+|                                   | can be a very tedious task. If    |
+|                                   | the port installs a large numbers |
+|                                   | of files, creating the packing    |
+|                                   | list automatically might save     |
+|                                   | time.                             |
++-----------------------------------+-----------------------------------+
+
+There is only one case when pkg-plist can be omitted from a port. If the
+port installs just a handful of files, list them in PLIST_FILES, within
+the port’s Makefile. For instance, we could get along without pkg-plist
+in the above oneko port by adding these lines to the Makefile:
+
+    PLIST_FILES=    bin/oneko \
+            man/man1/oneko.1.gz \
+            lib/X11/app-defaults/Oneko \
+            lib/X11/oneko/cat1.xpm \
+            lib/X11/oneko/cat2.xpm \
+            lib/X11/oneko/mouse.xpm
+
++-----------------------------------+-----------------------------------+
+|                                   | Usage of PLIST_FILES should not   |
+|                                   | be abused. When looking for the   |
+|                                   | origin of a file, people usually  |
+|                                   | try to grep through the pkg-plist |
+|                                   | files in the ports tree. Listing  |
+|                                   | files in PLIST_FILES in the       |
+|                                   | Makefile makes that search more   |
+|                                   | difficult.                        |
++-----------------------------------+-----------------------------------+
+
++-----------------------------------+-----------------------------------+
+|                                   | If a port needs to create an      |
+|                                   | empty directory, or creates       |
+|                                   | directories outside of ${PREFIX}  |
+|                                   | during installation, refer to     |
+|                                   | Cleaning Up Empty Directories for |
+|                                   | more information.                 |
++-----------------------------------+-----------------------------------+
+
++-----------------------------------+-----------------------------------+
+|                                   | As PLIST_FILES is a make(1)       |
+|                                   | variable, any entry with spaces   |
+|                                   | must be quoted. For example, if   |
+|                                   | using keywords described in       |
+|                                   | pkg-create(8) and Expanding       |
+|                                   | Package List with Keywords, the   |
+|                                   | entry must be quoted.             |
+|                                   |                                   |
+|                                   |     PLIST_FILES=  "@sa            |
+|                                   | mple ${ETCDIR}/oneko.conf.sample" |
++-----------------------------------+-----------------------------------+
+
+Later we will see how pkg-plist and PLIST_FILES can be used to fulfill
+more sophisticated tasks.
+
+3.3. Creating the Checksum File
+
+Just type make makesum. The ports framework will automatically generate
+distinfo. Do not try to generate the file manually.
+
+3.4. Testing the Port
+
+Make sure that the port rules do exactly what is desired, including
+packaging up the port. These are the important points to verify:
+
+-   pkg-plist does not contain anything not installed by the port.
+
+-   pkg-plist contains everything that is installed by the port.
+
+-   The port can be installed using the install target. This verifies
+    that the install script works correctly.
+
+-   The port can be deinstalled properly using the deinstall target.
+    This verifies that the deinstall script works correctly.
+
+-   The port only has access to network resources during the fetch
+    target phase. This is important for package builders, such as
+    ports-mgmt/poudriere.
+
+-   Make sure that make package can be run as a normal user (that is,
+    not as root). If that fails, the software may need to be patched.
+    See also fakeroot and uidfix.
+
+Procedure: Recommended Test Ordering
+
+1.  make stage
+
+2.  make stage-qa
+
+3.  make package
+
+4.  make install
+
+5.  make deinstall
+
+6.  make package (as user)
+
+Make certain no warnings are shown in any of the stages.
+
+Thorough automated testing can be done with ports-mgmt/poudriere from
+the Ports Collection, see Poudriere for more information. It maintains
+jails where all of the steps shown above can be tested without affecting
+the state of the host system.
+
+3.5. Checking the Port with portlint
+
+Please use portlint to see if the port conforms to our guidelines. The
+ports-mgmt/portlint program is part of the ports collection. In
+particular, check that the Makefile is in the right shape and the
+package is named appropriately.
+
++-----------------------------------+-----------------------------------+
+|                                   | Do not blindly follow the output  |
+|                                   | of portlint. It is a static lint  |
+|                                   | tool and sometimes gets things    |
+|                                   | wrong.                            |
++-----------------------------------+-----------------------------------+
+
+3.6. Submitting the New Port
+
+Before submitting the new port, read the DOs and DON’Ts section.
+
+Once happy with the port, the only thing remaining is to put it in the
+main FreeBSD ports tree and make everybody else happy about it too.
+
++-----------------------------------+-----------------------------------+
+|                                   | We do not need the work directory |
+|                                   | or the pkgname.txz package, so    |
+|                                   | delete them now.                  |
++-----------------------------------+-----------------------------------+
+
+Next, create a patch(1), file. Assuming the port is called oneko and is
+in the games category.
+
+Example 1. Creating a .diff for a New Port
+
+Add all the files with git add ., then review the diff with git diff.
+For example:
+
+    % git add .
+    % git diff --staged
+
+Make sure that all required files are included, then commit the change
+to your local branch and generate a patch with git format-patch
+
+    % git commit
+    % git format-patch origin/main
+
+Patch generated with git format-patch will include author identity and
+email addresses, making it easier for developers to apply (with git am)
+and give proper credit.
+
+To make it easier for committers to apply the patch on their working
+copy of the ports tree, please generate the .diff from the base of your
+ports tree.
+
+Submit oneko.diff with the bug submission form. Use product "Ports &
+Packages", component "Individual Port(s)", and follow the guidelines
+shown there. Add a short description of the program to the Description
+field of the PR (perhaps a short version of COMMENT), and remember to
+add oneko.diff as an attachment.
+
++-----------------------------------+-----------------------------------+
+|                                   | Giving a good description in the  |
+|                                   | summary of the problem report     |
+|                                   | makes the work of port committers |
+|                                   | and triagers a lot easier. The    |
+|                                   | expected format for new ports is  |
+|                                   | "[NEW PORT] category/portname     |
+|                                   | short description of the port".   |
+|                                   | Using this scheme makes it easier |
+|                                   | and faster to begin the work of   |
+|                                   | committing the new port.          |
++-----------------------------------+-----------------------------------+
+
+After submitting the port, please be patient. The time needed to include
+a new port in FreeBSD can vary from a few days to a few months. A simple
+search form of the Problem Report database can be searched at
+https://bugs.freebsd.org/bugzilla/query.cgi.
+
+To get a listing of open port PRs, select Open and Ports & Packages in
+the search form, then click Search.
+
+After looking at the new port, we will reply if necessary, and commit it
+to the tree. The submitter’s name will also be added to the list of
+Additional FreeBSD Contributors and other files.
+
++-----------------------------------+-----------------------------------+
+|                                   | Previously it was possible to     |
+|                                   | submit patches for new ports      |
+|                                   | using a shar(1) file; this is no  |
+|                                   | longer the case with the          |
+|                                   | evolution of git(1). Committers   |
+|                                   | no longer accept shar(1) files as |
+|                                   | their use is prone to mistake and |
+|                                   | does not add the relevant entry   |
+|                                   | in the category’s Makefile.       |
++-----------------------------------+-----------------------------------+
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: April 10, 2023 by Sergio Carlavilla Delgado
+
+Prev
+
+Home
+
+Next
+
+Table of Contents
+
+-   3.1. Writing the Makefile
+-   3.2. Writing the Description Files
+-   3.3. Creating the Checksum File
+-   3.4. Testing the Port
+-   3.5. Checking the Port with portlint
+-   3.6. Submitting the New Port
+
+<<<<<<< HEAD
+
+=======
+------------------------------------------------------------------------
+
+Resources
+
+-   Download PDF
+-   Edit this page
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+

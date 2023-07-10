@@ -1,0 +1,123 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 7.2 Release Process
+
+Introduction
+
+This is a specific schedule for the release of FreeBSD 7.2. For more
+general information about the release engineering process, please see
+the Release Engineering section of the web site.
+
+General discussions about the pending release and known issues should be
+sent to the public freebsd-stable mailing list. MFC requests should be
+sent to re@FreeBSD.org.
+
+Schedule
+
+  ---------------------------- --------------- --------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Action                       Expected        Actual          Description
+  Reminder announcement        16 March 2009   17 March 2009   Release Engineers send announcement email to developers with a rough schedule for the FreeBSD 7.2 release.
+  Announce the Ports Freeze    3 April 2009    3 April 2009    Someone from portmgr@ should email freebsd-ports@ to set a date for the week long ports freeze and tagging of the ports tree.
+  Code freeze begins           23 March 2009   23 March 2009   After this date, all commits to RELENG_7 must be approved by re@FreeBSD.org. Certain highly active documentation committers are exempt from this rule for routine man page / release note updates. Heads-up emails should be sent to the developers, as well as stable@ and qa@ lists.
+  Announce doc/ tree slush     --              3 April 2009    Notification of the impending doc/ tree slush should be sent to doc@.
+  Ports tree frozen            13 April 2009   13 April 2009   Only approved commits will be permitted to the ports/ tree during the freeze.
+  doc/ tree slush              10 April 2009   10 April 2009   Non-essential commits to the en_US.ISO8859-1/ subtree should be delayed from this point until after the doc/ tree tagging, to give translation teams time to synchronize their work.
+  doc/ tree tagged.            17 April 2009   17 April 2009   Version number bumps for doc/ subtree. RELEASE_7_2_0 tag for doc/. doc/ slush ends at this time.
+  BETA1 builds                 30 March 2009   31 March 2009   Begin BETA1 builds.
+  RELENG_7_2 branch            10 April 2009   15 April 2009   The new release branch is created. Update newvers.sh and release.ent on various branches involved.
+  RC1 builds                   13 April 2009   15 April 2009   Begin RC1 builds.
+  Ports tree tagged            20 April 2009   21 April 2009   RELEASE_7_2_0 tag for ports/.
+  Ports tree unfrozen          20 April 2009   21 April 2009   After the ports/ tree is tagged, the ports/ tree will be re-opened for commits, but commits made after tagging will not go in 7.2-RELEASE.
+  Final package build starts   20 April 2009   21 April 2009   The ports cluster and pointyhat build final packages.
+  RC2 builds                   20 April 2009   23 April 2009   Begin RC2 builds.
+  RELEASE builds               1 May 2009      1 May 2009      Begin RELEASE builds.
+  Announcement                 4 May 2009      4 May 2009      Announcement sent out after a majority of the mirrors have received the bits.
+  Turn over to the secteam     TBD             --              RELENG_7_2 branch is handed over to the FreeBSD Security Officer Team in one or two weeks after the announcement.
+  ---------------------------- --------------- --------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Additional Information
+
+-   FreeBSD Release Engineering website
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

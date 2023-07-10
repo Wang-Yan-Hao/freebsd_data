@@ -1,0 +1,159 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   Support
+-   Revendeurs
+    -   Logiciel
+    -   Matériel
+    -   Consultants
+    -   Fournisseurs d'accès à Internet
+    -   Divers
+-   Information de sécurité
+    -   Avis de sécurité
+    -   Errata
+    -   Versions supportées
+    -   Versions non-supportées
+    -   Comment lire les avis de sécurité FreeBSD
+    -   Charte de l'officier de Sécurité et de son équipe
+-   Rapports de bogues
+    -   Envoyer un rapport de bogue
+-   Ressources Web
+
+Ressources sur le Web
+
+-   Informations générales à propos d’UNIX®
+
+-   Le système X Window
+
+-   Matériel
+
+-   Autres projets de systèmes d’exploitation
+
+Informations générales à propos d’UNIX®
+
+-   The Unix Reference Desk par Jennifer Myers
+
+-   Unix Guru Universe
+
+-   O’Reilly & Associates, Inc.
+
+-   Unix Power
+
+Le système X Window
+
+-   Les projets X.Org et XFree86™ fournissent à tous les utilisateurs de
+    systèmes UNIX® pour architecture Intel, y compris FreeBSD, un
+    excellent système X Window.
+
+-   Le projet WINE a pour but de faire tourner des logiciels écrits pour
+    Microsoft Windows® sur des OS UNIX pour processeurs Intel comme
+    FreeBSD, NetBSD ou Linux.
+
+Matériel
+
+-   La FAQ de comp.answers pc-hardware-faq est une très bonne référence
+    si vous voulez monter vous-même votre (vos) machine(s).
+
+-   Intel Secrets — What Intel Doesn’t Want You To Know - beaucoup
+    d’informations sur les processeurs Intel.
+
+-   Aad Offerman’s Chip List - matériel de référence sur les processeurs
+    utilisés dans les clones PC.
+
+Autres projets de systèmes d’exploitation
+
+-   NetBSD est un autre UNIX libre basé sur 4.4BSD Lite et qui
+    fonctionne sur différentes plates-formes.
+
+-   OpenBSD est un autre OS dérivé de 4.4BSD qui met l’accent sur la
+    sécurité.
+
+-   Linux est un autre UNIX® libre.
+
+-   Darwin est le système libre qui forme le coeur du système Mac OS X
+    d’Apple.
+
+-   Lites est un serveur basé sur 4.4BSD Lite et une librairie
+    d’émulation qui fournit les fonctionnalités d’UNIX® à un système
+    basé sur Mach.
+
+-   Le projet GNU Hurd est un autre projet pour développer un OS libre
+    proche d’UNIX®.
+
+-   DragonFly BSD est basé sur FreeBSD 4.X mais a d’autres objectifs de
+    développements que FreeBSD 5.X.
+
+-   OpenSolaris est une variation open source du système d’exploitation
+    Solaris de Sun Microsystems, qui est aussi un dérivé de BSD et fut
+    longtemps appelé SunOS. La majeure partie du code source de base a
+    été ouvert, mais le système d’exploitation complet est toujours
+    également distribué selon l’ancienne méthode.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26 janvier 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

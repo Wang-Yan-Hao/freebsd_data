@@ -1,0 +1,310 @@
+[FreeBSD The Power to Serve]
+
+FreeBSD への寄付
+
+ 
+
+-   ホーム
+
+-   FreeBSD とは
+    -   FreeBSD が初めてという方へ
+    -   特徴
+    -   プロモーション活動
+    -   マーケティング活動
+    -   プライバシーポリシー
+    -   Projects
+    -   Ports
+
+-   FreeBSD の入手
+    -   リリース情報
+    -   リリースエンジニアリング
+
+-   ドキュメント
+    -   FAQ
+    -   ハンドブック
+    -   port 作成者のためのハンドブック
+    -   開発者のためのハンドブック
+    -   Committer's Guide
+    -   マニュアルページ
+    -   Presentations and Papers
+    -   新しい貢献者のためのドキュメンテーションプロジェクト入門
+    -   すべての Books と Articles
+
+-   コミュニティ
+    -   メーリングリスト
+    -   フォーラム
+    -   ユーザグループ
+    -   イベント
+    -   FreeBSD ジャーナル
+    -   Q&A (外部)
+
+-   開発
+    -   プロジェクトアイディア
+    -   Git リポジトリ
+    -   Subversion リポジトリ
+    -   GitHub ミラー
+    -   コードレビュー (Phabricator)
+    -   Wiki
+    -   継続的インテグレーションサービス
+
+-   サポート
+    -   ベンダ
+    -   セキュリティ情報
+    -   障害報告
+    -   障害報告の提出
+    -   ウェブ上の情報
+
+-   財団
+    -   寄付
+    -   ハードウェアの寄贈
+
+-   サポート
+-   ベンダ
+    -   ソフトウェア
+    -   ハードウェア
+    -   コンサルティング
+    -   インターネットサービスプロバイダ
+    -   その他
+-   セキュリティ情報
+    -   セキュリティ勧告
+    -   Errata 情報
+    -   サポートされているリリース
+    -   サポートが終了したリリース
+    -   FreeBSD セキュリティ勧告の読み方
+    -   セキュリティオフィサとチームの憲章
+-   バグ報告
+    -   障害報告 (PR) の提出
+-   ウェブ上の情報
+
+FreeBSD Errata Notices
+
+This web page contains a list of released FreeBSD Errata Notices.
+
+  Date         Errata Notice name
+  ------------ ---------------------------------
+  2023-06-21   FreeBSD-EN-23:07.mpr
+  2023-06-21   FreeBSD-EN-23:06.loader
+  2023-06-21   FreeBSD-EN-23:05.tzdata
+  2023-02-08   FreeBSD-EN-23:04.ixgbe
+  2023-02-08   FreeBSD-EN-23:03.ena
+  2023-02-08   FreeBSD-EN-23:02.sdhci
+  2023-02-08   FreeBSD-EN-23:01.tzdata
+  2022-11-29   FreeBSD-EN-22:28.heimdal
+  2022-11-01   FreeBSD-EN-22:27.loader
+  2022-11-01   FreeBSD-EN-22:26.cam
+  2022-11-01   FreeBSD-EN-22:25.tcp
+  2022-11-01   FreeBSD-EN-22:24.zfs
+  2022-11-01   FreeBSD-EN-22:23.vm
+  2022-11-01   FreeBSD-EN-22:22.tzdata
+  2022-11-01   FreeBSD-EN-22:21.zfs
+  2022-08-30   FreeBSD-EN-22:20.tzdata
+  2022-08-09   FreeBSD-EN-22:19.pam_exec
+  2022-08-09   FreeBSD-EN-22:18.wifi
+  2022-08-09   FreeBSD-EN-22:17.cam
+  2022-08-09   FreeBSD-EN-22:16.kqueue
+  2022-04-06   FreeBSD-EN-22:15.pf
+  2022-03-22   FreeBSD-EN-22:14.tzdata
+  2022-03-21   FreeBSD-EN-22:13.zfs
+  2022-03-15   FreeBSD-EN-22:12.zfs
+  2022-03-15   FreeBSD-EN-22:11.zfs
+  2022-03-15   FreeBSD-EN-22:10.zfs
+  2022-03-15   FreeBSD-EN-22:09.freebsd-update
+  2022-02-01   FreeBSD-EN-22:08.i386
+  2022-02-01   FreeBSD-EN-22:07.la57
+  2022-01-11   FreeBSD-EN-22:06.libalias
+  2022-01-11   FreeBSD-EN-22:05.tail
+  2022-01-11   FreeBSD-EN-22:04.pcid
+  2022-01-11   FreeBSD-EN-22:03.hyperv
+  2022-01-11   FreeBSD-EN-22:02.xsave
+  2022-01-11   FreeBSD-EN-22:01.fsck_ffs
+  2021-11-03   FreeBSD-EN-21:29.tzdata
+  2021-11-03   FreeBSD-EN-21:28.vmci
+  2021-11-03   FreeBSD-EN-21:27.caroot
+  2021-11-03   FreeBSD-EN-21:26.libevent
+  2021-08-24   FreeBSD-EN-21:25.bhyve
+  2021-08-24   FreeBSD-EN-21:24.libcrypto
+  2021-08-24   FreeBSD-EN-21:23.virtio_blk
+  2021-06-29   FreeBSD-EN-21:22.linux_futex
+  2021-06-29   FreeBSD-EN-21:21.ipfw
+  2021-06-29   FreeBSD-EN-21:20.vlan
+  2021-06-29   FreeBSD-EN-21:19.libcasper
+  2021-06-29   FreeBSD-EN-21:18.libc++
+  2021-06-01   FreeBSD-EN-21:17.libradius
+  2021-05-26   FreeBSD-EN-21:16.bc
+  2021-05-26   FreeBSD-EN-21:15.virtio
+  2021-05-26   FreeBSD-EN-21:14.pms
+  2021-05-26   FreeBSD-EN-21:13.mpt
+  2021-05-26   FreeBSD-EN-21:12.divert
+  2021-05-26   FreeBSD-EN-21:11.aesni
+  2021-04-06   FreeBSD-EN-21:10.lldb
+  2021-04-06   FreeBSD-EN-21:09.pf
+  2021-02-24   FreeBSD-EN-21:08.freebsd-update
+  2021-02-24   FreeBSD-EN-21:07.caroot
+  2021-02-24   FreeBSD-EN-21:06.microcode
+  2021-01-29   FreeBSD-EN-21:05.libatomic
+  2021-01-29   FreeBSD-EN-21:04.zfs
+  2021-01-29   FreeBSD-EN-21:03.vnet
+  2021-01-29   FreeBSD-EN-21:02.extattr
+  2021-01-29   FreeBSD-EN-21:01.tzdata
+  2020-12-01   FreeBSD-EN-20:22.callout
+  2020-12-01   FreeBSD-EN-20:21.ipfw
+  2020-12-01   FreeBSD-EN-20:20.tzdata
+  2020-12-01   FreeBSD-EN-20:19.audit
+  2020-09-02   FreeBSD-EN-20:18.getfsstat
+  2020-09-02   FreeBSD-EN-20:17.linuxthread
+  2020-08-05   FreeBSD-EN-20:16.vmx
+  2020-07-08   FreeBSD-EN-20:15.mps
+  2020-07-08   FreeBSD-EN-20:14.linuxkpi
+  2020-07-08   FreeBSD-EN-20:13.bhyve
+  2020-06-09   FreeBSD-EN-20:12.iflib
+  2020-06-09   FreeBSD-EN-20:11.ena
+  2020-05-12   FreeBSD-EN-20:10.build
+  2020-05-12   FreeBSD-EN-20:09.igb
+  2020-05-12   FreeBSD-EN-20:08.tzdata
+  2020-04-21   FreeBSD-EN-20:07.quotad
+  2020-03-19   FreeBSD-EN-20:06.ipv6
+  2020-03-19   FreeBSD-EN-20:05.mlx5en
+  2020-03-19   FreeBSD-EN-20:04.pfctl
+  2020-03-19   FreeBSD-EN-20:03.sshd
+  2020-01-28   FreeBSD-EN-20:02.nmount
+  2020-01-28   FreeBSD-EN-20:01.ssp
+  2019-11-12   FreeBSD-EN-19:19.loader
+  2019-10-23   FreeBSD-EN-19:18.tzdata
+  2019-08-20   FreeBSD-EN-19:17.ipfw
+  2019-08-20   FreeBSD-EN-19:16.bhyve
+  2019-08-06   FreeBSD-EN-19:15.libunwind
+  2019-08-06   FreeBSD-EN-19:14.epoch
+  2019-07-24   FreeBSD-EN-19:13.mds
+  2019-07-02   FreeBSD-EN-19:12.tzdata
+  2019-06-19   FreeBSD-EN-19:11.net
+  2019-05-14   FreeBSD-EN-19:10.scp
+  2019-05-14   FreeBSD-EN-19:09.xinstall
+  2019-05-14   FreeBSD-EN-19:08.tzdata
+  2019-02-05   FreeBSD-EN-19:07.lle
+  2019-02-05   FreeBSD-EN-19:06.dtrace
+  2019-01-09   FreeBSD-EN-19:05.kqueue
+  2019-01-09   FreeBSD-EN-19:04.tzdata
+  2019-01-09   FreeBSD-EN-19:03.sqlite
+  2019-01-09   FreeBSD-EN-19:02.tcp
+  2019-01-09   FreeBSD-EN-19:01.cc_cubic
+  2018-12-19   FreeBSD-EN-18:18.zfs
+  2018-12-19   FreeBSD-EN-18:17.vm
+  2018-12-19   FreeBSD-EN-18:16.ptrace
+  2018-11-27   FreeBSD-EN-18:15.loader
+  2018-11-27   FreeBSD-EN-18:14.tzdata
+  2018-11-27   FreeBSD-EN-18:13.icmp
+  2018-09-27   FreeBSD-EN-18:12.mem
+  2018-09-27   FreeBSD-EN-18:11.listen
+  2018-09-27   FreeBSD-EN-18:10.syscall
+  2018-09-27   FreeBSD-EN-18:09.ip
+  2018-09-12   FreeBSD-EN-18:08.lazyfpu
+  2018-06-21   FreeBSD-EN-18:07.pmap
+  2018-05-08   FreeBSD-EN-18:06.tzdata
+  2018-05-08   FreeBSD-EN-18:05.mem
+  2018-04-04   FreeBSD-EN-18:04.mem
+  2018-04-04   FreeBSD-EN-18:03.tzdata
+  2018-03-07   FreeBSD-EN-18:02.file
+  2018-03-07   FreeBSD-EN-18:01.tzdata
+  2017-11-02   FreeBSD-EN-17:09.tzdata
+  2017-08-10   FreeBSD-EN-17:08.pf
+  2017-08-10   FreeBSD-EN-17:07.vnet
+  2017-07-12   FreeBSD-EN-17:06.hyperv
+  2017-04-12   FreeBSD-EN-17:05.xen
+  2017-02-23   FreeBSD-EN-17:04.mandoc
+  2017-02-23   FreeBSD-EN-17:03.hyperv
+  2017-02-23   FreeBSD-EN-17:02.yp
+  2017-02-23   FreeBSD-EN-17:01.pcie
+  2016-12-06   FreeBSD-EN-16:21.localedef
+  2016-12-06   FreeBSD-EN-16:20.tzdata
+  2016-12-06   FreeBSD-EN-16:19.tzcode
+  2016-10-25   FreeBSD-EN-16:18.loader
+  2016-10-25   FreeBSD-EN-16:17.vm
+  2016-08-12   FreeBSD-EN-16:16.hv_storvsc
+  2016-08-12   FreeBSD-EN-16:15.vmbus
+  2016-08-12   FreeBSD-EN-16:14.hv_storvsc
+  2016-08-12   FreeBSD-EN-16:13.vmbus
+  2016-08-12   FreeBSD-EN-16:12.hv_storvsc
+  2016-08-12   FreeBSD-EN-16:11.vmbus
+  2016-08-12   FreeBSD-EN-16:10.dhclient
+  2016-07-25   FreeBSD-EN-16:09.freebsd-update
+  2016-05-04   FreeBSD-EN-16:08.zfs
+  2016-05-04   FreeBSD-EN-16:07.ipi
+  2016-05-04   FreeBSD-EN-16:06.libc
+  2016-03-16   FreeBSD-EN-16:05.hv_netvsc
+  2016-03-16   FreeBSD-EN-16:04.hyperv
+  2016-01-14   FreeBSD-EN-16:03.yplib
+  2016-01-14   FreeBSD-EN-16:02.pf
+  2016-01-14   FreeBSD-EN-16:01.filemon
+  2015-11-04   FreeBSD-EN-15:20.vm
+  2015-11-04   FreeBSD-EN-15:19.kqueue
+  2015-09-16   FreeBSD-EN-15:18.pkg
+  2015-09-16   FreeBSD-EN-15:17.libc
+  2015-09-16   FreeBSD-EN-15:16.pw
+  2015-08-25   FreeBSD-EN-15:15.pkg
+  2015-08-25   FreeBSD-EN-15:14.ixgbe
+  2015-08-18   FreeBSD-EN-15:13.vidcontrol
+  2015-08-18   FreeBSD-EN-15:12.netstat
+  2015-08-18   FreeBSD-EN-15:11.toolchain
+  2015-06-30   FreeBSD-EN-15:10.iconv
+  2015-06-30   FreeBSD-EN-15:09.xlocale
+  2015-06-18   FreeBSD-EN-15:08.sendmail
+  2015-06-09   FreeBSD-EN-15:07.zfs
+  2015-06-09   FreeBSD-EN-15:06.file
+  2015-05-13   FreeBSD-EN-15:05.ufs
+  2015-05-13   FreeBSD-EN-15:04.freebsd-update
+  2015-02-25   FreeBSD-EN-15:03.freebsd-update
+  2015-02-25   FreeBSD-EN-15:02.openssl
+  2015-02-25   FreeBSD-EN-15:01.vt
+  2014-12-23   FreeBSD-EN-14:13.freebsd-update
+  2014-11-04   FreeBSD-EN-14:12.zfs
+  2014-10-22   FreeBSD-EN-14:11.crypt
+  2014-10-22   FreeBSD-EN-14:10.tzdata
+  2014-07-08   FreeBSD-EN-14:09.jail
+  2014-06-24   FreeBSD-EN-14:08.heimdal
+  2014-06-24   FreeBSD-EN-14:07.pmap
+  2014-06-03   FreeBSD-EN-14:06.exec
+  2014-05-13   FreeBSD-EN-14:05.ciss
+  2014-05-13   FreeBSD-EN-14:04.kldxref
+  2014-05-13   FreeBSD-EN-14:03.pkg
+  2014-01-14   FreeBSD-EN-14:02.mmap
+  2014-01-14   FreeBSD-EN-14:01.random
+  2013-11-28   FreeBSD-EN-13:05.freebsd-update
+  2013-10-26   FreeBSD-EN-13:04.freebsd-update
+  2013-08-22   FreeBSD-EN-13:03.mfi
+  2013-06-28   FreeBSD-EN-13:01.fxp
+  2013-06-28   FreeBSD-EN-13:02.vtnet
+  2012-06-12   FreeBSD-EN-12:02.ipv6refcount
+  2012-01-04   FreeBSD-EN-12:01.freebsd-update
+  2010-02-27   FreeBSD-EN-10:02.sched_ule
+  2010-01-06   FreeBSD-EN-10:01.freebsd
+  2009-10-02   FreeBSD-EN-09:05.null
+  2009-06-24   FreeBSD-EN-09:04.fork
+  2009-06-24   FreeBSD-EN-09:03.fxp
+  2009-06-24   FreeBSD-EN-09:02.bce
+  2009-03-23   FreeBSD-EN-09:01.kenv
+  2008-06-19   FreeBSD-EN-08:02.tcp
+  2008-04-17   FreeBSD-EN-08:01.libpthread
+  2007-03-15   FreeBSD-EN-07:05.freebsd-update
+  2007-02-28   FreeBSD-EN-07:04.zoneinfo
+  2007-02-28   FreeBSD-EN-07:03.rc.d_jail
+  2007-02-28   FreeBSD-EN-07:02.net
+  2007-02-14   FreeBSD-EN-07:01.nfs
+  2006-08-28   FreeBSD-EN-06:02.net
+  2006-07-07   FreeBSD-EN-06:01.jail
+  2005-12-19   FreeBSD-EN-05:04.nfs
+  2005-01-16   FreeBSD-EN-05:03.ipi
+  2005-01-06   FreeBSD-EN-05:02.sk
+  2005-01-05   FreeBSD-EN-05:01.nfs
+  2004-06-28   FreeBSD-EN-04:01.twe
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+最終更新日: 2021年1月26日 by Sergio Carlavilla Delgado
+
+法律上の注意事項 | © 1995-2023 FreeBSD プロジェクト All rights reserved.
+The mark FreeBSD is a registered trademark of The FreeBSD Foundation and
+is used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact

@@ -1,0 +1,165 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+A FreeBSD-rõl
+
+Mi az a FreeBSD?
+
+A FreeBSD egy fejlett operációs rendszer x86 kompatibilis (Pentium® és
+Athlon™), amd64 kompatibilis (Opteron™, Athlon™64, és EM64T), ARM,
+IA-64, PowerPC, PC-98 és UltraSPARC® számitógép-architektúrákra. A
+FreeBSD kaliforniai Berkeley Egyetemen kifejlesztett BSD típusú UNIX®
+rendszer egyik leszármazottja, amelyet önkéntesek egy nagyobb csoportja
+fejleszt és tart karban. Az említetteken felül további platformok is
+elérhetõek, különbözõ fejlesztési szintjeken.
+
+Élvonalbeli lehetõségek
+
+A FreeBSD olyan fejlett hálózatkezelési, teljesítménybeli, biztonsági és
+kompatibilitási adottságokkal rendelkezik, amelyek még manapság is
+hiányoznak más, néha a legjobb kereskedelmi operációs rendszerekbõl.
+
+Hatékony internetes megoldások
+
+A FreeBSD ideális internet vagy intranet kiszolgálónak. Stabil hálózati
+szolgáltatásokat nyújt még a nagyobb terhelés mellett is, és hatékony
+memóriakezelésével jó válaszidõt biztosít akár egyidõben futó folyamatok
+ezreinek.
+
+Fejlett beágyazott rendszer
+
+A FreeBSD a fejlett hálózati operációs rendszerek adottságait nyújtja a
+beágyazott rendszerek számára, a nagyteljesítményû Intel-alapú
+készülékektõl kezdve az Arm, PowerPC és hamarosan a MIPS rendszerek
+számára is. Levelezõ és webes alkalmazásoktól kezdve az útválasztókon és
+idõszervereken át a vezeték nélküli hozzáférési pontokig, a világ számos
+gyártója választja a FreeBSD beépített build és cross-build
+környezeteit, illetve fejlett adottságait a beágyazott termékeik
+alapjául. A Berkeley nyílt forrású licence lehetõvé teszi számukra, hogy
+eldöntsék, a fejlesztésik mekkora részét juttatják vissza a közösség
+számára.
+
+Rengeteg alkalmazást futtat
+
+Több, mint 20 000 portolt könyvtárral és alkalmazással támogatja a
+FreeBSD az asztali-, szerver- és beágyazott rendszereket.
+
+Könnyen telepíthetõ
+
+A FreeBSD telepíthetõ CD-ROM-ról, DVD-ROM-ról vagy közvetlenül a
+hálózatról, FTP vagy NFS használatával. Ehhez mindössze erre az
+útmutatóra van szükségünk.
+
+A FreeBSD ingyenes
+
+[A BSD Démon]
+
+Nyilván azt gondolnánk, hogy egy ilyen adottságokkal rendelkezõ
+operációs rendszer rengeteg pénzbe kerül, azonban a FreeBSD ingyenesen
+letölthetõ a teljes forráskódjával együtt. Ha meg szeretnénk
+megvásárolni, vagy le szeretnénk tölteni egy saját példányt, akkor errõl
+további információt ezen a helyen találhatunk.
+
+Hozzájárulás a FreeBSD Projekthez
+
+Könnyen hozzájárulhatunk a FreeBSD fejlesztéséhez. Ehhez csupán
+találnunk kell egy olyan területet, ahol véleményünk szerint a FreeBSD
+továbbfejleszthetõ lenne, majd (figyelmesen és gondosan) hajtsuk végre
+ezeket a módosításokat és küldjük el ezeket a a FreeBSD Projektnek a
+send-pr segítségével, vagy ha ismerünk egy fejlesztõt, akkor rajta
+keresztül. A fejlesztés bármi lehet, a dokumentációtól kezdve az
+illusztrációkon át a forráskódig szinte bármi. A témával kapcsolatban
+Hozzájárulás a FreeBSD Projekthez címû cikk tartalmaz bõvebb
+információt.
+
+Ehhez nem kell feltétlenül programozónak lennünk, vannak más módok is,
+hogy hozzájárulhassunk a FreeBSD fejlesztéséhez. A FreeBSD Alapítvány
+egy non-profit szervezet, és a nkei juttatott közvetlen adományok az
+adóból teljes mértékben leírhatóak. Amennyiben errõl többet szeretnénk
+megtudni, vegyük fel a kapcsolatot a board@FreeBSDFoundation.org e-mail
+címen, vagy írjunk ide: The FreeBSD Foundation, P.O. Box 20247, Boulder,
+CO 80308, USA.
+
+------------------------------------------------------------------------
+
+Last modified on: 2021. június 19. by Danilo G. Baio
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

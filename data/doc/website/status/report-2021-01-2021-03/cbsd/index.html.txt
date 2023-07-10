@@ -1,0 +1,109 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+CBSD Project
+
+Links:
+CBSD API module URL: https://www.bsdstore.ru/en/cbsd_api_ssi.html
+
+Contact: Oleg Ginzburg <olevole@olevole.ru>
+
+What is CBSD?
+
+CBSD is a management layer written for the FreeBSD jail(8) subsystem,
+bhyve(8) and xen(4). CBSD allows users to manage jail/bhyve/xen
+environments at different levels of abstraction by providing a varied
+number of unified methods: vagrant-like CBSDfiles, CLI and via
+dialog(1).
+
+CBSD 2021Q1 Status Report
+
+A RestAPI service layer was added during last quarter, enabling creation
+of programmable cloud solutions. In addition, work has been done to
+support RestAPI through a CBSDfile, allowing for private cloud
+environments deployment. In such cases the local CBSD layer acts as a
+thin client.
+
+------------------------------------------------------------------------
+
+Last modified on: May 1, 2021 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

@@ -1,0 +1,859 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 12.0-RELEASE Release Notes
+
+Abstract
+
+The release notes for FreeBSD 12.0-RELEASE contain a summary of the
+changes made to the FreeBSD base system on the 12-STABLE development
+line. This document lists applicable security advisories that were
+issued since the last release, as well as significant changes to the
+FreeBSD kernel and userland. Some brief remarks on upgrading are also
+presented.
+
+Table of Contents
+
+-   Introduction
+
+-   Upgrading from Previous Releases of FreeBSD
+
+-   Security and Errata
+
+    -   Security Advisories
+
+    -   Errata Notices
+
+-   Userland
+
+    -   Userland Configuration Changes
+
+    -   Userland Application Changes
+
+    -   Contributed Software
+
+    -   Installation and Configuration Tools
+
+    -   /etc/rc.d Scripts
+
+    -   Runtime Libraries and API
+
+    -   ABI Compatibility
+
+-   Kernel
+
+    -   Kernel Bug Fixes
+
+    -   Kernel Configuration
+
+-   Devices and Drivers
+
+    -   Device Drivers
+
+    -   Network Drivers
+
+    -   Deprecated Drivers
+
+-   Hardware Support
+
+    -   Hardware Support
+
+    -   Graphics Support
+
+    -   Virtualization Support
+
+    -   ARM Support
+
+-   Storage
+
+    -   General Storage
+
+    -   Networked Storage
+
+    -   ZFS
+
+-   Boot Loader Changes
+
+    -   Boot Loader Changes
+
+-   Networking
+
+    -   General Network
+
+    -   Network Protocols
+
+-   Ports Collection and Package Infrastructure
+
+    -   Packaging Changes
+
+-   Documentation
+
+    -   Documentation Source Changes
+
+-   Release Engineering and Integration
+
+    -   Integration Changes
+
+Introduction
+
+This document contains the release notes for FreeBSD 12.0-RELEASE. It
+describes recently added, changed, or deleted features of FreeBSD. It
+also provides some notes on upgrading from previous versions of FreeBSD.
+
+The release distribution to which these release notes apply represents
+the latest point along the 12-STABLE development branch since 12-STABLE
+was created. Information regarding pre-built, binary release
+distributions along this branch can be found at
+https://www.FreeBSD.org/releases/.
+
+The release distribution to which these release notes apply represents a
+point along the 12-STABLE development branch between 11.2-RELEASE and
+the future 13.0-RELEASE. Information regarding pre-built, binary release
+distributions along this branch can be found at
+https://www.FreeBSD.org/releases/.
+
+This distribution of FreeBSD 12.0-RELEASE is a release distribution. It
+can be found at https://www.FreeBSD.org/releases/ or any of its mirrors.
+More information on obtaining this (or other) release distributions of
+FreeBSD can be found in the Obtaining FreeBSD' appendix to the FreeBSD
+Handbook.
+
+All users are encouraged to consult the release errata before installing
+FreeBSD. The errata document is updated with "late-breaking" information
+discovered late in the release cycle or after the release. Typically, it
+contains information on known bugs, security advisories, and corrections
+to documentation. An up-to-date copy of the errata for FreeBSD
+12.0-RELEASE can be found on the FreeBSD Web site.
+
+This document describes the most user-visible new or changed features in
+FreeBSD since 11.2-RELEASE. In general, changes described here are
+unique to the 12-STABLE branch unless specifically marked as MERGED
+features.
+
+Typical release note items document recent security advisories issued
+after 11.2-RELEASE, new drivers or hardware support, new commands or
+options, major bug fixes, or contributed software upgrades. They may
+also list changes to major ports/packages or release engineering
+practices. Clearly the release notes cannot list every single change
+made to FreeBSD between releases; this document focuses primarily on
+security advisories, user-visible changes, and major architectural
+improvements.
+
+Upgrading from Previous Releases of FreeBSD
+
+[amd64,i386] Binary upgrades between RELEASE versions (and snapshots of
+the various security branches) are supported using the freebsd-update(8)
+utility. The binary upgrade procedure will update unmodified userland
+utilities, as well as unmodified GENERIC kernels distributed as a part
+of an official FreeBSD release. The freebsd-update(8) utility requires
+that the host being upgraded have Internet connectivity.
+
+Source-based upgrades (those based on recompiling the FreeBSD base
+system from source code) from previous versions are supported, according
+to the instructions in /usr/src/UPDATING.
+
++-----------------------------------+-----------------------------------+
+| Important                         | Upgrading FreeBSD should only be  |
+|                                   | attempted after backing up all    |
+|                                   | data and configuration files.     |
++-----------------------------------+-----------------------------------+
+
+Security and Errata
+
+This section lists the various Security Advisories and Errata Notices
+since 11.2-RELEASE.
+
+Security Advisories
+
++---------------------------+--------------------+--------------------+
+| Advisory                  | Date               | Topic              |
++===========================+====================+====================+
+| No advisories.            |                    |                    |
++---------------------------+--------------------+--------------------+
+
+Errata Notices
+
++---------------------------+--------------------+--------------------+
+| Errata                    | Date               | Topic              |
++===========================+====================+====================+
+| No errata notices.        |                    |                    |
++---------------------------+--------------------+--------------------+
+
+Userland
+
+This section covers changes and additions to userland applications,
+contributed software, and system utilities.
+
+Userland Configuration Changes
+
+Group permissions on /dev/acpi have been changed to allow users in the
+operator GID to invoke acpiconf(8) to suspend the system. [r335864]
+(Sponsored by DARPA, AFRL)
+
+The default devfs.rules(5) configuration has been updated to allow
+mount_fusefs(8) with jail(8) . [r336565]
+
+The default PAGER now defaults to less(1) for most commands. [r337497]
+
+The newsyslog(8) utility has been updated to reject configuration
+entries that specify setuid(2) or executable log files. [r338165]
+(Sponsored by Dell EMC Isilon)
+
+The WITH_REPRODUCIBLE_BUILD src.conf(5) knob has been enabled by
+default. [r338642] (Sponsored by The FreeBSD Foundation)
+
+LDNS now enables DANE-TA, and GOST has been removed. [r339303]
+
+A new src.conf(5) knob, WITH_RETPOLINE, has been added to enable the
+retpoline mitigation for userland builds. [r340773] (Sponsored by The
+FreeBSD Foundation)
+
+Userland Application Changes
+
+xlint and the ability to build lint libraries or lint source code has
+been removed.
+
+The dtrace(1) utility has been updated to support if and else
+statements. [r304200]
+
+The legacy gdb(1) utility included in the base system is now installed
+to /usr/libexec for use with crashinfo(8) . The gdbserver and gdbtui
+utilities are no longer installed. For interactive debugging, lldb(1) or
+a modern version of gdb(1) from devel/gdb should be used. A new
+src.conf(5) knob, WITHOUT_GDB_LIBEXEC has been added to disable building
+gdb(1) . The gdb(1) utility is still installed in /usr/bin on sparc64.
+[r317416]
+
+The setfacl(1) utility has been updated to include a new flag, -R, used
+to operate recursively on directories. [r332396] (Sponsored by The
+FreeBSD Foundation)
+
+The cat(1) utility has been updated to print output aligned the same
+regardless of if invoked with -ne or -be. [r323865]
+
+The default bootstrap linker has been changed to ld_lld(1) for amd64.
+[r334391] (Sponsored by The FreeBSD Foundation)
+
+The dhclient(8) utility has been updated to add a configuration knob to
+allow superseding the interface-mtu option provided by an
+incorrectly-configured DHCP server. [r334443]
+
+The asf(8) utility has been removed, as kgdb(1) now handles kernel
+module state internally. [r335222] (Sponsored by The FreeBSD Foundation)
+
+The sha224(1) utility has been added. [r336126]
+
+The geli(8) utility has been updated to provide support for initializing
+multiple providers at once when they use the same passphrase and/or key.
+[r336659]
+
+The default bootstrap linker has been changed to ld_lld(1) for i386.
+[r336901] (Sponsored by The FreeBSD Foundation)
+
+The default bootstrap linker has been changed to ld_lld(1) for armv7.
+[r337057] (Sponsored by The FreeBSD Foundation)
+
+The dd(1) utility has been updated to add the status=progress option,
+which prints the status of its operation on a single line once per
+second, similar to GNU dd(1) . [r337505]
+
+The date(1) utility has been updated to include a new flag, -I, which
+prints its output in ISO 8601 formatting. [r337332]
+
+The bectl(8) utility has been added, providing an administrative
+interface for managing ZFS boot environments, similar to sysutils/beadm.
+[r337663]
+
+The ls(1) utility has been updated to include a new --color=when flag,
+where when can be one of always, auto (default), or never. [r337956]
+
+The bhyve(8) utility has been updated to add a new subcommand to the -l
+and -s flags, help, which when used, prints a list of supported LPC and
+PCI devices, respectively. [r338210] (Sponsored by iXsystems)
+
+The tftp(1) utility has been updated to change the default transfer mode
+from ASCII to binary. [r338258]
+
+The last(1) utility has been updated to include libxo(3) support.
+[r338352]
+
+The lastlogin(8) utility has been updated to include libxo(3) support.
+[r338353]
+
+The chown(8) utility has been updated to prevent overflow of UID or GID
+arguments where the argument exceeded UID_MAX or GID_MAX, respectively.
+[r338950] (Sponsored by Dell EMC Isilon)
+
+The ctm(1) and related utilities have been marked as deprecated for
+removal in FreeBSD 13.0. [r340444]
+
+Contributed Software
+
+The ELF Tool Chain has been updated to version r3614. [r333063]
+(Sponsored by The FreeBSD Foundation)
+
+The zstd(1) utility has been updated to version 1.3.4. [r331602]
+(Sponsored by Dell EMC Isilon)
+
+The vt(4) Terminus BSD Console font has been updated to version 4.46.
+[r332452] (Sponsored by The FreeBSD Foundation)
+
+The xz(1) utility has been updated to version 5.2.4. [r333783]
+
+The clang, llvm, lld, lldb, compiler-rt utilities and libc++ have been
+updated to version 6.0.1. [r335799]
+
+The bsnmp utility has been updated to version 1.13. [r335885]
+
+The WPA utilities have been updated to version 2.6. [r336203]
+
+The ntpd(8) utility has been updated to allow being run as a non-root
+user. [r336525]
+
+Note:
+Source-based upgrades from FreeBSD 11.x and earlier require the ntpd UID
+(123) and GID (123) to exist before the installworld target is run. See
+the "rebuild everything and install" section of UPDATING for the
+documented procedure for source-based upgrades for more details.
+
+Support for UDP-lite has been added to dtrace_udplite(4) . [r337018]
+
+The file(1) utility has been updated to version 5.34. [r337442]
+
+The lua utility has been updated to version 5.3.5. [r337810]
+
+Support for send, receive, and state-change providers have been added to
+dtrace_sctp(4) . [r338213]
+
+The ntpd(8) utility has been updated to version 4.2.8p12. [r338126]
+
+OpenSSH has been updated to version 7.8p1. [r338561]
+
+The mandoc(1) utility has been updated to version 1.14.4. [r338826]
+
+Additional capsicum(4) support has been added to sshd(8) . [r339216]
+
+Serf has been updated to version 1.3.9. [r339256]
+
+ACPICA has been updated to version 20181003. [r339262]
+
+Unbound has been updated to version 1.8.1. [r339278]
+
+The timezone database files have been updated to version 2018g.
+[r339937]
+
+OpenSSL has been updated to version 1.1.1a. [r340711]
+
+Installation and Configuration Tools
+
+The bsdinstall(8) installer and zfsboot(8) boot code have been updated
+to allow an UEFI+GELI installation option. [r338282] (Sponsored by Klara
+Systems)
+
+/etc/rc.d Scripts
+
+A new rc(8) has been added to create cfumass(4) LUNs. [r332857]
+(Sponsored by The FreeBSD Foundation)
+
+The geli(8) rc(8) script has been updated to include support for a new
+variable, geli_groups, which provides support to attach multiple
+providers when set in rc.conf(5) . [r335673]
+
+The rc(8) subsystem has been updated to support new keywords in
+rc.conf(5) , enable, disable, and delete with rc.d(8) scripts and the
+service(8) utility. See rc.conf(5) for usage information. [r340348]
+(Sponsored by Smule, Inc.)
+
+Runtime Libraries and API
+
+The getrandom(2) system call and getentropy(3) library have been added,
+compatible with Linux® and OpenBSD implementations. [r331279]
+
+The arc4random(3) library has been updated to match the OpenBSD version
+1.35. [r338059]
+
+The libarchive(3) library has been updated to version 3.3.3. [r338600]
+
+ABI Compatibility
+
+get_s(3) has been added. [r331936]
+
+The pthread(3) library has been updated to incorporate POSIX/SUSv4-2018
+compliance improvements. [r337992]
+
+The arc4random(3) library has been updated to remove arc4random_stir()
+and arc4random_addrandom(). [r338331]
+
+Kernel
+
+This section covers changes to kernel configurations, system tuning, and
+system control parameters that are not otherwise categorized.
+
+Kernel Bug Fixes
+
+The ACPI subsystem has been updated to implement Device object types for
+ACPI 6.0 support, required for some Dell, Inc. Poweredge™ AMD® Epyc™
+systems. [r326956] (Sponsored by Dell EMC Isilon)
+
+An issue with IPv6-AH IPSEC padding has been fixed to match RFC4302.
+[r334625] (Sponsored by Dell EMC Isilon)
+
+The amdsmn(4) and amdtemp(4) drivers have been updated to attach to AMD®
+Ryzen 2™ host bridges. [r340446]
+
+The amdtemp(4) driver has been updated to fix temperature reporting for
+AMD® 2990WX CPUs. [r340447]
+
+Kernel Configuration
+
+The VIMAGE kernel configuration option has been enabled by default.
+[r324810]
+
+The dumpon(8) utility has been updated to add support for compressed
+kernel crash dumps when the kernel configuration file includes the GZIO
+option. See rc.conf(5) and dumpon(8) for additional information.
+[r324965] (Sponsored by Dell EMC Isilon)
+
+The ext2fs(5) filesystem has been updated to support full read/write
+support for ext4. [r327584]
+
+The pmtimer device has been removed from the i386 GENERIC kernel
+configuration. Its functionality is now part of apm(4) . [r327774]
+
+The dumpon(8) utility has been updated to add support for zstd(1)
+-compressed kernel crash dumps when the kernel configuration file
+includes the ZSTDIO option. See rc.conf(5) and dumpon(8) for additional
+information. [r329240] (Sponsored by Dell EMC Isilon)
+
+A new src.conf(5) knob, WITH_KERNEL_RETPOLINE, has been added to enable
+the retpoline mitigation for kernel builds. [r330110] (Sponsored by The
+FreeBSD Foundation)
+
+The EKCD, GZIO, ZSTDIO, and NETDUMP kernel configuration options have
+been enabled by default for amd64, i386, aarch64, powerpc, powerpc64,
+and sparc64 architectures. [r333890]
+
+A new kernel configuration option, KASSERT_PANIC_OPTIONAL, has been
+added that allows runtime KASSERT(9) behavior changes without
+necessarily invoking panic(9) . The option is disabled by default.
+[r338214] (Sponsored by Dell EMC Isilon)
+
+The NUMA option has been enabled by default in the amd64 GENERIC and
+MINIMAL kernel configurations. [r338602] (Sponsored by Dell EMC Isilon,
+Netflix)
+
+Devices and Drivers
+
+This section covers changes and additions to devices and device drivers
+since 11.2-RELEASE.
+
+Device Drivers
+
+The random(4) device has been updated to allow terminating large reads
+with ^C. [r331070] (Sponsored by Dell EMC Isilon)
+
+Support for the Microchip® LAN78xx™ USB3-GigE controller has been added.
+[r333713] (Sponsored by The FreeBSD Foundation)
+
+A new multifunction device has been added to usb_template(4) , providing
+mass storage, CDC ACM (serial), and CDC ECM (ethernet) simultaneously.
+[r333760] (Sponsored by The FreeBSD Foundation)
+
+The random(4) driver has been updated to remove the Yarrow algorithm.
+The Fortuna algorithm remains the default, and now only, available
+algorithm. [r338324]
+
+The netdump(4) driver has been added, providing a facility through which
+kernel crash dumps can be transmitted to a remote host after a system
+panic. See netdump(4) and dumpon(8) for more information and
+configuration details. [r333283] (Sponsored by Dell EMC Isilon)
+
+The random(4) driver has been updated to fix excessive activity during
+pseudo-random number generation. [r338292]
+
+The vt(4) driver has been updated with performance improvements, drawing
+text at rates ranging from 2- to 6-times faster. [r338316]
+
+The ichwd(4) driver has been updated to add TCO watchdog timer support
+for Intel® Lewisburg PCH (C620) chipsets. [r340190] (Sponsored by
+Panzura)
+
+Network Drivers
+
+The ixl(4) driver has been updated to version 1.9.9-k. [r333149]
+(Sponsored by Intel Corporation)
+
+The cxgbe(4) driver has been updated to provide hardware support for the
+SO_MAX_PACING_RATE setsockopt(2) option when the kernel configuration
+contains the RATELIMIT option. [r334143] (Sponsored by Chelsio
+Communications)
+
+The ixlv(4) driver has been renamed to iavf(4) and updated to use
+iflib(9) . The ixlv(4) kernel module is now a hard link to iavf(4) for
+backwards compatibility for upgrading from earlier FreeBSD releases.
+[r339338] (Sponsored by Panzura)
+
+Deprecated Drivers
+
+The lmc(4) driver has been removed. [r333144] (Sponsored by The FreeBSD
+Foundation)
+
+The ixgb(4) driver has been removed. [r333173] (Sponsored by Limelight
+Networks)
+
+The nxge(4) driver has been removed. [r333322] (Sponsored by Limelight
+Networks)
+
+The vxge(4) driver has been removed. [r333717] (Sponsored by Limelight
+Networks)
+
+The jedec_ts(4) driver has been removed in 12.0-RELEASE, and its
+functionality replaced by jedec_dimm(4) . [r337033]
+
+The DRM driver for modern graphics chipsets has been marked deprecated
+and marked for removal in FreeBSD 13. The DRM kernel modules are
+available from graphics/drm-stable-kmod or graphics/drm-legacy-kmod in
+the Ports Collection as well as via pkg(8) . Additionally, the kernel
+modules have been added to the lua loader.conf(5) module_blacklist, as
+installation from the Ports Collection or pkg(8) is strongly
+recommended. [r339218]
+
+The following drivers have been deprecated in FreeBSD 12.0, and not
+present in FreeBSD 13.0: ae(4) , de(4) , ed(4) , ep(4) , ex(4) , fe(4) ,
+pcn(4) , sf(4) , sn(4) , tl(4) , tx(4) , txp(4) , vx(4) , wb(4) , xe(4)
+[r339735]
+
+Hardware Support
+
+This section covers general hardware support for physical machines,
+hypervisors, and virtualization environments, as well as hardware
+changes and updates that do not otherwise fit in other sections of this
+document.
+
+Hardware Support
+
+Support for powernv POWER9 MMU initialization has been added. [r333273]
+
+Graphics Support
+
+FreeBSD has changed the way graphics drivers are handled on amd64 and
+i386. Graphics drivers for modern ATI/AMD® and Intel® graphics cards are
+now available in the Ports Collection. The base drivers are still
+available and will be installed by default, but they lack support for
+current generation laptop and desktop systems.
+
+In most cases it is enough to install graphics/drm-kmod from ports or
+packages to install a driver appropriate for the system, then adding the
+appropriate driver to kld_list in rc.conf(5) .
+
+For Intel® (i915) systems after Broadwell™, the rc.conf(5) entry is:
+
+    kld_list="/boot/modules/i915kms.ko"
+
+Systems with ATI/AMD® graphics cards have two options. Modern systems
+starting with the HD7000 series GPU should use:
+
+    kld_list="/boot/modules/amdgpu.ko"
+
+Systems with cards released before the HD7000 GPU use:
+
+    kld_list="/boot/modules/radeonkms.ko"
+
+Note:
+Users must be added to the video GID after installing graphics/drm-kmod
+in order for X to start properly.
+
+Note:
+There are known issues with the xserver driver provided by
+x11-drivers/xf86-video-ati when using graphics drivers from the base
+system; x11-drivers/xf86-video-ati-legacy should be used instead.
+
+Note:
+There is a known issue where booting with UEFI and using the ATI/AMD®
+graphics driver may cause the screen to be garbled before the
+appropriate driver is loaded. For additional information regarding
+graphics support on FreeBSD, please see the Graphics Wiki Page.
+
+Virtualization Support
+
+Amazon® EC2™ AMI instances now have sysutils/amazon-ssm-agent installed
+by default, though the service is not enabled by default in rc.conf(5) .
+To enable the service, add: [r325254]
+
+      >>/etc/rc.conf
+        amazon_ssm_agent_enable="YES"
+
+to the EC2™ user-data.
+
+Amazon® EC2™ AMI instances now disable ChallengeResponseAuthentication
+in sshd_config(5) by default. [r326564]
+
+Amazon® EC2™ AMI instances now use the Amazon® internal NTP service by
+default. [r326565]
+
+The bhyve(8) utility has been updated to allow controlling CPU topology
+from userland. [r332298]
+
+The bhyve(8) utility has been updated to add virtio_scsi(4) storage
+support. [r334940] (Sponsored by iXsystems)
+
+The bhyve(8) utility has been updated to add NVMe device emulation.
+[r335974] (Sponsored by iXsystems)
+
+A new sysctl(8) , security.jail.vmm_allowed, has been added, which when
+set to 1 allows bhyve(8) use within a jail(8) . [r337023] (Sponsored by
+HardenedBSD, G2, Inc.)
+
+Amazon® EC2™ AMI instances now disable the PS/2 keyboard and mouse
+devices by default, reducing overall boot time by 2.5 seconds. [r338321]
+
+ARM Support
+
+Support for the USB OTG serial terminal has been enabled on arm systems
+by default. [r335004] (Sponsored by The FreeBSD Foundation)
+
+The armv6 and armv7 images now default to boot with EFI. [r336998]
+
+Support has been added for building aarch64 images for the PINE64-LTS
+system. [r337000]
+
+Support for capsicum(4) has been enabled on armv6 and armv7 by default.
+[r338666] (Sponsored by The FreeBSD Foundation)
+
+Storage
+
+This section covers changes and additions to file systems and other
+storage subsystems, both local and networked.
+
+General Storage
+
+The UFS/FFS filesystem has been updated to support check hashes to
+cylinder-group maps. Support for check hashes is available only for
+UFS2. [r323923]
+
+The CAM Target Layer (CTL) frontend and backend options have been
+overhauled to use nv(3) allowing creating multiple ioctl(2) frontend
+ports. [r333446] (Sponsored by iXsystems)
+
+The default auto_master(5) configuration has been updated to add the
+noautoro automont(8) flag to the /media mount point (commented by
+default). [r337749] (Sponsored by DARPA, AFRL)
+
+The UFS/FFS filesystem has been updated to consolidate TRIM/BIO_DELETE
+commands, reducing read/write requests due to fewer TRIM messages being
+sent simultaneously. [r338056] (Sponsored by Netflix)
+
+TRIM consolidation support has been enabled by default in the UFS/FFS
+filesystem. TRIM consolidation can be disabled by setting the
+vfs.ffs.dotrimcons sysctl(8) to 0, or adding vfs.ffs.dotrimcons=0 to
+sysctl.conf(5) . [r338517] (Sponsored by Netflix)
+
+The geom(8) utility has been updated to add a new flag, -p, which prints
+the GEOM class of the specified provider. [r338640] (Sponsored by DARPA,
+AFRL)
+
+The geom(8) utility has been updated to add a new flag, -t, which prints
+the GEOM hierarchy. [r338684] (Sponsored by DARPA, AFRL)
+
+Networked Storage
+
+The NFS version 4.1 server has been updated to include pNFS server
+support. [r335012]
+
+ZFS
+
+ZFS has been updated to include new sysctl(8) s,
+vfs.zfs.arc_min_prefetch_ms and vfs.zfs.arc_min_prescient_prefetch_ms,
+which improve performance of the zpool(8) scrub subcommand. [r334844]
+
+Boot Loader Changes
+
+This section covers the boot loader, boot menu, and other boot-related
+changes.
+
+Boot Loader Changes
+
+The lua loader(8) has been updated to detect a list of installed kernels
+to boot. [r329501] (Sponsored by Dell EMC Isilon)
+
+The loader(8) has been updated to support geli(8) for all architectures
+and all disk-like devices. [r336252] (Sponsored by Microchip Technology,
+Inc.)
+
+The init(8) utility has been updated to be able to run an executable
+written in languages other than sh(1) , such as Python, for example.
+[r337321] (Sponsored by DARPA, AFRL)
+
+The loader(8) has been updated to add support for loading Intel®
+microcode updates early during the boot process. [r337715] (Sponsored by
+The FreeBSD Foundation)
+
+A new kenv(1) variable, init_exec, has been added to loader(8) which
+allows init(8) to execute a file after opening the console, replacing
+init(8) as PID 1. [r337740] (Sponsored by DARPA, AFRL)
+
+The default libstand(3) interpreter has been changed to Lua. [r338050]
+
+The lua loader(8) has been updated to support module blacklists.
+[r339218]
+
+The default lua loader.conf(5) has been updated to include the
+kernels_autodetect option, which defaults to YES, supplementing the
+loader(8) support to list available kernels to boot introduced in
+revision 329501. [r339308]
+
+Networking
+
+This section describes changes that affect networking in FreeBSD.
+
+General Network
+
+The carp(4) interface has been updated to keep the state as INIT instead
+of MASTER when the net.inet.carp.allow sysctl(8) is set to 0. [r333322]
+(Sponsored by iXsystems)
+
+The pf(4) packet filter is now usable within a jail(8) using vnet(9) .
+
+The pf(4) packet filter has been updated to use rmlock(9) instead of
+rwlock(9) , resulting in significant performance improvements. [r334375]
+
+The SO_REUSEPORT_LB option has been added to the network stack, allowing
+multiple programs or threads to bind to the same port, and incoming
+connections load balanced using a hash function. [r334719] (Sponsored by
+Limelight Networks)
+
+The pf(4) ioctl interface and pfctl(8) now support altq(4) bandwidth
+parameters of 2^32 bps or greater. The HFSC discipline has been upgraded
+to operate correctly with bandwidth parameters up to 100 Gbps, and
+bandwidth parameters supplied to the non-upgraded disciplines will now
+be saturated at the prior 32-bit limit. [r338253]
+
+Network Protocols
+
+Support for token-ring networks has been removed. [r331714] (Sponsored
+by DARPA, AFRL)
+
+Support for the Arcnet protocol has been removed. [r332490] (Sponsored
+by DARPA, AFRL)
+
+Ports Collection and Package Infrastructure
+
+This section covers changes to the FreeBSD Ports Collection, package
+infrastructure, and package maintenance and installation tools.
+
+Packaging Changes
+
+The pkg(8) utility has been updated to verson 1.10.5_5.
+
+KDE has been updated to version 5.12.5.
+
+Perl has been updated to version 5.26.2.
+
+Python has been updated to version 2.7.
+
+Documentation
+
+This section covers changes to the FreeBSD Documentation Project sources
+and toolchain.
+
+Documentation Source Changes
+
+The arch(7) manual page has been added, containing details specific to
+certain architectures. [r303033] (Sponsored by The FreeBSD Foundation)
+
+Release Engineering and Integration
+
+This section convers changes that are specific to the FreeBSD Release
+Engineering processes.
+
+Integration Changes
+
+The FreeBSD/i386 memory stick installation images have been changed to
+use the MBR partitioning scheme instead of GPT to address boot issues
+with some BIOSes. [r332446] (Sponsored by The FreeBSD Foundation)
+
+The FreeBSD/amd64 memory stick installation images have been changed to
+use the MBR partitioning scheme instead of GPT to address boot issues
+with some BIOSes. [r334337] (Sponsored by The FreeBSD Foundation)
+
+------------------------------------------------------------------------
+
+Last modified on: June 19, 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

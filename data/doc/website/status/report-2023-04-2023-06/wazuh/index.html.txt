@@ -1,0 +1,144 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Wazuh on FreeBSD
+
+Links:
+Wazuh URL: https://www.wazuh.com/
+
+Contact: José Alonso Cárdenas Márquez <acm@FreeBSD.org>
+
+Wazuh is a free and open source platform used for threat prevention,
+detection, and response. It is capable of protecting workloads across
+on-premises, virtualized, containerized, and cloud-based environments.
+
+The Wazuh solution consists of an endpoint security agent, deployed to
+the monitored systems, and a management server, which collects and
+analyzes data gathered by the agents. Besides, Wazuh has been fully
+integrated with the Elastic Stack or OpenSearch Stack, providing a
+search engine and data visualization tool that allows users to navigate
+through their security alerts.
+
+Wazuh porting to FreeBSD was started by Michael Muenz. The first Wazuh
+port he added to the FreeBSD ports tree was security/wazuh-agent in
+September 2021. In July 2022, I took maintainership of this port and I
+started porting other Wazuh components.
+
+Currently, all Wazuh components are part of the FreeBSD ports tree. It
+includes security/wazuh-manager, security/wazuh-agent,
+security/wazuh-server, security/wazuh-indexer and
+security/wazuh-dashboard ports.
+
+On FreeBSD, security/wazuh-manager and security/wazuh-agent are compiled
+from Wazuh source code. security/wazuh-indexer is an adapted
+textproc/opensearch used for storing agents data. security/wazuh-server
+is a port for installing the security/wazuh-manager, sysutils/beats8
+(filebeat), and sysutils/logstash8 components. It includes adapted
+configuration files to work on FreeBSD. security/wazuh-dashboard uses an
+adapted textproc/opensearch-dashboards and the wazuh-kibana-app plugin
+generated from wazuh-kibana-app source code for FreeBSD.
+
+The main goal of this work is enhancing visibility of FreeBSD as a
+useful platform for information security or cybersecurity.
+
+Additionally, you can test a Wazuh single-node infrastructure
+(All-in-one) easily using https://github.com/alonsobsd/wazuh-makejail or
+https://github.com/AppJail-makejails/wazuh from AppJail. AppJail is a
+good tool for managing jail containers from the command line.
+
+People interested in helping with the project are welcome.
+
+Current version: 4.4.4
+
+TODO
+
+-   Add Wazuh cluster-mode infrastructure makejail (Work in progress)
+
+-   Add FreeBSD to platforms officially supported by Wazuh Inc; see
+    https://github.com/wazuh/wazuh-kibana-app/pull/5413
+
+-   Add FreeBSD SCA Policy (Work in progress)
+
+------------------------------------------------------------------------
+
+Last modified on: July 5, 2023 by José Alonso Cárdenas Márquez
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

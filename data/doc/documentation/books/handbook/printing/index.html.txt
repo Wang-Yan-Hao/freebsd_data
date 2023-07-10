@@ -1,0 +1,1125 @@
+
+-    Preface
+    -   Intended Audience
+    -   Fourth Edition
+    -   Third Edition
+    -   Second Edition (2004)
+    -   First Edition (2001)
+    -   Organization of This Book
+    -   Conventions used in this book
+    -   Acknowledgments
+-    Part I. Getting Started
+-    Chapter 1. Introduction
+    -   1.1. Synopsis
+    -   1.2. Welcome to FreeBSD!
+    -   1.3. About the FreeBSD Project
+-    Chapter 2. Installing FreeBSD
+    -   2.1. Synopsis
+    -   2.2. Minimum Hardware Requirements
+    -   2.3. Pre-Installation Tasks
+    -   2.4. Starting the Installation
+    -   2.5. Using bsdinstall
+    -   2.6. Allocating Disk Space
+    -   2.7. Fetching Distribution Files
+    -   2.8. Network Interfaces, Accounts, Time Zone, Services and
+        Hardening
+    -   2.9. Troubleshooting
+    -   2.10. Using the Live CD
+-    Chapter 3. FreeBSD Basics
+    -   3.1. Synopsis
+    -   3.2. Virtual Consoles and Terminals
+    -   3.3. Users and Basic Account Management
+    -   3.4. Permissions
+    -   3.5. Directory Structure
+    -   3.6. Disk Organization
+    -   3.7. Mounting and Unmounting File Systems
+    -   3.8. Processes and Daemons
+    -   3.9. Shells
+    -   3.10. Text Editors
+    -   3.11. Devices and Device Nodes
+    -   3.12. Manual Pages
+-    Chapter 4. Installing Applications: Packages and Ports
+    -   4.1. Synopsis
+    -   4.2. Overview of Software Installation
+    -   4.3. Finding Software
+    -   4.4. Using pkg for Binary Package Management
+    -   4.5. Using the Ports Collection
+    -   4.6. Building Packages with Poudriere
+    -   4.7. Post-Installation Considerations
+    -   4.8. Dealing with Broken Ports
+-    Chapter 5. The X Window System
+    -   5.1. Synopsis
+    -   5.2. Installing Xorg
+    -   5.3. Graphic card drivers
+    -   5.4. Xorg Configuration
+    -   5.5. Using Fonts in Xorg
+-    Chapter 6. Wayland
+    -   6.1. Wayland Synopsis
+    -   6.2. The Wayfire Compositor
+    -   6.3. The Hikari Compositor
+    -   6.4. The Sway Compositor
+    -   6.5. Using Xwayland
+    -   6.6. Remote Desktop Using VNC
+    -   6.7. Wayland Login Manager
+    -   6.8. Useful Utilities
+-    Chapter 7. Network
+    -   7.1. Synopsis
+    -   7.2. Setting up the Network
+    -   7.3. Wired Networks
+    -   7.4. Wireless Networks
+    -   7.5. Hostname
+    -   7.6. DNS
+    -   7.7. Troubleshooting
+-    Part II. Common Tasks
+-    Chapter 8. Desktop Environments
+    -   8.1. Synopsis
+    -   8.2. Desktop Environments
+    -   8.3. Browsers
+    -   8.4. Development tools
+    -   8.5. Desktop office productivity
+    -   8.6. Document Viewers
+    -   8.7. Finance
+-    Chapter 9. Multimedia
+    -   9.1. Synopsis
+    -   9.2. Setting Up the Sound Card
+    -   9.3. Audio players
+    -   9.4. Video players
+    -   9.5. Conferencing and Meetings
+    -   9.6. Image Scanners
+-    Chapter 10. Configuring the FreeBSD Kernel
+    -   10.1. Synopsis
+    -   10.2. Why Build a Custom Kernel?
+    -   10.3. Finding the System Hardware
+    -   10.4. The Configuration File
+    -   10.5. Building and Installing a Custom Kernel
+    -   10.6. If Something Goes Wrong
+-    Chapter 11. Printing
+    -   11.1. Quick Start
+    -   11.2. Printer Connections
+    -   11.3. Common Page Description Languages
+    -   11.4. Direct Printing
+    -   11.5. LPD (Line Printer Daemon)
+    -   11.6. Other Printing Systems
+-    Chapter 12. Linux Binary Compatibility
+    -   12.1. Synopsis
+    -   12.2. Configuring Linux Binary Compatibility
+    -   12.3. Linux userlands
+    -   12.4. Advanced Topics
+-    Chapter 13. WINE
+    -   13.1. Synopsis
+    -   13.2. WINE Overview & Concepts
+    -   13.3. Installing WINE on FreeBSD
+    -   13.4. Running a First WINE Program on FreeBSD
+    -   13.5. Configuring WINE Installation
+    -   13.6. WINE Management GUIs
+    -   13.7. WINE in Multi-User FreeBSD Installations
+    -   13.8. WINE on FreeBSD FAQ
+-    Part III. System Administration
+-    Chapter 14. Configuration and Tuning
+    -   14.1. Synopsis
+    -   14.2. Starting Services
+    -   14.3. Configuring cron(8)
+    -   14.4. Managing Services in FreeBSD
+    -   14.5. Configuring System Logging
+    -   14.6. Configuration Files
+    -   14.7. Tuning with sysctl(8)
+    -   14.8. Tuning Disks
+    -   14.9. Tuning Kernel Limits
+    -   14.10. Adding Swap Space
+    -   14.11. Power and Resource Management
+-    Chapter 15. The FreeBSD Booting Process
+    -   15.1. Synopsis
+    -   15.2. FreeBSD Boot Process
+    -   15.3. Device Hints
+    -   15.4. Shutdown Sequence
+-    Chapter 16. Security
+    -   16.1. Synopsis
+    -   16.2. Introduction
+    -   16.3. One-time Passwords
+    -   16.4. TCP Wrapper
+    -   16.5. Kerberos
+    -   16.6. OpenSSL
+    -   16.7. VPN over IPsec
+    -   16.8. OpenSSH
+    -   16.9. Access Control Lists
+    -   16.10. Monitoring Third Party Security Issues
+    -   16.11. FreeBSD Security Advisories
+    -   16.12. Process Accounting
+    -   16.13. Resource Limits
+    -   16.14. Shared Administration with Sudo
+    -   16.15. Using doas as an alternative to sudo
+-    Chapter 17. Jails
+    -   17.1. Synopsis
+    -   17.2. Terms Related to Jails
+    -   17.3. Creating and Controlling Jails
+    -   17.4. Fine Tuning and Administration
+    -   17.5. Updating Multiple Jails
+    -   17.6. Managing Jails with ezjail
+-    Chapter 18. Mandatory Access Control
+    -   18.1. Synopsis
+    -   18.2. Key Terms
+    -   18.3. Understanding MAC Labels
+    -   18.4. Planning the Security Configuration
+    -   18.5. Available MAC Policies
+    -   18.6. User Lock Down
+    -   18.7. Nagios in a MAC Jail
+    -   18.8. Troubleshooting the MAC Framework
+-    Chapter 19. Security Event Auditing
+    -   19.1. Synopsis
+    -   19.2. Key Terms
+    -   19.3. Audit Configuration
+    -   19.4. Working with Audit Trails
+-    Chapter 20. Storage
+    -   20.1. Synopsis
+    -   20.2. Adding Disks
+    -   20.3. Resizing and Growing Disks
+    -   20.4. USB Storage Devices
+    -   20.5. Creating and Using CD Media
+    -   20.6. Creating and Using DVD Media
+    -   20.7. Creating and Using Floppy Disks
+    -   20.8. Using NTFS Disks
+    -   20.9. Backup Basics
+    -   20.10. Memory Disks
+    -   20.11. File System Snapshots
+    -   20.12. Disk Quotas
+    -   20.13. Encrypting Disk Partitions
+    -   20.14. Encrypting Swap
+    -   20.15. Highly Available Storage (HAST)
+-    Chapter 21. GEOM: Modular Disk Transformation Framework
+    -   21.1. Synopsis
+    -   21.2. RAID0 - Striping
+    -   21.3. RAID1 - Mirroring
+    -   21.4. RAID3 - Byte-level Striping with Dedicated Parity
+    -   21.5. Software RAID Devices
+    -   21.6. GEOM Gate Network
+    -   21.7. Labeling Disk Devices
+    -   21.8. UFS Journaling Through GEOM
+-    Chapter 22. The Z File System (ZFS)
+    -   22.1. What Makes ZFS Different
+    -   22.2. Quick Start Guide
+    -   22.3. zpool Administration
+    -   22.4. zfs Administration
+    -   22.5. Delegated Administration
+    -   22.6. Advanced Topics
+<<<<<<< HEAD
+=======
+    -   22.7. Further Resources
+    -   22.8. ZFS Features and Terminology
+-    Chapter 23. Other File Systems
+    -   23.1. Synopsis
+    -   23.2. Linux® File Systems
+-    Chapter 24. Virtualization
+    -   24.1. Synopsis
+    -   24.2. FreeBSD as a Guest on Parallels Desktop for macOS®
+    -   24.3. FreeBSD as a Guest on VMware Fusion for macOS®
+    -   24.4. FreeBSD as a Guest on VirtualBox™
+    -   24.5. FreeBSD as a Host with VirtualBox™
+    -   24.6. FreeBSD as a Host with bhyve
+    -   24.7. FreeBSD as a Xen™-Host
+-    Chapter 25. Localization - i18n/L10n Usage and Setup
+    -   25.1. Synopsis
+    -   25.2. Using Localization
+    -   25.3. Finding i18n Applications
+    -   25.4. Locale Configuration for Specific Languages
+-    Chapter 26. Updating and Upgrading FreeBSD
+    -   26.1. Synopsis
+    -   26.2. FreeBSD Update
+    -   26.3. Updating Bootcode
+    -   26.4. Updating the Documentation Set
+    -   26.5. Tracking a Development Branch
+    -   26.6. Updating FreeBSD from Source
+    -   26.7. Tracking for Multiple Machines
+-    Chapter 27. DTrace
+    -   27.1. Synopsis
+    -   27.2. Implementation Differences
+    -   27.3. Enabling DTrace Support
+    -   27.4. Using DTrace
+-    Chapter 28. USB Device Mode / USB OTG
+    -   28.1. Synopsis
+    -   28.2. USB Virtual Serial Ports
+    -   28.3. USB Device Mode Network Interfaces
+    -   28.4. USB Virtual Storage Device
+-    Part IV. Network Communication
+-    Chapter 29. Serial Communications
+    -   29.1. Synopsis
+    -   29.2. Serial Terminology and Hardware
+    -   29.3. Terminals
+    -   29.4. Dial-in Service
+    -   29.5. Dial-out Service
+    -   29.6. Setting Up the Serial Console
+-    Chapter 30. PPP
+    -   30.1. Synopsis
+    -   30.2. Configuring PPP
+    -   30.3. Troubleshooting PPP Connections
+    -   30.4. Using PPP over Ethernet (PPPoE)
+    -   30.5. Using PPP over ATM (PPPoA)
+-    Chapter 31. Electronic Mail
+    -   31.1. Synopsis
+    -   31.2. Mail Components
+    -   31.3. Sendmail Configuration Files
+    -   31.4. Changing the Mail Transfer Agent
+    -   31.5. Troubleshooting
+    -   31.6. Advanced Topics
+    -   31.7. Setting Up to Send Only
+    -   31.8. Using Mail with a Dialup Connection
+    -   31.9. SMTP Authentication
+    -   31.10. Mail User Agents
+    -   31.11. Using fetchmail
+    -   31.12. Using procmail
+-    Chapter 32. Network Servers
+    -   32.1. Synopsis
+    -   32.2. The inetd Super-Server
+    -   32.3. Network File System (NFS)
+    -   32.4. Network Information System (NIS)
+    -   32.5. Lightweight Directory Access Protocol (LDAP)
+    -   32.6. Dynamic Host Configuration Protocol (DHCP)
+    -   32.7. Domain Name System (DNS)
+    -   32.8. Apache HTTP Server
+    -   32.9. File Transfer Protocol (FTP)
+    -   32.10. File and Print Services for Microsoft® Windows® Clients
+        (Samba)
+    -   32.11. Clock Synchronization with NTP
+    -   32.12. iSCSI Initiator and Target Configuration
+-    Chapter 33. Firewalls
+    -   33.1. Synopsis
+    -   33.2. Firewall Concepts
+    -   33.3. PF
+    -   33.4. IPFW
+    -   33.5. IPFILTER (IPF)
+    -   33.6. Blacklistd
+-    Chapter 34. Advanced Networking
+    -   34.1. Synopsis
+    -   34.2. Gateways and Routes
+    -   34.3. Virtual Hosts
+    -   34.4. Wireless Advanced Authentication
+    -   34.5. Wireless Ad-hoc Mode
+    -   34.6. USB Tethering
+    -   34.7. Bluetooth
+    -   34.8. Bridging
+    -   34.9. Link Aggregation and Failover
+    -   34.10. Diskless Operation with PXE
+    -   34.11. Common Address Redundancy Protocol (CARP)
+    -   34.12. VLANs
+-    Part V. Appendices
+-    Appendix A. Obtaining FreeBSD
+    -   A.1. Mirrors
+    -   A.2. Using Git
+    -   A.3. Using Subversion
+    -   A.4. CD and DVD Sets
+-    Appendix B. Bibliography
+    -   B.1. FreeBSD Bibliography
+    -   B.2. Security Reference
+    -   B.3. UNIX® History
+    -   B.4. Periodicals, Journals, and Magazines
+-    Appendix C. Resources on the Internet
+    -   C.1. Websites
+    -   C.2. Mailing Lists
+    -   C.3. Usenet Newsgroups
+-    Appendix D. OpenPGP Keys
+    -   D.1. Officers
+-    FreeBSD Glossary
+-    Colophon
+-   
+-   
+
+Book menu
+
+Chapter 11. Printing
+
+Table of Contents
+
+-   11.1. Quick Start
+-   11.2. Printer Connections
+-   11.3. Common Page Description Languages
+-   11.4. Direct Printing
+-   11.5. LPD (Line Printer Daemon)
+-   11.6. Other Printing Systems
+
+Putting information on paper is a vital function, despite many attempts
+to eliminate it. Printing has two basic components. The data must be
+delivered to the printer, and must be in a form that the printer can
+understand.
+
+11.1. Quick Start
+
+Basic printing can be set up quickly. The printer must be capable of
+printing plain ASCII text. For printing to other types of files, see
+Filters.
+
+1.  Create a directory to store files while they are being printed:
+
+        # mkdir -p /var/spool/lpd/lp
+        # chown daemon:daemon /var/spool/lpd/lp
+        # chmod 770 /var/spool/lpd/lp
+
+2.  As root, create /etc/printcap with these contents:
+
+        lp:\
+        lp=/dev/unlpt0:\  (1)
+        sh:\
+        mx#0:\
+        sd=/var/spool/lpd/lp:\
+        lf=/var/log/lpd-errs:
+
+      --- -----------------------------------------------------
+      1   This line is for a printer connected to a USB port.
+      --- -----------------------------------------------------
+
+    For a printer connected to a parallel or "printer" port, use:
+
+        :lp=/dev/lpt0:\
+
+    For a printer connected directly to a network, use:
+
+        :lp=:rm=network-printer-name:rp=raw:\
+
+    Replace network-printer-name with the DNS host name of the network
+    printer.
+
+3.  Enable LPD by editing /etc/rc.conf, adding this line:
+
+        lpd_enable="YES"
+
+    Start the service:
+
+        # service lpd start
+        Starting lpd.
+
+4.  Print a test:
+
+        # printf "1. This printer can print.\n2. This is the second line.\n" | lpr
+
+    +-----------------------------------+-----------------------------------+
+    |                                   | If both lines do not start at the |
+    |                                   | left border, but "stairstep"      |
+    |                                   | instead, see Preventing           |
+    |                                   | Stairstepping on Plain Text       |
+    |                                   | Printers.                         |
+    +-----------------------------------+-----------------------------------+
+
+    Text files can now be printed with lpr. Give the filename on the
+    command line, or pipe output directly into lpr.
+
+        % lpr textfile.txt
+        % ls -lh | lpr
+
+11.2. Printer Connections
+
+Printers are connected to computer systems in a variety of ways. Small
+desktop printers are usually connected directly to a computer’s USB
+port. Older printers are connected to a parallel or "printer" port. Some
+printers are directly connected to a network, making it easy for
+multiple computers to share them. A few printers use a rare serial port
+connection.
+
+FreeBSD can communicate with all of these types of printers.
+
+USB
+
+    USB printers can be connected to any available USB port on the
+    computer.
+
+    When FreeBSD detects a USB printer, two device entries are created:
+    /dev/ulpt0 and /dev/unlpt0. Data sent to either device will be
+    relayed to the printer. After each print job, ulpt0 resets the USB
+    port. Resetting the port can cause problems with some printers, so
+    the unlpt0 device is usually used instead. unlpt0 does not reset the
+    USB port at all.
+
+Parallel (IEEE-1284)
+
+    The parallel port device is /dev/lpt0. This device appears whether a
+    printer is attached or not, it is not autodetected.
+
+    Vendors have largely moved away from these "legacy" ports, and many
+    computers no longer have them. Adapters can be used to connect a
+    parallel printer to a USB port. With such an adapter, the printer
+    can be treated as if it were actually a USB printer. Devices called
+    print servers can also be used to connect parallel printers directly
+    to a network.
+
+Serial (RS-232)
+
+    Serial ports are another legacy port, rarely used for printers
+    except in certain niche applications. Cables, connectors, and
+    required wiring vary widely.
+
+    For serial ports built into a motherboard, the serial device name is
+    /dev/cuau0 or /dev/cuau1. Serial USB adapters can also be used, and
+    these will appear as /dev/cuaU0.
+
+    Several communication parameters must be known to communicate with a
+    serial printer. The most important are baud rate or BPS (Bits Per
+    Second) and parity. Values vary, but typical serial printers use a
+    baud rate of 9600 and no parity.
+
+Network
+
+    Network printers are connected directly to the local computer
+    network.
+
+    The DNS hostname of the printer must be known. If the printer is
+    assigned a dynamic address by DHCP, DNS should be dynamically
+    updated so that the host name always has the correct IP address.
+    Network printers are often given static IP addresses to avoid this
+    problem.
+
+    Most network printers understand print jobs sent with the LPD
+    protocol. A print queue name can also be specified. Some printers
+    process data differently depending on which queue is used. For
+    example, a raw queue prints the data unchanged, while the text queue
+    adds carriage returns to plain text.
+
+    Many network printers can also print data sent directly to port
+    9100.
+
+11.2.1. Summary
+
+Wired network connections are usually the easiest to set up and give the
+fastest printing. For direct connection to the computer, USB is
+preferred for speed and simplicity. Parallel connections work but have
+limitations on cable length and speed. Serial connections are more
+difficult to configure. Cable wiring differs between models, and
+communication parameters like baud rate and parity bits must add to the
+complexity. Fortunately, serial printers are rare.
+
+11.3. Common Page Description Languages
+
+Data sent to a printer must be in a language that the printer can
+understand. These languages are called Page Description Languages, or
+PDLs.
+
+ASCII
+
+    Plain ASCII text is the simplest way to send data to a printer.
+    Characters correspond one to one with what will be printed: an A in
+    the data prints an A on the page. Very little formatting is
+    available. There is no way to select a font or proportional spacing.
+    The forced simplicity of plain ASCII means that text can be printed
+    straight from the computer with little or no encoding or
+    translation. The printed output corresponds directly with what was
+    sent.
+
+    Some inexpensive printers cannot print plain ASCII text. This makes
+    them more difficult to set up, but it is usually still possible.
+
+PostScript®
+
+    PostScript® is almost the opposite of ASCII. Rather than simple
+    text, a PostScript® program is a set of instructions that draw the
+    final document. Different fonts and graphics can be used. However,
+    this power comes at a price. The program that draws the page must be
+    written. Usually this program is generated by application software,
+    so the process is invisible to the user.
+
+    Inexpensive printers sometimes leave out PostScript® compatibility
+    as a cost-saving measure.
+
+PCL (Printer Command Language)
+
+    PCL is an extension of ASCII, adding escape sequences for
+    formatting, font selection, and printing graphics. Many printers
+    provide PCL5 support. Some support the newer PCL6 or PCLXL. These
+    later versions are supersets of PCL5 and can provide faster
+    printing.
+
+Host-Based
+
+    Manufacturers can reduce the cost of a printer by giving it a simple
+    processor and very little memory. These printers are not capable of
+    printing plain text. Instead, bitmaps of text and graphics are drawn
+    by a driver on the host computer and then sent to the printer. These
+    are called host-based printers.
+
+    Communication between the driver and a host-based printer is often
+    through proprietary or undocumented protocols, making them
+    functional only on the most common operating systems.
+
+11.3.1. Converting PostScript® to Other PDLs
+
+Many applications from the Ports Collection and FreeBSD utilities
+produce PostScript® output. This table shows the utilities available to
+convert that into other common PDLs:
+
++----------------------+----------------------+-----------------------+
+| Output PDL           | Generated By         | Notes                 |
++======================+======================+=======================+
+| PCL or PCL5          | pri                  | -sDEVICE=ljet4 for    |
+|                      | nt/ghostscript9-base | monochrome,           |
+|                      |                      | -sDEVICE=cljet5 for   |
+|                      |                      | color                 |
++----------------------+----------------------+-----------------------+
+| PCLXL or PCL6        | pri                  | -sDEVICE=pxlmono for  |
+|                      | nt/ghostscript9-base | monochrome,           |
+|                      |                      | -sDEVICE=pxlcolor for |
+|                      |                      | color                 |
++----------------------+----------------------+-----------------------+
+| ESC/P2               | pri                  | -sDEVICE=uniprint     |
+|                      | nt/ghostscript9-base |                       |
++----------------------+----------------------+-----------------------+
+| XQX                  | print/foo2zjs        |                       |
++----------------------+----------------------+-----------------------+
+
+: Table 1. Output PDLs
+
+11.3.2. Summary
+
+For the easiest printing, choose a printer that supports PostScript®.
+Printers that support PCL are the next preferred. With
+print/ghostscript9-base, these printers can be used as if they
+understood PostScript® natively. Printers that support PostScript® or
+PCL directly almost always support direct printing of plain ASCII text
+files also.
+
+Line-based printers like typical inkjets usually do not support
+PostScript® or PCL. They often can print plain ASCII text files.
+print/ghostscript9-base supports the PDLs used by some of these
+printers. However, printing an entire graphic-based page on these
+printers is often very slow due to the large amount of data to be
+transferred and printed.
+
+Host-based printers are often more difficult to set up. Some cannot be
+used at all because of proprietary PDLs. Avoid these printers when
+possible.
+
+Descriptions of many PDLs can be found at
+http://www.undocprint.org/formats/page_description_languages. The
+particular PDL used by various models of printers can be found at
+http://www.openprinting.org/printers.
+
+11.4. Direct Printing
+
+For occasional printing, files can be sent directly to a printer device
+without any setup. For example, a file called sample.txt can be sent to
+a USB printer:
+
+    # cp sample.txt /dev/unlpt0
+
+Direct printing to network printers depends on the abilities of the
+printer, but most accept print jobs on port 9100, and nc(1) can be used
+with them. To print the same file to a printer with the DNS hostname of
+netlaser:
+
+    # nc netlaser 9100 < sample.txt
+
+11.5. LPD (Line Printer Daemon)
+
+Printing a file in the background is called spooling. A spooler allows
+the user to continue with other programs on the computer without waiting
+for the printer to slowly complete the print job.
+
+FreeBSD includes a spooler called lpd(8). Print jobs are submitted with
+lpr(1).
+
+11.5.1. Initial Setup
+
+A directory for storing print jobs is created, ownership is set, and the
+permissions are set to prevent other users from viewing the contents of
+those files:
+
+    # mkdir -p /var/spool/lpd/lp
+    # chown daemon:daemon /var/spool/lpd/lp
+    # chmod 770 /var/spool/lpd/lp
+
+Printers are defined in /etc/printcap. An entry for each printer
+includes details like a name, the port where it is attached, and various
+other settings. Create /etc/printcap with these contents:
+
+    lp:\                (1)
+        :lp=/dev/unlpt0:\   (2)
+        :sh:\           (3)
+        :mx#0:\         (4)
+        :sd=/var/spool/lpd/lp:\ (5)
+        :lf=/var/log/lpd-errs:  (6)
+
+  --- -------------------------------------------------------------------------------------------------------------------------------------------------------------
+  1   The name of this printer. lpr(1) sends print jobs to the lp printer unless another printer is specified with -P, so the default printer should be named lp.
+  2   The device where the printer is connected. Replace this line with the appropriate one for the connection type shown here.
+  3   Suppress the printing of a header page at the start of a print job.
+  4   Do not limit the maximum size of a print job.
+  5   The path to the spooling directory for this printer. Each printer uses its own spooling directory.
+  6   The log file where errors on this printer will be reported.
+  --- -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+After creating /etc/printcap, use chkprintcap(8) to test it for errors:
+
+    # chkprintcap
+
+Fix any reported problems before continuing.
+
+Enable lpd(8) in /etc/rc.conf:
+
+    lpd_enable="YES"
+
+Start the service:
+
+    # service lpd start
+
+11.5.2. Printing with lpr(1)
+
+Documents are sent to the printer with lpr. A file to be printed can be
+named on the command line or piped into lpr. These two commands are
+equivalent, sending the contents of doc.txt to the default printer:
+
+    % lpr doc.txt
+    % cat doc.txt | lpr
+
+Printers can be selected with -P. To print to a printer called laser:
+
+    % lpr -Plaser doc.txt
+
+11.5.3. Filters
+
+The examples shown so far have sent the contents of a text file directly
+to the printer. As long as the printer understands the content of those
+files, output will be printed correctly.
+
+Some printers are not capable of printing plain text, and the input file
+might not even be plain text.
+
+Filters allow files to be translated or processed. The typical use is to
+translate one type of input, like plain text, into a form that the
+printer can understand, like PostScript® or PCL. Filters can also be
+used to provide additional features, like adding page numbers or
+highlighting source code to make it easier to read.
+
+The filters discussed here are input filters or text filters. These
+filters convert the incoming file into different forms. Use su(1) to
+become root before creating the files.
+
+Filters are specified in /etc/printcap with the if= identifier. To use
+/usr/local/libexec/lf2crlf as a filter, modify /etc/printcap like this:
+
+    lp:\
+        :lp=/dev/unlpt0:\
+        :sh:\
+        :mx#0:\
+        :sd=/var/spool/lpd/lp:\
+        :if=/usr/local/libexec/lf2crlf:\   (1)
+        :lf=/var/log/lpd-errs:
+
+  --- ---------------------------------------------------------------------
+  1   if= identifies the input filter that will be used on incoming text.
+  --- ---------------------------------------------------------------------
+
++-----------------------------------+-----------------------------------+
+|                                   | The backslash line continuation   |
+|                                   | characters at the end of the      |
+|                                   | lines in printcap entries reveal  |
+|                                   | that an entry for a printer is    |
+|                                   | really just one long line with    |
+|                                   | entries delimited by colon        |
+|                                   | characters. An earlier example    |
+|                                   | can be rewritten as a single      |
+|                                   | less-readable line:               |
+|                                   |                                   |
+|                                   |                                   |
+|                                   |  lp:lp=/dev/unlpt0:sh:mx#0:sd=/va |
+|                                   | r/spool/lpd/lp:if=/usr/local/libe |
+|                                   | xec/lf2crlf:lf=/var/log/lpd-errs: |
++-----------------------------------+-----------------------------------+
+
+11.5.3.1. Preventing Stairstepping on Plain Text Printers
+
+Typical FreeBSD text files contain only a single line feed character at
+the end of each line. These lines will "stairstep" on a standard
+printer:
+
+    A printed file looks
+                        like the steps of a staircase
+                                                     scattered by the wind
+
+A filter can convert the newline characters into carriage returns and
+newlines. The carriage returns make the printer return to the left after
+each line. Create /usr/local/libexec/lf2crlf with these contents:
+
+    #!/bin/sh
+    CR=$'\r'
+    /usr/bin/sed -e "s/$/${CR}/g"
+
+Set the permissions and make it executable:
+
+    # chmod 555 /usr/local/libexec/lf2crlf
+
+Modify /etc/printcap to use the new filter:
+
+    :if=/usr/local/libexec/lf2crlf:\
+
+Test the filter by printing the same plain text file. The carriage
+returns will cause each line to start at the left side of the page.
+
+11.5.3.2. Fancy Plain Text on PostScript® Printers with print/enscript
+
+GNUEnscript converts plain text files into nicely-formatted PostScript®
+for printing on PostScript® printers. It adds page numbers, wraps long
+lines, and provides numerous other features to make printed text files
+easier to read. Depending on the local paper size, install either
+print/enscript-letter or print/enscript-a4 from the Ports Collection.
+
+Create /usr/local/libexec/enscript with these contents:
+
+    #!/bin/sh
+    /usr/local/bin/enscript -o -
+
+Set the permissions and make it executable:
+
+    # chmod 555 /usr/local/libexec/enscript
+
+Modify /etc/printcap to use the new filter:
+
+    :if=/usr/local/libexec/enscript:\
+
+Test the filter by printing a plain text file.
+
+11.5.3.3. Printing PostScript® to PCL Printers
+
+Many programs produce PostScript® documents. However, inexpensive
+printers often only understand plain text or PCL. This filter converts
+PostScript® files to PCL before sending them to the printer.
+
+Install the Ghostscript PostScript® interpreter,
+print/ghostscript9-base, from the Ports Collection.
+
+Create /usr/local/libexec/ps2pcl with these contents:
+
+    #!/bin/sh
+    /usr/local/bin/gs -dSAFER -dNOPAUSE -dBATCH -q -sDEVICE=ljet4 -sOutputFile=- -
+
+Set the permissions and make it executable:
+
+    # chmod 555 /usr/local/libexec/ps2pcl
+
+PostScript® input sent to this script will be rendered and converted to
+PCL before being sent on to the printer.
+
+Modify /etc/printcap to use this new input filter:
+
+    :if=/usr/local/libexec/ps2pcl:\
+
+Test the filter by sending a small PostScript® program to it:
+
+    % printf "%%\!PS \n /Helvetica findfont 18 scalefont setfont \
+    72 432 moveto (PostScript printing successful.) show showpage \004" | lpr
+
+11.5.3.4. Smart Filters
+
+A filter that detects the type of input and automatically converts it to
+the correct format for the printer can be very convenient. The first two
+characters of a PostScript® file are usually %!. A filter can detect
+those two characters. PostScript® files can be sent on to a PostScript®
+printer unchanged. Text files can be converted to PostScript® with
+Enscript as shown earlier. Create /usr/local/libexec/psif with these
+contents:
+
+    #!/bin/sh
+    #
+    #  psif - Print PostScript or plain text on a PostScript printer
+    #
+    IFS="" read -r first_line
+    first_two_chars=`expr "$first_line" : '\(..\)'`
+
+    case "$first_two_chars" in
+    %!)
+        # %! : PostScript job, print it.
+        echo "$first_line" && cat && exit 0
+        exit 2
+        ;;
+    *)
+        # otherwise, format with enscript
+        ( echo "$first_line"; cat ) | /usr/local/bin/enscript -o - && exit 0
+        exit 2
+        ;;
+    esac
+
+Set the permissions and make it executable:
+
+    # chmod 555 /usr/local/libexec/psif
+
+Modify /etc/printcap to use this new input filter:
+
+    :if=/usr/local/libexec/psif:\
+
+Test the filter by printing PostScript® and plain text files.
+
+11.5.3.5. Other Smart Filters
+
+Writing a filter that detects many different types of input and formats
+them correctly is challenging. print/apsfilter from the Ports Collection
+is a smart "magic" filter that detects dozens of file types and
+automatically converts them to the PDL understood by the printer. See
+http://www.apsfilter.org for more details.
+
+11.5.4. Multiple Queues
+
+The entries in /etc/printcap are really definitions of queues. There can
+be more than one queue for a single printer. When combined with filters,
+multiple queues provide users more control over how their jobs are
+printed.
+
+As an example, consider a networked PostScript® laser printer in an
+office. Most users want to print plain text, but a few advanced users
+want to be able to print PostScript® files directly. Two entries can be
+created for the same printer in /etc/printcap:
+
+    textprinter:\
+        :lp=9100@officelaser:\
+        :sh:\
+        :mx#0:\
+        :sd=/var/spool/lpd/textprinter:\
+        :if=/usr/local/libexec/enscript:\
+        :lf=/var/log/lpd-errs:
+
+    psprinter:\
+        :lp=9100@officelaser:\
+        :sh:\
+        :mx#0:\
+        :sd=/var/spool/lpd/psprinter:\
+        :lf=/var/log/lpd-errs:
+
+Documents sent to textprinter will be formatted by the
+/usr/local/libexec/enscript filter shown in an earlier example. Advanced
+users can print PostScript® files on psprinter, where no filtering is
+done.
+
+This multiple queue technique can be used to provide direct access to
+all kinds of printer features. A printer with a duplexer could use two
+queues, one for ordinary single-sided printing, and one with a filter
+that sends the command sequence to enable double-sided printing and then
+sends the incoming file.
+
+11.5.5. Monitoring and Controlling Printing
+
+Several utilities are available to monitor print jobs and check and
+control printer operation.
+
+11.5.5.1. lpq(1)
+
+lpq(1) shows the status of a user’s print jobs. Print jobs from other
+users are not shown.
+
+Show the current user’s pending jobs on a single printer:
+
+    % lpq -Plp
+    Rank   Owner      Job  Files                                 Total Size
+    1st    jsmith     0    (standard input)                      12792 bytes
+
+Show the current user’s pending jobs on all printers:
+
+    % lpq -a
+    lp:
+    Rank   Owner      Job  Files                                 Total Size
+    1st    jsmith     1    (standard input)                      27320 bytes
+
+    laser:
+    Rank   Owner      Job  Files                                 Total Size
+    1st    jsmith     287  (standard input)                      22443 bytes
+
+11.5.5.2. lprm(1)
+
+lprm(1) is used to remove print jobs. Normal users are only allowed to
+remove their own jobs. root can remove any or all jobs.
+
+Remove all pending jobs from a printer:
+
+    # lprm -Plp -
+    dfA002smithy dequeued
+    cfA002smithy dequeued
+    dfA003smithy dequeued
+    cfA003smithy dequeued
+    dfA004smithy dequeued
+    cfA004smithy dequeued
+
+Remove a single job from a printer. lpq(1) is used to find the job
+number.
+
+    % lpq
+    Rank   Owner      Job  Files                                 Total Size
+    1st    jsmith     5    (standard input)                      12188 bytes
+
+    % lprm -Plp 5
+    dfA005smithy dequeued
+    cfA005smithy dequeued
+
+11.5.5.3. lpc(8)
+
+lpc(8) is used to check and modify printer status. lpc is followed by a
+command and an optional printer name. all can be used instead of a
+specific printer name, and the command will be applied to all printers.
+Normal users can view status with lpc(8). Only root can use commands
+which modify printer status.
+
+Show the status of all printers:
+
+    % lpc status all
+    lp:
+        queuing is enabled
+        printing is enabled
+        1 entry in spool area
+        printer idle
+    laser:
+        queuing is enabled
+        printing is enabled
+        1 entry in spool area
+        waiting for laser to come up
+
+Prevent a printer from accepting new jobs, then begin accepting new jobs
+again:
+
+    # lpc disable lp
+    lp:
+        queuing disabled
+    # lpc enable lp
+    lp:
+        queuing enabled
+
+Stop printing, but continue to accept new jobs. Then begin printing
+again:
+
+    # lpc stop lp
+    lp:
+        printing disabled
+    # lpc start lp
+    lp:
+        printing enabled
+        daemon started
+
+Restart a printer after some error condition:
+
+    # lpc restart lp
+    lp:
+        no daemon to abort
+        printing enabled
+        daemon restarted
+
+Turn the print queue off and disable printing, with a message to explain
+the problem to users:
+
+    # lpc down lp Repair parts will arrive on Monday
+    lp:
+        printer and queuing disabled
+        status message is now: Repair parts will arrive on Monday
+
+Re-enable a printer that is down:
+
+    # lpc up lp
+    lp:
+        printing enabled
+        daemon started
+
+See lpc(8) for more commands and options.
+
+11.5.6. Shared Printers
+
+Printers are often shared by multiple users in businesses and schools.
+Additional features are provided to make sharing printers more
+convenient.
+
+11.5.6.1. Aliases
+
+The printer name is set in the first line of the entry in /etc/printcap.
+Additional names, or aliases, can be added after that name. Aliases are
+separated from the name and each other by vertical bars:
+
+    lp|repairsprinter|salesprinter:\
+
+Aliases can be used in place of the printer name. For example, users in
+the Sales department print to their printer with
+
+    % lpr -Psalesprinter sales-report.txt
+
+Users in the Repairs department print to their printer with
+
+    % lpr -Prepairsprinter repairs-report.txt
+
+All of the documents print on that single printer. When the Sales
+department grows enough to need their own printer, the alias can be
+removed from the shared printer entry and used as the name of a new
+printer. Users in both departments continue to use the same commands,
+but the Sales documents are sent to the new printer.
+
+11.5.6.2. Header Pages
+
+It can be difficult for users to locate their documents in the stack of
+pages produced by a busy shared printer. Header pages were created to
+solve this problem. A header page with the user name and document name
+is printed before each print job. These pages are also sometimes called
+banner or separator pages.
+
+Enabling header pages differs depending on whether the printer is
+connected directly to the computer with a USB, parallel, or serial
+cable, or is connected remotely over a network.
+
+Header pages on directly-connected printers are enabled by removing the
+:sh:\ (Suppress Header) line from the entry in /etc/printcap. These
+header pages only use line feed characters for new lines. Some printers
+will need the /usr/share/examples/printing/hpif filter to prevent
+stairstepped text. The filter configures PCL printers to print both
+carriage returns and line feeds when a line feed is received.
+
+Header pages for network printers must be configured on the printer
+itself. Header page entries in /etc/printcap are ignored. Settings are
+usually available from the printer front panel or a configuration web
+page accessible with a web browser.
+
+11.5.7. References
+
+Example files: /usr/share/examples/printing/.
+
+The 4.3BSD Line Printer Spooler Manual,
+/usr/share/doc/smm/07.lpd/paper.ascii.gz.
+
+Manual pages: printcap(5), lpd(8), lpr(1), lpc(8), lprm(1), lpq(1).
+
+11.6. Other Printing Systems
+
+Several other printing systems are available in addition to the built-in
+lpd(8). These systems offer support for other protocols or additional
+features.
+
+11.6.1. CUPS (Common UNIX® Printing System)
+
+CUPS is a popular printing system available on many operating systems.
+Using CUPS on FreeBSD is documented in a separate article: CUPS
+
+11.6.2. HPLIP
+
+Hewlett Packard provides a printing system that supports many of their
+inkjet and laser printers. The port is print/hplip. The main web page is
+at https://developers.hp.com/hp-linux-imaging-and-printing. The port
+handles all the installation details on FreeBSD. Configuration
+information is shown at
+https://developers.hp.com/hp-linux-imaging-and-printing/install.
+
+11.6.3. LPRng
+
+LPRng was developed as an enhanced alternative to lpd(8). The port is
+sysutils/LPRng. For details and documentation, see
+http://www.lprng.com/.
+
+------------------------------------------------------------------------
+
+Last modified on: July 6, 2023 by Sergio Carlavilla Delgado
+
+Prev
+
+Home
+
+Next
+
+Table of Contents
+
+-   11.1. Quick Start
+-   11.2. Printer Connections
+-   11.3. Common Page Description Languages
+-   11.4. Direct Printing
+-   11.5. LPD (Line Printer Daemon)
+-   11.6. Other Printing Systems
+
+------------------------------------------------------------------------
+
+Resources
+
+-   Download PDF
+-   Edit this page
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+

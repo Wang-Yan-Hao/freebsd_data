@@ -1,0 +1,795 @@
+Skip site navigation (1) Skip section navigation (2)
+
+Header And Logo
+
+[FreeBSD]
+
+.
+
+Donate to FreeBSD
+
+.
+
+Peripheral Links
+
+Search
+
+ 
+
+Site Navigation
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+Section Navigation
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Multimedia
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Introduction
+
+This months report covers activity during the second half of October,
+and the month of November. During these months, substantial work was
+performed to improve system performance and stability, in particular
+addressing concerns regarding regressions in network performance for the
+TCP protocol, and via the introduction of polled network device driver
+support. Work continues on long-term architectural projects for 5.0,
+including KSEs, NEWCARD, and TrustedBSD, as well as the cleaning up of
+long-standing problems in FreeBSD, such as PAM integration.
+Administrative changes are also documented, including work to redefine
+and formalize the release engineering process, and the approval of a new
+portmgr group which will administer the ports collection.
+
+FreeBSD users and developers are strongly encouraged to attend the
+USENIX BSD Conference in February of next year; it is expected that this
+will be a useful forum both for learning about FreeBSD and on-going
+work, as well as providing an opportunity for developers to work more
+closely and act as a vehicle for discussion and round-the-clock hacking.
+More information is available at the USENIX web site.
+
+Robert Watson
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+-   ATA Project Status Report
+-   Device Polling
+-   Fibre Channel Support
+-   FreeBSD 4.5 Release Engineering
+-   FreeBSD C99 & POSIX Conformance Project
+-   FreeBSD in Bulgarian
+-   FreeBSD NVIDIA Driver Port
+-   GEOM - generalized block storage manipulation
+-   Improving FreeBSD startup scripts
+-   Intel Gigabit Driver: wx desupported
+-   jp.FreeBSD.org daily SNAPSHOTs project
+-   jpman project
+-   KSEs
+-   LOMAC Status Report
+-   Network interface cloning and modularity
+-   New mount(2) API
+-   NEWCARD/OLDCARD Status report
+-   Pluggable Authentication Modules
+-   Ports Manager Team (portmgr)
+-   RELNOTESng
+-   Revised {mode,log}page support for camcontrol
+-   SMPng Status Report
+-   Status Report: mb_alloc (-CURRENT mbuf allocator)
+-   TCP Performance Improvements
+-   TrustedBSD Audit
+-   TrustedBSD Project
+-   UDF Filesystem
+-   Web site conversion to XML
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+ATA Project Status Report
+
+Contact: Søren Schmidt <sos@FreeBSD.org>
+
+Work is underways to support failing mirror disks better and handle
+hotswapping in a new replacement disk and have it rebuild automagically.
+
+Support for the Promise TX4 is now working in my lab, seems they did the
+PCI-PCI bridging in the not so obvious way.
+
+Plans are in the works to backport the -current ATA driver to -stable
+with hotswap and the works. Now that -current is delayed I'm working on
+ways to give me time to get this done, since I've had lots of requests
+lately and we really can't let down our customers :).
+
+SMART support is being worked on, but no timelines yet.
+
+Although not strictly ATA, Promise has equipped me with a couple
+SuperTrak sx6000 RAID controllers, they take 6 ATA disks and does
+RAID0-5 in hardware. I have done a driver (its an I2O device) for both
+-current and -stable and it works beautifully with hotswap the works. It
+will enter the tree when it is more mature, and I have an agreement with
+Promise on how we handle userland control util etc. BTW it seems it can
+also be used as a normal 6 channel PCI ATA controller, a bit on the
+expensive side maybe...
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Device Polling
+
+  ---------------------------------------------- -----------------------------------------------
+  Links                                          
+  Web page with code and detailed description.   URL: http://info.iet.unipi.it/~luigi/polling/
+  ---------------------------------------------- -----------------------------------------------
+
+Contact: Luigi Rizzo <luigi@iet.unipi.it>
+
+This work uses a mixed interrupt-polling architecture to handle network
+device drivers, giving the system substantial improvements in terms of
+stability and robustness to overloads, as well as the ability to control
+the sharing of CPU between network-related kernel processing and other
+user/kernel tasks. Last not least, you might even see a moderate (up to
+20-30%, machine dependent) performance improvement.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Fibre Channel Support
+
+  ---------------------------------- ------------------------------------
+  Links                              
+  Qlogic ISP Host Adapter Software   URL: http://www.feral.com/isp.html
+  ---------------------------------- ------------------------------------
+
+Contact: Matthew Jacob <mjacob@feral.com>
+
+Ongoing bug fixes. Work is underway, to be integrated shortly, that
+makes the cross platform endian support easier and will prepare the
+FreeBSD version for eventual sparc64 and PowerPC usage.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD 4.5 Release Engineering
+
+  ----------------------------------------- ----------------------------------------------------
+  Links                                     
+  FreeBSD Release Engineering.              URL: http://www.FreeBSD.org/internal/releng.html
+  FreeBSD 4.5 Release Process / Schedule.   URL: http://www.FreeBSD.org/internal/releng45.html
+  ----------------------------------------- ----------------------------------------------------
+
+Contact: Murray Stokely <murray@FreeBSD.org>
+
+Release engineering activities for FreeBSD 4.5 have begun. An overview
+of the entire process has been added to the FreeBSD web site, along with
+a specific schedule for 4.5. The code freeze is scheduled to start on
+December 20. The team responsible for responding to MFC requests sent to
+re@FreeBSD.org for this release is: Murray Stokely, Robert Watson, and
+John Baldwin. Some of our many goals for this release include closing
+more installation-related problem reports, being more conservative with
+our approval of changes during the code freeze, and continuing to
+document the entire process. For suggestions or questions about FreeBSD
+4.5 release activities, please subscribe to the public
+freebsd-qa@FreeBSD.org mailing list.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD C99 & POSIX Conformance Project
+
+  ------- -------------------------------------------
+  Links   
+          URL: http://people.FreeBSD.org/~mike/c99/
+  ------- -------------------------------------------
+
+Contact: Mike Barcroft <mike@FreeBSD.org>
+Contact: FreeBSD-Standards Mailing List <standards@FreeBSD.org>
+
+Work on the FreeBSD C99 & POSIX Conformance Project is progressing
+nicely. Since the last status report, two new headers have been added
+[<stdint.h> and <inttypes.h>], several new functions implemented
+[atoll(3), imaxabs(3), imaxdiv(3), llabs(3), lldiv(3), strerror_r(3),
+strtoimax(3), and strtoumax(3)], and changes to assert(3) and printf(3)
+were made to support C99. More printf(3) changes are in the works to
+support the remaining C99 and POSIX requirements. Additionally, research
+was done into our POSIX Utility conformance and a list of tasks was
+derived from that research.
+
+Several other interesting events occurred during November and the
+beginning of December. The project mailing list was moved to the
+FreeBSD.org domain, and is now available at standards@FreeBSD.org. On
+December 6, 2001, the IEEE Standards Board approved the Austin Group
+Specification as IEEE Std 1003.1-2001, thus making the work we're doing
+ever more important.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD in Bulgarian
+
+  ------- ------------------------------------------
+  Links   
+          URL: http://www.FreeBSD-bg.ringlet.net/
+          URL: http://people.FreeBSD.org/~roam/bg/
+  ------- ------------------------------------------
+
+Contact: Peter Pentchev <roam@FreeBSD.org>
+
+The FreeBSD in Bulgarian project aims to bring a more comfortable
+working environment to Bulgarian users of the FreeBSD OS. This includes,
+but is not limited to, font, keymap and locale support, translation of
+the FreeBSD documentation into Bulgarian, local user groups and various
+forms of on-line help channels and discussion forums to help Bulgarians
+adopt and use FreeBSD.
+
+Bulgarian locale support has been committed to FreeBSD 5.0-CURRENT (and
+later merged into 4.x-STABLE on December 10th). A local CVS repository
+for the translation of the FreeBSD documentation into Bulgarian has been
+created.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD NVIDIA Driver Port
+
+  ------------------ ---------------------------------------------------
+  Links              
+  News and Status.   URL: ftp://ftp.jurai.net/users/winter/nvidia/NEWS
+  FTP directory.     URL: ftp://ftp.jurai.net/users/winter/nvidia/
+  ------------------ ---------------------------------------------------
+
+Contact: Matthew N. Dodd <mdodd@FreeBSD.org>
+
+The port of the driver is around 90% feature complete. AGP support and
+"Registry" support via sysctl need to be finished/implemented. The
+NVIDIA guys are working on a build of the X11 libs and extensions for
+FreeBSD; once this is done hardware accelerated direct rendering should
+work. The previous version this driver is no longer available. I'm
+planning on making a snapshot of my code once I chase out a few more
+bugs.
+
+Please note that development is taking place under -CURRENT right now; a
+port to -STABLE will be available at some later time.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+GEOM - generalized block storage manipulation
+
+  ------------------------- ----------------------------------------
+  Links                     
+  Old concept paper here.   URL: http://www.FreeBSD.org/~phk/Geom/
+  ------------------------- ----------------------------------------
+
+Contact: Poul-Henning Kamp <phk@FreeBSD.org>
+
+This project is now finally underway, thanks to DARPA and NAI getting a
+sponsorship lined up. The infrastructure code and data structures are
+currently taking form inside a userland simulation harness.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Improving FreeBSD startup scripts
+
+  -------------------------------------------- ---------------------------------------------------------
+  Links                                        
+  Improving FreeBSD startup scripts            URL: http://groups.yahoo.com/group/FreeBSD-rc/
+  Luke Mewburn's papers                        URL: http://www.cs.rmit.edu.au/~lukem/bibliography.html
+  NetBSD Initialization and Services Control   URL: http://www.netbsd.org/Documentation/rc/
+  -------------------------------------------- ---------------------------------------------------------
+
+Contact: Doug Barton Committer <DougB@FreeBSD.org>
+Contact: Gordon Tetlow Contributor <gordont@gnf.org>
+
+<-- from http://groups.yahoo.com/group/FreeBSD-rc/ -->
+
+This group is for discussion about the startup scripts in FreeBSD,
+primarily the scripts in /etc/rc*. Primary focus will be on improvements
+and importation of NetBSD's excellent work on this topic.
+
+<-- from Gordon Tetlow's ranting -->
+
+Due to personal commitments by the folks working on this project we have
+been unable to spend much time porting the rc.d infrastructure into the
+FreeBSD boot framework.
+
+Currently, the system will boot (with a little fudging) just before
+network utilization. There are patches floating around for this (see the
+-arch list from September).
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Intel Gigabit Driver: wx desupported
+
+  -------
+  Links
+  -------
+
+Contact: Matthew Jacob <mjacob@feral.com>
+
+The wx driver is desupported and removed from -current. No further
+support for wx in -stable is planned. Newer and better drivers are now
+in the tree.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+jp.FreeBSD.org daily SNAPSHOTs project
+
+  ----------------- -----------------------------------------------------------------
+  Links             
+  Project Webpage   URL: http://snapshots.jp.FreeBSD.org/
+  Anonymous FTP     URL: ftp://snapshots.jp.FreeBSD.org/pub/FreeBSD/snapshots/i386/
+  ----------------- -----------------------------------------------------------------
+
+Contact: Makoto Matsushita <matusita@jp.FreeBSD.org>
+
+jp.FreeBSD.org daily SNAPSHOTs project is yet another snapshots server
+that provides latest 4-stable and 5-current distribution. You also find
+installable ISO image, live filesystem, HTMLed source code with search
+engine, and more; please check project webpage for more details.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+jpman project
+
+  ----------------------------------------------- ----------------------------------------
+  Links                                           
+  User and developer information (in Japanese).   URL: http://www.jp.FreeBSD.org/man-jp/
+  ----------------------------------------------- ----------------------------------------
+
+Contact: Kazuo Horikawa <horikawa@FreeBSD.org>
+
+Targeting 4.5-RELEASE, we continued to revising
+doc/ja_JP.eucJP/man/man[1256789] to catch up with RELENG_4. Section 3
+updating has 45% finished.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+KSEs
+
+  ------------------------ ------------------------------------------
+  Links                    
+  My web-page with links   URL: http://www.FreeBSD.org/~julian/
+  Jason Evans' KSE page.   URL: http://www.FreeBSD.org/~jasone/kse/
+  ------------------------ ------------------------------------------
+
+Contact: Julian Elischer <julian@FreeBSD.org>
+
+I have been working behind the scenes on design rather than programming
+for this last month. I have been working however in the p4 tree to make
+the system run with the thread structure NOT a part of the proc
+structure (a prerequisite for threading)
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+LOMAC Status Report
+
+  ---------------------- -------------------------------------------
+  Links                  
+  NAI Labs' LOMAC page   URL: http://opensource.nailabs.com/lomac/
+  ---------------------- -------------------------------------------
+
+Contact: Brian Feldman <green@FreeBSD.org>
+
+A FreeBSD -CURRENT snapshot with LOMAC is currently being prepared, with
+aid of Perforce on the "green_lomac" branch. Very soon there should be a
+working demonstration installation CD of FreeBSD with LOMAC, including
+the ability to enable LOMAC in rc.conf with sysinstall, being a
+legitimate "out-of-the-box" FreeBSD experience. Actual release build is
+pending debugging issues with program start-up (especially xdm).
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Network interface cloning and modularity
+
+Contact: Brooks Davis <brooks@FreeBSD.org>
+
+Support for VLAN cloning has been merged from current and will ship with
+4.5-RELEASE. Additionally, new rc.conf support for cloning interfaces at
+boot has been MFD'd. Work is ongoing to MFC stf and faith cloning as
+well as adding cloning for ppp devices and enhancing VLAN modularity.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+New mount(2) API
+
+  ------- ----------------------------------------------
+  Links   
+          URL: http://www.sneakerz.org/~mux/mount.diff
+  ------- ----------------------------------------------
+
+Contact: Poul-Henning Kamp <phk@FreeBSD.org>
+Contact: Maxime Henrion <mux@qualys.com>
+
+There is now some code ready for the new mount API, which has to be
+reviewed and tested. If it is adopted, we will probably start converting
+all the filesystems, as well as other code in the kernel, to make them
+use it. If you want to play with it, the patch is available at the above
+URL.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+NEWCARD/OLDCARD Status report
+
+Contact: Warner Losh <imp@FreeBSD.org>
+
+Not much to report. A number of minor bugs in OLDCARD have been
+corrected. A larger number of machines now work. Additional work on
+ToPIC support has been committed, but continued lack of a suitable ToPIC
+machine has left the author unable to do much work. A few stubborn
+machines still need to be supported (the author has an example of one
+such machine, so there is hope for it being fixed. Some pci related
+issues remain for both OLDCARD and NEWCARD.
+
+NEWCARD work is ramping up, while OLDCARD work is ramping down. A number
+of things remain to be done for NEWCARD, including suspend/ resume
+support, generic device arrival/removal daemon and hopefully automatic
+loading of drivers. A number of current pccard drivers still need to be
+converted to NEWBUS. Several Chipset issues remain, as does the merging
+of isa pccard bridge code with the pccbb code.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Pluggable Authentication Modules
+
+  ------- -----------------------------------------------------
+  Links   
+          URL: http://people.FreeBSD.org/~des/diary/2001.html
+  ------- -----------------------------------------------------
+
+Contact: Mark Murray <markm@FreeBSD.org>
+Contact: Dag-Erling Smørgrav <des@FreeBSD.org>
+
+On the code side, a number of libpam bugs have been fixed; a new PAM
+module, pam_self(8) , has been written; and preparations have been made
+for the transition from /etc/pam.conf to /etc/pam.d .
+
+On the documentation side, new manual pages have been written for
+pam_ssh(8) , pam_get_item(3) and pam_set_item(3) , and work has started
+on a longer article about PAM which is expected to be finished by the
+end of the year.
+
+A lot of work still remains to be done to integrate PAM more tightly
+with the FreeBSD base system—particularly the passwd(1) , chpass(1) etc.
+utilities—and ports collection.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Ports Manager Team (portmgr)
+
+  --------------------- --------------------------------
+  Links                 
+  Ports build cluster   URL: http://bento.FreeBSD.org/
+  --------------------- --------------------------------
+
+Contact: Will Andrews <will@FreeBSD.org>
+
+After a discussion with the Core Team about our status regarding the
+ports collection, we heard from them that they'd decided to recognize us
+as the final authority for approving ports committers. We've spent the
+last few weeks working on our ports build cluster (see the link) and
+trying to find ways to improve it for the ports development community.
+We've also handled a few minor issues in the ports collection.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+RELNOTESng
+
+  ------- ------------------------------------------------
+  Links   
+          URL: http://people.FreeBSD.org/~bmah/relnotes/
+          URL: http://www.FreeBSD.org/relnotes.html
+  ------- ------------------------------------------------
+
+Contact: Bruce Mah <bmah@FreeBSD.org>
+
+I've been working on making the Hardware Notes less i386-centric. This
+will be especially important for -CURRENT as the ia64 and sparc ports
+reach maturity; most of this work should be completed in time to be
+MFC-ed for FreeBSD 4.5-RELEASE. I encourage any interested parties to
+review the release documentation and send me comments or patches.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Revised {mode,log}page support for camcontrol
+
+Contact: Kelly Yancey <kbyanc@FreeBSD.org>
+
+Extending camcontrol's page definition file format to include both
+modepage and logpage definitions; adding support to camcontrol to query
+and reset log page parameters. Consideration is being made to possibly
+include support for diagnostic and vital product data pages, but that is
+outside the current project scope. New page definition file format
+includes capability to conditionally include page definitions based on
+SCSI INQUIRY results allowing vendor-specific pages to be described
+also. Approximately 80% complete.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+SMPng Status Report
+
+  -------
+  Links
+  -------
+
+Contact: John Baldwin <jhb@FreeBSD.org>
+Contact: <smp@FreeBSD.org>
+
+October ended up being a bit busier than November for SMPng. During
+October, Peter Wemm finally finished the ambitious task of unwinding all
+the macros in NFS and splitting it up into two halves: client and
+server. Andrew Reiter also submitted some code to add locks to
+taskqueues, and the folks working on the TTY subsystem designed the
+locking strategy they will be using. Per-thread ucred references were
+also added for user traps and syscalls. Once the necessary locking on
+the process ucred references is committed, this will allow kernel code
+to access the credentials of the current thread without needing locks
+while also ensuring that a thread has constant credentials for the
+lifetime of a syscall. November only saw a few small bug fixes
+unfortunately, but December is already shaping up to be a very active
+month, so next month's report should be a bit more interesting.
+
+In non-coding news, the website for the SMPng project has moved from its
+old location to the new location above. Also, I have completed a paper I
+am presenting for BSDCon regarding the SMPng project. The paper will be
+available in the conference proceedings and will be available online
+after the conference as well.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Status Report: mb_alloc (-CURRENT mbuf allocator)
+
+  ----------------------------------- ------------------------------------------------------
+  Links                               
+  Code Dump and Preliminary Results   URL: http://www.FreeBSD.org/~bmilekic/code/mb_alloc/
+  ----------------------------------- ------------------------------------------------------
+
+Contact: Bosko Milekic <bmilekic@FreeBSD.org>
+
+Presently re-style(9)ing mbuf code with the help of Bruce (bde). The
+next larger step is approaching: to better performance, as initially
+planned, not have reference counters for clusters allocated separately
+via malloc(9). Rather, use some of the [unused] space at the end of each
+cluster as a counter; since this space is totally unused and since ref.
+counter <--> mbuf cluster is a one-to-one relationship, this is most
+convenient.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+TCP Performance Improvements
+
+  -------
+  Links
+  -------
+
+Contact: Matthew Dillon <dillon@FreeBSD.org>
+
+A number of serious TCP bugs effecting throughput snuck into the system
+over the last few releases and have finally been fixed. TCP performance
+should be greatly improved for a number of cases, including TCP/NFS.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+TrustedBSD Audit
+
+  ----------------------------- ---------------------------------
+  Links                         
+  TrustedBSD Project Homepage   URL: http://www.TrustedBSD.org/
+  ----------------------------- ---------------------------------
+
+Contact: John Doe <trustedbsd-audit@trustedbsd.org>
+
+Currently, we are exploring a variety of strategies to learn about the
+implementation and performance issues in order to have a solid design.
+One of our main goals will be to use a standardized interface to the
+system, whether it be POSIX.1e, or another of the other standards,
+because as they say "Standards are great because you have so many to
+choose from." Hopefully within the next month or so, we will populate
+the perforce TrustedBSD tree with an agreed upon framework that is ready
+for serious final work.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+TrustedBSD Project
+
+  ---------------------- ---------------------------------
+  Links                  
+  TrustedBSD Home Page   URL: http://www.TrustedBSD.org/
+  ---------------------- ---------------------------------
+
+Contact: Robert Watson <rwatson@FreeBSD.org>
+
+The TrustedBSD Project continued focusing development efforts on
+fine-grained Capabilities and Mandatory Access Control this month.
+Kernel support for capabilities is essentially complete, and efforts are
+underway to adapt userland applications to use Capabilities. The login
+process has been updated to allow users to run with additional privilege
+based on /etc/capabilities. The MAC implementation work has also been
+active, with improved support for the labeling of IPC objects, including
+better integration into the network stack. Both development trees have
+been updated to work with recent KSE-related developments, as well as
+exist more happily in a fine-grained SMP kernel. Initial audit-related
+work appears in a separate entry.
+
+Development of TrustedBSD source code was moved to the FreeBSD Perforce
+repository, permitting better source code management. As such, the
+TrustedBSD development trees will now be available via cvsup.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+UDF Filesystem
+
+  ----------------- --------------------------------------------
+  Links             
+  UDF Filesystem.   URL: http://people.FreeBSD.org/~scottl/udf
+  ----------------- --------------------------------------------
+
+Contact: Scott Long <scottl@FreeBSD.org>
+
+Modest gains have been made on the UDF filesystem since the last report.
+Reading of files from DVD-ROM now works (and is fast, according to some
+reports), and there is preliminary support for reading from CD-RW media.
+The CD-RW support has only been tested against CD's created with
+Adaptec/ Roxio DirectCD, and much, much more testing is needed. Once
+this support is solid, I plan to check it into the tree and start work
+on making the filesystem writable.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Web site conversion to XML
+
+Contact: Nik Clayton <nik@FreeBSD.org>
+
+Work is (slowly) progressing on converting the web site to use pages
+marked up in a simple XML schema, and then generating HTML and other
+output formats using XSLT style sheets. The work so far can be tested by
+doing "cvs checkout -r XML_XSL_XP www" and then "cd www/en; make
+index.html". Take a look at index.page in the same directory to see the
+source XML. The CVS logs for index.page contain detailed instructions
+explaining how index.page was generated from its earlier form.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+News Home | Status Home
+
+Site Map | Legal Notices | © 1995–2021 The FreeBSD Project. All rights
+reserved.

@@ -1,0 +1,333 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+Release Information
+
+[FreeBSD Releases]
+
+Currently Supported
+
+For information about branches, release dates, and estimated end-of-life
+(EOL) dates, please see the Supported Releases section of FreeBSD
+Security Information.
+
+Most Recent
+
+Production:
+
+-   Release 12.4 (December 5, 2022) Announcement : Release Notes :
+    Installation Instructions : Hardware Compatibility List : Readme :
+    Errata : Signed Checksums
+
+-   Release 13.1 (May 16, 2022) Announcement : Release Notes :
+    Installation Instructions : Hardware Compatibility List : Readme :
+    Errata : Signed Checksums
+
+-   Release 13.2 (April 11, 2023) Announcement : Release Notes :
+    Installation Instructions : Hardware Compatibility List : Readme :
+    Errata : Signed Checksums
+
+Future
+
+For schedules, and for more information about the release engineering
+process, please see Release Engineering.
+
+The latest snapshots from our FreeBSD-STABLE and FreeBSD-CURRENT
+branches are also available. See Getting FreeBSD.
+
+Prior Releases – EOL
+
+For historical information about branches, release dates, types, and EOL
+dates, see Unsupported Releases.
+
+-   12.3 (December 7, 2021) Announcement : Release Notes : Installation
+    Instructions : Hardware Compatibility List : Readme : Errata :
+    Signed Checksums
+
+-   13.0 (April 13, 2021) Announcement : Release Notes : Installation
+    Instructions : Hardware Compatibility List : Readme : Errata :
+    Signed Checksums
+
+-   12.2 (October 27, 2020) Announcement : Release Notes : Installation
+    Instructions : Hardware Compatibility List : Readme : Errata :
+    Signed Checksums
+
+-   12.1 (November 4, 2019) Announcement : Release Notes : Installation
+    Instructions : Hardware Compatibility List : Readme : Errata :
+    Signed Checksums
+
+-   12.0 (December 11, 2018) Announcement: Release Notes: Installation
+    Instructions: Hardware Notes: Readme: Errata: Checksums
+
+-    11.4 (June 23, 2020) Announcement: Release Notes: Installation
+    Instructions: Hardware Notes: Readme: Errata: Checksums
+
+-   11.3 (July 9, 2019) Announcement: Release Notes: Installation
+    Instructions: Hardware Notes: Readme: Errata: Checksums
+
+-   11.2 (June 28, 2018) Announcement: Release Notes: Installation
+    Instructions: Hardware Notes: Readme: Errata: Checksums
+
+-   11.1 (July 26, 2017) Announcement: Release Notes: Installation
+    Instructions: Hardware Notes: Readme: Errata: Checksums
+
+-   11.0 (October 10, 2016) Announcement: Release Notes: Installation
+    Instructions: Hardware Notes: Readme: Errata: Checksums
+
+-    10.4 (October 3, 2017) Announcement: Release Notes: Installation
+    Instructions: Hardware Notes: Readme: Errata: Checksums
+
+-   10.3 (April 4, 2016) Announcement: Release Notes: Installation
+    Instructions: Hardware Notes: Readme: Errata: Checksums
+
+-   10.2 (August 13, 2015) Announcement: Release Notes: Installation
+    Instructions: Hardware Notes: Readme: Errata
+
+-   10.1 (November 14, 2014) Announcement: Release Notes: Installation
+    Instructions: Hardware Notes: Readme: Errata
+
+-   10.0 (January 20, 2014) Announcement: Release Notes: Installation
+    Instructions: Hardware Notes: Readme: Errata
+
+-   9.3 (July 16, 2014) Announcement: Release Notes: Installation
+    Instructions: Hardware Notes: Readme: Errata
+
+-   9.2 (September 30, 2013) Announcement: Release Notes: Installation
+    Instructions: Hardware Notes: Readme: Errata
+
+-   9.1 (December 30, 2012) Announcement: Release Notes: Installation
+    Instructions: Hardware Notes: Readme: Errata
+
+-   9.0 (January 12, 2012) Announcement: Release Notes: Installation
+    Instructions: Hardware Notes: Readme: Errata
+
+-   8.4 (June 7, 2013) Announcement: Release Notes: Installation
+    Instructions: Hardware Notes: Readme: Errata
+
+-   8.3 (April 18, 2012) Announcement: Release Notes: Installation
+    Instructions: Hardware Notes: Readme: Errata
+
+-   8.2 (February 24, 2011) Announcement: Release Notes: Hardware Notes:
+    Readme: Errata
+
+-   8.1 (July 23, 2010) Announcement: Release Notes: Hardware Notes:
+    Readme: Errata
+
+-   8.0 (November 25, 2009) Announcement: Release Notes: Hardware Notes:
+    Readme: Errata
+
+-   7.4 (February 24, 2011) Announcement: Release Notes: Hardware Notes:
+    Readme: Errata
+
+-   7.3 (March 23, 2010) Announcement: Release Notes: Hardware Notes:
+    Readme: Errata
+
+-   7.2 (May 4, 2009) Announcement: Release Notes: Hardware Notes:
+    Readme: Errata
+
+-   7.1 (January 4, 2009) Announcement: Release Notes: Hardware Notes:
+    Readme: Errata
+
+-   7.0 (February 27, 2008) Announcement: Release Notes: Hardware Notes:
+    Readme: Errata
+
+-   6.4 (November 28, 2008) Announcement: Release Notes: Hardware Notes:
+    Installation Notes: Readme: Errata
+
+-   6.3 (January 18, 2008) Announcement: Release Notes: Hardware Notes:
+    Installation Notes: Readme: Errata
+
+-   6.2 (January 15, 2007) Announcement: Release Notes: Hardware Notes:
+    Installation Notes: Readme: Errata
+
+-   6.1 (May 8, 2006) Announcement: Release Notes: Hardware Notes:
+    Installation Notes: Readme: Errata
+
+-   6.0 (November 4, 2005) Announcement: Release Notes: Hardware Notes:
+    Installation Notes: Readme: Errata
+
+-   5.5 (May 25, 2006) Announcement: Release Notes: Hardware Notes:
+    Installation Notes: Readme: Errata:
+
+-   5.4 (May 9, 2005) Announcement: Release Notes: Hardware Notes:
+    Installation Notes: Readme: Errata: Migration Guide
+
+-   5.3 (November 6, 2004) Announcement: Release Notes: Hardware Notes:
+    Installation Notes: Readme: Errata: Migration Guide
+
+-   5.2.1 (February 25, 2004) Announcement: Release Notes: Hardware
+    Notes: Installation Notes: Readme: Errata: Early Adopter’s Guide
+
+-   5.2 (January 9, 2004) Announcement: Release Notes: Hardware Notes:
+    Installation Notes: Readme: Errata: Early Adopter’s Guide
+
+-   5.1 (June 9, 2003) Announcement: Release Notes: Hardware Notes:
+    Installation Notes: Readme: Errata: Early Adopter’s Guide
+
+-   5.0 (January 14, 2003) Announcement: Release Notes: Hardware Notes:
+    Installation Notes: Readme: Errata: Early Adopter’s Guide
+
+-   4.11 (January 25, 2005) Announcement: Release Notes: Hardware Notes:
+    Installation Notes: Readme: Errata
+
+-   4.10 (May 27, 2004) Announcement: Release Notes: Hardware Notes:
+    Installation Notes: Readme: Errata
+
+-   4.9 (October 28, 2003) Announcement: Release Notes: Hardware Notes:
+    Installation Notes: Readme: Errata
+
+-   4.8 (April 3, 2003) Announcement: Release Notes: Hardware Notes:
+    Installation Notes: Readme: Errata
+
+-   4.7 (October 10, 2002) Announcement: Release Notes: Hardware Notes:
+    Installation Notes: Readme: Errata
+
+-   4.6.2 (August 15, 2002) Announcement: Release Notes: Hardware Notes:
+    Readme: Errata
+
+-   4.6 (June 15, 2002) Announcement: Release Notes: Hardware Notes:
+    Installation Notes: Errata
+
+-   4.5 (January 29, 2002) Announcement: Release Notes: Hardware Notes:
+    Errata
+
+-   4.4 (September 20, 2001) Announcement: Release Notes: Hardware
+    Notes: Errata
+
+-   4.3 (April 20, 2001) Announcement: Release Notes: Errata
+
+-   4.2 (November 21, 2000) Announcement: Release Notes: Errata
+
+-   4.1.1 (September 27, 2000) Announcement : Release Notes : Errata
+
+-   4.1 (July 27, 2000) Announcement: Release Notes: Errata
+
+-   4.0 (March 14, 2000) Announcement: Release Notes: Errata
+
+-   3.5 (June, 2000) Announcement: Release Notes: Errata
+
+-   3.4 (December, 1999) Announcement: Release Notes: Errata
+
+-   3.3 (September, 1999) Announcement : Release Notes : Errata
+
+-   3.2 (May, 1999) Announcement : Release Notes : Errata
+
+-   3.1 (February, 1999) Announcement : Release Notes : Errata
+
+-   3.0 (October, 1998) Announcement : Release Notes : Errata
+
+-   2.2.8 (December, 1998) Announcement : Release Notes : Errata
+
+-   2.2.7 (July, 1998) Announcement : Release Notes : Errata
+
+-   2.2.6 (March, 1998) Announcement : Release Notes : Errata
+
+-   2.2.5 (October, 1997) Announcement : Release Notes : Errata
+
+-   2.2.2 (May, 1997) Release Notes : Errata
+
+-   2.2.1 (April, 1997) Release Notes
+
+-   2.2 (March, 1997) Announcement : Release Notes
+
+-   2.1.7 (February, 1997) Announcement : Release Notes
+
+-   2.1.6 (December, 1996) Announcement : Release Notes
+
+-   2.1.5 (July, 1996) Announcement : Release Notes
+
+-   2.1 (November, 1995) Announcement : Release Notes
+
+-   2.0.5 (June, 1995) Announcement : Release Notes
+
+-   2.0 (November, 1994) Announcement : Release Notes
+
+-   1.1.5.1 (July, 1994) Announcement : What’s New
+
+-   1.1.5 Release Notes What’s New
+
+-   1.1 (May, 1994) Release Notes
+
+-   1.0 (November, 1993) Announcement
+
+------------------------------------------------------------------------
+
+Last modified on: April 10, 2023 by Colin Percival
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

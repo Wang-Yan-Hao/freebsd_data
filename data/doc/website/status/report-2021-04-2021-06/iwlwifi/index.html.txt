@@ -1,0 +1,120 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Intel Wireless driver support
+
+Links:
+iwlwifi status FreeBSD wiki page URL:
+https://wiki.freebsd.org/WiFi/Iwlwifi
+
+The Intel Wireless driver update project aims to bring support for newer
+chipsets along with mac80211 LinuxKPI compat code. The dual-licensed
+Intel driver code was ported in the past for the iwm(4) native driver
+and using the LinuxKPI compat framework allows us to use the driver
+directly with only very minor modifications. Multiple updates during
+development in the last year have shown that pulling in newer versions
+can be done in under 1-2 hours.
+
+After a break, part-time work resumed and the last LinuxKPI conflicts
+got resolved and most of the other LinuxKPI changes were committed to
+FreeBSD main.
+
+During the update process firmware crashes were unxpectedly encountered
+which got solved and the 802.11 compat code improved. The iwlwifi driver
+and firmware got updated from the iwlwifi-next git branch and the
+linux-firmware repository.
+
+Integration into FreeBSD main is pending for a policy reason. For the
+latest state of the development or code, please follow the referenced
+wiki page or the freebsd-wireless mailing list.
+
+I would love to thank everyone who has reviewed changes, did initial
+testing, helped with drm-kmod, helped in various other ways, answered
+questions, encouraged, or patiently waited for any results or running
+code.
+
+Sponsor: The FreeBSD Foundation
+
+------------------------------------------------------------------------
+
+Last modified on: July 24, 2021 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

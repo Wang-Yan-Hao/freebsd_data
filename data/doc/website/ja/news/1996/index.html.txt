@@ -1,0 +1,110 @@
+[FreeBSD The Power to Serve]
+
+FreeBSD への寄付
+
+ 
+
+-   ホーム
+
+-   FreeBSD とは
+    -   FreeBSD が初めてという方へ
+    -   特徴
+    -   プロモーション活動
+    -   マーケティング活動
+    -   プライバシーポリシー
+    -   Projects
+    -   Ports
+
+-   FreeBSD の入手
+    -   リリース情報
+    -   リリースエンジニアリング
+
+-   ドキュメント
+    -   FAQ
+    -   ハンドブック
+    -   port 作成者のためのハンドブック
+    -   開発者のためのハンドブック
+    -   Committer's Guide
+    -   マニュアルページ
+    -   Presentations and Papers
+    -   新しい貢献者のためのドキュメンテーションプロジェクト入門
+    -   すべての Books と Articles
+
+-   コミュニティ
+    -   メーリングリスト
+    -   フォーラム
+    -   ユーザグループ
+    -   イベント
+    -   FreeBSD ジャーナル
+    -   Q&A (外部)
+
+-   開発
+    -   プロジェクトアイディア
+    -   Git リポジトリ
+    -   Subversion リポジトリ
+    -   GitHub ミラー
+    -   コードレビュー (Phabricator)
+    -   Wiki
+    -   継続的インテグレーションサービス
+
+-   サポート
+    -   ベンダ
+    -   セキュリティ情報
+    -   障害報告
+    -   障害報告の提出
+    -   ウェブ上の情報
+
+-   財団
+    -   寄付
+    -   ハードウェアの寄贈
+
+-   FreeBSD とは
+-   特徴
+-   アプリケーション
+-   プロモーション活動
+-   マーケティング活動
+-   担当者一覧
+-   ニュース
+-   イベント
+-   ニュース記事
+-   画像
+-   ロゴ
+-   寄付・寄贈
+-   法律上の注意事項
+-   プライバシーポリシー
+
+-   RSS 2.0 Feed
+
+FreeBSD News Flash! (1996)
+
+1996 年 12 月
+
+-   1996/12/24 FreeBSD 2.2-BETA がリリースされました。
+    リリースノートに詳しい情報があります。
+
+-   1996/12/13 FreeBSD 2.2-RELEASE は 5MB 以上の RAM、あるいは 1.2MB
+    以上の容量を読み込むことのできるフロッピードライブを持たない
+    マシンに対するインストールをサポートしない見込みです。
+    詳しい情報を得たい方は、オリジナルの アナウンス をお読み下さい。
+
+1996 年 11 月
+
+-   1996/11/15 FreeBSD 2.1.6-RELEASE が出ています。 詳しい情報は
+    リリースノート をご覧下さい。
+
+-   1996/11/04 FreeBSD CVS 開発ツリーに新しいブランチができました。
+    ここに詳しい情報があります。
+
+News Home
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+最終更新日: 2021年1月26日 by Sergio Carlavilla Delgado
+
+法律上の注意事項 | © 1995-2023 FreeBSD プロジェクト All rights reserved.
+The mark FreeBSD is a registered trademark of The FreeBSD Foundation and
+is used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact

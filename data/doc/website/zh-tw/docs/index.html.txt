@@ -1,0 +1,88 @@
+[FreeBSD The Power to Serve]
+
+捐贈 FreeBSD
+
+ 
+
+-   首頁
+
+-   關於
+    -   簡介
+    -   特色
+    -   宣傳
+    -   行銷
+    -   隱私政策
+    -   Projects
+    -   Ports
+
+-   取得 FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   文件
+    -   常見問題集
+    -   使用手冊
+    -   Porter 手冊
+    -   Developer 手冊
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   文件計畫入門書
+    -   所有書籍與文章
+
+-   社群
+    -   郵件論壇
+    -   論壇
+    -   愛用者組織
+    -   活動
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   開發者
+    -   計畫構想
+    -   Git 檔案庫
+    -   Subversion 檔案庫
+    -   Git 鏡像站
+    -   程式碼審查 (Phabricator)
+    -   Wiki
+    -   持續整合服務
+
+-   支援
+    -   供應商
+    -   安全資訊
+    -   問題回報
+    -   提交問題回報
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   基金會
+    -   資金捐贈
+    -   硬體捐贈
+
+-   文件
+-   FAQ
+-   使用手冊
+-   Manual Pages
+-   Presentations and Papers
+-   Books and Articles Online
+-   Publications
+-   Web Resources
+-   新手上路
+-   文件計畫
+-   Archive
+
+FreeBSD 文件
+
+[BSD daemon reading documentation]
+
+FreeBSD 有廣泛的各類文件，在這個網站、其他網站都可以找到，數不勝數。
+
+------------------------------------------------------------------------
+
+Last modified on: June 19, 2021 by Danilo G. Baio
+
+法律聲明 | © 1995-2023 FreeBSD 計劃 保留所有權利。 FreeBSD 標誌是
+FreeBSD 基金會的註冊商標，由 FreeBSD 基金會授權 FreeBSD 計畫使用 The
+FreeBSD Foundation. 聯絡資訊
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

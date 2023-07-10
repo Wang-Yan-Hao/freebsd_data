@@ -1,0 +1,171 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 12.4 Release Process
+
+Introduction
+
+This is the release schedule for FreeBSD 12.4. For more information
+about the release engineering process, please see the Release
+Engineering section of the web site.
+
+General discussions about the pending release and known issues should be
+sent to the public freebsd-stable mailing list. MFC requests are no
+longer being accepted.
+
+Schedule
+
++-----------------+-----------------+-----------------+-----------------+
+| Action          | Expected        | Actual          | Description     |
++=================+=================+=================+=================+
+| Initial release | -               | 19 August 2022  | Release         |
+| schedule        |                 |                 | Engineers send  |
+| announcement    |                 |                 | announcement    |
+|                 |                 |                 | email to        |
+|                 |                 |                 | developers with |
+|                 |                 |                 | a rough         |
+|                 |                 |                 | schedule.       |
++-----------------+-----------------+-----------------+-----------------+
+| Release         | 30 September    | 29 September    | Release         |
+| schedule        | 2022            | 2022            | Engineers send  |
+| reminder        |                 |                 | reminder        |
+|                 |                 |                 | announcement    |
+|                 |                 |                 | e-mail to       |
+|                 |                 |                 | developers with |
+|                 |                 |                 | updated         |
+|                 |                 |                 | schedule.       |
++-----------------+-----------------+-----------------+-----------------+
+| Code slush      | 7 October 2022  | 7 October 2022  | Release         |
+| begins          |                 |                 | Engineers       |
+|                 |                 |                 | announce that   |
+|                 |                 |                 | all further     |
+|                 |                 |                 | commits to the  |
+|                 |                 |                 | stable/12       |
+|                 |                 |                 | branch will not |
+|                 |                 |                 | require         |
+|                 |                 |                 | explicit        |
+|                 |                 |                 | approval,       |
+|                 |                 |                 | however new     |
+|                 |                 |                 | features should |
+|                 |                 |                 | be avoided.     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/12.4     | 21 October 2022 | 20 October 2022 | releng/12.4     |
+| branch          |                 |                 | branch created; |
+|                 |                 |                 | future release  |
+|                 |                 |                 | engineering     |
+|                 |                 |                 | proceeds on     |
+|                 |                 |                 | this branch.    |
++-----------------+-----------------+-----------------+-----------------+
+| BETA1 builds    | 21 October 2022 | 21 October 2022 | First beta test |
+| begin           |                 |                 | snapshot.       |
++-----------------+-----------------+-----------------+-----------------+
+| RC1 builds      | 4 November 2022 | 4 November 2022 | First release   |
+| begin           |                 |                 | candidate.      |
++-----------------+-----------------+-----------------+-----------------+
+| RC2 builds      | 11 November     | 11 November     | Second release  |
+| begin           | 2022            | 2022            | candidate.      |
++-----------------+-----------------+-----------------+-----------------+
+| RELEASE builds  | 30 November     | 30 November     | 12.4-RELEASE    |
+| begin           | 2022            | 2022            | builds begin.   |
++-----------------+-----------------+-----------------+-----------------+
+| RELEASE         | 5 December 2022 | 5 December 2022 | 12.4-RELEASE    |
+| announcement    |                 |                 | press release.  |
++-----------------+-----------------+-----------------+-----------------+
+| Turn over to    | -               | -               | releng/12.4     |
+| the secteam     |                 |                 | branch is       |
+|                 |                 |                 | handed over to  |
+|                 |                 |                 | the FreeBSD     |
+|                 |                 |                 | Security        |
+|                 |                 |                 | Officer Team in |
+|                 |                 |                 | one or two      |
+|                 |                 |                 | weeks after the |
+|                 |                 |                 | announcement.   |
++-----------------+-----------------+-----------------+-----------------+
+
+"*" indicates "as-needed" items.
+
+Additional Information
+
+-   FreeBSD Release Engineering website
+
+------------------------------------------------------------------------
+
+Last modified on: December 5, 2022 by Glen Barber
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

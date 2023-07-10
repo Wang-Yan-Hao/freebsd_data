@@ -1,0 +1,162 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   Git Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Over FreeBSD
+
+Wat is FreeBSD?
+
+FreeBSD is een geavanceerd besturingssysteem voor x86-compatibele
+(inclusief Pentium® en Athlon™), amd64-, x86-64-, en x64-compatibele
+(inclusief Opteron™, Athlon™64, en EM64T), ARM, IA-64, PowerPC, PC-98 en
+UltraSPARC® architecturen. Het is afgeleid van BSD, de versie van UNIX®
+ontwikkeld op de University of California, Berkeley. Het wordt
+ontwikkeld en onderhouden door een groot team van individuen.
+Aanvullende platformen verkeren in verschillende stadia van
+ontwikkeling.
+
+De nieuwste mogelijkheden
+
+FreeBSD biedt vandaag geavanceerde mogelijkheden voor netwerken,
+prestatie, veiligheid en compatibiliteit die nog steeds ontbreken in
+andere besturingssystemen, zelfs in de beste commerciële.
+
+Krachtige Internetoplossingen
+
+FreeBSD kan dienen als een ideale Internet of Intranet server. Het biedt
+robuuste netwerkdiensten onder de zwaarste belastingen en maakt
+efficiënt gebruik van het geheugen om goede reactietijden te geven voor
+duizenden gelijktijdige gebruikersprocessen.
+
+Geavanceerd embedded platform
+
+FreeBSD biedt geavanceerde mogelijkheden netwerkbesturingssystemen en
+embedded platforms, van duurdere op Intel gebaseerde toepassingen tot
+Arm, PowerPC en sinds kort MIPS hardware-architecturen. Van mail- en
+webtoepassingen tot routers, tijdservers en draadloze toegangspunten,
+wereldwijd vertrouwen verkopers op de geïntegreerde bouw- en
+kruisbouwomgevingen en geavanceerde mogelijkheden van FreeBSD als de
+basis van hun embedded producten. En met de open-source licentie van
+Berkeley bepalen zij hoeveel van de plaatselijke veranderingen ze
+teruggeven.
+
+Draai een groot aantal applicaties
+
+Met meer dan 24.000 geporteerde bibliotheken en toepassingen ondersteunt
+FreeBSD toepassingen voor bureaublad-, applicatie-, en embedded
+omgevingen.
+
+Gemakkelijk te installeren
+
+FreeBSD kan vanaf een verscheidenheid van media geïnstalleerd worden
+inclusief CD-ROM, DVD of direct over het netwerk door middel van FTP of
+NFS. Alles wat u nodig heeft zijn deze aanwijzingen.
+
+FreeBSD is gratis
+
+[The BSD Daemon]
+
+Hoewel u zou verwachten dat een besturingssysteem met deze eigenschappen
+voor een hoge prijs verkocht wordt, is FreeBSD kostenloos beschikbaar en
+wordt het met de volledige broncode geleverd. Indien u een kopie wilt
+kopen of downloaden om het uit te proberen, is meer informatie
+beschikbaar.
+
+Bijdragen aan FreeBSD
+
+Het is eenvoudig om aan FreeBSD bij te dragen. Alles wat u moet doen is
+een deel van FreeBSD vinden waarvan u denkt dat het verbeterd kan worden
+en deze veranderingen (zorgvuldig en netjes) maken en dat terugsturen
+naar het Project door middel van send-pr of een committer, indien u er
+een kent. Dit kan variëren van documentatie tot kunst tot broncode. Zie
+het artikel Bijdragen aan FreeBSD voor meer informatie.
+
+Zelfs als u geen programmeur bent, zijn er andere manieren om aan
+FreeBSD bij te dragen. De FreeBSD Foundation is een non-profit
+organisatie waarvoor directe bijdragen volledig belastingaftrekbaar
+zijn. Neem voor verdere informatie alstublieft contact op met
+board@FreeBSDFoundation.org of schrijf naar: The FreeBSD Foundation,
+P.O. Box 20247, Boulder, CO 80303, USA.
+
+------------------------------------------------------------------------
+
+Last modified on: 19 juni 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

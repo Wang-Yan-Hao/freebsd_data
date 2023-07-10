@@ -1,0 +1,112 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Ztop
+
+Links:
+Repository
+Port
+
+Contact: Alan Somers <asomers@FreeBSD.org>
+
+ztop is a new utility that displays ZFS datasets' I/O in real time, like
+top, but for ZFS. Unlike the existing zpool iostat, which only displays
+traffic at the level of a pool, ztop displays it at the level of
+individual datasets.
+
+Previously, there was no tool that could display this information. The
+Prometheus Node Exporter can export it into Prometheus, from which it
+can be viewed after the fact with various other tools, but that requires
+a large stack of software, and isn’t real-time.
+
+I started ztop this quarter, and it is now fully functional. However, it
+has revealed a performance problem within the kernel. In the presence of
+more than a few thousand datasets, the sysctl interface is too slow and
+ztop becomes sluggish. Future work, if I have the time, will address
+that problem.
+
+Sponsor: Axcient
+
+------------------------------------------------------------------------
+
+Last modified on: November 15, 2021 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

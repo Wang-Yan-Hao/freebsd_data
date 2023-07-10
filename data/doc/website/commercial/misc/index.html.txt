@@ -1,0 +1,126 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Support
+-   Vendors
+    -   Software
+    -   Hardware
+    -   Consulting
+    -   Internet Service Providers
+    -   Miscellaneous
+-   Security Information
+    -   Advisories
+    -   Errata Notices
+    -   Supported Releases
+    -   Unsupported Releases
+    -   How to read FreeBSD Security Advisories
+    -   Charter for the Security Officer and Team
+-   Bug Reports
+    -   Submit a Problem Report
+-   Web Resources
+
+The power, flexibility, and reliability of FreeBSD attract a wide
+variety of users and vendors. Here you will find vendors offering
+commercial products and/or services for FreeBSD.
+
+For your convenience, we have divided our growing commercial listing
+into several sections. If your company supports a FreeBSD related
+product, service, consulting, or support that should be added to this
+page, please fill out a problem report in category
+Documentation→Website. Submissions should contain a medium-sized
+paragraph in length, describing your company. Please note that the
+inclusion of vendors in our list does not signify our endorsement of
+their products or services by the FreeBSD Project.
+
+Miscellaneous Vendors
+
+ExaVault
+    ExaVault provides inexpensive online remote backup space that is
+    accessible via open, industry standard protocols, including rsync,
+    FTP and SFTP. It is ideal for small and medium businesses, web
+    hosting companies and others that need a quick, transparent,
+    maintenance-free way of mirroring a copy of their data to a remote
+    backup server. We are fully FreeBSD compatible, and provide full
+    support for getting things setup on your FreeBSD system.
+
+FreeBSD Mall
+    The FreeBSD Mall can provide everything you may want or need to
+    enhance your FreeBSD experience. Are you new to FreeBSD? Or, perhaps
+    you've been using it for years? We have something for you. We have
+    the latest FreeBSD CDROMs, helpful books, and colorful shirts and
+    hats. Stay current with FreeBSD and put it to work for you!
+
+GFU Schulung
+    GFU offers FreeBSD Training for customizing servers with a whole
+    bunch of open source software like PostgreSQL, OpenOffice, Cyrus
+    IMAP, etc. Upon customer request especially: Oracle Administration
+    under FreeBSD.
+
+------------------------------------------------------------------------
+
+Last modified on: February 21, 2023 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

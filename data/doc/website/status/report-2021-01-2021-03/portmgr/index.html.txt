@@ -1,0 +1,145 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Ports Collection
+
+Links:
+About FreeBSD Ports URL: https://www.FreeBSD.org/ports/
+Contributing to Ports URL:
+https://docs.freebsd.org/en/articles/contributing/ports-contributing/
+FreeBSD Ports Monitoring URL: http://portsmon.freebsd.org/
+Ports Management Team URL: https://www.freebsd.org/portmgr/
+Ports Tarball URL: http://ftp.freebsd.org/pub/FreeBSD/ports/ports/
+
+Contact: René Ladan <portmgr-secretary@FreeBSD.org>
+Contact: FreeBSD Ports Management Team <portmgr@FreeBSD.org>
+
+The Ports Management Team is responsible for overseeing the overall
+direction of the Ports Tree, building packages, and personnel matters.
+Below is what happened in the last quarter.
+
+As always, first the quarterly dashboard: * we currently have around
+43,800 ports (including flavors). * the open PR count for ports is
+currently 2477, of which 532 are unassigned. * during the last quarter,
+9481 commits were made by 168 committers on the main branch, and 620
+commits by 64 committers on the 2021Q1 branch. Compared to 2020Q4, the
+number of ports again grew by five percent, the number of open PRs
+dropped a bit, and the number of commits on the main branch grew with
+almost nine percent.
+
+During the last quarter, we welcomed Neel Chauhan (nc@), Lewis Cook
+(lcook@), and Nuno Teixeira (eduardo@). Adrian Chadd (adrian@) who is
+already a src committer got a ports commit bit extension. Tobias Berner
+(tcberner@) asked if he could join the portmgr-lurker program and was
+shortly added afterwards.
+
+We sent another mail to the ports@ mailing list outlining further plans
+for removing Python 2.7 from the Ports Tree. Currently all ports
+recursively depending on Python 2.7 are marked to expire on 2021-06-23,
+which unfortunately includes a lot of KDE ports due to the qt5-webengine
+port. We are evaluating various mitigation strategies.
+
+portmgr has been collaborating with the Git Working Group over the last
+year to prepare the Ports Tree to be converted to Git. Tasks included: *
+converting various scripts and tools to support Git * attending Git
+Working Group meetings * updating documentation * updating various
+internal and public third-party services * evaluating numerous test
+conversion (git-beta) results
+
+Regarding the Ports Tree itself, two new USES were introduced: * kodi to
+ease porting of Kodi add-ons * mpi for dependencies of MPICH and OpenMPI
+A new default version for ImageMagick was added and the default version
+for Julia was removed as no Julia port currently exists. pkg was updated
+to 1.16.3, Firefox to 87.0, and Chromium to 89.0.4389.114
+
+The Cluster Administration Team assisted with getting three new package
+building machines running in the build cluster. Two are for arm64 builds
+and one is a general builder.
+
+antoine@ was again busy with exp-runs, 28 this time, to: * test various
+ports updates * update the clang/LLVM version from 6 to 10 in
+USES=compiler * reduce includes in /usr/include/crypto
+
+------------------------------------------------------------------------
+
+Last modified on: May 1, 2021 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

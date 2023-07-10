@@ -1,0 +1,136 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   
+-   Manuel du développeur
+-   Committer's Guide
+-   Manuel du porteur d'application
+-   Dépôt des codes source
+-   Production des versions
+-   Plates-formes
+-   Idées de projet
+-   Contribuer
+
+Projet Java® pour FreeBSD : Comment effectuer l'installation
+
+Lorsque vous installez Java sous FreeBSD, vous avez le choix entre
+plusieurs Kits de Développement Java :
+
+Le JDK natif sous FreeBSD
+
+C’est le résultat du travail de l’équipe de portage sous FreeBSD de Java
+2. En utilisant les patches et le code source du JDK publiés par Sun, ce
+port compile un JDK natif pour FreeBSD.
+
+cd /usr/ports/java/jdk14
+
+make install clean
+
+JDK Sun pour Linux
+
+Ce port installe le Kit de Développement Java 2 de Sun compilé pour
+Linux. Il tournera sous FreeBSD en utilisant la compatibilité binaire
+avec Linux.
+
+cd /usr/ports/java/linux-sun-jdk14
+
+make install clean
+
+JDK IBM pour Linux
+
+Il s’agit d’une implémentation de l’édition standard du SDK Java 2 pour
+Linux d’IBM, version 1.4. Contient le compilateur IBM juste-à-temps
+(just-in-time), amélioré avec un Interpréteur Mode Mixte et une machine
+virtuelle Java 2 retravaillée.
+
+cd /usr/ports/java/linux-ibm-jdk14
+
+make install clean
+
+JDK Blackdown pour Linux
+
+Kit du développeur Java Blackdown 1.4.1. Contient les machines
+virtuelles du client Hotspot et du serveur, ainsi qu’une version
+améliorée de Java Web Start 1.2, un plugin Java pour les navigateurs
+basés sur Mozilla et un plugin Java pour les navigateurs Netscape 4.x.
+
+cd /usr/ports/java/linux-blackdown-jdk14
+
+make install clean
+
+Note : Veuillez noter qu’en raison de la politique de licence actuelle
+de Sun, les binaires ne peuvent être redistribués et que vous êtes seul
+autorisé à les utiliser/étudier. Pour les mêmes raisons, vous devez
+récupérer manuellement le code source et les patches pour FreeBSD.
+
+Si vous rencontrez des problèmes, consultez le Manuel de référence de
+FreeBSD au chapitre installer des applications pour trouver de l’aide.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 juin 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

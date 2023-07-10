@@ -1,0 +1,143 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+More wireless updates
+
+Links:
+Bjoern’s Wireless Work In Progress landing page URL:
+https://people.freebsd.org/~bz/wireless/
+Realtek rtw88 status FreeBSD wiki page URL:
+https://wiki.freebsd.org/WiFi/Rtw88
+Realtek rtw89 status FreeBSD wiki page URL:
+https://wiki.freebsd.org/WiFi/Rtw89
+MediaTek mt76 status FreeBSD wiki page URL:
+https://wiki.freebsd.org/WiFi/Mt76
+QCA ath11k status FreeBSD wiki page URL:
+https://wiki.freebsd.org/WiFi/Ath11k
+
+Contact: Bjoern A. Zeeb <bz@FreeBSD.org>
+
+Currently development is mostly driven by Intel’s iwlwifi driver again
+(see other report). As the saying goes ''each one helps the other'' so
+has work on Realtek’s rtw89 driver helped find a bug in LinuxKPI
+bothering iwlwifi users. For this status report the topic is mostly more
+drivers, which do need more LinuxKPI support.
+
+Various work in progress:
+
+-   Realtek’s rtw88 PCI is in-tree as-is and after a fruitful discussion
+    with Hans Petter Selasky at EuroBSDCon work on LinuxKPI USB support
+    for the rtw88 USB WiFi dongles will continue.
+
+-   Realtek’s rtw89 driver was committed to main but is not connected to
+    the build yet. Scanning already works but packets are not yet
+    passing. Having the driver in-tree already eased testing for users
+    having that chipset in order to identify more unimplemented LinuxKPI
+    bits (some of which will help the other drivers as well) and reduced
+    work for me.
+
+-   The next drivers to probably hit the tree will be based on
+    MediaTek’s mt76 driver (for 7921 and 7915) which I have compiling
+    and started testing.
+
+-   Based on requests I am also working on ath11k to support STA mode
+    given some vendors seem to ship Laptops with those chips.
+
+While some of this clearly benefits from work sponsored by The FreeBSD
+Foundation for iwlwifi and newer standard support, a lot of this is just
+free-time work. If you are interested in any of these drivers I would
+greatly appreciate if some more hands would help with one or the other.
+This could be regularly testing updates to main, writing documentation
+and updating wiki pages, tracking PRs, trying out patches, helping with
+work on individual LinuxKPI bits with or without 802.11 work, or simply
+debugging problems with individual drivers and/or chipsets. If you are
+interested in helping with any one of the above, please drop me an
+email.
+
+For the latest state of the development, please follow the
+freebsd-wireless mailing list and check the wiki pages (as soon as they
+exist).
+
+------------------------------------------------------------------------
+
+Last modified on: October 20, 2022 by Maxim Konovalov
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

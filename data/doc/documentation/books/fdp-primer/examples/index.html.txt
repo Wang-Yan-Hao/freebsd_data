@@ -1,0 +1,235 @@
+
+-    Preface
+    -   Shell Prompts
+    -   Typographic Conventions
+    -   Notes, Tips, Important Information, Warnings, and Examples
+    -   Acknowledgments
+-    Chapter 1. Overview
+    -   1.1. Documentation in the FreeBSD Ecosystem
+    -   1.2. Quick Start
+    -   1.3. The FreeBSD Documentation Set
+-    Chapter 2. Tools
+    -   2.1. Required Tools
+    -   2.2. Optional Tools
+-    Chapter 3. The Working Copy
+    -   3.1. Documentation and Manual Pages
+    -   3.2. Choosing a Directory
+    -   3.3. Checking Out a Copy
+    -   3.4. Updating a Working Copy
+    -   3.5. Reverting Changes
+    -   3.6. Making a Diff
+    -   3.7. Git References
+-    Chapter 4. Documentation Directory Structure
+    -   4.1. The Top Level, doc/
+    -   4.2. The Directories
+    -   4.3. Document-Specific Information
+    -   4.4. The Books: books/
+    -   4.5. The Articles: articles/
+-    Chapter 5. The FreeBSD Documentation Build Process
+    -   5.1. Rendering AsciiDoc into Output
+    -   5.2. The FreeBSD Documentation Build Toolset
+    -   5.3. Understanding the Makefile in the Documentation Tree
+-    Chapter 6. AsciiDoctor Primer
+    -   6.1. Overview
+    -   6.2. Headings
+    -   6.3. Paragraphs
+    -   6.4. Lists
+    -   6.5. Links
+    -   6.6. Conclusion
+-    Chapter 7. Rosetta Stone
+    -   7.1. Comparison between Docbook and AsciiDoc
+-    Chapter 8. Translations
+    -   8.1. What do i18n and l10n mean?
+    -   8.2. Is there a mailing list for translators?
+    -   8.3. Are more translators needed?
+    -   8.4. What languages do I need to know?
+    -   8.5. What software do I need to know?
+    -   8.6. How do I find out who else might be translating to the same
+        language?
+    -   8.7. No one else is translating to my language. What do I do?
+    -   8.8. I have translated some documentation, where do I send it?
+    -   8.9. I am the only person working on translating to this
+        language, how do I submit my translation?
+    -   8.10. Can I include language or country specific text in my
+        translation?
+-    Chapter 9. PO Translations
+    -   9.1. Introduction
+    -   9.2. Quick Start
+    -   9.3. Creating New Translations
+    -   9.4. Translating
+    -   9.5. Tips for Translators
+    -   9.6. Building a Translated Document
+    -   9.7. Submitting the New Translation
+-    Chapter 10. Weblate Translations
+    -   10.1. Introduction
+    -   10.2. How to Become a FreeBSD Translator
+    -   10.3. Introduce Yourself
+    -   10.4. Login to Weblate
+    -   10.5. Find a Language Team to Join In
+    -   10.6. Translating Online on Weblate
+    -   10.7. Translating Offline
+    -   10.8. Translation based on Automatic Suggestions
+    -   10.9. Proofreading and Weblate Quality Checks
+    -   10.10. Building the Translated Document
+    -   10.11. Submitting Translations
+    -   10.12. FAQ (Frequently Asked Questions)
+-    Chapter 11. Manual Pages
+    -   11.1. Introduction
+    -   11.2. Sections
+    -   11.3. Markup
+    -   11.4. Sample Manual Page Structures
+    -   11.5. Testing
+    -   11.6. Example Manual Pages to Use as Templates
+<<<<<<< HEAD
+=======
+    -   11.7. Resources
+-    Chapter 12. Writing Style
+    -   12.1. Tips
+    -   12.2. Guidelines
+    -   12.3. Style Guide
+    -   12.4. One sentence per line
+    -   12.5. Acronyms
+    -   12.6. Special Character List
+    -   12.7. Linting with Vale
+-    Chapter 13. Editor Configuration
+    -   13.1. Vim
+    -   13.2. Emacs
+    -   13.3. nano
+-    Chapter 14. Trademarks
+    -   14.1. Trademark Symbols
+    -   14.2. Trademark Citing
+-    Chapter 15. See Also
+    -   15.1. The FreeBSD Documentation Project
+    -   15.2. Hugo
+    -   15.3. AsciiDoctor
+    -   15.4. HTML
+-    Appendix A. Examples
+    -   A.1. AsciiDoctor book
+    -   A.2. AsciiDoctor article
+-   
+
+Book menu
+
+Appendix A. Examples
+
+Table of Contents
+
+-   A.1. AsciiDoctor book
+-   A.2. AsciiDoctor article
+
+These examples are not exhaustive - they do not contain all the elements
+that might be desirable to use, particularly in a document’s front
+matter. For more examples of AsciiDoctor, examine the AsciiDoc source
+for this and other documents available in the Git doc repository, or
+available online starting at https://cgit.freebsd.org/doc/.
+
+A.1. AsciiDoctor book
+
+Example 1. AsciiDoctor book
+
+    ---
+    title: An Example Book
+    authors:
+      - author: The FreeBSD Documentation Project
+    copyright: 1995-2021 The FreeBSD Documentation Project
+    releaseinfo: ""
+    trademarks: ["general"]
+    ---
+
+    = An Example Book
+    :doctype: book
+    :toc: macro
+    :toclevels: 2
+    :icons: font
+    :xrefstyle: basic
+    :relfileprefix: ../
+    :outfilesuffix:
+    :sectnums:
+    :sectnumlevels: 6
+    :partnums:
+    :chapter-signifier: Chapter
+    :part-signifier: Part
+    :source-highlighter: rouge
+    :experimental:
+    :skip-front-matter:
+    :book: true
+    :pdf: false
+
+    :chapters-path: content/en/books/bookname/
+
+
+
+    [abstract]
+    Abstract
+
+    Abstract section
+
+    '''
+
+    toc::[]
+
+    :sectnums!:
+
+    include::{chapters-path}preface/_index.adoc[leveloffset=+1]
+
+    :sectnums:
+
+    include::{chapters-path}parti.adoc[lines=7..18]
+
+    include::{chapters-path}chapter-name/_index.adoc[leveloffset=+1]
+
+A.2. AsciiDoctor article
+
+Example 2. AsciiDoctor article
+
+    ---
+    title: An Example Article
+    authors:
+      - author: Your name and surname
+        email: foo@example.com
+    trademarks: ["general"]
+    ---
+
+    = An Example Article
+    :doctype: article
+    :toc: macro
+    :toclevels: 1
+    :icons: font
+    :sectnums:
+    :sectnumlevels: 6
+    :source-highlighter: rouge
+    :experimental:
+
+    '''
+
+    toc::[]
+
+    == My First Section
+
+    This is the first section in my article.
+
+    === My First Sub-Section
+
+    This is the first sub-section in my article.
+
+------------------------------------------------------------------------
+
+Last modified on: March 5, 2023 by Lorenzo Salvadore
+
+Prev
+
+Home
+
+Table of Contents
+
+-   A.1. AsciiDoctor book
+-   A.2. AsciiDoctor article
+
+------------------------------------------------------------------------
+
+Resources
+
+-   Download PDF
+-   Edit this page
+
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

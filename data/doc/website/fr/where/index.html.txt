@@ -1,0 +1,316 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   Obtenir FreeBSD
+-   Information sur les versions
+    -   Version de production:
+        12.4
+    -   Version de production:
+        13.1
+    -   Version de production:
+        13.2
+-   Instantanés
+    -   Version à venir:
+        14.0
+-   Applications portées
+
+Obtenir FreeBSD
+
+Pour des informations générales sur les versions passées, présentes et
+futures, veuillez consulter la page d’Information sur les versions.
+
+Obtenir FreeBSD
+
+Choisir une architecture
+
+La plupart des utilisateurs de FreeBSD possèderont un matériel
+correspondant aux architectures amd64 ou aarch64. Ces architectures sont
+bien supportées.
+
+La plupart des PCs modernes, y compris ceux avec les processeurs de chez
+Intel®, utilisent l’architecture amd64
+
+Les systèmes embarqués et les ordinateurs mono-carte (single-board
+computers ou SBC) comme les Raspberry Pi 3 et 4, ESPRESSObin, ainsi que
+toutes les cartes Allwinner et Rockchip, utilisent aarch64.
+
+Pour toutes les autres architectures, veuillez consulter la liste
+complète des plate-formes supportées par FreeBSD.
+
+Choisir une image
+
+Pour l’installateur FreeBSD: les formats comprennent le CD (disc1), DVD
+(dvd1), et l’installation via réseau (bootonly) qui sont mis à
+disposition sous la forme d’images disques ISO, ainsi que les images de
+clés USB standard ou mini.
+
+Pour les machines virtuelles: des images de machines virtuelles FreeBSD
+préinstallées.
+
+Pour les plate-formes embarquées: des images de cartes SD sont
+disponibles.
+
+FreeBSD 13.1-RELEASE
+
++-----------------+-----------------+-----------------+-----------------+
+| Installateur    | VM              | Cartes SD       | Documentation   |
++=================+=================+=================+=================+
+| -   amd64       | -   README      | -   aarch64     | -   Released:   |
+|                 |                 |                 |     May 16,     |
+| -   i386        | -   amd64       | -   -   PINE64  |     2022        |
+|                 |                 |                 |                 |
+| -   powerpc     | -   i386        |                 | -   Release     |
+|                 |                 |  -   PINE64-LTS |     Notes       |
+| -   powerpc64   | -   aarch64     |                 |                 |
+|                 |                 |     -   ROCK64  | -   Readme      |
+| -   powerpc64le | -   amd64       |                 |                 |
+|                 |     (BASIC-CI)  |                 | -   Hardware    |
+| -   powerpcspe  |                 |   -   ROCKPRO64 |                 |
+|                 |                 |                 |   Compatibility |
+| -   armv6       |                 |     -   RPI     |     List        |
+|                 |                 |         (3/4)   |                 |
+| -   armv7       |                 |                 | -               |
+|                 |                 | -   armv6/armv7 |    Installation |
+| -   aarch64     |                 |                 |                 |
+|                 |                 | -               |    Instructions |
+| -   riscv64     |                 |   -   GENERICSD |                 |
+|                 |                 |                 | -   Errata      |
+|                 |                 |     -   RPI-B   |                 |
+|                 |                 |                 | -   Signed      |
+|                 |                 | -   riscv64     |     Checksums   |
+|                 |                 |                 |                 |
+|                 |                 | -               |                 |
+|                 |                 |   -   GENERICSD |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+FreeBSD 12.3-RELEASE
+
++-----------------+-----------------+-----------------+-----------------+
+| Installateur    | VM              | Cartes SD       | Documentation   |
++=================+=================+=================+=================+
+| -   amd64       | -   README      | -   RPI-B       | -               |
+|                 |                 |                 |                 |
+| -   i386        | -   amd64       | -   BANANAPI    | -   Released:   |
+|                 |                 |                 |     December 7, |
+| -   powerpc     | -   i386        | -   CUBIEBOARD  |     2021        |
+|                 |                 |                 |                 |
+| -   powerpc64   | -   aarch64     | -   CUBIEBOARD2 | -   Release     |
+|                 |                 |                 |     Notes       |
+| -   powerpcspe  |                 | -   CUB         |                 |
+|                 |                 | OX-HUMMINGBOARD | -   Readme      |
+| -   sparc64     |                 |                 |                 |
+|                 |                 | -   GENERICSD   | -   Hardware    |
+| -   aarch64     |                 |                 |                 |
+|                 |                 | -   RPI2        |   Compatibility |
+|                 |                 |                 |     List        |
+|                 |                 | -   PANDABOARD  |                 |
+|                 |                 |                 | -               |
+|                 |                 | -   WANDBOARD   |    Installation |
+|                 |                 |                 |                 |
+|                 |                 | -   PINE64      |    Instructions |
+|                 |                 |                 |                 |
+|                 |                 | -   PINE64-LTS  | -   Errata      |
+|                 |                 |                 |                 |
+|                 |                 |                 | -   Signed      |
+|                 |                 |                 |     Checksums   |
++-----------------+-----------------+-----------------+-----------------+
+
+Aider à tester
+
+Si vous êtes intéressé pour tester la prochaine version, veuillez
+consulter la Page de téléchargement de FreeBSD.
+
+FreeBSD 12.4-BETA1
+
++-----------------+-----------------+-----------------+-----------------+
+| Installateur    | VM              | Cartes SD       | Documentation   |
++=================+=================+=================+=================+
+| -   amd64       | -   README      | -   RPI-B       | -               |
+|                 |                 |                 |                 |
+| -   i386        | -   amd64       | -   BANANAPI    | -   Release     |
+|                 |                 |                 |     Notes       |
+| -   powerpc     | -   i386        | -   CUBIEBOARD  |                 |
+|                 |                 |                 |                 |
+| -   powerpc64   | -   aarch64     | -   CUBIEBOARD2 |                 |
+|                 |                 |                 |                 |
+| -   powerpcspe  |                 | -   CUB         |                 |
+|                 |                 | OX-HUMMINGBOARD |                 |
+| -   sparc64     |                 |                 |                 |
+|                 |                 | -   GENERICSD   |                 |
+| -   aarch64     |                 |                 |                 |
+|                 |                 | -   RPI2        |                 |
+|                 |                 |                 |                 |
+|                 |                 | -   PANDABOARD  |                 |
+|                 |                 |                 |                 |
+|                 |                 | -   WANDBOARD   |                 |
+|                 |                 |                 |                 |
+|                 |                 | -   PINE64      |                 |
+|                 |                 |                 |                 |
+|                 |                 | -   PINE64-LTS  |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+Instantanés de développement
+
+Voir la page de publication des instantanés FreeBSD.
+
+FreeBSD 14.0-CURRENT
+
+Des images de l’installateur et de cartes SD sont disponibles pour
+amd64, i386, powerpc, powerpc64, powerpc64le, powerpcspe, armv6, armv7,
+aarch64, et riscv64.
+
+Des images de VM sont disponibles pour amd64, i386, aarch64, et riscv64.
+
+FreeBSD 13.1-STABLE
+
+Des images de l’installateur et de cartes SD sont disponibles pour
+amd64, i386, powerpc, powerpc64, powerpc64le, powerpcspe, armv6, armv7,
+aarch64, et riscv64.
+
+Des images de VM sont disponibles pour amd64, i386, aarch64, et riscv64.
+
+Installer FreeBSD
+
+Les méthodes d’installation proposées sont les images (voir plus haut)
+et le téléchargement direct (accès FTP anonyme, HTTP ou NFS).
+Reportez-vous au guide d’installation avant de télécharger toute la
+distribution FreeBSD.
+
+Si vous comptez télécharger FreeBSD via FTP ou HTTPS, veuillez consulter
+la liste des sites miroirs du manuel de référence pour déterminer lequel
+est le plus proche de chez vous.
+
+Acheter FreeBSD
+
+FreeBSD peut être acheté en version CD-ROM ou DVD auprès de FreeBSD
+Mall, ou d’un autre éditeur de CD-ROMs et DVDs.
+
+Versions passées
+
+Consultez l’archive FTP.
+
+Systèmes d’exploitation dérivés de FreeBSD
+
+FreeBSD est très utilisé comme base pour d’autres systèmes
+d’exploitation commerciaux et libres. Les projets mentionnés ci-dessous
+sont particulièrement intéressants.
+
+-   TrueNAS est un logiciel de stockage en réseau (Network Attached
+    Storage ou NAS) qui partage et protège les données des menaces
+    d’aujourd’hui telles que les rançongiciels ou les logiciels
+    malveillants. TrueNAS simplifie pour les utilisateurs et les
+    périphériques clients l’accès aux données partagées via pratiquement
+    tous les protocoles de partage existant.
+
+-   GhostBSD est un dérivé de FreeBSD, et utilise l’environnement GTK
+    pour offrir une apparence et une expérience d’utilisation agréables
+    sur une plate-forme BSD moderne avec pour objectif de fournir un
+    environnement de travail de type UNIX® natif et naturel.
+
+-   MidnightBSD est dérivé de FreeBSD 6.1 beta, et continue d’utiliser
+    des parties plus récentes du code de base de FreeBSD. Développé avec
+    pour cible les utilisateurs d’environnement de bureau, MidnightBSD
+    comprend tout ce que vous pourriez attendre lors de vos tâches
+    quotidiennes: messagerie, navigation Web, traitement de texte, jeux,
+    et bien plus.
+
+-   NomadBSD est un système Live persistant pour les clefs USB basé sur
+    FreeBSD. Avec une détection et une configuration automatique du
+    matériel, il est configuré pour être utilisé comme un environnement
+    de travail directement fonctionnel, mais peut également être employé
+    pour faire de la récupération de données, à des fins éducatives, ou
+    pour tester la compatibilité matérielle avec FreeBSD.
+
+-   pfSense est une distribution modifiée de FreeBSD adaptée pour être
+    utilisée comme pare-feu ou routeur.
+
+Applications et utilitaires
+
+Le catalogue des logiciels portés
+
+Un catalogue d’applications et d’utilitaires divers et variés qui ont
+été portés sous FreeBSD.
+
+-   Au sujet du catalogue des logiciels portés
+
+-   FreshPorts - une interface Web plus avancée au catalogue des
+    logiciels portés
+
+-   Installer des applications: les logiciels pré-compilés et les
+    logiciels portés dans le manuel de référence FreeBSD
+
+-   Consultez le catalogue: web | FTP.
+
+Pour toute information concernant la façon dont vous pouvez ajouter
+votre logiciel favori au catalogue des logiciels portés, consultez le
+document Manuel du Porteur d’applications ainsi que l’article Collaborer
+à FreeBSD.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 23 octobre 2022 by Marc Fonvieille
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

@@ -1,0 +1,128 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   
+-   Manuel du développeur
+-   Committer's Guide
+-   Manuel du porteur d'application
+-   Dépôt des codes source
+-   Production des versions
+-   Plates-formes
+-   Idées de projet
+-   Contribuer
+
+Projet libh pour FreeBSD
+
+Contenu
+
+-   A propos de libh
+
+-   Pré-requis pour le projet
+
+Vue d’ensemble
+
+Site des développeurs
+
+    http://rtp1.slowblink.com/~libh/ (inclus snapshots, copies d’écrans,
+    etc)
+
+Liste de diffusion du projet
+
+    freebsd-libh@FreeBSD.org
+
+    Dépôt CVS
+
+        Libh est disponible à partir du serveur CVS anonyme (mot de
+        passe vide) :
+
+            cvs -d :pserver:anonymous@rtp1.slowblink.com:/home/libh/cvs
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Pré-requis pour le projet
+
+Vous avez besoin de ce qui suit pour exécuter/tester libh :
+
+-   Port TVision (devel/tvision).
+
+-   Port TCL (version indifférente, 8.3 suggérée) (lang/tcl83)
+
+-   Port Qt 2 (pour le moment). Notez qu’il vous faut installer à la
+    fois la version dynamique et la version statique (x11-toolkits/qt23
+    et x11-toolkits/qt2-static).
+
+Un port de libh est également disponible (misc/libh), lequel installe un
+instantané des bibliothèques et des scripts TCL. Cependant, ce n’est pas
+pour du développement.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 juin 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

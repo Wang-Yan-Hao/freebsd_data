@@ -1,0 +1,133 @@
+[FreeBSD The Power to Serve]
+
+FreeBSD への寄付
+
+ 
+
+-   ホーム
+
+-   FreeBSD とは
+    -   FreeBSD が初めてという方へ
+    -   特徴
+    -   プロモーション活動
+    -   マーケティング活動
+    -   プライバシーポリシー
+    -   Projects
+    -   Ports
+
+-   FreeBSD の入手
+    -   リリース情報
+    -   リリースエンジニアリング
+
+-   ドキュメント
+    -   FAQ
+    -   ハンドブック
+    -   port 作成者のためのハンドブック
+    -   開発者のためのハンドブック
+    -   Committer's Guide
+    -   マニュアルページ
+    -   Presentations and Papers
+    -   新しい貢献者のためのドキュメンテーションプロジェクト入門
+    -   すべての Books と Articles
+
+-   コミュニティ
+    -   メーリングリスト
+    -   フォーラム
+    -   ユーザグループ
+    -   イベント
+    -   FreeBSD ジャーナル
+    -   Q&A (外部)
+
+-   開発
+    -   プロジェクトアイディア
+    -   Git リポジトリ
+    -   Subversion リポジトリ
+    -   GitHub ミラー
+    -   コードレビュー (Phabricator)
+    -   Wiki
+    -   継続的インテグレーションサービス
+
+-   サポート
+    -   ベンダ
+    -   セキュリティ情報
+    -   障害報告
+    -   障害報告の提出
+    -   ウェブ上の情報
+
+-   財団
+    -   寄付
+    -   ハードウェアの寄贈
+
+-   FreeBSD とは
+-   特徴
+-   アプリケーション
+-   プロモーション活動
+-   マーケティング活動
+-   担当者一覧
+-   ニュース
+-   イベント
+-   ニュース記事
+-   画像
+-   ロゴ
+-   寄付・寄贈
+-   法律上の注意事項
+-   プライバシーポリシー
+
+BSD デーモン
+
+この周辺のたくさんのページにいろどりを添えているちっちゃな赤いやつの正体が
+BSD デーモン (Daemon) 君です。UNIX® システムの世界では、
+デーモンというのはバックグラウンドで人の手を借りずにいろいろなタスクをこなすプロセスを意味します。
+一般的には、デーモンは悪魔 (demon)
+という単語の古いつづり方のことです。Unix System Administration Handbook
+の中で、Evi Nemeth はデーモンについてこう言っています。
+
+  "多くの人々が ''daemon'' と ''demon'' という単語をごっちゃにして、UNIX
+  と暗い地下世界との間の悪魔的なつながりをにおわすのに使用していますが、
+  これはとんでもない誤解というものです。''Daemon'' は本当は ''demon''
+  のずっと古いかたちなのです。
+  デーモンは善にも悪にも特別な偏りがあるわけではありませんし、
+  それどころか人が人格や個性を確立するのを助ける役割があるのです。
+  古代ギリシャの ''Personal daemon'' という概念は、現代の ''守護天使''
+  の概念と似ており、''eudaemonia'' というのは、
+  親切な精霊に助けられたり守られたりしている状態のことでした。
+  まあ、UNIX
+  システムはいつもデーモンと悪魔の両方に棲み憑かれているようですが。"
+  (p403)
+
+一番最初に (一番有名でもあります) 登場した BSD デーモン君の肖像は John
+Lasseter の手によるものでした。FreeBSD 界でのごく最近の肖像は ほそかわ
+たつみ氏によって描かれていますが、 アイディアのおおもとは間違いなく John
+によるものです。 デーモン君の創造者であり著作権保持者でもあるのは
+Marshall Kirk McKusick です。 ちょっとした
+絵の歴史もあります。こちらはデーモン君がいっぱい出てくる FreeBSD
+関連の出版物の陳列室。
+
+様々な大きさのデーモン君のぬいぐるみや帽子が the FreeBSD Mall [beanie
+daemon]から手に入ります。
+
+BSD Daemon Copyright 1988 by Marshall Kirk McKusick. All Rights
+Reserved.
+
+デーモン君の使用許可は
+
+  Marshall Kirk McKusick
+  1614 Oxford St
+  Berkeley, CA 94709-1608
+  USA
+
+または、e-mailで mckusick@mckusick.com から得てください。
+
+知的財産権のホームに戻る
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+最終更新日: 2021年1月26日 by Sergio Carlavilla Delgado
+
+法律上の注意事項 | © 1995-2023 FreeBSD プロジェクト All rights reserved.
+The mark FreeBSD is a registered trademark of The FreeBSD Foundation and
+is used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact

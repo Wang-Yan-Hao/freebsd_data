@@ -1,0 +1,126 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   A propos
+-   Fonctionnalités
+-   Applications
+-   Prosélytisme
+-   Marketing
+-   Administration
+-   Nouvelles du projet
+-   Événements
+-   Presse
+-   Ressources artistiques
+-   Logo
+-   Donations
+-   Legal Notices
+-   Politique de confidentialité
+
+Trucs pour la recherche
+
+Si vous obtenez beaucoup de résultats hors propos…​
+
+1.  Si vous effectuez une recherche sur plusieurs mots comme “disques
+    durs quantum”, un OR (OU) est sous-entendu, ce qui signifie que la
+    recherche sera pertinente dès lors qu’un des mots apparaît dans le
+    message. Pour ne trouver exclusivement que les messages comportant
+    les trois mots à la fois, modifiez la recherche avec “quantum and
+    durs and disques”.
+
+2.  Si malgré cela vous obtenez toujours beaucoup de résultats hors
+    propos, veuillez vérifier si ces résultats ont quelque chose en
+    commun. Si c’est le cas, vous pouvez exclure cette partie commune
+    grâce à l’opérateur not. Par exemple, “quantum and durs and disques
+    not ide” exclura tous les messages relatifs aux disques durs Quantum
+    de type ide.
+
+Si vous pensez que vous n’obtenez pas tout ce que vous devriez obtenir…​
+
+1.  Si un de vos mots clé peut s’écrire sous différentes formes, soyez
+    sûr d’en saisir toutes les formes. Si vous cherchez “buslogic”, vous
+    pouvez modifier votre recherche ainsi : “buslogic or bustek”.
+
+2.  Les mots avec différents suffixes peuvent recevoir des caractères
+    jokers. Une recherche avec “drive*” va tenir compte de mots comme
+    drive, drives, driver, drivers etc.
+
+3.  Essayez d’éviter les mots qui pourraient être sous-entendus par le
+    contexte du message. Par exemple, “quantum and dur and disque” peut
+    passer à côté de messages pertinents qui pourraient être trouvés
+    avec “quantum and disque”.
+
+<<<<<<< HEAD
+
+Retour à la page de recherche
+
+=======
+------------------------------------------------------------------------
+
+Retour à la page de recherche
+
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26 janvier 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

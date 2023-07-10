@@ -1,0 +1,157 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Improve the kinst DTrace provider
+
+Links:
+libdtrace: implement inline function tracing URL:
+https://reviews.freebsd.org/D38825
+dtrace(1): add -d flag to dump D script post-dt_sugar URL:
+https://reviews.freebsd.org/D38732
+
+Contact: Christos Margiolis <christos@FreeBSD.org>
+Contact: Mark Johnston <markj@FreeBSD.org>
+
+kinst is a new DTrace provider created by christos@ and markj@ that
+allows for arbitrary instruction tracing in a kernel function. kinst has
+been added to the base system in FreeBSD 14.0.
+
+The 2022Q3 status report gives a brief introduction to kinst. We’re now
+working on inline function tracing (see review D38825 above) — a
+much-requested DTrace feature — by using kernel DWARF and ELF info to
+find the call sites of each inline copy and use that information to
+transform D syntax by turning kinst probes of the form:
+
+       kinst::<inline_func>:<entry/return>
+        /<pred>/
+        {
+            <acts>
+        }
+
+To:
+
+       kinst::<caller_func1>:<offset>,
+        kinst::<caller_func2>:<offset>,
+        kinst::<caller_func3>:<offset>
+        /<pred>/
+        {
+            <acts>
+        }
+
+For example:
+
+       # dtrace -dn 'kinst::cam_iosched_has_more_trim:entry { printf("\t%d\t%s", pid, execname); }'
+        kinst::cam_iosched_get_trim:13,
+        kinst::cam_iosched_next_bio:13,
+        kinst::cam_iosched_schedule:40
+        {
+            printf("\t%d\t%s", pid, execname);
+        }
+
+        dtrace: description 'kinst::cam_iosched_has_more_trim:entry ' matched 3 probes
+        CPU     ID                    FUNCTION:NAME
+          2  79315          cam_iosched_next_bio:13     0       kernel
+          2  79316          cam_iosched_schedule:40     0       kernel
+          0  79316          cam_iosched_schedule:40     12      intr
+          2  79315          cam_iosched_next_bio:13     0       kernel
+          2  79316          cam_iosched_schedule:40     0       kernel
+          0  79316          cam_iosched_schedule:40     12      intr
+        ^C
+
+A new -d flag has also been added to dtrace(1) which dumps the D script
+after libdtrace has applied syntactic transformations.
+
+Further goals include:
+
+-   Implement a locals structure in D which stores the local variables
+    of the traced function. For example with kinst::foo:<x>, we could
+    print the local variable bar by doing print(locals→bar) inside a D
+    script.
+
+-   Port kinst to riscv and/or arm64.
+
+Sponsor: The FreeBSD Foundation
+
+------------------------------------------------------------------------
+
+Last modified on: April 18, 2023 by Lorenzo Salvadore
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

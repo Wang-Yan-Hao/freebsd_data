@@ -1,0 +1,115 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Microchip LAN743x mgb(4) Device Driver
+
+Links:
+Commit adding mgb(4) driver URL:
+https://cgit.freebsd.org/src/commit/?id=8890ab7758b8a03a68f3fe596f6a5446921631a5
+Commit connecting mgb(4) module to the build URL:
+https://cgit.freebsd.org/src/commit/?id=543df609072fe49079c36d6bee510e1645edde3a
+
+Contact: Ed Maste <emaste@freebsd.org>
+
+Microchip’s LAN7430 and LAN7431 are PCIe Gigabit Ethernet interface ICs,
+with an integrated PHY (LAN7430) or RGMII interface (LAN7431).
+
+In 2019 Gerald ND Aryeetey, a FreeBSD Foundation intern, developed the
+mgb(4) driver for these devices. It was added to the tree but not yet
+connected to the build. Since it was committed a number of sweeping
+iflib changes were made, which included updates to mgb(4).
+
+I have addressed some outstanding issues in the driver, and have now
+added the module to the build. It is available in -CURRENT snapshot
+images. The driver is functional, although some additional work is still
+needed. In particular, configuration of the Receive Filtering Engine,
+and VLAN and RX/TX checksum offload are required. Caveats and notes are
+described in the man page.
+
+I am very interested in feedback and test results.
+
+Sponsor: The FreeBSD Foundation
+
+------------------------------------------------------------------------
+
+Last modified on: November 15, 2021 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

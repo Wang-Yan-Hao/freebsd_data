@@ -1,0 +1,90 @@
+[FreeBSD The Power to Serve]
+
+Donar a FreeBSD
+
+ 
+
+-   Inicio
+
+-   Acerca de FreeBSD
+    -   Introduccion
+    -   Características
+    -   Apoyo
+    -   Marketing
+    -   Política de privacidad
+    -   Proyectos
+    -   Ports
+
+-   Descargar FreeBSD
+    -   Información de Versiones
+    -   Ingeniería de Versiones
+
+-   Documentación
+    -   FAQ
+    -   Manual
+    -   Manual del Porter
+    -   Manual del desarrollador
+    -   Guía del Committer
+    -   Manuales en línea
+    -   Presentaciones y Trabajos
+    -   Introducción al Proyecto de Documentación
+    -   Todos los libros y artículos
+
+-   Comunidad
+    -   Listas de correo
+    -   Foros
+    -   Grupos de usuarios
+    -   Eventos
+    -   FreeBSD Journal
+    -   Q&A (externo)
+
+-   Desarrolladores
+    -   Ideas para proyectos
+    -   Git Repository
+    -   Repositorio Subversion
+    -   Git Mirror
+    -   Revisiones de Código (Phabricator)
+    -   Wiki
+    -   Servicio de integración continua
+
+-   Soporte
+    -   Distribuidores comerciales
+    -   Información de seguridad
+    -   Informes de errores
+    -   Envío informes de error
+    -   Recursos Web
+
+-   Fundación
+    -   Donaciones monetarias
+    -   Donaciones hardware
+
+-   Documentación
+-   FAQ
+-   Manual
+-   Páginas del Manual
+-   Presentaciones y Trabajos
+-   Libros y Artículos en línea
+-   Publicaciones
+-   Recursos Web
+-   Para Principiantes
+-   Proyecto de Documentación
+-   Archivo
+
+Documentación
+
+[El demonio está leyendo documentación]
+
+Se puede encontrar abundante información sobre FreeBSD tanto en este
+sitio web como en otras fuentes externas.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26 de enero de 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 El Proyecto FreeBSD Todos los derechos
+reservados. La marca FreeBSD es una marca registrada de la Fundación
+FreeBSD es es utilizada por el Proyecto FreeBSD con su permiso La
+Fundación FreeBSD. Contact

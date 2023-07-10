@@ -1,0 +1,255 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 5.5-RELEASE Errata
+
+The FreeBSD Project
+
+Copyright © 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007 The FreeBSD
+Documentation Project
+
+$FreeBSD: src/release/doc/en_US.ISO8859-1/errata/article.sgml,v
+1.69.2.53 2008/04/17 19:10:57 delphij Exp $
+
+FreeBSD is a registered trademark of the FreeBSD Foundation.
+
+Intel, Celeron, EtherExpress, i386, i486, Itanium, Pentium, and Xeon are
+trademarks or registered trademarks of Intel Corporation or its
+subsidiaries in the United States and other countries.
+
+Sparc, Sparc64, SPARCEngine, and UltraSPARC are trademarks of SPARC
+International, Inc in the United States and other countries. Products
+bearing SPARC trademarks are based upon architecture developed by Sun
+Microsystems, Inc.
+
+Many of the designations used by manufacturers and sellers to
+distinguish their products are claimed as trademarks. Where those
+designations appear in this document, and the FreeBSD Project was aware
+of the trademark claim, the designations have been followed by the ``™''
+or the ``®'' symbol.
+
+------------------------------------------------------------------------
+
+  This document lists errata items for FreeBSD 5.5-RELEASE, containing
+  significant information discovered after the release or too late in
+  the release cycle to be otherwise included in the release
+  documentation. This information includes security advisories, as well
+  as news relating to the software or documentation that could affect
+  its operation or usability. An up-to-date version of this document
+  should always be consulted before installing this version of FreeBSD.
+
+  This errata document for FreeBSD 5.5-RELEASE will be maintained until
+  the end-of-life date for the 5-STABLE branch. As of the release date,
+  this date was estimated to be 31 May 2008. The current end-of-life
+  state for the various FreeBSD branches can be found at
+  http://security.freebsd.org/.
+
+------------------------------------------------------------------------
+
+1 Introduction
+
+This errata document contains ``late-breaking news'' about FreeBSD
+5.5-RELEASE. Before installing this version, it is important to consult
+this document to learn about any post-release discoveries or problems
+that may already have been found and fixed.
+
+Any version of this errata document actually distributed with the
+release (for example, on a CDROM distribution) will be out of date by
+definition, but other copies are kept updated on the Internet and should
+be consulted as the ``current errata'' for this release. These other
+copies of the errata are located at http://www.FreeBSD.org/releases/,
+plus any sites which keep up-to-date mirrors of this location.
+
+Source and binary snapshots of FreeBSD 5-STABLE also contain up-to-date
+copies of this document (as of the time of the snapshot).
+
+For a list of all FreeBSD CERT security advisories, see
+http://security.FreeBSD.org/ or ftp://ftp.FreeBSD.org/pub/FreeBSD/CERT/.
+
+------------------------------------------------------------------------
+
+2 Security Advisories
+
+The following security advisories pertain to FreeBSD 5.5-RELEASE. For
+more information, consult the individual advisories available from
+http://security.FreeBSD.org/.
+
++-------------+-------------+------------------------------------------+
+| Advisory    | Date        | Topic                                    |
++=============+=============+==========================================+
+| SA-0        | 31 May 2006 | Inoperative access controls in ypserv(8) |
+| 6:15.ypserv |             |                                          |
++-------------+-------------+------------------------------------------+
+| SA-         | 31 May 2006 | smbfs chroot escape                      |
+| 06:16.smbfs |             |                                          |
++-------------+-------------+------------------------------------------+
+| SA-06:      | 1           | Incorrect multipart message handling in  |
+| 17.sendmail | 4 June 2006 | Sendmail                                 |
++-------------+-------------+------------------------------------------+
+| S           | 23          | Buffer overflow in sppp(4)               |
+| A-06:18.ppp | August 2006 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-06       | 06 Sep      | Incorrect PKCS#1 v1.5 padding validation |
+| :19.openssl | tember 2006 | in crypto(3)                             |
++-------------+-------------+------------------------------------------+
+| SA          | 06 Sep      | Denial of Service in named(8)            |
+| -06:20.bind | tember 2006 |                                          |
++-------------+-------------+------------------------------------------+
+| SA          | 19 Sep      | Multiple vulnerabilities in gzip(1)      |
+| -06:21.gzip | tember 2006 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-06       | 30 Sep      | Multiple vulnerabilities in OpenSSH      |
+| :22.openssh | tember 2006 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-06       | 28 Sep      | Multiple problems in crypto(3)           |
+| :23.openssl | tember 2006 |                                          |
++-------------+-------------+------------------------------------------+
+| SA          | 6 De        | Kernel memory disclosure in firewire(4)  |
+| -06:25.kmem | cember 2006 |                                          |
++-------------+-------------+------------------------------------------+
+| SA          | 6 De        | gtar(1) name mangling symlink            |
+| -06:26.gtar | cember 2006 | vulnerability                            |
++-------------+-------------+------------------------------------------+
+| SA          | 11 J        | Jail rc.d script privilege escalation    |
+| -07:01.jail | anuary 2007 |                                          |
++-------------+-------------+------------------------------------------+
+| SA          | 9 Fe        | Multiple Denial of Service               |
+| -07:02.bind | bruary 2007 | vulnerabilities in named(8)              |
++-------------+-------------+------------------------------------------+
+| SA          | 26          | IPv6 Routing Header 0 is dangerous       |
+| -07:03.ipv6 |  April 2007 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-07:05    | 1           | Errors handling corrupt tar files in     |
+| .libarchive | 2 July 2007 | libarchive(3)                            |
++-------------+-------------+------------------------------------------+
+| SA-0        | 29 No       | Random value disclosure                  |
+| 7:09.random | vember 2007 |                                          |
++-------------+-------------+------------------------------------------+
+| SA          | 29 No       | gtar(1) directory traversal              |
+| -07:10.gtar | vember 2007 | vulnerability                            |
++-------------+-------------+------------------------------------------+
+| S           | 14 J        | pty snooping                             |
+| A-08:01.pty | anuary 2008 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-08:      | 14 Fe       | sendfile(2) write-only file permission   |
+| 03.sendfile | bruary 2008 | bypass                                   |
++-------------+-------------+------------------------------------------+
+| SA-         | 14 Fe       | IPsec null pointer dereference panic     |
+| 08:04.ipsec | bruary 2008 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-08       | 17          | OpenSSH X11-forwarding privilege         |
+| :05.openssh |  April 2008 | escalation                               |
++-------------+-------------+------------------------------------------+
+
+------------------------------------------------------------------------
+
+3 Open Issues
+
+(24 May 2006) The NFSv4 client in 5.5-RELEASE is an unfinished
+prototype, and there are a number of issues with it (many documented in
+the FreeBSD GNATS database) that make it unusable in many situations.
+Given the state of 5-STABLE development, it is unlikely that these will
+be resolved on this development branch.
+
+------------------------------------------------------------------------
+
+4 Late-Breaking News
+
+(31 May 2006) Thanks to the efforts of Paul Saab, torrents for the
+various FreeBSD 5.5-RELEASE ISO images are now available at
+http://torrents.freebsd.org:8080/.
+
+------------------------------------------------------------------------
+
+This file, and other release-related documents, can be downloaded from
+http://www.FreeBSD.org/snapshots/.
+
+For questions about FreeBSD, read the documentation before contacting
+<questions@FreeBSD.org>.
+
+All users of FreeBSD 5-STABLE should subscribe to the
+<stable@FreeBSD.org> mailing list.
+
+For questions about this documentation, e-mail <doc@FreeBSD.org>.
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

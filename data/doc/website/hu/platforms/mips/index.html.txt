@@ -1,0 +1,150 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   
+-   Developer's Handbook
+-   Committer's Guide
+-   Porter's Handbook
+-   Source code repositories
+-   Release Engineering
+-   Platforms
+-   Project Ideas
+-   Contributing
+
+A FreeBSD/MIPS projekt
+
+Bevezetés
+
+Ez az oldal a FreeBSD folyamatban lévõ MIPS® architektúrára készülõ
+portjáról tartalmaz néhány információt. Az ezzel kapcsolatos
+megbeszélések a freebsd-mips levelezési listán folynak.
+
+Tartalomjegyzék
+
+-   Helyzet
+
+-   GYIK
+
+-   A FreeBSD/MIPS levelezési lista
+
+Helyzet
+
+A MIPS egy Tier 3 szintû architektúra, tehát pillanatnyilag még csak
+kísérleti jelleggel létezik. A FreeBSD Projekt nem támogatja.
+
+Gyakran Ismételt Kérdések]
+
+1.  Mi az a FreeBSD/MIPS projekt?
+
+2.  Milyen hardvert céloz meg a projekt?
+
+3.  Hogyan áll jelenleg a munka?
+
+4.  Honnan szerezhetõ meg a FreeBSD MIPS-re?
+
+5.  Kivel vehetjük fel a kapcsolatot?
+
+Mi az a FreeBSD/MIPS projekt?
+
+A FreeBSD/MIPS a FreeBSD operációs rendszer átirata a MIPS R4K és a tõle
+fejlettebb processzorokra, különös tekintettel a MIPS processzorokra
+épülõ platformokra.
+
+Milyen hardvert céloz meg a projekt?
+
+Jelenleg több MIPS32 típusú számítógépet és az SGI MIPS64 típusú
+számítógépeit. Várhatóan egyéb MIPS platformok, mint például a
+beágyazott rendszerek és a kevésbé egzotikus számítógépek is hamarosan
+támogatottak lesznek.
+
+Hogyan áll jelenleg a munka?
+
+A FreeBSD/MIPS még a fejlesztés korai szakaszában jár. Ennek
+folyamatáról a projekt helyzetét bemutató oldalon olvashatunk bõvebben.
+
+Honnan szerezhetõ meg a FreeBSD MIPS-re?
+
+A FreeBSD/MIPS fejlesztése a FreeBSD Perforce repositoryjában történik,
+de alkalmanként felbukkannak patchek a levelezési listán is.
+
+Kivel vehetjük fel a kapcsolatot?
+
+Juli Mallett a projekt vezetõje. Ha tudunk forráskóddal hozzájárulni a
+munkájához, akkor õt keressük meg. Ha viszont csak a projekt helyzetére
+kíváncsi, akkor rendszeresen látogassa ezt az oldalt, vagy iratkozzon
+fel a FreeBSD/MIPS levelezési listára.
+
+A FreeBSD/MIPS levelezési lista
+
+Úgy tudunk feliratkozni a listára, ha küldünk egy levelet a
+<freebsd-mips-subscribe@FreeBSD.org> e-mail címre, vagy használjuk a
+mailman webes felületét.
+
+------------------------------------------------------------------------
+
+Last modified on: 2021. június 19. by Danilo G. Baio
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

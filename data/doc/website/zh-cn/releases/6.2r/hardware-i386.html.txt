@@ -1,0 +1,3824 @@
+FreeBSD/i386 6.2-RELEASE 兼容硬件说明
+
+The FreeBSD Documentation Project
+
+版权 © 2000, 2001, 2002, 2003, 2004, 2005, 2006 The FreeBSD
+Documentation Project
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+目录
+
+1 介绍
+
+2 支持的处理器和主板
+
+3 支持的硬件
+
+3.1 磁盘控制器
+
+3.2 以太网接口
+
+3.3 Token Ring Interfaces
+
+3.4 FDDI 接口
+
+3.5 ATM 接口
+
+3.6 无线网络接口
+
+3.7 其他网络设备
+
+3.8 ISDN 接口
+
+3.9 串口
+
+3.10 声音设备
+
+3.11 照相机和视频捕捉设备
+
+3.12 USB 设备
+
+3.13 IEEE 1394 (火线) 设备
+
+3.14 蓝牙设备
+
+3.15 密码学加速器
+
+3.16 其他
+
+1 介绍
+
+　　这份文档包含了 FreeBSD 6.2-RELEASE (也记为 FreeBSD/i386 6.2-RELEASE)
+在 i386 硬件平台上的兼容硬件说明。
+它列出了已知能够在这一平台上使用的硬件，
+以及一些有用的启动时内核定制项， 用以支持新的设备。
+
+  注意: 这份文档包含的信息是 i386 硬件平台所专用的。
+  不同硬件架构上的硬件兼容说明可能有一些细节上的差异。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2 支持的处理器和主板
+
+　　FreeBSD/i386 能够在各式各样的 “IBM PC 兼容” 机器上运行。
+由于这种架构的硬件非常多， 不可能详尽地列举 FreeBSD
+所支持的所有设备组合。 不过， 这里给出了一些一般的指导原则。
+
+　　几乎所有的包含浮点运算单元的 i386-兼容 处理器都能被很好地支持。
+FreeBSD 支持从 80486 开始的所有 Intel 处理器， 其中包括 80486, Pentium,
+Pentium Pro, Pentium II, Pentium III, Pentium 4, 以及它们的一些变体，
+例如 Xeon (至强) 和 Celeron (赛扬) 处理器。 所有 i386-兼容 的 AMD
+处理器也被支持， 这包括 Am486, Am5x86, K5, K6 (及其变体), Athlon (包括
+Athlon-MP, Athlon-XP, Athlon-4, 以及 Athlon Thunderbird), 还有 Duron
+处理器。 AMD Élan SC520 嵌入式处理器也在支持之列。 Transmeta Crusoe
+被视为支持的处理器， 此外， 还包括来自 Cyrix 和 NexGen 的 i386-兼容
+处理器。
+
+　　这类架构的主板型号也非常众多。 使用 ISA, VLB, EISA, AGP, 和 PCI
+扩展总线的主板的支持非常完善。 此外， 对 IBM PS/2 系列 PC 的 MCA
+(“MicroChannel”) 扩展总线也提供了有限的支持。
+
+　　一般而言， FreeBSD 支持对称多处理器 (SMP) 的系统， 尽管一些时候 BIOS
+或主板的问题可能会造成麻烦。 FreeBSD 对称多处理 (SMP) 邮件列表
+邮件列表的存档可能能提供一些线索。
+
+　　FreeBSD 能够利用 Intel CPU 的超线程 (HTT) 支持并从中受益。 启用了
+options SMP 的内核能够自动检测到附加的逻辑处理器。 默认的 FreeBSD
+调度器将逻辑处理器等同于一些额外的物理处理器； 换言之，
+它不会尝试根据同一 CPU 上的逻辑处理器对调度决策实施优化。
+由于这种简单的调度策略会导致性能不够理想， 某些情况下通过设置
+machdep.hlt_logical_cpus sysctl 变量来禁止逻辑处理器可能会改善性能。
+此外， 也可以使用 machdep.hlt_cpus sysctl
+变量设置空闲循环来禁用某个特定的逻辑处理器。 请参考 smp(4)
+联机手册来了解详情。
+
+　　FreeBSD 能够利用支持物理地址扩展 (PAE) 的 CPU 上的这种能力。 启用了
+PAE 特性的内核能够检测高于 4GB 的内存并使用它们。 这一特性对设备驱动和
+FreeBSD 能够利用的其它特性有一些约束， 请参考 pae(4) 联机手册了解详情。
+
+　　一般来说， FreeBSD 能够在基于 i386 的笔记本上运行，
+虽然对于特定硬件特性， 例如声音， 图形， 电源管理， 以及 PCCARD
+扩展槽的支持可能存在程度上的差异。 这些特性在不同的机器上迥然不同，
+通常需要 FreeBSD 对它们进行各式各样的支持特例，
+以绕过硬件的问题或其他诡异的毛病。 如有怀疑， 请搜索 FreeBSD
+笔记本电脑邮件列表 邮件列表的存档以得到有用的资料。
+
+　　绝大多数较新的笔记本 (以及许多桌面机) 都使用了高级配置和电源管理
+(ACPI) 标准。 FreeBSD 通过来自 Intel 的 ACPI 组件架构参考实现来支持
+ACPI， 在 acpi(4) 联机手册中提供了它的介绍。 在一些机器上使用 ACPI
+可能会造成不稳定， 此时您可能需要禁用 ACPI 驱动程序，
+它通常是通过内核模块来加载的。 您可以通过在 /boot/device.hints
+增加下面的行来达到目的：
+
+    hint.acpi.0.disabled="1"
+
+　　调试 ACPI 相关问题的用户可能会发现禁用一部分 ACPI 功能会很有用。
+acpi(4)
+联机手册提供了关于如何在引导夹在其中进行设置来完成这些工作的详细信息。
+
+　　ACPI 依赖于由 BIOS 提供的 Differentiated System Descriptor Table
+(DSDT)。 一些机器上的 DSDT 无效或不完整， 这可能会导致 ACPI
+无法正常工作。 用于替代某些机器上的 DSDT 可以在 ACPI4Linux
+项目的网站中的 DSDT 部分找到。 FreeBSD 可以使用这些 DSDT 来代替由 BIOS
+提供的 DSDT； 参见 acpi(4) 联机手册以获得更多信息。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3 支持的硬件
+
+$FreeBSD: src/release/doc/zh_CN.GB2312/hardware/common/dev.sgml,v
+1.3.2.6 2006/10/11 17:50:03 delphij Exp $
+
+　　这一节描述了目前已知的被 FreeBSD 在 i386 平台上支持的硬件。
+其他配置可能也能用， 只是尚未测试过。
+我们鼓励您对这份列表的内容进行反馈、 更新和修正。
+
+　　这份列表尽可能包含了驱动程序能够适用的一类设备。 如果驱动程序在
+FreeBSD 基本安装包中有联机手册 (绝大多数应该有) 则会在这里引用。
+支持的具体设备或控制器型号等等， 可以在联机手册中找到。
+
+  注意: 设备列表是直接从 FreeBSD 联机手册中生成的。 这意味着一些设备，
+  如果它们被多种不同的驱动程序支持的话， 可能会相应地出现多次。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.1 磁盘控制器
+
+　　IDE/ATA 控制器 ( ata(4) 驱动程序)
+
+　　Controllers supported by the aac(4) driver include:
+
+-   Adaptec AAC-364
+
+-   Adaptec SAS RAID 4000SAS
+
+-   Adaptec SAS RAID 4005SAS
+
+-   Adaptec SAS RAID 4800SAS
+
+-   Adaptec SAS RAID 4805SAS
+
+-   Adaptec SATA RAID 2020SA ZCR
+
+-   Adaptec SATA RAID 2025SA ZCR
+
+-   Adaptec SATA RAID 2026ZCR
+
+-   Adaptec SATA RAID 2410SA
+
+-   Adaptec SATA RAID 2420SA
+
+-   Adaptec SATA RAID 2610SA
+
+-   Adaptec SATA RAID 2620SA
+
+-   Adaptec SATA RAID 2810SA
+
+-   Adaptec SATA RAID 2820SA
+
+-   Adaptec SATA RAID 21610SA
+
+-   Adaptec SCSI RAID 2020ZCR
+
+-   Adaptec SCSI RAID 2025ZCR
+
+-   Adaptec SCSI RAID 2120S
+
+-   Adaptec SCSI RAID 2130S
+
+-   Adaptec SCSI RAID 2130SLP
+
+-   Adaptec SCSI RAID 2230SLP
+
+-   Adaptec SCSI RAID 2200S
+
+-   Adaptec SCSI RAID 2240S
+
+-   Adaptec SCSI RAID 3230S
+
+-   Adaptec SCSI RAID 3240S
+
+-   Adaptec SCSI RAID 5400S
+
+-   Dell CERC SATA RAID 2
+
+-   Dell PERC 2/Si
+
+-   Dell PERC 2/QC
+
+-   Dell PERC 3/Si
+
+-   Dell PERC 3/Di
+
+-   Dell PERC 320/DC
+
+-   HP ML110 G2 (Adaptec SATA RAID 2610SA)
+
+-   HP NetRAID 4M
+
+-   IBM ServeRAID 8i
+
+-   IBM ServeRAID 8k
+
+-   ICP ICP5085BR SAS RAID
+
+-   ICP ICP9085LI SAS RAID
+
+-   ICP ICP9047MA SATA RAID
+
+-   ICP ICP9087MA SATA RAID
+
+-   ICP ICP9014RO SCSI RAID
+
+-   ICP ICP9024RO SCSI RAID
+
+-   Legend S220
+
+-   Legend S230
+
+　　The adv(4) driver supports the following SCSI controllers:
+
+-   AdvanSys ABP510/5150
+
+-   AdvanSys ABP5140
+
+-   AdvanSys ABP5142
+
+-   AdvanSys ABP902/3902
+
+-   AdvanSys ABP3905
+
+-   AdvanSys ABP915
+
+-   AdvanSys ABP920
+
+-   AdvanSys ABP3922
+
+-   AdvanSys ABP3925
+
+-   AdvanSys ABP930, ABP930U, ABP930UA
+
+-   AdvanSys ABP960, ABP960U
+
+-   AdvanSys ABP542
+
+-   AdvanSys ABP742
+
+-   AdvanSys ABP842
+
+-   AdvanSys ABP940
+
+-   AdvanSys ABP940UA/3940UA
+
+-   AdvanSys ABP940U
+
+-   AdvanSys ABP3960UA
+
+-   AdvanSys ABP970, ABP970U
+
+-   AdvanSys ABP752
+
+-   AdvanSys ABP852
+
+-   AdvanSys ABP950
+
+-   AdvanSys ABP980, ABP980U
+
+-   AdvanSys ABP980UA/3980UA
+
+-   MELCO IFC-USP (PC-98)
+
+-   RATOC REX-PCI30 (PC-98)
+
+-   @Nifty FNECHARD IFC-USUP-TX (PC-98)
+
+　　The adw(4) driver supports SCSI controllers including:
+
+-   AdvanSys ABP940UW/ABP3940UW
+
+-   AdvanSys ABP950UW
+
+-   AdvanSys ABP970UW
+
+-   AdvanSys ABP3940U2W
+
+-   AdvanSys ABP3950U2W
+
+　　The aha(4) driver supports the following SCSI host adapters:
+
+-   Adaptec AHA-154xB
+
+-   Adaptec AHA-154xC
+
+-   Adaptec AHA-154xCF
+
+-   Adaptec AHA-154xCP
+
+-   Adaptec AHA-1640
+
+-   Adaptec AHA-174x in 154x emulation mode
+
+-   DTC 3290 SCSI controller in 1542 emulation mode
+
+-   Tekram SCSI controllers in 154x emulation mode
+
+　　The ahb(4) driver supports the following SCSI host adapters:
+
+-   Adaptec AHA-1740
+
+-   Adaptec AHA-1742
+
+-   Adaptec AHA-1740A
+
+-   Adaptec AHA-1742A
+
+　　The ahc(4) driver supports the following SCSI host adapter chips and
+SCSI controller cards:
+
+-   Adaptec AIC7770 host adapter chip
+
+-   Adaptec AIC7850 host adapter chip
+
+-   Adaptec AIC7860 host adapter chip
+
+-   Adaptec AIC7870 host adapter chip
+
+-   Adaptec AIC7880 host adapter chip
+
+-   Adaptec AIC7890 host adapter chip
+
+-   Adaptec AIC7891 host adapter chip
+
+-   Adaptec AIC7892 host adapter chip
+
+-   Adaptec AIC7895 host adapter chip
+
+-   Adaptec AIC7896 host adapter chip
+
+-   Adaptec AIC7897 host adapter chip
+
+-   Adaptec AIC7899 host adapter chip
+
+-   Adaptec 274X(W)
+
+-   Adaptec 274X(T)
+
+-   Adaptec 284X
+
+-   Adaptec 2910
+
+-   Adaptec 2915
+
+-   Adaptec 2920
+
+-   Adaptec 2930C
+
+-   Adaptec 2930U2
+
+-   Adaptec 2940
+
+-   Adaptec 2940J
+
+-   Adaptec 2940N
+
+-   Adaptec 2940U
+
+-   Adaptec 2940AU
+
+-   Adaptec 2940UW
+
+-   Adaptec 2940UW Dual
+
+-   Adaptec 2940UW Pro
+
+-   Adaptec 2940U2W
+
+-   Adaptec 2940U2B
+
+-   Adaptec 2950U2W
+
+-   Adaptec 2950U2B
+
+-   Adaptec 19160B
+
+-   Adaptec 29160B
+
+-   Adaptec 29160N
+
+-   Adaptec 3940
+
+-   Adaptec 3940U
+
+-   Adaptec 3940AU
+
+-   Adaptec 3940UW
+
+-   Adaptec 3940AUW
+
+-   Adaptec 3940U2W
+
+-   Adaptec 3950U2
+
+-   Adaptec 3960
+
+-   Adaptec 39160
+
+-   Adaptec 3985
+
+-   Adaptec 4944UW
+
+-   NEC PC-9821Xt13 (PC-98)
+
+-   NEC RvII26 (PC-98)
+
+-   NEC PC-9821X-B02L/B09 (PC-98)
+
+-   NEC SV-98/2-B03 (PC-98)
+
+-   Many motherboards with on-board SCSI support
+
+　　The ahd(4) driver supports the following:
+
+-   Adaptec AIC7901 host adapter chip
+
+-   Adaptec AIC7901A host adapter chip
+
+-   Adaptec AIC7902 host adapter chip
+
+-   Adaptec 29320 host adapter
+
+-   Adaptec 39320 host adapter
+
+-   Many motherboards with on-board SCSI support
+
+　　The adapters supported by the aic(4) driver include:
+
+-   Adaptec AHA-1505 (ISA)
+
+-   Adaptec AHA-1510A, AHA-1510B (ISA)
+
+-   Adaptec AHA-1520A, AHA-1520B (ISA)
+
+-   Adaptec AHA-1522A, AHA-1522B (ISA)
+
+-   Adaptec AHA-1535 (ISA)
+
+-   Creative Labs SoundBlaster SCSI host adapter (ISA)
+
+-   Adaptec AHA-1460, AHA-1460B, AHA-1460C, AHA-1460D (PC Card)
+
+-   Adaptec AHA-1030B, AHA-1030P (PC98)
+
+-   NEC PC-9801-100 (PC98)
+
+　　Controllers supported by the amd(4) driver include:
+
+-   MELCO IFC-DP (PC-98)
+
+-   Tekram DC390
+
+-   Tekram DC390T
+
+　　Controllers supported by the amr(4) driver include:
+
+-   MegaRAID SATA 150-4
+
+-   MegaRAID SATA 150-6
+
+-   MegaRAID SATA 300-4X
+
+-   MegaRAID SATA 300-8X
+
+-   MegaRAID SCSI 320-1E
+
+-   MegaRAID SCSI 320-2E
+
+-   MegaRAID SCSI 320-4E
+
+-   MegaRAID SCSI 320-0X
+
+-   MegaRAID SCSI 320-2X
+
+-   MegaRAID SCSI 320-4X
+
+-   MegaRAID SCSI 320-0
+
+-   MegaRAID SCSI 320-1
+
+-   MegaRAID SCSI 320-2
+
+-   MegaRAID SCSI 320-4
+
+-   MegaRAID Series 418
+
+-   MegaRAID i4 133 RAID
+
+-   MegaRAID Elite 1500 (Series 467)
+
+-   MegaRAID Elite 1600 (Series 493)
+
+-   MegaRAID Elite 1650 (Series 4xx)
+
+-   MegaRAID Enterprise 1200 (Series 428)
+
+-   MegaRAID Enterprise 1300 (Series 434)
+
+-   MegaRAID Enterprise 1400 (Series 438)
+
+-   MegaRAID Enterprise 1500 (Series 467)
+
+-   MegaRAID Enterprise 1600 (Series 471)
+
+-   MegaRAID Express 100 (Series 466WS)
+
+-   MegaRAID Express 200 (Series 466)
+
+-   MegaRAID Express 300 (Series 490)
+
+-   MegaRAID Express 500 (Series 475)
+
+-   Dell PERC
+
+-   Dell PERC 2/SC
+
+-   Dell PERC 2/DC
+
+-   Dell PERC 3/DCL
+
+-   Dell PERC 3/QC
+
+-   Dell PERC 4/DC
+
+-   Dell PERC 4/IM
+
+-   Dell PERC 4/SC
+
+-   Dell PERC 4/Di
+
+-   Dell PERC 4e/DC
+
+-   Dell PERC 4e/Di
+
+-   Dell PERC 4e/Si
+
+-   Dell PERC 4ei
+
+-   HP NetRAID-1/Si
+
+-   HP NetRAID-3/Si (D4943A)
+
+-   HP Embedded NetRAID
+
+-   Intel RAID Controller SRCS16
+
+-   Intel RAID Controller SRCU42X
+
+  注意: 能够支持从这些控制器启动。 但不支持 EISA 适配器。
+
+　　The arcmsr(4) driver supports the following cards:
+
+-   ARC-1110
+
+-   ARC-1120
+
+-   ARC-1130
+
+-   ARC-1160
+
+-   ARC-1170
+
+-   ARC-1110ML
+
+-   ARC-1120ML
+
+-   ARC-1130ML
+
+-   ARC-1160ML
+
+-   ARC-1210
+
+-   ARC-1220
+
+-   ARC-1230
+
+-   ARC-1260
+
+-   ARC-1280
+
+-   ARC-1210ML
+
+-   ARC-1220ML
+
+-   ARC-1231ML
+
+-   ARC-1261ML
+
+-   ARC-1280ML
+
+　　The adapters currently supported by the asr(4) driver include the
+following:
+
+-   Adaptec Zero-Channel SCSI RAID 2000S, 2005S, 2010S, 2015S
+
+-   Adaptec SCSI RAID 2100S, 2110S
+
+-   Adaptec ATA-100 RAID 2400A
+
+-   Adaptec SCSI RAID 3200S, 3210S
+
+-   Adaptec SCSI RAID 3400S, 3410S
+
+-   Adaptec SmartRAID PM1554
+
+-   Adaptec SmartRAID PM1564
+
+-   Adaptec SmartRAID PM2554
+
+-   Adaptec SmartRAID PM2564
+
+-   Adaptec SmartRAID PM2664
+
+-   Adaptec SmartRAID PM2754
+
+-   Adaptec SmartRAID PM2865
+
+-   Adaptec SmartRAID PM3754
+
+-   Adaptec SmartRAID PM3755U2B / SmartRAID V Millennium
+
+-   Adaptec SmartRAID PM3757
+
+-   DEC KZPCC-AC (LVD 1-ch, 4MB or 16MB cache), DEC KZPCC-CE (LVD 3-ch,
+    64MB cache), DEC KZPCC-XC (LVD 1-ch, 16MB cache), DEC KZPCC-XE (LVD
+    3-ch, 64MB cache) -- rebadged SmartRAID V Millennium
+
+　　The bt(4) driver supports the following BusLogic MultiMaster “W”,
+“C”, “S”, and “A” series and compatible SCSI host adapters:
+
+-   BusLogic BT-445C
+
+-   BusLogic BT-445S
+
+-   BusLogic BT-540CF
+
+-   BusLogic BT-542B
+
+-   BusLogic BT-542B
+
+-   BusLogic BT-542D
+
+-   BusLogic BT-545C
+
+-   BusLogic BT-545S
+
+-   BusLogic/BusTek BT-640
+
+-   BusLogic BT-742A
+
+-   BusLogic BT-742A
+
+-   BusLogic BT-747C
+
+-   BusLogic BT-747D
+
+-   BusLogic BT-747S
+
+-   BusLogic BT-757C
+
+-   BusLogic BT-757CD
+
+-   BusLogic BT-757D
+
+-   BusLogic BT-757S
+
+-   BusLogic BT-946C
+
+-   BusLogic BT-948
+
+-   BusLogic BT-956C
+
+-   BusLogic BT-956CD
+
+-   BusLogic BT-958
+
+-   BusLogic BT-958D
+
+-   Storage Dimensions SDC3211B / SDC3211F
+
+　　AMI FastDisk Host Adapters that are true BusLogic MultiMaster clones
+are also supported by the bt(4) driver.
+
+　　Controllers supported by the ciss(4) driver include:
+
+-   Compaq Smart Array 5300
+
+-   Compaq Smart Array 532
+
+-   Compaq Smart Array 5i
+
+-   HP Smart Array 5312
+
+-   HP Smart Array 6i
+
+-   HP Smart Array 641
+
+-   HP Smart Array 642
+
+-   HP Smart Array 6400
+
+-   HP Smart Array 6400 EM
+
+-   HP Smart Array E200
+
+-   HP Smart Array E200i
+
+-   HP Smart Array P400
+
+-   HP Smart Array P400i
+
+-   HP Smart Array P600
+
+-   HP Smart Array P800
+
+-   HP Modular Smart Array 20 (MSA20)
+
+-   HP Modular Smart Array 500 (MSA500)
+
+　　The dpt(4) driver provides support for the following RAID adapters:
+
+-   DPT Smart Cache Plus
+
+-   Smart Cache II (PM2?2?, PM2022 [EISA], PM2024/PM2124 [PCI]) (Gen2)
+
+-   Smart RAID II (PM3?2?, PM3021, PM3222)
+
+-   Smart Cache III (PM2?3?)
+
+-   Smart RAID III (PM3?3?, PM3332 [EISA], PM3334UW [PCI]) (Gen3)
+
+-   Smart Cache IV (PM2?4?, PM2042 [EISA], PM2044/PM2144 [PCI]) (Gen4)
+
+-   Smart RAID IV
+
+　　The hptmv(4) driver supports the following ATA RAID controllers:
+
+-   HighPoint's RocketRAID 182x series
+
+　　The following controllers are supported by the ida(4) driver:
+
+-   Compaq SMART Array 221
+
+-   Compaq Integrated SMART Array Controller
+
+-   Compaq SMART Array 4200
+
+-   Compaq SMART Array 4250ES
+
+-   Compaq SMART 3200 Controller
+
+-   Compaq SMART 3100ES Controller
+
+-   Compaq SMART-2/DH Controller
+
+-   Compaq SMART-2/SL Controller
+
+-   Compaq SMART-2/P Controller
+
+-   Compaq SMART-2/E Controller
+
+-   Compaq SMART Controller
+
+　　Controllers supported by the iir(4) driver include:
+
+-   Intel RAID Controller SRCMR
+
+-   Intel Server RAID Controller U3-l (SRCU31a)
+
+-   Intel Server RAID Controller U3-1L (SRCU31La)
+
+-   Intel Server RAID Controller U3-2 (SRCU32)
+
+-   All past and future releases of Intel and ICP RAID Controllers.
+
+-   Intel RAID Controller SRCU21 (discontinued)
+
+-   Intel RAID Controller SRCU31 (older revision, not compatible)
+
+-   Intel RAID Controller SRCU31L (older revision, not compatible)
+
+　　The SRCU31 and SRCU31L can be updated via a firmware update
+available from Intel.
+
+　　Controllers supported by the ips(4) driver include:
+
+-   IBM ServeRAID 3H
+
+-   ServeRAID 4L/4M/4H
+
+-   ServeRAID Series 5
+
+-   ServeRAID 6i/6M
+
+-   ServeRAID 7t/7k/7M
+
+　　Cards supported by the isp(4) driver include:
+
+-   ISP1000
+
+-   ISP1020
+
+-   ISP1040
+
+-   Qlogic 1240
+
+-   Qlogic 1020
+
+-   Qlogic 1040
+
+-   Qlogic 1080
+
+-   Qlogic 1280
+
+-   Qlogic 12160
+
+-   Qlogic 210X
+
+-   Qlogic 220X
+
+-   Qlogic 2300
+
+-   Qlogic 2312
+
+-   Qlogic 234X
+
+-   Qlogic 2322
+
+-   Qlogic 200
+
+　　The mfi(4) driver supports the following hardware:
+
+-   LSI MegaRAID SAS 8408E
+
+-   LSI MegaRAID SAS 8480E
+
+-   Dell PERC5/i
+
+　　Controllers supported by the mlx(4) driver include:
+
+-   Mylex DAC960P
+
+-   Mylex DAC960PD / DEC KZPSC (Fast Wide)
+
+-   Mylex DAC960PDU
+
+-   Mylex DAC960PL
+
+-   Mylex DAC960PJ
+
+-   Mylex DAC960PG
+
+-   Mylex DAC960PU / DEC PZPAC (Ultra Wide)
+
+-   Mylex AcceleRAID 150 (DAC960PRL)
+
+-   Mylex AcceleRAID 250 (DAC960PTL1)
+
+-   Mylex eXtremeRAID 1100 (DAC1164P)
+
+-   RAIDarray 230 controllers, aka the Ultra-SCSI DEC KZPAC-AA (1-ch,
+    4MB cache), KZPAC-CA (3-ch, 4MB), KZPAC-CB (3-ch, 8MB cache)
+
+　　All major firmware revisions (2.x, 3.x, 4.x and 5.x) are supported,
+however it is always advisable to upgrade to the most recent firmware
+available for the controller. Compatible Mylex controllers not listed
+should work, but have not been verified.
+
+  注意: 能够支持从这些控制器启动。 不支持 EISA 适配器。
+
+　　Controllers supported by the mly(4) driver include:
+
+-   Mylex AcceleRAID 160
+
+-   Mylex AcceleRAID 170
+
+-   Mylex AcceleRAID 352
+
+-   Mylex eXtremeRAID 2000
+
+-   Mylex eXtremeRAID 3000
+
+　　Compatible Mylex controllers not listed should work, but have not
+been verified.
+
+　　The following controllers are supported by the mpt(4) driver:
+
+-   LSI Logic 53c1030 (Dual Ultra320 SCSI)
+
+-   LSI Logic FC909 (1Gb/s Fibre Channel)
+
+-   LSI Logic FC909A (Dual 1Gb/s Fibre Channel)
+
+-   LSI Logic FC919 (2Gb/s Fibre Channel)
+
+-   LSI Logic FC929, LSI Logic FC929X (Dual 2Gb/s Fibre Channel)
+
+　　The SCSI controller chips supported by the mpt(4) driver can be
+found onboard on many systems including:
+
+-   Dell PowerEdge 1750
+
+-   IBM eServer xSeries 335
+
+　　The ncr(4) driver provides support for the following NCR/Symbios
+SCSI controller chips:
+
+-   53C810
+
+-   53C810A
+
+-   53C815
+
+-   53C820
+
+-   53C825A
+
+-   53C860
+
+-   53C875
+
+-   53C875J
+
+-   53C885
+
+-   53C895
+
+-   53C895A
+
+-   53C896
+
+-   53C1510D
+
+　　The following add-on boards are known to be supported:
+
+-   I-O DATA SC-98/PCI (PC-98)
+
+-   I-O DATA SC-PCI (PC-98)
+
+　　The following devices are currently supported by the ncv(4) driver:
+
+-   I-O DATA PCSC-DV
+
+-   KME KXLC002 (TAXAN ICD-400PN, etc.), KXLC004, and UJDCD450
+
+-   Macnica Miracle SCSI-II mPS110
+
+-   Media Intelligent MSC-110, MSC-200
+
+-   NEC PC-9801N-J03R
+
+-   New Media Corporation BASICS SCSI
+
+-   Qlogic Fast SCSI
+
+-   RATOC REX-9530, REX-5572 (SCSI only)
+
+　　Controllers supported by the nsp(4) driver include:
+
+-   Alpha-Data AD-PCS201
+
+-   I-O DATA CBSC16
+
+　　The pst(4) driver supports the Promise Supertrak SX6000 ATA hardware
+RAID controller.
+
+　　The rr232x(4) driver supports the following hardware:
+
+-   HighPoint RocketRAID 2320
+
+-   HighPoint RocketRAID 2322
+
+　　Controllers supported by the stg(4) driver include:
+
+-   Adaptec 2920/A
+
+-   Future Domain SCSI2GO
+
+-   Future Domain TMC-18XX/3260
+
+-   IBM SCSI PCMCIA Card
+
+-   ICM PSC-2401 SCSI
+
+-   MELCO IFC-SC
+
+-   RATOC REX-5536, REX-5536AM, REX-5536M, REX-9836A
+
+　　Note that the Adaptec 2920C is supported by the ahc(4) driver.
+
+　　The sym(4) driver provides support for the following Symbios/LSI
+Logic PCI SCSI controllers:
+
+-   53C810
+
+-   53C810A
+
+-   53C815
+
+-   53C825
+
+-   53C825A
+
+-   53C860
+
+-   53C875
+
+-   53C876
+
+-   53C895
+
+-   53C895A
+
+-   53C896
+
+-   53C897
+
+-   53C1000
+
+-   53C1000R
+
+-   53C1010-33
+
+-   53C1010-66
+
+-   53C1510D
+
+　　The SCSI controllers supported by sym(4) can be either embedded on a
+motherboard, or on one of the following add-on boards:
+
+-   ASUS SC-200, SC-896
+
+-   Data Technology DTC3130 (all variants)
+
+-   DawiControl DC2976UW
+
+-   Diamond FirePort (all)
+
+-   I-O DATA SC-UPCI (PC-98)
+
+-   Logitec LHA-521UA (PC-98)
+
+-   NCR cards (all)
+
+-   Symbios cards (all)
+
+-   Tekram DC390W, 390U, 390F, 390U2B, 390U2W, 390U3D, and 390U3W
+
+-   Tyan S1365
+
+　　SCSI controllers supported by the trm(4) driver include:
+
+-   Tekram DC-315 PCI Ultra SCSI adapter without BIOS and internal SCSI
+    connector
+
+-   Tekram DC-315U PCI Ultra SCSI adapter without BIOS
+
+-   Tekram DC-395F PCI Ultra-Wide SCSI adapter with flash BIOS and
+    68-pin external SCSI connector
+
+-   Tekram DC-395U PCI Ultra SCSI adapter with flash BIOS
+
+-   Tekram DC-395UW PCI Ultra-Wide SCSI adapter with flash BIOS
+
+-   Tekram DC-395U2W PCI Ultra2-Wide SCSI adapter with flash BIOS
+
+　　For the Tekram DC-310/U and DC-390F/U/UW/U2B/U2W/U3W PCI SCSI host
+adapters, use the sym(4) driver.
+
+　　The twa(4) driver supports the following SATA RAID controllers:
+
+-   AMCC's 3ware 9500S-4LP
+
+-   AMCC's 3ware 9500S-8
+
+-   AMCC's 3ware 9500S-8MI
+
+-   AMCC's 3ware 9500S-12
+
+-   AMCC's 3ware 9500S-12MI
+
+-   AMCC's 3ware 9500SX-4LP
+
+-   AMCC's 3ware 9500SX-8LP
+
+-   AMCC's 3ware 9500SX-12
+
+-   AMCC's 3ware 9500SX-12MI
+
+-   AMCC's 3ware 9500SX-16ML
+
+-   AMCC's 3ware 9550SX-4LP
+
+-   AMCC's 3ware 9550SX-8LP
+
+-   AMCC's 3ware 9550SX-12
+
+-   AMCC's 3ware 9550SX-12MI
+
+-   AMCC's 3ware 9550SX-16ML
+
+　　The twe(4) driver supports the following PATA/SATA RAID controllers:
+
+-   AMCC's 3ware 5000 series
+
+-   AMCC's 3ware 6000 series
+
+-   AMCC's 3ware 7000-2
+
+-   AMCC's 3ware 7006-2
+
+-   AMCC's 3ware 7500-4LP
+
+-   AMCC's 3ware 7500-8
+
+-   AMCC's 3ware 7500-12
+
+-   AMCC's 3ware 7506-4LP
+
+-   AMCC's 3ware 7506-8
+
+-   AMCC's 3ware 7506-12
+
+-   AMCC's 3ware 8006-2LP
+
+-   AMCC's 3ware 8500-4LP
+
+-   AMCC's 3ware 8500-8
+
+-   AMCC's 3ware 8500-12
+
+-   AMCC's 3ware 8506-4LP
+
+-   AMCC's 3ware 8506-8
+
+-   AMCC's 3ware 8506-8MI
+
+-   AMCC's 3ware 8506-12
+
+-   AMCC's 3ware 8506-12MI
+
+　　The vpo(4) driver supports the following parallel to SCSI
+interfaces:
+
+-   Adaptec AIC-7110 Parallel to SCSI interface (built-in to Iomega ZIP
+    drives)
+
+-   Iomega Jaz Traveller interface
+
+-   Iomega MatchMaker SCSI interface (built-in to Iomega ZIP+ drives)
+
+　　wds(4) 驱动程序支持 WD7000 SCSI 控制器
+
+　　所有支持的 SCSI 控制器都提供了完整的 SCSI-I, SCSI-II, 和 SCSI-III
+设备支持， 包括硬盘， 光盘， 磁带机 (包括 DAT, 8mm Exabyte, Mammoth,
+以及 DLT), 盘柜, 处理器目标设备 以及 CD-ROM 驱动器。 支持 CD-ROM 命令的
+WORM 设备则提供了只读的支持 (例如 cd(4))。 WORM/CD-R/CD-RW
+写操作的支持由 cdrecord(1) 提供， 它是 Ports Collection 中
+sysutils/cdrtools port 的一部分。
+
+　　目前， 对以下 CD-ROM 文件系统类型提供支持：
+
+-   SCSI 接口 (也包括 ProAudio Spectrum 和 SoundBlaster SCSI) (cd(4))
+
+-   Sony 专有接口 (所有型号) ( scd(4))
+
+-   ATAPI IDE 接口 ( acd(4))
+
+　　以下设备不再维护了：
+
+-   Mitsumi 专有的 CD-ROM 接口 (所有型号) ( mcd(4))
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.2 以太网接口
+
+　　Adapters supported by the aue(4) driver include:
+
+-   Abocom UFE1000, DSB650TX_NA
+
+-   Accton USB320-EC, SpeedStream
+
+-   ADMtek AN986, AN8511
+
+-   Billionton USB100, USB100LP, USB100EL, USBE100
+
+-   Corega Ether FEther USB-T, FEther USB-TX, FEther USB-TXS
+
+-   D-Link DSB-650, DSB-650TX, DSB-650TX-PNA
+
+-   Elecom LD-USBL/TX
+
+-   Elsa Microlink USB2Ethernet
+
+-   HP hn210e
+
+-   I-O Data USB ETTX
+
+-   Kingston KNU101TX
+
+-   LinkSys USB10T adapters that contain the AN986 Pegasus chipset,
+    USB10TA, USB10TX, USB100TX, USB100H1
+
+-   MELCO LUA-TX, LUA2-TX
+
+-   Netgear FA101
+
+-   Planex UE-200TX
+
+-   Sandberg USB to Network Link (model number 133-06)
+
+-   Siemens Speedstream
+
+-   SmartBridges smartNIC
+
+-   SMC 2202USB
+
+-   SOHOware NUB100
+
+　　The axe(4) driver supports ASIX Electronics AX88172 based USB
+Ethernet adapters including:
+
+-   Buffalo (Melco Inc.) LUA-U2-KTX
+
+-   D-Link DUBE100
+
+-   LinkSys USB200M
+
+-   Netgear FA120
+
+-   Sitecom LN-029
+
+-   System TALKS Inc. SGC-X2UL
+
+　　The bce(4) driver provides support for various NICs based on the
+Broadcom NetXtreme II family of Gigabit Ethernet controllers, including
+the following:
+
+-   HP NC370T Multifunction Gigabit Server Adapter
+
+-   HP NC370i Multifunction Gigabit Server Adapter
+
+　　基于 Broadcom BCM4401 的高速以太网适配器 ( bfe(4) 驱动程序)
+
+　　The bge(4) driver provides support for various NICs based on the
+Broadcom BCM570x family of Gigabit Ethernet controller chips, including
+the following:
+
+-   3Com 3c996-T (10/100/1000baseTX)
+
+-   Dell PowerEdge 1750 integrated BCM5704C NIC (10/100/1000baseTX)
+
+-   Dell PowerEdge 2550 integrated BCM5700 NIC (10/100/1000baseTX)
+
+-   Dell PowerEdge 2650 integrated BCM5703 NIC (10/100/1000baseTX)
+
+-   IBM x235 server integrated BCM5703x NIC (10/100/1000baseTX)
+
+-   HP Compaq dc7600 integrated BCM5752 NIC (10/100/1000baseTX)
+
+-   HP ProLiant NC7760 embedded Gigabit NIC (10/100/1000baseTX)
+
+-   HP ProLiant NC7770 PCI-X Gigabit NIC (10/100/1000baseTX)
+
+-   HP ProLiant NC7781 embedded PCI-X Gigabit NIC (10/100/1000baseTX)
+
+-   Netgear GA302T (10/100/1000baseTX)
+
+-   SysKonnect SK-9D21 (10/100/1000baseTX)
+
+-   SysKonnect SK-9D41 (1000baseSX)
+
+　　The cue(4) driver supports CATC USB-EL1210A based USB Ethernet
+adapters including:
+
+-   Belkin F5U011/F5U111
+
+-   CATC Netmate
+
+-   CATC Netmate II
+
+-   SmartBridges SmartLink
+
+　　基于 Crystal Semiconductor CS89x0 的 NIC (cs(4) 驱动程序)
+
+　　The dc(4) driver provides support for the following chipsets:
+
+-   DEC/Intel 21143
+
+-   ADMtek AL981 Comet, AN985 Centaur, ADM9511 Centaur II and ADM9513
+    Centaur II
+
+-   ASIX Electronics AX88140A and AX88141
+
+-   Conexant LANfinity RS7112 (miniPCI)
+
+-   Davicom DM9009, DM9100, DM9102 and DM9102A
+
+-   Lite-On 82c168 and 82c169 PNIC
+
+-   Lite-On/Macronix 82c115 PNIC II
+
+-   Macronix 98713, 98713A, 98715, 98715A, 98715AEC-C, 98725, 98727 and
+    98732
+
+-   Xircom X3201 (cardbus only)
+
+　　The following NICs are known to work with the dc(4) driver at this
+time:
+
+-   3Com OfficeConnect 10/100B (ADMtek AN985 Centaur-P)
+
+-   Abocom FE2500
+
+-   Accton EN1217 (98715A)
+
+-   Accton EN2242 MiniPCI
+
+-   Adico AE310TX (98715A)
+
+-   Alfa Inc GFC2204 (ASIX AX88140A)
+
+-   Built in 10Mbps only Ethernet on Compaq Presario 7900 series
+    desktops (21143, non-MII)
+
+-   Built in DE500-BA on DEC Alpha workstations (21143, non-MII)
+
+-   Built in Sun DMFE 10/100 Mbps Ethernet on Sun Netra X1 and Sun Fire
+    V100 (DM9102A, MII)
+
+-   Built in Ethernet on LinkSys EtherFast 10/100 Instant GigaDrive
+    (DM9102, MII)
+
+-   CNet Pro110B (ASIX AX88140A)
+
+-   CNet Pro120A (98715A or 98713A) and CNet Pro120B (98715)
+
+-   Compex RL100-TX (98713 or 98713A)
+
+-   D-Link DFE-570TX (21143, MII, quad port)
+
+-   Digital DE500-BA 10/100 (21143, non-MII)
+
+-   ELECOM Laneed LD-CBL/TXA (ADMtek AN985)
+
+-   Hawking CB102 CardBus
+
+-   IBM EtherJet Cardbus Adapter
+
+-   Intel PRO/100 Mobile Cardbus (versions that use the X3201 chipset)
+
+-   Jaton XpressNet (Davicom DM9102)
+
+-   Kingston KNE100TX (21143, MII)
+
+-   Kingston KNE110TX (PNIC 82c169)
+
+-   LinkSys LNE100TX (PNIC 82c168, 82c169)
+
+-   LinkSys LNE100TX v2.0 (PNIC II 82c115)
+
+-   LinkSys LNE100TX v4.0/4.1 (ADMtek AN985 Centaur-P)
+
+-   Matrox FastNIC 10/100 (PNIC 82c168, 82c169)
+
+-   Melco LGY-PCI-TXL
+
+-   Microsoft MN-120 10/100 CardBus (ADMTek Centaur-C)
+
+-   Microsoft MN-130 10/100 PCI (ADMTek Centaur-P)
+
+-   NDC SOHOware SFA110A (98713A)
+
+-   NDC SOHOware SFA110A Rev B4 (98715AEC-C)
+
+-   NetGear FA310-TX Rev. D1, D2 or D3 (PNIC 82c169)
+
+-   Netgear FA511
+
+-   PlaneX FNW-3602-T (ADMtek AN985)
+
+-   SMC EZ Card 10/100 1233A-TX (ADMtek AN985)
+
+-   SVEC PN102-TX (98713)
+
+-   Xircom Cardbus Realport
+
+-   Xircom Cardbus Ethernet 10/100
+
+-   Xircom Cardbus Ethernet II 10/100
+
+　　Adapters supported by the de(4) driver include:
+
+-   Adaptec ANA-6944/TX
+
+-   Cogent EM100FX and EM440TX
+
+-   Corega FastEther PCI-TX
+
+-   D-Link DFE-500TX
+
+-   DEC DE435, DEC DE450, and DEC DE500
+
+-   ELECOM LD-PCI2T, LD-PCITS
+
+-   I-O DATA LA2/T-PCI
+
+-   SMC Etherpower 8432, 9332 and 9334
+
+-   ZNYX ZX3xx
+
+　　The ed(4) driver supports the following Ethernet NICs:
+
+-   3Com 3c503 Etherlink II
+
+-   AR-P500 Ethernet
+
+-   Accton EN1644 (old model), EN1646 (old model), EN2203 (old model)
+    (110pin) (flags 0xd00000)
+
+-   Accton EN2212/EN2216/UE2216
+
+-   Allied Telesis CentreCOM LA100-PCM_V2
+
+-   Allied Telesis LA-98 (flags 0x000000) (PC-98)
+
+-   Allied Telesis SIC-98, SIC-98NOTE (110pin), SIU-98 (flags 0x600000)
+    (PC-98)
+
+-   Allied Telesis SIU-98-D (flags 0x610000) (PC-98)
+
+-   AmbiCom 10BaseT card
+
+-   Bay Networks NETGEAR FA410TXC Fast Ethernet
+
+-   Belkin F5D5020 PC Card Fast Ethernet
+
+-   Billionton LM5LT-10B Ethernet/Modem PC Card
+
+-   Bromax iPort 10/100 Ethernet PC Card
+
+-   Bromax iPort 10 Ethernet PC Card
+
+-   Buffalo LPC2-CLT, LPC3-CLT, LPC3-CLX, LPC4-TX PC Card
+
+-   CNet BC40 adapter
+
+-   Compex Net-A adapter
+
+-   Contec C-NET(98), RT-1007(98), C-NET(9N) (110pin) (flags 0xa00000)
+    (PC-98)
+
+-   Contec C-NET(98)E-A, C-NET(98)L-A, C-NET(98)P (flags 0x300000)
+    (PC-98)
+
+-   Corega Ether98-T (flags 0x000000) (PC-98)
+
+-   Corega Ether PCC-T/EtherII PCC-T/FEther PCC-TXF/PCC-TXD
+
+-   CyQ've ELA-010
+
+-   DEC EtherWorks DE305
+
+-   Danpex EN-6200P2
+
+-   D-Link DE-298, DE-298P (flags 0x500000) (PC-98)
+
+-   D-Link DE-650/660
+
+-   D-Link IC-CARD/IC-CARD+ Ethernet
+
+-   ELECOM LD-98P (flags 0x500000) (PC-98)
+
+-   ELECOM LD-BDN, LD-NW801G (flags 0x200000) (PC-98)
+
+-   ELECOM Laneed LD-CDL/TX, LD-CDF, LD-CDS, LD-10/100CD, LD-CDWA
+    (DP83902A)
+
+-   HP PC Lan+ 27247B and 27252A
+
+-   IBM Creditcard Ethernet I/II
+
+-   ICM AD-ET2-T, DT-ET-25, DT-ET-T5, IF-2766ET, IF-2771ET, NB-ET-T
+    (110pin) (flags 0x500000) (PC-98)
+
+-   I-O DATA LA/T-98, LA/T-98SB, LA2/T-98, ET/T-98 (flags 0x900000)
+    (PC-98)
+
+-   I-O DATA ET2/T-PCI
+
+-   I-O DATA PCLATE
+
+-   Kansai KLA-98C/T (flags 0x900000) (PC-98)
+
+-   Kingston KNE-PC2, CIO10T, KNE-PCM/x Ethernet
+
+-   Linksys EC2T/PCMPC100/PCM100, PCMLM56
+
+-   Linksys EtherFast 10/100 PC Card, Combo PCMCIA Ethernet Card
+    (PCMPC100 V2)
+
+-   Logitec LAN-98T (flags 0xb00000) (PC-98)
+
+-   MACNICA Ethernet ME1 for JEIDA
+
+-   MACNICA ME98 (flags 0x900000) (PC-98)
+
+-   MACNICA NE2098 (flags 0x400000) (PC-98)
+
+-   MELCO EGY-98 (flags 0x300000) (PC-98)
+
+-   MELCO LGH-98, LGY-98, LGY-98-N (110pin), IND-SP, IND-SS (flags
+    0x400000) (PC-98)
+
+-   MELCO LGY-PCI-TR
+
+-   MELCO LPC-T/LPC2-T/LPC2-CLT/LPC2-TX/LPC3-TX/LPC3-CLX
+
+-   NDC Ethernet Instant-Link
+
+-   NEC PC-9801-77, PC-9801-78 (flags 0x910000) (PC-98)
+
+-   NEC PC-9801-107, PC-9801-108 (flags 0x800000) (PC-98)
+
+-   National Semiconductor InfoMover NE4100
+
+-   NetGear FA-410TX
+
+-   NetVin 5000
+
+-   Network Everywhere Ethernet 10BaseT PC Card
+
+-   Networld 98X3 (flags 0xd00000) (PC-98)
+
+-   Networld EC-98X, EP-98X (flags 0xd10000) (PC-98)
+
+-   New Media LANSurfer 10+56 Ethernet/Modem
+
+-   New Media LANSurfer
+
+-   Novell NE1000/NE2000/NE2100
+
+-   PLANEX ENW-8300-T
+
+-   PLANEX EN-2298-C (flags 0x200000) (PC-98)
+
+-   PLANEX EN-2298P-T, EN-2298-T (flags 0x500000) (PC-98)
+
+-   PLANEX FNW-3600-T
+
+-   Psion 10/100 LANGLOBAL Combine iT
+
+-   RealTek 8029
+
+-   Relia Combo-L/M-56k PC Card
+
+-   SMC Elite 16 WD8013
+
+-   SMC Elite Ultra
+
+-   SMC EtherEZ98 (flags 0x000000) (PC-98)
+
+-   SMC WD8003E/WD8003EBT/WD8003S/WD8003SBT/WD8003W/WD8013EBT/WD8013W
+    and clones
+
+-   SMC EZCard PC Card, 8040-TX, 8041-TX
+
+-   Socket LP-E, ES-1000 Ethernet/Serial, LP-E CF, LP-FE CF
+
+-   Surecom EtherPerfect EP-427
+
+-   Surecom NE-34
+
+-   TDK 3000/3400/5670 Fast Etherenet/Modem
+
+-   TDK LAK-CD031, Grey Cell GCS2000 Ethernet Card
+
+-   TDK DFL5610WS Ethernet/Modem PC Card
+
+-   Telecom Device SuperSocket RE450T
+
+-   VIA VT86C926
+
+-   Winbond W89C940
+
+　　C-Bus, ISA, PCI and PC Card devices are supported.
+
+　　The el(4) driver supports the 3Com 3c501 8bit ISA Ethernet card.
+
+　　The em(4) driver supports Gigabit Ethernet adapters based on the
+Intel 82540, 82541ER, 82541PI, 82542, 82543, 82544, 82545, 82546,
+82546EB, 82546GB, 82547, 82571, 82572 and 82573 controller chips:
+
+-   Intel PRO/1000 CT Network Connection (82547)
+
+-   Intel PRO/1000 F Server Adapter (82543)
+
+-   Intel PRO/1000 Gigabit Server Adapter (82542)
+
+-   Intel PRO/1000 GT Desktop Adapter (82541PI)
+
+-   Intel PRO/1000 MF Dual Port Server Adapter (82546)
+
+-   Intel PRO/1000 MF Server Adapter (82545)
+
+-   Intel PRO/1000 MF Server Adapter (LX) (82545)
+
+-   Intel PRO/1000 MT Desktop Adapter (82540)
+
+-   Intel PRO/1000 MT Desktop Adapter (82541)
+
+-   Intel PRO/1000 MT Dual Port Server Adapter (82546)
+
+-   Intel PRO/1000 MT Quad Port Server Adapter (82546EB)
+
+-   Intel PRO/1000 MT Server Adapter (82545)
+
+-   Intel PRO/1000 T Desktop Adapter (82544)
+
+-   Intel PRO/1000 T Server Adapter (82543)
+
+-   Intel PRO/1000 XF Server Adapter (82544)
+
+-   Intel PRO/1000 XT Server Adapter (82544)
+
+　　The ep(4) driver supports Ethernet adapters based on the 3Com 3C5x9
+Etherlink III Parallel Tasking chipset, including:
+
+-   3Com 3C1 CF
+
+-   3Com 3C509-TP, 3C509-BNC, 3C509-Combo, 3C509-TPO, 3C509-TPC ISA
+
+-   3Com 3C509B-TP, 3C509B-BNC, 3C509B-Combo, 3C509B-TPO, 3C509B-TPC ISA
+
+-   3Com 3C529, 3C529-TP MCA
+
+-   3Com 3C562/3C563 PCMCIA
+
+-   3Com 3C569B-J-TPO, 3C569B-J-COMBO CBUS
+
+-   3Com 3C574, 3C574TX, 3C574-TX, 3CCFE574BT, 3CXFE574BT, 3C3FE574BT
+    PCMCIA
+
+-   3Com 3C579-TP, 3C579-BNC EISA
+
+-   3Com 3C589, 3C589B, 3C589C, 3C589D, 3CXE589DT PCMCIA
+
+-   3Com 3CCFEM556B, 3CCFEM556BI PCMCIA
+
+-   3Com 3CXE589EC, 3CCE589EC, 3CXE589ET, 3CCE589ET PCMCIA
+
+-   3Com Megahertz 3CCEM556, 3CXEM556, 3CCEM556B, 3CXEM556B, 3C3FEM556C
+    PCMCIA
+
+-   3Com OfficeConnect 3CXSH572BT, 3CCSH572BT PCMCIA
+
+-   Farallon EtherWave and EtherMac PC Card (P/n 595/895 with BLUE
+    arrow)
+
+　　The ex(4) driver supports the following Ethernet adapters:
+
+-   Intel EtherExpress Pro/10
+
+-   Intel EtherExpress Pro/10+
+
+-   The Olicom OC2220
+
+　　Controllers and cards supported by the fe(4) driver include:
+
+-   Allied Telesis RE1000, RE1000Plus, ME1500 (110-pin)
+
+-   CONTEC C-NET(98)P2, C-NET (9N)E (110-pin), C-NET(9N)C (ExtCard)
+
+-   CONTEC C-NET(PC)C PCMCIA Ethernet
+
+-   Eagle Tech NE200T
+
+-   Eiger Labs EPX-10BT
+
+-   Fujitsu FMV-J182, FMV-J182A
+
+-   Fujitsu MB86960A, MB86965A
+
+-   Fujitsu MBH10303, MBH10302 Ethernet PCMCIA
+
+-   Fujitsu Towa LA501 Ethernet
+
+-   HITACHI HT-4840-11
+
+-   NextCom J Link NC5310
+
+-   RATOC REX-5588, REX-9822, REX-4886, and REX-R280
+
+-   RATOC REX-9880/9881/9882/9883
+
+-   TDK LAC-98012, LAC-98013, LAC-98025, LAC-9N011 (110-pin)
+
+-   TDK LAK-CD021, LAK-CD021A, LAK-CD021BX
+
+-   Ungermann-Bass Access/PC N98C+(PC85152, PC85142), Access/NOTE
+    N98(PC86132) (110-pin)
+
+　　Adapters supported by the fxp(4) driver include:
+
+-   Intel EtherExpress PRO/10
+
+-   Intel InBusiness 10/100
+
+-   Intel PRO/100B / EtherExpressPRO/100 B PCI Adapter
+
+-   Intel PRO/100+ Management Adapter
+
+-   Intel PRO/100 VE Desktop Adapter
+
+-   Intel PRO/100 M Desktop Adapter
+
+-   Intel PRO/100 S Desktop, Server and Dual-Port Server Adapters
+
+-   Contec C-NET(PI)-100TX (PC-98)
+
+-   NEC PC-9821Ra20, Rv20, Xv13, Xv20 internal 100Base-TX (PC-98)
+
+-   NEC PC-9821X-B06 (PC-98)
+
+-   Many on-board network interfaces on Intel motherboards
+
+　　The hme(4) driver supports the on-board Ethernet interfaces of many
+Sun UltraSPARC workstation and server models. Cards supported by the
+hme(4) driver include:
+
+-   Sun PCI SunSwift Adapter
+
+-   Sun SBus SunSwift Adapter “( hme” and “SUNW,hme”)
+
+-   Sun PCI Sun100BaseT Adapter 2.0
+
+-   Sun SBus Sun100BaseT 2.0
+
+-   Sun PCI Quad FastEthernet Controller
+
+-   Sun SBus Quad FastEthernet Controller
+
+　　The ie(4) driver provides supports the following 8 and 16bit ISA
+Ethernet cards that are based on the Intel i82586 chip:
+
+-   3COM 3C507
+
+-   AT&T EN100
+
+-   AT&T Starlan 10
+
+-   AT&T Starlan Fiber
+
+-   Intel EtherExpress 16
+
+-   RACAL Interlan NI5210
+
+　　The ixgb(4) driver supports the following cards:
+
+-   Intel PRO/10GbE LR Server Adapter
+
+-   Intel PRO/10GbE SR Server Adapter
+
+　　The kue(4) driver supports Kawasaki LSI KL5KLUSB101B based USB
+Ethernet adapters including:
+
+-   3Com 3c19250
+
+-   3Com 3c460 HomeConnect Ethernet USB Adapter
+
+-   ADS Technologies USB-10BT
+
+-   AOX USB101
+
+-   ATen UC10T
+
+-   Abocom URE 450
+
+-   Corega USB-T
+
+-   D-Link DSB-650C
+
+-   Entrega NET-USB-E45, NET-HUB-3U1E
+
+-   I/O Data USB ETT
+
+-   Kawasaki DU-H3E
+
+-   LinkSys USB10T
+
+-   Netgear EA101
+
+-   Peracom USB Ethernet Adapter
+
+-   Psion Gold Port USB Ethernet adapter
+
+-   SMC 2102USB, 2104USB
+
+　　Adapters supported by the lge(4) driver include:
+
+-   SMC TigerCard 1000 (SMC9462SX)
+
+-   D-Link DGE-500SX
+
+　　The lnc(4) driver supports the following adapters:
+
+-   Diamond HomeFree
+
+-   Hewlett Packard Vectra 486/66XM
+
+-   Hewlett Packard Vectra XU
+
+-   Isolan AT 4141-0 (16 bit)
+
+-   Isolan BICC
+
+-   Isolink 4110 (8 bit)
+
+-   Novell NE2100
+
+-   Novell NE32-VL
+
+　　Also supported are adapters working with the pcn(4) driver. The
+lnc(4) driver runs these in compatibility mode, thus the pcn(4) driver
+should be preferred.
+
+　　The my(4) driver provides support for various NICs based on the
+Myson chipset. Supported models include:
+
+-   Myson MTD800 PCI Fast Ethernet chip
+
+-   Myson MTD803 PCI Fast Ethernet chip
+
+-   Myson MTD89X PCI Gigabit Ethernet chip
+
+　　The nge(4) driver supports National Semiconductor DP83820 and
+DP83821 based Gigabit Ethernet adapters including:
+
+-   Addtron AEG320T
+
+-   Ark PC SOHO-GA2500T (32-bit PCI) and SOHO-GA2000T (64-bit PCI)
+
+-   Asante FriendlyNet GigaNIX 1000TA and 1000TPC
+
+-   D-Link DGE-500T
+
+-   LinkSys EG1032 (32-bit PCI) and EG1064 (64-bit PCI)
+
+-   Netgear GA621
+
+-   Netgear GA622T
+
+-   SMC EZ Card 1000 (SMC9462TX)
+
+-   Surecom Technology EP-320G-TX
+
+-   Trendware TEG-PCITX (32-bit PCI) and TEG-PCITX2 (64-bit PCI)
+
+　　The nve(4) driver supports the NVIDIA MCP onboard adapters of
+mainboards with the following chipsets:
+
+-   nForce
+
+-   nForce2
+
+-   nForce3
+
+-   nForce4
+
+　　The pcn(4) driver supports adapters and embedded controllers based
+on the AMD PCnet/FAST, PCnet/FAST+, PCnet/FAST III, PCnet/PRO and
+PCnet/Home Fast Ethernet chips:
+
+-   AMD Am79C971 PCnet-FAST
+
+-   AMD Am79C972 PCnet-FAST+
+
+-   AMD Am79C973/Am79C975 PCnet-FAST III
+
+-   AMD Am79C976 PCnet-PRO
+
+-   AMD Am79C978 PCnet-Home
+
+-   Allied-Telesis LA-PCI
+
+　　The re(4) driver supports RealTek RTL8139C+, RTL8169, RTL816xS,
+RTL811xS, and RTL8101E based Fast Ethernet and Gigabit Ethernet adapters
+including:
+
+-   Alloy Computer Products EtherGOLD 1439E 10/100 (8139C+)
+
+-   Compaq Evo N1015v Integrated Ethernet (8139C+)
+
+-   Corega CG-LAPCIGT Gigabit Ethernet (8169S)
+
+-   D-Link DGE-528(T) Gigabit Ethernet (8169S)
+
+-   Gigabyte 7N400 Pro2 Integrated Gigabit Ethernet (8110S)
+
+-   LevelOne GNC-0105T (8169S)
+
+-   LinkSys EG1032 (32-bit PCI)
+
+-   PLANEX COMMUNICATIONS Inc. GN-1200TC (8169S)
+
+-   Xterasys XN-152 10/100/1000 NIC (8169)
+
+　　Adapters supported by the rl(4) driver include:
+
+-   Accton “Cheetah” EN1207D (MPX 5030/5038; RealTek 8139 clone)
+
+-   Allied Telesyn AT2550
+
+-   Allied Telesyn AT2500TX
+
+-   Belkin F5D5000
+
+-   BUFFALO (Melco INC.) LPC-CB-CLX (CardBus)
+
+-   Compaq HNE-300
+
+-   CompUSA no-name 10/100 PCI Ethernet NIC
+
+-   Corega FEther CB-TXD
+
+-   Corega FEtherII CB-TXD
+
+-   D-Link DFE-528TX
+
+-   D-Link DFE-530TX+
+
+-   D-Link DFE-538TX
+
+-   D-Link DFE-690TXD
+
+-   Edimax EP-4103DL CardBus
+
+-   Encore ENL832-TX 10/100 M PCI
+
+-   Farallon NetLINE 10/100 PCI
+
+-   Genius GF100TXR
+
+-   GigaFast Ethernet EE100-AXP
+
+-   KTX-9130TX 10/100 Fast Ethernet
+
+-   LevelOne FPC-0106TX
+
+-   Longshine LCS-8038TX-R
+
+-   NDC Communications NE100TX-E
+
+-   Netronix Inc. EA-1210 NetEther 10/100
+
+-   Nortel Networks 10/100BaseTX
+
+-   OvisLink LEF-8129TX
+
+-   OvisLink LEF-8139TX
+
+-   Peppercon AG ROL-F
+
+-   Planex FNW-3800-TX
+
+-   SMC EZ Card 10/100 PCI 1211-TX
+
+-   SOHO (PRAGMATIC) UE-1211C
+
+　　The rue(4) driver supports RealTek RTL8150 based USB Ethernet
+adapters including:
+
+-   Buffalo (Melco Inc.) LUA-KTX
+
+-   Green House GH-USB100B
+
+-   LinkSys USB100M
+
+-   Billionton 10/100 FastEthernet USBKR2
+
+　　Adapters supported by the sf(4) driver include:
+
+-   ANA-62011 64-bit single port 10/100baseTX adapter
+
+-   ANA-62022 64-bit dual port 10/100baseTX adapter
+
+-   ANA-62044 64-bit quad port 10/100baseTX adapter
+
+-   ANA-69011 32-bit single port 10/100baseTX adapter
+
+-   ANA-62020 64-bit single port 100baseFX adapter
+
+　　The sis(4) driver supports Silicon Integrated Systems SiS 900 and
+SiS 7016 based Fast Ethernet adapters and embedded controllers, as well
+as Fast Ethernet adapters based on the National Semiconductor DP83815
+(MacPhyter) and DP83816 chips. Supported adapters include:
+
+-   @Nifty FNECHARD IFC USUP-TX
+
+-   MELCO LGY-PCI-TXC
+
+-   Netgear FA311-TX (DP83815)
+
+-   Netgear FA312-TX (DP83815)
+
+-   SiS 630, 635, and 735 motherboard chipsets
+
+-   Soekris Engineering net45xx, net48xx, lan1621, and lan1641
+
+　　Adapters supported by the sk(4) driver include:
+
+-   3Com 3C940 single port, 1000baseT adapter
+
+-   3Com 3C2000-T single port, 1000baseT adapter
+
+-   Belkin F5D5005 single port, 1000baseT adapter
+
+-   D-Link DGE-530T single port, 1000baseT adapter
+
+-   Linksys EG1032 single port, 1000baseT adapter
+
+-   SK-9521 SK-NET GE-T single port, 1000baseT adapter
+
+-   SK-9821 SK-NET GE-T single port, 1000baseT adapter
+
+-   SK-9822 SK-NET GE-T dual port, 1000baseT adapter
+
+-   SK-9841 SK-NET GE-LX single port, single mode fiber adapter
+
+-   SK-9842 SK-NET GE-LX dual port, single mode fiber adapter
+
+-   SK-9843 SK-NET GE-SX single port, multimode fiber adapter
+
+-   SK-9844 SK-NET GE-SX dual port, multimode fiber adapter
+
+-   SMC 9452TX single port, 1000baseT adapter
+
+　　The sn(4) driver supports SMC91Cxx based ISA and PCMCIA cards
+including:
+
+-   3Com Megahertz X-Jack Ethernet PC-Card XJ10BT
+
+-   3Com Megahertz X-Jack Ethernet PC-Card XJ10BC
+
+-   Farallon EtherMac PC Card 595a
+
+-   Motorola Mariner Ethernet/Modem PC Card
+
+-   Ositech Seven of Diamonds Ethernet PC Card
+
+-   Ositech Jack of Hearts Ethernet/Modem PC Card
+
+-   Psion Gold Card Netglobal Ethernet PC Card
+
+-   Psion Gold Card Netglobal 10/100 Fast Ethernet PC Card
+
+-   Psion Gold Card Netglobal 56k+10Mb Ethernet PC Card
+
+-   SMC EZEther PC Card (8020BT)
+
+-   SMC EZEther PC Card (8020T)
+
+　　The sn(4) driver supports the SMC 91C90, SMC 91C92, SMC 91C94, SMC
+91C95, SMC 91C96, SMC91C100 and SMC 91C100FD chips from SMC. The
+Farallon EtherWave and EtherMac card came in two varieties. The ep(4)
+driver supports the 595 and 895 cards. These cards have the blue arrow
+on the front along with a 3Com logo. The Farallon 595a cards, which have
+a red arrow on the front, are also called EtherWave and EtherMac. They
+are supported by the sn(4) driver.
+
+　　The stge(4) driver provides support for various NICs based on the
+Sundance/Tamarack TC9021 based Gigabit Ethernet controller chips,
+including:
+
+-   Antares Microsystems Gigabit Ethernet
+
+-   ASUS NX1101 Gigabit Ethernet
+
+-   D-Link DL-4000 Gigabit Ethernet
+
+-   IC Plus IP1000A Gigabit Ethernet
+
+-   Sundance ST-2021 Gigabit Ethernet
+
+-   Sundance ST-2023 Gigabit Ethernet
+
+-   Sundance TC9021 Gigabit Ethernet
+
+-   Tamarack TC9021 Gigabit Ethernet
+
+　　The ste(4) driver supports Sundance Technologies ST201 based Fast
+Ethernet adapters and embedded controllers including:
+
+-   D-Link DFE-530TXS
+
+-   D-Link DFE-550TX
+
+-   D-Link DFE-580TX
+
+　　The ti(4) driver supports Gigabit Ethernet adapters based on the
+Alteon Tigon I and II chips. The ti(4) driver has been tested with the
+following adapters:
+
+-   3Com 3c985-SX Gigabit Ethernet adapter (Tigon 1)
+
+-   3Com 3c985B-SX Gigabit Ethernet adapter (Tigon 2)
+
+-   Alteon AceNIC V Gigabit Ethernet adapter (1000baseSX)
+
+-   Alteon AceNIC V Gigabit Ethernet adapter (1000baseT)
+
+-   Digital EtherWORKS 1000SX PCI Gigabit adapter
+
+-   Netgear GA620 Gigabit Ethernet adapter (1000baseSX)
+
+-   Netgear GA620T Gigabit Ethernet adapter (1000baseT)
+
+　　The following adapters should also be supported but have not yet
+been tested:
+
+-   Asante GigaNIX1000T Gigabit Ethernet adapter
+
+-   Asante PCI 1000BASE-SX Gigabit Ethernet adapter
+
+-   Farallon PN9000SX Gigabit Ethernet adapter
+
+-   NEC Gigabit Ethernet
+
+-   Silicon Graphics PCI Gigabit Ethernet adapter
+
+　　The tl(4) driver supports Texas Instruments ThunderLAN based
+Ethernet and Fast Ethernet adapters including a large number of Compaq
+PCI Ethernet adapters. Also supported are:
+
+-   Olicom OC-2135/2138 10/100 TX UTP adapter
+
+-   Olicom OC-2325/OC-2326 10/100 TX UTP adapter
+
+-   Racore 8148 10baseT/100baseTX/100baseFX adapter
+
+-   Racore 8165 10/100baseTX adapter
+
+　　The tl(4) driver also supports the built-in Ethernet adapters of
+various Compaq Prosignia servers and Compaq Deskpro desktop machines
+including:
+
+-   Compaq Netelligent 10
+
+-   Compaq Netelligent 10 T PCI UTP/Coax
+
+-   Compaq Netelligent 10/100
+
+-   Compaq Netelligent 10/100 Dual-Port
+
+-   Compaq Netelligent 10/100 Proliant
+
+-   Compaq Netelligent 10/100 TX Embedded UTP
+
+-   Compaq Netelligent 10/100 TX UTP
+
+-   Compaq NetFlex 3P
+
+-   Compaq NetFlex 3P Integrated
+
+-   Compaq NetFlex 3P w/BNC
+
+　　基于 SMC 83c17x (EPIC) 的以太网 NIC (tx(4) 驱动程序)
+
+　　The txp(4) driver supports the following cards:
+
+-   3Com 3CR990-TX-95
+
+-   3Com 3CR990-TX-97
+
+-   3Com 3cR990B-TXM
+
+-   3Com 3CR990SVR95
+
+-   3Com 3CR990SVR97
+
+-   3Com 3cR990B-SRV
+
+　　The udav(4) driver supports the following adapters:
+
+-   Corega FEther USB-TXC
+
+　　The vge(4) driver supports VIA Networking VT3119 and VT6122 based
+Gigabit Ethernet adapters including:
+
+-   VIA Networking LAN-on-motherboard Gigabit Ethernet
+
+-   ZyXEL GN650-T 64-bit PCI Gigabit Ethernet NIC (ZX1701)
+
+-   ZyXEL GN670-T 32-bit PCI Gigabit Ethernet NIC (ZX1702)
+
+　　The vr(4) driver supports VIA Technologies Rhine I, Rhine II, and
+Rhine III based Fast Ethernet adapters including:
+
+-   AOpen/Acer ALN-320
+
+-   D-Link DFE530-TX
+
+-   Hawking Technologies PN102TX
+
+　　The vx(4) driver supports the following cards:
+
+-   3Com 3c590 EtherLink III PCI
+
+-   3Com 3c592 EtherLink III EISA
+
+-   3Com 3c595 Fast EtherLink III PCI in 10 Mbps mode
+
+-   3Com 3c597 Fast EtherLink III EISA in 10 Mbps mode
+
+　　The wb(4) driver supports Winbond W89C840F based Fast Ethernet
+adapters and embedded controllers including:
+
+-   Trendware TE100-PCIE
+
+　　The xe(4) driver supports the following cards:
+
+-   Xircom CreditCard Ethernet (PS-CE2-10)
+
+-   Xircom CreditCard Ethernet + Modem 28 (PS-CEM-28)
+
+-   Xircom CreditCard Ethernet + Modem 33 (CEM33)
+
+-   Xircom CreditCard 10/100 (CE3, CE3B)
+
+-   Xircom CreditCard Ethernet 10/100 + Modem 56 (CEM56)
+
+-   Xircom RealPort Ethernet 10 (RE10)
+
+-   Xircom RealPort Ethernet 10/100 (RE100)
+
+-   Xircom RealPort Ethernet 10/100 + Modem 56 (REM56, REM56G)
+
+-   Accton Fast EtherCard-16 (EN2226)
+
+-   Compaq Microcom CPQ550 Ethernet/Modem PC Card
+
+-   Compaq Netelligent 10/100 PC Card (CPQ-10/100)
+
+-   Intel EtherExpress Pro/100 PC Card Mobile Adapter 16 (Pro/100 M16A)
+
+-   Intel EtherExpress Pro/100 LAN/Modem PC Card Adapter (Pro/100 M16B)
+
+　　Other similar devices using the same hardware may also be supported.
+
+　　The xl(4) driver supports the following hardware:
+
+-   3Com 3c900-TPO
+
+-   3Com 3c900-COMBO
+
+-   3Com 3c905-TX
+
+-   3Com 3c905-T4
+
+-   3Com 3c900B-TPO
+
+-   3Com 3c900B-TPC
+
+-   3Com 3c900B-FL
+
+-   3Com 3c900B-COMBO
+
+-   3Com 3c905B-T4
+
+-   3Com 3c905B-TX
+
+-   3Com 3c905B-FX
+
+-   3Com 3c905B-COMBO
+
+-   3Com 3c905C-TX
+
+-   3Com 3c980, 3c980B, and 3c980C server adapters
+
+-   3Com 3cSOHO100-TX OfficeConnect adapters
+
+-   3Com 3c450 HomeConnect adapters
+
+-   3Com 3c555, 3c556 and 3c556B mini-PCI adapters
+
+-   3Com 3C3SH573BT, 3C575TX, 3CCFE575BT, 3CXFE575BT, 3CCFE575CT,
+    3CXFE575CT, 3CCFEM656, 3CCFEM656B, and 3CCFEM656C, 3CXFEM656,
+    3CXFEM656B, and 3CXFEM656C CardBus adapters
+
+-   3Com 3c905-TX, 3c905B-TX 3c905C-TX, 3c920B-EMB, and 3c920B-EMB-WNM
+    embedded adapters
+
+　　Both the 3C656 family of CardBus cards and the 3C556 family of
+MiniPCI cards have a built-in proprietary modem. Neither the xl(4)
+driver nor any other driver supports this modem.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.3 Token Ring Interfaces
+
+　　The oltr(4) driver supports the following ISA based Olicom Token
+Ring adapters:
+
+-   Olicom OC-3115
+
+-   Olicom ISA 16/4 Adapter (OC-3117)
+
+-   Olicom ISA 16/4 Adapter (OC-3118)
+
+　　The following PCI based adapters are supported:
+
+-   Olicom PCI 16/4 Adapter (OC-3136)
+
+-   Olicom PCI/II 16/4 Adapter (OC-3137)
+
+-   Olicom PCI 16/4 Adapter (OC-3139)
+
+-   Olicom RapidFire 3140 16/4 PCI Adapter (OC-3140)
+
+-   Olicom RapidFire 3141 Fiber Adapter (OC-3141)
+
+-   Olicom RapidFire 3540 100/16/4 Adapter (OC-3540)
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.4 FDDI 接口
+
+　　DEC DEFPA PCI ( fpa(4) 驱动程序)
+
+　　DEC DEFEA EISA ( fpa(4) 驱动程序)
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.5 ATM 接口
+
+　　基于 Midway 的 ATM 接口 (en(4) 驱动程序)
+
+　　FORE Systems, Inc. PCA-200E ATM PCI 适配器 (hfa 和 fatm(4) 驱动程序)
+
+　　基于 IDT NICStAR 77201/211 的 ATM 适配器 ( idt(4) 驱动程序)
+
+　　FORE Systems, Inc. HE155 和 HE622 ATM 接口 ( hatm(4) 驱动程序)
+
+　　基于 IDT77252 的 ATM 卡 ( patm(4) 驱动程序)
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.6 无线网络接口
+
+　　NCR / AT&T / Lucent Technologies WaveLan T1-speed ISA/radio LAN 卡
+(wl(4) 驱动程序)
+
+　　Lucent Technologies WaveLAN/IEEE 802.11b
+无线网络适配器以及软件通用型的采用 Lucent Hermes, Intersil PRISM-II,
+Intersil PRISM-2.5, Intersil Prism-3, 和 Symbol Spectrum24 芯片组的网卡
+(wi(4) 驱动程序)
+
+　　Cisco/Aironet 802.11b 无线网络适配器 (an(4) 驱动程序)
+
+　　Raytheon Raylink 2.4GHz 无线网络适配器 ( ray(4) 驱动程序)
+
+　　Cards supported by the awi(4) driver include:
+
+-   BayStack 650
+
+-   BayStack 660
+
+-   Icom SL-200
+
+-   Melco WLI-PCM
+
+-   NEL SSMagic
+
+-   Netwave AirSurfer Plus
+
+-   Netwave AirSurfer Pro
+
+-   Nokia C020 WLAN
+
+-   Farallon SkyLINE
+
+　　The original Xircom Netwave AirSurfer is supported by the cnw(4)
+driver.
+
+　　Cards supported by the cnw(4) driver include:
+
+-   Xircom CreditCard Netwave
+
+-   NetWave AirSurfer
+
+　　The ath(4) driver supports all Atheros Cardbus or PCI cards, except
+those that are based on the AR5005VL chipset. A list of cards that are
+supported can be found at
+http://customerproducts.atheros.com/customerproducts.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.7 其他网络设备
+
+　　The ce(4) driver supports the following models of Tau-PCI/32 WAN
+adapters:
+
+-   Cronyx Tau-PCI/32
+
+-   Cronyx Tau-PCI/32-Lite
+
+　　The cx(4) driver supports the following cards:
+
+-   Cronyx Sigma-22, Sigma-24
+
+-   Cronyx Sigma-100
+
+-   Cronyx Sigma-400, Sigma-401, Sigma-404, Sigma-410, Sigma-440
+
+-   Cronyx Sigma-500
+
+-   Cronyx Sigma-703
+
+-   Cronyx Sigma-800, Sigma-801, Sigma-810, Sigma-840
+
+　　The cp(4) driver supports the following models of Tau-PCI WAN
+adapters:
+
+-   Cronyx Tau-PCI
+
+-   Cronyx Tau-PCI/R
+
+-   Cronyx Tau-PCI-L
+
+-   Cronyx Tau-PCI-L/R
+
+-   Cronyx Tau-PCI-E1
+
+-   Cronyx Tau-PCI-G703
+
+-   Cronyx Tau-PCI-2E1
+
+-   Cronyx Tau-PCI-4E1
+
+-   Cronyx Tau-PCI-E3
+
+-   Cronyx Tau-PCI-T3
+
+-   Cronyx Tau-PCI-STS1
+
+　　The ctau(4) driver supports the following cards:
+
+-   Cronyx Tau (RS-232/V.35)
+
+-   Cronyx Tau/R (RS-530/RS-449)
+
+-   Cronyx Tau/E1 (fractional E1)
+
+-   Cronyx Tau/G703 (unframed E1)
+
+　　Granch SBNI12 点对点通讯适配器 ( sbni(4) 驱动程序)
+
+　　Granch SBNI16 SHDSL 调制解调器 ( sbsh(4) 驱动程序)
+
+　　The cm(4) driver supports the following card models:
+
+-   SMC90c26
+
+-   SMC90c56
+
+-   SMC90c66 in '56 compatibility mode.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.8 ISDN 接口
+
+　　AcerISDN P10 ISA PnP (实验性的)
+
+　　Asuscom ISDNlink 128K ISA
+
+　　ASUSCOM P-IN100-ST-D (以及其他基于 Winbond W6692 的卡)
+
+　　AVM
+
+-   A1
+
+-   B1 ISA (在 V2.0 上测试过)
+
+-   B1 PCI (在 V4.0 上测试过)
+
+-   Fritz!Card classic
+
+-   Fritz!Card PnP
+
+-   Fritz!Card PCI
+
+-   Fritz!Card PCI, Version 2
+
+-   T1
+
+　　Creatix
+
+-   ISDN-S0
+
+-   ISDN-S0 P&P
+
+　　Compaq Microcom 610 ISDN (Compaq series PSB2222I) ISA PnP
+
+　　Dr. Neuhaus Niccy Go@ 及兼容
+
+　　Dynalink IS64PPH 和 IS64PPH+
+
+　　Eicon Diehl DIVA 2.0 和 2.02
+
+　　ELSA
+
+-   ELSA PCC-16
+
+-   QuickStep 1000pro ISA
+
+-   MicroLink ISDN/PCI
+
+-   QuickStep 1000pro PCI
+
+　　ITK ix1 Micro ( < V.3, 非 PnP 版本 )
+
+　　Sedlbauer Win Speed
+
+　　Siemens I-Surf 2.0
+
+　　TELEINT ISDN SPEED No.1 (试验性支持)
+
+　　Teles
+
+-   S0/8
+
+-   S0/16
+
+-   S0/16.3
+
+-   S0/16.3 PnP
+
+-   16.3c ISA PnP (试验性支持)
+
+-   Teles PCI-TJ
+
+　　Traverse Technologies NETjet-S PCI
+
+　　USRobotics Sportster ISDN TA intern
+
+　　基于 Winbond W6692 的 PCI 卡
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.9 串口
+
+　　“PC 标准” 基于 8250、 16450， 以及基于 16550 的串口 ( sio(4)
+驱动程序)
+
+　　The uart(4) driver supports the following classes of UARTs:
+
+-   NS8250: standard hardware based on the 8250, 16450, 16550, 16650,
+    16750 or the 16950 UARTs
+
+-   SAB82532: Siemens SAB 82532 based serial communications controllers
+    in asynchronuous mode.
+
+-   Z8530: Zilog 8530 based serial communications controllers in
+    asynchronuous mode.
+
+　　使用共享 IRQ 的 AST 4 口串口卡
+
+　　ARNET 串口卡 (ar(4) 驱动程序)
+
+-   使用共享 IRQ 的 ARNET 8 口串口卡
+
+-   ARNET (现在是 Digiboard) Sync 570/i 高速串口
+
+　　Boca 多口串口卡
+
+-   Boca BB1004 4-口串口卡 (不 支持调制解调器)
+
+-   Boca IOAT66 6-口串口卡 (支持调制解调器)
+
+-   Boca BB1008 8-口串口卡 (不 支持调制解调器)
+
+-   Boca BB2016 16-口串口卡 (支持调制解调器)
+
+　　Comtrol Rocketport 卡 (rp(4) 驱动程序)
+
+　　Cyclades Cyclom-Y 串口板 (cy(4) 驱动程序)
+
+　　使用共享 IRQ 的 STB 4 口串口卡
+
+　　DigiBoard 智能串口卡 (digi 驱动程序)
+
+　　基于 PCI 的多口串口板 ( puc(4) 驱动程序)
+
+-   Actiontech 56K PCI
+
+-   Avlab Technology, PCI IO 2S 和 PCI IO 4S
+
+-   Comtrol RocketPort 550
+
+-   Decision Computers PCCOM 4-多口串口 和 双口 RS232/422/485
+
+-   Dolphin Peripherals 4025/4035/4036
+
+-   IC Book Labs Dreadnought 16x Lite 和 Pro
+
+-   Lava Computers 2SP-PCI/DSerial-PCI/Quattro-PCI/Octopus-550
+
+-   Middle Digital, Weasle 串口
+
+-   Moxa Industio CP-114, Smartio C104H-PCI 和 C168H/PCI
+
+-   NEC PK-UG-X001 和 PK-UG-X008
+
+-   Netmos NM9835 PCI-2S-550
+
+-   Oxford Semiconductor OX16PCI954 PCI UART
+
+-   Syba Tech SD-LAB PCI-4S2P-550-ECP
+
+-   SIIG Cyber I/O PCI 16C550/16C650/16C850
+
+-   SIIG Cyber 2P1S PCI 16C550/16C650/16C850
+
+-   SIIG Cyber 2S1P PCI 16C550/16C650/16C850
+
+-   SIIG Cyber 4S PCI 16C550/16C650/16C850
+
+-   SIIG Cyber Serial (Single 和 Dual) PCI 16C550/16C650/16C850
+
+-   Syba Tech Ltd. PCI-4S2P-550-ECP
+
+-   Titan PCI-200H 和 PCI-800H
+
+-   US Robotics (3Com) 3CP5609 调制解调器
+
+-   VScom PCI-400 和 PCI-800
+
+　　The rc(4) driver provides support for the SDL Communications
+RISCom/8 boards.
+
+　　The sr(4) driver supports the following hardware:
+
+-   SDL Communications RISCom/N2 ISA
+
+-   SDL Communications N2pci
+
+-   SDL Communications WANic 400/405 PCI
+
+　　支持 Specialix SI/XIO/SX 多口串口卡, 同时包括较旧的 SIHOST2.x 以及
+“增强型” (基于 transputer， 也就是 JET 的) 宿主卡 (ISA、 EISA 和 PCI
+接口) 注意， 最新的 SX+ PCI 卡目前还不支持。 (si(4) 驱动程序)
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.10 声音设备
+
+　　The snd_ad1816(4) driver supports the following sound cards:
+
+-   Analog Devices AD1816
+
+　　The snd_als4000(4) driver supports the following sound cards:
+
+-   Avance Logic ALS4000
+
+　　The snd_atiixp(4) driver supports the following audio chipsets:
+
+-   ATI IXP 200
+
+-   ATI IXP 300
+
+-   ATI IXP 400
+
+　　The snd_cmi(4) driver supports the following sound cards:
+
+-   CMedia CMI8338A
+
+-   CMedia CMI8338B
+
+-   CMedia CMI8738
+
+-   CMedia CMI8738B
+
+　　The snd_cs4281(4) driver supports the following sound cards:
+
+-   Crystal Semiconductor CS4281
+
+　　The snd_csa(4) driver supports the following sound cards:
+
+-   Crystal Semiconductor CS4280
+
+-   Crystal Semiconductor CS4610
+
+-   Crystal Semiconductor CS4611
+
+-   Crystal Semiconductor CS4614
+
+-   Crystal Semiconductor CS4615
+
+-   Crystal Semiconductor CS4622
+
+-   Crystal Semiconductor CS4624
+
+-   Crystal Semiconductor CS4630
+
+-   Genius Soundmaker 128 Value
+
+-   Hercules Game Theatre XP
+
+-   Turtle Beach Santa Cruz
+
+　　Some onboard CS4610 chips are accompanied by the CS423x ISA codec
+instead of the CS4297 AC97 codec. Such configurations are not supported
+by the snd_csa(4) driver yet.
+
+　　The snd_ds1(4) driver supports the following sound cards:
+
+-   Yamaha DS-1
+
+-   Yamaha DS-1E
+
+　　The snd_emu10k1(4) driver supports the following sound cards:
+
+-   Creative SoundBlaster Live! (EMU10K1 Chipset)
+
+-   Creative SoundBlaster Audigy (EMU10K2 Chipset)
+
+-   Creative SoundBlaster Audigy 2 (EMU10K2 Chipset)
+
+-   Creative SoundBlaster Audigy 2 (EMU10K3 Chipset)
+
+　　The snd_es137x(4) driver supports the following sound cards:
+
+-   Creative CT5880-A
+
+-   Creative CT5880-C
+
+-   Creative CT5880-D
+
+-   Creative CT5880-E
+
+-   Creative SB AudioPCI CT4730
+
+-   Ensoniq AudioPCI ES1370
+
+-   Ensoniq AudioPCI ES1371-A
+
+-   Ensoniq AudioPCI ES1371-B
+
+-   Ensoniq AudioPCI ES1373-A
+
+-   Ensoniq AudioPCI ES1373-B
+
+-   Ensoniq AudioPCI ES1373-8
+
+　　The snd_ess(4) driver supports the following sound cards:
+
+-   Ensoniq ESS ISA PnP/non-PnP
+
+　　The snd_fm801(4) driver supports audio devices based on the
+following chipset:
+
+-   Forte Media FM801
+
+　　The snd_gusc(4) driver supports the following sound cards:
+
+-   Gravis UltraSound MAX
+
+-   Gravis UltraSound PnP
+
+　　The snd_ich(4) driver supports the following audio devices:
+
+-   AMD 768
+
+-   AMD 8111
+
+-   Intel 443MX
+
+-   Intel ICH
+
+-   Intel ICH revision 1
+
+-   Intel ICH2
+
+-   Intel ICH3
+
+-   Intel ICH4
+
+-   Intel ICH5
+
+-   Intel ICH6
+
+-   Intel ICH7
+
+-   NVIDIA nForce
+
+-   NVIDIA nForce2
+
+-   NVIDIA nForce2 400
+
+-   NVIDIA nForce3
+
+-   NVIDIA nForce3 250
+
+-   NVIDIA nForce4
+
+-   SiS 7012
+
+　　The snd_maestro(4) driver supports the following PCI sound cards:
+
+-   ESS Technology Maestro-1
+
+-   ESS Technology Maestro-2
+
+-   ESS Technology Maestro-2E
+
+　　The snd_maestro3(4) driver supports the following audio devices:
+
+-   ESS Technology Allegro-1
+
+-   ESS Technology Maestro3
+
+　　The snd_mss(4) driver supports the following audio devices:
+
+-   AD1845
+
+-   AD1848
+
+-   Aztech 2320
+
+-   CMedia CMI8330
+
+-   Crystal Semiconductor CS4231
+
+-   Crystal Semiconductor CS4232
+
+-   Crystal Semiconductor CS4234
+
+-   Crystal Semiconductor CS4235
+
+-   Crystal Semiconductor CS4236
+
+-   Crystal Semiconductor CS4237
+
+-   ENSONIQ SoundscapeVIVO ENS4081
+
+-   NeoMagic 256AV (non-AC97)
+
+-   OPTi 924
+
+-   OPTi 925
+
+-   OPTi 930
+
+-   OPTi 931
+
+-   OPTi 933
+
+-   Yamaha OPL-SA2
+
+-   Yamaha OPL-SA3
+
+　　The snd_neomagic(4) driver supports the following audio devices:
+
+-   NeoMagic 256AV
+
+-   NeoMagic 256ZX
+
+　　The snd_sbc(4) driver supports the following sound cards:
+
+-   Avance Asound 110
+
+-   Avance Logic ALS100+
+
+-   Avance Logic ALS120
+
+-   Creative SB16
+
+-   Creative SB32
+
+-   Creative AWE64
+
+-   Creative AWE64 Gold
+
+-   Creative ViBRA16C
+
+-   Creative ViBRA16X
+
+-   ESS ES1681
+
+-   ESS ES1688
+
+-   ESS ES1868
+
+-   ESS ES1869
+
+-   ESS ES1878
+
+-   ESS ES1879
+
+-   ESS ES1888
+
+　　The snd_solo(4) driver supports the following sound cards:
+
+-   ESS Solo-1 (ES1938 Chipset)
+
+-   ESS Solo-1E (ES1946 Chipset)
+
+　　Note that older ESS ISA cards with ES18xx chipset are supported via
+snd_ess(4) and/or snd_sbc(4).
+
+　　The snd_t4dwave(4) driver supports the following audio devices:
+
+-   Acer Labs M5451
+
+-   SIS 7018
+
+-   Trident 4DWave DX
+
+-   Trident 4DWave NX
+
+　　The snd_via8233(4) driver supports the following audio chipsets:
+
+-   VIA VT8233
+
+-   VIA VT8233A
+
+-   VIA VT8233C
+
+-   VIA VT8235
+
+-   VIA VT8237
+
+-   VIA VT8251
+
+　　The snd_via82c686(4) driver supports audio devices based on the
+following chipset:
+
+-   VIA 82C686A
+
+　　The snd_vibes(4) driver supports audio devices based on the
+following chipset:
+
+-   S3 SonicVibes
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.11 照相机和视频捕捉设备
+
+　　The bktr(4) driver supports video capture cards based on the
+Brooktree Bt848/849/878/879 chips, as well as Pinnacle PCTV cards,
+including:
+
+-   AOpen VA1000
+
+-   AVerMedia AVerTV Studio
+
+-   AVerMedia TF/FM-98
+
+-   ATI TV Wonder VE
+
+-   Hauppauge WinCast/TV
+
+-   Hauppauge WinTV-Go-FM
+
+-   Hauppauge WinTV-pci
+
+-   Hauppauge WinTV-radio
+
+-   Intel Smart Video Recorder III
+
+-   KWORLD PCI TV Tuner
+
+-   Miro PC TV
+
+-   Pinnacle PCTV Pro
+
+-   Pinnacle PCTV Rave
+
+-   PixelView PlayTV PAK
+
+-   PixelView PlayTV Pro (rev 4C, 9D)
+
+-   SIGMA TV II
+
+-   STB TV PCI Television Tuner
+
+-   Super TV Tuner
+
+-   TerraTec TValue
+
+-   V-Stream XPERT TV-PVR 878
+
+-   Video Highway XTreme
+
+-   VideoLogic Captivator PCI
+
+　　Connectix QuickCam
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.12 USB 设备
+
+　　FreeBSD 能够支持一系列 USB 外设； 已知能够正确使用的设备在这节列出。
+由于 USB 设备天生的通用性， 除了少量比较有个性的设备之外，
+同一类型的设备几乎都能被支持， 即使在这里没有明确地列出。
+
+  注意: USB 以太网适配器可以在 以太网接口 一节找到。
+
+  注意: USB 蓝牙适配器可以在 蓝牙 一节找到。
+
+　　The ohci(4) driver supports all OHCI v1.0 compliant controllers
+including:
+
+-   AcerLabs M5237 (Aladdin-V)
+
+-   AMD-756
+
+-   OPTi 82C861 (FireLink)
+
+-   NEC uPD 9210
+
+-   CMD Tech 670 (USB0670)
+
+-   CMD Tech 673 (USB0673)
+
+-   NVIDIA nForce3
+
+-   Sun PCIO-2 (RIO USB)
+
+　　The uhci(4) driver supports all UHCI v1.1 compliant controllers
+including:
+
+-   Intel 82371AB/EB (PIIX4)
+
+-   Intel 82371SB (PIIX3)
+
+-   VIA 83C572
+
+　　采用 EHCI 接口的 USB 2.0 控制器 ( ehci(4) 驱动程序)
+
+　　集线器
+
+　　键盘 ( ukbd(4) 驱动程序)
+
+　　其他
+
+-   Assist Computer Systems PC Camera C-M1
+
+-   ActiveWire I/O 板
+
+-   Creative Technology Video Blaster WebCam Plus
+
+-   D-Link DSB-R100 USB Radio ( ufm(4) 驱动程序)
+
+-   Mirunet AlphaCam Plus
+
+　　The following devices are supported by the urio(4) driver:
+
+-   Diamond MultiMedia Rio 500
+
+-   Diamond MultiMedia Rio 600
+
+-   Diamond MultiMedia Rio 800
+
+　　Devices supported by the umodem(4) driver include:
+
+-   3Com 5605
+
+-   Curitel PC5740 Wireless Modem
+
+-   Metricom Ricochet GS USB wireless modem
+
+-   Sierra MC5720 Wireless Modem
+
+-   Yamaha Broadband Wireless Router RTW65b
+
+-   ELSA MicroLink 56k USB modem
+
+　　鼠标器 ( ums(4) 驱动程序)
+
+　　The ulpt(4) driver provides support for USB printers and parallel
+printer conversion cables, including the following:
+
+-   ATen parallel printer adapter
+
+-   Belkin F5U002 parallel printer adapter
+
+-   Canon BJ F850, S600
+
+-   Canon LBP-1310, 350
+
+-   Entrega USB-to-parallel printer adapter
+
+-   Hewlett-Packard HP Deskjet 3420 (P/N: C8947A #ABJ)
+
+-   Oki Data MICROLINE ML660PS
+
+-   Seiko Epson PM-900C, 880C, 820C, 730C
+
+　　The ubsa(4) driver supports the following adapters:
+
+-   Belkin F5U103
+
+-   Belkin F5U120
+
+-   e-Tek Labs Kwik232
+
+-   GoHubs GoCOM232
+
+-   Peracom single port serial adapter
+
+-   Vodafone Mobile Connect 3G datacard
+
+　　The ubser(4) driver provides support for the BWCT console management
+serial adapters.
+
+　　The uftdi(4) driver supports the following adapters:
+
+-   B&B Electronics USB->RS422/485 adapter
+
+-   HP USB-Serial adapter shipped with some HP laptops
+
+-   Inland UAS111
+
+-   QVS USC-1000
+
+　　The uplcom(4) driver supports the following adapters:
+
+-   ATEN UC-232A
+
+-   BAFO BF-800
+
+-   BAFO BF-810
+
+-   ELECOM UC-SGT
+
+-   HAL Corporation Crossam2+USB IR commander
+
+-   Hama USB RS-232 Serial Adapter
+
+-   IOGEAR UC-232A
+
+-   I/O DATA USB-RSAQ
+
+-   I/O DATA USB-RSAQ2
+
+-   I/O DATA USB-RSAQ3
+
+-   PLANEX USB-RS232 URS-03
+
+-   RATOC REX-USB60
+
+-   Sandberg USB to Serial Link (model number 133-08)
+
+-   SOURCENEXT KeikaiDenwa 8 (with and without charger)
+
+-   Sony Ericsson USB Cable (Susteen USB Data Cable)
+
+　　The umct(4) driver supports the following adapters:
+
+-   Belkin F5U109
+
+-   Belkin F5U409
+
+-   D-Link DU-H3SP USB BAY Hub
+
+-   Magic Control Technology USB-232
+
+-   Sitecom USB-232
+
+　　The following devices are supported by the uscanner(4) driver:
+
+-   Acer Acerscan 320U
+
+-   Acer Acerscan 620U
+
+-   Acer Acerscan 640U
+
+-   Acer Acerscan 640BT
+
+-   Acer Acerscan 1240U
+
+-   Acer Acerscan C310U
+
+-   AGFA SnapScan 1212U
+
+-   AGFA SnapScan 1236U
+
+-   AGFA SnapScan e20
+
+-   AGFA SnapScan e25
+
+-   AGFA SnapScan e26
+
+-   AGFA SnapScan e40
+
+-   AGFA SnapScan e50
+
+-   AGFA SnapScan e52
+
+-   AGFA SnapScan Touch
+
+-   Avision 1200U
+
+-   Canon CanoScan D660U
+
+-   Canon CanoScan N656U
+
+-   Canon CanoScan N676U
+
+-   Canon CanoScan N1220U
+
+-   Canon CanoScan LIDE 20
+
+-   Canon CanoScan LIDE 25
+
+-   Canon CanoScan LIDE 30
+
+-   Epson Perfection 610
+
+-   Epson Perfection 636U / 636Photo
+
+-   Epson Perfection 640U
+
+-   Epson Perfection 1200U / 1200Photo
+
+-   Epson Perfection 1240U / 1240Photo
+
+-   Epson Perfection 1250
+
+-   Epson Perfection 1260
+
+-   Epson Perfection 1270
+
+-   Epson Expression 1600
+
+-   Epson Perfection 1640SU
+
+-   Epson Perfection 1650
+
+-   Epson Perfection 1660
+
+-   Epson Perfection 1670
+
+-   Epson Perfection 2480
+
+-   Epson Perfection 3200
+
+-   Epson Perfection 3500
+
+-   Epson Perfection 3590
+
+-   Epson Perfection 4200
+
+-   Epson Perfection 4990
+
+-   Epson GT-8400UF
+
+-   Epson GT-9300UF
+
+-   Epson GT-9700F
+
+-   Epson Stylus Photo RX425
+
+-   Epson Stylus CX3650
+
+-   Hewlett Packard Photosmart S20
+
+-   Hewlett Packard Scanjet 2200C
+
+-   Hewlett Packard Scanjet 3300C
+
+-   Hewlett Packard Scanjet 3400CSE
+
+-   Hewlett Packard Scanjet 4100C
+
+-   Hewlett Packard Scanjet 4200C
+
+-   Hewlett Packard Scanjet 4300C
+
+-   Hewlett Packard Scanjet 5200C
+
+-   Hewlett Packard Scanjet 5300C
+
+-   Hewlett Packard Scanjet 5400C
+
+-   Hewlett Packard Scanjet 6200C
+
+-   Hewlett Packard Scanjet 6300C
+
+-   Hewlett Packard Scanjet 8200C
+
+-   Hewlett Packard Scanjet 8250C
+
+-   Hewlett Packard Scanjet 8290C
+
+-   KYE ColorPage Vivid-Pro
+
+-   Microtek Phantom 336CX
+
+-   Microtek Phantom C6
+
+-   Microtek ScanMaker V6UL
+
+-   Microtek ScanMaker V6USL
+
+-   Microtek ScanMaker X6U
+
+-   Minolta 5400
+
+-   Mustek 600 CU
+
+-   Mustek 1200 CU
+
+-   Mustek 1200 UB
+
+-   Mustek 1200 USB
+
+-   Mustek BearPaw 1200F
+
+-   Mustek BearPaw 1200TA
+
+-   NatSemi BearPaw 1200
+
+-   Nikon CoolScan LS40 ED
+
+-   Primax 6200
+
+-   Primax Colorado 1200u
+
+-   Primax Colorado 600u
+
+-   Primax Colorado USB 19200
+
+-   Primax Colorado USB 9600
+
+-   Primax G2-200
+
+-   Primax G2-300
+
+-   Primax G2-600
+
+-   Primax G2600
+
+-   Primax G2E-300
+
+-   Primax G2E-3002
+
+-   Primax G2E-600
+
+-   Primax G2E600
+
+-   Primax G2X-300
+
+-   Primax G600
+
+-   Primax ReadyScan 636i
+
+-   Ultima 1200 UB Plus
+
+-   UMAX Astra 1220U
+
+-   UMAX Astra 1236U
+
+-   UMAX Astra 2000U
+
+-   UMAX Astra 2100U
+
+-   UMAX Astra 2200U
+
+-   UMAX Astra 3400
+
+-   Visioneer OneTouch 3000
+
+-   Visioneer OneTouch 5300
+
+-   Visioneer OneTouch 7600
+
+-   Visioneer OneTouch 6100
+
+-   Visioneer OneTouch 6200
+
+-   Visioneer OneTouch 8100
+
+-   Visioneer OneTouch 8600
+
+　　The umass(4) driver supports USB Mass Storage devices, including:
+
+-   ADTEC Stick Drive AD-UST32M, 64M, 128M, 256M
+
+-   Denno FireWire/USB2 Removable 2.5-inch HDD Case MIFU-25CB20
+
+-   FujiFilm Zip USB Drive ZDR100 USB A
+
+-   GREEN HOUSE USB Flash Memory "PicoDrive" GH-UFD32M, 64M, 128M
+
+-   IBM 32MB USB Memory Key (P/N 22P5296)
+
+-   IBM 256MB USB Drive (MSYSTEM DiskOnKey2)
+
+-   IBM ThinkPad USB Portable CD-ROM Drive (P/N 33L5151)
+
+-   I-O DATA USB CD/CD-R/CD-RW/DVD-R/DVD-RW/DVD-RAM/DVD-ROM Drive
+    DVR-iUH2 (CDROM, DVD-RAM only)
+
+-   I-O DATA USB x6 CD-RW Drive CDRW-i64/USB (CDROM only)
+
+-   I-O DATA USB/IEEE1394 Portable HD Drive HDP-i30P/CI, HDP-i40P/CI
+
+-   Iomega USB Zip 100/250 drive
+
+-   Iomega Zip750 USB2.0 drive
+
+-   Keian USB1.1/2.0 3.5-inch HDD Case KU350A
+
+-   Kurouto Shikou USB 2.5-inch HDD Case GAWAP2.5PS-USB2.0
+
+-   LaCie P3 HardDrive USB 200GB
+
+-   Logitec LDR-H443U2 DVD-RAM/-R/+R/-RW/+RW drive
+
+-   Logitec Mobile USB Memory LMC-256UD
+
+-   Logitec USB1.1/2.0 HDD Unit SHD-E60U2
+
+-   Logitec USB Double-Speed Floppy Drive LFD-31U2
+
+-   Logitec USB/IEEE1394 DVD-RAM/R/RW Unit LDR-N21FU2 (CDROM only)
+
+-   MELCO USB Flash Disk "ClipDrive", RUF-C32M, -C64M, -C128M, -C256M,
+    -C512M
+
+-   MELCO USB Flash Disk "PetitDrive", RUF-32M, -64M, -128M, -256Mm
+
+-   MELCO USB2.0 Flash Disk "PetitDrive2", RUF-256M/U2, -512M/U2
+
+-   MELCO USB2.0 MO Drive MO-CH640U2
+
+-   Matshita CF-VFDU03 floppy drive
+
+-   Merlin SM300 MP3/WMA Player (256Mb)
+
+-   Microtech International, Inc. USB-SCSI-HD 50 USB to SCSI cable
+
+-   Motorola E398 Mobile Phone (TransFlash memory card)
+
+-   NOVAC USB2.0 2.5/3.5-inch HDD Case NV-HD351U
+
+-   PNY Attache Flash Drive
+
+-   Panasonic ("Matshita FDD CF-VFDU03")
+
+-   Panasonic KXL-CB20AN Portable DVD-ROM/CD-R/RW
+
+-   Panasonic KXL-CB35AN (DVD-ROM & CD-R/RW)
+
+-   Panasonic USB2.0 Portable CD-RW Drive KXL-RW40AN (CDROM only)
+
+-   Panasonic floppy drive
+
+-   Qware BeatZkey! Pro
+
+-   RATOC Systems USB2.0 Removable HDD Case U2-MDK1, U2-MDK1B
+
+-   SanDisk SDDR-31 (Compact Flash)
+
+-   SanDisk SDDR-75 (only Compact Flash port works)
+
+-   Sitecom CN-300 MultiFlash (MMC/SD, SmartMedia, CF, MemoryStick)
+
+-   Sony Portable CD-R/RW Drive CRX10U (CDROM only)
+
+-   TEAC Portable USB CD-ROM Unit CD-110PU/210PU
+
+-   Time DPA20B MP3 Player (1Gb)
+
+-   Trek Thumbdrive 8MB
+
+-   VAIO floppy drive (includes Y-E Data Flashbuster-U)
+
+-   Y-E Data floppy drive (720/1.44/2.88Mb)
+
+　　Among the supported digital cameras are:
+
+-   Asahi Optical (PENTAX) Optio 230 & 330
+
+　　声音设备 ( uaudio(4) 驱动程序)
+
+　　The uvisor(4) driver supports the following devices:
+
+-   Aceeca Mez1000 RDA
+
+-   Handspring Treo
+
+-   Handspring Treo 600
+
+-   Handspring Visor
+
+-   Palm I705
+
+-   Palm M125
+
+-   Palm M130
+
+-   Palm M500
+
+-   Palm M505
+
+-   Palm M515
+
+-   Palm Tungsten T
+
+-   Palm Tungsten Z
+
+-   Palm Zire
+
+-   Palm Zire 31
+
+-   Sony Clie 4.0
+
+-   Sony Clie 4.1
+
+-   Sony Clie 5.0
+
+-   Sony Clie PEG-S500C
+
+-   Sony Clie NX60
+
+-   Sony Clie S360
+
+-   Sony Clie TJ37
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.13 IEEE 1394 (火线) 设备
+
+　　The fwohci(4) driver provides support for PCI/CardBus FireWire
+interface cards. The driver supports the following IEEE 1394 OHCI
+chipsets:
+
+-   Adaptec AHA-894x/AIC-5800
+
+-   Apple Pangea
+
+-   Apple UniNorth
+
+-   Intel 82372FB
+
+-   IOGEAR GUF320
+
+-   Lucent / Agere FW322/323
+
+-   NEC uPD72861
+
+-   NEC uPD72870
+
+-   NEC uPD72871/2
+
+-   NEC uPD72873
+
+-   NEC uPD72874
+
+-   National Semiconductor CS4210
+
+-   Ricoh R5C551
+
+-   Ricoh R5C552
+
+-   Sony CX3022
+
+-   Sony i.LINK (CXD1947)
+
+-   Sony i.LINK (CXD3222)
+
+-   Sun PCIO-2 (RIO 1394)
+
+-   Texas Instruments PCI4410A
+
+-   Texas Instruments PCI4450
+
+-   Texas Instruments PCI4451
+
+-   Texas Instruments TSB12LV22
+
+-   Texas Instruments TSB12LV23
+
+-   Texas Instruments TSB12LV26
+
+-   Texas Instruments TSB43AA22
+
+-   Texas Instruments TSB43AB21/A/AI/A-EP
+
+-   Texas Instruments TSB43AB22/A
+
+-   Texas Instruments TSB43AB23
+
+-   Texas Instruments TSB82AA2
+
+-   VIA Fire II (VT6306)
+
+　　串行总线协议 2 (SBP-2) 存储设备 ( sbp(4) 驱动程序)
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.14 蓝牙设备
+
+　　The ng_bt3c(4) driver provides support for the 3Com/HP 3CRWB6096-A
+PCCARD bluetooth adapter.
+
+　　The ng_ubt(4) driver supports all Bluetooth USB devices that conform
+with the Bluetooth specification v1.1, including:
+
+-   3Com 3CREB96
+
+-   AIPTEK BR0R02
+
+-   EPoX BT-DG02
+
+-   Mitsumi Bluetooth USB adapter
+
+-   MSI MS-6967
+
+-   TDK Bluetooth USB adapter
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.15 密码学加速器
+
+　　The hifn(4) driver supports various cards containing the Hifn 7751,
+7951, 7811, 7955, and 7956 chipsets, such as:
+
+-   Invertex AEON
+
+-   Hifn 7751
+
+-   PowerCrypt
+
+-   XL-Crypt
+
+-   NetSec 7751
+
+-   Soekris Engineering vpn1201 and vpn1211
+
+-   Soekris Engineering vpn1401 and vpn1411
+
+　　The safe(4) driver supports cards containing any of the following
+chips:
+
+-   SafeNet 1141
+
+-   SafeNet 1741
+
+　　The ubsec(4) driver supports cards containing any of the following
+chips:
+
+-   Bluesteel 5501
+
+-   Bluesteel 5601
+
+-   Broadcom BCM5801
+
+-   Broadcom BCM5802
+
+-   Broadcom BCM5805
+
+-   Broadcom BCM5820
+
+-   Broadcom BCM5821
+
+-   Broadcom BCM5822
+
+-   Broadcom BCM5823
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.16 其他
+
+　　FAX-Modem/PCCARD
+
+-   MELCO IGM-PCM56K/IGM-PCM56KH
+
+-   Nokia Card Phone 2.0 (gsm900/dcs1800 HSCSD 终端)
+
+　　软驱 ( fdc(4) 驱动程序)
+
+　　VGA-兼容 显示卡 ( vga(4) 驱动程序)
+
+  注意: 关于特定显卡与 Xorg 的兼容信息， 可以在 http://www.x.org/ 找到。
+
+　　键盘包括：
+
+-   AT-风格的 键盘 ( atkbd(4) 驱动程序)
+
+-   PS/2 键盘 ( atkbd(4) 驱动程序)
+
+-   USB 键盘 ( ukbd(4) 驱动程序)
+
+　　定点设备包括：
+
+-   总线鼠标和兼容设备 ( mse(4) 驱动程序)
+
+-   PS/2 鼠标和兼容设备， 也包括一系列笔记本定点设备 ( psm(4) 驱动程序)
+
+-   串口鼠标和兼容设备
+
+-   USB 鼠标 ( ums(4) 驱动程序)
+
+  注意: moused(8) 提供了如何在 FreeBSD 中使用定点设备的进一步信息。
+  关于如何在 Xorg 中使用这类设备的信息， 可以在 http://www.x.org/ 找到。
+
+　　“PC 标准” 并口 ( ppc(4) 驱动程序)
+
+　　PC-兼容 游戏杆 ( joy(4) 驱动程序)
+
+　　PHS Data Communication Card/PCCARD
+
+-   NTT DoCoMo P-in Comp@ct
+
+-   Panasonic KX-PH405
+
+-   SII MC-P200
+
+　　基于 Xilinx XC6200 的可重配置硬件卡， 与 Virtual Computers 的 HOT1
+兼容 (xrpu 驱动程序)。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+这份文档，以及其他与FreeBSD发行版本有关的文档，都可以在
+http://www.FreeBSD.org/snapshots/下载。
+
+在遇到关于FreeBSD的技术问题时，请首先阅读 文档 之后再考虑联系
+<questions@FreeBSD.org>。
+
+所有 FreeBSD 6.2-STABLE 的用户都应该订阅 <stable@FreeBSD.org> 邮件列表。
+
+关于这份文档的任何问题，请致信 <doc@FreeBSD.org>。

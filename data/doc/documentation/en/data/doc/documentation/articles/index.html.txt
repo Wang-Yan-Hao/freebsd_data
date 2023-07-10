@@ -1,0 +1,199 @@
+
+Articles
+
+FreeBSD Documentation
+
+[Choose language]
+
+FreeBSD is an operating system used to power modern servers, desktops,
+and embedded platforms.
+
+ 
+
+Articles
+
+Explore a comprehensive list of FreeBSD articles.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+-   Contributing to FreeBSD
+
+    How to contribute to the FreeBSD Project
+
+-   Committer's Guide
+
+    Introductory information for FreeBSD committers
+
+-   Build Your Own FreeBSD Update Server
+
+    Building your own freebsd-update server allows a system
+    administrator to perform fast updates for a number of machines from
+    a local mirror
+
+-   Building Products with FreeBSD
+
+    How FreeBSD can help you build a better product
+
+-   Contributors to FreeBSD
+
+    A list of organizations and individuals who have contributed to
+    FreeBSD
+
+-   CUPS on FreeBSD
+
+    How to install and use CUPS on FreeBSD
+
+-   Design elements of the FreeBSD VM system
+
+    An easy to follow description of the design of the FreeBSD virtual
+    memory system
+
+-   Explaining BSD
+
+    Brief explanation about BSD
+
+-   Filtering Bridges
+
+    Configuring firewalls and filtering on FreeBSD hosts acting as
+    bridges rather than routers
+
+-   Fonts and FreeBSD
+
+    A description of the various font technologies in FreeBSD, and how
+    to use them with different programs
+
+-   For People New to Both FreeBSD and UNIX®
+
+    Introduction for people new to both FreeBSD and UNIX®
+
+-   FreeBSD and Solid State Devices
+
+    The use of solid state disk devices in FreeBSD
+
+-   FreeBSD Licensing Policy
+
+-   FreeBSD Quickstart Guide for Linux® Users
+
+    This document is intended to quickly familiarize intermediate to
+    advanced Linux® users with the basics of FreeBSD.
+
+-   FreeBSD Release Engineering
+
+    Describes the approach used by the FreeBSD release engineering team
+    to make production quality releases of the FreeBSD Operating System.
+    It describes the tools available for those interested in producing
+    customized FreeBSD releases for corporate rollouts or commercial
+    productization
+
+-   FreeBSD Status Report Process
+
+    Instructions for both writers and editors of status reports
+
+-   FreeBSD Support for Leap Seconds
+
+    A short description of how leap seconds are handled on FreeBSD
+
+-   Frequently Asked Questions About The FreeBSD Mailing Lists
+
+    How to best use the mailing lists, such as how to help avoid
+    frequently-repeated discussions
+
+-   How to get Best Results from the FreeBSD-questions Mailing List
+
+    How to get Best Results from the FreeBSD-questions Mailing List
+
+-   Implementing UFS Journaling on a Desktop PC
+
+    Implementing UFS Journaling on a Desktop PC
+
+-   Independent Verification of IPsec Functionality in FreeBSD
+
+    Independent Verification of IPsec Functionality in FreeBSD
+
+-   Introduction to NanoBSD
+
+    This document provides information about the NanoBSD tools, which
+    can be used to create FreeBSD system images for embedded
+    applications, suitable for use on a USB key, memory card or other
+    mass storage media.
+
+-   LDAP Authentication
+
+    Guide for the configuration of an LDAP server for authentication on
+    FreeBSD
+
+-   Legacy FreeBSD Release Engineering
+
+    This paper describes the approach previously used by the FreeBSD
+    release engineering team to make production quality releases of the
+    FreeBSD Operating System
+
+-   Linux® emulation in FreeBSD
+
+    A technical description about the internals of the Linux emulation
+    layer in FreeBSD
+
+-   Mirroring FreeBSD
+
+    The all in one guide for mirroring the FreeBSD website, FTP servers,
+    and more
+
+-   OpenPGP Keys
+
+    List of OpenPGP keys that can be used to verify a signature or send
+    encrypted email to FreeBSD.org officers or developers.
+
+-   Pluggable Authentication Modules
+
+    A guide to the PAM system and modules under FreeBSD
+
+-   Port Mentor Guidelines
+
+    Port Mentor Guidelines for FreeBSD Mentors
+
+-   Practical rc.d scripting in BSD
+
+    A guide to writing new rc.d scripts and understanding those already
+    written
+
+-   Problem Report Handling Guidelines
+
+    These guidelines describe recommended handling practices for FreeBSD
+    Problem Reports (PRs).
+
+-   Remote Installation of the FreeBSD Operating System Without a Remote
+    Console
+
+    Describes the remote installation of the FreeBSD operating system
+    when the console of the remote system is unavailable
+
+-   Serial and UART Tutorial
+
+    Detailed information about the use of serial ports and UART with
+    FreeBSD
+
+-   The vinum Volume Manager
+
+    The vinum Volume Manager in FreeBSD
+
+-   Use Language Servers for Development in the FreeBSD Src Tree
+
+    Use Language Servers for development in the FreeBSD src tree to get
+    precise go-to-definition and completion results.
+
+-   Why you should use a BSD style license for your Open Source Project
+
+    Why you should use a BSD style license for your Open Source Project
+
+-   Writing a GEOM Class
+
+    A guide to GEOM internals, and writing your own GEOM class
+
+-   Writing FreeBSD Problem Reports
+
+    How to best formulate and submit a problem report to the FreeBSD
+    Project
+

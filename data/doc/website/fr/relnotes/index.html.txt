@@ -1,0 +1,169 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   A propos
+-   Fonctionnalités
+-   Applications
+-   Prosélytisme
+-   Marketing
+-   Administration
+-   Nouvelles du projet
+-   Événements
+-   Presse
+-   Ressources artistiques
+-   Logo
+-   Donations
+-   Legal Notices
+-   Politique de confidentialité
+
+Documentation sur les versions
+
+[daemon BSD lisant de la documentation]
+
+Chaque distribution de FreeBSD inclut plusieurs fichiers de
+documentation décrivant les particularités de la distribution (RELEASE,
+SNAPSHOTs, etc.). Ces fichiers sont typiquement les suivants :
+
+-   README : Introduction générale.
+
+-   Notes de version : Informations sur les différences avec la version
+    précédente de FreeBSD.
+
+-   Notes sur la compatibilité matériel : Une liste de matériel
+    fonctionnant avec FreeBSD.
+
+-   Instructions d’installation : un bref descriptif de l’installation
+    de FreeBSD.
+
+-   Errata : Les toutes dernières informations, les correctifs, les avis
+    de sécurité ainsi que les éventuels problèmes mis au jour après
+    chaque version.
+
+Les fichiers Release Notes, Hardware Notes et Installation Instructions
+sont spécifiques à chaque type d’architecture supportée par FreeBSD.
+
+Versions RELEASE de FreeBSD
+
+Les fichiers de RELEASE pour chaque version de FreeBSD (par exemple,
+12.0-RELEASE) peuvent être consultés sur cette page du site web de
+FreeBSD ainsi que sur les serveurs miroirs.
+
+Ces fichiers (généralement aux formats Texte et HTML) sont disponibles à
+la racine de chaque distribution (que ce soit sur le CD-ROM, sur le site
+FTP ou sur les disquettes d’installation).
+
+Instantanés FreeBSD
+
+Les fichiers de documentation pour les instantanés sont disponibles à la
+racine du répertoire de l’instantané.
+
+Documentation pour -CURRENT et -STABLE
+
+Des versions HTML auto-générées des fichiers de documentation "release"
+pour FreeBSD -CURRENT et -STABLE sont disponibles sur le site web
+FreeBSD. Ces fichiers évoluent en permanence; ils sont mis à jour en
+même temps que l’actualisation du site web.
+
+Documentation pour FreeBSD -CURRENT
+
+-   README
+
+-   Release Notes
+
+-   Hardware Notes
+
+Documentation pour FreeBSD 11-STABLE
+
+-   README
+
+-   Release Notes
+
+-   Hardware Notes
+
+-   Errata
+
+Documentation pour FreeBSD 10-STABLE
+
+-   README
+
+-   Release Notes
+
+-   Hardware Notes
+
+-   Errata
+
+Autres sites
+
+Des fichiers HTML, PDF et texte des documentations de version pour
+FreeBSD -CURRENT, -STABLE et -RELEASE peuvent être consultés sur le site
+Release Documentation Snapshot Site. Les fichiers de cette page sont mis
+à jour à intervalles irréguliers mais fréquents.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26 janvier 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

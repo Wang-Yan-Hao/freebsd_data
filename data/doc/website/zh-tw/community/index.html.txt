@@ -1,0 +1,109 @@
+[FreeBSD The Power to Serve]
+
+捐贈 FreeBSD
+
+ 
+
+-   首頁
+
+-   關於
+    -   簡介
+    -   特色
+    -   宣傳
+    -   行銷
+    -   隱私政策
+    -   Projects
+    -   Ports
+
+-   取得 FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   文件
+    -   常見問題集
+    -   使用手冊
+    -   Porter 手冊
+    -   Developer 手冊
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   文件計畫入門書
+    -   所有書籍與文章
+
+-   社群
+    -   郵件論壇
+    -   論壇
+    -   愛用者組織
+    -   活動
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   開發者
+    -   計畫構想
+    -   Git 檔案庫
+    -   Subversion 檔案庫
+    -   Git 鏡像站
+    -   程式碼審查 (Phabricator)
+    -   Wiki
+    -   持續整合服務
+
+-   支援
+    -   供應商
+    -   安全資訊
+    -   問題回報
+    -   提交問題回報
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   基金會
+    -   資金捐贈
+    -   硬體捐贈
+
+-   BSD Now
+-   Discord
+-   活動
+-   論壇
+-   IRC
+-   郵件論壇
+-   Reddit
+-   Twitter
+-   愛用者組織
+-   YouTube
+
+FreeBSD 社群
+
+有超過一百個郵件論壇、數十個網頁版論壇和數個 newsgroups 。 有超過 72
+個愛用者組織分佈於全世界 32 個國家。也有一個活躍的 IRC
+社群。許多開發者也有建立關於他們 FreeBSD 開發工作的 部落格
+開發者和主要貢獻者亦共同維護一個關於 FreeBSD 開發和相關計畫資訊的
+維基網站。
+
+去年有 9 FreeBSD 活動在全世界 2 個不同國家舉辦 。近期 FreeBSD 相關活動的
+行事曆 和 RSS feed 可以查看 近期活動 頁面。有許多過往活動的影片 在
+Youtube 的 BSD Conferences 頻道。
+
+社群網站
+
+FreeBSD 亦出現於許多不同的社群網站。
+
+-   flickr 有數千張愛用者組織、會議和黑客松的照片標記 'freebsd'
+
+-   YouTube 有數百個 FreeBSD
+    相關的會議、螢幕錄影或是範影片。特別是有一個新的 BSD Conferences
+    頻道有超過一個小時 FreeBSD 會議的演講影片。
+
+-   有一個 FreeBSD Users Group 在 Facebook 和一個 FreeBSD Group 在
+    LinkedIn。
+
+-   你可以在 Twitter 追蹤 @freebsd, @freebsdhelp, @freebsdblogs, 或是
+    @freebsdcore 。
+
+------------------------------------------------------------------------
+
+Last modified on: June 19, 2021 by Danilo G. Baio
+
+法律聲明 | © 1995-2023 FreeBSD 計劃 保留所有權利。 FreeBSD 標誌是
+FreeBSD 基金會的註冊商標，由 FreeBSD 基金會授權 FreeBSD 計畫使用 The
+FreeBSD Foundation. 聯絡資訊
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

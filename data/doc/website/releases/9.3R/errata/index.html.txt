@@ -1,0 +1,484 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 9.3-RELEASE Errata
+
+Abstract
+
+This document lists errata items for FreeBSD 9.3-RELEASE, containing
+significant information discovered after the release or too late in the
+release cycle to be otherwise included in the release documentation.
+This information includes security advisories, as well as news relating
+to the software or documentation that could affect its operation or
+usability. An up-to-date version of this document should always be
+consulted before installing this version of FreeBSD.
+
+This errata document for FreeBSD 9.3-RELEASE will be maintained until
+the EoL of FreeBSD 9.3-STABLE.
+
+------------------------------------------------------------------------
+
+Table of Contents
+
+-   Introduction
+
+-   Security Advisories
+
+-   Errata Notices
+
+-   Late-Breaking News
+
+Introduction
+
+This errata document contains "late-breaking news" about FreeBSD
+9.3-RELEASE Before installing this version, it is important to consult
+this document to learn about any post-release discoveries or problems
+that may already have been found and fixed.
+
+Any version of this errata document actually distributed with the
+release (for example, on a CDROM distribution) will be out of date by
+definition, but other copies are kept updated on the Internet and should
+be consulted as the "current errata" for this release. These other
+copies of the errata are located at https://www.FreeBSD.org/releases/,
+plus any sites which keep up-to-date mirrors of this location.
+
+Source and binary snapshots of FreeBSD 9.3-STABLE also contain
+up-to-date copies of this document (as of the time of the snapshot).
+
+For a list of all FreeBSD CERT security advisories, see
+https://www.FreeBSD.org/security/.
+
+Security Advisories
+
+Problems described in the following security advisories have been fixed
+in 9.3-RELEASE. For more information, consult the individual advisories
+available from http://security.FreeBSD.org/.
+
++---------------------------+--------------------+--------------------+
+| Advisory                  | Date               | Topic              |
++===========================+====================+====================+
+| FreeBSD-SA-14:18.openssl  | 9 September 2014   | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:19.tcp      | 16 September 2014  | Denial of Service  |
+|                           |                    | in TCP packet      |
+|                           |                    | processing.        |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:20.rtsold   | 21 October 2014    | Remote buffer      |
+|                           |                    | overflow           |
+|                           |                    | vulnerability.     |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:21.routed   | 21 October 2014    | Remote denial of   |
+|                           |                    | service            |
+|                           |                    | vulnerability.     |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:22.namei    | 21 October 2014    | Memory leak in     |
+|                           |                    | sandboxed namei    |
+|                           |                    | lookup.            |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:23.openssl  | 21 October 2014    | Multiple           |
+|                           |                    | vulerabilities.    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:25.setlogin | 04 November 2014   | Kernel stack       |
+|                           |                    | disclosure.        |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:26.ftp      | 04 November 2014   | Remote code        |
+|                           |                    | execution.         |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:28.file     | 10 December 2014   | Multiple           |
+|                           |                    | vulnerabilities in |
+|                           |                    | file(1) and        |
+|                           |                    | libmagic(3)        |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:29.bind     | 10 December 2014   | Remote denial of   |
+|                           |                    | service            |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:31.ntp      | 23 December 2014   | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:01.openssl  | 14 January 2015    | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:02.kmem     | 27 January 2015    | SCTP kernel memory |
+|                           |                    | corruption and     |
+|                           |                    | disclosure         |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:03.sctp     | 27 January 2015    | SCTP stream reset  |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:04.igmp     | 25 February 2015   | Integer overflow   |
+|                           |                    | in IGMP protocol   |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:05.igmp     | 25 February 2015   | Remote denial of   |
+|                           |                    | service            |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:06.openssl  | 19 March 2015      | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:07.ntp      | 7 April 2015       | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:09.ipv6     | 7 April 2015       | Router             |
+|                           |                    | advertisement      |
+|                           |                    | Denial of Service  |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:10.openssl  | 16 June 2015       | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:11.bind     | 7 July 2015        | Resolver remote    |
+|                           |                    | denial of service  |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:13.tcp      | 21 July 2015       | resource           |
+|                           |                    | exhaustion due to  |
+|                           |                    | sessions stuck in  |
+|                           |                    | LAST_ACK state.    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:15.tcp      | 28 July 2015       | resource           |
+|                           |                    | exhaustion in TCP  |
+|                           |                    | reassembly         |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:16.openssh  | 28 July 2015       | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:17.bind     | 28 July 2015       | Remote denial of   |
+|                           |                    | service            |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:19.routed   | 5 August 2015      | Remote denial of   |
+|                           |                    | service            |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:20.expat    | 18 August 2015     | Fix multiple       |
+|                           |                    | integer overflows  |
+|                           |                    | in libbsdxml(3).   |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:21.amd64    | 25 August 2015     | Fix local          |
+|                           |                    | privilege          |
+|                           |                    | escalation in IRET |
+|                           |                    | handler.           |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:22.openssh  | 25 August 2015     | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:23.bind     | 2 September 2015   | Remote denial of   |
+|                           |                    | service            |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:24.rpcbind  | 29 September 2015  | Remote denial of   |
+|                           |                    | service            |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:25.ntp      | 26 October 2015    | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:26.openssl  | 5 December 2015    | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:27.bind     | 16 December 2015   | Remote denial of   |
+|                           |                    | service            |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:01.sctp     | 14 January 2016    | ICMPv6 error       |
+|                           |                    | message            |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:02.ntp      | 14 January 2016    | Panic threshold    |
+|                           |                    | bypass             |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:03.linux    | 14 January 2016    | Incorrect futex    |
+|                           |                    | handling           |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:04.linux    | 14 January 2016    | setgroups(2)       |
+|                           |                    | system call        |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:05.tcp      | 14 January 2016    | MD5 signature      |
+|                           |                    | denial of service  |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:06.bsnmpd   | 14 January 2016    | Insecure default   |
+|                           |                    | configuration file |
+|                           |                    | permissions        |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:07.openssh  | 14 January 2016    | OpenSSH client     |
+|                           |                    | information leak   |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:08.bind     | 27 January 2016    | Remote denial of   |
+|                           |                    | service            |
+|                           |                    | vulnerability.     |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:09.ntp      | 27 January 2016    | Multiple           |
+|                           |                    | vulnerabilities.   |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:10.linux    | 27 January 2016    | issetugid(2)       |
+|                           |                    | system call        |
+|                           |                    | vulnerability.     |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:11.openssl  | 30 January 2016    | SSLv2 cipher suite |
+|                           |                    | downgrade          |
+|                           |                    | vulnerability.     |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:12.openssl  | 7 March 2016       | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:13.bind     | 10 March 2016      | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeB                     | 16 March 2016      | OpenSSH xauth      |
+| SD-SA-16:14.openssh-xauth |                    | injection          |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:15.sysarch  | 16 March 2016      | Incorrect argument |
+|                           |                    | validation in      |
+|                           |                    | sysarch(2)         |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:09.ntp      | 29 April 2016      | Multiple ntp       |
+|                           |                    | vulnerabilities.   |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:17.openssl  | 29 April 2016      | Multiple OpenSSL   |
+|                           |                    | vulnerabilities.   |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:18.atkbd    | 17 May 2016        | Keyboard driver    |
+|                           |                    | buffer overflow    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:19.sendmsg  | 17 May 2016        | Incorrect argument |
+|                           |                    | handling in        |
+|                           |                    | sendmsg(2)         |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:20.linux    | 31 May 2016        | Kernel stack       |
+|                           |                    | disclosure in      |
+|                           |                    | Linux              |
+|                           |                    | compatibility      |
+|                           |                    | layer              |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:21.43bsd    | 31 May 2016        | Kernel stack       |
+|                           |                    | disclosure in      |
+|                           |                    | 4.3BSD             |
+|                           |                    | compatibility      |
+|                           |                    | layer              |
++---------------------------+--------------------+--------------------+
+| Fr                        | 31 May 2016        | Absolute path      |
+| eeBSD-SA-16:22.libarchive |                    | traversal          |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| Fr                        | 31 May 2016        | Absolute path      |
+| eeBSD-SA-16:23.libarchive |                    | traversal          |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:24.ntp      | 3 June 2016        | Multiple ntp       |
+|                           |                    | vulnerabilties     |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:25.bspatch  | 25 July 2016       | heap overflow      |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:26.openssl  | 23 September 2016  | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:27.openssl  | 26 September 2016  | Regression in      |
+|                           |                    | OpenSSL suite      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:28.bind     | 10 October 2016    | BIND denial of     |
+|                           |                    | service            |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:29.bspatch  | 10 October 2016    | Heap overflow      |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:30.portsnap | 10 October 2016    | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| Fr                        | 10 October 2016    | Multiple           |
+| eeBSD-SA-16:31.libarchive |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:34.bind     | 2 November 2016    | Remote Denial of   |
+|                           |                    | Service            |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:35.openssl  | 2 November 2016    | Remote Denial of   |
+|                           |                    | Service            |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:36.telnetd  | 6 December 2016    | Possible login(1)  |
+|                           |                    | argument injection |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:37.libc     | 6 December 2016    | link_ntoa(3)       |
+|                           |                    | buffer overflow    |
++---------------------------+--------------------+--------------------+
+
+Errata Notices
+
++---------------------------+--------------------+--------------------+
+| Errata                    | Date               | Topic              |
++===========================+====================+====================+
+| FreeBSD-EN-14:10.tzdata   | 21 October 2014    | Time zone data     |
+|                           |                    | file update        |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-14:11.crypt    | 21 October 2014    | Change crypt(3)    |
+|                           |                    | default hashing    |
+|                           |                    | algorithm back to  |
+|                           |                    | DES                |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-14:12.zfs      | 11 November 2014   | Fix NFSv4 and ZFS  |
+|                           |                    | cache consistency  |
+|                           |                    | issue              |
++---------------------------+--------------------+--------------------+
+| FreeBS                    | 23 December 2014   | Fixed directory    |
+| D-EN-14:13.freebsd-update |                    | deletion issue in  |
+|                           |                    | freebsd-update(8)  |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-15:01.vt       | 25 February 2015   | vt(4) crash with   |
+|                           |                    | improper ioctl     |
+|                           |                    | parameters         |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-15:02.openssl  | 25 February 2015   | OpenSSL update     |
++---------------------------+--------------------+--------------------+
+| FreeBS                    | 25 February 2015   | freebsd-update(8)  |
+| D-EN-15:03.freebsd-update |                    | updates libraries  |
+|                           |                    | in suboptimal      |
+|                           |                    | order              |
++---------------------------+--------------------+--------------------+
+| FreeBS                    | 13 May 2015        | freebsd-update(8)  |
+| D-EN-15:04.freebsd-update |                    | does not ensure    |
+|                           |                    | the previous       |
+|                           |                    | upgrade has        |
+|                           |                    | completed          |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-15:06.file     | 9 June 2015        | Multiple denial of |
+|                           |                    | service issues     |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-15:08.sendmail | 30 June 2015       | Sendmail TLS/DH    |
+|                           | (revised)          | interoperability   |
+|                           |                    | improvement        |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-15:09.xlocale  | 30 June 2015       | Fix inconsistency  |
+|                           |                    | between locale and |
+|                           |                    | rune locale states |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-15:15.pkg      | 25 August 2015     | Insufficient check |
+|                           |                    | of supported       |
+|                           |                    | pkg(7) signature   |
+|                           |                    | methods.           |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-15:18.pkg      | 16 September 2015  | Implement pubkey   |
+|                           |                    | support for pkg(7) |
+|                           |                    | bootstrap.         |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-15:19.kqueue   | 4 November 2015    | kqueue(2) write    |
+|                           |                    | events never fire  |
+|                           |                    | for files larger   |
+|                           |                    | than 2GB.          |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-15:20.vm       | 4 November 2015    | Applications       |
+|                           |                    | exiting due to     |
+|                           |                    | segmentation       |
+|                           |                    | violation on a     |
+|                           |                    | correct memory     |
+|                           |                    | address.           |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-16:02.pf       | 14 January 2016    | Invalid TCP        |
+|                           |                    | checksum issue.    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-16:03.yplib    | 14 January 2016    | YP/NIS library     |
+|                           |                    | bug.               |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-16:08.zfs      | 4 May 2016         | Memory leak in ZFS |
++---------------------------+--------------------+--------------------+
+| FreeBS                    | 25 July 2016       | Fix                |
+| D-EN-16:09.freebsd-update |                    | freebsd-update(8)  |
+|                           |                    | support of FreeBSD |
+|                           |                    | 11.0-RELEASE       |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-16:19.tzcode   | 6 December 2016    | Fix warnings about |
+|                           |                    | invalid timezone   |
+|                           |                    | abbreviations      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-16:20.tzdata   | 6 December 2016    | Update timezone    |
+|                           |                    | database           |
+|                           |                    | information        |
++---------------------------+--------------------+--------------------+
+
+Late-Breaking News
+
+No late-breaking news.
+
+------------------------------------------------------------------------
+
+Last modified on: January 31, 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

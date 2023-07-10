@@ -1,0 +1,394 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   Documentation
+-   FAQ
+-   Manuel de référence
+-   Pages de manuel
+-   Présentations et papiers
+-   Livres et articles en ligne
+-   Publications
+-   Ressources Web
+-   Pour les débutants
+-   Projet de documentation
+-   Archive
+
+Le réseau FreeBSD.org
+
+Cette page indique, pour ceux qui ont des comptes sur FreeBSD.org,
+quelles sont les ressources actuellement disponibles et à quels travaux
+elles sont destinées.
+
+Pour la liste des clefs SSH de chaque machine et leurs signatures pour
+les machines publiques de FreeBSD.org, veuillez consulter ce fichier.
+
+Tous les noms d’hôtes du domaine FreeBSD.org
+
++-----------------+-----------------+-----------------+-----------------+
+| Hôte            | Système         | Destination     | Propriétaire(s) |
++=================+=================+=================+=================+
+| beast           | 5-STABLE        | Machine Alpha   | obrien/peter    |
+|                 |                 | pour les tests  |                 |
+|                 |                 | de              |                 |
+|                 |                 | FreeBSD/alpha   |                 |
++-----------------+-----------------+-----------------+-----------------+
+| builder         | 6-STABLE        | Sources de      | committers      |
+|                 |                 | BSD/OS          |                 |
+|                 |                 | Compilation de  |                 |
+|                 |                 | la              |                 |
+|                 |                 | documentation   |                 |
+|                 |                 | FreeBSD pour le |                 |
+|                 |                 | site FTP        |                 |
++-----------------+-----------------+-----------------+-----------------+
+| freefall        | 6-STABLE        | logins          | committers      |
+|                 |                 | GNATS/shell     |                 |
++-----------------+-----------------+-----------------+-----------------+
+| ftp-master      | 4-STABLE        | ftp principal   | peter/kuriya    |
+|                 |                 |                 | ma/obrien/steve |
++-----------------+-----------------+-----------------+-----------------+
+| gohan10-17      | 6-S             | Cluster de      | équipe des      |
+|                 | TABLE/7-CURRENT | compilation des | ports           |
+|                 |                 | ports           |                 |
++-----------------+-----------------+-----------------+-----------------+
+| gohan20-39      | 6-S             | Cluster de      | équipe des      |
+|                 | TABLE/7-CURRENT | compilation des | ports           |
+|                 |                 | ports           |                 |
++-----------------+-----------------+-----------------+-----------------+
+| hub             | 4-STABLE        | Serveur de      | postmaster      |
+|                 |                 | courrier        |                 |
+|                 |                 | électronique    |                 |
++-----------------+-----------------+-----------------+-----------------+
+| mx1             | 4-STABLE        | Serveur de      | dhw/peter       |
+|                 |                 | courrier        |                 |
+|                 |                 | électronique    |                 |
+|                 |                 | entrant         |                 |
++-----------------+-----------------+-----------------+-----------------+
+| mx2             | 4-STABLE        | Serveur de      | dhw/peter       |
+|                 |                 | courrier        |                 |
+|                 |                 | électronique    |                 |
+|                 |                 | sortant         |                 |
++-----------------+-----------------+-----------------+-----------------+
+| ncvsup          | 6-STABLE        | Miroir CVSup    | kuriyama        |
+| (cvsup10)       |                 | public          |                 |
++-----------------+-----------------+-----------------+-----------------+
+| ns0             | 4-STABLE        | Serveur de noms | dg/ps/peter     |
+|                 |                 | de domaine      |                 |
+|                 |                 | FreeBSD.org     |                 |
+|                 |                 | principal       |                 |
++-----------------+-----------------+-----------------+-----------------+
+| panther         | -CURRENT        | Machine de      | committers      |
+|                 |                 | référence pour  |                 |
+|                 |                 | tester les      |                 |
+|                 |                 | changements sur |                 |
+|                 |                 | sparc64         |                 |
++-----------------+-----------------+-----------------+-----------------+
+| pluto1          | -CURRENT        | Machine de      | committers      |
+|                 |                 | référence pour  |                 |
+|                 |                 | tester les      |                 |
+|                 |                 | changements sur |                 |
+|                 |                 | ia64            |                 |
++-----------------+-----------------+-----------------+-----------------+
+| pluto2          | 6-STABLE        | Machine de      | committers      |
+|                 |                 | référence pour  |                 |
+|                 |                 | tester les      |                 |
+|                 |                 | changements sur |                 |
+|                 |                 | ia64            |                 |
++-----------------+-----------------+-----------------+-----------------+
+| pointyhat       | -CURRENT        | Contrôleur de   | équipe des      |
+|                 |                 | la compilation  | ports           |
+|                 |                 | des paquets de  |                 |
+|                 |                 | toutes les      |                 |
+|                 |                 | architectures   |                 |
++-----------------+-----------------+-----------------+-----------------+
+| ref4            | 4-STABLE        | Machine de      | committers      |
+|                 |                 | référence pour  |                 |
+|                 |                 | tester les      |                 |
+|                 |                 | changements     |                 |
+|                 |                 | relatifs à la   |                 |
+|                 |                 | branche         |                 |
+|                 |                 | 4-STABLE        |                 |
++-----------------+-----------------+-----------------+-----------------+
+| ref5            | 5-CURRENT       | Machine de      | committers      |
+|                 |                 | référence pour  |                 |
+|                 |                 | tester les      |                 |
+|                 |                 | changements     |                 |
+|                 |                 | relatifs à la   |                 |
+|                 |                 | branche         |                 |
+|                 |                 | 5-CURRENT       |                 |
++-----------------+-----------------+-----------------+-----------------+
+| repoman         | 4-STABLE        | Dépôt CVS       | peter           |
+|                 |                 | principal       |                 |
++-----------------+-----------------+-----------------+-----------------+
+| sledge          | -CURRENT        | Machine de      | committers      |
+|                 |                 | référence pour  |                 |
+|                 |                 | tester les      |                 |
+|                 |                 | changements sur |                 |
+|                 |                 | amd64           |                 |
++-----------------+-----------------+-----------------+-----------------+
+| spit            | 6-STABLE        | Miroir CVSup    | kuriyama        |
+| (cvsup-master)  |                 | principal       |                 |
++-----------------+-----------------+-----------------+-----------------+
+| www             | 4-STABLE        | Serveur Web     | webmaster       |
++-----------------+-----------------+-----------------+-----------------+
+
+Configurations matérielles
+
++----------------------+----------------------+-----------------------+
+| Hôte                 | Type                 | Matériel              |
++======================+======================+=======================+
+| beast                | API UP2000           | Bi-Alpha 21264 à 833  |
+|                      |                      | MHz avec 8 Mo de      |
+|                      |                      | cache L2, 2 Go de     |
+|                      |                      | mémoire vive,         |
+|                      |                      | contrôleur SCSI       |
+|                      |                      | Adaptec 2940U2W, 2    |
+|                      |                      | disques SCSI U160,    |
+|                      |                      | carte réseau 3COM     |
+|                      |                      | 3c905B.               |
++----------------------+----------------------+-----------------------+
+| builder              | Intel x86            | Pentium III à 800     |
+|                      |                      | MHz, 512 Mo de        |
+|                      |                      | mémoire vive, disque  |
+|                      |                      | dur ATA Seagate de 40 |
+|                      |                      | Go, carte réseau      |
+|                      |                      | Intel EtherExpress    |
+|                      |                      | Pro 10/100B.          |
++----------------------+----------------------+-----------------------+
+| freefall             | Intel x86            | Pentium III à 800     |
+|                      |                      | MHz, 1024 Mo de       |
+|                      |                      | mémoire vive,         |
+|                      |                      | contrôleur SCSI PCI   |
+|                      |                      | RAID Mylex DAC960, 5  |
+|                      |                      | disques SCSI U2W de   |
+|                      |                      | 18 Go, carte réseau   |
+|                      |                      | Intel EtherExpress    |
+|                      |                      | Pro 10/100B.          |
++----------------------+----------------------+-----------------------+
+| gohan10-17           | Intel x86            | Pentium III à 800MHz, |
+|                      |                      | 512 Mo de mémoire     |
+|                      |                      | vive, contrôleur      |
+|                      |                      | ATA66 Intel ICH, 1    |
+|                      |                      | disque ATA66 de 30    |
+|                      |                      | Go, carte réseau      |
+|                      |                      | Intel EtherExpress    |
+|                      |                      | Pro 10/100B.          |
++----------------------+----------------------+-----------------------+
+| gohan20-39           |                      |                       |
++----------------------+----------------------+-----------------------+
+| hub                  | Intel x86            | Bi-Pentium III à 600  |
+|                      |                      | MHz, 1 Go de mémoire  |
+|                      |                      | vive, contrôleur SCSI |
+|                      |                      | PCI RAID Mylex        |
+|                      |                      | DAC960, 3 disques     |
+|                      |                      | SCSI WIDE de 9 Go,    |
+|                      |                      | carte réseau Intel    |
+|                      |                      | EtherExpress Pro      |
+|                      |                      | 10/100B.              |
++----------------------+----------------------+-----------------------+
+| mx2                  | Intel x86            | Pentium III FC-PGA à  |
+|                      |                      | 800MHz, 512 Mo de     |
+|                      |                      | mémoire vive,         |
+|                      |                      | contrôleur SCSI LSI   |
+|                      |                      | 53C1010 U160, 1       |
+|                      |                      | disque SCSI 10K RPM   |
+|                      |                      | U160 de 18 Go, carte  |
+|                      |                      | réseau Intel          |
+|                      |                      | EtherExpress Pro      |
+|                      |                      | 10/100B.              |
++----------------------+----------------------+-----------------------+
+| panther              | Carte mère OEM ATX   | UltraSparc-IIi à 300  |
+|                      | Panther              | MHz, 512 Mo de        |
+|                      |                      | mémoire vive, 2       |
+|                      |                      | disques SCSI 10K RPM  |
+|                      |                      | Ultra2 de 9 Go, carte |
+|                      |                      | réseau Sun HME        |
+|                      |                      | 10/100B.              |
++----------------------+----------------------+-----------------------+
+| pluto1, pluto2       | HP rx2600 (IA-64)    | Bi-Itanium2           |
+|                      |                      | (McKinley) à 900      |
+|                      |                      | MHz - chipset HP zx1  |
+|                      |                      | (pluto), 2048 Mo de   |
+|                      |                      | mémoire vive          |
+|                      |                      | (seulement 1024 Mo    |
+|                      |                      | activés), contrôleur  |
+|                      |                      | SCSI LSILogic 1030    |
+|                      |                      | U320 (mpt), disque    |
+|                      |                      | SCSI 10K RPM U160 de  |
+|                      |                      | 36 Go, carte réseau   |
+|                      |                      | Broadcom BCM5701      |
+|                      |                      | 10/100/1000.          |
++----------------------+----------------------+-----------------------+
+| pointyhat            | Intel x86 MP         | Bi-Pentium III à 1266 |
+|                      |                      | MHz, 2048 Mo de       |
+|                      |                      | mémoire vive,         |
+|                      |                      | contrôleur IDE 3ware  |
+|                      |                      | 4-port (twe), 4       |
+|                      |                      | disques UltraATA de   |
+|                      |                      | 160 Go en RAID 1+0.   |
+|                      |                      | Carte réseau Intel    |
+|                      |                      | EtherExpress Pro      |
+|                      |                      | 10/100B.              |
++----------------------+----------------------+-----------------------+
+| ref4                 | Intel x86            | Celeron FC-PGA à 500  |
+|                      |                      | MHz, 512 Mo de        |
+|                      |                      | mémoire vive, 1       |
+|                      |                      | disque IDE de 30 Go,  |
+|                      |                      | carte réseau Intel    |
+|                      |                      | EtherExpress Pro      |
+|                      |                      | 10/100B.              |
++----------------------+----------------------+-----------------------+
+| ref5                 | Intel x86            | Celeron FC-PGA à 500  |
+|                      |                      | MHz, 512 Mo de        |
+|                      |                      | mémoire vive, 1       |
+|                      |                      | disque IDE de 20 Go,  |
+|                      |                      | carte réseau Intel    |
+|                      |                      | EtherExpress Pro      |
+|                      |                      | 10/100B.              |
++----------------------+----------------------+-----------------------+
+| sledge               | Rioworks HDAMA       | Bi-Opteron 244 à 1.8  |
+|                      | (AMD64)              | GHz - chipset AMD     |
+|                      |                      | 8111/8131, 8192 Mo de |
+|                      |                      | mémoire vive, disque  |
+|                      |                      | IDE Seagate ST340014A |
+|                      |                      | de 40 Go, carte       |
+|                      |                      | réseau Broadcom       |
+|                      |                      | BCM5703 10/100/1000.  |
++----------------------+----------------------+-----------------------+
+
+Toutes les machines sont connectées à 100 Mbit/sec en full-duplex sur un
+switch Cisco 2948G dedié avec des liaisons montantes gigabit
+redondantes. L’accès à Internet et l’hébergement sont fournis par
+Yahoo!. Tous les systèmes ont des consoles séries et une commande
+d’alimentation à distance.
+
+Cluster de compilation des ports en Corée
+
++-----------------+-----------------+-----------------+-----------------+
+| Hôte            | Système         | Destination     | Propriétaire(s) |
++=================+=================+=================+=================+
+| dalki, dosirak, | 5-CURRENT       | Cluster de      | équipe des      |
+| haessal         |                 | compilation des | ports           |
+|                 |                 | ports           |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+Configurations matérielles
+
++----------------------+----------------------+-----------------------+
+| Hôte                 | Type                 | Matériel              |
++======================+======================+=======================+
+| dalki, haessal       | Intel x86            | Bi-Pentium 4 Xeon à   |
+|                      |                      | 2.20 GHz, 2 Go de     |
+|                      |                      | mémoire vive,         |
+|                      |                      | contrôleur SCSI       |
+|                      |                      | Adaptec aic7899       |
+|                      |                      | Ultra160, disque      |
+|                      |                      | SCSI-3 de 36 Go, 2    |
+|                      |                      | cartes réseau Intel   |
+|                      |                      | EtherExpress Pro      |
+|                      |                      | 10/100B NIC.          |
++----------------------+----------------------+-----------------------+
+| dosirak              | Intel x86            | Bi-Pentium 4 Xeon à   |
+|                      |                      | 2.20 GHz, 4 Go de     |
+|                      |                      | mémoire vive,         |
+|                      |                      | contrôleur SCSI       |
+|                      |                      | Adaptec aic7899       |
+|                      |                      | Ultra160, disque      |
+|                      |                      | SCSI-3 de 36 Go, 2    |
+|                      |                      | cartes réseau Intel   |
+|                      |                      | EtherExpress Pro      |
+|                      |                      | 10/100B NIC.          |
++----------------------+----------------------+-----------------------+
+
+Toutes les machines sont connectées à 100 Mbit/sec en full-duplex sur un
+switch Cisco 2950G dedié avec des liaisons montantes gigabit
+redondantes. L’accès à Internet et l’hébergement sont fournis par Yahoo!
+Corée et KIDC. Les machines sont fournies par eSlim Corée.
+
+Politique d’administration
+
+Si une machine "appartient" à une personne spécifique, veuillez
+directement vous adresser à elle pour les questions d’administration, y
+compris pour les comptes utilisateurs ou bien l’architecture du système
+de fichiers.
+
+Tous les nouveaux comptes utilisateurs doivent être accepter par
+l’équipe d’administration, admin@FreeBSD.org et ne sont ouverts qu’aux
+développeurs FreeBSD, soit pour la documentation, soit pour les
+logiciels portés, soit pour la contribution au code source en général.
+Des comptes peuvent être accordés à des développeurs n’appartenant pas
+au projet s’ils font des développements vraiment expérimentaux et qu’ils
+ont besoin d’un accès à une machine FreeBSD dans ce but. En revanche,
+aucun compte n’est ouvert au grand public pour l’orgueil d’avoir une
+adresse de courrier électronique en "freebsd.org" ou autre raison du
+même genre. Ce serait une perte de temps de demander. Merci.
+
+Les coulisses de FreeBSD
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26 janvier 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

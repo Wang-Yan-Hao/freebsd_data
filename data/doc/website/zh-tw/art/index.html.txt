@@ -1,0 +1,139 @@
+[FreeBSD The Power to Serve]
+
+捐贈 FreeBSD
+
+ 
+
+-   首頁
+
+-   關於
+    -   簡介
+    -   特色
+    -   宣傳
+    -   行銷
+    -   隱私政策
+    -   Projects
+    -   Ports
+
+-   取得 FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   文件
+    -   常見問題集
+    -   使用手冊
+    -   Porter 手冊
+    -   Developer 手冊
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   文件計畫入門書
+    -   所有書籍與文章
+
+-   社群
+    -   郵件論壇
+    -   論壇
+    -   愛用者組織
+    -   活動
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   開發者
+    -   計畫構想
+    -   Git 檔案庫
+    -   Subversion 檔案庫
+    -   Git 鏡像站
+    -   程式碼審查 (Phabricator)
+    -   Wiki
+    -   持續整合服務
+
+-   支援
+    -   供應商
+    -   安全資訊
+    -   問題回報
+    -   提交問題回報
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   基金會
+    -   資金捐贈
+    -   硬體捐贈
+
+-   關於
+-   特色
+-   Applications
+-   宣傳
+-   行銷
+-   Administration
+-   News
+-   活動
+-   Press
+-   Artwork
+-   Logo
+-   捐贈
+-   法律聲明
+-   隱私政策
+
+FreeBSD Art
+
+-   BSD Daemon
+
+-   “Powered by FreeBSD” Logo 圖
+
+-   舊式廣告圖標
+
+-   圖形的使用
+
+本頁有各式各樣的 FreeBSD “藝術”。 如有任何建議，請寄至
+www@FreeBSD.org。請注意這些圖形的使用、授權方式]。
+
+BSD Daemon
+
+[BSD Daemon]
+
+由 Poul-Henning Kamp; 所創作
+原始圖檔：在 FreeBSD 系統的 /usr/share/examples/BSD_daemon/ 目錄。
+
+[BSD Daemon wielding a hammer] [BSD Daemon waiting tables]
+
+[BSD Daemon editing the news] [BSD Daemon reading documentation] [BSD
+Daemon delivering the latest release]
+
+“Powered by FreeBSD” Logo 圖
+
+[Powered by FreeBSD Logo] [Powered by FreeBSD Logo]
+
+[Powered by FreeBSD Logo] [Powered by FreeBSD Logo] [FreeBSD Hardware
+Partner Logo]
+
+[FreeBSD The Power To Serve Logo]
+
+[FreeBSD The Power To Serve Logo]
+
+[FreeBSD The Power To Serve Logo]
+
+[FreeBSD The Power To Serve Logo]
+
+舊式廣告圖標
+
+[Adv Banner1] [Adv Banner2]
+
+圖形的使用
+
+上面的"`Powered by FreeBSD`" Logo 圖可從這下載以及在由 FreeBSD
+機器提供服務的個人甚至商業網頁上顯示。使用這個 Logo 圖或者類似 BSD
+Daemons Logo 圖來獲利的話，需要得到 Brian Tao (“power” Logo 圖的創作者)
+和 Marshall Kirk McKusick (BSD Daemon 圖像的商標持有者) 的許可。
+
+Poul-Henning Kamp 的 BSD Daemon 圖稿則是以 “THE BEER-WARE LICENSE”
+發佈。 詳情請參閱 README
+
+------------------------------------------------------------------------
+
+Last modified on: January 26, 2021 by Sergio Carlavilla Delgado
+
+法律聲明 | © 1995-2023 FreeBSD 計劃 保留所有權利。 FreeBSD 標誌是
+FreeBSD 基金會的註冊商標，由 FreeBSD 基金會授權 FreeBSD 計畫使用 The
+FreeBSD Foundation. 聯絡資訊
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

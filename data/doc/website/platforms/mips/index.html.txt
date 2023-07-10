@@ -1,0 +1,189 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   
+-   Developer's Handbook
+-   Committer's Guide
+-   Porter's Handbook
+-   Source code repositories
+-   Release Engineering
+-   Platforms
+-   Project Ideas
+-   Contributing
+
+FreeBSD/MIPS Project
+
+Introduction
+
+This page contains information about porting FreeBSD to the MIPS®
+platform. Discussion of the MIPS port takes place on the freebsd-mips
+mailing list.
+
+Table Of Contents
+
+-   Status
+
+-   MIPS Hardware Notes
+
+-   FreeBSD/MIPS mailing list
+
+Status
+
+MIPS is a Tier 2 architecture, and as such is not fully supported by the
+FreeBSD project.
+
+FreeBSD/MIPS Hardware Notes
+
+FreeBSD/MIPS is a port of the FreeBSD operating system to platforms
+based around MIPS processors. At the moment, several MIPS32 and MIPS64
+development boards and embedded platforms are being targeted.
+
+Listing all supported devices on all CPUs and boards is impractical
+here, however much information can be obtained from the mailing list and
+archives, the FreeBSD/MIPS Wiki pages, and also from the Kernel
+Configuration files
+
+CPUs
+
+The following non-exhaustive list of CPUs and CPU families are
+supported:
+
+-   MIPS4Kc
+
+-   MIPS24Kc
+
+-   MIPS74Kc
+
+-   Atheros AR71xx, AR724x, AR91xx, AR933x, AR934x
+
+-   Cavium OCTEON
+
+-   NetLogic XLR/XLS CPU family
+
+-   SRI/Cambridge’s BERI and CHERI open-source FPGA soft-cores
+
+Note that not all peripherals are supported on all CPUs.
+
+Boards
+
+The following boards are supported:
+
+-   Ubiquiti Networks Router-Station (AR7130)
+
+-   Ubiquiti Networks Router-Station Pro (AR7161)
+
+-   Ubiquiti Networks PicoStation M2HP (AR7241)
+
+-   Ubiquiti Networks EdgeRouter Lite (OCTEON)
+
+-   TP-Link TL-WR1043ND (AR9132)
+
+-   Mikrotik RouterBoard RB450G
+
+-   Alfa Networks Hornet UB (AR933x)
+
+-   D-Link DIR-825 (AR7161)
+
+-   Atheros PB44, PB47, AP94, AP96 reference designs (AR7161)
+
+-   Atheros DB120 reference design (AR9344)
+
+-   8devices Carambola-2 (AR9330)
+
+-   Engenius ENH-200 (AR7240+AR9285)
+
+-   Buffalo Airstation WZR-300HP B0 A1
+
+-   MIPS Malta evaluation board
+
+-   Lanner MR-320, MR-730, MR-995 (OCTEON)
+
+-   Portwell CAM-0100 (OCTEON)
+
+-   Radisys AMC-7211 / ATCA-7220 (OCTEON)
+
+-   D-Link DSR-500, DSR-500N, DSR-1000 and DSR-1000N (OCTEON)
+
+-   GE Intelligent Platforms WANIC 6354 (OCTEON)
+
+-   Cavium development boards CN5860-EVB-NIC4, CN5650-EVB-NIC16,
+    CN5200-EVB-MB4
+
+Note that not all peripherals are supported on all boards.
+
+FreeBSD/MIPS mailing list
+
+Join the FreeBSD/MIPS mailing list to contribute code or learn about the
+status of the project.
+
+To subscribe to this list, send an email to
+<freebsd-mips+subscribe@FreeBSD.org> or visit the mlmmj interface.
+
+------------------------------------------------------------------------
+
+Last modified on: October 12, 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

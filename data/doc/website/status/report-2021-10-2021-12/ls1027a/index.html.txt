@@ -1,0 +1,142 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+NXP LS1028A/1027A SoC support
+
+Contact: Kornel Dulęba <mindal@semihalf.com>
+Contact: Artur Rojek <ar@semihalf.com>
+Contact: Hubert Mazur <hum@semihalf.com>
+Contact: Wojciech Macek <wma@semihalf.com>
+
+The Semihalf team has been working on adding the FreeBSD support for the
+NXP LS1028A SoC, as well as its GPU-less variant (NXP LS1027A).
+
+NXP LS1028A/LS1027A SoC is a dual-core 64-bit ARMv8 Cortex-A72
+application processor with high-speed peripherals such as 2
+Time-Sensitive Networking-capable (TSN) Ethernet controllers, quad-port
+TSN-enabled switch, PCIE, SD/MMC, USB3.0 and others.
+
+The original support was extended in the following way:
+
+-   ENETC Ethernet driver
+
+    -   Add support for PHY interrupts
+
+    -   Fix VID/mcast address hash calculation
+
+    -   Serialize MDIO transactions
+
+    -   Allow loading driver as a module
+
+-   Improvements in the FSL SDHCI driver
+
+    -   Add support for HS200/HS400 modes
+
+    -   Add full support for software reset
+
+    -   Provide more accurate clk calculation
+
+    -   Implement pulse width detection errata
+
+    -   Fix vccq reconfiguration
+
+-   FLEX SPI NOR controller driver
+
+-   Additional features:
+
+    -   TMP461 thermal sensor driver
+
+    -   PCF85063 RTC driver driver
+
+    -   TCA6408 I2C GPIO expander driver
+
+TODO:
+
+-   Improve MMC HS200/HS400 support for other SoCs using the FSL SDHCI
+    controller.
+
+Sponsor: Alstom Group
+
+------------------------------------------------------------------------
+
+Last modified on: March 10, 2022 by Joseph Mingrone
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

@@ -1,0 +1,257 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   Documentation
+-   FAQ
+-   Manuel de référence
+-   Pages de manuel
+-   Présentations et papiers
+-   Livres et articles en ligne
+-   Publications
+-   Ressources Web
+-   Pour les débutants
+-   Projet de documentation
+-   Archive
+
+Projet de documentation de FreeBSD : Projects actuels
+
+Voici les projets en cours de réalisation (ou étant sérieusement
+envisagés sur la liste de diffusion freebsd-doc). J’en ai aussi inclus
+certains dont nous n’avons pas vraiment parlé mais qui peuvent être une
+bonne idée. Pour chaque projet est indiqué la personne à contacter (si
+je sais qui s’occupe du projet).
+
+Si vous pensez que vous pouvez contribuer à l’un d’eux, n’hésitez pas à
+nous rejoindre. Vous pouvez contacter la personne qui s’occupe du projet
+en particulier, elle vous guidera et vous mettra au courant de ce qu’il
+s’y passe. Si vous avez une idée de nouveau projet, veuillez envoyer un
+courrier électronique à FreeBSD-doc@FreeBSD.org
+
+-   Rapports de problèmes dans la documentation
+
+-   Manuel de Référence, 3ème édition imprimée
+
+-   Manuel de Référence, 2ème édition imprimée (terminé)
+
+-   FreeBSD pour les utilisateurs Linux
+
+-   Écrire une section du manuel de référence ou de la FAQ
+
+-   Écrire de nouveaux articles
+
+-   Écrire de nouveaux chapitres pour le Manuel des Développeurs
+
+-   Scripts CGI
+
+-   Scripts web polyglottes
+
+-   Traductions de la documentation de FreeBSD
+
+-   Amélioration du moteur de recherche
+
+-   Documenter les réglages possibles de FreeBSD
+
+-   Écrire des pages de manuel pour le noyau
+
+Rapports de problèmes dans la documentation
+
+Les rapports de problèmes avec FreeBSD sont recueillis dans une base de
+données GNATS. Vous pouvez les consulter ici .
+
+Manuel de Référence FreeBSD, 3ème édition
+
+Responsable : Murray Stokely <murray@FreeBSD.org>
+
+Synopsis : Le travail de préparation pour la publication du Manuel de
+Référence FreeBSD a commencé. Consultez la liste complète des tâches
+pour savoir de quelle façon vous pouvez aider.
+
+Manuel de Référence FreeBSD, 2ème édition
+
+Responsable : Murray Stokely <murray@FreeBSD.org>
+
+Synopsis : Ce projet est achevé. La seconde édition du Manuel de
+Référence FreeBSD est maintenant disponible sur le site The FreeBSD
+Mall. Le manuscrit final contient 653 pages et le numéro ISBN est
+1571763031. Merci à tous ceux qui ont participé. Vous pouvez lire
+l’annonce complète ici.
+
+La liste des tâches que nous avons utilisée pendant le développement de
+ce livre est toujours archivée ici pour la postérité.
+
+FreeBSD pour les utilisateurs Linux
+
+Responsable : FreeBSD-doc <FreeBSD-doc@FreeBSD.org>
+
+Synopsis : Les utilisateurs de Linux qui migrent vers FreeBSD peuvent
+être déroutés par certaines différences entre ces systèmes (les
+différents shells par défaut, la prise en compte des paramètres de
+démarrage, etc…​).
+
+Écrire une section du manuel de référence ou de la FAQ
+
+Responsable : personne
+
+Synopsis : La FAQ et le manuel de référence ont encore des sections
+vides qui se doivent d’être comblées. Si vous avez utilisé un de ces
+document pour vous aider dans une tâche et que vous avez constaté des
+manques, prenez le temps de d’écrire vos expériences qui pourront servir
+aux autres.
+
+De même, si vous avez eu à faire une chose pour laquelle aucune entrée
+ne se trouve dans la FAQ ou le manuel, vous pouvez envisager d’écrire
+une nouvelle section. Vous pourrez alors la soumettre comme indiqué
+ci-dessus.
+
+Écrire de nouveaux articles
+
+La nouvelle couche SCSI de FreeBSD (CAM)
+
+Responsable : <doc@FreeBSD.org>, <scsi@FreeBSD.org>
+
+Synopsis : Voyez la page Conception et implémentation du sous-système
+SCSI de FreeBSD pour une première approche.
+
+Écrire de nouveaux chapitres pour le Manuel des Développeurs
+
+Responsable : <doc@FreeBSD.org>
+
+Synopsis :
+
+-   Le Manuel des Développeurs FreeBSD manque encore de contenu, merci
+    de nous aider à finir ce livre.
+
+Scripts CGI
+
+Responsable : <doc@FreeBSD.org>, Wolfram Schneider <wosch@FreeBSD.org>
+
+Synopsis : Modifier les scripts CGI url.cgi, ports.cgi, pds.cgi et le
+script portindex pour utiliser les modules Perl de FreeBSD::Ports. Ces
+modules ont aussi besoin d’être testés plus à fond.
+
+Scripts web multi-langues
+
+Responsable : <doc@FreeBSD.org>
+
+Synopsis :
+
+Nos principales pages web sont écrites en anglais (américain). Les
+Projets de traduction FreeBSD sont chargés de traduire les pages web, le
+manuel de référence et la FAQ dans d’autres langues.
+
+Nous devons aussi traduire les scripts cgi et les scripts de
+construction des pages web. Ces scripts devraient supporter plusieurs
+langues, pas seulement une seule. La plupart des scripts sont écrits en
+perl.
+
+-   Rassembler les scripts perl www/en/ports/portindex et
+    www/ja/ports/portindex en un seul. Ajouter une option pour choisir
+    la sortie en anglais ou en japonais.
+
+Traductions de la documentation FreeBSD
+
+Responsable : <doc@FreeBSD.org>
+
+Traduire la documentation de FreeBSD (pages web, FAQ, manuel de
+référence, pages de manuel) dans d’autres langues. Reportez-vous aux
+Projets de traductions FreeBSD.
+
+Amélioration du moteur de recherche
+
+Responsable :Eric Anderson <anderson@centtech.com>
+
+Les résultats de recherches sur le site web contiennent les noms des
+fichiers trouvés comme, par exemple, FAQ34.html.
+
+Il serait plus utile que les résultats contiennent le texte de la
+question, permettant à l’utilisateur de savoir si une réponse est
+pertinente ou non.
+
+Documenter les réglages possibles de FreeBSD.
+
+Responsable : Tom Rhodes <trhodes@FreeBSD.org >
+
+Plusieurs réglages de FreeBSD sont encore non documentés. Tout le monde
+sait à quel point il est difficile d’utiliser un système non documenté,
+et c’est la raison pour laquelle ce projet a été créé. L’objectif
+initial est de créer un outil permettant de générer une page de manuel
+sur les réglages possibles. Pour cela, nous avons besoin de générer la
+liste de ces réglages à partir du code source.
+
+Écrire les pages de manuel de la section 9
+
+Responsable : Tom Rhodes < trhodes@FreeBSD.org> et Hiten Pandya
+<hmp@FreeBSD.org>
+
+Synopsis : Documentation des interfaces et des fonctions du noyau
+
+Accueil du Projet de documentation FreeBSD
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26 janvier 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

@@ -1,0 +1,627 @@
+
+-    Preface
+    -   Intended Audience
+    -   Fourth Edition
+    -   Third Edition
+    -   Second Edition (2004)
+    -   First Edition (2001)
+    -   Organization of This Book
+    -   Conventions used in this book
+    -   Acknowledgments
+-    Part I. Getting Started
+-    Chapter 1. Introduction
+    -   1.1. Synopsis
+    -   1.2. Welcome to FreeBSD!
+    -   1.3. About the FreeBSD Project
+-    Chapter 2. Installing FreeBSD
+    -   2.1. Synopsis
+    -   2.2. Minimum Hardware Requirements
+    -   2.3. Pre-Installation Tasks
+    -   2.4. Starting the Installation
+    -   2.5. Using bsdinstall
+    -   2.6. Allocating Disk Space
+    -   2.7. Fetching Distribution Files
+    -   2.8. Network Interfaces, Accounts, Time Zone, Services and
+        Hardening
+    -   2.9. Troubleshooting
+    -   2.10. Using the Live CD
+-    Chapter 3. FreeBSD Basics
+    -   3.1. Synopsis
+    -   3.2. Virtual Consoles and Terminals
+    -   3.3. Users and Basic Account Management
+    -   3.4. Permissions
+    -   3.5. Directory Structure
+    -   3.6. Disk Organization
+    -   3.7. Mounting and Unmounting File Systems
+    -   3.8. Processes and Daemons
+    -   3.9. Shells
+    -   3.10. Text Editors
+    -   3.11. Devices and Device Nodes
+    -   3.12. Manual Pages
+-    Chapter 4. Installing Applications: Packages and Ports
+    -   4.1. Synopsis
+    -   4.2. Overview of Software Installation
+    -   4.3. Finding Software
+    -   4.4. Using pkg for Binary Package Management
+    -   4.5. Using the Ports Collection
+    -   4.6. Building Packages with Poudriere
+    -   4.7. Post-Installation Considerations
+    -   4.8. Dealing with Broken Ports
+-    Chapter 5. The X Window System
+    -   5.1. Synopsis
+    -   5.2. Installing Xorg
+    -   5.3. Graphic card drivers
+    -   5.4. Xorg Configuration
+    -   5.5. Using Fonts in Xorg
+-    Chapter 6. Wayland
+    -   6.1. Wayland Synopsis
+    -   6.2. The Wayfire Compositor
+    -   6.3. The Hikari Compositor
+    -   6.4. The Sway Compositor
+    -   6.5. Using Xwayland
+    -   6.6. Remote Desktop Using VNC
+    -   6.7. Wayland Login Manager
+    -   6.8. Useful Utilities
+-    Chapter 7. Network
+    -   7.1. Synopsis
+    -   7.2. Setting up the Network
+    -   7.3. Wired Networks
+    -   7.4. Wireless Networks
+    -   7.5. Hostname
+    -   7.6. DNS
+    -   7.7. Troubleshooting
+-    Part II. Common Tasks
+-    Chapter 8. Desktop Environments
+    -   8.1. Synopsis
+    -   8.2. Desktop Environments
+    -   8.3. Browsers
+    -   8.4. Development tools
+    -   8.5. Desktop office productivity
+    -   8.6. Document Viewers
+    -   8.7. Finance
+-    Chapter 9. Multimedia
+    -   9.1. Synopsis
+    -   9.2. Setting Up the Sound Card
+    -   9.3. Audio players
+    -   9.4. Video players
+    -   9.5. Conferencing and Meetings
+    -   9.6. Image Scanners
+-    Chapter 10. Configuring the FreeBSD Kernel
+    -   10.1. Synopsis
+    -   10.2. Why Build a Custom Kernel?
+    -   10.3. Finding the System Hardware
+    -   10.4. The Configuration File
+    -   10.5. Building and Installing a Custom Kernel
+    -   10.6. If Something Goes Wrong
+-    Chapter 11. Printing
+    -   11.1. Quick Start
+    -   11.2. Printer Connections
+    -   11.3. Common Page Description Languages
+    -   11.4. Direct Printing
+    -   11.5. LPD (Line Printer Daemon)
+    -   11.6. Other Printing Systems
+-    Chapter 12. Linux Binary Compatibility
+    -   12.1. Synopsis
+    -   12.2. Configuring Linux Binary Compatibility
+    -   12.3. Linux userlands
+    -   12.4. Advanced Topics
+-    Chapter 13. WINE
+    -   13.1. Synopsis
+    -   13.2. WINE Overview & Concepts
+    -   13.3. Installing WINE on FreeBSD
+    -   13.4. Running a First WINE Program on FreeBSD
+    -   13.5. Configuring WINE Installation
+    -   13.6. WINE Management GUIs
+    -   13.7. WINE in Multi-User FreeBSD Installations
+    -   13.8. WINE on FreeBSD FAQ
+-    Part III. System Administration
+-    Chapter 14. Configuration and Tuning
+    -   14.1. Synopsis
+    -   14.2. Starting Services
+    -   14.3. Configuring cron(8)
+    -   14.4. Managing Services in FreeBSD
+    -   14.5. Configuring System Logging
+    -   14.6. Configuration Files
+    -   14.7. Tuning with sysctl(8)
+    -   14.8. Tuning Disks
+    -   14.9. Tuning Kernel Limits
+    -   14.10. Adding Swap Space
+    -   14.11. Power and Resource Management
+-    Chapter 15. The FreeBSD Booting Process
+    -   15.1. Synopsis
+    -   15.2. FreeBSD Boot Process
+    -   15.3. Device Hints
+    -   15.4. Shutdown Sequence
+-    Chapter 16. Security
+    -   16.1. Synopsis
+    -   16.2. Introduction
+    -   16.3. One-time Passwords
+    -   16.4. TCP Wrapper
+    -   16.5. Kerberos
+    -   16.6. OpenSSL
+    -   16.7. VPN over IPsec
+    -   16.8. OpenSSH
+    -   16.9. Access Control Lists
+    -   16.10. Monitoring Third Party Security Issues
+    -   16.11. FreeBSD Security Advisories
+    -   16.12. Process Accounting
+    -   16.13. Resource Limits
+    -   16.14. Shared Administration with Sudo
+    -   16.15. Using doas as an alternative to sudo
+-    Chapter 17. Jails
+    -   17.1. Synopsis
+    -   17.2. Terms Related to Jails
+    -   17.3. Creating and Controlling Jails
+    -   17.4. Fine Tuning and Administration
+    -   17.5. Updating Multiple Jails
+    -   17.6. Managing Jails with ezjail
+-    Chapter 18. Mandatory Access Control
+    -   18.1. Synopsis
+    -   18.2. Key Terms
+    -   18.3. Understanding MAC Labels
+    -   18.4. Planning the Security Configuration
+    -   18.5. Available MAC Policies
+    -   18.6. User Lock Down
+    -   18.7. Nagios in a MAC Jail
+    -   18.8. Troubleshooting the MAC Framework
+-    Chapter 19. Security Event Auditing
+    -   19.1. Synopsis
+    -   19.2. Key Terms
+    -   19.3. Audit Configuration
+    -   19.4. Working with Audit Trails
+-    Chapter 20. Storage
+    -   20.1. Synopsis
+    -   20.2. Adding Disks
+    -   20.3. Resizing and Growing Disks
+    -   20.4. USB Storage Devices
+    -   20.5. Creating and Using CD Media
+    -   20.6. Creating and Using DVD Media
+    -   20.7. Creating and Using Floppy Disks
+    -   20.8. Using NTFS Disks
+    -   20.9. Backup Basics
+    -   20.10. Memory Disks
+    -   20.11. File System Snapshots
+    -   20.12. Disk Quotas
+    -   20.13. Encrypting Disk Partitions
+    -   20.14. Encrypting Swap
+    -   20.15. Highly Available Storage (HAST)
+-    Chapter 21. GEOM: Modular Disk Transformation Framework
+    -   21.1. Synopsis
+    -   21.2. RAID0 - Striping
+    -   21.3. RAID1 - Mirroring
+    -   21.4. RAID3 - Byte-level Striping with Dedicated Parity
+    -   21.5. Software RAID Devices
+    -   21.6. GEOM Gate Network
+    -   21.7. Labeling Disk Devices
+    -   21.8. UFS Journaling Through GEOM
+-    Chapter 22. The Z File System (ZFS)
+    -   22.1. What Makes ZFS Different
+    -   22.2. Quick Start Guide
+    -   22.3. zpool Administration
+    -   22.4. zfs Administration
+    -   22.5. Delegated Administration
+    -   22.6. Advanced Topics
+<<<<<<< HEAD
+=======
+    -   22.7. Further Resources
+    -   22.8. ZFS Features and Terminology
+-    Chapter 23. Other File Systems
+    -   23.1. Synopsis
+    -   23.2. Linux® File Systems
+-    Chapter 24. Virtualization
+    -   24.1. Synopsis
+    -   24.2. FreeBSD as a Guest on Parallels Desktop for macOS®
+    -   24.3. FreeBSD as a Guest on VMware Fusion for macOS®
+    -   24.4. FreeBSD as a Guest on VirtualBox™
+    -   24.5. FreeBSD as a Host with VirtualBox™
+    -   24.6. FreeBSD as a Host with bhyve
+    -   24.7. FreeBSD as a Xen™-Host
+-    Chapter 25. Localization - i18n/L10n Usage and Setup
+    -   25.1. Synopsis
+    -   25.2. Using Localization
+    -   25.3. Finding i18n Applications
+    -   25.4. Locale Configuration for Specific Languages
+-    Chapter 26. Updating and Upgrading FreeBSD
+    -   26.1. Synopsis
+    -   26.2. FreeBSD Update
+    -   26.3. Updating Bootcode
+    -   26.4. Updating the Documentation Set
+    -   26.5. Tracking a Development Branch
+    -   26.6. Updating FreeBSD from Source
+    -   26.7. Tracking for Multiple Machines
+-    Chapter 27. DTrace
+    -   27.1. Synopsis
+    -   27.2. Implementation Differences
+    -   27.3. Enabling DTrace Support
+    -   27.4. Using DTrace
+-    Chapter 28. USB Device Mode / USB OTG
+    -   28.1. Synopsis
+    -   28.2. USB Virtual Serial Ports
+    -   28.3. USB Device Mode Network Interfaces
+    -   28.4. USB Virtual Storage Device
+-    Part IV. Network Communication
+-    Chapter 29. Serial Communications
+    -   29.1. Synopsis
+    -   29.2. Serial Terminology and Hardware
+    -   29.3. Terminals
+    -   29.4. Dial-in Service
+    -   29.5. Dial-out Service
+    -   29.6. Setting Up the Serial Console
+-    Chapter 30. PPP
+    -   30.1. Synopsis
+    -   30.2. Configuring PPP
+    -   30.3. Troubleshooting PPP Connections
+    -   30.4. Using PPP over Ethernet (PPPoE)
+    -   30.5. Using PPP over ATM (PPPoA)
+-    Chapter 31. Electronic Mail
+    -   31.1. Synopsis
+    -   31.2. Mail Components
+    -   31.3. Sendmail Configuration Files
+    -   31.4. Changing the Mail Transfer Agent
+    -   31.5. Troubleshooting
+    -   31.6. Advanced Topics
+    -   31.7. Setting Up to Send Only
+    -   31.8. Using Mail with a Dialup Connection
+    -   31.9. SMTP Authentication
+    -   31.10. Mail User Agents
+    -   31.11. Using fetchmail
+    -   31.12. Using procmail
+-    Chapter 32. Network Servers
+    -   32.1. Synopsis
+    -   32.2. The inetd Super-Server
+    -   32.3. Network File System (NFS)
+    -   32.4. Network Information System (NIS)
+    -   32.5. Lightweight Directory Access Protocol (LDAP)
+    -   32.6. Dynamic Host Configuration Protocol (DHCP)
+    -   32.7. Domain Name System (DNS)
+    -   32.8. Apache HTTP Server
+    -   32.9. File Transfer Protocol (FTP)
+    -   32.10. File and Print Services for Microsoft® Windows® Clients
+        (Samba)
+    -   32.11. Clock Synchronization with NTP
+    -   32.12. iSCSI Initiator and Target Configuration
+-    Chapter 33. Firewalls
+    -   33.1. Synopsis
+    -   33.2. Firewall Concepts
+    -   33.3. PF
+    -   33.4. IPFW
+    -   33.5. IPFILTER (IPF)
+    -   33.6. Blacklistd
+-    Chapter 34. Advanced Networking
+    -   34.1. Synopsis
+    -   34.2. Gateways and Routes
+    -   34.3. Virtual Hosts
+    -   34.4. Wireless Advanced Authentication
+    -   34.5. Wireless Ad-hoc Mode
+    -   34.6. USB Tethering
+    -   34.7. Bluetooth
+    -   34.8. Bridging
+    -   34.9. Link Aggregation and Failover
+    -   34.10. Diskless Operation with PXE
+    -   34.11. Common Address Redundancy Protocol (CARP)
+    -   34.12. VLANs
+-    Part V. Appendices
+-    Appendix A. Obtaining FreeBSD
+    -   A.1. Mirrors
+    -   A.2. Using Git
+    -   A.3. Using Subversion
+    -   A.4. CD and DVD Sets
+-    Appendix B. Bibliography
+    -   B.1. FreeBSD Bibliography
+    -   B.2. Security Reference
+    -   B.3. UNIX® History
+    -   B.4. Periodicals, Journals, and Magazines
+-    Appendix C. Resources on the Internet
+    -   C.1. Websites
+    -   C.2. Mailing Lists
+    -   C.3. Usenet Newsgroups
+-    Appendix D. OpenPGP Keys
+    -   D.1. Officers
+-    FreeBSD Glossary
+-    Colophon
+-   
+-   
+
+Book menu
+
+Appendix D. OpenPGP Keys
+
+Table of Contents
+
+-   D.1. Officers
+
+The OpenPGP keys of the FreeBSD.org officers are shown here. These keys
+can be used to verify a signature or send encrypted email to one of the
+officers. A full list of FreeBSD OpenPGP keys is available in the PGP
+Keys article. The complete keyring can be downloaded at pgpkeyring.txt.
+
+D.1. Officers
+
+D.1.1. Security Officer Team <security-officer@FreeBSD.org>
+
+    pub   rsa4096/D9AD2A18057474CB 2022-12-11 [C] [expires: 2026-01-24]
+          Key fingerprint = 0BE3 3275 D74C 953C 79F8  1107 D9AD 2A18 0574 74CB
+    uid                            FreeBSD Security Officer <security-officer@freebsd.org>
+    sub   rsa4096/6E58DE901F001AEF 2022-12-11 [S] [expires: 2024-01-05]
+    sub   rsa4096/46DB26D62F6039B7 2022-12-11 [E] [expires: 2024-01-05]
+
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+    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
+    =tw96
+    -----END PGP PUBLIC KEY BLOCK-----
+
+D.1.2. Core Team Secretary <core-secretary@FreeBSD.org>
+
+    pub   rsa4096/BE3DF7A86914D607 2022-07-29 [SC] [expires: 2024-07-28]
+          Key fingerprint = E0C0 73CF 01A2 A902 800C  3680 BE3D F7A8 6914 D607
+    uid                            FreeBSD Core Team Secretary <core-secretary@freebsd.org>
+    sub   rsa4096/7882C7A2CA320B52 2022-07-29 [E] [expires: 2024-07-28]
+          Key fingerprint = 7828 1422 F522 802B 00AE  0410 7882 C7A2 CA32 0B52
+
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+    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
+    GT6wtOZXl/ri7I8x3Fr89V3sUvmg1w==
+    =2Il1
+    -----END PGP PUBLIC KEY BLOCK-----
+
+D.1.3. Ports Management Team Secretary <portmgr-secretary@FreeBSD.org>
+
+    pub   ed25519/E3C401F60D709D59 2023-03-06 [SC] [expires: 2027-03-05]
+          Key fingerprint = BED4 A1D3 6555 B681 2E9F  ABDA E3C4 01F6 0D70 9D59
+    uid                            FreeBSD Ports Management Team Secretary <portmgr-secretary@FreeBSD.org>
+    sub   cv25519/2C92B55E27A641C3 2023-03-06 [E] [expires: 2027-03-05]
+
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+    mDMEZAXJvxYJKwYBBAHaRw8BAQdASFAC20WL3R1T6uNyGMZbfJCxDkcP4C5vi3Op
+    tcZ2fbq0R0ZyZWVCU0QgUG9ydHMgTWFuYWdlbWVudCBUZWFtIFNlY3JldGFyeSA8
+    cG9ydG1nci1zZWNyZXRhcnlARnJlZUJTRC5vcmc+iJYEExYKAD4WIQS+1KHTZVW2
+    gS6fq9rjxAH2DXCdWQUCZAXJvwIbAwUJB4TOAAULCQgHAwUVCgkICwUWAwIBAAIe
+    BQIXgAAKCRDjxAH2DXCdWYN1AP43TjyfZtZ3DLYT++g0+SuPsoO/3yWVybA+UmFL
+    zb8MngEA+LLNUfvEwCuXS/soh+ww5bpfmi3UUmeGiQEAXug3iA+JATMEEAEKAB0W
+    IQT7N0XIbxXo7ayBMvzYKU7Du8TX1QUCZAXLkwAKCRDYKU7Du8TX1XHMB/9R1MX4
+    6zMgpKqPPt76GOI+eGEdBK6bY8aJZjQGdqTh9f6VtXVoTGIG7cvhc9X8tDBoB0PT
+    2KZWheF51AV1+NHU4HwLAQ1BMebrFvWSfkw4xg4fBGwDhz9/GN85No+Js772V5ey
+    8lRiL6meRVWxMlLyWcxGd8JjcC5yX/iAUQ3SBGCLqW7unWjjg7CTd+AMBwcqPGrv
+    ax8q6eFVguJcHJAjMnKf6HAy4cpK3s+uMoUBCGnszSN12B3ysKfyC4pNO/pix5tA
+    Q5v8aRqTeFPh5zmNhWo0KGPzplTPqRQSHDl7GDQC8Ru3MhzFkeWzHsexjZVwS6W2
+    DPcYpuuAsA0XOZIZiQIzBBABCgAdFiEEEBpxaxYrAOVb7eoFrbv4YQo3ibcFAmQF
+    0u0ACgkQrbv4YQo3ibccwg/9F2Xuic3nhKxRbB3mJeDo6SYQETa/Gh1qQ34+8zlt
+    8UMazOx67gnYQfy+pXjro6eQ2up0a4eUYezcNOudqAQD21nRz3HA6EQVNcE/TzEA
+    xl5CJntTaLOt7S+EDXFW5BuQIvhhoMGgm8+WNVgA0EJ7tfL0OcYBSvr19fqwChEn
+    9c14cSk6mgHSsleP5NvskYN053pxHwy0LTSb8YBBv52th37t/CRFC1363rS5q+D7
+    JixFopd1O5pKpA5ipvE4gGgRjPtwjx0SjjepwK/3fuhEJQQyKzTIKlMfu2Dj/iR2
+    Li1Sfccau5LQXOj9fUITU3u1YG7yrm8VGzT7ao4d+KRwgMLjd2pLqiGIbbJwGBiP
+    FRmtilWQoeIlmSlFX4obAA517DOK0pW1mH8+eEn4EJd3SekT3yzFyKTASv0J48Z8
+    3F928xg+eZvHxVC0t1J+J5IG0gt3EEncuWKIPQGR7PiQbti6R3FQVTz6WfMWOebP
+    Qi0E9F/Aqakr6Vj2sKGrDq+ebpaF5G8Yw1YrUl2IDiPzkCegp3ZbI0wh11Xvzhi8
+    LXPQGK4jBQas4G8cegfitzmtdGRHYrbMv0R9I4mvaL+WlOuD2AvyVG28lguqVhnN
+    AZP+ohdquYyX2CNCVvbKWAtXo6Ur0vWG8BL8m6defAtEkIwVBALaOHQOSI3aNUz4
+    lwy4OARkBcm/EgorBgEEAZdVAQUBAQdAsefmSfxEOdOr02+K/6noYCuJ1FeAWVz6
+    jFYQ+9w6jggDAQgHiH4EGBYKACYWIQS+1KHTZVW2gS6fq9rjxAH2DXCdWQUCZAXJ
+    vwIbDAUJB4TOAAAKCRDjxAH2DXCdWRl4AP9h5ot212BK29S6ZcMBhHvmtF5PG1oD
+    c7LnZycSRmbFiwEAndCMpAGOhDW8iVgDd0wLQq/ZMPe+xccfG1b3zFH2EgE=
+    =iiAT
+    -----END PGP PUBLIC KEY BLOCK-----
+
+D.1.4. doceng-secretary@FreeBSD.org
+
+    pub   rsa2048/E1C03580AEB45E58 2019-10-31 [SC] [expires: 2022-10-30]
+          Key fingerprint = F24D 7B32 B864 625E 5541  A0E4 E1C0 3580 AEB4 5E58
+    uid                            FreeBSD Doceng Team Secretary <doceng-secretary@freebsd.org>
+    sub   rsa2048/9EA8D713509472FC 2019-10-31 [E] [expires: 2022-10-30]
+
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+    mQENBF27FFcBCADeoSsIgyQUY8vREwkTikwFFlNg31MVy5s/Nq1cNK1PRfRMnprS
+    yfB62KqbYuz16bmQKaA9zHN4FGfiTvR6tl66LVHm1s/5HPiLv8sP14GsruLro9zN
+    v72dO7a9i68bMw+jarPOnu9dGiDFEI0dACOkdCGEYKEUapQeNpmWRrQ46BeXyFwF
+    JcNx76bJJUkwk6fWC0W63D762e6lCEX6ndoaPjjLBnFvtx13heNGUc8RukBwe2mA
+    U5pSGHj47J05bdWiRSwZaXa8PcW+20zTWaP755w7zWe4h60GANY7OsT9nuOqsioJ
+    QonxTrJuZweKRV8fNQ1EfDws3HZr7/7iXvO3ABEBAAG0PEZyZWVCU0QgRG9jZW5n
+    IFRlYW0gU2VjcmV0YXJ5IDxkb2Nlbmctc2VjcmV0YXJ5QGZyZWVic2Qub3JnPokB
+    VAQTAQoAPhYhBPJNezK4ZGJeVUGg5OHANYCutF5YBQJduxRXAhsDBQkFo5qABQsJ
+    CAcDBRUKCQgLBRYDAgEAAh4BAheAAAoJEOHANYCutF5YB2IIALw+EPYmOz9qlqIn
+    oTFmk/5MrcdzC5iLEfxubbF6TopDWsWPiOh5mAuvfEmROSGf6ctvdYe9UtQV3VNY
+    KeeyskeFrIBOFo2KG/dFqKPAWef6IfhbW3HWDWo5uOBg01jHzQ/pB1n6SMKiXfsM
+    idL9wN+UQKxF3Y7S/bVrZTV0isRUolO9+8kQeSYT/NMojVM0H2fWrTP/TaNEW4fY
+    JBDAl5hsktzdl8sdbNqdC0GiX3xb4GvgVzGGQELagsxjfuXk6PfOyn6Wx2d+yRcI
+    FrKojmhihBp5VGFQkntBIXQkaW0xhW+WBGxwXdaAl0drQlZ3W+edgdOl705x73kf
+    Uw3Fh2a5AQ0EXbsUVwEIANEPAsltM4vFj2pi5xEuHEcZIrIX/ZJhoaBtZkqvkB+H
+    4pu3/eQHK5hg0Dw12ugffPMz8mi57iGNI9TXd8ZYMJxAdvEZSDHCKZTX9G+FcxWa
+    /AzKNiG25uSISzz7rMB/lV1gofCdGtpHFRFTiNxFcoacugTdlYDiscgJZMJSg/hC
+    GXBdEKXR5WRAgAGandcL8llCToOt1lZEOkd5vJM861w6evgDhAZ2HGhRuG8/NDxG
+    r4UtlnYGUCFof/Q4oPNbDJzmZXF+8OQyTNcEpVD3leEOWG1Uv5XWS2XKVHcHZZ++
+    ISo/B5Q6Oi3SJFCVV9f+g09YF+PgfP/mVMBgif2fT20AEQEAAYkBPAQYAQoAJhYh
+    BPJNezK4ZGJeVUGg5OHANYCutF5YBQJduxRXAhsMBQkFo5qAAAoJEOHANYCutF5Y
+    kecIAMTh2VHQqjXHTszQMsy3NjiTVVITI3z+pzY0u2EYmLytXQ2pZMzLHMcklmub
+    5po0X4EvL6bZiJcLMI2mSrOs0Gp8P3hyMI40IkqoLMp7VA2LFlPgIJ7K5W4oVwf8
+    khY6lw7qg2l69APm/MM3xAyiL4p6MU8tpvWg5AncZ6lxyy27rxVflzEtCrKQuG/a
+    oVaOlMjH3uxvOK6IIxlhvWD0nKs/e2h2HIAZ+ILE6ytS5ZEg2GXuigoQZdEnv71L
+    xyvE9JANwGZLkDxnS5pgN2ikfkQYlFpJEkrNTQleCOHIIIp8vgJngEaP51xOIbQM
+    CiG/y3cmKQ/ZfH7BBvlZVtZKQsI=
+    =MQKT
+    -----END PGP PUBLIC KEY BLOCK-----
+
+------------------------------------------------------------------------
+
+Last modified on: July 6, 2023 by Sergio Carlavilla Delgado
+
+Prev
+
+Home
+
+Next
+
+Table of Contents
+
+-   D.1. Officers
+
+------------------------------------------------------------------------
+
+Resources
+
+-   Download PDF
+-   Edit this page
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+

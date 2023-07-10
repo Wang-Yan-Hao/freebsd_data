@@ -1,0 +1,199 @@
+FreeBSD 5.0-DP1 Errata
+
+The FreeBSD Project
+
+Copyright © 2002 by The FreeBSD Documentation Project
+
+$FreeBSD: src/release/doc/en_US.ISO8859-1/errata/article.sgml,v 1.9
+2002/03/14 21:52:01 bmah Exp $
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+  This document lists known issues for FreeBSD 5.0-DP1. This information
+  includes information relating to the software or documentation that
+  could affect its operation or usability. Also included is a list of
+  areas of the base system that could benefit from some extra testing.
+
+  Please note that FreeBSD 5.0-DP1 is not an officially supported
+  release of FreeBSD. Unlike supported releases, this errata file will
+  not be updated. Testers of FreeBSD 5.0-DP1 should subscribe to the
+  FreeBSD-current mailing list <freebsd-current@FreeBSD.org> to stay
+  informed about late-breaking issues and developments.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+1 Known Problems
+
+-   Serial GDB is broken.
+
+-   LOMAC doesn't protect against a certain class of inter-process
+    activities such as signaling, since the MAC hooks those checks rely
+    on aren't in the base tree yet.
+
+-   gcc -O is known to be broken.
+
+-   There are two different PCCARD implementations, OLDCARD and NEWCARD.
+    NEWCARD has support for Cardbus, but has PCCARD problems.
+
+-   Kernels may have to be built with -DNO_WERROR=yes due to warning
+    handling in the build infrastructure.
+
+-   The system documentation indicates that there is support for
+    POSIX.1e capabilities, but the kernel infrastructure is not merged;
+    the documentation and library may be removed before 5.0 depending on
+    strategy decisions not yet made.
+
+-   NFS client locking does not interact well with chroot(2)
+    environments; locking only works for processes sharing the same root
+    as the locking daemon.
+
+-   Binutils appears to have some problems compiling software from the
+    ports collection (specifically, ld(1) is known to have a problem
+    with multiple references to some symbols).
+
+-   The hardware timecounter code has recently been changed. Some
+    systems may emit warning messages to the console such as
+    ``calcru: negative time of -48 usec for pid 155 (csh)''. Please read
+    the FreeBSD-current mailing list <freebsd-current@FreeBSD.org> for
+    information about what these messages mean, and how to get rid of
+    them.
+
+-   XFree86 4.2.0 was recently made the default version of XFree86
+    installed by sysinstall(8). By default, X tries to access /dev/mouse
+    during initial configuration, but that should be changed to
+    /dev/sysmouse.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2 Unfinished Features
+
+A number of very significant changes to the system will be made for
+FreeBSD 5.0-RELEASE. These features, and their approximate status, are
+noted here.
+
+-   The lock-pushdown for fine-grained kernel threading is in-process,
+    and not complete in this snapshot. As a result, the full benefits
+    are not yet realized.
+
+-   Scheduler activation support exists only in the kernel, not in the
+    userland thread library, and in this snapshot, threads from the same
+    process using KSE can execute on only one processor at a time.
+
+-   Mandatory access control support from the TrustedBSD branch is not
+    yet merged.
+
+-   UFS2 (essentially, UFS with extended attributes in inodes) is not
+    yet ready for inclusion in the snapshot.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3 Known Pitfalls
+
+-   FreeBSD 5.0-DP1 has a number of debugging features enabled. These
+    generally have a negative impact on performance. One notable example
+    is that the user-level malloc(3) functions behave, by default, as
+    though the AJ debugging flags were set. Those benchmarking the
+    system should be sure to run without debugging features enabled.
+
+-   Interrupt latency is high due to on-going SMP work, this will be
+    fixed prior to the final release.
+
+-   Tighter enforcement of #include file deprecation results in a number
+    of common applications failing to build. In particular, if you
+    #include <malloc.h>, you now get a #error instead of a #warning.
+
+-   The kernel is no longer installed as /kernel and /modules, these
+    have moved to /boot/kernel.
+
+-   When upgrading a system, make sure to pay attention to the change
+    from an /etc/pam.conf configure file to multiple files in
+    /etc/pam.d/. Likewise, OpenPAM has replaced LinuxPAM, and new PAM
+    modules have been introduced; this may result in warnings from older
+    authentication-related applications compiled under RELENG_4, such as
+    xdm, kdm, and gdm.
+
+-   The sendmail startup code in /etc/rc has been changed to support the
+    new requirements of sendmail 8.12. The new setup may cause problems
+    for users running MTAs other than sendmail. You can prevent any
+    sendmail daemons from starting at boot time by adding the following
+    to /etc/rc.conf:
+
+            sendmail_enable="NO"
+            sendmail_outbound_enable="NO"
+            sendmail_msp_queue_enable="NO"
+            sendmail_submit_enable="NO"
+
+    Note that 5.0-DP2 (as well as 5.0-RELEASE) will support a
+    sendmail_enable="NONE" setting to disable all sendmail daemons with
+    a single variable. This functionality was not merged to the 5.0-DP1
+    snapshot.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+4 Testing Guide
+
+While testing reports of all aspects of FreeBSD 5.0-DP1 are welcomed,
+there are several areas which could benefit from some extra testing:
+
+-   Basic kernel functionality. The changes for SMPng are still in
+    progress, and have some far-reaching effects throughout many parts
+    of the kernel. Testing the kernel's stability on both UP and SMP
+    machines will help find any regressions that may have come about.
+
+-   The PAM infrastructure has undergone significant changes, including
+    a replacement of Linux PAM with OpenPAM.
+
+-   FFS snapshots and background fsck(8). The latter feature is enabled
+    by default; a reasonable test for snapshots is to do backups by
+    creating a snapshot using the instructions in
+    src/sys/ufs/ffs/README.snapshot and performing a dump(8) of the
+    snapshot.
+
+-   Because of API changes, a number of ports in the FreeBSD Ports
+    Collection are broken under FreeBSD 5-CURRENT. Frequently, there are
+    straightforward fixes for these ports; submitting these fixes will
+    improve the state of buildable ports and packages that can be
+    shipped with FreeBSD 5.0-RELEASE.
+
+-   NFS has undergone some significant code reorganization, although it
+    is believed to be fairly stable. NFS client locking is a new
+    feature.
+
+-   The sparc64 platform support is new, and could use testing on a
+    wider variety of hardware.
+
+-   XFree86 4.2.0 was recently made the default version of XFree86
+    installed by sysinstall(8). Testing with as many different video
+    cards as possible will help determine if this should be merged to
+    the FreeBSD -STABLE branch.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+This file, and other release-related documents, can be downloaded from
+ftp://current.FreeBSD.org/pub/FreeBSD/.
+
+For questions about FreeBSD, read the documentation before contacting
+<questions@FreeBSD.org>.
+
+All users of FreeBSD 5-CURRENT should subscribe to the
+<current@FreeBSD.org> mailing list.
+
+For questions about this documentation, e-mail <doc@FreeBSD.org>.

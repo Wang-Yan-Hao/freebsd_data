@@ -1,0 +1,297 @@
+[FreeBSD The Power to Serve]
+
+Donar a FreeBSD
+
+ 
+
+-   Inicio
+
+-   Acerca de FreeBSD
+    -   Introduccion
+    -   Características
+    -   Apoyo
+    -   Marketing
+    -   Política de privacidad
+    -   Proyectos
+    -   Ports
+
+-   Descargar FreeBSD
+    -   Información de Versiones
+    -   Ingeniería de Versiones
+
+-   Documentación
+    -   FAQ
+    -   Manual
+    -   Manual del Porter
+    -   Manual del desarrollador
+    -   Guía del Committer
+    -   Manuales en línea
+    -   Presentaciones y Trabajos
+    -   Introducción al Proyecto de Documentación
+    -   Todos los libros y artículos
+
+-   Comunidad
+    -   Listas de correo
+    -   Foros
+    -   Grupos de usuarios
+    -   Eventos
+    -   FreeBSD Journal
+    -   Q&A (externo)
+
+-   Desarrolladores
+    -   Ideas para proyectos
+    -   Git Repository
+    -   Repositorio Subversion
+    -   Git Mirror
+    -   Revisiones de Código (Phabricator)
+    -   Wiki
+    -   Servicio de integración continua
+
+-   Soporte
+    -   Distribuidores comerciales
+    -   Información de seguridad
+    -   Informes de errores
+    -   Envío informes de error
+    -   Recursos Web
+
+-   Fundación
+    -   Donaciones monetarias
+    -   Donaciones hardware
+
+-   Documentación
+-   FAQ
+-   Manual
+-   Páginas del Manual
+-   Presentaciones y Trabajos
+-   Libros y Artículos en línea
+-   Publicaciones
+-   Recursos Web
+-   Para Principiantes
+-   Proyecto de Documentación
+-   Archivo
+
+Recursos para Principiantes
+
+Los siguientes recursos son algunos de los que los principiantes en
+FreeBSD han encontrado de más ayuda cuando estaban aprendiendo a usar el
+FreeBSD. Por favor, enviad correcciones o añadidos a
+FreeBSD-Newbies@FreeBSD.org.
+
+-   Usando la web de FreeBSD
+
+-   Aprendiendo FreeBSD
+
+-   Aprendiendo UNIX®
+
+-   Aprendiendo el sistema de X Window
+
+-   Ayudando a otra gente
+
+Usando la web de FreeBSD
+
+Este sitio web es el principal recurso con la información actualizada
+sobre FreeBSD. Los principiantes han encontrado las siguientes páginas
+de particular ayuda:
+
+-   Busca en el manual y la FAQ, o en el sitio web entero, o en los
+    ficheros de las listas de correo de preguntas del FreeBSD.
+
+-   La página de Documentación tiene enlaces al Manual y la FAQ,
+    tutoriales, iformación acerca de las contribuciones al Proyecto de
+    Documentación, documentos en otros lenguajes aparte de inglés, y
+    mucho más.
+
+-   La página de Soporte es rica en información sobre el FreeBSD,
+    incluyendo listas de correo, grupos de usuarios, sítios web y FTP,
+    información sobre versiones y enlaces a algunos recursos de
+    información sobre UNIX®.
+
+Aprendiendo FreeBSD
+
+-   Si todavía no la has instalado, busca la última distribución
+    principal. (Mira en el Manual por qué no deberías verte tentado a
+    instalar cualquiera de las otras ramas.) Antes de empezar, lee
+    atentamente las instrucciones de instalación, así como cada uno de
+    los ficheros *.TXT en el directorio FTP o en el CD de instalación.
+    Están allí porque contienen información que necesitarás. Recoge
+    también la última fe de erratas desde la web, en el caso que haya
+    sido actualizada.
+
+    Si te decides a descargar FreeBSD, revisa cuál de estas detallada e
+    ilustradas instrucciones de descarga para una distribución previa
+    están todavía disponibles antes de empezar. Esto debería hacer el
+    proceso entero más claro.
+
+-   Varios tutoriales están disponibles. El más popular Para la gente
+    nueva en FreeBSD y UNIX® es popular entre los muy principiantes. No
+    necesitas saber mucho para disfrutar de éste. También está
+    disponible en el sítio web del autor y puede ser descargado en
+    formato RTF o postcript para imprimirlo.
+
+-   La primera cosa que mucha gente necesita configurar es el ppp, y hay
+    mucha documentación de ayuda. Puedes empezar como mínimo con
+    aquellas partes de la Guía a fondo de PPP que sean relevantes para
+    tus necesidades, y explorar la página del ppp para enlaces y otra
+    información valiosa y las últimas actualizaciones.
+
+-   FreeBSD al completo por Greg Lehey, publicado por Walnut Creek
+    CDROM. Este libro asume una mínima experiencia en UNIX® y lleva al
+    principiante paso a paso a través de cada apartado desde la
+    instalación hasta todo aquello que necesitas saber para configurar y
+    ejecutar un sistema en FreeBSD. También llegas a entender qué estás
+    haciendo y porqué.
+
+-   El Manual de FreeBSD y Preguntas Frecuentes - Frequently Asked
+    Questions (FAQ) son los principales documentos para FreeBSD. De
+    lectura obligada, contienen mucho material para principiantes así
+    como algun tema bastante avanzado. No te preocupes si no puedes
+    entender alguna de las secciones avanzadas. El manual contiene las
+    instrucciones de instalación y ademas provee listas de libros y
+    recursos en linea, y la FAQ contiene una guía de problemas.
+
+-   Apúntate a la lista de correo FreeBSD-Questions para ver aquellas
+    preguntas que te preocupa demasiado hacer y sus respuestas.
+    Subscríbete enviando un correo a majordomo@freebsd.org poniendo
+    "subscribe freebsd-questions" en el cuerpo del mensaje (el asunto no
+    importa). Puedes revisar viejas preguntas y respuestas vía la página
+    de busqueda. Si quieres subscribirte a la lista de correo en español
+    puedes hacerlo enviando un mensaje a
+    freebsd-subscribe@es.freebsd.org
+
+-   El principal grupo de discusión de FreeBSD es
+    news:comp.unix.bsd.freebsd.misc[comp.unix.bsd.freebsd.misc]. quizá
+    quieras echarle un ojo a
+    news:comp.unix.bsd.freebsd.announce[comp.unix.bsd.freebsd.announce]
+    también.
+
+-   Las páginas del manual son una buena referencia pero no siempre son
+    la mejor introducción para un novel. Cuanto más trabajes con ellas
+    más familiares llegan a ser. Algunas están muy bien para
+    principiantes, o sea que échales un vistazo siempre. La página de
+    manual del ppp, por ejemplo es más un tutorial.
+
+Aprendiendo UNIX®
+
+Muchos de los problemas que tenemos como principiantes se originan en
+nuestra falta de familiaridad con los comandos del UNIX® necesarios para
+solventar nuestros problemas en FreeBSD. Sin una formación en UNIX® te
+verás enfrentado a aprender dos cosas a la vez. Afortunadamente, hay un
+monton de recursos destinados a hacer esto mas fácil.
+
+-   Hay muchos libros fáciles, como las guías para "Dummies", en
+    cualquier librería importante. Si quieres algo realmente fácil,
+    échale una mirada a lo que hay disponible y elige algo que parezca
+    hablar en tu mismo idioma. Muy pronto querrás pasar a un libro que
+    te procure más cobertura.
+
+-   Un libro mencionado frecuentemente por los principiantes es UNIX®
+    para impacientes escrito por Paul W. Abrahams y Bruce R. Larson,
+    publicado por Addison-Wesley. Su intención es tanto un libro para
+    aprender UNIX® como una referencia, e incluye una introducción a los
+    conceptos del UNIX® y un capítulo muy práctico acerca del uso del
+    sistema X Window.
+
+-   Otro libro popular es UNIX® Power Tools escrito por Jerry Peek, Tim
+    O’Reilly y Mike Loukides, publicado por O’Reilly y Asociados. Está
+    organizado como una serie de artículos cortos, cada uno de los
+    cuales resuelve un problema, y estos artículos contienen referencias
+    cruzadas a otros con material relacionado. Aunque no están dirigidos
+    especificamente a principiantes, el diseño los hace ideales para un
+    principiante con una duda candente o escasos minutos para consultar.
+    Hay material elemental cerca del principio del libro, pero hay pocos
+    artículos fáciles en su conjunto.
+
+-   La introducción al UNIX® está disponible en HTML y formatos
+    postscript y Acrobat PDF desde la Universidad del Estado de Ohio.
+
+-   Ayuda de UNIX® para Usuarios es otra guía introductoria que está
+    disponible en HTML en un sitio mirror cerca de ti, o que puedes
+    instalar en tu propio sistema.
+
+-   Las preguntas sobre UNIX® son tratadas en el grupo de discusión
+    news:comp.unix.questions[comp.unix.questions] y en el asociado
+    Preguntas Frecuentes(FAQ). Puedes conseguir también una copia de la
+    FAQ del sítio FTP RMIT. Los principiantes probablemente estarán más
+    interesados inicialmente en las secciones 1 y 2
+
+-   Otro interesante grupo de discusión es
+    news:comp.unix.user-friendly[comp.unix.user-friendly] que también
+    tiene una FAQ. A pesar de que este grupo es para discutir la
+    sencillez operativa cara al usuario, puede contener alguna buena
+    información para los principiantes. La FAQ también está disponible
+    vía FTP.
+
+-   Muchas otras páginas web contienen listas de turoriales de UNIX® y
+    material de referencia. Uno de los mejores sítios para empezar a
+    mirar es la página de UNIX® en Yahoo!.
+
+Aprendiendo el sistema X Window
+
+El sistema X Window es usado por un número de sistemas operativos
+incluído FreeBSD. La documentación para X se puede encontrar en The
+XFree86 Project, Inc., incluyendo la XFree86 FAQ. Ten cuidado, mucha de
+esta documentación es probablemente material de referencia difícil de
+digerir para los recien llegados.
+
+-   Para información básica acerca de instalar, configurar y usar el
+    sistema X Window, dos de los libros mencionados arriba contienen
+    secciones tratando X al nivel de principiante: FreeBSD al completo y
+    UNIX® para impacientes.
+
+-   Hay una sección fácil e informativa en usando el sistema X Window en
+    la Guía del usuario de Linux. Tambieén se puede encontrar material
+    interesante en cualquier parte de ese documento, pero recuerda que
+    Linux no funciona siempre exactamente igual que FreeBSD.
+
+-   Antes de tener funcionando el X de la manera que te gusta,
+    necesitarás escoger un manejador de ventanas. Visita la página
+    Manejadores de Ventanas para X y sigue el enlace desde la
+    introducción para enterarte sobre los manejadores de ventanas,
+    vuélvete entonces y lee "The Basics". Regresa y compara los
+    diferentes tipos que hay disponibles.(Bonus: Aquí tambien hay otra
+    guía de UNIX®.) La mayoría si no todos de estos manejadores de
+    ventanas se encuentran disponibles para instalar en la colección de
+    ports de FreeBSD.
+
+Ayudando a otra gente
+
+Todo el mundo tiene algo con lo que contribuir a la comunidad de
+FreeBSD, ¡incluso los principiantes! Algunos están ocupados trabajando
+con el nuevo grupo de abogacía y algunos de han visto involucrados con
+el Proyecto de Documentación como revisores. Otros principiantes en
+FreeBSD tienen sus propias habilidades y experiencias para compartir,
+estén o no relacionadas con los computadores, o tan solo quieren
+relacionarse con otros principiantes y quieren hacerles sentir
+bienvenidos. Siempre hay gente alrededor que ayuda a otros simplemente
+porque les gusta. Escribe a Principiantes en FreeBSD para más
+información.
+
+Los amigos que funcionan bajo FreeBSD son un gran recurso. Ningún libro
+puede reemplazar hablar por teléfono o por encima de una pizza con
+alguien que tiene las mismas inquietudes, disfruta con las mismas cosas,
+y se enfrenta a los mismos desafíos. Si no tienes muchos amigos que usen
+FreeBSD, considera el usar tus viejos CDs de FreeBSD para crearte
+algunos más :-)
+
+Los grupos de usuarios son buenos sitios para encontrar a otros usuarios
+de FreeBSD. Si no hay alguno cerca, quizá puedas iniciar uno.
+
+Antes de hablarle a las personas reales acerca de tus nuevas habilidades
+quizá quieras revisar la Guía de Pronunciación y el Fichero de Jerga :-)
+
+En línea tenemos la lista de correo Principiantes en FreeBSD para
+aquellas discusiones no técnicas acerca de asuntos de interés para
+principiantes. Otra lista de correo, Preguntas de FreeBSD, resuelve
+nuestras dudas acerca del uso de FreeBSD.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 de junio de 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 El Proyecto FreeBSD Todos los derechos
+reservados. La marca FreeBSD es una marca registrada de la Fundación
+FreeBSD es es utilizada por el Proyecto FreeBSD con su permiso La
+Fundación FreeBSD. Contact

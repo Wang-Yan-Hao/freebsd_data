@@ -1,0 +1,298 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Documentation
+-   FAQ
+-   Handbook
+-   Manual Pages
+-   Presentations and Papers
+-   Books and Articles Online
+-   Publications
+-   Web Resources
+-   For Newbies
+-   Documentation Project
+-   Archive
+
+Books and Articles Online
+
+On this site
+
+All the documentation on this site can be downloaded in a variety of
+different formats (HTML, Postscript, PDF, and more) and compression
+schemes (BZip2, Zip) from the FreeBSD Download site.
+
+Archived copies of the FreeBSD documentation (articles, books, and
+textinfo manuals) are also available online at
+http://docs.FreeBSD.org/doc/.
+
+This documentation is provided and maintained by the FreeBSD
+Documentation Project, and we are always looking for people to
+contribute new documentation and maintain existing documentation.
+
+Papers, presentations, and videos about FreeBSD are archived and
+catalogued on the FreeBSD Papers website.
+
+Books
+
+A project model for the FreeBSD project (dev-model)
+A formal study of the organization of the FreeBSD project.
+
+The FreeBSD FAQ (faq)
+Frequently Asked Questions, and answers, covering all aspects of
+FreeBSD.
+
+The FreeBSD Handbook (handbook)
+A constantly evolving, comprehensive resource for FreeBSD users.
+
+The FreeBSD Developers' Handbook (developers-handbook)
+For people who want to develop software for FreeBSD (and not just people
+who are developing FreeBSD itself).
+
+The FreeBSD Architecture Handbook (arch-handbook)
+For FreeBSD system developers. This book covers the architectural
+details of many important FreeBSD kernel subsystems.
+
+The Porter’s Handbook (porters-handbook)
+Essential reading if you plan on providing a port of a third party piece
+of software.
+
+Chapter 2 of 'The Design and Implementation of the 4.4BSD Operating
+System' (design-44bsd)
+Donated by Addison-Wesley, provides a design overview of 4.4BSD, from
+which FreeBSD was originally derived.
+
+The FreeBSD Documentation Project Primer for New Contributors
+(fdp-primer)
+Everything you need to know in order to start contributing to the
+FreeBSD Documentation Project.
+
+Articles
+
+Why you should use a BSD style license for your Open Source Project
+(bsdl-gpl)
+Describes the benefits of releasing code under a BSD license.
+
+Building Products with FreeBSD (building-products)
+How FreeBSD can help you build a better product.
+
+The Committer’s Guide (committers-guide)
+Introductory information for FreeBSD committers.
+
+Contributing to FreeBSD (contributing)
+How to contribute to the FreeBSD Project.
+
+The List of FreeBSD Contributors (contributors)
+A list of organizations and individuals who have helped enhance FreeBSD.
+
+CUPS on FreeBSD (cups)
+How to setup CUPS with FreeBSD.
+
+Explaining BSD (explaining-bsd)
+An answer to the question "What is BSD?"
+
+Filtering Bridges (filtering-bridges)
+Configuring firewalls and filtering on FreeBSD hosts acting as bridges
+rather than routers.
+
+Fonts and FreeBSD (fonts)
+A description of the various font technologies in FreeBSD, and how to
+use them with different programs.
+
+How to get the best results from the FreeBSD-questions mailing list
+(freebsd-questions)
+Tips and tricks to help you maximize the chances of getting useful
+information from the -questions mailing list.
+
+Build Your Own FreeBSD Update Server (freebsd-update-server)
+Using a FreeBSD Update server allows a system administrator to perform
+fast updates for a number of machines from a local mirror.
+
+Writing a GEOM Class (geom-class)
+A guide to GEOM internals, and writing your own class.
+
+Implementing UFS journaling on a desktop PC (gjournal-desktop)
+A guide to create UFS partitions configured with journaling for desktop
+use.
+
+Mirroring FreeBSD (hubs)
+The all in one guide for mirroring the FreeBSD website, FTP servers, and
+more.
+
+Independent Verification of IPsec Functionality in FreeBSD (ipsec-must)
+A method for experimentally verifying IPsec functionality.
+
+LDAP Authentication (ldap-auth)
+A practical guide about setting up an LDAP server on FreeBSD and how to
+use it for authenticating users.
+
+FreeBSD Support for Leap Seconds (leap-seconds)
+A short description of how leap seconds are handled on FreeBSD.
+
+Linux emulation in FreeBSD (linux-emulation)
+A technical description about the internals of the Linux emulation layer
+in FreeBSD.
+
+FreeBSD Quickstart Guide for Linux Users (linux-users)
+An introductionary guide for the users that came from Linux.
+
+Frequently Asked Questions About The FreeBSD Mailing Lists
+(mailing-list-faq)
+How to best use the mailing lists, such as how to help avoid
+frequently-repeated discussions.
+
+Introduction to NanoBSD (nanobsd)
+Information about the NanoBSD tools, which can be used to create FreeBSD
+system images for embedded applications, suitable for use on a Compact
+Flash card (or other mass storage medium).
+
+FreeBSD First Steps (new-users)
+For people coming to FreeBSD and UNIX® for the first time.
+
+Pluggable Authentication Modules (pam)
+A guide to the PAM system and modules under FreeBSD.
+
+OpenPGP Keys (pgpkeys)
+All of the OpenPGP keys for FreeBSD.
+
+Port Mentor Guidelines (port-mentor-guidelines)
+Guidelines for new and/or potential port mentors and mentees.
+
+FreeBSD Problem Report Handling Guidelines (pr-guidelines)
+Recommended practices for handling FreeBSD problem reports.
+
+Writing FreeBSD Problem Reports (problem-reports)
+How to best formulate and submit a problem report to the FreeBSD
+Project.
+
+Practical rc.d scripting in BSD (rc-scripting)
+A guide to writing new rc.d scripts and understanding those already
+written.
+
+FreeBSD Release Engineering (freebsd-releng)
+Describes the approach used by the FreeBSD release engineering team to
+make production quality releases of the FreeBSD Operating System. It
+describes the tools available for those interested in producing
+customized FreeBSD releases for corporate rollouts or commercial
+productization.
+
+Legacy FreeBSD Release Engineering (releng)
+This paper describes the approach previously used by the FreeBSD release
+engineering team to make production quality releases of the FreeBSD
+Operating System.
+
+Remote Installation of the FreeBSD Operating System without a Remote
+Console (remote-install)
+Describes the remote installation of the FreeBSD operating system when
+the console of the remote system is unavailable.
+
+Serial and UART devices (serial-uart)
+Detailed information about the use of serial ports on FreeBSD, including
+several multi-port serial cards.
+
+FreeBSD and Solid State Devices (solid-state)
+The use of solid state disk devices in FreeBSD.
+
+The vinum Volume Manager (vinum)
+Using gvinum to create RAID arrays.
+
+Design elements of the FreeBSD VM system (vm-design)
+An easy to follow description of the design of the FreeBSD virtual
+memory system.
+
+Use Language Servers for Development in the FreeBSD Src Tree
+(freebsd-src-lsp)
+A guide about setting up a FreeBSD src tree with language servers
+performing source code indexing.
+
+Articles on other web sites
+
+Various independent efforts have also produced a great deal of useful
+information about FreeBSD.
+
+-   Niels Jorgensen has authored an academic study on the dynamics of
+    the FreeBSD development process: "Putting it All in the Trunk,
+    Incremental Software Development in the FreeBSD Open Source Project"
+    [Information Systems Journal (2001) 11, 321-336].
+
+-   Kirk McKusick, one of the original architects of BSD at U.C.
+    Berkeley, teaches two 4.4BSD Kernel Internals courses using FreeBSD.
+    For those unable to attend the courses in person, a video tape
+    series is also now available.
+
+-   Profiling and Debugging the FreeBSD Kernel
+
+-   Debugging Buffer Overruns in the FreeBSD Kernel
+
+-   Appendix A from the college textbook Operating Systems Concepts by
+    Silberschatz, Galvin and Gagne has been made available online in PDF
+    format. The appendix is dedicated to FreeBSD and offers a good
+    introduction to FreeBSD’s internals.
+
+------------------------------------------------------------------------
+
+Last modified on: September 27, 2022 by Pau Amma
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

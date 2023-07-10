@@ -1,0 +1,274 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 9.0-RELEASE Errata
+
+The FreeBSD Project
+
+Copyright © 2012 The FreeBSD Documentation Project
+
+$FreeBSD: stable/9/release/doc/en_US.ISO8859-1/errata/article.sgml
+230254 2012-01-17 02:49:23Z hrs $
+
+FreeBSD is a registered trademark of the FreeBSD Foundation.
+
+Intel, Celeron, EtherExpress, i386, i486, Itanium, Pentium, and Xeon are
+trademarks or registered trademarks of Intel Corporation or its
+subsidiaries in the United States and other countries.
+
+SPARC, SPARC64, SPARCengine, and UltraSPARC are trademarks of SPARC
+International, Inc in the United States and other countries. SPARC
+International, Inc owns all of the SPARC trademarks and under licensing
+agreements allows the proper use of these trademarks by its members.
+
+Many of the designations used by manufacturers and sellers to
+distinguish their products are claimed as trademarks. Where those
+designations appear in this document, and the FreeBSD Project was aware
+of the trademark claim, the designations have been followed by the “™”
+or the “®” symbol.
+
+------------------------------------------------------------------------
+
+  This document lists errata items for FreeBSD 9.0-RELEASE, containing
+  significant information discovered after the release or too late in
+  the release cycle to be otherwise included in the release
+  documentation. This information includes security advisories, as well
+  as news relating to the software or documentation that could affect
+  its operation or usability. An up-to-date version of this document
+  should always be consulted before installing this version of FreeBSD.
+
+  This errata document for FreeBSD 9.0-RELEASE will be maintained until
+  the release of FreeBSD 9.1-RELEASE.
+
+------------------------------------------------------------------------
+
+1 Introduction
+
+This errata document contains “late-breaking news” about FreeBSD
+9.0-RELEASE. Before installing this version, it is important to consult
+this document to learn about any post-release discoveries or problems
+that may already have been found and fixed.
+
+Any version of this errata document actually distributed with the
+release (for example, on a CDROM distribution) will be out of date by
+definition, but other copies are kept updated on the Internet and should
+be consulted as the “current errata” for this release. These other
+copies of the errata are located at http://www.FreeBSD.org/releases/,
+plus any sites which keep up-to-date mirrors of this location.
+
+Source and binary snapshots of FreeBSD 9.0-STABLE also contain
+up-to-date copies of this document (as of the time of the snapshot).
+
+For a list of all FreeBSD CERT security advisories, see
+http://www.FreeBSD.org/security/ or
+ftp://ftp.FreeBSD.org/pub/FreeBSD/CERT/.
+
+------------------------------------------------------------------------
+
+2 Security Advisories
+
+Problems described in the following security advisories have been fixed
+in 9.0-RELEASE. For more information, consult the individual advisories
+available from http://security.FreeBSD.org/.
+
++-------------+-------------+------------------------------------------+
+| Advisory    | Date        | Topic                                    |
++=============+=============+==========================================+
+| SA-1        | 20          | Network ACL mishandling in mountd(8)     |
+| 1:01.mountd |  April 2011 |                                          |
++-------------+-------------+------------------------------------------+
+| SA          | 28 May 2011 | BIND remote DoS with large RRSIG RRsets  |
+| -11:02.bind |             | and negative caching                     |
++-------------+-------------+------------------------------------------+
+| SA-11:      | 28 Sep      | Errors handling corrupt compress file in |
+| 04.compress | tember 2011 | compress(1) and gzip(1)                  |
++-------------+-------------+------------------------------------------+
+| SA          | 28 Sep      | Buffer overflow in handling of UNIX      |
+| -11:05.unix | tember 2011 | socket addresses                         |
++-------------+-------------+------------------------------------------+
+| SA          | 23 De       | Remote packet Denial of Service against  |
+| -11:06.bind | cember 2011 | named(8) servers                         |
++-------------+-------------+------------------------------------------+
+| SA-1        | 23 De       | Code execution via chrooted ftpd         |
+| 1:07.chroot | cember 2011 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-11       | 23 De       | telnetd code execution vulnerability     |
+| :08.telnetd | cember 2011 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-11       | 23 De       | pam_ssh improperly grants access when    |
+| :09.pam_ssh | cember 2011 | user account has unencrypted SSH private |
+|             |             | keys                                     |
++-------------+-------------+------------------------------------------+
+| S           | 23 De       | pam_start() does not validate service    |
+| A-11:10.pam | cember 2011 | names                                    |
++-------------+-------------+------------------------------------------+
+
+------------------------------------------------------------------------
+
+3 Open Issues
+
+-   In some releases prior to 9.0-RELEASE, upgrading by using
+    freebsd-update(8) can fail. This issue has been fixed by a change in
+    Errata Notice EN-12:01. For more information, see
+    http://security.freebsd.org/advisories/FreeBSD-EN-12:01.freebsd-update.asc
+
+-   [amd64, i386] FreeBSD 9.0-RELEASE includes several changes to
+    improve resource management of PCI devices. Some x86 machines may
+    not boot or may have devices that no longer attach when using ACPI
+    as a result of these changes. This can be worked around by setting a
+    loader(8) tunable debug.acpi.disabled to hostres. To do this, enter
+    the following lines at the loader prompt:
+
+        set debug.acpi.disabled="hostres"
+        boot
+
+    Or, put the following line into /boot/loader.conf:
+
+        debug.acpi.disabled="hostres"
+
+-   A devctl(4) event upon arrival of a ugen(4) device has been changed.
+    The event now includes ugen and cdev variables instead of
+    device-name. This change can prevent the following devd(8) rule
+    which worked in a previous releases from working:
+
+        attach 0 {
+            match "device-name" "ugen[0-9]+.[0-9]+";
+            action "/path/to/script /dev/$device-name";
+        }
+
+    This should be updated to the following:
+
+        attach 0 {
+            match "subsystem" "DEVICE";
+            match "type" "ATTACH";
+            match "cdev" "ugen[0-9]+.[0-9]+";
+            action "/path/to/script /dev/$cdev";
+        }
+
+-   The FreeBSD 9.0-RELEASE Release Notes should have mentioned that SSM
+    (Source-Specific Multicast) MLDv2 now uses ALLOW_NEW_SOURCES and
+    BLOCK_OLD_SOURCES record types to signal a join or a leave by
+    default. This conforms RFC 4604, “Using Internet Group Management
+    Protocol Version 3 (IGMPv3) and Multicast Listener Discovery
+    Protocol Version 2 (MLDv2) for Source-Specific Multicast”. A new
+    sysctl(8) variable net.inet6.mld.use_allow which controls the
+    behavior has been added. The default value is 1 (use
+    ALLOW_NEW_SOURCES and BLOCK_OLD_SOURCES).
+
+-   9.0-RELEASE fails to configure an interface specified in the
+    rc.conf(5) variable ipv6_prefix_IF when the interface does not have
+    a corresponding ifconfig_IF_ipv6 variable. This problem will be
+    fixed in the future releases. To work around this problem on
+    9.0-RELEASE, add an ifconfig_IF_ipv6 line for each interface
+    specified in ipv6_prefix_IF as the following:
+
+        ipv6_prefix_em0="2001:db8:1:0 2001:db8:2:0"
+        ifconfig_em0_ipv6="inet6 auto_linklocal"
+
+-   In 9.0-RELEASE the FreeBSD USB subsystem supports USB 3.0 by the
+    xhci(4) driver. However, a bug that could prevent it from working
+    with a USB 3.0 hub has been found and fixed after the release date.
+    This means 9.0-RELEASE and prior do not work with a USB 3.0 hub.
+    This problem has been fixed in HEAD and will be merged into the
+    9-STABLE branch.
+
+------------------------------------------------------------------------
+
+4 Late-Breaking News
+
+No news.
+
+------------------------------------------------------------------------
+
+This file, and other release-related documents, can be downloaded from
+http://www.FreeBSD.org/releases/.
+
+For questions about FreeBSD, read the documentation before contacting
+<questions@FreeBSD.org>.
+
+All users of FreeBSD 9.0-STABLE should subscribe to the
+<stable@FreeBSD.org> mailing list.
+
+For questions about this documentation, e-mail <doc@FreeBSD.org>.
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

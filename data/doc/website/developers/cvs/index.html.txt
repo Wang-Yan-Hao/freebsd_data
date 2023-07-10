@@ -1,0 +1,125 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   
+-   Developer's Handbook
+-   Committer's Guide
+-   Porter's Handbook
+-   Source code repositories
+-   Release Engineering
+-   Platforms
+-   Project Ideas
+-   Contributing
+
+Source code repositories
+
+Git
+
+Git is the tool the FreeBSD Project uses for keeping its sources under
+control. Every change (with an accompanying log message explaining its
+purpose) is stored. It can be easily viewed from the web interface
+mentioned below.
+
+In December 2020, development of the base system migrated from
+Subversion to Git. The web interface is available for browsing the
+repository.
+
+In December 2020, the FreeBSD Documentation Project moved from
+Subversion to Git. There is a web interface available for browsing the
+contents of the FreeBSD Documentation Project Git repository.
+
+In April 2021, the FreeBSD Ports tree has been moved from Subversion to
+Git. There is a web interface for browsing the repository.
+
+Subversion
+
+Subversion (SVN for short) is the legacy tool the FreeBSD Project used
+for keeping its sources under control. Every change (with an
+accompanying log message explaining its purpose) is stored. It can be
+easily viewed from the web interface mentioned below.
+
+In June 2008, development of the base system migrated from CVS to
+Subversion. Since December 2020, after development moved to Git,
+Subversion only receives translated commits from git2svn exporter in
+stable/11, stable/12 and supported release branches. The web interface
+is available for browsing the repository.
+
+In May 2012, the FreeBSD Documentation Project moved from CVS to
+Subversion. The doc subversion repository does not receive any further
+updates after the development moved from Subversion to Git since
+December 2020. There is a web interface available for browsing the
+contents of the FreeBSD Documentation Project SVN repository.
+
+In July 2012, the FreeBSD Ports tree moved from CVS to Subversion. The
+ports subversion repository does not receive any further updates after
+the development moved from Subversion to Git since April 2021. There is
+a web interface for browsing the repository.
+
+------------------------------------------------------------------------
+
+Last modified on: April 7, 2021 by Li-Wen Hsu
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

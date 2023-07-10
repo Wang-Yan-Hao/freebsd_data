@@ -1,0 +1,223 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 13.1-RELEASE Errata
+
+Abstract
+
+This document lists errata items for FreeBSD 13.1-RELEASE, containing
+significant information discovered after the release or too late in the
+release cycle to be otherwise included in the release documentation.
+This information includes security advisories, as well as news relating
+to the software or documentation that could affect its operation or
+usability. An up-to-date version of this document should always be
+consulted before installing this version of FreeBSD.
+
+This errata document for FreeBSD 13.1-RELEASE will be maintained until
+the release of FreeBSD 13.2-RELEASE.
+
+Table of Contents
+
+-   Introduction
+
+-   Security Advisories
+
+-   Errata Notices
+
+-   Open Issues
+
+-   Late-Breaking News
+
+Introduction
+
+This errata document contains "late-breaking news" about FreeBSD
+13.1-RELEASE. Before installing this version, it is important to consult
+this document to learn about any post-release discoveries or problems
+that may already have been found and fixed.
+
+Any version of this errata document actually distributed with the
+release (for example, on a CDROM distribution) will be out of date by
+definition, but other copies are kept updated on the Internet and should
+be consulted as the "current errata" for this release. These other
+copies of the errata are located at https://www.FreeBSD.org/releases/,
+plus any sites which keep up-to-date mirrors of this location.
+
+Source and binary snapshots of FreeBSD 13-STABLE also contain up-to-date
+copies of this document (as of the time of the snapshot).
+
+For a list of all FreeBSD CERT security advisories, see
+https://www.FreeBSD.org/security/.
+
+Security Advisories
+
++---------------------------+--------------------+--------------------+
+| Advisory                  | Date               | Topic              |
++===========================+====================+====================+
+| FreeBSD-SA-22:09.elf      | 9 August 2022      | Out of bound read  |
+|                           |                    | in                 |
+|                           |                    | e                  |
+|                           |                    | lf_note_prpsinfo() |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-22:11.vm       | 9 August 2022      | Memory disclosure  |
+|                           |                    | by stale virtual   |
+|                           |                    | memory mapping     |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-22:12.lib9p    | 9 August 2022      | Missing bounds     |
+|                           |                    | check in 9p        |
+|                           |                    | message handling   |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-22:13.zlib     | 30 August 2022     | zlib heap buffer   |
+|                           |                    | overflow           |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-22:14.heimdal  | 29 November 2022   | Multiple           |
+|                           | (revised)          | vulnerabilities in |
+|                           |                    | Heimdal            |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-22:15.ping     | 29 November 2022   | Stack overflow in  |
+|                           |                    | ping(8)            |
++---------------------------+--------------------+--------------------+
+
+Errata Notices
+
++---------------------------+--------------------+--------------------+
+| Errata                    | Date               | Topic              |
++===========================+====================+====================+
+| FreeBSD-EN-22:16.kqueue   | 9 August 2022      | kevent(2) timers   |
+|                           |                    | fire too often     |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-22:17.cam      | 9 August 2022      | Kernel memory      |
+|                           |                    | corruption during  |
+|                           |                    | SCSI error         |
+|                           |                    | recovery           |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-22:19.pam_exec | 9 August 2022      | NULL pointer       |
+|                           |                    | dereference in     |
+|                           |                    | pam_exec(8)        |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-22:20.tzdata   | 30 August 2022     | Timezone database  |
+|                           |                    | information update |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-22:21.zfs      | 1 November 2022    | ZFS B-Tree         |
+|                           |                    | use-after-free     |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-22:22.tzdata   | 1 November 2022    | Timezone database  |
+|                           |                    | information update |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-22:23.vm       | 1 November 2022    | Memory pages       |
+|                           |                    | become             |
+|                           |                    | unreclaimable      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-22:24.zfs      | 1 November 2022    | ZFS snapshot       |
+|                           |                    | directories not    |
+|                           |                    | accessible over    |
+|                           |                    | NFS                |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-22:25.tcp      | 1 November 2022    | Possible data      |
+|                           |                    | corruption with    |
+|                           |                    | TCP SACK           |
+|                           |                    | retransmissions    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-22:26.cam      | 1 November 2022    | CAM ioctl(2)       |
+|                           |                    | compatibility      |
+|                           |                    | breakage           |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-22:27.loader   | 1 November 2022    | UEFI loader        |
+|                           |                    | failing to boot    |
+|                           |                    | older amd64        |
+|                           |                    | kernels            |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-22:28.heimdal  | 29 November 2022   | Regression in      |
+|                           |                    | Heimdal KDC        |
++---------------------------+--------------------+--------------------+
+
+Open Issues
+
+No open issues.
+
+Late-Breaking News
+
+[2022-07-12] A late issue was discovered with RISCV virtual machine
+images, wherein the images produced would result in a zero-byte file. As
+such, the images have been removed.
+
+------------------------------------------------------------------------
+
+Last modified on: July 9, 2023 by Graham Perrin
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

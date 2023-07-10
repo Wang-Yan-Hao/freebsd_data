@@ -1,0 +1,132 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   
+-   Developer's Handbook
+-   Committer's Guide
+-   Porter's Handbook
+-   Source code repositories
+-   Release Engineering
+-   Platforms
+-   Project Ideas
+-   Contributing
+
+A FreeBSD/amd64 projekt
+
+[BSD Démon egy kalapácsot lenget]
+
+Ez az oldal az AMD64 és az Intel® 64 (Extended Memory 64-bit Technology)
+architektúrák FreeBSD portjával kapcsolatban tartalmaz információkat. Az
+AMD64 architektúra korábban x86-64 vagy "Hammer", az Intel 64
+architektúra pedig Yamhill, Clackamas Technology (CT), IA-32e és EM64T
+neveken volt ismert.
+
+Az AMD Opteron™, AMD Athlon™64, AMD Turion™64 és az újabb AMD Sempron™
+processzorok már az AMD64 architektúrához sorolhatóak.
+
+Az Intel vPro™, Intel Celeron D (néhány modell a "Prescott" óta), Intel
+Centrino® Duo, Intel Centrino® Pro, Intel Viiv™, Intel Core™2 Extreme,
+Intel Core™2 Quad, Intel Core™2 Duo, Intel Xeon (3000-es, 5000-es, és
+7000-es sorozat) processzorok az Intel®64 architektúrához tartoznak.
+
+Helyzet
+
+A FreeBSD/amd64 64 bites többfelhasználós üzemmódban képes futni,
+egyprocesszoros és többprocesszoros változatban is.
+
+Az AMD64 platform jelenleg egy Tier 1 szintû FreeBSD platform.
+
+A FreeBSD/amd64 porthoz kapcsolódó források
+
+-   A FreeBSD/amd64 levelezési lista
+
+Egyéb érdekes linkek
+
+AMD64 dokumentáció
+
+-   Az AMD x86-64 architektúra specifikációja
+
+-   Az AMD64 architektúra alkalmazásfejlesztõi kézikönyve
+
+-   Az AMD64 architektúra rendszerfejlesztõi kézikönyve
+
+-   Az AMD x86-64 DRAFT, processzorokénti ABI specifikációja
+
+-   AMD x86-64 whitepaper
+
+Szoftvereszközök
+
+-   A Bochs és Simics szimulátorok és eszközeik
+
+Kapcsolódó projektek
+
+-   NetBSD/amd64
+
+------------------------------------------------------------------------
+
+Last modified on: 2023. június 7. by Ed Maste
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

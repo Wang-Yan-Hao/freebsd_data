@@ -1,0 +1,296 @@
+[FreeBSD The Power to Serve]
+
+An FreeBSD spenden
+
+ 
+
+-   Startseite
+
+-   Über FreeBSD
+    -   Für Einsteiger
+    -   Eigenschaften
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Bezugsquellen
+    -   Release Information
+    -   Release Engineering
+
+-   Dokumentation
+    -   FAQ
+    -   Handbuch
+    -   Porter-Handbuch
+    -   Entwickler-Handbuch
+    -   Committer's Guide
+    -   Manualpages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   Alle Bücher und Artikel
+
+-   Community
+    -   Mailinglisten
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Entwicklung
+    -   Projektideen
+    -   Git-Spiegelserver
+    -   Subversion-Repository
+    -   GitHub Mirror
+    -   Phabricator (Code Review)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Hilfe
+    -   Kommerzieller Support
+    -   Sicherheit
+    -   Problemberichte
+    -   Problembericht erstellen
+    -   Internet-Ressourcen
+
+-   Foundation
+    -   Geldspende
+    -   Hardwarespende
+
+-   
+-   Entwickler-Handbuch
+-   Committer's Guide
+-   Porter-Handbuch
+-   Source code repositories
+-   Release Engineering
+-   Platforms
+-   Project Ideas
+-   Contributing
+
+FreeBSD/ppc Projekt
+
+Einführung
+
+Diese Seiten des FreeBSD/ppc-Projekts enthalten Informationen über die
+Portierung von FreeBSD auf die PowerPC®-Architektur. Wie die Portierung
+selbst sind auch diese Seiten unter ständiger Bearbeitung.
+
+Inhaltsverzeichnis
+
+-   Status
+
+-   Neuigkeiten
+
+-   FAQs zur Portierung
+
+-   Unterstützte Hardware
+
+-   Die Mailingliste FreeBSD/ppc
+
+-   Bekannte Probleme
+
+-   Dokumentation, White-Papers, Werkzeuge
+
+-   Verwandte Themen
+
+Status
+
+Die FreeBSD/ppc-Portierung gilt nach wie vor als Tier-2-Plattform. Dies
+bedeutet, dass sie von Security Officer, Release Ingenieuren und
+Toolchain-Betreuern noch nicht vollständig unterstützt wird.
+Unterstützung durch portmgr (für den Bau von Binärpaketen) ist hingegen
+vorhanden.
+
+Die aktuellste Liste der unterstützten Hardware finden Sie im FreeBSD
+Wiki.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Neuigkeiten
+
+-   05. Mai 2019: FreeBSD wurde auf dem Raptor Blackbird-Motherboard
+    getestet und scheint dort ohne gröbere Probleme zu laufen.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Häufig gestellte Fragen
+
+1.  Wie kann ich FreeBSD/ppc installieren?
+
+2.  Wie verwende ich Ports unter FreeBSD/ppc?
+
+3.  Soll ich powerpc oder powerpc64 installieren?
+
+4.  An wen soll ich mich wenden?
+
+Wie kann ich FreeBSD/ppc installieren?
+
+ISO-Images für die Installation von FreeBSD {rel120-current} stehen zum
+Download bereit. Lesen Sie für weitere Informationen bitte die
+Release-Ankündigung.
+
+Wie verwende ich Ports unter FreeBSD/ppc?
+
+Falls Sie FreeBSD {rel114-current} oder {rel121-current} einsetzen,
+verwenden Sie am Besten portsnap. Setzen Sie hingegen FreeBSD -CURRENT
+ein, sollten Sie Subversion verwenden. Lesen Sie dazu bitte den
+Abschnitt Benutzen der Ports-Sammlung des Handbuchs.
+
+Soll ich powerpc oder powerpc64 installieren?
+
+Der powerpc64-Port bietet Ihnen einen 64-Bit-Kernel sowie ein
+64-Bit-Userland und wird auf allen 64-Bit-Prozessoren unterstützt.
+Besitzen Sie einen 32-Bit-Prozessor (Apple G3/G4), müssen Sie die
+(32-Bit-)powerpc-Plattform installieren. Bei einem 64-Bit-Prozessor, der
+auch 32-Bit-Unterstützung bietet (Apple G5), haben Sie die Wahl zwischen
+32 und 64 Bit. Verwenden Sie hingegen einen reinen 64-Bit-Prozessor, so
+müssen Sie powerpc64 verwenden. Bevor Sie sich zwischen 32 und 64 Bit
+entscheiden, sollten Sie bedenken, dass powerpc64 einige zusätzliche
+Funktionen (beispielsweise die Unterstützung für mehr als 2 GB RAM und
+ZFS) bietet. Wie andere 64-Bit-Plattformen bietet auch FreeBSD/powerpc64
+die Möglichkeit, sowohl 32-Bit- als auch 64-Bit-Programme auszuführen.
+
+An wen soll ich mich wenden?
+
+Dieses Projekt wird über die FreeBSD/ppc Mailinliste betreut.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Unterstützte Hardware
+
+Die aktuellste Liste der unterstützten Hardware finden Sie im FreeBSD
+Wiki.
+
+Der FreeBSD/ppc-Port sollte auf jedem aktuellen Apple-Rechner (d.h. auf
+jedem Apple-Computer mit einem eingebauten USB-Port) sowie auf der Sony
+Playststation 3 laufen.
+
+Für die folgenden Systeme wurde eine erfolgreiche Installation sowie ein
+erfolgreicher Betrieb von FreeBSD berichtet:
+
++-----------------+-----------------+-----------------+-----------------+
+| Hersteller      | Modell          | Eingereicht von | Anmerkungen     |
+|                 |                 | (Links          |                 |
+|                 |                 | optional)       |                 |
++=================+=================+=================+=================+
+| Apple           | iMac G3 350 MHz | Martin Minkus   | Rage 128VR      |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | iMac G3 DV      | David S. Besade | None            |
+|                 | Special Edition | (dmesg)         |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | iMac G3         | Peter Grehan    | Rage 3D Pro     |
+|                 | Revision B      |                 | 215GP, accel    |
+|                 |                 |                 | disabled        |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | eMac 700 MHz    | Peter Grehan    | Nvidia GeForce2 |
+|                 |                 |                 | MX              |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | Mac Mini G4 1.4 | Tilman Linneweh | None            |
+|                 | GHz             | (dmesg)         |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | Powerbook G4    | Peter Grehan    | Nvidia GeForce  |
+|                 | 1.33 GHz        |                 | G5200           |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | Aluminium       | Andreas Tobler  | None            |
+|                 | Powerbook G4    |                 |                 |
+|                 | 1.5 GHz         |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | PowerMac G5     |                 | FreeBSD 8.0     |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | iMac G5         |                 | FreeBSD 8.0     |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | Xserve G5       |                 | FreeBSD 8.1     |
++-----------------+-----------------+-----------------+-----------------+
+| Apple           | PowerMac G5     |                 | FreeBSD 8.1     |
+|                 | (late 2005)     |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Die Mailingliste FreeBSD/ppc
+
+Um diese Liste zu abonnieren, schicken sie eine E-Mail an
+freebsd-ppc-subscribe@FreeBSD.org oder Sie besuchen die entsprechende
+Mailman-Seite.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Bekannte Probleme
+
+-   Es gibt einen bekannten Bug im Boot-Loader von “New World”-Systemen
+    von Apple, der das Booten eines alternativen Kernels verhindert. Das
+    Testen eines neuen Kernels ist daher etwas riskant. Wenn Sie den
+    Loader am Open Firmware-Prompt starten, geben Sie daher eine
+    Partition an, die nicht existiert, von der kein Kernel geladen
+    werden muss, oder bei der es sich nicht um eine UFS-Partition
+    handelt:
+
+        0 > boot hd:loader hd:0
+
+    Danach können Sie die Variable currdev setzen und den Kernel manuell
+    laden:
+
+        OK set currdev=hd:14
+        OK load /boot/kernel/kernel.save
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Dokumentation, White-Papers, Werkzeuge
+
+-   PowerPC 32-bit chip documentation
+
+-   Open Firmware Quick Reference
+
+-   "TN1061: Fundamentals of Open Firmware, Part 1 - The User Interface"
+
+-   "TN1062: Fundamentals of Open Firmware, Part 2 - The Device Tree"
+
+-   Apple hardware developer docs
+
+-   "TN2004: Debugging Open Firmware Using Telnet"
+
+-   "TN2023: Open Firmware Ethernet Debugging II - Telnet Downloading"
+
+-   "TN2001: Running Files from a Hard Drive in Open Firmware"
+
+Verwandte Themen
+
+-   Das FreeBSD/ppc Wiki
+
+-   Garance A. Drosehn beschreibt die Nutzung von FreeBSD auf dem Mac
+    Mini
+
+-   NetBSD/macppc
+
+-   OpenBSD/macppc
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19. Juni 2021 by Danilo G. Baio
+
+Rechtliches | © 1995-2023 The FreeBSD Project Alle Rechte vorbehalten.
+Die Marke FreeBSD ist eine eingetragene Marke der FreeBSD Foundation und
+wird vom FreeBSD Project mit freundlicher Genehmigung der The FreeBSD
+Foundation. Kontakt

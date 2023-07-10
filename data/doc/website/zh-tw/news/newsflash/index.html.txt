@@ -1,0 +1,1207 @@
+[FreeBSD The Power to Serve]
+
+捐贈 FreeBSD
+
+ 
+
+-   首頁
+
+-   關於
+    -   簡介
+    -   特色
+    -   宣傳
+    -   行銷
+    -   隱私政策
+    -   Projects
+    -   Ports
+
+-   取得 FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   文件
+    -   常見問題集
+    -   使用手冊
+    -   Porter 手冊
+    -   Developer 手冊
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   文件計畫入門書
+    -   所有書籍與文章
+
+-   社群
+    -   郵件論壇
+    -   論壇
+    -   愛用者組織
+    -   活動
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   開發者
+    -   計畫構想
+    -   Git 檔案庫
+    -   Subversion 檔案庫
+    -   Git 鏡像站
+    -   程式碼審查 (Phabricator)
+    -   Wiki
+    -   持續整合服務
+
+-   支援
+    -   供應商
+    -   安全資訊
+    -   問題回報
+    -   提交問題回報
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   基金會
+    -   資金捐贈
+    -   硬體捐贈
+
+-   關於
+-   特色
+-   Applications
+-   宣傳
+-   行銷
+-   Administration
+-   News
+-   活動
+-   Press
+-   Artwork
+-   Logo
+-   捐贈
+-   法律聲明
+-   隱私政策
+
+-   RSS 2.0 Feed
+
+FreeBSD News Flash
+
+[FreeBSD News]
+
+FreeBSD 是個發展迅速的作業系統。
+保持最新的開發版是比較繁瑣的！你可以定期來查閱本頁，此外，也可能訂閱
+freebsd-announce 郵件論壇 或使用 RSS feed。
+
+下列的每項都有自己的新聞頁面，裡面有這些的更新細節。
+
+-   FreeBSD 上的 KDE
+
+-   FreeBSD 上的 GNOME
+
+更詳細的描述、介紹、和未來的發行版本，請看 Release 資訊這頁。
+
+對於 FreeBSD 的安全公告， 請查閱 安全資訊 頁面。
+
+March 2023
+
+-    27 March: FreeBSD 13.2 的第五個候選發布版本現已發布。用於
+    amd64、i386、powerpc、powerpc64、powerpc64le、powerpcspe、armv6、armv7、aarch64和
+    riscv64 的 ISO 映像檔案已經 發布，可以在多數的 FreeBSD 鏡像站取得。
+
+-    25 March: FreeBSD 13.2 的第四個候選發布版本現已發布。用於
+    amd64、i386、powerpc、powerpc64、powerpc64le、powerpcspe、armv6、armv7、aarch64和
+    riscv64 的 ISO 映像檔案已經 發布，可以在多數的 FreeBSD 鏡像站取得。
+
+-    20 March: 增加提交權限: Lorenzo Salvadore (ports, doc)
+
+-    18 March: FreeBSD 13.2 的第三個候選發布版本現已發布。用於
+    amd64、i386、powerpc、powerpc64、powerpc64le、powerpcspe、armv6、armv7、aarch64和
+    riscv64 的 ISO 映像檔案已經 發布，可以在多數的 FreeBSD 鏡像站取得。
+
+-    11 March: FreeBSD 13.2 的第二個候選發布版本現已發布。用於
+    amd64、i386、powerpc、powerpc64、powerpc64le、powerpcspe、armv6、armv7、aarch64和
+    riscv64 的 ISO 映像檔案已經 發布，可以在多數的 FreeBSD 鏡像站取得。
+
+-    4 March: FreeBSD 13.2 的第一個候選發布版本現已發布。用於
+    amd64、i386、powerpc、powerpc64、powerpc64le、powerpcspe、armv6、armv7、aarch64和
+    riscv64 的 ISO 映像檔案已經 發布，可以在多數的 FreeBSD 鏡像站取得。
+
+February 2023
+
+-    26 February: FreeBSD 13.2 的第三個 BETA 版本現已發布。用於
+    amd64、i386、powerpc、powerpc64、powerpc64le、powerpcspe、armv6、armv7、aarch64和
+    riscv64 的 ISO 映像檔案已經 發布，可以在多數的 FreeBSD 鏡像站取得。
+
+-    18 February: FreeBSD 13.2 的第二個 BETA 版本現已發布。用於
+    amd64、i386、powerpc、powerpc64、powerpc64le、powerpcspe、armv6、armv7、aarch64和
+    riscv64 的 ISO 映像檔案已經 發布，可以在多數的 FreeBSD 鏡像站取得。
+
+-    15 February: 新任 committer: Cheng Cui (src)
+
+-    14 February: FreeBSD 13.2 的第一個 BETA 版本現已發布。用於
+    amd64、i386、powerpc、powerpc64、powerpc64le、powerpcspe、armv6、armv7、aarch64和
+    riscv64 的 ISO 映像檔案已經 發布，可以在多數的 FreeBSD 鏡像站取得。
+
+-    9 February: 新任 committer: Robert Nagy (ports)
+
+-    2 February: 新任 committer: Robert Clausecker (ports)
+
+January 2023
+
+-    26 January: 2022 第四季開發進度報告發布 34則條目現已發布。
+
+December 2022
+
+-    5 December: FreeBSD 12.4-RELEASE現已發布了。安裝前，請查看
+    發布通知和 發行勘誤以了解 12.4 的最新消息和問題。更多資訊可查看
+    發行版資訊頁面。
+
+November 2022
+
+-    11 November: FreeBSD 12.4 的第二個候選發布版本現已發布。 用於
+    amd64、armv6、armv7、i386、arm64、powerpc、powerpc64、powerpcspe、和
+    sparc64 的 ISO 映像檔案已經發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    4 November: FreeBSD 12.4 的第一個候選發布版本現已發布。 用於
+    amd64、armv6、armv7、i386、arm64、powerpc、powerpc64、powerpcspe、和
+    sparc64 的 ISO 映像檔案已經發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+October 2022
+
+-    26 October: 新任 committer: Corvin Köhne (src)
+
+-    21 October: FreeBSD 12.4 的第一個 BETA 版本現已發布。用於
+    amd64、armv6、armv7、i386、arm64、powerpc、powerpc64、powerpcspe、和
+    sparc64 的 ISO 映像檔案已經 發布，可以在多數的 FreeBSD 鏡像站取得。
+
+-    21 October: 2022 第三季開發進度報告發布 24則條目現已發布。
+
+-    16 October: 新任 committer: Zhenlei Huang (src)
+
+-    8 October: 增加提交權限: Muhammad Moinur Rahman (doc, ports)
+
+-    6 October: 新任 committer: Ronald Klop (ports)
+
+August 2022
+
+-    9 August: 2022 第二季開發進度報告發布 26則條目現已發布。
+
+-    1 August: 新任 committer: Felix Palmen (ports)
+
+June 2022
+
+-    29 June: 新任 committer: Dmitry Salychev (src)
+
+-    22 June: 新任 committer: Kornel Dulęba (src)
+
+-    18 June: 本計畫活躍的 committer 已選舉出第 12 屆 FreeBSD Core
+    Team。詳情請見 官方公告。
+
+-    9 June: 2022 第一季開發進度報告發布 22則條目現已發布。
+
+-    3 June: 新任 committer: Pau Amma (doc)
+
+-    1 June: 新任 committer: Graham Perrin (doc)
+
+May 2022
+
+-    12 May:
+
+    FreeBSD 13.1-RELEASE現已發布了。安裝前，請查看 發布通知和
+    發行勘誤以了解 13.1 的最新消息和問題。更多資訊可查看
+    發行版資訊頁面。
+
+-    5 May: FreeBSD 13.1 的第六個候選發布版本現已發布。 用於
+    amd64、i386、arm64、powerpc64、powerpc64le、powerpcspe 和 riscv64 的
+    ISO 映像檔案已經發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+April 2022
+
+-    28 April: FreeBSD 13.1 的第五個候選發布版本現已發布。 用於
+    amd64、i386、arm64、powerpc64、powerpc64le、powerpcspe 和 riscv64 的
+    ISO 映像檔案已經發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    21 April: FreeBSD 13.1 的第四個候選發布版本現已發布。 用於
+    amd64、i386、arm64、powerpc64、powerpc64le、powerpcspe 和 riscv64 的
+    ISO 映像檔案已經發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    14 April: FreeBSD 13.1 的第三個候選發布版本現已發布。 用於
+    amd64、i386、arm64、powerpc64、powerpc64le、powerpcspe 和 riscv64 的
+    ISO 映像檔案已經發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    7 April: FreeBSD 13.1 的第二個候選發布版本現已發布。 用於
+    amd64、i386、arm64、powerpc64、powerpc64le、powerpcspe 和 riscv64 的
+    ISO 映像檔案已經發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    1 April: FreeBSD 13.1 的第一個候選發布版本現已發布。 用於
+    amd64、i386、arm64、powerpc64、powerpc64le、powerpcspe 和 riscv64 的
+    ISO 映像檔案已經發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+March 2022
+
+-    24 March: FreeBSD 13.1 的第三個 BETA 版本現已發布。用於
+    amd64、i386、arm64、powerpc64、powerpc64le、powerpcspe和 riscv64 的
+    ISO 映像檔案已經 發布，可以在多數的 FreeBSD 鏡像站取得。
+
+-    23 March: Portmgr 重新啟動 portmgr-lurker 計畫，已選出首兩位
+    lurkers：Luca Pizzamiglio 與 Stefan Eßer。他們將在接下來的數個月加入
+    portmgr 並學習內部工作。
+
+-    17 March: FreeBSD 13.1 的第二個 BETA 版本現已發布。用於
+    amd64、i386、arm64、powerpc64、powerpc64le、powerpcspe和 riscv64 的
+    ISO 映像檔案已經 發布，可以在多數的 FreeBSD 鏡像站取得。
+
+-    10 March: FreeBSD 13.1 的第一個 BETA 版本現已發布。用於
+    amd64、i386、arm64、powerpc64、powerpcspe、powerpc64le和 riscv64 的
+    ISO 映像檔案已經 發布，可以在多數的 FreeBSD 鏡像站取得。
+
+-    10 March: 2021 第四季開發進度報告發布 19則條目現已發布。
+
+February 2022
+
+-    9 February: 新任 committer：Alfonso S. Siciliano (src)
+
+December 2021
+
+-    7 December:
+
+    FreeBSD 12.3-RELEASE現已發布了。安裝前，請查看 發布通知和
+    發行勘誤以了解 12.3 的最新消息和問題。更多資訊可查看
+    發行版資訊頁面。
+
+November 2021
+
+-    18 November: FreeBSD 12.3 的第二個候選發布版本現已發布。 用於
+    amd64、armv6、armv7、arm64、i386、powerpc、powerpc64、powerpcspe 和
+    sparc64 的 ISO 映像檔案已經發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    15 November: 2021 第三季開發進度報告 42 則條目現已發布。
+
+-    11 November: FreeBSD 12.3 的第一個候選發布版本現已發布。 用於
+    amd64、armv6、armv7、arm64、i386、powerpc、powerpc64、powerpcspe 和
+    sparc64 的 ISO 映像檔案已經發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    6 November: 新任 committer：Dries Michiels (ports)
+
+-    4 November: FreeBSD 12.3 的第三個 BETA 版本現已發布。用於
+    amd64、armv6、armv7、arm64、i386、powerpc、powerpc64、powerpcspe 和
+    sparc64 的 ISO 映像檔案已經發布，可以在多數的 FreeBSD 鏡像站取得。
+
+October 2021
+
+-    29 October: FreeBSD 12.3 的第二個 BETA 版本現已發布。用於
+    amd64、armv6、armv7、arm64、i386、powerpc、powerpc64、powerpcspe 和
+    sparc64 的 ISO 映像檔案已經發布，可以在多數的 FreeBSD 鏡像站取得。
+
+-    22 October: FreeBSD 12.3 的第一個 BETA 版本現已發布。用於
+    amd64、armv6、armv7、arm64、i386、powerpc、powerpc64、powerpcspe 和
+    sparc64 的 ISO 映像檔案已經發布，可以在多數的 FreeBSD 鏡像站取得。
+
+August 2021
+
+-    27 August: 新任 committer: Yasuhiro Kimura (ports)
+
+July 2021
+
+-    31 July: 增加提交權限: Li-Wen Hsu (doc, ports, src)
+
+-    24 July: 2021 第二季開發進度報告 45 則條目現已發布。
+
+-    13 July: 增加提交權限: Philip Paeps (src, ports, doc)
+
+May 2021
+
+-    17 May: 增加提交權限: Guangyuan Yang (doc, ports)
+
+-    6 May: 2021 第一季開發進度報告 28 則條目現已發布。
+
+April 2021
+
+-    29 April: 新任 committer: Charlie Li (ports)
+
+-    21 April: 新任 committer: Oskar Holmlund (src)
+
+-    13 April:
+
+    FreeBSD 13.0-RELEASE現已發布了。安裝前，請查看 發布通知和
+    發行勘誤以了解 13.0 的最新消息和問題。更多資訊可查看
+    發行版資訊頁面。
+
+-    3 April: FreeBSD 13.0 的第五個候選發布版本現已發布。 用於
+    amd64、arm64、armv6、armv7、i386、powerpc、powerpc64、powerpcspe、powerpc64le
+    和 riscv64 的 ISO 映像檔案已經發布 ，可以在多數的 FreeBSD
+    鏡像站取得。
+
+March 2021
+
+-    29 March: FreeBSD 13.0 的第四個候選發布版本現已發布。 用於
+    amd64、arm64、armv6、armv7、i386、powerpc、powerpc64、powerpcspe、powerpc64le
+    和 riscv64 的 ISO 映像檔案已經發布 ，可以在多數的 FreeBSD
+    鏡像站取得。
+
+-    21 March: 轉移到 Hugo/AsciiDoctor 後， weblate
+    工具已重新開放。更多訊息請查看 公告訊息。
+
+-    20 March: FreeBSD 13.0 的第三個候選發布版本現已發布。 用於
+    amd64、arm64、armv6、armv7、i386、powerpc、powerpc64、powerpcspe、powerpc64le
+    和 riscv64 的 ISO 映像檔案已經發布 ，可以在多數的 FreeBSD
+    鏡像站取得。
+
+-    15 March: 新任 committer: 吳嘉浩 (src)
+
+-    12 March: FreeBSD 13.0 的第二個候選發布版本現已發布。 用於
+    amd64、arm64、armv6、armv7、i386、powerpc、powerpc64、powerpcspe、powerpc64le
+    和 riscv64 的 ISO 映像檔案已經發布 ，可以在多數的 FreeBSD
+    鏡像站取得。
+
+-    6 March: FreeBSD 13.0 的第一個候選發布版本現已發布。 用於
+    amd64、arm64、armv6、armv7、i386、powerpc、powerpc64、powerpcspe、powerpc64le
+    和 riscv64 的 ISO 映像檔案已經發布 ，可以在多數的 FreeBSD
+    鏡像站取得。
+
+February 2021
+
+-    27 February: FreeBSD 13.0 的第四個 BETA 版本現已發布。用於
+    amd64、arm64、armv6、armv7、i386、powerpc、powerpc64、powerpcspe、powerpc64le
+    和 riscv64 的 ISO 映像檔案已經 發布，可以在多數的 FreeBSD
+    鏡像站取得。
+
+-    20 February: FreeBSD 13.0 的第三個 BETA 版本現已發布。用於
+    amd64、arm64、armv6、armv7、i386、powerpc、powerpc64、powerpcspe、powerpc64le
+    和 riscv64 的 ISO 映像檔案已經 發布，可以在多數的 FreeBSD
+    鏡像站取得。
+
+-    12 February: FreeBSD 13.0 的第二個 BETA 版本現已發布。用於
+    amd64、arm64、armv6、armv7、i386、powerpc、powerpc64、powerpcspe、powerpc64le
+    和 riscv64 的 ISO 映像檔案已經 發布，可以在多數的 FreeBSD
+    鏡像站取得。
+
+-    7 February: 新任 committer: Fernando Apesteguia Santiago (doc)
+
+-    6 February: FreeBSD 13.0 的第一個 BETA 版本現已發布。用於
+    amd64、arm64、armv6、armv7、i386、powerpc、powerpc64、powerpcspe、powerpc64le
+    和 riscv64 的 ISO 映像檔案已經 發布，可以在多數的 FreeBSD
+    鏡像站取得。
+
+January 2021
+
+-    27 January: 新任 committer: Rajesh Kumar M A (src)
+
+-    27 January: 新任 committer: Nuno Teixeira (ports)
+
+-    25 January: 網站與文件系統轉換至 Hugo 與 AsciiDoctor
+
+-    21 January: 新任 committer: Lewis Cook (ports)
+
+-    16 January: 2020 第四季開發進度報告 42 則條目現已發布。
+
+-    14 January: 新任 committer: Lutz Donnerhacke (src)
+
+-    2 January: 新任 committer: Neel Chauhan (ports)
+
+December 2020
+
+-    19 December: FreeBSD src 程式庫將轉換為 git。詳情請見 the git wiki
+    。
+
+-    12 December: 新任 committer: Juraj Lutter (ports)
+
+-    5 December: FreeBSD doc 程式庫已轉換為 git。
+
+October 2020
+
+-    27 October:
+
+    FreeBSD 12.2-RELEASE現已發布了。安裝前，請查看 發布通知和
+    發行勘誤以了解 12.2 的最新消息和問題。更多資訊可查看
+    發行版資訊頁面。
+
+-    21 October:
+
+    2020 第三季開發進度報告 35 則條目現已發布。
+
+-    17 October:
+
+    FreeBSD 12.2 的第三個候選發布版本現已發布。
+    用於amd64、armv6、armv7、arm64、i386、powerpc、powerpc64、powerpcspe和sparc64
+    的ISO 映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    10 October:
+
+    FreeBSD 12.2 的第二個候選發布版本現已發布。
+    用於amd64、armv6、armv7、arm64、i386、powerpc、powerpc64、powerpcspe和sparc64
+    的ISO 映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    3 October:
+
+    FreeBSD 12.2 的第一個候選發布版本現已發布。
+    用於amd64、armv6、armv7、arm64、i386、powerpc、powerpc64、powerpcspe和sparc64
+    的ISO 映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+September 2020
+
+-    26 September:
+
+    FreeBSD 12.2 的第三個 BETA 版本現已發布。
+    用於amd64、armv6、armv7、arm64、i386、powerpc、powerpc64、powerpcspe和sparc64
+    的ISO 映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    18 September:
+
+    FreeBSD 12.2 的第二個 BETA 版本現已發布。
+    用於amd64、armv6、armv7、arm64、i386、powerpc、powerpc64、powerpcspe和sparc64
+    的ISO 映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    12 September:
+
+    FreeBSD 12.2 的第一個 BETA 版本現已發布。
+    用於amd64、armv6、armv7、arm64、i386、powerpc、powerpc64、powerpcspe和sparc64
+    的ISO 映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+August 2020
+
+-    31 August: 新任 committer: Rainer Hurling (ports)
+
+July 2020
+
+-    26 July: 新任 committer: Daniel Ebdrup Jensen (doc)
+
+-    23 July: 新任 committer: Robert Wing (src)
+
+-    15 July:
+
+    2020 第二季開發進度報告51則條目現已發布。
+
+-    1 July:
+
+    計畫的 active committers 已選出第十一屆的 FreeBSD Core
+    Team。詳情請見 官方公告。
+
+June 2020
+
+-    16 June:
+
+    FreeBSD 11.4-RELEASE現已發布了。安裝前，請查看 發布通知和
+    發行勘誤以了解 11.4 的最新消息和問題。更多資訊可查看
+    發行版資訊頁面。
+
+-    9 June:
+
+    修訂過的政策請見 Code of Conduct 。
+
+-    8 June: 新任 committer: Gordon Bergling (doc)
+
+-    2 June:
+
+    FreeBSD 2020 社群調查 開始了。歡迎將調查連結和您的雇主、同事、
+    朋友或任何對 FreeBSD 有興趣的社群成員分享。 調查將於 6月16日 17:00
+    UTC ( 周二 10am PDT ) 結束。
+
+May 2020
+
+-    29 May:
+
+    FreeBSD 11.4 的第二個候選發布版本現已發布。
+    用於amd64、armv6、arm64、i386、powerpc、powerpc64和sparc64 的ISO
+    映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    22 May:
+
+    FreeBSD 11.4 的第一個候選發布版本現已發布。
+    用於amd64、armv6、arm64、i386、powerpc、powerpc64和sparc64 的ISO
+    映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    16 May:
+
+    FreeBSD 11.4 的第二個 BETA 版本現已發布。
+    用於amd64、armv6、arm64、i386、powerpc、powerpc64和sparc64 的ISO
+    映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    16 May:
+
+    FreeBSD 計畫再次在 Google Season of Docs 計畫 擔任指導組織
+    。此計畫的目的是讓開源與技術作家們聚在一起，
+    技術作家會花三個月和開源社群緊密地一起工作，提供他們的專業給開源計畫的文件。
+    任務與連絡資訊清單請洽 FreeBSD wiki。
+
+-    9 May:
+
+    FreeBSD 11.4 的第一個 BETA 版本現已發布。
+    用於amd64、armv6、arm64、i386、powerpc、powerpc64和sparc64 的ISO
+    映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+April 2020
+
+-    12 April:
+
+    2020 第一季開發進度報告現已發布。
+
+-    6 April: 新任 committer: Richard Scheffenegger (src)
+
+-    1 April: 新任 committer: Hiroki Tagato (ports)
+
+March 2020
+
+-    10 March: 新任 committer: Aleksandr Fedorov (src)
+
+-    9 March: 新任 committer: Nick O'Brien (src)
+
+February 2020
+
+-    18 February: 新任 committer: Lorenzo Salvadore (ports)
+
+-    10 February: 新任 committer: Ryan Moeller (src)
+
+January 2020
+
+-    27 January: 新任 committer: Alfredo Dal'Ava Júnior (src)
+
+-    27 January:
+
+    2019 第四季開發進度報告現已發布。
+
+-    21 January:
+
+    為了讓新貢獻者翻譯 FreeBSD 官方文件與書籍
+    的過程更平易近人，本計畫採用 Weblate 做為網頁翻譯平台。
+
+    本工具已由部分翻譯團隊 (pt_BR、 es_ES 和 zh_CN) 使用數個月。
+    由於有優異的成果和成熟的工作流程，我們決定採用它。
+    我們相信我們已經準備好啟用此平台給新協同翻譯者使用。
+
+    採用這個新工具後，翻譯過程變得很簡單，
+    想貢獻的任何人都可以花個幾分鐘貢獻翻譯！
+
+    如果您有興趣藉由翻譯官方文件貢獻文件計畫，您可以在 wiki 和
+    freebsd-translators 郵件論壇的 公告 獲得更多訊息。
+
+-    10 January: 新任 committer: Mikaël Urankar (ports)
+
+-    2 January: 新任 committer: Loïc Bartoletti (ports)
+
+November 2019
+
+-    25 November:
+
+    2019 第三季開發進度報告現已發布。
+
+-    4 November:
+
+    FreeBSD 12.1-RELEASE現已發布了。安裝前，請查看 發布通知和
+    發行勘誤以了解12.1的最新消息和問題。更多資訊可查看 發行版資訊頁面。
+
+October 2019
+
+-    18 October:
+
+    FreeBSD 12.1 的第二個候選發布版本現已發布。
+    用於amd64、armv6、armv7、arm64、i386、powerpc、powerpc64、powerpcspe
+    和sparc64 的ISO 映像檔案已經 發布 ，可以在多數的 FreeBSD
+    鏡像站取得。
+
+-    11 October:
+
+    FreeBSD 12.1 的第一個候選發布版本現已發布。
+    用於amd64、armv6、armv7、arm64、i386、powerpc、powerpc64、powerpcspe
+    和sparc64 的ISO 映像檔案已經 發布 ，可以在多數的 FreeBSD
+    鏡像站取得。
+
+-    11 October: 新任 committer: Alex Samorukov (ports)
+
+-    4 October:
+
+    FreeBSD 12.1 的第三個 BETA 版本現已發布。
+    用於amd64、armv6、armv7、arm64、i386、powerpc、powerpc64、powerpcspe和sparc64
+    的ISO 映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+September 2019
+
+-    28 September:
+
+    FreeBSD 12.1 的第二個 BETA 版本現已發布。
+    用於amd64、armv6、armv7、arm64、i386、powerpc、powerpc64、powerpcspe和sparc64
+    的ISO 映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    26 September: 新任 committer: Pawel Biernacki (src)
+
+-    20 September:
+
+    FreeBSD 12.1 的第一個 BETA 版本現已發布。
+    用於amd64、armv6、armv7、arm64、i386、powerpc、powerpc64、powerpcspe和sparc64
+    的ISO 映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    15 September: 新任 committer: Dmitri Goutnik (ports)
+
+-    10 September: 新任 committer: Stephen Gregoratto (src). 從事
+    Google's Season of Docs 之 FreeBSD 計畫使用者手冊的改善工作。
+
+August 2019
+
+-    28 August: 新任 committer: Santhosh Raju (ports)
+
+-    25 August:
+
+    2019 第二季開發進度報告現已發布。
+
+July 2019
+
+-    16 July:
+
+    由於我們無法控制的情況，我們需要變更 FreeBSD.org 郵件的外寄 SMTP
+    伺服器位址。 我們了解到會因為 SMTP 寄件者信譽系統而遭遇一些挑戰
+
+    更多資訊，請見 此公告。
+
+-    9 July:
+
+    FreeBSD 11.3-RELEASE現已發布了。安裝前，請查看 發布通知和
+    發行勘誤以了解11.3的最新消息和問題。更多資訊可查看 發行版資訊頁面。
+
+June 2019
+
+-    28 June:
+
+    FreeBSD 11.3 的第三個候選發布版本現已發布。
+    用於amd64、armv6、arm64、i386、powerpc、powerpc64和sparc64 的ISO
+    映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    21 June:
+
+    FreeBSD 11.3 的第二個候選發布版本現已發布。
+    用於amd64、armv6、arm64、i386、powerpc、powerpc64和sparc64 的ISO
+    映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    14 June:
+
+    FreeBSD 11.3 的第一個候選發布版本現已發布。
+    用於amd64、armv6、arm64、i386、powerpc、powerpc64和sparc64 的ISO
+    映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    7 June:
+
+    FreeBSD 11.3 的第三個 BETA 版本現已發布。
+    用於amd64、armv6、arm64、i386、powerpc、powerpc64和sparc64 的ISO
+    映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    4 June:
+
+    2019 第一季開發進度報告現已發布。
+
+May 2019
+
+-    31 May:
+
+    FreeBSD 11.3 的第二個 BETA 版本現已發布。
+    用於amd64、armv6、arm64、i386、powerpc、powerpc64和sparc64 的ISO
+    映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    31 May: 新任 committer: Brandon Bergren (src)
+
+-    24 May:
+
+    FreeBSD 11.3 的第一個 BETA 版本現已發布。
+    用於amd64、armv6、arm64、i386、powerpc、powerpc64和sparc64 的ISO
+    映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    16 May: 新任 committer: Sergio Carlavilla Delgado (docs, Spanish
+    translator)
+
+April 2019
+
+-    30 April: 新任 committer: Doug Moore (src)
+
+-    28 April:
+
+    FreeBSD 正在測試新的 pkgbase。詳情請見 CFT FreeBSD pkg base 。
+
+-    27 April:
+
+    FreeBSD 2019 社群調查現已公布。歡迎與您的雇主、同事、朋友或是任何對
+    FreeBSD 有興趣的社群成員分享調查連結。 調查將於5月13日 UTC
+    時間午夜結束。
+
+-    19 April:
+
+    FreeBSD 正在測試新的 ZFS 實作的上游 - ZFS on Linux。 測試 FreeBSD +
+    ZoL (ZFS on Linux) 的 FreeBSD 12-STABLE and 13-CURRENT
+    映像檔現已發布。 測試細節請見 CFT FreeBSD + ZoL。
+
+-    14 April: 新任 committer: Piotr Kubaj (ports)
+
+-    14 April: 增加提交權限: Pedro Giffuni (ports, src)
+
+March 2019
+
+-    20 March: 新任 committer: Mitchell Horne (src)
+
+February 2019
+
+-    1 February: 新任 committer: Kai Knoblich (ports)
+
+January 2019
+
+-    19 January: 新任 committer: Johannes Lundberg (src)
+
+December 2018
+
+-    24 December:
+
+    2018 第一至三季開發進度報告現已發布。
+
+-    11 December:
+
+    FreeBSD 12.0-RELEASE現已發布了。安裝前，請查看 發布通知和
+    發行勘誤以了解12.0的最新消息和問題。更多資訊可查看 發行版資訊頁面。
+
+-    11 December:
+
+    Cirrus CI 系統最近增加 FreeBSD 支援。 Cirrus CI
+    藉由現代雲端技術使您的開發週期更快速、有效和安全。 Cirrus CI
+    和您的團隊一起擴展，讓軟體的傳送更快速和經濟。 更多詳情請參閱
+    FreeBSD 虛擬機器 指引。
+
+-    1 December:
+
+    FreeBSD 12.0 的第三個候選發布版本現已發布。
+    用於amd64、armv6、armv7、arm64、
+    i386、powerpc、powerpc64、powerpcspe和sparc64 的ISO 映像檔案已經
+    發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+November 2018
+
+-    25 November:
+
+    FreeBSD 12.0 的第二個候選發布版本現已發布。
+    用於amd64、armv6、armv7、arm64、
+    i386、powerpc、powerpc64、powerpcspe和sparc64 的ISO 映像檔案已經
+    發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    17 November:
+
+    FreeBSD 12.0 的第一個候選發布版本現已發布。
+    用於amd64、armv6、armv7、arm64、
+    i386、powerpc、powerpc64、powerpcspe和sparc64 的ISO 映像檔案已經
+    發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    10 November:
+
+    FreeBSD 12.0的第四個 BETA 版本現已發布。
+    用於amd64、armv6、armv7、arm64、
+    i386、powerpc、powerpc64、powerpcspe和sparc64 的ISO 映像檔案已經
+    發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    3 November:
+
+    FreeBSD 12.0的第三個 BETA 版本現已發布。
+    用於amd64、armv6、armv7、arm64、
+    i386、powerpc、powerpc64、powerpcspe和sparc64 的ISO 映像檔案已經
+    發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+October 2018
+
+-    27 October:
+
+    FreeBSD 12.0的第二個 BETA 版本現已發布。
+    用於amd64、armv6、armv7、arm64、
+    i386、powerpc、powerpc64、powerpcspe和sparc64 的ISO 映像檔案已經
+    發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    20 October:
+
+    FreeBSD 12.0的第一個 BETA 版本現已發布。
+    用於amd64、armv6、armv7、arm64、
+    i386、powerpc、powerpc64、powerpcspe和sparc64 的ISO 映像檔案已經
+    發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    16 October: 新任 committer: Thomas Munro (src)
+
+-    9 October: 新任 committer: Yuri Pankov (src)
+
+-    8 October: 新任 committer: Vinícius Zavam (ports)
+
+-    1 October: 新任 committer: Alexandre C. Guimaraes (ports)
+
+September 2018
+
+-    21 September: 新任 committer: Sergey Kozlov (ports)
+
+-    6 September: 新任 committer: Emmanuel Vadot (ports)
+
+-    2 September: 新任 committer: Kevin Bowling (ports)
+
+August 2018
+
+-    9 August: 增加提交權限: Li-Wen Hsu (ports, src)
+
+July 2018
+
+-    16 July: 新任 committer: John Hixson (ports)
+
+-    4 July:
+
+    計畫的 active committers 已選出第十屆的 FreeBSD Core Team。詳情請見
+    官方公告。
+
+June 2018
+
+-    30 June: 新任 committer: Jesper Schmitz Mouridsen (ports)
+
+-    27 June:
+
+    FreeBSD 11.2-RELEASE現已發布了。安裝前，請查看 發布通知和
+    發行勘誤以了解11.2的最新消息和問題。更多資訊可查看 發行版資訊頁面。
+
+-    19 June:
+
+    FreeBSD 這個名字在 1993 年 6 月 19 日正式確定並使用至今。 了解更多
+    關於如何和我們一起慶祝這個重要的日子。
+
+-    16 June:
+
+    FreeBSD 11.2 的第三個候選發布版本現已發布。
+    用於amd64、armv6、arm64、 i386、powerpc、powerpc64和sparc64 的ISO
+    映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    16 June: 新任 committer: Mateusz Piotrowski (ports)
+
+-    9 June:
+
+    FreeBSD 11.2 的第二個候選發布版本現已發布。
+    用於amd64、armv6、arm64、 i386、powerpc、powerpc64和sparc64 的ISO
+    映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    8 June:
+
+    部分 FreeBSD 叢集將於六月九日星期六因電力工程維護而離線。
+    服務將受到影響，特別是郵件論壇與我們的部分網站服務。
+
+    維護時段自六月九日 11:00 UTC (04:00 US-Pacific) 至 20:00 UTC (13:00
+    US-Pacific)
+
+-    2 June:
+
+    FreeBSD 11.2 的第一個候選發布版本現已發布。
+    用於amd64、armv6、arm64、 i386、powerpc、powerpc64和sparc64 的ISO
+    映像檔案已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+May 2018
+
+-    26 May:
+
+    FreeBSD 11.2的第三個 BETA 版本現已發布。 用於amd64、armv6、arm64、
+    i386、powerpc、powerpc64和sparc64 的ISO 映像檔案已經 發布
+    ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    22 May: 新任 committer: Breno Leitao (src)
+
+-    21 May: 新任 committer: Leandro Lupori (src)
+
+-    19 May:
+
+    FreeBSD 11.2的第二個 BETA 版本現已發布。 用於amd64、armv6、arm64、
+    i386、powerpc、powerpc64和sparc64 的ISO 映像檔案已經 發布
+    ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    15 May: 新任 committer: Gleb Popov (ports)
+
+-    12 May:
+
+    FreeBSD 11.2的第一個 BETA 版本現已發布。 用於amd64、armv6、arm64、
+    i386、powerpc、powerpc64和sparc64 的ISO 映像檔案已經 發布
+    ，可以在多數的 FreeBSD 鏡像站取得。
+
+April 2018
+
+-    17 April: 新任 committer: Sean Eric Fagan (src)
+
+-    7 April: 新任 committer: Tom Jones (src)
+
+-    4 April: 新任 committer: Ram Kishore Vegesna (src)
+
+March 2018
+
+-    23 March: 新任 committer: Matthias Fechner (ports)
+
+-    17 March: 新任 committer: Eric Turgeon (ports)
+
+-    16 March: 新任 committer: Vincenzo Maffione (src)
+
+-    14 March: 新任 committer: Koichiro Iwao (ports)
+
+-    3 March: 新任 committer: Fernando Apesteguia (ports)
+
+-    1 March: 新任 committer: Devin Teske (ports)
+
+February 2018
+
+-    14 February:
+
+    FreeBSD 計畫開心地宣佈參加 Google 的 2018 年 Summer of Code
+    計畫，補助暑期學生加入許多開源項目。這將是 FreeBSD
+    專案加入這個計畫的第 14 年，在 2005 年到 2017
+    年之間已經透過暑期程式設計專案指導超過 210 名成功的學生。
+
+    過去成功的項目包含改進 Linux ABI 模擬、NFSv4 ACLs、TCP
+    迴歸測試、FUSE 檔案系統支援以及其他無數個項目。 許多學生繼而成為
+    FreeBSD 開發人員，也透過 FreeBSD 基金會的持續協助參加世界各地的
+    FreeBSD 開發者活動。
+
+    邀請未來的參加者來參加；更多資訊，包含提案與截止日期資訊在 FreeBSD
+    暑期計畫頁面。
+
+-    8 February: 新任 committer: Slava Shwartsman (src)
+
+January 2018
+
+-    4 January:
+
+    關於 Meltdown 和 Spectre 攻擊： FreeBSD 在 2017
+    年十二月下旬已經意識到這個問題。 我們正在與 CPU
+    製造商和已發布的論文努力來減輕這類攻擊對 FreeBSD 的影響。
+    因為此次攻擊手法利用到 CPU 與作業系統互動的一些根本、關鍵機制，
+    因此對應修正的發布時間未定。
+
+December 2017
+
+-    25 December:
+
+    2017 第三季開發進度報告現已發布。
+
+November 2017
+
+-    11 November: 新任 committer: Jason W. Bacon (ports)
+
+October 2017
+
+-    30 October: 新任 committer: Alex Richardson (src)
+
+-    29 October: 新任 committer: Yuri Victorovich (ports)
+
+-    4 October:
+
+    FreeBSD 10.4-RELEASE現已發布了。安裝前，請查看 發布通知和
+    發行勘誤以了解10.4的最新消息和問題。更多資訊可查看 發行版資訊頁面。
+
+September 2017
+
+-    27 September:
+
+    2017 第二季開發進度報告現已發布。
+
+-    23 September:
+
+    FreeBSD 10.4 的第二個候選發布版本現已發布。 用於
+    amd64、armv6,i386、ia64、powerpc、powerpc64 和 sparc64 的 ISO
+    映像檔案 已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    19 September: 新任 committer: Eugene Grosbein (src)
+
+-    18 September: 新任 committer: Guangyuan Yang (doc)
+
+-    17 September:
+
+    FreeBSD 10.4 的第一個候選發布版本現已發布。 用於
+    amd64、armv6,i386、ia64、powerpc、powerpc64 和 sparc64 的 ISO
+    映像檔案 已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    11 September: 新任 committer: Craig Leres (ports)
+
+-    9 September: 新任 committer: Dave Cottlehuber (ports)
+
+-    9 September:
+
+    FreeBSD 10.4的第四個 BETA 版本現已發布。 用於amd64、armv6、
+    i386、aarch64、powerpc、powerpc64和sparc64 的ISO 映像檔案已經 發布
+    ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    8 September: 新任 committer: Adriaan de Groot (ports)
+
+-    6 September: 新任 committer: Chuck Tuffli (src)
+
+-    2 September: 新任 committer: Stephen Hurd (src)
+
+-    2 September:
+
+    FreeBSD 10.4的第三個 BETA 版本現已發布。 用於amd64、armv6、
+    i386、aarch64、powerpc、powerpc64和sparc64 的ISO 映像檔案已經 發布
+    ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    2 September: 新任 committer: Ilya Bakulin (src)
+
+August 2017
+
+-    28 August: 新任 committer: Fedor Uporov (src)
+
+-    26 August:
+
+    FreeBSD 10.4的第二個 BETA 版本現已發布。 用於amd64、armv6、
+    i386、aarch64、powerpc、powerpc64和sparc64 的ISO 映像檔案已經 發布
+    ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    25 August: 新任 committer: Luca Pizzamiglio (ports)
+
+-    19 August:
+
+    FreeBSD 10.4的第一個 BETA 版本現已發布。 用於amd64、armv6、
+    i386、aarch64、powerpc、powerpc64和sparc64 的ISO 映像檔案已經 發布
+    ，可以在多數的 FreeBSD 鏡像站取得。
+
+July 2017
+
+-    26 July:
+
+    FreeBSD 11.1-RELEASE現已發布了。安裝前，請查看 發布通知和
+    發行勘誤以了解11.1的最新消息和問題。更多資訊可查看 發行版資訊頁面。
+
+-    18 July: 新任 committer: Marcin Wojtas (src)
+
+-    15 July:
+
+    FreeBSD 11.1 的第三個候選發布版本現已發布。 用於
+    amd64、armv6,i386、aarch64、powerpc、powerpc64 和 sparc6 的 ISO
+    映像檔案 已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    12 July: 新任 committer: Matt Joras (src)
+
+-    8 July:
+
+    FreeBSD 11.1 的第二個候選發布版本現已發布。 用於
+    amd64、armv6,i386、aarch64、powerpc、powerpc64 和 sparc6 的 ISO
+    映像檔案 已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    1 July:
+
+    FreeBSD 11.1 的第一個候選發布版本現已發布。 用於
+    amd64、armv6,i386、aarch64、powerpc、powerpc64 和 sparc6 的 ISO
+    映像檔案 已經 發布 ，可以在多數的 FreeBSD 鏡像站取得。
+
+June 2017
+
+-    24 June:
+
+    FreeBSD 11.1的第三個 BETA 版本現已發布。 用於amd64、armv6、
+    i386、aarch64、powerpc、powerpc64和sparc64 的ISO 映像檔案已經 發布
+    ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    20 June: 新任 committer: Kyle Evans (src)
+
+-    17 June:
+
+    FreeBSD 11.1的第二個 BETA 版本現已發布。 用於amd64、armv6、
+    i386、aarch64、powerpc、powerpc64和sparc64 的ISO 映像檔案已經 發布
+    ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    10 June:
+
+    FreeBSD 11.1的第一個 BETA 版本現已發布。 用於amd64、armv6、
+    i386、aarch64、powerpc、powerpc64和sparc64 的ISO 映像檔案已經 發布
+    ，可以在多數的 FreeBSD 鏡像站取得。
+
+-    7 June: 新任 committer: Ryan Libby (src)
+
+May 2017
+
+-    31 May: 新任 committer: Richard Gallamore (ports)
+
+-    16 May: 新任 committer: Jochen Neumeister (ports)
+
+-    15 May:
+
+    2017 第一季開發進度報告現已發布。
+
+-    3 May: 新任 committer: Danilo G. Baio (ports)
+
+April 2017
+
+-    27 April: 新任 committer: Vladimir Kondratyev (src)
+
+-    18 April: 新任 committer: Bradley T. Hughes (ports)
+
+March 2017
+
+-    4 March: 新任 committer: Eugene Grosbein (ports)
+
+-    3 March: 回歸 committer: Rodney W. Grimes (src)
+
+February 2017
+
+-    27 February:
+
+    FreeBSD 計畫開心地宣佈參加 Google 的 2017 年 Summer of Code
+    計畫，補助暑期學生加入許多開源項目。這將是 FreeBSD
+    專案加入這個計畫的第 13 年，在 2005 年到 2016
+    年之間已經透過暑期程式設計專案指導超過 200 名成功的學生。
+
+    過去成功的項目包含改進 Linux ABI 模擬、NFSv4 ACLs、TCP
+    迴歸測試、FUSE 檔案系統支援以及其他無數個項目。 許多學生繼而成為
+    FreeBSD 開發人員，也透過 FreeBSD 基金會的持續協助參加世界各地的
+    FreeBSD 開發者活動。
+
+    邀請未來的參加者來參加；更多資訊，包含提案與截止日期資訊在 FreeBSD
+    暑期計畫頁面。
+
+-    13 February:
+
+    2016 第四季開發進度報告現已發布
+
+-    10 February: 新任 committer: Mahdi Mokhtari (ports)
+
+-    10 February: 新任 committer: Mahdi Mokhtari (ports)
+
+-    8 February: 新任 committer: Tobias Kortkamp (ports)
+
+January 2017
+
+-    10 January: 增加提交權限: Jean-Sébastien Pédron (ports)
+
+-    9 January: 新任 committer: Matthew Rezny (ports)
+
+-    9 January: 新任 committer: Larry Rosenman (ports)
+
+-    9 January: 新任 committer: Johannes Dieterich (ports)
+
+December 2016
+
+-    11 December: 新任 committer: Piotr Paweł Stefaniak (src)
+
+-    11 December: 新任 committer: Nikolai Lifanov (ports)
+
+November 2016
+
+-    15 November: 新任 committer: Mikhail Pchelin (ports)
+
+-    13 November:
+
+    2016 第三季開發進度報告現已發布
+
+-    2 November: 新任 committer: Konrad Witaszczyk (src)
+
+October 2016
+
+-    22 October: 新任 committer: David Bright (src)
+
+-    10 October:
+
+    FreeBSD 11.0-RELEASE現已發布了。安裝前，請查看 發布通知 和 發行勘誤
+    以了解 11.0的最新消息和問題。更多資訊可查看 發行版資訊頁面
+
+September 2016
+
+-    28 September:
+
+    為了處理一些發布時最新更新的項目，最終的 11.0-RELEASE 將重新建構。
+    更多資訊請參見發行工程團隊的 官方公告 。
+
+-    17 September: 新任 committer: Ruey-Cherng Yu (doc)
+
+-    17 September: 新任 committer: Joseph Mingrone (ports)
+
+-    17 September:
+
+    FreeBSD 11.0 的第三個候選發布版本現已發布。 用於
+    amd64、armv6,i386、aarch64、powerpc、powerpc64 和 sparc6 的 ISO
+    映像檔案 已經 發布， 可以在多數的 FreeBSD 鏡像站取得
+
+-    16 September: 新任 committer: Sevan Janiyan (doc)
+
+------------------------------------------------------------------------
+
+Last modified on: May 16, 2021 by Sergio Carlavilla Delgado
+
+法律聲明 | © 1995-2023 FreeBSD 計劃 保留所有權利。 FreeBSD 標誌是
+FreeBSD 基金會的註冊商標，由 FreeBSD 基金會授權 FreeBSD 計畫使用 The
+FreeBSD Foundation. 聯絡資訊
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

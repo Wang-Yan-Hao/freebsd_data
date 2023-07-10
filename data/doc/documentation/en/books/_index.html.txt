@@ -1,0 +1,12 @@
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+title: Books layout: total-list ---
+
+Books
+
+{{< list-books-directories >}}
+
+Last updated 2023-07-22 23:09:48 +0800

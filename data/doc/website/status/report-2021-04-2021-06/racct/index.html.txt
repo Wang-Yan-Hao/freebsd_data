@@ -1,0 +1,129 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Racct (Resource Accounting) Bug Fixes and Improvements
+
+Links:
+racct PR for runj URL: https://github.com/samuelkarp/runj/pull/11
+
+Contact: Cyril Zhang <cyril@freebsdfoundation.org>
+
+racct is a resource accounting system in the FreeBSD kernel. It keeps
+track of resource usage, such as memory use and CPU runtime.
+Additionally, it provides an easy interface for limiting the resource
+usage of entities such as users and, importantly, jails. For example, it
+may be of interest to set a limit on the number of CPUs that a jail can
+use.
+
+I have been discussing with other FreeBSD developers the prospect of
+adding racct support as an experimental feature to an OCI-compliant
+container runtime, runj by Samuel Karp. This would mimic Linux’s cgroups
+functionality in the OCI specification, which allows Linux containers to
+have limits on memory, CPU usage, etc. It also allows us to consider the
+possibility of adding FreeBSD-specific configuration to the OCI
+specification. As part of this work, I have been improving racct so that
+it is more functional for use with jails.
+
+Improvements include:
+
+-   A new, more accurate scheme for calculating total CPU usage of all
+    processes in a jail
+
+-   Fixing a bug that incorrectly counted the runtime of all child
+    processes in the parent’s runtime
+
+-   Fixing a bug that incorrectly decremented the count of persistent
+    resources, such as shared memory, when a process exits
+
+-   Accounting for POSIX features like shared memory and semaphores,
+    where previously only SysV features were accounted for
+
+-   Adding tests
+
+Feel free to get in touch.
+
+Sponsor: The FreeBSD Foundation
+
+------------------------------------------------------------------------
+
+Last modified on: July 24, 2021 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

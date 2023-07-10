@@ -1,0 +1,115 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Enable ASLR by default for 64-bit executables
+
+Contact: Dawid Gorecki <dgr@semihalf.com>
+Contact: Marcin Wojtas <mw@semihalf.com>
+
+Address Space Layout Randomization (ASLR) is an exploit mitigation
+technique implemented in the majority of modern operating systems. It
+involves randomly positioning the base address of an executable and the
+position of libraries, heap, and stack, in a process’s address space.
+Although over the years ASLR proved to not guarantee full OS security on
+its own, this mechanism can make exploitation more difficult.
+
+The Semihalf team made an effort to switch on the address map
+randomization for PIE (Position Independent Executables) & non-PIE
+64-bit binaries. Once the patch was merged to HEAD, the ASLR feature
+became enabled for all 64-bit architectures.
+
+Additionally, the mentioned change disabled SBRK, in order to allow
+utilization of the bss grow region for mappings. It has no effect
+without ASLR, so it was applied to all architectures.
+
+TODO:
+
+-   Improve stackgap feature implementation.
+
+-   MFC to stable/13 branch.
+
+Sponsor: Stormshield
+
+------------------------------------------------------------------------
+
+Last modified on: March 10, 2022 by Joseph Mingrone
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

@@ -1,0 +1,396 @@
+FreeBSD/alpha 4.9-RELEASE Release Notes
+
+The FreeBSD Project
+
+Copyright © 2000, 2001, 2002, 2003 The FreeBSD Documentation Project
+
+Copyright © 2002, 2003 The FreeBSD German Documentation Project
+
+$FreeBSD$
+
+Die Release Notes für FreeBSD 4.9-RELEASE enthalten eine Übersicht über
+alle Änderungen in FreeBSD seit der Version 4.8-RELEASE. Die Liste
+umfaßt sowohl die Änderungen des Kernels als auch Änderungen der
+Benutzerprogramme; dazu kommen alle Sicherheitshinweise, die seit der
+letzten Version herausgegeben wurden. Einige kurze Anmerkungen zum Thema
+Aktualisierung wurden ebenfalls aufgenommen.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Inhaltsverzeichnis
+
+1. Einführung
+
+2. Neuerungen
+
+2.1. Sicherheit
+
+2.2. Änderungen im Kernel
+
+2.2.1. Unterstützung für Prozessoren und Mainboards
+
+2.2.2. Änderungen im Bootloader
+
+2.2.3. Netzwerke und Netzwerkkarten
+
+2.2.4. Netzwerk-Protokolle
+
+2.2.5. Festplatten und Massenspeicher
+
+2.2.6. Dateisystem
+
+2.2.7. Unterstützung für PCCARD
+
+2.2.8. Multimedia
+
+2.3. Benutzerprogramme
+
+2.4. Zusätzliche Software
+
+2.5. Infrastruktur für Ports und Packages
+
+2.6. Erzeugung von Releases und Integration
+
+3. Aktualisierung einer älteren Version von FreeBSD
+
+1. Einführung
+
+Dieses Dokument enthält die Release Notes für FreeBSD 4.9-RELEASE auf
+Alpha/AXP Systemen. Es beschreibt die Komponenten von FreeBSD, die seit
+4.8-RELEASE hinzugefügt (oder geändert) wurden. Außerdem erhalten Sie
+Hinweise für die Aktualisierung Ihres FreeBSD-Systems.
+
+Diese Distribution von FreeBSD 4.9-RELEASE ist eine release
+Distribution. Sie können Sie von ftp://ftp.FreeBSD.org/ und allen seinen
+Mirrors erhalten. Weitere Informationen, wie Sie diese (oder andere)
+release Distributionen von FreeBSD erhalten können, finden Sie im Anhang
+``Bezugsquellen für FreeBSD'' des FreeBSD Handbuchs.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2. Neuerungen
+
+Dieser Abschnitt beschreibt die für den Anwender offensichtlichsten
+Neuerungen und Änderungen in FreeBSD seit 4.8-RELEASE. Die Einträge
+dokumentieren neue Treiber bzw. Unterstützung für neue Hardware, neue
+Befehle oder Optionen, die Behebung wichtiger Fehler, und
+Aktualisierungen von Dritt-Software. Sicherheitshinweise, die nach dem
+Erscheinen von 4.8-RELEASE herausgegeben wurden, sind ebenfalls
+aufgeführt.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.1. Sicherheit
+
+In sendmail wurde ein über das Netzwerk ausnutzbarer Puffer-Überlauf
+beseitigt. Weitere Informationen finden Sie in FreeBSD-SA-03:07. Dieser
+Fehler wurde in FreeBSD 4.8-RELEASE durch einen vom Hersteller
+herausgegebenen Patch und in FreeBSD 4.9-RELEASE durch den Import einer
+neuen sendmail-Version behoben. Allerdings wurden diese Tatsachen nicht
+explizit in der Dokumentation erwähnt.
+
+In realpath(3) wurde ein Fehler behoben, durch den es zu einem
+Buffer-Überlauf von einem Byte kommen konnte. Weitere Informationen
+finden Sie in FreeBSD-SA-03:08.
+
+Durch einen Fehler im Kernel war es möglich, ihn zur Aussendung
+illegaler Signale zu bewegen. Dadurch konnte es zu einer Kernel Panic
+kommen. Weitere Informationen finden Sie in FreeBSD-SA-03:09.
+
+In der iBCS2 Emulation wurde ein Fehler behoben, durch den es möglich
+war, Einblick in den Kernel-Speicher zu erhalten. Dieses Modul wird
+standardmäßig nicht verwendet. Weitere Informationen finden Sie in
+FreeBSD-SA-03:10.
+
+Ein Programmierfehler in den ``DNS maps'' von sendmail wurde durch den
+Import einer neueren sendmail-Version behoben. Weitere Informationen
+finden Sie in FreeBSD-SA-03:11. In den Konfigurationsdateien, die bei
+FreeBSD mitgelifert werden, werden die ``DNS maps'' NICHT verwendet.
+
+In den Routinen zum Buffer-Management innerhalb von OpenSSH wurde ein
+Fehler behoben, der zu einem Absturz führen kann. Weitere Informationen
+finden Sie in FreeBSD-SA-03:12.
+
+In sendmail wurde ein Buffer-Überlauf beseitigt. Weitere Informationen
+finden Sie in FreeBSD-SA-03:13.
+
+In den Kernel-Routinen für den ARP Cache wurde ein Fehler beseitigt, der
+zum Verbrauch aller Ressourcen und dadurch zum Komplettabsturz führen
+konnte. Weitere Informationen finden Sie in FreeBSD-SA-03:14.
+
+Innerhalb der Routinen für PAM challenge/response Authentifizierung von
+OpenSSH wurden diverse Fehler korrigiert. Details und Informationen über
+die Auswirkungen der Fehler finden Sie in FreeBSD-SA-03:15.
+
+In der Systemfunktion readv(2) wurde einen Fehler behoben, der zum
+Totalabsturz des Systems führen konnte. Es war auch möglich, daß ein
+Anwender durch diesen Fehler Systemverwalterrechte erhalten konnte.
+Weitere Informationen finden Sie in FreeBSD-SA-03:16.
+
+In procfs(5) und linprocfs(5) wurde ein Fehler beseitigt, durch den man
+Einblick in den Speicher des Kernels erhalten konnte. Weitere
+Informationen finden Sie in FreeBSD-SA-03:17.
+
+In OpenSSL wurden vier Fehler beseitigt, durch die ein Angreifer ein
+OpenSSL nutzendes Programm abstürzen lassen und/oder beliebige Programme
+mit den Rechten einer auf OpenSSL aufsetzenden Anwendung ausführen
+konnte. Weitere Informationen finden Sie in FreeBSD-SA-03:18.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2. Änderungen im Kernel
+
+Der neue Treiber hifn(4) unterstützt symmetrische Verschlüsselung auf
+Basis der 7955 und 7966 Chipsätze.
+
+<<<<<<< HEAD
+
+2.2.1. Unterstützung für Prozessoren und Mainboards
+
+
+2.2.2. Änderungen im Bootloader
+
+=======
+------------------------------------------------------------------------
+
+2.2.1. Unterstützung für Prozessoren und Mainboards
+
+------------------------------------------------------------------------
+
+2.2.2. Änderungen im Bootloader
+
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2.3. Netzwerke und Netzwerkkarten
+
+Der Treiber bge(4) unterstützt jetzt auch Gigabit-Ethernetkarten auf
+Basis des Broadcom 5705 Chipsatzes.
+
+Im Treiber dc(4) wurde ein Fehler beim Versand von Paketen über
+Netzwerkkarten mit Davicom DC9102 Chipsatz beseitigt.
+
+Der neue Treiber proatm unterstützt ProATM-Karten der Firma ProSum auf
+Basis des IDT77252 Chipsatzes. Dieser Treiber entspricht dem
+patm-Treiber in FreeBSD-CURRENT.
+
+Der Treiber sk(4) unterstützt jetzt auch Gigabit Ethernet Karten auf
+Basis der Chipsätze SK-9521 V2.0 und 3COM 3C940.
+
+Der Treiber wi(4) unterstützt Suspend und Resume jetzt auch, wenn die
+zugehörige Schnittstelle nicht aktiv (down) ist.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2.4. Netzwerk-Protokolle
+
+In den Routinen zur Auswertung von ipfw(4) limit Regeln wurde ein Fehler
+beseitigt, der zu diversen Abstürzen führen konnte.
+
+ipfw(4) versteht jetzt mit Kommata separierte Adreßlisten (wie z.B.
+1.2.3.4, 5.6.7.8/30, 9.10.11.12/22) und erlaubt die Verwendung eines
+Leerzeichens hinter dem Komma, um die Listen besser lesbar zu machen.
+
+ipfw(4) versteht jetzt Kommentare im C++-Stil. Die Kommentare werden
+zusammen mit den jeweiligen Regeln gespeichert und bei ipfw(8) show
+angezeigt.
+
+ipfw(8) erlaubt jetzt die Änderung des ipfw(4) Regelsatzes 31, der
+bisher nicht verändert werden konnte und für die Standardregeln genutzt
+wurde. Dieser Regelsatz kann jetzt mit ipfw delete set 31 gelöscht
+werden, das normale ipfw flush löscht ihn allerdings nicht. Durch diese
+Änderung wird es einfacher, ``persistente Regeln'' einzurichten. Weitere
+Informationen finden Sie in ipfw(8).
+
+Der Kernel unterstützt jetzt Protocol Independent Multicast Routing.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2.5. Festplatten und Massenspeicher
+
+Der Treiber da(4) versucht nicht mehr, 6 Byte lange Befehle an USB- und
+Firewire-Geräte zu verschicken. Die Ausnahmeregeln (quirks) für
+USB-Geräte sollten jetzt überflüssig sein und wurden deaktiviert. Um sie
+zu reaktivieren, muß in der Konfigurationsdatei für den angepaßten
+Kernel die Zeile options DA_OLD_QUIRKS stehen.
+
+Der Treiber twe(4) unterstützt jetzt das generische ABI von 3ware.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2.6. Dateisystem
+
+Mit der neuen Kernel-Option DIRECTIO ist es möglich, Daten direkt (unter
+Umgehung des Buffer Cache im Kernel) in den Speicherbereich eines
+Programms zu lesen. Um diese Erweiterung nutzen zu können, muß bei dem
+entsprechenden Dateideskriptor das Flag O_DIRECT gesetzt sein, außerdem
+müssen sowohl der Offset als auch die Länge der Leseoperation ein
+ganzzahliges Vielfaches der physikalischen Sektorgröße sein.
+
+<<<<<<< HEAD
+
+2.2.7. Unterstützung für PCCARD
+
+
+2.2.8. Multimedia
+
+=======
+------------------------------------------------------------------------
+
+2.2.7. Unterstützung für PCCARD
+
+------------------------------------------------------------------------
+
+2.2.8. Multimedia
+
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.3. Benutzerprogramme
+
+Bei arp(8) kann man mit der neuen Option -i die Ausgabe der
+Anzeigeoperationen auf die ARP-Einträge eines einzigen Interfaces
+begrenzen. Die Erweiterung ist speziell für Router mit vielen
+Netzwerk-Interfaces gedacht.
+
+Bei chroot(8) können jetzt mit den neuen Optionen -u, -g und -G der
+Benutzer, die primäre Gruppe und die Liste der Gruppen gesetzt werden,
+die innerhalb der chroot-Umgebung genutzt werden sollen.
+
+Bei ipfw(8) list und show kann man jetzt Bereiche angeben.
+
+Bei ipfw(8) kann jetzt mit der neuen Option -n die Syntax eines
+Kommandos getestet werden, ohne Änderungen an den aktiven Regeln
+vorzunehmen.
+
+Bei mount_msdosfs(8) kann jetzt mit der neuen Option -M die maximale
+Berechtigung für Verzeichnisse angegeben werden.
+
+systat(1) zeigt jetzt auch IPv6 und ICMPv6 Datenpakete an.
+
+Der neue Parameter -r von uudecode(1) und b64decode(1) erlaubt es, auch
+unvollständige oder defekte Dateien zu bearbeiten, bei denen der
+Vorspann oder auch die letzten Zeilen fehlen.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.4. Zusätzliche Software
+
+groff wurde von Version 1.18.1 auf Version 1.19 aktualisiert.
+
+lukemftp wurde von der Version 1.2beta1 auf eine Zwischenversion vom 5.
+Januar 2003 aktualisiert.
+
+OpenSSL wurde von der Version 0.9.7a auf die Version 0.9.7c
+aktualisiert.
+
+sendmail steht jetzt in der Version 8.12.9 zur Verfügung.
+
+texinfo wurde von Version 4.5 auf Version 4.6 aktualisiert.
+
+Die Datenbank der Zeitzonen wurde von der Version tzdata2003a auf die
+Version tzdata2003d aktualisiert.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.5. Infrastruktur für Ports und Packages
+
+Bei pkg_create(1) kann jetzt mit -C eine Liste von Packages definiert
+werden, die nicht zu diesem Package kompatibel sind. Ist eines dieser
+Pakete bereits installiert, weigert sich pkg_add(1), das Paket zu
+installieren. Wenn das Paket trotzdem installiert werden soll, muß
+pkg_add(1) mit dem Parameter -f aufgerufen werden.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.6. Erzeugung von Releases und Integration
+
+GNOME wurde von Version 2.2 auf Version 2.4 aktualisiert.
+
+KDE wurde von Version 3.1 auf Version 3.1.4 aktualisiert.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3. Aktualisierung einer älteren Version von FreeBSD
+
+Wenn Sie eine ältere Version von FreeBSD aktualisieren wollen, haben Sie
+drei Möglichkeiten:
+
+-   Die binäre Aktualisierung mit sysinstall(8). Diese Variante benötigt
+    die wenigste Zeit, allerdings geht sie davon aus, daß Sie keine
+    Optionen zur Kompilierung von FreeBSD genutzt haben.
+
+-   Die komplette Neuinstallation von FreeBSD. Dadurch führen Sie
+    natürlich keine echte Aktualisierung durch und es ist auf jeden Fall
+    nicht so bequem wie die binäre Aktualisierung, da Sie ihre
+    Konfigurationsdaten in /etc selbst sichern und wiederherstellen
+    müssen. Dennoch kann diese Option sinnvoll sein, wenn Sie die
+    Aufteilung der Partitionen ändern wollen oder müssen.
+
+-   Mit dem Sourcecode in /usr/src. Diese Variante ist flexibler,
+    benötigt aber mehr Plattenplatz, Zeit, und Erfahrung. Weitere
+    Informationen zu diesem Thema finden Sie im Kapitel ``Bau mit
+    make world'' des FreeBSD Handbuchs. Eine Aktualisierung einer sehr
+    alten Version von FreeBSD kann mit Problemen verbunden sein; in
+    diesen Fällen ist es effektiver, eine binäre Aktualisierung oder
+    eine komplette Neuinstallation durchzuführen.
+
+Bitte lesen Sie den Inhalt der Datei INSTALL.TXT, um weitere
+Informationen zu erhalten, und zwar bevor Sie mit der Aktualisierung
+beginnen. Wenn Sie den Sourcecode zur Aktualisierung nutzen, sollten Sie
+auf jeden Fall auch /usr/src/UPDATING lesen.
+
+Zum guten Schluß: Wenn Sie auf eine der möglichen Arten die
+FreeBSD-Entwicklungszweige -STABLE oder -CURRENT nutzen, sollten Sie auf
+jeden Fall das Kapitel ``-CURRENT vs. -STABLE'' im FreeBSD Handbuch
+lesen.
+
+  Wichtig: Sie sollten vor der Aktualisierung von FreeBSD auf jeden Fall
+  Sicherheitskopien aller Daten und Konfigurationsdateien anlegen.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Diese Datei und andere Dokumente zu dieser Version sind bei
+ftp://ftp.FreeBSD.org/verfuegbar.
+
+Wenn Sie Fragen zu FreeBSD haben, lesen Sie erst die Dokumentation,
+bevor Sie sich an <de-bsd-questions@de.FreeBSD.org> wenden.
+
+Wenn Sie Fragen zu dieser Dokumentation haben, wenden Sie sich an
+<de-bsd-translators@de.FreeBSD.org>.

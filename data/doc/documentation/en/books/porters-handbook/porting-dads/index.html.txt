@@ -1,0 +1,885 @@
+
+-    Chapter 1. Introduction
+-    Chapter 2. Making a New Port
+-    Chapter 3. Quick Porting
+    -   3.1. Writing the Makefile
+    -   3.2. Writing the Description Files
+    -   3.3. Creating the Checksum File
+    -   3.4. Testing the Port
+    -   3.5. Checking the Port with portlint
+    -   3.6. Submitting the New Port
+-    Chapter 4. Slow Porting
+    -   4.1. How Things Work
+    -   4.2. Getting the Original Sources
+    -   4.3. Modifying the Port
+    -   4.4. Patching
+    -   4.5. Configuring
+    -   4.6. Handling User Input
+-    Chapter 5. Configuring the Makefile
+    -   5.1. The Original Source
+    -   5.2. Naming
+    -   5.3. Categorization
+    -   5.4. The Distribution Files
+    -   5.5. MAINTAINER
+    -   5.6. COMMENT
+    -   5.7. Project website
+    -   5.8. Licenses
+    -   5.9. PORTSCOUT
+    -   5.10. Dependencies
+    -   5.11. Slave Ports and MASTERDIR
+    -   5.12. Man Pages
+    -   5.13. Info Files
+    -   5.14. Makefile Options
+    -   5.15. Specifying the Working Directory
+    -   5.16. Conflict Handling
+    -   5.17. Installing Files
+    -   5.18. Use BINARY_ALIAS to Rename Commands Instead of Patching
+        the Build
+-    Chapter 6. Special Considerations
+    -   6.1. Staging
+    -   6.2. Bundled Libraries
+    -   6.3. Shared Libraries
+    -   6.4. Ports with Distribution Restrictions or Legal Concerns
+    -   6.5. Building Mechanisms
+    -   6.6. Using GNU Autotools
+    -   6.7. Using GNU gettext
+    -   6.8. Using Perl
+    -   6.9. Using X11
+    -   6.10. Using GNOME
+    -   6.11. GNOME Components
+    -   6.12. Using Qt
+    -   6.13. Using KDE
+    -   6.14. Using LXQt
+    -   6.15. Using Java
+    -   6.16. Web Applications, Apache and PHP
+    -   6.17. Using Python
+    -   6.18. Using Tcl/Tk
+    -   6.19. Using SDL
+    -   6.20. Using wxWidgets
+    -   6.21. Using Lua
+    -   6.22. Using iconv
+    -   6.23. Using Xfce
+    -   6.24. Using Budgie
+    -   6.25. Using Databases
+    -   6.26. Starting and Stopping Services (rc Scripts)
+    -   6.27. Adding Users and Groups
+    -   6.28. Ports That Rely on Kernel Sources
+    -   6.29. Go Libraries
+    -   6.30. Haskell Libraries
+    -   6.31. Shell Completion Files
+-    Chapter 7. Flavors
+    -   7.1. An Introduction to Flavors
+    -   7.2. Using FLAVORS
+    -   7.3. USES=php and Flavors
+    -   7.4. USES=python and Flavors
+    -   7.5. USES=lua and Flavors
+-    Chapter 8. Advanced pkg-plist Practices
+    -   8.1. Changing pkg-plist Based on Make Variables
+    -   8.2. Empty Directories
+    -   8.3. Configuration Files
+    -   8.4. Dynamic Versus Static Package List
+    -   8.5. Automated Package List Creation
+    -   8.6. Expanding Package List with Keywords
+-    Chapter 9. pkg-*
+    -   9.1. pkg-message
+    -   9.2. pkg-install, pkg-pre-install, and pkg-post-install
+    -   9.3. pkg-deinstall, pkg-pre-deinstall, and pkg-post-deinstall
+    -   9.4. Changing the Names of pkg-*
+    -   9.5. Making Use of SUB_FILES and SUB_LIST
+-    Chapter 10. Testing the Port
+    -   10.1. Running make describe
+    -   10.2. Portclippy / Portfmt
+    -   10.3. Portlint
+    -   10.4. Port Tools
+    -   10.5. PREFIX and DESTDIR
+    -   10.6. poudriere
+-    Chapter 11. Upgrading a Port
+    -   11.1. Using Git to Make Patches
+    -   11.2. UPDATING and MOVED
+-    Chapter 12. Security
+    -   12.1. Why Security is So Important
+    -   12.2. Fixing Security Vulnerabilities
+    -   12.3. Keeping the Community Informed
+-    Chapter 13. Dos and Don'ts
+    -   13.1. Introduction
+    -   13.2. WRKDIR
+    -   13.3. WRKDIRPREFIX
+    -   13.4. Differentiating Operating Systems and OS Versions
+    -   13.5. Writing Something After bsd.port.mk
+    -   13.6. Use the exec Statement in Wrapper Scripts
+    -   13.7. Do Things Rationally
+    -   13.8. Respect Both CC and CXX
+    -   13.9. Respect CFLAGS
+    -   13.10. Verbose Build Logs
+    -   13.11. Feedback
+    -   13.12. README.html
+    -   13.13. Marking a Port Not Installable with BROKEN, FORBIDDEN, or
+        IGNORE
+    -   13.14. Architectural Considerations
+    -   13.15. Marking a Port for Removal with DEPRECATED or
+        EXPIRATION_DATE
+    -   13.16. Avoid Use of the .error Construct
+    -   13.17. Usage of sysctl
+    -   13.18. Rerolling Distfiles
+    -   13.19. Use POSIX Standards
+    -   13.20. Miscellanea
+-    Chapter 14. A Sample Makefile
+-    Chapter 15. Order of Variables in Port Makefiles
+    -   15.1. PORTNAME Block
+    -   15.2. PATCHFILES Block
+    -   15.3. MAINTAINER Block
+    -   15.4. LICENSE Block
+    -   15.5. Generic BROKEN/IGNORE/DEPRECATED Messages
+    -   15.6. The Dependencies Block
+    -   15.7. Flavors
+    -   15.8. USES and USE_x
+    -   15.9. Standard bsd.port.mk Variables
+    -   15.10. Options and Helpers
+    -   15.11. The Rest of the Variables
+    -   15.12. The Targets
+-    Chapter 16. Keeping Up
+    -   16.1. FreshPorts
+    -   16.2. The Web Interface to the Source Repository
+    -   16.3. The FreeBSD Ports Mailing List
+    -   16.4. The FreeBSD Port Building Cluster
+    -   16.5. Portscout: the FreeBSD Ports Distfile Scanner
+-    Chapter 17. Using USES Macros
+    -   17.1. An Introduction to USES
+    -   17.2. 7z
+    -   17.3. ada
+    -   17.4. autoreconf
+    -   17.5. blaslapack
+    -   17.6. bdb
+    -   17.7. bison
+    -   17.8. budgie
+    -   17.9. cabal
+    -   17.10. cargo
+    -   17.11. charsetfix
+    -   17.12. cmake
+    -   17.13. compiler
+    -   17.14. cpe
+    -   17.15. cran
+    -   17.16. desktop-file-utils
+    -   17.17. desthack
+    -   17.18. display
+    -   17.19. dos2unix
+    -   17.20. drupal
+    -   17.21. eigen
+    -   17.22. elfctl
+    -   17.23. erlang
+    -   17.24. fakeroot
+    -   17.25. fam
+    -   17.26. firebird
+    -   17.27. fonts
+    -   17.28. fortran
+    -   17.29. fuse
+    -   17.30. gem
+    -   17.31. gettext
+    -   17.32. gettext-runtime
+    -   17.33. gettext-tools
+    -   17.34. ghostscript
+    -   17.35. gl
+    -   17.36. gmake
+    -   17.37. gnome
+    -   17.38. go
+    -   17.39. gperf
+    -   17.40. grantlee
+    -   17.41. groff
+    -   17.42. gssapi
+    -   17.43. gstreamer
+    -   17.44. horde
+    -   17.45. iconv
+    -   17.46. imake
+    -   17.47. kde
+    -   17.48. kmod
+    -   17.49. ldap
+    -   17.50. lha
+    -   17.51. libarchive
+    -   17.52. libedit
+    -   17.53. libtool
+    -   17.54. linux
+    -   17.55. llvm
+    -   17.56. localbase
+    -   17.57. lua
+    -   17.58. luajit
+    -   17.59. lxqt
+    -   17.60. magick
+    -   17.61. makeinfo
+    -   17.62. makeself
+    -   17.63. mate
+    -   17.64. meson
+    -   17.65. metaport
+    -   17.66. minizip
+    -   17.67. mysql
+    -   17.68. mono
+    -   17.69. motif
+    -   17.70. ncurses
+    -   17.71. nextcloud
+    -   17.72. ninja
+    -   17.73. nodejs
+    -   17.74. objc
+    -   17.75. octave
+    -   17.76. openal
+    -   17.77. pathfix
+    -   17.78. pear
+    -   17.79. perl5
+    -   17.80. pgsql
+    -   17.81. php
+    -   17.82. pkgconfig
+    -   17.83. pure
+    -   17.84. pyqt
+    -   17.85. pytest
+    -   17.86. python
+    -   17.87. qmail
+    -   17.88. qmake
+    -   17.89. qt
+    -   17.90. qt-dist
+    -   17.91. readline
+    -   17.92. ruby
+    -   17.93. samba
+    -   17.94. scons
+    -   17.95. shared-mime-info
+    -   17.96. shebangfix
+    -   17.97. sqlite
+    -   17.98. ssl
+    -   17.99. tar
+    -   17.100. tcl
+    -   17.101. terminfo
+    -   17.102. tex
+    -   17.103. tk
+    -   17.104. uidfix
+    -   17.105. uniquefiles
+    -   17.106. vala
+    -   17.107. varnish
+    -   17.108. webplugin
+    -   17.109. xfce
+    -   17.110. xorg
+    -   17.111. xorg-cat
+    -   17.112. zip
+-    Chapter 18. __FreeBSD_version Values
+    -   18.1. FreeBSD 14 Versions
+    -   18.2. FreeBSD 13 Versions
+    -   18.3. FreeBSD 12 Versions
+    -   18.4. FreeBSD 11 Versions
+    -   18.5. FreeBSD 10 Versions
+    -   18.6. FreeBSD 9 Versions
+    -   18.7. FreeBSD 8 Versions
+    -   18.8. FreeBSD 7 Versions
+    -   18.9. FreeBSD 6 Versions
+    -   18.10. FreeBSD 5 Versions
+    -   18.11. FreeBSD 4 Versions
+    -   18.12. FreeBSD 3 Versions
+    -   18.13. FreeBSD 2.2 Versions
+    -   18.14. FreeBSD 2 Before 2.2-RELEASE Versions
+-   
+
+Book menu
+
+Chapter 13. Dos and Don'ts
+
+Table of Contents
+
+-   13.1. Introduction
+-   13.2. WRKDIR
+-   13.3. WRKDIRPREFIX
+-   13.4. Differentiating Operating Systems and OS Versions
+-   13.5. Writing Something After bsd.port.mk
+-   13.6. Use the exec Statement in Wrapper Scripts
+-   13.7. Do Things Rationally
+-   13.8. Respect Both CC and CXX
+-   13.9. Respect CFLAGS
+-   13.10. Verbose Build Logs
+-   13.11. Feedback
+-   13.12. README.html
+-   13.13. Marking a Port Not Installable with BROKEN, FORBIDDEN, or
+    IGNORE
+-   13.14. Architectural Considerations
+-   13.15. Marking a Port for Removal with DEPRECATED or EXPIRATION_DATE
+-   13.16. Avoid Use of the .error Construct
+-   13.17. Usage of sysctl
+-   13.18. Rerolling Distfiles
+-   13.19. Use POSIX Standards
+-   13.20. Miscellanea
+
+13.1. Introduction
+
+Here is a list of common dos and don’ts that are encountered during the
+porting process. Check the port against this list, but also check ports
+in the PR database that others have submitted. Submit any comments on
+ports as described in Bug Reports and General Commentary. Checking ports
+in the PR database will both make it faster for us to commit them, and
+prove that you know what you are doing.
+
+13.2. WRKDIR
+
+Do not write anything to files outside WRKDIR. WRKDIR is the only place
+that is guaranteed to be writable during the port build (see installing
+ports from a CDROM for an example of building ports from a read-only
+tree). The pkg-* files can be modified by redefining a variable rather
+than overwriting the file.
+
+13.3. WRKDIRPREFIX
+
+Make sure the port honors WRKDIRPREFIX. Most ports do not have to worry
+about this. In particular, when referring to a WRKDIR of another port,
+note that the correct location is
+${WRKDIRPREFIX}${PORTSDIR}/subdir/name/work not
+${PORTSDIR}/subdir/name/work or ${.CURDIR}/../../subdir/name/work or
+some such.
+
+13.4. Differentiating Operating Systems and OS Versions
+
+Some code needs modifications or conditional compilation based upon what
+version of FreeBSD Unix it is running under. The preferred way to tell
+FreeBSD versions apart are the __FreeBSD_version and __FreeBSD__ macros
+defined in sys/param.h. If this file is not included add the code,
+
+    #include <sys/param.h>
+
+to the proper place in the .c file.
+
+__FreeBSD__ is defined in all versions of FreeBSD as their major version
+number. For example, in FreeBSD 9.x, __FreeBSD__ is defined to be 9.
+
+    #if __FreeBSD__ >= 9
+    #  if __FreeBSD_version >= 901000
+         /* 9.1+ release specific code here */
+    #  endif
+    #endif
+
+A complete list of __FreeBSD_version values is available in
+__FreeBSD_version Values.
+
+13.5. Writing Something After bsd.port.mk
+
+Do not write anything after the .include <bsd.port.mk> line. It usually
+can be avoided by including bsd.port.pre.mk somewhere in the middle of
+the Makefile and bsd.port.post.mk at the end.
+
++-----------------------------------+-----------------------------------+
+|                                   | Include either the                |
+|                                   | bsd.port.pre.mk/bsd.port.post.mk  |
+|                                   | pair or bsd.port.mk only; do not  |
+|                                   | mix these two usages.             |
++-----------------------------------+-----------------------------------+
+
+bsd.port.pre.mk only defines a few variables, which can be used in tests
+in the Makefile, bsd.port.post.mk defines the rest.
+
+Here are some important variables defined in bsd.port.pre.mk (this is
+not the complete list, please read bsd.port.mk for the complete list).
+
++-----------------------------------+-----------------------------------+
+| Variable                          | Description                       |
++===================================+===================================+
+| ARCH                              | The architecture as returned by   |
+|                                   | uname -m (for example, i386)      |
++-----------------------------------+-----------------------------------+
+| OPSYS                             | The operating system type, as     |
+|                                   | returned by uname -s (for         |
+|                                   | example, FreeBSD)                 |
++-----------------------------------+-----------------------------------+
+| OSREL                             | The release version of the        |
+|                                   | operating system (for example,    |
+|                                   | 2.1.5 or 2.2.7)                   |
++-----------------------------------+-----------------------------------+
+| OSVERSION                         | The numeric version of the        |
+|                                   | operating system; the same as     |
+|                                   | __FreeBSD_version.                |
++-----------------------------------+-----------------------------------+
+| LOCALBASE                         | The base of the "local" tree (for |
+|                                   | example, /usr/local)              |
++-----------------------------------+-----------------------------------+
+| PREFIX                            | Where the port installs itself    |
+|                                   | (see more on PREFIX).             |
++-----------------------------------+-----------------------------------+
+
++-----------------------------------+-----------------------------------+
+|                                   | When MASTERDIR is needed, always  |
+|                                   | define it before including        |
+|                                   | bsd.port.pre.mk.                  |
++-----------------------------------+-----------------------------------+
+
+Here are some examples of things that can be added after
+bsd.port.pre.mk:
+
+    # no need to compile lang/perl5 if perl5 is already in system
+    .if ${OSVERSION} > 300003
+    BROKEN= perl is in system
+    .endif
+
+Always use tab instead of spaces after BROKEN=.
+
+13.6. Use the exec Statement in Wrapper Scripts
+
+If the port installs a shell script whose purpose is to launch another
+program, and if launching that program is the last action performed by
+the script, make sure to launch the program using the exec statement,
+for instance:
+
+    #!/bin/sh
+    exec %%LOCALBASE%%/bin/java -jar %%DATADIR%%/foo.jar "$@"
+
+The exec statement replaces the shell process with the specified
+program. If exec is omitted, the shell process remains in memory while
+the program is executing, and needlessly consumes system resources.
+
+13.7. Do Things Rationally
+
+The Makefile should do things in a simple and reasonable manner. Making
+it a couple of lines shorter or more readable is always better. Examples
+include using a make .if construct instead of a shell if construct, not
+redefining do-extract if redefining EXTRACT* is enough, and using
+GNU_CONFIGURE instead of CONFIGURE_ARGS += --prefix=${PREFIX}.
+
+If a lot of new code is needed to do something, there may already be an
+implementation of it in bsd.port.mk. While hard to read, there are a
+great many seemingly-hard problems for which bsd.port.mk already
+provides a shorthand solution.
+
+13.8. Respect Both CC and CXX
+
+The port must respect both CC and CXX. What we mean by this is that the
+port must not set the values of these variables absolutely, overriding
+existing values; instead, it may append whatever values it needs to the
+existing values. This is so that build options that affect all ports can
+be set globally.
+
+If the port does not respect these variables, please add
+NO_PACKAGE=ignores either cc or cxx to the Makefile.
+
+Here is an example of a Makefile respecting both CC and CXX. Note the
+?=:
+
+    CC?= gcc
+
+    CXX?= g++
+
+Here is an example which respects neither CC nor CXX:
+
+    CC= gcc
+
+    CXX= g++
+
+Both CC and CXX can be defined on FreeBSD systems in /etc/make.conf. The
+first example defines a value if it was not previously set in
+/etc/make.conf, preserving any system-wide definitions. The second
+example clobbers anything previously defined.
+
+13.9. Respect CFLAGS
+
+The port must respect CFLAGS. What we mean by this is that the port must
+not set the value of this variable absolutely, overriding the existing
+value. Instead, it may append whatever values it needs to the existing
+value. This is so that build options that affect all ports can be set
+globally.
+
+If it does not, please add NO_PACKAGE=ignores cflags to the Makefile.
+
+Here is an example of a Makefile respecting CFLAGS. Note the +=:
+
+    CFLAGS+= -Wall -Werror
+
+Here is an example which does not respect CFLAGS:
+
+    CFLAGS= -Wall -Werror
+
+CFLAGS is defined on FreeBSD systems in /etc/make.conf. The first
+example appends additional flags to CFLAGS, preserving any system-wide
+definitions. The second example clobbers anything previously defined.
+
+Remove optimization flags from the third party Makefiles. The system
+CFLAGS contains system-wide optimization flags. An example from an
+unmodified Makefile:
+
+    CFLAGS= -O3 -funroll-loops -DHAVE_SOUND
+
+Using system optimization flags, the Makefile would look similar to this
+example:
+
+    CFLAGS+= -DHAVE_SOUND
+
+13.10. Verbose Build Logs
+
+Make the port build system display all commands executed during the
+build stage. Complete build logs are crucial to debugging port problems.
+
+Non-informative build log example (bad):
+
+      CC     source1.o
+      CC     source2.o
+      CCLD   someprogram
+
+Verbose build log example (good):
+
+    cc -O2 -pipe -I/usr/local/include -c -o source1.o source1.c
+    cc -O2 -pipe -I/usr/local/include -c -o source2.o source2.c
+    cc -o someprogram source1.o source2.o -L/usr/local/lib -lsomelib
+
+Some build systems such as CMake, ninja, and GNU configure are set up
+for verbose logging by the ports framework. In other cases, ports might
+need individual tweaks.
+
+13.11. Feedback
+
+Do send applicable changes and patches to the upstream maintainer for
+inclusion in the next release of the code. This makes updating to the
+next release that much easier.
+
+13.12. README.html
+
+README.html is not part of the port, but generated by make readme. Do
+not include this file in patches or commits.
+
++-----------------------------------+-----------------------------------+
+|                                   | If make readme fails, make sure   |
+|                                   | that the default value of         |
+|                                   | ECHO_MSG has not been modified by |
+|                                   | the port.                         |
++-----------------------------------+-----------------------------------+
+
+13.13. Marking a Port Not Installable with BROKEN, FORBIDDEN, or IGNORE
+
+In certain cases, users must be prevented from installing a port. There
+are several variables that can be used in a port’s Makefile to tell the
+user that the port cannot be installed. The value of these make
+variables will be the reason that is shown to users for why the port
+refuses to install itself. Please use the correct make variable. Each
+variable conveys radically different meanings, both to users and to
+automated systems that depend on Makefiles, such as the ports build
+cluster, and FreshPorts.
+
+13.13.1. Variables
+
+-   BROKEN is reserved for ports that currently do not compile, install,
+    deinstall, or run correctly. Use it for ports where the problem is
+    believed to be temporary.
+
+    If instructed, the build cluster will still attempt to try to build
+    them to see if the underlying problem has been resolved. (However,
+    in general, the cluster is run without this.)
+
+    For instance, use BROKEN when a port:
+
+    -   does not compile
+
+    -   fails its configuration or installation process
+
+    -   installs files outside of ${PREFIX}
+
+    -   does not remove all its files cleanly upon deinstall (however,
+        it may be acceptable, and desirable, for the port to leave
+        user-modified files behind)
+
+    -   has runtime issues on systems where it is supposed to run fine.
+
+-   FORBIDDEN is used for ports that contain a security vulnerability or
+    induce grave concern regarding the security of a FreeBSD system with
+    a given port installed (for example, a reputably insecure program or
+    a program that provides easily exploitable services). Mark ports as
+    FORBIDDEN as soon as a particular piece of software has a
+    vulnerability and there is no released upgrade. Ideally upgrade
+    ports as soon as possible when a security vulnerability is
+    discovered so as to reduce the number of vulnerable FreeBSD hosts
+    (we like being known for being secure), however sometimes there is a
+    noticeable time gap between disclosure of a vulnerability and an
+    updated release of the vulnerable software. Do not mark a port
+    FORBIDDEN for any reason other than security.
+
+-   IGNORE is reserved for ports that must not be built for some other
+    reason. Use it for ports where the problem is believed to be
+    structural. The build cluster will not, under any circumstances,
+    build ports marked as IGNORE. For instance, use IGNORE when a port:
+
+    -   does not work on the installed version of FreeBSD
+
+    -   has a distfile which may not be automatically fetched due to
+        licensing restrictions
+
+    -   does not work with some other currently installed port (for
+        instance, the port depends on www/drupal7 but www/drupal8 is
+        installed)
+
+        +-----------------------------------+-----------------------------------+
+        |                                   | If a port would conflict with a   |
+        |                                   | currently installed port (for     |
+        |                                   | example, if they install a file   |
+        |                                   | in the same place that performs a |
+        |                                   | different function), use          |
+        |                                   | CONFLICTS instead. CONFLICTS will |
+        |                                   | set IGNORE by itself.             |
+        +-----------------------------------+-----------------------------------+
+
+13.13.2. Implementation Notes
+
+Do not quote the values of BROKEN, IGNORE, and related variables. Due to
+the way the information is shown to the user, the wording of messages
+for each variable differ:
+
+    BROKEN=    fails to link with base -lcrypto
+
+    IGNORE=  unsupported on recent versions
+
+resulting in this output from make describe:
+
+    ===>  foobar-0.1 is marked as broken: fails to link with base -lcrypto.
+
+    ===>  foobar-0.1 is unsupported on recent versions.
+
+13.14. Architectural Considerations
+
+13.14.1. General Notes on Architectures
+
+FreeBSD runs on many more processor architectures than just the
+well-known x86-based ones. Some ports have constraints which are
+particular to one or more of these architectures.
+
+For the list of supported architectures, run:
+
+    cd ${SRCDIR}; make targets
+
+The values are shown in the form TARGET/TARGET_ARCH. The ports read-only
+makevar ARCH is set based on the value of TARGET_ARCH. Port Makefiles
+should test the value of this Makevar.
+
+13.14.2. Marking a Port as Architecture Neutral
+
+Ports that do not have any architecture-dependent files or requirements
+are identified by setting NO_ARCH=yes.
+
+Packages built from such ports have their architecture string ending in
+:* (wildcard architecture) as opposed to, for example, freebsd:13:x86:64
+(amd64 architecture).
+
++-----------------------------------+-----------------------------------+
+|                                   | NO_ARCH is meant to indicate that |
+|                                   | there is no need to build a       |
+|                                   | package for each of the supported |
+|                                   | architectures. The goal is to     |
+|                                   | reduce the amount of resources    |
+|                                   | spent on building and             |
+|                                   | distributing the packages such as |
+|                                   | network bandwidth and disk space  |
+|                                   | on mirrors and on distribution    |
+|                                   | media. Currently, however, our    |
+|                                   | package infrastructure (e.g.,     |
+|                                   | package managers, mirrors, and    |
+|                                   | package builders) is not set up   |
+|                                   | to fully benefit from NO_ARCH.    |
++-----------------------------------+-----------------------------------+
+
+13.14.3. Marking a Port as Ignored Only On Certain Architectures
+
+-   To mark a port as IGNOREd only on certain architectures, there are
+    two other convenience variables that will automatically set IGNORE:
+    ONLY_FOR_ARCHS and NOT_FOR_ARCHS. Examples:
+
+        ONLY_FOR_ARCHS= i386 amd64
+
+        NOT_FOR_ARCHS= ia64 sparc64
+
+    A custom IGNORE message can be set using ONLY_FOR_ARCHS_REASON and
+    NOT_FOR_ARCHS_REASON. Per architecture entries are possible with
+    ONLY_FOR_ARCHS_REASON_ARCH and NOT_FOR_ARCHS_REASON_ARCH.
+
+-   If a port fetches i386 binaries and installs them, set
+    IA32_BINARY_PORT. If this variable is set, /usr/lib32 must be
+    present for IA32 versions of libraries and the kernel must support
+    IA32 compatibility. If one of these two dependencies is not
+    satisfied, IGNORE will be set automatically.
+
+13.14.4. Cluster-Specific Considerations
+
+-   Some ports attempt to tune themselves to the exact machine they are
+    being built on by specifying -march=native to the compiler. This
+    should be avoided: either list it under an off-by-default option, or
+    delete it entirely.
+
+    Otherwise, the default package produced by the build cluster might
+    not run on every single machine of that ARCH.
+
+13.15. Marking a Port for Removal with DEPRECATED or EXPIRATION_DATE
+
+Do remember that BROKEN and FORBIDDEN are to be used as a temporary
+resort if a port is not working. Permanently broken ports will be
+removed from the tree entirely.
+
+When it makes sense to do so, users can be warned about a pending port
+removal with DEPRECATED and EXPIRATION_DATE. The former is a string
+stating why the port is scheduled for removal; the latter is a string in
+ISO 8601 format (YYYY-MM-DD). Both will be shown to the user.
+
+It is possible to set DEPRECATED without an EXPIRATION_DATE (for
+instance, recommending a newer version of the port), but the converse
+does not make any sense.
+
++-----------------------------------+-----------------------------------+
+|                                   | When marking a port as            |
+|                                   | DEPRECATED, if there are any      |
+|                                   | alternative ports that can be     |
+|                                   | used as a replacement for the one |
+|                                   | being deprecated, it is           |
+|                                   | convenient to mention them in the |
+|                                   | commit message.                   |
++-----------------------------------+-----------------------------------+
+
+There is no set policy on how much notice to give. Current practice
+seems to be one month for security-related issues and two months for
+build issues. This also gives any interested committers a little time to
+fix the problems.
+
+13.16. Avoid Use of the .error Construct
+
+The correct way for a Makefile to signal that the port cannot be
+installed due to some external factor (for instance, the user has
+specified an illegal combination of build options) is to set a non-blank
+value to IGNORE. This value will be formatted and shown to the user by
+make install.
+
+It is a common mistake to use .error for this purpose. The problem with
+this is that many automated tools that work with the ports tree will
+fail in this situation. The most common occurrence of this is seen when
+trying to build /usr/ports/INDEX (see Running make describe). However,
+even more trivial commands such as make maintainer also fail in this
+scenario. This is not acceptable.
+
+Example 1. How to Avoid Using .error
+
+The first of the next two Makefile snippets will cause make index to
+fail, while the second one will not:
+
+    .error "option is not supported"
+
+    IGNORE=option is not supported
+
+13.17. Usage of sysctl
+
+The usage of sysctl is discouraged except in targets. This is because
+the evaluation of any makevars, such as used during make index, then has
+to run the command, further slowing down that process.
+
+Only use sysctl(8) through SYSCTL, as it contains the fully qualified
+path and can be overridden, if one has such a special need.
+
+13.18. Rerolling Distfiles
+
+Sometimes the authors of software change the content of released
+distfiles without changing the file’s name. Verify that the changes are
+official and have been performed by the author. It has happened in the
+past that the distfile was silently altered on the download servers with
+the intent to cause harm or compromise end user security.
+
+Put the old distfile aside, download the new one, unpack them and
+compare the content with diff(1). If there is nothing suspicious, update
+distinfo.
+
++-----------------------------------+-----------------------------------+
+|                                   | Be sure to summarize the          |
+|                                   | differences in the PR and commit  |
+|                                   | log, so that other people know    |
+|                                   | that nothing bad has happened.    |
++-----------------------------------+-----------------------------------+
+
+Contact the authors of the software and confirm the changes with them.
+
+13.19. Use POSIX Standards
+
+FreeBSD ports generally expect POSIX compliance. Some software and build
+systems make assumptions based on a particular operating system or
+environment that can cause problems when used in a port.
+
+Do not use /proc if there are any other ways of getting the information.
+For example, setprogname(argv[0]) in main() and then getprogname(3) to
+know the executable name.
+
+Do not rely on behavior that is undocumented by POSIX.
+
+Do not record timestamps in the critical path of the application if it
+also works without. Getting timestamps may be slow, depending on the
+accuracy of timestamps in the OS. If timestamps are really needed,
+determine how precise they have to be and use an API which is documented
+to just deliver the needed precision.
+
+A number of simple syscalls (for example gettimeofday(2), getpid(2)) are
+much faster on Linux® than on any other operating system due to caching
+and the vsyscall performance optimizations. Do not rely on them being
+cheap in performance-critical applications. In general, try hard to
+avoid syscalls if possible.
+
+Do not rely on Linux®-specific socket behavior. In particular, default
+socket buffer sizes are different (call setsockopt(2) with SO_SNDBUF and
+SO_RCVBUF, and while Linux®'s send(2) blocks when the socket buffer is
+full, FreeBSD’s will fail and set ENOBUFS in errno.
+
+If relying on non-standard behavior is required, encapsulate it properly
+into a generic API, do a check for the behavior in the configure stage,
+and stop if it is missing.
+
+Check the man pages to see if the function used is a POSIX interface (in
+the "STANDARDS" section of the man page).
+
+Do not assume that /bin/sh is bash. Ensure that a command line passed to
+system(3) will work with a POSIX compliant shell.
+
+A list of common bashisms is available here.
+
+Check that headers are included in the POSIX or man page recommended
+way. For example, sys/types.h is often forgotten, which is not as much
+of a problem for Linux® as it is for FreeBSD.
+
+13.20. Miscellanea
+
+Always double-check pkg-descr and pkg-plist. If reviewing a port and a
+better wording can be achieved, do so.
+
+Please be careful to note any legal issues! Do not let us illegally
+distribute software!
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: April 25, 2023 by Fernando Apesteguía
+
+Prev
+
+Home
+
+Next
+
+Table of Contents
+
+-   13.1. Introduction
+-   13.2. WRKDIR
+-   13.3. WRKDIRPREFIX
+-   13.4. Differentiating Operating Systems and OS Versions
+-   13.5. Writing Something After bsd.port.mk
+-   13.6. Use the exec Statement in Wrapper Scripts
+-   13.7. Do Things Rationally
+-   13.8. Respect Both CC and CXX
+-   13.9. Respect CFLAGS
+-   13.10. Verbose Build Logs
+-   13.11. Feedback
+-   13.12. README.html
+-   13.13. Marking a Port Not Installable with BROKEN, FORBIDDEN, or
+    IGNORE
+-   13.14. Architectural Considerations
+-   13.15. Marking a Port for Removal with DEPRECATED or EXPIRATION_DATE
+-   13.16. Avoid Use of the .error Construct
+-   13.17. Usage of sysctl
+-   13.18. Rerolling Distfiles
+-   13.19. Use POSIX Standards
+-   13.20. Miscellanea
+
+<<<<<<< HEAD
+
+=======
+------------------------------------------------------------------------
+
+Resources
+
+-   Download PDF
+-   Edit this page
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+

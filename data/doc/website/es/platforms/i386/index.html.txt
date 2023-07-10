@@ -1,0 +1,118 @@
+[FreeBSD The Power to Serve]
+
+Donar a FreeBSD
+
+ 
+
+-   Inicio
+
+-   Acerca de FreeBSD
+    -   Introduccion
+    -   Características
+    -   Apoyo
+    -   Marketing
+    -   Política de privacidad
+    -   Proyectos
+    -   Ports
+
+-   Descargar FreeBSD
+    -   Información de Versiones
+    -   Ingeniería de Versiones
+
+-   Documentación
+    -   FAQ
+    -   Manual
+    -   Manual del Porter
+    -   Manual del desarrollador
+    -   Guía del Committer
+    -   Manuales en línea
+    -   Presentaciones y Trabajos
+    -   Introducción al Proyecto de Documentación
+    -   Todos los libros y artículos
+
+-   Comunidad
+    -   Listas de correo
+    -   Foros
+    -   Grupos de usuarios
+    -   Eventos
+    -   FreeBSD Journal
+    -   Q&A (externo)
+
+-   Desarrolladores
+    -   Ideas para proyectos
+    -   Git Repository
+    -   Repositorio Subversion
+    -   Git Mirror
+    -   Revisiones de Código (Phabricator)
+    -   Wiki
+    -   Servicio de integración continua
+
+-   Soporte
+    -   Distribuidores comerciales
+    -   Información de seguridad
+    -   Informes de errores
+    -   Envío informes de error
+    -   Recursos Web
+
+-   Fundación
+    -   Donaciones monetarias
+    -   Donaciones hardware
+
+-   
+-   Manual del desarrollador
+-   Guía del Committer
+-   Manual del Porter
+-   Repositorios de código fuente
+-   Ingeniería de Versiones
+-   Plataformas
+-   Ideas del Proyecto
+-   Contribuir
+
+Proyecto FreeBSD/i386
+
+Introducción
+
+Esta página contiene información acerca de la plataforma FreeBSD/i386.
+Esta arquitectura soporta una extensa variedad de CPU ya que la mayoría
+de los usuarios compran este tipo de máquinas. Si se tiene una máquina
+de una compañía de PC (tal como Dell™, HP o eMachines®) lo más probable
+es que tenga una CPU AMD™ o Intel®, que pertenecen a esta categoría.
+
+Índice
+
+-   Últimas noticias
+
+-   Lista de hardware
+
+-   Puntos interesantes
+
+Últimas noticias
+
+-   FreeBSD 6.0 (y versiones posteriores) no soporta la CPU original
+    Intel 80386; estos sistemas tienen más de siete añ y sólo FreeBSD
+    5.X (y versiones anteriores) las soportan. El kernel GENERIC incluye
+    soporte para la CPU 80386 sólamente en FreeBSD 4.X y versiones
+    anteriores.
+
+Lista de hardware
+
+Hay una lista de CPU soportadas en las Notas de Hardware de
+FreeBSD/i386.
+
+Puntos interesantes
+
+-   Lista de computadoras portátiles compatibles con FreeBSD
+
+-   Página del Proyecto ACPI
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 de junio de 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 El Proyecto FreeBSD Todos los derechos
+reservados. La marca FreeBSD es una marca registrada de la Fundación
+FreeBSD es es utilizada por el Proyecto FreeBSD con su permiso La
+Fundación FreeBSD. Contact

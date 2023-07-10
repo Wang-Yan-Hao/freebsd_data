@@ -1,0 +1,560 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   
+-   Developer's Handbook
+-   Committer's Guide
+-   Porter's Handbook
+-   Source code repositories
+-   Release Engineering
+-   Platforms
+-   Project Ideas
+-   Contributing
+
+Release Engineering Information
+
+This page contains documentation about the FreeBSD release engineering
+process.
+
+-   Upcoming Release Schedule
+
+-   Code Freeze Status
+
+-   Charter for the Release Engineering Team
+
+-   Release Engineering Documentation
+
+-   Current Release Engineering Team
+
+-   Old Releases
+
+Upcoming Release Schedule
+
+Note: Release dates are approximate and may be subject to schedule
+slippage.
+
++----------------------+----------------------+-----------------------+
+| Date                 | Event                | Information           |
++======================+======================+=======================+
+| October 2023         | FreeBSD 14.0         | Target Schedule       |
++----------------------+----------------------+-----------------------+
+
+Code-Freeze Status
+
+This table lists the code freeze status for major branches of the src/
+repository of the FreeBSD Git repositories. Commits to any branch listed
+as "frozen" must first be reviewed and approved by the relevant contact
+party. The status of other repositories such as ports/ and doc/ is also
+provided below.
+
++-----------------+-----------------+-----------------+-----------------+
+| Branch          | Status          | Contact         | Notes           |
++=================+=================+=================+=================+
+| main            | Open            | committers      | Active          |
+|                 |                 |                 | development     |
+|                 |                 |                 | branch for      |
+|                 |                 |                 | 14.0-CURRENT.   |
++-----------------+-----------------+-----------------+-----------------+
+| stable/13       | Open            | committers      | Development     |
+|                 |                 |                 | branch for      |
+|                 |                 |                 | FreeBSD         |
+|                 |                 |                 | 13-STABLE.      |
++-----------------+-----------------+-----------------+-----------------+
+| releng/13.2     | Frozen          | security-offi   | FreeBSD 13.2    |
+|                 |                 | cer@FreeBSD.org | supported       |
+|                 |                 |                 | errata fix      |
+|                 |                 |                 | branch.         |
++-----------------+-----------------+-----------------+-----------------+
+| releng/13.1     | Frozen          | security-offi   | FreeBSD 13.1    |
+|                 |                 | cer@FreeBSD.org | supported       |
+|                 |                 |                 | errata fix      |
+|                 |                 |                 | branch.         |
++-----------------+-----------------+-----------------+-----------------+
+| releng/13.0     | Frozen          | security-offi   | FreeBSD 13.0    |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| stable/12       | Open            | committers      | Development     |
+|                 |                 |                 | branch for      |
+|                 |                 |                 | FreeBSD         |
+|                 |                 |                 | 12-STABLE.      |
++-----------------+-----------------+-----------------+-----------------+
+| releng/12.4     | Frozen          | security-offi   | FreeBSD 12.4    |
+|                 |                 | cer@FreeBSD.org | supported       |
+|                 |                 |                 | errata fix      |
+|                 |                 |                 | branch.         |
++-----------------+-----------------+-----------------+-----------------+
+| releng/12.3     | Frozen          | security-offi   | FreeBSD 12.3    |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/12.2     | Frozen          | security-offi   | FreeBSD 12.2    |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/12.1     | Frozen          | security-offi   | FreeBSD 12.1    |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/12.0     | Frozen          | security-offi   | FreeBSD 12.0    |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| stable/11       | Open            | committers      | Maintenance     |
+|                 |                 |                 | branch for      |
+|                 |                 |                 | FreeBSD         |
+|                 |                 |                 | 11-STABLE (not  |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/11.4     | Frozen          | security-offi   | FreeBSD 11.4    |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/11.3     | Frozen          | security-offi   | FreeBSD 11.3    |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/11.2     | Frozen          | security-offi   | FreeBSD 11.2    |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/11.1     | Frozen          | security-offi   | FreeBSD 11.1    |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/11.0     | Frozen          | security-offi   | FreeBSD 11.0    |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| stable/10       | Open            | committers      | Maintenance     |
+|                 |                 |                 | branch for      |
+|                 |                 |                 | 10-STABLE (not  |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/10.4     | Frozen          | security-offi   | FreeBSD 10.4    |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/10.3     | Frozen          | security-offi   | FreeBSD 10.3    |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officialy       |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/10.2     | Frozen          | security-offi   | FreeBSD 10.2    |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/10.1     | Frozen          | security-offi   | FreeBSD 10.1    |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/10.0     | Frozen          | security-offi   | FreeBSD 10.0    |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| stable/9        | Open            | committers      | Maintenance     |
+|                 |                 |                 | branch for      |
+|                 |                 |                 | FreeBSD         |
+|                 |                 |                 | 9-STABLE (not   |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/9.3      | Frozen          | security-offi   | FreeBSD 9.3     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/9.2      | Frozen          | security-offi   | FreeBSD 9.2     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/9.1      | Frozen          | security-offi   | FreeBSD 9.1     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/9.0      | Frozen          | security-offi   | FreeBSD 9.0     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| stable/8        | Open            | committers      | Maintenance     |
+|                 |                 |                 | branch for      |
+|                 |                 |                 | 8-STABLE (not   |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/8.4      | Frozen          | security-offi   | FreeBSD 8.4     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/8.3      | Frozen          | security-offi   | FreeBSD 8.3     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/8.2      | Frozen          | security-offi   | FreeBSD 8.2     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/8.1      | Frozen          | security-offi   | FreeBSD 8.1     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/8.0      | Frozen          | security-offi   | FreeBSD 8.0     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| stable/7        | Open            | committers      | Maintenance     |
+|                 |                 |                 | branch for      |
+|                 |                 |                 | 7-STABLE (not   |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/7.4      | Frozen          | security-offi   | FreeBSD 7.4     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/7.3      | Frozen          | security-offi   | FreeBSD 7.3     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/7.2      | Frozen          | security-offi   | FreeBSD 7.2     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/7.1      | Frozen          | security-offi   | FreeBSD 7.1     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/7.0      | Frozen          | security-offi   | FreeBSD 7.0     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| stable/6        | Open            | committers      | Maintenance     |
+|                 |                 |                 | branch for      |
+|                 |                 |                 | 6-STABLE (not   |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/6.4      | Frozen          | security-offi   | FreeBSD 6.4     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/6.3      | Frozen          | security-offi   | FreeBSD 6.3     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/6.2      | Frozen          | security-offi   | FreeBSD 6.2     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/6.1      | Frozen          | security-offi   | FreeBSD 6.1     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/6.0      | Frozen          | security-offi   | FreeBSD 6.0     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| stable/5        | Open            | committers      | Maintenance     |
+|                 |                 |                 | branch for      |
+|                 |                 |                 | 5-STABLE (not   |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/5.5      | Frozen          | security-offi   | FreeBSD 5.5     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/5.4      | Frozen          | security-offi   | FreeBSD 5.4     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/5.3      | Frozen          | security-offi   | FreeBSD 5.3     |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/5.2      | Frozen          | security-offi   | FreeBSD 5.2 /   |
+|                 |                 | cer@FreeBSD.org | 5.2.1 security  |
+|                 |                 |                 | fix branch (not |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/5.1      | Frozen          | security-offi   | FreeBSD 5.1     |
+|                 |                 | cer@FreeBSD.org | security fix    |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/5.0      | Frozen          | security-offi   | FreeBSD 5.0     |
+|                 |                 | cer@FreeBSD.org | security fix    |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| stable/4        | Open            | committers      | Maintenance     |
+|                 |                 |                 | branch for      |
+|                 |                 |                 | 4-STABLE (not   |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/4.11     | Frozen          | security-offi   | FreeBSD 4.11    |
+|                 |                 | cer@FreeBSD.org | errata fix      |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/4.10     | Frozen          | security-offi   | FreeBSD 4.10    |
+|                 |                 | cer@FreeBSD.org | security fix    |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/4.9      | Frozen          | security-offi   | FreeBSD 4.9     |
+|                 |                 | cer@FreeBSD.org | security fix    |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/4.8      | Frozen          | security-offi   | FreeBSD 4.8     |
+|                 |                 | cer@FreeBSD.org | security fix    |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/4.7      | Frozen          | security-offi   | FreeBSD 4.7     |
+|                 |                 | cer@FreeBSD.org | security fix    |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/4.6      | Frozen          | security-offi   | FreeBSD 4.6     |
+|                 |                 | cer@FreeBSD.org | security fix    |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/4.5      | Frozen          | security-offi   | FreeBSD 4.5     |
+|                 |                 | cer@FreeBSD.org | security fix    |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/4.4      | Frozen          | security-offi   | FreeBSD 4.4     |
+|                 |                 | cer@FreeBSD.org | security fix    |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| releng/4.3      | Frozen          | security-offi   | FreeBSD 4.3     |
+|                 |                 | cer@FreeBSD.org | security fix    |
+|                 |                 |                 | branch (not     |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| stable/3        | Open            | committers      | Maintenance     |
+|                 |                 |                 | branch for      |
+|                 |                 |                 | 3-STABLE (not   |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| stable/2.2      | Open            | committers      | Maintenance     |
+|                 |                 |                 | branch for      |
+|                 |                 |                 | 2.2-STABLE (not |
+|                 |                 |                 | officially      |
+|                 |                 |                 | supported).     |
++-----------------+-----------------+-----------------+-----------------+
+| Repository      | Status          | Contact         | Notes           |
++-----------------+-----------------+-----------------+-----------------+
+| ports/          | Open            | port            | FreeBSD Ports   |
+|                 |                 | mgr@FreeBSD.org | Collection.     |
++-----------------+-----------------+-----------------+-----------------+
+| doc/            | Open            | freebsd-        | ASCIIDoc-based  |
+|                 |                 | doc@FreeBSD.org | documentation   |
+|                 |                 |                 | set.            |
++-----------------+-----------------+-----------------+-----------------+
+
+Release Engineering Documentation
+
+-   FreeBSD Release Engineering
+    This document details the approach used by the FreeBSD release
+    engineering team to make production-quality releases of the FreeBSD
+    Operating System. It describes the tools available for those
+    interested in producing customized FreeBSD releases for corporate
+    rollouts or commercial productization.
+
+Release Engineering Team
+
+The primary release engineering team is responsible for approving MFC
+requests during code freezes, setting release schedules, and all of the
+other responsibilities laid out in our charter.
+
+Primary RE Team (re@FreeBSD.org) : Glen Barber <gjb@FreeBSD.org>,
+Konstantin Belousov <kib@FreeBSD.org>, Marc Fonvieille
+<blackend@FreeBSD.org>, Mike Karels <karels@FreeBSD.org>, Xin Li
+<delphij@FreeBSD.org>, Colin Percival <cperciva@FreeBSD.org> form the
+primary release engineering decision-making group.
+
+The builders release engineering team is responsible for building and
+packaging FreeBSD releases on the various supported platforms.
+
+Builders REs (re-builders@FreeBSD.org) : Marcel Moolenaar
+<marcel@FreeBSD.org>, Yoshihiro Takahashi <nyan@FreeBSD.org>, Nathan
+Whitehorn <nwhitehorn@FreeBSD.org>
+
+The third party packages in the Ports Collection are managed by the
+pkgmgr@ team. Among many other responsibilities, the package managers
+keep the ports cluster running smoothly to produce binary packages.
+
+Package Builders (pkgmgr@FreeBSD.org) : Antoine Brodin
+<antoine@FreeBSD.org>, Bryan Drewery <bdrewery@FreeBSD.org>
+
+Old Releases
+
+The FreeBSD Project does not maintain a complete archive of old release
+ISO images, but many of them are available at
+ftp://ftp-archive.FreeBSD.org/pub/FreeBSD-Archive/old-releases/.
+
+Older releases that are no longer present on any FTP mirror might still
+be available from CD-ROM vendors.
+
+------------------------------------------------------------------------
+
+Last modified on: June 26, 2023 by Glen Barber
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

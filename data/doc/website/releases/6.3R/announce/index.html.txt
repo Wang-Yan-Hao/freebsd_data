@@ -1,0 +1,323 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 6.3-RELEASE Announcement
+
+Date: Fri, 18 Jan 2008 14:00:11 -0500
+From: Ken Smith <kensmith@FreeBSD.org>
+To: freebsd-announce@FreeBSD.org
+Subject: [FreeBSD-Announce] FreeBSD 6.3 Released
+
+The FreeBSD Release Engineering Team is pleased to announce the
+availability of FreeBSD 6.3-RELEASE. This release continues the
+development of the 6-STABLE branch providing performance and stability
+improvements, many bug fixes and new features. Some of the highlights:
+
+-   KDE updated to 3.5.8, GNOME updated to 2.20.1, Xorg updated to 7.3
+
+-   BIND updated to 9.3.4
+
+-   sendmail updated to 8.14.2
+
+-   lagg(4) driver ported from OpenBSD/NetBSD
+
+-   unionfs file system re-implemented
+
+-   freebsd-update(8) now supports an upgrade command
+
+For a complete list of new features and known problems, please see the
+online release notes and errata list, available at:
+
+http://www.FreeBSD.org/releases/6.3R/relnotes.html
+http://www.FreeBSD.org/releases/6.3R/errata.html
+
+For more information about FreeBSD release engineering activities,
+please see:
+
+http://www.FreeBSD.org/releng/
+
+The FreeBSD Security Team intends to support 6.3-RELEASE until January
+31st, 2010.
+
+Dedication
+
+FreeBSD 6.3-RELEASE is dedicated to the memory of Dr. Jun-ichiro Hagino,
+known throughout the Internet community as itojun, for his visionary
+work on the IPv6 protocol and his many other contributions to the
+Internet and BSD communities.
+
+Availability
+
+FreeBSD 6.3-RELEASE is now available for the alpha, amd64, i386, pc98,
+and sparc64 architectures. It can be installed from bootable ISO images
+or over the network; the required files can be downloaded via FTP or
+BitTorrent as described in the sections below. While some of the smaller
+FTP mirrors may not carry all architectures, they will all generally
+contain the more common ones, such as i386 and amd64.
+
+MD5 and SHA256 hashes for the release ISO images are included at the
+bottom of this message.
+
+The contents of the ISO images provided as part of the release has
+changed for most of the architectures. Using the i386 architecture as an
+example, there are ISO images named ``bootonly'', ``disc1'', ``disc2'',
+``disc3'', and ``docs''. The ``bootonly'' image is suitable for booting
+a machine to do a network based installation using FTP or NFS. The
+``disc1'', ``disc2'', and ``disc3'' images are used to do a full
+installation that includes a basic set of packages and does not require
+network access to an FTP or NFS server during the installation. In
+addition, ``disc1'' supports booting into a live CD-based filesystem and
+system rescue mode. The ``docs'' image has all of the documentation for
+all supported languages. Most people will find that ``disc1'', ``disc2''
+and ``disc3'' are all that are needed. If you intend to install ports
+from source instead of using the pre-built packages included with the
+release only ``disc1'' is needed.
+
+FreeBSD 6.3-RELEASE can also be purchased on CD-ROM from several
+vendors. One of the vendors that will be offering FreeBSD 6.3-based
+products is:
+
+-   FreeBSD Mall, Inc. http://www.freebsdmall.com/
+
+Bittorrent
+
+6.3-RELEASE ISOs are available via BitTorrent. A collection of torrent
+files to download the images is available at:
+
+http://torrents.freebsd.org:8080/
+
+FTP
+
+The primary mirror site is:
+
+ftp://ftp.freebsd.org/pub/FreeBSD/
+
+However, before trying the central FTP site, please check your regional
+mirror(s) first by going to:
+
+ftp://ftp.<yourdomain>.FreeBSD.org/pub/FreeBSD
+
+Any additional mirror sites will be labeled ftp2, ftp3 and so on.
+
+More information about FreeBSD mirror sites can be found at:
+
+http://www.FreeBSD.org/doc/en_US.ISO8859-1/books/handbook/mirrors-ftp.html
+
+For instructions on installing FreeBSD, please see Chapter 2 of The
+FreeBSD Handbook. It provides a complete installation walk-through for
+users new to FreeBSD, and can be found online at:
+
+http://www.FreeBSD.org/doc/en_US.ISO8859-1/books/handbook/install.html
+
+FreeBSD Update
+
+Starting with FreeBSD 6.3, the freebsd-update(8) utility supports binary
+upgrades of i386 and amd64 systems systems running earlier FreeBSD
+releases, release candidates, and betas. Users upgrading to FreeBSD 6.3
+from older releases (in particular, older than 6.3-RC1) will need to
+download an updated version of freebsd-update(8) that supports upgrading
+to a new release.
+
+# fetch http://people.freebsd.org/~cperciva/freebsd-update-upgrade.tgz
+
+Downloading and verifying the digital signature for the tarball (signed
+by the FreeBSD Security Officer's PGP key) is highly recommended.
+
+# fetch http://people.freebsd.org/~cperciva/freebsd-update-upgrade.tgz.asc
+
+# gpg --verify freebsd-update-upgrade.tgz.asc freebsd-update-upgrade.tgz
+
+The new freebsd-update(8) can then be extracted and run as follows:
+
+# tar -xf freebsd-update-upgrade.tgz
+
+# sh freebsd-update.sh -f freebsd-update.conf -r 6.3-RELEASE upgrade
+
+# sh freebsd-update.sh -f freebsd-update.conf install
+
+The system must be rebooted with the newly installed kernel before
+continuing.
+
+# shutdown -r now
+
+Finally, freebsd-update.sh needs to be run one more time to install the
+new userland components, and the system needs to be rebooted one last
+time:
+
+# sh freebsd-update.sh -f freebsd-update.conf install
+
+# shutdown -r now
+
+For more information, see:
+
+http://www.daemonology.net/blog/2007-11-10-freebsd-minor-version-upgrade.html
+
+Acknowledgments
+
+Many companies donated equipment, network access, or man-hours to
+finance the release engineering activities for FreeBSD 6.3 including The
+FreeBSD Foundation, FreeBSD Systems, Hewlett-Packard, Yahoo!, Network
+Appliances, and Sentex Communications.
+
+The release engineering team for 6.3-RELEASE includes:
+
+  ---------------------------------------- -------------------------------------------------------------------------------------
+  Ken Smith <kensmith@FreeBSD.org>         Release Engineering, amd64, i386 sparc64 Release Building, Mirror Site Coordination
+  Robert Watson <rwatson@FreeBSD.org>      Release Engineering, Security
+  Maxime Henrion <mux@FreeBSD.org>         Release Engineering
+  Bruce A. Mah <bmah@FreeBSD.org>          Release Engineering, Documentation
+  George Neville-Neil <gnn@FreeBSD.org>    Release Engineering
+  Hiroki Sato <hrs@FreeBSD.org>            Release Engineering, Documentation
+  Murray Stokely <murray@FreeBSD.org>      Release Engineering
+  Wilko Bulte <wilko@FreeBSD.org>          Alpha Release Building
+  Takahashi Yoshihiro <nyan@FreeBSD.org>   PC98 Release Building
+  Kris Kennaway <kris@FreeBSD.org>         Package Building
+  Joe Marcus Clarke <marcus@FreeBSD.org>   Package Building
+  Erwin Lansing <erwin@FreeBSD.org>        Package Building
+  Mark Linimon <linimon@FreeBSD.org>       Package Building
+  Pav Lucistnik <pav@FreeBSD.org>          Package Building
+  Colin Percival <cperciva@FreeBSD.org>    Security Officer
+  Peter Wemm <peter@FreeBSD.org>           Bittorrent Coordination
+  ---------------------------------------- -------------------------------------------------------------------------------------
+
+Trademark
+
+FreeBSD is a registered trademark of The FreeBSD Foundation.
+
+ISO Image Checksums
+
+    MD5 (6.3-RELEASE-alpha-bootonly.iso) = b9a479f20d84758202006b0fc446f52c
+    MD5 (6.3-RELEASE-alpha-disc1.iso) = 4a5fd2fd27f966b3b65717ee79d0bf09
+    MD5 (6.3-RELEASE-alpha-disc2.iso) = c1d05f366160f1a7b760cd92b2368158
+    MD5 (6.3-RELEASE-alpha-disc3.iso) = aa3884eec1b62fba1c2f407ed5568d52
+    MD5 (6.3-RELEASE-alpha-docs.iso) = c8f663a537e62668e7f26d4ba262d879
+
+    MD5 (6.3-RELEASE-amd64-bootonly.iso) = 5ded1d6f91da4d872aef8c2ddba24dde
+    MD5 (6.3-RELEASE-amd64-disc1.iso) = a8d41ea26769919db6c0c672fa8f8c4f
+    MD5 (6.3-RELEASE-amd64-disc2.iso) = a243076fb99b011d9b0771a6f7f9a977
+    MD5 (6.3-RELEASE-amd64-disc3.iso) = 92831414b34b4b06cfb7140ddfe69cfe
+    MD5 (6.3-RELEASE-amd64-docs.iso) = d3662411f91a19df195df81fd23afdcc
+
+    MD5 (6.3-RELEASE-i386-bootonly.iso) = ab1db0ae643e8c12ddbe855f533b8fae
+    MD5 (6.3-RELEASE-i386-disc1.iso) = cdb0dfa4b2db3e4c9cc19138f4fb2ada
+    MD5 (6.3-RELEASE-i386-disc2.iso) = e73a3d9cf5f3bfbf07384ef0a93ae5d5
+    MD5 (6.3-RELEASE-i386-disc3.iso) = 123840107a5578ce22875c440d41f453
+    MD5 (6.3-RELEASE-i386-docs.iso) = 17aa87ccfb01f4453d8ce078874029ab
+
+    MD5 (6.3-RELEASE-pc98-bootonly.iso) = fc9921a841735b778164b3efed8fdd2c
+    MD5 (6.3-RELEASE-pc98-disc1.iso) = df93a3981a866edeb76c47c84cf6db6d
+
+    MD5 (6.3-RELEASE-sparc64-bootonly.iso) = 1726741e8c3406b103578509fc02cd37
+    MD5 (6.3-RELEASE-sparc64-disc1.iso) = ebbc2252425b27491cee2eac88c523b5
+    MD5 (6.3-RELEASE-sparc64-disc2.iso) = 3ed441f5478d0aba15d759d861ceee65
+    MD5 (6.3-RELEASE-sparc64-disc3.iso) = cf6f35f7331904711a3fe9245e0c0be5
+    MD5 (6.3-RELEASE-sparc64-docs.iso) = 11e0e61f4c39a418f0395e6980a880ee
+
+    SHA256 (6.3-RELEASE-alpha-bootonly.iso) = 9798fd8c99b60b8b265d494447e12722bc330bf212cc5c668995684dc7532675
+    SHA256 (6.3-RELEASE-alpha-disc1.iso) = f2df3edb20d00f5ec89cd23e11c5a304feb00444f67d3affcece1f5ce633e3e2
+    SHA256 (6.3-RELEASE-alpha-disc2.iso) = 84882ca5b4370b6f23000eb7b806cd125958fbf42f61e14a9a991a258410793c
+    SHA256 (6.3-RELEASE-alpha-disc3.iso) = 559cfe5025bddfdb8a6cfbf315874332149ed1cf73b64f63f6227c3c32d37d86
+    SHA256 (6.3-RELEASE-alpha-docs.iso) = c913b3b65c093dfb830104c8153f06bf32c3bec49d3ded99abafeb7039f6f305
+
+    SHA256 (6.3-RELEASE-amd64-bootonly.iso) = 8cdf4a486066943eb5fa8e36609bfb3c2da0d0128b699864eb95ca90007cea96
+    SHA256 (6.3-RELEASE-amd64-disc1.iso) = 6ee1c2f00f8a1bc9d38b04b058b0549df9904ded52ddd19bae9dad070a5868e3
+    SHA256 (6.3-RELEASE-amd64-disc2.iso) = f69e3ab103f4be34fea7b9dde4a34d5279948b4539dfe88c53e6b371d7962301
+    SHA256 (6.3-RELEASE-amd64-disc3.iso) = cf6820b81eb1a1705d6294eb0bfa884bb6bad88c3be0e94c895283235c675abd
+    SHA256 (6.3-RELEASE-amd64-docs.iso) = 1b7d78bb94902f15609c60332d4cfc534479ade5f5f72b9e52fc61ce48410cc4
+
+    SHA256 (6.3-RELEASE-i386-bootonly.iso) = 124c340c1c54dc3f29c8d77e321205d47eec682bc147384dabe3fa2ae9e148f2
+    SHA256 (6.3-RELEASE-i386-disc1.iso) = 15081a56d184a18c7cc3a5c3cd0d7d5b7d9304c9cc1d5fc40d875b0fd3047721
+    SHA256 (6.3-RELEASE-i386-disc2.iso) = 7aabc815455f4ab80121071c5eb17c41dc355c2e45444b42a06158de4f9e482a
+    SHA256 (6.3-RELEASE-i386-disc3.iso) = d606a1700c58074c606a6145e4ab713473ff4277ec2b81a82d33eff843711a2b
+    SHA256 (6.3-RELEASE-i386-docs.iso) = 84a04e4478e92b9eb777900eba15b5f5ba0464cbba9caf49c19df2a1f28250f6
+
+    SHA256 (6.3-RELEASE-pc98-bootonly.iso) = dd9d764189a0fc2d35bb78f07e169e4ec39561d018ffbaaa80da0c636fdb2800
+    SHA256 (6.3-RELEASE-pc98-disc1.iso) = 641e98c9467ab7bc21767a054a6c7c9ff705f6295c58c32899e18daf597cc79c
+
+    SHA256 (6.3-RELEASE-sparc64-bootonly.iso) = c9bdca8e894d37534da7ba823dda4ba38493ccfac709d615f4f5ec99b001c3d8
+    SHA256 (6.3-RELEASE-sparc64-disc1.iso) = 5e7b155a7204c24117f50d330da979548eb7edded2669369575ed471812d8233
+    SHA256 (6.3-RELEASE-sparc64-disc2.iso) = c54cd4a9760a30169c9daee27f4bb59281c7e5298db8ad7a0a66b094988aa298
+    SHA256 (6.3-RELEASE-sparc64-disc3.iso) = 1c780cc51ff2231acd7179b2296cfac83b28e4ee32c34cc569744ae26556e97a
+    SHA256 (6.3-RELEASE-sparc64-docs.iso) = 51201e31aaf7ebbdb4b6aecf2eebf97770347716e1ee9eb75cf807a0f14f6085
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

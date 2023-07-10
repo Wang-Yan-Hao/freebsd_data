@@ -1,0 +1,110 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Base System OpenSSH Update
+
+Links:
+OpenSSH URL: https://www.openssh.com/
+Announcement to freebsd-security@ URL:
+https://lists.freebsd.org/pipermail/freebsd-security/2021-September/010473.html
+
+Contact: Ed Maste <emaste@freebsd.org>
+
+OpenSSH, a suite of remote login and file transfer tools, was updated
+from version 8.7p1 to 8.8p1 in the FreeBSD base system.
+
+NOTE: OpenSSH 8.8p1 disables the ssh-rsa signature scheme by default.
+For more information please see the Important note for future FreeBSD
+base system OpenSSH update mailing list post.
+
+OpenSSH supports FIDO/U2F devices, and support is now enabled in the
+base system.
+
+Next steps include integrating U2F key devd rules into the base system,
+and merging the updated OpenSSH and FIDO/U2F support to stable branches.
+
+Sponsor: The FreeBSD Foundation
+
+------------------------------------------------------------------------
+
+Last modified on: March 10, 2022 by Joseph Mingrone
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

@@ -1,0 +1,105 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Documentation
+-   FAQ
+-   Handbook
+-   Manual Pages
+-   Presentations and Papers
+-   Books and Articles Online
+-   Publications
+-   Web Resources
+-   For Newbies
+-   Documentation Project
+-   Archive
+
+FreeBSD Documentation Project: Who are we, how to join?
+
+The project is a fairly loosely knit group of people, and the only thing
+we have in common is that we are subscribed to the mailing list
+FreeBSD-doc@FreeBSD.org.
+
+Some of us can commit changes directly to the FreeBSD documentation
+tree. There is a complete list of all FreeBSD developers with commit
+privileges, as well as a list of the principal committers for the
+FreeBSD Documentation Project.
+
+Others do not have commit privileges, but write and submit documentation
+nonetheless. Once the documentation has been submitted according to the
+Submit Documentation page, one of the committers will then review it and
+include it in the documentation set.
+
+To help with the documentation project (and we fervently hope you do),
+just subscribe to the mailing list and participate. As soon as you have
+done that, you’re a member of the project.
+
+FreeBSD Documentation Project Home
+
+------------------------------------------------------------------------
+
+Last modified on: June 19, 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

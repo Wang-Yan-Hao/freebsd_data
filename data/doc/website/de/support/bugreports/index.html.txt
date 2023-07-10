@@ -1,0 +1,125 @@
+[FreeBSD The Power to Serve]
+
+An FreeBSD spenden
+
+ 
+
+-   Startseite
+
+-   Über FreeBSD
+    -   Für Einsteiger
+    -   Eigenschaften
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Bezugsquellen
+    -   Release Information
+    -   Release Engineering
+
+-   Dokumentation
+    -   FAQ
+    -   Handbuch
+    -   Porter-Handbuch
+    -   Entwickler-Handbuch
+    -   Committer's Guide
+    -   Manualpages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   Alle Bücher und Artikel
+
+-   Community
+    -   Mailinglisten
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Entwicklung
+    -   Projektideen
+    -   Git-Spiegelserver
+    -   Subversion-Repository
+    -   GitHub Mirror
+    -   Phabricator (Code Review)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Hilfe
+    -   Kommerzieller Support
+    -   Sicherheit
+    -   Problemberichte
+    -   Problembericht erstellen
+    -   Internet-Ressourcen
+
+-   Foundation
+    -   Geldspende
+    -   Hardwarespende
+
+-   Hilfe
+-   Kommerzieller Support
+    -   Software
+    -   Hardware
+    -   Consulting
+    -   Internet Service Providers
+    -   Miscellaneous
+-   Security Information
+    -   Advisories
+    -   Errata Notices
+    -   Unterstützte Versionen:
+    -   Unsupported Releases
+    -   How to read FreeBSD Security Advisories
+    -   Charter for the Security Officer and Team
+-   Bug Reports
+    -   Submit a Problem Report
+-   Internet-Ressourcen
+
+Problemberichte
+
+Problemberichte-Datenbank
+
+-   Die Datenbank durchsuchen
+
+-   Ein Problem melden
+
+Bei einem FreeBSD-Problembericht (PR) handelt es sich nicht zwangsweise
+um ein Problem von FreeBSD selbst. Es kann sich auch um einen Fehler in
+der Dokumentation (etwa einen Tippfehler) oder um eine 'Wunschliste' mit
+Funktionen handeln, die der Einsender gerne in FreeBSD sehen würde.
+
+Neue Problemberichte erhalten den Status open (offen) und werden
+geschlossen, wenn das zugrundeliegende Problem gelöst wurde. Jeder PR
+erhält eine eindeutige Nummer (ID) zugewiesen. Daher enthalten viele
+Änderungen an FreeBSD die ID des Problemberichtes, der die Änderung
+erforderlich machte.
+
+Wie man einen Problembericht einreicht
+
+Problemberichte werden über ein Internetformular eingereicht und an das
+Entwicklerteam geschickt. Bevor Sie einen Bericht einreichen können,
+müssen Sie sich registrieren. Beachten Sie dabei, dass Nachrichten an
+die Mailingliste nicht als offizielle Problemberichte erfasst werden und
+daher auch verloren gehen können!
+
+Bevor Sie einen Problembericht erstellen, sollten Sie den Artikel
+Writing FreeBSD Problem Reports lesen. Dieser Artikel beschreibt, wann
+Sie einen Bericht erstellen sollten, welche Angaben benötigt werden und
+wie Sie Ihren Bericht am Besten an das FreeBSD Project senden. Nützliche
+Hintergrundinformationen enthält der Artikel Problem Report Handling
+Guidelines.
+
+FreeBSD Problemberichte werden über Bugzilla verwaltet.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19. Juni 2021 by Danilo G. Baio
+
+Rechtliches | © 1995-2023 The FreeBSD Project Alle Rechte vorbehalten.
+Die Marke FreeBSD ist eine eingetragene Marke der FreeBSD Foundation und
+wird vom FreeBSD Project mit freundlicher Genehmigung der The FreeBSD
+Foundation. Kontakt

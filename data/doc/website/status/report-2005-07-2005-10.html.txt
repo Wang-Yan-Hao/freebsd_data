@@ -1,0 +1,1384 @@
+Skip site navigation (1) Skip section navigation (2)
+
+Header And Logo
+
+[FreeBSD]
+
+.
+
+Donate to FreeBSD
+
+.
+
+Peripheral Links
+
+Search
+
+ 
+
+Site Navigation
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+Section Navigation
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Multimedia
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Introduction
+
+After a long, exhausting, yet very productive third quarter of 2005
+FreeBSD 6.0 has been released. Many activities were put into the
+background in order to make this release the success it has become.
+
+Nonetheless, we received a tremendous amount of reports covering various
+projects that either found their way into FreeBSD 6.0 already or have
+started to develop in, what is now known as 7-CURRENT. The EuroBSDCon
+and the Developer Summit in Basel next week will be a good opportunity
+to help some of the ideas herein to take off.
+
+Last round we had the pleasure to introduce our accepted Google Summer
+of Code projects. Now, that the summer is over, we are even more pleased
+to include reports about the outcome of these projects. Some already
+found their way into the tree or the general public otherwise - most
+ocularly the new webdesign.
+
+Unfortunately, this publication has been delayed for various reasons -
+the before mentioned release of 6.0 being one of them. Thus, some of the
+reports might no longer be as up to date as they were when we received
+them and we encourage you - even more this time - to also visit the
+weblinks to get more recent information.
+
+Thanks again to everyone who submitted reports, and our sincere
+apologies for running late this time.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Google summer of code
+
+-   BSD Installer
+-   csup: cvs mode support
+-   FreeBSD Web Site Redesign
+-   Fuse for FreeBSD
+-   gjournal
+-   gvinum 'move', 'rename' support
+-   Improve Libalias
+-   Integrated SNMP monitoring
+-   Interface Cleanup
+-   launchd(8) for FreeBSD
+-   Nsswitch / Caching daemon
+-   SNMP Monitoring
+-   UFS Journaling
+
+Projects
+
+-   ggtrace
+-   iSCSI Initiator
+-   pfSense
+-   Realtime POSIX signal
+
+Documentation
+
+-   bridge.c retired
+-   TODO list for volunteers
+
+Kernel
+
+-   Low-overhead performance monitoring for FreeBSD
+-   NEWCARD
+-   Sound subsystem improvements
+-   The Kernel Stress Test Suite
+
+Network infrastructure
+
+-   OpenBSD dhclient import
+-   Removable interface improvements
+-   TCP & IP Routing Optimization Fundraise
+
+Architectures
+
+-   Porting FreeBSD to the Xbox
+-   PowerPC Port
+
+Ports
+
+-   FreeBSD GNOME Project
+-   FreshPorts
+-   Ports Collection
+-   Ports Tinderbox
+
+Vendor / 3rd Party Software
+
+-   Cronyx/Asterisk
+-   OpenBSD packet filter - pf
+
+Miscellaneous
+
+-   BSDCan
+-   EuroBSDCon 2005 - Basel
+
+-   Problem Report Database
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Google summer of code
+
+BSD Installer
+
+  ------- ----------------------------------------------------
+  Links   
+          URL: http://www.bsdinstaller.org/
+          URL: http://wiki.freebsd.org/moin.cgi/BSDInstaller
+  ------- ----------------------------------------------------
+
+Contact: Andrew Turner <soc-andrew@FreeBSD.org>
+
+By the end of August I managed to modify the release building process to
+build a live CD that loads the front and backends. It could install all
+the distfiles, install the ports tree and had minimal support to install
+and uninstall packages.
+
+Since the end of the Summer of Code I have worked to integrate the new
+Lua backend. This has been successful, with it now past the point of the
+BSDINSTALLER-BETA-1 release. It can install the distfiles but not the
+ports tree or packages yet.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+csup: cvs mode support
+
+  ------------------------------------------------ -------------------------------------------------------
+  Links                                            
+  The wikipage with details about my SoC-project   URL: http://wiki.freebsd.org/moin.cgi/ChristophMathys
+  csup project page                                URL: http://mu.org/~mux/csup.html
+  ------------------------------------------------ -------------------------------------------------------
+
+Contact: Christoph Mathys <cmathys@bluewin.ch>
+
+During the "Summer of Code" I worked on csup (a rewrite of CVSup in C).
+It already supported checkout-mode, so my task was to implement support
+for cvs-mode. The biggest part of the project was to implement support
+for rcs-files. As "byproducts" I also wrote the necessary code to create
+nodes/hardlinks and to update files using the rsync-algorithm. For what
+I know, the code works fine, but errorhandling is practically
+inexistent.
+
+Open tasks:
+
+1.  Errors should be properly handled
+2.  Support to get fixups
+3.  The hard part to support rcs file updates is done, but there is no
+    checksum, some options are not honored and the performance could be
+    improved
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD Web Site Redesign
+
+  ---------------------------- ---------------------------------
+  Links                        
+                               URL: http://www.FreeBSD.org
+  Archived copy of old site.   URL: http://www.FreeBSD.org/old
+  ---------------------------- ---------------------------------
+
+Contact: Emily Boyd <soc-emily@FreeBSD.org>
+Contact: Murray Stokely <murray@FreeBSD.org>
+Contact: Web Team <freebsd-www@FreeBSD.org>
+
+The new website has gone live! Thanks to Emily Boyd for all her hard
+work. We still have a lot of work to do to integrate suggestions that
+have been made by users since we went live. The new CSS design makes it
+much easier to rapidly change the look and feel of the site, so it is
+easy to experiment. We're still looking for more HTML/CSS designers to
+help us improve the site.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Fuse for FreeBSD
+
+  ------------------- ---------------------------------------------------------
+  Links               
+  New home page       URL: http://fuse4bsd.creo.hu/
+  FreeBSD wiki page   URL: http://wiki.freebsd.org/moin.cgi/FuseFilesystem
+  Download location   URL: http://creo.hu/~csaba/projects/fuse4bsd/downloads/
+  ------------------- ---------------------------------------------------------
+
+Contact: Csaba Henk <soc-chenk@freebsd.org>
+
+Fuse for FreeBSD is the outcome of my "ssh based networking filesystem
+for FreeBSD" SoC project.
+
+The kernel interface for the comprehensive userspace filesystem API
+provided by the ( Fuse project ) has been implemented for FreeBSD (6.x
+and 7.x), under the BSD license. This has the benefit of opening up the
+possibility of porting the rich collection of Fuse based filesystems to
+FreeBSD.
+
+Now it's ready for consumption by a broader audience. The
+sysutils/fusefs-kmod , sysutils/fusefs-libs , sysutils/fusefs-sshfs
+ports can be expected to be integrated into the FreeBSD ports tree in
+the next few days (the ports were created and are maintained by Anish
+Mistry, and Simon Barner's careful review also helps a lot).
+
+Open tasks:
+
+1.  Implement missing features like extended attributes and
+    attribute/name caching (with timeout).
+2.  Resolve problems with autotools and integrate userspace
+    modifications into the Fuse codebase.
+3.  Port Fuse based filesystems and language bindings to FreeBSD.
+4.  Create sysfs (Fuse based filesystem interface to sysctl).
+5.  Test, test, test among a broad variety of circumstances.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+gjournal
+
+  -------------------- ------------------------------------------------
+  Links                
+  gjournal wiki page   URL: http://wiki.freebsd.org/moin.cgi/gjournal
+  -------------------- ------------------------------------------------
+
+Contact: Ivan Voras <ivoras@yahoo.com>
+
+Gjournal provides GEOM-level journaling and COW capabilities to storage
+devices. Unfortunately, it cannot be used as a substitute for filesystem
+journaling (fsck is still needed when gjournal device is used to host
+filesystems). Development has slowed down, and the existing code needs
+much more testing. If there is continued interest in it, I'll probably
+split the functionalities into two projects, one handling COW and one
+handling the journaling, in order to make the code cleaner.
+
+Open tasks:
+
+1.  More testing is needed.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+gvinum 'move', 'rename' support
+
+  ------------------------------ --------------------------------------------------------
+  Links                          
+  gvinum 'move', 'rename' wiki   URL: http://wiki.freebsd.org/moin.cgi/GvinumMoveRename
+  ------------------------------ --------------------------------------------------------
+
+Contact: Chris Jones <soc-cjones@freebsd.org>
+
+Support for moving and renaming objects in gvinum was completed at the
+end of August 2005. All gvinum objects (drives, subdisks, plexes, and
+volumes) can be renamed, and subdisks can be moved from drive to drive.
+Also, a man page for gvinum was created.
+
+Open tasks:
+
+1.  Update FreeBSD Handbook chapter on vinum to reflect gvinum. Slowly
+    in progress, but hopefully done by the end of the year, workload
+    permitting.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Improve Libalias
+
+  ---------------------------- ---------------------------------------------------
+  Links                        
+  Wiki/Official project site   URL: http://wiki.freebsd.org/moin.cgi/PaoloPisati
+                               URL: http://wiki.freebsd.org/moin.cgi/PaoloPisati
+  ---------------------------- ---------------------------------------------------
+
+Contact: Paolo Pisati <p.pisati@oltrelinux.com>
+
+The project met all the scheduled goals, and following are the new
+features implemented in libalias:
+
+-   integration with IPFW in kernel land
+-   support for 4.x and 5.x as kld
+-   converted from a monolithic to a modular architecture, added the
+    ability to load/unload at runtime support for new protocols (modules
+    work both in kernel and user land)
+-   added logging support in kernel land
+
+Fell free to suggest other improvements.
+
+Open tasks:
+
+1.  Test and feedback are welcome
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Integrated SNMP monitoring
+
+  ------- -------------------------------------------------------------------
+  Links   
+          URL: http://people.freebsd.org/~harti/bsnmp/index.html
+          URL: http://wiki.freebsd.org/moin.cgi/ShteryanaShopova
+          URL: http://wiki.freebsd.org/moin.cgi/SnmpMonitoringModulesStatus
+  ------- -------------------------------------------------------------------
+
+Contact: Philip Paeps <philip@FreeBSD.org>
+Contact: Shteryana Shopova <soc-shteryana@FreeBSD.org>
+
+This summer, we've had the pleasure of having two Google Summer of Code
+students hacking on our SNMP monitoring machinery. Victor worked on
+<<<<<<< HEAD
+=======
+implementing the Host Resources, TCP and UDP MIBs in bsnmpd while
+Shteryana started on client-side SNMP tools.
+
+With these modules and tools, a FreeBSD installation can be monitored
+without having to install any (heavy!) third-party tools.
+
+Open tasks:
+
+1.  While the modules and the tools currently in Perforce are generally
+    functional, they still need some tidying up (style(9)) and testing
+    before they can be committed to CVS.
+
+    At the time of this writing, the Hostres MIB is pretty much
+    commit-ready in Perforce (//depot/user/philip/bsnmp/...), the other
+    modules and tools live in //depot/projects/soc2005/bsnmp/... They'll
+    be branched for tidying up and committing "Real Soon Now"[tm]
+
+2.  Testers are very welcome. :-) Please let us know about any bugs!
+
+------------------------------------------------------------------------
+
+Interface Cleanup
+
+  -------------- -----------------------------------------------------------------------------
+  Links          
+  SoC Proposal   URL: http://wiki.freebsd.org/moin.cgi/CleanupOfNetworkInterfaceApisProposal
+  -------------- -----------------------------------------------------------------------------
+
+Contact: Anders Persson <soc-anders@freebsd.org>
+
+The dependencies to kernel-only datastructures in netstat (ifnet, etc.)
+have been removed almost completely (AppleTalk and IPX still needs
+work). In order to remove the dependencies, the debugging features of
+netstat had to be removed. However, a project to create a generic,
+modular 'data structure' examination tool is ongoing, and the debugging
+features factor out of netstat have been migrated to this tool.
+
+Open tasks:
+
+1.  Refactoring of the netstat code, create a modular version in the
+    spirit of ifconfig.
+2.  Data structure examination tool needs to be completed, current state
+    is more that of a prototype.
+
+------------------------------------------------------------------------
+
+launchd(8) for FreeBSD
+
+  -------------- -----------------------------------------------
+  Links          
+  Project Wiki   URL: http://wiki.freebsd.org/moin.cgi/launchd
+  -------------- -----------------------------------------------
+
+Contact: R. Tyler Ballance <tyler@tamu.edu>
+
+In short, launchd can run perfectly fine on FreeBSD, and combined with
+launchctl, it can be used to manage daemons through the launchctl(1)
+interface. Jobs can be added and managed two ways as of yet from
+launchctl(1). Using zarzycki@'s experimental "submit" command within
+launchctl(1) or by using my lame/rudimentary/etc "launcher" format
+(launchd/launchers/*.launch) which uses property(3) to parse out three
+simple, and important details. The program label, path, and any program
+flags. Using the "load" command, one can load the data into launchctl(1)
+and then start the processes with the..."start" command. Jobs can be
+removed/stopped with the "remove" command. The "limit" command still
+throws launchctl(1) into an infinite loop, and yes, I plan on fixing
+this.
+
+There are some things that need to be fixed, first off, some sort of
+boot time integration, whether as an init-replacement (i.e. PID 1, a la
+Mac OS X) or as the first thing started from init, that kicks all rcng
+things off. Along with, more importantly, a plist parser, so we can have
+full compatibility with Mac OS X's launchd via Core Foundation.
+
+I'm also trying to get launchd(8) relicensed with the BSD license, as
+opposed to the APSL, anybody with tips, or methods for achieving this
+goal, contact me at tyler@tamu.edu
+
+Open tasks:
+
+1.  Writing a light-weight plist (non-XML) parser with lex and yacc.
+
+------------------------------------------------------------------------
+
+Nsswitch / Caching daemon
+
+  ------- ---------------------------------------------------------------------
+  Links   
+          URL: http://wiki.freebsd.org/moin.cgi/NsswitchAndCachingFinalReport
+          URL: http://wiki.freebsd.org/moin.cgi/MichaelBushkov
+  ------- ---------------------------------------------------------------------
+
+Contact: Michael Bushkov <>
+
+The nsswitch / caching daemon project was developed within the Google's
+Summer Of Code program. Almost all goals of the project were achieved.
+Thanks to Brooks Davis and Jacques Vidrine, who were my mentors and
+greatly helped me.
+
+Nsswitch subsystem was extended to support new sources (services,
+protocols, rpc, openssh and GT4). The testing of the Globus Grid Toolkit
+4 patch (which adds support for nsswitch to GT4) is still to be done.
+For nsswitch to support caching, the caching daemon was implemented on
+top of the caching library, which was also developed during the SoC. The
+current version of the daemon uses simple nscd-like configuration file
+and seems to be stable. To complete the SoC project, the experimental
+version of libc with in-process caching enabled was made. It's
+benchmarking will be done in the nearest future.
+
+There were some requests for caching daemon to be able to act like NSCD
+(to perform the actual nsswitch lookups by itself), so it was modified
+to support this feature. But current implementation has some
+restrictions and requires a lot of testing. Right now the final
+polishing is being made to the project's sources, so that they could be
+added to the CURRENT
+
+Open tasks:
+
+1.  Extend caching daemon to support NSCD functionality
+2.  Test Globus Grid Toolkit 4 patch
+3.  Add support for MAC and audit related configuration files to the
+    nsswitch
+
+------------------------------------------------------------------------
+
+SNMP Monitoring
+
+  -------------- -----------------------------------------------------
+  Links          
+  FreeBSD wiki   URL: http://wiki.freebsd.org/moin.cgi/VictorCruceru
+  -------------- -----------------------------------------------------
+
+Contact: Harti Brandt <harti@freebsd.org>
+Contact: Philip Paeps <philip@freebsd.org>
+Contact: Victor Cruceru <soc-victor@freebsd.org>
+
+New MIBs are implmented for the BSNMP agent:
+
+1.  HOST-RESOURCES-MIB ( http://www.ietf.org/rfc/rfc2790.txt ). Philip
+    is going to submit the code into the CVS repository.
+2.  TCP-MIB with combined IPv4 & IPv6 support (
+    http://www.ietf.org/rfc/rfc4022.txt ). This new TCP-MIB is 100%
+    backward compatible with the old one (v4 only). It adds a clear
+    distinction between active and passive tcp endpoints and for each
+    endpoint info about the process it belongs to.
+3.  UDP-MIB with combined IPv4 & IPv6 support (
+    http://www.ietf.org/rfc/rfc4113.txt ). This new UDP-MIB is 100%
+    backward compatible with the old one (v4 only) and it adds multiple
+    instances support for the UDP endpoints and for each endpoint info
+    about the processes using it.
+
+Open tasks:
+
+1.  For HOST-RESOURCES-MIB we are going to add support for more detailed
+    memory stats based of libmemstat(3)
+2.  The rest of the IPv6 MIBs.
+3.  FreeBSD enterprise MIBs for supporting SNMP configuration (via SNMP
+    SETs) for FreeBSD.
+
+------------------------------------------------------------------------
+
+UFS Journaling
+
+  -------
+  Links
+  -------
+
+Contact: Brian Wilson <polytopes@gmail.com>
+Contact: Scott Long <scottl@FreeBSD.org>
+
+Scott has been working on inserting journalling hooks into the ufs and
+ffs filesystem code. Brian has been balancing school and redesigning
+various things that were deemed necessary to update during the end of
+the actual SoC project.
+
+Open tasks:
+
+1.  Finish the redesign of the internal block management code.
+2.  Integration and test of the ffs/ufs hooks and the journaling code.
+3.  Updating userland tools to be aware of and use the journal.
+4.  Journal buffer management wiring to VM subsystem a la XFS.
+
+------------------------------------------------------------------------
+
+Projects
+
+ggtrace
+
+  ------- -------------------------------------------------------
+  Links   
+          URL: http://ivoras.sharanet.org/projects/ggtrace.html
+  ------- -------------------------------------------------------
+
+Contact: Ivan Voras <ivoras@yahoo.com>
+
+Ggtrace is "GEOM gate tracer", utility to track I/O requests on a
+storage device on FreeBSD. It uses the ggate facility of FreeBSD to
+attach to a file or device and produces a device that can be used for
+any I/O, including hosting filesystems.
+
+I/O requests are presented in the form of a moving histogram that can be
+used to discern which parts of the storage device are used most often.
+One use of ggtrace is to analyze how filesystems arrange and access data
+on storage devices.
+
+The project is working and usable only on the RELENG_6 branch.
+
+------------------------------------------------------------------------
+
+iSCSI Initiator
+
+  ------- -------------------------------------------------------------------
+  Links   
+          URL: ftp://ftp.cs.huji.ac.il/users/danny/freebsd/iscsi-12.tar.bz2
+  ------- -------------------------------------------------------------------
+
+Contact: Daniel Braniss <danny@cs.huji.ac.il>
+
+This iSCSI kernel module and its companion control program, are still
+under development, but the main parts seem to be working. A second round
+of public tests has started.
+
+Open tasks:
+
+1.  login chap authentication
+2.  digest
+3.  network disconnect recovery
+
+------------------------------------------------------------------------
+
+pfSense
+
+  ------- -----------------------------
+  Links   
+          URL: http://www.pfsense.com
+  ------- -----------------------------
+
+Contact: Scott Ullrich <sullrich@gmail.com>
+
+pfSense is a m0n0wall derived operating system platform with radically
+different goals such as using Packet Filter, FreeBSD 6, ALTQ for
+excellent packet queueing and finally an integrated package management
+system for extending the environment with new features.
+
+Work continues to stabilize pfSense in preparation for the FreeBSD 6
+release. Once FreeBSD 6 is released pfSense will enter the final beta
+and release candidate phases in preparation for the 1.0 release.
+
+Open tasks:
+
+1.  Stabilize installer (cannot load kernel errors after install)
+2.  Finish outgoing load balancing monitoring
+3.  Fix last minute bugs that turn up
+
+------------------------------------------------------------------------
+
+Realtime POSIX signal
+
+Contact: David Xu <davidxu@FreeBSD.org>
+
+The FreeBSD kernel is powerful, but it still lacks some realtime POSIX
+facilities, for example, sigqueue. Most of the code is ready, and I am
+testing it.
+
+Open tasks:
+
+1.  POSIX timer, timer_xxx syscalls
+
+------------------------------------------------------------------------
+
+Documentation
+
+bridge.c retired
+
+  -------
+  Links
+  -------
+
+Contact: Max Laier <mlaier@freebsd.org>
+Contact: Andrew Thompson <thompsa@freebsd.org>
+
+As of September 27, the old bridge(4) implementation has been removed
+from HEAD and will not be part of FreeBSD 7 and later. FreeBSD 6 will
+serve as transition period. The full functional replacement if_bridge(4)
+is now available in FreeBSD 5 (not yet part of 5.4 however), FreeBSD 6
+and -CURRENT. Any problems should be reported to Andrew Thompson, who is
+maintaining if_bridge in FreeBSD.
+
+Open tasks:
+
+1.  Document the change in the handbook and other reference material.
+
+------------------------------------------------------------------------
+
+TODO list for volunteers
+
+  -------
+  Links
+  -------
+
+Contact: Alexander Leidinger <netchild@FreeBSD.org>
+
+The TODO list for volunteers (see the last report for more) is now under
+review by some doc@ people.
+
+------------------------------------------------------------------------
+
+Kernel
+
+Low-overhead performance monitoring for FreeBSD
+
+  ------------------- ------------------------------------------------------------------
+  Links               
+  Project home page   URL: http://people.freebsd.org/~jkoshy/projects/perf-measurement
+  ------------------- ------------------------------------------------------------------
+
+Contact: Joseph Koshy <jkoshy@FreeBSD.org>
+
+This projects implements a kernel module (hwpmc(4)), an application
+programming interface (pmc(3)) and a few simple applications (pmcstat(8)
+and pmccontrol(8)) for measuring system performance using event
+monitoring hardware in modern CPUs.
+
+The last three months have been spent in bug fixing and in tweaking the
+code. A few more minor features and loose ends remain to be taken care
+of. Once these are done, I hope to get started on a graphical
+performance analyser.
+
+------------------------------------------------------------------------
+
+NEWCARD
+
+  -------
+  Links
+  -------
+
+Contact: Warner Losh <imp@freebsd.org>
+
+Due to an email snafu, the June report was not submitted, so this report
+covers since the last 6 months.
+
+Summary: The 16-bit part of NEWCARD has been greatly enhanced. In
+addition, power control has become interrupt driven. Some drivers make
+use of the new functionality.
+
+The pccard layer now exports the CIS for each device that is present,
+even if there's no driver for the card or parts of the card.
+
+The power up and reset sequence is now interrupt driven. This has
+eliminated many of the long pauses that the system used to experience
+after a card insertion. We can not play glitch-free audio while
+inserting or removing a card.
+
+A number of additional cards are recognized by PC Card. In addition,
+drivers now can read the CIS for more information about the card.
+Drivers have been enhanced to read the CIS for MAC addresses and the
+like where appropriate.
+
+The ed driver now attaches the mii bus of the AX88190 and AX88790 fast
+ethernet PC Card chips. This allows better status reporting and
+increased functionality for PHY chips that need some help. The ed driver
+also supports the Tamarack TC5299J chipset (including attaching its MII
+bus) now, the only open source OS that does so (TC5299J cards will work
+with other open source OS, but they won't report their status or attach
+a mii bus).
+
+A number of bugs have been fixed in the pccard or cardbus drivers. Most
+of these changes have been merged into the forthcoming 6.0. Others will
+be merged after the release.
+
+Open tasks:
+
+1.  ExpressCard laptops have arrived with ExpressCard/54 and
+    ExpressCard/34 slots. It is unknown the extent of the work necessary
+    to support them.
+2.  The ISA attachment of cbb needs work to make it fully functional.
+3.  A CIS parser in userland needs to be written. The pccardc based CIS
+    parser is OK, but it doesn't handle MFC cards too well. Ideally the
+    parser would produce output that is compatible with the linux tool.
+4.  A mechanism for CIS override is needed. We need a tool that will
+    take an ascii representation of the CIS and produce a binary. We
+    need a tool that will install the binary into the kernel and kernel
+    modifications to switch from the CIS that's in the card to the faked
+    up CIS.
+5.  We need a mechanism for creating pseudo multi-function cards.
+    Initially, it seems that all we really need is the ability for an
+    arbitrary driver to add a sio companion, since that covers all the
+    cases I'm aware of. Resources would need to be 'donated' from the
+    creating driver to the sio card.
+6.  It would be nice if we could move to a more common CIS parsing and
+    dispatch. The CardBus side is wide open at the moment since none of
+    the pci drivers use the CIS information outside of a few that get
+    their MAC address via a standard interface.
+7.  The ep driver needs work to make the newer ep cards that have mii
+    bus on them actually probe and attach it. It needs to gain media
+    support for the non-mii based cards. The 3C1 still needs work.
+8.  The sn driver needs work to support many of the SMC91Cxxx PC Card
+    devices. These are typically combination cards that need special,
+    non-standard initialization.
+9.  Power savings for 16-bit cards can be realized if we power them up
+    at 3.3V rather than at 5.0V. Not all cards can support this, but
+    many can and indicate this support in the CIS. Windows tries the
+    3.3V configuration entries before the 5.0V ones. We should do the
+    same.
+10. Most of the changes that have been made to the pccard and cardbus
+    layers can be merged back into RELENG_5.
+
+------------------------------------------------------------------------
+
+Sound subsystem improvements
+
+  -------
+  Links
+  -------
+
+Contact: Multimedia Mailinglist <multimedia@FreeBSD.org>
+Contact: Ariff Abdullah <skywizard@MyBSD.org.my>
+Contact: Alexander Leidinger <netchild@FreeBSD.org>
+
+Recently a lot of fixes, specially in handling format / rate conversion
+and general stability was committed to -current. This include fixes for
+most LOR's and new features (software volume handling for soundcards
+without volume handling in hardware and the possibility to switch to
+spdif).
+
+A lot of effort was expended by Ariff (and other people) to come up with
+those improvements. For this reason Ariff was "punished" with a commit
+bit, so he is able to commit further improvements on his own.
+
+This work is not integrated into 6.0-RELEASE because of some lose ends
+(see 'sndctl' below).
+
+You can help by looking at sound related PR's in GNATS and making
+follow-up's which tell us if a problem still persists or if a PR can be
+closed because the bug is fixed. Also feel free to submit patches for
+anything on the TODO list below.
+
+Open tasks:
+
+1.  Update manual pages to reflect new features.
+2.  Fix driver specific issues (via, t4dwave, maestro).
+3.  Make all drivers MPSAFE.
+4.  Rewrite some parts (e.g. a new mixer subsystem with OSS
+    compatibility).
+5.  sndctl(1): tool to control non-mixer parts of the sound system (e.g.
+    spdif switching, virtual-3D effects) by an user (instead of the
+    sysctl approach in -current); pcmplay(1), pcmrec(1), pcmutil(1).
+6.  Plugable FEEDER infrastructure. For ease of debugging various feeder
+    stuff and/or as userland library and test suite.
+7.  Support for new hardware (envy24, Intel HDA).
+8.  Performance enhancement (via 'slave'-channels, changes are under
+    review)?
+9.  Closer compatibility with OSS, especially for the upcoming OSS v4.
+10. Close a lot of PR's.
+11. Document the sound system in the FreeBSD Architecture Handbook .
+
+------------------------------------------------------------------------
+
+The Kernel Stress Test Suite
+
+  ------- ---------------------------------------------
+  Links   
+          URL: http://people.freebsd.org/~pho/stress/
+  ------- ---------------------------------------------
+
+Contact: Peter Holm <pho@freebsd.org>
+
+The current version of the test suite took form in the beginning of the
+year after discussions with Jeff Roberson, during a long period of
+testing Jeff's VFS SMP work.
+
+At that time, Daniel Seuffert donated a Thunder 7500 motherboard
+complete with CPUs, RAM and coolers. This allowed me to do some serious
+SMP testing.
+
+Mid July Murray Stokely suggested adding a link from the 6.0 todo web
+page to the Stress Test Status Page. At that time there were a few
+reoccurring panics that made it hard to test the kernel for other
+problems. Numerous people put a lot of hard work in fixing the panics
+and livelocks found during the next months. At the same time others
+stepped in and ran the test suite on their own hardware, thus increasing
+the focus on kernel stability.
+
+As of 6.0, the kernel stress test suite cannot panic the kernel.
+
+------------------------------------------------------------------------
+
+Network infrastructure
+
+OpenBSD dhclient import
+
+  -------
+  Links
+  -------
+
+Contact: Brooks Davis <brooks@FreeBSD.org>
+Contact: Sam Leffler <sam@FreeBSD.org>
+
+The OpenBSD rewrite of dhclient has been imported, replacing the ISC
+dhclient. The OpenBSD client provides better support for roaming on
+wireless networks and a simpler model of operation. Instead of a single
+dhclient process per system, there is one per network interface. This
+instance automatically goes away in the even of link loss and is
+restarted via devd when link is reacquired. To support this change, many
+aspects of the network interface configuration process were overhauled.
+
+The current code works well in most circumstances, but more testing and
+polishing is needed. A few bugs are being tracked, but most of them are
+edge cases.
+
+Work on further interface configuration enhancements is underway for
+FreeBSD 7.0.
+
+------------------------------------------------------------------------
+
+Removable interface improvements
+
+  ------- -------------------------------------------------------------
+  Links   
+          URL: http://people.freebsd.org/~brooks/pubs/eurobsdcon2004/
+          URL: http://www.freebsd.org/projects/dingo/
+  ------- -------------------------------------------------------------
+
+Contact: Brooks Davis <brooks@FreeBSD.org>
+
+This project is an attempt to clean up handling of network interfaces in
+order to allow interfaces to be removed reliably. Current problems
+include panics if Dummynet is delaying packets to an interface when it
+is removed.
+
+I have removed struct ifnet's and layer two common structures from
+device driver structures. This will eventually allow them to be managed
+properly upon device removal. This code has been committed and will
+appear in 6.0. Popular drivers continue to be fixed. jhb's locking work
+has identified and corrected many issues. rwatson has also committed
+cleanups to the multicast code which fixed some issues in this area.
+
+------------------------------------------------------------------------
+
+TCP & IP Routing Optimization Fundraise
+
+  ------- --------------------------------------------------------------------------------------------------------------------
+  Links   
+          URL: http://people.freebsd.org/~andre/tcpoptimization.html
+          URL: http://www.freebsd.org/news/status/report-mar-2005-june-2005.html#Fundraising---TCP-&-IP-Routing-Optimization
+  ------- --------------------------------------------------------------------------------------------------------------------
+
+Contact: Andre Oppermann <andre@freebsd.org>
+
+The fundraise has been very successful and I want to thank everyone who
+has pledged their support and tipped the jar. The full amount plus a
+little bit more has been raised in a very short timeframe. More
+information on the exact amounts and their sponsors can be found at the
+first link.
+
+Due to the extended (and unexpected long) code freeze for the release
+process of FreeBSD 6.0 (which is very high quality btw.) I've decided to
+push back on working full time until the freeze is lifted. So far I've
+done some work in the mbuf handling area and some other netinet cleanups
+in my local repository.
+
+Once FreeBSD 6.0 is released I resume my work on this project and many
+changes and optimizations, as described in the first and second link,
+will go into into FreeBSD-current.
+
+------------------------------------------------------------------------
+
+Architectures
+
+Porting FreeBSD to the Xbox
+
+  ------- -----------------------------
+  Links   
+          URL: http://www.xbox-bsd.nl
+  ------- -----------------------------
+
+Contact: Rink Springer <rink@rink.nu>
+Contact: Ed Schouten <ed@fxq.nl>
+
+As of 26th July 2005, it is possible to run FreeBSD on your Xbox with
+minor patching effort. The framebuffer has initial support; The USB
+ports, IDE- and audio controllers are fully supported; the only part
+severely lacking now is the lack of support for the NForce Ethernet
+controller.
+
+Currently, efforts are focussing on eliminating the XBOX kernel option
+and make the port self-detecting; this means the x86 and xbox kernels
+will be identical. The goal is to provide native xbox support in
+7-CURRENT.
+
+Furthermore, a porting effort is planned from Linux' GPL-ed forcedeth.c;
+not only the Xbox port will benefit from this but also all NForce
+motherboard owners. The resulting driver could be kldload-ed to keep the
+kernel GPL-free.
+
+Open tasks:
+
+1.  The xbox framebuffer driver should be merged in the VESA framework,
+    so it can use syscons(4). Assistance on this would be very welcome!
+
+------------------------------------------------------------------------
+
+PowerPC Port
+
+  ---------------------------- ------------------------------------------------
+  Links                        
+  FreeBSD/PPC Platform page.   URL: http://www.freebsd.org/platforms/ppc.html
+  ---------------------------- ------------------------------------------------
+
+Contact: Peter Grehan <grehan@freebsd.org>
+
+The project has been following the 6.0 release schedule by producing
+BETA-* builds and is now up to the RC1 build.
+
+Dario Freni successfully built a FreeSBIE/ppc iso for his Summer-of-code
+project.
+
+------------------------------------------------------------------------
+
+Ports
+
+FreeBSD GNOME Project
+
+  -------------------------------- ------------------------------------
+  Links                            
+  FreeBSD GNOME Project Homepage   URL: http://www.FreeBSD.org/gnome/
+  -------------------------------- ------------------------------------
+
+Contact: Joe Marcus Clarke <marcus@FreeBSD.org>
+Contact: FreeBSD GNOME Team <gnome@FreeBSD.org>
+
+Since our last status report, we have added a new member to the team:
+Jean-Yves Lefort (jylefort). We have even spiced up our contact page
+with pictures of ourselves and in some cases, a cute hippo. And our very
+own Adam Weinberger (adamw) has been made a GNOME Project committer
+heading up the Canadian English translation project.
+
+We have finished the port GNOME 2.12 to FreeBSD. However, due to the
+ports slush in preparation for 6.0-RELEASE, the update has not been
+merged into the official ports tree. If people are eager to try out
+GNOME 2.12 while waiting for the ports tree to fully thaw, we have
+instructions on our website. GNOME 2.12 will be the first FreeBSD GNOME
+release not to include support for FreeBSD 4.X. While 4.X is still a
+very viable release for servers, it lacks many of the features needed
+for a Desktop Environment such as GNOME. We do plan to continue support
+of the GNOME development platform on 4.X, however. This includes Glib,
+GTK+, libgnome, etc. A new porting component will be introduced with
+GNOME 2.12 called, ``ltverhack''. This will help with future upgrades by
+keeping shared library versions from needlessly changing.
+
+The FreeBSD GNOME Project is also committed to providing our users with
+a solid package experience. To that end, we have extended our Tinderbox
+to build amd64 packages for all supported versions of FreeBSD for both
+the production and development releases of the GNOME Desktop. The
+development packages are even built with debugging symbols to better
+help with reporting problems.
+
+Open tasks:
+
+1.  FreeBSD needs a HAL port. HAL will be vital for both GNOME and KDE
+    in providing FreeBSD users with a smooth, elegant desktop
+    experience. Once GNOME 2.12 has been merged into the ports tree,
+    work will begin on making HAL on FreeBSD a reality. Contact
+    gnome@FreeBSD.org if you are interested in helping.
+2.  We need help with project documentation. In particular, we need help
+    auditing the FAQ to make sure the content is still relevant, and we
+    are not missing any key items. If you're interested, please contact
+    gnome@FreeBSD.org .
+
+------------------------------------------------------------------------
+
+FreshPorts
+
+  ------------ ---------------------------------
+  Links        
+  FreshPorts   URL: http://www.freshports.org/
+  ------------ ---------------------------------
+
+Contact: Dan Langille <dan@langille.org>
+
+I'm in the process of adding personalized newsfeeds to the website. For
+each of your Watch Lists, you will also have a news feed just for that
+watch list. Any commit to any port in your watch list will turn up on
+your newsfeed. This fantastic new feature is available now for your RSS
+pleasure at the BETA site . I've also been doing some work in the area
+of supporting multiple platforms and architectures. This will allow
+FreshPorts to correctly report that a port is broken, for example, on
+i386, but not the other platforms. This feature will take note of
+BROKEN, FORBIDDEN, and IGNORE for the following architectures:
+
+-   alpha
+-   amd64
+-   i386
+-   ia64
+-   sparc64
+
+And the following OSVERSIONS (subject to upgrade as new releases come
+along):
+
+-   492100
+-   504102
+-   600033
+-   700001
+
+Upcoming changes, in addition to the above, include:
+
+1.  NOT_FOR_ARCHS
+2.  ONLY_FOR_ARCHS
+3.  IS_INTERACTIVE
+
+I've been getting useful help from those on IRC. Thanks.
+
+Open tasks:
+
+1.  Complete the above.
+
+------------------------------------------------------------------------
+
+Ports Collection
+
+  ------------------------------------------------------------------ ----------------------------------------------------
+  Links                                                              
+  The FreeBSD ports collection                                       URL: http://www.freebsd.org/ports/
+  FreeBSD ports unfetchable distfile survey (Bill Fenner's report)   URL: http://people.freebsd.org/~fenner/portsurvey/
+  FreeBSD ports updated distfile survey (Edwin Groothius' report)    URL: http://edwin.adsl.barnet.com.au/~edwin/ports/
+  FreeBSD ports monitoring system                                    URL: http://portsmon.FreeBSD.org/index.html
+  The FreeBSD Ports Management Team                                  URL: http://www.freebsd.org/portmgr/index.html
+  ------------------------------------------------------------------ ----------------------------------------------------
+
+Contact: Mark Linimon <linimon@FreeBSD.org>
+
+A great deal of work has gone into the Ports Collection since the last
+report in April, much of it behind-the-scenes.
+
+As this report was being written, the 6.0 release was ongoing. Due to
+the amount of time that it has taken to get 6.0 through the beta process
+and into RC, we have been in ports freeze or slush for more than two
+months. Unfortunately this has held back needed work on the ports
+infrastructure.
+
+The last major update to bsd.port.mk, in early May, was coordinated by
+Kirill Ponomarew added a number of new features and closed 15 PRs.
+Another similar set of changes has been tested and is ready for commit
+after release.
+
+portmgr welcomed two new members to its team: Erwin Lansing (who had
+previously served as secretary, a role in which he is continuing) and
+Clement Laforet. Clement is interested in speeding up the adoption of
+new changes into the infrastructure, an item I'm sure that that everyone
+can support. He promises to bring some fresh ideas to bear on this,
+including the revitalization of devel/portmk as a testing ground for new
+changes to bsd.port.mk in which the larger community can help test
+changes.
+
+The unfetchable distfile survey, which had been non-functional for quite
+some time, was revitalized by Bill Fenner, with many new pages of
+analysis added to it. Work is still ongoing. As a result of this
+analysis, Bill and Mark Linimon eliminated nearly 100 lines of bogus or
+outdated sites from bsd.sites.mk alone. They are continuing to work
+through many other sites and ports as successive iterations of the
+survey reveal more dimensions to the problem. We still need more help
+from the larger community (see below).
+
+Edwin Groothius has instituted a similar but slightly different survey.
+His program attempts to visit each listed mastersite for each distfile
+and determine whether or not a newer version might be available. The
+results are stored in a database. This is helping to automate a function
+that had been left up to individual maintainers to look through numerous
+websites to try to find these updates. The survey has been hugely (if
+not universally) popular. Already, dozens of port updates have been
+committed as a direct result of this service.
+
+In addition, portsmon, which had been down due to a machine change, was
+moved to portsmon.FreeBSD.org and updated during this time. Many thanks
+to Erwin Lansing for providing the loan of this machine, and Will
+Andrews for having provided the loan of the previous incarnation.
+
+Both of the above surveys are now generating periodic email to ports
+maintainers advising them of problems. This is in addition to recurring
+email from portsmon. The surveys allow individual maintainers to ask to
+receive no further email. portsmon does not currently have this but it
+needs to be added. Although we have no doubt the mail can in some cases
+be annoying (especially given the fact that there will inevitably be
+some false positives), the fact is that these emails have had a direct
+impact on the quality on the ports. We ask for patience from the
+community while each of us continues to fine-tune the algorithms
+controlling what email is generated. (Because of the number of emails
+these systems generate, it is impossible to go over every one
+individually for a sanity check).
+
+As a result of bounces from the above email, we have also been resetting
+maintainers who have become unreachable.
+
+Pav Lucistnik has done a great deal of work on the Porter's Handbook,
+including some much needed reshuffling and cleanup. Expanded sections
+include Apache and PHP; Configure Scripts; Dealing With Shared
+Libraries; Dealing With User Configuration Files; Handling Empty
+Directories; Python; and Ruby. In addition, Edwin Groothius has
+contributed a section on OPTIONS, and numerous other sections have been
+improved by good suggestions from various other contributors.
+
+A new article, "Maintaining and contributing to the FreeBSD Ports
+Collection", has been prepared by Sam Lawrance and has been reviewed and
+is ready for commit. This document attempts to codify the rights and
+responsibilities of ports maintainers, which until now had merely been
+"community lore" as discussed on various mailing lists.
+
+We continue to add new committers regularly, 8 since the last report.
+
+The ports collection now contains over 13,500 ports. This is an increase
+of over 750 since the last report in April.
+
+Open tasks:
+
+1.  portmgr would like to ask maintainers and committers alike to go
+    through the status of their ports on the two distfile surveys, both
+    the one that shows unfetchable current distfiles and the one that
+    shows possibly updated distfiles. This is an effective way to
+    quickly help improve our user's perception of the state of the
+    ports.
+2.  A great deal of progress has been made in cracking down on ports
+    that install files outside the approved directories and/or do not
+    deinstall cleanly (see "Extra files not listed in PLIST" on
+    pointyhat ). These ports are now a small minority thanks to the
+    dedicated efforts of a large number of individuals.
+3.  We still have a large number of PRs that have been assigned to
+    committers for some time (in fact, they constitute the majority).
+    portmgr members are now going through this list and asking each
+    committer to either commit them or release them to the general pool
+    so that someone else may work on them. In addition, the existing
+    policies for inactive maintainers (two weeks for maintainer- timeout
+    on PRs; three months for maintainer reset if no activity) are going
+    to be much more actively pursued than in the past, where the
+    policies were more honored in the breach than in the observance. The
+    goal is to try to bring the Ports Collection as up-to-date as
+    possible. (While there has been progress on many fronts, there are
+    still areas where ports are suffering from bit-rot.)
+
+------------------------------------------------------------------------
+
+Ports Tinderbox
+
+  -------------------- -------------------------------------
+  Links                
+  Tinderbox Homepage   URL: http://tinderbox.marcuscom.com
+  -------------------- -------------------------------------
+
+Contact: Joe Marcus Clarke <marcus@FreeBSD.org>
+Contact: Tinderbox List <tinderbox-list@marcuscom.com>
+
+The Ports Tinderbox is a packaged system for building FreeBSD ports in a
+clean environment. It can be used to test new ports, updates to existing
+ports, or simply as a package building engine. Tinderbox uses the same
+underlying code that the official FreeBSD package build cluster,
+pointyhat, uses. So if a port builds under Tinderbox, it is guaranteed
+to build on pointyhat.
+
+More and more FreeBSD committers and ports maintainers are starting to
+use Tinderbox. We just released version 2.1.0 which added much-requested
+PostgreSQL support as well as fixed many bugs. We expect a 2.1.1 release
+soon with some additional bug fixes.
+
+With the 2.1.0 release of Tinderbox, we have branched the code base so
+that we can focus on larger features in our HEAD branch while still
+producing stable releases on a more frequent basis. The biggest new
+feature planned for Tinderbox 3.0 is clustering support which is being
+spearheaded by Ade Lovett (ade).
+
+Open tasks:
+
+1.  At this point, we really need help with documentation. Work has
+    begun on creating man pages for the various Tinderbox commands, but
+    we need help to churn them out at as faster rate. If you have strong
+    mdoc fu, and interested in helping us out, please contact
+    marcus@marcuscom.com .
+
+------------------------------------------------------------------------
+
+Vendor / 3rd Party Software
+
+Cronyx/Asterisk
+
+  --------------------- ---------------------------------------------
+  Links                 
+  Cronyx WAN Adapters   URL: http://www.cronyx.ru/hardware/wan.html
+  rik's Home Page       URL: http://www.freebsd.org/~rik
+  --------------------- ---------------------------------------------
+
+Contact: Roman Kurakin <rik@FreeBSD.org>
+
+A new netgraph-to-zaptel module that allows to use E1(ISDN PRI) WAN
+adapters as an interface card for open source PBX - Asterisk. All you
+need is an adapter that able to work in raw phone mode (like Cronyx
+Tau-PCI/2E1), eq. without HDLC-like framing and that has support of
+Netgraph.
+
+------------------------------------------------------------------------
+
+OpenBSD packet filter - pf
+
+  -------
+  Links
+  -------
+
+Contact: Max Laier <mlaier@freebsd.org>
+
+Further improvements have been made to pfsync to make it behave well in
+SMP scenarios. All bug fixes have been MFCed to RELENG_5 where
+applicable. A couple of bugfixes and feature improvements have been
+imported via OpenBSD (originally suggested by FreeBSD users).
+
+As described in the last report, FreeBSD 6.0 and future RELENG_6
+releases will be based on OpenBSD 3.7. Newer code will be imported as
+soon as 6.0 has settled down a bit.
+
+------------------------------------------------------------------------
+
+Miscellaneous
+
+BSDCan
+
+  -------- -----------------------------
+  Links    
+  BSDCan   URL: http://www.bsdcan.org/
+  -------- -----------------------------
+
+Contact: Dan Langille <dan@langille.org>
+
+We are in the process of recruiting new members for the program
+committee. If you would like to volunteer before you are recruited,
+please contact me.
+
+The dates for 2006 have been announced: May 12-13, 2006. The venue will
+be the same as previous events: University of Ottawa. The prices will
+not increase from 2005.
+
+Please start thinking about your papers. The call for papers will go out
+soon.
+
+------------------------------------------------------------------------
+
+EuroBSDCon 2005 - Basel
+
+  ------- ---------------------------------
+  Links   
+          URL: http://www.eurobsdcon.org/
+  ------- ---------------------------------
+
+Contact: Information <info@eurobsdcon.org>
+
+The fourth European BSD conference in Basel, Switzerland is a great
+opportunity to present new ideas to the community and to meet some of
+the developers behind the different BSDs.
+
+The two day conference program (Nov 26 and 27) will be complemented by a
+tutorial day preceding the conference (Nov 25).
+
+The FreeBSD developers will hold a DevSummit on Nov 24 and 25, so
+several developers will be at the conference.
+
+The program is available for Saturday and Sunday providing very
+interesting FreeBSD talks and topics.
+
+Today more than 160 people from 25 countries have registered for the
+conference.
+
+------------------------------------------------------------------------
+
+News Home | Status Home
+
+Site Map | Legal Notices | © 1995–2021 The FreeBSD Project. All rights
+reserved.
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

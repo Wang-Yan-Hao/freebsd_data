@@ -1,0 +1,851 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 11.1-RELEASE Release Notes
+
+Abstract
+
+The release notes for FreeBSD 11.0-RELEASE contain a summary of the
+changes made to the FreeBSD base system on the 11.0-STABLE development
+line. This document lists applicable security advisories that were
+issued since the last release, as well as significant changes to the
+FreeBSD kernel and userland. Some brief remarks on upgrading are also
+presented.
+
+Table of Contents
+
+-   Introduction
+
+-   Upgrading from Previous Releases of FreeBSD
+
+-   Security and Errata
+
+    -   Security Advisories
+
+    -   Errata Notices
+
+-   Userland
+
+    -   Userland Configuration Changes
+
+    -   Userland Application Changes
+
+    -   Contributed Software
+
+    -   Installation and Configuration Tools
+
+    -   /etc/rc.d Scripts
+
+    -   /etc/periodic Scripts
+
+    -   Runtime Libraries and API
+
+    -   ABI Compatibility
+
+    -   Userland Debugging
+
+-   Kernel
+
+    -   General Kernel Changes
+
+    -   Kernel Bug Fixes
+
+    -   Kernel Configuration
+
+    -   Kernel Modules
+
+    -   System Tuning and Controls
+
+-   Devices and Drivers
+
+    -   Device Drivers
+
+    -   Storage Drivers
+
+    -   Network Drivers
+
+-   Hardware Support
+
+    -   Hardware Support
+
+    -   Virtualization Support
+
+    -   ARM Support
+
+-   Storage
+
+    -   Networked Storage
+
+    -   ZFS
+
+-   Boot Loader Changes
+
+    -   Boot Loader Changes
+
+-   Networking
+
+    -   General Network Changes
+
+    -   Network Protocols
+
+-   Ports Collection and Package Infrastructure
+
+    -   Packaging Changes
+
+Introduction
+
+This document contains the release notes for FreeBSD 11.1-RELEASE. It
+describes recently added, changed, or deleted features of FreeBSD. It
+also provides some notes on upgrading from previous versions of FreeBSD.
+
+This distribution of FreeBSD 11.1-RELEASE is a release distribution. It
+can be found at https://www.FreeBSD.org/releases/ or any of its mirrors.
+More information on obtaining this (or other) release distributions of
+FreeBSD can be found in the Obtaining FreeBSD' appendix to the FreeBSD
+Handbook.
+
+All users are encouraged to consult the release errata before installing
+FreeBSD. The errata document is updated with "late-breaking" information
+discovered late in the release cycle or after the release. Typically, it
+contains information on known bugs, security advisories, and corrections
+to documentation. An up-to-date copy of the errata for FreeBSD
+11.1-RELEASE can be found on the FreeBSD Web site.
+
+This document describes the most user-visible new or changed features in
+FreeBSD since 11.0-RELEASE. In general, changes described here are
+unique to the 11.1-STABLE branch unless specifically marked as MERGED
+features.
+
+Typical release note items document recent security advisories issued
+after 11.0-RELEASE, new drivers or hardware support, new commands or
+options, major bug fixes, or contributed software upgrades. They may
+also list changes to major ports/packages or release engineering
+practices. Clearly the release notes cannot list every single change
+made to FreeBSD between releases; this document focuses primarily on
+security advisories, user-visible changes, and major architectural
+improvements.
+
+Upgrading from Previous Releases of FreeBSD
+
+[amd64,i386] Binary upgrades between RELEASE versions (and snapshots of
+the various security branches) are supported using the freebsd-update(8)
+utility. The binary upgrade procedure will update unmodified userland
+utilities, as well as unmodified GENERIC kernels distributed as a part
+of an official FreeBSD release. The freebsd-update(8) utility requires
+that the host being upgraded have Internet connectivity.
+
+Source-based upgrades (those based on recompiling the FreeBSD base
+system from source code) from previous versions are supported, according
+to the instructions in /usr/src/UPDATING.
+
+Important:
+Upgrading FreeBSD should only be attempted after backing up all data and
+configuration files.
+
+Security and Errata
+
+This section lists the various Security Advisories and Errata Notices
+since 11.0-RELEASE.
+
+Security Advisories
+
++---------------------------+--------------------+--------------------+
+| Advisory                  | Date               | Topic              |
++===========================+====================+====================+
+| FreeBSD-SA-16:32.bhyve    | 25 October 2016    | Privilege          |
+|                           |                    | escalation         |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:33.openssh  | 2 November 2016    | Remote Denial of   |
+|                           |                    | Service            |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:36.telnetd  | 6 December 2016    | Possible login(1)  |
+|                           |                    | argument injection |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:37.libc     | 6 December 2016    | link_ntoa(3)       |
+|                           |                    | buffer overflow    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:38.bhyve    | 6 December 2016    | Possible escape    |
+|                           |                    | from bhyve(8)      |
+|                           |                    | virtual machine    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-16:39.ntp      | 22 December 2016   | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-17:01.openssh  | 10 January 2017    | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-17:02.openssl  | 23 February 2017   | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-17:03.ntp      | 12 April 2017      | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-17:04.ipfilter | 27 April 2017      | Fix fragment       |
+|                           |                    | handling panic     |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-17:05.heimdal  | 12 July 2017       | Fix KDC-REP        |
+|                           |                    | service name       |
+|                           |                    | validation         |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+
+Errata Notices
+
++---------------------------+--------------------+--------------------+
+| Errata                    | Date               | Topic              |
++===========================+====================+====================+
+| FreeBSD-EN-16:18.loader   | 25 October 2016    | Loader may hang    |
+|                           |                    | during boot        |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-16:19.tzcode   | 6 December 2016    | Fix warnings about |
+|                           |                    | invalid timezone   |
+|                           |                    | abbreviations      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-16:20.tzdata   | 6 December 2016    | Update timezone    |
+|                           |                    | database           |
+|                           |                    | information        |
++---------------------------+--------------------+--------------------+
+| F                         | 6 December 2016    | Fix incorrectly    |
+| reeBSD-EN-16:21.localedef |                    | defined unicode    |
+|                           |                    | characters         |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-17:01.pcie     | 23 February 2017   | Fix system hang    |
+|                           |                    | when booting when  |
+|                           |                    | PCI-express        |
+|                           |                    | HotPlug is enabled |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-17:02.yp       | 23 February 2017   | Fix NIS master     |
+|                           |                    | updates are not    |
+|                           |                    | pushed to an NIS   |
+|                           |                    | slave              |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-17:03.hyperv   | 23 February 2017   | Fix compatibility  |
+|                           |                    | with               |
+|                           |                    | Hyper-V/storage    |
+|                           |                    | after KB3172614 or |
+|                           |                    | KB3179574          |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-17:04.mandoc   | 23 February 2017   | Make makewhatis(1) |
+|                           |                    | output             |
+|                           |                    | reproducible       |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-17:05.xen      | 23 February 2017   | Xen migration      |
+|                           |                    | enhancements       |
++---------------------------+--------------------+--------------------+
+
+Userland
+
+This section covers changes and additions to userland applications,
+contributed software, and system utilities.
+
+Userland Configuration Changes
+
+The inetd(8) utility is now built without libwrap support when
+WITHOUT_TCP_WRAPPERS is set in src.conf(5). (r313203)
+
+The libthr(3) library and related files are now evaluated and removed by
+the delete-old-libs target when upgrading the system if WITHOUT_LIBTHR
+is set in src.conf(5). (r316045)
+
+The WITH_LLD_AS_LD build knob has been added, which installs LLD as
+/usr/bin/ld if set. (r316423) (Sponsored by The FreeBSD Foundation)
+
+LLD has been enabled by default and installed as /usr/bin/ld on
+FreeBSD/arm64. (r318472) (Sponsored by The FreeBSD Foundation)
+
+The WITH_RPCBIND_WARMSTART_SUPPORT src.conf(5) knob has been added,
+which when enabled allows building rpcbind(8) with warmstart support.
+(r319244)
+
+Userland Application Changes
+
+Support for blacklistd(8) has been added to OpenSSH. (r305476)
+(Sponsored by The FreeBSD Foundation)
+
+The bspatch(1) utility has been updated with capsicum(4) support.
+(r306213)
+
+The cron(8) utility has been updated to add support for including files
+within /etc/cron.d and /usr/local/etc/cron.d by default. (r308720)
+(Sponsored by Gandi.net)
+
+The syslogd(8) utility has been updated to add the include keyword which
+allows specifying a directory containing configuration files to be
+included in addition to syslog.conf(5). The default syslog.conf(5) has
+been updated to include /etc/syslog.d and /usr/local/etc/syslog.d by
+default. (r308721) (Sponsored by Gandi.net)
+
+The zfsbootcfg(8) utility has been added, providing one-time
+boot.config(5)-style options for zfsboot(8). (r308914)
+
+The setkey(8) utility has been modified to show the runtime NAT-T
+configuration. The -g and -t flags have been added, which list only
+global and virtual policies, respectively, when used with the -D and -P
+flags. (r315514) (Sponsored by Yandex LLC)
+
+The getaddrinfo(1) utility has been added, ported from NetBSD. (r316098)
+(Sponsored by Dell EMC)
+
+The jail(8) utility has been updated to allow explicitly-assigned IPv4
+and IPv6 addresses to be used within a jail. (r316944) (Sponsored by
+Multiplay)
+
+The daemon(8) utility has been updated to allow redirecting stdout(4)
+and stderr(4) output to syslog(3) or to a file. (r317855)
+
+The efivar(8) utility has been added, providing an interface to manage
+UEFI variables. (r318576) (Sponsored by The FreeBSD Foundation)
+
+The cxgbetool(8) utility has been added, providing command-line access
+to features and debugging facilities of cxgbe(4) devices. (r319388)
+
+The primes(6) utility now enumerates primes beyond 3825123056546413050,
+up to a new limit of 2^64 - 1. (r320218)
+
+The rcp(1), rlogin(1), rsh(1), ruptime(1), rwho(1), rlogind(8), rshd(8),
+and rwhod(8) utilities have been marked as deprecated, and planned for
+removal in FreeBSD 12.0-RELEASE. (r320654)
+
+The gdb(1) and kgdb(1) utilities have been marked as deprecated, and
+planned for removal from the base system in the future. A newer version
+is available in the devel/gdb port. (r320874)
+
+Contributed Software
+
+readelf(1) has been updated to report arm program and section header
+types. (r305837)
+
+The ELF Tool Chain has been updated to upstream revision r3490.
+(r305844) (Sponsored by The FreeBSD Foundation)
+
+groff(1) has been updated to use the changelog date rather than file
+modification date in manual pages for build reproducibility. (r307631)
+
+Note: groff(1) is planned to be deprecated effective FreeBSD
+12.0-RELEASE.
+
+unbound(8) has been updated to version 1.5.10. (r307729)
+
+strings(1) has been updated to fix the exit status when multiple files
+are provided as arguments, and an error is encountered before the last
+file. (r309125)
+
+makewhatis(1) has been updated to produce build-reproducible output.
+(r309183) (Sponsored by The FreeBSD Foundation)
+
+Subversion has been updated to version 1.9.5. (r309511)
+
+file(1) has been updated to version 5.29. (r309847)
+
+The amd(8) utility has been updated to version 6.2. (r310490)
+
+The CLDR locales have been updated to version 30.0.3. The unicode
+locales have been updated to version 9.0.0. (r312336)
+
+xz(1) has been updated to version 5.2.3. (r312517)
+
+tcpdump(1) has been updated to version 4.9.0. (r313537)
+
+zlib(3) has been updated to version 1.2.11. (r313795)
+
+openresolv has been updated to version 3.9.0. (r313980)
+
+The NetBSD test suite has been updated to the 01.11.2017_23.20 snapshot.
+(r313680)
+
+libucl has been updated to version 20170219. (r314278)
+
+libarchive(3) has been updated to version 3.3.1. (r315432)
+
+dma(8) has been updated to the 2017-02-10 snapshot. (r315995)
+
+ntpd(8) has been updated to version 4.2.8p10. (r316068)
+
+ACPICA has been updated to version 20170303. (r316303)
+
+Timezone data files have been updated to version 2017b. (r316349)
+
+mandoc(1) has been updated to version 1.14. (r316420)
+
+Clang has been updated to version 4.0.0. (r316423)
+
+LLVM has been updated to version 4.0.0. (r316423)
+
+LLD has been updated to version 4.0.0. (r316423)
+
+LLDB has been updated to version 4.0.0. (r316423)
+
+compiler-rt has been updated to version 4.0.0. (r316423)
+
+libc++ has been updated to version 4.0.0. (r316423)
+
+tcsh(1) has been updated to version 6.20.00. (r316957)
+
+blacklistd(8) has been updated to the 20170503 snapshot. (r318239)
+(Sponsored by The FreeBSD Foundation)
+
+blacklistd(8) support for OpenSSH has been refined to adjust
+notification points to catch all authentication failures rather than
+only those caused by invalid login usernames. (r318402) (Sponsored by
+The FreeBSD Foundation)
+
+byacc(1) has been updated to version 20170201. (r319349)
+
+bmake has been updated to version 20170510. (r319884)
+
+Installation and Configuration Tools
+
+The installer, bsdinstall(8), has been updated to include support for
+hidden wireless networks when configuring the wlan(4) interface.
+(r311686)
+
+The default EFI partition created by bsdinstall(8) has been increased
+from 800KB to 200MB. (r320088) (Sponsored by The FreeBSD Foundation)
+
+/etc/rc.d Scripts
+
+The jail_confwarn rc.conf(5) entry has been added, which suppresses
+warnings about obsolete
+per-http://www.FreeBSD.org/cgi/man.cgi?query=jail&sektion=8&manpath=freebsd-release-ports[jail(8)]
+configurations. (r310009) (Sponsored by FIS Global, Inc.)
+
+/etc/periodic Scripts
+
+The default periodic.conf(5) has been updated to include the
+anticongestion_sleeptime option, consolidating random sleeps in
+periodic(8) scripts and replacing the daily_ntpd_avoid_congestion
+option. The default value is 3600 seconds. (r317373)
+
+The 410.status-mfi periodic(8) script has been added to monitor the
+status of mfi(4) volumes. (r317857)
+
+Runtime Libraries and API
+
+The libmd library has been updated to introduce functions that operate
+on fd(4) instead of filename. (r310372)
+
+The kvm_close(3) function has been updated to return the accumulated
+error from previous close(2) calls. (r316039)
+
+The C standard library has been updated to make use of reallocarray(3)
+for bounds checking. (r316613)
+
+The clock_nanosleep() system call has been added. The nanosleep() system
+call is now a wrapper around clock_nanosleep(). (r317618) (Sponsored by
+Dell EMC)
+
+The system libraries have been updated to make use of reallocarray(3)
+for bounds checking. (r318121)
+
+ABI Compatibility
+
+The type max_align_t is now defined for C11 compliance. (r309258)
+
+The sem_clockwait_np() library function has been added, which allows the
+caller to specify the reference clock and choose between absolute and
+relative mode. (r315274) (Sponsored by Dell EMC)
+
+The clang nullability qualifiers have been added to the C library
+headers. (r315282)
+
+Uses of the GNU nonnull attribute have been replaced with the more
+benign Clang nullability attributes. (r315282)
+
+Userland Debugging
+
+ptrace(2) now supports events for vfork(2), permitting reliable
+debugging across vfork(2) invocations. (r304499)
+
+Process core dumps now include the process ID (PID) and command line
+arguments. (r306786)
+
+Kernel
+
+This section covers changes to kernel configurations, system tuning, and
+system control parameters that are not otherwise categorized.
+
+General Kernel Changes
+
+The getdtablesize(2) system call is now permitted in capability mode.
+(r305514)
+
+The kern.proc.nfds sysctl(8) is now permitted in capability mode.
+(r305516)
+
+The sys/conf/newvers.sh script has been updated with an option to
+exclude build-specific metadata from the kernel for build
+reproducibility. (r312249)
+
+Kernel Bug Fixes
+
+The ipf(4) packet filter has been updated to prevent keep state from
+incorrectly implying keep frags, matching the behavior documented in
+ipf(5). (r317434)
+
+Kernel Configuration
+
+The WITH_REPRODUCIBLE_BUILD src.conf(5) knob has been added, which when
+set, excludes build-specific metadata from the kernel, for build
+reproducibility. (r312730)
+
+Support for NAT-T is now enabled by default. The IPSEC_NAT_T kernel
+configuration option has been removed. (r315514) (Sponsored by Yandex
+LLC)
+
+The IPSEC_FILTERTUNNEL kernel option has been removed, which was
+deprecated by the net.inet.ipsec.filtertunnel sysctl. (r315514)
+(Sponsored by Yandex LLC)
+
+The EARLY_AP_STARTUP option has been enabled by default on amd64 and
+i386 architectures, which when enabled releases Application Processors
+(APs) earlier in the kernel startup process. (r318763)
+
+Kernel Modules
+
+cloudabi(4) has been updated to allow running 32-bit binaries within
+64-bit userland environments when the kernel configuration file has the
+COMPAT_CLOUDABI32 option present. (r307144)
+
+The ipsec and tcpmd5 kernel modules have been added. (r315514)
+(Sponsored by Yandex LLC)
+
+Note: Following the addition of the tcpmd5 module, it is now necessary
+to have a security association (SA) entry for both inbound and outbound
+directions.
+
+The ipfw(4) packet filter has been updated to add support for named
+dynamic states. (r316274) (Sponsored by Yandex LLC)
+
+The ipfw_nptv6 kernel module has been added, implementing Network Prefix
+Translation for IPv6 as defined in RFC 6296. (r316444) (Sponsored by
+Yandex LLC)
+
+The ipfw_nat64 kernel module has been added, implementing stateless and
+stateful NAT64. (r316446) (Sponsored by Yandex LLC)
+
+The cfumass(4) device has been added, providing a storage frontend to
+USB OTG-capable hardware. (r316660) (Sponsored by The FreeBSD
+Foundation)
+
+The ipfw_pmod kernel module has been added, designed for modifying
+packets of any protocol. (r317045) (Sponsored by Yandex LLC)
+
+Note: At present, only TCP MSS modification is implemented.
+
+System Tuning and Controls
+
+The vfs.root_mount_always_wait tunable has been added, which forces the
+kernel to wait for root mount holds even if the root device is already
+present. (r315539)
+
+When the system real time clock (RTC) is adjusted, such as by
+clock_settime(), sleeping threads are now awakened and absolute sleep
+times are reevaluated based on the new value of the RTC. (r316120)
+(Sponsored by Dell EMC)
+
+Devices and Drivers
+
+This section covers changes and additions to devices and device drivers
+since 11.0-RELEASE.
+
+Device Drivers
+
+The jedec_ts(4) driver has been added, providing support for thermal
+sensors on memory modules. The driver currently supports chips that are
+fully compliant with the JEDEC JC 42.4 specification. (r307768)
+
+The chromebook_platform(4) driver has been added, providing support for
+various Chromebook models. (r308104)
+
+The bytgpio(4) driver has been added, providing support for Intel Bay
+Trail™ SoC GPIO controllers. (r308942)
+
+/dev/kmem no longer supports access via mmap(). Consumers wishing to use
+/dev/kmem must use read() and write(). (r312394)
+
+devctl(8) now supports a "clear driver" command as a complement to "set
+driver". (r306533) (Sponsored by Chelsio Communications)
+
+The digi(4), ie(4), mcd(4), scd(4), si(4), spic(4), and wl(4) drivers
+have been marked as deprecated, and removed in FreeBSD 12.0. The
+associated sicontrol(8) and wlconfig(8) utilities have been deprecated,
+as well. (r320954)
+
+Storage Drivers
+
+The mpr(4) driver has been updated to support tri-mode (SAS/SATA/PCIe)
+Broadcom storage adapters. (r319435)
+
+Network Drivers
+
+The cxgbe(4) driver has been updated to provide support for Virtual
+Function devices (VFs) on Chelsio T4 and T5 adapters. (r306660)
+(Sponsored by Chelsio Communications)
+
+TCP connections using the TCP Offload Engine (TOE) on Chelsio T4+
+adapters can now perform zero-copy sends via aio_write(). (r306661)
+(Sponsored by Chelsio Communications)
+
+The cxgbev(4) driver has been added, providing support for Virtual
+Function devices (VFs) on Chelsio T4 and T5 adapters. (r306664)
+(Sponsored by Chelsio Communications)
+
+The bnxt(4) driver has been added, providing support for Broadcom
+NetXtreme-C™ and NetXtreme-E™ devices. (r309377) (Sponsored by Broadcom
+Limited)
+
+The cxgbe(4) driver now supports devices using T6-based adapters which
+support 10, 25, 40, and 100 Gbps. (r309560) (Sponsored by Chelsio
+Communications)
+
+The cxgbe(4) driver has been updated to provide support for Virtual
+Function devices (VFs) on Chelsio T6 adapters. (r309560) (Sponsored by
+Chelsio Communications)
+
+The cxgbev(4) driver has been updated to provide support for Virtual
+Function devices (VFs) on Chelsio T6 adapters. (r309560) (Sponsored by
+Chelsio Communications)
+
+The miibus(4) driver has been updated to support Microchip/Micrel
+KSZ9031 Gigabit ethernet cards. (r310852) (Sponsored by Rubicon
+Communications, LLC (Netgate))
+
+The alc(4) driver has been updated to provide support for Atheros Killer
+E2400™ Gigabit ethernet cards. (r312358)
+
+The alc(4) driver has been updated to provide support for Atheros Killer
+E2500™ Gigabit ethernet cards. (r314005) (Sponsored by Microsoft)
+
+The etherswitch(4) driver has been updated to support RTL8366RB and
+RTL8366SR cards. (r315330) (Sponsored by Rubicon Communications, LLC
+(Netgate))
+
+The if_ipsec(4) virtual tunneling interface has been added, implementing
+route-based VPNs protected with Encapsulating Security Payload (ESP).
+(r315514) (Sponsored by Yandex LLC)
+
+The qlnxe(4) driver has been added, providing support for Cavium Qlogic™
+45000 Series adapters. (r317116)
+
+The qlxgbe(4) firmware has been updated to version 5.4.64. (r317182)
+
+The ixl(4) driver has been updated to version 1.7.12-k. (r318357)
+(Sponsored by Intel Corporation)
+
+The cxgbe(4) driver has been updated to firmware version 1.16.45.0 for
+T4, T5, and T6 cards. (r319269) (Sponsored by Chelsio Communications)
+
+The qlnxe(4) driver has been updated to support QLE41XXX hardware.
+(r320164)
+
+The qlnxe(4) driver firmware has been updated to version 8.30.0.0.
+(r320164)
+
+Hardware Support
+
+This section covers general hardware support for physical machines,
+hypervisors, and virtualization environments, as well as hardware
+changes and updates that do not otherwise fit in other sections of this
+document.
+
+Hardware Support
+
+The atkbdc(4) driver has been updated to provide support for Elantech
+trackpads. To enable hardware support, add hw.psm.elantech_support=1 to
+loader.conf(5). (r307576)
+
+Virtualization Support
+
+PCI passthrough with bhyve(4) supports more dynamic configurations
+permitting devices to be marked for passthrough or host use at runtime.
+(r306471) (Sponsored by Chelsio Communications)
+
+PCI passthrough with bhyve(4) resets functions via FLR when a virtual
+machine is started and stopped. (r306520) (Sponsored by Chelsio
+Communications)
+
+PCI passthrough support has been enabled on FreeBSD virtual machines
+running on Microsoft Hyper-V™. (r309312) (Sponsored by Microsoft)
+
+The hv_netvsc(4) driver SR-IOV implementation has been updated to
+support Virtual Function (VF) devices, such as the Mellanox Connect-X3™
+network card. (r314091) (Sponsored by Microsoft)
+
+Support for Microsoft Hyper-V™ Generation 2 virtual machines has been
+added. (r316272) (Sponsored by Microsoft)
+
+Support for synthetic keyboards has been added for virtual machines
+running on Microsoft Hyper-V™. (r317119) (Sponsored by Microsoft)
+
+The FreeBSD virtual machines provided on Amazon EC2™ now enable IPv6 by
+default. (r312790)
+
+The ena(4) driver has been added, providing support for "next
+generation" Enhanced Networking on the Amazon EC2™ platform. (r320760)
+(Sponsored by Amazon.com Inc.)
+
+ARM Support
+
+Support for the Allwinner A13 board has been added. (r305436)
+
+Storage
+
+This section covers changes and additions to file systems and other
+storage subsystems, both local and networked.
+
+Networked Storage
+
+The NFS client now properly handles NFS4ERR_BAD_SESSION errors received
+from an NFS server. Additionally, the kernel RPC client has been updated
+to prevent creating new TCP connections when ERESTART is received from
+sosend(9). (r318660)
+
+The NFS client now supports the Amazon Elastic File System™ (EFS).
+(r318660)
+
+ZFS
+
+A new sysctl(8), vfs.zfs.compressed_arc_enabled, has been added, which
+when enabled stores compressed, on-disk data in the ZFS ARC, increasing
+the amount of data that can be cached in physical memory. It is enabled
+by default. (r307265)
+
+The vfs.zfs.debug_flags sysctl(8) has been deprecated in favor of
+vfs.zfs.debugflags. Additionally, vfs.zfs.debugflags can now be
+configured in loader.conf(5), whereas vfs.zfs.debug_flags could not.
+(r318785)
+
+Boot Loader Changes
+
+This section covers the boot loader, boot menu, and other boot-related
+changes.
+
+Boot Loader Changes
+
+The UEFI boot loader has been updated for build reproducibility.
+(r305845) (Sponsored by The FreeBSD Foundation)
+
+The EFI loader has been updated to support TFTPFS, providing netboot
+support without requiring an NFS server. (r307632) (Sponsored by
+Gandi.net)
+
+Networking
+
+This section describes changes that affect networking in FreeBSD.
+
+General Network Changes
+
+The network stack has been updated to include ip6_tryforward(),
+providing performance benefits as result of a reduced number of checks.
+(r311681) (Sponsored by Yandex LLC)
+
+The network stack has been modified to fix incorrect or invalid IP
+addresses if multiple threads emit a UDP log_in_vain message
+concurrently. (r313523) (Sponsored by Dell EMC)
+
+The TCP stack has been changed to use the estimated RTT instead of
+timestamps for receive buffer auto resizing. (r317368) (Sponsored by
+Multiplay)
+
+Network Protocols
+
+Support for GARP (gratuitous ARP) retransmit has been added. A new
+sysctl(8), net.link.ether.inet.garp_rexmit_count, has been added, which
+sets the maximum number of retransmissions when set to a non-zero value.
+(r309337) (Sponsored by Dell EMC)
+
+Support for the UDP_ENCAP_ESPINUDP_NON_IKE encapsulation type has been
+removed. (r315514) (Sponsored by Yandex LLC)
+
+Ports Collection and Package Infrastructure
+
+This section covers changes to the FreeBSD Ports Collection, package
+infrastructure, and package maintenance and installation tools.
+
+Packaging Changes
+
+The pkg(8) utility has been updated to version 1.10.1.
+
+------------------------------------------------------------------------
+
+Last modified on: June 19, 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

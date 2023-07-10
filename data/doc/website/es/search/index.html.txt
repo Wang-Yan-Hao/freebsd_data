@@ -1,0 +1,155 @@
+[FreeBSD The Power to Serve]
+
+Donar a FreeBSD
+
+ 
+
+-   Inicio
+
+-   Acerca de FreeBSD
+    -   Introduccion
+    -   Características
+    -   Apoyo
+    -   Marketing
+    -   Política de privacidad
+    -   Proyectos
+    -   Ports
+
+-   Descargar FreeBSD
+    -   Información de Versiones
+    -   Ingeniería de Versiones
+
+-   Documentación
+    -   FAQ
+    -   Manual
+    -   Manual del Porter
+    -   Manual del desarrollador
+    -   Guía del Committer
+    -   Manuales en línea
+    -   Presentaciones y Trabajos
+    -   Introducción al Proyecto de Documentación
+    -   Todos los libros y artículos
+
+-   Comunidad
+    -   Listas de correo
+    -   Foros
+    -   Grupos de usuarios
+    -   Eventos
+    -   FreeBSD Journal
+    -   Q&A (externo)
+
+-   Desarrolladores
+    -   Ideas para proyectos
+    -   Git Repository
+    -   Repositorio Subversion
+    -   Git Mirror
+    -   Revisiones de Código (Phabricator)
+    -   Wiki
+    -   Servicio de integración continua
+
+-   Soporte
+    -   Distribuidores comerciales
+    -   Información de seguridad
+    -   Informes de errores
+    -   Envío informes de error
+    -   Recursos Web
+
+-   Fundación
+    -   Donaciones monetarias
+    -   Donaciones hardware
+
+-   Acerca de FreeBSD
+-   Características
+-   Aplicaciones
+-   Apoyo
+-   Marketing
+-   Administración
+-   Noticias
+-   Eventos
+-   Prensa
+-   Material gráfico
+-   Logotipo
+-   Donaciones
+-   Legal Notices
+-   Política de Privacidad
+
+Búsqueda
+
+Servicio de búsqueda de FreeBSD
+
+-   Informe de problemas GNATS (Bugs) database
+
+-   Páginas Man
+
+-   Modificaciones de Ports
+
+-   El código fuente
+
+-   Referencias al kernel de FreeBSD
+
+-   Páginas Web
+
+-   Archivos de listas de distribución
+
+-   Message-ID
+
+-   Buscador de news BSD
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Web pages (including FAQ and Handbook)
+
+Search within sites:
+
+Search
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Manual Pages
+
+Search for:
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Ported applications
+
+Search for:
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Mailing list archives
+
+The mailing list archive indexes are now updated weekly!
+
+An alternative way to read the mailing lists archives is to use the
+Mailman/Pipermail list archive (note that this archive only carries
+messages from March 2003 onward).
+
+The mailing lists (as well as many others) have also been archived by
+MarkMail.
+
+Search
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 de junio de 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 El Proyecto FreeBSD Todos los derechos
+reservados. La marca FreeBSD es una marca registrada de la Fundación
+FreeBSD es es utilizada por el Proyecto FreeBSD con su permiso La
+Fundación FreeBSD. Contact

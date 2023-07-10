@@ -1,0 +1,135 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   
+-   Developer's Handbook
+-   Committer's Guide
+-   Porter's Handbook
+-   Source code repositories
+-   Release Engineering
+-   Platforms
+-   Project Ideas
+-   Contributing
+
+FreeBSD/amd64 Project
+
+[BSD Daemon swinging a sledge hammer]
+
+This page contains information of the FreeBSD port to AMD’s AMD64 and
+Intel® 64 architecture, often also known as "x86-64" or "x64".
+FreeBSD/amd64 is suitable for almost all recent AMD and Intel CPUs.
+
+The AMD64 architecture was previously known as "Hammer". The Intel 64
+architecture was previously known as Yamhill, Clackamas Technology (CT),
+IA-32e, and EM64T (Extended Memory 64-bit Technology).
+
+Newer AMD Sempron™, the AMD Opteron™, AMD Athlon™ 64, AMD Turion™, AMD
+Phenom™, and AMD EPYC™ processors, and processors with AMD Zen cores all
+use the AMD64 architecture.
+
+The Intel vPro™, Intel Celeron D (some models since "Prescott"), Intel
+Centrino® Duo, Intel Centrino® Pro, Intel Viiv™, Intel Core™2 Extreme,
+Intel Core™2 Quad, Intel Core™2 Duo, Intel Xeon (3000-sequence,
+5000-sequence, and 7000-sequence), and the Intel Core™ i range of
+processors use the Intel® 64 architecture.
+
+Status
+
+FreeBSD/amd64 runs in 64-bit multiuser mode, in both Uniprocessor and
+Multiprocessor mode.
+
+The AMD64 platform is a Tier 1 FreeBSD platform.
+
+FreeBSD/amd64 Specific Resources
+
+-   FreeBSD/amd64 mailing list
+
+Other Links of Interest
+
+AMD64 Documentation
+
+-   AMD x86-64 Architecture Specification
+
+-   AMD64 Architecture Application Programmer’s Manual
+
+-   AMD64 Architecture System Programmer’s Manual
+
+-   AMD x86-64 DRAFT Processor-specific Application Binary Interface
+    Specification
+
+Software Tools
+
+-   Bochs and Simics Simulators and Tools
+
+Related Projects
+
+-   NetBSD/amd64
+
+------------------------------------------------------------------------
+
+Last modified on: June 7, 2023 by Ed Maste
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

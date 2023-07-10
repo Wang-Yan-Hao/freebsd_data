@@ -1,0 +1,285 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 5.4 Release Process
+
+Introduction
+
+This is a specific schedule for the release of FreeBSD 5.4. For more
+general information about the release engineering process, please see
+the Release Engineering section of the web site.
+
+General discussions about the release engineering process or quality
+assurance issues should be sent to the public freebsd-qa mailing list.
+MFC requests should be sent to re@FreeBSD.org.
+
+Schedule
+
+  ----------------------------- ----------------- ----------------- -----------------------------
+  Action                        Expected          Actual            Description
+
+  Reminder announcement         31 Jan 2005       31 Jan 2005       Release Engineers send
+                                                                    announcement email to
+                                                                    developers with a rough
+                                                                    schedule for the FreeBSD 5.4
+                                                                    release.
+
+  Announce the Ports Freeze     24 Feb 2005       24 Feb 2005       Someone from portmgr@ should
+                                                                    email freebsd-ports@ to set a
+                                                                    date for the week long ports
+                                                                    freeze and tagging of the
+                                                                    ports tree.
+
+  5.4-PRERELEASE                23 Feb 2005       24 Feb 2005       newvers.sh updated.
+
+  Code freeze begins            2 Mar 2005        3 Mar 2005        After this date, all commits
+                                                                    to the RELENG_5 branch must
+                                                                    be approved by
+                                                                    re@FreeBSD.org. Certain
+                                                                    highly active documentation
+                                                                    committers are exempt from
+                                                                    this rule for routine man
+                                                                    page / release note updates.
+                                                                    Heads-up emails should be
+                                                                    sent to the developers, as
+                                                                    well as stable@ and qa@
+                                                                    lists.
+
+  ~~5.4-PRERELEASE~~            4 Mar 2005        20 Mar 2005       First public test release
+  5.4-BETA1                                                         build. Note that the release
+                                                                    build name is 5.4-BETA1 but
+                                                                    newvers.sh RELEASE name
+                                                                    remains 5.4-PRERELEASE. This
+                                                                    is because the name BETA
+                                                                    often confuses the users who
+                                                                    are using the STABLE branch.
+
+  Announce doc/ tree slush      14 Mar 2005       25 Mar 2005       Notification of the impending
+                                                                    doc/ tree slush should be
+                                                                    sent to doc@.
+
+  Ports tree frozen             21 Mar 2005       21 Mar 2005       Only approved commits will be
+                                                                    permitted to the ports/ tree
+                                                                    during the freeze.
+
+  doc/ tree slush               ~~24 Mar 2005~~   2 Apr 2005        Non-essential commits to the
+                                2 Apr 2005                          en_US.ISO8859-1/ subtree
+                                                                    should be delayed from this
+                                                                    point until after the doc/
+                                                                    tree tagging, to give
+                                                                    translation teams time to
+                                                                    synchronize their work.
+
+  doc/ tree tagged.             ~~28 Mar 2005~~   12 Apr 2005       Version number bumps for doc/
+                                11 Apr 2005                         subtree. RELEASE_5_4_0 tag
+                                                                    for doc/. doc/ slush ends at
+                                                                    this time.
+
+  RELENG_5_4 branch             31 Mar 2005       3 Apr 2005        The release branch is
+                                                                    created. Update newvers.sh
+                                                                    and release.ent on various
+                                                                    branches involved.
+
+  Unfreeze the tree             31 Mar 2005       3 Apr 2005        Announcement to developers
+                                                                    explaining that commits to
+                                                                    RELENG_5 no longer require
+                                                                    approval. Also note the
+                                                                    policy for commits to the
+                                                                    RELENG_5_4 branch.
+
+  5.4-RC1                       31 Mar 2005       3 Apr 2005        newvers.sh and release.ent
+                                                                    updated.
+
+  Ports tree tagged             31 Mar 2005       2 Apr 2005        RELEASE_5_4_0 tag for ports/.
+
+  Ports tree unfrozen           31 Mar 2005       2 Apr 2005        After the ports/ tree is
+                                                                    tagged, the ports/ tree will
+                                                                    be re-opened for commits, but
+                                                                    commits made after tagging
+                                                                    will not go in 5.4-RELEASE.
+
+  Final package build starts    31 Mar 2005       --                The ports cluster and
+                                                                    pointyhat build final
+                                                                    packages.
+
+  First release candidate       2 Apr 2005        5 Apr 2005        The first release candidate
+                                                                    for the each architecture is
+                                                                    released. ISO images should
+                                                                    be uploaded to
+                                                                    ftp-master.FreeBSD.org. A
+                                                                    network install directory
+                                                                    should be uploaded to
+                                                                    ftp-master.FreeBSD.org. The
+                                                                    packages/ directory should be
+                                                                    a relative symlink, as
+                                                                    described in the releng
+                                                                    article. When the builds
+                                                                    begin send a note to
+                                                                    mirror-announce@FreeBSD.org
+                                                                    saying a "Normal Release
+                                                                    Cycle" is beginning, RC ISOs
+                                                                    and install directories will
+                                                                    be coming through the next
+                                                                    few weeks.
+
+  Heads up to -stable           2 Apr 2005        5 Apr 2005        A message should be sent to
+                                                                    qa@FreeBSD.org and
+                                                                    stable@FreeBSD.org after the
+                                                                    first snapshot is uploaded.
+
+  Second release candidate      9 Apr 2005        9 Apr 2005        Note: the release date of
+                                                                    this candidate depends on the
+                                                                    user experience with RC1.
+
+  Heads up to -stable           9 Apr 2005        11 Apr 2005       A message should be sent to
+                                                                    qa@FreeBSD.org and
+                                                                    stable@FreeBSD.org after the
+                                                                    second snapshot is uploaded.
+
+  Third release candidate       16 Apr 2005       16 Apr 2005       Note: the release date of
+                                                                    this candidate depends on the
+                                                                    user experience with RC2.
+
+  Heads up to -stable           16 Apr 2005       18 Apr 2005       A message should be sent to
+                                                                    qa@FreeBSD.org and
+                                                                    stable@FreeBSD.org after the
+                                                                    third snapshot is uploaded.
+
+  Fourth release candidate      30 Apr 2005       2 May 2005        Note: This is the final
+                                                                    release candidate.
+
+  Heads up to -stable           1 May 2005        2 May 2005        A message should be sent to
+                                                                    qa@FreeBSD.org and
+                                                                    stable@FreeBSD.org after the
+                                                                    fourth snapshot is uploaded.
+
+  Version numbers bumped.       6 May 2005        6 May 2005        The files listed here are
+                                                                    updated to reflect the fact
+                                                                    that this is FreeBSD 5.4.
+
+  src tree tagged.              6 May 2005        6 May 2005        RELENG_5_4_0_RELEASE tag for
+                                                                    src/.
+
+  Final builds.                 6 May 2005        6 May 2005        Final builds for all
+                                                                    architectures in a pristine
+                                                                    environment.
+
+  Warn                          6 May 2005        6 May 2005        Heads up email to
+  mirror-announce@FreeBSD.org                                       mirror-announce@FreeBSD.org
+                                                                    to give admins time to
+                                                                    prepare for the load spike to
+                                                                    come. The site administrators
+                                                                    have frequently requested
+                                                                    advance notice for new ISOs.
+
+  Upload to ftp-master.         7 May 2005        --                Release uploaded to
+                                                                    ftp-master.FreeBSD.org
+                                                                    (packages should have been
+                                                                    done before now, otherwise it
+                                                                    chokes the mirror sites and
+                                                                    propagation of the release
+                                                                    bits takes too long)
+
+  Update man.cgi on the         9 May 2005        --                Make sure the 5.4 manual
+  website.                                                          pages are being displayed by
+                                                                    default for the man->web
+                                                                    gateway. Also make sure these
+                                                                    man pages are pointed to by
+                                                                    docs.xml.
+
+  Announcement                  9 May 2005        --                Announcement sent out after a
+                                                                    majority of the mirrors have
+                                                                    received the bits.
+
+  Turn over to the secteam      17 May 2005       --                RELENG_5_4 branch is handed
+                                                                    over to the FreeBSD Security
+                                                                    Officer Team in one or two
+                                                                    weeks after the announcement.
+  ----------------------------- ----------------- ----------------- -----------------------------
+
+Additional Information
+
+-   FreeBSD 5.4 developer todo list.
+-   FreeBSD Release Engineering website.
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

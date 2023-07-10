@@ -1,0 +1,597 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 12.2-RELEASE Release Notes
+
+Abstract
+
+The release notes for FreeBSD 12.2-RELEASE contain a summary of the
+changes made to the FreeBSD base system on the 12-STABLE development
+line. This document lists applicable security advisories that were
+issued since the last release, as well as significant changes to the
+FreeBSD kernel and userland. Some brief remarks on upgrading are also
+presented.
+
+Introduction
+
+This document contains the release notes for FreeBSD 12.2-RELEASE. It
+describes recently added, changed, or deleted features of FreeBSD. It
+also provides some notes on upgrading from previous versions of FreeBSD.
+
+The release distribution to which these release notes apply represents
+the latest point along the 12-STABLE development branch since 12-STABLE
+was created. Information regarding pre-built, binary release
+distributions along this branch can be found at
+https://www.FreeBSD.org/releases/.
+
+The release distribution to which these release notes apply represents a
+point along the 12-STABLE development branch between 12.1-RELEASE and
+the future 12.3-RELEASE. Information regarding pre-built, binary release
+distributions along this branch can be found at
+https://www.FreeBSD.org/releases/.
+
+This distribution of FreeBSD 12.2-RELEASE is a release distribution. It
+can be found at https://www.FreeBSD.org/releases/ or any of its mirrors.
+More information on obtaining this (or other) release distributions of
+FreeBSD can be found in the Obtaining FreeBSD appendix to the FreeBSD
+Handbook.
+
+All users are encouraged to consult the release errata before installing
+FreeBSD. The errata document is updated with "late-breaking" information
+discovered late in the release cycle or after the release. Typically, it
+contains information on known bugs, security advisories, and corrections
+to documentation. An up-to-date copy of the errata for FreeBSD
+12.2-RELEASE can be found on the FreeBSD Web site.
+
+This document describes the most user-visible new or changed features in
+FreeBSD since 12.1-RELEASE. In general, changes described here are
+unique to the 12-STABLE branch unless specifically marked as MERGED
+features.
+
+Typical release note items document recent security advisories issued
+after 12.1-RELEASE, new drivers or hardware support, new commands or
+options, major bug fixes, or contributed software upgrades. They may
+also list changes to major ports/packages or release engineering
+practices. Clearly the release notes cannot list every single change
+made to FreeBSD between releases; this document focuses primarily on
+security advisories, user-visible changes, and major architectural
+improvements.
+
+Upgrading from Previous Releases of FreeBSD
+
+Binary upgrades between RELEASE versions (and snapshots of the various
+security branches) are supported using the freebsd-update(8) utility.
+The binary upgrade procedure will update unmodified userland utilities,
+as well as unmodified GENERIC kernels distributed as a part of an
+official FreeBSD release. The freebsd-update(8) utility requires that
+the host being upgraded have Internet connectivity.
+
+Source-based upgrades (those based on recompiling the FreeBSD base
+system from source code) from previous versions are supported, according
+to the instructions in /usr/src/UPDATING.
+
++-----------------------------------+-----------------------------------+
+|                                   | Upgrading FreeBSD should only be  |
+|                                   | attempted after backing up all    |
+|                                   | data and configuration files.     |
++-----------------------------------+-----------------------------------+
+
+Security and Errata
+
+This section lists the various Security Advisories and Errata Notices
+since 12.1-RELEASE.
+
+Security Advisories
+
++----------------------+----------------------+-----------------------+
+| Advisory             | Date                 | Topic                 |
++======================+======================+=======================+
+| Fre                  | 12 November 2019     | Machine Check         |
+| eBSD-SA-19:25.mcepce |                      | Exception on Page     |
+|                      |                      | Size Change           |
++----------------------+----------------------+-----------------------+
+| FreeBSD-SA-19:26.mcu | 12 November 2019     | Intel CPU Microcode   |
+|                      |                      | Update                |
++----------------------+----------------------+-----------------------+
+| FreeB                | 28 January 2020      | fetch(3) buffer       |
+| SD-SA-20:01.libfetch |                      | overflow              |
++----------------------+----------------------+-----------------------+
+| Free                 | 28 January 2020      | Kernel stack data     |
+| BSD-SA-20:03.thrmisc |                      | disclosure            |
++----------------------+----------------------+-----------------------+
+| FreeBSD-SA-20:04.tcp | 18 March 2020        | TCP IPv6 SYN cache    |
+|                      |                      | kernel information    |
+|                      |                      | disclosure            |
++----------------------+----------------------+-----------------------+
+| FreeBSD-S            | 18 March 2020        | Insufficient ioctl(2) |
+| A-20:05.if_oce_ioctl |                      | privilege checking    |
++----------------------+----------------------+-----------------------+
+| FreeBSD-S            | 18 March 2020        | Insufficient ioctl(2) |
+| A-20:06.if_ixl_ioctl |                      | privilege checking    |
++----------------------+----------------------+-----------------------+
+| Fr                   | 18 March 2020        | Incorrect             |
+| eeBSD-SA-20:07.epair |                      | user-controlled       |
+|                      |                      | pointer use           |
++----------------------+----------------------+-----------------------+
+| F                    | 18 March 2020        | Kernel memory         |
+| reeBSD-SA-20:08.jail |                      | disclosure with       |
+|                      |                      | nested jails          |
++----------------------+----------------------+-----------------------+
+| FreeBSD-SA-20:09.ntp | 18 March 2020        | Multiple denial of    |
+|                      |                      | service               |
++----------------------+----------------------+-----------------------+
+| F                    | 21 April 2020        | Invalid mbuf(9)       |
+| reeBSD-SA-20:10.ipfw |                      | handling              |
++----------------------+----------------------+-----------------------+
+| Free                 | 21 April 2020        | Remote denial of      |
+| BSD-SA-20:11.openssl |                      | service               |
++----------------------+----------------------+-----------------------+
+| FreeB                | 12 May 2020          | Insufficient packet   |
+| SD-SA-20:12.libalias |                      | length validation     |
++----------------------+----------------------+-----------------------+
+| FreeB                | 12 May 2020          | Memory disclosure     |
+| SD-SA-20:13.libalias |                      | vulnerability         |
++----------------------+----------------------+-----------------------+
+| FreeBS               | 12 May 2020          | Use-after-free        |
+| D-SA-20:15.cryptodev |                      | condition             |
++----------------------+----------------------+-----------------------+
+| FreeBS               | 12 May 2020          | Insufficient MAC key  |
+| D-SA-20:16.cryptodev |                      | length check          |
++----------------------+----------------------+-----------------------+
+| FreeBSD-SA-20:17.usb | 9 June 2020          | HID descriptor        |
+|                      |                      | parsing error         |
++----------------------+----------------------+-----------------------+
+| Free                 | 8 July 2020          | Multiple              |
+| BSD-SA-20:19.unbound |                      | vulnerabilities       |
++----------------------+----------------------+-----------------------+
+| F                    | 8 July 2020          | Race condition and    |
+| reeBSD-SA-20:20.ipv6 |                      | use-after-free        |
++----------------------+----------------------+-----------------------+
+| Free                 | 5 August 2020        | Memory corruption     |
+| BSD-SA-20:21.usb_net |                      |                       |
++----------------------+----------------------+-----------------------+
+| Fre                  | 5 August 2020        | Multiple              |
+| eBSD-SA-20:22.sqlite |                      | vulnerabilities       |
++----------------------+----------------------+-----------------------+
+| Free                 | 5 August 2020        | Privilege escalation  |
+| BSD-SA-20:23.sendmsg |                      |                       |
++----------------------+----------------------+-----------------------+
+| F                    | 2 September 2020     | Use-after-free bug    |
+| reeBSD-SA-20:25.sctp |                      |                       |
++----------------------+----------------------+-----------------------+
+| FreeB                | 2 September 2020     | Heap overflow         |
+| SD-SA-20:26.dhclient |                      |                       |
++----------------------+----------------------+-----------------------+
+| FreeBSD-SA-20:27.ure | 15 September 2020    | Packet-in-packet      |
+|                      |                      | attack                |
++----------------------+----------------------+-----------------------+
+| FreeBSD              | 15 September 2020    | Privilege escalation  |
+| -SA-20:28.bhyve_vmcs |                      | via VMCS              |
++----------------------+----------------------+-----------------------+
+| FreeBS               | 15 September 2020    | SVM guest escape      |
+| D-SA-20:29.bhyve_svm |                      |                       |
++----------------------+----------------------+-----------------------+
+| F                    | 15 September 2020    | Privilege escalation  |
+| reeBSD-SA-20:30.ftpd |                      |                       |
++----------------------+----------------------+-----------------------+
+
+Errata Notices
+
++----------------------+----------------------+-----------------------+
+| Errata               | Date                 | Topic                 |
++======================+======================+=======================+
+| Fre                  | 12 November 2019     | UEFI Loader Memory    |
+| eBSD-EN-19:19.loader |                      | Fragmentation         |
++----------------------+----------------------+-----------------------+
+| FreeBSD-EN-20:01.ssp | 28 January 2020      | Imprecise orderring   |
+|                      |                      | of canary             |
+|                      |                      | initialization        |
++----------------------+----------------------+-----------------------+
+| F                    | 18 March 2020        | Misleading log        |
+| reeBSD-EN-20:03.sshd |                      | messages upon         |
+|                      |                      | successful login      |
++----------------------+----------------------+-----------------------+
+| Fre                  | 18 March 2020        | Fix packet forwarding |
+| eBSD-EN-20:05.mlx5en |                      | performance           |
++----------------------+----------------------+-----------------------+
+| F                    | 18 March 2020        | Incorrect checksum    |
+| reeBSD-EN-20:06.ipv6 |                      | calculations          |
++----------------------+----------------------+-----------------------+
+| Fre                  | 21 April 2020        | Regression with       |
+| eBSD-EN-20:07.quotad |                      | certain NFS servers   |
++----------------------+----------------------+-----------------------+
+| Fre                  | 12 May 2020          | Timezone database     |
+| eBSD-EN-20:08.tzdata |                      | update                |
++----------------------+----------------------+-----------------------+
+| FreeBSD-EN-20:09.igb | 12 May 2020          | Fix failure to switch |
+|                      |                      | to inactive state     |
++----------------------+----------------------+-----------------------+
+| Fr                   | 12 May 2020          | Incorrect build host  |
+| eeBSD-EN-20:10.build |                      | clang version         |
+|                      |                      | detection             |
++----------------------+----------------------+-----------------------+
+| FreeBSD-EN-20:11.ena | 9 June 2020          | Stability issues in   |
+|                      |                      | ena(4)                |
++----------------------+----------------------+-----------------------+
+| Fr                   | 9 June 2020          | Watchdog timeout      |
+| eeBSD-EN-20:12.iflib |                      | resetting idle queues |
++----------------------+----------------------+-----------------------+
+| Fr                   | 8 July 2020          | Crash with PCI device |
+| eeBSD-EN-20:13.bhyve |                      | passthrough           |
++----------------------+----------------------+-----------------------+
+| FreeB                | 8 July 2020          | Kernel panic          |
+| SD-EN-20:14.linuxkpi |                      |                       |
++----------------------+----------------------+-----------------------+
+| FreeBSD-EN-20:15.mps | 8 July 2020          | Kernel panic          |
++----------------------+----------------------+-----------------------+
+| FreeBSD-EN-20:16.vmx | 5 August 2020        | Packet loss and       |
+|                      |                      | degraded performance  |
++----------------------+----------------------+-----------------------+
+| FreeBSD-             | 2 September 2020     | Kernel panic          |
+| EN-20:17.linuxthread |                      |                       |
++----------------------+----------------------+-----------------------+
+
+Userland
+
+This section covers changes and additions to userland applications,
+contributed software, and system utilities.
+
+Userland Configuration Changes
+
+A new rc.conf(5) variable has been added, linux_mounts_enable, which
+controls if Linux®-specific filesystems are mounted in /compat/linux if
+linux_enable is set to YES. [r364883] (Sponsored by The FreeBSD
+Foundation)
+
+The devd(8) utility has been updated to change the default syslogd(8)
+notification for resume from kern to kernel. [r365540]
+
+Userland Application Changes
+
+The cron(8) utility has been updated to support two new flags in
+crontab(5), -n and -q, which suppress mail on successful runs and
+suppress logging of command execution, respectively. [r353134]
+
+The dd(1) utility has been updated to include new operands: [r355520]
+
+-   conv=fsync
+
+-   conf=fdatasync
+
+-   oflag=fsync
+
+-   oflag=sync
+
+-   iflag=fullblock
+
+See dd(1) for usage details.
+
+The fsck_msdosfs(8) utility has been updated to include a variety of
+enhancements, including reducing the memory footprint, a new flag, -M,
+which disables the use of mmap(2), and others. [r357568]
+
+The showmount(8) utility has been updated to implement support for long
+options. [r357078]
+
+The man:certctl.8; utility has been added. [r357082]
+
+The syslogd(8) utility has been updated to add property-based filters.
+[r359739]
+
+The mountd(8) utility has been updated to fix incorrect group listing
+under certain conditions when -maproot or -mapall is used for exports.
+[r362602]
+
+The sed(1) utility has been updated to read commands from stdin(4) when
+“-f -” is specified. [r362687]
+
+The hostapd(8) and wpa_supplicant(8) utilities have been updated to
+support 802.11n, 802.11w, 802.11ac, and 802.11ax. [r363441]
+
+The sesutil(8) utility has been updated to include a show subcommand to
+print output in a user-friendly way. [r364115]
+
+The bhyve(8) utility has been updated to support setting additional AHCI
+controller parameters. [r364334]
+
+The jail(8) utility has been updated to allow running Linux® in a jailed
+environment.
+
+Contributed Software
+
+The tcsh(1) utility has been updated to version 6.21.00. [r354191]
+(Sponsored by DARPA, AFRL)
+
+The less(1) utility has been updated to version v551. [r355503]
+
+The libbsdxml(3) library has been updated to version 2.2.9. [r355603]
+
+The resolvconf(8) utility has been updated to version 3.9.2. [r355745]
+
+The pcap(3) library has been updated to version 1.9.1. [r356340]
+
+The tcpdump(1) utility has been updated to version 4.9.3. [r356340]
+
+The mtree(8) utility has been updated to address an issue with -f not
+considering type changes, fix username logic with -c when getlogin(2)
+fails, and to fix -O not descending when a hash collision occurs.
+[r356532]
+
+The Elf Tool Chain has been updated to upstream revision r3769.
+[r358779] (Sponsored by The FreeBSD Foundation)
+
+The xz(1) utility has been updated to version 5.2.5. [r359635]
+
+OpenSSH has been updated to version 7.9p1. [r360313] (Sponsored by The
+FreeBSD Foundation)
+
+The timezone database files have been updated to version 2020a.
+[r360361]
+
+The unbound(8) utility has been updated to version 1.10.1. [r361435]
+
+The libarchive(3) library has been updated to version 3.4.3. [r362132]
+
+The private apr library has been updated to version 1.7.0. [r362180]
+
+The svn{,lite} utility has been updated to version 1.14.0 LTS. [r362180]
+
+The ntpd(8) suite of utilities have been updated to version 4.2.8p15.
+[r362716]
+
+The file(1) utility has been updated to version 5.39. [r362842]
+
+The bc(1) utility has been updated to version 3.1.1. [r362987]
+
+The private sqlite3 utility has been updated to version 3.32.3.
+[r363179]
+
+The BSD make(1) utility has been updated to version 20200719. [r363352]
+
+The Sendmail utility has been updated to version 8.16.1. [r363465]
+
+The nc(1) utility has been updated to include a new --sctp flag.
+[r363474]
+
+The clang, llvm, lld, lldb, compiler-rt utilities and libc++ have been
+updated to version 10.0.1. [r363494]
+
+OpenSSL has been updated to version 1.1.1h. [r366177]
+
+Deprecated Applications
+
+The amd(8) utility has been marked as deprecated, and targeted for
+removal in FreeBSD 13.0. [r355075]
+
+Runtime Libraries and API
+
+The ifconfig library has been updated to report the status of a
+bridge(4) interface, similarly to lagg(4). [r363037]
+
+Kernel
+
+This section covers changes to kernel configurations, system tuning, and
+system control parameters that are not otherwise categorized.
+
+General Kernel Changes
+
+The read(2) system call has been changed to disable read() calls on
+directories by default. A new sysctl(8) has been added,
+security.bsd.allow_read_dir, which when set to 1 will restore the
+previous behavior. [r363017]
+
+The ixl(4) driver has now been enabled by default for FreeBSD/powerpc64.
+[r363712]
+
+The machdep.kdb_on_nmi sysctl(8) has been removed. The
+machdep.panic_on_nmi sysctl(8) tunable has changed to directly enter the
+debugger. [r364002]
+
+Support for APEI (ACPI Platform Error Interfaces) has been added.
+[r364003] (Sponsored by iXsystems)
+
+Devices and Drivers
+
+This section covers changes and additions to devices and device drivers
+since 12.1-RELEASE.
+
+Device Drivers
+
+The ubsec(4) driver has been marked as deprecated, and will be removed
+in FreeBSD 13.0. [r361044]
+
+The ufm(4) driver has been marked as deprecated, and will be removed in
+FreeBSD 13.0. [r364431]
+
+The apm(4) driver has been marked as deprecated, and will be removed in
+FreeBSD 13.0. [r365542]
+
+The ctau(4) and cx(4) drivers have been marked as deprecated, and will
+be removed in FreeBSD 13.0. [r365542] (Sponsored by The FreeBSD
+Foundation)
+
+Storage
+
+This section covers changes and additions to file systems and other
+storage subsystems, both local and networked.
+
+General Storage
+
+The mps(4) driver has been removed from the 32-bit GENERIC kernel
+configuration. [r352741]
+
+The virtio_blk(4) driver has been updated to support TRIM. [r365702]
+(Sponsored by Klara Systems)
+
+The ZFS file system has been updated to include read/write kstat output
+per dataset. [r365917] (Sponsored by Klara Systems)
+
+Boot Loader Changes
+
+This section covers the boot loader, boot menu, and other boot-related
+changes.
+
+Boot Loader Changes
+
+The console is now displayed within the boot loader, allowing to toggle
+between available console devices. [r366691]
+
+Networking
+
+This section describes changes that affect networking in FreeBSD.
+
+General Network
+
+The tap(4) and tun(4) devices have been updated to create /dev aliases
+when they are renamed. [r354060]
+
+The ipfw(4) driver has been updated to support RFC6598/Carrier Grade NAT
+subnets. [r359694]
+
+The ng_nat(4) driver has been updated to allow attaching to an ethernet
+interface. [r359697]
+
+The ixl(4) driver has been updated to version 1.11.29. [r363876]
+(Sponsored by Intel Corporation)
+
+The ena(4) driver has been updated to version 2.2.0. [r365381]
+(Sponsored by Amazon, Inc.)
+
+Updates to the wireless networking stack and various drivers have been
+introduced to provide better 802.11n and 802.11ac support. [r365670]
+(Sponsored by Rubicon Communications, LLC (Netgate))
+
+The ice(4) driver has been added, supporting Intel® 100Gb ethernet
+cards. [r365733] (Sponsored by Intel Corporation)
+
+The cxgbe(4) driver has been updated to version 1.25.0.0. [r365961]
+(Sponsored by Chelsio Communications)
+
+Ports Collection and Package Infrastructure
+
+This section covers changes to the FreeBSD Ports Collection, package
+infrastructure, and package maintenance and installation tools.
+
+Packaging Changes
+
+The pkg(8) utility has been updated to version 1.15.10.
+
+General Notes Regarding Future FreeBSD Releases
+
+Default CPUTYPE Change
+
+Starting with FreeBSD-13.0, the default CPUTYPE for the i386
+architecture will change from 486 to 686.
+
+This means that, by default, binaries produced will require a 686-class
+CPU, including but not limited to binaries provided by the FreeBSD
+Release Engineering team. FreeBSD 13.0 will continue to support older
+CPUs, however users needing this functionality will need to build their
+own releases for official support.
+
+As the primary use for i486 and i586 CPUs is generally in the embedded
+market, the general end-user impact is expected to be minimal, as new
+hardware with these CPU types has long faded, and much of the deployed
+base of such systems is nearing retirement age, statistically.
+
+There were several factors taken into account for this change. For
+example, i486 does not have 64-bit atomics, and while they can be
+emulated in the kernel, they cannot be emulated in the userland.
+Additionally, the 32-bit amd64 libraries have been i686 since their
+inception.
+
+As the majority of 32-bit testing is done by developers using the lib32
+libraries on 64-bit hardware with the COMPAT_FREEBSD32 option in the
+kernel, this change ensures better coverage and user experience. This
+also aligns with what the majority of Linux® distributions have been
+doing for quite some time.
+
+This is expected to be the final bump of the default CPUTYPE in i386.
+
++-----------------------------------+-----------------------------------+
+|                                   | This change does not affect the   |
+|                                   | FreeBSD 12.x or 11.x series of    |
+|                                   | releases.                         |
++-----------------------------------+-----------------------------------+
+
+------------------------------------------------------------------------
+
+Last modified on: June 19, 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

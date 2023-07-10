@@ -1,0 +1,115 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   
+-   Manuel du développeur
+-   Committer's Guide
+-   Manuel du porteur d'application
+-   Dépôt des codes source
+-   Production des versions
+-   Plates-formes
+-   Idées de projet
+-   Contribuer
+
+Projet Java® pour FreeBSD : Liens Java
+
+Cette page présente différentes catégories de liens sur des ressources
+Java. Elles sont classées par thèmes.
+
+-   FreeBSD
+    Spécifiques à FreeBSD comme les ports etc.
+
+-   Revendeurs
+    Contient des liens vers les sites web de Sun, IBM…​ .
+
+-   Outils de développement
+    Contient des liens vers des outils de développement Java (y compris
+    Sun, IBM)
+
+-   APIs
+    Contient des liens sur différentes API et des implémentations de
+    protocoles
+
+-   Guides
+    Contient des liens sur des guides en ligne comme par exemple celui
+    de JavaSoft
+
+-   Documentations
+    Contient des liens vers des documents disponibles en ligne
+    concernant Java
+
+-   Servlets
+    Contient des liens sur des informations à propos des servlets et des
+    moteurs de servlets
+
+-   Ressources…​
+    Tout ce qui ne rentre pas dans les autres catégories
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 juin 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

@@ -1,0 +1,182 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   
+-   Manuel du développeur
+-   Committer's Guide
+-   Manuel du porteur d'application
+-   Dépôt des codes source
+-   Production des versions
+-   Plates-formes
+-   Idées de projet
+-   Contribuer
+
+Projet CVSweb pour FreeBSD
+
+Contenu
+
+-   Qu’est-ce que CVSweb ?
+
+-   Téléchargements
+
+-   Ressources
+
+Qu’est-ce que CVSweb ?
+
+CVSweb est une interface web pour les dépôts CVS avec laquelle vous
+pouvez parcourir une arborescence de fichiers depuis votre navigateur
+pour visualiser l’historique de chaque fichier d’une manière simple et
+pratique.
+
+CVSweb a été écrit à l’origine par &a.fenner; pour le Projet FreeBSD et
+a très vite gagné en popularité parmi les développeurs grâce à sa
+facilité d’utilisation.
+
+FreeBSD-CVSweb, anciennement connu sous le nom de knu-CVSweb, est une
+version améliorée de CVSweb basée sur le CVSweb de Henner Zeller, qui
+est une version étendue du CVSweb original. &a.knu; a fait de nombreux
+"nettoyages", de nombreuses corrections de bugs, a apporté des
+améliorations en ce qui concerne la sécurité et les fonctionnalités au
+fur et à mesure des versions et a ré-importé toutes ces modifications
+dans la version d’origine. Ville Skyttä a continué ce travail, et
+FreeBSD-CVSweb est actuellement en cours de changement de mainteneur.
+
+FreeBSD-CVSweb est disponible librement et gratuitement sous licence
+BSD. Il est actuellement utilisé par des projets comme FreeBSD, NetBSD,
+Ruby.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Téléchargements
+
+Vous pouvez télécharger l’archive tar sur les sites suivants. La
+dernière version stable est la 3.0.6 (sortie le 25 septembre 2005),
+consultez le fichier NEWS et le fichier ChangeLog pour la liste des
+changements.
+
+-   ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/scop/
+
+-   http://people.FreeBSD.org/~scop/cvsweb/
+
+-   Consultez la documentation FreeBSD sur les sites FTP pour des
+    informations sur les sites miroirs.
+
+Les anciennes versions sont également disponibles dans les répertoires
+mentionnés ci-dessus. Une mise à jour à la version 3.x est recommandée,
+néanmoins si vous utilisez une version de Perl antérieure à 5.6,
+utilisez la version 2.0.x.
+
+Plusieurs distributions de systèmes d’exploitation contiennent un
+paquetage pour FreeBSD-CVSweb :
+
+-   port FreeBSD (devel/cvsweb3 pour 3.x, devel/cvsweb 2.x)
+
+-   Paquetage NetBSD (www/cvsweb)
+
+-   Port OpenBSD (devel/cvsweb)
+
+-   Debian GNU/Linux (testing et unstable)
+
+-   Fedora Extras
+
+-   Gentoo Linux
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Ressources
+
+Liste de diffusion pour ce projet
+
+    freebsd-cvsweb@FreeBSD.org est la liste de diffusion consacrée aux
+    discussions sur le développement de FreeBSD-CVSweb. Les patches,
+    rapports de bug et demandes de nouvelles fonctionnalités sont les
+    bienvenus. Pour vous abonner à cette liste, suivez les instructions
+    du Manuel de Référence FreeBSD. Les archives de la liste sont
+    également disponibles.
+
+Dépôt CVS
+
+    FreeBSD-CVSweb est disponible via un accès anonyme à un serveur CVS
+    de type "pserver". Le nom de module est /projects/cvsweb. La branche
+    stable actuelle est MAIN, et rel-2_0-branch contient l’ancienne
+    version.
+
+CVSweb sur CVSweb
+
+    Vous pouvez parcourir les sources de FreeBSD-CVSweb via lui-même sur
+    la page http://www.FreeBSD.org/cgi/cvsweb.cgi/projects/cvsweb/.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 juin 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

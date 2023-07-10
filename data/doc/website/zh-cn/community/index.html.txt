@@ -1,0 +1,110 @@
+[FreeBSD The Power to Serve]
+
+捐赠 FreeBSD
+
+ 
+
+-   首页
+
+-   关于
+    -   简介
+    -   特性
+    -   宣传
+    -   营销
+    -   隐私政策
+    -   Projects
+    -   Ports
+
+-   获取 FreeBSD
+    -   发行版本
+    -   发布工程
+
+-   文档
+    -   常见问题合集
+    -   使用手册
+    -   Porter' 手册
+    -   Developer' 手册
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   文档计划入门书
+    -   所有书籍和文档
+
+-   社区
+    -   邮件列表
+    -   论坛
+    -   用户群体
+    -   活动
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   开发
+    -   项目新点子
+    -   Git Repository
+    -   Subversion 仓库
+    -   Git 镜像
+    -   代码审查 (Phabricator)
+    -   Wiki
+    -   持续集成服务
+
+-   支持
+    -   供应商
+    -   安全公告
+    -   问题报告
+    -   提交问题报告
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   基金会
+    -   资金捐赠
+    -   硬件捐赠
+
+-   BSD Now
+-   Discord
+-   活动
+-   论坛
+-   IRC
+-   Mailing Lists
+-   Reddit
+-   Twitter
+-   User Groups
+-   YouTube
+
+FreeBSD 社区
+
+有超过一百个 邮件列表， 许多网页 论坛， 以及几个 新闻组 可供您查看。
+在世界上 32 个不同的国家有超过 个 72 用户群组， 和一个活跃的 IRC 社区。
+很多开发者维护了各种 博客 来展示他们为 FreeBSD 所做的工作。
+开发者和关键的贡献者也维护了一个 wiki， 其中包括了 FreeBSD
+开发进度和相关项目的信息。
+
+过去的一年， 在世界上 2 个不同的国家举办了 9 场 FreeBSD 活动。
+若要了解未来与 FreeBSD 有关的活动， 请查阅 活动页面 上维护的 日历 和 RSS
+源。 在 YouTube 上的 BSD 会议 频道里有许多过去活动的视频。
+
+社交网络
+
+FreeBSD 出现在许多不同的社交网络上。
+
+-   在 flickr 上， 有上千张来自用户群组， 会议和黑客马拉松的照片被加上了
+    'freebsd' 标签。
+
+-   在 YouTube 上有上百段会议视频， 屏幕录像， 以及关于 FreeBSD 的演示。
+    特别要提到的是， 有一个新的 BSD 会议 频道， 其中包含了来自 FreeBSD
+    技术会议的各种一小时 FreeBSD 录制演讲。
+
+-   在 Facebook 上有一个 FreeBSD 用户群组， 在LinkedIn 上有一个 FreeBSD
+    群组。
+
+-   您可以在 Twitter 上关注 @freebsd， @freebsdhelp， @freebsdblogs，
+    以及 @freebsdcore。
+
+------------------------------------------------------------------------
+
+Last modified on: June 19, 2021 by Danilo G. Baio
+
+法律信息 | © 1995-2023 FreeBSD 项目 保留所有权利。 The mark FreeBSD is a
+registered trademark of The FreeBSD Foundation and is used by The
+FreeBSD Project with the permission of The FreeBSD Foundation. 联系
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

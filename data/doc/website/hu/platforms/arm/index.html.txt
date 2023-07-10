@@ -1,0 +1,170 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   
+-   Developer's Handbook
+-   Committer's Guide
+-   Porter's Handbook
+-   Source code repositories
+-   Release Engineering
+-   Platforms
+-   Project Ideas
+-   Contributing
+
+A FreeBSD/ARM projekt
+
+Bevezetés
+
+Ezen az oldalon találhatunk információkat a FreeBSD ARM architektúrán és
+-hardveren futó változatáról. Az ezzel kapcsolatos megbeszélések a
+freebsd-arm levelezési listán folynak.
+
+Tartalomjegyzék
+
+-   Helyzet
+
+-   Támogatott hardverek
+
+-   További teendõk
+
+-   FreeBSD/ARM linkek
+
+-   Rövid telepítési útmutató
+
+-   A FreeBSD/ARM levelezési lista
+
+Helyzet
+
+Az ARM hivatalosan egy Tier 2 szintû architektúra, tehát a FreeBSD
+Projekt ehhez nem készít hivatalos kiadásokat vagy elõre fordított
+csomagokat, mivel ez elsõsorban a beágyazott rendszereket veszi célba.
+Ettõl függetlenül a FreeBSD/ARM platformot aktívan fejlesztik és
+karbantartják, nagyon jó a támogatottsága, kitûnõ vázat nyújt az
+ARM-alapú rendszerek építéséhez.
+
+Támogatott hardverek
+
+A FreeBSD általában elindul az IQ31244 és IQ80321 chipeket tartalmazó,
+i80321 alapú Intel XScale® fejlesztõi kártyákon. A támogatása jelenleg
+csak minimális, kizárólag a processzort, a PCI-X buszt, az em(4) típusú
+Ethernet kártyákat, az UART és idõzítõ eszközöket ismeri.
+
+Az EP80219 fejlesztõi kártyákon található i80219 XScale processzorok is
+támogatottak.
+
+Az Avila GW2348-4 fejlesztõi kártyákon található IXP425 is támogatott.
+
+A StrongARM 1100 CPU minimálisan támogatott, de csak a Simics emuláció
+keretein belül: CPU, UART és órajel. Elméletileg indítható a Simics
+által emulált kártyákon, de errõl eddig még nem érkezett sikeres vagy
+sikertelen visszajelzés.
+
+Ezeken kívül még a Technologic Systems TS-7200 típusú fejlesztõi
+kártyáin található Atmel AT91SAM926x processzorok, a Marvell Orion ARM
+SoC, a Samsung S3C2XX0 sorozat és a Cirrus Logic EP93XX processzorok is
+támogatottak.
+
+További teendõk
+
+-   SATA támogatás
+
+-   Egyéb eszközök, mint például watchdog, i2c és bus támogatását be
+    kell olvasztani a NetBSD-bõl
+
+FreeBSD/ARM linkek
+
+-   Az ARM rövid története
+
+-   A NetBSD Arm/32 Projekt
+
+Rövid telepítési útmutató
+
+Olivier Houchard <cognet@FreeBSD.org> írt egy rövid telepítési útmutatót
+a jelenlegi FreeBSD forráskódhoz. Az útmutató elérhetõ itt.
+
+A FreeBSD/ARM levelezési lista
+
+Úgy tudunk feliratkozni erre a listára, ha küldünk egy levelet a
+<freebsd-arm-subscribe@FreeBSD.org> címre, vagy használjuk a mailman
+felületét.
+
+A zenészek ezt mondják a FreeBSD/ARM portról
+
+A FreeBSD/ARM segítségével élvezheti a (beágyazott) rendszerébõl áradó
+csendet. A Depeche Mode-nak is errõl szól az "Enjoy The Silence" címû
+dala:
+
+    All I ever wanted
+    All I ever needed
+    Is here in my ARMs
+    Words are very unnecessary
+    They can only do harm
+
+------------------------------------------------------------------------
+
+Last modified on: 2021. június 19. by Danilo G. Baio
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

@@ -1,0 +1,17 @@
+# Ignore the freebsd-doc source code
+freebsd-doc/
+# Ignore the freebsd-src source code
+freebsd-src/
+
+data/
+
+code-oss.core
+.vscode/
+git.core
+__pycache__/
+.data.sh.kate-swp
+
+# The result of the retrieve_plugin implement
+chunk_paths.txt
+embedding.npy
+embedding_texts.txt

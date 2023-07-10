@@ -1,0 +1,121 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+FreeBSD Office Team
+
+Links:
+The FreeBSD Office project URL: https://wiki.freebsd.org/Office
+The FreeBSD Office mailing list URL:
+https://lists.freebsd.org/subscription/freebsd-office
+
+Contact: FreeBSD Office team ML <office@FreeBSD.org>
+Contact: Dima Panov <fluffy@FreeBSD.org>
+Contact: Li-Wen Hsu <lwhsu@FreeBSD.org>
+
+The FreeBSD Office team works on a number of office-related software
+suites and tools such as OpenOffice and LibreOffice.
+
+Work during this quarter was focused on providing the latest stable
+release of LibreOffice suite and companion apps to all FreeBSD users.
+
+During the 2022Q1 period we pushed maintenance patches for the
+LibreOffice 7.2 port to the quarterly branch and brought the latest,
+7.3, releases and all companion libraries such as MDDS, libIxion and
+more to the ports tree.
+
+Also we are still working on the Boost WIP repository to bring the
+latest Boost library to the ports.
+
+We are looking for people to help with the open tasks:
+
+-   The open bugs list contains all filed issues which need some
+    attention
+
+-   Upstream local patches in ports
+
+Patches, comments and objections are always welcome in the mailing list
+and Bugzilla.
+
+------------------------------------------------------------------------
+
+Last modified on: June 10, 2022 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

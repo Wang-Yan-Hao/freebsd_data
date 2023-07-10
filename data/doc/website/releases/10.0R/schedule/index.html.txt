@@ -1,0 +1,246 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 10.0 Release Process
+
+Introduction
+
+This is the release schedule for FreeBSD 10.0. For more information
+about the release engineering process, please see the Release
+Engineering section of the web site.
+
+General discussions about the pending release and known issues should be
+sent to the public freebsd-stable mailing list. MFC requests should be
+sent to re@FreeBSD.org.
+
+Schedule
+
+During the head freeze, the Release Engineering Team may create ALPHA
+snapshots to publish for testing purposes. As the frequency and total
+number of the ALPHA snapshots will depend on the length of time the head
+branch is frozen, no official schedule is provided.
+
+Announcements regarding the availability of the ALPHA snapshots will be
+sent to the freebsd-current and freebsd-snapshots mailing lists.
+
++-----------------+-----------------+-----------------+-----------------+
+| Action          | Expected        | Actual          | Description     |
++-----------------+-----------------+-----------------+-----------------+
+| Initial release | -               | 13 August 2013  | Release         |
+| schedule        |                 |                 | Engineers send  |
+| announcement    |                 |                 | announcement    |
+|                 |                 |                 | email to        |
+|                 |                 |                 | developers with |
+|                 |                 |                 | a rough         |
+|                 |                 |                 | schedule.       |
++-----------------+-----------------+-----------------+-----------------+
+| Release         | 19 August 2013  | 19 August 2013  | Release         |
+| schedule        |                 |                 | Engineers send  |
+| reminder        |                 |                 | reminder        |
+|                 |                 |                 | announcement    |
+|                 |                 |                 | e-mail to       |
+|                 |                 |                 | developers with |
+|                 |                 |                 | updated         |
+|                 |                 |                 | schedule.       |
++-----------------+-----------------+-----------------+-----------------+
+| Code slush      | 24 August 2013  | 24 August 2013  | Release         |
+| begins          |                 |                 | Engineers       |
+|                 |                 |                 | announce that   |
+|                 |                 |                 | all further     |
+|                 |                 |                 | commits to the  |
+|                 |                 |                 | stable/10       |
+|                 |                 |                 | branch will not |
+|                 |                 |                 | require         |
+|                 |                 |                 | explicit        |
+|                 |                 |                 | approval,       |
+|                 |                 |                 | however new     |
+|                 |                 |                 | features should |
+|                 |                 |                 | be avoided.     |
++-----------------+-----------------+-----------------+-----------------+
+| Code freeze     | 7 September     | 7 September     | Release         |
+| begins          | 2013            | 2013            | Engineers       |
+|                 |                 |                 | announce that   |
+|                 |                 |                 | all further     |
+|                 |                 |                 | commits to the  |
+|                 |                 |                 | head branch     |
+|                 |                 |                 | will require    |
+|                 |                 |                 | explicit        |
+|                 |                 |                 | approval.       |
+|                 |                 |                 | Certain blanket |
+|                 |                 |                 | approvals will  |
+|                 |                 |                 | be granted for  |
+|                 |                 |                 | narrow areas of |
+|                 |                 |                 | development,    |
+|                 |                 |                 | documentation   |
+|                 |                 |                 | improvements,   |
+|                 |                 |                 | etc.            |
++-----------------+-----------------+-----------------+-----------------+
+| KBI freeze      | 21 September    | 29 September    | Release         |
+| begins          | 2013            | 2013            | Engineers       |
+|                 |                 |                 | announce that   |
+|                 |                 |                 | all further     |
+|                 |                 |                 | commits to the  |
+|                 |                 |                 | head branch     |
+|                 |                 |                 | will require    |
+|                 |                 |                 | explicit        |
+|                 |                 |                 | approval.       |
+|                 |                 |                 | Additionally,   |
+|                 |                 |                 | there can be no |
+|                 |                 |                 | changes to the  |
+|                 |                 |                 | KBI until head  |
+|                 |                 |                 | is branched to  |
+|                 |                 |                 | stable/10.      |
++-----------------+-----------------+-----------------+-----------------+
+| stable/10       | 10 October 2013 | 10 October 2013 | Subversion      |
+| branch          |                 |                 | branch created; |
+|                 |                 |                 | release         |
+|                 |                 |                 | engineering     |
+|                 |                 |                 | continues on    |
+|                 |                 |                 | this branch.    |
++-----------------+-----------------+-----------------+-----------------+
+| BETA1 builds    | 12 October 2013 | 12 October 2013 | First beta test |
+| begin           |                 |                 | snapshot.       |
++-----------------+-----------------+-----------------+-----------------+
+| BETA2 builds    | 18 October 2013 | 26 October 2013 | Second beta     |
+| begin           |                 |                 | test snapshot.  |
++-----------------+-----------------+-----------------+-----------------+
+| BETA3 builds    | -               | 3 November 2013 | Third beta test |
+| begin           |                 |                 | snapshot.       |
++-----------------+-----------------+-----------------+-----------------+
+| BETA4 builds    | 24 November     | 30 November     | Fourth beta     |
+| begin           | 2013            | 2013            | test snapshot.  |
++-----------------+-----------------+-----------------+-----------------+
+| releng/10.0     | 25 October 2013 | 7 December 2013 | Subversion      |
+| branch          | 7 December 2013 |                 | branch created; |
+|                 |                 |                 | future release  |
+|                 |                 |                 | engineering     |
+|                 |                 |                 | proceeds on     |
+|                 |                 |                 | this branch.    |
++-----------------+-----------------+-----------------+-----------------+
+| RC1 builds      | 25 October 2013 | 7 December 2013 | First release   |
+| begin           | 7 December 2013 |                 | candidate.      |
++-----------------+-----------------+-----------------+-----------------+
+| RC2 builds      | 2 November 2013 | 15 December     | Second release  |
+| begin           | 14 December     | 2013            | candidate.      |
+|                 | 2013            |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| RC3 builds      | 10 November     | 23 December     | Third release   |
+| begin           | 2013            | 2013            | candidate.      |
+|                 | 21 December     |                 |                 |
+|                 | 2013            |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| RC4 builds      | 31 December     | 31 December     | Fourth release  |
+| begin           | 2013            | 2013            | candidate.      |
++-----------------+-----------------+-----------------+-----------------+
+| RC5 builds      | 8 January 2014  | 8 January 2014  | Fifth release   |
+| begin           |                 |                 | candidate.      |
++-----------------+-----------------+-----------------+-----------------+
+| RELEASE builds  | 18 November     | 15 January 2014 | 10.0-RELEASE    |
+| begin           | 2013            |                 | build.          |
+|                 | 28 December     |                 |                 |
+|                 | 2013            |                 |                 |
+|                 | 7 January 2014  |                 |                 |
+|                 | 15 January 2014 |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| RELEASE         | 24 November     | 20 January 2014 | 10.0-RELEASE    |
+| announcement    | 2013            |                 | press release.  |
+|                 | 2 January 2014  |                 |                 |
+|                 | 14 January 2014 |                 |                 |
+|                 | 20 January 2014 |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Turn over to    | -               | -               | releng/10.0     |
+| the secteam     |                 |                 | branch is       |
+|                 |                 |                 | handed over to  |
+|                 |                 |                 | the FreeBSD     |
+|                 |                 |                 | Security        |
+|                 |                 |                 | Officer Team in |
+|                 |                 |                 | one or two      |
+|                 |                 |                 | weeks after the |
+|                 |                 |                 | announcement.   |
++-----------------+-----------------+-----------------+-----------------+
+
+Additional Information
+
+-   FreeBSD Release Engineering website
+
+------------------------------------------------------------------------
+
+Last modified on: June 19, 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

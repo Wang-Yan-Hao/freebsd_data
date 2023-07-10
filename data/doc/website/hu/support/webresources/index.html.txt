@@ -1,0 +1,155 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Support
+-   Vendors
+    -   Software
+    -   Hardware
+    -   Consulting
+    -   Internet Service Providers
+    -   Miscellaneous
+-   Security Information
+    -   Advisories
+    -   Errata Notices
+    -   Supported Releases
+    -   Unsupported Releases
+    -   How to read FreeBSD Security Advisories
+    -   Charter for the Security Officer and Team
+-   Bug Reports
+    -   Submit a Problem Report
+-   Web Resources
+
+Web Resources
+
+-   Általános információk a UNIX®-ról
+
+-   Az X Window System
+
+-   Hardver
+
+-   Kapcsolódó operációs rendszerek
+
+Általános információk a UNIX®-ról
+
+-   The Unix Reference Desk (készítette: Jennifer Myers)
+
+-   Unix Guru Universe
+
+-   O’Reilly & Associates, Inc.
+
+-   Unix Power
+
+Az X Window System
+
+-   Az X.Org és az XFree86™ projektek kiváló X Window rendszert
+    biztosítanak az Intel alapú UNIX® rendszerek, többek közt a FreeBSD
+    számára is.
+
+-   A WINE projekt Microsoft® Windows® alkalmazásokat hivatott futtatni
+    Intel alapú rendszereken, mint például a FreeBSD, NetBSD és Linux.
+
+Hardver
+
+-   A comp.answers pc-hardware-faq egy nagyszerû referencia azok
+    számára, akik saját maguk állítanak össze számítógépet.
+
+-   Intel Titkok - Amit az Intel titokban szeretne tartani - rengeteg
+    információ az Intel chipekrõl.
+
+-   Aad Offerman Chip Listája - referenciaanyag a PC chipekrõl.
+
+Kapcsolódó operációs rendszerek
+
+-   A NetBSD egy másik szabad 4.4BSD Lite alapú operációs rendszer,
+    amely több más platformon is fut.
+
+-   Az OpenBSD egy újabb 4.4BSD alapú projekt, amely a biztonságra
+    fókuszál.
+
+-   A Linux egy szabad UNIX®-szerû rendszer.
+
+-   A Darwin egy szabad rendszer, amely az Apple Mac OS X rendszerének
+    az alapját képezi.
+
+-   A Lites egy 4.4BSD Lite alapú szerver és emulációs könyvtár, amely a
+    Mach alapú rendszerek számára kínál UNIX® funkcionalitást.
+
+-   A GNU Hurd szintén egy olyan projekt, amely egy szabad UNIX®-szerû
+    operációs rendszer kifejlesztését célozza meg.
+
+-   A DragonFly BSD a FreeBSD 4.X alapjaira épü, de más fejlesztési
+    céljai vannak, mint a FreeBSD utána következõ változatainak.
+
+-   Az OpenSolaris a Sun Microsystems Solaris operációs rendszerének
+    nyílt forráskódú változata. A Solaris is egy BSD-bõl származó
+    rendszer, eredeti neve SunOS volt. A kód nagy részé megnyitották, de
+    az operációs rendszert a hagyományos módon is terjesztik.
+
+------------------------------------------------------------------------
+
+Last modified on: 2021. január 26. by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

@@ -1,0 +1,152 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   
+-   Manuel du développeur
+-   Committer's Guide
+-   Manuel du porteur d'application
+-   Dépôt des codes source
+-   Production des versions
+-   Plates-formes
+-   Idées de projet
+-   Contribuer
+
+Projet Java® pour FreeBSD : Outils de développement
+
+Ci-dessous plusieurs liens vers des outils qui peuvent être utilisés
+avec FreeBSD. Cette liste n’est pas exhaustive.
+
+-   IDE
+
+    -   Visual Age pour Java - Professionnel
+        Joachim Jaeckel décrit sur cette page la manière de procédé afin
+        de faire fonctionner Visual Age pour Java version Professionel
+        3.0 (Linux) sous -CURRENT: http://www.coffeebreak.de/freebsd/
+
+    -   JDE
+        Mode (X)Emacs pour éditer du Java
+
+    -   visaj
+        Un logiciel commercial de création d’application pour Java.
+
+    -   jEdit
+        jEdit est un éditeur de texte orienté programmation écrit en
+        Java avec Swing et qui supporte des plug-ins. L’auteur travaille
+        également actuellement sur jEdit-IDE.
+
+    -   NetBeans
+        Un nouvel IDE écrit entièrement en java. Différentes versions
+        sont disponibles, gratuites et commerciales. Appartient
+        maintenant à Sun Microsystems.
+
+    -   JWS - IDE de Sun
+        N’est plus maintenu depuis que Sun a acquis NetBeans afin de
+        l’utiliser pour leur IDE.
+
+    -   FreeBuilder
+        IDE en open-source, un début prometteur mais son développement
+        semble ralentir ces derniers temps. Mais ne croyez pas
+        uniquement les informations présentées sur les pages web,
+        vérifiez aussi la dernière version des sources sur le CVS.
+
+    -   ElixirIDE
+        Un IDE qui inclue un debugger. Classé dans les 5% premiers sur
+        JARS.
+
+    -   Eclipse
+        Un IDE ouvert et extensible pour tout et n’importe quoi.
+
+    -   IDEA
+        IDEA est un IDE Java commercial avec un important support pour
+        la refonte du code (refactoring).
+
+-   JDBC
+
+    -   Liste des drivers JDBC de Sun
+
+    -   http://www.voicenet.com/~zellert/tjFM/tjFM
+        Un driver JDBC de Type 4 pour MySQL™.
+
+    -   MySQL Connector/J
+        Un driver JDBC de Type 4 pour MySQL.
+
+-   UML
+
+    -   TogetherJ
+        Environnement de développement basé sur UML, écrit en Java.
+        Différentes éditions sont disponibles, y compris une version
+        gratuite.
+
+-   Outils
+
+    -   Jikes
+        Compilateur Java ultra-rapide de IBM (disponible dans les ports)
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 juin 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

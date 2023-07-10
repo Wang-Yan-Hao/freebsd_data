@@ -1,0 +1,145 @@
+[FreeBSD The Power to Serve]
+
+捐贈 FreeBSD
+
+ 
+
+-   首頁
+
+-   關於
+    -   簡介
+    -   特色
+    -   宣傳
+    -   行銷
+    -   隱私政策
+    -   Projects
+    -   Ports
+
+-   取得 FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   文件
+    -   常見問題集
+    -   使用手冊
+    -   Porter 手冊
+    -   Developer 手冊
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   文件計畫入門書
+    -   所有書籍與文章
+
+-   社群
+    -   郵件論壇
+    -   論壇
+    -   愛用者組織
+    -   活動
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   開發者
+    -   計畫構想
+    -   Git 檔案庫
+    -   Subversion 檔案庫
+    -   Git 鏡像站
+    -   程式碼審查 (Phabricator)
+    -   Wiki
+    -   持續整合服務
+
+-   支援
+    -   供應商
+    -   安全資訊
+    -   問題回報
+    -   提交問題回報
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   基金會
+    -   資金捐贈
+    -   硬體捐贈
+
+-   關於
+-   特色
+-   Applications
+-   宣傳
+-   行銷
+-   Administration
+-   News
+-   活動
+-   Press
+-   Artwork
+-   Logo
+-   捐贈
+-   法律聲明
+-   隱私政策
+
+關於 FreeBSD
+
+FreeBSD 是什麼?
+
+FreeBSD 是一個支援多種系統平台的作業系統，特別注重特色、速度與穩定性。
+其源自於 BSD ──美國加州大學伯克利分校開發 UNIX®
+版本，它是由來自世界各地的 龐大社群 共同開發和維護。
+
+先進特性
+
+FreeBSD 提供了網路、性能、安全以及相容性等多方面的 先進特性，
+這些特性即使是在當今最優秀的商業作業系統中亦有所欠缺。
+
+優異的 Internet 解決方案
+
+FreeBSD 是理想的 Internet 和 Intranet
+服務器。即使是在超重負載下，它仍然能夠有效地使用記憶體，
+為同時運行的數以千計的用戶進程提供良好的反應時間。
+
+先進的嵌入式平台
+
+FreeBSD 提供嵌入式平台和裝置先進的網路作業系統特色，從高階的基於 Intel
+的裝置到 ARM、PowerPC 和 MIPS 硬體平台。
+從郵件和網路裝置到路由器、校時伺服器和無線網路基地台，世界各地的供應商靠著
+FreeBSD 整合編譯和交叉編譯環境和其他先進特色來當作他們嵌入式產品的基礎。
+而柏克萊開放原始碼授權條款讓他們自己決定要將多少他們所做的更改貢獻回來
+
+能夠運行大量的應用
+
+有超過 24,000 個做成 ports 的程式庫和應用程式， FreeBSD
+提供桌面、伺服器、裝置和嵌入式環境的應用程式。
+
+易於安裝
+
+FreeBSD 能通過多種媒體進行安裝，包括普通光碟、 DVD、或經由網路使用
+FTP，或者 NFS 來安裝。 您只需要 安裝指導就可以了。
+
+FreeBSD 是 free 的
+
+[The BSD Daemon]
+
+您或許認為如此優秀的作業系統必定需要花費大筆金錢來購買， 而 FreeBSD
+卻從發行版本到它的全部 source code 都 免費 提供！
+如果您願意購買或下載來體驗一下 FreeBSD 所能帶給您的驚喜， 可以從 這裡
+了解更多資訊。
+
+幫助 FreeBSD
+
+幫助 FreeBSD 並不是一件困難的事情。 您需要做的， 就是找出 FreeBSD
+需要改進的地方，並將您 (經過精心編寫和整理過) 的改進透過 send-pr 發回
+FreeBSD 計劃， 或者直接把它們轉交給您認識的 FreeBSD committer。
+我們歡迎包括從文件到藝術作品，乃至 source code 在內的任何改進。
+此外，您還可以透過 幫助 FreeBSD這篇文章了解更多的資訊。
+
+即使您不是開發人員，也仍然可以通過其他途徑幫助 FreeBSD。 FreeBSD 基金會
+是個非營利組織，對其捐款可以完全減免課稅。 要了解更多有關 FreeBSD
+基金會的信息， 請和 info@FreeBSDFoundation.org 聯繫，或致信： The
+FreeBSD Foundation, 600 South Airport Road, Building A, Suite F1,
+Longmont, CO 80503 USA.
+
+------------------------------------------------------------------------
+
+Last modified on: June 19, 2021 by Danilo G. Baio
+
+法律聲明 | © 1995-2023 FreeBSD 計劃 保留所有權利。 FreeBSD 標誌是
+FreeBSD 基金會的註冊商標，由 FreeBSD 基金會授權 FreeBSD 計畫使用 The
+FreeBSD Foundation. 聯絡資訊
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

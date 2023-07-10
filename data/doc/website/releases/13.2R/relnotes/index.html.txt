@@ -1,0 +1,554 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 13.2-RELEASE Release Notes
+
+Abstract
+
+The release notes for FreeBSD 13.2-RELEASE contain a summary of the
+changes made to the FreeBSD base system on the 13-STABLE development
+line. This document lists applicable security advisories that were
+issued since the last release, as well as significant changes to the
+FreeBSD kernel and userland. Some brief remarks on upgrading are also
+presented.
+
+Introduction
+
+This document contains the release notes for FreeBSD 13.2-RELEASE. It
+describes recently added, changed, or deleted features of FreeBSD. It
+also provides some notes on upgrading from previous versions of FreeBSD.
+
+The release distribution to which these release notes apply represents
+the latest point along the 13-STABLE development branch since 13-STABLE
+was created. Information regarding pre-built, binary release
+distributions along this branch can be found at
+https://www.FreeBSD.org/releases/.
+
+The release distribution to which these release notes apply represents a
+point along the 13-STABLE development branch between 13.1-RELEASE and
+the future 13.3-RELEASE. Information regarding pre-built, binary release
+distributions along this branch can be found at
+https://www.FreeBSD.org/releases/.
+
+This distribution of FreeBSD 13.2-RELEASE is a release distribution. It
+can be found at https://www.FreeBSD.org/releases/ or any of its mirrors.
+More information on obtaining this (or other) release distributions of
+FreeBSD can be found in the Obtaining FreeBSD appendix to the FreeBSD
+Handbook.
+
+All users are encouraged to consult the release errata before installing
+FreeBSD. The errata document is updated with "late-breaking" information
+discovered late in the release cycle or after the release. Typically, it
+contains information on known bugs, security advisories, and corrections
+to documentation. An up-to-date copy of the errata for FreeBSD
+13.2-RELEASE can be found on the FreeBSD Web site.
+
+This document describes the most user-visible new or changed features in
+FreeBSD since 13.1-RELEASE. In general, changes described here are
+unique to the 13-STABLE branch unless specifically marked as MERGED
+features.
+
+Typical release note items document recent security advisories issued
+after 13.1-RELEASE, new drivers or hardware support, new commands or
+options, major bug fixes, or contributed software upgrades. They may
+also list changes to major ports/packages or release engineering
+practices. Clearly the release notes cannot list every single change
+made to FreeBSD between releases; this document focuses primarily on
+security advisories, user-visible changes, and major architectural
+improvements.
+
+Upgrading from Previous Releases of FreeBSD
+
+Binary upgrades between RELEASE versions (and snapshots of the various
+security branches) are supported using the freebsd-update(8) utility.
+The binary upgrade procedure will update unmodified userland utilities,
+as well as unmodified GENERIC kernels distributed as a part of an
+official FreeBSD release. The freebsd-update(8) utility requires that
+the host being upgraded have Internet connectivity.
+
+Source-based upgrades (those based on recompiling the FreeBSD base
+system from source code) from previous versions are supported, according
+to the instructions in /usr/src/UPDATING.
+
+Users of all PowerPC architectures, after successful kernel and world
+installation, must run kldxref /boot/kernel manually.
+
++-----------------------------------+-----------------------------------+
+|                                   | Upgrading FreeBSD should only be  |
+|                                   | attempted after backing up all    |
+|                                   | data and configuration files.     |
++-----------------------------------+-----------------------------------+
+
++-----------------------------------+-----------------------------------+
+|                                   | After installing the new userland |
+|                                   | software, running daemons are     |
+|                                   | still from the previous version.  |
+|                                   | After installing the user-level   |
+|                                   | components with the second        |
+|                                   | invocation of freebsd-update, or  |
+|                                   | via an upgrade from source with   |
+|                                   | installworld, the system should   |
+|                                   | be rebooted to start everything   |
+|                                   | with the new software. For        |
+|                                   | example, older versions of sshd   |
+|                                   | failed to process incoming        |
+|                                   | connections correctly after the   |
+|                                   | new /usr/sbin/sshd was installed; |
+|                                   | rebooting started a new sshd and  |
+|                                   | other daemons.                    |
++-----------------------------------+-----------------------------------+
+
+Userland
+
+This section covers changes and additions to userland applications,
+contributed software, and system utilities.
+
+Userland Configuration Changes
+
+The growfs(7) startup script will now add a swap partition while
+expanding the root file system if possible, and if one did not
+previously exist. This is primarily useful when installing on an SD card
+using a raw image. A new rc.conf(5) variable has been added,
+growfs_swap_size, which can control the addition if necessary. See
+growfs(7) for details.
+
+The zfskeys startup script supports autoloading of keys stored on ZFS.
+2411090f6940 (Sponsored by Klara Inc.)
+
+A new RC script, zpoolreguid has been added, which will assign a new
+GUID to one or more zpools, useful for virtualization environments when
+sharing datasets.
+
+The hostid startup script will now generate a random (version 4) UUID if
+there is no /etc/hostid file and no valid UUID from hardware. Also, if
+there is no /etc/machine-id file, the hostid_save script will store a
+compact version of the hostid (one without hyphens) in /etc/machine-id.
+This file is used by libraries such as GLib. 17333d92643d a379d5c5efb2
+71d88613d129
+
+It is now possible to add default routes for FIBs other than the primary
+by using the defaultrouter_fibN and ipv6_defaultrouter_fibN rc.conf(5)
+variables. c6ec1b441ad3 (Sponsored by ScaleEngine Inc.)
+
+Userland Application Changes
+
+The bhyve(8) utility has gained virtio-input device emulation support.
+This will be used to inject keyboard/mouse input events into a guest.
+The command line syntax is: -s <slot>,virtio-input,/dev/input/eventX.
+6192776124c5
+
+The kdump(1) utility has gained support for decoding Linux system calls.
+
+The killall(1) utility now allows sending signals to processes with
+their controlling terminal on pts(4) using the syntax -t pts/N.
+a76fa7bb6cb7
+
+An nproc(1) utility has been added, compatible with the Linux program of
+the same name.
+
+The timeout(1) utility has been moved from /usr/bin to /bin.
+
+The pciconf(8) utility has added support for decoding ACS extended
+capability. dde4103a465b (Sponsored by Chelsio Communications)
+
+The procstat(1) utility can now print information about advisory locks
+on files with the newly added advlock command. f9daaf452a8a
+
+The pwd_mkdb(8) utility no longer copies comments from
+/etc/master.passwd to /etc/passwd. 3e955733117d
+
+MSS clamping has been improved for ppp(8). 301bff9bdd62
+
+Metric aliasing has been changed in prometheus_sysctl_exporter(8) to
+avoid confusing Prometheus server due to conflicting metric names. The
+tcp_log_bucket UMA zone has been renamed to tcp_log_id_bucket, and
+tcp_log_node was renamed to tcp_log_id_node for consistency. Sysctl
+variables with (LEGACY) in their descriptions are no longer being
+exported, these are used by ZFS sysctls that have been replaced by
+others, many of which alias to the same Prometheus metric name (like
+vfs.zfs.arc_max and vfs.zfs.arc.max). e4f508d5a211 (Sponsored by
+Axcient)
+
+The uuidgen(1) utility has a new option -r to generate a random UUID,
+version 4. 8fd1953b7eb2
+
+When invoked by inetd(8), ctlstat -P will now produce output suitable
+for ingestion into Prometheus; see ctlstat(8). f7896015fcde (Sponsored
+by Axcient)
+
+Contributed Software
+
+Gavin Howard’s bc has been upgraded to version 6.2.4.
+
+expat (libbsdxml) has been upgraded to version 2.5.0.
+
+file has been upgraded to version 5.43.
+
+less has been upgraded to version 608.
+
+libarchive has been upgraded to version 3.6.2 with many reliability
+fixes. Release notes are available at
+https://github.com/libarchive/libarchive/releases.
+
+libedit has been upgraded to version 2022-04-11.
+
+LLVM and the clang compiler have been upgraded to version 14.0.5.
+
+Supported LLVM sanitizers are now enabled on powerpc64 and variants.
+
+mandoc has been upgraded to version 1.14.6.
+
+OpenSSH has been upgraded to version 9.3p1.
+
+OpenSSL has been upgraded to version 1.1.1t.
+
+sendmail has been upgraded to version 8.17.1. 68e86d5265bc
+
+sqlite3 has been upgraded to version 3.40.1.
+
+tzcode has been upgraded to version 2022g with improved timezone change
+detection and reliability fixes.
+
+tzdata has been upgraded to version 2023c.
+
+unbound has been upgraded to version 1.17.1.
+
+xz has been upgraded to version 5.4.1.
+
+xz-embedded has been upgraded to
+3f438e15109229bb14ab45f285f4bff5412a9542.
+
+zlib has been upgraded to version 1.2.13.
+
+Runtime Libraries and API
+
+Support of SHA-512/224 has been added to libmd. e04ee7d95ef6 (Sponsored
+by Klara, Inc.)
+
+Linux-style system call tracing is now supported by sysdecode(3) and
+kdump(1).
+
+The native pthread library functions can now support Linux semantics.
+
+Kernel
+
+This section covers changes to kernel configurations, system tuning, and
+system control parameters that are not otherwise categorized.
+
+General Kernel Changes
+
+The bhyve(8) hypervisor and kernel module vmm(4) now support more than
+16 vCPUs in a guest. By default bhyve permits each guest to create the
+same number of vCPUs as the count of physical CPUs on the host. This
+limit can be adjusted via the loader tunable hw.vmm.maxcpu. 3e02f8809aec
+
+Address Space Layout Randomization (ASLR) is enabled for 64-bit
+executables by default. It can be disabled as needed if applications
+fail unexpectedly, for example with segmentation faults. To disable for
+a single invocation, use the proccontrol(1) command:
+proccontrol -m aslr -s disable command. To disable ASLR for all
+invocations of a binary, use the elfctl(1) command:
+elfctl -e +noaslr file. Problems should be reported via the problem
+reporting system, https://bugs.freebsd.org, or posting to the
+freebsd-stable@FreeBSD.org mailing list. 10192e77cfac (Sponsored by
+Stormshield)
+
+A workaround has been implemented for a hardware page invalidation
+problem on Intel Alder Lake (twelfth generation) and Raptor Lake
+(thirteenth generation) hybrid CPUs. The bug can lead to file system
+corruption with UFS and MSDOSFS, and probably other memory corruption.
+The slower cores (E-cores) automatically use a slower method of page
+invalidation with the workaround. 567cc4e6bfd9 (Sponsored by The FreeBSD
+Foundation)
+
+A new kernel configuration knob is available, SPLIT_KERNEL_DEBUG, which
+controls splitting of kernel and module debug data into separate
+standalone files. This interacts with the WITHOUT_KERNEL_SYMBOLS option,
+which operates differently than in 13.0-RELEASE and 13.1-RELEASE, but
+similarly to prior releases; it now controls only installation of the
+debug data. The defaults are WITH_KERNEL_SYMBOLS and
+WITH_SPLIT_KERNEL_DEBUG, allowing the kernel and modules without debug
+data to be installed in /boot, and standalone debugging files to be
+installed in /usr/lib/debug, as was done by default in releases before
+13.0-RELEASE. Using WITHOUT_KERNEL_SYMBOLS and WITH_SPLIT_KERNEL_DEBUG,
+standalone debugging files are generated but not installed, as when
+using WITHOUT_KERNEL_SYMBOLS in releases before 13.0-RELEASE. Finally,
+using WITHOUT_KERNEL_SYMBOLS and WITHOUT_SPLIT_KERNEL_DEBUG installs the
+kernel and modules with built-in debugging information in /boot, as in
+13.1-RELEASE using WITHOUT_KERNEL_SYMBOLS. 0c4d13c521aa (Sponsored by
+The FreeBSD Foundation)
+
+On the PowerPC, a radix pmap in pseries is supported for ISA 3.0. This
+should make pseries significantly faster on POWER9 instances, as fewer
+hypercalls are needed to manage pmap now. c74c77531248
+
+Support for ptrace(2) is now available for Linux processes on arm64.
+99950e8beb72
+
+In order to facilitate ABI compatibility of stable branches, the CPU
+affinity system calls are now more tolerant of CPU sets that are smaller
+than used by the kernel. This will facilitate increases to the size of
+the kernel set, MAXCPU. 72bc1e6806cc
+
+64-bit linux(4) ABI support was added for saving CPU floating point
+state across signal delivery. 0b82c544de58, 20d601714206
+
+vDSO (virtual dynamic shared object) support has been nearly completed
+in the linux(4) ABI. a340b5b4bd48
+
+The state of the arm64 linux(4) ABI was brought to parity with the amd64
+linux(4) ABI. 0b82c544de58, a340b5b4bd48
+
+Devices and Drivers
+
+This section covers changes and additions to devices and device drivers
+since 13.1-RELEASE.
+
+Device Drivers
+
+The em(4) driver now correctly supports the full range of receive buffer
+sizes available on newer chips 82580 and i350. 3f8306cf8e2d
+
+The ena(4) driver has been upgraded to version 2.6.2. (Sponsored by
+Amazon, Inc.)
+
+Basic support for Intel Alder Lake CPUs has been implemented for
+hwpmc(4). b8ef2ca9eae9
+
+The ice(4) driver has been updated to version 1.37.7-k.
+
+The irdma(4) RDMA driver was introduced for the Intel E810 Ethernet
+Controller, supporting both RoCEv2 and iWARP protocols in per-PF manner,
+RoCEv2 being the default, and was upgraded to version 1.1.5-k.
+42bad04a2156 (Sponsored by Intel Corporation)
+
+Initial support is now available for DPAA2 (second generation Data Path
+Acceleration Architecture – a hardware-level networking architecture
+found in some NXP SoCs). It runs NXP-supplied firmware which provides
+DPAA2 objects as an abstraction layer, and provides a dpni network
+interface. d5a64a935bc9 (Sponsored by Bare Enthusiasm :) and Traverse
+Technologies)
+
+The iwlwifi(4) driver for Intel wireless interfaces was updated.
+(Sponsored by The FreeBSD Foundation)
+
+The rtw88(4) driver was added to support several Realtek wireless PCI
+interfaces. It is currently limited to 802.11 a/b/g operation. See
+https://wiki.freebsd.org/WiFi/Rtw88 for additional information.
+
+There were many additions and improvements to the KPI for support of
+Linux device drivers. (Sponsored by The FreeBSD Foundation)
+
+Storage
+
+This section covers changes and additions to file systems and other
+storage subsystems, both local and networked.
+
+NFS Changes
+
+A problem causing NFS server hangs has been fixed; the problem was
+caused by a bug with SACK handling in TCP.
+
+UFS Changes
+
+It is now possible to take snapshots on UFS filesystems when running
+with journaled soft updates. Thus it is now possible to do background
+dumps on live filesystems running with journaled soft updates.
+Background dumps are requested by using the -L flag to dump(8). (In
+previous releases UFS snapshots were incompatible with journaled soft
+updates.) 3f908eed27b4 (Sponsored by The FreeBSD Foundation)
+
+Boot Loader Changes
+
+This section covers the boot loader, boot menu, and other boot-related
+changes.
+
+Boot Loader Changes
+
+The teken.fg_color and teken.bg_color loader.conf(5) variables now
+accept a bright or light prefix (and color numbers 8 through 15) to
+select bright colors. 1dcb6002c500 (Sponsored by The FreeBSD
+Foundation). See also 233ab015c0d7
+
+Several bugs have been fixed in loader(8) that caused the video console
+output to disappear. These appeared to be hangs after the boot loader
+starts the kernel. (Sponsored by Netflix)
+
+Networking
+
+This section describes changes that affect networking in FreeBSD.
+
+General Network
+
+The kernel wg(4) WireGuard driver has been reintegrated; it provides
+Virtual Private Network (VPN) interfaces using the WireGuard protocol.
+5ae69e2f10da (Sponsored by Rubicon Communications, LLC ("Netgate") and
+The FreeBSD Foundation)
+
+KTLS (the kernel TLS implementation) has added receive offload support
+for TLS 1.3. Receive offload is now supported for TLS 1.1 through 1.3;
+send offload is supported for TLS 1.0 through 1.3. 1462dc95f796
+(Sponsored by Netflix)
+
+The netlink(4) network configuration protocol is now available. It is a
+communication protocol defined in RFC 3549, and uses a raw socket to
+exchange configuration information between user space and kernel. It is
+used by third-party routing programs and by the linux(4) ABI. The
+netlink(4) protocol is not included in the GENERIC configuration in
+13.2-RELEASE, but is available as a kernel module. 6058f6cc48f5
+
+Radix tables and lookups are now supported for MAC addresses in ipfw(4).
+This allows MAC address tables to be constructed and used for filtering.
+c31f8b7bd895
+
+Kernel modules dpdk_lpm4 and dpdk_lpm6 are now available and can be
+loaded via loader.conf(5). They provide optimized routing functions for
+hosts with a very large amount of routing tables. They can be configured
+via route(8) and are part of the modular FIB lookup mechanism.
+0ca122044369
+
+There are numerous bug fixes in TCP and SCTP.
+
+General Notes Regarding Future FreeBSD Releases
+
+OPIE has been deprecated and will be removed in FreeBSD 14.0.
+
+The ce(4) and cp(4) synchronous serial drivers have been deprecated and
+will be removed in FreeBSD 14.0.
+
+Drivers for ISA sound cards have been deprecated and will be removed in
+FreeBSD 14.0. d7620b6ec941 (Sponsored by The FreeBSD Foundation)
+
+The mergemaster(8) utility has been deprecated and will be removed in
+FreeBSD 14.0. Its replacement is etcupdate(8). 5fa16e3c50c5 (Sponsored
+by The FreeBSD Foundation)
+
+The minigzip(1) utility has been deprecated and will be removed in
+FreeBSD 14.0. 84d3fc26e3a2
+
+The remaining components of ATM in netgraph (NgATM) have been deprecated
+and will be removed in FreeBSD 14.0. Support for ATM NICs was removed
+previously.
+
+The Telnet daemon, telnetd(8), has been deprecated and will be removed
+in FreeBSD 14.0. The Telnet client is not affected.
+
+The VINUM class in geom(8) has been deprecated and will be removed in a
+future release.
+
+Default CPUTYPE Change
+
+Starting with FreeBSD-13.0, the default CPUTYPE for the i386
+architecture will change from 486 to 686.
+
+This means that, by default, binaries produced will require a 686-class
+CPU, including but not limited to binaries provided by the FreeBSD
+Release Engineering team. FreeBSD 13.x will continue to support older
+CPUs, however users needing this functionality will need to build their
+own releases for official support.
+
+As the primary use for i486 and i586 CPUs is generally in the embedded
+market, the general end-user impact is expected to be minimal, as new
+hardware with these CPU types has long faded, and much of the deployed
+base of such systems is nearing retirement age, statistically.
+
+There were several factors taken into account for this change. For
+example, i486 does not have 64-bit atomics, and while they can be
+emulated in the kernel, they cannot be emulated in the userland.
+Additionally, the 32-bit amd64 libraries have been i686 since their
+inception.
+
+As the majority of 32-bit testing is done by developers using the lib32
+libraries on 64-bit hardware with the COMPAT_FREEBSD32 option in the
+kernel, this change ensures better coverage and user experience. This
+also aligns with what the majority of Linux® distributions have been
+doing for quite some time.
+
+This is expected to be the final bump of the default CPUTYPE in i386.
+
++-----------------------------------+-----------------------------------+
+|                                   | This change does not affect the   |
+|                                   | FreeBSD 12.x series of releases.  |
++-----------------------------------+-----------------------------------+
+
+------------------------------------------------------------------------
+
+Last modified on: June 4, 2023 by Colin Percival
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

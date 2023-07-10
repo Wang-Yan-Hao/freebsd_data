@@ -1,0 +1,170 @@
+[FreeBSD The Power to Serve]
+
+FreeBSD への寄付
+
+ 
+
+-   ホーム
+
+-   FreeBSD とは
+    -   FreeBSD が初めてという方へ
+    -   特徴
+    -   プロモーション活動
+    -   マーケティング活動
+    -   プライバシーポリシー
+    -   Projects
+    -   Ports
+
+-   FreeBSD の入手
+    -   リリース情報
+    -   リリースエンジニアリング
+
+-   ドキュメント
+    -   FAQ
+    -   ハンドブック
+    -   port 作成者のためのハンドブック
+    -   開発者のためのハンドブック
+    -   Committer's Guide
+    -   マニュアルページ
+    -   Presentations and Papers
+    -   新しい貢献者のためのドキュメンテーションプロジェクト入門
+    -   すべての Books と Articles
+
+-   コミュニティ
+    -   メーリングリスト
+    -   フォーラム
+    -   ユーザグループ
+    -   イベント
+    -   FreeBSD ジャーナル
+    -   Q&A (外部)
+
+-   開発
+    -   プロジェクトアイディア
+    -   Git リポジトリ
+    -   Subversion リポジトリ
+    -   GitHub ミラー
+    -   コードレビュー (Phabricator)
+    -   Wiki
+    -   継続的インテグレーションサービス
+
+-   サポート
+    -   ベンダ
+    -   セキュリティ情報
+    -   障害報告
+    -   障害報告の提出
+    -   ウェブ上の情報
+
+-   財団
+    -   寄付
+    -   ハードウェアの寄贈
+
+-   ドキュメント
+-   FAQ
+-   ハンドブック
+-   Manual Pages
+-   Presentations and Papers
+-   Books and Articles Online
+-   Publications
+-   ウェブ上の情報
+-   For Newbies
+-   Documentation Project
+-   Archive
+
+FreeBSD WWW サーバについて
+
+マシン
+
+[Powered by FreeBSD]
+
+以下のすべての FreeBSD.org クラスタのシステム上では、もちろん FreeBSD
+が動作しています。
+
+-   Bytemark Hosting
+
+-   Cloud and SDN Laboratory at BroadBand Tower, Inc
+
+-   Department of Computer Science, National Yang Ming Chiao Tung
+    University
+
+-   Equinix
+
+-   Internet Association of Australia
+
+-   Internet Systems Consortium
+
+-   INX-ZA
+
+-   KDDI Web Communications Inc
+
+-   Malaysian Research & Education Network
+
+-   MetaPeer
+
+-   New York Internet
+
+-   Nic.br
+
+-   Your.org
+
+その他にも コントリビュータ から FreeBSD
+プロジェクトへ寄付されハードウェアがあります。
+
+一般的にアクセス可能な FreeBSD.org ドメインのコンピュータの一覧は、
+FreeBSD.org ネットワーク のページにあります。
+
+ソフトウェア
+
+このサイトのページは、早くて柔軟性のある、NGIX ウェブサーバ および
+Varnish HTTP Cache で提供しています。 さらに、いくらかの手製の CGI
+スクリプトを使用しています。 CNIDR freewais の派生である freewais-sf
+を用いて、 メーリングリストのアーカイブの索引付けを提供しています。
+
+ページ
+
+[Lynx Friendly logo]
+
+これらの Web ページは、もともと FreeBSD コミュニティや あなた
+からの情報提供を John Fieber <jfieber@FreeBSD.org>
+がまとめて置いたものです。 最初の Web マスターは <wosch@FreeBSD.org>
+でしたが、現在では、その責務は、web
+およびドキュメンテーションの貢献者からなる多くの人々が参加するチームが担っています。
+FreeBSD のページは XHTML 1.0 Transitional で、 すべてのブラウザで
+degrade gracefully になるようになっています。
+
+FreeBSD ドキュメンテーションプロジェクト も見てください。
+
+ページデザイン
+
+現在のウェブサイトのデザインは、2005 年の Google Summer of Code
+の一環として Emily Boyd が担当しました。
+
+オリジナルのページデザインは Megan McCormack が担当しました。
+
+FreeBSD Web ページの更新
+
+www.FreeBSD.org で公開されている FreeBSD の Web ページは、
+以下の時刻に再構築されています。
+
++-----------------------------------+-----------------------------------+
+| 構築時刻 (UTC)                    | 構築の種類                        |
++===================================+===================================+
+| 10 分毎                           | doc リポジトリ                    |
+|                                   | に変更が行われた時のみ            |
++-----------------------------------+-----------------------------------+
+
+新しい貢献者のための FreeBSD ドキュメンテーション入門 では、Git
+リポジトリから FreeBSD 文書を構築する方法について説明しています。
+
+FreeBSD Internal ホーム
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+最終更新日: 2022年11月28日 by Ryusuke SUZUKI
+
+法律上の注意事項 | © 1995-2023 FreeBSD プロジェクト All rights reserved.
+The mark FreeBSD is a registered trademark of The FreeBSD Foundation and
+is used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact

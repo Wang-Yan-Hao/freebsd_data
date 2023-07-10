@@ -1,0 +1,259 @@
+
+-    Preface
+    -   Shell Prompts
+    -   Typographic Conventions
+    -   Notes, Tips, Important Information, Warnings, and Examples
+    -   Acknowledgments
+-    Chapter 1. Overview
+    -   1.1. Documentation in the FreeBSD Ecosystem
+    -   1.2. Quick Start
+    -   1.3. The FreeBSD Documentation Set
+-    Chapter 2. Tools
+    -   2.1. Required Tools
+    -   2.2. Optional Tools
+-    Chapter 3. The Working Copy
+    -   3.1. Documentation and Manual Pages
+    -   3.2. Choosing a Directory
+    -   3.3. Checking Out a Copy
+    -   3.4. Updating a Working Copy
+    -   3.5. Reverting Changes
+    -   3.6. Making a Diff
+    -   3.7. Git References
+-    Chapter 4. Documentation Directory Structure
+    -   4.1. The Top Level, doc/
+    -   4.2. The Directories
+    -   4.3. Document-Specific Information
+    -   4.4. The Books: books/
+    -   4.5. The Articles: articles/
+-    Chapter 5. The FreeBSD Documentation Build Process
+    -   5.1. Rendering AsciiDoc into Output
+    -   5.2. The FreeBSD Documentation Build Toolset
+    -   5.3. Understanding the Makefile in the Documentation Tree
+-    Chapter 6. AsciiDoctor Primer
+    -   6.1. Overview
+    -   6.2. Headings
+    -   6.3. Paragraphs
+    -   6.4. Lists
+    -   6.5. Links
+    -   6.6. Conclusion
+-    Chapter 7. Rosetta Stone
+    -   7.1. Comparison between Docbook and AsciiDoc
+-    Chapter 8. Translations
+    -   8.1. What do i18n and l10n mean?
+    -   8.2. Is there a mailing list for translators?
+    -   8.3. Are more translators needed?
+    -   8.4. What languages do I need to know?
+    -   8.5. What software do I need to know?
+    -   8.6. How do I find out who else might be translating to the same
+        language?
+    -   8.7. No one else is translating to my language. What do I do?
+    -   8.8. I have translated some documentation, where do I send it?
+    -   8.9. I am the only person working on translating to this
+        language, how do I submit my translation?
+    -   8.10. Can I include language or country specific text in my
+        translation?
+-    Chapter 9. PO Translations
+    -   9.1. Introduction
+    -   9.2. Quick Start
+    -   9.3. Creating New Translations
+    -   9.4. Translating
+    -   9.5. Tips for Translators
+    -   9.6. Building a Translated Document
+    -   9.7. Submitting the New Translation
+-    Chapter 10. Weblate Translations
+    -   10.1. Introduction
+    -   10.2. How to Become a FreeBSD Translator
+    -   10.3. Introduce Yourself
+    -   10.4. Login to Weblate
+    -   10.5. Find a Language Team to Join In
+    -   10.6. Translating Online on Weblate
+    -   10.7. Translating Offline
+    -   10.8. Translation based on Automatic Suggestions
+    -   10.9. Proofreading and Weblate Quality Checks
+    -   10.10. Building the Translated Document
+    -   10.11. Submitting Translations
+    -   10.12. FAQ (Frequently Asked Questions)
+-    Chapter 11. Manual Pages
+    -   11.1. Introduction
+    -   11.2. Sections
+    -   11.3. Markup
+    -   11.4. Sample Manual Page Structures
+    -   11.5. Testing
+    -   11.6. Example Manual Pages to Use as Templates
+<<<<<<< HEAD
+=======
+    -   11.7. Resources
+-    Chapter 12. Writing Style
+    -   12.1. Tips
+    -   12.2. Guidelines
+    -   12.3. Style Guide
+    -   12.4. One sentence per line
+    -   12.5. Acronyms
+    -   12.6. Special Character List
+    -   12.7. Linting with Vale
+-    Chapter 13. Editor Configuration
+    -   13.1. Vim
+    -   13.2. Emacs
+    -   13.3. nano
+-    Chapter 14. Trademarks
+    -   14.1. Trademark Symbols
+    -   14.2. Trademark Citing
+-    Chapter 15. See Also
+    -   15.1. The FreeBSD Documentation Project
+    -   15.2. Hugo
+    -   15.3. AsciiDoctor
+    -   15.4. HTML
+-    Appendix A. Examples
+    -   A.1. AsciiDoctor book
+    -   A.2. AsciiDoctor article
+-   
+
+Book menu
+
+Chapter 3. The Working Copy
+
+Table of Contents
+
+-   3.1. Documentation and Manual Pages
+-   3.2. Choosing a Directory
+-   3.3. Checking Out a Copy
+-   3.4. Updating a Working Copy
+-   3.5. Reverting Changes
+-   3.6. Making a Diff
+-   3.7. Git References
+
+The working copy is a copy of the FreeBSD repository documentation tree
+downloaded onto the local computer. Changes are made to the local
+working copy, tested, and then submitted as patches to be committed to
+the main repository.
+
+A full copy of the documentation tree can occupy 550 megabytes of disk
+space. Allow for a full gigabyte of space to have room for temporary
+files and test versions of various output formats.
+
+Git is used to manage the FreeBSD documentation files. It is obtained by
+installing the devel/git package, which also has a lighter flavor called
+git-lite:
+
+    # pkg install git-lite
+
+3.1. Documentation and Manual Pages
+
+FreeBSD documentation is not just books and articles. Manual pages for
+all the commands and configuration files are also part of the
+documentation, and part of the FDP’s territory. Two repositories are
+involved: doc for the books and articles, and src for the operating
+system and manual pages. To edit manual pages, the src repository must
+be checked out separately.
+
+Repositories may contain multiple versions of documentation and source
+code. New modifications are almost always made only to the latest
+version, called main.
+
+3.2. Choosing a Directory
+
+FreeBSD documentation is traditionally stored in /usr/doc/, and system
+source code with manual pages in /usr/src/. These directory trees are
+relocatable, and users may want to put the working copies in other
+locations to avoid interfering with existing information in the main
+directories. The examples that follow use ~/doc and ~/src, both
+subdirectories of the user’s home directory.
+
+3.3. Checking Out a Copy
+
+A download of a working copy from the repository is called a clone, and
+done with git clone. This example clones a copy of the latest version
+(main) of the main documentation tree:
+
+    % git clone https://git.FreeBSD.org/doc.git ~/doc
+
+A checkout of the source code to work on manual pages is very similar:
+
+    % git clone https://git.FreeBSD.org/src.git ~/src
+
+3.4. Updating a Working Copy
+
+The documents and files in the FreeBSD repository change daily. People
+modify files and commit changes frequently. Even a short time after an
+initial checkout, there will already be differences between the local
+working copy and the main FreeBSD repository. To update the local
+version with the changes that have been made to the main repository, use
+git pull on the directory containing the local working copy:
+
+    % cd ~/doc
+    % git pull --ff-only
+
+Get in the protective habit of using git pull before editing document
+files. Someone else may have edited that file very recently, and the
+local working copy will not include the latest changes until it has been
+updated. Editing the newest version of a file is much easier than trying
+to combine an older, edited local file with the newer version from the
+repository.
+
+3.5. Reverting Changes
+
+Sometimes it turns out that changes were not necessary after all, or the
+writer just wants to start over. Files can be "reset" to their unchanged
+form with git restore. For example, to erase the edits made to
+_index.adoc and reset it to unmodified form:
+
+    % git restore _index.adoc
+
+3.6. Making a Diff
+
+After edits to a file or group of files are completed, the differences
+between the local working copy and the version on the FreeBSD repository
+must be collected into a single file for submission. These diff files
+are produced by redirecting the output of git diff into a file:
+
+    % cd ~/doc
+    % git diff > doc-fix-spelling.diff
+
+Give the file a meaningful name that identifies the contents. The
+example above is for spelling fixes to the whole documentation tree.
+
+If the diff file is to be submitted with the web "Submit a FreeBSD
+problem report" interface, add a .txt extension to give the earnest and
+simple-minded web form a clue that the contents are plain text.
+
+Be careful: git diff includes all changes made in the current directory
+and any subdirectories. If there are files in the working copy with
+edits that are not ready to be submitted yet, provide a list of only the
+files that are to be included:
+
+    % cd ~/doc
+    % git diff disks/_index.adoc printers/_index.adoc > disks-printers.diff
+
+3.7. Git References
+
+These examples show very basic usage of Git. More detail is available in
+the Git Book and the Git documentation.
+
+------------------------------------------------------------------------
+
+Last modified on: May 3, 2023 by Lorenzo Salvadore
+
+Prev
+
+Home
+
+Next
+
+Table of Contents
+
+-   3.1. Documentation and Manual Pages
+-   3.2. Choosing a Directory
+-   3.3. Checking Out a Copy
+-   3.4. Updating a Working Copy
+-   3.5. Reverting Changes
+-   3.6. Making a Diff
+-   3.7. Git References
+
+------------------------------------------------------------------------
+
+Resources
+
+-   Download PDF
+-   Edit this page
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+

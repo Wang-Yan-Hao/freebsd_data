@@ -1,0 +1,333 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 5.2-RELEASE Errata
+
+The FreeBSD Project
+
+Copyright © 2000, 2001, 2002, 2003, 2004 The FreeBSD Documentation
+Project
+
+$FreeBSD: src/release/doc/en_US.ISO8859-1/errata/article.sgml,v 1.67
+2004/03/30 17:43:26 kensmith Exp $
+
+FreeBSD is a registered trademark of Wind River Systems, Inc. This is
+expected to change soon.
+
+Intel, Celeron, EtherExpress, i386, i486, Itanium, Pentium, and Xeon are
+trademarks or registered trademarks of Intel Corporation or its
+subsidiaries in the United States and other countries.
+
+Sparc, Sparc64, SPARCEngine, and UltraSPARC are trademarks of SPARC
+International, Inc in the United States and other countries. Products
+bearing SPARC trademarks are based upon architecture developed by Sun
+Microsystems, Inc.
+
+Many of the designations used by manufacturers and sellers to
+distinguish their products are claimed as trademarks. Where those
+designations appear in this document, and the FreeBSD Project was aware
+of the trademark claim, the designations have been followed by the ``™''
+or the ``®'' symbol.
+
+------------------------------------------------------------------------
+
+  This document lists errata items for FreeBSD 5.2-RELEASE, containing
+  significant information discovered after the release or too late in
+  the release cycle to be otherwise included in the release
+  documentation. This information includes security advisories, as well
+  as news relating to the software or documentation that could affect
+  its operation or usability. An up-to-date version of this document
+  should always be consulted before installing this version of FreeBSD.
+
+  This document also contains errata for FreeBSD 5.2.1-RELEASE, a
+  ``point release'' made about one month after FreeBSD 5.2-RELEASE.
+  Unless otherwise noted, all errata items in this document apply to
+  both 5.2-RELEASE and 5.2.1-RELEASE.
+
+  This errata document for FreeBSD 5.2-RELEASE will be maintained until
+  the release of FreeBSD 5.3-RELEASE.
+
+------------------------------------------------------------------------
+
+1 Introduction
+
+This errata document contains ``late-breaking news'' about FreeBSD
+5.2-RELEASE. Before installing this version, it is important to consult
+this document to learn about any post-release discoveries or problems
+that may already have been found and fixed.
+
+Any version of this errata document actually distributed with the
+release (for example, on a CDROM distribution) will be out of date by
+definition, but other copies are kept updated on the Internet and should
+be consulted as the ``current errata'' for this release. These other
+copies of the errata are located at http://www.FreeBSD.org/releases/,
+plus any sites which keep up-to-date mirrors of this location.
+
+Source and binary snapshots of FreeBSD 5-CURRENT also contain up-to-date
+copies of this document (as of the time of the snapshot).
+
+For a list of all FreeBSD CERT security advisories, see
+http://www.FreeBSD.org/security/ or
+ftp://ftp.FreeBSD.org/pub/FreeBSD/CERT/.
+
+------------------------------------------------------------------------
+
+2 Security Advisories
+
+(30 Jan 2004, updated 28 Feb 2004) A bug in mksnap_ffs(8) causes the
+creation of a filesystem snapshot to reset the flags on the filesystem
+to their default values. The possible consequences depend on local
+usage, but can include disabling extended access control lists or
+enabling the use of setuid executables stored on an untrusted
+filesystem. This bug also affects the dump(8) -L option, which uses
+mksnap_ffs(8). Note that mksnap_ffs(8) is normally only available to the
+superuser and members of the operator group. This bug has been fixed on
+the FreeBSD 5.2-RELEASE security fix branch and in FreeBSD
+5.2.1-RELEASE. For more information, see security advisory
+FreeBSD-SA-04:01.
+
+(8 Feb 2004, updated 28 Feb 2004) A bug with the System V Shared Memory
+interface (specifically the shmat(2) system call) can cause a shared
+memory segment to reference unallocated kernel memory. In turn, this can
+permit a local attacker to gain unauthorized access to parts of kernel
+memory, possibly resulting in disclosure of sensitive information,
+bypass of access control mechanisms, or privilege escalation. This bug
+has been fixed on the FreeBSD 5.2-RELEASE security fix branch and in
+FreeBSD 5.2.1-RELEASE. More details, including bugfix and workaround
+information, can be found in security advisory FreeBSD-SA-04:02.
+
+(28 Feb 2004) It is possible, under some circumstances, for a processor
+with superuser privileges inside a jail(8) environment to change its
+root directory to a different jail, giving it read and write access to
+the files and directories within. This vulnerability has been closed on
+the FreeBSD 5.2-RELEASE security fix branch and in FreeBSD
+5.2.1-RELEASE. Information on the bug fix can be found in security
+advisory FreeBSD-SA-04:03.
+
+(4 Mar 2004) It is possible for a remote attacker to conduct a
+low-bandwidth denial-of-service attack against a machine providing
+TCP-based services, filling up the target's memory buffers and
+potentially leading to a system crash. This vulnerability has been
+addressed on the FreeBSD 5.2-RELEASE security fix branch, but is present
+in both FreeBSD 5.2-RELEASE and 5.2.1-RELEASE. Security advisory
+FreeBSD-SA-04:04 contains more details, as well as information on
+patching existing systems.
+
+(17 Mar 2004) By performing a specially crafted SSL/TLS handshake with
+an application that uses OpenSSL a null pointer may be dereferenced.
+This may in turn cause the application to crash, resulting in a denial
+of service attack. For more information see the Security Advisory
+FreeBSD-SA-04:05 which contains more details and instructions on how to
+patch existing systems.
+
+(29 Mar 2004) A local attacker may take advantage of a programming error
+in the handling of certain IPv6 socket options in the setsockopt(2)
+system call to read portions of kernel memory without proper
+authorization. This may result in disclosure of sensitive data, or
+potentially cause a panic. See Security Advisory FreeBSD-SA-04:06 for a
+more detailed description and instructions on how to patch existing
+systems.
+
+------------------------------------------------------------------------
+
+3 Open Issues
+
+(9 Jan 2004) Due to a change in cpp(1) behavior, the login screen for
+xdm(1) is in black and white, even on systems with color displays. As a
+workaround, update to a newer version of the x11/XFree86-4-clients
+port/package.
+
+(9 Jan 2004) There remain some residual problems with ACPI. In some
+cases, systems may behave erratically, or hang at boot time. As a
+workaround, disable ACPI, using the ``safe mode'' option of the
+bootloader or using the hint.acpi.0.disabled kernel environment
+variable. These problems are being investigated. For problems that have
+not already been reported (check the mailing list archives before
+posting), sending the output of dmesg(8) and acpidump(8) to the
+FreeBSD-CURRENT mailing list may help diagnose the problem.
+
+(9 Jan 2004, updated 28 Feb 2004) In some cases, ATA devices may behave
+erratically, particularly SATA devices. Reported symptoms include
+command timeouts or missing interrupts. These problems appear to be
+timing-dependent, making them rather difficult to isolate. Workarounds
+include:
+
+-   Turn off ATA DMA using the ``safe mode'' option of the bootloader or
+    the hw.ata.ata_dma sysctl variable.
+
+-   Use the host's BIOS setup options to put the ATA controller in its
+    ``legacy mode'', if available.
+
+-   Disable ACPI, for example using the ``safe mode'' option of the
+    bootloader or using the hint.acpi.0.disabled kernel environment
+    variable.
+
+Some of these problems were addressed in FreeBSD 5.2.1-RELEASE with the
+import of a newer ata(4) from 5.2-CURRENT.
+
+(9 Jan 2004) Installing over NFS when using the install floppies
+requires that the nfsclient.ko module be manually loaded from the third
+floppy disk. This can be done by following the prompts when
+sysinstall(8) launches to load a driver off of the third floppy disk.
+
+(9 Jan 2004) The use of multiple vchans (virtual audio channels with
+dynamic mixing in software) in the pcm(4) driver has been known to cause
+some instability.
+
+(10 Jan 2004) Although APIC interrupt routing seems to work correctly on
+many systems, on some others (such as some laptops) it can cause various
+errors, such as ata(4) errors or hangs when starting or exiting X11. For
+these situations, it may be advisable to disable APIC routing, using the
+``safe mode'' of the bootloader or the hint.apic.0.disabled loader
+tunable. Note that disabling APIC is not compatible with SMP systems.
+
+(10 Jan 2004, updated 28 Feb 2004) The NFSv4 client may panic when
+attempting an NFSv4 operation against an NFSv3/NFSv2-only server. This
+problem has been fixed with revision 1.4 of src/sys/rpc/rpcclnt.c in
+FreeBSD 5.2-CURRENT. It was also fixed in FreeBSD 5.2.1-RELEASE.
+
+(11 Jan 2004, updated 28 Feb 2004) Some problems have been encountered
+when using third-party NSS modules, such as nss_ldap, and groups with
+large membership lists. These have been fixed with revision 1.2 of
+src/include/nss.h and revision 1.2 of src/lib/libc/net/nss_compat.c in
+FreeBSD 5.2-CURRENT; this fix was backported to FreeBSD 5.2.1-RELEASE.
+
+(13 Jan 2004) The FreeBSD 5.2-CURRENT release notes incorrectly stated
+that GCC was a post-release GCC 3.3.3 snapshot. They should have stated
+that GCC was a pre-release GCC 3.3.3 snapshot.
+
+(13 Jan 2004, updated 28 Feb 2004) The sysutils/kdeadmin3 port/package
+has a bug in the KUser component that can cause deletion of the root
+user from the system password file. Users are strongly urged to upgrade
+to version 3.1.4_1 of this port/package. The package set included with
+FreeBSD 5.2.1-RELEASE contains the fixed version of this package.
+
+(21 Jan 2004, updated 28 Feb 2004) Some bugs in the IPsec implementation
+imported from the KAME Project can result in memory objects being freed
+before all references to them were removed. Reported symptoms include
+erratic behavior or kernel panics after flushing the Security Policy
+Database (SPD). Some of these problems have been fixed in FreeBSD
+5.2-CURRENT in rev. 1.31 of src/sys/netinet6/ipsec.c, rev. 1.136 of
+src/sys/netinet/in_pcb.c, and revs. 1.63 and 1.64 of
+src/sys/netkey/key.c. These bugfixes were backported to FreeBSD
+5.2.1-RELEASE. More information about these problems has been posted to
+the FreeBSD-CURRENT mailing list, in particular the thread entitled
+``[PATCH] IPSec fixes''.
+
+(28 Feb 2004) The edition of the Porters Handbook included with FreeBSD
+5.2.1-RELEASE contained an incorrect value for 5.2.1-RELEASE's
+__FreeBSD_version. The correct value is 502010.
+
+------------------------------------------------------------------------
+
+4 Late-Breaking News
+
+(10 Jan 2004, updated 28 Feb 2004) The TCP implementation in FreeBSD now
+includes protection against a certain class of TCP MSS resource
+exhaustion attacks, in the form of limits on the size and rate of TCP
+segments. The first limit sets the minimum allowed maximum TCP segment
+size, and is controlled by the net.inet.tcp.minmss sysctl variable (the
+default value is 216 bytes). The second limit is set by the
+net.inet.tcp.minmssoverload variable, and controls the maximum rate of
+connections whose average segment size is less than net.inet.tcp.minmss.
+Connections exceeding this packet rate are reset and dropped. Because
+this feature was added late in the 5.2-RELEASE release cycle, connection
+rate limiting is disabled by default, but can be enabled manually by
+assigning a non-zero value to net.inet.tcp.minmssoverload. This feature
+was added to FreeBSD 5.2-RELEASE too late for inclusion in its release
+notes.
+
+------------------------------------------------------------------------
+
+This file, and other release-related documents, can be downloaded from
+http://snapshots.jp.FreeBSD.org/.
+
+For questions about FreeBSD, read the documentation before contacting
+<questions@FreeBSD.org>.
+
+All users of FreeBSD 5-CURRENT should subscribe to the
+<current@FreeBSD.org> mailing list.
+
+For questions about this documentation, e-mail <doc@FreeBSD.org>.
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

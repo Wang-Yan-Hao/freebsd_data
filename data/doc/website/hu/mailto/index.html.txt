@@ -1,0 +1,114 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Kapcsolattartás a FreeBSD Projekttel
+
+A FreeBSD-vel kapcsolatos kérdések…​
+
+A FreeBSD-vel kapcsolatos kérdések a FreeBSD Questions angol nyelvû
+levelezési listára küldhetõek.
+
+A levelezési listák jelentik a FreeBSD felhasználók támogatásának fõ
+csatornáját. Számos témát felölelnek és létezik köztük sok nem angol
+nyelvû lista is.
+
+A honlap tartalmával kapcsolatos kérdések…​
+
+A honlappal és a rajta található dokumentációval (Kézikönyv, GYIK,
+Könyvek és cikkek) kapcsolatos kérdések és javaslatok a FreeBSD
+Dokumentációs Projekt levelezési listájára küldendõek.
+
+Postacím, telefon és fax
+
+CD-ROM rendelés: The FreeBSD Mall
+
+Kereskedelmi támogatás: The FreeBSD Mall
+
+Ki miért felelõs
+
+PR & Vállalati kapcsolattartó, Security Officer, Postmaster, Webmester
+stb.
+
+------------------------------------------------------------------------
+
+Last modified on: 2021. június 19. by Danilo G. Baio
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

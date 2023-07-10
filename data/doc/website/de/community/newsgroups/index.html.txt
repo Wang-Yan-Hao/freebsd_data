@@ -1,0 +1,94 @@
+[FreeBSD The Power to Serve]
+
+An FreeBSD spenden
+
+ 
+
+-   Startseite
+
+-   Über FreeBSD
+    -   Für Einsteiger
+    -   Eigenschaften
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Bezugsquellen
+    -   Release Information
+    -   Release Engineering
+
+-   Dokumentation
+    -   FAQ
+    -   Handbuch
+    -   Porter-Handbuch
+    -   Entwickler-Handbuch
+    -   Committer's Guide
+    -   Manualpages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   Alle Bücher und Artikel
+
+-   Community
+    -   Mailinglisten
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Entwicklung
+    -   Projektideen
+    -   Git-Spiegelserver
+    -   Subversion-Repository
+    -   GitHub Mirror
+    -   Phabricator (Code Review)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Hilfe
+    -   Kommerzieller Support
+    -   Sicherheit
+    -   Problemberichte
+    -   Problembericht erstellen
+    -   Internet-Ressourcen
+
+-   Foundation
+    -   Geldspende
+    -   Hardwarespende
+
+-   BSD Now
+-   Discord
+-   Events
+-   Forums
+-   IRC
+-   Mailinglisten
+-   Reddit
+-   Twitter
+-   User Groups
+-   YouTube
+
+Newsgroups
+
+Neben einigen FreeBSD-spezifischen Newsgroups gibt es auch zahlreiche
+andere Gruppen, die für FreeBSD-Anwender ebenfalls von Interesse sein
+könnten. Der zuverlässigste Weg, um mit FreeBSD-Entwicklern in Kontakt
+zu kommen, bleibt aber die Nutzung der Mailinglisten. Allgemeine
+Diskussion zu FreeBSD werden beispielsweise in der Newsgroup
+news:comp.unix.bsd.freebsd.misc[comp.unix.bsd.freebsd.misc] geführt,
+während wichtige Ankündigungen unter anderem über die Newsgroup
+news:comp.unix.bsd.freebsd.announce[comp.unix.bsd.freebsd.announce]
+verbreitet werden.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19. Juni 2021 by Danilo G. Baio
+
+Rechtliches | © 1995-2023 The FreeBSD Project Alle Rechte vorbehalten.
+Die Marke FreeBSD ist eine eingetragene Marke der FreeBSD Foundation und
+wird vom FreeBSD Project mit freundlicher Genehmigung der The FreeBSD
+Foundation. Kontakt

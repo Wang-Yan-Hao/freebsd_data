@@ -1,0 +1,149 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+Testing Guide for 4.8-RELEASE
+
+Goals
+
+As part of our on-going effort to improve the release engineering
+process, we have identified several areas that need significant quality
+assurance testing during the release candidate phase. Below, we've
+listed the changes in 4.8-RELEASE that we feel merit the most attention
+due to their involving substantial changes to the system, or having
+arrived late in the development cycle leading up to the release. In
+general, our goal in the QA process is to attempt to check a number of
+things:
+
+-   The system has not regressed with respects to stability,
+    correctness, interoperability, or performance of features present in
+    prior releases.
+-   New features result in the desired improvement in stability,
+    correctness, interoperability, or performance.
+
+To effectively determine this, it's desirable to test the system in a
+diverse set of environments, applying a wide set of workloads, forcing
+the system to operate both within and outside its normal specification.
+Particular focus should often be placed on the continuing (or new)
+capability of the system to perform correctly when used in concert with
+systems from other vendors.
+
+Features to explore carefully:
+
+-   OpenSSL. OpenSSL was updated to 0.9.7a. Please test any SSL
+    consumers on your system to make sure there have been no regressions
+    in functionality.
+
+-   IPFilter has recently been updated to version 3.4.31 and has not yet
+    been thoroughly tested in -STABLE.
+
+-   Firewire
+
+-   libc_r - A change has been made to fix libc_r in the case when a
+    non-standard value of KVA_PAGES is used in the kernel. libc_r in
+    general could use testing with real applications.
+
+-   dlinfo() added - test your shared-library heavy ports to make sure
+    there are no build problems.
+
+-   ISC DHCP 3.0.1 RC11 has recently been added to 4.8RC. This version
+    of the ISC DHCP client was used in 5.0-RELEASE, and should be well
+    tested, but it was only recently made available to 4.X-STABLE users
+    so it has not received much testing to date in that environment.
+
+The release notes will always be a good place to look for things to
+test.
+
+Known Issues
+
+-   Disks attached to a Mylex controller are not seen by sysinstall.
+    There is a problem because this module is loaded from the mfsroot
+    floppy and the equivalent of a "camcontrol rescan" is not performed
+    to discover disks after the module has loaded. Found by Julian.
+    Fixed by scottl Mar 28.
+
+-   GNOME2 does not work until the user manually runs 'fc-cache -f'.
+    marcus@ has committed a fix to the port, murray@ has manually hacked
+    some packages to test the proposed fixes, and kris@ will rebuild
+    150+ GNOME ports
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

@@ -1,0 +1,115 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   Git Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Support
+-   Vendors
+    -   Software
+    -   Hardware
+    -   Consulting
+    -   Internet Service Providers
+    -   Miscellaneous
+-   Security Information
+    -   Advisories
+    -   Errata Notices
+    -   Supported Releases
+    -   Unsupported Releases
+    -   How to read FreeBSD Security Advisories
+    -   Charter for the Security Officer and Team
+-   Bug Reports
+    -   Submit a Problem Report
+-   Web Resources
+
+FreeBSD ondersteuning
+
+Voor gebruikers van FreeBSD is een breed scala aan commerciële en
+gemeenschapsondersteuning beschikbaar. In de sectie gemeenschap van deze
+website staat een gedetailleerd overzicht van de mogelijkheden voor
+ondersteuning voor gebruikers uit de FreeBSD gemeenschap, inclusief een
+aantal mailinglijsten.
+
+Commerciële ondersteuning is ook beschikbaar van een van de vele
+leveranciers die commerciële producten, diensten en/of advies voor, van
+of met FreeBSD aanbieden.
+
+Problemen melden
+
+Een bug in FreeBSD gevonden? Een fout in de documentatie aangetroffen?
+Laat het ons weten als het niet al eerder is gemeld.
+
+Om na te gaan wat reeds is gemeld, is het mogelijk om te zoeken in de
+PR-database voor specifieke categorie, behandelend vrijwilliger,
+insturend persoon, tekst, enzovoorts, of een enkel probleemrapport te
+bekijken of alle openstaande probleemrapporten te bekijken.
+
+Als er nog geen melding is gemaakt, lees dan eerst onze richtlijnen voor
+probleemrapportage en meld het probleem dan via het formulier
+probleemrapportage.
+
+------------------------------------------------------------------------
+
+Last modified on: 26 januari 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

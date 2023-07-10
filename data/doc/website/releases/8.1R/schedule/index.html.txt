@@ -1,0 +1,123 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 8.1 Release Process
+
+Introduction
+
+This is the release schedule for FreeBSD 8.1. For more information about
+the release engineering process, please see the Release Engineering
+section of the web site.
+
+General discussions about the pending release and known issues should be
+sent to the public freebsd-current mailing list. MFC requests should be
+sent to re@FreeBSD.org.
+
+Schedule
+
+  --------------------------------------- -------------- --------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Action                                  Expected       Actual          Description
+  Initial release schedule announcement   -              01 April 2010   Release Engineers send announcement email to developers with a rough schedule.
+  Release schedule reminder               -              Weekly          Release Engineers send reminder announcement e-mail to developers with updated schedule.
+  Code freeze begins                      24 May 2010    25 May 2010     Release Engineers announce that all further commits to the stable/8 branch will require explicit approval. Certain blanket approvals will be granted for narrow areas of development, documentation improvements, etc.
+  BETA1                                   28 May 2010    27 May 2010     First beta test snapshot.
+  releng/8.1 branch                       10 June 2010   14 June 2010    Subversion branch created, propagated to CVS; future release engineering proceeds on this branch.
+  RC1                                     11 June 2010   14 June 2010    First release candidate.
+  RC2                                     25 June 2010   26 June 2010    Second release candidate.
+  RELEASE build                           09 July 2010   17 July 2010    8.1-RELEASE built.
+  RELEASE announcement                    TBD            23 July 2010    8.1-RELEASE press release.
+  Turn over to the secteam                TBD            30 July 2010    RELENG_8_1 branch is handed over to the FreeBSD Security Officer Team in one or two weeks after the announcement.
+  --------------------------------------- -------------- --------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Status / TODO
+
+http://wiki.freebsd.org/Releng/8.1TODO
+
+Additional Information
+
+-   FreeBSD 8.1 release engineering wiki page, which includes todo
+    lists, scheduling information, binary compatibility information, and
+    more.
+-   FreeBSD Release Engineering website
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

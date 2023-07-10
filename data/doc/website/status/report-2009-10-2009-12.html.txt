@@ -1,0 +1,1549 @@
+Skip site navigation (1) Skip section navigation (2)
+
+Header And Logo
+
+[FreeBSD]
+
+.
+
+Donate to FreeBSD
+
+.
+
+Peripheral Links
+
+Search
+
+ 
+
+Site Navigation
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+Section Navigation
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Multimedia
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Introduction
+
+This report covers FreeBSD related projects between October and December
+2009. This is the last of the four reports covering 2009, which has
+shown to be a very important year for the FreeBSD Project. Besides other
+notable things, a new major version of FreeBSD, 8.0-RELEASE, has been
+released, while the release process for 7.3-RELEASE is soon to begin.
+
+Thanks to all the reporters for the excellent work! We hope you enjoy
+reading. Let us also take this opportunity to wish you all a happy and
+successful new year for 2010.
+
+Please note that the deadline for submissions covering the period
+between January and March 2010 is April 15th, 2010.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Google Summer of Code
+
+-   BSD-licensed iconv
+
+Projects
+
+-   3G USB support
+-   Clang replacing GCC in the base system
+-   FreeBSD TDM Framework
+-   HAST — Highly Available Storage
+-   Intel XScale hwpmc(9) support
+-   POSIX utmpx for FreeBSD
+-   SUJ — Journaled SoftUpdates
+-   The webcamd deamon
+
+FreeBSD Team Reports
+
+-   FreeBSD Bugbusting Team
+-   FreeBSD Release Engineering
+-   The FreeBSD Foundation Status Report
+
+Network Infrastructure
+
+-   bwn(4) — Broadcom Wireless driver
+-   IP Payload Compression Protocol support
+-   Ralink wireless RT2700U/2800U/3000U run(4) USB driver
+-   Syncing pf(4) with OpenBSD 4.5
+-   Wireless mesh networking
+
+Kernel
+
+-   CAM-based ATA implementation
+-   Group Limit Increase
+-   NFSv4 ACL support
+-   V4L support in Linux emulator
+
+Documentation
+
+-   The FreeBSD German Documentation Project
+-   The FreeBSD Hungarian Documentation Project
+-   The FreeBSD Spanish Documentation Project
+
+Architectures
+
+-   Flattened Device Tree for embedded FreeBSD
+-   FreeBSD/ia64
+-   FreeBSD/mips
+-   FreeBSD/sparc64
+
+Ports
+
+-   Chromium web browser
+-   Ports Collection
+-   VirtualBox on FreeBSD
+
+Vendor / 3rd Party Software
+
+-   DAHDI (Zaptel) support for FreeBSD
+-   NVIDIA amd64 driver
+
+Miscellaneous
+
+-   AsiaBSDCon 2010 — The BSD Conference
+-   BSDCan 2010 — The BSD Conference
+-   meetBSD 2010 — The BSD Conference
+-   The FreeBSD Forums
+
+Userland utilities
+
+-   BSD-licensed text processing tools
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Google Summer of Code
+
+BSD-licensed iconv
+
+  ------------------------------------ ---------------------------------------------------------------------------------------------
+  Links                                
+  Sources in the Perforce repository   URL: http://p4db.FreeBSD.org/depotTreeBrowser.cgi?FSPC=//depot/projects/soc2009/gabor_iconv
+  ------------------------------------ ---------------------------------------------------------------------------------------------
+
+Contact: Gábor Kövesdán <gabor@FreeBSD.org>
+
+Good compatibility has been ensured and there are only few pending items
+that have to be reviewed/enhanced. Recently, an enhancement has been
+completed, which makes it possible to accomplish better transliteration,
+just like in the GNU version. An initial testing patch is expected at
+the beginning of February.
+
+Open tasks:
+
+1.  Enhance conversion tables to make use of enhanced transliteration.
+2.  A performance optimization might be done later.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Projects
+
+3G USB support
+
+Contact: Andrew Thompson <thompsa@FreeBSD.org>
+
+Recently, a bunch of new device IDs have been added for the u3g(4)
+cellular wireless driver; the list should be comparable now with other
+operating systems around. A lot of these devices have a feature where
+the unit first attaches as a disk or CD-ROM that contains the Win/Mac
+drivers. This state should be detected by the u3g driver and the usb
+device is sent a command to switch to modem mode. This has been working
+for quite some time but as it is implemented differently for each vendor
+I am looking for feedback on any units where the auto switchover is not
+working (or the init is not recognized at all). Please ensure you are
+running an up to date kernel, like r201681 or later from 9.0-CURRENT, or
+8-STABLE after the future merge of this revision.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Clang replacing GCC in the base system
+
+  ------- -------------------------------------------------------
+  Links   
+          URL: http://wiki.FreeBSD.org/BuildingFreeBSDWithClang
+  ------- -------------------------------------------------------
+
+Contact: Ed Schouten <ed@FreeBSD.org>
+Contact: Roman Divacky <rdivacky@FreeBSD.org>
+Contact: Brooks Davis <brooks@FreeBSD.org>
+Contact: Pawel Worach <pawel.worach@gmail.com>
+
+We are again able to build bootable i386/amd64 kernel. Nathan Whitehorn
+committed a fix to FreeBSD, which enabled LLVM/clang to work mostly fine
+on PowerPC. There is some preliminary testing of LLVM/clang on ARM and
+MIPS being done. We have some ideas about sparc64 support which are
+currently being investigated. You are welcome to contact us if you want
+to help.
+
+Since the last report, a lot has happened mostly in the area of C++;
+clang is currently able to build working groff, gperf and devd, i.e. all
+of the C++ apps we have in base. Unfortunately, it still cannot build
+any of the C++ libraries — two of them are missing builtins and
+libstdc++ is broken for other reasons.
+
+Not much happened in the clangbsd branch as we cannot upgrade the
+clang/llvm there because we are blocked by a bug that requires using
+newer assembler than we can ship. This might be solved by either fixing
+this (short term) or using llvm-mc instead of GNU as for assembling
+(longer term).
+
+Open tasks:
+
+1.  Help with ARM/MIPS/sparc64.
+2.  More testing of clang on 3rd party apps (ports).
+3.  Discussion on integrating LLVM/clang into FreeBSD.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD TDM Framework
+
+Contact: Rafal Czubak <rcz@semihalf.com>
+Contact: Michal Hajduk <mih@semihalf.com>
+
+Important changes regarding FreeBSD TDM Framework since the last status
+report:
+
+-   Fully functional TDM controller driver for Marvell Kirkwood and
+    Discovery SoCs.
+-   Working voiceband channel character device driver.
+-   Working Si3215, Si3050 codec drivers on corresponding FXS, FXO
+    ports.
+-   Demo application, which is capable of manipulating voiceband channel
+    and codec state, starting/stopping channel transfers and echoing on
+    single channel.
+-   Preliminary version of driver bridging the voiceband infrastructure
+    with Zaptel/DAHDI.
+
+Open tasks:
+
+1.  Improve various issues regarding working drivers and demo
+    application.
+2.  Test Si3050 codec driver operation with PSTN.
+3.  Fully integrate voiceband infrastructure with Zaptel/DAHDI telephony
+    hardware drivers.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+HAST — Highly Available Storage
+
+  -------------- -----------------------------------------------------------------------------------
+  Links          
+  Announcement   URL: http://lists.FreeBSD.org/pipermail/freebsd-announce/2009-October/001279.html
+  -------------- -----------------------------------------------------------------------------------
+
+Contact: Pawel Jakub Dawidek <pjd@FreeBSD.org>
+
+HAST software will provide synchronous replication of any GEOM provider
+(eg. disk, partition, mirror, etc.) or file from one FreeBSD machine
+(primary node) to another one (secondary node).
+
+Because data is replicated at the block level neither applications, nor
+file systems have to be modified to take advantage of this
+functionality.
+
+The functionality that HAST software will provide is very similar to the
+functionality provided by the DRBD project for Linux.
+
+The HAST project is sponsored by the FreeBSD Foundation.
+
+Work is progressing well; first milestone was reached in December 2009
+and the expected project completion date is January 31, 2010.
+
+Check out FreeBSD mailing lists for patches to test in February and wish
+me good luck!
+
+And by the way, do not forget to donate to the FreeBSD Foundation, as
+your donations make projects like this possible.
+
+Thank you!
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Intel XScale hwpmc(9) support
+
+Contact: Rui Paulo <rpaulo@FreeBSD.org>
+
+Preliminary Hardware Performance Counter support for Intel XScale ARM
+processors was committed to FreeBSD 9.0-CURRENT in December. This adds
+another supported architecture to hwpmc(9). The system works for basic
+performance counter usage but more advanced usage scenarios, namely
+callchain support, are not yet implemented.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+POSIX utmpx for FreeBSD
+
+  ----------------------------- -----------------------------------------------------------------------------------------------
+  Links                         
+  Announcement                  URL: http://lists.FreeBSD.org/pipermail/freebsd-current/2010-January/014893.html
+  POSIX specification           URL: http://www.opengroup.org/onlinepubs/9699919799/functions/endutxent.html
+  NetBSD's implementation       URL: http://cvsweb.netbsd.org/bsdweb.cgi/~checkout~/src/lib/libc/gen/utmpx.c
+  OpenSolaris' implementation   URL: http://src.opensolaris.org/source/xref/onnv/onnv-gate/usr/src/lib/libc/port/gen/getutx.c
+  ----------------------------- -----------------------------------------------------------------------------------------------
+
+Contact: Ed Schouten <ed@FreeBSD.org>
+
+On January 13, I removed the utmp user accounting database and replaced
+it with a new POSIX utmpx implementation. Unfortunately, the upgrade
+path is a bit complex, because the utmp interface provided almost no
+library interface to interact with the database files.
+
+This change may have caused some regressions. Some ports may fail to
+build, while there could also be bugs in the library functions.
+
+Open tasks:
+
+1.  Get a list of broken ports.
+2.  Fix them to comply to standards.
+3.  Send patches upstream.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+SUJ — Journaled SoftUpdates
+
+  ------- -----------------------------------------
+  Links   
+          URL: http://jeffr_tech.livejournal.com/
+  ------- -----------------------------------------
+
+Contact: Jeff Roberson <jeff@FreeBSD.org>
+
+I have been adding a small intent log to SoftUpdates to eliminate the
+requirement for fsck after an unclean shutdown. This work has been
+funded by Yahoo!, iXsystems, and Juniper. Kirk McKusick has been aiding
+me with design critiques and helping me better understand SoftUpdates.
+
+Extensive testing by myself and Peter Holm has yielded a stable patch.
+Current users are encouraged to follow the instructions posted to the
+current@FreeBSD.org mailing list to verify stability in your own
+workloads. Updates are forthcoming and it is expected to be merged to
+9.0-CURRENT before the end of January. Ports to older versions of
+FreeBSD will be available in SVN under alternate branches. Official
+backports will be decided by re@ when 9.0-CURRENT is stable.
+
+The changes are fully backwards and forwards compatible as there are
+very few metadata changes to the filesystem. The journal may be enabled
+or disabled on existing FFS filesystems using tunefs(8). The log
+consumes 64 MB of space at maximum and fsck time is bounded by the size
+of the log rather than the size of the filesystem. Other details are
+available in my technical journal.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+The webcamd deamon
+
+  ------- ----------------------------------------------------
+  Links   
+          URL: http://www.selasky.org/hans_petter/video4bsd/
+  ------- ----------------------------------------------------
+
+Contact: Hans Petter Selasky <hselasky@FreeBSD.org>
+
+The webcamd daemon enables hundreds of different USB based webcam
+devices to be used under the FreeBSD-8/9 operating system. The webcam
+daemon is basically an application, which is a port of Video4Linux USB
+webcam drivers into userspace on FreeBSD. The daemon currently depends
+on libc, pthreads, libusb and the VIDEO4BSD kernel module.
+
+Open tasks:
+
+1.  Add support for the remaining Video4Linux USB devices.
+2.  Make patches for increased buffer sizes, due to higher latency in
+    userspace. Especially for High Speed USB.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD Team Reports
+
+FreeBSD Bugbusting Team
+
+  ----------------------------------------------------------------- --------------------------------------------------------------------------
+  Links                                                             
+  GNATS                                                             URL: http://www.FreeBSD.org/support.html#gnats
+  BugBusting                                                        URL: http://wiki.FreeBSD.org/BugBusting
+  Experimental report pages                                         URL: http://people.FreeBSD.org/~linimon/studies/prs/
+  PRs recommended for committer evaluation by the bugbusting team   URL: http://people.FreeBSD.org/~linimon/studies/prs/recommended_prs.html
+  Subscription list for the above report)                           URL: http://people.FreeBSD.org/~linimon/recommended_subscribers.txt
+  ----------------------------------------------------------------- --------------------------------------------------------------------------
+
+Contact: Gavin Atkinson <gavin@FreeBSD.org>
+Contact: Mark Linimon <linimon@FreeBSD.org>
+Contact: Remko Lodder <remko@FreeBSD.org>
+Contact: Volker Werth <vwe@FreeBSD.org>
+
+Bugmeister Gavin Atkinson has now been granted a src commit bit, and is
+now starting to work through some of our backlog.
+
+The list of PRs recommended for committer evaluation by the Bugbusting
+Team continues to receive new additions; however, it has not yet
+achieved high visibility. (This list contains PRs, mostly with patches,
+that the Bugbusting Team consider potentially ready to be committed
+as-is, or are probably trivially resolved in the hands of a committer
+with knowledge of the particular subsystem.) One of the suggestions at
+the Cambridge devsummit was to create a way for people to be emailed the
+weekly summary that is posted to freebsd-bugs@, and this has now been
+implemented. Please email linimon@FreeBSD.org to ask to be added to the
+recommended_subscribers.txt file (see above).
+
+We continue to classify PRs as they arrive, adding 'tags' to the subject
+lines corresponding to the kernel subsystem involved, or man page
+references for userland PRs. These tags, in turn, produce lists of PRs
+sorted both by tag and by manpage. At this point most of the PRs that
+refer to supported versions of FreeBSD have been converted, and we are
+keeping up as new ones come in. We hope that this is making it easier to
+browse the PR database.
+
+The overall PR count jumped to over 6,200 during the 8.0-RELEASE release
+cycle but seems to have stabilized at around 6,100. As in the past, we
+have a fairly good clearance rate for ports PRs but much less so for
+other PRs. (Partly this is due to the concept of individual ports having
+'maintainers'.)
+
+Open tasks:
+
+1.  Try to find ways to get more committers helping us with closing PRs
+    that the team has already analyzed.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD Release Engineering
+
+  ------- -------------------------------------
+  Links   
+          URL: http://www.FreeBSD.org/releng/
+  ------- -------------------------------------
+
+Contact: Release Engineering Team <re@FreeBSD.org>
+
+The Release Engineering Team announced FreeBSD 8.0-RELEASE on November
+26th, 2009. With 8.0-RELEASE completed planning has begun for
+7.3-RELEASE. The schedule has been set with the release date planned for
+early March 2010.
+
+The Release Engineering Team would like to thank George Neville-Neil
+(gnn@) for his service on the team. George continues to work with the
+FreeBSD Project but has stepped down from the Release Engineering Team
+to focus on other activities.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+The FreeBSD Foundation Status Report
+
+  ------------------------ ------------------------------------------
+  Links                    
+  The FreeBSD Foundation   URL: http://www.FreeBSDFoundation.org/
+  Follow us on Twitter     URL: https://twitter.com/freebsdfndation
+  ------------------------ ------------------------------------------
+
+Contact: Deb Goodkin <deb@FreeBSDFoundation.org>
+
+Despite a difficult economy, we more than doubled our number of donors,
+we raised $269K towards our goal of $300K, and with an improved economy
+hope to surpass that this year.
+
+We have funded two new projects. One is the Flattened Device Tree by
+Rafal Jaworowski. And, the second one is Highly Available Storage by
+Pawel Jakub Dawidek. We continued supporting the New Console Driver by
+Ed Schouten and Improvements to the FreeBSD TCP Stack by Lawrence
+Stewart. We also purchased equipment for several projects.
+
+We have big plans for the new year! We are going to significantly
+increase our project development and equipment spending. Stay tuned for
+a project proposal submission announcement soon. We just announced that
+we are accepting travel grant applications for AsiaBSDCon and will be
+accepting them soon for BSDCan. And, we are working on infrastructure
+projects to beef up hardware for package-building, network-testing, etc.
+
+Read more about how we supported the project and community by reading
+our end-of-year newsletter available at
+http://www.FreeBSDFoundation.org/press/2009Dec-newsletter.shtml.
+
+We are fund-raising for 2010 now! Find out more at
+http://www.FreeBSDFoundation.org/donate/.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Network Infrastructure
+
+bwn(4) — Broadcom Wireless driver
+
+  ---------------------- -----------------------------------------------------------------------------------------------------------------
+  Links                  
+  bwn(4) sources in P4   URL: http://p4db.FreeBSD.org/depotTreeBrowser.cgi?FSPC=//depot/user/weongyo/wireless/src/sys/dev/bwn&HIDEDEL=NO
+  ---------------------- -----------------------------------------------------------------------------------------------------------------
+
+Contact: Weongyo Jeong <weongyo@FreeBSD.org>
+
+bwn(4) is replacing bwi(4) driver for to the following reasons:
+
+-   Uses latest v4 firmware image instead of using the much older v3
+    firmware. In this way, we have some great benefits, such as support
+    for N-PHYs and the fixes of various earlier firmware bugs.
+-   Supports PIO mode. This is important because — as you might know —
+    the Broadcom Wireless Driver is created by reverse-engineering so
+    some pieces of hardware might not work with DMA operations.
+-   Supports 64 bit DMA operations.
+-   Separates bwi(4) driver into two parts; siba(4) driver and bwn(4)
+    driver. Many Broadcom wireless and NIC devices are based on Silicon
+    Sonics Backplane, such as bwi(4), which implemented the SIBA
+    operations internally. This resulted in code duplication as other
+    drivers had to implement their own routines to deal with SIBA. In
+    the case of bwn(4), these two parts have been separated and
+    implemented in their own kernel modules to avoid this problem and
+    help further development by providing a standalone siba(4) driver.
+
+Currently, it is tested on big/little endian machines and 32/64-bit DMA
+operation with STA mode. A major patch for siba(4) is being reviewed
+before committing into 9.0-CURRENT.
+
+Open tasks:
+
+1.  MESH/IBSS/HOSTAP mode is not supported.
+2.  LP/N PHYs are not supported.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+IP Payload Compression Protocol support
+
+Contact: Bjoern A. Zeeb <bz@FreeBSD.org>
+
+One of the longer outstanding feature problems with the FreeBSD IP
+security stack, broken IP Payload Compression Protocol (IPcomp) support,
+has been fixed.
+
+While working on the fix, various problems had been identified:
+
+-   Problems with the IPcomp packet handling in IPsec.
+-   opencrypto compression handling and deflate implementation
+    limitations. These were debugged using DTrace SDT probes.
+-   Problems due to an outdated version of zlib used in some parts of
+    the network stack and by the opencrypto framework.
+
+Patches for all but the zlib support have been committed to 9.0-RELEASE
+and merged to all supported stable branches including 6-STABLE. Special
+thanks to Eugene Grosbein for helping with testing.
+
+Open tasks:
+
+1.  Fix ng_deflate so that we can make use of Kip Macy's work on an
+    up-to-date unified zlib version in the kernel, which would also fix
+    the last occasional IPcomp hiccups.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Ralink wireless RT2700U/2800U/3000U run(4) USB driver
+
+  ------------------------------------ ------------------------------------------------------
+  Links                                
+  Announcement on the FreeBSD Forums   URL: http://forums.FreeBSD.org/showthread.php?t=7562
+  ------------------------------------ ------------------------------------------------------
+
+Contact: Akinori Furukoshi <moonlightakkiy@yahoo.ca>
+
+The run(4) driver brings support for Ralink RT2700U/2800U/3000U USB
+wireless devices. For detailed information and list of all the supported
+devices, please see the above mentioned URL. The source code has been
+imported to the USB P4 repository on January 10, 2010 (172906).
+
+Open tasks:
+
+1.  Solve USB_TIMEOUT problem when sending beacons, and/or confirm which
+    chipsets supports AP mode if all of them do not support it.
+2.  Read TX stats for AMRR on AP mode, and/or confirm which chipsets
+    supports AP mode if all of them do not support it.
+3.  Maintain the code.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Syncing pf(4) with OpenBSD 4.5
+
+  -------------------------------- --------------------------------------------------------
+  Links                            
+  Viewing the changes.             URL: http://svn.FreeBSD.org/viewvc/base/user/eri/pf45/
+  The actual repo to build from.   URL: http://svn.FreeBSD.org/base/user/eri/pf45/head/
+  -------------------------------- --------------------------------------------------------
+
+Contact: Ermal LuÃ§i <eri@FreeBSD.org>
+
+This import is based on OpenBSD 4.5 state of pf(4). It includes many
+improvements over the code currently present in FreeBSD. The actual new
+feature present in pf45 repository is support for divert(4), which
+should allow tools like snort_inline to work with pf(4) too.
+
+Currently, the pf(4) import is considered stable with normal kernel, as
+well as VIMAGE enabled kernels.
+
+Open tasks:
+
+1.  pflow(4)/pflog(4)/pfsync(4) need to be made VIMAGE aware.
+2.  More regression testing is needed.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Wireless mesh networking
+
+  ------- ---------------------------------------
+  Links   
+          URL: http://wiki.FreeBSD.org/WifiMesh
+  ------- ---------------------------------------
+
+Contact: Rui Paulo <rpaulo@FreeBSD.org>
+
+Development of the FreeBSD 802.11s stack continues. The code in FreeBSD
+HEAD has been updated to comply with draft 4.0. Merge to FreeBSD
+8-STABLE will be done soon.
+
+The developer is looking for funding to be able to implement mesh link
+security algorithms and/or coordinated channel access (performance
+improvement).
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Kernel
+
+CAM-based ATA implementation
+
+Contact: Alexander Motin <mav@FreeBSD.org>
+Contact: Scott Long <scottl@FreeBSD.org>
+
+Existing ata(4) infrastructure, which has been around many years, has
+various problems and limitations when compared to modern
+controllers/device support. Although the CAM subsystem (used for SCSI)
+is almost as old as ata(4), it is more eligible to solve the current
+problems. To reduce code duplication and better support border cases
+such as ATAPI and SAS, we have started to develop a new CAM based ATA
+implementation.
+
+As such, CAM infrastructure has been extended to support different
+transports. New transport has been implemented to support PATA/SATA
+buses. To support ATA disks, a new CAM driver (ada) has been written.
+ATAPI devices are supported by existing SCSI drivers cd, da, sa, etc. To
+support SATA port-multipliers another new CAM driver (pmp) has been
+written. To support most featured and widespread SATA controllers, new
+drivers ahci(4) and siis(4) have been developed.
+
+To support legacy ATA controllers, a kernel option ATA_CAM has been
+added. When used, it makes all ata(4) controllers directly available to
+CAM, deprecating ata(4) peripheral drivers and external APIs. To make
+this possible, ata(4) code has been heavily refactored, making
+controller driver API stricter.
+
+Command queuing support gives new ATA implementation up to double
+performance benefit on some workloads, with 20-30% improvement quite
+usual.
+
+SATA Port Multiplier support makes it easy to build fast and cheap
+storage with huge capacities, by using dozens of SATA drives in one
+system or external enclosures,
+
+Some of that code has been presented in the recently released FreeBSD
+8.0-RELEASE but 8-STABLE now includes a much improved version.
+
+Open tasks:
+
+1.  Improve timeout and transport error recovery.
+2.  Improve hot-plug support.
+3.  Find and fix any show stoppers for legacy ata(4) deprecation.
+4.  Write a new, more featured driver for Marvell SATA controllers
+    (specifications desired).
+5.  Write SAS-specific transport and drivers for SAS HBAs
+    (specifications desired). SAS controllers can support SATA devices
+    and multipliers, so it should fit nicely into the new
+    infrastructure.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Group Limit Increase
+
+Contact: Brooks Davis <brooks@FreeBSD.org>
+
+Historically, FreeBSD has limited the number of supplemental groups per
+process to 15 (NGROUPS_MAX was incorrectly declared to be 16). In
+FreeBSD 8.0-RELEASE we raised the limit to 1023, which should be
+sufficient for most users and will be acceptably efficient for
+incorrectly written applications that statically allocate NGROUPS_MAX +
+1 entries.
+
+Because some systems such as Linux 2.6 support a larger group limit, we
+have further relaxed this restriction in 9.0-CURRENT and made
+kern.ngroups a tunable value, which supports values between 1023 and
+INT_MAX - 1. We plan to merge this to 8-STABLE before 8.1-RELEASE.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+NFSv4 ACL support
+
+  ------- -----------------------------------------
+  Links   
+          URL: http://wiki.FreeBSD.org/NFSv4_ACLs
+  ------- -----------------------------------------
+
+Contact: Edward Tomasz Napierala <trasz@FreeBSD.org>
+
+Native NFSv4 ACL support in ZFS and UFS has been committed into
+9.0-CURRENT. It is expected to be MFCed in order to make it into FreeBSD
+8.1-RELEASE.
+
+Open tasks:
+
+1.  Support for NFSv4 ACLs in tar(1).
+2.  MFC.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+V4L support in Linux emulator
+
+  ------- ------------------------------------------------
+  Links   
+          URL: http://opal.com/freebsd/sys/compat/linux/
+  ------- ------------------------------------------------
+
+Contact: J.R. Oldroyd <fbsd@opal.com>
+
+V4L video support in the Linux emulator is now available.
+
+This work allows Linux applications using V4L video calls to work with
+existing FreeBSD video drivers that provide V4L interfaces. It is tested
+and working with the net/skype port and also with browser-based Flash
+applications that access webcams. An early version has been committed to
+9.0-CURRENT and work is in progress to commit the latest version and
+then MFC. It is also tested on FreeBSD-8.0/amd64 and FreeBSD-7.2/i386.
+
+Note: to be clear, this does not add V4L support to all webcams. The
+FreeBSD camera driver must already offer V4L support itself in order for
+a Linux application to be able to use that camera. The multimedia/pwcbsd
+port provides the pwc(4) driver that already has V4L support. If your
+camera is supported by a different driver, you will need to enhance that
+driver to add V4L support.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Documentation
+
+The FreeBSD German Documentation Project
+
+  --------------------------------------- -----------------------------
+  Links                                   
+  German Documentation Project Homepage   URL: http://doc.bsdgroup.de
+  --------------------------------------- -----------------------------
+
+Contact: Johann Kois <jkois@FreeBSD.org>
+Contact: Benedict Reuschling <bcr@FreeBSD.org>
+Contact: Martin Wilke <miwi@FreeBSD.org>
+
+We are happy to announce that Benedict Reuschling is now free from
+mentorship and can commit to the documentation tree on his own.
+
+Since the last status report, the German Documentation Team has chased
+updates to various sections of the FreeBSD Handbook, FAQ and the German
+website. Many handbook pages have been updated to the latest version,
+including chapters about configuration, disks, kernel configuration,
+printing, multimedia and virtualization.
+
+We require help from volunteers that are willing to contribute bug fixes
+or translations. The following documents need active maintainership and
+are a good training ground for those willing to join the translation
+team:
+
+-   arch-handbook/jail/
+-   developers-handbook/I10n/
+-   developers-handbook/policies/
+-   developers-handbook/sockets/ (translation from scratch)
+-   handbook/firewalls/ (translation from scratch)
+-   handbook/security/
+-   porters-handbook/
+
+Open tasks:
+
+1.  Read the translations and report bugs to
+    de-bsd-translators@de.FreeBSD.org.
+2.  Translate articles or missing sections listed above.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+The FreeBSD Hungarian Documentation Project
+
+  ---------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------
+  Links                                                            
+  Hungarian Web Page for FreeBSD                                   URL: http://www.FreeBSD.org/hu/
+  Hungarian Documentation for FreeBSD                              URL: http://www.FreeBSD.org/doc/hu/
+  The FreeBSD Hungarian Documentation Project's Wiki Page          URL: http://wiki.FreeBSD.org/HungarianDocumentationProject
+  Perforce Depot for the FreeBSD Hungarian Documentation Project   URL: http://p4web.FreeBSD.org/@md=d&cd=//depot/projects/docproj_hu/&c=aXw@//depot/projects/docproj_hu/?ac=83
+  ---------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------
+
+Contact: Gábor Kövesdán <gabor@FreeBSD.org>
+Contact: Gábor Páli <pgj@FreeBSD.org>
+
+In the last months, no new translation has been added. Lacking human
+resources, we can only manage to keep the existing documentation and web
+page translations up to date. If you are interested in helping us,
+please contact us via the email addresses noted above.
+
+Open tasks:
+
+1.  Translate release notes.
+2.  Add more article translations.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+The FreeBSD Spanish Documentation Project
+
+  --------------------------------------------------- ---------------------------------------------------------
+  Links                                               
+  Introduction to the Spanish Documentation Project   URL: http://www.FreeBSD.org/doc/es/articles/fdp-es/
+  Translators' Mailing List                           URL: https://listas.es.FreeBSD.org/mailman/listinfo/doc
+  --------------------------------------------------- ---------------------------------------------------------
+
+Contact: Gábor Kövesdán <gabor@FreeBSD.org>
+
+There is one article translation pending review. Apart from this,
+neither translations nor maintenance work have been done. We need more
+volunteers, mostly translators but we are glad to have more reviewers,
+as well. One can join by simply subscribing to the translators' mailing
+list where all the work is done.
+
+Open tasks:
+
+1.  Update Handbook translation.
+2.  Update webpage translation.
+3.  Add more article translations.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Architectures
+
+Flattened Device Tree for embedded FreeBSD
+
+  -------------------- ---------------------------------------------------------------------------
+  Links                
+  Project wiki pages   URL: http://wiki.FreeBSD.org/FlattenedDeviceTree
+  Project P4 branch    URL: http://p4db.FreeBSD.org/changeList.cgi?FSPC=//depot/projects/fdt/...
+  -------------------- ---------------------------------------------------------------------------
+
+Contact: Rafal Jaworowski <raj@semihalf.com>
+
+The purpose of this project is to provide FreeBSD with support for the
+Flattened Device Tree (FDT) technology, the mechanism for describing
+computer hardware resources, which cannot be probed or self enumerated,
+in a uniform and portable way. The primary consumers of this technology
+are embedded FreeBSD platforms (ARM, AVR32, MIPS, PowerPC), where a lot
+of designs are based on similar chips but have different assignment of
+pins, memory layout, addresses bindings, interrupts routing and other
+resources.
+
+Current state highlights:
+
+-   Environment, supported tools
+
+-   -   Integrated device tree compiler (dtc) and libfdt into FreeBSD
+        userspace, kernel and loader build
+
+-   loader(8)
+
+-   -   Full support for device tree blob handling
+    -   Load, traverse, modify (including add/remove) device tree nodes
+        and properties
+    -   Pass the device tree blob to the kernel
+    -   Both ARM and PowerPC loader(8) supported
+
+-   Kernel side FDT support (common)
+
+-   -   Developed OF interface for FDT-backed platforms
+    -   ofw_bus I/F (and /dev/openfirm) available with FDT
+    -   Integrated FDT resources representation with newbus (fdtbus and
+        simplebus drivers)
+
+-   PowerPC kernel (Freescale MPC85XX SOC)
+
+-   -   MPC8555CDS and MPC8572DS successfully converted to FDT
+        conventions
+
+-   ARM kernel (Marvell Orion, Kirkwood and Discovery SOC)
+
+-   -   Work in progress on integrating FDT infrastructure with ARM
+        platform code
+
+Work on this project has been sponsored by the FreeBSD Foundation.
+
+Open tasks:
+
+1.  Complete missing pieces for PowerPC (PCI bridge driver conversion to
+    FDT).
+2.  Complete ARM support.
+3.  Merge to SVN.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD/ia64
+
+Contact: Marcel Moolenaar <marcel@FreeBSD.org>
+
+Work continues on our ia64 port. Many recent commits to help improve
+stability have been made to 9.0-CURRENT and MFCed to 8-STABLE.
+
+Due to interest from a very motivated user, package builds have been
+restarted for ia64-8. This is primarily intended as a QA step to
+discover and fix bugs on ia64, rather than to create packages for
+upload.
+
+Based on the above, Mark Linimon documented how to add more
+architectures to the package cluster scheduler. (This work will also be
+of use in an upcoming effort to start powerpc package builds.)
+
+There are currently 3 ia64 machines online and building packages. The
+machines seem stable as long as multiple simultaneous package builds are
+not attempted, in which case they get machine checks. This is puzzling,
+since other heavy workloads seem stable on the same machines.
+
+Open tasks:
+
+1.  Continue to try to understand why multiple simultaneous package
+    builds bring the machines down.
+2.  Upgrade the firmware on the two machines at Yahoo! to see if that
+    helps the problem.
+3.  Configure a fourth machine that has been made available to us.
+4.  Figure out the problems with the latest GCC port on ia64.
+5.  We can use some help with reviewing the ia64 platform pages and
+    bringing them up-to-date.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD/mips
+
+  ------- ------------------------------------------------------
+  Links   
+          URL: http://www.FreeBSD.org/projects/mips/index.html
+          URL: http://wiki.FreeBSD.org/FreeBSD/mips
+  ------- ------------------------------------------------------
+
+Contact: The FreeBSD/mips mailing list <mips@FreeBSD.org>
+Contact: Warner Losh <imp@FreeBSD.org>
+
+The base/projects/mips branch has been merged into 9.0-CURRENT. The
+merge is complete and the sanity tests have passed. The code has booted
+on both a Ubiquiti RouterStation (big endian) as well as in gxemul
+(little endian).
+
+The branch lived for one year, minus a day, and accumulated much work:
+
+-   A new port to the Atheros AR71xx series of processors. This port
+    supports the RouterStation and RouterStation PRO boards from
+    Ubiquiti. Other boards should work with minimal tweaking. This port
+    should be considered as nearing production quality, and has been
+    used extensively by the developers. The primary author of this port
+    is Oleksandr Tymoshenko (gonzo@FreeBSD.org).
+-   A new port to the SiByte BCM1250 SoC on the BCM91250 evaluation
+    board (aka SWARM). This port is reported to be stable, but this
+    hardware is a little old and not widely available. The primary
+    author of this port is Neel Natu (neel@FreeBSD.org). Only one core
+    is presently supported.
+-   A port, donated by Cavium, to their Octeon and Octeon plus series of
+    SoC (CN3xxx and CN5xxx). This code is preliminary, supporting only a
+    single core right now. It has been lightly tested on the CN3860
+    evaluation board only in 32-bit mode. Warner Losh (imp@FreeBSD.org)
+    has been driving the efforts to get this code into the tree.
+-   A port, donated by RMI, to their XLR series of SoCs. This port is
+    single core only, as well. The code reaches multi-user but should be
+    considered beta quality for the moment. Randal Stewart
+    (rrs@FreeBSD.org) has been driving the efforts to integrate this
+    into the tree.
+-   Preliminary support for building a mips64 kernel from this source
+    base. More work is needed here, but at least two kernels
+    successfully build in 64-bit mode (OCTEON1 and MALTA64).
+-   Very early support for N32 and N64 ABIs
+-   Support for booting compressed kernels has been added (gonzo@).
+-   Improved support for debugging
+-   Improved busdma and bus_space support
+-   Many bug fixes
+-   More types of MIPS cores are recognized
+-   Expanded cache handling for newer processors
+-   Beginning of a port to the alchemy au1XXX cpus is present, but
+    experimental.
+-   Work on SMP is underway to support multicore processors like the
+    SiByte, Octeon and XLR processors.
+
+The development branch had been updated incorrectly several times over
+the past year, and the damage was too much to repair. We have retired
+the branch and will do further mips development in 9.0-CURRENT for the
+time being. If you have a checked out tree, the suggested way to update
+the projects/mips tree you have is to do a "svn switch
+svn://svn.FreeBSD.org/base/head" in that tree.
+
+I would like to thank everybody that has contributed time, code or
+hardware to make FreeBSD/mips better.
+
+As development proceeds, I will keep posting updates. In addition, I
+hope to have some mini "how-to" wiki pages done for people that want to
+try it out.
+
+Open tasks:
+
+1.  We are still investigating how feasible merging all this work into
+    8-STABLE will be, as it represents a huge leap forward in code
+    stability and quality.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD/sparc64
+
+Contact: Marius Strobl <marius@FreeBSD.org>
+
+The main thing that has taken place since the last Status Report is that
+I have gotten to the bottom of the remaining PCI problems with Sun Fire
+V215/V245 and support for these has been completed and since r202023 now
+is part of 9.0-CURRENT. With some luck it will also be part of the
+upcoming 7.3-RELEASE.
+
+Some other news:
+
+-   Two bugs in the NFS server causing unaligned access and thus panics
+    on sparc64 and all other architectures with strict alignment
+    requirements (basically all Tier-2 ones) have been fixed. There
+    likely will be a 8.0-RELEASE Erratum Notice released for these.
+-   FreeBSD has been adopted to the changed firmware of newer Sun Fire
+    V480 (those equipped with version 7 Schizo bridges) and has been
+    reported to now run fine on these. The necessary change will be part
+    of 7.3-RELEASE. Unfortunately, using the on-board NICs in older
+    models of Sun Fire V480 (at least those equipped with version 4
+    Schizo bridges) under FreeBSD still leads to the firmware issuing a
+    FATAL RESET due to what appears to be a CPU bug, which needs to be
+    worked around.
+-   Work on supporting Sun Fire V1280 has been started but still is in
+    very early stages. Unfortunately, these are rather quirky machines.
+    After solving two firmware specialties the loader now is able to
+    boot the kernel but the latter currently still fails in early cycles
+    as trying to take the trap table over from the firmware results in a
+    solid hang.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Ports
+
+Chromium web browser
+
+  ------------------------------- ----------------------------------
+  Links                           
+  test builds and port progress   URL: http://chromium.jaggeri.com
+  first build information         URL: http://www.links.org/?p=724
+  ------------------------------- ----------------------------------
+
+Contact: Ben Laurie <ben@links.org>
+
+Chromium is a Webkit-based web browser that is largely BSD licensed. It
+has been ported from Linux to FreeBSD in October and we have been
+posting patches and test builds periodically since then. Chromium works
+well on FreeBSD — it is very fast and stable but there are a handful of
+rough edges that need to be polished up. Two remaining bugs should
+probably be fixed before releasing a chromium-devel port. We are looking
+for volunteers to test and maintain this port to make this BSD browser a
+viable option on FreeBSD desktop systems.
+
+Open tasks:
+
+1.  Fix sporadic rendering freezes.
+2.  Fix JavaScript interpreter, v8, on i386 architecture.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Ports Collection
+
+  ---------------------------------------------- ------------------------------------------------------------------------------
+  Links                                          
+  The FreeBSD Ports Collection                   URL: http://www.FreeBSD.org/ports/
+  Contributing to the FreeBSD Ports Collection   URL: http://www.FreeBSD.org/doc/en_US.ISO8859-1/articles/contributing-ports/
+  FreeBSD ports monitoring system                URL: http://portsmon.FreeBSD.org/index.html
+  The FreeBSD Ports Management Team              URL: http://www.FreeBSD.org/portmgr/index.html
+  marcuscom Tinderbox                            URL: http://tinderbox.marcuscom.com
+  ---------------------------------------------- ------------------------------------------------------------------------------
+
+Contact: Mark Linimon <linimon@FreeBSD.org>
+
+Most of the recent activity has been dealing with the 8.0-RELEASE
+process. As an experiment, we have tried to decouple the ports QA
+timeline as much as possible from the src QA timeline. Although this
+meant that the impact on people actively maintaining and using ports has
+been much less than in previous releases, it still has not solved the
+problem of the release going out with a stale set of packages. We are
+still trying to come up with a better solution for the problem.
+
+The ports count is over 21,000. The PR count jumped to over 1,000 but is
+now back to around 950.
+
+We are currently building packages for amd64-6, amd64-7, amd64-8,
+i386-6, i386-7, i386-8, i386-9, ia64-8, sparc64-7, and sparc64-8. This
+represents the addition of i386-9 and ia64-8 since the last report.
+
+There has been some discussion of when to drop regular package builds
+for 6.X but no decision has been made yet. The cluster and the port
+managers are struggling to keep up with so many branches being active
+all at the same time.
+
+Mark Linimon continues to make progress on the cluster nodes. Almost
+every node that does not have a hard disk failure is now online. In
+addition, he continues to make progress debugging problems that
+occasionally take nodes offline.
+
+The next task is to characterize the overall performance of the build
+cluster. The question has been asked of us, "what would it take to speed
+up package builds?" There is no one simple answer. It is not merely a
+matter of having a larger number of package building machines, so before
+asking for funding we first need to identify the current bottlenecks.
+While we are starting to understand the problems on the nodes, the
+problems on the dispatch machine itself are much harder. Complicating
+the matter is that there are several periodic processes (ZFS backup, ZFS
+expiration, and errorlog compression, among others) that can combine to
+slow that machine significantly. The simultaneous interaction of all
+these is proving difficult to quantify.
+
+Between Pav Lucistnik and Martin Wilke, many more experimental ports
+runs have been completed and committed.
+
+We have added 3 new committers since the last report, and 1 older one
+has rejoined us.
+
+Open tasks:
+
+1.  We are still trying to set up ports tinderboxes that can be made
+    available to committers for pre-testing.
+2.  Most of the remaining ports PRs are "existing port/PR assigned to
+    committer". Although the maintainer-timeout policy is helping to
+    keep the backlog down, we are going to need to do more to get the
+    ports in the shape they really need to be in.
+3.  Although we have added many maintainers, we still have more than
+    4,700 unmaintained ports. (See, for instance, the list on portsmon.
+    The percentage remains steady at just over 22%.) We are always
+    looking for dedicated volunteers to adopt at least a few
+    unmaintained ports. As well, the packages on amd64 and especially
+    sparc64 lag behind i386, and we need more testers for those.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+VirtualBox on FreeBSD
+
+  ------- -----------------------------------------
+  Links   
+          URL: http://wiki.FreeBSD.org/VirtualBox
+  ------- -----------------------------------------
+
+Contact: Beat Gaetzi <beat@FreeBSD.org>
+Contact: Bernhard Froehlich <decke@bluelife.at>
+Contact: Juergen Lock <nox@FreeBSD.org>
+Contact: Martin Wilke <miwi@FreeBSD.org>
+
+VirtualBox 3.1.2 has been committed to the ports tree.
+
+Several changes to the port have been performed with this update
+including:
+
+-   Port has been renamed to virtualbox-ose to reflect that we are now
+    using the OSE version.
+-   A separate port for the kernel modules has been created —
+    virtualbox-ose-kmod.
+-   A separate port for guest additions for FreeBSD guests has been
+    created — virtualbox-ose-additions.
+-   Proper FreeBSD support for PulseAudio has been added.
+-   Procfs is not required anymore because vbox uses sysctl(3) now.
+-   Juergen Lock's FreeBSD host networking patches have been added. They
+    are now also in the upstream vbox SVN (modulo vbox variable naming
+    style adjustments).
+-   Allow direct tap networking again (for users that need the best
+    network performance and/or need more complex network setups, like
+    when they want to use routing instead of bridging to e.g. protect
+    guests from messing with the lan's ARP tables; a tap + routing +
+    proxy arp example is in the above freebsd-emulation@ posting.)
+-   Enable vbox's shared MAC feature when using bridged mode on a Wifi
+    interface, together with the virtualbox-ose-kmod change this should
+    fix bridged mode for Wifi users.
+
+We would like to say thanks to all the people that helped us by
+reporting bugs and submitting fixes. We also thank the VirtualBox
+developers for their help with the ongoing effort to port VirtualBox to
+FreeBSD
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Vendor / 3rd Party Software
+
+DAHDI (Zaptel) support for FreeBSD
+
+  ----------------------- ------------------------------------------------------------------------------
+  Links                   
+  Official Announcement   URL: http://www.mail-archive.com/asterisk-dev@lists.digium.com/msg39598.html
+  SVN repository          URL: http://svn.digium.com/svn/dahdi/freebsd/trunk/
+  ----------------------- ------------------------------------------------------------------------------
+
+Contact: Max Khon <fjoe@FreeBSD.org>
+
+A DAHDI support module for FreeBSD has been created in the official
+Asterisk SVN repository.
+
+The following drivers are currently ported:
+
+-   main DAHDI driver
+-   all software echo cancellation drivers
+-   dahdi_dynamic
+-   dahdi_dynamic_loc
+
+The following HW drivers are currently ported and tested:
+
+-   wct4xxp, including HW echo cancellation support (Octasic)
+
+-   -   Digium TE205P/TE207P/TE210P/TE212P: PCI dual-port T1/E1/J1
+    -   Digium TE405P/TE407P/TE410P/TE412P: PCI quad-port T1/E1/J1
+    -   Digium TE220: PCI-Express dual-port T1/E1/J1
+    -   Digium TE420: PCI-Express quad-port T1/E1/J1
+
+-   wcb4xxp
+
+-   -   Digium B410: PCI quad-port BRI
+    -   Junghanns.NET HFC-2S/4S/8S duo/quad/octoBRI
+    -   OpenVox B200P/B400P/B800P
+    -   BeroNet BN2S0/BN4S0/BN8S0
+
+Open tasks:
+
+1.  The port for dahdi_dynamic_eth and dahdi_dynamic_ethmf is underway.
+2.  More HW drivers need to be ported.
+3.  Please let me know if you can provide remote access with serial
+    console to any box with ISDN/T1/E1 HW not currently supported by
+    DAHDI for FreeBSD but supported by DAHDI for Linux. I am also
+    interested in porting drivers for FXO/FXS cards. Please let me know
+    if you can provide a remote access or donate a card.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+NVIDIA amd64 driver
+
+  ---------------------- --------------------------------------------------------------
+  Links                  
+  Release Announcement   URL: http://www.nvnews.net/vbulletin/showthread.php?t=142120
+  ---------------------- --------------------------------------------------------------
+
+Contact: John Baldwin <jhb@FreeBSD.org>
+
+NVIDIA has released the first BETA version of its graphics drivers for
+FreeBSD/amd64. Note that this driver will work on FreeBSD versions
+7.3-RELEASE or 8.0-RELEASE and later. It also works on very recent
+versions of 7.2-STABLE. More details are provided in the official
+release announcement.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Miscellaneous
+
+AsiaBSDCon 2010 — The BSD Conference
+
+  ------- ----------------------------------
+  Links   
+          URL: http://2010.AsiaBSDCon.org/
+  ------- ----------------------------------
+
+Contact: AsiaBSDCon Information <secretary@AsiaBSDCon.org>
+
+AsiaBSDCon is a conference for users and developers on BSD based
+systems. AsiaBSDCon is a technical conference and aims to collect the
+best technical papers and presentations available to ensure that the
+latest developments in our open source community are shared with the
+widest possible audience. The conference is for anyone developing,
+deploying and using systems based on FreeBSD, NetBSD, OpenBSD,
+DragonFlyBSD, Darwin and MacOS X.
+
+The next conference will be held at the Tokyo University of Science,
+Tokyo, Japan, on 11th to 14th March, 2010.
+
+For more detailed information, please check the conference web site.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+BSDCan 2010 — The BSD Conference
+
+  ------- ----------------------------------
+  Links   
+          URL: http://www.BSDCan.org/2010/
+  ------- ----------------------------------
+
+Contact: BSDCan Information <info@BSDCan.org>
+
+BSDCan, a BSD conference held in Ottawa, Canada, has quickly established
+itself as the technical conference for people working on and with 4.4BSD
+based operating systems and related projects. The organizers have found
+a fantastic formula that appeals to a wide range of people from extreme
+novices to advanced developers.
+
+BSDCan 2010 will be held on 13-14 May 2010 at the University of Ottawa,
+and will be preceded by two days of Tutorials on 11-12 May 2010.
+
+There will be related events (of a social nature, for the most part) on
+the day before and after the conference.
+
+Please check the conference web site for more information.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+meetBSD 2010 — The BSD Conference
+
+  ------- -----------------------------
+  Links   
+          URL: http://www.meetBSD.org
+  ------- -----------------------------
+
+Contact: meetBSD Information <info@meetBSD.org>
+
+The meetBSD conference is an annual event gathering users and developers
+of the BSD operating system family, mostly FreeBSD, NetBSD and OpenBSD.
+Afer the special California edition, meetBSD Wintercamp in Livigno, this
+year we are back to Krakow, Poland.
+
+In 2010, meetBSD will be held on 2-3 July at the Jagiellonian
+University.
+
+See the conference main web site for more details.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+The FreeBSD Forums
+
+  ------- ---------------------------------
+  Links   
+          URL: http://forums.FreeBSD.org/
+  ------- ---------------------------------
+
+Contact: FreeBSD Forums Admins <forum-admins@FreeBSD.org>
+Contact: FreeBSD Forums Moderators <forum-moderators@FreeBSD.org>
+
+Since the last report we have seen a growth of 2,000 users on our forums
+resulting in approximately 10,000 registered users at this time. The
+posts count is about to reach 60,000 soon, which are contained in almost
+9,000 threads.
+
+The sign-up rate still hovers between 50-100 each week. The total number
+of visitors (including 'guests') is currently hard to gauge, but is
+likely to be a substantial multiple of the registered userbase.
+
+New topics and posts are actively 'pushed out' to search engines. This
+in turn makes the forums show up in search results more and more often,
+making it a valuable and very accessible source of information for the
+FreeBSD community.
+
+One of the contributing factors to the forums' success is their
+'BSD-style' approach when it comes to administration and moderation. The
+forums have a strong and unified identity and are very actively
+moderated, spam-free, and with a core group of very active and helpful
+members, dispensing many combined decades' worth of knowledge to
+starting, intermediate and professional users of FreeBSD.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Userland utilities
+
+BSD-licensed text processing tools
+
+  --------------------- ------------------------------------------------------------------------------------------------
+  Links                 
+  Perforce repository   URL: http://p4db.FreeBSD.org/depotTreeBrowser.cgi?FSPC=//depot/projects/soc2008/gabor_textproc
+  --------------------- ------------------------------------------------------------------------------------------------
+
+Contact: Gábor Kövesdán <gabor@FreeBSD.org>
+
+As 8.0-RELEASE is out, BSD bc/dc can be now committed to 9.0-CURRENT. We
+are only waiting for an experimental package building to make sure there
+are no regressions after this change. BSD grep is complete but it cannot
+be integrated yet because of some regex library issues. We need first a
+fast and modern regex library so that we can change to BSD grep. BSD
+sort has few incomplete features and needs some performance review.
+
+Open tasks:
+
+1.  Commit BSD bc/dc.
+2.  Implement remaining features for sort and optimize performance.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+News Home | Status Home
+
+Site Map | Legal Notices | © 1995–2021 The FreeBSD Project. All rights
+reserved.

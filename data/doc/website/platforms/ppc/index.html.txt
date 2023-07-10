@@ -1,0 +1,376 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   
+-   Developer's Handbook
+-   Committer's Guide
+-   Porter's Handbook
+-   Source code repositories
+-   Release Engineering
+-   Platforms
+-   Project Ideas
+-   Contributing
+
+FreeBSD/ppc Project
+
+Introduction
+
+The FreeBSD/ppc project pages contain information about the FreeBSD port
+to the PowerPC® architecture. As with the port itself, these pages are
+still a work in progress.
+
+Table Of Contents
+
+-   Status
+
+-   Latest News
+
+-   Port FAQs
+
+-   Supported Hardware
+
+-   FreeBSD/ppc mailing list
+
+-   Known Issues
+
+-   Documentation, White Papers, Utilities
+
+-   Other links of interest
+
+Status
+
+The FreeBSD/ppc port is still a Tier 2 platform. That means it is not
+being fully supported by our security officer, release engineers and
+toolchain maintainers. However, it is supported by portmgr (package
+building).
+
+The most up-to-date information about supported hardware is currently
+being maintained on the wiki.
+
+------------------------------------------------------------------------
+
+Latest News
+
+-   13 Apr, 2021: FreeBSD 13.0 was released introducing new target
+    powerpc64le and LLVM as main compiler. Supports disk, network and
+    video controller drivers for modern POWER machines from Raptor
+    Computing (Blackbird and Talos II) and IBM (LC922 and IC922).
+    Release Notes
+
+-   22 Sep, 2020: new target powerpc64le (64-bit little endian) was
+    introduced targetting POWER8 and newer processors.
+
+-   29 Dec, 2019: Release 13.0 for powerpc, powerpcspe and powerpc64
+    targets will replace GCC4 by LLVM compiler and powerpc64 will use
+    the modern OpenPower 64-Bit ELF V2 ABI Specification.
+
+-   05 May, 2019: FreeBSD has been tested and seems to work on the
+    Raptor Blackbird.
+
+------------------------------------------------------------------------
+
+Frequently Asked Questions
+
+1.  How can I install FreeBSD/ppc
+
+2.  How to use ports on FreeBSD/ppc?
+
+3.  Should I install powerpc, powerpcspe, powerpc64 or powerpc64le?
+
+4.  Who should I contact?
+
+How can I install FreeBSD/ppc?
+
+ISO images of FreeBSD 13.0 are available for download, for details on
+how to obtain these see the release announcement. FreeBSD 12.x is not
+being maintained regularly and its use is strongly discouraged. ABI
+changes makes 12.x binary-incompatible with 13.x and later.
+
+How to use ports on FreeBSD/ppc?
+
+Refer to the Handbook: use the Ports Collection.
+
+Should I install powerpc, powerpcspe, powerpc64 or powerpc64le?
+
+-   64-bit
+
+    -   Users of 64-bit bi-endian CPUs POWER8 and POWER9: can choose
+        between FreeBSD/powerpc64 and FreeBSD/powerpc64le (big endian
+        and little endian, respectively). The FreeBSD/powerpc64 (big
+        endian) also supports running 32-bit binaries nativelly like
+        other 64-bit platforms.
+
+    -   Users of 64-bit big endian CPUs Apple G5 and POWER7:
+        FreeBSD/powerpc64 should be installed. Apple G5 users also have
+        a choice of using the 32-bit FreeBSD/powerpc but
+        FreeBSD/powerpc64 provides ZFS support and the ability of use
+        more than 2 GB of RAM.
+
+-   32-bit
+
+    -   Users of 32-bit CPUs Apple G3/G4: should use FreeBSD/powerpc
+
+    -   Users of 32-bit CPUs Freescale MPC85XX (Routerboard RB800) and
+        NXP QorIQ P1022 (AmigaOne A1222): should use FreeBSD/powerpcspe
+
+Who should I contact?
+
+The FreeBSD/ppc mailing list is the main resource.
+
+------------------------------------------------------------------------
+
+Supported Hardware
+
+The most up-to-date information about supported hardware is currently
+being maintained on the wiki.
+
+The FreeBSD/ppc port should run on any New-World Apple machine (any
+Apple machine with a built-in USB port), as well as the Sony Playstation
+3. FreeBSD/ppc port should also run on QEMU. Details can be found on
+powerpc/QEMU wiki.
+
+People have previously reported that FreeBSD runs on the following
+machines:
+
++----------+----------+----------+----------+----------+-----------+
+| Manu     | Model    | S        | Release  | Arch     | Notes     |
+| facturer |          | ubmitter |          |          |           |
+|          |          | (        |          |          |           |
+|          |          | optional |          |          |           |
+|          |          | links)   |          |          |           |
++==========+==========+==========+==========+==========+===========+
+| A-EON    | AmigaONE | Justin   | FreeBSD  | po       |           |
+|          | A1222    | Hibbits  | 13.0     | werpcspe |           |
++----------+----------+----------+----------+----------+-----------+
+| A-EON    | AmigaONE | Justin   | FreeBSD  | p        |           |
+|          | X5000    | Hibbits  | 13.0     | owerpc64 |           |
++----------+----------+----------+----------+----------+-----------+
+| Apple    | iMac G3  | Martin   |          |          | Rage      |
+|          | 350 MHz  | Minkus   |          |          | 128VR     |
++----------+----------+----------+----------+----------+-----------+
+| Apple    | iMac G3  | David S. |          |          | None      |
+|          | DV       | Besade   |          |          |           |
+|          | Special  | (dmesg)  |          |          |           |
+|          | Edition  |          |          |          |           |
++----------+----------+----------+----------+----------+-----------+
+| Apple    | iMac G3  | Peter    |          |          | Rage 3D   |
+|          | Revision | Grehan   |          |          | Pro       |
+|          | B        |          |          |          | 215GP,    |
+|          |          |          |          |          | accel     |
+|          |          |          |          |          | disabled  |
++----------+----------+----------+----------+----------+-----------+
+| Apple    | eMac 700 | Peter    |          |          | Nvidia    |
+|          | MHz      | Grehan   |          |          | GeForce2  |
+|          |          |          |          |          | MX        |
++----------+----------+----------+----------+----------+-----------+
+| Apple    | Mac Mini | Tilman   |          |          | None      |
+|          | G4 1.4   | Linneweh |          |          |           |
+|          | GHz      | (dmesg)  |          |          |           |
++----------+----------+----------+----------+----------+-----------+
+| Apple    | P        | Peter    |          |          | Nvidia    |
+|          | owerbook | Grehan   |          |          | GeForce   |
+|          | G4 1.33  |          |          |          | G5200     |
+|          | GHz      |          |          |          |           |
++----------+----------+----------+----------+----------+-----------+
+| Apple    | A        | Andreas  |          |          | None      |
+|          | luminium | Tobler   |          |          |           |
+|          | P        |          |          |          |           |
+|          | owerbook |          |          |          |           |
+|          | G4 1.5   |          |          |          |           |
+|          | GHz      |          |          |          |           |
++----------+----------+----------+----------+----------+-----------+
+| Apple    | PowerMac |          | FreeBSD  |          |           |
+|          | G5       |          | 8.0      |          |           |
++----------+----------+----------+----------+----------+-----------+
+| Apple    | iMac G5  |          | FreeBSD  |          |           |
+|          |          |          | 8.0      |          |           |
++----------+----------+----------+----------+----------+-----------+
+| Apple    | Xserve   |          | FreeBSD  |          |           |
+|          | G5       |          | 8.1      |          |           |
++----------+----------+----------+----------+----------+-----------+
+| Apple    | PowerMac |          | FreeBSD  |          |           |
+|          | G5 (late |          | 8.1      |          |           |
+|          | 2005)    |          |          |          |           |
++----------+----------+----------+----------+----------+-----------+
+| IBM      | Power    | Leandro  | FreeBSD  | po       |           |
+|          | System   | Lupori   | 13.0     | werpc64, |           |
+|          | S812L /  |          |          | pow      |           |
+|          | 8247-21L |          |          | erpc64le |           |
+|          | (POWER8) |          |          |          |           |
++----------+----------+----------+----------+----------+-----------+
+| IBM      | Power    | Alfredo  | FreeBSD  | po       |           |
+|          | System   | Dal’Ava  | 13.0     | werpc64, |           |
+|          | LC922    | Júnior   |          | pow      |           |
+|          | (POWER9) |          |          | erpc64le |           |
++----------+----------+----------+----------+----------+-----------+
+| IBM      | Power    | Alfredo  | FreeBSD  | po       | verified  |
+|          | System   | Dal’Ava  | 13.0     | werpc64, | with 1.5  |
+|          | IC922    | Júnior   |          | pow      | TB of RAM |
+|          | (POWER9) |          |          | erpc64le |           |
++----------+----------+----------+----------+----------+-----------+
+| MikroTik | Rou      | Justin   | FreeBSD  | po       |           |
+|          | terboard | Hibbits  | 13.0     | werpcspe |           |
+|          | RB800    |          |          |          |           |
++----------+----------+----------+----------+----------+-----------+
+| Raptor   | B        | Alfredo  | FreeBSD  | po       | Firmware  |
+| CS       | lackbird | Dal’Ava  | 13.0     | werpc64, | v2.00,    |
+|          | Secure   | Júnior   |          | pow      | onboard   |
+|          | Desktop  |          |          | erpc64le | HDMI      |
+|          | (POWER9) |          |          |          |           |
++----------+----------+----------+----------+----------+-----------+
+| Raptor   | Talos II | Leandro  | FreeBSD  | po       | Firmware  |
+| CS       | Desktop  | Lupori   | 13.0     | werpc64, | v2.00,    |
+|          | Dev      |          |          | pow      | onboard   |
+|          | elopment |          |          | erpc64le | VGA       |
+|          | System   |          |          |          |           |
+|          | (POWER9) |          |          |          |           |
++----------+----------+----------+----------+----------+-----------+
+| Raptor   | Talos II | Andre    | FreeBSD  | po       | Firmware  |
+| CS       | 2U Rack  | Silva    | 13.0     | werpc64, | v2.00     |
+|          | Mount    |          |          | pow      |           |
+|          | Server   |          |          | erpc64le |           |
+|          | (POWER9) |          |          |          |           |
++----------+----------+----------+----------+----------+-----------+
+
+------------------------------------------------------------------------
+
+FreeBSD/ppc mailing list
+
+To subscribe to this list, send an email to
+<freebsd-ppc+subscribe@FreeBSD.org> or visit the mlmmj interface.
+
+------------------------------------------------------------------------
+
+Known Issues
+
+-   Raptor CS Blackbird and Talos II: recent firmware versions don’t
+    report the onboard video framebuffer memory address on the device
+    tree anymore. The workaround is append the content below to the
+    kernel arguments during boot or set it permanently in
+    /boot/etc/kboot.conf: :
+
+        hw.ofwfb.physaddr=0x000600c280000000
+
+    Note: FreeBSD 13.1, yet to be released, detects the memory address
+    automatically using an alternative method
+
+-   IBM POWER8 and POWER9: As of 2021-11-30 the firmware of IBM POWER9
+    and some IBM POWER8 machines contain a version of kexec-lite with a
+    regression that computes FreeBSD kernel entry point erroneously.
+    Workaround: on petitboot console download http://drop.rtk0.net/kexec
+    and use it manually to load the kernel instead. Thanks Brandon
+    Bergren for making the fixed binary available.
+
+-   On New-World Apples, there is a known bug in the boot-loader, that
+    prevents you from loading an alternate kernel, so testing your
+    kernel is a bit risky. When booting the loader from the Open
+    Firmware prompt, give it a partition which is either non-existent,
+    doesn’t have a kernel to load, or isn’t a UFS partition:
+
+        0 > boot hd:loader hd:0
+
+    At this point, you can set currdev and manually load a kernel:
+
+        OK set currdev="hd":14
+        OK load /boot/kernel/kernel.save
+
+------------------------------------------------------------------------
+
+Documentation, White Papers, Utilities
+
+-   PowerPC 32-bit chip documentation
+
+-   Open Firmware Quick Reference
+
+-   "TN1061: Fundamentals of Open Firmware, Part 1 - The User Interface"
+
+-   "TN1062: Fundamentals of Open Firmware, Part 2 - The Device Tree"
+
+-   Apple hardware developer docs
+
+-   "TN2004: Debugging Open Firmware Using Telnet"
+
+-   "TN2023: Open Firmware Ethernet Debugging II - Telnet Downloading"
+
+-   "TN2001: Running Files from a Hard Drive in Open Firmware"
+
+-   "64-Bit ELF V2 ABI Specification"
+
+Other Links of Interest
+
+-   FreeBSD/ppc wiki page
+
+-   Garance A. Drosehn’s description about FreeBSD on the Mac Mini
+
+-   NetBSD/macppc
+
+-   OpenBSD/macppc
+
+------------------------------------------------------------------------
+
+Last modified on: December 13, 2021 by Alfredo Dal'Ava Junior
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

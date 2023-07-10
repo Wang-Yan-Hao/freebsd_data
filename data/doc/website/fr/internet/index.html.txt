@@ -1,0 +1,208 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   A propos
+-   Fonctionnalités
+-   Applications
+-   Prosélytisme
+-   Marketing
+-   Administration
+-   Nouvelles du projet
+-   Événements
+-   Presse
+-   Ressources artistiques
+-   Logo
+-   Donations
+-   Legal Notices
+-   Politique de confidentialité
+
+FreeBSD et Internet
+
+FreeBSD a été conçu pour l’Internet
+
+FreeBSD inclus ce que beaucoup considère comme la référence en ce qui
+concerne l’implémentation du protocole TCP/IP, la pile TCP/IP de 4.4
+BSD. Cela fait de FreeBSD le système d’exploitation idéal pour les
+applications réseaux et Internet. FreeBSD 7.0 inclus également
+l’implémentation de référence du protocole SCTP faisant ainsi de FreeBSD
+une plate-forme idéale pour la téléphonie et autres applications de
+diffusion de données.
+
+FreeBSD supporte tous les protocoles standards TCP/IP.
+
+Comme la plupart des systèmes UNIX®, FreeBSD vous permet de
+
+-   Fournir via HTTP du contenu web statique ou dynamique
+
+-   Partager des systèmes de fichiers grâce à NFS
+
+-   Distribuer des informations réseaux avec NIS
+
+-   Gérer et fournir un service de messagerie via SMTP, IMAP et POP3
+
+-   Supporter la connexion à distance sur SSH et rsh
+
+-   Faire de la configuration et de la gestion de systèmes à distance
+    via SNMP
+
+-   Mettre en place un serveur de fichiers avec FTP
+
+-   Résoudre des noms d’hôtes Internet avec DNS/BIND
+
+-   Rediriger des paquets entre différentes interfaces, y compris des
+    lignes PPP et SLIP
+
+-   Utiliser les services IP Multicast (MBONE)
+
+-   Fournir des services sur IPv6
+
+FreeBSD permet de transformer votre PC en serveur Web, serveur de
+messagerie ou encore en relais de news Usenet grâce à de nombreux
+logiciels inclus dans la distribution. Avec SAMBA vous pourrez même
+partager fichiers et imprimantes avec vos machines Microsoft® Windows®,
+avec le serveur d’authentification PCNFS vous permettra également de
+gérer les machines utilisant PC/NFS. FreeBSD supporte aussi Appletalk
+ainsi que les réseaux Novell client/serveur (en utilisant un logiciel
+commercial optionnel), faisant de FreeBSD une véritable solution pour
+l’Intranet.
+
+FreeBSD gère aussi les extensions TCP comme par exemple l’extension
+haute performance RFC-1323, plus le SLIP et la numérotation PPP "sur
+demande". C’est un système d’exploitation qui conviendra aussi bien à un
+particulier désirant un accès performant à Internet qu’à un
+administrateur réseau en entreprise.
+
+Les fonctions réseaux de FreeBSD sont stables et rapides.
+
+Si vous avez besoin d’une plate-forme pour serveur Internet qui soit
+fiable et qui offre les meilleures performances quelque soit la charge
+réseau, FreeBSD est fait pour vous. Voici quelques entreprises utilisant
+FreeBSD quotidiennement :
+
+-   Walnut Creek CDROM exploite l’un des serveurs FTP le plus populaire
+    de l’Internet, ftp.cdrom.com, uniquement sous FreeBSD depuis
+    plusieurs années. Il s’agit d’une seule machine FreeBSD qui supporte
+    6000 connections et est capable de transférer plus de 30 teraoctets
+    (comme en Juin 1999; oui, il s’agit bien de teraoctets !) de
+    fichiers chaque mois à plus de 10 millions de personnes.
+
+-   Yahoo Inc. dispose de l’annuaire le plus complet d’Internet,
+    proposant tous les jours à des hordes d’internautes les toutes
+    dernières informations du web. Yahoo, et toutes les entreprises qui
+    utilisent Yahoo comme support publicitaire, comptent sur FreeBSD
+    pour disposer de serveurs web fiables et rapides.
+
+-   Netcraft est le leader dans le domaine des statistiques
+    d’utilisation des serveurs web sur Internet. Ils utilisent FreeBSD
+    et Apache pour faire fonctionner leur site web et FreeBSD/Perl pour
+    la collecte des données sur Internet.
+
+FreeBSD est la plate-forme idéale pour les services Internet, dont :
+
+-   Les fonctions WWW en entreprise ou sur Internet
+
+-   Les serveurs Proxy WWW
+
+-   Les serveurs FTP anonymes
+
+-   Les serveurs de fichiers, de messagerie et d’impression en
+    entreprise
+
+-   Les routeurs, pare-feu et systèmes de détection d’intrusion
+
+La collection de ports de FreeBSD contient de nombreux logiciels prêts à
+l’emploi qui permettent de créer facilement votre propre serveur
+Internet.
+
+Performances élevées et sécurité.
+
+L’équipe de développement de FreeBSD attache autant d’importance à la
+sécurité qu’aux performances. FreeBSD inclut un support noyau pour les
+firewalls IP ainsi que d’autres fonctions comme les proxies IP. Si vos
+serveurs d’entreprise sont reliés à l’Internet, un simple ordinateur
+sous FreeBSD vous permettra de disposer d’un firewall pour les protéger
+des agressions extérieures.
+
+Logiciels de cryptage, shells sécurisés, Kerberos, cryptage
+point-à-point et services RPC sécurisés sont également disponibles.
+
+De plus, l’équipe FreeBSD est très active dans la détection et la
+diffusion des informations et des comptes rendus de bugs concernant la
+sécurité avec un "officier de sécurité" et est liée avec le "Computer
+Emergency Response Team" (CERT).
+
+Paroles d’expert…​
+
+``FreeBSD …​ dipose probablement de la pile TCP/IP la plus robuste et la
+plus fonctionnelle à ce jour …​''
+
+---Michael O’Brien, SunExpert Août 1996 volume 7 numéro 8.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26 janvier 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

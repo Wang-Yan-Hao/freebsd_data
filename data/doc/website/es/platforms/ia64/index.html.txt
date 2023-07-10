@@ -1,0 +1,123 @@
+[FreeBSD The Power to Serve]
+
+Donar a FreeBSD
+
+ 
+
+-   Inicio
+
+-   Acerca de FreeBSD
+    -   Introduccion
+    -   Características
+    -   Apoyo
+    -   Marketing
+    -   Política de privacidad
+    -   Proyectos
+    -   Ports
+
+-   Descargar FreeBSD
+    -   Información de Versiones
+    -   Ingeniería de Versiones
+
+-   Documentación
+    -   FAQ
+    -   Manual
+    -   Manual del Porter
+    -   Manual del desarrollador
+    -   Guía del Committer
+    -   Manuales en línea
+    -   Presentaciones y Trabajos
+    -   Introducción al Proyecto de Documentación
+    -   Todos los libros y artículos
+
+-   Comunidad
+    -   Listas de correo
+    -   Foros
+    -   Grupos de usuarios
+    -   Eventos
+    -   FreeBSD Journal
+    -   Q&A (externo)
+
+-   Desarrolladores
+    -   Ideas para proyectos
+    -   Git Repository
+    -   Repositorio Subversion
+    -   Git Mirror
+    -   Revisiones de Código (Phabricator)
+    -   Wiki
+    -   Servicio de integración continua
+
+-   Soporte
+    -   Distribuidores comerciales
+    -   Información de seguridad
+    -   Informes de errores
+    -   Envío informes de error
+    -   Recursos Web
+
+-   Fundación
+    -   Donaciones monetarias
+    -   Donaciones hardware
+
+-   
+-   Manual del desarrollador
+-   Guía del Committer
+-   Manual del Porter
+-   Repositorios de código fuente
+-   Ingeniería de Versiones
+-   Plataformas
+-   Ideas del Proyecto
+-   Contribuir
+
+Proyecto FreeBSD/ia64
+
+[McKinley die]
+
+Buscar en los archivos de la lista de distribución de ia64:
+
+Contenidos
+
+-   Introducción
+
+-   Estado actual
+
+-   Lo que hay que hacer
+
+-   Lista de hardware
+
+-   Referencias
+
+Introducción
+
+Las páginas del Proyecto FreeBSD/ia64 contienen información sobre el
+port de FreeBSD para la arquitectura IA-64 de Intel, oficialmente
+conocida como Intel Itanium® Processor Family (IPF). Como el port mismo,
+estas páginas están en fase de desarrollo.
+
+Estado actual
+
+La plataforma ia64 todavía se considera una plataforma de la categoría
+Tier 2. Esto significa que no está completamente soportada por nuestro
+security officer, ingenieros de release y el equipo responsable del
+mantenimiento de las "toolchains". ingenieros de release y mantenedores
+de los toolchain. En la práctica la diferencia entre una plataforma Tier
+1 (que está completamente soportada) y una plataforma Tier 2 no es tan
+grande como podría parecer. En casi todos los aspectos el port ia64 es
+una plataforma Tier 1.
+Por otra parte, desde el punto de vista de los desarrolladores el hecho
+de que el port de ia64 sea una plataforma Tier 2 un poco más de tiempo
+tiene sus ventajas. Todavía hay cambios que rompen la compatibilidad de
+ABI en el pipeline y la necesidad de mantener la compatibilidad con
+versiones anteriores en una etapa tan temprana de de la vida del port no
+es lo ideal.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26 de enero de 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 El Proyecto FreeBSD Todos los derechos
+reservados. La marca FreeBSD es una marca registrada de la Fundación
+FreeBSD es es utilizada por el Proyecto FreeBSD con su permiso La
+Fundación FreeBSD. Contact

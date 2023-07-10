@@ -1,0 +1,170 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   
+-   Manuel du développeur
+-   Committer's Guide
+-   Manuel du porteur d'application
+-   Dépôt des codes source
+-   Production des versions
+-   Plates-formes
+-   Idées de projet
+-   Contribuer
+
+Projet FreeBSD/ia64 -- machines
+
+Machines sur le marché
+
+Cette page tente de rassembler les différentes machines que l’on peut
+acheter aujourd’hui ou dans un passé récent. Leur présence ici ne
+signifie pas que FreeBSD fonctionne sur celles-ci. Nous y parviendrons
+peut-être par la suite. Si une machine en particulier ne figure pas ici,
+il est probable que nous ne la connaissons pas. Veuillez noter que les
+machines basées sur le Merced ne figurent pas ici, bien qu’elles soient
+supportées. La raison de ceci est qu’elles ne sont plus intéressantes.
+
+Bull
+
++----------------------+----------------------+-----------------------+
+| NovaScale 4020       | jusqu’à 2 Itanium 2  | chipset Intel E8870   |
++----------------------+----------------------+-----------------------+
+| NovaScale 4040       | jusqu’à 4 Itanium 2  | chipset Intel E8870   |
++----------------------+----------------------+-----------------------+
+| NovaScale 5080       | jusqu’à 8 Itanium 2  | chipset Intel E8870   |
++----------------------+----------------------+-----------------------+
+| NovaScale 5160       | jusqu’à 16 Itanium 2 | chipset Intel E8870   |
++----------------------+----------------------+-----------------------+
+
+Fujitsu-Siemens
+
++----------------------+----------------------+-----------------------+
+| PRIMERGY RXi300      | jusqu’à 2 Itanium 2  | chipset Intel E8870   |
++----------------------+----------------------+-----------------------+
+| PRIMERGY RXi600      | jusqu’à 4 Itanium 2  | chipset Intel E8870   |
++----------------------+----------------------+-----------------------+
+
+Hewlett-Packard
+
++----------------------+----------------------+-----------------------+
+| Integrity rx1600     | jusqu’à 2 Itanium 2  | chipset HP zx1        |
++----------------------+----------------------+-----------------------+
+| Integrity rx2600     | jusqu’à 2 Itanium 2  | chipset HP zx1        |
++----------------------+----------------------+-----------------------+
+| Integrity rx4640     | jusqu’à 4 Itanium 2  | chipset HP zx1        |
++----------------------+----------------------+-----------------------+
+| Integrity rx5670     | jusqu’à 4 Itanium 2  | chipset HP zx1        |
++----------------------+----------------------+-----------------------+
+| Integrity rx7620     | jusqu’à 8 Itanium 2  | chipset HP sx1000     |
++----------------------+----------------------+-----------------------+
+| Integrity rx8620     | jusqu’à 16 Itanium 2 | chipset HP sx1000     |
++----------------------+----------------------+-----------------------+
+| Integrity Superdome  | jusqu’à 64 Itanium 2 | chipset HP sx1000     |
++----------------------+----------------------+-----------------------+
+
+IBM
+
++----------------------+----------------------+-----------------------+
+| eserver xSeries 382  | jusqu’à 2 Itanium 2  | chipset IBM XA-64     |
++----------------------+----------------------+-----------------------+
+| eserver xSeries 450  | jusqu’à 4 Itanium 2  | chipset IBM XA-64     |
++----------------------+----------------------+-----------------------+
+| eserver xSeries 455  | jusqu’à 16 Itanium 2 | chipset IBM XA-64     |
++----------------------+----------------------+-----------------------+
+
+NEC
+
++----------------------+----------------------+-----------------------+
+| Express5800/1000     | jusqu’à 32 Itanium 2 | inconnu               |
+| series               |                      |                       |
++----------------------+----------------------+-----------------------+
+
+Supermicro
+
++----------------------+----------------------+-----------------------+
+| SuperServer 6113L-8  | jusqu’à 2 Itanium 2  | chipset Intel E8870   |
++----------------------+----------------------+-----------------------+
+| SuperServer 6113M-i  | jusqu’à 2 Itanium 2  | chipset Intel E8870   |
++----------------------+----------------------+-----------------------+
+
+Unisys
+
++----------------------+----------------------+-----------------------+
+| ES7000 Aries 410     | jusqu’à 8 Itanium 2  | inconnu               |
++----------------------+----------------------+-----------------------+
+| ES7000 Aries 420     | jusqu’à 16 Itanium 2 | inconnu               |
++----------------------+----------------------+-----------------------+
+| ES7000 Orion 430     | jusqu’à 2*16 Itanium | inconnu               |
+|                      | 2                    |                       |
++----------------------+----------------------+-----------------------+
+| ES7000 Orion 560     | jusqu’à 2*16 Itanium | inconnu               |
+|                      | 2 + jusqu’à 32 Xeon  |                       |
++----------------------+----------------------+-----------------------+
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26 janvier 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

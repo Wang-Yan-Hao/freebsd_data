@@ -1,0 +1,206 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Support
+-   Vendors
+    -   Software
+    -   Hardware
+    -   Consulting
+    -   Internet Service Providers
+    -   Miscellaneous
+-   Security Information
+    -   Advisories
+    -   Errata Notices
+    -   Supported Releases
+    -   Unsupported Releases
+    -   How to read FreeBSD Security Advisories
+    -   Charter for the Security Officer and Team
+-   Bug Reports
+    -   Submit a Problem Report
+-   Web Resources
+
+The power, flexibility, and reliability of FreeBSD attract a wide
+variety of users and vendors. Here you will find vendors offering
+commercial products and/or services for FreeBSD.
+
+For your convenience, we have divided our growing commercial listing
+into several sections. If your company supports a FreeBSD related
+product, service, consulting, or support that should be added to this
+page, please fill out a problem report in category
+Documentation→Website. Submissions should contain a medium-sized
+paragraph in length, describing your company. Please note that the
+inclusion of vendors in our list does not signify our endorsement of
+their products or services by the FreeBSD Project.
+
+Software Vendors
+
+Databases
+
+-   AM'SOFT
+-   DBMaker
+-   dbstar
+-   Devart
+-   FairCom Corporation
+-   InterBase
+-   Oracle
+-   Polyhedra
+-   Solid Information Technology Ltd
+-   StarQuest Ventures
+-   WisdomForce Technologies, Inc.
+
+Development Tools
+
+-   Aestiva HTML/OS
+-   ChartDirector
+-   Easysoft Ltd
+-   Eiffel Software
+-   Elego
+-   Empress Software Inc.
+-   Icon Laboratories
+-   Irie Tools
+-   Lugaru Software Ltd.
+-   Muonics
+-   NetBeans, Inc.
+-   Openmake
+-   Revolution
+-   SoftIntegration, Inc.
+-   Tmi Dependia
+-   Vital, Inc.
+-   X-Designer
+
+E-Commerce Solutions and Tools
+
+-   Elastic Path Software
+-   IEA Software, Inc.
+-   Interchange
+-   MainStreet
+-   Pacific Timesheet
+-   SiamScan.NET
+-   WebHostWorks.net
+
+Electronic Mail Software
+
+-   Sendmail Inc
+
+Miscellaneous
+
+-   Anthemion Software Ltd.
+-   Brown Bear Software
+-   BS Project
+-   CoSORT
+-   EasyStat
+-   Etherpage
+-   journyx WebTime
+-   Nettix Peru
+-   Parabase Technology Inc.
+-   Perforce Software
+-   Tonec, Inc.
+
+Network Systems and Applications
+
+-   Aker Firewall
+-   ClickTime
+-   Connect Daily Web Calendar
+-   Cybernet Systems
+-   Dartware, LLC
+-   Efficient IP
+-   Sippy Software, Inc.
+-   Stalker Software, Inc.
+-   XGForce.COM
+
+Scientific and Language Tools
+
+-   NAG, Ltd.
+-   PixInsight
+-   REBOL
+
+Security
+
+-   Ground Labs
+-   Kaspersky Lab
+-   Kernun Firewall
+-   pfSense
+-   Sophos Anti-Virus
+
+System Administration / ISP
+
+-   Ahsay Online Backup Software
+-   AstroArch Consulting
+-   Ballista
+-   Cool Horizon
+-   iPass
+-   Lone Star Software Corp
+-   NameSurfer, Ltd.
+-   Netsville, Inc.
+-   QUADStor Systems
+-   Supportex.Net
+-   TOLIS Group, Inc.
+
+------------------------------------------------------------------------
+
+Last modified on: February 21, 2023 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

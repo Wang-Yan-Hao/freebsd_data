@@ -1,0 +1,164 @@
+[FreeBSD The Power to Serve]
+
+An FreeBSD spenden
+
+ 
+
+-   Startseite
+
+-   Über FreeBSD
+    -   Für Einsteiger
+    -   Eigenschaften
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Bezugsquellen
+    -   Release Information
+    -   Release Engineering
+
+-   Dokumentation
+    -   FAQ
+    -   Handbuch
+    -   Porter-Handbuch
+    -   Entwickler-Handbuch
+    -   Committer's Guide
+    -   Manualpages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   Alle Bücher und Artikel
+
+-   Community
+    -   Mailinglisten
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Entwicklung
+    -   Projektideen
+    -   Git-Spiegelserver
+    -   Subversion-Repository
+    -   GitHub Mirror
+    -   Phabricator (Code Review)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Hilfe
+    -   Kommerzieller Support
+    -   Sicherheit
+    -   Problemberichte
+    -   Problembericht erstellen
+    -   Internet-Ressourcen
+
+-   Foundation
+    -   Geldspende
+    -   Hardwarespende
+
+-   
+-   Entwickler-Handbuch
+-   Committer's Guide
+-   Porter-Handbuch
+-   Source code repositories
+-   Release Engineering
+-   Platforms
+-   Project Ideas
+-   Contributing
+
+Plattformen
+
+Unterstützte Platformen
+
+Die folgenden Plattformen werden derzeit von FreeBSD unterstützt:
+
++-------------+-------------+-------------+-------------+-------------+
+| Name der    | TARGET_ARCH | 11.x        | 12.x        | Geplanter   |
+| Plattform   |             | T           | T           | 13.x        |
+|             |             | ier-Support | ier-Support | T           |
+|             |             |             |             | ier-Support |
++=============+=============+=============+=============+=============+
+| 64-bit x86  | amd64       | Tier 1      | Tier 1      | Tier 1      |
++-------------+-------------+-------------+-------------+-------------+
+| 32-bit x86  | i386        | Tier 1      | Tier 1      | Tier 1      |
++-------------+-------------+-------------+-------------+-------------+
+| PC98        | pc98        | Tier 2      | Tier 4      | Tier 4      |
++-------------+-------------+-------------+-------------+-------------+
+| 64-bit      | aarch64     | Tier 2      | Tier 2      | Tier 2      |
+| ARMv8       |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| 32-bit      | arm         | Tier 2      | Tier 2      | Tier 4      |
+| ARMv4/5     |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| 32-bit      | armeb       | Tier 2      | Tier 4      | Tier 4      |
+| big-endian  |             |             |             |             |
+| ARM         |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| 32-bit      | armv6       | Tier 2      | Tier 2      | Tier 2      |
+| ARMv6       |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| 32-bit      | armv7       | *1          | Tier 2      | Tier 2      |
+| ARMv7       |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| 32-bit MIPS | mips,       | Tier 3      | Tier 2      | Tier 2      |
+| soft-float  | mipsel      |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| 32-bit MIPS | mipshf,     | N/A         | Tier 2      | Tier 2      |
+| hard-float  | mipselhf    |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| 32-bit MIPS | mipsn32     | Tier 3      | Tier 2      | Tier 2      |
+| n32         |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| 64-bit MIPS | mips64,     | Tier 3      | Tier 2      | Tier 2      |
+| soft-float  | mips64el    |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| 64-bit MIPS | mips64hf,   | N/A         | Tier 2      | Tier 2      |
+| hard-float  | mips64elhf  |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| 32-bit      | powerpc     | Tier 2      | Tier 2      | Tier 2      |
+| PowerPC     |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| 32-bit      | powerpcspe  |             | Tier 2      | Tier 2      |
+| PowerPC     |             |             |             |             |
+| with SPE    |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| 64-bit      | powerpc64   | Tier 2      | Tier 2      | Tier 2      |
+| PowerPC     |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| 64-bit      | riscv64,    |             | Tier 3      | Tier 2      |
+| RISC-V      | riscv64sf   |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+| 64-bit      | sparc64     | Tier 2      | Tier 2      | Tier 4      |
+| SPARCv9     |             |             |             |             |
++-------------+-------------+-------------+-------------+-------------+
+
+Anmerkungen
+
+1.  armv7-Plattformen werden seit 12.0 nicht mehr unterstützt.
+
+Nicht (mehr) unterstützte Plattformen
+
+Diese Plattformen wurden von älteren FreeBSD-Versionen unterstützt.
+
++----------------------+----------------------+-----------------------+
+| Name der Plattform   | TARGET_ARCH          | Zuletzt unterstützt   |
+|                      |                      | von                   |
++======================+======================+=======================+
+| Alpha                | alpha                | 6.4                   |
++----------------------+----------------------+-----------------------+
+| Intel IA-64          | ia64                 | 10.4                  |
++----------------------+----------------------+-----------------------+
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19. Juni 2021 by Danilo G. Baio
+
+Rechtliches | © 1995-2023 The FreeBSD Project Alle Rechte vorbehalten.
+Die Marke FreeBSD ist eine eingetragene Marke der FreeBSD Foundation und
+wird vom FreeBSD Project mit freundlicher Genehmigung der The FreeBSD
+Foundation. Kontakt

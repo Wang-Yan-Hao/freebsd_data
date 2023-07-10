@@ -1,0 +1,526 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 13.1-RELEASE Release Notes
+
+Abstract
+
+The release notes for FreeBSD 13.1-RELEASE contain a summary of the
+changes made to the FreeBSD base system on the 13-STABLE development
+line. This document lists applicable security advisories that were
+issued since the last release, as well as significant changes to the
+FreeBSD kernel and userland. Some brief remarks on upgrading are also
+presented.
+
+Introduction
+
+This document contains the release notes for FreeBSD 13.1-RELEASE. It
+describes recently added, changed, or deleted features of FreeBSD. It
+also provides some notes on upgrading from previous versions of FreeBSD.
+
+The release distribution to which these release notes apply represents
+the latest point along the 13-STABLE development branch since 13-STABLE
+was created. Information regarding pre-built, binary release
+distributions along this branch can be found at
+https://www.FreeBSD.org/releases/.
+
+The release distribution to which these release notes apply represents a
+point along the 13-STABLE development branch between 13.0-RELEASE and
+the future 13.2-RELEASE. Information regarding pre-built, binary release
+distributions along this branch can be found at
+https://www.FreeBSD.org/releases/.
+
+This distribution of FreeBSD 13.1-RELEASE is a release distribution. It
+can be found at https://www.FreeBSD.org/releases/ or any of its mirrors.
+More information on obtaining this (or other) release distributions of
+FreeBSD can be found in the Obtaining FreeBSD appendix to the FreeBSD
+Handbook.
+
+All users are encouraged to consult the release errata before installing
+FreeBSD. The errata document is updated with "late-breaking" information
+discovered late in the release cycle or after the release. Typically, it
+contains information on known bugs, security advisories, and corrections
+to documentation. An up-to-date copy of the errata for FreeBSD
+13.1-RELEASE can be found on the FreeBSD Web site.
+
+This document describes the most user-visible new or changed features in
+FreeBSD since 13.0-RELEASE. In general, changes described here are
+unique to the 13-STABLE branch unless specifically marked as MERGED
+features.
+
+Typical release note items document recent security advisories issued
+after 13.0-RELEASE, new drivers or hardware support, new commands or
+options, major bug fixes, or contributed software upgrades. They may
+also list changes to major ports/packages or release engineering
+practices. Clearly the release notes cannot list every single change
+made to FreeBSD between releases; this document focuses primarily on
+security advisories, user-visible changes, and major architectural
+improvements.
+
+Upgrading from Previous Releases of FreeBSD
+
+Binary upgrades between RELEASE versions (and snapshots of the various
+security branches) are supported using the freebsd-update(8) utility.
+The binary upgrade procedure will update unmodified userland utilities,
+as well as unmodified GENERIC kernels distributed as a part of an
+official FreeBSD release. The freebsd-update(8) utility requires that
+the host being upgraded have Internet connectivity.
+
+Source-based upgrades (those based on recompiling the FreeBSD base
+system from source code) from previous versions are supported, according
+to the instructions in /usr/src/UPDATING.
+
+Users of all powerpc architectures, after successful kernel and world
+installation, will need to run manually "kldxref /boot/kernel".
+
++-----------------------------------+-----------------------------------+
+|                                   | Upgrading FreeBSD should only be  |
+|                                   | attempted after backing up all    |
+|                                   | data and configuration files.     |
++-----------------------------------+-----------------------------------+
+
++-----------------------------------+-----------------------------------+
+|                                   | After upgrading, sshd (from       |
+|                                   | OpenSSH 8.8p1) will not accept    |
+|                                   | new connections until it is       |
+|                                   | restarted. After installing the   |
+|                                   | new userland, either reboot (as   |
+|                                   | specified in the source update    |
+|                                   | procedure), or execute            |
+|                                   | service sshd restart.             |
++-----------------------------------+-----------------------------------+
+
+Userland
+
+This section covers changes and additions to userland applications,
+contributed software, and system utilities.
+
+Userland Configuration Changes
+
+The -i flag is now added to rtsol(8) and rtsold(8) by default in
+/etc/defaults/rc.conf. a0fc5094bf4c (Sponsored by
+https://www.patreon.com/cperciva)
+
+Userland Application Changes
+
+The -i option has been added to rtsol(8) and rtsold(8) to disable the
+random delay between zero and one seconds, speeding up the boot process.
+8056b73ea163 (Sponsored by https://www.patreon.com/cperciva)
+
+For 64-bit architectures, the base system is now built with Position
+Independent Executable (PIE) support enabled by default. It may be
+disabled using the WITHOUT_PIE knob. A clean build is required.
+396e9f259d96
+
+There is a new zfskeys rc(8) service script, which allows for automatic
+decryption of ZFS datasets encrypted with ZFS native encryption during
+boot. See the rc.conf(5) manual page for more information. 33ff39796ffe,
+8719e8a951b7 (Sponsored by Modirum and Klara Inc.)
+
+The NVMe emulation in bhyve(8) has been upgraded to version 1.4 of the
+NVMe specification. b7a2cf0d9102 - eae02d959363
+
+NVMe iovec construction for large IOs in bhyve(8) has been fixed. The
+problem was exposed by the UEFI driver included with Rocky Linux 8.4.
+a7761d19dacd
+
+Extra Alt Gr mappings for Brazillian Portuguese ABNT2 keyboards were
+added. 310623908c20
+
+The chroot facility now supports unprivileged operation, and the
+chroot(8) program now has a -n option to enable its use. 460b4b550dc9
+(Sponsored by EPSRC)
+
+The CAM library has been modified to use realpath(3) on device names
+before parsing them, which allows tools such as camcontrol(8) and
+smartctl(8) to be friendlier when symlinks are in use. e32acf95ea25
+
+md5sum(1) and similar message-digest programs compatible with those on
+Linux were added by having the corresponding BSD programs run with the
+-r option if the program name ends in sum. c0d5665be0dc (Sponsored by
+Netflix)
+
+svnlite(1) is disabled in the build by default. a4f99b3c2384
+
+mpsutil(8) has been extended to show adapter information and to control
+NCQ. 395bc3598b47
+
+Problems after downloading firmware to a device using camcontrol(8) were
+fixed by forcing a rescan of the LUN after the firmware download.
+327da43602cc (Sponsored by Netflix)
+
+A new mode has been added to the scripted partition editor for variant
+disk names in bsdinstall(8). If the disk parameter DEFAULT is set in
+place of an actual device name, or no disk is specified for the
+PARTITIONS parameter, the installer will follow the logic used in the
+automatic-partitioning mode, in which it will either provide a selection
+dialog for one of several disks if several are present or automatically
+select it if there is only one. This simplifies the creation of
+fully-automatic installation media for hardware or VMs with varying disk
+names. 5ec4eb443e81
+
+Contributed Software
+
+Building of LLDB has been enabled on all powerpc architectures.
+cb1bee9bd34
+
+One True Awk has been updated to the latest from upstream (20210215).
+All the FreeBSD patches but one have now been either upstreamed or
+discarded. Notable changes include:
+
+-   Locale is no longer used for ranges
+
+-   Various bugs fixed
+
+-   Better compatibility with gawk and mawk
+
+The one remaining FreeBSD change, likely to be removed in FreeBSD 14, is
+that we still allow hex numbers, prefixed with 0x, to be parsed and
+interpreted as hex numbers, while all other awks (now including One True
+Awk) interpret them as 0, in line with awk’s historic behavior.
+
+zlib has been upgraded to version 1.2.12.
+
+libarchive has been upgraded to verion 3.6.0 with additional bug and
+security fixes from the upcoming patchlevel release. Release notes are
+available at https://github.com/libarchive/libarchive/releases.
+
+The ssh package has been updated to OpenSSH v8.8p1, including a security
+update and bug fixes. Other updates include these changes:
+
+-   ssh(1): When prompting whether to record a new host key, accept that
+    key’s fingerprint as a synonym for "yes."
+
+-   ssh-keygen(1): When acting as a CA and signing certificates with an
+    RSA key, default to using the rsa-sha2-512 signature algorithm.
+
+-   ssh(1): UpdateHostkeys is enabled by default, subject to some
+    conservative preconditions.
+
+-   scp(1): The behavior of remote to remote copies (e.g.
+    scp host-a:/path host-b:) has been changed to transfer through the
+    local host by default.
+
+-   scp(1) has experimental support for transfers using the SFTP
+    protocol as a replacement for the venerable SCP/RCP protocol that it
+    has traditionally used.
+
+The use of FIDO/U2F hardware authenticators has been enabled in ssh,
+using the new public key types ecdsa-sk and ed25519-sk, along with
+corresponding certificate types. FIDO/U2F support is described in
+https://www.openssh.com/txt/release-8.2. a613d68fff9a (Sponsored by The
+FreeBSD Foundation)
+
+Runtime Libraries and API
+
+Assembly optimized code for OpenSSL has been added on powerpc, powerpc64
+and powerpc64le. ce35a3bc852
+
+The detection of CPU features accelerating crypto operations for ARMv7
+and ARM64 has been fixed, speeding up aes-256-gcm and sha256
+substantially. 32a2fed6e71f (Sponsored by Ampere Computing LLC and Klara
+Inc.)
+
+Building ASAN and UBSAN libraries has been enabled on riscv64 and
+riscv64sf. 8c56b338da7
+
+OFED libraries are now built on riscv64 and riscv64sf. 2b978245733
+
+OPENMP libraries are now built on riscv64 and riscv64sf. aaf56e35569
+
+Kernel
+
+This section covers changes to kernel configurations, system tuning, and
+system control parameters that are not otherwise categorized.
+
+General Kernel Changes
+
+Output corruption on serial console on powerpc64 has been fixed.
+dca829138ca
+
+CAS has been changed to support Radix MMU. cc8e726c85b
+
+Running FreeBSD with HPT superpages enabled on QEMU with TCG has been
+fixed on powerpc64(le). f05174ed354
+
+Superpages support has been added to pmap_mincore on powerpc64(le).
+32b50b8520d
+
+HWCAP/HWCAP2 aux args support was added on arm64 for 32-bit ARM
+binaries. This fixes build/run of golang under COMPAT32 emulation.
+28e22482279f (Sponsored by Rubicon Communications, LLC ("Netgate"))
+
+Devices and Drivers
+
+This section covers changes and additions to devices and device drivers
+since 13.0-RELEASE.
+
+Device Drivers
+
+The igc(4) driver was introduced for the Intel I225 Ethernet controller.
+This controller supports 2.5G/1G/100Mb/10Mb speeds, and allows tx/rx
+checksum offload, TSO, LRO, and multi-queue operation. d7388d33b4dd
+(Sponsored by Rubicon Communications, LLC ("Netgate"))
+
+A fix for VGA / HDMI console with AST2500 during boot on powerpc64(le)
+has been added. c41d129485e
+
+PCI common read/write functions are fixed on big endian targets in
+virtio(4). 7e583075a41, 8d589845881
+
+Big-endian support has been added to mpr(4). 7d45bf699dc, 2954aedb8e5,
+c80a1c1072d
+
+Max I/O size has been reduced to avoid DMA issues in aacraid(4).
+572e3575dba
+
+A bug preventing a virtual guest using virtio_random(8) from shutting
+down or rebooting has been fixed. fa67c45842bb
+
+The ice(4) driver has been updated to 1.34.2-k, adding firmware logging
+and initial DCB support. a0cdf45ea1d1 (Sponsored by Intel Corporation)
+
+The mgb(4) network interface driver has been added, with support for
+Microchip devices LAN7430 PCIe Gigabit Ethernet controller with PHY and
+LAN7431 PCIe Gigabit Ethernet controller with RGMII interface. The
+driver has a number of caveats and limitations, but is functional.
+e0262ffbc6ae (Sponsored by The FreeBSD Foundation)
+
+Support has been added for link status, media, and VLAN MTU with the
+cdce(4) device. 973fb85188ea
+
+The iwlwifi(4) driver along with a LinuxKPI 802.11 compatibility layer
+was added to supplement iwm(4) for newer Intel Wireless chipsets.
+(Sponsored by The FreeBSD Foundation)
+
+Kernel crash dumps can now be saved on SD cards and eMMC modules using a
+dwmmc controller when the kernel is configured with the MMCCAM option.
+79c3478e76c3
+
+Kernel crash dumps can now be saved on SD cards using an sdhci
+controller when the kernel is configured with the MMCCAM option.
+8934d3e7b9b9
+
+Supported Platforms
+
+Support has been added for the HiFive Unmatched RISC-V board.
+
+Storage
+
+This section covers changes and additions to file systems and other
+storage subsystems, both local and networked.
+
+General Storage
+
+ZFS Changes
+
+ZFS has been upgraded to OpenZFS release 2.1.4. OpenZFS release notes
+can be found at https://github.com/openzfs/zfs/releases.
+
+NFS Changes
+
+Two new daemons, rpc.tlsclntd(8) and rpc.tlsservd(8), are now built by
+default on amd64 and arm64. They provide support for NFS-over-TLS as
+described in the Internet Draft entitled "Towards Remote Procedure Call
+Encryption By Default". These daemons are built when WITH_OPENSSL_KTLS
+is specified. They use KTLS to encrypt/decrypt all NFS RPC message
+traffic, and provide optional verification of machine identity via X.509
+certificates. 2c76eebca71b 59f6f5e23c1a
+
+The default minor version used for an NFSv4 mount has been changed to
+the highest minor version supported by the NFSv4 server. This default
+can be overridden by using the minorversion mount option. 8a04edfdcbd2
+
+A new NFSv4.1/4.2 mount option nconnect has been added that can be used
+to specify the number of TCP connections that will be used for the
+mount, up to a maximum of 16. The first (default) TCP connection will be
+used for all RPCs that consist of small RPC messages. The RPCs that can
+consist of large RPC messages (Read/Readdir/ReaddirPlus/Write) will be
+sent on the additional TCP connections in a round-robin fashion. If
+either the NFS client or NFS server have multiple network interfaces
+aggregated together, or a network interface that uses multiple queues,
+this can increase NFS performance for the mount. 9ec7dbf46b0a
+
+A sysctl called vfs.nfsd.srvmaxio has been added that can be used to
+increase the NFS server’s maximum I/O size from 128Kbytes to any power
+of 2 up to 1Mbyte. It can only be set when the nfsd threads are not
+running, and will normally require an increase in kern.ipc.maxsockbuf to
+at least the value recommended by the console log message generated when
+setting vfs.nfsd.srvmaxio is first attempted. 9fb6e613373c
+
+UFS Changes
+
+Following 5cc52631b3b8, fsck_ffs(8) did not work for background fsck in
+preen mode where UFS was tuned for soft updates without soft update
+journaling. Fixed: fb2feceac34c
+
+Boot Loader Changes
+
+This section covers the boot loader, boot menu, and other boot-related
+changes.
+
+Boot Loader Changes
+
+UEFI boot is improved for amd64. The loader detects whether the loaded
+kernel can handle the in-place staging area (non-copying mode). The
+default is copy_staging auto. Auto-detection can be overridden, for
+example: with copy_staging enable, the loader will unconditionally copy
+the staging area to 2M, regardless of kernel capabilities. Also, the
+code to grow the staging area is more robust; for growth to occur, it’s
+no longer necessary to hand-tune and recompile the loader. (Sponsored by
+The FreeBSD Foundation)
+
+boot1 and loader have been fixed on powerpc64le. 8a62b07bce7
+
+Other Boot Changes
+
+Performance improvements have been made to loader(8), nvme(4),
+random(4), rtsold(8), and x86 clock calibration, which collectively
+yield a significant speedup in system boot time. Configuration changes
+on the EC2 platform provide additional benefits, resulting in
+13.1-RELEASE booting over twice as fast as 13.0-RELEASE. (Sponsored by
+https://www.patreon.com/cperciva)
+
+EC2 images are now built by default to boot using UEFI instead of legacy
+BIOS. Note that UEFI is not supported by Xen-based EC2 instances or by
+"bare metal" EC2 instances. 65f22ccf8247 (Sponsored by
+https://www.patreon.com/cperciva)
+
+Support was added for recording EC2 AMI Ids in the AWS Systems Manager
+Parameter Store. FreeBSD will be using the public prefix
+/aws/service/freebsd, resulting in parameter names which look like
+/aws/service/freebsd/amd64/base/ufs/13.1/RELEASE. 242d1c32e42c
+(Sponsored by https://www.patreon.com/cperciva)
+
+Networking
+
+This section describes changes that affect networking in FreeBSD.
+
+General Network
+
+The handling of the lowest address on an IPv4 (sub)net (host 0) has been
+changed so that packets are not sent as a broadcast unless this address
+has been set as the broadcast address. This makes the lowest address
+usable for a host. The old behavior can be restored with the
+net.inet.ip.broadcast_lowest sysctl. See
+https://datatracker.ietf.org/doc/draft-schoen-intarea-unicast-lowest-address/
+for background information. 3ee882bf21af
+
+General Notes Regarding Future FreeBSD Releases
+
+Default CPUTYPE Change
+
+Starting with FreeBSD-13.0, the default CPUTYPE for the i386
+architecture will change from 486 to 686.
+
+This means that, by default, binaries produced will require a 686-class
+CPU, including but not limited to binaries provided by the FreeBSD
+Release Engineering team. FreeBSD 13.0 will continue to support older
+CPUs, however users needing this functionality will need to build their
+own releases for official support.
+
+As the primary use for i486 and i586 CPUs is generally in the embedded
+market, the general end-user impact is expected to be minimal, as new
+hardware with these CPU types has long faded, and much of the deployed
+base of such systems is nearing retirement age, statistically.
+
+There were several factors taken into account for this change. For
+example, i486 does not have 64-bit atomics, and while they can be
+emulated in the kernel, they cannot be emulated in the userland.
+Additionally, the 32-bit amd64 libraries have been i686 since their
+inception.
+
+As the majority of 32-bit testing is done by developers using the lib32
+libraries on 64-bit hardware with the COMPAT_FREEBSD32 option in the
+kernel, this change ensures better coverage and user experience. This
+also aligns with what the majority of Linux® distributions have been
+doing for quite some time.
+
+This is expected to be the final bump of the default CPUTYPE in i386.
+
++-----------------------------------+-----------------------------------+
+|                                   | This change does not affect the   |
+|                                   | FreeBSD 12.x series of releases.  |
++-----------------------------------+-----------------------------------+
+
+------------------------------------------------------------------------
+
+Last modified on: October 3, 2022 by Glen Barber
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

@@ -1,0 +1,446 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+FreeBSD-related Publications
+
++-----------------------------------+-----------------------------------+
+| [FreeBSD Daemon]                  | -   books                         |
+|                                   |                                   |
+|                                   | -   optical discs                 |
+|                                   |                                   |
+|                                   | -   magazines                     |
+|                                   |                                   |
+|                                   | -   press                         |
++-----------------------------------+-----------------------------------+
+
+ — if you know of any other FreeBSD-related publication, please let us
+know.
+
+Covers and descriptions of various items appear below. Click any image
+to see a larger version.
+
+The FreeBSD Handbook includes a broader bibliography.
+
+Books
+
++-------------+--------------------------------------------------------+
+| [book       | A publication from Tatsumi Hosokawa and others. Among  |
+| cover]      | computer books, it is a top-seller in Japan and        |
+|             | exceeded the sales of Bill Gates' "The Road Ahead"     |
+|             | when published (it was #2, this book was #1).          |
++-------------+--------------------------------------------------------+
+| [book       | (Japanese FreeBSD book with 2.0.5, titled "FreeBSD:    |
+| cover]      | Fun and easy Installation")                            |
++-------------+--------------------------------------------------------+
+| [book       | (Japanese FreeBSD book with 2.0.5, titled "FreeBSD     |
+| cover]      | Introductory Kit")                                     |
++-------------+--------------------------------------------------------+
+| [book       | This is BSDi’s "The Complete FreeBSD" with             |
+| cover]      | installation guide, manual pages and installation CDs  |
+|             | inside.                                                |
++-------------+--------------------------------------------------------+
+| [book       | This book was published (early 1997) in Taiwan. Its    |
+| cover]      | title is "FreeBSD: introduction and applications" and  |
+|             | the author is Jian-Da Li (aka. jdli).                  |
++-------------+--------------------------------------------------------+
+| [book       | This is the "Getting Started with FreeBSD" from        |
+| cover]      | Fuki-Shuppan. Other than the standard installation     |
+|             | guide and Japanese environment, it emphasizes system   |
+|             | administration and low-level information (such as the  |
+|             | boot process, etc.) FreeBSD-2.2.2R and XFree86-3.2 on  |
+|             | CDROM. 264 pages, 3,400 yen.                           |
++-------------+--------------------------------------------------------+
+| [book       | The "Personal Unix Starter Kit - FreeBSD" from ASCII.  |
+| cover]      | Includes history of UNIX®, a guide to build a Japanese |
+|             | documentation processing system and how to create      |
+|             | ports. 2.1.7.1R and XFree86-3.2 in CDROM. 384 pages,   |
+|             | 3,000 yen.                                             |
++-------------+--------------------------------------------------------+
+| [book       | BSD mit Methode, M. Schulze, B. Roehrig, M. Hoelzer    |
+| cover]      | und andere, C&L Computer und Literatur Verlag, 1998,   |
+|             | 850 pages. 2 CDROMs, FreeBSD 2.2.6, NetBSD 1.2.1 and   |
+|             | 1.3.2, OpenBSD 2.2 and 2.3. DM 98,-.                   |
++-------------+--------------------------------------------------------+
+| [book       | This is the "FreeBSD Install and utilization manual"   |
+| cover]      | from Mainichi Communications. General introduction to  |
+|             | FreeBSD from installation to utilization with          |
+|             | troubleshooting under the supervision of the user      |
+|             | group in Japan. 2.2.7-RELEASE FreeBSD(98)2.2.7-Rev01   |
+|             | PAO and distfiles in CDROM. 472 pages, 3,600yen.       |
++-------------+--------------------------------------------------------+
+| [book       | The "FreeBSD User’s Reference Manual" from Mainichi    |
+| cover]      | Communications, under the supervision of "jpman        |
+|             | project", the manual translation project by the user   |
+|             | group in Japan. Japanese edition of the section 1 of   |
+|             | the FreeBSD manual. 2.2.7-RELEASE                      |
+|             | FreeBSD(98)2.2.7-Rev01 and PAO in CDROM. 1,040 pages,  |
+|             | 3,800yen.                                              |
++-------------+--------------------------------------------------------+
+| [book       | The "FreeBSD System Administrator’s Manual" from       |
+| cover]      | Mainichi Communications, under the supervision of      |
+|             | "jpman project", the manual translation project by the |
+|             | user group in Japan. Japanese edition of the section 5 |
+|             | and 8 of the FreeBSD manual. 756 pages, 3,300yen.      |
++-------------+--------------------------------------------------------+
+| [book       | This is "About FreeBSD" from Youngjin.com. It is first |
+| cover]      | FreeBSD book in Korea, and covers several topics from  |
+|             | installation to Korean environment. 3.5.1-RELEASE/PAO  |
+|             | and 4.1-RELEASE in 3 CDROMs. 788 pages, 26,000 won.    |
++-------------+--------------------------------------------------------+
+| [book       | Onno W Purbo, Dodi Maryanto, Syahrial Hubbany, Widjil  |
+| cover]      | Widodo: Building Internet Server with FreeBSD (in      |
+|             | Indonesia Language), published by Elex Media           |
+|             | Komputindo, 2000.                                      |
++-------------+--------------------------------------------------------+
+| [book       | The FreeBSD Handbook 1st Edition is a comprehensive    |
+| cover]      | FreeBSD Tutorial and reference. It covers              |
+|             | installation, day-to-day use of FreeBSD, and much      |
+|             | more. April 2000, BSDi. ISBN 1-57176-241-8             |
++-------------+--------------------------------------------------------+
+| [book       | The Complete FreeBSD with CDs, 3rd Ed, FreeBSD 4.2.    |
+| cover]      | Everything you ever wanted to know about how to get    |
+|             | your computer up and running FreeBSD. Includes 4 CDs   |
+|             | containing the FreeBSD operating system! Released:     |
+|             | November 2000 ISBN: 1-57176-246-9                      |
++-------------+--------------------------------------------------------+
+| [book       | The FreeBSD Handbook 2nd Edition is a comprehensive    |
+| cover]      | FreeBSD Tutorial and reference. It covers              |
+|             | installation, day-to-day use of FreeBSD, and much      |
+|             | more. November 2001, Wind River Systems. ISBN          |
+|             | 1-57176-303-1                                          |
++-------------+--------------------------------------------------------+
+| [book       | "The FreeBSD Corporate Networker’s Guide"              |
+| cover]      | Mittelstaedt, Ted. Addison Wesley, 2000.               |
+|             | There are two printings: the first has disk 1 of       |
+|             | FreeBSD 4.2, the second has disk 1 of FreeBSD 4.4. 400 |
+|             | pages. The Japanese translation was published in 2001. |
+|             | The Networker’s Guide covers integration of FreeBSD    |
+|             | into typical corporate networks with special emphasis  |
+|             | on interoperation with Windows 95/98/ME/NT/2K.         |
+|             | English version: 2000, Addison Wesley. ISBN            |
+|             | 0-201-70481-1                                          |
+|             | Japanese version: 2001, Pearson Education Japan. ISBN  |
+|             | 4-89471-464-7                                          |
++-------------+--------------------------------------------------------+
+| [book       | "FreeBSD, An Open-Source Operating System for Your     |
+| cover]      | Personal Computer", Annelise Anderson.                 |
+|             | An introduction to FreeBSD for users new to both       |
+|             | FreeBSD and UNIX. This book includes a 4.4             |
+|             | installation CD-ROM and covers everything you need to  |
+|             | know about installation of the system and third-party  |
+|             | software; getting sound, X Window, your network, and   |
+|             | printing working; building your own kernel; and        |
+|             | upgrading. Second Edition. December 2001, The Bit Tree |
+|             | Press. ISBN 0-9712045-1-9                              |
++-------------+--------------------------------------------------------+
+| [Absolute   | Absolute BSD. This book discusses management of        |
+| BSD book    | FreeBSD-based servers in high-performance enterprise   |
+| cover]      | environments. June 2002, No Starch Press. ISBN         |
+|             | 1-886411-74-3                                          |
++-------------+--------------------------------------------------------+
+| [book       | "Building an Internet Server with FreeBSD 6" is a      |
+| cover]      | step-by-step guide for helping new and experienced     |
+|             | users to FreeBSD install and configure the latest      |
+|             | Internet server applications in a minimum of time. The |
+|             | guide includes descriptions of many of the Internet’s  |
+|             | most popular and widely deployed open source projects, |
+|             | detailed instructions on implementing each, and        |
+|             | maintenance tasks important to an Internet server. May |
+|             | 2006, Lulu Press, ISBN 1411695747, 228 pages.          |
++-------------+--------------------------------------------------------+
+| [book       | Written by the professionals of EnderUNIX and Huseyin  |
+| cover]      | Yuce this book is the first Turkish FreeBSD book. The  |
+|             | book is published by acikkod publications. Book is     |
+|             | available for sale on this page. Details of the book:  |
+|             | ISBN: 975-98990-0-0                                    |
+|             | Published: February 2004                               |
+|             | Paperback: 504 pages                                   |
+|             | CD: FreeBSD 4.9 Installation CD                        |
+|             | Authors: Hüseyin Yüce, İsmail Yenigül, Ömer Faruk Şen, |
+|             | Barış Şimşek and Murat Balaban.                        |
+|             | Table of Contents (in Turkish)                         |
++-------------+--------------------------------------------------------+
+| [Les        | Les cahiers de l’Admin: BSD (the BSD sysadmin          |
+| cahiers de  | notebook), from Emmanuel Dreyfus, covers various UNIX® |
+| l’Admin BSD | administrative topics for BSD systems. Aimed at        |
+| book cover] | beginners and intermediate in BSD system               |
+|             | administration. Book in french, Eyrolles, 2004. ISBN   |
+|             | 2-212-11463-X                                          |
++-------------+--------------------------------------------------------+
+| [The        | The OpenBSD PF Packet Filter Book covers the PF packet |
+| OpenBSD PF  | filter suite, ALTQ, spamd, address translation, and    |
+| Packet      | more for FreeBSD, NetBSD, OpenBSD, and DragonFly.      |
+| Filter      | August 2006, Reed Media Services. ISBN                 |
+| Book]       | 978-0-9790342-0-6.                                     |
++-------------+--------------------------------------------------------+
+| [FreeBSD 6  | FreeBSD 6 Unleashed covers everything you need to know |
+| Unleashed]  | to use FreeBSD to its fullest potential. Jun 7, 2006,  |
+|             | Sams. ISBN 0-672-32875-5                               |
++-------------+--------------------------------------------------------+
+| [The        | (Traditional Chinese FreeBSD book with 6.0) December   |
+| FreeBSD 6.0 | 2005, Drmaster. ISBN 9-575-27878-X                     |
+| Book]       |                                                        |
++-------------+--------------------------------------------------------+
+| [Utilizare] | This Romanian language book is a useful guide for      |
+|             | people taking their first steps with FreeBSD. It       |
+|             | covers installation and day-to-day operation of a      |
+|             | FreeBSD system, and contains practical examples        |
+|             | illustrating the use of FreeBSD’s utilities. It has    |
+|             | two case studies on configuring FreeBSD as a server    |
+|             | and a router. 2005, Polirom Publishing House, ISBN     |
+|             | 973-681-683-4                                          |
++-------------+--------------------------------------------------------+
+| [The        | The "RadioBSD Crier: 2007/01" is a 24-page article on  |
+| RadioBSD    | managing FreeBSD and NetBSD IPFW, IPFW2, and IP6FW     |
+| Crier:      | firewalls.                                             |
+| Issue       |                                                        |
+| 2007/01:    |                                                        |
+| Managing    |                                                        |
+| FreeBSD and |                                                        |
+| NetBSD      |                                                        |
+| Firewalls]  |                                                        |
++-------------+--------------------------------------------------------+
+| [The Best   | The Best of FreeBSD Basics by Dru Lavigne provides     |
+| of FreeBSD  | near 100 tutorials covering a wide range of FreeBSD    |
+| Basics by   | and open source Unix topics. December 2007. Reed Media |
+| Dru         | Services. ISBN 978-0-9790342-2-0.                      |
+| Lavigne]    |                                                        |
++-------------+--------------------------------------------------------+
+
+CD-ROMs and DVDs
+
+For information about recent releases of the operating system, please
+see Release Information.
+
++-------------+--------------------------------------------------------+
+| [CD cover]  | This is InfoMagic’s BSDisc, containing FreeBSD 2.0 and |
+|             | NetBSD 1.0 on a single CD. This is the only example I  |
+|             | have which had cover art.                              |
++-------------+--------------------------------------------------------+
+| [CD cover]  | This is the original 4.4 BSD Lite2 release from UC     |
+|             | Berkeley, the core technology behind much of FreeBSD.  |
++-------------+--------------------------------------------------------+
+| [CD cover]  | The first of Laser5’s "BSD" series. Contains           |
+|             | FreeBSD-2.0.5R, NetBSD-1.0, XFree86-3.1.1 and          |
+|             | FreeBSD(98) kernel.                                    |
++-------------+--------------------------------------------------------+
+| [CD cover]  | The second of Laser5’s "BSD" series. From this         |
+|             | version, the CDs come in a standard jewel box.         |
+|             | Contains FreeBSD-2.1R, NetBSD-1.1, XFree86-3.1.2 and   |
+|             | 3.1.2A, and FreeBSD(98) kernel (2.0.5).                |
++-------------+--------------------------------------------------------+
+| [CD cover]  | This is the Laser5 Japanese edition of the FreeBSD     |
+|             | CDROM. It is a 4 CD set.                               |
++-------------+--------------------------------------------------------+
+| [CD cover]  | This is the only FreeBSD CD Pacific Hitech produced    |
+|             | before merging their product line with that of Walnut  |
+|             | Creek CDROM. PHT now also produces the FreeBSD/J       |
+|             | (Japanese) CD product.                                 |
++-------------+--------------------------------------------------------+
+| ##[CD       | This is the cover disc from the Korean magazine. Note  |
+| cover]      | the creative cover art! The CD contains the FreeBSD    |
+|             | 2.2.1 release with some local additions.               |
++-------------+--------------------------------------------------------+
+| [CD cover]  | This is it - the very first FreeBSD CD published! Both |
+|             | the FreeBSD Project and Walnut Creek CDROM were fairly |
+|             | young back then, and you’ll probably have little       |
+|             | difficulty in spotting the differences in production   |
+|             | quality between then and now.                          |
++-------------+--------------------------------------------------------+
+| [CD cover]  | This was the second FreeBSD CD published by Walnut     |
+|             | Creek CDROM and also the very last on the 1.x branch   |
+|             | (ref USL/Novell lawsuit and settlement). The next      |
+|             | release, FreeBSD 1.1.5, was only available on the net. |
++-------------+--------------------------------------------------------+
+| [CD cover]  | This unusual CD is something of a collector’s item now |
+|             | given that almost all existing examples were           |
+|             | systematically tracked down and destroyed. An artwork  |
+|             | mishap has this CD dated for the wrong year, and on    |
+|             | the spine "January" is also misspelled as "Jaunary",   |
+|             | just to increase the embarrassment factor. Ah, the     |
+|             | perils of turning in one’s artwork just hours before   |
+|             | leaving for a trade show.                              |
++-------------+--------------------------------------------------------+
+| [CD cover]  | This is the fixed-up version of the FreeBSD 2.0 CD.    |
+|             | Note that the color scheme has even been changed in    |
+|             | the corrected version, something unusual for a fixup   |
+|             | and perhaps done to distance it from the earlier       |
+|             | mistake.                                               |
++-------------+--------------------------------------------------------+
+| [CD cover]  | The FreeBSD 2.0.5 release CD. This was the first CD to |
+|             | feature Tatsumi Hosokawa’s daemon artwork.             |
++-------------+--------------------------------------------------------+
+| [CD cover]  | The FreeBSD 2.1 release CD. This was the first CD      |
+|             | release on the 2.1 branch (the last being 2.1.7).      |
++-------------+--------------------------------------------------------+
+| [CD cover]  | The FreeBSD 2.1.5 release CD.                          |
++-------------+--------------------------------------------------------+
+| [CD cover]  | The FreeBSD 2.1.6 release CD.                          |
++-------------+--------------------------------------------------------+
+| [CD cover]  | The Japanese version of 2.1.6. This was the first and  |
+|             | last Japanese localized version published by WC,       |
+|             | responsibility for that product then transitioning to  |
+|             | a team led by Tatsumi Hosokawa and sponsored by        |
+|             | Pacific Hitech and Laser5.                             |
++-------------+--------------------------------------------------------+
+| [CD cover]  | The FreeBSD 2.1.7 release CD. Also the last CD         |
+|             | released on the 2.1.x branch. Done primarily as a      |
+|             | security fixup for 2.1.6                               |
++-------------+--------------------------------------------------------+
+| [CD cover]  | An early release SNAPshot of 2.2 (done before 2.2.1    |
+|             | was released).                                         |
++-------------+--------------------------------------------------------+
+| [CD cover]  | The FreeBSD 2.2.1 release CD. This was the first CD on |
+|             | the 2.2 branch.                                        |
++-------------+--------------------------------------------------------+
+| [CD cover]  | The FreeBSD 2.2.2 release CD.                          |
++-------------+--------------------------------------------------------+
+| [CD cover]  | The FreeBSD 3.0 snapshot CD.                           |
++-------------+--------------------------------------------------------+
+| [CD cover]  | The FreeBSD mailing list and newsgroup archives,       |
+|             | turned into HTML and semi-indexed by thread. This      |
+|             | product ran for 2 releases and then stopped with a     |
+|             | thud once it became obvious that there was simply too  |
+|             | much data to deal with on one CD. Perhaps when DVD     |
+|             | becomes more popular…​                                  |
++-------------+--------------------------------------------------------+
+| [CD cover]  | FreeBSD Toolkit: Six disc set of resources to make     |
+|             | your FreeBSD experience more enriching.                |
++-------------+--------------------------------------------------------+
+| [CD cover]  | FreeBSD Alpha 4.2 - The full version of the DEC Alpha  |
+|             | 64-bit UNIX operating system.                          |
++-------------+--------------------------------------------------------+
+| [CD cover]  | FreeBSD 4.2: The full version of the PC 32-bit UNIX    |
+|             | operating system.                                      |
++-------------+--------------------------------------------------------+
+| [CD cover]  | FreeBSD 4.2 CD-ROM. Lehmanns CD-ROM Edition. January   |
+|             | 2001, 4 CD-ROMs. Lehmanns Fachbuchhandlung. Germany.   |
+|             | ISBN 3-931253-72-4.                                    |
++-------------+--------------------------------------------------------+
+| [CD cover]  | FreeBSD 4.3 RELEASE CDROM. April 2001, Wind River      |
+|             | Systems. ISBN 1-57176-300-7.                           |
++-------------+--------------------------------------------------------+
+| [CD cover]  | FreeBSD Toolkit: Six disc set of resources to make     |
+|             | your FreeBSD experience more enriching. June 2001,     |
+|             | Wind River Systems. ISBN 1-57176-301-5.                |
++-------------+--------------------------------------------------------+
+| [CD cover]  | FreeBSD 4.4 CD-ROM. Lehmanns CD-ROM Edition. November  |
+|             | 2001, 6 CD-ROMs in Jewelcase. Lehmanns                 |
+|             | Fachbuchhandlung. Germany. ISBN 3-931253-84-8.         |
++-------------+--------------------------------------------------------+
+| [CD cover]  | FreeBSD 4.4 RELEASE CDROM. Wind River Systems.         |
+|             | September 2001. ISBN 1-57176-304-X.                    |
++-------------+--------------------------------------------------------+
+| [CD cover]  | FreeBSD 4.5 RELEASE CDROM. February 2002, FreeBSD Mall |
+|             | Inc. ISBN 1-57176-306-6.                               |
++-------------+--------------------------------------------------------+
+
+Magazines
+
++-------------+--------------------------------------------------------+
+| [magazine   | Cover of Korean UNIX magazine, May 1997 issue. Also    |
+| cover]      | included FreeBSD 2.2.1 with cover CDs.                 |
++-------------+--------------------------------------------------------+
+| [magazine   | UNIX User Magazine November 1996 issue. Also included  |
+| cover]      | FreeBSD 2.1.5 on cover CD.                             |
++-------------+--------------------------------------------------------+
+| [magazine   | This is the "FreeBSD Full Course" special in April     |
+| cover]      | 1997’s Software Design (published by Gijutsu Hyoron    |
+|             | Sha). There are 80 pages of FreeBSD articles covering  |
+|             | everything from installation to tracking -current.     |
++-------------+--------------------------------------------------------+
+| [magazine   | Quality Unix for FREE, by Brett Glass in Sm@rt         |
+| cover]      | Reseller Online September 1998                         |
++-------------+--------------------------------------------------------+
+| [magazine   | This is the "BSD magazine" published by ASCII          |
+| cover]      | corporation, the world’s first publication specialized |
+|             | in BSD. BSD magazine covers FreeBSD, NetBSD, OpenBSD   |
+|             | and BSD/OS. The premiere issue features articles on    |
+|             | the history of BSD, installation, and Ports/Packages;  |
+|             | it also includes 4 CD-ROMs containing FreeBSD          |
+|             | 3.2-RELEASE, NetBSD 1.4.1 and OpenBSD 2.5.             |
++-------------+--------------------------------------------------------+
+
+------------------------------------------------------------------------
+
+Last modified on: July 9, 2023 by Graham Perrin
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

@@ -1,0 +1,267 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+A FreeBSD beszerzése
+
+Kiadási információk
+
+Részletes leírás a régi, jelenlegi és jövõbeli kiadásokról. Elõször itt
+érdemes tájékozódni a legfrissebb FreeBSD 0kiadásokról.
+
+A FreeBSD telepítése
+
+A FreeBSD telepítésére rengeteg lehetõségünk van, telepíthetjük például
+CD-ROM, DVD-ROM, vagy floppy lemezekrõl, MS-DOS® partícióról,
+mágnesszalagról, anonim FTP kapcsolaton keresztül, vagy NFS
+állományrendszerrõl. Mielõtt letöltenénk a teljes FreeBSD disztribúciót,
+olvassuk el a telepítési útmutatót.
+
+A FreeBSD megvásárlása
+
+A FreeBSD a FreeBSD Mall-tól, vagy a többi CD-ROM és DVD-ROM terjesztõ
+egyikétõl megvásárolható CD-ROM vagy DVD-ROM lemezen.
+
+FreeBSD 13.1-RELEASE
+
++-----------------+-----------------+-----------------+-----------------+
+| Installer       | Virtual Machine | SD Card Images  | Documentation   |
+| Images          | Images          |                 |                 |
++=================+=================+=================+=================+
+| -   amd64       | -   README      | -   aarch64     | -   Released:   |
+|                 |                 |                 |     May 16,     |
+| -   i386        | -   amd64       | -   -   PINE64  |     2022        |
+|                 |                 |                 |                 |
+| -   powerpc     | -   i386        |                 | -   Release     |
+|                 |                 |  -   PINE64-LTS |     Notes       |
+| -   powerpc64   | -   aarch64     |                 |                 |
+|                 |                 |     -   ROCK64  | -   Readme      |
+| -   powerpc64le | -   riscv64     |                 |                 |
+|                 |                 |                 | -   Hardware    |
+| -   powerpcspe  | -   amd64       |   -   ROCKPRO64 |                 |
+|                 |     (BASIC-CI)  |                 |   Compatibility |
+| -   armv6       |                 |     -   RPI     |     List        |
+|                 |                 |         (3/4)   |                 |
+| -   armv7       |                 |                 | -               |
+|                 |                 | -   armv6/armv7 |    Installation |
+| -   aarch64     |                 |                 |                 |
+|                 |                 | -               |    Instructions |
+| -   riscv64     |                 |   -   GENERICSD |                 |
+|                 |                 |                 | -   Errata      |
+|                 |                 |     -   RPI-B   |                 |
+|                 |                 |                 | -   Signed      |
+|                 |                 | -   riscv64     |     Checksums   |
+|                 |                 |                 |                 |
+|                 |                 | -               |                 |
+|                 |                 |   -   GENERICSD |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+FreeBSD 13.0-RELEASE
+
++-----------------+-----------------+-----------------+-----------------+
+| Installer       | Virtual Machine | SD Card Images  | Documentation   |
+| Images          | Images          |                 |                 |
++=================+=================+=================+=================+
+| -   amd64       | -   README      | -   aarch64     | -   Released:   |
+|                 |                 |                 |     April 13,   |
+| -   i386        | -   amd64       | -   -   PINE64  |     2021        |
+|                 |                 |                 |                 |
+| -   powerpc     | -   i386        |                 | -   Release     |
+|                 |                 |  -   PINE64-LTS |     Notes       |
+| -   powerpc64   | -   aarch64     |                 |                 |
+|                 |                 |     -   ROCK64  | -   Readme      |
+| -   powerpc64le | -   riscv64     |                 |                 |
+|                 |                 |                 | -   Hardware    |
+| -   powerpcspe  |                 |   -   ROCKPRO64 |                 |
+|                 |                 |                 |   Compatibility |
+| -   armv6       |                 |     -   RPI     |     List        |
+|                 |                 |         (3/4)   |                 |
+| -   armv7       |                 |                 | -               |
+|                 |                 | -   armv6/armv7 |    Installation |
+| -   aarch64     |                 |                 |                 |
+|                 |                 | -               |    Instructions |
+| -   riscv64     |                 |   -   GENERICSD |                 |
+|                 |                 |                 | -   Errata      |
+|                 |                 |     -   RPI-B   |                 |
+|                 |                 |                 | -   Signed      |
+|                 |                 | -   riscv64     |     Checksums   |
+|                 |                 |                 |                 |
+|                 |                 | -               |                 |
+|                 |                 |   -   GENERICSD |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+FreeBSD 12.3-RELEASE
+
++-----------------+-----------------+-----------------+-----------------+
+| Installer       | Virtual Machine | SD Card Images  | Documentation   |
+| Images          | Images          |                 |                 |
++=================+=================+=================+=================+
+| -   amd64       | -   README      | -   RPI-B       | -               |
+|                 |                 |                 |                 |
+| -   i386        | -   amd64       | -   BANANAPI    | -   Released:   |
+|                 |                 |                 |     December 7, |
+| -   powerpc     | -   i386        | -   CUBIEBOARD  |     2021        |
+|                 |                 |                 |                 |
+| -   powerpc64   | -   aarch64     | -   CUBIEBOARD2 | -   Release     |
+|                 |                 |                 |     Notes       |
+| -   powerpcspe  |                 | -   CUB         |                 |
+|                 |                 | OX-HUMMINGBOARD | -   Readme      |
+| -   sparc64     |                 |                 |                 |
+|                 |                 | -   GENERICSD   | -   Hardware    |
+| -   aarch64     |                 |                 |                 |
+|                 |                 | -   RPI2        |   Compatibility |
+|                 |                 |                 |     List        |
+|                 |                 | -   PANDABOARD  |                 |
+|                 |                 |                 | -               |
+|                 |                 | -   WANDBOARD   |    Installation |
+|                 |                 |                 |                 |
+|                 |                 | -   PINE64      |    Instructions |
+|                 |                 |                 |                 |
+|                 |                 | -   PINE64-LTS  | -   Errata      |
+|                 |                 |                 |                 |
+|                 |                 |                 | -   Signed      |
+|                 |                 |                 |     Checksums   |
++-----------------+-----------------+-----------------+-----------------+
+
+Development Snapshots
+
+If you are interested in a purely experimental snapshot release of
+FreeBSD-CURRENT (AKA 14.0-CURRENT), aimed at developers and
+bleeding-edge testers only, then please see the FreeBSD Snapshot
+Releases page. For more information about past, present and future
+releases in general, please visit the release information page.
+
+FreeBSD 14.0-CURRENT
+
+Installer and SD card images are available for amd64, i386, powerpc,
+powerpc64, powerpc64le, powerpcspe, armv6, armv7, aarch64, and riscv64.
+
+VM images are available for amd64, i386, aarch64, and riscv64.
+
+FreeBSD 13.1-STABLE
+
+Installer and SD card images are available for amd64, i386, powerpc,
+powerpc64, powerpc64le, powerpcspe, armv6, armv7, aarch64, and riscv64.
+
+VM images are available for amd64, i386, aarch64, and riscv64.
+
+FreeBSD 12.3-STABLE
+
+Installer and SD card images are available for amd64, i386, powerpc,
+powerpc64, powerpcspe, sparc64, armv6, armv7, and aarch64.
+
+VM images are available for amd64 and i386.
+
+If you plan on getting FreeBSD via HTTP or FTP, please check the listing
+of mirror sites in the Handbook to see if there is a site closer to you.
+
+A FreeBSD-bõl származó operációs rendszerek disztribúciói
+
+A FreeBSD széleskörûen használt más kereskedelmi és nyílt forrású
+operációs rendszerek építõelemeként. Az alábbi projektek nagymértékben
+elterjedtek és különleges jelentõséggel bírnak a FreeBSD felhasználói
+számára.
+
+-   A PC-BSD a FreeBSD egyik leszármazottja, grafikus telepítõvel és
+    lenyûgözõ asztali eszközökkel, amelyek a hétköznapi felhasználók
+    életét hivatottak megkönnyíteni.
+
+Alkalmazások és segédprogramok
+
+A Portgyûjtemény
+
+A FreeBSD Portgyûjteménye a FreeBSD-re portolt alkalmazások egy
+változatos gyûjtése.
+
+-   FreeBSD Portgyûjtemény
+
+-   A Portgyûjtemény elérése webes felületen
+
+-   FreshPorts - egy fejlettebb webes felület a Portgyûjtemény
+    böngészéséhez
+
+Ha meg szeretnénk tudni, hogy saját kedvenc szoftverünkkel mi magunk
+hogyan járulhatunk hozzá a Portgyûjtemény fejlesztéséhez, vessünk egy
+pillantást a Porterek kézikönyvére és a Hozzájárulás a FreeBSD-hez címû
+cikkre.
+
+------------------------------------------------------------------------
+
+Last modified on: 2022. június 25. by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

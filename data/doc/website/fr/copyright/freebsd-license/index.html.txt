@@ -1,0 +1,126 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   A propos
+-   Fonctionnalités
+-   Applications
+-   Prosélytisme
+-   Marketing
+-   Administration
+-   Nouvelles du projet
+-   Événements
+-   Presse
+-   Ressources artistiques
+-   Logo
+-   Donations
+-   Legal Notices
+-   Politique de confidentialité
+
+Le Copyright FreeBSD
+
+Copyright 1994-2011 Le Projet FreeBSD Tous droits réservés.
+
+La redistribution et l’utilisation sous forme binaire ou de code source,
+avec ou sans modification, sont autorisées à condition que les
+conditions suivantes soient respectées :
+
+1.  Les redistributions du code source doivent conserver l’indication de
+    copyright ci-dessus, cette liste de conditions et la renonciation
+    suivante.
+
+2.  Les redistributions sous forme binaire doivent reproduire
+    l’indication de copyright ci-dessus, cette liste de conditions et la
+    renonciation suivante dans la documentation et/ou les autres
+    accessoires fournis avec la distribution.
+
+CE LOGICIEL EST FOURNI PAR LE PROJET FREEBSD "TEL QUEL" ET TOUTES LES
+GARANTIES EXPLICITES OU IMPLICITES, Y COMPRIS, MAIS NON LIMITÉES A
+CELLES-CI, LES GARANTIES IMPLICITES DE COMMERCIALISATION ET D’ADÉQUATION
+À UN USAGE PARTICULIER SONT DÉNIÉES. EN AUCUN CAS LE PROJET FREEBSD OU
+LES PARTICIPANTS NE PEUVENT ÊTRE TENUS POUR RESPONSABLE DES DOMMAGES
+DIRECTS, INDIRECTS, FORTUITS, PARTICULIERS, EXEMPLAIRES OU CONSÉCUTIFS À
+UNE ACTION (Y COMPRIS, MAIS NON LIMITÉS À CEUX-CI, L’ACQUISITION DE
+MARCHANDISES OU DE SERVICES DE REMPLACEMENT; LES PERTES D’UTILISATIONS,
+DE DONNÉES OU FINANCIÈRES; OU L’INTERRUPTION D’ACTIVITÉS) DE QUELQUE
+MANIÈRE QUE CES DOMMAGES SOIENT CAUSÉS ET CECI POUR TOUTES LES THÉORIES
+DE RESPONSABILITÉS, QUE CE SOIT DANS UN CONTRAT, POUR DES
+RESPONSABILITÉS STRICTES OU DES PRÉJUDICES (Y COMPRIS DUS À UNE
+NEGLIGENCE OU AUTRE CHOSE) SURVENANT DE QUELQUE MANIÈRE QUE CE SOIT EN
+DEHORS DE L’UTILISATION DE CE LOGICIEL, MÊME EN CAS D’AVERTISSEMENT DE
+LA POSSIBILITÉ DE TELS DOMMAGES.
+
+Les points de vues et les conclusions contenus dans le logiciel et dans
+la documentation sont ceux des auteurs et ne doivent pas être
+interprétés comme représentant un avis officiel, explicite ou implicite,
+du Projet FreeBSD.
+
+Informations légales
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26 janvier 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

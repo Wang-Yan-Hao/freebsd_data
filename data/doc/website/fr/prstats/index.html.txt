@@ -1,0 +1,116 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   Support
+-   Revendeurs
+    -   Logiciel
+    -   Matériel
+    -   Consultants
+    -   Fournisseurs d'accès à Internet
+    -   Divers
+-   Information de sécurité
+    -   Avis de sécurité
+    -   Errata
+    -   Versions supportées
+    -   Versions non-supportées
+    -   Comment lire les avis de sécurité FreeBSD
+    -   Charte de l'officier de Sécurité et de son équipe
+-   Rapports de bogues
+    -   Envoyer un rapport de bogue
+-   Ressources Web
+
+Statistiques sur les PR
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Corrigez/fermez un PR (rapport de bug) !
+
+C’est très simple, tout ce que vous avez à faire est de suivre ce lien
+vers la base GNATS, trouver un PR, comprendre ce qu’il est nécessaire de
+corriger et le faire.
+
+Si vous êtes un committer, vous pouvez utiliser la commande edit-pr pour
+clore les PRs.
+
+Si vous n’êtes pas committer, envoyez un commentaire pour faire suite au
+PR avec le texte :
+
+    This PR can be closed
+
+sur une seule ligne, de manière à faciliter le travail au committer qui
+s’en chargera plus tard.
+
+Pour diverses statistiques au sujet la base PR, voyez ces graphiques et
+rapports.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26 janvier 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

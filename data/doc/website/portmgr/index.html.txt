@@ -1,0 +1,170 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Ports Management Team
+
+The FreeBSD Ports Management Team (also known as portmgr due to its
+email alias) is responsible for issues relating to the FreeBSD Ports
+Collection.
+
+Charter
+
+Discusses the goals, rights, and responsibilities of the team. The
+contents of this document are approved by the FreeBSD Core Team.
+
+Policies
+
+Discusses current policies that the team has adopted to meet its goals,
+such as timeouts for inactivity and when commits are allowed. Also
+contains the policy for supported releases and branches.
+
+Implementation Issues
+
+Discusses how that the way that the Ports Collection is implemented
+affects the above policies, and, in particular, such concepts as changes
+that require regression tests and sweeping changes.
+
+Quality Assurance Activities
+
+A behind-the-scenes look at the efforts that are made to ensure that the
+Ports Collection works as well as it possibly can.
+
+Team Members
+
+portmgr@FreeBSD.org: Mathieu Arnold <mat@FreeBSD.org>, Baptiste
+Daroussin <bapt@FreeBSD.org>, Muhammad Moinur Rahman <bofh@FreeBSD.org>,
+Luca Pizzamiglio <pizzamig@FreeBSD.org>, René Ladan <rene@FreeBSD.org>,
+Tobias C. Berner <tcberner@FreeBSD.org>
+
+Secretary: René Ladan (portmgr-secretary@FreeBSD.org)
+
+Resources Of Interest To FreeBSD Contributors and Developers
+
+-   Contributing to the FreeBSD Ports Collection
+    An introduction to how you can help contribute to the Ports
+    Collection, by either contributing new ports or helping to fix
+    problems in existing ports. Included is detailed information on what
+    the community will expect from you if you volunteer to maintain one
+    or more ports. Also includes a list of further resources.
+
+-   FreeBSD Porter’s Handbook
+    The central reference book for FreeBSD ports submitters,
+    maintainers, and committers, mostly technically oriented. It
+    includes both mandatory requirements and recommendations of what
+    portmgr believes are the best approaches to common problems. one or
+    more ports. Also includes information about keeping with changes as
+    well.
+
+-   FreeBSD Ports Build Cluster
+    These machines continually build packages on all possible
+    combinations of OS release and CPU architecture (in our terminology,
+    build environments), and produce error logs of problems that are
+    encountered along the way.
+
+-   FreeBSD Release Engineering for Third Party Packages
+    Describes the approach used by the FreeBSD release engineering team
+    to produce a high quality package set suitable for official FreeBSD
+    release media, with specific emphasis on how to split up the
+    packages for the release media, and how to verify that a package set
+    is consistent.
+
+-   FreeBSD Committer’s Guide
+    Includes a discussion of policies and issues that are of particular
+    interest to committers to the ports tree.
+
+-   Problem Report Handling Guidelines
+    While primarily aimed at FreeBSD committers, this should also be
+    read by users interested in how best to attract attention to their
+    PRs.
+
+Resources Of General Interest
+
+-   FreshPorts
+    A site maintained by Dan Langille that lets you browse the state of
+    the entire Ports Collection or any individual port within it.
+    Includes cross-references, links, charts and graphs, and many other
+    things. Of interest to users and developers alike.
+
+------------------------------------------------------------------------
+
+Last modified on: June 19, 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

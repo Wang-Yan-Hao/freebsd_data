@@ -1,0 +1,147 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   Documentation
+-   FAQ
+-   Manuel de référence
+-   Pages de manuel
+-   Présentations et papiers
+-   Livres et articles en ligne
+-   Publications
+-   Ressources Web
+-   Pour les débutants
+-   Projet de documentation
+-   Archive
+
+Projet de Documentation FreeBSD
+
+Vue d’ensemble
+
+S’attaquer à un système d’exploitation nouveau et complexe est toujours
+une tâche difficile, quelque soit sa convivialité. FreeBSD n’est pas
+différent à cet égard.
+
+Il existe de nombreux livres sur les Unix BSD (et les UNIX® en général)
+mais FreeBSD possède ses propres caractéristiques, procédures et
+bizarreries.
+
+De plus, FreeBSD est amené à être le premier contact avec un système
+d’exploitation dérivé d’Unix pour beaucoup d’utilisateurs donc la
+disponibilité d’une documentation précise et de haute qualité est
+indispensable.
+
+Le Projet de Documentation FreeBSD est là pour combler ce vide. Il s’y
+prend de deux façons :
+
+1.  Les membres du Projet de Documentation écrivent un document et le
+    soumettent afin qu’il soit inclu dans le Jeu de Documentation
+    FreeBSD.
+
+2.  Les membres du Projet de Documentation débatent de la forme et de
+    l’organisation du Jeu de Documentation FreeBSD.
+
++-----------------------------------------------------------------------+
+| Projets en cours                                                      |
+|                                                                       |
+| Plusieurs projets sont actuellement en cours de réalisation dans le   |
+| cadre de l’effort de documentation. Prenez le temps de consulter      |
+| cette liste afin de savoir s’il y en a un pour lequel vous pouvez     |
+| apporter de l’aide.                                                   |
++-----------------------------------------------------------------------+
+
+Qui sommes-nous, comment nous rejoindre
+
+Cette page explique qui compose le Projet de Documentation et comment
+s’y joindre.
+
+Le Jeu de Documentation FreeBSD
+
+Cette page esquisse la composition du Jeu de Documentation FreeBSD ainsi
+que le travail que le Projet de Documentation réalise.
+
+SGML et le Projet de Documentation
+
+Le projet utilise le SGML pour la documentation. Cette page survole la
+méthode utilisée et dirige les lecteurs intéressés vers davantage de
+ressources SGML.
+
+Proposer une documentation
+
+Les propositions de documentation sont le meilleur moyen de faire partie
+du projet et de rendre FreeBSD plus facile à utiliser. Cette page décrit
+la meilleure façon de soumettre un document afin qu’il soit examiné le
+plus rapidement possible.
+
+Traduction
+
+Traductions de la documentation FreeBSD : pages web, manuel de
+référence, pages de manuel et FAQ.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26 janvier 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

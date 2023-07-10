@@ -1,0 +1,128 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 8.0 Release Process
+
+Introduction
+
+This is the release schedule for FreeBSD 8.0. For more information about
+the release engineering process, please see the Release Engineering
+section of the web site.
+
+General discussions about the pending release and known issues should be
+sent to the public freebsd-current mailing list. MFC requests should be
+sent to re@FreeBSD.org.
+
+Schedule
+
+  --------------------------------------- ------------------- ----------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Action                                  Expected            Actual                        Description
+  Initial release schedule announcement   -                   29 March 2009                 Release Engineers send announcement email to developers with a rough schedule.
+  Release schedule reminder               -                   5 May 2009                    Release Engineers send reminder announcement e-mail to developers with updated schedule.
+  Code slush                              1 June 2009         1 June 2009                   Release Engineers announce a slowdown in feature development for the release -- developers are requested to coordinate any non-refinement changes or late-arriving features with the release engineering team.
+  Code freeze begins                      25 June 2009        27 June 2009                  Release Engineers announce that all further commits to the head (and forthcoming RELENG_8 branch) will require explicit approval. Certain blanket approvals will be granted for narrow areas of development, documentation improvmeents, etc.
+  BETA1                                   29 June 2009        6 July 2009                   First beta test snapshot.
+  BETA2                                   6 July 2009         17 July 2009                  Second beta test snapshot.
+  RELENG_8 branch                         -                   3 August 2009 - in progress   Subversion branch created, propagated to CVS and Perforce; future release engineering proceeds on this branch although code freeze/ slush continue for some time on head.
+  BETA3                                   13 July 2009        24 August 2009                Third beta test snapshot.
+  BETA4                                   5 September 2009    7 September 2009              Begin BETA4 builds.
+  RC1                                     14 September 2009   21 September 2009             First release candidate.
+  RC2                                     21 September 2009   28 October 2009               Second release candidate.
+  RC3                                     -                   12 November 2009              Third release candidate.
+  RELEASE build                           28 September 2009   22 November 2009              8.0-RELEASE built.
+  RELEASE announcement                    TBD                 25 November 2009              8.0-RELEASE press release.
+  Turn over to the secteam                TBD                 01 December 2009              RELENG_8_0 branch is handed over to the FreeBSD Security Officer Team in one or two weeks after the announcement.
+  --------------------------------------- ------------------- ----------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Status / TODO
+
+http://wiki.freebsd.org/8.0TODO
+
+Additional Information
+
+-   FreeBSD 8.0 release engineering wiki page, which includes todo
+    lists, scheduling information, binary compatibility information, and
+    more.
+-   FreeBSD Release Engineering website
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

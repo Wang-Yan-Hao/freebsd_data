@@ -1,0 +1,198 @@
+[FreeBSD The Power to Serve]
+
+捐赠 FreeBSD
+
+ 
+
+-   首页
+
+-   关于
+    -   简介
+    -   特性
+    -   宣传
+    -   营销
+    -   隐私政策
+    -   Projects
+    -   Ports
+
+-   获取 FreeBSD
+    -   发行版本
+    -   发布工程
+
+-   文档
+    -   常见问题合集
+    -   使用手册
+    -   Porter' 手册
+    -   Developer' 手册
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   文档计划入门书
+    -   所有书籍和文档
+
+-   社区
+    -   邮件列表
+    -   论坛
+    -   用户群体
+    -   活动
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   开发
+    -   项目新点子
+    -   Git Repository
+    -   Subversion 仓库
+    -   Git 镜像
+    -   代码审查 (Phabricator)
+    -   Wiki
+    -   持续集成服务
+
+-   支持
+    -   供应商
+    -   安全公告
+    -   问题报告
+    -   提交问题报告
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   基金会
+    -   资金捐赠
+    -   硬件捐赠
+
+FreeBSD 项目
+
+FreeBSD 是一个适用于现代服务器、桌面与嵌入式 平台 的操作系统，
+由一个庞大的 开发人员团队 持续开发超过三十年。 FreeBSD
+先进的网络、安全性和存储方面的特色使得它成为许多 大型网站
+以及最普遍的嵌入式网络与存储设备的平台选择。
+
+»了解更多
+
+» 立即获取 FreeBSD Journal
+
+.
+
+获取 FreeBSD
+
+.
+
+支持的版本
+
+-   生产环境适用: 12.4, 13.1, 13.2
+-   Upcoming: 14.0
+-   支持生命周期
+
+-   de
+-   en
+-   fr
+-   ja
+-   zh-cn
+-   zh-tw
+
+常用链接
+
+-   邮件列表
+-   问题报告
+-   常见问题解答
+-   使用手册
+-   Ports
+
+.
+
+不熟悉 FreeBSD?
+
+.
+
+最新动态
+
+2021-07-31
+commit 权限提升: 许立文 (doc, ports, src)
+
+2021-07-24
+2021 年二季度开发进度报告
+
+2021-07-13
+commit 权限提升: Philip Paeps (src, ports, doc)
+
+2021-05-17
+commit 权限提升: 杨光远 (doc, ports)
+
+2021-05-06
+2021 年一季度开发进度报告
+
+2021-04-29
+新增 committer: 李呈 (ports)
+
+-   更多新闻
+-   [新闻 RSS Feed]
+
+.
+
+近期活动
+
+2023-09-14 - 2023-09-17
+EuroBSDcon 2023
+(Coimbra, Portugal)
+
+2023-10-04 - 2023-10-06
+Hackathon 202310
+(Oslo, Norway)
+
+更多活动
+
+.
+
+媒体报道
+
+2022-10
+FreeBSD comes to Amazon's lightweight hypervisor
+
+2022-07
+CheriBSD-based computer runs KDE for the first time
+
+2022-05
+FreeBSD 13.1 is out for everything from PowerPC to x86-64
+
+2021-03
+License to thrill
+
+2020-02
+Discussing Past, Present and Future of FreeBSD Project
+
+更多媒体报道
+
+.
+
+安全公告
+
+2023-06-21
+FreeBSD-SA-23:05.openssh
+
+2023-06-21
+FreeBSD-SA-23:04.pam_krb5
+
+2023-02-16
+FreeBSD-SA-23:03.openssl
+
+2023-02-16
+FreeBSD-SA-23:02.openssh
+
+-   更多勘误公告
+-   [News RSS Feed]
+
+勘误公告
+
+2023-06-21
+FreeBSD-EN-23:07.mpr
+
+2023-06-21
+FreeBSD-EN-23:06.loader
+
+-   更多勘误公告
+-   [News RSS Feed]
+
+法律信息 | © 1995-2023 FreeBSD 项目 保留所有权利。 The mark FreeBSD is a
+registered trademark of The FreeBSD Foundation and is used by The
+FreeBSD Project with the permission of The FreeBSD Foundation. 联系
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

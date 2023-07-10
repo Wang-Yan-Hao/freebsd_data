@@ -1,0 +1,224 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Support
+-   Vendors
+    -   Software
+    -   Hardware
+    -   Consulting
+    -   Internet Service Providers
+    -   Miscellaneous
+-   Security Information
+    -   Advisories
+    -   Errata Notices
+    -   Supported Releases
+    -   Unsupported Releases
+    -   How to read FreeBSD Security Advisories
+    -   Charter for the Security Officer and Team
+-   Bug Reports
+    -   Submit a Problem Report
+-   Web Resources
+
+FreeBSD Security Vulnerability Reporting Information
+
+Table of contents
+
+-   How and where to report a FreeBSD security issue
+
+-   Information about the FreeBSD Security Officer
+
+-   Information handling policies
+
+-   Supported FreeBSD Releases
+
+-   Unsupported FreeBSD Releases
+
+How and where to report a FreeBSD security issue
+
+FreeBSD security issues specific to the operating system should be
+reported to the FreeBSD Security Team or, if a higher level of
+confidentiality is required, PGP encrypted to the Security Officer Team
+using the Security Officer PGP key.
+
+FreeBSD security issues specific to the Ports Collection should be
+reported to the FreeBSD Ports Security Team.
+
+All reports should contain at least:
+
+-   A description of the vulnerability.
+
+-   What versions of FreeBSD seem to be affected if possible.
+
+-   Any plausible workaround.
+
+-   Example code if possible.
+
+Whenever possible, including the background, problem description,
+impact, and workaround (if applicable) using the templates for security
+advisories and errata notices as appropriate would also be helpful.
+
+After this information has been reported the Security Officer or a
+Security Team delegate will get back to you.
+
+Spam filters
+
+Due to high volume of spam the main security contact mail addresses are
+subject to spam filtering. If you cannot contact the FreeBSD Security
+Officers or Security Team due to spam filters (or suspect your mail has
+been filtered), please send mail to security-officer-XXXX@FreeBSD.org
+with XXXX replaced with 3432 instead of the normal addresses. Note that
+this address will be changed periodically so check back here for the
+latest address. Mails to this address will go to the FreeBSD Security
+Officer Team.
+
+The FreeBSD Security Officer Team and the FreeBSD Security Team
+
+In order that the FreeBSD Project may respond to vulnerability reports
+in a timely manner, emails sent to the <security-officer@FreeBSD.org>
+mail alias are currently delivered to the following people:
+
++-----------------------------------+-----------------------------------+
+| Gordon Tetlow                     | Security Officer                  |
+| <gordon@FreeBSD.org>              |                                   |
++-----------------------------------+-----------------------------------+
+| Ed Maste <emaste@FreeBSD.org>     | Deputy Security Officer           |
++-----------------------------------+-----------------------------------+
+| Xin Li <delphij@FreeBSD.org>      | Security Officer Emeritus         |
++-----------------------------------+-----------------------------------+
+| Dag-Erling Smørgrav               | Security Officer Emeritus         |
+| <des@FreeBSD.org>                 |                                   |
++-----------------------------------+-----------------------------------+
+
+The Security Officer is supported by the FreeBSD Security Team,
+<secteam@FreeBSD.org>, a small group of committers vetted by the
+Security Officer.
+
+Information handling policies
+
+As a general policy, the FreeBSD Security Officer favors full disclosure
+of vulnerability information after a reasonable delay to permit safe
+analysis and correction of a vulnerability, as well as appropriate
+testing of the correction, and appropriate coordination with other
+affected parties.
+
+The Security Officer will notify one or more of the FreeBSD Cluster
+Admins of vulnerabilities that put the FreeBSD Project’s resources under
+immediate danger.
+
+The Security Officer may bring additional FreeBSD developers or outside
+developers into discussion of a submitted security vulnerability if
+their expertise is required to fully understand or correct the problem.
+Appropriate discretion will be exercised to minimize unnecessary
+distribution of information about the submitted vulnerability, and any
+experts brought in will act in accordance of Security Officer policies.
+In the past, experts have been brought in based on extensive experience
+with highly complex components of the operating system, including FFS,
+the VM system, and the network stack.
+
+If a FreeBSD release process is underway, the FreeBSD Release Engineer
+may also be notified that a vulnerability exists, and its severity, so
+that informed decisions may be made regarding the release cycle and any
+serious security bugs present in software associated with an up-coming
+release. If requested, the Security Officer will not share information
+regarding the nature of the vulnerability with the Release Engineer,
+limiting information flow to existence and severity.
+
+The FreeBSD Security Officer has close working relationships with a
+number of other organizations, including third-party vendors that share
+code with FreeBSD (the OpenBSD, NetBSD and DragonFlyBSD projects, Apple,
+and other vendors deriving software from FreeBSD, as well as the Linux
+vendor security list), as well as organizations that track
+vulnerabilities and security incidents, such as CERT. Frequently
+vulnerabilities may extend beyond the scope of the FreeBSD
+implementation, and (perhaps less frequently) may have broad
+implications for the global networking community. Under such
+circumstances, the Security Officer may wish to disclose vulnerability
+information to these other organizations: if you do not wish the
+Security Officer to do this, please indicate so explicitly in any
+submissions.
+
+Submitters should be careful to explicitly document any special
+information handling requirements.
+
+If the submitter of a vulnerability is interested in a coordinated
+disclosure process with the submitter and/or other vendors, this should
+be indicated explicitly in any submissions. In the absence of explicit
+requests, the FreeBSD Security Officer will select a disclosure schedule
+that reflects both a desire for timely disclosure and appropriate
+testing of any solutions. Submitters should be aware that if the
+vulnerability is being actively discussed in public forums (such as
+bugtraq), and actively exploited, the Security Officer may choose not to
+follow a proposed disclosure timeline in order to provide maximum
+protection for the user community.
+
+Submissions may be protected using PGP. If desired, responses will also
+be protected using PGP.
+
+------------------------------------------------------------------------
+
+Last modified on: January 26, 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

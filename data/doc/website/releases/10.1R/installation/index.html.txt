@@ -1,0 +1,178 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 10.1-RELEASE Installation Instructions
+
+Abstract
+
+This article gives some brief instructions on installing FreeBSD
+10.1-RELEASE and upgrading the systems running earlier releases.
+
+Table of Contents
+
+-   Installing FreeBSD
+
+-   Upgrading FreeBSD
+
+Installing FreeBSD
+
+The Installing FreeBSD chapter of the FreeBSD Handbook provides more
+in-depth information about the installation program itself, including a
+guided walk-through with screenshots.
+
+Upgrading FreeBSD
+
+If you are upgrading from a previous release of FreeBSD, please read
+upgrading section in the Release Notes for notable incompatibilities
+carefully.
+
+Upgrading from Source
+
+The procedure for doing a source code based update is described in
+Synchronizing Source and Rebuilding world.
+
+For SVN use the releng/10.1 branch which will be where any upcoming
+Security Advisories or Errata Notices will be applied.
+
+Upgrading Using "FreeBSD Update"
+
+The freebsd-update(8) utility supports binary upgrades of i386 and amd64
+systems running earlier FreeBSD releases. Systems running 8.[4]-RELEASE,
+9.[123]-RELEASE, 10.0-RELEASE, 10.1-RC[1234] can upgrade as follows:
+
+    # freebsd-update fetch
+    # freebsd-update install
+
+Now the freebsd-update(8) utility can fetch bits belonging to
+10.1-RELEASE. During this process freebsd-update(8) will ask for help in
+merging configuration files.
+
+    # freebsd-update upgrade -r 10.1-RELEASE
+
+Due to changes in the way that FreeBSD is packaged on the release media,
+two complications may arise in this process if upgrading from FreeBSD
+8.x or 9.x:
+
+1.  The FreeBSD, which previously could appear in either /boot/kernel or
+    /boot/GENERIC, now only appears as /boot/kernel. As a result, any
+    kernel appearing in /boot/GENERIC will be deleted. Please carefully
+    read the output printed by freebsd-update(8) and confirm that an
+    updated kernel will be placed into /boot/kernel before proceeding
+    beyond this point.
+
+2.  The FreeBSD source tree in /usr/src (if present) will be deleted.
+    (Normally the freebsd-update(8) utility will update a source tree,
+    but in this case the changes in release packaging result in the
+    freebsd-update(8) utility not recognizing that the source tree from
+    the old release and the source tree from the new release correspond
+    to the same part of FreeBSD.)
+
+    # freebsd-update install
+
+The system must now be rebooted with the newly installed kernel before
+the non-kernel components are updated.
+
+    # shutdown -r now
+
+After rebooting, freebsd-update(8) needs to be run again to install the
+new userland components:
+
+    # freebsd-update install
+
+At this point, users of systems being upgraded from FreeBSD 9.3-RELEASE
+or earlier will be prompted by freebsd-update(8) to rebuild all
+third-party applications (e.g., ports installed from the ports tree) due
+to updates in system libraries.
+
+After updating installed third-party applications (and again, only if
+freebsd-update(8) printed a message indicating that this was necessary),
+run freebsd-update(8) again so that it can delete the old (no longer
+used) system libraries:
+
+    # freebsd-update install
+
+Finally, reboot into 10.1-RELEASE
+
+    # shutdown -r now
+
+------------------------------------------------------------------------
+
+Last modified on: January 26, 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

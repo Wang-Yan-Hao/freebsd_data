@@ -1,0 +1,168 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 9.2-RELEASE Release Notes
+
+Release Highlights
+
+The highlights in the 9.2-RELEASE include the following.
+
+-   Support for rarpd(8) added to vlan(4). [r245076]
+
+-   xz(1) updated to version 5.0.4. [r245128]
+
+-   The ZFS filesystem now supports TRIM when used on solid state
+    drives. ZFS TRIM support is enabled by default. [r251419] The
+    following tunables have been added:
+
+    -   vfs.zfs.trim.enabled: Enable ZFS TRIM
+
+    -   vfs.zfs.trim.max_interval: Maximum interval in seconds between
+        TRIM queue processing
+
+    -   vfs.zfs.trim.timeout: Delay TRIMs by up to this many seconds
+
+    -   vfs.zfs.trim.txg_delay: Delay TRIMs by up to this many TXGs
+
+-   The firewire(4) drivers have been removed from the GENERIC kernel
+    configuration for all architectures. [r246321]
+
+-   awk(1) has been updated to version 20121220. [r246373]
+
+-   The virtio(4) drivers have been added to the GENERIC kernel
+    configuration for amd64 and i386 architectures. [r247306]
+
+-   The ZFS filesystem now supports lz4 compression. [r247309]
+
+-   The oce(4) has been updated to version 4.6.95.0. [r248062]
+
+-   OpenSSL has been updated to version 0.9.8y. [r248272]
+
+-   The bsdinstall(8) installer now supports installation over HTTP.
+    [r248313]
+
+-   DTrace hooks have been enabled by default in the GENERIC kernel.
+    [r249549]
+
+-   DTrace has been updated to version 1.9.0. [r249856]
+
+-   Sendmail has been updated to version 8.14.7. [r249865, r249866,
+    r249867, r249875]
+
+-   OpenSSH has been updated to version 6.2p2. [r251135]
+
+-   less(1) has been updated to version 458. [r251154]
+
+-   Add ATA pass-through support to cam(4). [r251302]
+
+-   Implement new rc.conf(5) syntax for hostapd(8). The new format is:
+    ifconfig_wlanX="HOSTAP", where X represents the wlan(4) interface.
+    [r252748]
+
+-   Import unmapped I/O support from head/. [r251897]
+
+-   Merge nvme(4) from head/. [r252222]
+
+-   Add support for the Chelsio 40G T5. [r252495]
+
+-   Add a tunable to increase the initial TCP congestion window from 4
+    segments to 10 segments. This tunable can be enabled by adding
+    net.inet.tcp.experimental.initcwnd10=1 to sysctl.conf(5). This
+    tunable is turned off by default in FreeBSD 9.2-RELEASE. [r252789]
+
+-   Update the ixgbe(4) driver. [r252898]
+
+-   Update the Intel e1000 driver. [r252899]
+
+-   Add support for the HighPoint DC Series Data Center HBA (DC7280 and
+    R750). [r252903]
+
+-   Add service-specific setfib(1) support. This is enabled by setting:
+    <name>_fib in
+    rc.conf(5).">http://svn.FreeBSD.org/viewvc/base?view=revision&revision=253233[r253233]
+
+-   Update devices supported by cxgbe(4). [r253776]
+
+-   Remove ctl(4) from the GENERIC kernel configuration. [r253860]
+
+------------------------------------------------------------------------
+
+Last modified on: June 19, 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

@@ -1,0 +1,150 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   Documentation
+-   FAQ
+-   Manuel de référence
+-   Pages de manuel
+-   Présentations et papiers
+-   Livres et articles en ligne
+-   Publications
+-   Ressources Web
+-   Pour les débutants
+-   Projet de documentation
+-   Archive
+
+Ressources pour les participants à FreeBSD
+
+Guide pour les participants ("committers")
+
+Ce document est un guide général pour tout nouveau participant,
+comprenant aussi bien les détails techniques que les détails sur les
+politiques. Pour les premiers, consultez les chapitres sur les
+opérations CVS, le système de rapport de bogue GNATS, et l’introduction
+rapide à SSH.
+
+Il contient tout ce qu’un nouveau participant au projet FreeBSD doit
+savoir. Voir l’introduction au projet de documentation de FreeBSD et le
+guide du porteur d’applications, ci-dessous, pour plus d’informations.
+
+Introduction au Projet de Documentation de FreeBSD pour les nouveaux participants
+
+Cette introduction décrit tout ce que vous devez savoir pour commencer à
+participer au projet de documentation de FreeBSD, des outils et
+logiciels que vous utiliserez (ceux indispensables et ceux facultatifs)
+à la philosophie sous-jacente au Projet de Documentation.
+
+Manuel pour les porteurs d’applications sous FreeBSD
+
+Un guide pour les participants aux ports FreeBSD. Celui-ci comprend la
+Table des valeurs de __FreeBSD_version.
+
+Comment compiler les pages web FreeBSD.
+
+This document describes how to build and update the FreeBSD Web pages
+from the CVS repository by hand.
+
+Projets FreeBSD
+
+-   Projet de documentation de FreeBSD
+
+-   Équipe en charge des nouvelles versions de FreeBSD
+
+-   PicoBSD
+
+-   Projet FreeBSD/Alpha
+
+-   Projet FreeBSD/IA-64
+
+-   Projet FreeBSD/PPC
+
+-   Projet FreeBSD/SPARC
+
+-   Projet TrustedBSD
+
+-   Projets de développement FreeBSD
+
+Autres resources
+
+-   Dépôt CVS
+
+-   Rapports de bugs
+
+-   Informations sur la sécurité sous FreeBSD
+
+-   Copyright
+
+-   Wiki FreeBSD
+
+-   Dépôt Perforce pour les travaux en cours
+
+Les coulisses de FreeBSD
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 juin 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

@@ -1,0 +1,129 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Boot Performance Improvements
+
+Links:
+Wiki page URL: https://wiki.freebsd.org/BootTime
+OS boot time comparison URL:
+https://www.daemonology.net/blog/2021-08-12-EC2-boot-time-benchmarking.html
+
+Contact: Colin Percival <cperciva@FreeBSD.org>
+
+Colin Percival is coordinating an effort to speed up the FreeBSD boot
+process. For benchmarking purposes, he is primarily using an EC2
+c5.xlarge instance as a reference platform and is measuring the time
+between when the virtual machine enters the EC2 "running" state and when
+it is possible to SSH into the instance.
+
+This work started in 2017, and as of the end of December 2021 the
+FreeBSD boot time was reduced from approximately 30 seconds to
+approximately 10 seconds. During 2022Q1, further improvements have
+shaved more time off the boot process, taking it down to roughly 8
+seconds
+
+Two major issues remain outstanding:
+
+1.  The first time an EC2 instance boots, dhclient takes about 2 seconds
+    longer than normal to get an IPv4 address. The cause of this is
+    unknown and requires investigation.
+
+2.  IPv6 configuration includes two one-second-long sleep(1)
+    invocations, one from /etc/rc.d/netif and the other from
+    /etc/rc.d/rtsold. It might be possible to simply remove these; but
+    care is needed to avoid progressing too far in the boot process
+    before IPv6 addresses are configured. Input from IPv6 experts is
+    required here.
+
+Issues are listed on the wiki page as they are identified; the wiki page
+also has instructions for performing profiling. Users are encouraged to
+profile the boot process on their own systems, in case they experience
+delays which don’t show up on the system Colin is using for testing.
+
+This work is supported by Colin’s FreeBSD/EC2 Patreon.
+
+Sponsor: https://www.patreon.com/cperciva
+
+------------------------------------------------------------------------
+
+Last modified on: June 10, 2022 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

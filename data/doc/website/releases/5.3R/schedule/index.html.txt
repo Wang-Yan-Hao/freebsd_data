@@ -1,0 +1,136 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 5.3 Release Process
+
+Introduction
+
+This is a specific schedule for the release of FreeBSD 5.3. For more
+general information about the release engineering process, please see
+the Release Engineering section of the web site.
+
+General discussions about the release engineering process or quality
+assurance issues should be sent to the public FreeBSD-qa mailing list.
+MFC requests should be sent to re@FreeBSD.org.
+
+FreeBSD 5.3 will be the first release from the RELENG_5 branch and thus
+will also be the first 5-STABLE release.
+
+The current release engineering TODO list is also available. This list
+is updated periodically through the release cycle.
+
+Schedule
+
+  ---------------------------------- ------------- ------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Action                             Expected      Actual        Description
+  Announce the Ports Freeze          15 Aug 2004   15 Aug 2004   Someone from portmgr@ should email for the two week long ports freeze and tagging of the ports tree.
+  src/ tree frozen                   16 Aug 2004   16 Aug 2004   Announce the src/ code freeze for 5.3. Commits to the HEAD branch will be locked until the RELENG_5 branch is created.
+  RELENG_5 branch creation           16 Aug 2004   17 Aug 2004   Create the RELENG_5 branch. Commits to this branch will require Release Engineering approval until the RELENG_5_3 branch is created.
+  Begin 5.3-BETA1 builds             16 Aug 2004   20 Aug 2004   Begin building 5.3-BETA1 disc1 and disc2 for all Tier-1 platforms. The first built typically requires several days to resolve latent problems on all platforms, so it will be started early.
+  Release 5.3-BETA1                  20 Aug 2004   22 Aug 2004   5.3-BETA1 tier-1 platform images released and uploaded to ftp-master.FreeBSD.org.
+  Build and release 5.3-BETA2        27 Aug 2004   29 Aug 2004   5.3-BETA2 tier-1 platform images built, released, and uploaded to ftp-master.FreeBSD.org.
+  Build and release 5.3-BETA3        3 Sep 2004    5 Sep 2004    5.3-BETA3 tier-1 platform images built, released, and uploaded to ftp-master.FreeBSD.org.
+  Ports tree frozen                  3 Sep 2004    3 Sep 2004    Only approved commits will be permitted to the ports/ tree during the freeze.
+  Build and release 5.3-BETA4        10 Sep 2004   12 Sep 2004   5.3-BETA4 tier-1 platform images built, released, and uploaded to ftp-master.FreeBSD.org.
+  Build and release 5.3-BETA5        17 Sep 2004   20 Sep 2004   5.3-BETA5 tier-1 platform images released and uploaded to ftp-master.FreeBSD.org.
+  Ports tree tagged                  17 Sep 2004   11 Oct 2004   RELEASE_5_3_0 tag for ports/.
+  Ports tree unfrozen                17 Sep 2004   11 Oct 2004   After the ports/ tree is tagged, the ports/ tree will be re-opened for commits, but commits made after tagging will not go in 5.3-RELEASE.
+  Final package build starts         17 Sep 2004   11 Oct 2004   The ports cluster and pointyhat build final packages.
+  Turn off debugging for RELENG_5    17 Sep 2004   7 Sep 2004    Turn off WITNESS, INVARIANTS, and malloc debugging options. This will be the default for all RELENG_5 releases.
+  doc/ tree slush                    17 Sep 2004   17 Sep 2004   Announce the doc/ slush for 5.3. From this time until the tagging of the doc/ tree, non-critical changes should be postponed to allow translation teams time to finish their work for the release. If we can resolve problems before this expected date, doc/ slush could start earlier. At this point, we are considering on 10 Sep at earliest, and on 17 Sep at latest.
+  Build and release 5.3-BETA6        24 Sep 2004   26 Sep 2004   5.3-BETA6 tier-1 platform images released and uploaded to ftp-master.FreeBSD.org.
+  doc/ tree tagged                   24 Sep 2004   26 Sep 2004   Tag the doc/ tree with RELEASE_5_3_0.
+  Build and release 5.3-BETA7        1 Oct 2004    3 Oct 2004    5.3-BETA7 tier-1 platform images released and uploaded to ftp-master.FreeBSD.org.
+  RELENG_5_3 branched                8 Oct 2004    16 Oct 2004   Branch of src/ from RELENG_5 for the release.
+  src/ unfrozen                      8 Oct 2004    16 Oct 2004   Unfreeze RELENG_5 src. Continue to coordinate significant check-ins with re@FreeBSD.org until the release is final.
+  Build and release 5.3-RC1          17 Oct 2004   19 Oct 2004   5.3-RC1 tier-1 platform images released and uploaded to ftp-master.FreeBSD.org.
+  Version numbers bumped             22 Oct 2004   24 Oct 2004   The files listed here are updated to reflect FreeBSD 5.3.
+  src/ tree tagged                   22 Oct 2004   24 Oct 2004   Tag the RELENG_5_3 branch with RELENG_5_3_0_RELEASE.
+  Begin 5.3-RELEASE builds           5 Nov 2004    4 Nov 2004    Start 5.3-RELEASE Tier-1 builds.
+  Warn mirror-announce@FreeBSD.org   5 Nov 2004    5 Nov 2004    Heads up email to mirror-announce@FreeBSD.org to give admins time to prepare for the load spike to come. The site administrators have frequently requested advance notice for new ISOs.
+  Upload to ftp-master               5 Nov 2004    6 Nov 2004    Release and packages uploaded to ftp-master.FreeBSD.org.
+  FreeBSD 5.3 Announced              5 Nov 2004    6 Nov 2004    FreeBSD 5.3 is announced to the mailing lists.
+  FreeBSD 5.3 Press Release          5 Nov 2004    6 Nov 2004    A formal press release statement is in the works and should be released at this time to the www.FreeBSD.org website and various tech publications.
+  ---------------------------------- ------------- ------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

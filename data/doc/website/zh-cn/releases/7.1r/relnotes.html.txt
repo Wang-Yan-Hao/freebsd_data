@@ -1,0 +1,632 @@
+FreeBSD 7.1-RELEASE 发行说明
+
+The FreeBSD Project
+
+版权 © 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008 The FreeBSD
+Documentation Project
+
+$FreeBSD: src/release/doc/zh_CN.GB2312/relnotes/article.sgml,v
+1.1.2.6.2.3 2009/01/01 06:43:16 hrs Exp $
+
+FreeBSD 是 FreeBSD基金会的注册商标
+
+IBM、 AIX、 EtherJet、 Netfinity、 OS/2、 PowerPC、 PS/2、 S/390 以及
+ThinkPad 是国际商用机器公司在美国和其他国家的注册商标或商标。
+
+IEEE, POSIX, 和 802 是 Institute of Electrical and Electronics
+Engineers, Inc. 在美国的注册商标。
+
+Intel, Celeron, EtherExpress, i386, i486, Itanium, Pentium, 和 Xeon 是
+Intel Corporation 及其分支机构在美国和其他国家的商标或注册商标。
+
+Sparc, Sparc64, SPARCEngine, 以及 UltraSPARC 是 SPARC International, Inc
+在美国和其他国家的商标。 包含 SPARC 商标的产品基于 Sun Microsystems,
+Inc. 开发的架构。
+
+许多制造商和经销商使用一些称为商标的图案或文字设计来彰显自己的产品。
+本文档中出现的， 为 FreeBSD Project 所知晓的商标，后面将以 '™' 或 '®'
+符号来标注。
+
+这份 FreeBSD 7.1-RELEASE 的发行说明， 概括了 FreeBSD 基本系统在
+7.1-STABLE 开发线上所做的改动。
+本文档列举了自前一发行版本以来所有适用的安全公告， 以及对于 FreeBSD
+内核以及系统附带的应用程序所做的重要修改。
+对在升级时需要注意的一些问题， 也进行了简略的介绍。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+目录
+
+1 简介
+
+2 最新变动
+
+2.1 安全公告
+
+2.2 对内核的改动
+
+2.2.1 引导加载器的变化
+
+2.2.2 硬件支持
+
+2.2.3 网络协议
+
+2.2.4 磁盘和存储
+
+2.2.5 文件系统
+
+2.3 用户环境变动
+
+2.3.1 /etc/rc.d 脚本
+
+2.4 基本系统中的第三方软件
+
+2.5 发布工程与系统集成
+
+3 从先前版本的 FreeBSD 升级
+
+1 简介
+
+这篇文档包括了 FreeBSD 7.1-RELEASE 的发行说明。 它描述了最近刚刚加入、
+修改或删除了的 FreeBSD 特性的说明。 同时， 它也将给出如何从先前的
+FreeBSD 版本完成升级的说明。
+
+这是一份 FreeBSD 7.1-RELEASE 的 release 发布包。 您可以从
+ftp://ftp.FreeBSD.org/ 或其他镜像那里得到它的副本。 关于这个 (或其他)
+release 发布包的更多信息，可以在 FreeBSD 手册 中的 “如何获得 FreeBSD”
+附录 中找到。
+
+我们鼓励所有的用户在开始安装 FreeBSD
+之前首先参考这一版本所对应的勘误信息。
+勘误文档将随时更新，以便为用户提供在发布工程后期或该版本发布之后
+“新发现的” 问题和相关信息。 通常，这包括已知的
+bug，安全公告，以及对于文档的修订内容。 最新的 FreeBSD 7.1-RELEASE
+勘误信息可以从 FreeBSD 网站获得。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2 最新变动
+
+这一节描述了 FreeBSD 自从 7.0-RELEASE 以来最明显的新功能和变化。
+
+发行说明中的绝大多数条目是在说明自从 7.0-RELEASE
+以来的安全公告、新的驱动程序或硬件支持、新的命令或是选项、
+重要的错误修补，以及基本系统中来自第三方的软件升级。 重要的 ports 和
+packages 变动，或关于交付工程的变动也会在这份文档中体现。
+显而易见地，发行说明不可能涵盖 FreeBSD 版本之间的每一个微小变动；
+这篇文档主要关注的，仍然是安全公告，用户可以察觉的修改，
+以及重要的架构改良。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.1 安全公告
+
+下列安全公告所描述的问题均已在这一版本中进行了修正。
+如欲了解进一步的信息， 请参阅位于 http://security.FreeBSD.org/
+的安全公告全文。
+
++-------------+-------------+------------------------------------------+
+| 公告        | 日期        | 主题                                     |
++=============+=============+==========================================+
+| SA-08       | 2008 年     | OpenSSH X11-转发特权提升问题             |
+| :05.openssh |  4 月 17 日 |                                          |
++-------------+-------------+------------------------------------------+
+| SA          | 2008 年     | DNS 缓存投毒问题                         |
+| -08:06.bind |  7 月 13 日 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-         | 2008 年     | amd64 swapgs 本地特权提升问题            |
+| 08:07.amd64 |  9 月 3 日  |                                          |
++-------------+-------------+------------------------------------------+
+| SA-0        | 2008 年     | nmount(2) 本地任意代码执行问题           |
+| 8:08.nmount |  9 月 3 日  |                                          |
++-------------+-------------+------------------------------------------+
+| SA-         | 2008 年     | IPv6 连接导致的远程内核崩溃问题          |
+| 08:09.icmp6 |  9 月 3 日  |                                          |
++-------------+-------------+------------------------------------------+
+| S           | 2008 年     | IPv6 邻居发现协议 (NDP) 路由漏洞         |
+| A-08:10.nd6 |  10 月 1 日 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-08:11    | 2008 年     | arc4random(9) 可预测序列漏洞             |
+| .arc4random | 11 月 24 日 |                                          |
++-------------+-------------+------------------------------------------+
+| SA          | 2008 年     | ftpd(8) 跨站请求伪造问题                 |
+| -08:12.ftpd | 12 月 23 日 |                                          |
++-------------+-------------+------------------------------------------+
+| SA-08       | 2008 年     | netgraph / bluetooth 特权提升问题        |
+| :13.protosw | 12 月 23 日 |                                          |
++-------------+-------------+------------------------------------------+
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2 对内核的改动
+
+为 clock_gettime(2) 和相关系统调用新增了符合 POSIX 的时钟 ID
+CLOCK_THREAD_CPUTIME_ID。
+
+新增了 cpuset(2) 系统调用。 这是用于将线程与 CPU 及 CPU
+资源组进行绑定和分配的 API。
+
+从 OpenSolaris 引入了 DTrace， 一套完整的动态跟踪框架以及 dtrace(1)
+用户态工具。 DTrace 为管理员、
+开发人员以及支持工程师提供了用于回答操作系统和用户程序各类问题的强大的基础设施。
+
+为内核调试器 ddb(4) 新增了输出捕捉机制。 来自 ddb(4)
+的输入和输出内容会自动捕捉到一个内存缓冲区， 以便在随后通过 sysctl(8) 或
+textdump 来读取和分析。 新增的 capture 命令可以控制这个功能。
+
+为 ddb(4) 调试器新增了简单的脚本机制支持，
+使其能够支持一组经过命名的包含一系列 ddb(4) 命令的脚本。 这些脚本可以在
+ddb(4) 中， 或通过新增的 ddb(8) 来进行配置。 更多详情请参见联机手册
+ddb(4)。
+
+ddb(4) 的 ex 命令新增了 /S 模式， 用于将指定的符号解析成地址并打印其值。
+例如 ex /S aio_swake 可以显示出当前通过 aio_swake 挂钩注册的地址。
+
+为 ddb(4) 新增了 show conifhk 命令。 它能够列出在
+run_interrupt_driven_config_hooks() 中等待的挂钩。
+
+fcntl(2) 系统调用新增了 F_DUP2FD 命令的支持。 它与 dup(2) 作用相同，
+并与 Sun Solaris 和 IBM AIX 兼容。
+
+FreeBSD 的 linux(4) ABI 支持使用真正的 CPU 绑定配置原语实现了
+sched_setaffinity() 和 sched_getaffinity()。
+
+rpc.lockd(8) 客户端的功能在 FreeBSD 内核中重新进行了实现。
+这个实现提供了正确的 flock(2) 风格的锁语义， 后者在命令行工具 lockf(1)
+和库函数 pidfile(3) 中有所使用。 它同时还提供了服务器重启时的恢复能力，
+并能够确保修改过的数据块在获得锁之前写入服务器
+(这使得多个不同的客户端能够安全地利用文件上锁来共享数据)。 此外，
+新增了内核选项 options NFSLOCKD 并默认启用。 如果启用了内核支持， 则
+rpc.lockd(8) 会自动检测并使用这一功能。
+
+内核新增了 textdump 格式的主存内容转存能力。
+与传统主存内容转存方式不同， textdump
+通过一系列机械化的生成/提取调试输出来提供高一级的信息。
+这个机制即使在内核没有包含调试符号， 或源代码与内核不完全同步的情况下，
+仍然能够提供简明但内容丰富的调试信息。
+关于这一机制的进一步详情请参见联机手册 textdump(4)。
+
+wait4(2) 系统调用新增了 WNOWAIT 标志以保持进程的可等待状态， 以及与
+WUNTRACED 等价的 WSTOPPED 标志。
+
+[amd64, i386, sparc64] FreeBSD 内核支持将中断与 CPU 绑定了。
+
+[amd64, i386] ULE 调度器成为了 GENERIC 内核的默认进程调度器。
+
+新增了与内核选项 COMPAT_FREEBSD[456] 对应的 sysctl 变量
+kern.features.compat_freebsd[456]。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2.1 引导加载器的变化
+
+[amd64, i386] 对引导加载器使用的 BTX 内核进行了修改， 使其在实模式下调用
+BIOS 例程。 这一变动使得从 USB 设备引导 FreeBSD 成为了可能。
+
+[amd64, i386] 新增了用于支持从 GPT 标签引导系统的 gptboot 引导加载器。
+为 gpt(8) 工具新增了 boot 命令， 其作用是通过写入引导加载器，
+并根据需要创建新的引导分区来让 GPT 磁盘能够引导系统。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2.2 硬件支持
+
+新增了用于支持 Omnikey CardMan 4040 PCMCIA 智能卡阅读器的 cmx(4) 驱动。
+
+[sparc64] 新增了 kbdmux(4) 驱动程序。 sunkbd(4) 能够支持模拟 atkbd(4) 的
+ukbd(4) 了。
+
+nvram(4) 驱动是 MPSAFE 的了。
+
+不再支持用于 puc(4) 驱动程序的 PUC_FASTINTR 选项。
+
+psm(4) 驱动程序会首先尝试检测触摸板之后再检测 IntelliMouse。
+一些触摸板会伪装成 IntelliMouse， 导致探测 IntelliMouse 正常，
+而检测触摸板则无法正常工作。
+
+从 OpenBSD 引入了用于支持基于 Silicon Laboratories CP2101/CP2102 USB
+串口适配器的 uslcom(4) 驱动。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2.2.1 多媒体支持
+
+agp(4) 驱动程序新增了 Intel G33 和 G45 的支持。
+
+[i386] 新增了使用 VESA BIOS 的 DPMS 功能来完成挂起和恢复的 dpms(4)
+驱动程序。
+
+内核驱动程序 DRM 新增了 i915 GME 设备的支持。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2.2.2 网络接口支持
+
+新增了用于支持 Atheros AR8121/AR8113/AR8114 千兆/百兆以太网控制器的
+ale(4) 驱动程序。 在这一版本中的 GENERIC 内核中默认并不包含此驱动。
+
+将 em(4) 驱动程序分拆成了两个共享部分代码的驱动程序。 em(4)
+驱动程序将继续支持高至 82575 的网卡以及新的针对客户机/桌面的网卡。
+新增的 igb(4) 驱动程序则用于支持新的服务器网卡。
+
+对 hme(4) 驱动程序进行了改进。
+
+ixgbe(4) 驱动程序更新到了来自 Intel 的 1.6.2 版本。
+
+某些采用 miibus(4) 支持的驱动程序的 IEEE 802.3
+自动协商顺序不正确的问题得到了修正。 现在它会按照 Annex 288.3
+描述的顺序正确地进行 IEEE 802.3 支持技术协商了。
+
+为 msk(4) 驱动程序添加了针对短帧 TCP/UDP 硬件校验和计算 bug 的
+workaround。 注意对于需要硬件进行 VLAN tag 插入的帧而言， 这个
+workaround 没有做用， 因为在 mbuf 中插入 VLAN tag 会导致校验和变化。
+因此如果需要 VLAN 就必须禁用硬件校验和辅助计算。
+
+对 ndis(4) NDIS miniport 驱动封装程序进行了改进。
+
+对 sf(4) 驱动程序进行了改进， 它支持校验和辅助计算了。
+
+stge(4) 驱动程序支持 WOL (通过 LAN 唤醒) 了。
+
+对 vr(4) 驱动程序进行了改进。
+
+[amd64, i386] 对 wpi(4) 驱动程序进行了更新， 修正了一系列可靠性问题。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2.3 网络协议
+
+arp(8) 工具新增了 reject 和 blackhole 关键字。 对于标记为 reject
+的项目， 发到主机的流量将被丢弃， 而发送者则会得到主机无法到达的回应。
+对于标记为 blackhole 的项目， 则只是简单地丢弃这些流量。
+
+bpf(4) 新增了 ioctl BIOCSETFNR。 这个功能和 BIOCSETF 类似，
+但不丢弃描述符缓冲的所有包并重置统计数据。
+
+if_bridge(4) 支持使用 ifconfig(8) 的 ifmaxaddr
+参数来限制网桥接口后面的源 MAC 数量了。
+
+修正了可能在 carp(4) 接口配置时导致内核崩溃的 bug。
+
+dummynet(4) 子系统新增了 fast 运行模式， 使得特定的包能够绕过 dummynet
+调度器。 这能够降低延迟以及在包经过管道带宽限制时的开销，
+并消除子系统内部的递归。 新增的 sysctl 变量 net.inet.ip.dummynet.io_fast
+可以用来启用这一功能。
+
+enc(4) 新增了用于决定防火墙或 bpf(4) 能够看到进入或流出 IPsec
+包的内部以及外部报头的一系列 sysctl 变量。
+
+gre(4) 新增了 ioctl GRESKEY 和 GREGKEY， 用于设置和读取发出包时的 GRE
+秘钥。
+
+修正了 ipsec(4) 子系统中的一个导致在路由 MTU 比接口路由 MTU 低时 PMTU
+失效的 bug。
+
+由于缺少多处理器支持， 删去了 netatm 子系统。
+
+ng_nat(4) 能够通过 libalias 支持包的重定向了。
+如欲了解进一步细节请参见联机手册。
+
+ng_pptpgre(4) 新增了类似 ng_l2tp(4) 的多重挂钩， 使用一对 pptpgre 和
+ksocket 节点来完成两个断点的全部调用。
+
+resolver(3) 允许在域名中出现下划线了。 尽管这违反 RFC 1034 [STD 13]，
+但一些域名服务器和其他流行的操作系统的解析库都允许这种域名。
+
+新增了用于 TCP socket 的 socket 选项 TCP_CONGESTION。
+它能够设置和读取拥塞控制算法。 选择这个名字的目的是与 Linux 兼容。
+
+在 inpcbinfo 和 inpcb 基础设施以及依赖这一基础设施的协议， 包括 UDP、
+TCP 和 IP raw socket 中使用了 rwlock(9) 来减少锁的冲撞。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2.4 磁盘和存储
+
+aac(4) 驱动程序支持尺寸超过 2TB 的卷了。
+
+为 ata(4) 驱动程序新增了引导加载器变量 hw.ata.ata_dma_check_80pin。
+它可以用来在一些笔记本和 Soekris 的有问题的主板上禁止 80针 电缆检查。
+默认配置是 1。
+
+修正了在 ServerWorks HT1000 芯片组上 ata(4) 驱动程序导致的数据损坏问题。
+
+ciss(4) 驱动程序新增了引导加载器变量 hw.ciss.nop_message_heartbeat
+用于在 ciss_periodic() 中以 NOP-消息轮询。 这可以作为
+ADAPTER HEARTBEAT FAILED 问题的 workaround。 默认配置为 0 (禁用)。
+
+geom_part GEOM 类 可以作为内核模块联编了。
+
+geom_linux_lvm GEOM 类 可以作为内核模块联编了。
+
+hptrr(4) 更新到了来自 Highpoint 的 1.2 版。
+
+修正了 iir(4) 驱动程序中的一处缓冲区溢出。
+这修正了大量关于这一驱动的怪异问题。
+
+mpt(4) 驱动程序支持 mpt_user 个体了。
+
+rr232x(4) 被 hptrr(4) 驱动程序取代。
+
+twa(4) 驱动程序针对大量内存和高 CPU 负载的机器进行了可靠性改进。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.2.5 文件系统
+
+fdescfs(5) 是 MPSAFE 的了。
+
+gpart(8) 新增了 BSD 标签 (option GEOM_PART_BSD) 和 VTOC8 标签 (option
+GEOM_PART_VTOC8) 的支持。
+
+gvinum(8) 新增了用于创建 plex 的 volume 参数。
+
+修正了 unionfs(7) 中 UNIX domain socket 路径名的一个查找 bug。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.3 用户环境变动
+
+adduser(8) 工具新增了用于指定新用户主目录的 -M 选项。
+
+atacontrol(8) 工具新增了用于设置将设备置于减速状态超时时间的 spindown
+命令。
+
+chflags(1) 新增了用于指定详细输出的 -v 选项， 以及类似于 (例如) chmod(1)
+对应的忽略错误语义的 -f 选项。
+
+cp(1) 新增了等价于 -RpP 的 -a 选项。
+
+修正了导致 cp(1) 工具无法复制 POSIX.1e ACL (参见 acl(3)) 的 bug。
+
+cron(8) 支持使用 -m 选项来指定默认的邮件收件人了。 这一配置可以通过
+crontab 文件中的 MAILTO= 配置来覆盖。
+
+dhclient(8) 新增了对于 dhcp-options(5) 中更多选项的支持。
+
+dhclient(8) 新增了用于判断当前接口是否提供默认路由的
+is_default_interface() 函数。
+
+修正了导致 dhclient(8) 无法删除默认路由的 bug。
+
+环境变量数组 environ(7) 支持将变量的第一个字符设置为 NUL 来删除变量了。
+这一功能是一些第三方软件如 Dovecot 和 Postfix 所需要的。
+
+fdisk(8) 新增了禁止显示警告的 -q 选项。
+
+fetch(1) 程序和 libfetch 函数库新增了对于 NO_PROXY 环境变量的支持。
+这个环境变量可以用来指定逗号或空格分开的主机名列表，
+令这些主机不使用代理。 如果使用星号， 则表示禁止使用代理。
+
+新增了 ffsll(3) 和 flsll(3) 函数。 除了在 long long 类型上操作之外它们和
+ffs(3) 及 fls(3) 功能相同。
+
+fortune(6) 程序新增了对于使用 FORTUNE_PATH 环境变量指定搜索 fortune
+文件的支持。
+
+修正了导致 fortune(6) 程序的 -e 选项无法配合多个文件工作的 bug。
+
+freebsd-update.conf(5) 新增了 IDSIgnorePaths 语句。
+
+fwcontrol(8) 工具新增了用于在下次总线复位时将 node 指定为根节点的
+-f node 选项。
+
+[sparc64] gcc(1) 能够正确处理 -mcpu 选项了。 之前它是硬编码的
+-mcpu=ultrasparc。
+
+gpt(8) 支持 ZFS 了。
+
+ifconfig(8) 新增了显示 WPS IE (Wireless Provisioning Services
+Information Element) 的支持。
+
+kgdb(1) 新增了用于定位 kld(4) 及其符号的 add-kld kld 命令。
+
+kgdb(1) 新增了动态连接库后端， 将 kld(4) 视为动态连接库，
+并在启动时自动为 kld(4) 加载符号。
+
+kgdb(1) 新增了 tid 命令以及其他与内核模块相关的命令， 并可以远程工作。
+
+新增了用于获得全局 CPU 时间统计的 kvm_getcptime(3) 函数。
+
+libalias 函数库支持小写的 FTP 命令 PORT 和 EPRT 了。
+
+man(1) 新增了对于 bzip2(1) 压缩的联机手册的有限支持。
+
+mdconfig(8) 新增了 -v (详细) 选项， 用于配合 -l 命令使用。
+它可以显示所有 md(4) 设备的尺寸和后端存储。
+
+新增了 memrchr(3) 函数。 它和 memchr(3) 的不同之处在于它是从后匹配字符。
+
+修正了 morse(6) 程序输出中的语法错误。
+
+mountd(8) 工具新增了用于指定绑定 TCP 和 UDP 请求的 IP 地址的 -h bindip
+选项。 这个选项可以指定多次。 如果没有指定 -h 选项则表示使用 INADDR_ANY
+。 如果通过这个选项指定 IP 地址， 它会自动将 127.0.0.1 加入列表；
+如果启用了 IPv6， 则 ::1 也会自动加入列表。
+
+moused(8) 工具新增了用于改变滚轮速度的 -L 选项以及只影响滚轮阈值的 -U
+选项。
+
+mv(1) 在将目录移动到跨设备的另一个已经存在的目录时遵循 POSIX 规范。
+
+periodic(8) 新增了 periodic.conf(5) 配置变量
+daily_status_mail_rejects_shorten。
+它表示按照黑名单来给出拒收列表而不给出具体的发送人主机。
+默认的配置则保持原先的输出格式不变。
+
+ping6(8) 采用与 ping(8) 相同的返回码 0 和 2 了。
+
+ping6(8) 新增了使其在收到一个回应包之后正常退出的 -o 选项。
+
+ping6(8) 新增了和 ping(8) 的 -a 和 -A 等价的 -r 和 -R 选项。
+
+将 ping6(8) 允许的最小间隔从 0.01 减少到了 0.000001。
+
+realpath(1) 新增了用于禁止给出警告信息的 -q 选项； 此外，
+它能够接受多个路径作为命令行参数了。
+
+rfcomm_pppd(8) 新增了 -D 选项用于在 LAN (LAN Access Using PPP)
+服务之外注册 DUN (Dial-Up Networking) 服务。
+
+sdpd(8) 新增了 NAP, GN 和 PANU 配置文件。
+
+setkey(8) 支持将 esp 作为 spdadd 命令的协议名了。
+
+修正了 telnetd(8) 在指定了 -a off 时仍然试图进行身份验证的 bug。
+
+top(1) 和 vmstat(8) 新增了显示每个 CPU 统计的 -P 选项。
+
+traceroute(8) 新增了用于显示每跳 IP 对应的 AS 编号的 -a 选项。 它会从 -A
+选项指定的 WHOIS 服务器进行查询。 如果没有指定 -A 选项， 则默认使用
+whois.radb.net。
+
+新增了用于编码和解码 UUID 二进制形式的 uuid_enc_le(3)、 uuid_dec_le(3)、
+uuid_enc_be(3) 和 uuid_dec_be(3) 函数。
+
+watch(8) 支持同时超过 10 个 snp(4) 设备了。
+
+ypserv(8) 新增了用于指定监听端口的 -P 参数。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.3.1 /etc/rc.d 脚本
+
+rc.conf(5) 新增了当 firewall_enable 为 YES 时自动加载 dummynet(4)
+内核模块的 dummynet_enable 变量。
+
+ntpd rc(8) 脚本可以在没有 /etc/ntp.conf 配置文件的情况下工作了。
+
+ppp rc(8) 脚本支持多份实例了。 如欲了解细节， 请参阅 rc.conf(5) 的
+ppp_profile 变量。
+
+sysctl rc(8) 脚本新增了在 /etc/sysctl.conf 基础上加载
+/etc/sysctl.conf.local 的支持。
+
+rc.conf(5) 新增了为网卡和附加设备， 通过 rc.firewall 规则集配置
+firewall_type 是 simple 或 client 防火墙的支持。 请参阅
+firewall_client_net、 firewall_simple_iif、 firewall_simple_inet、
+firewall_simple_oif、 和 firewall_simple_onet。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.4 基本系统中的第三方软件
+
+am-utils 从 6.0.10p1 版升级到了 6.1.5 版。
+
+ISC BIND 升级到了 9.4.2-P2 版。
+
+awk 从 2007 年 5 月 1 日版升级到了 2007 年 10 月 23 日版。
+
+bzip2 从 1.0.4 升级到了 1.0.5。
+
+CVS 更新到了 1.11.22.1。
+
+hostapd 更新到了 0.5.10 版 + radius ACL 支持。
+
+libarchive 更新到了 2.5.5 版。
+
+ncurses 库更新到了 5.6-20080503 版。
+
+NTP 更新到了 4.2.4p5 版。
+
+OpenPAM 从 Figwort 版升级到了 Hydrangea 版。
+
+OpenSSH 从 4.5p1 版升级到了 5.1p1 版。
+
+resolver(3) 库更新到了 ISC BIND 9.4.3。
+
+sendmail 从 8.14.2 版升级到了 8.14.3 版。
+
+时区数据库从 tzdata2007h 版升级到了 tzdata2008b 版。
+
+wpa_supplicant 更新到了 0.5.10 版 + syslog 支持。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2.5 发布工程与系统集成
+
+支持的 GNOME 桌面环境 (x11/gnome2) 从 2.20.1 升级到了 2.22。
+
+支持的 KDE 桌面环境 (x11/kde3) 从 3.5.8 升级到了 3.5.10。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3 从先前版本的 FreeBSD 升级
+
+[amd64, i386] 从 FreeBSD 6.2-RELEASE 开始， 系统已经能够通过使用
+freebsd-update(8) 来实现 RELEASE 版本之间 (以及不同安全分支的快照版本)
+的二进制升级。 二进制升级过程将更新未经修改的 userland 工具， 以及随官方
+FreeBSD 发行版发布的、 未作修改的 GENERIC 内核。 使用 freebsd-update(8)
+工具的主机， 需要有可用的 Internet 连接。
+
+旧式的二进制升级， 则是通过随 CDROM 发行介质提供的 sysinstall(8) 的
+Upgrade 选项来完成的。 这种二进制升级方式， 对于 非-i386、 非-amd64 的，
+以及没有接入 Internet 的系统而言会比较有用。
+
+此外， 也可以使用源代码从较早版本升级的方式 (通过从源代码重新编译
+FreeBSD 的基本系统)， 其操作方法请参见 /usr/src/UPDATING。
+
+  重要: 很显然，升级 FreeBSD 时，应该首先备份 全部 数据和配置文件。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+这份文档，以及其他与FreeBSD发行版本有关的文档，都可以在
+ftp://ftp.FreeBSD.org/下载。
+
+在遇到关于FreeBSD的技术问题时，请首先阅读 文档 之后再考虑联系
+<questions@FreeBSD.org>。
+
+所有 FreeBSD 7.1-STABLE 的用户都应该订阅 <stable@FreeBSD.org> 邮件列表。
+
+关于这份文档的任何问题，请致信 <doc@FreeBSD.org>。

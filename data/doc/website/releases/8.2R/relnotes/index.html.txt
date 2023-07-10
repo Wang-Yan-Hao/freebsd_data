@@ -1,0 +1,235 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 8.2-RELEASE Release Notes
+
+Release Highlights
+
+The highlights in the 8.2-RELEASE are the following:
+
+-   [amd64] FreeBSD/amd64 now always sets the KVA space as equal to or
+    larger than physical memory size. This change would help to prevent
+    a “kmem_map too small” panic which often occurs when using
+    ZFS.[r214620]
+
+-   The FreeBSD GENERIC kernel is now compiled with KDB and KDB_TRACE
+    options. From 8.2-RELEASE the kernel supports displaying a stack
+    trace on panic by using stack(9) facility with no debugger backend
+    like ddb(8). Note that this does not change the default behaviors of
+    the GENERIC kernel on panic.[r214326]
+
+-   The FreeBSD crypto(4) framework (opencrypto) now supports XTS-AES
+    (XEX-TCB-CTS, or XEX-based Tweaked Code Book mode with CipherText
+    Stealing), which is defined in IEEE Std. 1619-2007.[r214254]
+
+-   [amd64] Xen HVM support in FreeBSD/amd64 kernel has been improved.
+    For more details, see xen(4) manual page.[r215788]
+
+-   FreeBSD now fully supports GPT (GUID Partition Table). Checksums of
+    primary header and primary partition table are verified properly
+    now.[r213994]
+
+-   [amd64, i386] The aesni(4) driver has been added. This supports AES
+    accelerator on Intel CPUs and accelerates AES operations for
+    crypto(4).[r215633]
+
+-   [amd64, i386] The aibs(4) driver has been added. This supports the
+    hardware sensors in ASUS motherboards and replaces the
+    acpi_aiboost(4) driver.[r210476]
+
+-   The tpm(4) driver, which supports Trusted Platform Module has been
+    added.[r215036]
+
+-   The xhci(4) driver, which supports Extensible Host Controller
+    Interface (xHCI) and USB 3.0, has been added.[r215944]
+
+-   The FreeBSD Linux emulation subsystem now supports the video4linux
+    API. This requires native video4linux hardware drivers such as the
+    ones provided by multimedia/pwcbsd and multimedia/webcamd.
+
+-   The miibus(4) has been rewritten for the generic IEEE 802.3 annex
+    31B full duplex flow control support. The alc(4), bge(4), bce(4),
+    cas(4), fxp(4), gem(4), jme(4), msk(4), nfe(4), re(4), stge(4), and
+    xl(4) drivers along with atphy(4), bmtphy(4), brgphy(4),
+    e1000phy(4), gentbi(4), inphy(4), ip1000phy(4), jmphy(4), nsgphy(4),
+    nsphyter(4), and rgephy(4) have been updated to support flow control
+    via this facility.[r211379, r215881, r215890, r2105894, r216002,
+    r216023, r216029, r216031, r216033]
+
+-   A new netgraph(4) node ng_patch(4) has been added. This performs
+    data modification of packets passing through. Modifications are
+    restricted to a subset of C language operations on unsigned integers
+    of 8, 16, 32 or 64-bit size.[r209843]
+
+-   The FreeBSD TCP reassembly implementation has been improved. A
+    long-standing accounting bug affecting SMP systems has been fixed
+    and the net.inet.tcp.reass.maxqlen sysctl(8) variable has been
+    retired in favor of a per-connection dynamic limit based on the
+    receive socket buffer size. FreeBSD receivers now handle packet loss
+    (particularly losses caused by queue overflows) significantly better
+    than before which improves connection throughput.[r214865, r214866]
+
+-   The siftr(4), Statistical Information For TCP Research (SIFTR)
+    kernel module has been added. This is a facility that logs a range
+    of statistics on active TCP connections to a log file. It provides
+    the ability to make highly granular measurements of TCP connection
+    state, aimed at system administrators, developers and
+    researchers.[r214859]
+
+-   The geli(8) GEOM class now uses XTS-AES mode by default.[r214405]
+
+-   The ZFS on-disk format has been updated to version 15 and various
+    performance improvements for the ZFS have been imported from
+    OpenSolaris.
+
+-   Userland support for the dtrace(1) subsystem has been added. This
+    allows inspection of userland software itself and its correlation
+    with the kernel, thus allowing a much better picture of what exactly
+    is going on behind the scenes. The dtruss(1) utility has been added
+    and libproc has been updated to support the facility.[r214983]
+
+-   The gpart(8) utility now supports a recover subcommand for GPT
+    partition tables.
+
+-   The gpart(8) utility now supports GPT_ENT_ATTR_BOOTME,
+    GPT_ENT_ATTR_BOOTONCE, and GPT_ENT_ATTR_BOOTFAILED attributes in
+    GPT. The attribute keywords in the command line are bootme,
+    bootonce, and bootfailed respectively.[r213994]
+
+-   The libarchive library and tar(1) utility now support LZMA
+    (Lempel-Ziv-Markov chain-Algorithm) compression format.[r213667]
+
+-   The newsyslog(8) utility now supports an -S pidfile option to
+    override the default syslogd(8) PID file.[r211699]
+
+-   The newsyslog(8) utility now supports a special log file name
+    <include> for processing file inclusion. Globbing in the file name
+    and circular dependency detection are supported. For more details,
+    see the newsyslog.conf(5) manual page.[r215622]
+
+-   The pmcstat(8) utility now supports a file and a network socket as a
+    top source. This allows top monitoring over TCP on a system with no
+    local symbols, for example.[r211098]
+
+-   The tftp(1) and tftpd(8) utilities have been improved for better
+    interoperability and they now support RFC 1350, 2347, 2348, 2349,
+    and 3617.[r213036, r213038]
+
+-   A periodic script for zfs scrub has been added. For more details,
+    see the periodic.conf(5) manual page.
+
+-   A periodic script which can be used to find installed ports' files
+    with mismatched checksum has been added. For more details, see the
+    periodic.conf(5) manual page.
+
+-   The sysinstall(8) utility now uses the following numbers for default
+    and minimum partition sizes: 1GB for /, 4GB for /var, and 1GB for
+    /tmp.[r211007]
+
+-   The ACPI-CA has been updated to 20101013.
+
+-   The ee(1) program has been updated to version 1.5.2.[r214287]
+
+-   ISC BIND has been updated to version 9.6-ESV-R3.
+
+-   netcat has been updated to version 4.8.
+
+-   OpenSSL has been updated to version 0.9.8q.
+
+-   The timezone database has been updated to the tzdata2010o release.
+
+-   The xz has been updated from snapshot as of 12 April 2010 to 5.0.0
+    release
+
+-   The supported version of the GNOME desktop environment (x11/gnome2)
+    has been updated to 2.32.1.
+
+-   The supported version of the KDE desktop environment (x11/kde4) has
+    been updated to 4.5.5.
+
+For more details, please see the Detailed Release Notes.
+
+A list of all platforms currently under development can be found on the
+Supported Platforms page.
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

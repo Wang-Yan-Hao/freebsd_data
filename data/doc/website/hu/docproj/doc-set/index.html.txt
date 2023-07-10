@@ -1,0 +1,113 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Documentation
+-   FAQ
+-   Handbook
+-   Manual Pages
+-   Presentations and Papers
+-   Books and Articles Online
+-   Publications
+-   Web Resources
+-   For Newbies
+-   Documentation Project
+-   Archive
+
+A FreeBSD Dokumentációs Projekt: A dokumentációs csomag
+
+A FreeBSD dokumentációja három fõ kategóriára osztható:
+
+1.  A man oldalak
+
+    A projekt ezzel nem igazán foglalkozik, mert ez az alaprendszer
+    részét képezi. Kivételt képez ez alól a japán csapat, õk lefordítják
+    ezeket az oldalakat is. Nincs akadálya azonban, hogy mások is így
+    tegyenek.
+
+    Nem arról van szó, hogy a man oldalak nem fontosak, egyáltalán nem!
+    Egyszerûen csak annyira kötõdnek a FreeBSD néhány részéhez, hogy a
+    legtöbb esetben a legalkalmasabb ember, aki lefordíthatná ezeket az,
+    aki a FreeBSD azon részét írta.
+
+2.  Könyvek
+
+    A projekt sok olyan dokumentációval rendelkezik, melyek már “könyv
+    terjedelmûek”, vagy azok lesznek. Ezek közé tartozik a FreeBSD GYIK
+    és a FreeBSD kézikönyv.
+
+3.  Cikkek
+
+    A FreeBSD-t érintõ hatalmas információmennyiség érhetõ el rövidebb
+    cikkek formájában, hasonlóan más projektek oktatóanyagaihoz vagy
+    HOGYAN leírásaihoz.
+
+A FreeBSD Dokumentációs Projekt kezdõlapja
+
+------------------------------------------------------------------------
+
+Last modified on: 2021. január 26. by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

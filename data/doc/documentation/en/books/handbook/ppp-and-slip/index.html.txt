@@ -1,0 +1,1227 @@
+
+-    Preface
+    -   Intended Audience
+    -   Fourth Edition
+    -   Third Edition
+    -   Second Edition (2004)
+    -   First Edition (2001)
+    -   Organization of This Book
+    -   Conventions used in this book
+    -   Acknowledgments
+-    Part I. Getting Started
+-    Chapter 1. Introduction
+    -   1.1. Synopsis
+    -   1.2. Welcome to FreeBSD!
+    -   1.3. About the FreeBSD Project
+-    Chapter 2. Installing FreeBSD
+    -   2.1. Synopsis
+    -   2.2. Minimum Hardware Requirements
+    -   2.3. Pre-Installation Tasks
+    -   2.4. Starting the Installation
+    -   2.5. Using bsdinstall
+    -   2.6. Allocating Disk Space
+    -   2.7. Fetching Distribution Files
+    -   2.8. Network Interfaces, Accounts, Time Zone, Services and
+        Hardening
+    -   2.9. Troubleshooting
+    -   2.10. Using the Live CD
+-    Chapter 3. FreeBSD Basics
+    -   3.1. Synopsis
+    -   3.2. Virtual Consoles and Terminals
+    -   3.3. Users and Basic Account Management
+    -   3.4. Permissions
+    -   3.5. Directory Structure
+    -   3.6. Disk Organization
+    -   3.7. Mounting and Unmounting File Systems
+    -   3.8. Processes and Daemons
+    -   3.9. Shells
+    -   3.10. Text Editors
+    -   3.11. Devices and Device Nodes
+    -   3.12. Manual Pages
+-    Chapter 4. Installing Applications: Packages and Ports
+    -   4.1. Synopsis
+    -   4.2. Overview of Software Installation
+    -   4.3. Finding Software
+    -   4.4. Using pkg for Binary Package Management
+    -   4.5. Using the Ports Collection
+    -   4.6. Building Packages with Poudriere
+    -   4.7. Post-Installation Considerations
+    -   4.8. Dealing with Broken Ports
+-    Chapter 5. The X Window System
+    -   5.1. Synopsis
+    -   5.2. Installing Xorg
+    -   5.3. Graphic card drivers
+    -   5.4. Xorg Configuration
+    -   5.5. Using Fonts in Xorg
+-    Chapter 6. Wayland
+    -   6.1. Wayland Synopsis
+    -   6.2. The Wayfire Compositor
+    -   6.3. The Hikari Compositor
+    -   6.4. The Sway Compositor
+    -   6.5. Using Xwayland
+    -   6.6. Remote Desktop Using VNC
+    -   6.7. Wayland Login Manager
+    -   6.8. Useful Utilities
+-    Chapter 7. Network
+    -   7.1. Synopsis
+    -   7.2. Setting up the Network
+    -   7.3. Wired Networks
+    -   7.4. Wireless Networks
+    -   7.5. Hostname
+    -   7.6. DNS
+    -   7.7. Troubleshooting
+-    Part II. Common Tasks
+-    Chapter 8. Desktop Environments
+    -   8.1. Synopsis
+    -   8.2. Desktop Environments
+    -   8.3. Browsers
+    -   8.4. Development tools
+    -   8.5. Desktop office productivity
+    -   8.6. Document Viewers
+    -   8.7. Finance
+-    Chapter 9. Multimedia
+    -   9.1. Synopsis
+    -   9.2. Setting Up the Sound Card
+    -   9.3. Audio players
+    -   9.4. Video players
+    -   9.5. Conferencing and Meetings
+    -   9.6. Image Scanners
+-    Chapter 10. Configuring the FreeBSD Kernel
+    -   10.1. Synopsis
+    -   10.2. Why Build a Custom Kernel?
+    -   10.3. Finding the System Hardware
+    -   10.4. The Configuration File
+    -   10.5. Building and Installing a Custom Kernel
+    -   10.6. If Something Goes Wrong
+-    Chapter 11. Printing
+    -   11.1. Quick Start
+    -   11.2. Printer Connections
+    -   11.3. Common Page Description Languages
+    -   11.4. Direct Printing
+    -   11.5. LPD (Line Printer Daemon)
+    -   11.6. Other Printing Systems
+-    Chapter 12. Linux Binary Compatibility
+    -   12.1. Synopsis
+    -   12.2. Configuring Linux Binary Compatibility
+    -   12.3. Linux userlands
+    -   12.4. Advanced Topics
+-    Chapter 13. WINE
+    -   13.1. Synopsis
+    -   13.2. WINE Overview & Concepts
+    -   13.3. Installing WINE on FreeBSD
+    -   13.4. Running a First WINE Program on FreeBSD
+    -   13.5. Configuring WINE Installation
+    -   13.6. WINE Management GUIs
+    -   13.7. WINE in Multi-User FreeBSD Installations
+    -   13.8. WINE on FreeBSD FAQ
+-    Part III. System Administration
+-    Chapter 14. Configuration and Tuning
+    -   14.1. Synopsis
+    -   14.2. Starting Services
+    -   14.3. Configuring cron(8)
+    -   14.4. Managing Services in FreeBSD
+    -   14.5. Configuring System Logging
+    -   14.6. Configuration Files
+    -   14.7. Tuning with sysctl(8)
+    -   14.8. Tuning Disks
+    -   14.9. Tuning Kernel Limits
+    -   14.10. Adding Swap Space
+    -   14.11. Power and Resource Management
+-    Chapter 15. The FreeBSD Booting Process
+    -   15.1. Synopsis
+    -   15.2. FreeBSD Boot Process
+    -   15.3. Device Hints
+    -   15.4. Shutdown Sequence
+-    Chapter 16. Security
+    -   16.1. Synopsis
+    -   16.2. Introduction
+    -   16.3. One-time Passwords
+    -   16.4. TCP Wrapper
+    -   16.5. Kerberos
+    -   16.6. OpenSSL
+    -   16.7. VPN over IPsec
+    -   16.8. OpenSSH
+    -   16.9. Access Control Lists
+    -   16.10. Monitoring Third Party Security Issues
+    -   16.11. FreeBSD Security Advisories
+    -   16.12. Process Accounting
+    -   16.13. Resource Limits
+    -   16.14. Shared Administration with Sudo
+    -   16.15. Using doas as an alternative to sudo
+-    Chapter 17. Jails
+    -   17.1. Synopsis
+    -   17.2. Terms Related to Jails
+    -   17.3. Creating and Controlling Jails
+    -   17.4. Fine Tuning and Administration
+    -   17.5. Updating Multiple Jails
+    -   17.6. Managing Jails with ezjail
+-    Chapter 18. Mandatory Access Control
+    -   18.1. Synopsis
+    -   18.2. Key Terms
+    -   18.3. Understanding MAC Labels
+    -   18.4. Planning the Security Configuration
+    -   18.5. Available MAC Policies
+    -   18.6. User Lock Down
+    -   18.7. Nagios in a MAC Jail
+    -   18.8. Troubleshooting the MAC Framework
+-    Chapter 19. Security Event Auditing
+    -   19.1. Synopsis
+    -   19.2. Key Terms
+    -   19.3. Audit Configuration
+    -   19.4. Working with Audit Trails
+-    Chapter 20. Storage
+    -   20.1. Synopsis
+    -   20.2. Adding Disks
+    -   20.3. Resizing and Growing Disks
+    -   20.4. USB Storage Devices
+    -   20.5. Creating and Using CD Media
+    -   20.6. Creating and Using DVD Media
+    -   20.7. Creating and Using Floppy Disks
+    -   20.8. Using NTFS Disks
+    -   20.9. Backup Basics
+    -   20.10. Memory Disks
+    -   20.11. File System Snapshots
+    -   20.12. Disk Quotas
+    -   20.13. Encrypting Disk Partitions
+    -   20.14. Encrypting Swap
+    -   20.15. Highly Available Storage (HAST)
+-    Chapter 21. GEOM: Modular Disk Transformation Framework
+    -   21.1. Synopsis
+    -   21.2. RAID0 - Striping
+    -   21.3. RAID1 - Mirroring
+    -   21.4. RAID3 - Byte-level Striping with Dedicated Parity
+    -   21.5. Software RAID Devices
+    -   21.6. GEOM Gate Network
+    -   21.7. Labeling Disk Devices
+    -   21.8. UFS Journaling Through GEOM
+-    Chapter 22. The Z File System (ZFS)
+    -   22.1. What Makes ZFS Different
+    -   22.2. Quick Start Guide
+    -   22.3. zpool Administration
+    -   22.4. zfs Administration
+    -   22.5. Delegated Administration
+    -   22.6. Advanced Topics
+<<<<<<< HEAD
+=======
+    -   22.7. Further Resources
+    -   22.8. ZFS Features and Terminology
+-    Chapter 23. Other File Systems
+    -   23.1. Synopsis
+    -   23.2. Linux® File Systems
+-    Chapter 24. Virtualization
+    -   24.1. Synopsis
+    -   24.2. FreeBSD as a Guest on Parallels Desktop for macOS®
+    -   24.3. FreeBSD as a Guest on VMware Fusion for macOS®
+    -   24.4. FreeBSD as a Guest on VirtualBox™
+    -   24.5. FreeBSD as a Host with VirtualBox™
+    -   24.6. FreeBSD as a Host with bhyve
+    -   24.7. FreeBSD as a Xen™-Host
+-    Chapter 25. Localization - i18n/L10n Usage and Setup
+    -   25.1. Synopsis
+    -   25.2. Using Localization
+    -   25.3. Finding i18n Applications
+    -   25.4. Locale Configuration for Specific Languages
+-    Chapter 26. Updating and Upgrading FreeBSD
+    -   26.1. Synopsis
+    -   26.2. FreeBSD Update
+    -   26.3. Updating Bootcode
+    -   26.4. Updating the Documentation Set
+    -   26.5. Tracking a Development Branch
+    -   26.6. Updating FreeBSD from Source
+    -   26.7. Tracking for Multiple Machines
+-    Chapter 27. DTrace
+    -   27.1. Synopsis
+    -   27.2. Implementation Differences
+    -   27.3. Enabling DTrace Support
+    -   27.4. Using DTrace
+-    Chapter 28. USB Device Mode / USB OTG
+    -   28.1. Synopsis
+    -   28.2. USB Virtual Serial Ports
+    -   28.3. USB Device Mode Network Interfaces
+    -   28.4. USB Virtual Storage Device
+-    Part IV. Network Communication
+-    Chapter 29. Serial Communications
+    -   29.1. Synopsis
+    -   29.2. Serial Terminology and Hardware
+    -   29.3. Terminals
+    -   29.4. Dial-in Service
+    -   29.5. Dial-out Service
+    -   29.6. Setting Up the Serial Console
+-    Chapter 30. PPP
+    -   30.1. Synopsis
+    -   30.2. Configuring PPP
+    -   30.3. Troubleshooting PPP Connections
+    -   30.4. Using PPP over Ethernet (PPPoE)
+    -   30.5. Using PPP over ATM (PPPoA)
+-    Chapter 31. Electronic Mail
+    -   31.1. Synopsis
+    -   31.2. Mail Components
+    -   31.3. Sendmail Configuration Files
+    -   31.4. Changing the Mail Transfer Agent
+    -   31.5. Troubleshooting
+    -   31.6. Advanced Topics
+    -   31.7. Setting Up to Send Only
+    -   31.8. Using Mail with a Dialup Connection
+    -   31.9. SMTP Authentication
+    -   31.10. Mail User Agents
+    -   31.11. Using fetchmail
+    -   31.12. Using procmail
+-    Chapter 32. Network Servers
+    -   32.1. Synopsis
+    -   32.2. The inetd Super-Server
+    -   32.3. Network File System (NFS)
+    -   32.4. Network Information System (NIS)
+    -   32.5. Lightweight Directory Access Protocol (LDAP)
+    -   32.6. Dynamic Host Configuration Protocol (DHCP)
+    -   32.7. Domain Name System (DNS)
+    -   32.8. Apache HTTP Server
+    -   32.9. File Transfer Protocol (FTP)
+    -   32.10. File and Print Services for Microsoft® Windows® Clients
+        (Samba)
+    -   32.11. Clock Synchronization with NTP
+    -   32.12. iSCSI Initiator and Target Configuration
+-    Chapter 33. Firewalls
+    -   33.1. Synopsis
+    -   33.2. Firewall Concepts
+    -   33.3. PF
+    -   33.4. IPFW
+    -   33.5. IPFILTER (IPF)
+    -   33.6. Blacklistd
+-    Chapter 34. Advanced Networking
+    -   34.1. Synopsis
+    -   34.2. Gateways and Routes
+    -   34.3. Virtual Hosts
+    -   34.4. Wireless Advanced Authentication
+    -   34.5. Wireless Ad-hoc Mode
+    -   34.6. USB Tethering
+    -   34.7. Bluetooth
+    -   34.8. Bridging
+    -   34.9. Link Aggregation and Failover
+    -   34.10. Diskless Operation with PXE
+    -   34.11. Common Address Redundancy Protocol (CARP)
+    -   34.12. VLANs
+-    Part V. Appendices
+-    Appendix A. Obtaining FreeBSD
+    -   A.1. Mirrors
+    -   A.2. Using Git
+    -   A.3. Using Subversion
+    -   A.4. CD and DVD Sets
+-    Appendix B. Bibliography
+    -   B.1. FreeBSD Bibliography
+    -   B.2. Security Reference
+    -   B.3. UNIX® History
+    -   B.4. Periodicals, Journals, and Magazines
+-    Appendix C. Resources on the Internet
+    -   C.1. Websites
+    -   C.2. Mailing Lists
+    -   C.3. Usenet Newsgroups
+-    Appendix D. OpenPGP Keys
+    -   D.1. Officers
+-    FreeBSD Glossary
+-    Colophon
+-   
+-   
+
+Book menu
+
+Chapter 30. PPP
+
+Table of Contents
+
+-   30.1. Synopsis
+-   30.2. Configuring PPP
+-   30.3. Troubleshooting PPP Connections
+-   30.4. Using PPP over Ethernet (PPPoE)
+-   30.5. Using PPP over ATM (PPPoA)
+
+30.1. Synopsis
+
+FreeBSD supports the Point-to-Point (PPP) protocol which can be used to
+establish a network or Internet connection using a dial-up modem. This
+chapter describes how to configure modem-based communication services in
+FreeBSD.
+
+After reading this chapter, you will know:
+
+-   How to configure, use, and troubleshoot a PPP connection.
+
+-   How to set up PPP over Ethernet (PPPoE).
+
+-   How to set up PPP over ATM (PPPoA).
+
+Before reading this chapter, you should:
+
+-   Be familiar with basic network terminology.
+
+-   Understand the basics and purpose of a dial-up connection and PPP.
+
+30.2. Configuring PPP
+
+FreeBSD provides built-in support for managing dial-up PPP connections
+using ppp(8). The default FreeBSD kernel provides support for tun which
+is used to interact with a modem hardware. Configuration is performed by
+editing at least one configuration file, and configuration files
+containing examples are provided. Finally, ppp is used to start and
+manage connections.
+
+In order to use a PPP connection, the following items are needed:
+
+-   A dial-up account with an Internet Service Provider (ISP).
+
+-   A dial-up modem.
+
+-   The dial-up number for the ISP.
+
+-   The login name and password assigned by the ISP.
+
+-   The IP address of one or more DNS servers. Normally, the ISP
+    provides these addresses. If it did not, FreeBSD can be configured
+    to use DNS negotiation.
+
+If any of the required information is missing, contact the ISP.
+
+The following information may be supplied by the ISP, but is not
+necessary:
+
+-   The IP address of the default gateway. If this information is
+    unknown, the ISP will automatically provide the correct value during
+    connection setup. When configuring PPP on FreeBSD, this address is
+    referred to as HISADDR.
+
+-   The subnet mask. If the ISP has not provided one, 255.255.255.255
+    will be used in the ppp(8) configuration file. *
+
+    If the ISP has assigned a static IP address and hostname, it should
+    be input into the configuration file. Otherwise, this information
+    will be automatically provided during connection setup.
+
+The rest of this section demonstrates how to configure FreeBSD for
+common PPP connection scenarios. The required configuration file is
+/etc/ppp/ppp.conf and additional files and examples are available in
+/usr/share/examples/ppp/.
+
++-----------------------------------+-----------------------------------+
+|                                   | Throughout this section, many of  |
+|                                   | the file examples display line    |
+|                                   | numbers. These line numbers have  |
+|                                   | been added to make it easier to   |
+|                                   | follow the discussion and are not |
+|                                   | meant to be placed in the actual  |
+|                                   | file.                             |
+|                                   |                                   |
+|                                   | When editing a configuration      |
+|                                   | file, proper indentation is       |
+|                                   | important. Lines that end in a :  |
+|                                   | start in the first column         |
+|                                   | (beginning of the line) while all |
+|                                   | other lines should be indented as |
+|                                   | shown using spaces or tabs.       |
++-----------------------------------+-----------------------------------+
+
+30.2.1. Basic Configuration
+
+In order to configure a PPP connection, first edit /etc/ppp/ppp.conf
+with the dial-in information for the ISP. This file is described as
+follows:
+
+    1     default:
+    2       set log Phase Chat LCP IPCP CCP tun command
+    3       ident user-ppp VERSION
+    4       set device /dev/cuau0
+    5       set speed 115200
+    6       set dial "ABORT BUSY ABORT NO\\sCARRIER TIMEOUT 5 \
+    7                 \"\" AT OK-AT-OK ATE1Q0 OK \\dATDT\\T TIMEOUT 40 CONNECT"
+    8       set timeout 180
+    9       enable dns
+    10
+    11    provider:
+    12      set phone "(123) 456 7890"
+    13      set authname foo
+    14      set authkey bar
+    15      set timeout 300
+    16      set ifaddr x.x.x.x/0 y.y.y.y/0 255.255.255.255 0.0.0.0
+    17      add default HISADDR
+
+Line 1
+
+    Identifies the default entry. Commands in this entry (lines 2
+    through 9) are executed automatically when ppp is run.
+
+Line 2
+
+    Enables verbose logging parameters for testing the connection. Once
+    the configuration is working satisfactorily, this line should be
+    reduced to:
+
+        set log phase tun
+
+Line 3
+
+    Displays the version of ppp(8) to the PPP software running on the
+    other side of the connection.
+
+Line 4
+
+    Identifies the device to which the modem is connected, where COM1 is
+    /dev/cuau0 and COM2 is /dev/cuau1.
+
+Line 5
+
+    Sets the connection speed. If 115200 does not work on an older
+    modem, try 38400 instead.
+
+Lines 6 & 7
+
+    The dial string written as an expect-send syntax. Refer to chat(8)
+    for more information.
+
+    Note that this command continues onto the next line for readability.
+    Any command in ppp.conf may do this if the last character on the
+    line is \.
+
+Line 8
+
+    Sets the idle timeout for the link in seconds.
+
+Line 9
+
+    Instructs the peer to confirm the DNS settings. If the local network
+    is running its own DNS server, this line should be commented out, by
+    adding a # at the beginning of the line, or removed.
+
+Line 10
+
+    A blank line for readability. Blank lines are ignored by ppp(8).
+
+Line 11
+
+    Identifies an entry called provider. This could be changed to the
+    name of the ISP so that load ISP can be used to start the
+    connection.
+
+Line 12
+
+    Use the phone number for the ISP. Multiple phone numbers may be
+    specified using the colon (:) or pipe character (|) as a separator.
+    To rotate through the numbers, use a colon. To always attempt to
+    dial the first number first and only use the other numbers if the
+    first number fails, use the pipe character. Always enclose the
+    entire set of phone numbers between quotation marks (") to prevent
+    dialing failures.
+
+Lines 13 & 14
+
+    Use the user name and password for the ISP.
+
+Line 15
+
+    Sets the default idle timeout in seconds for the connection. In this
+    example, the connection will be closed automatically after 300
+    seconds of inactivity. To prevent a timeout, set this value to zero.
+
+Line 16
+
+    Sets the interface addresses. The values used depend upon whether a
+    static IP address has been obtained from the ISP or if it instead
+    negotiates a dynamic IP address during connection.
+
+    If the ISP has allocated a static IP address and default gateway,
+    replace x.x.x.x with the static IP address and replace y.y.y.y with
+    the IP address of the default gateway. If the ISP has only provided
+    a static IP address without a gateway address, replace y.y.y.y with
+    10.0.0.2/0.
+
+    If the IP address changes whenever a connection is made, change this
+    line to the following value. This tells ppp(8) to use the IP
+    Configuration Protocol (IPCP) to negotiate a dynamic IP address:
+
+        set ifaddr 10.0.0.1/0 10.0.0.2/0 255.255.255.255 0.0.0.0
+
+Line 17
+
+    Keep this line as-is as it adds a default route to the gateway. The
+    HISADDR will automatically be replaced with the gateway address
+    specified on line 16. It is important that this line appears after
+    line 16.
+
+Depending upon whether ppp(8) is started manually or automatically, a
+/etc/ppp/ppp.linkup may also need to be created which contains the
+following lines. This file is required when running ppp in -auto mode.
+This file is used after the connection has been established. At this
+point, the IP address will have been assigned and it is now possible to
+add the routing table entries. When creating this file, make sure that
+provider matches the value demonstrated in line 11 of ppp.conf.
+
+    provider:
+          add default HISADDR
+
+This file is also needed when the default gateway address is "guessed"
+in a static IP address configuration. In this case, remove line 17 from
+ppp.conf and create /etc/ppp/ppp.linkup with the above two lines. More
+examples for this file can be found in /usr/share/examples/ppp/.
+
+By default, ppp must be run as root. To change this default, add the
+account of the user who should run ppp to the network group in
+/etc/group.
+
+Then, give the user access to one or more entries in /etc/ppp/ppp.conf
+with allow. For example, to give fred and mary permission to only the
+provider: entry, add this line to the provider: section:
+
+    allow users fred mary
+
+To give the specified users access to all entries, put that line in the
+default section instead.
+
+30.2.2. Advanced Configuration
+
+It is possible to configure PPP to supply DNS and NetBIOS nameserver
+addresses on demand.
+
+To enable these extensions with PPP version 1.x, the following lines
+might be added to the relevant section of /etc/ppp/ppp.conf.
+
+    enable msext
+    set ns 203.14.100.1 203.14.100.2
+    set nbns 203.14.100.5
+
+And for PPP version 2 and above:
+
+    accept dns
+    set dns 203.14.100.1 203.14.100.2
+    set nbns 203.14.100.5
+
+This will tell the clients the primary and secondary name server
+addresses, and a NetBIOS nameserver host.
+
+In version 2 and above, if the set dns line is omitted, PPP will use the
+values found in /etc/resolv.conf.
+
+30.2.2.1. PAP and CHAP Authentication
+
+Some ISPs set their system up so that the authentication part of the
+connection is done using either of the PAP or CHAP authentication
+mechanisms. If this is the case, the ISP will not give a login: prompt
+at connection, but will start talking PPP immediately.
+
+PAP is less secure than CHAP, but security is not normally an issue here
+as passwords, although being sent as plain text with PAP, are being
+transmitted down a serial line only. There is not much room for crackers
+to "eavesdrop".
+
+The following alterations must be made:
+
+    13      set authname MyUserName
+    14      set authkey MyPassword
+    15      set login
+
+Line 13
+
+    This line specifies the PAP/CHAP user name.Insert the correct value
+    for MyUserName.
+
+Line 14
+
+    This line specifies the PAP/CHAP password. Insert the correct value
+    for MyPassword. You may want to add an additional line, such as:
+
+        16      accept PAP
+
+    or
+
+        16      accept CHAP
+
+    to make it obvious that this is the intention, but PAP and CHAP are
+    both accepted by default.
+
+Line 15
+
+    The ISP will not normally require a login to the server when using
+    PAP or CHAP. Therefore, disable the "set login" string.
+
+30.2.2.2. Using PPP Network Address Translation Capability
+
+PPP has ability to use internal NAT without kernel diverting
+capabilities. This functionality may be enabled by the following line in
+/etc/ppp/ppp.conf:
+
+    nat enable yes
+
+Alternatively, NAT may be enabled by command-line option -nat. There is
+also /etc/rc.conf knob named ppp_nat, which is enabled by default.
+
+When using this feature, it may be useful to include the following
+/etc/ppp/ppp.conf options to enable incoming connections forwarding:
+
+    nat port tcp 10.0.0.2:ftp ftp
+    nat port tcp 10.0.0.2:http http
+
+or do not trust the outside at all
+
+    nat deny_incoming yes
+
+30.2.3. Final System Configuration
+
+While ppp is now configured, some edits still need to be made to
+/etc/rc.conf.
+
+Working from the top down in this file, make sure the hostname= line is
+set:
+
+    hostname="foo.example.com"
+
+If the ISP has supplied a static IP address and name, use this name as
+the host name.
+
+Look for the network_interfaces variable. To configure the system to
+dial the ISP on demand, make sure the tun0 device is added to the list,
+otherwise remove it.
+
+    network_interfaces="lo0 tun0"
+    ifconfig_tun0=
+
++-----------------------------------+-----------------------------------+
+|                                   | The ifconfig_tun0 variable should |
+|                                   | be empty, and a file called       |
+|                                   | /etc/start_if.tun0 should be      |
+|                                   | created. This file should contain |
+|                                   | the line:                         |
+|                                   |                                   |
+|                                   |     ppp -auto mysystem            |
+|                                   |                                   |
+|                                   | This script is executed at        |
+|                                   | network configuration time,       |
+|                                   | starting the ppp daemon in        |
+|                                   | automatic mode. If this machine   |
+|                                   | acts as a gateway, consider       |
+|                                   | including -alias. Refer to the    |
+|                                   | manual page for further details.  |
++-----------------------------------+-----------------------------------+
+
+Make sure that the router program is set to NO with the following line
+in /etc/rc.conf:
+
+    router_enable="NO"
+
+It is important that the routed daemon is not started, as routed tends
+to delete the default routing table entries created by ppp.
+
+It is probably a good idea to ensure that the sendmail_flags line does
+not include the -q option, otherwise sendmail will attempt to do a
+network lookup every now and then, possibly causing your machine to dial
+out. You may try:
+
+    sendmail_flags="-bd"
+
+The downside is that sendmail is forced to re-examine the mail queue
+whenever the ppp link. To automate this, include !bg in ppp.linkup:
+
+    1     provider:
+    2       delete ALL
+    3       add 0 0 HISADDR
+    4       !bg sendmail -bd -q30m
+
+An alternative is to set up a "dfilter" to block SMTP traffic. Refer to
+the sample files for further details.
+
+30.2.4. Using ppp
+
+All that is left is to reboot the machine. After rebooting, either type:
+
+    # ppp
+
+and then dial provider to start the PPP session, or, to configure ppp to
+establish sessions automatically when there is outbound traffic and
+start_if.tun0 does not exist, type:
+
+    # ppp -auto provider
+
+It is possible to talk to the ppp program while it is running in the
+background, but only if a suitable diagnostic port has been set up. To
+do this, add the following line to the configuration:
+
+    set server /var/run/ppp-tun%d DiagnosticPassword 0177
+
+This will tell PPP to listen to the specified UNIX® domain socket,
+asking clients for the specified password before allowing access. The %d
+in the name is replaced with the tun device number that is in use.
+
+Once a socket has been set up, the pppctl(8) program may be used in
+scripts that wish to manipulate the running program.
+
+30.2.5. Configuring Dial-in Services
+
+“Dial-in Service” provides a good description on enabling dial-up
+services using getty(8).
+
+An alternative to getty is comms/mgetty+sendfax port), a smarter version
+of getty designed with dial-up lines in mind.
+
+The advantages of using mgetty is that it actively talks to modems,
+meaning if port is turned off in /etc/ttys then the modem will not
+answer the phone.
+
+Later versions of mgetty (from 0.99beta onwards) also support the
+automatic detection of PPP streams, allowing clients scriptless access
+to the server.
+
+Refer to http://mgetty.greenie.net/doc/mgetty_toc.html for more
+information on mgetty.
+
+By default the comms/mgetty+sendfax port comes with the AUTO_PPP option
+enabled allowing mgetty to detect the LCP phase of PPP connections and
+automatically spawn off a ppp shell. However, since the default
+login/password sequence does not occur it is necessary to authenticate
+users using either PAP or CHAP.
+
+This section assumes the user has successfully compiled, and installed
+the comms/mgetty+sendfax port on his system.
+
+Ensure that /usr/local/etc/mgetty+sendfax/login.config has the
+following:
+
+    /AutoPPP/ -     - /etc/ppp/ppp-pap-dialup
+
+This tells mgetty to run ppp-pap-dialup for detected PPP connections.
+
+Create an executable file called /etc/ppp/ppp-pap-dialup containing the
+following:
+
+    #!/bin/sh
+    exec /usr/sbin/ppp -direct pap$IDENT
+
+For each dial-up line enabled in /etc/ttys, create a corresponding entry
+in /etc/ppp/ppp.conf. This will happily co-exist with the definitions we
+created above.
+
+    pap:
+      enable pap
+      set ifaddr 203.14.100.1 203.14.100.20-203.14.100.40
+      enable proxy
+
+Each user logging in with this method will need to have a
+username/password in /etc/ppp/ppp.secret, or alternatively add the
+following option to authenticate users via PAP from /etc/passwd.
+
+    enable passwdauth
+
+To assign some users a static IP number, specify the number as the third
+argument in /etc/ppp/ppp.secret. See
+/usr/share/examples/ppp/ppp.secret.sample for examples.
+
+30.3. Troubleshooting PPP Connections
+
+This section covers a few issues which may arise when using PPP over a
+modem connection. Some ISPs present the ssword prompt while others
+present password. If the ppp script is not written accordingly, the
+login attempt will fail. The most common way to debug ppp connections is
+by connecting manually as described in this section.
+
+30.3.1. Check the Device Nodes
+
+When using a custom kernel, make sure to include the following line in
+the kernel configuration file:
+
+    device   uart
+
+The uart device is already included in the GENERIC kernel, so no
+additional steps are necessary in this case. Just check the dmesg output
+for the modem device with:
+
+    # dmesg | grep uart
+
+This should display some pertinent output about the uart devices. These
+are the COM ports we need. If the modem acts like a standard serial
+port, it should be listed on uart1, or COM2. If so, a kernel rebuild is
+not required. When matching up, if the modem is on uart1, the modem
+device would be /dev/cuau1.
+
+30.3.2. Connecting Manually
+
+Connecting to the Internet by manually controlling ppp is quick, easy,
+and a great way to debug a connection or just get information on how the
+ISP treats ppp client connections. Lets start PPP from the command line.
+Note that in all of our examples we will use example as the hostname of
+the machine running PPP. To start ppp:
+
+    # ppp
+
+    ppp ON example> set device /dev/cuau1
+
+This second command sets the modem device to cuau1.
+
+    ppp ON example> set speed 115200
+
+This sets the connection speed to 115,200 kbps.
+
+    ppp ON example> enable dns
+
+This tells ppp to configure the resolver and add the nameserver lines to
+/etc/resolv.conf. If ppp cannot determine the hostname, it can manually
+be set later.
+
+    ppp ON example> term
+
+This switches to "terminal" mode in order to manually control the modem.
+
+    deflink: Entering terminal mode on /dev/cuau1
+    type '~h' for help
+
+    at
+    OK
+    atdt123456789
+
+Use at to initialize the modem, then use atdt and the number for the ISP
+to begin the dial in process.
+
+    CONNECT
+
+Confirmation of the connection, if we are going to have any connection
+problems, unrelated to hardware, here is where we will attempt to
+resolve them.
+
+    ISP Login:myusername
+
+At this prompt, return the prompt with the username that was provided by
+the ISP.
+
+    ISP Pass:mypassword
+
+At this prompt, reply with the password that was provided by the ISP.
+Just like logging into FreeBSD, the password will not echo.
+
+    Shell or PPP:ppp
+
+Depending on the ISP, this prompt might not appear. If it does, it is
+asking whether to use a shell on the provider or to start ppp. In this
+example, ppp was selected in order to establish an Internet connection.
+
+    Ppp ON example>
+
+Notice that in this example the first p has been capitalized. This shows
+that we have successfully connected to the ISP.
+
+    Ppp ON example>
+
+We have successfully authenticated with our ISP and are waiting for the
+assigned IP address.
+
+    PPP ON example>
+
+We have made an agreement on an IP address and successfully completed
+our connection.
+
+    PPP ON example>add default HISADDR
+
+Here we add our default route, we need to do this before we can talk to
+the outside world as currently the only established connection is with
+the peer. If this fails due to existing routes, put a bang character !
+in front of the add. Alternatively, set this before making the actual
+connection and it will negotiate a new route accordingly.
+
+If everything went good we should now have an active connection to the
+Internet, which could be thrown into the background using CTRL+z. If PPP
+returns to ppp the connection has been lost. This is good to know
+because it shows the connection status. Capital P’s represent a
+connection to the ISP and lowercase p’s show that the connection has
+been lost.
+
+30.3.3. Debugging
+
+If a connection cannot be established, turn hardware flow CTS/RTS to off
+using set ctsrts off. This is mainly the case when connected to some
+PPP-capable terminal servers, where PPP hangs when it tries to write
+data to the communication link, and waits for a Clear To Send (CTS)
+signal which may never come. When using this option, include set accmap
+as it may be required to defeat hardware dependent on passing certain
+characters from end to end, most of the time XON/XOFF. Refer to ppp(8)
+for more information on this option and how it is used.
+
+An older modem may need set parity even. Parity is set at none be
+default, but is used for error checking with a large increase in
+traffic, on older modems.
+
+PPP may not return to the command mode, which is usually a negotiation
+error where the ISP is waiting for negotiating to begin. At this point,
+using ~p will force ppp to start sending the configuration information.
+
+If a login prompt never appears, PAP or CHAP authentication is most
+likely required. To use PAP or CHAP, add the following options to PPP
+before going into terminal mode:
+
+    ppp ON example> set authname myusername
+
+Where myusername should be replaced with the username that was assigned
+by the ISP.
+
+    ppp ON example> set authkey mypassword
+
+Where mypassword should be replaced with the password that was assigned
+by the ISP.
+
+If a connection is established, but cannot seem to find any domain name,
+try to ping(8) an IP address. If there is 100 percent (100%) packet
+loss, it is likely that a default route was not assigned. Double check
+that add default HISADDR was set during the connection. If a connection
+can be made to a remote IP address, it is possible that a resolver
+address has not been added to /etc/resolv.conf. This file should look
+like:
+
+    domain example.com
+    nameserver x.x.x.x
+    nameserver y.y.y.y
+
+Where x.x.x.x and y.y.y.y should be replaced with the IP address of the
+ISP’s DNS servers.
+
+To configure syslog(3) to provide logging for the PPP connection, make
+sure this line exists in /etc/syslog.conf:
+
+    !ppp
+    *.*     /var/log/ppp.log
+
+30.4. Using PPP over Ethernet (PPPoE)
+
+This section describes how to set up PPP over Ethernet (PPPoE).
+
+Here is an example of a working ppp.conf:
+
+    default:
+      set log Phase tun command # you can add more detailed logging if you wish
+      set ifaddr 10.0.0.1/0 10.0.0.2/0
+
+    name_of_service_provider:
+      set device PPPoE:xl1 # replace xl1 with your Ethernet device
+      set authname YOURLOGINNAME
+      set authkey YOURPASSWORD
+      set dial
+      set login
+      add default HISADDR
+
+As root, run:
+
+    # ppp -ddial name_of_service_provider
+
+Add the following to /etc/rc.conf:
+
+    ppp_enable="YES"
+    ppp_mode="ddial"
+    ppp_nat="YES"   # if you want to enable nat for your local network, otherwise NO
+    ppp_profile="name_of_service_provider"
+
+30.4.1. Using a PPPoE Service Tag
+
+Sometimes it will be necessary to use a service tag to establish the
+connection. Service tags are used to distinguish between different PPPoE
+servers attached to a given network.
+
+Any required service tag information should be in the documentation
+provided by the ISP.
+
+As a last resort, one could try installing the net/rr-pppoe package or
+port. Bear in mind however, this may de-program your modem and render it
+useless, so think twice before doing it. Simply install the program
+shipped with the modem. Then, access the System menu from the program.
+The name of the profile should be listed there. It is usually ISP.
+
+The profile name (service tag) will be used in the PPPoE configuration
+entry in ppp.conf as the provider part for set device. Refer to ppp(8)
+for full details. It should look like this:
+
+    set device PPPoE:xl1:ISP
+
+Do not forget to change xl1 to the proper device for the Ethernet card.
+
+Do not forget to change ISP to the profile.
+
+For additional information, refer to Cheaper Broadband with FreeBSD on
+DSL by Renaud Waldura.
+
+30.4.2. PPPoE with a 3Com® HomeConnect™ ADSL Modem Dual Link
+
+This modem does not follow the PPPoE specification defined in RFC 2516.
+
+In order to make FreeBSD capable of communicating with this device, a
+sysctl must be set. This can be done automatically at boot time by
+updating /etc/sysctl.conf:
+
+    net.graph.nonstandard_pppoe=1
+
+or can be done immediately with the command:
+
+    # sysctl net.graph.nonstandard_pppoe=1
+
+Unfortunately, because this is a system-wide setting, it is not possible
+to talk to a normal PPPoE client or server and a 3Com® HomeConnect™ ADSL
+Modem at the same time.
+
+30.5. Using PPP over ATM (PPPoA)
+
+The following describes how to set up PPP over ATM (PPPoA). PPPoA is a
+popular choice among European DSL providers.
+
+30.5.1. Using mpd
+
+The mpd application can be used to connect to a variety of services, in
+particular PPTP services. It can be installed using the net/mpd5 package
+or port. Many ADSL modems require that a PPTP tunnel is created between
+the modem and computer.
+
+Once installed, configure mpd to suit the provider’s settings. The port
+places a set of sample configuration files which are well documented in
+/usr/local/etc/mpd/. A complete guide to configure mpd is available in
+HTML format in /usr/ports/shared/doc/mpd/. Here is a sample
+configuration for connecting to an ADSL service with mpd. The
+configuration is spread over two files, first the mpd.conf:
+
++-----------------------------------+-----------------------------------+
+|                                   | This example mpd.conf only works  |
+|                                   | with mpd 4.x.                     |
++-----------------------------------+-----------------------------------+
+
+    default:
+        load adsl
+
+    adsl:
+        new -i ng0 adsl adsl
+        set bundle authname username (1)
+        set bundle password password (2)
+        set bundle disable multilink
+
+        set link no pap acfcomp protocomp
+        set link disable chap
+        set link accept chap
+        set link keep-alive 30 10
+
+        set ipcp no vjcomp
+        set ipcp ranges 0.0.0.0/0 0.0.0.0/0
+
+        set iface route default
+        set iface disable on-demand
+        set iface enable proxy-arp
+        set iface idle 0
+
+        open
+
+  --- --------------------------------------------------
+  1   The username used to authenticate with your ISP.
+  2   The password used to authenticate with your ISP.
+  --- --------------------------------------------------
+
+Information about the link, or links, to establish is found in
+mpd.links. An example mpd.links to accompany the above example is given
+beneath:
+
+    adsl:
+        set link type pptp
+        set pptp mode active
+        set pptp enable originate outcall
+        set pptp self 10.0.0.1 (1)
+        set pptp peer 10.0.0.138 (2)
+
+  --- ----------------------------------------------------------------------------------------
+  1   The IP address of FreeBSD computer running mpd.
+  2   The IP address of the ADSL modem. The Alcatel SpeedTouch™ Home defaults to 10.0.0.138.
+  --- ----------------------------------------------------------------------------------------
+
+It is possible to initialize the connection easily by issuing the
+following command as root:
+
+    # mpd -b adsl
+
+To view the status of the connection:
+
+    % ifconfig ng0
+    ng0: flags=88d1<UP,POINTOPOINT,RUNNING,NOARP,SIMPLEX,MULTICAST> mtu 1500
+         inet 216.136.204.117 --> 204.152.186.171 netmask 0xffffffff
+
+Using mpd is the recommended way to connect to an ADSL service with
+FreeBSD.
+
+30.5.2. Using pptpclient
+
+It is also possible to use FreeBSD to connect to other PPPoA services
+using net/pptpclient.
+
+To use net/pptpclient to connect to a DSL service, install the port or
+package, then edit /etc/ppp/ppp.conf. An example section of ppp.conf is
+given below. For further information on ppp.conf options consult ppp(8).
+
+    adsl:
+     set log phase chat lcp ipcp ccp tun command
+     set timeout 0
+     enable dns
+     set authname username (1)
+     set authkey password (2)
+     set ifaddr 0 0
+     add default HISADDR
+
+  --- ------------------------------------
+  1   The username for the DSL provider.
+  2   The password for your account.
+  --- ------------------------------------
+
++-----------------------------------+-----------------------------------+
+|                                   | Since the account’s password is   |
+|                                   | added to ppp.conf in plain text   |
+|                                   | form, make sure nobody can read   |
+|                                   | the contents of this file:        |
+|                                   |                                   |
+|                                   |     # c                           |
+|                                   | hown root:wheel /etc/ppp/ppp.conf |
+|                                   |     # chmod 600 /etc/ppp/ppp.conf |
++-----------------------------------+-----------------------------------+
+
+This will open a tunnel for a PPP session to the DSL router. Ethernet
+DSL modems have a preconfigured LAN IP address to connect to. In the
+case of the Alcatel SpeedTouch™ Home, this address is 10.0.0.138. The
+router’s documentation should list the address the device uses. To open
+the tunnel and start a PPP session:
+
+    # pptp address adsl
+
++-----------------------------------+-----------------------------------+
+|                                   | If an ampersand ("&") is added to |
+|                                   | the end of this command, pptp     |
+|                                   | will return the prompt.           |
++-----------------------------------+-----------------------------------+
+
+A tun virtual tunnel device will be created for interaction between the
+pptp and ppp processes. Once the prompt is returned, or the pptp process
+has confirmed a connection, examine the tunnel:
+
+    % ifconfig tun0
+    tun0: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1500
+            inet 216.136.204.21 --> 204.152.186.171 netmask 0xffffff00
+        Opened by PID 918
+
+If the connection fails, check the configuration of the router, which is
+usually accessible using a web browser. Also, examine the output of pptp
+and the contents of the log file, /var/log/ppp.log for clues.
+
+------------------------------------------------------------------------
+
+Last modified on: July 6, 2023 by Sergio Carlavilla Delgado
+
+Prev
+
+Home
+
+Next
+
+Table of Contents
+
+-   30.1. Synopsis
+-   30.2. Configuring PPP
+-   30.3. Troubleshooting PPP Connections
+-   30.4. Using PPP over Ethernet (PPPoE)
+-   30.5. Using PPP over ATM (PPPoA)
+
+------------------------------------------------------------------------
+
+Resources
+
+-   Download PDF
+-   Edit this page
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+

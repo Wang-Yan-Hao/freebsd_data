@@ -1,0 +1,132 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Ports Collection
+
+Links:
+About FreeBSD Ports URL:https://www.FreeBSD.org/ports/
+Contributing to Ports URL:
+https://docs.freebsd.org/en/articles/contributing/#ports-contributing
+FreeBSD Ports Monitoring URL: http://portsmon.freebsd.org/
+Ports Management Team URL: https://www.freebsd.org/portmgr/
+Ports Tarball URL: http://ftp.freebsd.org/pub/FreeBSD/ports/ports/
+
+Contact: René Ladan <portmgr-secretary@FreeBSD.org>
+Contact: FreeBSD Ports Management Team <portmgr@FreeBSD.org>
+
+The Ports Management Team is responsible for overseeing the overall
+direction of the Ports Tree, building packages, and personnel matters.
+Below is what happened in the last quarter.
+
+The number of ports is slightly above 30,000. The last quarter saw 9,137
+commits by 151 committers on the "main" and 589 commits by 61 committers
+on the "2022Q2" branch. At the time of writing, there are 2,700 open
+ports PRs of which 682 are unassigned. Compared to the previous quarter,
+there was a slight decrease in commit activity and a constant number of
+PRs. Note: Freshports appears to overcount substantially. This quarter’s
+ports count was derived differently and is not comparable with the
+previous quarter’s.
+
+During the last quarter, portmgr welcomed back salvadore@ but also said
+goodbye to seven ports committers due to lack of activity.
+
+In its bi-weekly meetings, portmgr discussed the following topics: * the
+future of ca_root_nss * feasibility of the base system providing certain
+.pc files * ways to deal with incompatibilities in kernel module ports
+on minor version upgrades of the base system
+
+Following a discussion among developers, portmgr decided to grant all
+documentation and source committers approval to fix any
+documentation-related error in the Ports Tree which does not affect its
+functionality.
+
+The following changes were made to the Ports Tree during 2022q2: * pkg
+got updated to version 1.18.3, Firefox to version 102.0 and Chromium to
+version 103.0.50060.53 * Default versions of GCC, Lazarus, Python and
+Ruby got updated to respectively 11 (powerpcspe keeps version 8), 2.2.2,
+3.9, and 3.0. * Two new USES were added, gstreamer to support ports
+based on GStreamer plugins and pytest to help testing with pytest.
+
+------------------------------------------------------------------------
+
+Last modified on: August 2, 2022 by Lorenzo Salvadore
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

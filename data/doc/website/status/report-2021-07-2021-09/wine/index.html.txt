@@ -1,0 +1,118 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Wine on FreeBSD
+
+Links Wine home page
+
+Contact: Gerald Pfeifer <gerald@FreeBSD.org> Contact: Damjan Jovanovic
+<damjan.jov@gmail.com>
+
+Wine allows running Windows programs on FreeBSD.
+
+This quarter we focused on the wine-devel port that tracks mainline
+development, followed half a dozen of version updates, simplified the
+port, removed three options (SDL, VKD3D, VULKAN) which are
+unconditionally active now, and fixed a number of portability issues.
+
+These changes will make their way into the primary Wine port over the
+coming weeks.
+
+After working on our Wine ports for more than 21 years, maintaining for
+more than 19 years, time has come to hand over the baton.
+
+Luckily Damjan has stepped up and is going to look after wine-devel and
+associated ports - thanks! Help with the following is still very
+welcome:
+
+-   WineHQ bug 50257
+
+-   FreeBSD Bugzilla 257533
+
+-   Maintain daily (or at least regular) test builds of upstream Wine.
+    This quarter this triggered two dozen fixes in support of FreeBSD
+    upstream, though usually it’s quite less effort.
+
+------------------------------------------------------------------------
+
+Last modified on: November 15, 2021 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

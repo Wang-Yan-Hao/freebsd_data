@@ -1,0 +1,132 @@
+[FreeBSD The Power to Serve]
+
+Donar a FreeBSD
+
+ 
+
+-   Inicio
+
+-   Acerca de FreeBSD
+    -   Introduccion
+    -   Características
+    -   Apoyo
+    -   Marketing
+    -   Política de privacidad
+    -   Proyectos
+    -   Ports
+
+-   Descargar FreeBSD
+    -   Información de Versiones
+    -   Ingeniería de Versiones
+
+-   Documentación
+    -   FAQ
+    -   Manual
+    -   Manual del Porter
+    -   Manual del desarrollador
+    -   Guía del Committer
+    -   Manuales en línea
+    -   Presentaciones y Trabajos
+    -   Introducción al Proyecto de Documentación
+    -   Todos los libros y artículos
+
+-   Comunidad
+    -   Listas de correo
+    -   Foros
+    -   Grupos de usuarios
+    -   Eventos
+    -   FreeBSD Journal
+    -   Q&A (externo)
+
+-   Desarrolladores
+    -   Ideas para proyectos
+    -   Git Repository
+    -   Repositorio Subversion
+    -   Git Mirror
+    -   Revisiones de Código (Phabricator)
+    -   Wiki
+    -   Servicio de integración continua
+
+-   Soporte
+    -   Distribuidores comerciales
+    -   Información de seguridad
+    -   Informes de errores
+    -   Envío informes de error
+    -   Recursos Web
+
+-   Fundación
+    -   Donaciones monetarias
+    -   Donaciones hardware
+
+-   Acerca de FreeBSD
+-   Características
+-   Aplicaciones
+-   Apoyo
+-   Marketing
+-   Administración
+-   Noticias
+-   Eventos
+-   Prensa
+-   Material gráfico
+-   Logotipo
+-   Donaciones
+-   Legal Notices
+-   Política de Privacidad
+
+-   RSS 2.0 Feed
+
+Noticias FreeBSD
+
+[FreeBSD News]
+
+FreeBSD Newsflash
+
+Qué es nuevo.
+
+Notas de Prensa de FreeBSD
+
+Notas de prensa del proyecto FreeBSD.
+
+FreeBSD en la Prensa
+
+La prensa sobre FreeBSD.
+
+Newsletter
+
+FreeBSD Newsletter.
+
+FreeBSD ezine
+
+FreeBSD Ezine es una colección mensual de arículos fáciles de leer
+escritos por usuarios y administradores de sistemas FreeBSD como tú.
+
+The FreeBSD Diary
+
+El FreeBSD Diary es una colección de secciones how-to dirigida a
+principiantes en UNIX®. Guía paso a paso para la instalación y
+configuración de diferentes ports.
+
+FreeBSD Rocks
+
+FreeBSD Rocks es una iniciativa diseñada para proveer a la comunidad de
+usuarios de FreeBSD con las últimas noticias, software y recursos. Todas
+las áreas incluyen buscadores, haciendo muy sencilla la búsqueda de
+noticias anteriores. Las páginas son actualizadas diariamente y todos
+estais invitados a enviar algún artículo. Si algo ha ocurrido hoy, lo
+verás en FreeBSDRocks.
+
+Daemon News
+
+El líder en la industria de noticias sobre BSD.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26 de enero de 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 El Proyecto FreeBSD Todos los derechos
+reservados. La marca FreeBSD es una marca registrada de la Fundación
+FreeBSD es es utilizada por el Proyecto FreeBSD con su permiso La
+Fundación FreeBSD. Contact

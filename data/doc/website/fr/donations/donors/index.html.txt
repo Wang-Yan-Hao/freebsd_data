@@ -1,0 +1,830 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   A propos
+-   Fonctionnalités
+-   Applications
+-   Prosélytisme
+-   Marketing
+-   Administration
+-   Nouvelles du projet
+-   Événements
+-   Presse
+-   Ressources artistiques
+-   Logo
+-   Donations
+-   Legal Notices
+-   Politique de confidentialité
+
+Page des donateurs de matériels
+
+Cette page fait la liste des transactions de matériels qui ont lieu dans
+le cadre de l’équipe en charge des donations. Ce sont uniquement les
+transactions terminées ou considérées comme terminées. Si quelque chose
+a été proposé mais jamais envoyé à qui que ce soit, merci de ne pas
+l’inclure dans cette liste. Si vous constatez une erreur, veuillez
+envoyer un courrier électronique à trhodes@FreeBSD.org de manière à ce
+que je puisse le corriger. Vous pouvez aussi envoyer une copie à
+donations@FreeBSD.org.
+
++-----------------+-----------------+-----------------+-----------------+
+| De              | Matériel        | Pour            | Statut          |
++=================+=================+=================+=================+
+| nsayer          | interface       | jlemon          | inconnu         |
+|                 | réseau 4-port   |                 |                 |
+|                 | Zynx 'dc'       |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Sebastian       | Packet Engines  | will            | reçu            |
+| Trahm <inthisde | G-NICII         |                 |                 |
+| fiance@gmx.net> | 1000SX/PCI      |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| do              | ATI Rage Pro    | anholt          | envoyé          |
+| nxc <donald.cre | 128             |                 |                 |
+| el@verizon.net> |                 |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Stephe          | Pentium III     | kris            | reçu            |
+| n Hoover <shoov | 1GHz 133FSB,    |                 |                 |
+| er@442spot.com> | RAM 512M PC133, |                 |                 |
+|                 | carte mère Asus |                 |                 |
+|                 | TUSL2-C         |                 |                 |
+|                 | (chipset        |                 |                 |
+|                 | 815EP), carte   |                 |                 |
+|                 | réseau Intel    |                 |                 |
+|                 | 82559           |                 |                 |
+|                 | (PILA8460B)     |                 |                 |
+|                 | 10/100, CD-ROM  |                 |                 |
+|                 | 52X, lecteur de |                 |                 |
+|                 | disquette,      |                 |                 |
+|                 | boîtier avec    |                 |                 |
+|                 | alimentation    |                 |                 |
+|                 | 250W et         |                 |                 |
+|                 | ventilateur     |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Salvatore       | Mémoire         | obrien          | reçu            |
+| Denaro <sdenaro | DDR-DIMM 512 Mo |                 |                 |
+| @speakeasy.net> | ECC             |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Frank Ni        | Trois cartes    | Cluster pour    | reçu            |
+| kolajsen <frank | mères 533MHz    | les ports       |                 |
+| @warpspace.com> | 21164A CPU      | (obrien/peter)  |                 |
+|                 | PC164SX         |                 |                 |
+|                 | (AlphaPC)       |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Will            | Lecteur CD-ROM  | imp, bsd        | CD-ROM envoyé à |
+| iam Gnadt <wgna | PCMCIA          |                 | imp, boîtier    |
+| dt@rri-usa.org> | (Addonics),     |                 | disque dur      |
+|                 | boîtier disque  |                 | envoyé à bsd    |
+|                 | dur USB 1.1     |                 |                 |
+|                 | avec disque de  |                 |                 |
+|                 | 850Mo           |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Will            | Disque dur      | dannyboy        | reçu            |
+| iam Gnadt <wgna | Seagate Cheetah |                 |                 |
+| dt@rri-usa.org> | 10K RPM 9GB     |                 |                 |
+|                 | UW-SCSI Modèle  |                 |                 |
+|                 | : ST19101W /    |                 |                 |
+|                 | connecteur 68   |                 |                 |
+|                 | broches,        |                 |                 |
+|                 | nouveau         |                 |                 |
+|                 | dou             |                 |                 |
+|                 | ble-ventilateur |                 |                 |
+|                 | pour disque dur |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| William Gnad    | Portable Dell   | imp             | reçu            |
+| t <wgnadt@golia | Inspiron 3000   |                 |                 |
+| th.rri-usa.org> | (Pentium        |                 |                 |
+|                 | 266MHz, 64Mo    |                 |                 |
+|                 | RAM, lecteur    |                 |                 |
+|                 | disquette et    |                 |                 |
+|                 | lecteur CD-ROM, |                 |                 |
+|                 | station dock,   |                 |                 |
+|                 | carte PCMCIA    |                 |                 |
+|                 | ethernet/modem, |                 |                 |
+|                 | batterie        |                 |                 |
+|                 | supp            |                 |                 |
+|                 | lémentaire — en |                 |                 |
+|                 | bonne condition |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| William Gnad    | Cartes PCMCIA : | cartes PCMCIA à | cartes PCMCIA   |
+| t <wgnadt@golia | modem "New      | imp, carte      | envoyés. carte  |
+| th.rri-usa.org> | Media" 28.8     | réseau 3COM à   | réseau 3COM     |
+|                 | (modèle         | silby           | envoyé.         |
+|                 | inconnu), LAN   |                 |                 |
+|                 | modem Linksys   |                 |                 |
+|                 | 33.6 (modèle    |                 |                 |
+|                 | PCMLM36), carte |                 |                 |
+|                 | combo ethernet  |                 |                 |
+|                 | Linksys (modèle |                 |                 |
+|                 | EC2T), carte    |                 |                 |
+|                 | réseau 3COM     |                 |                 |
+|                 | 3C905B Ethernet |                 |                 |
+|                 | 10/100B-T (PCI) |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| William Gnad    | Disques durs    | darrenr         | en attente de   |
+| t <wgnadt@golia | 2.5" pour       |                 | livraison       |
+| th.rri-usa.org> | portable :      |                 |                 |
+|                 | Toshiba         |                 |                 |
+|                 | HDD2714 -       |                 |                 |
+|                 | 1443Mo Toshiba  |                 |                 |
+|                 | HDD2731 -       |                 |                 |
+|                 | 1083Mo          |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| William Gnad    | câble SCSI M-M  | mwlucas         | reçu            |
+| t <wgnadt@golia | 68 broches de 1 |                 |                 |
+| th.rri-usa.org> | mètre (tout     |                 |                 |
+|                 | neuf)           |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Simon Chang     | Bi-Pentium Pro  | will            | reçu            |
+| <schang@quantum | 200MHz (CPUs et |                 |                 |
+| slipstream.net> | VRMs inclus),   |                 |                 |
+|                 | 128 Mo de RAM   |                 |                 |
+|                 | disque dur IDE  |                 |                 |
+|                 | 10 Go, lecteur  |                 |                 |
+|                 | CD-ROM IDE, une |                 |                 |
+|                 | vieille carte   |                 |                 |
+|                 | réseau 3Com     |                 |                 |
+|                 | 3C509B-TPO      |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| gj              | pc164 (Alpha)   | sos             | reçu            |
++-----------------+-----------------+-----------------+-----------------+
+| M               | 4 barrettes     | jesper          | reçu            |
+| ichael Hembo <h | SIMM PC133 de   |                 |                 |
+| embo@micron.dk> | 512 Mo (pour    |                 |                 |
+|                 | f               |                 |                 |
+|                 | tp.FreeBSD.org) |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| trhodes         | disque dur IDE  | rwatson         | reçu            |
+|                 | de 40Go         |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| jesper de       | AlphaStation    | sos             | reçu            |
+|  la part de "TD | 255/233         |                 |                 |
+| C Tele Danmark" |                 |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| <Aaron.Sc       | 384Mo de RAM    | wilko           | reçu            |
+| hroeder@qg.com> | pour une        |                 |                 |
+|                 | AlphaStation    |                 |                 |
+|                 | 500             |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| DEC/Compaq      | AS2100 SMP      | trevor          | reçu            |
++-----------------+-----------------+-----------------+-----------------+
+| wilko, de la    | DS10            | murray, obrien, | reçu            |
+|  part de Compaq |                 | cluster pour    |                 |
+|                 |                 | les paquetages  |                 |
++-----------------+-----------------+-----------------+-----------------+
+| wilko, d        | AlphaServer     | markm           | reçu            |
+| e la part de HP | 1000A           |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Rolf Huisman    | carte mère      | wilko           | reçu            |
+|                 | bi-processeurs  |                 |                 |
+|                 | Abit BP6        |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| `Stefan Molnar  | carte SCSI Sun  | jake            | reçu            |
+| <ste            | X6540A bi-canal |                 |                 |
+| fan@csudsu.com> | Symbios 53C876  |                 |                 |
+| `               | (w/FCode)       |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| obrien          | lecteur de      | sos             | reçu            |
+|                 | cdrom ATAPI     |                 |                 |
+|                 | Hitachi         |                 |                 |
+|                 | CDR-7730        |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| obrien          | Module B-cache  | gallatin        | reçu            |
+|                 | 2MB DEC Alpha   |                 |                 |
+|                 | PWS             |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| obrien          | cartes réseaux  | jake            | reçu            |
+|                 | fxp(4), xl(4),  |                 |                 |
+|                 | pcn(4), dc(4);  |                 |                 |
+|                 | Adaptec         |                 |                 |
+|                 | AHA-2940UW;     |                 |                 |
+|                 | câble SCSI      |                 |                 |
+|                 | ultra-wide 68   |                 |                 |
+|                 | broches pour    |                 |                 |
+|                 | disque dur Sun  |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| obrien          | switch KVM      | kris            | reçu            |
++-----------------+-----------------+-----------------+-----------------+
+| obrien          | plusieurs       | gshapiro,gj,f   | reçu pour       |
+|                 | processeurs AMD | joe,wilko,mdodd | wilko, mdodd,   |
+|                 | Athlon Slot-A   |                 | gshapiro, fjoe; |
+|                 | 8[05]0 MHz      |                 | les autres      |
+|                 |                 |                 | attendent       |
++-----------------+-----------------+-----------------+-----------------+
+| obrien          | Processeur AMD  | kris            | reçu            |
+|                 | Athlon Slot-A   |                 |                 |
+|                 | 800 MHz + carte |                 |                 |
+|                 | mère Gigabyte   |                 |                 |
+|                 | GA-7IXE + 256   |                 |                 |
+|                 | Mo RAM          |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| obrien          | 2 systèmes      | scottl          | reçu            |
+|                 | Pentium-III 550 |                 |                 |
+|                 | MHz avec 256Mo  |                 |                 |
+|                 | RAM, CDROM,     |                 |                 |
+|                 | plusieurs       |                 |                 |
+|                 | cartes réseaux  |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| obrien          | cartes vidéo    | mdodd           | reçu            |
+|                 | AGP nVidia      |                 |                 |
+|                 | GeForce2 Pro,   |                 |                 |
+|                 | GeForce 256,    |                 |                 |
+|                 | Riva TNT2, Riva |                 |                 |
+|                 | TNT. cartes     |                 |                 |
+|                 | vidéo PCI       |                 |                 |
+|                 | nVidia GeForce2 |                 |                 |
+|                 | MX400, MX200,   |                 |                 |
+|                 | TNT2.           |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| obrien          | 2 Sun           | cluster         | reçu            |
+|                 | SPARCengine AXi | FreeBSD.org et  |                 |
+|                 | "Panther"       | scottl          |                 |
+|                 | 300MHz          |                 |                 |
+|                 | UltraSparc-IIi  |                 |                 |
+|                 | avec 256Mo RAM, |                 |                 |
+|                 | disque 9Go SCSI |                 |                 |
+|                 | UW              |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| obrien          | Sun Ultra-1     | scottl          | reçu            |
+|                 | avec 128Mo RAM, |                 |                 |
+|                 | CDROM, disque   |                 |                 |
+|                 | 2Go SCA         |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| obrien          | cartes ethernet | rwatson         | reçu            |
+|                 | : deux fxp(4),  |                 |                 |
+|                 | une pcn(4)      |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| obrien          | Processeur AMD  | jake            | reçu            |
+|                 | Slot-A 900      |                 |                 |
+|                 | MHz + carte     |                 |                 |
+|                 | mère Gigabyte   |                 |                 |
+|                 | GA-7IXE + 128Mo |                 |                 |
+|                 | RAM + disques   |                 |                 |
+|                 | IDE 10 Go et 8  |                 |                 |
+|                 | Go + 3Com       |                 |                 |
+|                 | 905c-TX + carte |                 |                 |
+|                 | vidéo AGP       |                 |                 |
+|                 | nVidia GeForce2 |                 |                 |
+|                 | GTS 64Mo        |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| obrien          | carte vidéo AGP | wilko           | reçu            |
+|                 | Matrox G400     |                 |                 |
+|                 | avec double     |                 |                 |
+|                 | sorties, 2 x    |                 |                 |
+|                 | Celeron 366     |                 |                 |
+|                 | socket-370,     |                 |                 |
+|                 | Athlon 900      |                 |                 |
+|                 | Slot-A, DIMMs   |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| obrien          | Adaptec 3940UW  | njl             | reçu            |
++-----------------+-----------------+-----------------+-----------------+
+| obrien          | 2 cartes son    | des et petef    | reçu            |
+|                 | Aureal Vortex 2 |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| gordont         | Sun Ultra-2 SMP | jake            | reçu            |
+|                 | 400 MHz avec    |                 |                 |
+|                 | 1Go RAM, 2      |                 |                 |
+|                 | disques 4Go SCA |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| gordont         | Sun Ultra-2 200 | obrien          | reçu            |
+|                 | MHz avec 512Mo  |                 |                 |
+|                 | RAM, disque 2Go |                 |                 |
+|                 | SCA             |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| N               | 2 disques SCSI  | jake            | reçu            |
+| ick Jeffrey <ni | 9Go SCA         |                 |                 |
+| ck@jeffrey.com> |                 |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| kan             | carte vidéo PCI | nsouch          | reçu            |
+|                 | Matrox          |                 |                 |
+|                 | Millenium II    |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| wilko           | carte ISDN      | hm              | reçu            |
+|                 | Winbond         |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| wilko           | Processeur      | obrien          | reçu            |
+|                 | 21264/550 EV6   |                 |                 |
+|                 | Alpha           |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| wilko           | Athlon 850      | fjoe            | reçu            |
+|                 | Slot-A, 64Mo    |                 |                 |
+|                 | DIMM            |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| unfurl          | 2 x Pentium-III | rwatson         | en attente de   |
+|                 | 550 MHz 440GX   |                 | livraison       |
++-----------------+-----------------+-----------------+-----------------+
+| Logic           | licence "site"  | jesper          | reçu            |
+| iel NcFTP / Mik | du serveur      |                 |                 |
+| e Gleason <mgle | NcFTPd pour     |                 |                 |
+| ason@ncftp.com> | FreeBSD.org     |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Michael Dexter  | graveur CD SCSI | wilko           | reçu            |
+|                 | Yamaha          |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| wilko           | carte ISDN PCI  | hm              | reçu            |
+|                 | Cologne Chip    |                 |                 |
+|                 | Design et carte |                 |                 |
+|                 | ISDN ISA Compaq |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Will            | disque dur pour | jesper          | reçu            |
+| iam Gnadt <wgna | portable IBM    |                 |                 |
+| dt@rri-usa.org> | Travelstar      |                 |                 |
+|                 | DJSA-210, 10.06 |                 |                 |
+|                 | Go              |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| mbr             | disque dur 10   | sos             | en attente de   |
+|                 | Go              |                 | livraison       |
++-----------------+-----------------+-----------------+-----------------+
+| The Open Group  | un exemplaire   | mike (et        | reçu            |
+|                 | des livres et   | -standards)     |                 |
+|                 | CD-ROMs         |                 |                 |
+|                 | "Spécifications |                 |                 |
+|                 | UNIX®" (version |                 |                 |
+|                 | 3)              |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Will            | SoundBlaster    | mike            | reçu            |
+| iam Gnadt <wgna | 128 PCI         |                 |                 |
+| dt@rri-usa.org> |                 |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Matt D          | Deux lecteurs   | will            | reçu            |
+| ouhan <mdouhan@ | de bandes Sony  |                 |                 |
+| fruitsalad.org> | AIT-1           |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Will            | Toshiba         | des             | reçu            |
+| iam Gnadt <wgna | MK6411MAT, 6495 |                 |                 |
+| dt@rri-usa.org> | Mo              |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| wilko, d        | AlphaServer     | phk             | reçu            |
+| e la part de HP | 1000A           |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| brueffer        | Carte réseau    | mux             | reçu            |
+|                 | SMC Etherpower  |                 |                 |
+|                 | II (tx)         |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Mike            | 2 machines      | Equipe de       | En utilisation  |
+|  Tancsa, Sentex | distantes :     | sécurité        |                 |
+|                 | re              | FreeBSD         |                 |
+|                 | leng4.sentex.ca | (nectar)        |                 |
+|                 | : Intel Celeron |                 |                 |
+|                 | CPU 2.00GHz     |                 |                 |
+|                 | (2000.35-MHz    |                 |                 |
+|                 | 686-class CPU)  |                 |                 |
+|                 | real memory =   |                 |                 |
+|                 | 528416768       |                 |                 |
+|                 | (516032K        |                 |                 |
+|                 | bytes), 19595MB |                 |                 |
+|                 | QUANTUM         |                 |                 |
+|                 | FIREBALLP       |                 |                 |
+|                 | LM20.5 UDMA66   |                 |                 |
+|                 | re              |                 |                 |
+|                 | leng5.sentex.ca |                 |                 |
+|                 | : Intel Pentium |                 |                 |
+|                 | III/Pentium III |                 |                 |
+|                 | Xeon/Celeron    |                 |                 |
+|                 | (866.38-MHz     |                 |                 |
+|                 | 686-class CPU)  |                 |                 |
+|                 | real memory =   |                 |                 |
+|                 | 796852224 (759  |                 |                 |
+|                 | MB), 19595MB    |                 |                 |
+|                 | QUANTUM         |                 |                 |
+|                 | FIREBALLP       |                 |                 |
+|                 | LM20.5 UDMA66   |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Mike Tancsa <m  | cartes "smart"  | des             | reçu            |
+| ike@sentex.net> | IBM (PCMCIA et  |                 |                 |
+|                 | port série)     |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| fenner          | carte série ISA | jwd             | reçu            |
+|                 | AST FourPort/XN |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Ryan Pet        | Sparc Ultra 5   | cluster         | reçu            |
+| ersen <rpeterse | Sun             | FreeBSD.org     |                 |
+| n@4imprint.com> | Microsystems    |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Chri            | Modem           | trhodes         | reçu            |
+| s Knight <chris | Données/Fax 56K |                 |                 |
+| @e-easy.com.au> | PCMCIA          |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| wes             | Carte mère      | des             | reçu            |
+|                 | bi-processeurs  |                 |                 |
+|                 | pour Intel      |                 |                 |
+|                 | Celeron         |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Craig           | Carte graphique | nsouch          | reçu            |
+|  Rodrigues <rod | ATI Xpression   |                 |                 |
+| rigc@attbi.com> | PCI 2 Mo        |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Gregory P.      | Carte mère DEC  | cluster         | reçu            |
+|  Smith <greg@el | Alpha PC164SX + | FreeBSD.org     |                 |
+| ectricrain.com> | CPU, 2 barettes |                 |                 |
+|                 | DIMM ECC 64Mo,  |                 |                 |
+|                 | contrôleur      |                 |                 |
+|                 | Ultra-Wide      |                 |                 |
+|                 | SCSI, carte     |                 |                 |
+|                 | réseau 10/100   |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| gallatin        | Système Alpha   | will            | reçu            |
+|                 | 433au           |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| B               | Lecteur de      | kris            | reçu            |
+| rian Cunnie <br | bande SCSI      |                 |                 |
+| ian@cunnie.com> | DDS-3 (12GB en  |                 |                 |
+|                 | mode            |                 |                 |
+|                 | normal/24GB     |                 |                 |
+|                 | avec            |                 |                 |
+|                 | compression),   |                 |                 |
+|                 | bouchon SCSI,   |                 |                 |
+|                 | cable SCSI (50  |                 |                 |
+|                 | broches,        |                 |                 |
+|                 | haute-densité,  |                 |                 |
+|                 | terminaison     |                 |                 |
+|                 | unique) et      |                 |                 |
+|                 | plusieurs       |                 |                 |
+|                 | bandes DDS-3.   |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| unfurl          | Système         | rwatson         | reçu            |
+|                 | bi-Pentium      |                 |                 |
+|                 | 550MHz          |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Ni              | carte mère Sun  | obrien          | inconnu (je     |
+| les Ingalls <ni | AXI/CPU 360Mhz  |                 | demanderais à   |
+| les@atheos.net> | avec carte      |                 | obrien)         |
+|                 | vidéo PCI.      |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| James Pace <je  | HP Omnibook     | imp             | reçu            |
+| pace@pobox.com> | 4000 ct 4/100   |                 |                 |
+|                 | et un HP        |                 |                 |
+|                 | Omnibook 5000   |                 |                 |
+|                 | cts 5/90 modèle |                 |                 |
+|                 | 1200            |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| murray          | Un exemplaire   | ceri            | reçu            |
+|                 | du livre        |                 |                 |
+|                 | "Docbook: The   |                 |                 |
+|                 | Definite Guide" |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Christoph Fr    | SyJet 1.5GB     | gj              | reçu            |
+| anke <Franke.Ch |                 |                 |                 |
+| ristoph@gmx.de> |                 |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Christoph Fr    | Disque dur SCSI | des             | reçu            |
+| anke <Franke.Ch | IBM DDRS-39130  |                 |                 |
+| ristoph@gmx.de> | LVD/SE          |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Christoph Fr    | Disque dur SCSI | ru              | reçu            |
+| anke <Franke.Ch | IBM DDRS-34560  |                 |                 |
+| ristoph@gmx.de> | SE, Lecteur     |                 |                 |
+|                 | CDROM SCSI      |                 |                 |
+|                 | Plextor         |                 |                 |
+|                 | PX-20TSi        |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Christoph Fr    | Lecteur IOMEGA  | phk             | envoyé          |
+| anke <Franke.Ch | Zip SCSI 100 Mo |                 |                 |
+| ristoph@gmx.de> | (avec 2         |                 |                 |
+|                 | cartouches)     |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| ETEK, Chalmers  | Compaq XP1000 : | obrien          | reçu            |
+|                 | DECchip         |                 |                 |
+|                 | 21264A-9        |                 |                 |
+|                 | 667MHz, 640Mo   |                 |                 |
+|                 | RAM             |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| ceri            | Une carte PCI 4 | wilko           | reçu            |
+|                 | ports séries    |                 |                 |
+|                 | compatible      |                 |                 |
+|                 | FreeBSD         |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Mike Ray        | Manuel          | jmallett        | reçu            |
+|                 | utilisateur du  |                 |                 |
+|                 | m               |                 |                 |
+|                 | icro-processeur |                 |                 |
+|                 | MIPS R4000      |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| wilko           | 3 disques FC    | phk             | reçu            |
++-----------------+-----------------+-----------------+-----------------+
+| wilko, d        | AlphaServer     | ticso           | reçu            |
+| e la part de HP | 4100            |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| wilko, d        | AlphaStation    | ceri            | reçu            |
+| e la part de HP | 200             |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| B               | Disque IDE      | eric            | reçu            |
+| rian Cunnie <br | 40+go           |                 |                 |
+| ian@cunnie.com> |                 |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Jared_Val       | périphériques   | sam             | envoyé ?        |
+| entine@3com.com | pour le         |                 |                 |
+|                 | chiffrement     |                 |                 |
+|                 | (pci, pcmcia,   |                 |                 |
+|                 | cartes cardbus, |                 |                 |
+|                 | processeurs     |                 |                 |
+|                 | avec support du |                 |                 |
+|                 | chiffrement     |                 |                 |
+|                 | intégré, 3Com   |                 |                 |
+|                 | 3CR990, Cartes  |                 |                 |
+|                 | PC 3CRFW102/103 |                 |                 |
+|                 | avec 3DES       |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Jared_Val       | Carte PC sans   | imp             | envoyé ?        |
+| entine@3com.com | fil 3Com XJack  |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Jared_Val       | Une carte       | will            | reçu            |
+| entine@3com.com | txp(4) 3Com 3XP |                 |                 |
+|                 | 3CR990-TX       |                 |                 |
+|                 | Typhoon         |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Jared_Val       | Une carte       | arved           | reçu            |
+| entine@3com.com | réseau Cardbus  |                 |                 |
+|                 | 3com 3CXFE575CT |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| wilko, d        | AlphaServer     | Fruitsalad.org; | reçu            |
+| e la part de HP | 4100            | pour le         |                 |
+|                 |                 | développement   |                 |
+|                 |                 | de KDE          |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Da              | Un contrôleur   | sos             | envoyé ?        |
+| vid Leimbach <l | SATA            |                 |                 |
+| eimy2k@mac.com> |                 |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Da              | G3 (bleu et     | obrien          | envoyé ?        |
+| vid Leimbach <l | blanc) pour le  |                 |                 |
+| eimy2k@mac.com> | projet PPC      |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| G               | 2 disques IDE   | brueffer        | reçu            |
+| avin Atkinson < | de 8Go          |                 |                 |
+| gavin.atkinson@ |                 |                 |                 |
+| ury.york.ac.uk> |                 |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Jona            | Nouvelle carte  | will            | reçu            |
+| than Drews <j.e | mère, 1Go RAM   |                 |                 |
+| .drews@att.net> | DDR2100,        |                 |                 |
+|                 | contrôleur SCSI |                 |                 |
+|                 | Ultra160 LSI    |                 |                 |
+|                 | Logic et 2      |                 |                 |
+|                 | disques 18Go    |                 |                 |
+|                 | Maxtor 10K III  |                 |                 |
+|                 | pour l’édition  |                 |                 |
+|                 | 2003 de         |                 |                 |
+|                 | cvsu            |                 |                 |
+|                 | p12.FreeBSD.org |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Jim Dutton      | 512Mo de RAM    | will            | reçu            |
+|  <jimd@siu.edu> | DDR2100         |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| www.ser         | 2 disques IDE   | wilko           | reçu            |
+| vercommunity.de | 3.5" 40Go pour  |                 |                 |
+|                 | les machines de |                 |                 |
+|                 | test            |                 |                 |
+|                 | FreeBSD/alpha   |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Mike Miller     | HP Kayak XU     | deischen        | reçu            |
+|                 | (modèle D8430T) |                 |                 |
+|                 | bi-Pentium III  |                 |                 |
+|                 | 450MHz, 512Mo   |                 |                 |
+|                 | RAM, 36Go,      |                 |                 |
+|                 | disque SCSI     |                 |                 |
+|                 | 15krpm IBM en   |                 |                 |
+|                 | OEM, carte      |                 |                 |
+|                 | vidéo Matrox    |                 |                 |
+|                 | G200, cartes    |                 |                 |
+|                 | réseaux Intel   |                 |                 |
+|                 | gigabit et      |                 |                 |
+|                 | 10/100, chipset |                 |                 |
+|                 | Intel 440BX     |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Equipe Free     | Carte réseau    | mux             | reçu            |
+| BSD de Linuxtag | Adaptec ANA     |                 |                 |
+|                 | 62022           |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Robi            | Deux DIMM PC133 | tmm             | reçu            |
+| n Brocks <robin | 256Mo           |                 |                 |
+| .brocks@gmx.de> | registered ECC  |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Michael Dexter  | lecteur de port | des             | reçu            |
+|                 | série Towitoko  |                 |                 |
+|                 | et 3 cartes de  |                 |                 |
+|                 | chiffrement.    |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Michael Dexter  | Portable Sony   | wilko           | reçu            |
+|                 | VAIO            |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Michael Dexter  | Contrôleur RAID | sos             | reçu            |
+|                 | SATA HPT1540,   |                 |                 |
+|                 | clefs           |                 |                 |
+|                 | PATA-SATA, 2    |                 |                 |
+|                 | contrôleurs ATA |                 |                 |
+|                 | Sil0680 +       |                 |                 |
+|                 | Promise         |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| www.ser         | Une carte       | mbr             | reçu            |
+| vercommunity.de | réseau de       |                 |                 |
+|                 | chacun de ces   |                 |                 |
+|                 | modèles : SIS   |                 |                 |
+|                 | 900, Dec 21143, |                 |                 |
+|                 | NatSem 83820    |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| In              | Licence         | cluster         | reçu            |
+| tel Corporation | commerciale     | FreeBSD.org     |                 |
+|                 | pour le         | (netchild)      |                 |
+|                 | compilateur     |                 |                 |
+|                 | C/C++ de Intel  |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| wilko           | carte ATM Fore  | des             | reçu            |
++-----------------+-----------------+-----------------+-----------------+
+| www.ser         | Disque dur IBM  | trhodes         | reçu            |
+| vercommunity.de | 20 Go pour      |                 |                 |
+|                 | portable        |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| www.ser         | Pentium 4, 2,4  | netchild        | reçu            |
+| vercommunity.de | GHz, FSB800, 1  |                 |                 |
+|                 | Go RAM Samsung  |                 |                 |
+|                 | PC3200, lecteur |                 |                 |
+|                 | DVD Altec       |                 |                 |
+|                 | 16x/48x, disque |                 |                 |
+|                 | IDE ATA133 80   |                 |                 |
+|                 | Go Maxtor (peu  |                 |                 |
+|                 | utilisé), 2     |                 |                 |
+|                 | disques SATA 80 |                 |                 |
+|                 | Go Maxtor en    |                 |                 |
+|                 | RAID0, carte    |                 |                 |
+|                 | graphique sans  |                 |                 |
+|                 | marque ATI      |                 |                 |
+|                 | Radeon 9200SE,  |                 |                 |
+|                 | lecteur         |                 |                 |
+|                 | disquette 3,5"  |                 |                 |
+|                 | TEAC,           |                 |                 |
+|                 | alimentation    |                 |                 |
+|                 | silencieuse 420 |                 |                 |
+|                 | Watt ATX et     |                 |                 |
+|                 | boîtier Athena  |                 |                 |
+|                 | CM03.           |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Joe Altman      | Carte son PCI   | kris            | reçu            |
++-----------------+-----------------+-----------------+-----------------+
+| Daniel <DS@pra  | Deux            | obrien          | reçu            |
+| xisvermittlung2 | processeurs     |                 |                 |
+| 4.de>, Seuffert | UltraSparc-II   |                 |                 |
+|  & Waidmann GbR | 300MHz (X1191A) |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Daniel <DS@pra  | convertisseur   | wilko           | reçu            |
+| xisvermittlung2 | Sun 13W3        |                 |                 |
+| 4.de>, Seuffert | (mâle) - VGA 15 |                 |                 |
+|  & Waidmann GbR | broches         |                 |                 |
+|                 | (femelle)       |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Daniel <DS@pra  | 1 carte réseau  | lioux           | reçu            |
+| xisvermittlung2 | Intel           |                 |                 |
+| 4.de>, Seuffert | EtherExpress    |                 |                 |
+|  & Waidmann GbR | 100, en vrac    |                 |                 |
+|                 | (sans boîte),   |                 |                 |
+|                 | neuf            |                 |                 |
+|                 | 1 disque IDE 80 |                 |                 |
+|                 | Go Seagate      |                 |                 |
+|                 | ST380011A, neuf |                 |                 |
+|                 | 1 câble SCSI 50 |                 |                 |
+|                 | broches, neuf   |                 |                 |
+|                 | 1 carte         |                 |                 |
+|                 | Ultra-Wide      |                 |                 |
+|                 | Adaptec 2940,   |                 |                 |
+|                 | déjà utilisée,  |                 |                 |
+|                 | testée          |                 |                 |
+|                 | 1 lecteur de    |                 |                 |
+|                 | bande Seagate   |                 |                 |
+|                 | Travan 20 Go,   |                 |                 |
+|                 | déjà utilisé,   |                 |                 |
+|                 | testé           |                 |                 |
+|                 | 1 switch 5      |                 |                 |
+|                 | ports           |                 |                 |
+|                 | compu-shack     |                 |                 |
+|                 | SSW-503, 100    |                 |                 |
+|                 | Mbit, neuf      |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Daniel <DS@pra  | 8 modules       | phk             | les modules     |
+| xisvermittlung2 | cuivre GBic,    |                 | GBic sont en    |
+| 4.de>, Seuffert | concentrateur   |                 | transit, le     |
+|  & Waidmann GbR | FDDI et deux    |                 | reste a été     |
+|                 | câbles.         |                 | reçu            |
++-----------------+-----------------+-----------------+-----------------+
+| Artem Kolt      | 1 dimm PC100    | njl             | reçu            |
+| sov <email@NOSP | 128Mo           |                 |                 |
+| AM.onepost.net> |                 |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Artem Kolt      | Une carte PCI   | petef           | reçu            |
+| sov <email@NOSP | ATA100 avec 2   |                 |                 |
+| AM.onepost.net> | ports IDE et    |                 |                 |
+|                 | des câbles IDE  |                 |                 |
+|                 | 100, Ultra100,  |                 |                 |
+|                 | PROMISE         |                 |                 |
+|                 | TECHNOLOGY,     |                 |                 |
+|                 | ULTRA100        |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Artem Kolt      | DIMM SDRAM      | fjoe            | reçu            |
+| sov <email@NOSP | 128Mo PC133     |                 |                 |
+| AM.onepost.net> | CL2, Micron     |                 |                 |
+|                 | Technology,     |                 |                 |
+|                 | C               |                 |                 |
+|                 | T16M64S4D7E.16T |                 |                 |
+|                 | DIMM SDRAM      |                 |                 |
+|                 | 128Mo PC133,    |                 |                 |
+|                 | DIMM SDRAM      |                 |                 |
+|                 | 128Mo PC100,    |                 |                 |
+|                 | carte mère      |                 |                 |
+|                 | S1598 Socket 7  |                 |                 |
+|                 | avec AMD K6     |                 |                 |
+|                 | 450MHz + câbles |                 |                 |
+|                 | IDE, Trinity    |                 |                 |
+|                 | ATX, Tyan et    |                 |                 |
+|                 | AMD, S1598 et   |                 |                 |
+|                 | un disque dur   |                 |                 |
+|                 | IDE IBM 9.1Go   |                 |                 |
+|                 | DJNA-370910     |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Artem Kolt      | Une souris PS2  | mikeh           | reçu            |
+| sov <email@NOSP | 2 boutons,      |                 |                 |
+| AM.onepost.net> | M-S34,Compaq,   |                 |                 |
+|                 | 166861-001 et   |                 |                 |
+|                 | une souris PS2  |                 |                 |
+|                 | 3 boutons,      |                 |                 |
+|                 | M-CAC64,        |                 |                 |
+|                 | Labtec,         |                 |                 |
+|                 | 851680-0000     |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Dynacom T       | Sun Ultra 10    | mux             | reçu            |
+| ankers Mgmt LTD |                 |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Jon <juos       | Lecteur/graveur | rwatson         | reçu            |
+| taus@yahoo.com> | CD Samsung      |                 |                 |
+|                 | 8x8x32          |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| wilko           | Carte mère Abit | nsouch          | reçu            |
+|                 | BP6 avec        |                 |                 |
+|                 | processeurs     |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26 janvier 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

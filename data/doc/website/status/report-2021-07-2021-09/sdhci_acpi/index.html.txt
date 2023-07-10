@@ -1,0 +1,115 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Marvell SDHCI improvements and ACPI support
+
+Contact: Bartlomiej Grzesik <bag@semihalf.com>
+Contact: Marcin Wojtas <mw@semihalf.com>
+
+The Semihalf team was working on the ACPI support for the Marvell Octeon
+TX2 CN913x and Armada 7k/8k SoCs' SD/MMC controller, as well as
+extending and improving the related generic parts of the FreeBSD OS.
+
+Applied changes:
+
+-   Add ACPI_GET_PROPERTY to access Device Specific Data (DSD) commit
+    b91fc6c43a81
+
+-   Introduce generic device_get_property/device_has_property, which
+    allow to obtain DT/ACPI properties with the same generic code commit
+    3f9a00e3b577
+
+-   Switch mmc_helper to device_* API, to access the controller
+    description from DT/ACPI in a unified way commit 8a8166e5bcfb
+
+-   Add ACPI support for the sdhci_xenon driver commit d78e464d2330 and
+    commit adbce5ff747b
+
+-   Apply other minor improvements and fixes related to properties
+    parsing in core mmc code and sdhci_xenon driver.
+
+Sponsor: Semihalf
+
+------------------------------------------------------------------------
+
+Last modified on: November 15, 2021 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

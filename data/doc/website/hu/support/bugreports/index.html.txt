@@ -1,0 +1,132 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Support
+-   Vendors
+    -   Software
+    -   Hardware
+    -   Consulting
+    -   Internet Service Providers
+    -   Miscellaneous
+-   Security Information
+    -   Advisories
+    -   Errata Notices
+    -   Supported Releases
+    -   Unsupported Releases
+    -   How to read FreeBSD Security Advisories
+    -   Charter for the Security Officer and Team
+-   Bug Reports
+    -   Submit a Problem Report
+-   Web Resources
+
+Hibajelentések
+
+A hibajelentések adatbázisa
+
+Az aktuális FreeBSD hibajelentések nyomkövetését a GNATS rendszer végzi.
+
+Egy FreeBSD hibajelentés (Problem Report, PR) nem feltétlen egy
+FreeBSD-t érintõ hiba leírása. Esetenként lehet egy hiba a
+dokumentációban (akár egy egyszerû elírás), máskor viszont lehet egy
+“kívánságlista”, amely azt tartalmazza, hogy a beküldõ mit látnánk
+szívesen a FreeBSD-ben. Sok esetben a PR egy portot tartalmaz, amelyet a
+FreeBSD Portgyûjteménye részére készítettek elõ.
+
+A hibajelentés kezdeti állapota “nyílt”, és akkor válik lezárttá, ha a
+hozzá tartozó hiba kijavult. Továbbá, minden PR-hoz tartozik egy egyedi
+azonosító, amellyel nyomonkövethetõ, így biztosítható, hogy a jelentés
+nem veszett el. Sok módosítás a FreeBSD-ben magában foglalja, hogy
+melyik azonosító tartozik ahhoz a jelentéshez, amely az adott
+változtatást indokolta.
+
+-   A nyitott hibajelentések megtekintése vagy keresése
+
+-   Hibajelentés küldése
+
+-   A PR statisztikák megtekintése
+
+Hibajelentések küldése
+
+Hibajelentések a FreeBSD rendszereken található send-pr(1) paranccsal
+küldhetõek be. Hibajelentéseket ezenkívül még webes ûrlapon is
+küldhetünk, vagy a freebsd-bugs@FreeBSD.org címre küldött e-maileken
+keresztül. A fejlesztõk a send-pr használatát részesítik elõnyben, mivel
+a levelezési listára küldött üzeneteket nem követi nyomon a rendszer
+mint hivatalos hibajelentéseket, ezért könnyen “elveszhetnek” a listára
+érkezõ levéláradatban.
+
+Mielõtt beküldenénk egy hibajelentést, érdemes lehet elolvasnunk a
+FreeBSD hibajelentések írásáról szóló cikket. Ebbõl megtudhatjuk, milyen
+esetekben szükséges hibajelentést küldeni, miket kell benne megemlíteni
+és mi a legjobb módja, hogy elküldjük. Néhány egyéb háttérinformáció is
+megtalálható a FreeBSD hibajelentések kezelésének irányelveit ismertetõ
+cikkben.
+
+------------------------------------------------------------------------
+
+Last modified on: 2021. június 19. by Danilo G. Baio
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

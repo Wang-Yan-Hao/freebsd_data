@@ -1,0 +1,570 @@
+Skip site navigation (1) Skip section navigation (2)
+
+Header And Logo
+
+[FreeBSD]
+
+.
+
+Donate to FreeBSD
+
+.
+
+Peripheral Links
+
+Search
+
+ 
+
+Site Navigation
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+Section Navigation
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Multimedia
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Introduction
+
+In this Quarter work has been progressing in quite a few areas of
+FreeBSD. FreeBSD 7.1-BETA2 and 6.4-RC2 have been released for
+pre-release testing. EuroBSDCon 2008 took place in Strasbourg, France
+and quite a few developers got together for the Developer Summit before
+the Conference. The USB2 stack has been imported into the -HEAD branch.
+
+Thanks to all the reporters for the excellent work! We hope you enjoy
+reading.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Projects
+
+-   CVSMode for csup
+-   FreeBSD for ASUS EeePC
+-   pkg_trans
+-   The FreeBSD Foundation
+-   USB2
+
+FreeBSD Team Reports
+
+-   FreeBSD Security Officer and Security Team
+-   Release Engineering Team
+
+Kernel
+
+-   Multi-IPv4/v6/no-IP jails
+-   Synaptics touchpads support improvements in psm(4)
+
+Architectures
+
+-   FreeBSD/powerpc for Freescale MPC8572
+
+Documentation
+
+-   The FreeBSD Hungarian Documentation Project
+
+Miscellaneous
+
+-   FreeBSD mirror statistics
+<<<<<<< HEAD
+=======
+-   FreeBSD Multimedia Resources List
+-   MavEtJu's FreeBSD Mailing List Browser
+
+------------------------------------------------------------------------
+
+Projects
+
+CVSMode for csup
+
+  --------------------- ------------------------------------------------------------------------------------
+  Links                 
+  Perforce repository   URL: http://p4web.freebsd.org/@md=d&cd=//&po=h&c=gCY@//depot/user/lulf/csup/?ac=83
+  --------------------- ------------------------------------------------------------------------------------
+
+Contact: Ulf Lilleengen <lulf@FreeBSD.org>
+
+The implementation of cvsmode for csup has become more mature, and has
+been tested by a few people so far. All parts directly related to
+CVSMode have been implemented, and it seems to work quite well. Testers
+are still needed, so any users of cvsup using it to mirror or fetch the
+CVS repository (cvsmode/mirror mode) are encouraged to try it.
+
+Open tasks:
+
+1.  Implement support for the rsync protocol (not needed for proper
+    working, but it will probably speed up csup in some cases)
+2.  Implement complete support for using the status file in cvsmode
+
+------------------------------------------------------------------------
+
+FreeBSD for ASUS EeePC
+
+  --------------- --------------------------------------
+  Links           
+  ASUS Eee Wiki   URL: http://wiki.freebsd.org/AsusEee
+  --------------- --------------------------------------
+
+Contact: Stanislav Sedov <stas@FreeBSD.org>
+Contact: Rui Paulo <rpaulo@FreeBSD.org>
+Contact: Lars Engels <lme@FreeBSD.org>
+
+ASUS Eee is a line of cheap subnotebooks. These come with Linux or
+Windows preinstalled. The hardware is a bit inconventional, so it
+required some efforts to make FreeBSD run properly on this hardware.
+Also, these machines contain some hardware that was not supported by
+FreeBSD.
+
+Currently FreeBSD should run on all Eee models out of the box, and most
+hardware should just work. At least, 700, 701, 901 and 1000 was tested
+successfully. The hardware supported includes Atheros wireless backed by
+ath(4) in HEAD (you still need a patch for RELENG_7), Attansic L2
+FastEthernet controller (ae(4)), High Definition audio controller
+(snd_hda), Synaptics touchpad and so on. Suspend/resume also works fine
+with some exceptions.
+
+There is also a hardware monitoring module, that allows user to control
+FAN speed and voltage, as well as monitor current CPU temperature. Wiki
+page contains information on how to obtain this module and use it. There
+are also a lot of useful tips and tricks for using FreeBSD on ASUS EeePC
+on that page.
+
+Open tasks:
+
+1.  Attansic L1 Gigabit Ethernet support (for ASUS Eee 901)
+2.  Wireless driver for ASUS Eee 901 (ral(4))
+3.  Fix Synaptics resume path.
+
+------------------------------------------------------------------------
+
+pkg_trans
+
+  ------- ---------------------------------------------------------
+  Links   
+          URL: http://wiki.freebsd.org/IvanVoras/PkgTransProposal
+  ------- ---------------------------------------------------------
+
+Contact: Ivan Voras <ivoras@freebsd.org>
+
+The "pkg_trans" project is a work in progress aiming to add package
+transactions / grouping to common package manipulation utilities
+(pkg_add, pkg_delete). The intention is to have all packages pulled in
+by a particular command like "pkg_add" or "make install" grouped in a
+single transaction, which can be later rolled back. This will allow
+users to, for example, install a big tree of dependent packages (like
+kde4), try it, and later delete it.
+
+Currently the pkg_trans and the patched utilities are available for
+testing. There are some open issues but it's generally stable.
+
+Open tasks:
+
+1.  I cannot modify the "make install" infrastructure for ports and 3rd
+    party utilities such as portupgrade. People who know these utilities
+    are very welcome to help.
+2.  More testing is needed.
+
+------------------------------------------------------------------------
+
+The FreeBSD Foundation
+
+  ------- ---------------------------------------
+  Links   
+          URL: http://www.freebsdfoundation.org
+  ------- ---------------------------------------
+
+Contact: Deb Goodkin <deb@FreeBSD.org>
+
+For the first time we sent out a request for project proposals. We were
+very excited about the proposals we received. We accepted four projects
+and will be announcing them soon. We were proud to sponsor NYCBSDCon and
+EuroBSDCon. We are also a sponsor of MeetBSDCon. We provided travel
+grants for the Cambridge FreeBSD Developer Summit in August. We are
+continuing to provide updated Java binaries for FreeBSD 7.0. We
+continued to provide legal support for the project.
+
+------------------------------------------------------------------------
+
+USB2
+
+  ------------------- ----------------------------------------------------------------------------------------------------------------------------------
+  Links               
+  Current USB files   URL: http://p4web.freebsd.org/@md=d&cd=//depot/projects/usb/src/sys/dev/usb2/&c=OPj@//depot/projects/usb/src/sys/dev/usb2/?ac=83
+  ------------------- ----------------------------------------------------------------------------------------------------------------------------------
+
+Contact: Hans Petter Sirevaag Selasky <hselasky@freebsd.org>
+
+The new USB stack has been imported to FreeBSD-CURRENT. There is an
+ongoing review process at the freebsd-usb mailing list and the
+freebsd-current mailing list. A couple of minor issues remain.
+
+Ideas and comments with regard to the new USB stack are welcome at
+freebsd-usb@freebsd.org .
+
+Open tasks:
+
+------------------------------------------------------------------------
+
+FreeBSD Team Reports
+
+FreeBSD Security Officer and Security Team
+
+  ------- -----------------------------------------------------------
+  Links   
+          URL: http://www.freebsd.org/security/
+          URL: http://www.freebsd.org/administration.html#t-secteam
+          URL: http://vuxml.freebsd.org/
+  ------- -----------------------------------------------------------
+
+Contact: Security Officer <security-officer@FreeBSD.org>
+Contact: Security Team <security-team@FreeBSD.org>
+
+The FreeBSD Security Team has recently had some membership changes.
+George V. Neville-Neil, Dag-Erling Smorgrav, and Marcus Alves Grando
+have retired from the team. We thank them for their work while they were
+on the security team. Xin Li, Martin Wilke, Qing Li, and Stanislav Sedov
+have joined the team.
+
+------------------------------------------------------------------------
+
+Release Engineering Team
+
+Contact: Ken Smith <re@FreeBSD.org>
+
+The Release Engineering Team continues to work on getting 6.4-RELEASE
+and 7.1-RELEASE ready. 6.4-RC2 builds are coming up shortly, with
+6.4-RELEASE expected about two weeks later. There are still a few issues
+being worked on for 7.1-RELEASE though hopefully we will be ready to
+proceed with 7.1-RC1 within the next week. Both 6.4-RELEASE and
+7.1-RELEASE will include DVD image ISOs for the amd64 and i386
+architectures which has been requested by quite a few end-users.
+
+------------------------------------------------------------------------
+
+Kernel
+
+Multi-IPv4/v6/no-IP jails
+
+  -------------------------------------------- -----------------------------------------------------------------------------------------------------------
+  Links                                        
+  Web page for regularly updates and patches   URL: http://sources.zabbadoz.net/freebsd/jail.html
+  Perforce tree                                URL: http://p4web.freebsd.org/@md=d&cd=//depot/user/bz/jail/&rc=s&c=kmz@//depot/user/bz/jail/?ac=43&mx=50
+  -------------------------------------------- -----------------------------------------------------------------------------------------------------------
+
+Contact: Bjoern A. Zeeb <bz@FreeBSD.ORG>
+
+The multi-IPv4/v6/no-IP jails project was resumed beginning of this year
+and is in the final stage now. A commit is imminent waiting for final
+review to be finished.
+
+As an alternative solution to full network stack virtualization, this
+work shall provide a lightweight solution for multi-IP virtualization.
+The changes are even more important because of the emerging demand for
+IPv6.
+
+Ideally this will be merged to FreeBSD 7 before 7.2-RELEASE and stay in
+FreeBSD 8 for the transitional period to full network stack
+virtualization.
+
+Open tasks:
+
+1.  Finish review.
+2.  Management (rc framework, ..) for 7-STABLE.
+3.  Identify ports that need to be updated.
+
+------------------------------------------------------------------------
+
+Synaptics touchpads support improvements in psm(4)
+
+  ------- ------------------------------------------------
+  Links   
+          URL: http://wiki.freebsd.org/SynapticsTouchpad
+  ------- ------------------------------------------------
+
+Contact: Jean-SÃ©bastien PÃ©dron <dumbbell@FreeBSD.org>
+
+psm(4) provides basic support for Synaptics Touchpad but doesn't allow
+one to take advantage of many features like multi-finger tap and
+tap-hold, or virtual scrolling. A driver for X.Org is available but the
+movements are not very precise and the setup is not easy if you want to
+use your touchpad in the console.
+
+The goal of this project is to first provide a better movement filtering
+and smoothing, then bring the more advanced features.
+
+Right now, movement filtering, multi-finger tap, tap-hold and virtual
+scrolling (using a dedicated area) is implemented.
+
+Virtual scrolling with two fingers (as seen on Apple MacBook) will be
+brought back soon.
+
+But before that, the new driver needs testing! It's currently tested on
+an ASUS V6V only and feedback on other laptops would be greatly
+appreciated.
+
+Open tasks:
+
+1.  Test and send feedback.
+
+------------------------------------------------------------------------
+
+Architectures
+
+FreeBSD/powerpc for Freescale MPC8572
+
+Contact: Rafal Jaworowski <raj@semihalf.com>
+Contact: Bartlomiej Sieka <tur@semihalf.com>
+
+The MPC8572 system-on-chip device is a high-end member of Freescale
+PowerQUICC III family, which features a rich set of integrated
+peripherals. It is a dual e500v2 core system, compliant with Book-E
+definition of the Power Architecture. For detailed specification see:
+http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=MPC8572E
+This work is extending our (single core) MPC85XX port already available
+in the SVN tree. Currently the MPC8572 support covers:
+
+-   all existing functionality of FreeBSD/MPC85XX (console, e500
+    interrupts/exceptions, networking, etc.)
+
+-   SMP
+
+-   -   dual-e500 cores running at 1.5GHz each
+    -   ULE
+
+-   Security engine (SEC)
+
+-   General purpose DMA controller
+
+-   Pattern matching engine (PME)
+
+-   Ethernet controller (eTSEC) advanced features
+
+-   -   multicast
+    -   jumbo frames
+    -   TCP/IP h/w checksumming
+    -   VLAN tagging
+    -   polling
+    -   interrupt coalescing
+
+-   PCI-Express bridge
+
+-   I2C controller
+
+High level functional summary:
+
+-   stable multiuser SMP operation
+-   NFS-mounted root filesystem
+
+Open tasks:
+
+1.  Remaining built-in peripherals drivers
+
+------------------------------------------------------------------------
+
+Documentation
+
+The FreeBSD Hungarian Documentation Project
+
+  ---------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------
+  Links                                                            
+  Hungarian Web Page for FreeBSD                                   URL: http://www.FreeBSD.org/hu
+  Hungarian Documentation for FreeBSD                              URL: http://www.FreeBSD.org/doc/hu
+  The FreeBSD Hungarian Documentation Project's Wiki Page          URL: http://wiki.FreeBSD.org/HungarianDocumentationProject
+  Perforce Depot for the FreeBSD Hungarian Documentation Project   URL: http://p4web.freebsd.org/@md=d&cd=//depot/projects/docproj_hu/&c=aXw@//depot/projects/docproj_hu/?ac=83
+  ---------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------
+
+Contact: Gábor Kövesdán <gabor@FreeBSD.org>
+Contact: Gábor Páli <pgj@FreeBSD.org>
+
+In July, pgj gave a presentation (in Hungarian) about the FreeBSD
+Hungarian Documentation Project in Debrecen, Hungary.
+
+Based on the checkupdate script mentioned in our previous status report,
+we launched our Translation Checking Service to help to schedule
+periodic updates for Hungarian doc/www translations. Moreover, a small
+bug in EPS images blocking automatic generation of the Handbook PDF
+version was corrected , therefore it is now available for download .
+
+Shortly after the renovation of its source, translation of the FAQ has
+also become part of Hungarian documentations. Both online and offline
+versions are available. A recently translated article (
+gjournal-desktop) has also been added.
+
+Hungarian translation of the FreeBSD Documentation Project Primer for
+New Contributors has been started . We hope this will encourage others
+to help our work. There is always place in our team, every submitted
+translation or feedback is appreciated and very welcome.
+
+Open tasks:
+
+1.  Translate release notes for -CURRENT and 7.X
+2.  Translate articles
+3.  Translate the FDP Primer
+4.  Read the translations, send feedback
+
+------------------------------------------------------------------------
+
+Miscellaneous
+
+FreeBSD mirror statistics
+
+  ----------------------- ------------------------------------------------------------
+  Links                   
+  Website                 URL: http://www.mavetju.org/unix/freebsd-mirrors/
+  10 Day Score overview   URL: http://www.mavetju.org/unix/freebsd-mirrors/score.php
+  ----------------------- ------------------------------------------------------------
+
+Contact: Edwin Groothuis <edwin@FreeBSD.org>
+
+There are many FreeBSD mirrors, either FTP or WWW or CVSup or RSync, but
+are they really all up-to-date? Some are, some aren't. The ones who
+aren't, how out to date are they? Or do they only carry a subset of the
+data? And how does it go over time?
+
+This project checks once per day the contents of the sites which are
+advertised in DNS, with the rsync*, www*, cvsup* and ftp* prefixes. The
+lists of hosts are based on the contents of the DNS zonefile for the
+country domains, so it will be automatically adjusted whenever a mirror
+is added.
+
+The statuses can be compared on country base and between two dates and
+the 10 day score overview shows the general health of the FreeBSD
+Mirroring network.
+
+Open tasks:
+
+1.  Create a list of contact details per mirror.
+2.  Chase mirror maintainers with regarding to the status of their
+    servers.
+
+------------------------------------------------------------------------
+
+FreeBSD Multimedia Resources List
+
+  ---------- ---------------------------------------------------------------------
+  Links      
+  Website    URL: http://www.mavetju.org/unix/multimedia/freebsd/multimedia.html
+  RSS feed   URL: http://www.mavetju.org/unix/multimedia/freebsd/multimedia.xml
+  ---------- ---------------------------------------------------------------------
+
+Contact: Edwin Groothuis <edwin@FreeBSD.org>
+
+Please note that the FreeBSD Multimedia Resources List is still alive
+and kicking. It is a one-stop-shop for FreeBSD related podcasts,
+vodcasts and audio/video resources. It has talks, videos and papers of
+the New York City BSD Con 2008, FreeBSD Developer Summit, BSDCan 2008,
+AsiaBSDCon 2008, OpenFest and has recordings with regular talks like the
+NYCBUG user group and regular podcast of BSDTalk.
+
+Open tasks:
+
+------------------------------------------------------------------------
+
+MavEtJu's FreeBSD Mailing List Browser
+
+  --------- -----------------------------------
+  Links     
+  Website   URL: http://www.mavetju.org/mail/
+  --------- -----------------------------------
+
+Contact: Edwin Groothuis <edwin@FreeBSD.org>
+
+Earlier this year I put efforts into the creation of a new layout for
+the FreeBSD mailinglists. The following issues were tackled:
+
+-   Display which mailinglists are active and are visited often.
+-   A clean weekly/monthly overview per list.
+-   In the weekly/monthly overview, be able to go forward and backward
+    in time.
+-   Browsing through threads goes by the Replies/Replies To/Referenced
+    By/References To fields of the emails, but visible who the email is
+    from.
+-   An overview of the thread with quick links to the articles.
+-   Text attachments are normally shown, other attachment are normally
+    not shown.
+-   Tag messages, see your browsing history, reply to emails and an
+    "wrap long lines" feature.
+-   Filtering out of svn-, cvs-, freebsd-, and p4- groups.
+-   Show date and time in the format you want.
+-   Storing of preferences managed via OpenID identification.
+
+The mailinglist website is updated once per hour with the mailinglists
+via cvsup.
+
+Open tasks:
+
+1.  Addition of RSS feeds per mailinglist and for the "last day"
+    feature.
+
+------------------------------------------------------------------------
+
+News Home | Status Home
+
+Site Map | Legal Notices | © 1995–2021 The FreeBSD Project. All rights
+reserved.
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

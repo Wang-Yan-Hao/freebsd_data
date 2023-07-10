@@ -1,0 +1,189 @@
+[FreeBSD The Power to Serve]
+
+FreeBSD への寄付
+
+ 
+
+-   ホーム
+
+-   FreeBSD とは
+    -   FreeBSD が初めてという方へ
+    -   特徴
+    -   プロモーション活動
+    -   マーケティング活動
+    -   プライバシーポリシー
+    -   Projects
+    -   Ports
+
+-   FreeBSD の入手
+    -   リリース情報
+    -   リリースエンジニアリング
+
+-   ドキュメント
+    -   FAQ
+    -   ハンドブック
+    -   port 作成者のためのハンドブック
+    -   開発者のためのハンドブック
+    -   Committer's Guide
+    -   マニュアルページ
+    -   Presentations and Papers
+    -   新しい貢献者のためのドキュメンテーションプロジェクト入門
+    -   すべての Books と Articles
+
+-   コミュニティ
+    -   メーリングリスト
+    -   フォーラム
+    -   ユーザグループ
+    -   イベント
+    -   FreeBSD ジャーナル
+    -   Q&A (外部)
+
+-   開発
+    -   プロジェクトアイディア
+    -   Git リポジトリ
+    -   Subversion リポジトリ
+    -   GitHub ミラー
+    -   コードレビュー (Phabricator)
+    -   Wiki
+    -   継続的インテグレーションサービス
+
+-   サポート
+    -   ベンダ
+    -   セキュリティ情報
+    -   障害報告
+    -   障害報告の提出
+    -   ウェブ上の情報
+
+-   財団
+    -   寄付
+    -   ハードウェアの寄贈
+
+-   サポート
+-   ベンダ
+    -   ソフトウェア
+    -   ハードウェア
+    -   コンサルティング
+    -   インターネットサービスプロバイダ
+    -   その他
+-   セキュリティ情報
+    -   セキュリティ勧告
+    -   Errata 情報
+    -   サポートされているリリース
+    -   サポートが終了したリリース
+    -   FreeBSD セキュリティ勧告の読み方
+    -   セキュリティオフィサとチームの憲章
+-   バグ報告
+    -   障害報告 (PR) の提出
+-   ウェブ上の情報
+
+The power, flexibility, and reliability of FreeBSD attract a wide
+variety of users and vendors. Here you will find vendors offering
+commercial products and/or services for FreeBSD.
+
+For your convenience, we have divided our growing commercial listing
+into several sections. If your company supports a FreeBSD related
+product, service, consulting, or support that should be added to this
+page, please fill out a problem report in category
+Documentation→Website. Submissions should contain a medium-sized
+paragraph in length, describing your company. Please note that the
+inclusion of vendors in our list does not signify our endorsement of
+their products or services by the FreeBSD Project.
+
+Consulting Services
+
+This file has been divided into sub-categories for your convenience. The
+following shortcuts will take you to the proper gallery entries.
+
+Africa
+
+Asia
+
+-   Questwork Consulting Limited
+-   Worria Affordable Web Hosting
+
+Australia
+
+-   Audacix
+-   B.M.K. Industries
+-   Cybersource Pty. Ltd
+-   Greg Lehey
+-   NSW IT Support
+-   Sense of Security Pty Ltd
+
+Europe
+
+-   bjrn hahnefeld IT
+-   Black Point Arts Internet Solutions GmbH
+-   BSD Professionals In Europe (BSDPIE)
+-   CTS Consulting and Trade Service
+-   EscapeBox
+-   Ethon Technologies GmbH
+-   Hamburgnet
+-   Interfuture Systems Ltd
+-   IT-schulungen.com
+-   ITS Pro
+-   Jens Schweikhardt
+-   Julian Stacey
+-   Linux Stans
+-   Manchester PC
+-   myserver.bg
+-   NetFence
+-   os-cillation
+-   Raditex Control AB
+-   RxTx
+-   Secnetix GmbH and Co KG
+-   Sheridan Computers Limited
+-   SMLAN Software & Management Training
+-   Support.od.ua
+-   SysCare s. r. o.
+-   TecVD
+-   Ulyanovsk.BSD (ULBSD)
+
+New Zealand
+
+-   Clone Consulting
+
+North America
+
+-   A-Team Systems
+-   Acadix, LLC
+-   Envescent, LLC
+-   FirmbIT
+-   Fortuitous Technologies
+-   HermeTek Network Solutions
+-   iXsystems, Inc.
+-   Klara Inc.
+-   Nesbitt & Associates
+-   Omar Siddique
+-   Omniscient Technologies
+-   Ouellet Consulting Inc.
+-   Pate Consulting, Inc.
+-   Paxym
+-   Peter Dufault
+-   Phil Budne
+-   Psychsoft Consulting
+-   The FreeBSD Mall
+-   The JMBG Network
+-   TundraWare Inc.
+-   UnixPorting
+-   ZYTRAX, Inc
+
+South America
+
+-   A FreeBSD Brasil
+-   AMG Labs
+-   AnonBSD Inc.
+-   NUVYM-CLOUD
+-   Tecno21 - Openservices
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+最終更新日: 2023年2月21日 by Sergio Carlavilla Delgado
+
+法律上の注意事項 | © 1995-2023 FreeBSD プロジェクト All rights reserved.
+The mark FreeBSD is a registered trademark of The FreeBSD Foundation and
+is used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact

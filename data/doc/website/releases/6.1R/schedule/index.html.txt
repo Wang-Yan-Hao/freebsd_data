@@ -1,0 +1,258 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 6.1 Release Process
+
+Introduction
+
+This is a specific schedule for the release of FreeBSD 6.1. For more
+general information about the release engineering process, please see
+the Release Engineering section of the web site.
+
+General discussions about the release engineering process or quality
+assurance issues should be sent to the public freebsd-qa mailing list.
+MFC requests should be sent to re@FreeBSD.org.
+
+Schedule
+
+  ----------------------------- ------------------- ------------------ -----------------------------
+  Action                        Expected            Actual             Description
+
+  Reminder announcement         --                  25 January 2006    Release Engineers send
+                                                                       announcement email to
+                                                                       developers with a rough
+                                                                       schedule for the FreeBSD 6.1
+                                                                       release.
+
+  Code freeze begins            31 January 2006     31 January 2006    After this date, all commits
+                                                                       to HEAD must be approved by
+                                                                       re@FreeBSD.org. Certain
+                                                                       highly active documentation
+                                                                       committers are exempt from
+                                                                       this rule for routine man
+                                                                       page / release note updates.
+                                                                       Heads-up emails should be
+                                                                       sent to the developers, as
+                                                                       well as stable@ and qa@
+                                                                       lists.
+
+  Announce the Ports Freeze     --                  5 February 2006    Someone from portmgr@ should
+                                                                       email freebsd-ports@ to set a
+                                                                       date for the week long ports
+                                                                       freeze and tagging of the
+                                                                       ports tree.
+
+  Begin 6.1-BETA1 builds        5 February 2006     5 February 2006    Begin building the first
+                                                                       public test release build for
+                                                                       all Tier-1 platforms.
+
+  Release 6.1-BETA1             5 February 2006     5 February 2006    6.1-BETA1 tier-1 platform
+                                                                       images built, released, and
+                                                                       uploaded to
+                                                                       ftp-master.FreeBSD.org.
+
+  Begin 6.1-BETA2 builds        19 February 2006    16 February 2006   Begin building the second
+                                                                       public test release build for
+                                                                       all Tier-1 platforms.
+
+  Release 6.1-BETA2             19 February 2006    20 February 2006   6.1-BETA2 tier-1 platform
+                                                                       images built, released, and
+                                                                       uploaded to
+                                                                       ftp-master.FreeBSD.org.
+
+  Ports tree frozen             20 February 2006    23 February 2006   Only approved commits will be
+                                                                       permitted to the ports/ tree
+                                                                       during the freeze.
+
+  Begin 6.1-BETA3 builds        --                  1 March 2006       Begin building the third
+                                                                       public test release build for
+                                                                       all Tier-1 platforms.
+
+  Release 6.1-BETA3             --                  3 March 2006       6.1-BETA3 tier-1 platform
+                                                                       images built, released, and
+                                                                       uploaded to
+                                                                       ftp-master.FreeBSD.org.
+
+  Begin 6.1-BETA4 builds        12 March 2006       13 March 2006      Begin building the fourth
+                                                                       public test release build for
+                                                                       all Tier-1 platforms.
+
+  Release 6.1-BETA4             --                  14 March 2006      6.1-BETA4 tier-1 platform
+                                                                       images built, released, and
+                                                                       uploaded to
+                                                                       ftp-master.FreeBSD.org.
+
+  RELENG_6_1 branch             ~~5 March 2006~~    5 April 2006       The new major version branch
+                                5 April 2006                           is created. Update newvers.sh
+                                                                       and release.ent on various
+                                                                       branches involved.
+
+  src/ unfrozen                 TBD                 --                 Unfreeze RELENG_6 src.
+                                                                       Continue to coordinate
+                                                                       significant check-ins with
+                                                                       re@FreeBSD.org until the
+                                                                       release is final.
+
+  Build 6.1-RC1                 ~~5 March 2006~~    5 April 2006       Begin building the first
+                                5 April 2006                           release candidate build for
+                                                                       all Tier-1 platforms.
+
+  Release 6.1-RC1               ~~5 March 2006~~    --                 6.1-RC1 tier-1 platform
+                                10 April 2006                          images released, and uploaded
+                                                                       to ftp-master.FreeBSD.org.
+
+  Ports tree tagged             6 March 2006        14 March 2006      RELEASE_6_1_0 tag for ports/.
+
+  Ports tree unfrozen           6 March 2006        14 March 2006      After the ports/ tree is
+                                                                       tagged, the ports/ tree will
+                                                                       be re-opened for commits, but
+                                                                       commits made after tagging
+                                                                       will not go in 6.1-RELEASE.
+
+  Final package build starts    TBD                 --                 The ports cluster and
+                                                                       pointyhat build final
+                                                                       packages.
+
+  Announce doc/ tree slush      6 March 2006        6 March 2006       Notification of the impending
+                                                                       doc/ tree slush should be
+                                                                       sent to doc@.
+
+  doc/ tree slush               ~~10 March 2006~~   7 April 2006       Non-essential commits to the
+                                7 April 2006                           en_US.ISO8859-1/ subtree
+                                                                       should be delayed from this
+                                                                       point until after the doc/
+                                                                       tree tagging, to give
+                                                                       translation teams time to
+                                                                       synchronize their work.
+
+  Build 6.1-RC2                 ~~12 March 2006~~   30 April 2006      Begin building the second
+                                30 April 2006                          release candidate build for
+                                                                       all Tier-1 platforms.
+
+  Release 6.1-RC2               ~~12 March 2006~~   2 May 2006         6.1-RC2 tier-1 platform
+                                2 May 2006                             images released, and uploaded
+                                                                       to ftp-master.FreeBSD.org.
+
+  doc/ tree tagged.             ~~13 March 2006~~   17 April 2006      Version number bumps for doc/
+                                10 April 2006                          subtree. RELEASE_6_1_0 tag
+                                                                       for doc/. doc/ slush ends at
+                                                                       this time.
+
+  Version numbers bumped        ~~17 March 2006~~   --                 The files listed here are
+                                7 May 2006                             updated to reflect FreeBSD
+                                                                       6.1.
+
+  src/ tree tagged              ~~17 March 2006~~   7 May 2006         Tag the RELENG_6_1 branch
+                                7 May 2006                             with RELENG_6_1_0_RELEASE.
+
+  Begin 6.1-RELEASE builds      ~~17 March 2006~~   7 May 2006         Start 6.1-RELEASE Tier-1
+                                7 May 2006                             builds.
+
+  Warn                          ~~17 March 2006~~   --                 Heads up email to
+  mirror-announce@FreeBSD.org   7 May 2006                             mirror-announce@FreeBSD.org
+                                                                       to give admins time to
+                                                                       prepare for the load spike to
+                                                                       come. The site administrators
+                                                                       have frequently requested
+                                                                       advance notice for new ISOs.
+
+  Upload to ftp-master          ~~19 March 2006~~   8 May 2006         Release and packages uploaded
+                                8 May 2006                             to ftp-master.FreeBSD.org.
+
+  Announcement                  ~~20 March 2006~~   8 May 2006         Announcement sent out after a
+                                8 May 2006                             majority of the mirrors have
+                                                                       received the bits.
+
+  Turn over to the secteam      TBD                 --                 RELENG_6_1 branch is handed
+                                                                       over to the FreeBSD Security
+                                                                       Officer Team in one or two
+                                                                       weeks after the announcement.
+  ----------------------------- ------------------- ------------------ -----------------------------
+
+Additional Information
+
+-   FreeBSD 6.1 developer todo list.
+-   FreeBSD 6.1 Code Freeze Commit Approval List.
+-   FreeBSD Release Engineering website.
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

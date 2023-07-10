@@ -1,0 +1,205 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 11.3 Release Process
+
+Introduction
+
+This is the release schedule for FreeBSD 11.3. For more information
+about the release engineering process, please see the Release
+Engineering section of the web site.
+
+General discussions about the pending release and known issues should be
+sent to the public freebsd-stable mailing list. MFC requests are no
+longer being accepted.
+
+Schedule
+
++-----------------+-----------------+-----------------+-----------------+
+| Action          | Expected        | Actual          | Description     |
++-----------------+-----------------+-----------------+-----------------+
+| Initial release | -               | 21 March 2019   | Release         |
+| schedule        |                 |                 | Engineers send  |
+| announcement    |                 |                 | announcement    |
+|                 |                 |                 | email to        |
+|                 |                 |                 | developers with |
+|                 |                 |                 | a rough         |
+|                 |                 |                 | schedule.       |
++-----------------+-----------------+-----------------+-----------------+
+| Release         | 19 April 2019   | 19 April 2019   | Release         |
+| schedule        |                 |                 | Engineers send  |
+| reminder        |                 |                 | reminder        |
+|                 |                 |                 | announcement    |
+|                 |                 |                 | e-mail to       |
+|                 |                 |                 | developers with |
+|                 |                 |                 | updated         |
+|                 |                 |                 | schedule.       |
++-----------------+-----------------+-----------------+-----------------+
+| Code slush      | 3 May 2019      | 3 May 2019      | Release         |
+| begins          |                 |                 | Engineers       |
+|                 |                 |                 | announce that   |
+|                 |                 |                 | all further     |
+|                 |                 |                 | commits to the  |
+|                 |                 |                 | stable/11       |
+|                 |                 |                 | branch will not |
+|                 |                 |                 | require         |
+|                 |                 |                 | explicit        |
+|                 |                 |                 | approval,       |
+|                 |                 |                 | however new     |
+|                 |                 |                 | features should |
+|                 |                 |                 | be avoided.     |
++-----------------+-----------------+-----------------+-----------------+
+| Code freeze     | 17 May 2019     | 17 May 2019     | Release         |
+| begins          |                 |                 | Engineers       |
+|                 |                 |                 | announce that   |
+|                 |                 |                 | all further     |
+|                 |                 |                 | commits to the  |
+|                 |                 |                 | stable/11       |
+|                 |                 |                 | branch will     |
+|                 |                 |                 | require         |
+|                 |                 |                 | explicit        |
+|                 |                 |                 | approval.       |
+|                 |                 |                 | Certain blanket |
+|                 |                 |                 | approvals will  |
+|                 |                 |                 | be granted for  |
+|                 |                 |                 | narrow areas of |
+|                 |                 |                 | development,    |
+|                 |                 |                 | documentation   |
+|                 |                 |                 | improvements,   |
+|                 |                 |                 | etc.            |
++-----------------+-----------------+-----------------+-----------------+
+| BETA1 builds    | 24 May 2019     | 24 May 2019     | First beta test |
+| begin           |                 |                 | snapshot.       |
++-----------------+-----------------+-----------------+-----------------+
+| BETA2 builds    | 31 May 2019     | 31 May 2019     | Second beta     |
+| begin           |                 |                 | test snapshot.  |
++-----------------+-----------------+-----------------+-----------------+
+| BETA3 builds    | 7 June 2019     | 7 June 2019     | Third beta test |
+| begin           |                 |                 | snapshot.       |
++-----------------+-----------------+-----------------+-----------------+
+| releng/11.3     | 14 June 2019    | 14 June 2019    | Subversion      |
+| branch          |                 |                 | branch created; |
+|                 |                 |                 | future release  |
+|                 |                 |                 | engineering     |
+|                 |                 |                 | proceeds on     |
+|                 |                 |                 | this branch.    |
++-----------------+-----------------+-----------------+-----------------+
+| RC1 builds      | 14 June 2019    | 14 June 2019    | First release   |
+| begin           |                 |                 | candidate.      |
++-----------------+-----------------+-----------------+-----------------+
+| stable/11 thaw  | 16 June 2019    | 15 June 2019    | The code freeze |
+|                 |                 |                 | on the          |
+|                 |                 |                 | stable/11       |
+|                 |                 |                 | branch is       |
+|                 |                 |                 | lifted.         |
++-----------------+-----------------+-----------------+-----------------+
+| RC2 builds      | 21 June 2019    | 21 June 2019    | Second release  |
+| begin           |                 |                 | candidate.      |
++-----------------+-----------------+-----------------+-----------------+
+| RC3 builds      | 28 June 2019    | 28 June 2019    | Third release   |
+| begin           |                 |                 | candidate.      |
++-----------------+-----------------+-----------------+-----------------+
+| RELEASE builds  | 5 July 2019     | 5 July 2019     | 11.3-RELEASE    |
+| begin           |                 |                 | builds begin.   |
++-----------------+-----------------+-----------------+-----------------+
+| RELEASE         | 9 July 2019     | 9 July 2019     | 11.3-RELEASE    |
+| announcement    |                 |                 | press release.  |
++-----------------+-----------------+-----------------+-----------------+
+| Turn over to    | -               | 24 July 2019    | releng/11.3     |
+| the secteam     |                 |                 | branch is       |
+|                 |                 |                 | handed over to  |
+|                 |                 |                 | the FreeBSD     |
+|                 |                 |                 | Security        |
+|                 |                 |                 | Officer Team in |
+|                 |                 |                 | one or two      |
+|                 |                 |                 | weeks after the |
+|                 |                 |                 | announcement.   |
++-----------------+-----------------+-----------------+-----------------+
+
+"*" indicates "as-needed" items.
+
+Additional Information
+
+-   FreeBSD Release Engineering website
+
+------------------------------------------------------------------------
+
+Last modified on: June 19, 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

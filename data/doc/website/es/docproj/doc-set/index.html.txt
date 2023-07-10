@@ -1,0 +1,113 @@
+[FreeBSD The Power to Serve]
+
+Donar a FreeBSD
+
+ 
+
+-   Inicio
+
+-   Acerca de FreeBSD
+    -   Introduccion
+    -   Características
+    -   Apoyo
+    -   Marketing
+    -   Política de privacidad
+    -   Proyectos
+    -   Ports
+
+-   Descargar FreeBSD
+    -   Información de Versiones
+    -   Ingeniería de Versiones
+
+-   Documentación
+    -   FAQ
+    -   Manual
+    -   Manual del Porter
+    -   Manual del desarrollador
+    -   Guía del Committer
+    -   Manuales en línea
+    -   Presentaciones y Trabajos
+    -   Introducción al Proyecto de Documentación
+    -   Todos los libros y artículos
+
+-   Comunidad
+    -   Listas de correo
+    -   Foros
+    -   Grupos de usuarios
+    -   Eventos
+    -   FreeBSD Journal
+    -   Q&A (externo)
+
+-   Desarrolladores
+    -   Ideas para proyectos
+    -   Git Repository
+    -   Repositorio Subversion
+    -   Git Mirror
+    -   Revisiones de Código (Phabricator)
+    -   Wiki
+    -   Servicio de integración continua
+
+-   Soporte
+    -   Distribuidores comerciales
+    -   Información de seguridad
+    -   Informes de errores
+    -   Envío informes de error
+    -   Recursos Web
+
+-   Fundación
+    -   Donaciones monetarias
+    -   Donaciones hardware
+
+-   Documentación
+-   FAQ
+-   Manual
+-   Páginas del Manual
+-   Presentaciones y Trabajos
+-   Libros y Artículos en línea
+-   Publicaciones
+-   Recursos Web
+-   Para Principiantes
+-   Proyecto de Documentación
+-   Archivo
+
+Proyecto de Documentación de FreeBSD: Estructura
+
+La documentación de FreeBSD se distribuye en 3 categorías básicas
+
+1.  Las páginas man
+
+    El proyecto no está vinculado directamente con éstas al formar parte
+    del sistema base. La excepción a esto es el equipo japonés, ya que
+    las están traduciendo. No hay razones por las que otros voluntarios
+    no puedan hacer lo mismo y traducirlas a otras lenguas.
+
+    Esto no significa que las páginas man no sean importantes, al
+    contrario. Están íntimamente relacionadas al caso específico de
+    FreeBSD y muchas veces la persona más indicada para escribirlas es
+    quien escribió esa parte de FreeBSD.
+
+2.  Los libros
+
+    El proyecto tiene una gran cantidad de documentos que tienen el
+    tamaño de un libro o camino de tenerlo. Entre estos están las FAQ y
+    el Handbook.
+
+3.  Los artículos
+
+    FreeBSD ofrece mucha información mediante documentos más cortos en
+    forma de artículo (semejantes a los tutoriales o documentos HOWTO de
+    otros proyectos).
+
+Inicio del Proyecto de Documentación de FreeBSD
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 26 de enero de 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 El Proyecto FreeBSD Todos los derechos
+reservados. La marca FreeBSD es una marca registrada de la Fundación
+FreeBSD es es utilizada por el Proyecto FreeBSD con su permiso La
+Fundación FreeBSD. Contact

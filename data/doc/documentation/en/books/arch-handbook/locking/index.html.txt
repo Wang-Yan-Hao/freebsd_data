@@ -1,0 +1,298 @@
+
+-    Part I. Kernel
+-    Chapter 1. Bootstrapping and Kernel Initialization
+    -   1.1. Synopsis
+    -   1.2. Overview
+    -   1.3. The BIOS
+    -   1.4. The Master Boot Record (boot0)
+    -   1.5. boot1 Stage
+    -   1.6. The BTX Server
+    -   1.7. boot2 Stage
+    -   1.8. loader Stage
+    -   1.9. Kernel Initialization
+-    Chapter 2. Locking Notes
+    -   2.1. Mutexes
+    -   2.2. Shared Exclusive Locks
+    -   2.3. Atomically Protected Variables
+-    Chapter 3. Kernel Objects
+    -   3.1. Terminology
+    -   3.2. Kobj Operation
+    -   3.3. Using Kobj
+-    Chapter 4. The Jail Subsystem
+    -   4.1. Architecture
+    -   4.2. Restrictions
+-    Chapter 5. The SYSINIT Framework
+    -   5.1. Terminology
+    -   5.2. SYSINIT Operation
+    -   5.3. Using SYSINIT
+-    Chapter 6. The TrustedBSD MAC Framework
+    -   6.1. MAC Documentation Copyright
+    -   6.2. Synopsis
+    -   6.3. Introduction
+    -   6.4. Policy Background
+    -   6.5. MAC Framework Kernel Architecture
+    -   6.6. MAC Policy Architecture
+    -   6.7. MAC Policy Entry Point Reference
+    -   6.8. Userland Architecture
+    -   6.9. Conclusion
+-    Chapter 7. Virtual Memory System
+    -   7.1. Management of Physical Memory vm_page_t
+    -   7.2. The Unified Buffer Cache vm_object_t
+    -   7.3. Filesystem I/O struct buf
+    -   7.4. Mapping Page Tables vm_map_t, vm_entry_t
+    -   7.5. KVM Memory Mapping
+    -   7.6. Tuning the FreeBSD VM System
+-    Chapter 8. SMPng Design Document
+    -   8.1. Introduction
+    -   8.2. Basic Tools and Locking Fundamentals
+    -   8.3. General Architecture and Design
+    -   8.4. Specific Locking Strategies
+    -   8.5. Implementation Notes
+    -   8.6. Miscellaneous Topics
+    -   Glossary
+-    Part II. Device Drivers
+-    Chapter 9. Writing FreeBSD Device Drivers
+    -   9.1. Introduction
+    -   9.2. Dynamic Kernel Linker Facility - KLD
+    -   9.3. Character Devices
+    -   9.4. Block Devices (Are Gone)
+    -   9.5. Network Drivers
+-    Chapter 10. ISA Device Drivers
+    -   10.1. Synopsis
+    -   10.2. Basic Information
+    -   10.3. device_t Pointer
+    -   10.4. Configuration File and the Order of Identifying and
+        Probing During Auto-Configuration
+<<<<<<< HEAD
+=======
+    -   10.5. Resources
+    -   10.6. Bus Memory Mapping
+    -   10.7. DMA
+    -   10.8. xxx_isa_probe
+    -   10.9. xxx_isa_attach
+    -   10.10. xxx_isa_detach
+    -   10.11. xxx_isa_shutdown
+    -   10.12. xxx_intr
+-    Chapter 11. PCI Devices
+    -   11.1. Probe and Attach
+    -   11.2. Bus Resources
+-    Chapter 12. Common Access Method SCSI Controllers
+    -   12.1. Synopsis
+    -   12.2. General Architecture
+    -   12.3. Globals and Boilerplate
+    -   12.4. Device configuration: xxx_attach
+    -   12.5. Processing CAM messages: xxx_action
+    -   12.6. Polling xxx_poll
+    -   12.7. Asynchronous Events
+    -   12.8. Interrupts
+    -   12.9. Errors Summary
+    -   12.10. Timeout Handling
+-    Chapter 13. USB Devices
+    -   13.1. Introduction
+    -   13.2. Host Controllers
+    -   13.3. USB Device Information
+    -   13.4. Device Probe and Attach
+    -   13.5. USB Drivers Protocol Information
+-    Chapter 14. Newbus
+    -   14.1. Device Drivers
+    -   14.2. Overview of Newbus
+    -   14.3. Newbus API
+-    Chapter 15. Sound Subsystem
+    -   15.1. Introduction
+    -   15.2. Files
+    -   15.3. Probing, Attaching, etc.
+    -   15.4. Interfaces
+-    Chapter 16. PC Card
+    -   16.1. Adding a Device
+-    Part III. Appendices
+-    Bibliography
+-   
+
+Book menu
+
+Chapter 2. Locking Notes
+
+Table of Contents
+
+-   2.1. Mutexes
+-   2.2. Shared Exclusive Locks
+-   2.3. Atomically Protected Variables
+
+This chapter is maintained by the FreeBSD SMP Next Generation Project.
+
+This document outlines the locking used in the FreeBSD kernel to permit
+effective multi-processing within the kernel. Locking can be achieved
+via several means. Data structures can be protected by mutexes or
+lockmgr(9) locks. A few variables are protected simply by always using
+atomic operations to access them.
+
+2.1. Mutexes
+
+A mutex is simply a lock used to guarantee mutual exclusion.
+Specifically, a mutex may only be owned by one entity at a time. If
+another entity wishes to obtain a mutex that is already owned, it must
+wait until the mutex is released. In the FreeBSD kernel, mutexes are
+owned by processes.
+
+Mutexes may be recursively acquired, but they are intended to be held
+for a short period of time. Specifically, one may not sleep while
+holding a mutex. If you need to hold a lock across a sleep, use a
+lockmgr(9) lock.
+
+Each mutex has several properties of interest:
+
+Variable Name
+
+    The name of the struct mtx variable in the kernel source.
+
+Logical Name
+
+    The name of the mutex assigned to it by mtx_init. This name is
+    displayed in KTR trace messages and witness errors and warnings and
+    is used to distinguish mutexes in the witness code.
+
+Type
+
+    The type of the mutex in terms of the MTX_* flags. The meaning for
+    each flag is related to its meaning as documented in mutex(9).
+
+    MTX_DEF
+
+        A sleep mutex
+
+    MTX_SPIN
+
+        A spin mutex
+
+    MTX_RECURSE
+
+        This mutex is allowed to recurse.
+
+Protectees
+
+    A list of data structures or data structure members that this entry
+    protects. For data structure members, the name will be in the form
+    of structure name.member name.
+
+Dependent Functions
+
+    Functions that can only be called if this mutex is held.
+
++--------+-----+-----+-----------------------------------+------------+
+| Va     | L   | T   | Protectees                        | Dependent  |
+| riable | ogi | ype |                                   | Functions  |
+| Name   | cal |     |                                   |            |
+|        | N   |     |                                   |            |
+|        | ame |     |                                   |            |
++========+=====+=====+===================================+============+
+| sche   | "sc | MT  | _gmonparam, cnt.v_swtch, cp_time, | se         |
+| d_lock | hed | X_S | curpriority, mtx.mtx_blocked,     | trunqueue, |
+|        | lo  | PIN | mtx.mtx_contested, proc.p_procq,  | re         |
+|        | ck" | |   | proc.p_slpq, proc.p_sflag,        | mrunqueue, |
+|        |     | MT  | proc.p_stat, proc.p_estcpu,       | mi_switch, |
+|        |     | X_R | proc.p_cpticks proc.p_pctcpu,     | c          |
+|        |     | ECU | proc.p_wchan, proc.p_wmesg,       | hooseproc, |
+|        |     | RSE | proc.p_swtime, proc.p_slptime,    | s          |
+|        |     |     | proc.p_runtime, proc.p_uu,        | chedclock, |
+|        |     |     | proc.p_su, proc.p_iu,             | rese       |
+|        |     |     | proc.p_uticks, proc.p_sticks,     | tpriority, |
+|        |     |     | proc.p_iticks, proc.p_oncpu,      | updatepri, |
+|        |     |     | proc.p_lastcpu, proc.p_rqindex,   | mayb       |
+|        |     |     | proc.p_heldmtx, proc.p_blocked,   | e_resched, |
+|        |     |     | proc.p_mtxname, proc.p_contested, | c          |
+|        |     |     | proc.p_priority, proc.p_usrpri,   | pu_switch, |
+|        |     |     | proc.p_nativepri, proc.p_nice,    | cpu_throw, |
+|        |     |     | proc.p_rtprio, pscnt, slpque,     | nee        |
+|        |     |     | itqueuebits, itqueues,            | d_resched, |
+|        |     |     | rtqueuebits, rtqueues, queuebits, | resch      |
+|        |     |     | queues, idqueuebits, idqueues,    | ed_wanted, |
+|        |     |     | switchtime, switchticks           | clea       |
+|        |     |     |                                   | r_resched, |
+|        |     |     |                                   | aston,     |
+|        |     |     |                                   | astoff,    |
+|        |     |     |                                   | a          |
+|        |     |     |                                   | stpending, |
+|        |     |     |                                   | calcru,    |
+|        |     |     |                                   | pr         |
+|        |     |     |                                   | oc_compare |
++--------+-----+-----+-----------------------------------+------------+
+| vm86pc | "v  | M   | vm86pcb                           | vm8        |
+| b_lock | m86 | TX_ |                                   | 6_bioscall |
+|        | pcb | DEF |                                   |            |
+|        | lo  |     |                                   |            |
+|        | ck" |     |                                   |            |
++--------+-----+-----+-----------------------------------+------------+
+| Giant  | "   | M   | nearly everything                 | lots       |
+|        | Gia | TX_ |                                   |            |
+|        | nt" | DEF |                                   |            |
+|        |     | |   |                                   |            |
+|        |     | MT  |                                   |            |
+|        |     | X_R |                                   |            |
+|        |     | ECU |                                   |            |
+|        |     | RSE |                                   |            |
++--------+-----+-----+-----------------------------------+------------+
+| callou | "c  | MT  | callfree, callwheel,              |            |
+| t_lock | all | X_S | nextsoftcheck, proc.p_itcallout,  |            |
+|        | out | PIN | proc.p_slpcallout, softticks,     |            |
+|        | lo  | |   | ticks                             |            |
+|        | ck" | MT  |                                   |            |
+|        |     | X_R |                                   |            |
+|        |     | ECU |                                   |            |
+|        |     | RSE |                                   |            |
++--------+-----+-----+-----------------------------------+------------+
+
+: Table 1. Mutex List
+
+2.2. Shared Exclusive Locks
+
+These locks provide basic reader-writer type functionality and may be
+held by a sleeping process. Currently they are backed by lockmgr(9).
+
++-------------+--------------------------------------------------------+
+| Variable    | Protectees                                             |
+| Name        |                                                        |
++=============+========================================================+
+| a           | allproc zombproc pidhashtbl proc.p_list proc.p_hash    |
+| llproc_lock | nextpid                                                |
++-------------+--------------------------------------------------------+
+| pr          | proc.p_children proc.p_sibling                         |
+| octree_lock |                                                        |
++-------------+--------------------------------------------------------+
+
+: Table 2. Shared Exclusive Lock List
+
+2.3. Atomically Protected Variables
+
+An atomically protected variable is a special variable that is not
+protected by an explicit lock. Instead, all data accesses to the
+variables use special atomic operations as described in atomic(9). Very
+few variables are treated this way, although other synchronization
+primitives such as mutexes are implemented with atomically protected
+variables.
+
+-   mtx.mtx_lock
+
+------------------------------------------------------------------------
+
+Last modified on: December 11, 2021 by Sergio Carlavilla Delgado
+
+Prev
+
+Home
+
+Next
+
+Table of Contents
+
+-   2.1. Mutexes
+-   2.2. Shared Exclusive Locks
+-   2.3. Atomically Protected Variables
+
+------------------------------------------------------------------------
+
+Resources
+
+-   Download PDF
+-   Edit this page
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+

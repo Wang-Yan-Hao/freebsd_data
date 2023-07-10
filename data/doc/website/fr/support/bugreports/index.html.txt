@@ -1,0 +1,135 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   Support
+-   Revendeurs
+    -   Logiciel
+    -   Matériel
+    -   Consultants
+    -   Fournisseurs d'accès à Internet
+    -   Divers
+-   Information de sécurité
+    -   Avis de sécurité
+    -   Errata
+    -   Versions supportées
+    -   Versions non-supportées
+    -   Comment lire les avis de sécurité FreeBSD
+    -   Charte de l'officier de Sécurité et de son équipe
+-   Rapports de bogues
+    -   Envoyer un rapport de bogue
+-   Ressources Web
+
+Rapport de bogues
+
+Base de rapports de bogues
+
+Les rapports de bugs actuels de FreeBSD sont gérés avec la base de
+données GNATS.
+
+Un rapport de bogue FreeBSD (Problem Report) ne concerne pas
+nécessairement un bogue dans FreeBSD lui-même. Dans certains cas, il
+peut concerner une erreur dans la documentation (qui peut être une
+simple erreur de typographie). Dans d’autres cas, il peut concerner une
+"liste de souhaits" que l’expéditeur du rapport voudrait voir incorporés
+dans FreeBSD. Bien souvent, un PR contient un logiciel porté prêt à être
+inclu dans la collection de logiciels portés et de paquetages de
+FreeBSD.
+
+Les rapports commencent avec le statut "ouvert" et sont fermés dès que
+le problème indiqué est résolu. De plus, un numéro identifiant unique
+est assigné à chaque PR pour être certain qu’il ne sera pas perdu. De
+nombreux changements apportés à FreeBSD incluent ce numéro identifiant
+du PR qui a conduit à faire la modification.
+
+-   Voir les rapports de bogues ouverts.
+
+-   Voir un rapport de bogue par son identifiant.
+
+-   Rechercher dans les rapports de bogues.
+
+-   Soumettre un rapport de bogue.
+
+-   Voir les statistiques sur les rapports de bogues.
+
+Les rapports de bugs peuvent aussi être envoyés à l’équipe en charge du
+développement grâce à la commande send-pr(1) sur un système FreeBSD, ou
+en envoyant un courrier électronique à freebsd-bugs@FreeBSD.org. Note:
+Nous encourageons l’utilisation de send-pr car les messages envoyés à la
+liste de diffusion ne sont pas suivis comme des rapports officiels et
+peuvent être perdus!
+
+Avant de soumettre un rapport de bogue, vous êtes invité à lire
+l’article Ecrire des rapports de bugs FreeBSD. Cet article décrit quand
+vous devez soumettre un rapport, ce que vous devez y inclure et quel est
+la meilleure façon de soumettre votre rapport de bogue. Plusieurs
+informations utiles sont également disponibles dans l’article Directives
+d’utilisation des rapports de bogues.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 juin 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

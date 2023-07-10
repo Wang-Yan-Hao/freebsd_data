@@ -1,0 +1,118 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+FreeBSD Accessibility
+
+Links:
+Accessibility wiki page URL: https://wiki.freebsd.org/Accessibility
+List introduction, goals, audience, and ground rules URL:
+link:https://lists.freebsd.org/archives/freebsd-accessibility/2021-October/000000.html
+
+Contact: Pau Amma <pauamma@gundo.com>
+Contact: FreeBSD accessibility discussions
+<freebsd-accessibility@freebsd.org>
+
+Over the past several months, I’ve started putting together tools and
+resources to help make the FreeBSD ecosystem (more) accessible to people
+with disabilities:
+
+-   a mailing list
+
+-   a set of wiki pages including resources and a categorized wish list
+
+-   tooling including a searchable accessibility Bugzilla keyword and an
+    accessibility Phabricator group
+
+I need all the help I can get with:
+
+-   specifying, designing, implementing, and testing the items on the
+    wishlist
+
+-   adding to the wishlist in areas were have little or no experience or
+    for things I missed
+
+-   moving beyond software and documentation to processes and culture
+
+------------------------------------------------------------------------
+
+Last modified on: June 10, 2022 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

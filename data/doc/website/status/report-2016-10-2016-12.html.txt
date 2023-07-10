@@ -1,0 +1,1342 @@
+Skip site navigation (1) Skip section navigation (2)
+
+Header And Logo
+
+[FreeBSD]
+
+.
+
+Donate to FreeBSD
+
+.
+
+Peripheral Links
+
+Search
+
+ 
+
+Site Navigation
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+Section Navigation
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Multimedia
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Introduction
+
+Another year has passed (and another has gotten well underway, while we
+worked to assemble this report). Over the past two years that I have
+been part of the monthly@ team that assembles these reports, it has been
+enlightening to watch the individual entries pass through my emacs
+and/or vim. These reports give me a picture of what is going on with
+FreeBSD that I could not get just from reading commit mail; I hope that
+is also true for our readers.
+
+This quarter brings the usual mix of continuations of many stalwart
+projects and entires of new participants, as well as the return of some
+items after a few quarters' hiatus. Enjoy and be enlightened!
+
+—Benjamin Kaduk
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+The deadline for submissions covering the period from January to March
+2017 is April 7, 2017.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD Team Reports
+
+-   FreeBSD Release Engineering Team
+-   Ports Collection
+-   The FreeBSD Core Team
+-   The FreeBSD Foundation
+
+Projects
+
+-   Ceph on FreeBSD
+-   OpenBSM
+-   Sysctl Exporter for Prometheus
+-   The Graphics Stack on FreeBSD
+
+Kernel
+
+-   FreeBSD on Hyper-V and Azure
+-   I2C, GPIO, and SPI Support for MinnowBoard
+
+Architectures
+
+-   FreeBSD on ARM Boards
+-   FreeBSD/arm64
+-   FreeBSD/EC2
+
+Userland Programs
+
+-   libarchive
+-   Reproducible Builds in FreeBSD
+-   Updates to GDB
+-   Using LLVM's LLD Linker as FreeBSD's System Linker
+
+Ports
+
+-   GCC (GNU Compiler Collection)
+-   LXQt on FreeBSD
+-   Mono
+-   Wine
+-   Xfce on FreeBSD
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD Team Reports
+
+FreeBSD Release Engineering Team
+
+  ------------------------------------ ---------------------------------------------------------------
+  Links                                
+  FreeBSD 11.0-RELEASE Announcement    URL: https://www.FreeBSD.org/releases/11.0R/announce.html
+  FreeBSD 11.0-RELEASE Release Notes   URL: https://www.FreeBSD.org/releases/11.0R/relnotes.html
+  FreeBSD Development Snapshots        URL: http://ftp.FreeBSD.org/pub/FreeBSD/snapshots/ISO-IMAGES/
+  ------------------------------------ ---------------------------------------------------------------
+
+Contact: FreeBSD Release Engineering Team <re@FreeBSD.org>
+
+The FreeBSD Release Engineering Team is responsible for setting and
+publishing release schedules for official project releases of FreeBSD,
+announcing code freezes, and maintaining the respective branches, among
+other things.
+
+The FreeBSD Release Engineering Team in concert with the FreeBSD
+Security Team finalized FreeBSD 11.0-RELEASE. FreeBSD 11.0-RELEASE was
+announced on October 10, 2016, roughly four weeks after the original
+schedule.
+
+The FreeBSD Release Engineering Team would like to specifically thank
+Colin Percival and all members of the FreeBSD Security Team for their
+extra diligence in ensuring that user-facing upgrade paths were properly
+addressed and documented.
+
+This project was sponsored by The FreeBSD Foundation.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Ports Collection
+
+  ----------------------------------------------- ------------------------------------------------------------------------------------------------
+  Links                                           
+  About FreeBSD Ports                             URL: https://www.FreeBSD.org/ports/
+  Contributing to Ports                           URL: https://www.FreeBSD.org/doc/en_US.ISO8859-1/articles/contributing/ports-contributing.html
+  FreeBSD Ports Monitoring                        URL: http://portsmon.FreeBSD.org/index.html
+  Ports Management Team                           URL: https://www.FreeBSD.org/portmgr/index.html
+  FreeBSD portmgr on Twitter (@FreeBSD_portmgr)   URL: https://twitter.com/FreeBSD_portmgr/
+  FreeBSD Ports Management Team on Facebook       URL: https://www.facebook.com/portmgr
+  FreeBSD Ports Management Team on Google+        URL: https://plus.google.com/communities/108335846196454338383
+  ----------------------------------------------- ------------------------------------------------------------------------------------------------
+
+Contact: René Ladan <portmgr-secretary@FreeBSD.org>
+Contact: FreeBSD Ports Management Team <portmgr@FreeBSD.org>
+
+The Ports Tree has reached the marker of 27,000 ports, with the PR count
+risen slightly to around 2,250. Of these PRs, 572 are unassigned. The
+last quarter saw 6871 commits by 176 committers. The number of open and
+the number of unassigned PRs both increased lightly since last quarter.
+
+Two commit bits were taken in for safe keeping in the last quarter: jmg
+after 19 months of inactivity, and edwin at his own request. We welcomed
+three new committers: Nikolai Lifanov (lifanov), Jason Bacon, and
+Mikhail Pchelin (misha).
+
+On the management side, adamw and feld were elected as new portmgr
+members, and rene was promoted to full member. feld is already involved
+in ports-secteam.
+
+On the infrastructure side, two new USES (lxqt and varnish) were
+introduced. Some default versions were also updated: varnish 4 (new),
+GCC 4.8 to 4.9, Perl 5.20 to 5.24, and Python 3.4 to 3.5. Two major
+ports reached their end-of-life at December 31st and were removed: Perl
+5.18 and Linux Fedora 10 (the default is Linux CentOS 6). Because
+FreeBSD 9.3, 10.1, and 10.2 also reached end-of-life, support for those
+versions was removed from the Ports Tree.
+
+Some major ports were updated to their latest versions: pkg to 1.9.4,
+Firefox to 50.1.0, Firefox-esr to 45.6.0, Chromium to 54.0.2840.100, and
+Ruby to 2.1.10 / 2.2.6 / 2.3.3. www/node was updated to version 7;
+version 6 was split off as www/node6 for long-term support.
+
+Behind the scenes, antoine ran 39 exp-runs to verify package updates,
+framework changes, and changes to the base system. bdrewery installed
+new package builders and added builds for FreeBSD 11 for mips, mips64,
+and armv6. He also improved the balancing, monitoring, automation of the
+package builders.
+
+Open tasks:
+
+1.  If you have some spare time, please take up a PR for testing and
+    committing.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+The FreeBSD Core Team
+
+Contact: FreeBSD Core Team <core@FreeBSD.org>
+
+The major concern for Core during the last quarter of 2016 has been
+about maintaining the effectiveness of secteam. The team is primarily in
+need of better project management, both to improve communication
+generally and to allow the other team members to concentrate on the
+technical aspects of handling vulnerabilities.
+
+To that end, there has been agreement in principle for either the
+FreeBSD Foundation or one of the companies that are major FreeBSD users
+to employ someone specifically in this role.
+
+Core confirmed that the new support model would go into effect with
+11.0-RELEASE despite the postponement of the switch to a packaged base
+release mechanism. For details of the new support model, please follow
+the links from the security page of the FreeBSD website.
+
+Core requested the removal of the misc/jive port, on the grounds that it
+had no function other than to turn text into an offensively racist
+parody. This proved controversial, with many seeing this as a first step
+in bowdlerizing the entire ports tree. That is certainly not Core's
+intention. Core's aim here is to help secure the future of the FreeBSD
+project by making it welcoming to all contributors, regardless of
+ethnicity, gender, sexuality or other improper bases for
+discrimintation. While misc/jive may once have been seen as harmless
+fun, today the implicit approval implied by having it in the ports tree
+sends a message at odds with the project's aims.
+
+The Marketing team and the associated marketing@FreeBSD.org mailing list
+were wound up, due to lack of activity. Messages to
+marketing@FreeBSD.org will be forwarded to the FreeBSD Foundation's
+marketing team instead.
+
+Core member Allan Jude, who was already the clusteradm liason, became a
+full member of clusteradm.
+
+An emergency correction to the 11.0 release notes was authorised, as it
+was giving the misleading impression that 802.11n wireless support had
+only just been added, and this misapprehension was being repeated in the
+press. In reality, FreeBSD has had 802.11n support for many years, and
+the announcement should have said that support had been added to many
+additional device drivers.
+
+Discussions about a proposal to improve Unicode support are on-going.
+FreeBSD is already standards conformant, but the propsal is to switch to
+a __STDC_ISO_10646_ implementation, similar to what Linux glibc
+currently uses. Opinions are divided on the technical merits of the new
+approach.
+
+There were the usual quota of queries about licensing and other legal
+matters:
+
+-   Plans to create a GPLv3 overlay for the base system were shelved in
+    the light of faster than expected progress at enabling building the
+    world using an external toolchain.
+<<<<<<< HEAD
+=======
+-   The trademarks page on the website was updated to show the current
+    owners of a number of trademarks in their approved form.
+-   In the absence of a tool to extract and summarize all of the
+    relevant information, the obligation in the BSD license that
+    "Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the
+    distribution." is fulfilled by providing a tarball of the system
+    sources with their embedded copyright statements.
+-   The European Court of Justice's "Right to be Forgotten" only applies
+    to search engines, and the FreeBSD project is not one of those, so
+    it need not take any action.
+-   Core is following closely discussions within the LLVM project
+    regarding a change of license which, if implemented, might require
+    an audit of the entire ports tree to discover all packages that
+    contain binaries linked against libc++ and ensure that they are
+    licensed compatibly with LLVM. However, indications are that the
+    LLVM project will not adopt such changes.
+-   The "Open Source Exception" in the firmware license means that
+    committing a "binary blob" driver for the Nvidia Jetson TK1 XHCI
+    device is acceptable.
+
+During this quarter four new commit bits were awarded. Please welcome
+Dexuan Cui, David Bright, Konrad Witaszczyk, and Piotr Stefaniak. We
+were sorry to see Edwin Lansing hang up his commit bits and step down
+from portmgr.
+
+------------------------------------------------------------------------
+
+The FreeBSD Foundation
+
+  ---------------------------- -----------------------------------------
+  Links                        
+  FreeBSD Foundation Website   URL: https://www.FreeBSDFoundation.org/
+  ---------------------------- -----------------------------------------
+
+Contact: Deb Goodkin <deb@FreeBSDFoundation.org>
+
+The FreeBSD Foundation is a 501(c)(3) non-profit organization dedicated
+to supporting and promoting the FreeBSD Project and community worldwide.
+Funding comes from individual and corporate donations and is used to
+fund and manage software development projects, conferences and developer
+summits, and provide travel grants to FreeBSD contributors. The
+Foundation purchases and supports hardware to improve and maintain
+FreeBSD infrastructure; publishes marketing material to promote,
+educate, and advocate for the FreeBSD Project; facilitates collaboration
+between commercial vendors and FreeBSD developers; and finally,
+represents the FreeBSD Project in executing contracts, license
+agreements, and other legal arrangements that require a recognized legal
+entity.
+
+Here are some highlights of what we did to help FreeBSD last quarter:
+
+Fundraising Efforts
+
+Our work is 100% funded by your donations. We raised $1,527,540 in 2016
+from 1471 donors! Thank you to everyone who made a donation to help us
+continue our efforts in 2017 to support the FreeBSD Project and
+community worldwide! You can make a donation here to our 2017
+fundraising campaign: https://www.FreeBSDfoundation.org/donate/.
+
+OS Improvements
+
+The Foundation improves the FreeBSD operating system by employing our
+technical staff to maintain and improve critical kernel subsystems, add
+features and functionality, and fix problems. This also includes funding
+separate project grants like the arm64 port, blacklistd access control
+daemon, and integration of VIMAGE support, to make sure that FreeBSD
+remains a viable solution for research, education, computing, products
+and more.
+
+Large projects supported last year include:
+
+-   arm64 port
+-   VIMAGE Integration
+-   Toolchain work
+-   blacklistd access control daemon
+
+The Foundation team worked on a technology roadmap for 2017–2018 during
+our board meeting in November.
+
+Staff and board members continued hosting bi-weekly conference calls to
+facilitate efforts for individuals to collaborate on different
+technologies.
+
+You can find out more about the support we provided by reading
+individual updates from Ed Maste, Konstatin Belousov, and Edward
+Napierala in this report.
+
+Release Engineering
+
+The Foundation provides a full-time staff member to lead the release
+engineering efforts. This has provided timely and reliable releases over
+the last few years.
+
+Last quarter, our full-time staff member worked with the FreeBSD Release
+Engineering and Security Teams to finalize 11.0-RELEASE. He also added
+support for the powerpcspe architecture to the 12-CURRENT snapshot
+builds, and continued work on packaging the base system with pkg(8). He
+also continued producing 10-STABLE, 11-STABLE, and 12-CURRENT
+development snapshot builds throughout the quarter.
+
+You can find out more about the support we provided to the Release
+Engineering Team by reading their status update in this report.
+
+Supporting FreeBSD Infrastructure
+
+The Foundation provides hardware and support to improve the FreeBSD
+infrastructure. This year, we purchased the following hardware to
+improve the build, continuous integration, and platform processes:
+
+-   A server to reduce the build time from over an hour to 20 minutes
+    for the continuous integration process. You can find out more
+    information here: https://ci.FreeBSD.org/.
+-   Two ThunderX servers for native package builds for the FreeBSD/arm64
+    architecture.
+-   Two servers to improve release engineering builds.
+-   Four servers to improve package builds.
+-   Four servers as build slaves to increase the number of builds in the
+    continuous integration process.
+
+FreeBSD Advocacy and Education
+
+A large part of our efforts are dedicated to advocating for the Project.
+This includes promoting work being done by others with FreeBSD;
+producing advocacy literature to teach people about FreeBSD and help
+make the path to starting using FreeBSD or contributing to the Project
+easier; and attending and getting other FreeBSD contributors to
+volunteer to run FreeBSD events, staff FreeBSD tables, and give FreeBSD
+presentations.
+
+Here is a list highlighting some of the advocacy and education work we
+did last year:
+
+-   Attended and/or sponsored 24 events around the world
+-   Provided 15 Travel Grants to developers
+-   Created new and updated marketing literature including:
+    -   Updated FreeBSD 10 Brochure
+    -   New TeachBSD postcard to spread the word about the program
+    -   Google Summer of Code flyer
+    -   FreeBSD 11 Brochure
+    -   Updated Recruiting Flyer
+    -   Updated Get Involved Flyer
+    -   FreeBSD as a Platform for Research Flyer
+-   Created a series of FreeBSD How-to Guides:
+    -   Installing FreeBSD with VirtualBox (Mac/Windows)
+    -   Installing a Desktop Environment on FreeBSD
+    -   Installing FreeBSD for Raspberry Pi
+    -   Installing PC-BSD as a Primary Operating System
+    -   FreeBSD Setup Tips
+-   Acquired New Testimonials:
+    -   Accelerations Systems
+    -   NeoSmart Technologies
+    -   Chelsio Communications
+    -   Crescent River Port Pilots' Association
+    -   IXC
+    -   Stormshield
+-   Updated the FreeBSD Project and Foundation Branding:
+    -   New FreeBSD Foundation website and logo
+    -   Updated Brand Assets page to include more information about the
+        FreeBSD Project and FreeBSD Foundation logos.
+
+We published our September/October and November/December Journal issues
+at https://www.FreeBSDfoundation.org/journal/.
+
+We also published monthly newsletters to highlight work being done to
+support FreeBSD, tell you about upcoming events, and provide other
+information to keep you in the loop of what we are doing to support the
+FreeBSD Project and community:
+https://www.FreeBSDfoundation.org/news-and-events/newsletter/.
+
+Conferences and Events
+
+The FreeBSD Foundation sponsors many conferences, events, and summits
+around the globe. These events can be BSD-related, open source, or
+technology events geared towards underrepresented groups.
+
+We support the FreeBSD-focused events to help provide a venue for
+sharing knowledge, to work together on projects, and to facilitate
+collaboration between developers and commercial users. This all helps
+provide a healthy ecosystem. We support the non-FreeBSD events to
+promote and raise awareness of FreeBSD, to increase the use of FreeBSD
+in different applications, and to recruit more contributors to the
+Project.
+
+We also sponsored or attended the following events last quarter:
+
+-   Ohio LinuxFest, October, Columbus, Ohio
+-   Grace Hopper 2016, October, Houston, TX
+-   COSC 2016, October, Beijing, China
+-   Bay Area FreeBSD Vendor and Devoloper's Summit and MeetBSD 2016,
+    November, Berkely, CA
+-   USENIX LISA '16, December, Boston, MA
+-   OSC 2016, December, Beijing, China
+
+Get the whole list of conferences we supported in 2016 at:
+https://www.FreeBSDfoundation.org/blog/recap-of-2016-advocacy-efforts/.
+
+Legal/FreeBSD IP
+
+The Foundation owns the FreeBSD trademarks, and it is our responsibility
+to protect them. We continued to review requests and grant permission to
+use the trademarks. We also provided legal support for the core team to
+investigate the status of certain patents.
+
+FreeBSD Community Engagement
+
+Anne Dickison, our Marketing Director, has been overseeing the efforts
+to rewrite the Project's Code of Conduct to help make this a safe,
+inclusive, and welcoming community. The updated Code of Conduct and
+Report Guidelines are going through the final review process, and will
+be handed off to the Core Team for approval in Q1 2017.
+
+Go to http://www.FreeBSDfoundation.org to find out how we support
+FreeBSD and how we can help you!
+
+------------------------------------------------------------------------
+
+Projects
+
+Ceph on FreeBSD
+
+  ----------------- ----------------------------------------------------------
+  Links             
+  Ceph Main Site    URL: http://ceph.com
+  Main Repository   URL: https://github.com/ceph/ceph
+  My FreeBSD Fork   URL: https://github.com/wjwithagen/ceph/tree/wip.FreeBSD
+  ----------------- ----------------------------------------------------------
+
+Contact: Willem Jan Withagen <wjw@digiware.nl>
+
+Ceph is a distributed object store and file system designed to provide
+excellent performance, reliability and scalability:
+
+-   Object Storage
+
+    Ceph provides seamless access to objects using native language
+    bindings or radosgw, a REST interface that is compatible with
+    applications written for S3 and Swift.
+
+-   Block Storage
+
+    Ceph's RADOS Block Device (RBD) provides access to block device
+    images that are striped and replicated across the entire storage
+    cluster.
+
+-   File System
+
+    Ceph provides a POSIX-compliant network file system that aims for
+    high performance, large data storage, and maximum compatibility with
+    legacy applications.
+
+I started looking into Ceph because the HAST solution with CARP and
+ggate did not really do what I was looking for. But I aim to run a Ceph
+storage cluster of storage nodes that are running ZFS. User stations
+would be running bhyve on RBD disks that are stored in Ceph.
+
+The FreeBSD build of Ceph includes most of the tools Ceph provides. Note
+that the RBD-dependent items will not work, since FreeBSD does not have
+RBD (yet).
+
+The most notable progress since the last report:
+
+-   RBD is actually buildable and can be used to manage
+    RADOS BLOCK DEVICEs.
+-   All tests run to completion for the current selection of tools,
+    though the neded (minor) patches have yet to be pulled into HEAD.
+-   Cmake is now the only way of building Ceph.
+-   The threading/polling code has been reworked for the simple socket
+    code. It now uses a self-pipe, instead of using an odd
+    shutdown()-signaling Linux feature.
+-   The EventKqueue code was modified to work around the "feature" that
+    starting threads destroys the kqueue handles. The code was just
+    finshed, so it is not yet submitted to the main repository.
+-   We investigated differences between FreeBSD and Linux for
+    SO_REUSEADDR and SO_REUSEPORT. Fortunately, the code is only used
+    during testing, so disabling these features only delays progress in
+    the tests.
+-   A jenkins instances is regularly testing both ceph/ceph/master and
+    wjwithagen/ceph/wip.FreeBSD, so there is regular verification of
+    buildability and the tests:
+    http://cephdev.digiware.nl:8180/jenkins/.
+
+Build Prerequisites
+
+Compiling and building Ceph is tested on 12-CURRENT with its clang
+3.9.0, but 11-RELEASE will probably also work, given experience with
+clang 3.7.0 from 11-CURRENT. Interestingly, when 12-CURRENT had clang
+3.8.0, that did not work as well as either 3.7.0 or 3.9.0. The clang 3.4
+present in 10-STABLE does not have the required capabilities to compile
+everything.
+
+The following setup will get things running for FreeBSD:
+
+1.  Install bash and link it in /bin
+2.  It is no longer necessary to add a definition of ENODATA to
+    /usr/include/errno.h
+3.  Clone the github repo (http://github.com/wjwithagen/ceph.git) and
+    checkout the "wip.FreeBSD" branch
+4.  Run ./do_FreeBSD.sh to start the build.
+
+The old build method using automake is no longer used; see the
+README.FreeBSD for more details.
+
+Parts not (yet) included:
+
+-   KRBD: Kernel Rados Block Devices is implemented in the Linux kernel,
+    but not in the FreeBSD kernel. Perhaps ggated could be used as a
+    template since it does some of the same things as KRBD, just between
+    2 disks. It also has a userspace counterpart, which could ease
+    development.
+-   BlueStore: FreeBSD and Linux have different AIO APIs, and that
+    incompatibility needs to be resolved somehow. Additionally, there is
+    discussion in FreeBSD about aio_cancel not working for all
+    devicetypes.
+-   CephFS: Cython tries to access an internal field in struct dirent,
+    which does not compile.
+-   Tests that verify the correct working of the above are also excluded
+    from the testset.
+
+Open tasks:
+
+1.  Run integration tests to see if the FreeBSD daemons will work with a
+    Linux Ceph platform.
+2.  Compile and test the user space RBD (Rados Block Device). This
+    currently works, but testing has been limitted.
+3.  Investigate and see if an in-kernel RBD device could be developed
+    akin to FreeBSD's ggate.
+4.  Investigate the keystore, which could be embedded in the kernel on
+    Linux, and currently prevents building CephFS and some other
+    components. The first question whether it is really required, or if
+    only KRBD require it.
+5.  Scheduler information is not used at the moment, because the
+    schedulers work rather differently between FreeBSD and Linux. But at
+    a certain point in time, this would need some attention in
+    src/common/Thread.cc.
+6.  Integrate the FreeBSD /etc/rc.d initscripts in the Ceph stack. This
+    helps with testing, but also enables running Ceph on production
+    machines.
+7.  Build a testcluster and start running some of the teuthology
+    integration tests on it.
+8.  Design a virtual disk implementation that can be used with bhyve and
+    attached to an RBD image.
+
+------------------------------------------------------------------------
+
+OpenBSM
+
+  ----------------------------------------------------------------------- ----------------------------------------------------------------------------------------
+  Links                                                                   
+  OpenBSM: Open Source Basic Security Module (BSM) Audit Implementation   URL: http://www.openbsm.org
+  OpenBSM on GitHub                                                       URL: https://github.com/openbsm/openbsm
+  FreeBSD Audit Handbook Chapter                                          URL: https://www.FreeBSD.org/doc/en_US.ISO8859-1/books/handbook/audit.html
+  OpenBSM 1.2 alpha 5 announcement                                        URL: https://lists.FreeBSD.org/pipermail/trustedbsd-announce/2016-December/000008.html
+  DARPA CADETS project                                                    URL: https://www.cl.cam.ac.uk/research/security/cadets/
+  ----------------------------------------------------------------------- ----------------------------------------------------------------------------------------
+
+Contact: Christian Brueffer <brueffer@FreeBSD.org>
+Contact: Robert Watson <rwatson@FreeBSD.org>
+Contact: TrustedBSD Audit Mailing Mist <trustedbsd-audit@TrustedBSD.org>
+
+OpenBSM is a BSD-licensed implementation of Sun's Basic Security Module
+(BSM) API and file format. It is the user-space side of the CAPP Audit
+implementations in FreeBSD and Mac OS X. Additionally, the audit trail
+processing tools are expected to work on Linux.
+
+This quarter saw increased development activity, fueled by the DARPA
+CADETS project, resulting in the release of OpenBSM 1.2 alpha 5. Among
+this release's changes are the ability to specify the kernel's maximum
+audit queue length, sandboxing support for auditreduce(1) and praudit(1)
+on FreeBSD and other systems that support Capsicum, as well as the
+addition of event identifiers for more FreeBSD system calls. The
+complete list of changes is documented in the NEWS file on GitHub. The
+new release will be merged into FreeBSD HEAD and the supported STABLE
+branches shortly.
+
+This project was sponsored by DARPA/AFRL (in part).
+
+Open tasks:
+
+1.  Test the new release on different versions of FreeBSD, Mac OS X, and
+    Linux. In particular, testing on the latest versions of Mac OS X
+    would be greatly appreciated.
+2.  Fix problems that have been reported via GitHub and the FreeBSD bug
+    tracker.
+3.  Implement the features mentioned in the TODO list on GitHub.
+
+------------------------------------------------------------------------
+
+Sysctl Exporter for Prometheus
+
+  ------------------------ --------------------------------------------------------------------------------
+  Links                    
+  The Prometheus Project   URL: https://prometheus.io/
+  Node Exporter            URL: https://github.com/prometheus/node_exporter
+  Sysctl Exporter          URL: https://svnweb.FreeBSD.org/base/head/usr.sbin/prometheus_sysctl_exporter/
+  ------------------------ --------------------------------------------------------------------------------
+
+Contact: Ed Schouten <ed@FreeBSD.org>
+
+Prometheus is an Open Source monitoring system that was originally built
+at SoundCloud in 2012. Since 2016, this project is part of the Cloud
+Native Computing Foundation, together with other projects like
+Kubernetes.
+
+Prometheus scrapes its targets by periodically sending HTTP GET
+requests. Targets then respond by sending key-value pairs of metrics and
+their sample value. Prometheus has a query language, PromQL, that can be
+used to aggregate sample values and specify alerting conditions. Tools
+like Grafana can be used to create fancy dashboards using such queries.
+
+The Prometheus project provides a utility called node_exporter that
+gathers basic system metrics and serves them over HTTP. This utility
+tends to be rather complex, as it has to extract metrics from many
+different sources. On Linux, files in /proc have no uniform format,
+meaning that for every kernel framework a custom collector needs to be
+written.
+
+On FreeBSD the sitiuation is better, as the data exported through sysctl
+is already structured in such a way that it can easily be translated to
+Prometheus' metrics format. The goal of this project is thus to provide
+a generic exporter for the entire sysctl tree. Not only does this
+prevent unnecessary bloat and indirection, it may also make the life of
+a kernel developer a lot easier. One can easily use Prometheus to graph
+the occurrence of an event over time by (temporarily) adding a counter
+to the kernel.
+
+An initial version of the sysctl exporter has been integrated into the
+FreeBSD base system in December. It can be run through inetd by
+uncommenting the example provided in inetd.conf. Unfortunately, this
+exporter cannot be merged back to FreeBSD 10.x/11.x, as it depends on
+KBI-breaking changes to sysctl(9).
+
+Open tasks:
+
+1.  Are you using Prometheus or are you interested in using it? Be sure
+    to give both Prometheus and this sysctl exporter a try!
+2.  It would be nice if we created a set of useful alerting rules and
+    placed those in /usr/share/examples. For example, how can one use
+    this exporter to monitor the state of GEOM-based RAID arrays? Is
+    such information even exported through sysctl?
+3.  Prometheus uses a rather clever format for exporting histograms.
+    Histograms are useful for expressing the amount of time taken to
+    complete certain events (for example, disk operations). Would it be
+    possible to add histograms as native data types to sysctl? If so, is
+    there any chance they can be implemented without picking up any
+    kernel locks?
+
+------------------------------------------------------------------------
+
+The Graphics Stack on FreeBSD
+
+  ------------------------------------------------------ --------------------------------------------------------------
+  Links                                                  
+  Graphics Stack Roadmap and Supported Hardware Matrix   URL: https://wiki.FreeBSD.org/Graphics
+  GitHub Repository                                      URL: https://github.com/FreeBSDDesktop/freebsd-base-graphics
+  Ports Development Repository                           URL: https://github.com/FreeBSD/freebsd-ports-graphics
+  Fork of libudevd-devd Shim                             URL: https://github.com/FreeBSDDesktop/libudev-devd
+  Graphics Team Blog                                     URL: https://planet.FreeBSD.org/graphics
+  ------------------------------------------------------ --------------------------------------------------------------
+
+Contact: FreeBSD Graphics Team <FreeBSD-x11@FreeBSD.org>
+Contact: Matthew Macy <mmacy@nextbsd.org>
+
+Good progress on graphics support was made during the weeks around
+Christmas and the new year with the import of Linux 4.9's DRM for i915
+and amdgpu into the drm-next branch of the github repository. The amdgpu
+KMS driver is already somewhat usable, with a few major known issues
+remaining. It now supports GPUs as far back as Southern Islands and up
+to Polaris. The 4.9 update also appears to have fixed a regression in
+i915 that was introduced by the 4.8 merge late this past summer. The
+drm-next branch now supports the Intel integrated graphics unit up to
+Kaby Lake CPUs. To facilitate out-of-the-box support on CURRENT, most of
+the branch-local VM changes were reverted and the graphics fault
+routines converted to use pg_populate. This new interface is the source
+of a couple of regressions causing panics on i915 and severe artifacts
+with amdgpu on integrated GPUs. Mark Johnston (markj@) has volunteered
+to analyze these issues. Please show your support and encouragement to
+Mark for helping to move this project towards the finish line.
+
+The xserver-mesa-next-udev branch was created for the ports development
+repository, and holds Mesa 13.0 and fixes for newer AMD GPUs. It uses a
+fork of the libudev-devd shim, also bringing Mesa closer to the Linux
+upstream. I plan to keep updating drm and amdgpu (for use on my desktop
+and potentially longer term for GPGPU computations) as well as work with
+Mark to address the existing bugs in i915 (assuming that two new porters
+are approved). However, the Linux i915 developers seem to aggressively
+explore the space of possible implementations and use of Linux internal
+APIs, making it prohibitively time consuming to track upstream. I am
+helping someone to learn the ropes of how to replay a subset of changes
+from a Linux release into FreeBSD in the hope that he will take over the
+mantle of drm-next i915 maintainer. Assuming the issues listed above are
+addressed, a port of the linuxkpi, DRM, and KMS drivers for use on
+standard amd64 CURRENT installations is planned. Together with upgrades
+to the relevant graphics ports, this will provide experimental support
+for new AMD and Intel GPUs.
+
+------------------------------------------------------------------------
+
+Kernel
+
+FreeBSD on Hyper-V and Azure
+
+  --------------------------------------------------------------------- ----------------------------------------------------------------
+  Links                                                                 
+  FreeBSD Virtual Machines on Microsoft Hyper-V                         URL: https://wiki.FreeBSD.org/HyperV
+  Supported Linux and FreeBSD Virtual Machines for Hyper-V on Windows   URL: https://technet.microsoft.com/en-us/library/dn531030.aspx
+  --------------------------------------------------------------------- ----------------------------------------------------------------
+
+Contact: Sepherosa Ziehau <sepherosa@gmail.com>
+Contact: Hongjiang Zhang <honzhan@microsoft.com>
+Contact: Dexuan Cui <decui@microsoft.com>
+Contact: Kylie Liang <kyliel@microsoft.com>
+
+This project provides native virtualized interfaces for FreeBSD systems
+running on Hyper-V virtualization, improving on the performance of
+traditional emulated evices.
+
+Per-ring polling, multi-packet RNDIS messages, and system RSS
+integration have been implemented, further optimizing the throughput and
+latency of the Hyper-V network driver.
+
+Live virtual machine backup is implemented (for now, only for UFS),
+after the VSS (Volume Shadow Copy Service), which it depends on, was
+implemented.
+
+PCIe pass-through is implemented, and the patches to implement NIC
+SR-IOV are being reviewed on Phabricator.
+
+vDSO support for speeding up gettimeofday(2) is now implemented.
+
+The FreeBSD 11.0 image on Azure
+(https://azure.microsoft.com/en-us/marketplace/partners/microsoft/FreeBSD110/)
+is now available, in addition to the existing 10.3 image.
+
+We fixed an issue where SCSI disks would sometimes fail to attach,
+resolving bug 215171 ([Hyper-V] Fail to attach SCSI disk from LUN 8 on
+Win2008R2/Win2012/Win2012R2).
+
+This project was sponsored by Microsoft.
+
+------------------------------------------------------------------------
+
+I2C, GPIO, and SPI Support for MinnowBoard
+
+  --------------------- ---------------------------------------
+  Links                 
+  Blog Post             URL: https://kernelnomicon.org/?p=767
+  MinnowBoard Website   URL: https://www.minnowboard.org
+  --------------------- ---------------------------------------
+
+Contact: Oleksandr Tymoshenko <gonzo@FreeBSD.org>
+
+The MinnowBoard is an Atom-based x86 board (Intel E38xx Series SoC) in a
+maker-friendly form-factor: it provides convenient access to pins that
+can be used to connect peripherals using one of the standard buses:
+GPIO, SPI, or I2C. These buses are more common in the ARM/MIPS world
+than in x86, so while FreeBSD was able to boot just fine, it lacked
+support for these buses on the MinnowBoard.
+
+As of r310645, HEAD support all three buses via the ig4(4), bytgpio(4),
+and intelspi drivers. The ig4(4) and bytgpio(4) changes were backported
+to 11-STABLE; intelspi will be MFCed in couple of weeks.
+
+------------------------------------------------------------------------
+
+Architectures
+
+FreeBSD on ARM Boards
+
+  ------------------------------------------------- --------------------------------------------------------------------
+  Links                                             
+  FreeBSD on Allwinner (Sunxi) Systems              URL: https://wiki.FreeBSD.org/FreeBSD/arm/Allwinner
+  FreeBSD Commit Adding Support for IR Interfaces   URL: https://svnweb.FreeBSD.org/base?view=revision&revision=307984
+  ------------------------------------------------- --------------------------------------------------------------------
+
+Contact: Ganbold Tsagaankhuu <ganbold@FreeBSD.org>
+
+The changes necessary to support the Allwinner Consumer IR interface in
+FreeBSD have been committed. The receive (RX) side is supported now and
+the driver is using the evdev framework. It was tested on the
+Cubieboard2 (A20 SoC) using lirc with dfrobot's simple IR remote
+controller.
+
+------------------------------------------------------------------------
+
+FreeBSD/arm64
+
+  ------------------------- -------------------------------------
+  Links                     
+  FreeBSD arm64 Wiki Page   URL: https://wiki.FreeBSD.org/arm64
+  ------------------------- -------------------------------------
+
+Contact: Andrew Turner <andrew@FreeBSD.org>
+Contact: Oleksandr Tymoshenko <gonzo@FreeBSD.org>
+
+Support for accessing floating-point registers from the kernel has been
+added. This uses the same KPI as i386 and amd64. This will allow for
+handling places where the floating-point state may be modified, for
+example when calling into UEFI.
+
+Support for the optional ARMv8 AES instructions was added to the kernel.
+This makes use of the ability to store and restore the floating point
+state. Tests have shown a significant improvement in AES performance on
+ThunderX hardware.
+
+The Cortex Strings memcpy and memmove functions have been imported into
+the kernel. These are optimised implementations of these common
+functions.
+
+FreeBSD now boots on the SoftIron Overdrive 3000 using ACPI. The needed
+changes for this have been submitted to phabricator for review. This
+includes booting with SMP enabled, and all currently supported devices.
+
+Support for the Raspberry Pi 3 has been committed. Most devices work,
+with the exception of WiFi and Bluetooth, as these are attached via an
+as-yet unsupported SDIO bus.
+
+This project was sponsored by The FreeBSD Foundation, and ABT Systems
+Ltd.
+
+------------------------------------------------------------------------
+
+FreeBSD/EC2
+
+Contact: Colin Percival <cperciva@FreeBSD.org>
+
+This report covers work since the last FreeBSD/EC2 status report
+(2015Q1).
+
+FreeBSD/EC2 is now part of the regular FreeBSD release build, with
+snapshots and releases being automatically uploaded and copied to all
+available regions. Due to legal restrictions, this does not currently
+include the GovCloud or China (Beijing) regions; anyone wishing to use
+FreeBSD in those regions is encouraged to contact the author.
+
+The AWS Marketplace reports that approximately 800 users are running
+roughly 2000 FreeBSD EC2 instances. This does not count the likely
+significantly larger number of EC2 instances launched directly through
+the EC2 API and Console, but at least places a lower bound on usage.
+
+FreeBSD 11.0-RELEASE shipped with support for the "enhanced networking"
+capabilities of EC2 C3, C4, R3, I2, D2, and M4 (excluding m4.16xlarge)
+instances. This provides significantly higher network performance than
+the virtual networking available on older EC2 instances and with older
+versions of FreeBSD.
+
+FreeBSD 11.0-RELEASE and later also use indirect segment disk I/Os,
+which yield approximately 20% higher throughput with equal or lower
+latency, and support the 128-vCPU x1.32xlarge instance type.
+
+FreeBSD now supports the Amazon Simple Systems Manager service ("run
+command").
+
+Open tasks:
+
+1.  Complete a pending reorganization of the accounts used for
+    FreeBSD/EC2 releases.
+2.  Support "second generation enhanced networking" via the new Elastic
+    Network Adapter found in P2, R4, X1, and m4.16xlarge instances.
+3.  Provide tools for improved functionality via the Simple Systems
+    Manager service: listing installed packages, checking for updates,
+    adding/removing users, [your favourite sysadmin task goes here].
+4.  Add support for EC2's IPv6 networking to the default FreeBSD/EC2
+    configuration.
+5.  Continue ongoing interoperability testing between FreeBSD's NFS
+    client and the Amazon Elastic File System (NFS-as-a-service).
+
+------------------------------------------------------------------------
+
+Userland Programs
+
+libarchive
+
+  ------------------------------ -----------------------------------------------
+  Links                          
+  Official Libarchive Homepage   URL: http://www.libarchive.org
+  Libarchive on GitHub           URL: https://github.com/libarchive/libarchive
+  ------------------------------ -----------------------------------------------
+
+Contact: Tim Kientzle <kientzle@FreeBSD.org>
+Contact: Martin Matuska <mm@FreeBSD.org>
+
+Libarchive is a BSD-licensed archive and compression library originally
+developed as part of FreeBSD. It supports a wide variety of input and
+output formats and also includes three command-line tools: bsdcat,
+bsdcpio and bsdtar. The FreeBSD tar and cpio utilities are taken
+directly from Libarchive, and many other important utilities like ar,
+unzip, and the pkg package manager make use of libarchive's functions.
+
+Libarchive development in 2016 has been focusing on bug fixes and code
+cleanup, including fixing several critical security issues. Automated
+testing with Travis CI and Jenkins has been introduced and libarchive
+has been added to the Google OSS-Fuzz project. Fuzzing helped detect
+several hidden problems like buffer overflows and memory leaks.
+
+Over the last few months, NFSv4 ACL support for the pax and restricted
+pax (the default for bsdtar) formats has been completed and merged to
+FreeBSD-CURRENT. NFSv4 ACL entries can now be stored to and restored
+from tar archives.
+
+Open tasks:
+
+1.  More extensive CI testing with FreeBSD on different platforms and
+    releases. Currently only 11.0-RELEASE-amd64 gets tested via an
+    automated Jenkins job.
+2.  As every commit to libarchive may influence the build process of
+    FreeBSD ports, the ability to trigger a (semi-)automated exp-run for
+    the ports tree would be great.
+
+------------------------------------------------------------------------
+
+Reproducible Builds in FreeBSD
+
+  ------------------------------------------- -------------------------------------------------------
+  Links                                       
+  Base System Reproducible Builds Wiki Page   URL: https://wiki.FreeBSD.org/ReproducibleBuilds
+  Ports Reproducible Builds Wiki Page         URL: https://wiki.FreeBSD.org/PortsReproducibleBuilds
+  Reproducible Builds Website                 URL: https://reproducible-builds.org/
+  ------------------------------------------- -------------------------------------------------------
+
+Contact: Baptiste Daroussin <bapt@FreeBSD.org>
+Contact: Ed Maste <emaste@FreeBSD.org>
+
+Reproducible builds are a set of software development practices which
+create a verifiable path from human readable source code to the binary
+code used by computers. A build is reproducible if given the same source
+code, build environment and build instructions, any party can recreate
+bit-for-bit identical copies of all specified artifacts.
+
+Baptiste Daroussin and Ed Maste attended the second Reproducible Builds
+Summit last December, in Berin. We discussed issues of common interest
+to operating system providers, including other BSDs and Linux
+distributions.
+
+Following the summit, changes were committed to the FreeBSD base system
+to address outstanding sources of non-reproducibility. It is now
+possible to build the FreeBSD base system (kernel and userland)
+completely reproducibly, although it currently requires a few
+non-default settings.
+
+Approximately 80% of the ports tree builds reproducibly, with a few
+work-in-progress patches. Now that the base system can be built
+reproducibly, focus will move on to the ports tree.
+
+This project was sponsored by The FreeBSD Foundation, and The Linux
+Foundation.
+
+Open tasks:
+
+1.  Integrate FreeBSD ports builds into the reprodcible-builds.org
+    continuous integration infrastructure.
+2.  Integrate reproducible build patches into the ports tree.
+3.  Investigate sources of non-reproducibility in individual ports.
+
+------------------------------------------------------------------------
+
+Updates to GDB
+
+Contact: John Baldwin <jhb@FreeBSD.org>
+Contact: Luca Pizzamiglio <luca.pizzamiglio@gmail.com>
+
+The devel/gdb port has been updated to GDB 7.12.
+
+7.12 includes additional fixes related to tracing vfork()s. Some of
+these fixes depend on changes to ptrace() in the kernel to report a new
+ptrace stop when the parent of a vfork() resumes.
+
+Support for FreeBSD/mips userland binaries has been committed upstream.
+These patches, along with support for debugging FreeBSD/mips kernels,
+should be added to the port soon.
+
+Open tasks:
+
+1.  Figure out why the powerpc kgdb targets are not able to unwind the
+    stack past the initial frame.
+2.  Add support for more platforms (arm, aarch64) to upstream gdb for
+    both userland and kgdb.
+3.  Add support for debugging powerpc vector registers.
+4.  Add support for $_siginfo.
+5.  Implement 'info proc' commands.
+6.  Implement 'info os' commands.
+7.  Debug gdb hangs related to the 'kill' command.
+
+------------------------------------------------------------------------
+
+Using LLVM's LLD Linker as FreeBSD's System Linker
+
+  ----------------------------------------- -----------------------------------
+  Links                                     
+  FreeBSD LLD Wiki Page                     URL: https://wiki.FreeBSD.org/LLD
+  FreeBSD/LLD Tracking PR (LLVM Bugzilla)   URL: http://llvm.org/pr23214
+  ----------------------------------------- -----------------------------------
+
+Contact: Rafael Espíndola <rafael.espindola@gmail.com>
+Contact: Ed Maste <emaste@FreeBSD.org>
+
+LLD is the linker in the LLVM family of projects. It is a
+high-performance linker that supports the ELF, COFF and Mach-O object
+formats. It aims to be compatible with the common linkers used for each
+file format. For ELF this is the GNU Binary File Descriptor (BFD) ld and
+GNU gold. However, LLD's authors are not constrained by strict
+compatibility where it would hamper performance or desired
+functionality.
+
+LLD developers made significant progress over the last quarter. With
+changes committed to both LLD and FreeBSD we reached a major milestone:
+it is now possible to link the entire FreeBSD/amd64 base system (kernel
+and userland) with LLD.
+
+Now that the base system links with LLD, we have started investigating
+linking applications in the ports tree with LLD. Through this process we
+are identifying limitations or bugs in both LLD and a number of FreeBSD
+ports. With a few work-in-progress patches we can link approximately 95%
+of the ports collection with LLD on amd64.
+
+This project was sponsored by The FreeBSD Foundation.
+
+Open tasks:
+
+1.  Fix libtool to detect LLD and pass the same command line arguments
+    as for GNU ld and gold.
+2.  Investigate the remaining amd64 port build failures.
+3.  Investigate and improve LLD on arm64, i386, arm, and other non-amd64
+    architectures.
+4.  Extensive testing.
+
+------------------------------------------------------------------------
+
+Ports
+
+GCC (GNU Compiler Collection)
+
+  --------------- --------------------------
+  Links           
+  GCC Home Page   URL: https://gcc.gnu.org
+  --------------- --------------------------
+
+Contact: Gerald Pfeifer <gerald@FreeBSD.org>
+Contact: Andreas Tobler <andreast@FreeBSD.org>
+Contact: Antoine Brodin <antoine@FreeBSD.org>
+
+Long awaited, the update to GCC 4.9 as the default version of GCC in the
+Ports Collection (lang/gcc port, USE_GCC=yes in Makefiles) has arrived,
+an update from GCC 4.8. This brings quite a number of improvements; see
+https://gcc.gnu.org/gcc-4.9/changes.html for details.
+
+lang/gcc49 has moved to the GCC 4.9.4 release which marks the closure of
+the GCC 4.9 branch and release series.
+
+(Yes, this means we should rather get the next version upgrade for
+lang/gcc in place soon. That update per se is straightforward, but any
+help in addressing the fallout of broken ports would be great — please
+let us know if you want to help!)
+
+lang/gcc6 has been updated first to GCC 6.2 and then GCC 6.3, bringing a
+fair number of fixes, and should now be suitable for production use.
+
+Open tasks:
+
+1.  Update lang/gcc (and hence USE_GCC=yes) to GCC 5.
+2.  Support for AArch64.
+
+------------------------------------------------------------------------
+
+LXQt on FreeBSD
+
+  ----------------------------- -------------------------------------------------------------
+  Links                         
+  LXQt Project                  URL: http://lxqt.org/
+  FreeBSD LXQt Project          URL: https://wiki.FreeBSD.org/LXQt
+  LXQt Development Repository   URL: https://www.assembla.com/spaces/lxqt/subversion/source
+  ----------------------------- -------------------------------------------------------------
+
+Contact: Olivier Duchateau <olivierd@FreeBSD.org>
+Contact: Jesper Schmitz Mouridsen <jesper@schmitz.computer>
+
+LXQt is the Qt port of and the upcoming version of LXDE, the Lightweight
+Desktop Environment. It is the product of a merge between the LXDE-Qt
+and Razor-qt projects.
+
+The porting effort remains very much a work in progress: LXQt requires
+some components of Plasma 5, the new major KDE workspace.
+
+We imported some core components (it was necessary to update to
+x11/qterminal 0.7.0):
+
+-   devel/lxqt-build-tools
+-   devel/liblxqt
+-   devel/qtxdg
+-   x11/libfm-qt
+
+Standalone applications:
+
+-   graphics/lximage-qt
+-   x11-fm/pcmanfm-qt
+
+We also have updates for:
+
+-   x11/qterminal 0.7.1
+-   x11-toolkits/qtermwidget 0.7.1
+-   Updating the Porter's Handbook for LXQt support
+    (https://bugs.FreeBSD.org/bugzilla/show_bug.cgi?id=215650)
+
+Open tasks:
+
+1.  Improve support in sysutils/lxqt-admin (especially date and time
+    settings).
+
+------------------------------------------------------------------------
+
+Mono
+
+  -------------------- -------------------------------------
+  Links                
+  Mono Homepage        URL: http://www.mono-project.com/
+  .NET Core Homepage   URL: https://github.com/dotnet/core
+  Mono Project Page    URL: https://wiki.FreeBSD.org/Mono
+  -------------------- -------------------------------------
+
+Contact: Mono on FreeBSD team <mono@FreeBSD.org>
+
+During the last quarter, many ports within the mono project have been
+updated:
+
+-   Mono: 4.6.2.7
+-   MonoDevelop: 6.1.1.15, 6.1.2.44
+-   FSharp: 4.0.1.20
+
+USES=mono has been extended to allow for easier use of Nuget packages.
+This extension has been used adopted by FSharp, MonoDevelop and OpenRA.
+
+Work has started on porting Microsoft's open-sourced .NET Core. Thanks
+to the work of another team, the native components of coreclr and corefx
+already support FreeBSD, however, there is further work required in
+bootstrapping the build process and compiling the managed code.
+
+Open tasks:
+
+1.  Port .NET Core.
+2.  Test patches for Mono.
+
+------------------------------------------------------------------------
+
+Wine
+
+  --------------- ------------------------------------
+  Links           
+  Wine Homepage   URL: https://www.winehq.org/
+  Project Page    URL: https://wiki.freebsd.org/Wine
+  --------------- ------------------------------------
+
+Contact: Gerald Pfeifer <gerald@FreeBSD.org>
+Contact: David Naylor <dbn@FreeBSD.org>
+
+The stable version of Wine (aka emulators/wine) has seen three
+maintenance releases in the last half year, and Xinerama support (in
+case you have more than one screen) and GNUTLS (helpful for Evernote or
+World of Warcraft, for example) are now active by default.
+
+The development version (aka emulators/wine-devel) has seen steady
+progress and reached the RC phase of Wine 2.0. We are looking forward to
+a new major release soon that combines the progress of a year of active
+development with the stability of a release.
+
+Open tasks:
+
+1.  Port WoW64
+
+------------------------------------------------------------------------
+
+Xfce on FreeBSD
+
+  ------------------------- --------------------------------------------------------------
+  Links                     
+  FreeBSD Xfce Project      URL: https://wiki.FreeBSD.org/Xfce
+  FreeBSD Xfce Repository   URL: https://www.assembla.com/spaces/xfce4/subversion/source
+  ------------------------- --------------------------------------------------------------
+
+Contact: FreeBSD Xfce Team <xfce@FreeBSD.org>
+
+Xfce is a free software desktop environment for Unix and Unix-like
+platforms such as FreeBSD. It aims to be fast and lightweight, while
+still being visually appealing and easy to use.
+
+During this quarter, the team has kept these applications up-to-date:
+
+-   audio/xfce4-mpc-plugin 0.5.0 (committed in devel repository)
+-   deskutils/xfce4-notifyd 0.3.4
+-   graphics/ristretto 0.8.1
+-   sysutils/xfce4-diskperf-plugin 2.6.0
+-   sysutils/xfce4-battery-plugin 1.1.0 (committed in devel repository)
+-   sysutils/xfce4-fsguard-plugin 1.1.0 (committed in devel repository)
+-   sysutils/xfce4-netload-plugin 1.3.0 (committed in devel repository)
+-   sysutils/xfce4-systemload-plugin 1.2.0 (committed in devel
+    repository)
+-   sysutils/xfce4-wavelan-plugin 0.6.0 (committed in devel repository)
+-   x11/xfce4-clipman-plugin 1.4.1
+-   x11/xfce4-conf 4.12.1
+-   x11/xfce4-dashboard 0.6.1
+-   x11/xfce4-terminal 0.8.2
+-   x11/xfce4-whiskermenu-plugin 1.6.2
+-   x11-clocks/xfce4-datetime-plugin 0.7.0 (committed in devel
+    repository)
+-   x11-wm/xfce4-panel 4.12.1
+-   www/xfce4-smartbookmark-plugin 0.5.0 (committed in devel repository)
+
+We also follow the unstable releases (available in our experimental
+repository) of:
+
+-   sysutils/xfce4-settings 4.13.0 (it requires Gtk+ > 3.20)
+-   x11/libexo 0.11.2
+-   x11/xfce4-whiskermenu-plugin 2.0.3
+
+Open tasks:
+
+1.  Apply the changes discussed in D8416 (simplify the MASTER_SITES
+    macro in port Makefiles).
+2.  Commit the stable panel plugins.
+
+------------------------------------------------------------------------
+
+News Home | Status Home
+
+Site Map | Legal Notices | © 1995–2021 The FreeBSD Project. All rights
+reserved.
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

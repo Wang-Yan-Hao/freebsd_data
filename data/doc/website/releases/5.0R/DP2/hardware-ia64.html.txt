@@ -1,0 +1,340 @@
+FreeBSD/ia64 5.0-DP2 Hardware Notes
+
+The FreeBSD Documentation Project
+
+Copyright © 2000, 2001, 2002 by The FreeBSD Documentation Project
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Table of Contents
+
+1 Introduction
+
+2 Supported Processors and Motherboards
+
+3 Supported Devices
+
+3.1 Disk Controllers
+
+3.2 Ethernet Interfaces
+
+3.3 FDDI Interfaces
+
+3.4 ATM Interfaces
+
+3.5 Wireless Network Interfaces
+
+3.6 Miscellaneous Networks
+
+3.7 ISDN Interfaces
+
+3.8 Serial Interfaces
+
+3.9 Audio Devices
+
+3.10 Camera and Video Capture Devices
+
+3.11 USB Devices
+
+3.12 IEEE 1394 (Firewire) Devices
+
+3.13 Cryptographic Accelerators
+
+3.14 Miscellaneous
+
+  This document is in a very preliminary state. It is incomplete, and is
+  almost certainly not be an accurate reflection of reality.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+1 Introduction
+
+This document contains the hardware compatibility notes for FreeBSD
+5.0-DP2 on the IA-64 hardware platform (also referred to as FreeBSD/ia64
+5.0-DP2). It lists devices known to work on this platform, as well as
+some notes on boot-time kernel customization that may be useful when
+attempting to configure support for new devices.
+
+  Note: This document includes information specific to the IA-64
+  hardware platform. Versions of the hardware compatibility notes for
+  other architectures will differ in some details.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2 Supported Processors and Motherboards
+
+Need to write this section.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3 Supported Devices
+
+$FreeBSD: src/release/doc/en_US.ISO8859-1/hardware/common/dev.sgml,v
+1.114 2002/11/07 22:11:00 bmah Exp $
+
+This section describes the devices currently known to be supported by
+with FreeBSD on the IA-64 platform. Other configurations may also work,
+but simply have not been tested yet. Feedback, updates, and corrections
+to this list are encouraged.
+
+Where possible, the drivers applicable to each device or class of
+devices is listed. If the driver in question has a manual page in the
+FreeBSD base distribution (most should), it is referenced here.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.1 Disk Controllers
+
+IDE/ATA controllers ( ata(4) driver)
+
+-   Acerlabs Aladdin
+
+-   AMD 756 ATA66, 766 ATA100, 768 ATA100
+
+-   Cenatek Rocket Drive
+
+-   CMD 646, 648 ATA66, and 649 ATA100
+
+-   Cypress 82C693
+
+-   Cyrix 5530 ATA33
+
+-   HighPoint HPT366 ATA66, HPT370 ATA100, HPT372 ATA133, HPT374 ATA133
+
+-   Intel PIIX, PIIX3, PIIX4
+
+-   Intel ICH ATA66, ICH2 ATA100, ICH3 ATA100, ICH4 ATA100
+
+-   nVidia nForce ATA100
+
+-   Promise ATA100 OEM chip (pdc20265)
+
+-   Promise ATA133 OEM chip (pdc20269)
+
+-   Promise Fasttrak-33, -66, -100, -100 TX2/TX4, -133 TX2/TX2000
+
+-   Promise Ultra-33, -66, -100, -133 TX2/TX2000
+
+-   ServerWorks ROSB4 ATA33
+
+-   ServerWorks CSB5 ATA66/ATA100
+
+-   Sil 0680 UDMA6
+
+-   SiS 530, 540, 620
+
+-   SiS 630, 633, 635, 645, 730, 733, 735, 740, 745, 750
+
+-   SiS 5591 ATA100
+
+-   VIA 82C586 ATA33, 82C596 ATA66, 82C686a ATA66, 82C686b ATA100
+
+-   VIA 8233, 8235 ATA133
+
+Qlogic controllers and variants ( isp(4) driver)
+
+-   Qlogic 1020, 1040 SCSI and Ultra SCSI host adapters
+
+-   Qlogic 1240 dual Ultra SCSI controllers
+
+-   Qlogic 1080 Ultra2 LVD and 1280 Dual Ultra2 LVD controllers
+
+-   Qlogic 12160 Ultra3 LVD controllers
+
+-   Qlogic 2100 and Qlogic 2200 Fibre Channel SCSI controllers
+
+-   Qlogic 2300 and Qlogic 2312 2-Gigabit Fibre Channel SCSI controllers
+
+-   Performance Technology SBS440 ISP1000 variants
+
+-   Performance Technology SBS450 ISP1040 variants
+
+-   Performance Technology SBS470 ISP2100 variants
+
+-   Antares Microsystems P-0033 ISP2100 variants
+
+With all supported SCSI controllers, full support is provided for
+SCSI-I, SCSI-II, and SCSI-III peripherals, including hard disks, optical
+disks, tape drives (including DAT, 8mm Exabyte, Mammoth, and DLT),
+medium changers, processor target devices and CD-ROM drives. WORM
+devices that support CD-ROM commands are supported for read-only access
+by the CD-ROM drivers (such as cd(4)). WORM/CD-R/CD-RW writing support
+is provided by cdrecord(1), which is a part of the sysutils/cdrtools
+port in the Ports Collection.
+
+The following CD-ROM type systems are supported at this time:
+
+-   SCSI interface (also includes ProAudio Spectrum and SoundBlaster
+    SCSI) ( cd(4))
+
+-   ATAPI IDE interface ( acd(4))
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.2 Ethernet Interfaces
+
+Intel 82557-, 82258-, 82559-, 82550- or 82562-based Fast Ethernet NICs (
+fxp(4) driver)
+
+-   Intel EtherExpress Pro/100B PCI Fast Ethernet
+
+-   Intel InBusiness 10/100 PCI Network Adapter
+
+-   Intel PRO/100+ Management Adapter
+
+-   Intel Pro/100 VE Desktop Adapter
+
+-   Intel Pro/100 M Desktop Adapter
+
+-   Intel Pro/100 S Desktop, Server and Dual-Port Server Adapters
+
+-   On-board Ethernet NICs on many Intel motherboards.
+
+Gigabit Ethernet NICs based on the Intel 82542 and 82543 controller
+chips ( gx(4) and em(4) drivers), plus NICs supported by the Intel
+82540EM, 82544, 82545EM, and 82546EB controller chips ( em(4) driver
+only)
+
+-   Intel PRO/1000 Gigabit Ethernet
+
+  Note: The em(4) driver is officially supported by Intel, but is only
+  supported on the i386.
+
+<<<<<<< HEAD
+
+3.3 FDDI Interfaces
+
+
+3.4 ATM Interfaces
+
+
+3.5 Wireless Network Interfaces
+
+
+3.6 Miscellaneous Networks
+
+
+3.7 ISDN Interfaces
+
+=======
+------------------------------------------------------------------------
+
+3.3 FDDI Interfaces
+
+------------------------------------------------------------------------
+
+3.4 ATM Interfaces
+
+------------------------------------------------------------------------
+
+3.5 Wireless Network Interfaces
+
+------------------------------------------------------------------------
+
+3.6 Miscellaneous Networks
+
+------------------------------------------------------------------------
+
+3.7 ISDN Interfaces
+
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.8 Serial Interfaces
+
+``PC standard'' 8250, 16450, and 16550-based serial ports ( sio(4)
+driver)
+
+<<<<<<< HEAD
+
+3.9 Audio Devices
+
+
+3.10 Camera and Video Capture Devices
+
+=======
+------------------------------------------------------------------------
+
+3.9 Audio Devices
+
+------------------------------------------------------------------------
+
+3.10 Camera and Video Capture Devices
+
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.11 USB Devices
+
+A range of USB peripherals are supported; devices known to work are
+listed in this section. Owing to the generic nature of most USB devices,
+with some exceptions any device of a given class will be supported, even
+if not explicitly listed here.
+
+  Note: USB Ethernet adapters can be found in the section listing
+  Ethernet interfaces.
+
+<<<<<<< HEAD
+
+3.12 IEEE 1394 (Firewire) Devices
+
+
+3.13 Cryptographic Accelerators
+
+=======
+------------------------------------------------------------------------
+
+3.12 IEEE 1394 (Firewire) Devices
+
+------------------------------------------------------------------------
+
+3.13 Cryptographic Accelerators
+
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3.14 Miscellaneous
+
+Keyboards including:
+
+-   PS/2 keyboards
+
+Mice including:
+
+-   PS/2 mice ( psm(4) driver)
+
+-   Serial mice
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+This file, and other release-related documents, can be downloaded from
+http://snapshots.jp.FreeBSD.org/.
+
+For questions about FreeBSD, read the documentation before contacting
+<questions@FreeBSD.org>.
+
+All users of FreeBSD 5-CURRENT should subscribe to the
+<current@FreeBSD.org> mailing list.
+
+For questions about this documentation, e-mail <doc@FreeBSD.org>.

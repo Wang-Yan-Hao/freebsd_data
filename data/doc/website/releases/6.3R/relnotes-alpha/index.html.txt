@@ -1,0 +1,483 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD/alpha 6.3-RELEASE Release Notes
+
+The FreeBSD Project
+
+Copyright © 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008 The
+FreeBSD Documentation Project
+
+$FreeBSD: src/release/doc/en_US.ISO8859-1/relnotes/common/new.sgml,v
+1.883.2.87.2.7 2008/01/15 02:34:11 hrs Exp $
+
+FreeBSD is a registered trademark of the FreeBSD Foundation.
+
+IBM, AIX, EtherJet, Netfinity, OS/2, PowerPC, PS/2, S/390, and ThinkPad
+are trademarks of International Business Machines Corporation in the
+United States, other countries, or both.
+
+IEEE, POSIX, and 802 are registered trademarks of Institute of
+Electrical and Electronics Engineers, Inc. in the United States.
+
+Intel, Celeron, EtherExpress, i386, i486, Itanium, Pentium, and Xeon are
+trademarks or registered trademarks of Intel Corporation or its
+subsidiaries in the United States and other countries.
+
+Sparc, Sparc64, SPARCEngine, and UltraSPARC are trademarks of SPARC
+International, Inc in the United States and other countries. Products
+bearing SPARC trademarks are based upon architecture developed by Sun
+Microsystems, Inc.
+
+Many of the designations used by manufacturers and sellers to
+distinguish their products are claimed as trademarks. Where those
+designations appear in this document, and the FreeBSD Project was aware
+of the trademark claim, the designations have been followed by the “™”
+or the “®” symbol.
+
+The release notes for FreeBSD 6.3-RELEASE contain a summary of the
+changes made to the FreeBSD base system on the 6.3-STABLE development
+line. This document lists applicable security advisories that were
+issued since the last release, as well as significant changes to the
+FreeBSD kernel and userland. Some brief remarks on upgrading are also
+presented.
+
+------------------------------------------------------------------------
+
+Table of Contents
+
+1 Introduction
+
+2 What's New
+
+2.1 Security Advisories
+
+2.2 Kernel Changes
+
+2.2.1 Boot Loader Changes
+
+2.2.2 Hardware Support
+
+2.2.3 Network Protocols
+
+2.2.4 Disks and Storage
+
+2.2.5 File Systems
+
+2.3 Userland Changes
+
+2.3.1 /etc/rc.d Scripts
+
+2.4 Contributed Software
+
+2.5 Ports/Packages Collection Infrastructure
+
+2.6 Release Engineering and Integration
+
+2.7 Documentation
+
+3 Upgrading from previous releases of FreeBSD
+
+1 Introduction
+
+This document contains the release notes for FreeBSD 6.3-RELEASE on the
+Alpha/AXP hardware platform. It describes recently added, changed, or
+deleted features of FreeBSD. It also provides some notes on upgrading
+from previous versions of FreeBSD.
+
+This distribution of FreeBSD 6.3-RELEASE is a release distribution. It
+can be found at ftp://ftp.FreeBSD.org/ or any of its mirrors. More
+information on obtaining this (or other) release distributions of
+FreeBSD can be found in the “Obtaining FreeBSD” appendix to the FreeBSD
+Handbook.
+
+All users are encouraged to consult the release errata before installing
+FreeBSD. The errata document is updated with “late-breaking” information
+discovered late in the release cycle or after the release. Typically, it
+contains information on known bugs, security advisories, and corrections
+to documentation. An up-to-date copy of the errata for FreeBSD
+6.3-RELEASE can be found on the FreeBSD Web site.
+
+------------------------------------------------------------------------
+
+2 What's New
+
+This section describes the most user-visible new or changed features in
+FreeBSD since 6.2-RELEASE.
+
+Typical release note items document recent security advisories issued
+after 6.2-RELEASE, new drivers or hardware support, new commands or
+options, major bug fixes, or contributed software upgrades. They may
+also list changes to major ports/packages or release engineering
+practices. Clearly the release notes cannot list every single change
+made to FreeBSD between releases; this document focuses primarily on
+security advisories, user-visible changes, and major architectural
+improvements.
+
+------------------------------------------------------------------------
+
+2.1 Security Advisories
+
+Two remote denials of service in BIND (one involving DNSSEC and one
+involving recursive DNS queries) have been fixed. For more information,
+see security advisory FreeBSD-SA-07:02.bind.
+
+Processing of IPv6 type 0 Routing Headers is now controlled by the
+net.inet6.ip6.rthdr0_allowed sysctl variable, which defaults to 0 (off).
+For more information, see security advisory FreeBSD-SA-07:03.ipv6.
+
+Problems with libarchive(3) and tar(1) handling corrupted tar(5) archive
+files have been fixed. More details can be found in security advisory
+FreeBSD-SA-07:05.libarchive.
+
+A buffer overflow in OpenSSL (fixed incorrectly in a previously security
+patch) has been corrected. More details can be found in security
+advisory FreeBSD-SA-07:08.openssl.
+
+An flaw that could lead to the disclosure of previously-generated
+random(4) data has been corrected. Information regarding this issue can
+be found in security advisory FreeBSD-SA-07:09.random.
+
+Information disclosure issues found in openpty(3) and ptsname(3) have
+been corrected. Information regarding this issue can be found in
+security advisory FreeBSD-SA-08:01.pty.
+
+A programming error in inet_network(3) Internet address manipulation
+function that could lead to overwriting a region of memory with user
+defined data has been corrected. Information regarding this issue can be
+found in security advisory FreeBSD-SA-08:02.libc.
+
+------------------------------------------------------------------------
+
+2.2 Kernel Changes
+
+acpi(4) now has support for the HPET time counter.
+
+Support for Message Signaled Interrupts (MSI) and Extended Message
+Signaled Interrupts (MSI-X) has been added to the kernel's PCI support
+code.
+
+------------------------------------------------------------------------
+
+2.2.1 Boot Loader Changes
+
+------------------------------------------------------------------------
+
+2.2.2 Hardware Support
+
+An acpi_dock(4) driver has been added to provide support for controlling
+laptop docking station functions via ACPI.
+
+------------------------------------------------------------------------
+
+2.2.2.1 Multimedia Support
+
+The snd_envy24(4) driver has been added to support the Envy24 series of
+audio chips.
+
+The snd_envy24ht(4) driver has been added to support the VIA Envy24HT
+series of audio chips.
+
+The snd_hda(4) driver has been added. It supports devices that conform
+to revision 1.0 of the Intel High Definition Audio specification.
+
+The snd_spicds(4) driver has been added to support I2S SPI audio codec
+chips.
+
+------------------------------------------------------------------------
+
+2.2.2.2 Network Interface Support
+
+The ath(4) driver has been updated to HAL version 0.9.20.3.
+
+The axe(4) driver now supports altq(4).
+
+The cxgb(4) driver has been added. It provides support for 10 Gigabit
+Ethernet adapters based on the Chelsio T3 and T3B chipsets.
+
+The edsc(4) driver, which provides Ethernet discard network interfaces,
+has been added.
+
+The em(4) driver has been updated to version 6.7.2 from Intel.
+
+The msk(4) driver has been added. It supports network interfaces using
+the Marvell/SysKonnect Yukon II Gigabit Ethernet controller.
+
+The vge(4) driver now supports altq(4).
+
+The 802.11 protocol stack now has support for 900 MHz cards, as well as
+quarter- and half-channel support for 802.11a.
+
+------------------------------------------------------------------------
+
+2.2.3 Network Protocols
+
+The if_bridge(4) driver now supports RSTP, the Rapid Spanning Tree
+Protocol (802.1w).
+
+The lagg(4) driver, ported from OpenBSD and NetBSD, has been added to
+support a variety of protocols and algorithms for link aggregation,
+failover, and fault tolerance.
+
+A new ng_deflate(4) NetGraph node type has been added. It implements
+Deflate PPP compression.
+
+The ng_ppp(4) Netgraph node is now MPSAFE.
+
+A new ng_pred1(4) NetGraph node type has been added to implement
+Predictor-1 PPP compression.
+
+A bug which prevented FreeBSD 6.2-RELEASE from running IPv6 correctly
+over gif(4) tunnels has been fixed.
+
+The net.link.tap.up_on_open sysctl variable has been added to the tap(4)
+driver. If enabled, new tap devices will marked up upon creation.
+
+------------------------------------------------------------------------
+
+2.2.4 Disks and Storage
+
+The mpt(4) driver has been updated to support various new features such
+as RAID volume and RAID member state/settings reporting, periodic volume
+re-synchronization status reporting, and sysctl variables for volume
+re-synchronization rate, volume member write cache status, and volume
+transaction queue depth.
+
+The mpt(4) driver now supports SAS HBA (partially), 64-bit PCI, and
+large data transfer.
+
+The scsi_sg driver, which emulates a significant subset of the Linux
+SCSI SG passthrough device API, has been added. It is intended to allow
+programs running under Linux emulation (as well as native FreeBSD
+applications) to access the /dev/sg* devices supported by Linux.
+
+The twa(4) driver has been updated to the 3.60.03.006 release on the
+3ware Web site. It now supports AMCC's 3ware 9650 series of SATA
+controllers.
+
+------------------------------------------------------------------------
+
+2.2.5 File Systems
+
+The unionfs file system has been re-implemented. This version solves
+many crashing and locking issues compared to the previous
+implementation. It also adds new “transparent” and “masquerade” modes
+for automatically creating files in the upper file system layer of
+unions. More information can be found in the mount_unionfs(8) manual
+page.
+
+------------------------------------------------------------------------
+
+2.3 Userland Changes
+
+The camcontrol(8) utility now supports a readcap command to display the
+size of devices.
+
+A bug in freebsd-update(8), which caused it not to update SMP kernels
+correctly, has been fixed.
+
+The fdisk(8) program now supports a -p flag to print the slice table in
+fdisk configuration format.
+
+The freebsd-update(8) utility now supports an upgrade command to perform
+binary upgrades between different versions of FreeBSD.
+
+The ftpd(8) utility now has support for RFC2389 (FEAT) and rudimentary
+support for RFC2640 (UTF8). The RFC2640 support is optional and can be
+enabled using the new -8 flag. More information can be found in the
+ftpd(8) manual page.
+
+The ipfwpcap(8) utility has been added; it captures packets on a
+divert(4) socket and writes them as pcap(3) (also known as tcpdump(1))
+format data to a file or pipe.
+
+The rpc.lockd(8) and rpc.statd(8) programs now accept -p options to
+indicate which port they should bind to.
+
+The pw(8) program now supports a -M option to set the permissions of a
+user's newly created home directory.
+
+The top(1) program now supports a -j flag to display the jail(8) ID for
+each process.
+
+The touch(1) utility now supports a -A flag that allows the access and
+modification times of a file be adjusted by a specified value.
+
+The wpa_passphrase(8) utility has been added. It generates a 256-bit
+pre-shared WPA key from an ASCII passphrase.
+
+------------------------------------------------------------------------
+
+2.3.1 /etc/rc.d Scripts
+
+The sendmail script can be instructed not to rebuild the aliases
+database if it is missing or older than the aliases file. If desired,
+set the new rc.conf option sendmail_rebuild_aliases to "NO" to turn off
+that functionality.
+
+The /etc/rc.d/nfslocking script has been deprecated and will be removed
+in a future release. It has been replaced by the /etc/rc.d/lockd and
+/etc/rc.d/statd scripts.
+
+------------------------------------------------------------------------
+
+2.4 Contributed Software
+
+awk has been updated from the 24 April 2005 release to the 1 May 2007
+release.
+
+BIND has been updated from 9.3.3 to 9.3.4-p1.
+
+BZIP2 has been updated from 1.0.3 to 1.0.4.
+
+GNU Diffutils has been updated from 2.7 to 2.8.7.
+
+The GNU version of gzip has been replaced with a modified version of
+gzip ported from NetBSD.
+
+IPFilter has been updated from 4.1.13 to 4.1.28.
+
+less has been updated from v381 to v416.
+
+ncurses has been updated from 5.2-20020615 to 5.6-20061217. ncurses now
+also has wide character support.
+
+netcat has been updated from the version in a 4 February 2005 OpenBSD
+snapshot to the version included in OpenBSD 4.1.
+
+GNU Readline library has been updated from 5.0 to 5.2 patch 2.
+
+sendmail has been updated from 8.13.8 to 8.14.2.
+
+The timezone database has been updated from the tzdata2006g release to
+the tzdata2007k release.
+
+TrustedBSD OpenBSM has been updated from 1.0 alpha 12 to 1.0.
+
+------------------------------------------------------------------------
+
+2.5 Ports/Packages Collection Infrastructure
+
+------------------------------------------------------------------------
+
+2.6 Release Engineering and Integration
+
+The supported version of the GNOME desktop environment (x11/gnome2) has
+been updated from 2.16.1 to 2.20.1.
+
+The supported version of the KDE desktop environment (x11/kde3) has been
+updated from 3.5.4 to 3.5.7.
+
+The supported version of the Xorg windowing system (x11/xorg) has been
+updated from 6.9.0 to 7.3.0.
+
+The default value of X11BASE has been changed from /usr/X11R6 to
+/usr/local, the default value of LOCALBASE.
+
+------------------------------------------------------------------------
+
+2.7 Documentation
+
+------------------------------------------------------------------------
+
+3 Upgrading from previous releases of FreeBSD
+
+Source upgrades to FreeBSD 6.3-RELEASE are only supported from FreeBSD
+5.3-RELEASE or later. Users of older systems wanting to upgrade
+6.3-RELEASE will need to update to FreeBSD 5.3 or newer first, then to
+FreeBSD 6.3-RELEASE.
+
+  Important: Upgrading FreeBSD should, of course, only be attempted
+  after backing up all data and configuration files.
+
+------------------------------------------------------------------------
+
+This file, and other release-related documents, can be downloaded from
+ftp://ftp.FreeBSD.org/.
+
+For questions about FreeBSD, read the documentation before contacting
+<questions@FreeBSD.org>.
+
+For questions about this documentation, e-mail <doc@FreeBSD.org>.
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

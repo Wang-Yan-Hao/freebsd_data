@@ -1,0 +1,133 @@
+[FreeBSD The Power to Serve]
+
+FreeBSD への寄付
+
+ 
+
+-   ホーム
+
+-   FreeBSD とは
+    -   FreeBSD が初めてという方へ
+    -   特徴
+    -   プロモーション活動
+    -   マーケティング活動
+    -   プライバシーポリシー
+    -   Projects
+    -   Ports
+
+-   FreeBSD の入手
+    -   リリース情報
+    -   リリースエンジニアリング
+
+-   ドキュメント
+    -   FAQ
+    -   ハンドブック
+    -   port 作成者のためのハンドブック
+    -   開発者のためのハンドブック
+    -   Committer's Guide
+    -   マニュアルページ
+    -   Presentations and Papers
+    -   新しい貢献者のためのドキュメンテーションプロジェクト入門
+    -   すべての Books と Articles
+
+-   コミュニティ
+    -   メーリングリスト
+    -   フォーラム
+    -   ユーザグループ
+    -   イベント
+    -   FreeBSD ジャーナル
+    -   Q&A (外部)
+
+-   開発
+    -   プロジェクトアイディア
+    -   Git リポジトリ
+    -   Subversion リポジトリ
+    -   GitHub ミラー
+    -   コードレビュー (Phabricator)
+    -   Wiki
+    -   継続的インテグレーションサービス
+
+-   サポート
+    -   ベンダ
+    -   セキュリティ情報
+    -   障害報告
+    -   障害報告の提出
+    -   ウェブ上の情報
+
+-   財団
+    -   寄付
+    -   ハードウェアの寄贈
+
+-   FreeBSD とは
+-   特徴
+-   アプリケーション
+-   プロモーション活動
+-   マーケティング活動
+-   担当者一覧
+-   ニュース
+-   イベント
+-   ニュース記事
+-   画像
+-   ロゴ
+-   寄付・寄贈
+-   法律上の注意事項
+-   プライバシーポリシー
+
+-   RSS 2.0 Feed
+
+FreeBSD プレスリリース
+
+現在、ほとんどのプレスリリースは FreeBSD Foundation
+から配信されています。
+
+2005 年 11 月 25 日
+
+    Hewlett-Packard から FreeBSD
+    へブレードクラスタの寄贈が行われました。
+
+2005 年 11 月 4 日
+
+    FreeBSD プロジェクトが FreeBSD 6.0 を発表
+
+2003 年 1 月 20 日
+
+    FreeBSD プロジェクトが FreeBSD 5.0 を発表
+
+2002 年 10 月 31 日
+
+    Opera Software が FreeBSD 版の Opera をリリース
+
+2000 年 10 月 18 日: New Core
+
+    初の FreeBSD Core Team 選挙が実施される
+
+2000 年 3 月 9 日
+
+    世界一有名なインターネットオペレーティングシステムを提供するため、
+    BSD 業者らが合併へ
+
+1999 年 6 月 7 日
+
+    BSD コミュニティは Apple
+    の新しいオープンソースオペレーティングシステムを歓迎します
+
+1999 年 4 月 29 日
+
+    完全な XML 開発システムが FreeBSD に導入されました
+
+1999 年 4 月 22 日: The Matrix
+
+    FreeBSD はワーナーブラザーズフィルムの The Matrix
+    の中で壮観な特殊効果を生み出しました
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+最終更新日: 2021年1月26日 by Sergio Carlavilla Delgado
+
+法律上の注意事項 | © 1995-2023 FreeBSD プロジェクト All rights reserved.
+The mark FreeBSD is a registered trademark of The FreeBSD Foundation and
+is used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact

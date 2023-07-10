@@ -1,0 +1,153 @@
+[FreeBSD The Power to Serve]
+
+捐贈 FreeBSD
+
+ 
+
+-   首頁
+
+-   關於
+    -   簡介
+    -   特色
+    -   宣傳
+    -   行銷
+    -   隱私政策
+    -   Projects
+    -   Ports
+
+-   取得 FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   文件
+    -   常見問題集
+    -   使用手冊
+    -   Porter 手冊
+    -   Developer 手冊
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   文件計畫入門書
+    -   所有書籍與文章
+
+-   社群
+    -   郵件論壇
+    -   論壇
+    -   愛用者組織
+    -   活動
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   開發者
+    -   計畫構想
+    -   Git 檔案庫
+    -   Subversion 檔案庫
+    -   Git 鏡像站
+    -   程式碼審查 (Phabricator)
+    -   Wiki
+    -   持續整合服務
+
+-   支援
+    -   供應商
+    -   安全資訊
+    -   問題回報
+    -   提交問題回報
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   基金會
+    -   資金捐贈
+    -   硬體捐贈
+
+-   關於
+-   特色
+-   Applications
+-   宣傳
+-   行銷
+-   Administration
+-   News
+-   活動
+-   Press
+-   Artwork
+-   Logo
+-   捐贈
+-   法律聲明
+-   隱私政策
+
+FreeBSD Logo
+
+-   使用原則
+
+-   資源
+
+-   樣本
+
+使用原則
+
+FreeBSD 是 FreeBSD 基金會的註冊商標。 FreeBSD Logo 以及 The Power to
+Serve 均是 FreeBSD 基金會的商標。
+
+“資源”欄的圖片， 均可在有 FreeBSD 基金會授權的情況下使用。
+
+要了解關於如何獲得使用這一 Logo 授權的進階資訊，請參閱 FreeBSD 基金會 的
+Logo 使用原則。
+
+資源
+
+標準 Logo (全彩)
+
+[image]
+
+標準 Logo (全彩搭配暗色調背景)
+
+[image]
+
+Standard Logo (黑白)
+
+[image]
+
+向量圖形格式
+
+格式: Adobe(r) Illustrator(r), SVG
+
+[image]
+
+樣例
+
+注意： 在這些圖片中的 "freeBSD" 文字， 是基於 logo
+競選時所提的草稿版本。 這段文字正確的寫法是使用同一種顏色而非兩種，
+且第一個字母 "f" 應改為大寫 "F"。
+
+CD/DVD 包裝
+
+[image]
+
+明信片
+
+[image]
+
+[image]
+
+[image]
+
+[image]
+
+桌布
+
+這裡是一些桌布樣本。
+
+[image]
+
+[image]
+
+[image]
+
+------------------------------------------------------------------------
+
+Last modified on: January 26, 2021 by Sergio Carlavilla Delgado
+
+法律聲明 | © 1995-2023 FreeBSD 計劃 保留所有權利。 FreeBSD 標誌是
+FreeBSD 基金會的註冊商標，由 FreeBSD 基金會授權 FreeBSD 計畫使用 The
+FreeBSD Foundation. 聯絡資訊
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

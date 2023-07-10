@@ -1,0 +1,201 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+The FreeBSD Project
+
+FreeBSD is an operating system used to power modern servers, desktops,
+and embedded platforms. A large community has continually developed it
+for more than thirty years. Its advanced networking, security, and
+storage features have made FreeBSD the platform of choice for many of
+the busiest web sites and most pervasive embedded networking and storage
+devices.
+
+»Learn More
+
+» Get the FreeBSD Journal
+
+.
+
+Download FreeBSD
+
+.
+
+Supported Releases
+
+-   Production: 12.4, 13.1, 13.2
+-   Upcoming: 14.0
+-   Support Lifecycle
+
+-   de
+-   en
+-   fr
+-   ja
+-   zh-cn
+-   zh-tw
+
+Shortcuts
+
+-   Mailing Lists
+-   Reporting Problems
+-   FAQ
+-   Handbook
+-   Ports
+
+.
+
+New to FreeBSD?
+
+.
+
+LATEST NEWS
+
+2010-09-03
+Új tag: Steve Wills (ports)
+
+2010-08-31
+Új tag: Glen Barber (teljes doc/www)
+
+2010-08-30
+Új tag: Dimitry Andric (src)
+
+2010-08-01
+Új tag: Oliver Hauer (ports)
+
+2010-07-27
+FreeBSD Alapítvány 2010 júliusi hírlevél
+
+2010-07-27
+Új tag: Baptiste Daroussin (ports)
+
+-   More News
+-   [News RSS Feed]
+
+.
+
+UPCOMING EVENTS
+
+2023-09-14 - 2023-09-17
+EuroBSDcon 2023
+(Coimbra, Portugal)
+
+2023-10-04 - 2023-10-06
+Hackathon 202310
+(Oslo, Norway)
+
+More Events
+
+.
+
+PRESS
+
+2022-10
+FreeBSD comes to Amazon's lightweight hypervisor
+
+2022-07
+CheriBSD-based computer runs KDE for the first time
+
+2022-05
+FreeBSD 13.1 is out for everything from PowerPC to x86-64
+
+2021-03
+License to thrill
+
+2020-02
+Discussing Past, Present and Future of FreeBSD Project
+
+More Media
+
+.
+
+SECURITY ADVISORIES
+
+2023-06-21
+FreeBSD-SA-23:05.openssh
+
+2023-06-21
+FreeBSD-SA-23:04.pam_krb5
+
+2023-02-16
+FreeBSD-SA-23:03.openssl
+
+2023-02-16
+FreeBSD-SA-23:02.openssh
+
+-   More
+-   [News RSS Feed]
+
+ERRATA NOTICES
+
+2023-06-21
+FreeBSD-EN-23:07.mpr
+
+2023-06-21
+FreeBSD-EN-23:06.loader
+
+-   More
+-   [News RSS Feed]
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

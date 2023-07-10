@@ -1,0 +1,134 @@
+[FreeBSD The Power to Serve]
+
+捐赠 FreeBSD
+
+ 
+
+-   首页
+
+-   关于
+    -   简介
+    -   特性
+    -   宣传
+    -   营销
+    -   隐私政策
+    -   Projects
+    -   Ports
+
+-   获取 FreeBSD
+    -   发行版本
+    -   发布工程
+
+-   文档
+    -   常见问题合集
+    -   使用手册
+    -   Porter' 手册
+    -   Developer' 手册
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   文档计划入门书
+    -   所有书籍和文档
+
+-   社区
+    -   邮件列表
+    -   论坛
+    -   用户群体
+    -   活动
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   开发
+    -   项目新点子
+    -   Git Repository
+    -   Subversion 仓库
+    -   Git 镜像
+    -   代码审查 (Phabricator)
+    -   Wiki
+    -   持续集成服务
+
+-   支持
+    -   供应商
+    -   安全公告
+    -   问题报告
+    -   提交问题报告
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   基金会
+    -   资金捐赠
+    -   硬件捐赠
+
+-   关于
+-   特性
+-   Applications
+-   宣传
+-   营销
+-   Administration
+-   News
+-   活动
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   法律信息
+-   Privacy Policy
+
+商标说明
+
+FreeBSD 是 FreeBSD 基金会的注册商标。
+
+FreeBSD 标志是 FreeBSD 基金会的注册商标。
+
+请参见 FreeBSD 基金会 商标使用许可条件 网页了解关于使用 FreeBSD
+标志的详情。
+
+Adobe, Acrobat, Acrobat Reader, 以及 PostScript 是 Adobe Systems
+Incorporated 在 美国和/或其他国家的注册商标或商标。
+
+AMD, Am486, Am5X86, AMD Athlon, AMD Duron, AMD Opteron, AMD-K6, Athlon,
+Élan, Opteron, 以及 PCnet 是 Advanced Micro Devices, Inc. 的商标。
+
+Apple, FireWire, Mac, Macintosh, Mac OS, Quicktime, 以及 TrueType 是
+Apple Computer, Inc., 在美国和/或其他国家的注册商标或商标。
+
+CVSup 是 John D. Polstra 的注册商标。
+
+IBM 以及 PowerPC 是国际商用机器公司在美国和/或其他国家的注册商标。
+
+IEEE, POSIX, 和 802 是 The Institute of Electrical and Electronics
+Engineers, Inc. 的注册商标。
+
+Intel, Celeron, EtherExpress, i386, i486, Itanium, Pentium, 以及 Xeon 是
+Intel Corporation 或其分支机构在美国和/或其他国家的注册商标。
+
+Linux 是 Linus Torvalds 在美国的注册商标。
+
+Motif, OSF/1, 和 UNIX 是 The Open Group 在美国和其他国家的注册商标， IT
+DialTone 和 The Open Group 是其商标。
+
+MySQL 是 MySQL AB 在美国和欧盟以及其他国家的注册商标。
+
+Silicon Graphics, SGI, 和 OpenGL 是 Silicon Graphics, Inc.,
+在美国和/或其他国家的注册商标。
+
+Sparc, Sparc64, SPARCEngine, 以及 UltraSPARC 是 SPARC International, Inc
+在美国和/或其他国家的商标。 采用 SPARC 商标的系统基于 Sun Microsystems,
+Inc. 开发的架构。
+
+Sun, Sun Microsystems, SunOS, Solaris, 以及 Java 是 Sun Microsystems,
+Inc. 在美国和/或其他国家的商标或注册商标。
+
+许多制造商和经销商使用一些成为商标的图案或文字设计来彰显自己的产品。
+本网站中出现的， 为 FreeBSD Project 所承认的商标后面将以 '™' 或 '®'
+符号来标注。
+
+------------------------------------------------------------------------
+
+Last modified on: January 26, 2021 by Sergio Carlavilla Delgado
+
+法律信息 | © 1995-2023 FreeBSD 项目 保留所有权利。 The mark FreeBSD is a
+registered trademark of The FreeBSD Foundation and is used by The
+FreeBSD Project with the permission of The FreeBSD Foundation. 联系
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

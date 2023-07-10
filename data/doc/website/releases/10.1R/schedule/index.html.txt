@@ -1,0 +1,211 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 10.1 Release Process
+
+Introduction
+
+This is the release schedule for FreeBSD 10.1. For more information
+about the release engineering process, please see the Release
+Engineering section of the web site.
+
+General discussions about the pending release and known issues should be
+sent to the public freebsd-stable mailing list. MFC requests should be
+sent to re@FreeBSD.org.
+
+Schedule
+
++-----------------+-----------------+-----------------+-----------------+
+| Action          | Expected        | Actual          | Description     |
++-----------------+-----------------+-----------------+-----------------+
+| Initial release | -               | 10 July 2014    | Release         |
+| schedule        |                 |                 | Engineers send  |
+| announcement    |                 |                 | announcement    |
+|                 |                 |                 | email to        |
+|                 |                 |                 | developers with |
+|                 |                 |                 | a rough         |
+|                 |                 |                 | schedule.       |
++-----------------+-----------------+-----------------+-----------------+
+| Release         | 10 August 2014  | 10 August 2014  | Release         |
+| schedule        |                 |                 | Engineers send  |
+| reminder        |                 |                 | reminder        |
+|                 |                 |                 | announcement    |
+|                 |                 |                 | e-mail to       |
+|                 |                 |                 | developers with |
+|                 |                 |                 | updated         |
+|                 |                 |                 | schedule.       |
++-----------------+-----------------+-----------------+-----------------+
+| Code slush      | 22 August 2014  | 22 August 2014  | Release         |
+| begins          |                 |                 | Engineers       |
+|                 |                 |                 | announce that   |
+|                 |                 |                 | all further     |
+|                 |                 |                 | commits to the  |
+|                 |                 |                 | stable/10       |
+|                 |                 |                 | branch will not |
+|                 |                 |                 | require         |
+|                 |                 |                 | explicit        |
+|                 |                 |                 | approval,       |
+|                 |                 |                 | however new     |
+|                 |                 |                 | features should |
+|                 |                 |                 | be avoided.     |
++-----------------+-----------------+-----------------+-----------------+
+| Code freeze     | 5 September     | 5 September     | Release         |
+| begins          | 2014            | 2014            | Engineers       |
+|                 |                 |                 | announce that   |
+|                 |                 |                 | all further     |
+|                 |                 |                 | commits to the  |
+|                 |                 |                 | stable/10       |
+|                 |                 |                 | branch will     |
+|                 |                 |                 | require         |
+|                 |                 |                 | explicit        |
+|                 |                 |                 | approval.       |
+|                 |                 |                 | Certain blanket |
+|                 |                 |                 | approvals will  |
+|                 |                 |                 | be granted for  |
+|                 |                 |                 | narrow areas of |
+|                 |                 |                 | development,    |
+|                 |                 |                 | documentation   |
+|                 |                 |                 | improvements,   |
+|                 |                 |                 | etc.            |
++-----------------+-----------------+-----------------+-----------------+
+| BETA1 builds    | 12 September    | 12 September    | First beta test |
+| begin           | 2014            | 2014            | snapshot.       |
++-----------------+-----------------+-----------------+-----------------+
+| BETA2 builds    | 19 September    | 19 September    | Second beta     |
+| begin           | 2014            | 2014            | test snapshot.  |
++-----------------+-----------------+-----------------+-----------------+
+| BETA3 builds    | 26 September    | 26 September    | Third beta test |
+| begin           | 2014            | 2014            | snapshot.       |
++-----------------+-----------------+-----------------+-----------------+
+| releng/10.1     | 3 October 2014  | 3 October 2014  | Subversion      |
+| branch          |                 |                 | branch created; |
+|                 |                 |                 | future release  |
+|                 |                 |                 | engineering     |
+|                 |                 |                 | proceeds on     |
+|                 |                 |                 | this branch.    |
++-----------------+-----------------+-----------------+-----------------+
+| RC1 builds      | 3 October 2014  | 3 October 2014  | First release   |
+| begin           |                 |                 | candidate.      |
++-----------------+-----------------+-----------------+-----------------+
+| RC2 builds      | 10 October 2014 | 10 October 2014 | Second release  |
+| begin           |                 |                 | candidate.      |
++-----------------+-----------------+-----------------+-----------------+
+| RC3 builds      | 17 October 2014 | 21 October 2014 | Third release   |
+| begin           |                 |                 | candidate.      |
++-----------------+-----------------+-----------------+-----------------+
+| RC4 builds      | 29 October 2014 | 30 October 2014 | Fourth release  |
+| begin *         |                 |                 | candidate.      |
++-----------------+-----------------+-----------------+-----------------+
+| RELEASE builds  | 24 October 2014 | 11 November     | 10.1-RELEASE    |
+| begin           | 5 November 2014 | 2014            | builds begin.   |
+|                 | 12 November     |                 |                 |
+|                 | 2014            |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| RELEASE         | 29 October 2014 | 14 November     | 10.1-RELEASE    |
+| announcement    | 10 November     | 2014            | press release.  |
+|                 | 2014            |                 |                 |
+|                 | 19 November     |                 |                 |
+|                 | 2014            |                 |                 |
++-----------------+-----------------+-----------------+-----------------+
+| Turn over to    | -               | 26 November     | releng/10.1     |
+| the secteam     |                 | 2014            | branch is       |
+|                 |                 |                 | handed over to  |
+|                 |                 |                 | the FreeBSD     |
+|                 |                 |                 | Security        |
+|                 |                 |                 | Officer Team in |
+|                 |                 |                 | one or two      |
+|                 |                 |                 | weeks after the |
+|                 |                 |                 | announcement.   |
++-----------------+-----------------+-----------------+-----------------+
+
+"*" indicates late additions to the schedule.
+
+Status / TODO
+
+FreeBSD Release Engineering TODO Page
+
+Additional Information
+
+-   FreeBSD Release Engineering website
+
+------------------------------------------------------------------------
+
+Last modified on: June 19, 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

@@ -1,0 +1,124 @@
+[FreeBSD The Power to Serve]
+
+FreeBSD への寄付
+
+ 
+
+-   ホーム
+
+-   FreeBSD とは
+    -   FreeBSD が初めてという方へ
+    -   特徴
+    -   プロモーション活動
+    -   マーケティング活動
+    -   プライバシーポリシー
+    -   Projects
+    -   Ports
+
+-   FreeBSD の入手
+    -   リリース情報
+    -   リリースエンジニアリング
+
+-   ドキュメント
+    -   FAQ
+    -   ハンドブック
+    -   port 作成者のためのハンドブック
+    -   開発者のためのハンドブック
+    -   Committer's Guide
+    -   マニュアルページ
+    -   Presentations and Papers
+    -   新しい貢献者のためのドキュメンテーションプロジェクト入門
+    -   すべての Books と Articles
+
+-   コミュニティ
+    -   メーリングリスト
+    -   フォーラム
+    -   ユーザグループ
+    -   イベント
+    -   FreeBSD ジャーナル
+    -   Q&A (外部)
+
+-   開発
+    -   プロジェクトアイディア
+    -   Git リポジトリ
+    -   Subversion リポジトリ
+    -   GitHub ミラー
+    -   コードレビュー (Phabricator)
+    -   Wiki
+    -   継続的インテグレーションサービス
+
+-   サポート
+    -   ベンダ
+    -   セキュリティ情報
+    -   障害報告
+    -   障害報告の提出
+    -   ウェブ上の情報
+
+-   財団
+    -   寄付
+    -   ハードウェアの寄贈
+
+-   ports について
+-   インストール
+-   アップデート
+-   検索
+-   その他の情報
+-   FreshPorts
+
+FreeBSD Ports について
+
+Search ports for: All Package Name Description Long description
+Maintainer Requires
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD Ports/Packages Collection は、
+ユーザや管理者がアプリケーションのインストールを簡単に行なえる方法を提供します。
+現時点で 36000 個の ports が提供されています。
+
+Ports Collection は FreeBSD-CURRENT ブランチ と FreeBSD-STABLE ブランチ
+の最新のリリースに対応しています。
+それより古いリリースには対応しておらず、先端の Ports Collection
+は正しく動作するかもしれませんし、しないかもしれません。
+時間の経過とともに、過去のリリースには存在しない機能を必要とする変更が
+Ports Collection
+に加えられるかもしれません。どんな環境でも利用できるように、
+最近のリリースでの対応を理由なく取り止めることはないように努めていますが、
+やむをえないときもあります。
+なお、古いリリースを保守するためのパッチがユーザコミュニティから寄贈された場合は採用されるでしょう。
+
+ここに並べられている各 “port” には、 FreeBSD
+上でオリジナルのアプリケーションのソースコードをコンパイルし、
+実行するために必要なパッチがすべて含まれています。
+アプリケーションのインストールは簡単で、port のディレクトリで
+make install と打つだけです。 ports 階層全体 をインストールし、すべての
+ports
+一覧のフレームワークをダウンロードしたら、何千ものアプリケーションが、すぐに使えるようになります。
+
+各 ports の Makefile
+は自動的に、ローカルディスクやネットワーク経由でアプリケーションのソースコードを入手し、システム上で展開し、パッチをあて、コンパイルします。
+問題が起きなければ、あとは make install
+とするだけでアプリケーションをインストールして
+パッケージシステムへ登録できます。
+
+ほとんどの ports には、あらかじめコンパイルされた package
+が用意されており、すべてをコンパイルする作業や時間を節約できます。
+このコンパイルされた port
+を安全にダウンロードしてインストールするには、pkg-install(8)
+を使用してください。 詳細については、pkg によるバイナリ package の管理
+をご覧ください。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+最終更新日: 2023年2月6日 by Ryusuke SUZUKI
+
+法律上の注意事項 | © 1995-2023 FreeBSD プロジェクト All rights reserved.
+The mark FreeBSD is a registered trademark of The FreeBSD Foundation and
+is used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact

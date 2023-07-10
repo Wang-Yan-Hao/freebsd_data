@@ -1,0 +1,126 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+NXP DPAA2 support
+
+Links
+Development URL:
+https://github.com/mcusim/freebsd-src/tree/lx2160acex7-dev/sys/dev/dpaa2
+
+Contact: Dmitry Salychev <dsl@mcusim.org>
+Contact: Bjoern A. Zeeb <bz@FreeBSD.org>
+
+Some of the NXP SoCs (LX2160A, LS1088A) are shipped with DPAA2, the
+second generation of the data path acceleration architecture. It allows
+to dynamically configure and wire packet processing "objects" (like DPNI
+for a network interface, DPMAC for media access controller, etc.)
+together to form a network-on-a-chip.
+
+Honeycomb LX2, as one of the powerful ARM64 boards from SolidRun, is
+also built around NXP LX2160A and lacks on-board GbE support in FreeBSD.
+These drivers are about to change it.
+
+It’s still work in progress and a rough implementation of the drivers
+for some DPAA2 objects is available at the moment. A new network
+interface (dpni) can be used on Honeycomb for testing.
+
+TODO:
+
+-   Update dpaa2_mc_fdt driver for the Traverse Ten64 board
+
+-   Review and fix DPAA2 resources allocation to support as many DPNIs
+    as possible
+
+-   Free driver resources properly
+
+-   Implement CPU affinity for DPIOs and DPNIs
+
+-   Implement cached memory-backed software portals
+
+-   Profile and mitigate bottlenecks
+
+Sponsor: Bare Enthusiasm :)
+
+------------------------------------------------------------------------
+
+Last modified on: June 10, 2022 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

@@ -1,0 +1,338 @@
+Early Adopter's Guide to FreeBSD 5.0-RELEASE
+
+The FreeBSD Release Engineering Team
+
+Copyright © 2002 by The FreeBSD Release Engineering Team
+
+$FreeBSD: src/release/doc/en_US.ISO8859-1/early-adopter/article.sgml,v
+1.5 2002/11/03 22:06:48 ceri Exp $
+
+<<<<<<< HEAD
+
+=======
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+1 Introduction
+
+FreeBSD 5.0 marks the first new major version of FreeBSD in over two
+years. Besides a number of new features, it also contains a number of
+major developments in the underlying system architecture. Along with
+these advances, however, comes a system that incorporates a tremendous
+amount of new and not-widely-tested code. Compared to the existing line
+of 4.X releases, 5.0 may have regressions in areas of stability,
+performance, and occasionally functionality.
+
+For these reasons, the Release Engineering Team <re@FreeBSD.org> does
+not encourage users to blindly update from older FreeBSD releases to
+5.0. Specifically, for more conservative users, we recommend running 4.X
+releases (such as 4.7-RELEASE or the upcoming 4.8-RELEASE) for the
+near-term future. We feel that such users are probably best served by
+upgrading to 5.X only after a 5-STABLE development branch has been
+created; this may be around the time of 5.1-RELEASE or 5.2-RELEASE.
+
+(FreeBSD 5.0 suffers from what has been described as a ``chicken and
+egg'' problem. The entire project has a goal of producing a 5.0-RELEASE
+that is as stable and reliable as possible. This stability and
+reliability requires widespread testing, particularly of the system's
+newer features. However, getting a large number of users to test the
+system, in a practical sense, means building and distributing a release
+first!)
+
+This article describes some of the issues involved in installing and
+running FreeBSD 5.0-RELEASE. We begin with a brief overview of the
+FreeBSD release process. We then present some of the more noteworthy new
+features in FreeBSD 5.0, along with some areas that may prove
+troublesome for unwary users. For those users choosing to remain with
+4-STABLE-based releases, we give some of the short- to medium-term plans
+for this development branch. Finally, we present some notes on upgrading
+existing 4.X systems to 5.0.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2 An Overview of the FreeBSD Release Process
+
+FreeBSD employs a model of development that relies on multiple
+development branches within the source code repository. The main branch
+is called ``CURRENT'', and is referred to in the CVS repository with the
+HEAD tag. New features are committed first to this branch; although this
+means that CURRENT is the first to see new functionality, it also means
+that it occasionally suffers from breakages as new features are added
+and debugged.
+
+Most FreeBSD releases are made from one of several ``STABLE'' branches.
+Features are only added to these branches after some amount of testing
+in CURRENT. At the moment, only one STABLE branch is under active
+development; this branch is referred to as ``4-STABLE'', and all of the
+FreeBSD 4.X releases were based on it. This branch has the tag RELENG_4
+in the CVS repository.
+
+FreeBSD 5.0 will be based on the CURRENT branch. This will be the first
+release from this branch in over two years (the last was FreeBSD 4.0, in
+March 2000).
+
+At some point after the release of FreeBSD 5.0, a ``5-STABLE'' branch
+will be created in the FreeBSD CVS repository with the branch tag
+RELENG_5. The past two stable branches (3-STABLE and 4-STABLE) were
+created immediately after their respective ``dot-oh'' releases (3.0 and
+4.0, respectively). In hindsight, this practice did not give sufficient
+time for either CURRENT or the new STABLE branches to stabilize after
+the new branches were created.
+
+Therefore, the release engineering team will only create the 5-STABLE
+branch in the CVS repository after they have found a relatively stable
+state to use as its basis. It is likely that there will be multiple
+releases in the 5.X series before this happens; we estimate that the
+5-STABLE branch will be created sometime after 5.1-RELEASE or
+5.2-RELEASE.
+
+More information on FreeBSD release engineering processes can be found
+on the Release Engineering Web pages and in the FreeBSD Release
+Engineering article.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3 New Features
+
+A large attraction of FreeBSD 5.0 is a number of new features. These new
+features and functionality generally involve large architectural changes
+that were not feasible to port back to the FreeBSD 4-STABLE development
+branch. (By contrast, many self-contained enhancements, such as new
+device drivers or userland utilities, have already been ported.) A
+brief, but not exhaustive list includes:
+
+-   SMPng: The ``next generation'' support for SMP machines (work in
+    progress). There is now partial support for multiple processors to
+    be running in the kernel at the same time.
+
+-   KSE: Kernel Scheduled Entities allow a single process to have
+    multiple kernel-level threads, similar to Scheduler Activations.
+
+-   New architectures: Support for the sparc64 and ia64 architectures,
+    in addition to the i386, pc98, and alpha.
+
+-   GCC: The compiler toolchain is now based on GCC 3.X, rather than GCC
+    2.95.X.
+
+-   MAC: Support for extensible, loadable Mandatory Access Control
+    policies.
+
+-   GEOM: A flexible framework for transformations of disk I/O requests.
+    An experimental disk encryption facility has been developed based on
+    GEOM.
+
+-   FFS: The FFS filesystem now supports background fsck(8) operations
+    (for faster crash recovery) and filesystem snapshots.
+
+-   UFS2: A new UFS2 on-disk format has been added, which supports
+    extended per-file attributes and larger file sizes.
+
+-   Cardbus: Support for Cardbus devices.
+
+A more comprehensive list of new features can be found in the release
+notes for FreeBSD 5.0.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+4 Drawbacks to Early Adoption
+
+Along with the new features of FreeBSD 5.0 come some areas that can
+cause problems, or at least can lead to unexpected behavior. Generally,
+these come from the fact that a number of features are
+works-in-progress. A partial list of these areas of difficulty includes:
+
+-   A number of features are not yet finished. Examples from the feature
+    list above include SMPng and KSE.
+
+-   Because of changes in kernel data structures and ABIs/APIs,
+    third-party binary device drivers will require modifications to work
+    correctly under FreeBSD 5.0.
+
+-   Several parts of FreeBSD's base system functionality have been moved
+    to the Ports Collection. Notable examples include Perl, UUCP, and
+    most (but not all) games. While these programs are still supported,
+    their removal from the base system may cause some confusion.
+
+-   A number of ports and packages do not build or do not run correctly
+    under FreeBSD 5.0, whereas they did under FreeBSD 4-STABLE.
+    Generally these problems are caused by compiler toolchain changes or
+    cleanups of header files.
+
+-   Because FreeBSD 5.0 is the first release from the CURRENT branch in
+    over two years, many of its features are seeing wide exposure for
+    the first time. Many of these features (such as SMPng) have broad
+    impacts on the kernel.
+
+-   A certain amount of debugging and diagnostic code is still in place
+    to help track down problems in FreeBSD 5.0's new features. This may
+    cause FreeBSD 5.0 to perform more slowly than 4-STABLE.
+
+-   Features are only added to the 4-STABLE development branch after a
+    ``settling time'' in -CURRENT. FreeBSD 5.0 does not have the
+    stabilizing influence of a -STABLE branch. (It is likely that the
+    5-STABLE development branch will be created sometime after
+    5.1-RELEASE or 5.2-RELEASE.)
+
+Because a number of these drawbacks affect system stability, the release
+engineering team recommends that more conservative sites and users stick
+to releases based on the 4-STABLE branch until the 5.X series is more
+polished.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+5 Plans for the 4-STABLE Branch
+
+The release of FreeBSD 5.0 does not mean the end of the 4-STABLE branch.
+There will be at least one more release on this branch, namely
+4.8-RELEASE, currently scheduled for 1 February 2003.
+
+As of this writing, the release engineering team has no definite plans
+for future releases (past 4.8) on the 4-STABLE branch. However, a
+4.9-RELEASE or even a 4.10-RELEASE are likely possibilities. Any future
+releases from this branch will depend on several factors. The most
+important of these is the existence and stability of the 5-STABLE
+branch. If CURRENT is not sufficiently stable to allow the creation of a
+5-STABLE branch, this may require and permit more releases from the
+4-STABLE branch. Until the last declared release on the 4-STABLE branch,
+new features may be merged from HEAD at the discretion of developers,
+subject to existing release engineering policies.
+
+To some extent, the release engineering team will take into account user
+demand for future 4-STABLE releases. This demand, however, will need to
+be balanced with release engineering resources (in terms of personnel,
+computing resources, and mirror archive space).
+
+The Security Officer Team <security-officer@FreeBSD.org> will continue
+to support releases made from the 4-STABLE branch in accordance with
+their published policies, which can be found on the Security page on the
+FreeBSD web site. Generally, the two most recent releases from any
+branch will be supported with respect to security advisories and
+security fixes. At its discretion, the team may support other releases.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+6 Notes on Upgrading
+
+For those users with existing FreeBSD systems, this section offers a few
+notes on upgrading a FreeBSD 4.X system to 5.X. As with any FreeBSD
+upgrade, it is crucial to read the release notes and the errata for the
+version in question, as well as src/UPDATING for source upgrades.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+6.1 Binary Upgrades
+
+Probably the most straightforward approach is that of ``backup
+everything, reformat, reinstall, and restore everything''. This
+eliminates problems of incompatible or obsolete executables or
+configuration files polluting the new system.
+
+As of this time, the binary upgrade option in sysinstall(8) has not been
+well-tested for cross-major-version upgrades. Using this feature is not
+recommended.
+
+On the i386 and pc98 platforms, a UserConfig utility exists on 4-STABLE
+to allow boot-time configuration of ISA devices when booting from
+installation media. Under FreeBSD 5.0, this functionality has been
+replaced in part by the device.hints(5) mechanism (it allows specifying
+the same parameters, but is not interactive).
+
+Floppy-based binary installations may require downloading a third, new
+floppy image holding additional device drivers in kernel modules. This
+drivers.flp floppy image will generally be found in the same location as
+the usual kern.flp and mfsroot.flp floppy images.
+
+CDROM-based installations on the i386 architecture now use a
+``no-emulation'' boot loader. This allows, among other things, the use
+of a GENERIC kernel, rather than the stripped-down kernel on the floppy
+images. In theory, any system capable of booting the Microsoft Windows
+NT 4 installation CDROMs should be able to cope with the FreeBSD 5.0
+CDROMs.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+6.2 Source Upgrades
+
+Reading src/UPDATING is absolutely essential. The section entitled ``To
+upgrade from 4.x-stable to current'' contains a step-by-step update
+procedure. This procedure must be followed exactly, without making use
+of the ``shortcuts'' that some users occasionally employ.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+6.3 Common Notes
+
+Perl has been removed from the base system. The recommended way of
+installing Perl is either from a pre-built package or from the Ports
+Collection. Building Perl as a part of the base system created a number
+of difficulties which made updates problematic. The base system
+utilities that used Perl have either been rewritten (if still
+applicable) or discarded (if obsolete).
+
+It is generally possible to run old 4.X executables under 5.X, but this
+requires the compat4x distribution to be installed. Thus, using old
+ports may be possible.
+
+When installing or upgrading over the top of an existing 4-STABLE-based
+system, it is extremely important to clear out old header files in
+/usr/include. Renaming or moving this directory before a binary
+installation or an installworld is generally sufficient. If this step is
+not taken, confusion may result (especially with C++ programs) as the
+compiler may wind up using a mixture of obsolete and current header
+files.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+7 Summary
+
+While FreeBSD 5.0 contains a number of new and exciting features, it may
+not be suitable for all users at this time. In this document, we
+presented some background on release engineering, some of the more
+notable new features of the 5.0 series, and some drawbacks to early
+adoption. We also presented some future plans for the 4-STABLE
+development branch and some tips on upgrading for early adopters.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+This file, and other release-related documents, can be downloaded from
+http://snapshots.jp.FreeBSD.org/.
+
+For questions about FreeBSD, read the documentation before contacting
+<questions@FreeBSD.org>.
+
+All users of FreeBSD 5-CURRENT should subscribe to the
+<current@FreeBSD.org> mailing list.
+
+For questions about this documentation, e-mail <doc@FreeBSD.org>.

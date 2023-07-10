@@ -1,0 +1,219 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   GNOME
+    -   Instructions d'installation
+    -   Captures d'écran
+    -   Nous contacter
+
+Projet GNOME pour FreeBSD : Composants GNOME indépendants du bureau
+
+Pour voir comment utiliser ces composants, jetez un oeil à l’exemple de
+Makefile.
+
++----------------------+----------------------+-----------------------+
+| COMPOSANT            | PROGRAMME ASSOCIE    | COMPOSANTS LIES       |
++======================+======================+=======================+
+| atk                  | accessibility/atk    | glib20                |
++----------------------+----------------------+-----------------------+
+| atspi                | accessibility/at-spi | gail libbonobo        |
++----------------------+----------------------+-----------------------+
+| desktopfileutils     | deve                 | glib20                |
+|                      | l/desktop-file-utils |                       |
++----------------------+----------------------+-----------------------+
+| eel2                 | x11-toolkits/eel2    | gnomeme               |
+|                      |                      | nus gnomedesktop gail |
++----------------------+----------------------+-----------------------+
+| evolutiondataserver  | databases/e          | libgnome              |
+|                      | volution-data-server |                       |
++----------------------+----------------------+-----------------------+
+| gail                 | accessibility/gail   | libgnomecanvas        |
++----------------------+----------------------+-----------------------+
+| gal2                 | x11-toolkits/gal2    | gn                    |
+|                      |                      | omeui libgnomeprintui |
++----------------------+----------------------+-----------------------+
+| gconf2               | devel/gconf2         | orbi                  |
+|                      |                      | t2 libxml2 gtk20 linc |
++----------------------+----------------------+-----------------------+
+| glib20               | devel/glib20         | gnometarget pkgconfig |
++----------------------+----------------------+-----------------------+
+| gnomecontrolcenter2  | sysutils             | gnomedeskt            |
+|                      | /gnomecontrolcenter2 | op metacity nautilus2 |
++----------------------+----------------------+-----------------------+
+| gnomedesktop         | x11/gnomedesktop     | lib                   |
+|                      |                      | gnomeui gnomedocutils |
++----------------------+----------------------+-----------------------+
+| gnomedocutils        | te                   | libxslt               |
+|                      | xtproc/gnomedocutils |                       |
++----------------------+----------------------+-----------------------+
+| gnomemenus           | x11/gnome-menus      | gnomevfs2             |
++----------------------+----------------------+-----------------------+
+| gnomepanel           | x11/gnomepanel       | gnomedesktop libwnck  |
++----------------------+----------------------+-----------------------+
+| gnomespeech          | acces                | libbonobo             |
+|                      | sibility/gnomespeech |                       |
++----------------------+----------------------+-----------------------+
+| gnomevfs2            | devel/gnomevfs2      | gconf2 li             |
+|                      |                      | bbonobo gnomemimedata |
++----------------------+----------------------+-----------------------+
+| gtk20                | x11-toolkits/gtk20   | intltool atk pango    |
++----------------------+----------------------+-----------------------+
+| gtkhtml3             | www/gtkhtml3         | gail libgn            |
+|                      |                      | omeui libgnomeprintui |
++----------------------+----------------------+-----------------------+
+| gtksourceview        | x11-to               | lib                   |
+|                      | olkits/gtksourceview | gnome libgnomeprintui |
++----------------------+----------------------+-----------------------+
+| libartlgpl2          | graphics/libartlgpl2 | pkgconfig             |
++----------------------+----------------------+-----------------------+
+| libbonobo            | devel/libbonobo      | libxml2 orbit2        |
++----------------------+----------------------+-----------------------+
+| libbonoboui          | x11-                 | li                    |
+|                      | toolkits/libbonoboui | bgnomecanvas libgnome |
++----------------------+----------------------+-----------------------+
+| libgailgnome         | x11-to               | libgnomeui atspi      |
+|                      | olkits/libgail-gnome |                       |
++----------------------+----------------------+-----------------------+
+| libgda2              | databases/libgda2    | glib20 libxslt        |
++----------------------+----------------------+-----------------------+
+| libgda3              | databases/libgda3    | glib20 libxslt        |
++----------------------+----------------------+-----------------------+
+| libglade2            | devel/libglade2      | libxml2 gtk20         |
++----------------------+----------------------+-----------------------+
+| libgnome             | x11/libgnome         | lib                   |
+|                      |                      | xslt gnomevfs2 esound |
++----------------------+----------------------+-----------------------+
+| libgnomecanvas       | gra                  | libglade2 libartlgpl2 |
+|                      | phics/libgnomecanvas |                       |
++----------------------+----------------------+-----------------------+
+| libgnomedb           | databases/libgnomedb | libgnomeui libgda3    |
++----------------------+----------------------+-----------------------+
+| libgnomeprint        | print/libgnomeprint  | libbon                |
+|                      |                      | obo libartlgpl2 gtk20 |
++----------------------+----------------------+-----------------------+
+| libgnomeprintui      | x11-tool             | libgnom               |
+|                      | kits/libgnomeprintui | eprint libgnomecanvas |
++----------------------+----------------------+-----------------------+
+| libgnomeui           | x11                  | libbonoboui           |
+|                      | -toolkits/libgnomeui |                       |
++----------------------+----------------------+-----------------------+
+| libgsf               | devel/libgsf         | gconf2 glib20 libxml2 |
++----------------------+----------------------+-----------------------+
+| libgsf_gnome         | devel/libgsf-gnome   | libgsf gnomevfs2      |
++----------------------+----------------------+-----------------------+
+| libgtkhtml           | www/libgtkhtml       | l                     |
+|                      |                      | ibxslt gnomevfs2 gail |
++----------------------+----------------------+-----------------------+
+| libidl               | devel/libIDL         | glib20                |
++----------------------+----------------------+-----------------------+
+| librsvg2             | graphics/librsvg2    | libgsf gtk20          |
++----------------------+----------------------+-----------------------+
+| libwnck              | x11-toolkits/libwnck | gtk20                 |
++----------------------+----------------------+-----------------------+
+| libxml2              | textproc/libxml2     | pkgconfig             |
++----------------------+----------------------+-----------------------+
+| libxslt              | textproc/libxslt     | libxml2               |
++----------------------+----------------------+-----------------------+
+| libzvt               | x11-toolkits/libzvt  | gtk20                 |
++----------------------+----------------------+-----------------------+
+| linc                 | net/linc             | glib20                |
++----------------------+----------------------+-----------------------+
+| metacity             | x11-wm/metacity      | gconf2 glade2         |
++----------------------+----------------------+-----------------------+
+| nautilus2            | x11-fm/nautilus2     | librs                 |
+|                      |                      | vg2 eel2 gnomedesktop |
++----------------------+----------------------+-----------------------+
+| nautiluscdburner     | sysutil              | nautilus2             |
+|                      | s/nautilus-cd-burner |                       |
++----------------------+----------------------+-----------------------+
+| orbit2               | devel/ORBit2         | libidl                |
++----------------------+----------------------+-----------------------+
+| pango                | x11-toolkits/pango   | glib20                |
++----------------------+----------------------+-----------------------+
+| pygnome2             | x1                   | libgnomeui pygtk2     |
+|                      | 1-toolkits/py-gnome2 |                       |
++----------------------+----------------------+-----------------------+
+| pygnomedesktop       | x11-toolk            | pygnome2 libgnomeprin |
+|                      | its/py-gnome-desktop | tui gtksourceview lib |
+|                      |                      | wnck nautiluscdburner |
++----------------------+----------------------+-----------------------+
+| pygnomeextras        | x11-tool             | pygnome2 libgtkhtml   |
+|                      | kits/py-gnome-extras |                       |
++----------------------+----------------------+-----------------------+
+| pygtk2               | x11-toolkits/py-gtk2 | libglade2             |
++----------------------+----------------------+-----------------------+
+| vte                  | x11-toolkits/vte     | gtk20                 |
++----------------------+----------------------+-----------------------+
+
+Si vous avez besoin d’aide pour votre port, consultez déjà certains des
+ports existants pour avoir des exemples. La liste de diffusion
+freebsd-gnome est également là pour vous aider.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 juin 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

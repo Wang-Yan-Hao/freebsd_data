@@ -1,0 +1,182 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 6.1 Open Issues
+
+This is a list of open issues that need to be resolved for FreeBSD 6.1.
+If you have any updates for this list, please e-mail re@FreeBSD.org.
+
+-   Show stopper defects
+-   Required features
+-   Desired features
+-   Documentation Items
+-   Testing foci
+-   Problems Discovered by Kernel Stress Test Suite
+-   Problems specific to the sparc64 architecture
+
+Show stopper defects for 6.1-RELEASE
+
+  ------------------- -------- ------------- -------------
+  Issue               Status   Responsible   Description
+  No pending issue.                          
+  ------------------- -------- ------------- -------------
+
+Required features for 6.1-RELEASE
+
+  ------------------- -------- ------------- -------------
+  Issue               Status   Responsible   Description
+  No pending issue.                          
+  ------------------- -------- ------------- -------------
+
+Desired features for 6.1-RELEASE
+
+  --------------------------------------------------------------- ----------------------------- -------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Issue                                                           Status                        Responsible          Description
+  devfs locking problem                                           In progress                   Jeff Roberson        It is trivial to deadlock it on an SMP system, and there are other panics with device removal.
+  pty leak                                                        In progress                   Olivier Houchard     Since 6.x has a hard-coded limit, once all ptys are leaked things like ssh and login no longer work. This seems devfs-related, and occurs only under extreme stress testing, not normal use.
+  swap_pager warnings                                             Unknown                       Don “Truck” Lewis?   When swapfiles are in use, there are often warnings printed: swap_pager: indefinite wait buffer: bufobj: 0, blkno: 889347, size: 8192. There is also the possibility of deadlock.
+  unmount pending error                                           In progress                   Suleiman Souhlal     When unmounting filesystems Kris Kennaway reports seeing this warning: /c: unmount pending error: blocks -68512 files 0. This dates back at least to 5.3. It might be associated with filesystem corruption reported by many users in which the 'used' space on a filesystem is negative; fsck -f is needed to correct this.
+  "calcru: runtime went backwards" problem for threaded program   Unknown                                            stress2 thr1 test can trigger "calcru: runtime went backwards" problem and there are also many similar reports on -stable and -current. Poul-Henning Kamp committed a possible fix (src/sys/kern/kern_tc.c rev.1.169) to update the calibration code to be more precise on 2 March.
+  NFS data corruption between two 7.0 machines                    In progress                   Mohan Srinivasan     Running fsx between a 7.0 NFS client and server detects data corruption. This problem can also be reproduced by using 6.1 NFS server. The problem seems to be avoidable by turning off the attribute cache on the NFS client.
+  sort(1) does not work with some locales                         Not done                                           sort(1) can cause a coredump with some locales. See also gnu/93629.
+  unreliable serial console                                       Unknown                                            At the manual 'root mount' prompt, the serial console is very unreliable and drops most characters. This appears to be caused by cngetc() polling the sio driver for input, and the sio driver resetting the chip on every poll iteration. That results in a very small window for it to accept input. Fixing this requires a large review of the operation of the sio driver. The uart driver looks to handle this better and might be a suitable replacement.
+  fix ntpdate(1) bogus output on amd64.                           Unknown                       Ollivier Robert      
+  make -jN                                                        Not done                                           Doing 'make -jN', then suspending/resuming it may result in make reporting it lost child process(es).
+  update sysinstall disk labeling                                 In progress                   Craig Rodrigues      Sysinstall could use the same fixes recently made to fdisk so it plays nice with GEOM and disk labeling. This does not cause problems during install because nothing on the disk is mounted when its label is being manipulated but it can cause problems if sysinstall gets used on a live system to adjust labels on existing disks which sys-admins tend to do.
+  i386 deadlocks with >16GB swap                                  Deferred for future release   Alan L. Cox          i386 deadlocks if more than 16GB of swap is in use. Increasing the kern.maxswzone tunable would be a workaround this. Although a patch from Alan L. Cox is needed to allow this variable to be increased, this is not suitable for 6.1R. This limitation should be documented in the Release Notes.
+  panic in bpf                                                    Deferred for future release   Sam Leffler          killing tcpdump (e.g. with ^C) can cause panics in bpf. To fix this problem, some architectural changes are needed.
+  OpenBSM                                                         Deferred for future release   Robert Watson        The integration of OpenBSM is waiting on some final licensing hurdles. It is expected to be available in the next release.
+  --------------------------------------------------------------- ----------------------------- -------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Documentation items that must be resolved for 6.1
+
+  ------------------- -------- ------------- -------------
+  Issue               Status   Responsible   Description
+  No pending issue.                          
+  ------------------- -------- ------------- -------------
+
+Testing foci for 6.1-RELEASE
+
+  -------------------------------------------------------- --------------- --------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Issue                                                    Status          Responsible                       Description
+  manual root mount lockmgr panics                         Needs testing   Suleiman Souhlal                  Specifying a manual root mount location causes lockmgr panics. Suleiman Souhlal has committed a patch for this.
+  dhclient causes ipv6 panics.                             Needs testing   Doug Barton                       Doug Barton has more details about this.
+  amd64 panics in ipv6 with date(1)                        Needs testing   Hajimu UMEMOTO                    amd64 panics in ipv6 when the date is changed using date(1) or ntpdate(1). This may be a MI issue.
+  grep(1) -w does not work with multibyte locales          Needs testing   Tim J. Robbins                    grep(1) -w generates wrong results with non-UTF-8 multibyte locales. Tim J. Robbins has committed a patch to -HEAD. See also gnu/91909.
+  Improve kbdmux                                           Needs testing   Maksim Yevmenkin                  From the ideas page. We need this for the growing number of systems that assume that USB is the primary keyboard. Current status appears to be that the kbdmux driver breaks very easily. We need this working well enough where it can be enabled by default, and all attached keyboards Just Work. Maksim Yevmenkin commit kbdmux and rc.d/syscons patches in HEAD and RELENG_6. It is not yet enabled by default. See kbdmux(4) and contact Maksim Yevmenkin if you have problems.
+  umount -f panics                                         Needs testing   Jeff Roberson, Suleiman Souhlal   panics from race conditions. A patch from Jeff Roberson seems to fix some of them.
+  quota deadlocks                                          Needs testing   Jeff Roberson                     Quota support is not locked properly and causes deadlocks. A patch from Jeff Roberson seems to fix some of them.
+  ifconfig regression on 6.x                               Needs testing   Yar Tikhiy                        ifconfig cannot handle vlan and mtu parameters at the same time after rev.1.7.2.3 of sbin/ifconfig/ifvlan.c commit. For more information and a proposed patch, see bin/94028.
+  SMP kernels for install                                  Needs testing   Sam Leffler                       From the ideas page. Right now we only install a UP kernel, for performance reasons. We should be able to package both a UP and SMP kernel into the release bits, and have sysinstall install both. It should also select the correct one for the target system and make that the default on boot. The easiest way to do this would be to have sysinstall boot an SMP kernel and then look at the hw.ncpu sysctl. The only problem is being able to have sysinstall fall back to booting a UP kernel for itself if the SMP one fails. This can probably be 'faked' by setting one of the SMP-disabling variables in the loader. But in any case, the point is to make the process Just Work for the user, without the user needing to know arcane loader/sysctl knobs. SMP laptops are here, and we should be ready to support SMP out-of-the-box.
+  dup(2) regression on 6.x                                 Needs testing   Christian S.J. Peron              Simple "close(0); dup(fd)" does not return descriptor "0" in some cases. This problem has been reported in kern/87208, and there is a proposed patch in the PR, too. Christian S.J. Peron has committed a fix for this.
+  cpu_ipi_selected() can cause a trap on FreeBSD/sparc64   Needs testing   Marius Strobl                     On sparc64, cpu_ipi_selected() can cause a trap (which is bad since it appears in the trap code path).
+  UFS deadlocks on amd64                                   Needs testing   Tor Egge                          Seen by Kris Kennaway. This problem seems MI.
+  UFS deadlocks                                            Needs testing   Tor Egge                          Seen by Peter Jeremy.
+  panic in fxp driver                                      Needs testing   Andre Oppermann                   See http://people.freebsd.org/~pho/stress/log/cons186.html.
+  exec_map depletion                                       Needs testing   Stephan Uphoff                    The exec_map is regularly running out of space on machines running 7.0. Stephan Uphoff has a committed a patch that seems to fix this problem.
+  /dev/mem instability                                     Needs testing   Marius Strobl, Stephan Uphoff     Instability when accessing /dev/mem. A fix was committed for i386. amd64 does not seem to have the problem. A sparc64 fix is still in progress.
+  deadlock in vn_start_write() consumers                   Needs testing   Tor Egge                          Many potential deadlocks have been fixed.
+  -------------------------------------------------------- --------------- --------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Stress Test Panics
+
+The system is continuously being subjected to Peter Holm's Kernel Stress
+Test Suite. The following issues have recently been discovered from this
+test suite.
+
+sparc64 problems
+
+These are problems that range in severity for FreeBSD/sparc64. They will
+not hold up the release, but they will still be tracked for future
+releases.
+
+  ---------------------------- ------------- ------------------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Issue                        Status        Responsible                    Description
+  sparc64 frequent hangs       In progress   Marius Strobl                  Some of the more serious hangs on sparc64 have been fixed, but more remain.
+  serious sparc64 IPv6 panic   In progress   George V. Neville-Neil         Triggered by just ping6'ing the box. It may even be a MI issue, the reporter of this bug only uses IPv6 with sparc64. This problem seems to be triggered even when debug.mpsafenet="0".
+  swap panic on sparc64        Unknown       Kris Kennaway has panic info   Kris Kennaway reports configuring a 74GB swap-backed md on sparc64 that caused a panic after a week or two of load (during which time swap was slowly filling as more of the md was dirtied).
+  KLDs on sparc64              Not done                                     On sparc64 machines with more than 4Gb memory KLDs are not usable and will panic the system. The problem is reportedly with how the KLDs are compiled, it only works if the code ends up below 4G.
+  Max RAM on sparc64           Not done                                     Maximum RAM on sparc64 appears to be limited to 16Gb.
+  ---------------------------- ------------- ------------------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

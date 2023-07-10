@@ -1,0 +1,121 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Kernel Sanitizers
+
+Contact: Mark Johnston <markj@FreeBSD.org>
+
+Work has been ongoing to port a pair of kernel sanitizers from NetBSD to
+FreeBSD. Sanitizers are debugging tools which make use of compiler
+instrumentation to validate memory accesses. They can automatically
+detect many classes of C programming bugs, such as use-after-frees and
+loads of uninitialized variables. When combined with syzkaller or other
+testing tools, they are effective at detecting kernel bugs that may
+otherwise require a great deal of manual effort to identify.
+
+Two sanitizers are being ported, KASAN (AddressSanitizer) and KMSAN
+(MemorySanitizer). KASAN checks the validity of all memory accesses
+within the kernel map and triggers a panic upon an out-of-bounds access
+or a use-after-free. Various kernel memory allocators annotate regions
+of memory to denote whether corresponding accesses are valid. The
+initial port of KASAN is complete and is planned to appear in the
+FreeBSD development branch in mid-April. KMSAN detects uses of
+uninitialized memory and can detect bugs that result in the contents of
+kernel memory being leaked to userspace. Both sanitizers incur
+considerable memory and CPU overhead. They are intended to be used
+mainly in conjunction with test frameworks, though it is certainly
+possible to boot and run sanitizer-enabled kernels in a desktop or
+laptop environment. Currently this work is amd64-only. It should be
+possible to port it to arm64 and riscv with relatively little effort.
+
+Future work in this area consists of finishing the KMSAN port, fixing
+bugs found by the combination of KASAN and syzkaller, and making sure
+that sanitizers can validate accesses to the direct map. This may
+consist of an option to disable usage of the direct map, or introducing
+a shadow for the direct map.
+
+Sponsor: The FreeBSD Foundation
+
+------------------------------------------------------------------------
+
+Last modified on: May 1, 2021 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

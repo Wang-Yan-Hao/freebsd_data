@@ -1,0 +1,120 @@
+[FreeBSD The Power to Serve]
+
+An FreeBSD spenden
+
+ 
+
+-   Startseite
+
+-   Über FreeBSD
+    -   Für Einsteiger
+    -   Eigenschaften
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Bezugsquellen
+    -   Release Information
+    -   Release Engineering
+
+-   Dokumentation
+    -   FAQ
+    -   Handbuch
+    -   Porter-Handbuch
+    -   Entwickler-Handbuch
+    -   Committer's Guide
+    -   Manualpages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   Alle Bücher und Artikel
+
+-   Community
+    -   Mailinglisten
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Entwicklung
+    -   Projektideen
+    -   Git-Spiegelserver
+    -   Subversion-Repository
+    -   GitHub Mirror
+    -   Phabricator (Code Review)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Hilfe
+    -   Kommerzieller Support
+    -   Sicherheit
+    -   Problemberichte
+    -   Problembericht erstellen
+    -   Internet-Ressourcen
+
+-   Foundation
+    -   Geldspende
+    -   Hardwarespende
+
+-   Allgemeines
+-   Installing
+-   Aktualisierung
+-   Durchsuchen
+-   Weitere Informationen
+-   FreshPorts
+
+FreeBSD Ports -- Referenzen
+
+Search ports for: All Package Name Description Long description
+Maintainer Requires
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Ausführliche Informationen zu Ports und Paketen finden Sie im Kapitel
+Installieren von Anwendungen: Pakete und Ports des FreeBSD Handbuchs.
+
+Das Porter’s Handbook ist die wichtigste Quelle für das Erstellen neuer
+Ports und die Verwaltung bereits vorhandener Ports (Kapitel Keeping Up).
+Das Porter’s Handbuch enthält auch weitere Informationen zu diesen
+Themenbereichen sowie Verweise auf zusätzliche Informationsquellen.
+
+Folgende Ressourcen sollten ebenfalls hilfreich sein:
+
+-   Die Archive der FreeBSD Ports-Mailingliste.
+
+-   Der Artikel Contributing to the FreeBSD Ports Collection.
+
+-   FreshPorts.org ist eine wertvolle Quelle für weitere Informationen
+    zu einzelnen Ports wie der aktuellen Version, der letzten Änderung
+    sowie vielen weiteren Statistiken. Sie können dort auch eine
+    Mailingliste abonnieren, um sich über Änderungen Ihrer
+    Lieblings-Ports zu informieren.
+
+-   Die Manualpages für ftp, pkg und ports.
+
+-   Die Seiten des Ports Management Teams (portmgr).
+
+-   Die Internet-Schnittstelle des Subversion Repository erlaubt es
+    Ihnen, einzelne Dateien des Quellcode-Repository anzusehen.
+    Änderungen, die die komplette Ports-Sammlung betreffen, werden in
+    der Datei CHANGES dokumentiert. Änderungen, die lediglich einzelne
+    Ports betreffen, werden hingegen in der Datei UPDATING dokumentiert.
+    Vergessen Sie aber nicht, den Quellcode der Datei bsd.port.mk sowie
+    der damit in Verbindung stehenden Dateien zu lesen.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19. Juni 2021 by Danilo G. Baio
+
+Rechtliches | © 1995-2023 The FreeBSD Project Alle Rechte vorbehalten.
+Die Marke FreeBSD ist eine eingetragene Marke der FreeBSD Foundation und
+wird vom FreeBSD Project mit freundlicher Genehmigung der The FreeBSD
+Foundation. Kontakt

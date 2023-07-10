@@ -1,0 +1,7340 @@
+
+Contributors to FreeBSD
+
+Abstract
+
+This article lists individuals and organizations who have made a
+contribution to FreeBSD. To see the current list of FreeBSD Committers
+you can take a look at the following list.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+1. The FreeBSD Developers
+
+This list, which includes all members of the Core Team, names everyone
+who has commit privileges for one or more of the three source trees
+(doc, ports and src). To see the current Core Team members you can take
+a look at the administration page.
+
+(in alphabetical order by last name):
+
+-   Doug Ambrisko <ambrisko@FreeBSD.org>
+
+-   Shaun Amott <shaun@FreeBSD.org>
+
+-   Jonathan Anderson <jonathan@FreeBSD.org>
+
+-   Matthias Andree <mandree@FreeBSD.org>
+
+-   Will Andrews <will@FreeBSD.org>
+
+-   Dimitry Andric <dim@FreeBSD.org>
+
+-   Fernando Apesteguia <fernape@FreeBSD.org>
+
+-   Mathieu Arnold <mat@FreeBSD.org>
+
+-   Gavin Atkinson <gavin@FreeBSD.org>
+
+-   Jason W. Bacon <jwb@FreeBSD.org>
+
+-   Eric Badger <badger@FreeBSD.org>
+
+-   Danilo G. Baio <dbaio@FreeBSD.org>
+
+-   Timur I. Bakeyev <timur@FreeBSD.org>
+
+-   John Baldwin <jhb@FreeBSD.org>
+
+-   Glen Barber <gjb@FreeBSD.org>
+
+-   Loïc Bartoletti <lbartoletti@FreeBSD.org>
+
+-   Jan Beich <jbeich@FreeBSD.org>
+
+-   Konstantin Belousov <kib@FreeBSD.org>
+
+-   Ilya Bakulin <kibab@FreeBSD.org>
+
+-   Gordon Bergling <gbe@FreeBSD.org>
+
+-   Brandon Bergren <bdragon@FreeBSD.org>
+
+-   Tobias C. Berner <tcberner@FreeBSD.org>
+
+-   Pawel Biernacki <kaktus@FreeBSD.org>
+
+-   Tim Bishop <tdb@FreeBSD.org>
+
+-   Zbigniew Bodek <zbb@FreeBSD.org>
+
+-   Roman Bogorodskiy <novel@FreeBSD.org>
+
+-   Renato Botelho <garga@FreeBSD.org>
+
+-   Kevin Bowling <kbowling@FreeBSD.org>
+
+-   Sofian Brabez <sbz@FreeBSD.org>
+
+-   Edson Brandi <ebrandi@FreeBSD.org>
+
+-   Hartmut Brandt <harti@FreeBSD.org>
+
+-   Max Brazhnikov <makc@FreeBSD.org>
+
+-   David Bright <dab@FreeBSD.org>
+
+-   Antoine Brodin <antoine@FreeBSD.org>
+
+-   Diane Bruce <db@FreeBSD.org>
+
+-   Sean Bruno <sbruno@FreeBSD.org>
+
+-   Christian Brueffer <brueffer@FreeBSD.org>
+
+-   Ruslan Bukin <br@FreeBSD.org>
+
+-   Oleg Bulyzhin <oleg@FreeBSD.org>
+
+-   Jayachandran C. <jchandra@FreeBSD.org>
+
+-   Alonso Cárdenas Márquez <acm@FreeBSD.org>
+
+-   Sergio Carlavilla Delgado <carlavilla@FreeBSD.org>
+
+-   Pietro Cerutti <gahr@FreeBSD.org>
+
+-   Adrian Chadd <adrian@FreeBSD.org>
+
+-   Dmitry Chagin <dchagin@FreeBSD.org>
+
+-   Julien Charbon <jch@FreeBSD.org>
+
+-   Neel Chauhan <nc@FreeBSD.org>
+
+-   Fukang Chen <loader@FreeBSD.org>
+
+-   Alexander V. Chernikov <melifaro@FreeBSD.org>
+
+-   David Chisnall <theraven@FreeBSD.org>
+
+-   David C Somayajulu <davidcs@FreeBSD.org>
+
+-   Joe Marcus Clarke <marcus@FreeBSD.org>
+
+-   Robert Clausecker <fuz@FreeBSD.org>
+
+-   Lewis Cook <lcook@FreeBSD.org>
+
+-   Ngie Cooper <ngie@FreeBSD.org>
+
+-   Tijl Coosemans <tijl@FreeBSD.org>
+
+-   Raphael Kubo da Costa <rakuco@FreeBSD.org>
+
+-   Dave Cottlehuber <dch@FreeBSD.org>
+
+-   Alan L. Cox <alc@FreeBSD.org>
+
+-   Olivier Cochard-Labbé <olivier@FreeBSD.org>
+
+-   Martin Cracauer <cracauer@FreeBSD.org>
+
+-   Jeb Cramer <jeb@FreeBSD.org>
+
+-   Rebecca Cran <bcran@FreeBSD.org>
+
+-   Cheng Cui <cc@FreeBSD.org>
+
+-   Joel Dahl <joel@FreeBSD.org>
+
+-   Alfredo Dal’Ava Junior <alfredo@FreeBSD.org>
+
+-   Baptiste Daroussin <bapt@FreeBSD.org>
+
+-   Ceri Davies <ceri@FreeBSD.org>
+
+-   Brad Davis <brd@FreeBSD.org>
+
+-   Brooks Davis <brooks@FreeBSD.org>
+
+-   Paweł Jakub Dawidek <pjd@FreeBSD.org>
+
+-   John W. DeBoskey <jwd@FreeBSD.org>
+
+-   Johannes M. Dieterich <jmd@FreeBSD.org>
+
+-   Vasil Dimov <vd@FreeBSD.org>
+
+-   Alexey Dokuchaev <danfe@FreeBSD.org>
+
+-   Lutz Donnerhacke <donner@FreeBSD.org>
+
+-   Bryan Drewery <bdrewery@FreeBSD.org>
+
+-   Garance A Drosehn <gad@FreeBSD.org>
+
+-   Vladimir Druzenko <vvd@FreeBSD.org>
+
+-   Kornel Dulęba <kd@FreeBSD.org>
+
+-   Alex Dupre <ale@FreeBSD.org>
+
+-   Daniel Eischen <deischen@FreeBSD.org>
+
+-   Julian Elischer <julian@FreeBSD.org>
+
+-   Andrey V. Elsukov <ae@FreeBSD.org>
+
+-   Daniel Engberg <diizzy@FreeBSD.org>
+
+-   Lars Engels <lme@FreeBSD.org>
+
+-   Stefan Eßer <se@FreeBSD.org>
+
+-   Jason Evans <jasone@FreeBSD.org>
+
+-   Kyle Evans <kevans@FreeBSD.org>
+
+-   Guido Falsi <madpilot@FreeBSD.org>
+
+-   Dominic Fandrey <kami@FreeBSD.org>
+
+-   Sean C. Farley <scf@FreeBSD.org>
+
+-   Babak Farrokhi <farrokhi@FreeBSD.org>
+
+-   Matthias Fechner <mfechner@FreeBSD.org>
+
+-   Aleksandr Fedorov <afedorov@FreeBSD.org>
+
+-   Mark Felder <feld@FreeBSD.org>
+
+-   Landon Fuller <landonf@FreeBSD.org>
+
+-   Tony Finch <fanf@FreeBSD.org>
+
+-   Matthew Fleming <mdf@FreeBSD.org>
+
+-   Marc Fonvieille <blackend@FreeBSD.org>
+
+-   Bernhard Fröhlich <decke@FreeBSD.org>
+
+-   Stanislav Galabov <sgalabov@FreeBSD.org>
+
+-   Richard Gallamore <ultima@FreeBSD.org>
+
+-   Andrew Gallatin <gallatin@FreeBSD.org>
+
+-   Andriy Gapon <avg@FreeBSD.org>
+
+-   Beat Gätzi <beat@FreeBSD.org>
+
+-   Daniel Geržo <danger@FreeBSD.org>
+
+-   Simon J. Gerraty <sjg@FreeBSD.org>
+
+-   Justin T. Gibbs <gibbs@FreeBSD.org>
+
+-   Pedro Giffuni <pfg@FreeBSD.org>
+
+-   Palle Girgensohn <girgen@FreeBSD.org>
+
+-   Michael Gmelin <grembo@FreeBSD.org>
+
+-   Mikolaj Golub <trociny@FreeBSD.org>
+
+-   Danilo Egêa Gondolfo <danilo@FreeBSD.org>
+
+-   Dmitri Goutnik <dmgk@FreeBSD.org>
+
+-   Stephen Gregoratto <sg@FreeBSD.org>
+
+-   Peter Grehan <grehan@FreeBSD.org>
+
+-   Rodney W. Grimes <rgrimes@FreeBSD.org>
+
+-   Jamie Gritton <jamie@FreeBSD.org>
+
+-   Adriaan de Groot <adridg@FreeBSD.org>
+
+-   Eugene Grosbein <eugen@FreeBSD.org>
+
+-   Alexandre C. Guimaraes <rigoletto@FreeBSD.org>
+
+-   Anish Gupta <anish@FreeBSD.org>
+
+-   John-Mark Gurney <jmg@FreeBSD.org>
+
+-   Mateusz Guzik <mjg@FreeBSD.org>
+
+-   Jason E. Hale <jhale@FreeBSD.org>
+
+-   Jason A. Harmening <jah@FreeBSD.org>
+
+-   Steven Hartland <smh@FreeBSD.org>
+
+-   Emanuel Haupt <ehaupt@FreeBSD.org>
+
+-   Björn Heidotting <bhd@FreeBSD.org>
+
+-   Jason Helfman <jgh@FreeBSD.org>
+
+-   Wen Heping <wen@FreeBSD.org>
+
+-   Justin Hibbits <jhibbits@FreeBSD.org>
+
+-   John Hixson <jhixson@FreeBSD.org>
+
+-   Peter Holm <pho@FreeBSD.org>
+
+-   Oskar Holmlund <oh@FreeBSD.org>
+
+-   Mitchell Horne <mhorne@FreeBSD.org>
+
+-   Olivier Houchard <cognet@FreeBSD.org>
+
+-   Po-Chuan Hsieh <sunpoet@FreeBSD.org>
+
+-   Li-Wen Hsu <lwhsu@FreeBSD.org>
+
+-   Wei Hu <whu@FreeBSD.org>
+
+-   Zhenlei Huang <zlei@FreeBSD.org>
+
+-   Jordan K. Hubbard <jkh@FreeBSD.org>
+
+-   Stephen Hurd <shurd@FreeBSD.org>
+
+-   Rainer Hurling <rhurlin@FreeBSD.org>
+
+-   Davide Italiano <davide@FreeBSD.org>
+
+-   Koichiro Iwao <meta@FreeBSD.org>
+
+-   Kurt Jaeger <pi@FreeBSD.org>
+
+-   Daniel Ebdrup Jensen <debdrup@FreeBSD.org>
+
+-   Peter Jeremy <peterj@FreeBSD.org>
+
+-   Mark Johnston <markj@FreeBSD.org>
+
+-   Tom Jones <thj@FreeBSD.org>
+
+-   Matt Joras <mjoras@FreeBSD.org>
+
+-   Eric Joyner <erj@FreeBSD.org>
+
+-   Allan Jude <allanjude@FreeBSD.org>
+
+-   Alexander Kabaev <kan@FreeBSD.org>
+
+-   Benjamin Kaduk <bjk@FreeBSD.org>
+
+-   Poul-Henning Kamp <phk@FreeBSD.org>
+
+-   Sergey Kandaurov <pluknet@FreeBSD.org>
+
+-   Mike Karels <karels@FreeBSD.org>
+
+-   Patrick Kelsey <pkelsey@FreeBSD.org>
+
+-   Yasuhiro Kimura <yasu@FreeBSD.org>
+
+-   Piotr Kubaj <pkubaj@FreeBSD.org>
+
+-   Tilman Keskinöz <arved@FreeBSD.org>
+
+-   Tim Kientzle <kientzle@FreeBSD.org>
+
+-   Stephen J. Kiernan <stevek@FreeBSD.org>
+
+-   Jung-uk Kim <jkim@FreeBSD.org>
+
+-   Jakub Klama <jceel@FreeBSD.org>
+
+-   Kai Knoblich <kai@FreeBSD.org>
+
+-   Corvin Köhne <corvink@FreeBSD.org>
+
+-   Vladimir Kondratyev <wulf@FreeBSD.org>
+
+-   Johann Kois <jkois@FreeBSD.org>
+
+-   Maxim Konovalov <maxim@FreeBSD.org>
+
+-   Tobias Kortkamp <tobik@FreeBSD.org>
+
+-   Joseph Koshy <jkoshy@FreeBSD.org>
+
+-   Alex Kozlov <ak@FreeBSD.org>
+
+-   Sergey Kozlov <skozlov@FreeBSD.org>
+
+-   Svatopluk Kraus <skra@FreeBSD.org>
+
+-   Steven Kreuzer <skreuzer@FreeBSD.org>
+
+-   Rajesh Kumar M A <rajeshasp@FreeBSD.org>
+
+-   René Ladan <rene@FreeBSD.org>
+
+-   Dan Langille <dvl@FreeBSD.org>
+
+-   Erwin Lansing <erwin@FreeBSD.org>
+
+-   Ganael Laplanche <martymac@FreeBSD.org>
+
+-   Dru Lavigne <dru@FreeBSD.org>
+
+-   Jeremie Le Hen <jlh@FreeBSD.org>
+
+-   Oliver Lehmann <oliver@FreeBSD.org>
+
+-   Greg Lehey <grog@FreeBSD.org>
+
+-   Alexander Leidinger <netchild@FreeBSD.org>
+
+-   Breno Leitao <leitao@FreeBSD.org>
+
+-   Achim Leubner <achim@FreeBSD.org>
+
+-   Don <truckman@FreeBSD.org>
+
+-   Greg Lewis <glewis@FreeBSD.org>
+
+-   Charlie Li <vishwin@FreeBSD.org>
+
+-   Qing Li <qingli@FreeBSD.org>
+
+-   Xin Li <delphij@FreeBSD.org>
+
+-   Tai-hwa Liang <avatar@FreeBSD.org>
+
+-   Ryan Libby <rlibby@FreeBSD.org>
+
+-   Isabell Long <issyl0@FreeBSD.org>
+
+-   Scott Long <scottl@FreeBSD.org>
+
+-   Jonathan T. Looney <jtl@FreeBSD.org>
+
+-   Warner Losh <imp@FreeBSD.org>
+
+-   Johannes Lundberg <johalun@FreeBSD.org>
+
+-   Leandro Lupori <luporl@FreeBSD.org>
+
+-   Juraj Lutter <otis@FreeBSD.org>
+
+-   Ermal Luçi <eri@FreeBSD.org>
+
+-   Wojciech Macek <wma@FreeBSD.org>
+
+-   Rick Macklem <rmacklem@FreeBSD.org>
+
+-   Vincenzo Maffione <vmaffione@FreeBSD.org>
+
+-   Bruce A. Mah <bmah@FreeBSD.org>
+
+-   Ruslan Makhmatkhanov <rm@FreeBSD.org>
+
+-   Juli Mallett <jmallett@FreeBSD.org>
+
+-   David Malone <dwmalone@FreeBSD.org>
+
+-   Nobutaka MANTANI <nobutaka@FreeBSD.org>
+
+-   Dmitry Marakasov <amdmi3@FreeBSD.org>
+
+-   Koop Mast <kwm@FreeBSD.org>
+
+-   Ed Maste <emaste@FreeBSD.org>
+
+-   Martin Matuska <mm@FreeBSD.org>
+
+-   Slava Shwartsman <slavash@FreeBSD.org>
+
+-   Stephen McConnell <slm@FreeBSD.org>
+
+-   Kirk McKusick <mckusick@FreeBSD.org>
+
+-   Jared McNeill <jmcneill@FreeBSD.org>
+
+-   Michal Meloun <mmel@FreeBSD.org>
+
+-   Julio Merino <jmmv@FreeBSD.org>
+
+-   Kashyap D. Desai <kadesai@FreeBSD.org>
+
+-   Kenneth D. Merry <ken@FreeBSD.org>
+
+-   Conrad Meyer <cem@FreeBSD.org>
+
+-   Dirk Meyer <dinoex@FreeBSD.org>
+
+-   Dries Michiels <driesm@FreeBSD.org>
+
+-   Joseph Mingrone <jrm@FreeBSD.org>
+
+-   Ryan Moeller <freqlabs@FreeBSD.org>
+
+-   Christoph Moench-Tegeder <cmt@FreeBSD.org>
+
+-   Stephen Montgomery-Smith <stephen@FreeBSD.org>
+
+-   Marcel Moolenaar <marcel@FreeBSD.org>
+
+-   Doug Moore <dougm@FreeBSD.org>
+
+-   Dmitry Morozovsky <marck@FreeBSD.org>
+
+-   Alexander Motin <mav@FreeBSD.org>
+
+-   Jesper Schmitz Mouridsen <jsm@FreeBSD.org>
+
+-   Thomas Munro <tmunro@FreeBSD.org>
+
+-   Mark Murray <markm@FreeBSD.org>
+
+-   Robert Nagy <rnagy@FreeBSD.org>
+
+-   Edward Tomasz Napierała <trasz@FreeBSD.org>
+
+-   Neel Natu <neel@FreeBSD.org>
+
+-   Alexander Nedotsukov <bland@FreeBSD.org>
+
+-   Jochen Neumeister <joneum@FreeBSD.org>
+
+-   George V. Neville-Neil <gnn@FreeBSD.org>
+
+-   Ka Ho Ng <khng@FreeBSD.org>
+
+-   Tycho Nightingale <tychon@FreeBSD.org>
+
+-   David O’Brien <obrien@FreeBSD.org>
+
+-   Nick O’Brien <nick@FreeBSD.org>
+
+-   Jimmy Olgeni <olgeni@FreeBSD.org>
+
+-   Sergey A. Osokin <osa@FreeBSD.org>
+
+-   Rodrigo Osorio <rodrigo@FreeBSD.org>
+
+-   Philip Paeps <philip@FreeBSD.org>
+
+-   Felix Palmen <zirias@FreeBSD.org>
+
+-   Hiren Panchasara <hiren@FreeBSD.org>
+
+-   Yuri Pankov <yuripv@FreeBSD.org>
+
+-   Dima Panov <fluffy@FreeBSD.org>
+
+-   Navdeep Parhar <np@FreeBSD.org>
+
+-   Roger Pau Monné <royger@FreeBSD.org>
+
+-   Rui Paulo <rpaulo@FreeBSD.org>
+
+-   Mikhail Pchelin <misha@FreeBSD.org>
+
+-   Jean-Sébastien Pédron <dumbbell@FreeBSD.org>
+
+-   Mark Peek <mp@FreeBSD.org>
+
+-   Colin Percival <cperciva@FreeBSD.org>
+
+-   Alfred Perlstein <alfred@FreeBSD.org>
+
+-   Christian S.J. Peron <csjp@FreeBSD.org>
+
+-   Graham Perrin <grahamperrin@FreeBSD.org>
+
+-   Gerald Pfeifer <gerald@FreeBSD.org>
+
+-   D Scott Phillips <scottph@FreeBSD.org>
+
+-   Mateusz Piotrowski <0mp@FreeBSD.org>
+
+-   Luca Pizzamiglio <pizzamig@FreeBSD.org>
+
+-   Ravi Pokala <rpokala@FreeBSD.org>
+
+-   Gleb Popov <arrowd@FreeBSD.org>
+
+-   Kristof Provost <kp@FreeBSD.org>
+
+-   Thomas Quinot <thomas@FreeBSD.org>
+
+-   Doug Rabson <dfr@FreeBSD.org>
+
+-   Muhammad Moinur Rahman <bofh@FreeBSD.org>
+
+-   Santhosh Raju <fox@FreeBSD.org>
+
+-   Attilio Rao <attilio@FreeBSD.org>
+
+-   Chris Rees <crees@FreeBSD.org>
+
+-   Michael Reifenberger <mr@FreeBSD.org>
+
+-   Benedict Reuschling <bcr@FreeBSD.org>
+
+-   Tom Rhodes <trhodes@FreeBSD.org>
+
+-   Benno Rice <benno@FreeBSD.org>
+
+-   Alex Richardson <arichardson@FreeBSD.org>
+
+-   Luigi Rizzo <luigi@FreeBSD.org>
+
+-   Jeff Roberson <jeff@FreeBSD.org>
+
+-   Ollivier Robert <roberto@FreeBSD.org>
+
+-   Craig Rodrigues <rodrigc@FreeBSD.org>
+
+-   Larry Rosenman <ler@FreeBSD.org>
+
+-   Craig Leres <leres@FreeBSD.org>
+
+-   Bartek Rutkowski <robak@FreeBSD.org>
+
+-   Aleksandr Rybalko <ray@FreeBSD.org>
+
+-   Andrew Rybchenko <arybchik@FreeBSD.org>
+
+-   Alex Samorukov <samm@FreeBSD.org>
+
+-   Hiroki Sato <hrs@FreeBSD.org>
+
+-   Lorenzo Salvadore <salvadore@FreeBSD.org>
+
+-   Richard Scheffenegger <rscheff@FreeBSD.org>
+
+-   Wolfram Schneider <wosch@FreeBSD.org>
+
+-   Cy Schubert <cy@FreeBSD.org>
+
+-   Jens Schweikhardt <schweikh@FreeBSD.org>
+
+-   Matthew Seaman <matthew@FreeBSD.org>
+
+-   Thomas-Martin Seck <tmseck@FreeBSD.org>
+
+-   Stanislav Sedov <stas@FreeBSD.org>
+
+-   Hans Petter Selasky <hselasky@FreeBSD.org>
+
+-   Lev Serebryakov <lev@FreeBSD.org>
+
+-   Phil Shafer <phil@FreeBSD.org>
+
+-   Gregory Neil Shapiro <gshapiro@FreeBSD.org>
+
+-   Shteryana Shopova <syrinx@FreeBSD.org>
+
+-   Vanilla I. Shu <vanilla@FreeBSD.org>
+
+-   Ashish SHUKLA <ashish@FreeBSD.org>
+
+-   Alfonso S. Siciliano <asiciliano@FreeBSD.org>
+
+-   Mike Silbersack <silby@FreeBSD.org>
+
+-   Chuck Silvers <chs@FreeBSD.org>
+
+-   Bruce M. Simpson <bms@FreeBSD.org>
+
+-   Dmitry Sivachenko <demon@FreeBSD.org>
+
+-   Florian Smeets <flo@FreeBSD.org>
+
+-   Gleb Smirnoff <glebius@FreeBSD.org>
+
+-   Ken Smith <kensmith@FreeBSD.org>
+
+-   Dag-Erling Smørgrav <des@FreeBSD.org>
+
+-   Maxim Sobolev <sobomax@FreeBSD.org>
+
+-   Alan Somers <asomers@FreeBSD.org>
+
+-   Toomas Soome <tsoome@FreeBSD.org>
+
+-   Luiz Otavio O Souza <loos@FreeBSD.org>
+
+-   Bernard Spil <brnrd@FreeBSD.org>
+
+-   Ulrich Spörlein <uqs@FreeBSD.org>
+
+-   Vsevolod Stakhov <vsevolod@FreeBSD.org>
+
+-   Piotr Paweł Stefaniak <pstef@FreeBSD.org>
+
+-   Ryan Steinmetz <zi@FreeBSD.org>
+
+-   Lawrence Stewart <lstewart@FreeBSD.org>
+
+-   Randall R. Stewart <rrs@FreeBSD.org>
+
+-   Ryan Stone <rstone@FreeBSD.org>
+
+-   Søren Straarup <xride@FreeBSD.org>
+
+-   Marius Strobl <marius@FreeBSD.org>
+
+-   Carlo Strub <cs@FreeBSD.org>
+
+-   Yoshihiro Takahashi <nyan@FreeBSD.org>
+
+-   Hiroki Tagato <tagattie@FreeBSD.org>
+
+-   TAKATSU Tomonari <tota@FreeBSD.org>
+
+-   Romain Tartière <romain@FreeBSD.org>
+
+-   Nuno Teixeira <eduardo@FreeBSD.org>
+
+-   Devin Teske <dteske@FreeBSD.org>
+
+-   Mikhail Teterin <mi@FreeBSD.org>
+
+-   Gordon Tetlow <gordon@FreeBSD.org>
+
+-   Fabien Thomas <fabient@FreeBSD.org>
+
+-   Thierry Thomas <thierry@FreeBSD.org>
+
+-   Andrew Thompson <thompsa@FreeBSD.org>
+
+-   Jilles Tjoelker <jilles@FreeBSD.org>
+
+-   Andreas Tobler <andreast@FreeBSD.org>
+
+-   Ganbold Tsagaankhuu <ganbold@FreeBSD.org>
+
+-   Michael Tuexen <tuexen@FreeBSD.org>
+
+-   Chuck Tuffli <chuck@FreeBSD.org>
+
+-   Eric Turgeon <ericbsd@FreeBSD.org>
+
+-   Andrew Turner <andrew@FreeBSD.org>
+
+-   Hajimu UMEMOTO <ume@FreeBSD.org>
+
+-   Fedor Uporov <fsu@FreeBSD.org>
+
+-   Mikaël Urankar <mikael@FreeBSD.org>
+
+-   Imre Vadasz <ivadasz@FreeBSD.org>
+
+-   Emmanuel Vadot <manu@FreeBSD.org>
+
+-   Eric van Gyzen <vangyzen@FreeBSD.org>
+
+-   Ram Vegesna <ram@FreeBSD.org>
+
+-   Bryan Venteicher <bryanv@FreeBSD.org>
+
+-   Yuri Victorovich <yuri@FreeBSD.org>
+
+-   Nicola Vitale <nivit@FreeBSD.org>
+
+-   Andriy Voskoboinyk <avos@FreeBSD.org>
+
+-   Kai Wang <kaiw@FreeBSD.org>
+
+-   Takanori Watanabe <takawata@FreeBSD.org>
+
+-   Robert Watson <rwatson@FreeBSD.org>
+
+-   Adam Weinberger <adamw@FreeBSD.org>
+
+-   Christian Weisgerber <naddy@FreeBSD.org>
+
+-   Peter Wemm <peter@FreeBSD.org>
+
+-   Nathan Whitehorn <nwhitehorn@FreeBSD.org>
+
+-   Ben Widawsky <bwidawsky@FreeBSD.org>
+
+-   Robert Wing <rew@FreeBSD.org>
+
+-   Konrad Witaszczyk <def@FreeBSD.org>
+
+-   Marcin Wojtas <mw@FreeBSD.org>
+
+-   Garrett Wollman <wollman@FreeBSD.org>
+
+-   Ben Woods <woodsb02@FreeBSD.org>
+
+-   Jörg Wunsch <joerg@FreeBSD.org>
+
+-   Guangyuan Yang <ygy@FreeBSD.org>
+
+-   Maksim Yevmenkin <emax@FreeBSD.org>
+
+-   Pyun YongHyeon <yongari@FreeBSD.org>
+
+-   Ruey-Cherng Yu <rcyu@FreeBSD.org>
+
+-   Mariusz Zaborski <oshogbo@FreeBSD.org>
+
+-   Thomas Zander <riggs@FreeBSD.org>
+
+-   Vinícius Zavam <egypcio@FreeBSD.org>
+
+-   Marko Zec <zec@FreeBSD.org>
+
+-   Bjoern A. Zeeb <bz@FreeBSD.org>
+
+-   Michael Zhilin <mizhka@FreeBSD.org>
+
+-   Torsten Zuehlsdorff <tz@FreeBSD.org>
+
+-   Dmitry Salychev <dsl@FreeBSD.org>
+
+-   Ronald Klop <ronald@FreeBSD.org>
+
+-   Christos Margiolis <christos@FreeBSD.org>
+
+2. Core Team Alumni
+
+The following people were members of the FreeBSD core team during the
+periods indicated. We thank them for their past efforts in the service
+of the FreeBSD project.
+
+In rough reverse chronological order:
+
+-   Mark Johnston <markj@FreeBSD.org> (2020 - 2022)
+
+-   Kyle Evans <kevans@FreeBSD.org> (2020 - 2022)
+
+-   Sean Chittenden <seanc@FreeBSD.org> (2018 - 2022)
+
+-   Kris Moore <kmoore@FreeBSD.org> (2016 - 2020)
+
+-   John Baldwin <jhb@FreeBSD.org> (2002 - 2006, 2010 - 2014, 2016 -
+    2020)
+
+-   Jeff Roberson <jeff@FreeBSD.org> (2018 - 2020)
+
+-   Brooks Davis <brooks@FreeBSD.org> (2006 - 2012, 2018 - 2020)
+
+-   Benedict Reuschling <bcr@FreeBSD.org> (2016 - 2020)
+
+-   Allan Jude <allanjude@FreeBSD.org> (2016 - 2020)
+
+-   Baptiste Daroussin <bapt@FreeBSD.org> (2016 - 2018, 2020 - 2022)
+
+-   Ed Maste <emaste@FreeBSD.org> (2016 - 2018, 2020 - 2022)
+
+-   George V. Neville-Neil <gnn@FreeBSD.org> (2006 - 2010, 2016 - 2018,
+    2020 - 2022)
+
+-   Hiroki Sato <hrs@FreeBSD.org> (2006 - 2022)
+
+-   Benno Rice <benno@FreeBSD.org> (2016 - 2018)
+
+-   Thomas Abthorpe <tabthorpe@FreeBSD.org> (2012 - 2014)
+
+-   Konstantin Belousov <kib@FreeBSD.org> (2010 - 2014)
+
+-   Martin Wilke <miwi@FreeBSD.org> (2012 - 2014)
+
+-   Attilio Rao <attilio@FreeBSD.org> (2012)
+
+-   Wilko Bulte <wilko@FreeBSD.org> (2006 - 2012)
+
+-   Warner Losh <imp@FreeBSD.org> (2000 - 2008, 2010 - 2012, 2018 -
+    2022)
+
+-   Pav Lucistnik <pav@FreeBSD.org> (2010 - 2012)
+
+-   Colin Percival <cperciva@FreeBSD.org> (2010 - 2012)
+
+-   Robert Watson <rwatson@FreeBSD.org> (2000 - 2012)
+
+-   Giorgos Keramidas <keramida@FreeBSD.org> (2006 - 2010)
+
+-   Kris Kennaway <kris@FreeBSD.org> (2008 - 2010)
+
+-   Murray Stokely <murray@FreeBSD.org> (2002 - 2010)
+
+-   Peter Wemm <peter@FreeBSD.org> (1995 - 2006, 2008 - 2010)
+
+-   Wes Peters <wes@FreeBSD.org> (2002 - 2008)
+
+-   Mark Murray <markm@FreeBSD.org> (2002 - 2006)
+
+-   Jun Kuriyama <kuriyama@FreeBSD.org> (2002 - 2006)
+
+-   Scott Long <scottl@FreeBSD.org> (2004 - 2005, 2020 - 2022)
+
+-   Greg Lehey <grog@FreeBSD.org> (2000 - 2004)
+
+-   David Greenman <dg@FreeBSD.org> (1992 - 2002)
+
+-   Doug Rabson <dfr@FreeBSD.org> (1999 - 2002)
+
+-   Michael Smith <msmith@FreeBSD.org> (2000 - 2002)
+
+-   Jordan K. Hubbard <jkh@FreeBSD.org> (1992 - 2002)
+
+-   Satoshi Asami <asami@FreeBSD.org> (1993 - 2001)
+
+-   Andrey A. Chernov <ache@FreeBSD.org> (1993 - 2000)
+
+-   Jonathan M. Bresler <jmb@FreeBSD.org> (1993 - 2000)
+
+-   Bruce Evans <bde@FreeBSD.org> (1992 - 2000)
+
+-   Justin T. Gibbs <gibbs@FreeBSD.org> (1993 - 2000)
+
+-   Rich Murphey <rich@FreeBSD.org> (1994 - 2000)
+
+-   Poul-Henning Kamp <phk@FreeBSD.org> (1992 - 2000)
+
+-   Gary Palmer <gpalmer@FreeBSD.org> (1993 - 2000)
+
+-   Søren Schmidt <sos@FreeBSD.org> (1993 - 2000)
+
+-   Garrett Wollman <wollman@FreeBSD.org> (1993 - 2000)
+
+-   Jörg Wunsch <joerg@FreeBSD.org> (1995 - 2000)
+
+-   John Polstra <jdp@FreeBSD.org> (1997 - 2000)
+
+-   Guido van Rooij <guido@FreeBSD.org> (1995 - 1999)
+
+-   John Dyson <dyson@FreeBSD.org> (1993 - 1998)
+
+-   Nate Williams <nate@FreeBSD.org> (1992 - 1996)
+
+-   Rodney W. Grimes <rgrimes@FreeBSD.org> (1992 - 1995)
+
+-   Andreas Schulz <ats@FreeBSD.org> (1992 - 1995)
+
+-   Geoff Rehmet <csgr@FreeBSD.org> (1993 - 1995)
+
+-   Paul Richards <paul@FreeBSD.org> (1992 - 1995)
+
+-   Scott Mace <smace@FreeBSD.org> (1993 - 1994)
+
+-   Andrew Moore <alm@FreeBSD.org> (1993 - 1994)
+
+-   Christoph Robitschko <chmr@FreeBSD.org> (1993 - 1994)
+
+-   J.T. Conklin <jtc@FreeBSD.org> (1992 - 1993)
+
+3. Development Team Alumni
+
+The following people were members of the FreeBSD development team during
+the periods indicated. We thank them for their past efforts in the
+service of the FreeBSD project.
+
+In rough reverse chronological order:
+
+-   Sam Leffler <sam@FreeBSD.org> (2002 - 2023)
+
+-   Eitan Adler <eadler@FreeBSD.org> (2011 - 2023)
+
+-   Nick Hibma <n_hibma@FreeBSD.org> (1998 - 2023)
+
+-   Ryusuke SUZUKI <ryusuke@FreeBSD.org> (2009 - 2023)
+
+-   Steve Wills <swills@FreeBSD.org> (2010 - 2023)
+
+-   Pau Amma <pauamma@FreeBSD.org> (2022 - 2023)
+
+-   Oleksandr Tymoshenko <gonzo@FreeBSD.org> (2008 - 2022)
+
+-   Barbara Guida <bar@FreeBSD.org> (2012 - 2022)
+
+-   Niclas Zeising <zeising@FreeBSD.org> (2012 - 2022)
+
+-   Bradley T. Hughes <bhughes@FreeBSD.org> (2017 - 2022)
+
+-   Björn Heidotting <bhd@FreeBSD.org> (2015 - 2022)
+
+-   Oliver Hauer <ohauer@FreeBSD.org> (2010 - 2022)
+
+-   Boris Samorodov <bsam@FreeBSD.org> (2006 - 2022)
+
+-   William Grzybowski <wg@FreeBSD.org> ( - 2022)
+
+-   Mark Linimon <linimon@FreeBSD.org> (2003 - 2022)
+
+-   Michael Landin <mich@FreeBSD.org> (2003 - 2022)
+
+-   David Thiel <lx@FreeBSD.org> (2006 - 2022)
+
+-   Kubilay Kocak <koobs@FreeBSD.org> (2012 - 2022)
+
+-   Max Khon <fjoe@FreeBSD.org> (2001 - 2021)
+
+-   Ian Lepore <ian@FreeBSD.org> (2013 - 2021)
+
+-   Jun Kuriyama <kuriyama@FreeBSD.org> (1998 - 2021)
+
+-   Warren Block <wblock@FreeBSD.org> (2011 - 2021)
+
+-   Gábor Kövesdán <gabor@FreeBSD.org> (2006 - 2021)
+
+-   Sevan Janiyan <sevan@FreeBSD.org> (2016 - 2021)
+
+-   Frederic Culot <culot@FreeBSD.org> (2010 - 2021)
+
+-   Julien Laffaye <jlaffaye@FreeBSD.org> (2011 - 2021)
+
+-   Kris Moore <kmoore@FreeBSD.org> (2009 - 2021)
+
+-   Nikolai Lifanov <lifanov@FreeBSD.org> (2016 - 2021)
+
+-   Martin Wilke <miwi@FreeBSD.org> (2006 - 2021)
+
+-   Josh Paetzel <jpaetzel@FreeBSD.org> (2008 - 2021)
+
+-   Marcelo Araujo <araujo@FreeBSD.org> (2007 - 2021)
+
+-   Ed Schouten <ed@FreeBSD.org> (2008 - 2020)
+
+-   Mahdi Mokhtari <mmokhi@FreeBSD.org> (2017 - 2020)
+
+-   Akinori MUSHA <knu@FreeBSD.org> (2000 - 2020)
+
+-   Carlos J. Puga Medina <cpm@FreeBSD.org> (2015 - 2020)
+
+-   Philippe Audeoud <jadawin@FreeBSD.org> (2008 - 2020)
+
+-   Matthew Ahrens <mahrens@FreeBSD.org> (2016 - 2020)
+
+-   Grzegorz Blach <gblach@FreeBSD.org> (2012 - 2020)
+
+-   Sean Chittenden <seanc@FreeBSD.org> (2002 - 2020)
+
+-   Zach Leslie <zleslie@FreeBSD.org> (2017 - 2020)
+
+-   David Naylor <dbn@FreeBSD.org> (2013 - 2020)
+
+-   Garrett Wollman <wollman@FreeBSD.org> (1993 - 2020)
+
+-   Johan van Selst <johans@FreeBSD.org> (2006 - 2019)
+
+-   Remko Lodder <remko@FreeBSD.org> (2004 - 2019)
+
+-   Andrej Zverev <az@FreeBSD.org> (2005 - 2019)
+
+-   Bruce Evans <bde@FreeBSD.org> (1994 - 2019)
+
+-   Murray Stokely <murray@FreeBSD.org> (2000 - 2019)
+
+-   Taras Korenko <taras@FreeBSD.org> ( - 2019)
+
+-   Simon L. B. Nielsen <simon@FreeBSD.org> (2003 - 2019)
+
+-   Manolis Kiagias <manolis@FreeBSD.org> ( - 2019)
+
+-   Gábor Páli <pgj@FreeBSD.org> (2009 - 2019)
+
+-   Michael Dexter <dexter@FreeBSD.org> (2018 - 2019)
+
+-   Anton Berezin <tobez@FreeBSD.org> (2001 - 2019)
+
+-   Eric Badger <badger@FreeBSD.org> (2016 - 2019)
+
+-   Zbigniew Bodek <zbb@FreeBSD.org> (2013 - 2019)
+
+-   John W. DeBoskey <jwd@FreeBSD.org> (2000 - 2019)
+
+-   Daniel Eischen <deischen@FreeBSD.org> (1999 - 2019)
+
+-   Tony Finch <fanf@FreeBSD.org> (2002 - 2019)
+
+-   Justin T. Gibbs <gibbs@FreeBSD.org> (1994 - 2019)
+
+-   Ermal Luçi <eri@FreeBSD.org> (2008 - 2019)
+
+-   Julio Merino <jmmv@FreeBSD.org> (2013 - 2019)
+
+-   Kurt Lidl <lidl@FreeBSD.org> (2015 - 2019)
+
+-   Neel Natu <neel@FreeBSD.org> (2009 - 2019)
+
+-   Alfred Perlstein <alfred@FreeBSD.org> (1999 - 2019)
+
+-   Thomas Quinot <thomas@FreeBSD.org> (2002 - 2019)
+
+-   Matthew Rezny <rezny@FreeBSD.org> (2017 - 2019)
+
+-   Luigi Rizzo <luigi@FreeBSD.org> (1998 - 2019)
+
+-   Craig Rodrigues <rodrigc@FreeBSD.org> (2005 - 2019)
+
+-   Stanislav Sedov <stas@FreeBSD.org> (2006 - 2019)
+
+-   Andrew Thompson <thompsa@FreeBSD.org> (2005 - 2019)
+
+-   Imre Vadasz <ivadasz@FreeBSD.org> (2016 - 2019)
+
+-   Kai Wang <kaiw@FreeBSD.org> (2014 - 2019)
+
+-   Pyun YongHyeon <yongari@FreeBSD.org> (2004 - 2019)
+
+-   Benno Rice <benno@FreeBSD.org> (2000 - 2018)
+
+-   Konrad Witaszczyk <def@FreeBSD.org> (2016 - 2018)
+
+-   Jeb Cramer <jeb@FreeBSD.org> (2018 - 2018)
+
+-   Jim Harris <jimharris@FreeBSD.org> (2011 - 2018)
+
+-   Tom Judge <tj@FreeBSD.org> (2012 - 2018)
+
+-   Dryice Liu <dryice@FreeBSD.org> (2006 - 2018)
+
+-   Lars Thegler <lth@FreeBSD.org> (2004 - 2018)
+
+-   Alberto Villa <avilla@FreeBSD.org> (2010 - 2018)
+
+-   Rusmir Dusko <nemysis@FreeBSD.org>(2013 - 2018)
+
+-   Eygene Ryabinkin <rea@FreeBSD.org> (2010 - 2018)
+
+-   Bryan Venteicher <bryanv@FreeBSD.org> (2012 - 2018)
+
+-   Daichi GOTO <daichi@FreeBSD.org> (2002 - 2018)
+
+-   Wesley Shields <wxs@FreeBSD.org> (2008 - 2018)
+
+-   Maho Nakata <maho@FreeBSD.org> (2002 - 2018)
+
+-   Pawel Pekala <pawel@FreeBSD.org> (2011 - 2018)
+
+-   Thomas Abthorpe <tabthorpe@FreeBSD.org> (2007 - 2018)
+
+-   Veniamin Gvozdikov <vg@FreeBSD.org> (2013 - 2018)
+
+-   Mike Silbersack <silby@FreeBSD.org> (2001 - 2018)
+
+-   Svatopluk Kraus <skra@FreeBSD.org> (2015 - 2018)
+
+-   Jonathan Anderson <jonathan@FreeBSD.org> (2010 - 2017)
+
+-   Kevin Lo <kevlo@FreeBSD.org> (1999 - 2017)
+
+-   Jason Unovitch <junovitch@FreeBSD.org> (2015 - 2017)
+
+-   Olivier Duchateau <olivierd@FreeBSD.org> (2012 - 2017)
+
+-   John Marino <marino@FreeBSD.org> (2013 - 2017)
+
+-   Shunsuke Akiyama <akiyama@FreeBSD.org> (2000 - 2017)
+
+-   Andre Oppermann <andre@FreeBSD.org> (2003 - 2017)
+
+-   Philippe Charnier <charnier@FreeBSD.org> (1997 - 2017)
+
+-   Cherry G. Mathew <cherry@FreeBSD.org> (2012 - 2017)
+
+-   David Schultz <das@FreeBSD.org> (2003 - 2017)
+
+-   David Christensen <davidch@FreeBSD.org> (2006 - 2017)
+
+-   Eric Davis <edavis@FreeBSD.org> (2013 - 2017)
+
+-   Mitsuru IWASAKI <iwasaki@FreeBSD.org> (1999 - 2017)
+
+-   Monthadar Al Jaberi <monthadar@FreeBSD.org> (2012 - 2017)
+
+-   Paul Saab <ps@FreeBSD.org> (2000 - 2017)
+
+-   Robert Noland <rnoland@FreeBSD.org> (2008 - 2017)
+
+-   Ruslan Ermilov <ru@FreeBSD.org> (1999 - 2017)
+
+-   Yoshiro Sanpei MIHIRA <sanpei@FreeBSD.org> (2000 - 2017)
+
+-   Sepherosa Ziehau <sephe@FreeBSD.org> (2007 - 2017)
+
+-   Stefan Farfeleder <stefanf@FreeBSD.org> (2004 - 2017)
+
+-   Takuya ASADA <syuu@FreeBSD.org> (2012 - 2017)
+
+-   Ben Laurie <benl@FreeBSD.org> (2011 - 2017)
+
+-   John Hay <jhay@FreeBSD.org> (1996 - 2017)
+
+-   Rafal Jaworowski <raj@FreeBSD.org> (2007 - 2017)
+
+-   David Chisnall <theraven@FreeBSD.org> (2011 - 2017)
+
+-   Stephan Uphoff <ups@FreeBSD.org> (2004 - 2017)
+
+-   Wojciech A. Koszek <wkoszek@FreeBSD.org> (2006 - 2017)
+
+-   Stephen McKay <mckay@FreeBSD.org> (1996 - 2017)
+
+-   Bernhard Schmidt <bschmidt@FreeBSD.org> (2010 - 2017)
+
+-   Damjan Marion <dmarion@FreeBSD.org> (2012 - 2017)
+
+-   Guy Helmer <ghelmer@FreeBSD.org> (1998 - 2017)
+
+-   Jack F. Vogel <jfv@FreeBSD.org> (2006 - 2017)
+
+-   Jaakko Heinonen <jh@FreeBSD.org> (2009 - 2017)
+
+-   Jared McNeill <jmcneill@FreeBSD.org> (2016 - 2017)
+
+-   Robert Millan <rmh@FreeBSD.org> (2011 - 2017)
+
+-   Stephen McConnell <slm@FreeBSD.org> (2014 - 2017)
+
+-   Konrad Jankowski <versus@FreeBSD.org> (2008 - 2017)
+
+-   Brian Somers <brian@FreeBSD.org> (1996 - 2017)
+
+-   Grzegorz Bernacki <gber@FreeBSD.org> (2011 - 2017)
+
+-   Gleb Kurtsou <gleb@FreeBSD.org> (2011 - 2017)
+
+-   Ivan Voras <ivoras@FreeBSD.org> (2008 - 2017)
+
+-   Roman Divacky <rdivacky@FreeBSD.org> (2008 - 2017)
+
+-   Yvan Vanhullebus <vanhu@FreeBSD.org> (2008 - 2017)
+
+-   Andrey Zonov <zont@FreeBSD.org> (2012 - 2017)
+
+-   Marcus von Appen <mva@FreeBSD.org> (2009 - 2017)
+
+-   Alonso Schaich <alonso@FreeBSD.org> (2014 - 2016)
+
+-   Edwin Groothuis <edwin@FreeBSD.org> (2002 - 2016)
+
+-   Erwin Lansing <erwin@FreeBSD.org> (2003 - 2016)
+
+-   Yen-Ming Lee <leeym@FreeBSD.org> (2002 - 2016)
+
+-   Michael Moll <mmoll@FreeBSD.org> (2015 - 2016)
+
+-   Sergey Matveychuk <sem@FreeBSD.org> (2004 - 2016)
+
+-   Brendan Fabeny <bf@FreeBSD.org> (2010 - 2015)
+
+-   Philip M. Gollucci <pgollucci@FreeBSD.org> (2008 - 2015)
+
+-   Ion-Mihai Tetcu <itetcu@FreeBSD.org> (2006 - 2015)
+
+-   Achim Leubner <achim@FreeBSD.org> (2013 - 2015)
+
+-   Ade Lovett <ade@FreeBSD.org> (2000 - 2015)
+
+-   Alexey Degtyarev <alexey@FreeBSD.org> (2013 - 2015)
+
+-   Henrik Brix Andersen <brix@FreeBSD.org> (2007 - 2015)
+
+-   Cheng-Lung Sung <clsung@FreeBSD.org> (2004 - 2015)
+
+-   Dennis Herrmann <dhn@FreeBSD.org> (2009 - 2015)
+
+-   Jase Thew <jase@FreeBSD.org> (2012 - 2015)
+
+-   Steven G. Kargl <kargl@FreeBSD.org> (2011 - 2015)
+
+-   Rong-En Fan <rafan@FreeBSD.org> (2006 - 2015)
+
+-   Sahil Tandon <sahil@FreeBSD.org> (2010 - 2015)
+
+-   Stefan Walter <stefan@FreeBSD.org> (2006 - 2015)
+
+-   Johannes Meixner <xmj@FreeBSD.org> (2014 - 2015)
+
+-   Giorgos Keramidas <keramida@FreeBSD.org> (2001 - 2014)
+
+-   Anders Nordby <anders@FreeBSD.org> (2001 - 2014)
+
+-   Beech Rintoul <beech@FreeBSD.org> (2007 - 2014)
+
+-   David Xu <davidxu@FreeBSD.org> (2002 - 2014)
+
+-   Greg Larkin <glarkin@FreeBSD.org> (2008 - 2014)
+
+-   Herve Quiroz <hq@FreeBSD.org> (2004 - 2014)
+
+-   Mário Sérgio Fujikawa Ferreira <lioux@FreeBSD.org> (2000 - 2014)
+
+-   Felippe de Meirelles Motta <lippe@FreeBSD.org> ( - 2014)
+
+-   Masafumi NAKANE <max@FreeBSD.org> ( - 2014)
+
+-   Jonathan Chu <milki@FreeBSD.org> (2013 - 2014)
+
+-   Armin Pirkovitsch <sperber@FreeBSD.org> (2012 - 2014)
+
+-   Munechika Sumikawa <sumikawa@FreeBSD.org> (2003 - 2014)
+
+-   Thomas-Martin Seck <tmseck@FreeBSD.org> (2013 - 2014)
+
+-   Carl Delsey <carl@FreeBSD.org> (2013 - 2014)
+
+-   Michael Johnson <ahze@FreeBSD.org> (2004 - 2013)
+
+-   Alexander Logvinov <avl@FreeBSD.org> (2009 - 2013)
+
+-   Chin-San Huang <chinsan@FreeBSD.org> (2007 - 2013)
+
+-   Clement Laforet <clement@FreeBSD.org> (2003 - 2013)
+
+-   Joseph S. Atkinson <jsa@FreeBSD.org> (2010 - 2013)
+
+-   Jean Milanez Melo <jmelo@FreeBSD.org> (2006 - 2013)
+
+-   Lars Balker Rasmussen <lbr@FreeBSD.org> (2006 - 2013)
+
+-   Makoto Matsushita <matusita@FreeBSD.org> (2001 - 2013)
+
+-   Jeremy Messenger <mezz@FreeBSD.org> (2004 - 2013)
+
+-   Matthew Jacob <mjacob@FreeBSD.org> (1997 - 2013)
+
+-   Motoyuki Konno <motoyuki@FreeBSD.org> (1998 - 2013)
+
+-   Pav Lucistnik <pav@FreeBSD.org> (2003 - 2013)
+
+-   Po-Chien Lin <pclin@FreeBSD.org> (2013)
+
+-   Qing Li <qingli@FreeBSD.org> (2005 - 2013)
+
+-   Peter Pentchev <roam@FreeBSD.org> (2000 - 2013)
+
+-   Michael Scheidell <scheidell@FreeBSD.org> (2011 - 2013)
+
+-   Sergey Skvortsov <skv@FreeBSD.org> (2001 - 2013)
+
+-   Sylvio Cesar Teixeira <sylvio@FreeBSD.org> (2009 - 2013)
+
+-   Yi-Jheng Lin <yzlin@FreeBSD.org> (2009 - 2013)
+
+-   Florent Thoumie <flz@FreeBSD.org> (2005 - 2013)
+
+-   Sean C. Farley <scf@FreeBSD.org> (2007 - 2012)
+
+-   Gary Jennejohn <gj@FreeBSD.org> (2003 - 2012)
+
+-   Kip Macy <kmacy@FreeBSD.org> (2005 - 2012)
+
+-   Zachary Loafman <zml@FreeBSD.org> (2009 - 2012)
+
+-   Bruce Cran <brucec@FreeBSD.org> (2010 - 2012)
+
+-   Ben Gray <bgray@FreeBSD.org> (2012)
+
+-   Randi Harper <randi@FreeBSD.org> (2010 - 2012)
+
+-   Zack Kirsch <zack@FreeBSD.org> (2010 - 2012)
+
+-   Erik Cederstrand <erik@FreeBSD.org> (2008 - 2012)
+
+-   J. Vicente Carrasco Vayá <carvay@FreeBSD.org> (2008 - 2012)
+
+-   Ulf Lilleengen <lulf@FreeBSD.org> (2007 - 2012)
+
+-   Marcus Alves Grando <mnag@FreeBSD.org> (2005 - 2012)
+
+-   Doug Barton (2000 - 2012)
+
+-   Wilko Bulte <wilko@FreeBSD.org> (2000 - 2012)
+
+-   Steve Price <steve@FreeBSD.org> (1996 - 2012)
+
+-   Weongyo Jeong <weongyo@FreeBSD.org> (2007 - 2011)
+
+-   Bernd Walter <ticso@FreeBSD.org> (2002 - 2011)
+
+-   Ralf S. Engelschall <rse@FreeBSD.org> (1997 - 2011)
+
+-   Max Laier <mlaier@FreeBSD.org> (2004 - 2011)
+
+-   Artem Belevich <art@FreeBSD.org> (2011)
+
+-   Giuseppe Pilichi <jacula@FreeBSD.org> (2010 - 2011)
+
+-   Tong Liu <nemoliu@FreeBSD.org> (2007 - 2011)
+
+-   Alexander Botero-Lowry <alexbl@FreeBSD.org> (2006 - 2011)
+
+-   Alejandro Pulver <alepulver@FreeBSD.org> (2006 - 2011)
+
+-   Tom McLaughlin <tmclaugh@FreeBSD.org> (2005 - 2011)
+
+-   Andrey Slusar <anray@FreeBSD.org> (2005 - 2011)
+
+-   Niels Heinen <niels@FreeBSD.org> (2004 - 2011)
+
+-   Sergei Kolobov <sergei@FreeBSD.org> (2003 - 2011)
+
+-   Maxime Henrion <mux@FreeBSD.org> (2002 - 2011)
+
+-   Hellmuth Michaelis <hm@FreeBSD.org> (1998 - 2011)
+
+-   Ying-Chieh Liao <ijliao@FreeBSD.org> (2001 - 2011)
+
+-   Marc G. Fournier <scrappy@FreeBSD.org> (1996 - 2011)
+
+-   Wes Peters <wes@FreeBSD.org> (1998 - 2010)
+
+-   Hidetoshi Shimokawa <simokawa@FreeBSD.org> (1999 - 2010)
+
+-   Stephane E. Potvin <sepotvin@FreeBSD.org> (2007 - 2010)
+
+-   Sam Leffler <sam@FreeBSD.org> (2002 - 2010)
+
+-   Norikatsu Shigemura <nork@FreeBSD.org> (2002 - 2010)
+
+-   Martin Blapp <mbr@FreeBSD.org> (2001 - 2010)
+
+-   Dima Dorfman <dd@FreeBSD.org> (2001 - 2010)
+
+-   Ana Kukec <anchie@FreeBSD.org> (2010)
+
+-   Oliver Fromme <olli@FreeBSD.org> (2008 - 2010)
+
+-   Takenori KATO <kato@FreeBSD.org> (1996 - 2010)
+
+-   Bruno Ducrot <bruno@FreeBSD.org> (2005 - 2010)
+
+-   Nick Barkas <snb@FreeBSD.org> (2009 - 2010)
+
+-   Chris Zimmernmann <cbzimmer@FreeBSD.org> (2009 - 2010)
+
+-   Michael Bushkov <bushman@FreeBSD.org> (2007 - 2010)
+
+-   Benjamin Close <benjsc@FreeBSD.org> (2007 - 2010)
+
+-   Rink Springer <rink@FreeBSD.org> (2006 - 2010)
+
+-   Paolo Pisati <piso@FreeBSD.org> (2006 - 2010)
+
+-   Frank J. Laszlo <laszlof@FreeBSD.org> (2006 - 2010)
+
+-   Vitaly Bogdanov <bvs@FreeBSD.org> (2005 - 2010)
+
+-   Simon Barner <barner@FreeBSD.org> (2005 - 2010)
+
+-   Volker Stolz <vs@FreeBSD.org> (2004 - 2010)
+
+-   Diomidis D. Spinellis <dds@FreeBSD.org> (2003 - 2010)
+
+-   Hye-Shik Chang <perky@FreeBSD.org> (2002 - 2010)
+
+-   Yoichi NAKAYAMA <yoichi@FreeBSD.org> (2001 - 2010)
+
+-   Tetsurou OKAZAKI <okazaki@FreeBSD.org> (2000 - 2010)
+
+-   Junho CHOI <cjh@FreeBSD.org> (2000 - 2010)
+
+-   Jesus Rodriguez <jesusr@FreeBSD.org> (1998 - 2010)
+
+-   Suleiman Souhlal <ssouhlal@FreeBSD.org> (2004 - 2009)
+
+-   Stacey Son <sson@FreeBSD.org> (2008 - 2009)
+
+-   Markus Brüffer <markus@FreeBSD.org> (2006 - 2009)
+
+-   Brian F. Feldman <green@FreeBSD.org> (1999 - 2009)
+
+-   Darren Reed <darrenr@FreeBSD.org> (1997 - 2009)
+
+-   Ariff Abdullah <ariff@FreeBSD.org> (2005 - 2009)
+
+-   Søren Schmidt <sos@FreeBSD.org> (1993 - 2009)
+
+-   Mike Makonnen <mtm@FreeBSD.org> (2003 - 2009)
+
+-   Matteo Riondato <matteo@FreeBSD.org> (2006 - 2009)
+
+-   Jonathan Chen <jon@FreeBSD.org> (2000 - 2009)
+
+-   Guido van Rooij <guido@FreeBSD.org> (1993 - 2009)
+
+-   Doug White <dwhite@FreeBSD.org> (1998 - 2009)
+
+-   Coleman Kane <cokane@FreeBSD.org> (2000 - 2009)
+
+-   Andrew Pantyukhin <sat@FreeBSD.org> (2006 - 2009)
+
+-   Jesus R. Camou <jcamou@FreeBSD.org> (2005 - 2009)
+
+-   Hideyuki KURASHINA <rushani@FreeBSD.org> (2003 - 2009)
+
+-   Nik Clayton <nik@FreeBSD.org> (1998 - 2009)
+
+-   Michael Nottebrock <lofi@FreeBSD.org> (2003 - 2009)
+
+-   Denis Peplin <den@FreeBSD.org> (2003 - 2009)
+
+-   Oliver Braun <obraun@FreeBSD.org> (2002 - 2009)
+
+-   Eric Anholt <anholt@FreeBSD.org> (2002 - 2009)
+
+-   Michael W. Lucas <mwlucas@FreeBSD.org> (2001 - 2009)
+
+-   Chern Lee <chern@FreeBSD.org> (2001 - 2009)
+
+-   Yoshio MITA <mita@FreeBSD.org> (2000 - 2009)
+
+-   Kazuo Horikawa <horikawa@FreeBSD.org> (2000 - 2009)
+
+-   Clive Lin <clive@FreeBSD.org> (2000 - 2009)
+
+-   Sebastien Gioria <gioria@FreeBSD.org> (1999 - 2009)
+
+-   Roman Kurakin <rik@FreeBSD.org> (2003 - 2008)
+
+-   Pierre Beyssac <pb@FreeBSD.org> (2003 - 2008)
+
+-   Mike Pritchard <mpp@FreeBSD.org> (1995 - 2008)
+
+-   Luoqi Chen <luoqi@FreeBSD.org> (1998 - 2008)
+
+-   Ian Dowse <iedowse@FreeBSD.org> (2000 - 2008)
+
+-   Thomas Gellekum <tg@FreeBSD.org> (1995 - 2009)
+
+-   Kris Kennaway <kris@FreeBSD.org> (1999 - 2008)
+
+-   Chad David <davidc@FreeBSD.org> (2001 - 2008)
+
+-   Kishore Sampathkumar <kishore@FreeBSD.org> (2007 - 2008)
+
+-   Thomas Wintergerst <twinterg@FreeBSD.org> (2006 - 2008)
+
+-   Jeremy Chadwick <koitsu@FreeBSD.org> (2006 - 2008)
+
+-   Bakul Shah <bakul@FreeBSD.org> (2006 - 2008)
+
+-   Jean-Yves Lefort <jylefort@FreeBSD.org> (2005 - 2008)
+
+-   Gary W. Swearingen <garys@FreeBSD.org> (2005 - 2008)
+
+-   Damien Bergamini <damien@FreeBSD.org> (2005 - 2008)
+
+-   Aaron Dalton <aaron@FreeBSD.org> (2005 - 2008)
+
+-   Tony Ackerman <tackerman@FreeBSD.org> (2004 - 2008)
+
+-   Koichi Suzuki <metal@FreeBSD.org> (2004 - 2008)
+
+-   Mark Santcroos <marks@FreeBSD.org> (2004 - 2008)
+
+-   Dejan Lesjak <lesi@FreeBSD.org> (2004 - 2008)
+
+-   Josef El-Rayes <josef@FreeBSD.org> (2004 - 2008)
+
+-   Daniel Hartmeier <dhartmei@FreeBSD.org> (2004 - 2008)
+
+-   Sam Hopkins <sah@FreeBSD.org> (2004 - 2008)
+
+-   Scott Mitchell <rsm@FreeBSD.org> (2003 - 2008)
+
+-   Tim Vanderhoek <hoek@FreeBSD.org> (2003 - 2008)
+
+-   Oliver Eikemeier <eik@FreeBSD.org> (2003 - 2008)
+
+-   Mathew Kanner <matk@FreeBSD.org> (2003 - 2008)
+
+-   Nate Lawson <njl@FreeBSD.org> (2002 - 2008)
+
+-   Katsushi Kobayashi <ikob@FreeBSD.org> (2002 - 2008)
+
+-   Prafulla S. Deuskar <pdeuskar@FreeBSD.org> (2001 - 2008)
+
+-   Mike Heffner <mikeh@FreeBSD.org> (2001 - 2008)
+
+-   Takeshi Shibagaki <shiba@FreeBSD.org> (2000 - 2008)
+
+-   Patrick Li <pat@FreeBSD.org> (2000 - 2008)
+
+-   Atsushi Onoe <onoe@FreeBSD.org> (2000 - 2008)
+
+-   Lars Koeller <lkoeller@FreeBSD.org> (2000 - 2008)
+
+-   Jayanth Vijayaraghavan <jayanth@FreeBSD.org> (2000 - 2008)
+
+-   Jake Burkholder <jake@FreeBSD.org> (2000 - 2008)
+
+-   Duncan Barclay <dmlb@FreeBSD.org> (2000 - 2008)
+
+-   Bosko Milekic <bmilekic@FreeBSD.org> (2000 - 2008)
+
+-   Sergey Babkin <babkin@FreeBSD.org> (2000 - 2008)
+
+-   Josef Karthauser <joe@FreeBSD.org> (1999 - 2008)
+
+-   R. Imura <imura@FreeBSD.org> (1999 - 2008)
+
+-   Andrey Zakhvatov <andy@FreeBSD.org> (1999 - 2008)
+
+-   Shigeyuki Fukushima <shige@FreeBSD.org> (1999 - 2008)
+
+-   Tatsumi Hosokawa <hosokawa@FreeBSD.org> (1998 - 2008)
+
+-   Howard F. Hu <foxfair@FreeBSD.org> (1998 - 2008)
+
+-   Bill Fumerola <billf@FreeBSD.org> (1998 - 2008)
+
+-   Tor Egge <tegge@FreeBSD.org> (1997 - 2008)
+
+-   Jonathan Lemon <jlemon@FreeBSD.org> (1997 - 2008)
+
+-   Bill Fenner <fenner@FreeBSD.org> (1996 - 2008)
+
+-   Andreas Klemm <andreas@FreeBSD.org> (1996 - 2008)
+
+-   John Polstra <jdp@FreeBSD.org> ( - 2008)
+
+-   Jeffrey Hsu <hsu@FreeBSD.org> ( - 2008)
+
+-   Bill Paul <wpaul@FreeBSD.org> (1995 - 2007)
+
+-   SUZUKI Shinsuke <suz@FreeBSD.org> (2002 - 2007)
+
+-   Lukas Ertl <le@FreeBSD.org> (2004 - 2007)
+
+-   Jordan Sissel <jls@FreeBSD.org> (2006 - 2007)
+
+-   Tatuya JINMEI <jinmei@FreeBSD.org> (2007)
+
+-   Hiten Pandya <hmp@FreeBSD.org> (2004 - 2007)
+
+-   Alexey Zelkin <phantom@FreeBSD.org> (1999 - 2007)
+
+-   Mohan Srinivasan <mohans@FreeBSD.org> (2006 - 2007)
+
+-   Chuck Lever <cel@FreeBSD.org> (2006 - 2007)
+
+-   Sam Lawrance <lawrance@FreeBSD.org> (2005 - 2007)
+
+-   Jim Rees <rees@FreeBSD.org> (2004 - 2007)
+
+-   Tim J. Robbins <tjr@FreeBSD.org> (2002 - 2007)
+
+-   Johan Karlsson <johan@FreeBSD.org> (2002 - 2007)
+
+-   Mark Pulford <markp@FreeBSD.org> (2001 - 2007)
+
+-   Jesper Skriver <jesper@FreeBSD.org> (2001 - 2007)
+
+-   Eric Melville <eric@FreeBSD.org> (2001 - 2007)
+
+-   Trevor Johnson <trevor@FreeBSD.org> (2000 - 2007)
+
+-   Noriaki Mitsunaga <non@FreeBSD.org> (2000 - 2007)
+
+-   Kelly Yancey <kbyanc@FreeBSD.org> (2000 - 2007)
+
+-   James Housley <jeh@FreeBSD.org> (2000 - 2007)
+
+-   Gregory Sutter <gsutter@FreeBSD.org> (2000 - 2007)
+
+-   Brian S. Dean <bsd@FreeBSD.org> (2000 - 2007)
+
+-   Tom Hukins <tom@FreeBSD.org> (1999 - 2007)
+
+-   Michael Haro <mharo@FreeBSD.org> (1999 - 2007)
+
+-   Chris Costello <chris@FreeBSD.org> (1999 - 2007)
+
+-   Boris Popov <bp@FreeBSD.org> (1999 - 2007)
+
+-   Archie Cobbs <archie@FreeBSD.org> (1998 - 2007)
+
+-   Yar Tikhiy <yar@FreeBSD.org> ( - 2007)
+
+-   Seigo Tanimura <tanimura@FreeBSD.org> (1999 - 2006)
+
+-   Peter Edwards <peadar@FreeBSD.org> (2004 - 2006)
+
+-   Wayne Salamon <wsalamon@FreeBSD.org> (2005 - 2006)
+
+-   Matthew N. Dodd <mdodd@FreeBSD.org> (1999 - 2006)
+
+-   Vinod Kashyap <vkashyap@FreeBSD.org> (2004 - 2006)
+
+-   Niklas Saers <niklas@FreeBSD.org> (2004 - 2006)
+
+-   Sean Kelly <smkelly@FreeBSD.org> (2003 - 2006)
+
+-   Arun Sharma <arun@FreeBSD.org> (2003 - 2006)
+
+-   Atul Mukker <am@FreeBSD.org> (2003 - 2006)
+
+-   Ville Skyttä <scop@FreeBSD.org> (2002 - 2006)
+
+-   Martin Heinen <mheinen@FreeBSD.org> (2002 - 2006)
+
+-   Jennifer Yang <jennifer@FreeBSD.org> (2002 - 2006)
+
+-   Ernst de Haan <znerd@FreeBSD.org> (2001 - 2006)
+
+-   Michael C. Wu <keichii@FreeBSD.org> (2001 - 2006)
+
+-   Udo Erdelhoff <ue@FreeBSD.org> (2001 - 2006)
+
+-   Thomas Möstl <tmm@FreeBSD.org> (2001 - 2006)
+
+-   Robert Drehmel <robert@FreeBSD.org> (2001 - 2006)
+
+-   Pete Fritchman <petef@FreeBSD.org> (2001 - 2006)
+
+-   Mike Barcroft <mike@FreeBSD.org> (2001 - 2006)
+
+-   George C. A. Reid <greid@FreeBSD.org> (2001 - 2006)
+
+-   Crist J. Clark <cjc@FreeBSD.org> (2001 - 2006)
+
+-   Rob Braun <bbraun@FreeBSD.org> (2001 - 2006)
+
+-   Satsuki FUJISHIMA <sf@FreeBSD.org> (2000 - 2006)
+
+-   Kazuhiko Kiriyama <kiri@FreeBSD.org> (2000 - 2006)
+
+-   Daniel Harris <dannyboy@FreeBSD.org> (2000 - 2006)
+
+-   Ben Smithurst <ben@FreeBSD.org> (2000 - 2006)
+
+-   Sheldon Hearn <sheldonh@FreeBSD.org> (1999 - 2006)
+
+-   Roger Hardiman <roger@FreeBSD.org> (1999 - 2006)
+
+-   Nick Sayer <nsayer@FreeBSD.org> (1999 - 2006)
+
+-   Neil Blakey-Milner <nbm@FreeBSD.org> (1999 - 2006)
+
+-   Chris D. Faulhaber <jedgar@FreeBSD.org> (1999 - 2006)
+
+-   Nicolas Souchu <nsouch@FreeBSD.org> (1998 - 2006)
+
+-   Jacques Vidrine <nectar@FreeBSD.org> (1998 - 2006)
+
+-   Matthew Hunt <mph@FreeBSD.org> (1998 - 2006)
+
+-   Kenjiro Cho <kjc@FreeBSD.org> (1997 - 2006)
+
+-   Hiroyuki HANAI <hanai@FreeBSD.org> (1997 - 2006)
+
+-   Eivind Eklund <eivind@FreeBSD.org> (1997 - 2005)
+
+-   Vincent Tougait <viny@FreeBSD.org> (2004 - 2005)
+
+-   Stéphane Legrand <stephane@FreeBSD.org> (2002 - 2005)
+
+-   Andrew R. Reiter <arr@FreeBSD.org> (2001 - 2005)
+
+-   SADA Kenji <sada@FreeBSD.org> (1998 - 2005)
+
+-   Seiichirou Hiraoka <flathill@FreeBSD.org> (1998 - 2005)
+
+-   Paul Richards <paul@FreeBSD.org> (1993 - 2005)
+
+-   Jonathan Mini <mini@FreeBSD.org> (2002 - 2004)
+
+-   Eric Moore <emoore@FreeBSD.org> (2002 - 2004)
+
+-   Johann Visagie <wjv@FreeBSD.org> (2001 - 2004)
+
+-   Randy Pratt <rpratt@FreeBSD.org> (2001 - 2004)
+
+-   Orion Hodson <orion@FreeBSD.org> (2001 - 2004)
+
+-   Valentino Vaschetto <logo@FreeBSD.org> (2001 - 2004)
+
+-   Thomas-Henning von Kamptz <tomsoft@FreeBSD.org> (2000 - 2004)
+
+-   Patrick S. Gardella <patrick@FreeBSD.org> (2000 - 2004)
+
+-   Christoph Herrmann <chm@FreeBSD.org> (2000 - 2004)
+
+-   Satoshi Taoka <taoka@FreeBSD.org> (1999 - 2004)
+
+-   Jose M. Alcaide <jmas@FreeBSD.org> (1999 - 2004)
+
+-   Daniel C. Sobral <dcs@FreeBSD.org> (1999 - 2004)
+
+-   Dan Moschuk <dan@FreeBSD.org> (1999 - 2004)
+
+-   Scott Mace <smace@FreeBSD.org> (1993 - 2004)
+
+-   Alexander Langer <alex@FreeBSD.org> ( - 2004)
+
+-   David Greenman <dg@FreeBSD.org> (1993 - 2003)
+
+-   David W. Chapman Jr. <dwcjr@FreeBSD.org> (2002 - 2003)
+
+-   Dave Zarzycki <zarzycki@FreeBSD.org> (2001 - 2003)
+
+-   Takuya SHIOZAKI <tshiozak@FreeBSD.org> (2001 - 2003)
+
+-   Jim Pirzyk <pirzyk@FreeBSD.org> (2001 - 2003)
+
+-   Wilfredo Sánchez <wsanchez@FreeBSD.org> (2000 - 2003)
+
+-   Toshihiko Arai <toshi@FreeBSD.org> (2000 - 2003)
+
+-   Maxim Bolotin <mb@FreeBSD.org> (2000 - 2003)
+
+-   Mark Ovens <marko@FreeBSD.org> (2000 - 2003)
+
+-   Atsushi Furuta <furuta@FreeBSD.org> (2000 - 2003)
+
+-   Rebecca Visger <bean@FreeBSD.org> (2000 - 2003)
+
+-   Yoshinobu Inoue <shin@FreeBSD.org> (1999 - 2003)
+
+-   Peter Holm <pho@FreeBSD.org> (1999 - 2003)
+
+-   Mark Newton <newton@FreeBSD.org> (1999 - 2003)
+
+-   Mark J. Taylor <mtaylor@FreeBSD.org> (1999 - 2003)
+
+-   Larry Lile <lile@FreeBSD.org> (1999 - 2003)
+
+-   Jim Mock <jim@FreeBSD.org> (1999 - 2003)
+
+-   Eric J. Chet <ejc@FreeBSD.org> (1999 - 2003)
+
+-   Richard Seaman Jr. <dick@FreeBSD.org> (1999 - 2003)
+
+-   Daniel Baker <dbaker@FreeBSD.org> (1999 - 2003)
+
+-   Chris Piazza <cpiazza@FreeBSD.org> (1999 - 2003)
+
+-   Chuck Paterson <cp@FreeBSD.org> (1999 - 2003)
+
+-   Peter Hawkins <thepish@FreeBSD.org> (1998 - 2003)
+
+-   Semen Ustimenko <semenu@FreeBSD.org> (1998 - 2003)
+
+-   Robert V. Baron <rvb@FreeBSD.org> (1998 - 2003)
+
+-   Robert Nordier <rnordier@FreeBSD.org> (1998 - 2003)
+
+-   Dmitrij Tejblum <dt@FreeBSD.org> (1998 - 2003)
+
+-   Dirk Frömberg <dirk@FreeBSD.org> (1998 - 2003)
+
+-   Matthew Dillon <dillon@FreeBSD.org> (1998 - 2003)
+
+-   Gene Stark <stark@FreeBSD.org> (1997 - 2003)
+
+-   Peter da Silva <pds@FreeBSD.org> (1997 - 2003)
+
+-   Justin Seger <jseger@FreeBSD.org> (1997 - 2003)
+
+-   Wolfgang Helbig <helbig@FreeBSD.org> (1997 - 2003)
+
+-   Steve Passe <fsmp@FreeBSD.org> (1997 - 2003)
+
+-   Chris Timmons <cwt@FreeBSD.org> (1997 - 2003)
+
+-   Brandon Gillespie <brandon@FreeBSD.org> (1997 - 2003)
+
+-   Sujal Patel <smpatel@FreeBSD.org> (1996 - 2003)
+
+-   Michael Smith <msmith@FreeBSD.org> (1996 - 2003)
+
+-   Ade Barkah <mbarkah@FreeBSD.org> (1996 - 2003)
+
+-   James FitzGibbon <jfitz@FreeBSD.org> (1996 - 2003)
+
+-   David Nugent <davidn@FreeBSD.org> (1996 - 2003)
+
+-   Lars Fredriksen <lars@FreeBSD.org> (1995 - 2003)
+
+-   John Fieber <jfieber@FreeBSD.org> (1995 - 2003)
+
+-   Peter Dufault <dufault@FreeBSD.org> (1995 - 2003)
+
+-   Atsushi Murai <amurai@FreeBSD.org> (1995 - 2003)
+
+-   Ugen J.S. Antsilevich <ugen@FreeBSD.org> (1994 - 2003)
+
+-   Steven Wallace <swallace@FreeBSD.org> (1994 - 2003)
+
+-   Stefan Bethke <stb@FreeBSD.org> (1994 - 2003)
+
+-   Rich Murphey <rich@FreeBSD.org> (1994 - 2003)
+
+-   Paul Traina <pst@FreeBSD.org> (1994 - 2003)
+
+-   Mike Spengler <mks@FreeBSD.org> (1994 - 2003)
+
+-   L Jonas Olsson <ljo@FreeBSD.org> (1994 - 2003)
+
+-   Geoff Rehmet <csgr@FreeBSD.org> (1994 - 2003)
+
+-   Adam David <adam@FreeBSD.org> (1994 - 2003)
+
+-   Nate Williams <nate@FreeBSD.org> (1993 - 2003)
+
+-   Gary Palmer <gpalmer@FreeBSD.org> (1993 - 2003)
+
+-   Akio Morita <amorita@FreeBSD.org> (2001 - 2002)
+
+-   Yasushi UCHIYAMA <uch@FreeBSD.org> (2000 - 2002)
+
+-   Shafeeq Sinnamohideen <shafeeq@FreeBSD.org> (2000 - 2002)
+
+-   Jeremy Lea <reg@FreeBSD.org> (2000 - 2002)
+
+-   Jing-Tang Keith Jang <keith@FreeBSD.org> (2000 - 2002)
+
+-   Issei Suzuki <issei@FreeBSD.org> (2000 - 2002)
+
+-   Christopher Shumway <cshumway@FreeBSD.org> (2000 - 2002)
+
+-   Assar Westerlund <assar@FreeBSD.org> (2000 - 2002)
+
+-   Yukihiro Nakai <nakai@FreeBSD.org> (1999 - 2002)
+
+-   Jeroen Ruigrok/Asmodai <asmodai@FreeBSD.org> (1999 - 2002)
+
+-   Donald Burr <dburr@FreeBSD.org> (1998 - 2002)
+
+-   Andrzej Bialecki <abial@FreeBSD.org> (1998 - 2002)
+
+-   Jonathan M. Bresler <jmb@FreeBSD.org> (1997 - 2002)
+
+-   Daniel O’Callaghan <danny@FreeBSD.org> (1997 - 2002)
+
+-   Thomas Graichen <graichen@FreeBSD.org> (1996 - 2002)
+
+-   Torsten Blum <torstenb@FreeBSD.org> (1995 - 2002)
+
+-   Joshua Peck Macdonald <jmacd@FreeBSD.org> (1995 - 2002)
+
+-   Eric L. Hernes <erich@FreeBSD.org> (1995 - 2002)
+
+-   Martin Renters <martin@FreeBSD.org> (1994 - 2002)
+
+-   Bill Swingle <unfurl@FreeBSD.org> (2000 - 2001)
+
+-   Rajesh Vaidheeswarran <rv@FreeBSD.org> (2000 - 2001)
+
+-   David E. Cross <dec@FreeBSD.org> (2000 - 2001)
+
+-   Gerard Roudier <groudier@FreeBSD.org> (1999 - 2001)
+
+-   Kazutaka YOKOTA <yokota@FreeBSD.org> (1997 - 2001)
+
+-   Dima Ruban <dima@FreeBSD.org> (1995 - 2001)
+
+-   Sean Eric Fagan <sef@FreeBSD.org> (1993 - 2001)
+
+-   Satoshi Asami <asami@FreeBSD.org> (1993 - 2001)
+
+-   MAEKAWA Masahide <gehenna@FreeBSD.org> (1999 - 2000)
+
+-   Ted Mittelstaedt <tedm@FreeBSD.org> (1997 - 2000)
+
+-   Nate Johnson <nsj@FreeBSD.org> (1996 - 2000)
+
+-   James Raynard <jraynard@FreeBSD.org> (1996 - 2000)
+
+-   Chuck Robey <chuckr@FreeBSD.org> (1996 - 2000)
+
+-   Karl Strickland <karl@FreeBSD.org> (1995 - 2000)
+
+-   Gary Clark II <gclarkii@FreeBSD.org> (1993 - 2000)
+
+-   Joe Greco <jgreco@FreeBSD.org> (1997 - 1999)
+
+-   Jamil Weatherby <jamil@FreeBSD.org> (1997 - 1999)
+
+-   Andreas Schulz <ats@FreeBSD.org> (1992 - 1999)
+
+-   Megan McCormack <meganm@FreeBSD.org> (1997 - 1998)
+
+-   Drew Derbyshire <ahd@FreeBSD.org> (1997 - 1998)
+
+-   Amancio Hasty <ahasty@FreeBSD.org> (1997 - 1998)
+
+-   John Dyson <dyson@FreeBSD.org> (1993 - 1998)
+
+-   Andras Olah <olah@FreeBSD.org> (1995 - 1996)
+
+-   Julian Stacey <jhs@FreeBSD.org> (1995 - 1995)
+
+-   gjp (1995 - 1995)
+
+-   Andrew Moore <alm@FreeBSD.org> (1993 - 1995)
+
+4. Ports Management Team Alumni
+
+The following people were members of the FreeBSD portmgr team during the
+periods indicated. We thank them for their past efforts in the service
+of the FreeBSD project.
+
+In rough reverse chronological order:
+
+-   Steve Wills <swills@FreeBSD.org> (2014 - 2023)
+
+-   Antoine Brodin <antoine@FreeBSD.org> (2014 - 2022, now in pkgmgr)
+
+-   Bryan Drewery <bdrewery@FreeBSD.org> (2013 - 2022, now in pkgmgr)
+
+-   Adam Weinberger <adamw@FreeBSD.org> (2016 - 2021)
+
+-   Mark Felder <feld@FreeBSD.org> (2016 - 2019)
+
+-   Martin Wilke <miwi@FreeBSD.org> (2009 - 2016)
+
+-   Erwin Lansing <erwin@FreeBSD.org> (2004 - 2016)
+
+-   Bernhard Fröhlich <decke@FreeBSD.org> (2012 - 2015)
+
+-   Thomas Abthorpe <tabthorpe@FreeBSD.org> (2011 - 2014)
+
+-   Ion-Mihai Tetcu <itetcu@FreeBSD.org> (2009 - 2014)
+
+-   Joe Marcus Clarke <marcus@FreeBSD.org> (2004 - 2014)
+
+-   Beat Gätzi <beat@FreeBSD.org> (2011 - 2013)
+
+-   Mark Linimon <linimon@FreeBSD.org> (2004 - 2013)
+
+-   Pav Lucistnik <pav@FreeBSD.org> (2006 - 2012)
+
+-   Florent Thoumie <flz@FreeBSD.org> (2008 - 2012)
+
+-   Kris Kennaway <kris@FreeBSD.org> (2001 - 2010)
+
+-   Kirill Ponomarew <krion@FreeBSD.org> (2004 - 2009)
+
+-   Clement Laforet <clement@FreeBSD.org> (2005 - 2007)
+
+-   Oliver Eikemeier <eik@FreeBSD.org> (2004 - 2005)
+
+-   Will Andrews <will@FreeBSD.org> (2001 - 2004)
+
+-   Akinori MUSHA <knu@FreeBSD.org> (2001 - 2004)
+
+-   Mário Sérgio Fujikawa Ferreira <lioux@FreeBSD.org> (2001 - 2004)
+
+-   Maxim Sobolev <sobomax@FreeBSD.org> (2001 - 2004)
+
+-   Steve Price <steve@FreeBSD.org> (2001 - 2004)
+
+-   Ade Lovett <ade@FreeBSD.org> (2001 - 2002)
+
+-   Satoshi Asami <asami@FreeBSD.org> ( - 2001)
+
+5. Development Team: In Memoriam
+
+During the many years that the FreeBSD Project has been in existence,
+sadly, some of our developers have passed away. Here are some
+remembrances.
+
+In rough reverse chronological order of their passing:
+
+-   Bruce D. Evans (1991 - 2019; RIP 2019)
+
+    Bruce was a programming giant who made FreeBSD his home.
+
+    Back before FreeBSD and Linux there was Minix, a toy "unix" written
+    by Andy Tannenbaum, released in 1987, sold with complete sources on
+    three floppy disks, for $99.
+
+    Bruce ported Minix to the i386 around 1989.
+
+    Linus Torvalds used Minix/386 to develop his own kernel, and Bruce
+    was the first person he thanked in the release-announcement.
+
+    When Bill Jolitz released 386BSD 0.1 in 1992, Bruce was listed as a
+    contributor.
+
+    Bruce co-founded the FreeBSD project, and served on core.0, but he
+    was never partisan, and over the years many other projects have
+    benefitted from his patches, advice and wisdom.
+
+    Code reviews from Bruce came in three flavours, "mild", "brucified"
+    and "brucifiction", but they were never personal: It was always only
+    about the code, the mistakes, the sloppy thinking, the missing
+    historical context, the ambiguous standards - and the style(9)
+    transgressions.
+
+    As Bruce gave more code reviews than anybody else in the history of
+    the FreeBSD project, the commit logs hide the true scale of his
+    impact until you pay attention to "Submitted by", "Reviewed by" and
+    "Pointed out by".
+
+    Being hard of hearing, Bruce did not attend conferences.
+
+    The notable exception was the 1999 BSDcon in California, where his
+    core team colleagues greeted him with "We’re not worthy!" in Wayne’s
+    World fashion.
+
+    Twenty years later we’re still not.
+
+-   Kurt Lidl (2015 - 2019; RIP 2019)
+
+    Kurt first got involved with BSD while it was still a project at the
+    University of California at Berkeley. Shortly after personalized
+    license plates became available in Maryland, he got "BSDWZRD".
+
+    He began contributing to FreeBSD shortly after the conception of the
+    project. He became a FreeBSD source committer in October 2015.
+
+    Kurt’s most well known FreeBSD project was blacklistd(8) which
+    blocks and releases ports on demand to avoid DoS abuse. He has also
+    made many other bug fixes and enhancements to DTrace, boot loaders,
+    and other bits and pieces of the FreeBSD infrastructure.
+
+    Earlier work included the game XTank, an author on RFC 2516 "A
+    Method for Transmitting PPP Over Ethernet (PPPoE)", and the USENIX
+    paper "Drinking from the Firehose: Multicast USENET News".
+
+-   Frank Durda IV (1995 - 2003; RIP 2018)
+
+    Frank had been around the project since the very early days,
+    contributing code to the 1.x line before becoming a committer.
+
+-   Andrey A. Chernov (1993 - 2017; RIP 2017)
+
+    Andrey contributions to FreeBSD can not be overstated. Having been
+    involved for a long there is hardly an area which he did not touch.
+
+-   Jürgen Lock (2006 - 2015; RIP 2015)
+
+    Jürgen made a number of contributions to FreeBSD, including work on
+    libvirt, the graphics stack, and QEMU. Jürgen’s contributions and
+    helpfulness were appreciated by people around the world. That work
+    continues to improve the lives of thousands every day.
+
+-   Alexander Botero-Lowry <alexbl@FreeBSD.org> (2006 - 2011; RIP 2012)
+
+    Alexander was best known as a major contributor to FreeBSD’s Python
+    ports and a founding member of {python} as well as his work on
+    XMMS2.
+
+-   John Birrell <jb@FreeBSD.org> (1997 - 2009; RIP 2009)
+
+    John made major contributions to FreeBSD, the best known of which is
+    the import of the dtrace(1) code. John’s unique sense of humor and
+    plain-spokenness either ruffled feathers or made him quick friends.
+    At the end of his life, he had moved to a rural area and was
+    attempting to live with as minimal impact to the planet as possible,
+    while at the same time still working in the high-tech area.
+
+-   Jean-Marc Zucconi <jmz@FreeBSD.org> (1994 - 2009; RIP 2009)
+
+    Jean-Marc was an astrophysicist who made important contributions to
+    the modeling of the atmospheres of both planets and comets at
+    l’Observatoire de Besançon in Besançon, France. While there, he
+    participated in the conception and construction of the Vega tricanal
+    spectrometer that studied Halley’s Comet. He had also been a
+    long-time contributor to FreeBSD.
+
+-   Jun-ichiro Itoh <itojun@FreeBSD.org> (1997 - 2001; RIP 2008)
+
+    Known to everyone as itojun, Jun-ichiro Hagino was a core researcher
+    at the KAME Project, which aimed to provide IPv6 and IPsec
+    technology in freely redistributable form. Much of this code was
+    incorporated into FreeBSD. Without his efforts, the state of IPv6 on
+    the Internet would be much different.
+
+-   Cameron Grant <cg@FreeBSD.org> (1999 - 2005; RIP 2005)
+
+    Cameron was a unique individual who contributed to the project
+    despite serious physical disabilities. He was responsible for a
+    complete rewrite of our sound system during the late 1990s. Many of
+    those who corresponded with him had no idea of his limited mobility,
+    due to his cheerful spirit and willingness to help others.
+
+-   Alan Eldridge <alane@FreeBSD.org> (2002 - 2003; RIP 2003)
+
+    Alan was a major contributor to the KDE on FreeBSD group. In
+    addition, he maintained many other difficult and time-consuming
+    ports such as autoconf, CUPS, and python. Alan’s path was not an
+    easy one but his passion for FreeBSD, and dedication to programming
+    excellence, won him many friends.
+
+6. Derived Software Contributors
+
+This software was originally derived from William F. Jolitz’s 386BSD
+release 0.1, though almost none of the original 386BSD specific code
+remains. This software has been essentially re-implemented from the
+4.4BSD-Lite release provided by the Computer Science Research Group
+(CSRG) at the University of California, Berkeley and associated academic
+contributors.
+
+There are also portions of NetBSD and OpenBSD that have been integrated
+into FreeBSD as well, and we would therefore like to thank all the
+contributors to NetBSD and OpenBSD for their work.
+
+7. Additional FreeBSD Contributors
+
+(in alphabetical order by first name):
+
+-   ABURAYA Ryushirou <rewsirow@ff.iij4u.or.jp>
+
+-   AIDA Shinra <aida-s@jcom.home.ne.jp>
+
+-   AMAGAI Yoshiji <amagai@nue.org>
+
+-   Aaron Bornstein <aaronb@j51.com>
+
+-   Aaron Myles Landwehr <aaron@snaphat.com>
+
+-   Aaron Smith <aaron@mutex.org>
+
+-   Aaron Straup Cope <ascope@cpan.org>
+
+-   Aaron Voisine <voisine@gmail.com>
+
+-   Aaron Zauner <az_mail@gmx.at>
+
+-   Aasmund Eikli <inter@o12a.com>
+
+-   Achim Patzner <ap@noses.com>
+
+-   Ada T Lim <ada@bsd.org>
+
+-   Adam Baran <badam@mw.mil.pl>
+
+-   Adam C. Migus <adam@migus.org>
+
+-   Adam Glass <glass@postgres.berkeley.edu>
+
+-   Adam Herzog <adam@herzogdesigns.com>
+
+-   Adam Jette <jettea46@yahoo.com>
+
+-   Adam Kranzel <adam@alameda.edu>
+
+-   Adam McDougall <mcdouga9@egr.msu.edu>
+
+-   Adam McLaurin <adam.freebsd@fastmail.fm>
+
+-   Adam Strohl <troll@digitalspark.net>
+
+-   Adam Wight <adamw@tulum.brsys.com>
+
+-   Adoal Xu <adoal@iname.com>
+
+-   Adrian Colley <aecolley@ois.ie>
+
+-   Adrian Filipi-Martin <adrian@ubergeeks.com>
+
+-   Adrian Hall <ahall@mirapoint.com>
+
+-   Adrian Mariano <adrian@cam.cornell.edu>
+
+-   Adrian Pircalabu <apircalabu@bitdefender.com>
+
+-   Adrian Steinmann <ast@marabu.ch>
+
+-   Adrian T. Filipi-Martin <atf3r@agate.cs.virginia.edu>
+
+-   Aftab Jahan Subedar <jahan@bol-online.com>
+
+-   Ajit Thyagarajan
+
+-   Akinori YAMADA <yamada-a@nextcom.co.jp>
+
+-   Akira Ikeuchi <a_ikeuchi@mic.mitsumi.co.jp>
+
+-   Akira SAWADA
+
+-   Akira Watanabe <akira@myaw.ei.meisei-u.ac.jp>
+
+-   Akito Fujita <fujita@zoo.ncl.omron.co.jp>
+
+-   Akos Somfai <akos.somfai@gmail.com>
+
+-   Al Hoang <hoanga@mac.com>
+
+-   Alain Kalker <A.C.P.M.Kalker@student.utwente.nl>
+
+-   Alan Amesbury <amesbury@indefi.net>
+
+-   Alan Bawden <alan@curry.epilogue.com>
+
+-   Alan Snelson <Alan@Wave2.co.uk>
+
+-   Alban Maire <a.maire@s2mi.fr>
+
+-   Albert Graef <Dr.Graef@t-online.de>
+
+-   Aldert Nooitgedagt <aldert@nooitgedagt.net>
+
+-   Aldis Berjoza <killasmurf86@gmail.com>
+
+-   Alec Wolman <wolman@cs.washington.edu>
+
+-   Aled Morris <aledm@routers.co.uk>
+
+-   Aleksander Fafula <alex@fafula.com>
+
+-   Aleksandr A Babaylov <.@babolo.ru>
+
+-   Aleksandr S. Goncharov <mraleks@bk.ru>
+
+-   Alessandro Sagratini <ale_sagra@hotmail.com>
+
+-   Alex D. Chen <dhchen@elearning.nsysu.edu.tw>
+
+-   Alex Deiter <tiamat@komi.mts.ru>
+
+-   Alex G. Bulushev <bag@demos.su>
+
+-   Alex Kapranoff <alex@kapranoff.ru>
+
+-   Alex Keda <admin@lissyara.su>
+
+-   Alex Kiesel <kiesel@schlund.de>
+
+-   Alex Le Heux <alexlh@funk.org>
+
+-   Alex M <alex@myzona.net>
+
+-   Alex Miller <asm@asm.kiev.ua>
+
+-   Alex Nunes Soares <alexnunessoares@gmail.com>
+
+-   Alex Perel <veers@disturbed.net>
+
+-   Alex Pesternikov <ap@page2rss.com>
+
+-   Alex Rodioukov <simuran@shaw.ca>
+
+-   Alex Rousskov <rousskov@measurement-factory.com>
+
+-   Alex Semenyaka <alex@rinet.ru>
+
+-   Alex Steiner <ast@treibsand.com>
+
+-   Alex Trull <alexander@trull.com>
+
+-   Alex Varju <freebsd-ports@varju.ca>
+
+-   Alex Vasylenko <lxv@omut.org>
+
+-   Alex Wilkinson <alex.wilkinson@dsto.defence.gov.au>
+
+-   Alex Zepeda <garbanzo@hooked.net>
+
+-   Alexander Bechikov <goo@t72.ru>
+
+-   Alexander Best <arundel@FreeBSD.org>
+
+-   Alexander Churanov <alexanderchuranov@gmail.com>
+
+-   Alexander B. Povolotsky <tarkhil@mgt.msk.ru>
+
+-   Alexander Gelfenbain <mail@gelf.com>
+
+-   Alexander Pereira Girald <girald@etcom.ufrgs.br>
+
+-   Alexander Grigoryev <alexander.4mail@gmail.com>
+
+-   Alexander Gromnizki <gromnizki@unixdev.net>
+
+-   Alexander Haderer <alexander.haderer@charite.de>
+
+-   Alexander Koch <fbsd@meersau.de>
+
+-   Alexander Kojevnikov <alexander@kojevnikov.com>
+
+-   Alexander Kovalenko <never@nevermind.kiev.ua>
+
+-   Alexander Moisseev <moiseev@mezonplus.ru>
+
+-   Alexander Novitsky <alecn2002@yandex.ru>
+
+-   Alexander Nusov <alexander.nusov@nfvexpress.com>
+
+-   Alexander Peresunko <alex@freeman.org.ua>
+
+-   Alexander Pohoyda <alexander.pohoyda@gmx.net>
+
+-   Alexander Pyhalov <alp@sfedu.ru>
+
+-   alexander smishlajev <alex@ank-sia.com>
+
+-   Alexander V. Ribchansky <triosoft@triosoft.com.ua>
+
+-   Alexander Yerenkow <yerenkow@gmail.com>
+
+-   Alexander Sieg <alex@xanderio.de>
+
+-   Alexander Zagrebin <alexz@visp.ru>
+
+-   Alexander Zhuravlev <zaa@zaa.pp.ru>
+
+-   Alexandre Liberato <alexandre@feiler.co>
+
+-   Alexandre Peixoto <alexandref@tcoip.com.br>
+
+-   Alexandre Snarskii <snar@paranoia.ru>
+
+-   Alexandre Vasconcelos <alex.vasconcelos@gmail.com>
+
+-   Alexandros Kosiaris <akosiaris+ports@gmail.com>
+
+-   Alexandru Ciobanu <iscandr@gmail.com>
+
+-   Alexey Bobkov <mr.deadlystorm@gmail.com>
+
+-   Alexey Illarionov <littlesavage@rambler.ru>
+
+-   Alexey V. Antipovsky <kemm@in-line.ru>
+
+-   Alexey V. Degtyarev <alexey@renatasystems.org>
+
+-   Alexey V. Neyman <alex.neyman@auriga.ru>
+
+-   Alexey Y. Mikhailov <karma@ez.pereslavl.ru>
+
+-   Alexey Shuvaev <shuvaev@physik.uni-wuerzburg.de>
+
+-   Alexey Zaytsev <mangoost@inetcomm.ru>
+
+-   Alexis Yushin <alexis@forest.NLnetLabs.nl>
+
+-   Ali Mashtizadeh <mashtizadeh@gmail.com>
+
+-   Alistair G. Crooks <agc@uts.amdahl.com>
+
+-   Allan Bowhill <bowhill@bowhill.vservers.com>
+
+-   Allan Saddi <asaddi@philosophysw.com>
+
+-   Allen Campbell <allenc@verinet.com>
+
+-   Alphons "Fonz" van Werven <freebsd@skysmurf.nl>
+
+-   Amakawa Shuhei <amakawa@hoh.t.u-tokyo.ac.jp>
+
+-   Amar Takhar <verm@drunkmonk.net>
+
+-   Amaziles José Antonio Martins de Carvalho <amazilesjose@gmail.com>
+
+-   Amir Farah <amir@comtrol.com>
+
+-   Amir Shalem <amir@boom.org.il>
+
+-   Amarendra Godbole <amarendra.godbole@gmail.com>
+
+-   Amy Baron <amee@beer.org>
+
+-   Anthony Garcia <agarcia@experts-exchange.com>
+
+-   Anatoliy Dmytriyev <tolid@plab.ku.dk>
+
+-   Anatoly A. Orehovsky <tolik@mpeks.tomsk.su>
+
+-   Anatoly Borodin <anatoly.borodin@gmail.com>
+
+-   Anatoly Vorobey <mellon@pobox.com>
+
+-   Anatoly Zherdev <tolyar@mx.ru>
+
+-   Anders Andersson <anders@codefactory.se>
+
+-   Anders Nor Berle <debolaz@debolaz.com>
+
+-   Anders Thulin <Anders.X.Thulin@telia.se>
+
+-   Anders Troback <freebsd@troback.com>
+
+-   Anderson Aguiar <anderson.n.aguair@gmail.com>
+
+-   Anderson S. Ferreira <anderson@cnpm.embrapa.br>
+
+-   Andi Payn <andi_payn@speedymail.org>
+
+-   Andre Albsmeier <Andre.Albsmeier@mchp.siemens.de>
+
+-   André Franciosi <andre@franciosi.org>
+
+-   Andre Goeree <abgoeree@uwnet.nl>
+
+-   Andre Yelistratov <andre@andre.net.ru>
+
+-   Andrea Venturoli <a.ventu@flashnet.it>
+
+-   Andreas Andersson <a.andersson.thn@gmail.com>
+
+-   Andreas Berg <aberg@doomnet.de>
+
+-   Andreas Bilke <andreas@bilke.org>
+
+-   Andreas Fehlner <fehlner@gmx.de>
+
+-   Andreas Fuchs <asf@boinkor.net>
+
+-   Andreas Gustafsson <gson@araneus.fi>
+
+-   Andreas Haakh <ah@alman.robin.de>
+
+-   Andreas Heil <ah@linux-hq.de>
+
+-   Andreas K Foerster <akf3@akfoerster.de>
+
+-   Andreas Karlsson <norrland@nullbyte.se>
+
+-   Andreas Kasparz <andy@interface-business.de>
+
+-   Andreas Kohn <andreas@syndrom23.de>
+
+-   Andreas Kohout <shanee@rabbit.augusta.de>
+
+-   Andreas Lohr <andreas@marvin.RoBIN.de>
+
+-   Andreas Möller <segfault@gmx.net>
+
+-   Andreas Riedel <rian@hrz.tu-chemnitz.de>
+
+-   Andreas Sommer <andreas.sommer87@googlemail.com>
+
+-   Andreas Wetzel <mickey@deadline.snafu.de>
+
+-   Andreas Wrede <andreas@planix.com>
+
+-   Andrei V. Shetuhin <shetuhin@corp.mail.ru>
+
+-   Andrej Ebert <andrej@ebert.su>
+
+-   Andres Vega Garcia
+
+-   Andrew Arensburger <arensb@ooblick.com>
+
+-   Andrew Atrens <atreand@statcan.ca>
+
+-   Andrew Boothman <andrew@cream.org>
+
+-   Andrew Gillham <gillham@andrews.edu>
+
+-   Andrew Gordon <andrew.gordon@net-tel.co.uk>
+
+-   Andrew Greenwood <greenwood.andy@gmail.com>
+
+-   Andrew Herbert <andrew@werple.apana.org.au>
+
+-   Andrew J. Caines <A.J.Caines@halplant.com>
+
+-   Andrew J. Korty <ajk@iu.edu>
+
+-   Andrew Khlebutin <andrey@hm.perm.ru>
+
+-   Andrew Kochetkov <kochetkov.andrew@gmail.com>
+
+-   Andrew Kolchoogin <andrew@rinet.ru>
+
+-   Andrew L. Kilpatrick <tiger@whitetigersd.com>
+
+-   Andrew L. Neporada <andrew@chg.ru>
+
+-   Andrew Marks <andrew@amrx.net>
+
+-   Andrew McKay <andy@openirc.co.uk>
+
+-   Andrew McNaughton <andrew@scoop.co.nz>
+
+-   Andrew McRae <amcrae@cisco.com>
+
+-   Andrew Morton <drewish@katherinehouse.com>
+
+-   Andrew P. Lentvorski <bsder@allcaps.org>
+
+-   Andrew Predoehl <predoehl@mail.kg>
+
+-   Andrew Reilly <a.reilly@lake.com>
+
+-   Andrew Romanenko <melanhit@gmail.com>
+
+-   Andrew S. Midthune <amidthune@cableone.net>
+
+-   Andrew Shevtsov <nyxo@dnuc.polyn.kiae.su>
+
+-   Andrew Stevenson <andrew@ugh.net.au>
+
+-   Andrew Timonin <tim@pool1.convey.ru>
+
+-   Andrew V. Stesin <stesin@elvisti.kiev.ua>
+
+-   Andrew V. Stikheev <sand@links.ru>
+
+-   Andrew Webster <awebster@dataradio.com>
+
+-   Andrey Cherkashin <andoriyu@gmail.com>
+
+-   Andrey Fesenko <andrey@bsdnir.info>
+
+-   Andrey Novikov <andrey@novikov.com>
+
+-   Andrey Simonenko <simon@comsys.ntu-kpi.kiev.ua>
+
+-   Andrey Surkov <nsand@sura.ru>
+
+-   Andrey Sverdlichenko <rblaze@users.sourceforge.net>
+
+-   Andrey Tchoritch <andy@venus.sympad.net>
+
+-   Andris Raugulis <moo@arthepsy.eu>
+
+-   Andy Farkas <andyf@speednet.com.au>
+
+-   Andy Fawcett <andy@athame.co.uk>
+
+-   Andy Gilligan <andy@evo6.org>
+
+-   Andy Kosela <andy.kosela@gmail.com>
+
+-   Andy Miller <andy@trit.org>
+
+-   Andy Newman <atrn@zeta.org.au>
+
+-   Andy Pavlo <amp0928@rit.edu>
+
+-   Andy Sparrow <spadger@best.com>
+
+-   Andy Valencia <ajv@csd.mot.com>
+
+-   Andy Whitcroft <andy@sarc.city.ac.uk>
+
+-   Anes Muhametov <anes@anes.su>
+
+-   Angel Todorov <todorov_bg@gmx.net>
+
+-   Angelo Turetta <aturetta@commit.it>
+
+-   Anish Mistry <amistry@am-productions.biz>
+
+-   Anthony C. Chavez <acc@anthonychavez.org>
+
+-   Anthony Ginepro <anthony.ginepro@laposte.net>
+
+-   Anthony Mawer <gnats@mawer.org>
+
+-   Anthony Yee-Hang Chan <yeehang@netcom.com>
+
+-   Antoine Beaupre <anarcat@anarcat.ath.cx>
+
+-   Antoine Pelisse <apelisse@gmail.com>
+
+-   Anton Hryciuk <gnixua@gmail.com>
+
+-   Anton N. Bruesov <antonz@library.ntu-kpi.kiev.ua>
+
+-   Anton Shterenlikht <mexas@bris.ac.uk>
+
+-   Anton Tornqvist <antont@inbox.lv>
+
+-   Anton Voronin <anton@urc.ac.ru>
+
+-   Anton Yuzhaninov <citrin@citrin.ru>
+
+-   Antonio Bonifati <ant@monitor.deis.unical.it>
+
+-   Antonio Carlos Venancio Junior <antonio@php.net>
+
+-   Antti Kaipila <anttik@iki.fi>
+
+-   Aragon Gouveia <aragon@phat.za.net>
+
+-   Are Bryne <are.bryne@communique.no>
+
+-   Ari Suutari <ari@suutari.iki.fi>
+
+-   Arindum Mukerji <raja@moselle.com>
+
+-   Arjan de Vet <devet@devet.nl>
+
+-   Arnaud Berthomier <oz@cyprio.net>
+
+-   Arnaud Launay <asl@launay.org>
+
+-   Arne Henrik Juul <arnej@Lise.Unit.NO>
+
+-   Aron Schlesinger <as@bsdgroup.de>
+
+-   Aron Stansvik <elvstone@gmail.com>
+
+-   Artem Kazakov <kazakov@gmail.com>
+
+-   Artem Naluzhnyy <tut@nhamon.com.ua>
+
+-   Artem Nosov <chip-set@mail.ru>
+
+-   Ashley Penney <ashp@unloved.org>
+
+-   Ask Bjoern Hansen <ask@valueclick.com>
+
+-   Athanasios Douitsis <aduitsis@cpan.org>
+
+-   Atsushi Furuta <furuta@sra.co.jp>
+
+-   Atsushi Murai <amurai@spec.co.jp>
+
+-   Attila Nagy <bra@fsn.hu>
+
+-   Atushi Sakauchi <sakauchi@yamame.to>
+
+-   Autrijus Tang <autrijus@autrijus.org>
+
+-   Axel Gonzalez <loox@e-shell.net>
+
+-   Azrael JD <azraeljd122@gmail.com>
+
+-   Balázs Nagy <js@iksz.hu>
+
+-   Barry Bierbauch <pivrnec@vszbr.cz>
+
+-   Barry Lustig <barry@ictv.com>
+
+-   Bartosz Fabianowski <freebsd@chillt.de>
+
+-   Bayanzul Lodoysamba <baynaa@yahoo.com>
+
+-   Ben Hutchinson <benhutch@xfiles.org.uk>
+
+-   Ben Jackson
+
+-   Ben Walter <bwalter@itachi.swcp.com>
+
+-   Ben Woolley <ports@tautology.org>
+
+-   Benedikt Köhler <benedikt@furukama.de>
+
+-   Beni Keller <navigium@grindcore.ch>
+
+-   Benjamin Lewis <bhlewis@gte.net>
+
+-   Benjamin Lutz <benlutz@datacomm.ch>
+
+-   Benny Kjrgaard <benny@catpipe.net>
+
+-   Benoit Calvez <benoit@litchis.org>
+
+-   Berend de Boer <berend@pobox.com>
+
+-   Bernd Luevelsmeyer <bdluevel@heitec.net>
+
+-   Bernd Rosauer <br@schiele-ct.de>
+
+-   Bill Cadwallader <hurbold@yahoo.com>
+
+-   Bill Kish <kish@osf.org>
+
+-   Bill Lloyd <wlloyd@mpd.ca>
+
+-   Bill Moran <wmoran@collaborativefusion.com>
+
+-   Bill Trost <trost@cloud.rain.com>
+
+-   Björn König <bkoenig@cs.tu-berlin.de>
+
+-   Björn Lindström <bkhl@elektrubadur.se>
+
+-   Blaz Zupan <blaz@amis.net>
+
+-   BluePex Security Solutions <freebsd-ports@bluepex.com>
+
+-   Bob Eager <bob@eager.cx>
+
+-   Bob Frazier <bobf@mrp3.com>
+
+-   Bob Van Valzah <Bob@whitebarn.com>
+
+-   Bob Willcox <bob@luke.pmr.com>
+
+-   Boris Kovalenko <boris@tagnet.ru>
+
+-   Boris Lytochkin <lytboris@gmail.com>
+
+-   Boris Staeblow <balu@dva.in-berlin.de>
+
+-   Boyd R. Faulkner <faulkner@asgard.bga.com>
+
+-   Brad Chapman <chapmanb@arches.uga.edu>
+
+-   Brad Hendrickse <bradh@uunet.co.za>
+
+-   Brad Jones <brad@kazrak.com>
+
+-   Brad Karp <karp@eecs.harvard.edu>
+
+-   Brad Lanam <bll@gentoo.com>
+
+-   Bradley Dunn <bradley@dunn.org>
+
+-   Bram Moolenaar <bram@moolenaar.net>
+
+-   Brandon Fosdick <bfoz@glue.umd.edu>
+
+-   Brandon Gillespie <brandon@roguetrader.com>
+
+-   Brent B. Powers <bbp2006@columbia.edu>
+
+-   Brent J. Nordquist <bjn@visi.com>
+
+-   Brett Lymn <blymn@mulga.awadi.com.AU>
+
+-   Brett Taylor <brett@peloton.runet.edu>
+
+-   Brian Campbell <brianc@pobox.com>
+
+-   Brian Cully <shmit@kublai.com>
+
+-   Brian Gardner <brian@getsnappy.com>
+
+-   Brian Handy <handy@lambic.space.lockheed.com>
+
+-   Brian Litzinger <brian@MediaCity.com>
+
+-   Brian M. Clapper <bmc@clapper.com>
+
+-   Brian McGovern <bmcgover@cisco.com>
+
+-   Brian Moore <ziff@houdini.eecs.umich.edu>
+
+-   Brian R. Gaeke <brg@dgate.org>
+
+-   Brian R. Haug <haug@conterra.com>
+
+-   Brian Skrab <brian@quynh-and-brian.org>
+
+-   Brian Tao <taob@risc.org>
+
+-   Brion Moss <brion@queeg.com>
+
+-   Bruce Albrecht <bruce@zuhause.mn.org>
+
+-   Bruce Gingery <bgingery@gtcs.com>
+
+-   Bruce J. Keeler <loodvrij@gridpoint.com>
+
+-   Bruce Murphy <packrat@iinet.net.au>
+
+-   Bruce Walter <walter@fortean.com>
+
+-   Bruno Schwander <bruno@tinkerbox.org>
+
+-   Byung-Hee HWANG <bh@izb.knu.ac.kr>
+
+-   Camson Huynh <chuynh@biolateral.com.au>
+
+-   Carey Jones <mcj@acquiesce.org>
+
+-   Carl Fongheiser <kf0yn@mchsi.com>
+
+-   Carl Makin <carl@stagecraft.cx>
+
+-   Carl Mascott <cmascott@world.std.com>
+
+-   Carl Schmidt <carl@perlpimp.codersluts.net>
+
+-   Carlos A. M. dos Santos <unixmania@gmail.com>
+
+-   Carlos Eduardo G. Carvalho <cartola@openit.com.br>
+
+-   Carsten Larsen <cs@innolan.dk>
+
+-   Casper <casper@acc.am>
+
+-   Castor Fu <castor@geocast.com>
+
+-   Cédric Lamalle <cedric@cedric.trix.net>
+
+-   Cezary Morga <cm@therek.net>
+
+-   Chad Castleberry <crcastle@ius.edu>
+
+-   Chad Jacob Milios <milios@ccsys.com>
+
+-   Chain Lee <chain@110.net>
+
+-   Charles Hannum <mycroft@ai.mit.edu>
+
+-   Charles Henrich <henrich@msu.edu>
+
+-   Charles Mott <cmott@scientech.com>
+
+-   Charles Owens <owensc@enc.edu>
+
+-   Charles Swiger <chuck@pkix.net>
+
+-   Cheng-Tao Lin <b89605222@ntu.edu.tw>
+
+-   ChenGuang LI <horus.li@gmail.com>
+
+-   Chess Griffin <chess@chessgriffin.com>
+
+-   Chet Ramey <chet@odin.INS.CWRU.Edu>
+
+-   Chi-Feng QU <chifeng@gmail.com>
+
+-   Chia-Hsing Yu <davidyu@ucsd.edu>
+
+-   Chia-liang Kao <clkao@CirX.ORG>
+
+-   Chiang Cheng-Hsiung <elvis@sslab.cs.ccu.edu.tw>
+
+-   Chie Taguchi <taguchi.ch@gmail.com>
+
+-   Chih-Hsin Chang <starbops@hey.com>
+
+-   Chiharu Shibata <chi@bd.mbn.or.jp>
+
+-   Chip Norkus
+
+-   Choe, Cheng-Dae <whitekid@netian.com>
+
+-   Chris Burkert <chris@chrisburkert.de>
+
+-   Chris Csanady <cc@tarsier.ca.sandia.gov>
+
+-   Chris Dabrowski <chris@vader.org>
+
+-   Chris Dillon <cdillon@wolves.k12.mo.us>
+
+-   Chris Hutchinson <portmaster@BSDforge.com>
+
+-   Chris Howells <howells@kde.org>
+
+-   Chris Jones <chris.jones@ualberta.ca>
+
+-   Chris Knight <chris@e-easy.com.au>
+
+-   Chris Larsen <darth@vader.dk>
+
+-   Chris Laverdure <dashevil@gmail.com>
+
+-   Chris Pepper <pepper@mail.rockefeller.edu>
+
+-   Chris Pressey <chris_pressey@yahoo.ca>
+
+-   Chris Shenton <cshenton@angst.it.hq.nasa.gov>
+
+-   Chris Stenton <jacs@gnome.co.uk>
+
+-   Chris Torek <torek@ee.lbl.gov>
+
+-   Christian Geier <geier@lostpackets.de>
+
+-   Christian Gusenbauer <c47g@gmx.at>
+
+-   Christian Haury <Christian.Haury@sagem.fr>
+
+-   Christian Heckendorf <heckend@bu.edu>
+
+-   Christian Lackas <delta@lackas.net>
+
+-   Christian Laursen <xi@borderworlds.dk>
+
+-   Christian Schade <christian.schade@interface-projects.de>
+
+-   Christian Ullrich <chris@chrullrich.net>
+
+-   Christian Zander <zander@minion.de>
+
+-   Christoph P. Kukulies <kuku@FreeBSD.org>
+
+-   Christoph Robitschko <chmr@edvz.tu-graz.ac.at>
+
+-   Christoph Weber-Fahr <wefa@callcenter.systemhaus.net>
+
+-   Christophe Juniet <cjuniet@entreview.com>
+
+-   Christopher Boumenot <boumenot@gmail.com>
+
+-   Christopher G. Demetriou <cgd@postgres.berkeley.edu>
+
+-   Christopher Hall <hsw@bitmark.com>
+
+-   Christopher Illies <christopher.illies@ki.se>
+
+-   Christopher J. Ruwe <cjr@cruwe.de>
+
+-   Christopher K. Davis <ckd-freebsd@ckdhr.com>
+
+-   Christopher Key <cjk32@cam.ac.uk>
+
+-   Christopher Knaust <jigboe@gmx.de>
+
+-   Christopher N. Harrell <cnh@ivmg.net>
+
+-   Christopher Nehren <apeiron@comcast.net>
+
+-   Christopher Preston <rbg@gayteenresource.org>
+
+-   Christopher T. Johnson <cjohnson@neunacht.netgsi.com>
+
+-   Christopher Vance <vance@aurema.com>
+
+-   Chrisy Luke <chrisy@flix.net>
+
+-   Chuck Hein <chein@cisco.com>
+
+-   Clayton Eduardo dos Santos <claytones@gmail.com>
+
+-   Clayton Rollins <crollins666@hotmail.com>
+
+-   Clement MOULIN <moeti-freebsd@ouestil.com>
+
+-   Cliff Rowley <dozprompt@onsea.com>
+
+-   clutton <clutton@zoho.com>
+
+-   Clive Crous <clive@darkarts.co.za>
+
+-   Colin Booth <colin@heliocat.net>
+
+-   Colman Reilly <careilly@tcd.ie>
+
+-   Conor McDermottroe <ports@mcdermottroe.com>
+
+-   Conrad Sabatier <conrads@cox.net>
+
+-   Constantin S. Svintsoff <kostik@iclub.nsu.ru>
+
+-   Coranth Gryphon <gryphon@healer.com>
+
+-   Corey Halpin <chalpin@cs.wisc.edu>
+
+-   Corey Smith <corsmith@gmail.com>
+
+-   Cornelis van der Laan <nils@guru.ims.uni-stuttgart.de>
+
+-   Cosmin Stroe <cstroe1@uic.edu>
+
+-   Cove Schneider <cove@brazil.nbn.com>
+
+-   Craig Boston <craig@yekse.gank.org>
+
+-   Craig Butler <craig001@lerwick.hopto.org>
+
+-   Craig Loomis
+
+-   Craig Metz <cmetz@inner.net>
+
+-   Craig Spannring <cts@internetcds.com>
+
+-   Craig Struble <cstruble@vt.edu>
+
+-   Cristian Ferretti <cfs@riemann.mat.puc.cl>
+
+-   Cristiano Rolim Pereira <cristianorolim@hotmail.com>
+
+-   Curt Mayer <curt@toad.com>
+
+-   Cyril Guibourg <aragorn+ports@teaser.fr>
+
+-   Cyrille Lefevre <clefevre@citeweb.net>
+
+-   Cyrus Rahman <cr@jcmax.com>
+
+-   Daan Vreeken <Danovitsch@Vitsch.net>
+
+-   Dai Ishijima <ishijima@tri.pref.osaka.jp>
+
+-   Daisuke Aoyama <aoyama@peach.ne.jp>
+
+-   Daisuke Watanabe <NU7D-WTNB@asahi-net.or.jp>
+
+-   Damian Gerow <dgerow@afflictions.org>
+
+-   Damian Hamill <damian@cablenet.net>
+
+-   Damien Tougas <damien@tougas.net>
+
+-   Dan Angelescu <mrhsaacdoh@yahoo.com>
+
+-   Dan Caescu <daniel@freebsd.ro>
+
+-   Dan Cross <tenser@spitfire.ecsel.psu.edu>
+
+-   Dan Lukes <dan@obluda.cz>
+
+-   Dan Nelson <dnelson@allantgroup.com>
+
+-   Dan Papasian <bugg@bugg.strangled.net>
+
+-   Dan Pelleg <dpelleg+unison@cs.cmu.edu>
+
+-   Dan Piponi <wmtop@tanelorn.demon.co.uk>
+
+-   Dan Rench <citric@cubicone.tmetic.com>
+
+-   Dan Smith <dan@algenta.com>
+
+-   Dan Walters <hannibal@cyberstation.net>
+
+-   Daniel Austin <freebsd-ports@dan.me.uk>
+
+-   Daniel B. Hemmerich <dan@spot.org>
+
+-   Daniel Blankensteiner <db@TruNet.dk>
+
+-   Daniel Bretoi <daniel@netwalk.org>
+
+-   Daniel Bryan <sisko@bsdmail.com>
+
+-   Daniel Hagan <dhagan@acm.vt.edu>
+
+-   Daniel Levai <leva@ecentrum.hu>
+
+-   Daniel J. O’Connor <darius@dons.net.au>
+
+-   Daniel O’Connor <doconnor@gsoft.com.au>
+
+-   Daniel Poirot <poirot@aio.jsc.nasa.gov>
+
+-   Daniel Rock <rock@cs.uni-sb.de>
+
+-   Daniel Roethlisberger <daniel@roe.ch>
+
+-   Daniel Tihanyi <daniel.tihanyi@tetragir.com>
+
+-   Daniel W. McRobb <dwm@caimis.com>
+
+-   Daniel W. Steinbrook <dsteinbr@fas.harvard.edu>
+
+-   Daniel Wijnands <daniel@itxl.nl>
+
+-   Daniel Ylitalo <daniel@blodan.se>
+
+-   Danny Braniss <danny@cs.huji.ac.il>
+
+-   Danny Egen
+
+-   Danny Howard <dannyman@toldme.com>
+
+-   Danny J. Zerkel <dzerkel@phofarm.com>
+
+-   Danny Pansters <danny@ricin.com>
+
+-   Dario Freni <saturnero@gufi.org>
+
+-   Darren Pilgrim <ports.maintainer@evilphi.com>
+
+-   Dave Adkins <adkin003@tc.umn.edu>
+
+-   Dave Andersen <angio@aros.net>
+
+-   Dave Blizzard <dblizzar@sprynet.com>
+
+-   Dave Bodenstab <imdave@synet.net>
+
+-   Dave Burgess <burgess@hrd769.brooks.af.mil>
+
+-   Dave Chapeskie <dchapes@ddm.on.ca>
+
+-   Dave Cornejo <dave@dogwood.com>
+
+-   Dave Edmondson <davided@sco.com>
+
+-   Dave Glowacki <dglo@ssec.wisc.edu>
+
+-   Dave Green <dg@fastmail.co.uk>
+
+-   Dave Marquardt <marquard@austin.ibm.com>
+
+-   Dave Tweten <tweten@FreeBSD.org>
+
+-   David A. Adkins <adkin003@tc.umn.edu>
+
+-   David A. Bader <dbader@eece.unm.edu>
+
+-   David Borman <dab@bsdi.com>
+
+-   David Bremner <bremner@unb.ca>
+
+-   David Bushong <david+ports@bushong.net>
+
+-   David Chaplin-Loebell <direct@klatha.com>
+
+-   Davide D’Amico <dave@gufi.org>
+
+-   David Dawes <dawes@XFree86.org>
+
+-   David Demelier <markand@malikania.fr>
+
+-   David Filo
+
+-   David G. Holm <harbour@netfang.net>
+
+-   David Gardner <david@pinko.net>
+
+-   David Gilbert <dave@daveg.ca>
+
+-   David H. Munro <munro1@llnl.gov>
+
+-   David Holland <dholland@eecs.harvard.edu>
+
+-   David Holloway <daveh@gwythaint.tamis.com>
+
+-   David Horwitt <dhorwitt@ucsd.edu>
+
+-   David Hovemeyer <daveho@infocom.com>
+
+-   David Johnson <david@usermode.org>
+
+-   David Jones <dej@qpoint.torfree.net>
+
+-   David Julien <david.julien@gmail.com>
+
+-   David K. Gerry <David.K.Gerry@GMail.com>
+
+-   David Kalliecharan <dave@dal.ca>
+
+-   David Kelly <dkelly@tomcat1.tbe.com>
+
+-   David Kirchner <dpk@dpk.net>
+
+-   David Kulp <dkulp@neomorphic.com>
+
+-   David L. Nugent <davidn@blaze.net.au>
+
+-   David Landgren <david@landgren.net>
+
+-   David Lay <dsl@webize.com.au>
+
+-   David Le Brun <david@trucs.org>
+
+-   David Leonard <d@scry.dstc.edu.au>
+
+-   David Magda <dmagda@magda.ca>
+
+-   David Muir Sharnoff <muir@idiom.com>
+
+-   David O’Rourke <dor.bsd@xm0.uk>
+
+-   David Otto <ottodavid@gmx.net>
+
+-   David Quattlebaum <drq@drqware.com>
+
+-   David Romano <unobe@cpan.org>
+
+-   David S. Miller <davem@jenolan.rutgers.edu>
+
+-   David Shane Holden <dpejesh@yahoo.com>
+
+-   David Siebörger <drs@rucus.ru.ac.za>
+
+-   David Sugar <dyfet@gnu.org>
+
+-   David Syphers <dsyphers@u.washington.edu>
+
+-   David Sze <dsze@alumni.uwaterloo.ca>
+
+-   David Terry <dterry@digifonica.com>
+
+-   David Vachulka <arch_dvx@users.sourceforge.net>
+
+-   David Wolfskill <david@catwhisker.org>
+
+-   David Yeske <dyeske@yahoo.com>
+
+-   Dax Labrador <semprix@bsdmail.org>
+
+-   Dean Gaudet <dgaudet@arctic.org>
+
+-   Dean Hollister <dean@odyssey.apana.org.au>
+
+-   Dean Huxley <dean@fsa.ca>
+
+-   Demetris Procopiou <dem.procopiou@gmail.com>
+
+-   Denis Barov <dindin@dindin.ru>
+
+-   Denis Fortin
+
+-   Denis Generalov <gd@rambler-co.ru>
+
+-   Denis Philippov <for_spam@mezon.ru>
+
+-   Denis E. Podolskiy <bytestore@yandex.ru>
+
+-   Denis Pokataev <catone@cpan.org>
+
+-   Denis Shaposhnikov <dsh@vlink.ru>
+
+-   Dennis Cabooter <dennis@rootxs.org>
+
+-   Dennis Glatting <dennis.glatting@software-munitions.com>
+
+-   Dennis S. Davidoff <null@cvs.1system.ru>
+
+-   Denton Gentry <denny1@home.com>
+
+-   Derek E. Schrock <dereks@lifeofadishwasher.com>
+
+-   Derek Inksetter <derek@saidev.com>
+
+-   Derik van Zuetphen <dz@426.ch>
+
+-   Dermot Tynan <dtynan@kalopa.com>
+
+-   Dhananjay Balan <mail@dbalan.in>
+
+-   Diego Depaoli <trebestie@gmail.com>
+
+-   Dikshie <dikshie@lapi.itb.ac.id>
+
+-   Dikshie <dikshie@sfc.wide.ad.jp>
+
+-   Dierk Sacher <dierk@blaxxtarz.de>
+
+-   Dirk Engling <erdgeist@erdgeist.org>
+
+-   Dirk Gouders <gouders@et.bocholt.fh-gelsenkirchen.de>
+
+-   Dirk Jagdmann <doj@cubic.org>
+
+-   Dirk Keunecke <dk@panda.rhein-main.de>
+
+-   Dirk Nehrling <nerle@pdv.de>
+
+-   Dirk-Willem van Gulik <dirkx@webweaving.org>
+
+-   Ditesh Shashikant Gathani <ditesh@gathani.org>
+
+-   Dmitri Nikulin <setagllib@optusnet.com.au>
+
+-   Dmitriy Limonov <earl1k@mail.ru>
+
+-   Dmitry A. Yanko <fm@astral.ntu-kpi.kiev.ua>
+
+-   Dmitry Afanasiev <KOT@MATPOCKuH.Ru>
+
+-   Dmitry Dyomin <old@old.com.ua>
+
+-   Dmitry Karasik <dmitry@karasik.eu.org>
+
+-   Dmitry Kazarov <d.y.kazarov@mail.ru>
+
+-   Dmitry Khrustalev <dima@xyzzy.machaon.ru>
+
+-   Dmitry Kohmanyuk <dk@farm.org>
+
+-   Dmitry Pryadko <d.pryadko@rambler-co.ru>
+
+-   Dmitry Semkin <ds@tic-tac.ru>
+
+-   Dmitry V. Sukhodoyev <raven428@gmail.com>
+
+-   Dmitry Wagin <dmitry.wagin@ya.ru>
+
+-   Dmytro Rud <unixoid@yahoo.com>
+
+-   Dom Mitchell <dom@myrddin.demon.co.uk>
+
+-   Domas Mituzas <midom@dammit.lt>
+
+-   Dominic Marks <dominic_marks@btinternet.com>
+
+-   Dominic Mitchell <dom@happygiraffe.net>
+
+-   Dominik Brettnacher <domi@saargate.de>
+
+-   Dominik Rothert <dr@domix.de>
+
+-   Dominique Goncalves <dominique.goncalves@gmail.com>
+
+-   Don Croyle <croyle@gelemna.org>
+
+-   Don Morrison <dmorrisn@u.washington.edu>
+
+-   Don Owens <don@regexguy.com>
+
+-   Don Whiteside <whiteside@acm.org>
+
+-   Don Yuniskis <dgy@rtd.com>
+
+-   Donald Maddox <dmaddox099@yahoo.com>
+
+-   Donn Miller <dmmiller@cvzoom.net>
+
+-   Doug Harple <dharple@nycap.rr.com>
+
+-   Doug Penner <darwinsurvivor@gmail.com>
+
+-   Douglas A. Maske <maske@rungepaper.com>
+
+-   Douglas Carmichael <dcarmich@mcs.com>
+
+-   Douglas Crosher <dtc@scrooge.ee.swin.oz.au>
+
+-   Douglas K. Rand <rand@meridian-enviro.com>
+
+-   Douglas W. Thrift <douglas@douglasthrift.net>
+
+-   Drew Derbyshire <ahd@kew.com>
+
+-   Dustin Sallings <dustin@spy.net>
+
+-   Dylan Carlson <absinthe@retrovertigo.com>
+
+-   Dylan Simon <dylan@dylex.net>
+
+-   ELISA Font Project
+
+-   Eckart "Isegrim" Hofmann <Isegrim@Wunder-Nett.org>
+
+-   Ed Gold <vegold01@starbase.spd.louisville.edu>
+
+-   Ed Hudson <elh@p5.spnet.com>
+
+-   Ederson de Moura <ederbs@ederbs.org>
+
+-   Edgardo Garcia Hoeffler <edybsd@yahoo.com.ar>
+
+-   Edmondas Girkantas <eg@fbsd.lt>
+
+-   Eduard Martinescu <martines@rochester.rr.com>
+
+-   Edward Chuang <edwardc@firebird.org.tw>
+
+-   Edward Wang <edward@edcom.com>
+
+-   Edwin Mons <e@ik.nu>
+
+-   Eero Hänninen <fax@nohik.ee>
+
+-   Ege Rekk <aagero@aage.priv.no>
+
+-   Eiji-usagi-MATSUmoto <usagi@clave.gr.jp>
+
+-   Eijiro Shibusawa <ej-sib@ice.uec.ac.jp>
+
+-   Eike Bernhardt <eike.bernhardt@gmx.de>
+
+-   Eintisy Chuang <eintisy@gmail.com>
+
+-   Eliane Vidal <macevidal@gmail.com>
+
+-   Elias Mandouvalos <ocean@mail.gr>
+
+-   Elisey Savateev <b3k@mail.ru>
+
+-   Elmar Bartel <bartel@informatik.tu-muenchen.de>
+
+-   Emily Boyd <emily@emilyboyd.com>
+
+-   Eoin Lawless <eoin@maths.tcd.ie>
+
+-   Eric A. Griff <eric@talesfromthereal.com>
+
+-   Eric Anderson <anderson@centtech.com>
+
+-   Eric Blood <eblood@cs.unr.edu>
+
+-   Eric Camachat <eric@camachat.org>
+
+-   Eric Cronin <ecronin@eecs.umich.edu>
+
+-   Eric D. Futch <efutch@nyct.net>
+
+-   Eric F. Crist <ecrist@secure-computing.net>
+
+-   Eric Freeman <freebsdports@chillibear.com>
+
+-   Eric J. Haug <ejh@slustl.slu.edu>
+
+-   Eric J. Schwertfeger <eric@cybernut.com>
+
+-   Eric Kjeldergaard <kjelderg@gmail.com>
+
+-   Eric L. Hernes <erich@lodgenet.com>
+
+-   Eric Masson <e-masson@kisoft-services.com>
+
+-   Eric Ogren <eogren@stanford.edu>
+
+-   Eric P. Scott <eps@sirius.com>
+
+-   Eric Schnoebelen <eric@cirr.com>
+
+-   Eric Shao-yu Cheng <eric@fractal.csie.org>
+
+-   Eric Sprinkle <eric@ennovatenetworks.com>
+
+-   Eric W. Bates <ericx@vineyard.net>
+
+-   Eric Yu <ericyu@mail2000.com.tw>
+
+-   Erich Stefan Boleyn <erich@uruk.org>
+
+-   Erich Zigler <erich@tacni.net>
+
+-   Erik E. Rantapaa <rantapaa@math.umn.edu>
+
+-   Erik Greenwald <erik@smluc.org>
+
+-   Erik H. Bakke <erikhb@bgnett.no>
+
+-   Erik H. Moe <ehm@cris.com>
+
+-   Erik L. Chen <d9364104@mail.nchu.edu.tw>
+
+-   Ernie Smallis <esmallis@stbernard.com>
+
+-   Ernst Winter (Deceased)
+
+-   Espen Skoglund <esk@ira.uka.de>
+
+-   Espen Tagestad <espen@tagestad.no>
+
+-   Eugene M. Kim <astralblue@usa.net>
+
+-   Eugene Ossintsev <eugos@gmx.net>
+
+-   Eugene Radchenko <genie@qsar.chem.msu.su>
+
+-   Eugene Ray <pal@paladin7.net>
+
+-   Eugene Zheganin <eugene@zhegan.in>
+
+-   Eugeney Ryzhyk <rzheka@users.sourceforge.net>
+
+-   Eugeny Kuzakov <CoreDumped@coredumped.null.ru>
+
+-   Evan Champion <evanc@synapse.net>
+
+-   Evan Sarmiento <esarmiento@wayfair.com>
+
+-   Evgueni V. Gavrilov <aquatique@rusunix.org>
+
+-   Ewgenij Gawrilow <gawrilow@math.tu-berlin.de>
+
+-   FUJIMOTO Kensaku <fujimoto@oscar.elec.waseda.ac.jp>
+
+-   FURUSAWA Kazuhisa <furusawa@com.cs.osakafu-u.ac.jp>
+
+-   Fabian Freyer <fabian.freyer@physik.tu-berlin.de>
+
+-   Fabian Keil <fk@fabiankeil.de>
+
+-   Fabian M. Borschel <fmb@onibox.net>
+
+-   Fabiano Sidler <fabianosidler@swissonline.ch>
+
+-   Fabien Devaux <fab@gcu.info>
+
+-   Fabio Tosques <fabio.tosques@rz.hu-berlin.de>
+
+-   Fabrice Aneche <akh@nobugware.com>
+
+-   Fangrui Song <i@maskray.me>
+
+-   Fanying Jen <fanying@fynet.com>
+
+-   Faried Nawaz <fn@Hungry.COM>
+
+-   Fernan Aguero <fernan@iib.unsam.edu.ar>
+
+-   Ferruccio Vitale <vitale@cs.tin.it>
+
+-   Filipe Rocha <filiperocha@gmail.com>
+
+-   Filippo Natali <filippo@widestore.net>
+
+-   Flemming Jacobsen <fj@batmule.dk>
+
+-   Florian Unglaub <usenet04@rootofallevil.net>
+
+-   Fong-Ching Liaw <fong@juniper.net>
+
+-   Francis M J Hsieh <mjshieh@life.nthu.edu.tw>
+
+-   Francisco Cabrita <include@npf.pt.freebsd.org>
+
+-   Francisco Gomez <francisco@gomezmarin.com>
+
+-   Francisco Reyes <fjrm@yahoo.com>
+
+-   Franco Corbelli <franco@francocorbelli.com>
+
+-   François Tamone <tamone@eig.unige.ch>
+
+-   Frank Bartels <knarf@camelot.de>
+
+-   Frank Behrens <frank@pinky.sax.de>
+
+-   Frank Börner <frank-freebsd@online.de>
+
+-   Frank Chen Hsiung Chan <frankch@waru.life.nthu.edu.tw>
+
+-   Frank Denis <j@pureftpd.org>
+
+-   Frank Gründer <elwood@mc5sys.in-berlin.de>
+
+-   Frank MacLachlan <fpm@n2.net>
+
+-   Frank Mayhar <frank@exit.com>
+
+-   Frank Nobis <fn@Radio-do.de>
+
+-   Frank Ruell <stoerte@dreamwarrior.net>
+
+-   Frank Steinborn <steinex@nognu.de>
+
+-   Frank Volf <volf@oasis.IAEhv.nl>
+
+-   Frank Wall <fw@moov.de>
+
+-   Frank W. Josellis <frank@dynamical-systems.org>
+
+-   Frank ten Wolde <franky@pinewood.nl>
+
+-   Frank van der Linden <frank@fwi.uva.nl>
+
+-   Franz Klammer <klammer@webonaut.com>
+
+-   Fraser Tweedale <frase@frase.id.au>
+
+-   Fred Cawthorne <fcawth@jjarray.umn.edu>
+
+-   Fred Gilham <gilham@csl.sri.com>
+
+-   Fred Templin <templin@erg.sri.com>
+
+-   Freddie Cash <fcash@bigfoot.com>
+
+-   Frederic Dubuy <fdubuy@free.fr>
+
+-   Frédéric Praca <frederic.praca@freebsd-fr.org>
+
+-   Frederick Earl Gray <fgray@rice.edu>
+
+-   Fredrik Lennmark <fredrik@min-hemsida.net>
+
+-   Fredrik Lindberg <fli@shapeshifter.se>
+
+-   Frerich Raabe <frerich.raabe@gmx.de>
+
+-   Fumihiko Kimura <jfkimura@yahoo.co.jp>
+
+-   Fuyuhiko Maruyama <fuyuhik8@is.titech.ac.jp>
+
+-   G. Adam Stanislav <adam@redprince.net>
+
+-   Gábor Kincses <gabor@acm.org>
+
+-   Gábor Zahemszky <zgabor@CoDe.hu>
+
+-   Gasol Wu <gasol.wu@gmail.com>
+
+-   Gabriel Dutra <0xdutra@gmail.com>
+
+-   Gabriel Rizzo <gabriel96.gsr@gmail.com>
+
+-   Gareth McCaughan <gjm11@dpmms.cam.ac.uk>
+
+-   Garrett Rooney <rooneg@electricjellyfish.net>
+
+-   Gary A. Browning <gab10@griffcd.amdahl.com>
+
+-   Gary Hayers <gary@hayers.org>
+
+-   Gary Howland <gary@hotlava.com>
+
+-   Gary J. <garyj@rks32.pcs.dec.com>
+
+-   Gary Kline <kline@thought.org>
+
+-   Gaspar Chilingarov <nightmar@lemming.acc.am>
+
+-   Gautam Mani <execve@gmail.com>
+
+-   Gavin McDonald <gavin@16degrees.com.au>
+
+-   Gavin Mu <gavin@FreeBSDChina.org>
+
+-   Gea-Suan Lin <gslin@gslin.org>
+
+-   Geoff Glasson <g_glasson@jimali.dyndns.org>
+
+-   Geoff Rehmet <csgr@alpha.ru.ac.za>
+
+-   Geoffrey Mainland <mainland@apeiron.net>
+
+-   Geoffroy Rivat <grivat@sicfa.net>
+
+-   Georg Graf <georg@graf.priv.at>
+
+-   Georg Wagner <georg.wagner@ubs.com>
+
+-   George Hartzell <hartzell@kestrel.alerce.com>
+
+-   George Liaskos <geo.liaskos@gmail.com>
+
+-   Gerasimos Dimitriadis <gedimitr@auth.gr>
+
+-   Geraud Continsouzas <geraud@gcu.info>
+
+-   Gerhard Gonter <g.gonter@ieee.org>
+
+-   Gerrit Beine <tux@pinguru.net>
+
+-   Giacomo Mariani <giacomomariani@yahoo.it>
+
+-   Gianlorenzo Masini <masini@uniroma3.it>
+
+-   Gianmarco Giovannelli <gmarco@giovannelli.it>
+
+-   Gil Kloepfer Jr. <gil@limbic.ssdl.com>
+
+-   Gilad Rom <rom_glsa@ein-hashofet.co.il>
+
+-   Gilbert Morgan <gmm@tutanota.com>
+
+-   Giles Lean <giles@nemeton.com.au>
+
+-   Ginga Kawaguti <ginga@amalthea.phys.s.u-tokyo.ac.jp>
+
+-   Gleb Sushko <neuroworker@gmail.com>
+
+-   Glen Foster <gfoster@gfoster.com>
+
+-   Giel van Schijndel <me@mortis.eu>
+
+-   Glenn Johnson <gljohns@bellsouth.net>
+
+-   Godmar Back <gback@facility.cs.utah.edu>
+
+-   Goran Hammarback <goran@astro.uu.se>
+
+-   Goran Mekić <meka@tilda.center>
+
+-   Gord Matzigkeit <gord@enci.ucalgary.ca>
+
+-   Gordon Greeff <gvg@uunet.co.za>
+
+-   Graham Wheeler <gram@cdsec.com>
+
+-   Greg A. Woods <woods@zeus.leitch.com>
+
+-   Greg Albrecht <gregoryba@gmail.com>
+
+-   Greg Ansley <gja@ansley.com>
+
+-   Greg Becker <greg@codeconcepts.com>
+
+-   Greg Fitzgerald <gregf@hugops.pw>
+
+-   Greg J. <xcas@cox.net>
+
+-   Greg Kennedy <kennedy.greg@gmail.com>
+
+-   Greg Robinson <greg@rosevale.com.au>
+
+-   Greg Troxel <gdt@ir.bbn.com>
+
+-   Greg Ungerer <gerg@stallion.oz.au>
+
+-   Gregory Bond <gnb@itga.com.au>
+
+-   Gregory D. Moncreaff <moncrg@bt340707.res.ray.com>
+
+-   Grün Christian-Rolf <kiki@bsdro.org>
+
+-   Guillaume Paquet <amyfoub@videotron.ca>
+
+-   Gurkan Sengun <grknsngn@gmail.com>
+
+-   Gustau Pérez <gustau.perez@gmail.com>
+
+-   Gustavo Fukao <gustavofukao@gmail.com>
+
+-   Guy Brand <gb@isis.u-strasbg.fr>
+
+-   Guy Coleman <gtchask@mm.st>
+
+-   Guy Harris <guy@netapp.com>
+
+-   Guy Poizat <guy@device.dyndns.org>
+
+-   Guy Tabrar <guy.tabrar@me.com>
+
+-   H. Wade Minter <minter@lunenburg.org>
+
+-   HAMADA Naoki <hamada@astec.co.jp>
+
+-   HATANOU Tomomi <hatanou@infolab.ne.jp>
+
+-   HIYAMA Takeshi <gibbon@cocoa.freemail.ne.jp>
+
+-   HONDA Yasuhiro <honda@kashio.info.mie-u.ac.jp>
+
+-   HOSOBUCHI Noriyuki <hoso@buchi.tama.or.jp>
+
+-   HOTARU-YA <hotaru@tail.net>
+
+-   Haesu Jeon <haesu@towardex.com>
+
+-   Hakisho Nukama <nukama@gmail.com>
+
+-   Hammurabi Mendes <hmendes_br@yahoo.com>
+
+-   Hannes Frederic Sowa <hannes@stressinduktion.org>
+
+-   Hannu Savolainen <hannu@voxware.pp.fi>
+
+-   Hans Huebner <hans@artcom.de>
+
+-   Hans Petter Bieker <zerium@webindex.no>
+
+-   Hans Petter Selasky <hselasky@c2i.net>
+
+-   Hans Zuidam <hans@brandinnovators.com>
+
+-   Hans-Christian Ebke <hans-christian_ebke@gmx.de>
+
+-   Hansjoerg Pehofer <hansjoerg.pehofer@uibk.ac.at>
+
+-   Harald Schmalzbauer <h.schmalzbauer@omnisec.de>
+
+-   Harald Wille <harald.wille@students.jku.at>
+
+-   Hardy Schumacher <hardy.schumacher@gmx.de>
+
+-   Harlan Stenn <Harlan.Stenn@pfcs.com>
+
+-   Harold Barker <hbarker@dsms.com>
+
+-   Harry Coin <harrycoin@qconline.com>
+
+-   Harry Newton <harry_newton@telinco.co.uk>
+
+-   Havard Eidnes <Havard.Eidnes@runit.sintef.no>
+
+-   Heath Nielson <heath@cs.byu.edu>
+
+-   Heikki Suonsivu <hsu@cs.hut.fi>
+
+-   Heiko W. Rupp
+
+-   Heiner Eichmann <h.eichmann@gmx.de>
+
+-   Heiner Strauss <heiner@bilch.com>
+
+-   Helko Glathe <glathe.helko@googlemail.com>
+
+-   Helmut F. Wirth <hfwirth@ping.at>
+
+-   Hendrik Scholz <hendrik@scholz.net>
+
+-   Henning Matyschok <henning.matyschok@outlook.com>
+
+-   Henri Michelon <michelon@e-cml.org>
+
+-   Henrik Brautaset Aronsen <freebsd-ports@henrik.synth.no>
+
+-   Henrik Friedrichsen <hrkfrd@googlemail.com>
+
+-   Henrik Holst <henrik.holst@millistream.com>
+
+-   Henrik Motakef <henrik.motakef@web.de>
+
+-   Henrik Nymann Jensen <henriknj@0xmilk.org>
+
+-   Henrik Vestergaard Draboel <hvd@terry.ping.dk>
+
+-   Henry Hu <henry.hu.sh@gmail.com>
+
+-   Henry Whincup <henry@techiebod.com>
+
+-   Herb Peyerl <hpeyerl@NetBSD.org>
+
+-   Herbert J. Skuhra <herbert.skuhra@gmx.at>
+
+-   Hernan Di Pietro <hernan.di.pietro@gmail.com>
+
+-   Hideaki Machida <hido@coreblack.com>
+
+-   Hideaki Ohmon <ohmon@tom.sfc.keio.ac.jp>
+
+-   Hidekazu Kuroki <hidekazu@cs.titech.ac.jp>
+
+-   Hideki Yamamoto <hyama@acm.org>
+
+-   Hideyuki Suzuki <hideyuki@sat.t.u-tokyo.ac.jp>
+
+-   Hirayama Issei <iss@mail.wbs.ne.jp>
+
+-   Hiroaki Sakai <sakai@miya.ee.kagu.sut.ac.jp>
+
+-   Hiroharu Tamaru <tamaru@ap.t.u-tokyo.ac.jp>
+
+-   Hirohisa Yamaguchi <umq@ueo.co.jp>
+
+-   Hironori Ikura <hikura@kaisei.org>
+
+-   Hiroshi Nishikawa <nis@pluto.dti.ne.jp>
+
+-   Hiroto Kagotani <hiroto.kagotani@gmail.com>
+
+-   Hiroya Tsubakimoto
+
+-   Holger Lamm <holger@eit.uni-kl.de>
+
+-   Holger Veit <Holger.Veit@gmd.de>
+
+-   Holm Tiffe <holm@geophysik.tu-freiberg.de>
+
+-   Horance Chou <horance@freedom.ie.cycu.edu.tw>
+
+-   Horia Racoviceanu <horia@racoviceanu.com>
+
+-   Horihiro Kumagai <kuma@jp.FreeBSD.org>
+
+-   Hr.Ladavac <lada@ws2301.gud.siemens.co.at>
+
+-   Hsin-Hsiung Chang <sexbear@tmu.edu.tw>
+
+-   Hubert Feyrer <hubertf@NetBSD.ORG>
+
+-   Hubert Tournier <hubert@frbsd.org>
+
+-   Hugh Mahon <h_mahon@fc.hp.com>
+
+-   Hugo Leisink <hugo@leisink.net>
+
+-   Hung-Chi Chu <hcchu@r350.ee.ntu.edu.tw>
+
+-   Hung-Yi Chen <gaod.chen@gmail.com>
+
+-   Hyogeol Lee <hyogeollee@gmail.com>
+
+-   IMAI Takeshi <take-i@ceres.dti.ne.jp>
+
+-   IMAMURA Tomoaki <tomoak-i@is.aist-nara.ac.jp>
+
+-   IWASHITA Yoji <shuna@pop16.odn.ne.jp>
+
+-   IWATSUKI Hiroyuki <don@na.rim.or.jp>
+
+-   Ian Holland <ianh@tortuga.com.au>
+
+-   Ian Struble <ian@broken.net>
+
+-   Ian Vaudrey <i.vaudrey@bigfoot.com>
+
+-   Iblis Lin <iblis@hs.ntnu.edu.tw>
+
+-   Igor Artemiev <ai@kliksys.ru>
+
+-   Igor Khasilev <igor@jabber.paco.odessa.ua>
+
+-   Igor Leonenko <bananaz@bk.ru>
+
+-   Igor Ostapenko <igor.ostapenko@gmail.com>
+
+-   Igor Pokrovsky <ip@doom.homeunix.org>
+
+-   Igor Roshchin <str@giganda.komkon.org>
+
+-   Igor Serikov <bt@turtle.pangeatech.com>
+
+-   Igor Sviridov <siac@ua.net>
+
+-   Igor Vinokurov <igor@zynaps.ru>
+
+-   Ikuo Nakagawa <ikuo@isl.intec.co.jp>
+
+-   Ildar Hizbulin <hizel@vyborg.ru>
+
+-   Ilia Chipitsine <ilia@rediska.ru>
+
+-   Ilya Khamushkin <ilya@space.rootshell.ru>
+
+-   Ilya V. Komarov <mur@lynx.ru>
+
+-   Ismail Yenigul <ismail@enderunix.org>
+
+-   Itsuro Saito <saito@miv.t.u-tokyo.ac.jp>
+
+-   Ivan Klymenko <fidaj@ukr.net>
+
+-   Ivan Rozhuk <rozhuk.im@gmail.com>
+
+-   Ivan Sharov <ivan.sharov@iname.com>
+
+-   Ivan Sviridov <sin@vimcom.net>
+
+-   J Shoemaker <shoemaker@softhome.net>
+
+-   J. Bryant <jbryant@argus.flash.net>
+
+-   J. David Lowe <lowe@saturn5.com>
+
+-   J. Han <hjh@photino.com>
+
+-   J. Hawk <jhawk@MIT.EDU>
+
+-   J. Randolph <snortsms@servangle.net>
+
+-   J.R. Oldroyd <fbsd@opal.com>
+
+-   J.T. Conklin <jtc@cygnus.com>
+
+-   Jacek Pelka <jacek@combit.com.pl>
+
+-   Jack <jack@zeus.xtalwind.net>
+
+-   Jackson Low <xxjack12xx@gmail.com>
+
+-   Jacob Atzen <jatzen@gmail.com>
+
+-   Jacob Bohn Lorensen <jacob@jblhome.ping.mk>
+
+-   Jacques Marneweck <jacques@php.net>
+
+-   Jagane D Sundar <jagane@netcom.com>
+
+-   Jake Hamby <jehamby@anobject.com>
+
+-   Jake Smith <jake@xz.cx>
+
+-   Jakub Klausa <jacke@bofh.pl>
+
+-   James Bailie <jimmy@mammothcheese.ca>
+
+-   James Buren <ryu0@ymail.com>
+
+-   James Clark <jjc@jclark.com>
+
+-   James D. Stewart <jds@c4systm.com>
+
+-   James E Keenan <jkeenan@cpan.org>
+
+-   James Jegers <jimj@miller.cs.uwm.edu>
+
+-   James McNaughton <bitbucket63-it@yahoo.com>
+
+-   James O’Gorman <james@netinertia.co.uk>
+
+-   James P. Howard, II <jh@jameshoward.us>
+
+-   James Raftery <james@now.ie>
+
+-   James Raynard <fhackers@jraynard.demon.co.uk>
+
+-   James T. Liu <jtliu@phlebas.rockefeller.edu>
+
+-   James da Silva <jds@cs.umd.edu>
+
+-   James Wright <james.wright@digital-chaos.com>
+
+-   Jamie Heckford <jamie@jamiesdomain.co.uk>
+
+-   Jamie Jones <jamie@bishopston.net>
+
+-   Jan Conard <charly@fachschaften.tu-muenchen.de>
+
+-   Jan Henrik Sylvester <me@janh.de>
+
+-   Jan Jungnickel <Jan@Jungnickel.com>
+
+-   Jan Koum <jkb@FreeBSD.org>
+
+-   Jan L. Peterson <jlp@flipdog.com>
+
+-   Jan Rochel <jan.rochel@epost.de>
+
+-   Jan Siml <jsi@jules.de>
+
+-   Jan Srzednicki <w@wrzask.pl>
+
+-   Jan Stocker <jan.stocker@t-online.de>
+
+-   Jan-Peter Koopmann <j.koopmann@seceidos.de>
+
+-   Janaka Wickramasinghe <janaka@opensource.lk>
+
+-   Janick Taillandier <Janick.Taillandier@ratp.fr>
+
+-   Janky Jay <ek@purplehat.org>
+
+-   János Mohácsi <janos.mohacsi@bsd.hu>
+
+-   Janusz Kokot <janek@gaja.ipan.lublin.pl>
+
+-   Jarle Greipsland <jarle@idt.unit.no>
+
+-   Jason Burgess <dev@fenux.net>
+
+-   Jason DiCioccio <geniusj@ods.org>
+
+-   Jason Garman <init@risen.org>
+
+-   Jason Harris <jharris@widomaker.com>
+
+-   Jason R. Mastaler <jason-freebsd@mastaler.com>
+
+-   Jason Stone <jason-fbsd-ports@shalott.net>
+
+-   Jason Thorpe <thorpej@NetBSD.org>
+
+-   Jason Wright <jason@OpenBSD.org>
+
+-   Jason Young <doogie@forbidden-donut.anet-stl.com>
+
+-   Javad Kouhi <javad.kouhi@gmail.com>
+
+-   Javier Martin Rueda <jmrueda@diatel.upm.es>
+
+-   Jay Fenlason <hack@datacube.com>
+
+-   Jay Krell <jay.krell@cornell.edu>
+
+-   Jaye Mathisen <mrcpu@cdsnet.net>
+
+-   Jaap Akkerhuis <jaap@NLnetLabs.nl>
+
+-   Jean-Baptiste Quenot <jb.quenot@caraldi.com>
+
+-   Jean Benoit <jean@unistra.fr>
+
+-   Jean-Sebastien Roy <js@jeannot.org>
+
+-   Jeanne-Kamikaze <msunet@shellblade.net>
+
+-   Jeff Bartig <jeffb@doit.wisc.edu>
+
+-   Jeff Brown <jabrown@caida.org>
+
+-   Jeff Burchell <toxic@doobie.com>
+
+-   Jeff Forys <jeff@forys.cranbury.nj.us>
+
+-   Jeff Kletsky <Jeff@Wagsky.com>
+
+-   Jeff Palmer <scorpio@drkshdw.org>
+
+-   Jeffrey Baitis <jeff@baitis.net>
+
+-   Jeffrey Evans <evans@scnc.k12.mi.us>
+
+-   Jeffrey H. Johnson <CPE1704TKS@bellsouth.net>
+
+-   Jeffrey Leung <zenoss@experts-exchange.com>
+
+-   Jeff Molofee <nehe@cruzinternet.com>
+
+-   Jeffrey Wheat <jeff@cetlink.net>
+
+-   Jens Grassel <freebsd-ports@jan0sch.de>
+
+-   Jens Holmqvist <zparta@hispan.se>
+
+-   Jens K. Loewe <bsd@tuxproject.de>
+
+-   Jens Rehsack <rehsack@liwing.de>
+
+-   Jeremy Allison <jallison@whistle.com>
+
+-   Jeremy Baggs <jbaggs2016@gmail.com>
+
+-   Jeremy C. Reed <reed@pugetsoundtechnology.com>
+
+-   Jeremy Chatfield <jdc@xinside.com>
+
+-   Jeremy Karlson <karlj000@unbc.ca>
+
+-   Jeremy Prior
+
+-   Jeremy Shaffner <jeremy@external.org>
+
+-   Jeroen Schot <schot@a-askwadraat.nl>
+
+-   Jerry Eriksson <jerry@freebsd.se>
+
+-   Jesper Dalberg <jesper@jdn.dk>
+
+-   Jesper Noehr <jesper@noehr.org>
+
+-   Jesse Kempf <jessekempf@gmail.com>
+
+-   Jesse McConnell <jesse@cylant.com>
+
+-   Jesse Rosenstock <jmr@ugcs.caltech.edu>
+
+-   Jesse Smith <jsmith@resonatingmedia.com>
+
+-   Jesse van den Kieboom <troplosti@orcaweb.cjb.net>
+
+-   Jia-Wei Ye <leafy7382@gmail.com>
+
+-   Jian-Da Li <jdli@csie.nctu.edu.tw>
+
+-   Jie Gao <gaoj@cpsc.ucalgary.ca>
+
+-   Jim Babb <babb@FreeBSD.org>
+
+-   Jim Binkley <jrb@cs.pdx.edu>
+
+-   Jim Bloom <bloom@acm.org>
+
+-   Jim Carroll <jim@carroll.com>
+
+-   Jim Flowers <jflowers@ezo.net>
+
+-   Jim Geovedi <jim@corebsd.or.id>
+
+-   Jim Leppek <jleppek@harris.com>
+
+-   Jim Lowe <james@cs.uwm.edu>
+
+-   Jim Mattson <jmattson@sonic.net>
+
+-   Jim Mercer <jim@komodo.reptiles.org>
+
+-   Jim Ohlstein <jim@ohlste.in>
+
+-   Jim Pirzyk <pirzyk@uiuc.edu>
+
+-   Jim Riggs <ports@christianserving.org>
+
+-   Jim Shewmaker <jim@bluenotch.com>
+
+-   Jim Sloan <odinn@atlantabiker.net>
+
+-   Jim Stapleton <sjss@var-dev.net>
+
+-   Jim Wilson <wilson@moria.cygnus.com>
+
+-   Jimbo Bahooli <griffin@blackhole.iceworld.org>
+
+-   Jin Guojun <jin@george.lbl.gov>
+
+-   Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
+
+-   Jin-Sih Lin <linpct@gmail.com>
+
+-   Jo Rhett <jrhett@netconsonance.com>
+
+-   Joachim Kuebart <kuebart@mathematik.uni-ulm.de>
+
+-   Joachim Strombergson <Watchman@ludd.luth.se>
+
+-   Joao Carlos Mendes Luis <jonny@jonny.eng.br>
+
+-   Jochen Pohl <jpo.drs@sni.de>
+
+-   Joe Abley <jabley@automagic.org>
+
+-   Joe Barbish <barbish@a1poweruser.com>
+
+-   Joe Halpin <joe.halpin@attbi.com>
+
+-   Joe Holden <joe@joeholden.co.uk>
+
+-   Joe Horn <joehorn@gmail.com>
+
+-   Joe Jih-Shian Lu <jslu@dns.ntu.edu.tw>
+
+-   Joe Kelsey <joek@flyingcroc.net>
+
+-   Joe Orthoefer <j_orthoefer@tia.net>
+
+-   Joe Smith <inwap@best.com>
+
+-   Joe Traister <traister@mojozone.org>
+
+-   Joel Bodenmann <jbo@insane.engineer>
+
+-   Joel Diaz <joeldiaz@bellsouth.net>
+
+-   Joel Faedi <Joel.Faedi@esial.u-nancy.fr>
+
+-   Joel Ray Holveck <joelh@gnu.org>
+
+-   Joel Sutton <jsutton@bbcon.com.au>
+
+-   Joerg Pulz <Joerg.Pulz@frm2.tum.de>
+
+-   Joerg Schilling <schilling@fokus.gmd.de>
+
+-   Johan Granlund <johan@granlund.nu>
+
+-   Johan Larsson <johan@moon.campus.luth.se>
+
+-   Johan Strom <johan@stromnet.org>
+
+-   Johann Tonsing <jtonsing@mikom.csir.co.za>
+
+-   Johannes 5 Joemann <joemann@beefree.free.de>
+
+-   Johannes Grødem <johs@copyleft.no>
+
+-   Johannes Helander
+
+-   Johannes Stille
+
+-   John Beckett <jbeckett@southern.edu>
+
+-   John Beukema <jbeukema@hk.super.net>
+
+-   John Brezak
+
+-   John Capo <jc@irbs.com>
+
+-   John F. Woods <jfw@jfwhome.funhouse.com>
+
+-   John Ferrel <jdferrell3@yahoo.com>
+
+-   John Goerzen <jgoerzen@alexanderwohl.complete.org>
+
+-   John Heidemann <johnh@isi.edu>
+
+-   John Hood <cgull@owl.org>
+
+-   John Kohl
+
+-   John Lind <john@starfire.mn.org>
+
+-   John Mackin <john@physiol.su.oz.au>
+
+-   John McAree <john@mcaree.org>
+
+-   John MacFarlane <jgm@berkeley.edu>
+
+-   John Mehr <jcm@visi.com>
+
+-   John Merryweather Cooper <jmcoopr@webmail.bmi.net>
+
+-   John Nielsen <john@jnielsen.net>
+
+-   John Oxley <john@yoafrica.com>
+
+-   John P <johnp@lodgenet.com>
+
+-   John Perry <perry@vishnu.alias.net>
+
+-   John Prather <john.c.prather@gmail.com>
+
+-   John Preisler <john@vapornet.com>
+
+-   John Reynolds <johnjen@reynoldsnet.org>
+
+-   John Rochester <jr@cs.mun.ca>
+
+-   John Sadler <john_sadler@alum.mit.edu>
+
+-   John Saunders <john@pacer.nlc.net.au>
+
+-   John Von Essen <john@essenz.com>
+
+-   John W. O’Brien <john@saltant.com>
+
+-   John Wehle <john@feith.com>
+
+-   John Woods <jfw@eddie.mit.edu>
+
+-   Johny Mattsson <lonewolf@flame.org>
+
+-   Jon Amundsen <online@jamundsen.dyndns.org>
+
+-   Jon Morgan <morgan@terminus.trailblazer.com>
+
+-   Jon Nistor <nistor@snickers.org>
+
+-   Jon Passki <cykyc@yahoo.com>
+
+-   Jon Wilson <jon@phuq.co.uk>
+
+-   Jona Joachim <walkingshadow@grummel.net>
+
+-   Jonas Ferreira <jonas.h.ferreira@me.com>
+
+-   Jonathan Belson <jon@witchspace.com>
+
+-   Jonathan Bokovza <Jonathan@afarsec.com>
+
+-   Jonathan Chen <jonc@chen.org.nz>
+
+-   Jonathan Drews <j.e.drews@att.net>
+
+-   Jonathan H N Chin <jc254@newton.cam.ac.uk>
+
+-   Jonathan Hanna <jhanna@shaw.ca>
+
+-   Jonathan Lennox <lennox@cs.columbia.edu>
+
+-   Jonathan Liu <Net147@hotmail.com>
+
+-   Jonathan McDowell <noodles@earth.li>
+
+-   Jonathan Pennington <john@coastalgeology.org>
+
+-   Jonathan Price <freebsd@jonathanprice.org>
+
+-   Jordan DeLong <fracture@allusion.net>
+
+-   Jordi Haarman
+    <jhaarman-keyword-tinyerpPort.fd583c@projects.synantics.net>
+
+-   Jorge Goncalves <j@bug.fe.up.pt>
+
+-   Jorge M. Goncalves <ee96199@tom.fe.up.pt>
+
+-   Joris Vandalon <joris@vandalon.nl>
+
+-   Jos Backus <jos@catnook.com>
+
+-   Jose Abelardo Martinez <jamartinez@altern.org>
+
+-   Jose Liang <jose@jose.idv.tw>
+
+-   Jose Marques <jose@nobody.org>
+
+-   Jose Rodriguez <king@v2project.com>
+
+-   José García Juanino <jjuanino@gmail.com>
+
+-   Josef Grosch <jgrosch@superior.mooseriver.com>
+
+-   Joseph Haga <tuximus@tcsn.net>
+
+-   Joseph Scott <joseph@randomnetworks.com>
+
+-   Joseph Stein <joes@wstein.com>
+
+-   Josh Carroll <josh.carroll@gmail.com>
+
+-   Josh Elsasser <jre@vineyard.net>
+
+-   Josh Gilliam <josh@quick.net>
+
+-   Josh Tiefenbach <josh@ican.net>
+
+-   Josh Tolbert <hemi@puresimplicity.net>
+
+-   Joshua D. Abraham <jabra@ccs.neu.edu>
+
+-   Joshua Goodall <joshua@roughtrade.net>
+
+-   Jostein Trondal <jostein.trondal@sikkerhet.no>
+
+-   Juan Salaverria <rael@vectorstar.net>
+
+-   Juha Inkari <inkari@cc.hut.fi>
+
+-   Juha Nygard <juha.nygard1@netikka.fi>
+
+-   Juha Ylitalo <juha.ylitalo@iki.fi>
+
+-   Jui-Nan Lin <jnlin@csie.nctu.edu.tw>
+
+-   Jukka A. Ukkonen <jau@iki.fi>
+
+-   Julian Assange <proff@suburbia.net>
+
+-   Julian C. Dunn <jdunn@aquezada.com>
+
+-   Julian Coleman <j.d.coleman@ncl.ac.uk>
+
+-   Julian Stacey <jhs@FreeBSD.org>
+
+-   Julian Jenkins <kaveman@magna.com.au>
+
+-   Julian Stecklina <der_julian@web.de>
+
+-   Jun Mukai <mukai@jmuk.org>
+
+-   Junichi Satoh <junichi@jp.FreeBSD.org>
+
+-   Junji NAKANISHI <jun-g@daemonfreaks.com>
+
+-   Junji SAKAI <sakai@jp.FreeBSD.org>
+
+-   Junya WATANABE <junya-w@remus.dti.ne.jp>
+
+-   Justas <justas@mbank.lv>
+
+-   Justin Stanford <jus@security.za.net>
+
+-   Jyun-Yan You <jyyou@cs.nctu.edu.tw>
+
+-   Gergely CZUCZY <gergely.czuczy@harmless.hu>
+
+-   K.Higashino <a00303@cc.hc.keio.ac.jp>
+
+-   KANOU Hiroki <kanou@khdd.net>
+
+-   KATO Tsuguru <tkato@prontomail.ne.jp>
+
+-   KIMURA Shigekazu <zau50357@lion.zero.ad.jp>
+
+-   KUNISHIMA Takeo <kunishi@c.oka-pu.ac.jp>
+
+-   Kai Vorma <vode@snakemail.hut.fi>
+
+-   Kai Wang <kaiwang27@gmail.com>
+
+-   Kaleb S. Keithley <kaleb@ics.com>
+
+-   Kalle R. Møller <freebsb_contrib@k-moeller.dk>
+
+-   Kan Sasaki <sasaki@fcc.ad.jp>
+
+-   Kaneda Hiloshi <vanitas@ma3.seikyou.ne.jp>
+
+-   Kang Liu <liukang@bjut.edu.cn>
+
+-   Kang-ming Liu <gugod@gugod.org>
+
+-   Kapil Chowksey <kchowksey@hss.hns.com>
+
+-   Karel Miklav <karel@lovetemple.net>
+
+-   Karl Denninger <karl@mcs.com>
+
+-   Karl Dietz <Karl.Dietz@triplan.com>
+
+-   Karl Lehenbauer <karl@NeoSoft.com>
+
+-   Karsten W. Rohrbach <karsten@rohrbach.de>
+
+-   Katalin Konkoly <katalin.konkoly@gmail.com>
+
+-   Katsura Matsumoto <katsura@cc.osaka-kyoiku.ac.jp>
+
+-   Kawanobe Koh <kawanobe@st.rim.or.jp>
+
+-   Kay Abendroth <kay.abendroth@raxion.net>
+
+-   Kay Lehmann <kay_lehmann@web.de>
+
+-   Kazami <kazami@angels.vg>
+
+-   Kazuhito HONDA <kazuhito@ph.noda.tus.ac.jp>
+
+-   Kees Jan Koster <kjkoster@kjkoster.org>
+
+-   Keith Bostic <bostic@bostic.com>
+
+-   Keith E. Walker <kew@icehouse.net>
+
+-   Keith Moore
+
+-   Keith Sklower
+
+-   Kelley Reynolds <kelley@insidesystems.net>
+
+-   Ken Hornstein
+
+-   Ken Key <key@cs.utk.edu>
+
+-   Ken Mayer <kmayer@freegate.com>
+
+-   Ken McGlothlen <mcglk@artlogix.com>
+
+-   Ken Menzel <kenm@icarz.com>
+
+-   Ken Tom <subd@mui.net>
+
+-   Kenji Rikitake <kenji@k2r.org>
+
+-   Kenji Saito <marukun@mx2.nisiq.net>
+
+-   Kenji Takefu <takefu@airport.fm>
+
+-   Kenji Tomita <tommyk@da2.so-net.or.jp>
+
+-   Kenneth Furge <kenneth.furge@us.endress.com>
+
+-   Kenneth Monville <desmo@bandwidth.org>
+
+-   Kenneth R. Westerback <krw@tcn.net>
+
+-   Kenneth Stailey <kstailey@yahoo.com>
+
+-   Kenneth Vestergaard Schmidt <kvs@pil.dk>
+
+-   Kent Talarico <kent@shipwreck.tsoft.net>
+
+-   Kent Vander Velden <graphix@iastate.edu>
+
+-   Kentaro Inagaki <JBD01226@niftyserve.ne.jp>
+
+-   Kevin Bracey <kbracey@art.acorn.co.uk>
+
+-   Kevin Brunelle <kruptos@mlinux.org>
+
+-   Kevin Day <toasty@dragondata.com>
+
+-   Kevin Golding <kevin@caomhin.demon.co.uk>
+
+-   Kevin Lahey <kml@nas.nasa.gov>
+
+-   Kevin Meltzer <perlguy@perlguy.com>
+
+-   Kevin Oberman <oberman@es.net>
+
+-   Kevin Street <street@iname.com>
+
+-   Kevin Van Maren <vanmaren@fast.cs.utah.edu>
+
+-   Kevin Zheng <kevinz5000@gmail.com>
+
+-   Key-Teck SIN <ktsin@acm.org>
+
+-   Khairil Yusof <kaeru@inigo-tech.com>
+
+-   Killer <killer@prosalg.no>
+
+-   Kim Scarborough <sluggo@unknown.nu>
+
+-   Kimura Fuyuki <fuyuki@hadaly.org>
+
+-   Kiril Mitev <kiril@ideaglobal.com>
+
+-   Kirill Bezzubets <kirill@solaris.ru>
+
+-   Kirill A. Korinskiy <catap@catap.ru>
+
+-   Kirk Strauser <kirk@strauser.com>
+
+-   Kiroh HARADA <kiroh@kh.rim.or.jp>
+
+-   Klaus Aehlig <aehlig@linta.de>
+
+-   Klaus Goger <klaus.goger@reflex.at>
+
+-   Klaus Herrmann <klaus.herrmann@gmx.net>
+
+-   Klaus Klein <kleink@layla.inka.de>
+
+-   Klaus Michael Indlekofer <M.Indlekofer@gmx.de>
+
+-   Klaus-J. Wolf <Yanestra@t-online.de>
+
+-   Koichi Sato <copan@ppp.fastnet.or.jp>
+
+-   Konrad Heuer <kheuer@gwdu60.gwdg.de>
+
+-   Konrad Lapsz <konrad.lapsz@gmail.com>
+
+-   Konstantin Chuguev <Konstantin.Chuguev@dante.org.uk>
+
+-   Konstantin Reznichenko <kot@premierbank.dp.ua>
+
+-   Konstantin Stroikovsky <bonkor@gmail.com>
+
+-   Konstantinos Mplekos <mplekos@physics.upatras.gr>
+
+-   Kostya Lukin <lukin@okbmei.msk.su>
+
+-   Kouichi Hirabayashi <kh@mogami-wire.co.jp>
+
+-   Kris Dow <kris@vilnya.demon.co.uk>
+
+-   Krzysztof Kowalewski <pyzmen@kam.pl>
+
+-   Krzysztof Pawlowski <msciciel@darkzone.ma.cx>
+
+-   Kuan-Chung Chiu <buganini@gmail.com>
+
+-   Kuang-che Wu <kcwu@csie.org>
+
+-   Kuo-Feng Tseng <kftseng@iyard.org>
+
+-   Kurt D. Zeilenga <Kurt@Boolean.NET>
+
+-   Kurt Kanzenbach <kurt@kmk-computers.de>
+
+-   Kurt Olsen <kurto@tiny.mcs.usu.edu>
+
+-   Kyle Martin <mkm@ieee.org>
+
+-   Kyung-tak, Yoo <stonegaze@me.com>
+
+-   L. Jonas Olsson <ljo@ljo-slip.DIALIN.CWRU.Edu>
+
+-   Lacey Powers <lacey.leanne@gmail.com>
+
+-   Lapo Luchini <lapo@lapo.it>
+
+-   Larry Altneu <larry@ALR.COM>
+
+-   Larry P. Maloney <larry@kiputers.com>
+
+-   Lars Bernhardsson <lab@fnurt.net>
+
+-   Lars Eggert <lars.eggert@gmx.net>
+
+-   Lars Erik Gullerud <lerik@nolink.net>
+
+-   Lasse L. Johnsen <lasse@freebsdcluster.org>
+
+-   Laurence Lopez <lopez@mv.mv.com>
+
+-   Laurent Courty <lrntct@gmail.com>
+
+-   Laurent Levier <llevier@argosnet.com>
+
+-   Lauri Watts <lauri@kde.org>
+
+-   Laust S. Jespersen <L@ust.dk>
+
+-   Leandro Luiz Pereira <leandro@fullonmorning.com>
+
+-   Lee Cremeans <lcremean@tidalwave.net>
+
+-   Lefteris Chatzibarbas <lefcha@hellug.gr>
+
+-   Leif Pedersen <pedersen@meridian-enviro.com>
+
+-   Len Sassaman <rabbi@abditum.com>
+
+-   Leo Kim <leo@florida.sarang.net>
+
+-   Leo Vandewoestijne <freebsd@dns.company>
+
+-   Leonardo Silveira de A. Martins <lmartins@nepe.eee.ufg.br>
+
+-   Leonhard Wimmer <leo@mediatomb.cc>
+
+-   Leonid Zolotarev <leoz.2005@gmail.com>
+
+-   Lev Walkin <vlm@lionet.info>
+
+-   Levent Kayan <levent@corehack.org>
+
+-   Lewis Thompson <purple@lewiz.net>
+
+-   Li-lun Wang <llwang@infor.org>
+
+-   Liam Foy <liamfoy@sepulcrum.org>
+
+-   Linh Pham <question+freebsdpr@closedsrc.org>
+
+-   Loganaden Velvindron <logan@cyberstorm.mu>
+
+-   Lon Willett <lon%softt.uucp@math.utah.edu>
+
+-   Loren J. Rittle <ljrittle@acm.org>
+
+-   Loren M. Lang <lorenl@alzatex.com>
+
+-   Louis A. Mamakos <loiue@TransSys.com>
+
+-   Lowell Gilbert <lowell@world.std.com>
+
+-   Lubomir Metodiev Marinov <lubomir.marinov@gmail.com>
+
+-   Lucas Andrade <slucasandrade@protonmail.ch>
+
+-   Lucas James <Lucas.James@ldjpc.apana.org.au>
+
+-   Lucio Costa <lucio@zetasolucoes.com.br>
+
+-   Luiz Eduardo Roncato Cordeiro <cordeiro@nic.br>
+
+-   Lukasz Komsta <luqqe@users.sourceforge.net>
+
+-   Lukasz Stelmach <lukasz.stelmach@iem.pw.edu.pl>
+
+-   Lukasz Wasikowski <lukasz@wasikowski.net>
+
+-   Lupe Christoph <lupe@lupe-christoph.de>
+
+-   Lutz Boehne <lboehne@damogran.de>
+
+-   Lyndon Nerenberg <lyndon@orthanc.ab.ca>
+
+-   M Rothwell <freebsd-ports@coreland.ath.cx>
+
+-   M. L. Dodson <bdodson@scms.utmb.EDU>
+
+-   M.C. Wong
+
+-   MOROHOSHI Akihiko <moro@remus.dti.ne.jp>
+
+-   Machiel Mastenbroek <machiel_mastenbroek@hotmail.com>
+
+-   Magnus Enbom <dot@tinto.campus.luth.se>
+
+-   Mahesh Neelakanta <mahesh@gcomm.com>
+
+-   Mahlon E. Smith <mahlon@martini.nu>
+
+-   Maja Reberc <maja.reberc@freedommail.ch[maja.reberc@freedommail.ch]>
+
+-   Makoto WATANABE <watanabe@zlab.phys.nagoya-u.ac.jp>
+
+-   Makoto YAMAKURA <makoto@pinpott.spnet.ne.jp>
+
+-   Malte Lance <malte.lance@gmx.net>
+
+-   Manish Jain <bourne.identity@hotmail.com>
+
+-   Mantas Kaulakys <stone@tainet.lt>
+
+-   Manu Iyengar <iyengar@grunthos.pscwa.psca.com>
+
+-   Manuel Creach <manuel.creach@me.com>
+
+-   Manuel Rabade Garcia <mig@mig-29.net>
+
+-   Marc Blanchet <marc.blanchet@viagenie.qc.ca>
+
+-   Marc Frajola <marc@dev.com>
+
+-   Marc Olzheim <marcolz@stack.nl>
+
+-   Marc Ramirez <mrami@mramirez.sy.yale.edu>
+
+-   Marc Recht <marc@informatik.uni-bremen.de>
+
+-   Marc Silver <marcs@draenor.org>
+
+-   Marc Slemko <marcs@znep.com>
+
+-   Marc van Kempen <wmbfmk@urc.tue.nl>
+
+-   Marc van Woerkom <marc.vanwoerkom@fernuni-hagen.de>
+
+-   Marcel Bischoff <marcel@herrbischoff.com>
+
+-   Marcel Kaiser <mk@nic-nac-project.org>
+
+-   Marcello Silva Coutinho <marcellocoutinho@gmail.com>
+
+-   Marcelo/Porks Rossi <marcelorossi@gmail.com>
+
+-   Marcin Cieslak <saper@system.pl>
+
+-   Marcin Gondek <drixter@e-utp.net>
+
+-   Marcin Jessa <yazzy@yazzy.org>
+
+-   Marcin Wisnicki <mwisnicki@gmail.com>
+
+-   Marco Molteni <molter@tin.it>
+
+-   Marco Steinbach <coco@executive-computing.de>
+
+-   Marco van de Voort <marcov@stack.nl>
+
+-   Marcos Andre Hermann <udialup@gmail.com>
+
+-   Marcus Vinicius Bastos Leandro <mvleandro@gmail.com>
+
+-   Marin Atanasov <dnaeon@gmail.com>
+
+-   Mario Lobo <lobo@bsd.com.br>
+
+-   Marius Nünnerich <marius@nuenneri.ch>
+
+-   Mark A. Wicks <mwicks@kettering.edu>
+
+-   Mark Andrews
+
+-   Mark Blackman <freebsd-ports@blackmans.org>
+
+-   Mark Cammidge <mark@gmtunx.ee.uct.ac.za>
+
+-   Mark Daniel Reidel <ports@mark.reidel.info>
+
+-   Mark Diekhans <markd@grizzly.com>
+
+-   Mark Foster <mark@foster.cc>
+
+-   Mark Hannon <markhannon@optusnet.com.au>
+
+-   Mark Huizer <xaa+freebsd@timewasters.nl>
+
+-   Mark J. Miller <joup@bigfoot.com>
+
+-   Mark J. Taylor <mtaylor@cybernet.com>
+
+-   Mark Johnston <mjohnston@skyweb.ca>
+
+-   Mark Kane <mark@mkproductions.org>
+
+-   Mark Knight <markk@knigma.org>
+
+-   Mark Krentel <krentel@rice.edu>
+
+-   Mark Mayo <markm@vmunix.com>
+
+-   Mark Starovoytov <mark_sf@kikg.ifmo.ru>
+
+-   Mark Stosberg <mark@summersault.com>
+
+-   Mark Thompson <thompson@tgsoft.com>
+
+-   Mark Tinguely <tinguely@plains.nodak.edu>
+
+-   Mark Treacy
+
+-   Mark Valentine <mark@thuvia.org>
+
+-   Mark Walker <ziggimon@raindogs.dk>
+
+-   Markus Holmberg <saska@acc.umu.se>
+
+-   Markus Niemistö <markus.niemisto@gmx.net>
+
+-   Martijn Lina <martijn@pacno.net>
+
+-   Martin Dieringer <martin.dieringer@gmx.de>
+
+-   Martin Filla <freebsd@sysctl.cz>
+
+-   Martin Hinner <mhi@linux.gyarab.cz>
+
+-   Martin Ibert <mib@ppe.bb-data.de>
+
+-   Martin Jackson <mhjacks@swbell.net>
+
+-   Martin Kammerhofer <mkamm@gmx.net>
+
+-   Martin Karlsson <martin.karlsson@visit.se>
+
+-   Martin Klaffenboeck <martin.klaffenboeck@gmx.at>
+
+-   Martin Kraft <martin.kraft@fal.de>
+
+-   Martin Kropfinger <freebsd@rakor-net.de%3E>
+
+-   Martin Mersberger <gremlin@portal-to-web.de>
+
+-   Martin Minkus <diskiller@cnbinc.com>
+
+-   Martin Neubauer <m.ne@gmx.net>
+
+-   Martin Otto <gamato@users.sf.net>
+
+-   Martin Pala <martinp@tildeslash.com>
+
+-   Martin Preuss <martin@libchipcard.de>
+
+-   Martin Sugioarto <martin.sugioarto@udo.edu>
+
+-   Martin Tournoij <carpetsmoker@gmail.com>
+
+-   Martin Waschbüsch <martin@waschbuesch.de>
+
+-   Martti Kuparinen <martti.kuparinen@ericsson.com>
+
+-   Marwan Burelle <marwan.burelle@lri.fr>
+
+-   Masachika ISHIZUKA <ishizuka@isis.min.ntt.jp>
+
+-   Masafumi Otsune <info@otsune.com>
+
+-   Masahiro Sekiguchi <seki@sysrap.cs.fujitsu.co.jp>
+
+-   Masahiro TAKEMURA <mastake@msel.t.u-tokyo.ac.jp>
+
+-   Masahiro Teramoto <markun@onohara.to>
+
+-   Masakazu HIGAKI <higamasa@dream.com>
+
+-   Masaki TAGAWA <masaki@club.kyutech.ac.jp>
+
+-   Masanobu Saitoh <msaitoh@spa.is.uec.ac.jp>
+
+-   Masanori Kanaoka <kana@saijo.mke.mei.co.jp>
+
+-   Masanori Kiriake <seiken@ARGV.AC>
+
+-   Masanori OZAWA <ozawa@ongs.co.jp>
+
+-   Masashi CHIBA <chiba.masashi@gmail.com>
+
+-   Masatoshi TAMURA <tamrin@shinzan.kuee.kyoto-u.ac.jp>
+
+-   Matheus Estrela <matheus@arroway.org>
+
+-   Mathias Monnerville <mathias@monnerville.com>
+
+-   Mathieu Simon <freebsd@simweb.ch>
+
+-   Mats Lofkvist <mal@algonet.se>
+
+-   Matt Bartley <mbartley@lear35.cytex.com>
+
+-   Matt Dawson <matt@mattsnetwork.co.uk>
+
+-   Matt Douhan <matt@athame.co.uk>
+
+-   Matt Emmerton <matt@gsicomp.on.ca>
+
+-   Matt Heckaman <matt@LUCIDA.QC.CA>
+
+-   Matt Jibson <dolmant@dolmant.net>
+
+-   Matt Lancereau <matt@bsdfly.org>
+
+-   Matt Loschert <loschert@servint.com>
+
+-   Matt Mills <matt_mills@btopenworld.com>
+
+-   Matt Peterson <matt@peterson.org>
+
+-   Matt Smith <matt@xtaz.net>
+
+-   Matt Stofko <matt@mjslabs.com>
+
+-   Matt Thomas <matt@3am-software.com>
+
+-   Matt Tosto <datahead4@gmail.com>
+
+-   Matt White <mwhite+@CMU.EDU>
+
+-   Matteo Cypriani <mcy@lm7.fr>
+
+-   Matthew Braithwaite <mab@red-bean.com>
+
+-   Matthew C. Mead <mmead@Glock.COM>
+
+-   Matthew Cashdollar <mattc@rfcnet.com>
+
+-   Matthew Donovan <kitchetech@gmail.com>
+
+-   Matthew Emmerton <root@gabby.gsicomp.on.ca>
+
+-   Matthew Flatt <mflatt@cs.rice.edu>
+
+-   Matthew Fuller <fullermd@over-yonder.net>
+
+-   Matthew George <mdg@secureworks.net>
+
+-   Matthew Gibson <mdg583@hotmail.com>
+
+-   Matthew Grooms <mgrooms@shrew.net>
+
+-   Matthew Holder <sixxgate@hotmail.com>
+
+-   Matthew Luckie <mjl@luckie.org.nz>
+
+-   Matthew Stein <matt@bdd.net>
+
+-   Matthew West <mwest@uct.ac.za>
+
+-   Matthew Will <mwill@spingen.com>
+
+-   Matthew X. Economou <xenophon+fbsdports@irtnog.org>
+
+-   Matthias Petermann <matthias@d2ux.net>
+
+-   Matthias Pfaller <leo@dachau.marco.de>
+
+-   Matthias Scheler <tron@netbsd.org>
+
+-   Matthias Schmidt <schmidtm@mathematik.uni-marburg.de>
+
+-   Matthias Sund <m.sund@arcor.de>
+
+-   Matthias Schündehütte <msch@snafu.de>
+
+-   Matthias Teege <mteege.de>
+
+-   Matthieu Guegan <matt.guegan@free.fr>
+
+-   Matthieu Volat <mazhe@alkumuna.eu>
+
+-   Mattias Gronlund <Mattias.Gronlund@sa.erisoft.se>
+
+-   Mattias Pantzare <pantzer@ludd.luth.se>
+
+-   Matus Uhlar <uhlar@fantomas.sk>
+
+-   Maurice Castro <maurice@planet.serc.rmit.edu.au>
+
+-   Mauricio Herrera Cuadra <mauricio@arareko.net>
+
+-   Mauro Risonho de Paula Assumpção <mauro.risonho@gmail.com>
+
+-   Max Campos <mcampos@bpsw.biz>
+
+-   Max E. Kuznecov <mek@mek.uz.ua>
+
+-   Max Euston <meuston@jmrodgers.com>
+
+-   Max N. Boyarov <m.boyarov@bsd.by>
+
+-   Max V. Kostikov <max@kostikov.co>
+
+-   Maxim Bolotin <max@rsu.ru>
+
+-   Maxim Dounin <mdounin@mdounin.ru>
+
+-   Maxim Filimonov <che@bein.link>
+
+-   Maxim Ignatenko <gelraen.ua@gmail.com>
+
+-   Maxim Loginov <zeliboba@mail.ru>
+
+-   Maxim Samsonov <xors@sendmail.ru>
+
+-   Maxim Tuliuk <mt@primats.org.ua>
+
+-   Maxime Romano <verbophobe@hotmail.com>
+
+-   Meikel Brandmeyer <Brandels_Mikesh@web.de>
+
+-   Mel Flynn <rflynn@acsalaska.net>
+
+-   Meno Abels <meno.abels@adviser.com>
+
+-   Meyer Wolfsheim <wolf@priori.net>
+
+-   Mia Rain <mia-rain@tuta.io>
+
+-   Micha Class <michael_class@hpbbse.bbn.hp.com>
+
+-   Michael A. Kohn <naken@naken.cc>
+
+-   Michael Alyn Miller <malyn@strangeGizmo.com>
+
+-   Michael Butler <imb@scgt.oz.au>
+
+-   Michael Butschky <butsch@computi.erols.com>
+
+-   Michael C. Shultz <ringworm@inbox.lv>
+
+-   Michael Clay <mclay@weareb.org>
+
+-   Michael Collette <metrol@metrol.net>
+
+-   Michael Ebert <ebert@informatik.unibw-muenchen.de>
+
+-   Michael Edenfield <kutulu@kutulu.org>
+
+-   Michael Galassi <nerd@percival.rain.com>
+
+-   Michael Hancock <michaelh@cet.co.jp>
+
+-   Michael Handler <handler@grendel.net>
+
+-   Michael Hohmuth <hohmuth@inf.tu-dresden.de>
+
+-   Michael Iatrou <m_iatrou@freemail.gr>
+
+-   Michael Lyngbøl <michael@lyngbol.dk>
+
+-   Michael Muenz <m.muenz@gmail.com>
+
+-   Michael Neumann <mneumann@ntecs.de>
+
+-   Michael O. Boev <mike@tric.tomsk.gov.ru>
+
+-   Michael Perlman <canuck@caam.rice.edu>
+
+-   Michael Petry <petry@netwolf.NetMasters.com>
+
+-   Michael Ranner <mranner@inode.at>
+
+-   Michael Sanders <mike@topcat.hypermart.net>
+
+-   Michael Sardo <jaeger16@yahoo.com>
+
+-   Michael Schout <mschout@gkg.net>
+
+-   Michael Searle <searle@longacre.demon.co.uk>
+
+-   Michael Seyfert <michaels@sdf.lonestar.org>
+
+-   Michael Urban <murban@tznet.com>
+
+-   Michael Vasilenko <acid@stu.cn.ua>
+
+-   Michal Hanula <michal@hanu.la>
+
+-   Michal Listos <mcl@Amnesiac.123.org>
+
+-   Michal Pasternak <dotz@irc.pl>
+
+-   Michel Lavondés <fox@vader.aacc.cc.md.us>
+
+-   Michele Possamai <possamai@xs4all.nl>
+
+-   Michelle Sullivan <michelle@sorbs.net>
+
+-   Michio Karl Jinbo <karl@marcer.nagaokaut.ac.jp>
+
+-   Micho Durdevich <micho@math.unam.mx>
+
+-   Mickael Maillot <mickael.maillot@gmail.com>
+
+-   Miguel Angel Sagreras <msagre@cactus.fi.uba.ar>
+
+-   Miguel Mendez <flynn@energyhq.es.eu.org>
+
+-   Mihoko Tanaka <m_tonaka@pa.yokogawa.co.jp>
+
+-   Mij <mij@bitchx.it>
+
+-   Mika Nystrom <mika@cs.caltech.edu>
+
+-   Mikael Hybsch <micke@dynas.se>
+
+-   Mikael Karpberg <karpen@ocean.campus.luth.se>
+
+-   Mike Andrews <mandrews@bit0.com>
+
+-   Mike Bowie <mbowie@buzmo.com>
+
+-   Mike Bristow <mike@urgle.com>
+
+-   Mike Del <repenting@hotmail.com>
+
+-   Mike Durian <durian@boogie.com>
+
+-   Mike Durkin <mdurkin@tsoft.sf-bay.org>
+
+-   Mike E. Matsnev <mike@azog.cs.msu.su>
+
+-   Mike Edenfield <kutulu@kutulu.org>
+
+-   Mike Erickson <mee@quidquam.com>
+
+-   Mike Evans <mevans@candle.com>
+
+-   Mike Futerko <mike@LITech.lviv.ua>
+
+-   Mike Grupenhoff <kashmir@umiacs.umd.edu>
+
+-   Mike Harding <mvh@ix.netcom.com>
+
+-   Mike Hibler <mike@marker.cs.utah.edu>
+
+-   Mike Karels
+
+-   Mike Krutov <neko@takino.org>
+
+-   Mike Lockwood <mike@mikelockwood.com>
+
+-   Mike McGaughey <mmcg@cs.monash.edu.au>
+
+-   Mike Meyer <mwm@mired.org>
+
+-   Mike Mitchell <mitchell@ref.tfs.com>
+
+-   Mike Murphy <mrm@alpharel.com>
+
+-   Mike Patterson <mike.patterson@unb.ca>
+
+-   Mike Peck <mike@binghamton.edu>
+
+-   Mike Sherwood <mike@fate.com>
+
+-   Mike Spengler <mks@msc.edu>
+
+-   Mike Tancsa <mike@sentex.net>
+
+-   Mikhail A. Sokolov <mishania@demos.su>
+
+-   Mikhail T. <michael@fun-box.ru>
+
+-   Mikhail Zakharov <zmey20000@yahoo.com>
+
+-   Mikolaj Rydzewski <miki@ceti.pl>
+
+-   Mikolaj Golub <to.my.trociny@gmail.com>
+
+-   Miks Mikelsons <miks@cubesystems.lv>
+
+-   Milan Obuch <bsd@dino.sk>
+
+-   Milosz Galazka <milosz.galazka@gmail.com>
+
+-   Mina Galić <freebsd@igalic.co>
+
+-   Ming-I Hseh <PA@FreeBSD.ee.Ntu.edu.TW>
+
+-   Mitsuru Yoshida <mitsuru@riken.go.jp>
+
+-   Mohammad S. Babaei <info@babaei.net>
+
+-   Monte Mitzelfelt <monte@gonefishing.org>
+
+-   Mooneer Salem <mooneer@translator.cx>
+
+-   Morgan Davis <root@io.cts.com>
+
+-   Morten Slot Kristensen <ontherenth@gmail.com>
+
+-   Mostyn Lewis <mostyn@mrl.com>
+
+-   Motomichi Matsuzaki <mzaki@e-mail.ne.jp>
+
+-   Motoyuki Kasahara <m-kasahr@sra.co.jp>
+
+-   Munish Chopra <munish@engmail.uwaterloo.ca>
+
+-   Murilo Opsfelder <mopsfelder@gmail.com>
+
+-   Mustafa Arif <ma499@doc.ic.ac.uk>
+
+-   Mykola Dzham <i@levsha.me>
+
+-   Mykola Khotyaintsev <ko@irfu.se>
+
+-   Mykola Marzhan <delgod@portaone.com>
+
+-   N.G.Smith <ngs@sesame.hensa.ac.uk>
+
+-   Nadilson Ferreira <nadilson@gmail.com>
+
+-   NAGAO Tadaaki <nagao@cs.titech.ac.jp>
+
+-   NAKAJI Hiroyuki <nakaji@jp.freebsd.org>
+
+-   NAKAMURA Kazushi <kaz@kobe1995.net>
+
+-   NAKAMURA Motonori <motonori@econ.kyoto-u.ac.jp>
+
+-   NIIMI Satoshi <sa2c@and.or.jp>
+
+-   NOKUBI Hirotaka <h-nokubi@yyy.or.jp>
+
+-   Nadav Eiron <nadav@barcode.co.il>
+
+-   Nanbor Wang <nw1@cs.wustl.edu>
+
+-   Naofumi Honda <honda@Kururu.math.sci.hokudai.ac.jp>
+
+-   Naoki Hamada <nao@tom-yam.or.jp>
+
+-   Naram Qashat <cyberbotx@cyberbotx.com>
+
+-   Narayan Namdev Newton <narayannewton@gmail.com>
+
+-   Narvi <narvi@haldjas.folklore.ee>
+
+-   Nate Eldredge <neldredge@math.ucsd.edu>
+
+-   Nathan Dorfman <nathan@rtfm.net>
+
+-   Nathaniel Roark <robb_force@holybuffalo.net>
+
+-   Natsagdorj Shagdar <natsag2000@yahoo.com>
+
+-   Neal Fachan <kneel@ishiboo.com>
+
+-   Neal Nelson <ports@nicandneal.net>
+
+-   Necati Ersen Siseci <siseci@enderunix.org>
+
+-   Ned Wolpert <wolpert@codeheadsystems.com>
+
+-   Neil Booth <kyuupichan@gmail.com>
+
+-   Nguyen Tam Chinh <chinhngt@sectorb.msk.ru>
+
+-   Niall Smart <rotel@indigo.ie>
+
+-   Nicholas Esborn <nick@netdot.net>
+
+-   Nick Barnes <Nick.Barnes@pobox.com>
+
+-   Nick Black <nickblack@linux.com>
+
+-   Nick Dewing <nickdewing@gmail.com>
+
+-   Nick Handel <nhandel@NeoSoft.com>
+
+-   Nick Hilliard <nick@foobar.org>
+
+-   Nick Johnson <freebsd@spatula.net>
+
+-   Nicole Reid <root@cooltrainer.org>
+
+-   Nikos Kokkalis <nickkokkalis@gmail.com>
+
+-   Nick Leuta <skynick@mail.sc.ru>
+
+-   Nick Rogness <nick@rogness.net>
+
+-   Nick Williams <njw@cs.city.ac.uk>
+
+-   Nick Withers <nick@nickwithers.com>
+
+-   Nicko Dehaine <nicko@stbernard.com>
+
+-   Nickolay N. Dudorov <nnd@itfs.nsk.su>
+
+-   Nicolas Embriz <nbari@tequila.io>
+
+-   Nicolas Jombart <ecu@ipv42.net>
+
+-   Niklas Hallqvist <niklas@filippa.appli.se>
+
+-   Nikola Lecic <nikola.lecic@anthesphoria.net>
+
+-   Nikola Kolev <koue@chaosophia.net>
+
+-   Nikos Ntarmos <ntarmos@ceid.upatras.gr>
+
+-   Nils M. Holm <nmh@t3x.org>
+
+-   Nilton Jose Rizzo <rizzo@rizzo.eng.br>
+
+-   Nisha Talagala <nisha@cs.berkeley.edu>
+
+-   No Name <ZW6T-KND@j.asahi-net.or.jp>
+
+-   No Name <adrian@virginia.edu>
+
+-   No Name <alex@elvisti.kiev.ua>
+
+-   No Name <anto@netscape.net>
+
+-   No Name <bobson@egg.ics.nitch.ac.jp>
+
+-   No Name <bovynf@awe.be>
+
+-   No Name <burg@is.ge.com>
+
+-   No Name <chris@gnome.co.uk>
+
+-   No Name <colsen@usa.net>
+
+-   No Name <coredump@nervosa.com>
+
+-   No Name <dannyman@arh0300.urh.uiuc.edu>
+
+-   No Name <davids@SECNET.COM>
+
+-   No Name <derek@free.org>
+
+-   No Name <dvv@sprint.net>
+
+-   No Name <enami@ba2.so-net.or.jp>
+
+-   No Name <flash@eru.tubank.msk.su>
+
+-   No Name <flash@hway.ru>
+
+-   No Name <fn@pain.csrv.uidaho.edu>
+
+-   No Name <frf@xocolatl.com>
+
+-   No Name <gclarkii@netport.neosoft.com>
+
+-   No Name <gordon@sheaky.lonestar.org>
+
+-   No Name <graaf@iae.nl>
+
+-   No Name <greg@greg.rim.or.jp>
+
+-   No Name <grossman@cygnus.com>
+
+-   No Name <gusw@fub46.zedat.fu-berlin.de>
+
+-   No Name <hfir@math.rochester.edu>
+
+-   No Name <hnokubi@yyy.or.jp>
+
+-   No Name <iaint@css.tuu.utas.edu.au>
+
+-   No Name <invis@visi.com>
+
+-   No Name <ishisone@sra.co.jp>
+
+-   No Name <iverson@lionheart.com>
+
+-   No Name <jpt@magic.net>
+
+-   No Name <junker@jazz.snu.ac.kr>
+
+-   No Name <k-sugyou@ccs.mt.nec.co.jp>
+
+-   No Name <kenji@reseau.toyonaka.osaka.jp>
+
+-   No Name <kfurge@worldnet.att.net>
+
+-   No Name <lh@aus.org>
+
+-   No Name <lhecking@nmrc.ucc.ie>
+
+-   No Name <mrgreen@mame.mu.oz.au>
+
+-   No Name <nakagawa@jp.FreeBSD.org>
+
+-   No Name <ohki@gssm.otsuka.tsukuba.ac.jp>
+
+-   No Name <owaki@st.rim.or.jp>
+
+-   No Name <pechter@shell.monmouth.com>
+
+-   No Name <pete@pelican.pelican.com>
+
+-   No Name <pritc003@maroon.tc.umn.edu>
+
+-   No Name <risner@stdio.com>
+
+-   No Name <root@ns2.redline.ru>
+
+-   No Name <root@uglabgw.ug.cs.sunysb.edu>
+
+-   No Name <stephen.ma@jtec.com.au>
+
+-   No Name <sumii@is.s.u-tokyo.ac.jp>
+
+-   No Name <takas-su@is.aist-nara.ac.jp>
+
+-   No Name <tjevans@raleigh.ibm.com>
+
+-   No Name <torii@tcd.hitachi.co.jp>
+
+-   No Name <uenami@imasy.or.jp>
+
+-   No Name <vode@hut.fi>
+
+-   No Name <wlloyd@mpd.ca>
+
+-   No Name <wlr@furball.wellsfargo.com>
+
+-   No Name <wmbfmk@urc.tue.nl>
+
+-   No Name <yamagata@nwgpc.kek.jp>
+
+-   No Name <ziggy@ryan.org>
+
+-   No Name <salexanov@gmail.com>
+
+-   Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
+
+-   Nobuyuki Koganemaru <kogane@koganemaru.co.jp>
+
+-   Norberto Lopes <nlopes.ml@gmail.com>
+
+-   Norio Suzuki <nosuzuki@e-mail.ne.jp>
+
+-   Noritaka Ishizumi <graphite@jp.FreeBSD.org>
+
+-   Noritoshi Demizu <demizu@dd.iij4u.or.jp>
+
+-   Noriyuki Soda <soda@sra.co.jp>
+
+-   Oddbjorn Steffensen <oddbjorn@tricknology.org>
+
+-   Oh Junseon <hollywar@mail.holywar.net>
+
+-   Olaf Wagner <wagner@luthien.in-berlin.de>
+
+-   Olafur Osvaldsson <oli@isnic.is>
+
+-   Oleg Alexeenkov <proler@gmail.com>
+
+-   Oleg Ginzburg <olevole@olevole.ru>
+
+-   Oleg Kiselyov <oleg@pobox.com>
+
+-   Oleg A. Mamontov <oleg@mamontov.net>
+
+-   Oleg M. Golovanov <olmi@rentech.ru>
+
+-   Oleg Moskalenko <mom040267@gmail.com>
+
+-   Oleg R. Muhutdinov <mor@whiteluna.com>
+
+-   Oleg Semyonov <os@altavista.net>
+
+-   Oleg Sharoiko <os@rsu.ru>
+
+-   Oleg Ukraincev <oleg@ht-systems.ru>
+
+-   Oleg V. Volkov <rover@lglobus.ru>
+
+-   Oleh Hushchenkov <gor@clogic.com.ua>
+
+-   Oleksandr Lystopad <laa@laa.zp.ua>
+
+-   Olexander Kunytsa <kunia@wolf.istc.kiev.ua>
+
+-   Oliver Breuninger <ob@seicom.NET>
+
+-   Oliver Dunkl <odunkl@gmx.net>
+
+-   Oliver Fischer <plexus@snafu.de>
+
+-   Oliver Friedrichs <oliver@secnet.com>
+
+-   Oliver Hartmann <ohartman@zedat.fu-berlin.de>
+
+-   Oliver Heesakkers <dev2@heesakkers.info>
+
+-   Oliver Helmling <oliver.helmling@stud.uni-bayreuth.de>
+
+-   Oliver Laumann <net@informatik.uni-bremen.de>
+
+-   Oliver Oberdorf <oly@world.std.com>
+
+-   Oliver Peter <hoschi@mouhaha.de>
+
+-   Olivier Beyssac <obld@r14.freenix.org>
+
+-   Olivier Tharan <olive@oban.frmug.org>
+
+-   Olof Johansson <offe@ludd.luth.se>
+
+-   Omer Faruk Sen <ofsen@enderunix.org>
+
+-   Oscar Bonilla <obonilla@galileo.edu>
+
+-   Otacílio de Araújo Ramos Neto <otacilio.neto@ee.ufcg.edu.br>
+
+-   Otávio Fernandes <otaviof@gmail.com>
+
+-   Ozkan KIRIK <ozkan@enderunix.org>
+
+-   Pace Willisson <pace@blitz.com>
+
+-   Paco Rosich <rosich@modico.eleinf.uv.es>
+
+-   Pakhom Golynga <pg@pakhom.spb.ru>
+
+-   Panagiotis Astithas <past@noc.ntua.gr>
+
+-   Panagiotis Kritikakos <panoskrt@googlemail.com>
+
+-   Parag Patel <parag@cgt.com>
+
+-   Pascal Pederiva <pascal@zuo.dec.com>
+
+-   Pascal Vizeli <pvizeli@yahoo.de>
+
+-   Pasi Hirvonen <psh@iki.fi>
+
+-   Pasvorn Boonmark <boonmark@juniper.net>
+
+-   Patrick Alken <cosine@ellipse.mcs.drexel.edu>
+
+-   Patrick Atamaniuk <atamaniuk-ports@frobs.net>
+
+-   Patrick Bihan-Faou <patrick@mindstep.com>
+
+-   Patrick Dung <patrick_dkt@yahoo.com.hk>
+
+-   Patrick Hausen
+
+-   Patrick MARIE <mycroft@virgaria.org>
+
+-   Patrick Powell <papowell@astart.com>
+
+-   Patrick Rinke <patrick@rinke-bochum.de>
+
+-   Patrick Seal <patseal@hyperhost.net>
+
+-   Patrick Tracanelli <eksffa@freebsdbrasil.com.br>
+
+-   Paul <onemda@gmail.com>
+
+-   Paul A. Hoadley <paulh@logicsquad.net>
+
+-   Paul Antonov <apg@demos.su>
+
+-   Paul Chvostek <paul@it.ca>
+
+-   Paul Dlug <paul@aps.org>
+
+-   Paul F. Werkowski
+
+-   Paul Fox <pgf@foxharp.boston.ma.us>
+
+-   Paul Koch <koch@thehub.com.au>
+
+-   Paul Kranenburg <pk@NetBSD.org>
+
+-   Paul M. Lambert <plambert@plambert.net>
+
+-   Paul Mackerras <paulus@cs.anu.edu.au>
+
+-   Paul Popelka <paulp@uts.amdahl.com>
+
+-   Paul S. LaFollette, Jr.
+
+-   Paul Sandys <myj@nyct.net>
+
+-   Paul Schmehl <pauls@utdallas.edu>
+
+-   Paul T. Root <proot@horton.iaces.com>
+
+-   Paul Vixie <paul@vix.com>
+
+-   Paulo Fragoso <paulo@nlink.com.br>
+
+-   Paulo Menezes <paulo@isr.uc.pt>
+
+-   Paulo Menezes <pm@dee.uc.pt>
+
+-   Pavel Janik <Pavel@Janik.cz>
+
+-   Pavel Novikov <pavel@ext.by>
+
+-   Pavel Pankov <pankov_p@mail.ru>
+
+-   Pavel Timofeev <timp87@gmail.com>
+
+-   Pavel Veretennikov <vermut@kid.lv>
+
+-   Pavel I Volkov <pavelivolkov@googlemail.com>
+
+-   Pawel Worach <pawel.worach@gmail.com>
+
+-   Pedro A M Vazquez <vazquez@IQM.Unicamp.BR>
+
+-   Pengfei JU <jupengfei@gmail.com>
+
+-   Per Wigren <wigren@home.se>
+
+-   Pete Bentley <pete@demon.net>
+
+-   Peter Ankerstål <peter@pean.org>
+
+-   Peter Avalos <pavalos@theshell.com>
+
+-   Peter Childs <pjchilds@imforei.apana.org.au>
+
+-   Peter Cornelius <pc@inr.fzk.de>
+
+-   Pete French <pete@twisted.org.uk>
+
+-   Peter Haight <peterh@prognet.com>
+
+-   Peter Holub <hopet@ics.muni.cz>
+
+-   Peter Klatt <glocke@bsdstammtisch.at>
+
+-   Peter Kolmisoppi <growspd@brokep.com>
+
+-   Peter M. Chen <pmchen@eecs.umich.edu>
+
+-   Peter Much <peter@citylink.dinoex.sub.org>
+
+-   Peter Olsson
+
+-   Peter Philipp <pjp@bsd-daemon.net>
+
+-   Peter S. Housel <housel@acm.org>
+
+-   Peter Schuller <peter.schuller@infidyne.com>
+
+-   Peter Stubbs <PETERS@staidan.qld.edu.au>
+
+-   Péter Terbe <sncdev@gmail.com>
+
+-   Peter Thoenen <peter.thoenen@yahoo.com>
+
+-   Peter Vereshagin <peter@vereshagin.org>
+
+-   Peter W. Schmiedeskamp <pschmied@qwest.net>
+
+-   Peter van Dijk <peter@dataloss.nl>
+
+-   Peter van Heusden <pvh@wfeet.za.net>
+
+-   Petr Macek <pm@kostax.cz>
+
+-   Petr Rehor <prehor@gmail.com>
+
+-   Phil Budne <phil@ultimate.com>
+
+-   Phil Maker <pjm@gnu.org>
+
+-   Phil Oleson <oz@nixil.net>
+
+-   Phil Phillips <pphillips@experts-exchange.com>
+
+-   Phil Sutherland <philsuth@mycroft.dialix.oz.au>
+
+-   Phil Taylor <phil@zipmail.co.uk>
+
+-   Philip Musumeci <p.musumeci@ieee.org>
+
+-   Philip Reynolds <philip.reynolds@rfc-networks.ie>
+
+-   Philip Schulz <phs@deadc0.de>
+
+-   Philip Stoev <philip.stoev@galeracluster.com>
+
+-   Philippe Lefebvre <nemesis@balistik.net>
+
+-   Philippe Maechler <plcmaechler@gmail.com>
+
+-   Philippe Pepiot <phil@philpep.org>
+
+-   Philippe Rocques <phil@teaser.fr>
+
+-   Pierre David <pdagog@gmail.com>
+
+-   Pierre Y. Dampure <pierre.dampure@k2c.co.uk>
+
+-   Pierre-Paul Lavoie <ppl@nbnet.nb.ca>
+
+-   Pieter Danhieux <opr@bsdaemon.be>
+
+-   Piotr Florczyk <p.florczyk@adminworkshop.pl>
+
+-   Piotr Rybicki <meritus@innervision.pl>
+
+-   Piotr Smyrak <piotr.smyrak@heron.pl>
+
+-   Pius Fischer <pius@ienet.com>
+
+-   Pomegranate <daver@flag.blackened.net>
+
+-   Pontus Stenetorp <ninjin@kth.se>
+
+-   Powerdog Industries <kevin.ruddy@powerdog.com>
+
+-   Priit Järv <priit@cc.ttu.ee>
+
+-   Prudhvi Krishna <prudhvikrishna@gmail.com>
+
+-   Qiang Guo <guoqiang_cn@126.com>
+
+-   Qing Feng <qingfeng@me.com>
+
+-   Quentin Baker <bsd@quentb.com>
+
+-   Quentin Stievenart <acieroid@awesom.eu>
+
+-   Quinton Dolan <q@onthenet.com.au>
+
+-   R Joseph Wright <rjoseph@mammalia.org>
+
+-   R. Christian McDonald <rcm@rcm.sh>
+
+-   R. Kym Horsell
+
+-   R Skinner <port_maintainer@herveybayaustralia.com.au>
+
+-   Radek Kozlowski <radek@raadradd.com>
+
+-   Radim Kolar <hsn@netmag.cz>
+
+-   Radoslav Vasilev <rvasilev@uni-svishtov.bg>
+
+-   Rafael Mentz Aquino <rafael@lk6.com.br>
+
+-   Rafal Lesniak <fbsd@grid.einherjar.de>
+
+-   Raffaele De Lorenzo <raffaele.delorenzo@libero.it>
+
+-   Rainer Duffer <rainer@ultra-secure.de>
+
+-   Ralf Friedl <friedl@informatik.uni-kl.de>
+
+-   Ralf Gebhart <gebhart@secnetix.de>
+
+-   Ralf van der Enden <tremere@cainites.net>
+
+-   Ralf van Dooren <r.vdooren@snow.nl>
+
+-   Randal S. Masutani <randal@comtest.com>
+
+-   Randall Hopper <rhh@ct.picker.com>
+
+-   Randall W. Dean <rwd@osf.org>
+
+-   Randy Bush <rbush@bainbridge.verio.net>
+
+-   Rashid N. Achilov <shelton@sentry.granch.ru>
+
+-   Rasmus Kaj <rasmus@kaj.se>
+
+-   Raul Pollicino <email-ports@def-defying.com>
+
+-   Razi Khaja <razi@genet.sickkids.on.ca>
+
+-   Reed A. Cartwright <cartwright@asu.edu>
+
+-   Reinier Bezuidenhout <rbezuide@mikom.csir.co.za>
+
+-   Remington Lang <MrL0L@charter.net>
+
+-   Remy Card <Remy.Card@masi.ibp.fr>
+
+-   Renato P. S. Saoud <renatofreerider@hotmail.com>
+
+-   Revis Zinkov <rzinkov@gmail.com>
+
+-   Ricardas Cepas <rch@richard.eu.org>
+
+-   Ricardo A. Reis <ricardo.areis@gmail.com>
+
+-   Riccardo Veraldi <veraldi@cs.unibo.it>
+
+-   Rich Morin <rdm@cfcl.com>
+
+-   Rich Wood <rich@FreeBSD.org.uk>
+
+-   Richard Arends <richard@unixguru.nl>
+
+-   Richard Henderson <richard@atheist.tamu.edu>
+
+-   Richard Hwang <rhwang@bigpanda.com>
+
+-   Richard J Kuhns <rjk@watson.grauel.com>
+
+-   Richard Kiss <richard@homemail.com>
+
+-   Richard M. Neswold <rneswold@enteract.com>
+
+-   Richard Stallman <rms@gnu.ai.mit.edu>
+
+-   Richard Straka <straka@user1.inficad.com>
+
+-   Richard Tobin <richard@cogsci.ed.ac.uk>
+
+-   Richard Wackerbarth <rkw@Dataplex.NET>
+
+-   Richard Winkel <rich@math.missouri.edu>
+
+-   Richard Wiwatowski <rjwiwat@adelaide.on.net>
+
+-   Rick Fournier <rick@help-desk.ca>
+
+-   Rick Macklin
+
+-   Rick van der Zwet <rick@wzoeterwoude.net>
+
+-   Rihaz Jerrin <rihaz.jerrin@gmail.com>
+
+-   Roar Pettersen <roar.pettersen@it.uib.no>
+
+-   Rob Austein <sra@epilogue.com>
+
+-   Rob Evers <rob@debank.tv>
+
+-   Rob Mallory <rmallory@qualcomm.com>
+
+-   Rob Snow <rsnow@txdirect.net>
+
+-   Robert Crossfield <robcrossfield@gmail.com>
+
+-   Robert Crowe <bob@speakez.com>
+
+-   Robert D. Thrush <rd@phoenix.aii.com>
+
+-   Robert Eckardt <roberte@MEP.Ruhr-Uni-Bochum.de>
+
+-   Robert Felber <robtone@ek-muc.de>
+
+-   Robert Kruus <rob.kruus@gmail.com>
+
+-   Robert P Ricci <ricci@cs.utah.edu>
+
+-   Robert Sanders <rsanders@mindspring.com>
+
+-   Robert Schlotterbeck <robert@rs.tarrant.tx.us>
+
+-   Robert Sexton <robert@kudra.com>
+
+-   Robert Shady <rls@id.net>
+
+-   Robert Simmons <rsimmons0@gmail.com>
+
+-   Robert Swindells <swindellsr@genrad.co.uk>
+
+-   Robert Withrow <witr@rwwa.com>
+
+-   Robert Yoder
+
+-   Robert Zelaya <rob@theseusnetworking.com>
+
+-   Roberto Fernandez Cueto <roberfern@gmail.com>
+
+-   Robin Carey <robin@mailgate.dtc.rankxerox.co.uk>
+
+-   Robin Elfrink <elfrink@introweb.nl>
+
+-   Robin Schilham <co9@xs4all.nl>
+
+-   Robin Schoonover <robin.schoonover@gmail.google.com>
+
+-   Robson Mantovani <robsonmantovani@gmail.com>
+
+-   Rod Taylor <ports@rbt.ca>
+
+-   Rodrigo Graeff <delphus@gmail.com>
+
+-   Roger Hardiman <roger@cs.strath.ac.uk>
+
+-   Roger Leigh <rleigh@codelibre.net>
+
+-   Roland Jesse <jesse@cs.uni-magdeburg.de>
+
+-   Roland Smith <rsmith@xs4all.nl>
+
+-   Dr. Rolf Jansen <cyclaero@gmail.com>
+
+-   Roman Neuhauser <neuhauser@chello.cz>
+
+-   Roman Shterenzon <roman@xpert.com>
+
+-   Roman Synyuk <roman@univ.kiev.ua>
+
+-   Roman V. Palagin <romanp@unshadow.net>
+
+-   Roman Y. Bogdanov <sam@brj.pp.ru>
+
+-   Ron Bickers <rbickers@intercenter.net>
+
+-   Ron Lenk <rlenk@widget.xmission.com>
+
+-   Ron van Daal <ronvdaal@n1x.nl>
+
+-   Ronald F. Guilmette <rfg@monkeys.com>
+
+-   Ronald Kuehn <kuehn@rz.tu-clausthal.de>
+
+-   Roselyn Lee <rosel@verniernetworks.com>
+
+-   Ross West <freebsd@linepoint.com>
+
+-   Rostislav Krasny <rosti.bsd@gmail.com>
+
+-   Roy Maples <roy@marples.name>
+
+-   Ruben <chromium@hybridsource.org>
+
+-   Rudolf Cejka <cejkar@fit.vutbr.cz>
+
+-   Rui Lopes <rui@ruilopes.com>
+
+-   Ruslan Belkin <rus@home2.UA.net>
+
+-   Ruslan Shevchenko <rssh@cam.grad.kiev.ua>
+
+-   Russell Jackson <rjackson@cserv62.csub.edu>
+
+-   Russell L. Carter <rcarter@pinyon.org>
+
+-   Russell Vincent <rv@groa.uct.ac.za>
+
+-   Rusty Nejdl <rnejdl@ringofsaturn.com>
+
+-   Ryan Frederick <ryanrfrederick@gmail.com>
+
+-   Ryan Grove <ryan@wonko.com>
+
+-   Ryan Moe <ryan@transaeris.com>
+
+-   Ryan T. Dean <rtdean@cytherianage.net>
+
+-   Ryan Thompson <ryan@sasknow.com>
+
+-   Ryan Younce <ryany@pobox.com>
+
+-   Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
+
+-   Ryo Okamoto <ryo@aquahill.net>
+
+-   RyoTa SimaMoto <liangtai.s4@gmail.com>
+
+-   Ryuichiro IMURA <imura@af.airnet.ne.jp>
+
+-   SANETO Takanori <sanewo@strg.sony.co.jp>
+
+-   SASAKI Shunsuke <ele@pop17.odn.ne.jp>
+
+-   SAWADA Mizuki <miz@qb3.so-net.ne.jp>
+
+-   SPF <spf@xslt.cs.nccu.edu.tw>
+
+-   SUGIMURA Takashi <sugimura@jp.FreeBSD.org>
+
+-   SURANYI Peter <suranyip@jks.is.tsukuba.ac.jp>
+
+-   Sakai Hiroaki <sakai@miya.ee.kagu.sut.ac.jp>
+
+-   Sakari Jalovaara <sja@tekla.fi>
+
+-   Sam Hartman <hartmans@mit.edu>
+
+-   Samee Shahzada <onestsam@gmail.com>
+
+-   Samuel Lam <skl@ScalableNetwork.com>
+
+-   Samuel Tardieu <sam@rfc1149.net>
+
+-   Samuele Zannoli <zannoli@cs.unibo.it>
+
+-   Samy Al Bahra <samy@kerneled.com>
+
+-   Sander Janssen <janssen@rendo.dekooi.nl>
+
+-   Sander Vesik <sander@haldjas.folklore.ee>
+
+-   Sandro Sigala <ssigala@globalnet.it>
+
+-   Sarod Yatawatta <sarod@users.sf.net>
+
+-   Sascha Biberhofer <ports@skyforge.at>
+
+-   Sascha Blank <blank@fox.uni-trier.de>
+
+-   Sascha Holzleiter <sascha@root-login.org>
+
+-   Sascha Klauder <sklauder@trimind.de>
+
+-   Sascha Wildner <swildner@channelz.GUN.de>
+
+-   Satoh Junichi <junichi@astec.co.jp>
+
+-   Saulius Menkevicius <bob@nulis.lt>
+
+-   Scot Elliott <scot@poptart.org>
+
+-   Scot W. Hetzel <hetzels@westbend.net>
+
+-   Scott A. Kenney <saken@rmta.ml.org>
+
+-   Scott A. Moberly <smoberly@xavier.dyndns.org>
+
+-   Scott Blachowicz <scott.blachowicz@seaslug.org>
+
+-   Scott Burris <scott@pita.cns.ucla.edu>
+
+-   Scott Flatman <sf@slappy.org>
+
+-   Scott Hazen Mueller <scott@zorch.sf-bay.org>
+
+-   Scott Kleihege <scott-ports@tummy.com>
+
+-   Scott Lambert <lambert@lambertfam.org>
+
+-   Scott Michel <scottm@cs.ucla.edu>
+
+-   Scott Reynolds <scott@clmqt.marquette.mi.us>
+
+-   Scott Ullrich <sullrich@gmail.com>
+
+-   SeaD <sead@mail.ru>
+
+-   Sean McLaughlin <sigma.zx@gmail.com>
+
+-   Seamus Venasse <svenasse@polaris.ca>
+
+-   Sébastian Santoro <dereckson@gmail.com>
+
+-   Sebastian Schwarz <seschwar@gmail.com>
+
+-   Sebastian Strollo <seb@erix.ericsson.se>
+
+-   Sebastian Yepes <esn@x123.info>
+
+-   Seiya Yanagita <s_yanagita@ybb.ne.jp>
+
+-   Serge Gagnon <gagnon_s@sympatico.ca>
+
+-   Serge Negodyuck <petr@petrovich.kiev.ua>
+
+-   Serge V. Vakulenko <vak@zebub.msk.su>
+
+-   Sergei Chechetkin <csl@whale.sunbay.crimea.ua>
+
+-   Sergei S. Laskavy <laskavy@pc759.cs.msu.su>
+
+-   Sergei Vyshenski <svysh.fbsd@gmail.com>
+
+-   Sergey Akhmatov <sergey@akhmatov.ru>
+
+-   Sergey Akifyev <asa@gascom.ru>
+
+-   Sergey Anohin <admin@5034.ru>
+
+-   Sergey V. Dyatko <sergey.dyatko@gmail.com>
+
+-   Sergey Gershtein <sg@mplik.ru>
+
+-   Sergey Glushchenko <deen@smz.com.ua>
+
+-   Sergey Kosyakov <ks@itp.ac.ru>
+
+-   Sergey Lyubka <valenok@gmail.com>
+
+-   Sergey Matveev <stargrave@stargrave.org>
+
+-   Sergey N. Vorokov <serg@tmn.ru>
+
+-   Sergey Potapov <sp@alkor.ru>
+
+-   Sergey Samoyloff <gonza@techline.ru>
+
+-   Sergey Shkonda <serg@bcs.zp.ua>
+
+-   Sergey V. Dorokhov <svd@kbtelecom.nalnet.ru>
+
+-   Sergey Velichkevych <serg@cad.kiev.ua>
+
+-   Sergio Lenzi <lenzi@bsi.com.br>
+
+-   Serguei Okladnikov <oklaspec@gmail.com>
+
+-   Shane Ambler <freebsd@shaneware.biz>
+
+-   Shane Kinney <mod6@freebsdhackers.net>
+
+-   Shaun Courtney <shaun@emma.eng.uct.ac.za>
+
+-   Shawn M. Carey <smcarey@mailbox.syr.edu>
+
+-   Shell Hung <shell@shellhung.org>
+
+-   Shen Chuan-Hsing <statue@freebsd.sinica.edu.tw>
+
+-   Shigeru Yamamoto <shigeru@iij.ad.jp>
+
+-   Shigio Yamaguchi <shigio@tamacom.com>
+
+-   Shin’ya Murakami <murakami@ahs.scitec.kobe-u.ac.jp>
+
+-   Shinichiro Komatsu <koma2@ms.u-tokyo.ac.jp>
+
+-   Shinsuke Matsui <smatsui@karashi.org>
+
+-   Shinya Esu <esu@yk.rim.or.jp>
+
+-   Shinya FUJIE <fujie@tk.elec.waseda.ac.jp>
+
+-   Shuichi Tanaka <stanaka@bb.mbn.or.jp>
+
+-   Siebrand Mazeland <s.mazeland@xs4all.nl>
+
+-   Sijmen J. Mulder <ik@sjmulder.nl>
+
+-   Silvio Ap Silva <alvolivre@live.com>
+
+-   Simeon Simeonov <sgs@pichove.org>
+
+-   Simon <simon@masi.ibp.fr>
+
+-   Simon Burge <simonb@telstra.com.au>
+
+-   Simon Cornelius P. Umacob <simoncpu@infoweapons.com>
+
+-   Simon Dick <simond@irrelevant.org>
+
+-   Simon Lang <simon@lang-clan.de>
+
+-   Simon Marlow <simonmar@microsoft.com>
+
+-   Simon Olofsson <simon@olofsson.de>
+
+-   Simon Peter <probono@puredarwin.org>
+
+-   Simon Schubert <corecode@corecode.ath.cx>
+
+-   Simon Shapiro <shimon@simon-shapiro.org>
+
+-   Simun Mikecin <numisemis@yahoo.com>
+
+-   Sin’ichiro MIYATANI <siu@phaseone.co.jp>
+
+-   Slaven Rezic <slaven@rezic.de>
+
+-   Snow Chyld <snowchyld+freebsdports@gmail.com>
+
+-   Soochon Radee <slr@mitre.org>
+
+-   Soren Dayton <csdayton@midway.uchicago.edu>
+
+-   Soren Debois <debois@diku.dk>
+
+-   Soren Dossing <sauber@netcom.com>
+
+-   Soren S. Jorvang <soren@wheel.dk>
+
+-   Stan Barber <sob@academ.com>
+
+-   Stanislav A. Svirid <count@riss-telecom.ru>
+
+-   Stanislav Grozev <tacho@daemonz.org>
+
+-   Stanislaw Halik <sthalik@tehran.lain.pl>
+
+-   Stanislav Shalunov <shalunov@internet2.edu>
+
+-   Stas Timokhin <devel@stasyan.com>
+
+-   Stefan A. Deutscher <sad@mailaps.org>
+
+-   Stefan Eggers <seggers@semyam.dinoco.de>
+
+-   Stefan Ehmann <shoesoft@gmx.net>
+
+-   Stefan Grundmann <sg-sendpr@waset.de>
+
+-   Stefan Jahn <stefan.jahn@nemesis-sektor.de>
+
+-   Stefan Lambrev <cheffo@freebsd-bg.org>
+
+-   Stefan Moeding <s.moeding@ndh.net>
+
+-   Stefan Petri
+
+-   Stefan Rumetshofer <sterum@overrider.at>
+
+-   Stefan Schmidt <stefan.schmidt@twest.de>
+
+-   Stefan Schwarzer <sschwarzer@sschwarzer.net>
+
+-   Stefan Tell <stefan.tell@crashmail.de>
+
+-   Stefan Sec Zehl <sec@42.org>
+
+-   Steffen Fritz <steffen@fritz.wtf>
+
+-   Steffen Mazanek <steffen.mazanek@unibw-muenchen.de>
+
+-   Steffen Vogelreuter <Steffen@Vogelreuter.De>
+
+-   Steinar Haug <sthaug@nethelp.no>
+
+-   Sten Poldma <exile@chamber.ee>
+
+-   Sten Spans <sten@blinkenlights.nl>
+
+-   Stepan Zastupov <redchrom@gmail.com>
+
+-   Stephan Lichtenauer <sl@honeyguide.eu>
+
+-   Stephane Lapie <stephane.lapie@darkbsd.org>
+
+-   Stephen Clawson <sclawson@marker.cs.utah.edu>
+
+-   Stephen F. Combs <combssf@salem.ge.com>
+
+-   Stephen Farrell <stephen@farrell.org>
+
+-   Stephen Fisher <stephentfisher@yahoo.com>
+
+-   Stephen Gunn <csg@fedex.com>
+
+-   Stephen Hocking <sysseh@devetir.qld.gov.au>
+
+-   Stephen J. Roznowski <sjr@home.net>
+
+-   Stephen McKay <syssgm@devetir.qld.gov.au>
+
+-   Stephen Melvin <melvin@zytek.com>
+
+-   Stephen Weeks <sweeks@sweeks.com>
+
+-   Stephon Chen <stephon@gmail.com>
+
+-   Steve Ames <steve@energistic.com>
+
+-   Steve Bauer <sbauer@rock.sdsmt.edu>
+
+-   Steve Coltrin <spcoltri@unm.edu>
+
+-   Steve Deering
+
+-   Steve Franks <bahamasfranks@gmail.com>
+
+-   Steve Gerakines <steve2@genesis.tiac.net>
+
+-   Steve Gericke <steveg@comtrol.com>
+
+-   Steve O’Hara-Smith <steve@sohara.org>
+
+-   Steve Piette <steve@simon.chi.il.US>
+
+-   Steve Roome <steve@pepcross.com>
+
+-   Steve Schwarz <schwarz@alpharel.com>
+
+-   Steven Enderle <panic@subphase.de>
+
+-   Steven H. Samorodin <samorodi@NUXI.com>
+
+-   Steven Hartland <steven.hartland@multiplay.co.uk>
+
+-   Steven Honson <steven@honson.org>
+
+-   Steven McCanne <mccanne@cs.berkeley.edu>
+
+-   Steven Plite <splite@purdue.edu>
+
+-   Steven Stallion <sstallion@gmail.com>
+
+-   Steven Wallace
+
+-   Stig Inge Lea Bjørnsen <stiginge@pvv.org>
+
+-   Stijn Hoop <stijn@win.tue.nl>
+
+-   Stuart Henderson <stuart@internationalschool.co.uk>
+
+-   Stylianos Sideridis <siderste@yahoo.gr>
+
+-   Sue Blake <sue@welearn.com.au>
+
+-   Sugimoto Sadahiro <ixtl@komaba.utmc.or.jp>
+
+-   Sugiura Shiro <ssugiura@duo.co.jp>
+
+-   Sujal Patel <smpatel@wam.umd.edu>
+
+-   Sulev-Madis Silber <madis555@hot.ee>
+
+-   Sune Stjerneby <sst@vmunix.dk>
+
+-   Sungman Cho <smcho@tsp.korea.ac.kr>
+
+-   Sutra Zhou <zhoushuqun@gmail.com>
+
+-   Suzuki Yoshiaki <zensyo@ann.tama.kawasaki.jp>
+
+-   Svein Skogen <tds@dmnstech.net>
+
+-   Sven Klose <pixel@hugbox.org>
+
+-   Sven Mohr <svmohr@rm6.net>
+
+-   Svyatoslav Lempert <svyatoslav.lempert@gmail.com>
+
+-   Sybolt de Boer <bolt@xs4all.nl>
+
+-   TAKAHASHI Kaoru <kaoru@kaisei.org>
+
+-   TERAMOTO Masahiro <markun@onohara.to>
+
+-   Tadashi Kumano <kumano@strl.nhk.or.jp>
+
+-   Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
+
+-   Takahiro Yugawa <yugawa@orleans.rim.or.jp>
+
+-   Takashi Mega <mega@minz.org>
+
+-   Takashi Uozu <j1594016@ed.kagu.sut.ac.jp>
+
+-   Takayuki Ariga <a00821@cc.hc.keio.ac.jp>
+
+-   Takayuki Nakao <t@nakao.org>
+
+-   Takeru NAIKI <naiki@bfd.es.hokudai.ac.jp>
+
+-   Takeshi Amaike <amaike@iri.co.jp>
+
+-   Takeshi MUTOH <mutoh@info.nara-k.ac.jp>
+
+-   Takeshi Ohashi <ohashi@mickey.ai.kyutech.ac.jp>
+
+-   Takeshi WATANABE <watanabe@crayon.earth.s.kobe-u.ac.jp>
+
+-   Takuya SHIOZAKI <tshiozak@makino.ise.chuo-u.ac.jp>
+
+-   Talal Al Dik <tad@vif.com>
+
+-   Tanja Wittke <tawi@gruft.de>
+
+-   Tarasov Alexey <master@preved.cn>
+
+-   Tassilo Philipp <tphilipp@potion-studios.com>
+
+-   Tatoku Ogaito <tacha@tera.fukui-med.ac.jp>
+
+-   Tatsuki Makino <tatsuki_makino@hotmail.com>
+
+-   Tatsuya Kudoh <cdr@cosmonet.org>
+
+-   Tatsuya Ueda <ml+freebsd@tatsuya.info>
+
+-   Taylor Dondich <tdondich@majiknetworks.com>
+
+-   Ted Buswell <tbuswell@mediaone.net>
+
+-   Ted Faber <faber@isi.edu>
+
+-   Ted Lemon <mellon@isc.org>
+
+-   Ted Stodgell <trs137@psu.edu>
+
+-   Teodor Sigaev <teodor@sigaev.ru>
+
+-   Terry Lambert <terry@lambert.org>
+
+-   Terry Lee <terry@uivlsi.csl.uiuc.edu>
+
+-   Terry Sposato <terry@sucked-in.com>
+
+-   Teruaki Ata <PFA03027@nifty.ne.jp>
+
+-   Tetsuro Yabu <yabu@uopmu.ees.osakafu-u.ac.jp>
+
+-   Tetsuya Furukawa <tetsuya@secom-sis.co.jp>
+
+-   Thaddeus Covert <tcovert+ports@sahuagin.net>
+
+-   Theo de Raadt <deraadt@OpenBSD.org>
+
+-   Thierry Dussuet <thierry@dussuet.lugs.ch>
+
+-   Thomas <thomas@mathematik.uni-Bremen.de>
+
+-   Thomas A. Stephens <tas@stephens.org>
+
+-   Thomas Bartelmess <thomas@bartelmess.io>
+
+-   Thomas BRETON <tom@h-inventory.com>
+
+-   Thomas Cort <linuxgeek@gmail.com>
+
+-   Thomas D. Dean <tomdean@ix.netcom.com>
+
+-   Thomas David Rivers <rivers@dignus.com>
+
+-   Thomas Dreibholz <dreibh@iem.uni-due.de>
+
+-   Thomas G. McWilliams <tgm@netcom.com>
+
+-   Thomas Hurst <tom@hur.st>
+
+-   Thomas Kempka <t.kempka@web.de>
+
+-   Thomas König <Thomas.Koenig@ciw.uni-karlsruhe.de>
+
+-   Thomas M. Hermann <Thomas.Hermann@cox.net>
+
+-   Thomas Melzer <tmelzer@tomesoft.de>
+
+-   Thomas Ptacek
+
+-   Thomas Spreng <spreng@socket.ch>
+
+-   Thomas Stromberg <tstrombe@rtci.com>
+
+-   Thomas Valentino Crimi <tcrimi+@andrew.cmu.edu>
+
+-   Thomas Vogt <thomas.vogt@bsdunix.ch>
+
+-   Thorsten Greiner <thorsten@tgreiner.net>
+
+-   Þórður Ívarsson <totii@est.is>
+
+-   Tillman Hodgson <tillman@seekingfire.com>
+
+-   Tim Daneliuk <tundra@tundraware.com>
+
+-   Tim Hemel <tim@n2it.net>
+
+-   Tim Little <tim@wallago.co.uk>
+
+-   Tim Niemueller <tim@niemueller.de>
+
+-   Tim Pozar <pozar@lns.com>
+
+-   Tim Singletary <tsingle@sunland.gsfc.nasa.gov>
+
+-   Tim Welch <ports@thepentagon.org>
+
+-   Tim Wilkinson <tim@sarc.city.ac.uk>
+
+-   Timo J. Rinne <tri@iki.fi>
+
+-   Timofeev Vladimir <vovkasm@gmail.com>
+
+-   Timothy Beyer <beyert@cs.ucr.edu>
+
+-   Timothy Bourke <timbob@bigpond.com>
+
+-   Timothy Jensen <toast@blackened.com>
+
+-   Timothy Redaelli <drizzt@drizzt.ath.cx>
+
+-   Ting-Wei Lan <lantw44@gmail.com>
+
+-   Tobias Begalke <tobega@spyz.org>
+
+-   Tobias Reifenberger <treif@mayn.de>
+
+-   Tobias Roth <ports@fsck.ch>
+
+-   Toby Allsopp <toby@mi6.gen.nz>
+
+-   Todd Miller <millert@openbsd.org>
+
+-   Todd Mortensen <todd@thisisa.com>
+
+-   Tofig Suleymanov <tofig@freebsd.az>
+
+-   Tom <root@majestix.cmr.no>
+
+-   Tom Carrick <knyghtmare@knyghtmare.com>
+
+-   Tom Gray - DCA <dcasba@rain.org>
+
+-   Tom Jobbins <tom@tom.tj>
+
+-   Tom Mortensen <tom@tavrasm.org>
+
+-   Tom Mueller-Kortkamp <tmueko@kommunity.net>
+
+-   Tom Pusateri <pusateri@juniper.net>
+
+-   Tom Rush <tarush@mindspring.com>
+
+-   Tom Samplonius <tom@misery.sdf.com>
+
+-   Tomas Verbaitis <tomasv@megalogika.lt>
+
+-   Tomasz Walaszek <tmwalaszek@gmail.com>
+
+-   Tomaž Muraus <kami@k5-storitve.net>
+
+-   Tomek Cedro <tomek.cedro@gmail.com>
+
+-   Tomohiko Kurahashi <kura@melchior.q.t.u-tokyo.ac.jp>
+
+-   Tomoyuki Sakurai <cherry@trombik.org>
+
+-   Toni Andjelkovic <toni@soth.at>
+
+-   Toni Gundogdu <legatvs@gmail.com>
+
+-   Toni Viemero <toni.viemero@iki.fi>
+
+-   Toni Yannick Kalombo <toni@devboks.com>
+
+-   Tony Kimball <alk@Think.COM>
+
+-   Tony Li <tli@jnx.com>
+
+-   Tony Lynn <wing@cc.nsysu.edu.tw>
+
+-   Tony Maher <tonym@biolateral.com.au>
+
+-   Tony Shadwick <numbski@hksilver.net>
+
+-   Tor Halvard "Squat" Furulund <squat@squat.no>
+
+-   Torbjorn Granlund <tege@matematik.su.se>
+
+-   Toshiharu Ohno <tony-o@iij.ad.jp>
+
+-   Toshihiko SHIMOKAWA <toshi@tea.forus.or.jp>
+
+-   Toshihiro Kanda <candy@kgc.co.jp>
+
+-   Toshiomi Moriki <Toshiomi.Moriki@ma1.seikyou.ne.jp>
+
+-   Toshiya SAITOH <toshiya@saitoh.nu>
+
+-   Travis Campbell <hcoyote@ghostar.org>
+
+-   Travis Poppe <tlp@liquidx.org>
+
+-   Trefor S. <trefor@flevel.co.uk>
+
+-   Trenton Schulz <twschulz@cord.edu>
+
+-   Trevor Blackwell <tlb@viaweb.com>
+
+-   Trevor Cornpropst <tcornpropst@cox.net>
+
+-   Trober <trober@trober.com>
+
+-   Troels Kofoed Jacobsen <tkjacobsen@gmail.com>
+
+-   Tsung-Han Yeh <snowfly@yuntech.edu.tw>
+
+-   Tz-Huan Huang <tzhuan@gmail.com>
+
+-   Tzanetos Balitsaris <tzabal@it.teithe.gr>
+
+-   UMENO Takashi <umeno@rr.iij4u.or.jp>
+
+-   URATA Shuichiro <s-urata@nmit.tmg.nec.co.jp>
+
+-   Udo Schweigert <udo.schweigert@siemens.com>
+
+-   Uffe Jakobsen <uffe@uffe.org>
+
+-   Ugo Paternostro <paterno@dsi.unifi.it>
+
+-   Ulf Kieber <kieber@sax.de>
+
+-   Ulli Linzen <ulli@perceval.camelot.de>
+
+-   Ullrich Franke <trash.esiac@googlemail.com>
+
+-   Uwe Arndt <arndt@mailhost.uni-koblenz.de>
+
+-   Uwe Pierau <uwe.pierau@tu-clausthal.de>
+
+-   Vaggelis Typaldos <frances@mylannet.gr>
+
+-   Vadim Belman <voland@catpipe.net>
+
+-   Vadim Chekan <vadim@gc.lviv.ua>
+
+-   Vadim Goncharov <vadim_nuclight@mail.ru>
+
+-   Vadim Kolontsov <vadim@tversu.ac.ru>
+
+-   Vadim Kurland <vadim@fwbuilder.org>
+
+-   Vadim Mikhailov <mvp@braz.ru>
+
+-   Vaida Bogdan <vaida.bogdan@gmail.com>
+
+-   Vaidas Zlotkus <r2@music.lt>
+
+-   Valentin Nechayev <netch@lucky.net>
+
+-   Valentin Zahariev <curly@e-card.bg>
+
+-   Valery Komarov <komarov@valerka.net>
+
+-   Van Jacobson <van@ee.lbl.gov>
+
+-   Vany Serezhkin <ivan@serezhkin.com>
+
+-   Vaclav Haisman <v.haisman@sh.cvut.cz>
+
+-   Vasek Balcar <vasek@ti.cz>
+
+-   Vasily V. Grechishnikov <bazilio@ns1.ied-vorstu.ac.ru>
+
+-   Vasim Valejev <vasim@uddias.diaspro.com>
+
+-   Vassili Tchersky <vt@bsd-fr.org>
+
+-   Vernon J. Schryver <vjs@mica.denver.sgi.com>
+
+-   Veselin Slavov <vess@btc.net>
+
+-   Viacheslav Mikerov <SlavaMikerov@gmail.com>
+
+-   Vic Abell <abe@cc.purdue.edu>
+
+-   Victor Cruceru <victor.cruceru@gmail.com>
+
+-   Victor Popov <v.a.popov@gmail.com>
+
+-   Victor Semionov <semionov@mail.bg>
+
+-   Vidar Karlsen <vidar@karlsen.tech>
+
+-   Viktor Fomichev <vfom@narod.ru>
+
+-   Ville Eerola <ve@sci.fi>
+
+-   Vince Valenti <vince@blue-box.net>
+
+-   Vincent DEFERT <20.100@defert.com>
+
+-   Vincent Poy <vince@DNALOGIC.NET>
+
+-   Vincent Tantardini <vinc@freebsd-fr.org>
+
+-   Vincenzo Capuano <VCAPUANO@vmprofs.esoc.esa.de>
+
+-   Virgil Champlin <champlin@pa.dec.com>
+
+-   Vitaly Magerya <vmagerya@gmail.com>
+
+-   Vivek Khera <vivek@khera.org>
+
+-   Vlad GALU <dudu@dudu.ro>
+
+-   Vlad V. Teterya <vlad@vlad.uz.ua>
+
+-   Vladimir A. Jakovenko <vovik@ntu-kpi.kiev.ua>
+
+-   Vladimir Chukharev <vladimir.chukharev@gmail.com>
+
+-   Vladimir Gorelov <virtual.lark@gmail.com>
+
+-   Vladimir Kurtikov <vk@vk.pp.ru>
+
+-   Vladimir Kushnir <kushn@mail.kar.net>
+
+-   Vladimir Osintsev <oc@nm.ru>
+
+-   Vladimir Savichev <vlad@ariel.phys.wesleyan.edu>
+
+-   Volker Theile <votdev@gmx.de>
+
+-   Volker Quetschke <quetschke@scytek.de>
+
+-   Volodymyr Kostyrko <c.kworr@gmail.com>
+
+-   Vsevolod Lobko <seva@ip.net.ua>
+
+-   Vyacheslav Anikin <ghos@mail.ru>
+
+-   Vyacheslav Ivanchenko <ivi@dhs.net.ru>
+
+-   W. Gerald Hicks <wghicks@bellsouth.net>
+
+-   W. Richard Stevens <rstevens@noao.edu>
+
+-   Waitman Gobble <waitman@waitman.net>
+
+-   Walt Howard <howard@ee.utah.edu>
+
+-   Walt M. Shandruk <walt@erudition.net>
+
+-   Walter Hop <walter@binity.com>
+
+-   Walter Venable <weaseal@hotmail.com>
+
+-   Warren Toomey <wkt@csadfa.cs.adfa.oz.au>
+
+-   Watanabe Kazuhiro <CQG00620@nifty.ne.jp>
+
+-   Wayne Scott <wscott@ichips.intel.com>
+
+-   Wei-Hao Syu <whsyu@arbor.ee.ntu.edu.tw>
+
+-   Wei-Yu Chen <weiyu.csie@gmail.com>
+
+-   Wendell Borges <perlporter@gmail.com>
+
+-   Wei Guo <darcsis@gmail.com>
+
+-   Wei Zhao <amutu@amutu.com>
+
+-   Werner Griessl <werner@btp1da.phy.uni-bayreuth.de>
+
+-   Wes Santee <wsantee@wsantee.oz.net>
+
+-   Wietse Venema <wietse@wzv.win.tue.nl>
+
+-   Wiljo Heinen <wiljo@freeside.ki.open.de>
+
+-   Willem Jan Withagen <wjw@withagen.nl>
+
+-   Willem van Engen <wvengen@stack.nl>
+
+-   William Jolitz <withheld>
+
+-   William Josephson <wkj-freebsd@honk.eecs.harvard.edu>
+
+-   William Liao <william@tale.net>
+
+-   Wojtek Pilorz <wpilorz@celebris.bdk.lublin.pl>
+
+-   Wolfgang Helbig <helbig@ba-stuttgart.de>
+
+-   Wolfgang Solfrank <ws@tools.de>
+
+-   Wolfgang Stanglmeier <wolf@FreeBSD.org>
+
+-   Woodchuck Dave <djv@bedford.net>
+
+-   Woody Carey <woodycarey@hotmail.com>
+
+-   Wouter Van Hemel <wouter@pair.com>
+
+-   Wu Ching-hong <woju@FreeBSD.ee.Ntu.edu.TW>
+
+-   Wylie Stilwell <wylie@magnesium.net>
+
+-   Xavier Beaudouin <kiwi@oav.net>
+
+-   Xiaoding Liu <xiaoding+freebsd@xiaoding.org>
+
+-   Yamagi Burmeister <yamagi@yamagi.org>
+
+-   Yanhui Shen <shen.elf@gmail.com>
+
+-   Yann Berthier <yb@bachibouzouk.org>
+
+-   Yannis Kotsinos <zookie@med.auth.gr>
+
+-   Yarema <yds@ingress.com>
+
+-   Yaroslav Terletsky <ts@polynet.lviv.ua>
+
+-   Yasuhiro Fukama <yasuf@big.or.jp>
+
+-   Yasuhito FUTATSUKI <futatuki@fureai.or.jp>
+
+-   Yen-Shuo Su <yssu@CCCA.NCTU.edu.tw>
+
+-   Yi-Feng Tzeng <yftzeng@gmail.com>
+
+-   Yi-Hsuan Hsin <mhsin@mhsin.org>
+
+-   Ying-Chieh Chen <yinjieh@csie.nctu.edu.tw>
+
+-   Yinghong Liu <relaxbsd@gmail.com>
+
+-   Yixin Jin <yjin@rain.cs.ucla.edu>
+
+-   Yoichi Asai <yatt@msc.biglobe.ne.jp>
+
+-   Yoshiaki Uchikawa <yoshiaki@kt.rim.or.jp>
+
+-   Yoshihiko SARUMRU <mistral@imasy.or.jp>
+
+-   Yoshihisa NAKAGAWA <y-nakaga@ccs.mt.nec.co.jp>
+
+-   Yoshikazu Goto <gotoh@ae.anritsu.co.jp>
+
+-   Yoshimasa Ohnishi <ohnishi@isc.kyutech.ac.jp>
+
+-   Yoshishige Arai <ryo2@on.rim.or.jp>
+
+-   Yu-Shun Wang <yushunwa@isi.edu>
+
+-   Yuan-Chung Hsiao <ychsiao@ychsiao.idv.tw>
+
+-   Yuan Jue <yuanjue@yuanjue.net>
+
+-   Yuichi MATSUTAKA <matutaka@osa.att.ne.jp>
+
+-   Yuichiro AIZAWA <yaizawa@mdbl.sfc.keio.ac.jp>
+
+-   Yuichiro NAITO <naito.yuichiro@gmail.com>
+
+-   Yujiro MIYATA <miyata@bioele.nuee.nagoya-u.ac.jp>
+
+-   Yuki SHIMAZU <y.shimazu@nifty.com>
+
+-   Yuri Kurenkov <y.kurenkov@init.ru>
+
+-   Yuriy N. Shkandybin <jura@netams.com>
+
+-   Yuriy Tsibizov <Yuriy.Tsibizov@gfk.ru>
+
+-   Yusuke Nawano <azuki@azkey.org>
+
+-   Yu-Xi Lim <yuxi@gmx.net>
+
+-   Yuu Yashiki <s974123@cc.matsuyama-u.ac.jp>
+
+-   Yuuichi Narahara <aconitum@po.teleway.ne.jp>
+
+-   Yuuki SAWADA <mami@whale.cc.muroran-it.ac.jp>
+
+-   Yuukis <Ys@PixyGarden.net>
+
+-   Yuval Yarom <yval@cs.huji.ac.il>
+
+-   Yves Fonk <yves@cpcoup5.tn.tudelft.nl>
+
+-   Yves Fonk <yves@dutncp8.tn.tudelft.nl>
+
+-   Zach Garner <zach@neurosoft.org>
+
+-   Zach Heilig <zach@gaffaneys.com>
+
+-   Zach Thompson <hideo@lastamericanempire.com>
+
+-   Zach Zurflu <zach@pabst.bendnet.com>
+
+-   Zachariah Thompson <lin-chi@lastamericanempire.com>
+
+-   Zak Johnson <zakj@nox.cx>
+
+-   Zane C. Bowers <vvelox@vvelox.net>
+
+-   Zhen REN <bg1tpt@gmail.com>
+
+-   Zhihao Yuan <lichray@gmail.com>
+
+-   Zhixiang JIANG <luckrill@yahoo.com.cn>
+
+-   Zhong Ming-Xun <zmx@mail.CDPA.nsysu.edu.tw>
+
+-   Zsolt Udvari <udvzsolt@gmail.com>
+
+-   appleboy <appleboy.tw@gmail.com>
+
+-   arci <vega@sophia.inria.fr>
+
+-   ayunyan <ayunyan@gmail.com>
+
+-   der Mouse <mouse@Collatz.McRCIM.McGill.EDU>
+
+-   geoffroy desvernay <dgeo@centrale-marseille.fr>
+
+-   gspu <gspurki@gmail.com>
+
+-   lightside <lightside@gmx.com>
+
+-   Piotr Szerman <pmsz@tlen.pl>
+
+-   rossiya <rossiya@gmail.com>
+
+8. 386BSD Patch Kit Patch Contributors
+
+(in alphabetical order by first name):
+
+-   Adam Glass <glass@postgres.berkeley.edu>
+
+-   Adrian Hall <ahall@mirapoint.com>
+
+-   Andrey A. Chernov <ache@astral.msk.su>
+
+-   Andrew Gerweck <andy@gerweck.dynup.net>
+
+-   Andrew Herbert <andrew@werple.apana.org.au>
+
+-   Andrew Moore <alm@netcom.com>
+
+-   Andy Valencia <ajv@csd.mot.comjtk@netcom.com>
+
+-   Arne Henrik Juul <arnej@Lise.Unit.NO>
+
+-   Bakul Shah <bvs@bitblocks.com>
+
+-   Barry Irwin <bvi@moria.org>
+
+-   Barry Lustig <barry@ictv.com>
+
+-   Bob Wilcox <bob@obiwan.uucp>
+
+-   Branko Lankester
+
+-   Brett Lymn <blymn@mulga.awadi.com.AU>
+
+-   Charles Hannum <mycroft@ai.mit.edu>
+
+-   Chris G. Demetriou <cgd@postgres.berkeley.edu>
+
+-   Chris Torek <torek@ee.lbl.gov>
+
+-   Christoph Robitschko <chmr@edvz.tu-graz.ac.at>
+
+-   Daniel Poirot <poirot@aio.jsc.nasa.gov>
+
+-   Dave Burgess <burgess@hrd769.brooks.af.mil>
+
+-   Dave Rivers <rivers@ponds.uucp>
+
+-   David Dawes <dawes@physics.su.OZ.AU>
+
+-   David Greenman <dg@Root.COM>
+
+-   Eric J. Haug <ejh@slustl.slu.edu>
+
+-   Felix Gaehtgens <felix@escape.vsse.in-berlin.de>
+
+-   Frank Maclachlan <fpm@crash.cts.com>
+
+-   Gary A. Browning <gab10@griffcd.amdahl.com>
+
+-   Gary Howland <gary@hotlava.com>
+
+-   Geoff Rehmet <csgr@alpha.ru.ac.za>
+
+-   Goran Hammarback <goran@astro.uu.se>
+
+-   Guido van Rooij <guido@gvr.org>
+
+-   Guy Antony Halse <guy@rucus.ru.ac.za>
+
+-   Guy Harris <guy@auspex.com>
+
+-   Havard Eidnes <Havard.Eidnes@runit.sintef.no>
+
+-   Herb Peyerl <hpeyerl@novatel.cuc.ab.ca>
+
+-   Holger Veit <Holger.Veit@gmd.de>
+
+-   Ishii Masahiro, R. Kym Horsell
+
+-   J.T. Conklin <jtc@cygnus.com>
+
+-   Jagane D Sundar <jagane@netcom.com>
+
+-   James Clark <jjc@jclark.com>
+
+-   James Jegers <jimj@miller.cs.uwm.edu>
+
+-   James W. Dolter
+
+-   James da Silva <jds@cs.umd.edu> et al
+
+-   Jay Fenlason <hack@datacube.com>
+
+-   Jim Wilson <wilson@moria.cygnus.com>
+
+-   Jörg Lohse <lohse@tech7.informatik.uni-hamburg.de>
+
+-   Jörg Wunsch <joerg_wunsch@uriah.heep.sax.de>
+
+-   John Dyson
+
+-   John Woods <jfw@eddie.mit.edu>
+
+-   Jordan K. Hubbard <jkh@whisker.hubbard.ie>
+
+-   Julian Elischer <julian@dialix.oz.au>
+
+-   Karl Dietz <Karl.Dietz@triplan.com>
+
+-   Karl Lehenbauer <karl@NeoSoft.comkarl@one.neosoft.com>
+
+-   Keith Bostic <bostic@toe.CS.Berkeley.EDU>
+
+-   Ken Hughes
+
+-   Kent Talarico <kent@shipwreck.tsoft.net>
+
+-   Kevin Lahey
+    <kml%rokkaku.UUCP@mathcs.emory.edukml@mosquito.cis.ufl.edu>
+
+-   Konstantinos Konstantinidis <kkonstan@duth.gr>
+
+-   Marc Frajola <marc@dev.com>
+
+-   Mark Tinguely
+    <tinguely@plains.nodak.edutinguely@hookie.cs.ndsu.NoDak.edu>
+
+-   Martin Renters <martin@tdc.on.ca>
+
+-   Michael Clay <mclay@weareb.org>
+
+-   Michael Galassi <nerd@percival.rain.com>
+
+-   Mike Durkin <mdurkin@tsoft.sf-bay.org>
+
+-   Naoki Hamada <nao@tom-yam.or.jp>
+
+-   Nate Williams <nate@bsd.coe.montana.edu>
+
+-   Nick Handel <nhandel@NeoSoft.comnick@madhouse.neosoft.com>
+
+-   Pace Willisson <pace@blitz.com>
+
+-   Paul Kranenburg <pk@cs.few.eur.nl>
+
+-   Paul Mackerras <paulus@cs.anu.edu.au>
+
+-   Paul Popelka <paulp@uts.amdahl.com>
+
+-   Peter da Silva <peter@NeoSoft.com>
+
+-   Phil Sutherland <philsuth@mycroft.dialix.oz.au>
+
+-   Poul-Henning Kamp <phk@FreeBSD.org>
+
+-   Ralf Friedl <friedl@informatik.uni-kl.de>
+
+-   Rick Macklem <root@snowhite.cis.uoguelph.ca>
+
+-   Robert D. Thrush <rd@phoenix.aii.com>
+
+-   Rodney W. Grimes <rgrimes@cdrom.com>
+
+-   Sascha Wildner <swildner@channelz.GUN.de>
+
+-   Scott Burris <scott@pita.cns.ucla.edu>
+
+-   Scott Reynolds <scott@clmqt.marquette.mi.us>
+
+-   Seamus Venasse <svenasse@polaris.ca>
+
+-   Sean Eric Fagan <sef@kithrup.com>
+
+-   Sean McGovern <sean@sfarc.net>
+
+-   Simon J Gerraty <sjg@melb.bull.oz.ausjg@zen.void.oz.au>
+
+-   Stephen McKay <syssgm@devetir.qld.gov.au>
+
+-   Terry Lambert <terry@icarus.weber.edu>
+
+-   Terry Lee <terry@uivlsi.csl.uiuc.edu>
+
+-   Tor Egge <Tor.Egge@idi.ntnu.no>
+
+-   Warren Toomey <wkt@csadfa.cs.adfa.oz.au>
+
+-   Wiljo Heinen <wiljo@freeside.ki.open.de>
+
+-   William Jolitz <withheld>
+
+-   Wolfgang Solfrank <ws@tools.de>
+
+-   Wolfgang Stanglmeier <wolf@dentaro.GUN.de>
+
+-   Yuval Yarom <yval@cs.huji.ac.il>
+
+9. Donors Gallery
+
+The FreeBSD Foundation thanks financial and in-kind donors.
+
+The FreeBSD Donations Liaison area includes a list of donated hardware.
+
+The FreeBSD Project thanks all donors!
+
++-----------------------------------+-----------------------------------+
+|                                   | As of 2010, the section below was |
+|                                   | several years out-of-date.        |
++-----------------------------------+-----------------------------------+
+
+9.1. Contributors to the central server project
+
+The following individuals and businesses made it possible for the
+FreeBSD Project to build a new central server machine, which has
+replaced freefall.FreeBSD.org at one point, by donating the following
+items:
+
+-   Ade Barkah <mbarkah@FreeBSD.org> and his employer, Hemisphere
+    Online, donated a Pentium Pro (P6) 200MHz CPU.
+
+-   ASA Computers donated a Tyan 1662 motherboard.
+
+-   Joe McGuckin <joe@via.net> of ViaNet Communications donated a
+    Kingston ethernet controller.
+
+-   Jack O’Neill <jack@diamond.xtalwind.net> donated an NCR 53C875 SCSI
+    controller card.
+
+-   Ulf Zimmermann <ulf@Alameda.net> of Alameda Networks donated 128MB
+    of memory, a 4 Gb disk drive and the case.
+
+9.2. Direct funding
+
+The following individuals and businesses have generously contributed
+direct funding to the project:
+
+-   Annelise Anderson <andrsn@hoover.stanford.edu>.
+
+-   Matthew Dillon <dillon@FreeBSD.org>.
+
+-   Blue Mountain Arts.
+
+-   Epilogue Technology Corporation.
+
+-   Sean Eric Fagan <sef@FreeBSD.org>.
+
+-   Global Technology Associates, Inc.
+
+-   Don Scott Wilde.
+
+-   Gianmarco Giovannelli <gmarco@masternet.it>.
+
+-   Josef C. Grosch <joeg@truenorth.org>.
+
+-   Robert T. Morris.
+
+-   Chuck Robey <chuckr@FreeBSD.org>.
+
+-   Kenneth P. Stox <ken@stox.sa.enteract.com> of Imaginary Landscape,
+    LLC..
+
+-   Dmitry S. Kohmanyuk <dk@dog.farm.org>.
+
+-   Laser5 of Japan (a portion of the profits from sales of their
+    various FreeBSD CDROMs).
+
+-   Fuki Shuppan Publishing Co. donated a portion of their profits from
+    Hajimete no FreeBSD (FreeBSD, Getting started) to the FreeBSD and
+    XFree86 projects.
+
+-   ASCII Corp. donated a portion of their profits from several
+    FreeBSD-related books to the FreeBSD project.
+
+-   Yokogawa Electric Corp has generously donated significant funding to
+    the FreeBSD project.
+
+-   BuffNET.
+
+-   Pacific Solutions.
+
+-   Siemens AG via Andre Albsmeier <andre.albsmeier@mchp.siemens.de>.
+
+-   Chris Silva <ras@interaccess.com>.
+
+9.3. Hardware contributors
+
+The following individuals and businesses have generously contributed
+hardware for testing and device driver development/support:
+
+-   BSDi for providing the Pentium P5-90 and 486/DX2-66 EISA/VL systems
+    that are being used for our development work, to say nothing of the
+    network access and other donations of hardware resources.
+
+-   Compaq has donated a variety of Alpha systems to the FreeBSD
+    Project. Among the many generous donations are 4 AlphaStation DS10s,
+    an AlphaServer DS20, AlphaServer 2100s, an AlphaServer 4100, 8
+    500Mhz Personal Workstations, 4 433Mhz Personal Workstations, and
+    more! These machines are used for release engineering, package
+    building, SMP development, and general development on the Alpha
+    architecture.
+
+-   TRW Financial Systems, Inc. provided 130 PCs, three 68 GB file
+    servers, twelve Ethernets, two routers and an ATM switch for
+    debugging the diskless code
+
+-   Dermot McDonnell donated the Toshiba XM3401B CDROM drive currently
+    used in freefall.
+
+-   Chuck Robey <chuckr@glue.umd.edu> contributed his floppy tape
+    streamer for experimental work.
+
+-   Larry Altneu <larry@alr.com,> and Wilko Bulte <wilko@FreeBSD.org>,
+    provided Wangtek and Archive QIC-02 tape drives to improve the wt
+    driver.
+
+-   Ernst Winter (Deceased) contributed a 2.88 MB floppy drive to the
+    project. This will hopefully increase the pressure for rewriting the
+    floppy disk driver.
+
+-   Tekram Technologies sent one each of their DC-390, DC-390U and
+    DC-390F FAST and ULTRA SCSI host adapter cards for regression
+    testing of the NCR and AMD drivers with their cards. They are also
+    to be applauded for making driver sources for free operating systems
+    available from their FTP server ftp://ftp.tekram.com/scsi/FreeBSD/.
+
+-   Larry M. Augustin contributed not only a Symbios Sym8751S SCSI card,
+    but also a set of data books, including one about the forthcoming
+    Sym53c895 chip with Ultra-2 and LVD support, and the latest
+    programming manual with information on how to safely use the
+    advanced features of the latest Symbios SCSI chips. Thanks a lot!
+
+-   Christoph P. Kukulies <kuku@FreeBSD.org> donated an FX120 12 speed
+    Mitsumi CDROM drive for IDE CDROM driver development.
+
+-   Mike Tancsa <mike@sentex.ca> donated four various ATM PCI cards to
+    help increase support of these cards as well as help support the
+    development effort of the netatm ATM stack.
+
+9.4. Special contributors
+
+-   BSDi (formerly Walnut Creek CDROM) has donated almost more than we
+    can say (see the 'About the FreeBSD Project' section of the FreeBSD
+    Handbook for more details). In particular, we would like to thank
+    them for the original hardware used for freefall.FreeBSD.org, our
+    primary development machine, and for thud.FreeBSD.org, a testing and
+    build box. We are also indebted to them for funding various
+    contributors over the years and providing us with unrestricted use
+    of their T1 connection to the Internet.
+
+-   The interface business GmbH, Dresden has been patiently supporting
+    Jörg Wunsch <joerg@FreeBSD.org> who has often preferred FreeBSD work
+    over paid work, and used to fall back to their (quite expensive)
+    EUnet Internet connection whenever his private connection became too
+    slow or flaky to work with it.
+
+-   Berkeley Software Design, Inc. has contributed their DOS emulator
+    code to the remaining BSD world, which is used in the doscmd
+    command.
+

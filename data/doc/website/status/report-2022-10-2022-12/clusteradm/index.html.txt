@@ -1,0 +1,218 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Cluster Administration Team
+
+Links:
+Cluster Administration Team members URL:
+https://www.freebsd.org/administration/#t-clusteradm
+
+Contact: Cluster Administration Team <clusteradm@FreeBSD.org>
+
+FreeBSD Cluster Administration Team members are responsible for managing
+the machines the Project relies on to synchronise its distributed work
+and communications.
+
+In this quarter, the team has worked on the following:
+
+-   Regular cluster-wide software upgrades
+    Two full upgrades to fix and prevent some impacting issues
+    (FreeBSD-EN-22:25.tcp and FreeBSD-EN-22:28.heimdal).
+
+-   Regular support for FreeBSD.org user accounts
+
+-   Regular disk and parts support (and replacement) for all physical
+    hosts and mirrors.
+
+-   Site audit at our primary site
+
+    -   Inventory of spares and other miscellanea occupying space in our
+        cabinets.
+
+    -   Inventory of PDUs/power outlet usage and identifying faulty
+        PSUs.
+
+-   Identify and fix major DNS issue impacting the project
+    The primary DNS servers hosted on HE.net suffered outages for a few
+    days, and new DNS servers were deployed worldwide. We thank our
+    sponsor Metapeer for providing anycast infrastructure.
+
+-   Deploy a new mirror in Frankfurt, Germany
+    A replacement for our mirror in Amsterdam (site decommissioned).
+    Former and new mirror hosted and sponsored by Equinix.
+
+-   Reuse parts of three broken CI machines
+    No replacements for these at this moment, awaiting a cluster refresh
+    soon.
+
+-   Work with the PowerPC team to improve the PowerPC cluster machines
+
+    -   Parts like mainboard, NVMe and Power 9 CPU bought through the
+        FreeBSD Foundation.
+
+    -   Former package builder fixed, and re-deployed as powerpc and
+        powerpc64 package builder.
+
+    -   Former devref machine reinstalled as a new powerpc64le package
+        builder.
+
+    -   The cluster has now only these two PowerPC machines in
+        operation.
+
+-   Several rounds to free up disk space usage in the cluster machines
+
+-   Setup of an experimental search engine for the mailing lists:
+    https://lists.freebsd.org/search
+
+-   Fix a bug in the mailing lists archiver, which resulted in some
+    broken links
+    All mailing lists archives have been regenerated.
+
+Work in progress:
+
+-   Large-scale network upgrade at our primary site
+    New Juniper switches arrived at our primary site to replace the
+    former ones. We thank Juniper for the donation.
+
+-   Replace old servers in our primary site and a few mirrors
+    Besides the broken CI servers, we have a few old servers with broken
+    disks and faulty PSUs. This task is in conjunction with the FreeBSD
+    Foundation and donors/sponsors.
+
+-   Create a new database for the mailing list search engine to allow
+    searching for mail in the archives from mailman’s time
+
+FreeBSD Official Mirrors Overview:
+
+Current locations are Australia, Brazil, Germany, Japan (two full mirror
+sites), Malaysia, South Africa, Taiwan, United Kingdom (full mirror
+site), United States of America (California, New Jersey [the primary
+site], and Washington).
+
+The hardware and network connection have been generously provided by:
+
+-   Bytemark Hosting
+
+-   Cloud and SDN Laboratory at BroadBand Tower, Inc
+
+-   Department of Computer Science, National Yang Ming Chiao Tung
+    University
+
+-   Equinix
+
+-   Internet Association of Australia
+
+-   Internet Systems Consortium
+
+-   INX-ZA
+
+-   KDDI Web Communications Inc
+
+-   Malaysian Research & Education Network
+
+-   Metapeer
+
+-   New York Internet
+
+-   Nic.br
+
+-   Your.org
+
+The Frankfurt single server mirror is now the primary Europe mirror in
+bandwidth and usage.
+
+We are still looking for an additional full mirror site (five servers)
+in Europe to replace old servers in the United Kingdom full mirror site.
+
+We see a good pattern in having single mirrors in Internet Exchange
+Points worldwide (Australia, Brazil, and South Africa); if you know or
+work for some of them that could sponsor a single mirror server, please
+get in touch. United States (West Coast) and Europe (anywhere) are
+preferable places.
+
+See generic mirrored layout for full mirror site specs and tiny-mirror
+for a single mirror site.
+
+------------------------------------------------------------------------
+
+Last modified on: January 23, 2023 by Lorenzo Salvadore
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

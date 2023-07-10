@@ -1,0 +1,111 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Support
+-   Vendors
+    -   Software
+    -   Hardware
+    -   Consulting
+    -   Internet Service Providers
+    -   Miscellaneous
+-   Security Information
+    -   Advisories
+    -   Errata Notices
+    -   Supported Releases
+    -   Unsupported Releases
+    -   How to read FreeBSD Security Advisories
+    -   Charter for the Security Officer and Team
+-   Bug Reports
+    -   Submit a Problem Report
+-   Web Resources
+
+FreeBSD támogatás
+
+A FreeBSD fejlõdését széles körben támogatja egy közösség és több
+kereskedelmi támogató. A honlap Közösség szekciója részletezi a közösség
+által elérhetõ támogatási lehetõségeket, beleértve számos levelezési
+listát.
+
+Kereskedelmi támogatás is igénybe vehetõ, rengeteg cég kínál termékeket,
+szolgáltatásokat és/vagy szaktanácsadást a FreeBSD-hez.
+
+Hibajelentés
+
+Hibát találtunk a FreeBSD-ben? Téves információra akadtunk a
+dokumentációban? Jelezzük, ha a hibát eddig még nem jelentették!
+
+Az jelentett hibák ellenõrzéséhez kereshetünk a hibajelentések
+adatbázisában, kategória, felelõs, beküldõ, a hibajelentés szövege stb.
+szerint, vagy megnézhetjük az összes nyitott hibajelentést.
+
+Ha a hibát még nem jelentették, olvassuk el a a hibajelentési
+irányelveket és jelentsük a hibát a hibajelentési ûrlapunk segítségével.
+
+------------------------------------------------------------------------
+
+Last modified on: 2021. január 26. by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

@@ -1,0 +1,289 @@
+[FreeBSD The Power to Serve]
+
+捐赠 FreeBSD
+
+ 
+
+-   首页
+
+-   关于
+    -   简介
+    -   特性
+    -   宣传
+    -   营销
+    -   隐私政策
+    -   Projects
+    -   Ports
+
+-   获取 FreeBSD
+    -   发行版本
+    -   发布工程
+
+-   文档
+    -   常见问题合集
+    -   使用手册
+    -   Porter' 手册
+    -   Developer' 手册
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   文档计划入门书
+    -   所有书籍和文档
+
+-   社区
+    -   邮件列表
+    -   论坛
+    -   用户群体
+    -   活动
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   开发
+    -   项目新点子
+    -   Git Repository
+    -   Subversion 仓库
+    -   Git 镜像
+    -   代码审查 (Phabricator)
+    -   Wiki
+    -   持续集成服务
+
+-   支持
+    -   供应商
+    -   安全公告
+    -   问题报告
+    -   提交问题报告
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   基金会
+    -   资金捐赠
+    -   硬件捐赠
+
+-   获取 FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+获取 FreeBSD
+
+选择一种架构
+
+大多数 FreeBSD 用户拥有 amd64 或 aarch64 架构的硬件，
+这些硬件拥有很好的支持。
+
+现代个人电脑使用 amd64 架构， 包括那些使用 Intel® 品牌处理器的电脑。
+对于嵌入式设备和单板机， 例如 Raspberry Pi 3 和 4、 ESPRESSObin，
+以及许多全志科技和瑞芯微电子的开发板， 可以使用 aarch64 SD 卡映像。
+
+其他用户请参阅 FreeBSD 支持的平台的 完整列表。
+
+选择一个映像
+
+安装 FreeBSD 有许多种选择， 包括从 CD (disc1)、 DVD (dvd1)、
+网络安装映像 (bootonly) 和 USB 映像中启动 FreeBSD 安装程序。 对于最近的
+FreeBSD 版本， 虚拟机映像和用于嵌入式平台的 SD 卡映像也可供下载。
+
+FreeBSD 部署数据
+
+尽管 FreeBSD 并不收集部署数据， 获取统计信息是十分重要的。 请考虑安装
+sysutils/bsdstats 包， 这将收集硬件和软件的统计数据，
+以帮助开发者理解如何更好地进行开发。 收集的信息可在 bsdstats.org
+网站查阅。
+
+FreeBSD 13.1-RELEASE
+
++-----------------+-----------------+-----------------+-----------------+
+| 安装程序映像    | 虚拟机映像      | SD 卡映像       | 文档            |
++=================+=================+=================+=================+
+| -   amd64       | -   README      | -   aarch64     | -   发行于: May |
+|                 |                 |                 |     16, 2022    |
+| -   i386        | -   amd64       | -   -   PINE64  |                 |
+|                 |                 |                 | -   发行公告    |
+| -   powerpc     | -   i386        |                 |                 |
+|                 |                 |  -   PINE64-LTS | -   自述文件    |
+| -   powerpc64   | -   aarch64     |                 |                 |
+|                 |                 |     -   ROCK64  | -               |
+| -   powerpc64le | -   riscv64     |                 |  硬件兼容性列表 |
+|                 |                 |                 |                 |
+| -   powerpcspe  | -   amd64       |   -   ROCKPRO64 | -   安装说明    |
+|                 |     (BASIC-CI)  |                 |                 |
+| -   armv6       |                 |     -   RPI     | -   勘误        |
+|                 |                 |         (3/4)   |                 |
+| -   armv7       |                 |                 | -               |
+|                 |                 | -   armv6/armv7 |    已签名校验和 |
+| -   aarch64     |                 |                 |                 |
+|                 |                 | -               |                 |
+| -   riscv64     |                 |   -   GENERICSD |                 |
+|                 |                 |                 |                 |
+|                 |                 |     -   RPI-B   |                 |
+|                 |                 |                 |                 |
+|                 |                 | -   riscv64     |                 |
+|                 |                 |                 |                 |
+|                 |                 | -               |                 |
+|                 |                 |   -   GENERICSD |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+FreeBSD 13.0-RELEASE
+
++-----------------+-----------------+-----------------+-----------------+
+| 安装程序映像    | 虚拟机映像      | SD 卡映像       | 文档            |
++=================+=================+=================+=================+
+| -   amd64       | -   README      | -   aarch64     | -   发行于:     |
+|                 |                 |                 |     April 13,   |
+| -   i386        | -   amd64       | -   -   PINE64  |     2021        |
+|                 |                 |                 |                 |
+| -   powerpc     | -   i386        |                 | -   发行公告    |
+|                 |                 |  -   PINE64-LTS |                 |
+| -   powerpc64   | -   aarch64     |                 | -   自述文件    |
+|                 |                 |     -   ROCK64  |                 |
+| -   powerpc64le | -   riscv64     |                 | -               |
+|                 |                 |                 |  硬件兼容性列表 |
+| -   powerpcspe  |                 |   -   ROCKPRO64 |                 |
+|                 |                 |                 | -   安装说明    |
+| -   armv6       |                 |     -   RPI     |                 |
+|                 |                 |         (3/4)   | -   勘误        |
+| -   armv7       |                 |                 |                 |
+|                 |                 | -   armv6/armv7 | -               |
+| -   aarch64     |                 |                 |    已签名校验和 |
+|                 |                 | -               |                 |
+| -   riscv64     |                 |   -   GENERICSD |                 |
+|                 |                 |                 |                 |
+|                 |                 |     -   RPI-B   |                 |
+|                 |                 |                 |                 |
+|                 |                 | -   riscv64     |                 |
+|                 |                 |                 |                 |
+|                 |                 | -               |                 |
+|                 |                 |   -   GENERICSD |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+FreeBSD 12.3-RELEASE
+
++-----------------+-----------------+-----------------+-----------------+
+| 安装程序映像    | 虚拟机映像      | SD 卡映像       | 文档            |
++=================+=================+=================+=================+
+| -   amd64       | -   README      | -   RPI-B       | -               |
+|                 |                 |                 |                 |
+| -   i386        | -   amd64       | -   BANANAPI    | -   发行于:     |
+|                 |                 |                 |     December 7, |
+| -   powerpc     | -   i386        | -   CUBIEBOARD  |     2021        |
+|                 |                 |                 |                 |
+| -   powerpc64   | -   aarch64     | -   CUBIEBOARD2 | -   发行公告    |
+|                 |                 |                 |                 |
+| -   powerpcspe  |                 | -   CUB         | -   自述文件    |
+|                 |                 | OX-HUMMINGBOARD |                 |
+| -   sparc64     |                 |                 | -               |
+|                 |                 | -   GENERICSD   |  硬件兼容性列表 |
+| -   aarch64     |                 |                 |                 |
+|                 |                 | -   RPI2        | -   安装说明    |
+|                 |                 |                 |                 |
+|                 |                 | -   PANDABOARD  | -   勘误        |
+|                 |                 |                 |                 |
+|                 |                 | -   WANDBOARD   | -               |
+|                 |                 |                 |    已签名校验和 |
+|                 |                 | -   PINE64      |                 |
+|                 |                 |                 |                 |
+|                 |                 | -   PINE64-LTS  |                 |
++-----------------+-----------------+-----------------+-----------------+
+
+开发快照
+
+如果您对一个完全实验性的 FreeBSD-CURRENT (&rel.head;-CURRENT) 发行版
+快照 感兴趣， 请参阅 FreeBSD 发行版快照 页。
+快照仅供开发者和前沿测试者使用。 欲了解关于过去、
+现在和未来发行版的更多信息， 请参阅 发行版本信息 页。
+
+FreeBSD 14.0-CURRENT
+
+Installer and SD card images are available for amd64, i386, powerpc,
+powerpc64, powerpc64le, powerpcspe, armv6, armv7, aarch64, and riscv64.
+
+VM images are available for amd64, i386, aarch64, and riscv64.
+
+FreeBSD 13.1-STABLE
+
+Installer and SD card images are available for amd64, i386, powerpc,
+powerpc64, powerpc64le, powerpcspe, armv6, armv7, aarch64, and riscv64.
+
+VM images are available for amd64, i386, aarch64, and riscv64.
+
+FreeBSD 12.3-STABLE
+
+Installer and SD card images are available for amd64, i386, powerpc,
+powerpc64, powerpcspe, sparc64, armv6, armv7, and aarch64.
+
+VM images are available for amd64 and i386.
+
+如果您打算通过 HTTP 或 FTP 下载 FreeBSD， 请参阅使用手册中的 镜像站点
+列表， 查找离您最近的站点。
+
+安装 FreeBSD
+
+安装 FreeBSD 有许多种选择， 包括从 CD-ROM、 DVD、 USB 存储棒、 匿名
+FTP、 HTTP 以及 NFS 安装。 请在下载完整的 FreeBSD 发行版之前阅读
+FreeBSD安装说明 。
+
+购买 FreeBSD 安装盘
+
+FreeBSD 可以在 FreeBSD Mall 或其它的 CD-ROM 和 DVD 发行商 处取得 CD-ROM
+或 DVD。
+
+过去的发行版
+
+若要下载过去的发行版， 请到 FTP 存档 下载。
+
+FreeBSD 衍生的操作系统发行版
+
+FreeBSD 被广泛用于其它商业和开源操作系统的组成部分。
+以下的项目被广泛使用并尤其使 FreeBSD 用户感兴趣。
+
+-   FreeNAS 是一个基于 FreeBSD 的开源存储平台， 它支持在 Windows、 Apple
+    和类 UNIX 系统之间分享文件。
+
+-   GhostBSD 源自 FreeBSD， 它使用 GTK 环境在现代 BSD
+    平台上提供漂亮的外观和舒适的体验， 提供自然和原生的 UNIX 工作环境。
+
+-   MidnightBSD 源自 BSD， 为桌面用户开发。
+    它包括您期望用于日常任务的所有软件： 邮件、 网页浏览、 文字处理、
+    游戏等等。
+
+-   NomadBSD NomadBSD 是一个基于 FreeBSD 的用于 USB 闪存驱动器的系统。
+    它拥有自动硬件检测和设置， 被配置为开箱即用的桌面系统，
+    但也可用于数据恢复、 教育目的或测试 FreeBSD 的硬件兼容性。
+
+-   pfSense 是一个基于 FreeBSD 的定制发行版，
+    为防火墙和路由器使用专门定制。
+
+应用和实用程序
+
+Ports 套件库
+
+FreeBSD Ports 套件库是各种已被移植到 FreeBSD 的软件和实用程序集合。
+
+请参阅使用手册中的 安装应用程序: Packages 和 Ports 章节。
+
+-   下载 FreeBSD 套件库框架
+
+-   Ports 套件库的网页界面
+
+-   FreshPorts - 一个更高级的 Ports 套件库网页界面
+
+想知道 您 如何将 您 喜爱的软件加入 Ports 套件库， 请参阅 The Porter’s
+Handbook 和 为 FreeBSD 做贡献 这篇文章。
+
+------------------------------------------------------------------------
+
+Last modified on: June 25, 2022 by Sergio Carlavilla Delgado
+
+法律信息 | © 1995-2023 FreeBSD 项目 保留所有权利。 The mark FreeBSD is a
+registered trademark of The FreeBSD Foundation and is used by The
+FreeBSD Project with the permission of The FreeBSD Foundation. 联系
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

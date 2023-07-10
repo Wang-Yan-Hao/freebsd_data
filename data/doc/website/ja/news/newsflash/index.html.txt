@@ -1,0 +1,3041 @@
+[FreeBSD The Power to Serve]
+
+FreeBSD への寄付
+
+ 
+
+-   ホーム
+
+-   FreeBSD とは
+    -   FreeBSD が初めてという方へ
+    -   特徴
+    -   プロモーション活動
+    -   マーケティング活動
+    -   プライバシーポリシー
+    -   Projects
+    -   Ports
+
+-   FreeBSD の入手
+    -   リリース情報
+    -   リリースエンジニアリング
+
+-   ドキュメント
+    -   FAQ
+    -   ハンドブック
+    -   port 作成者のためのハンドブック
+    -   開発者のためのハンドブック
+    -   Committer's Guide
+    -   マニュアルページ
+    -   Presentations and Papers
+    -   新しい貢献者のためのドキュメンテーションプロジェクト入門
+    -   すべての Books と Articles
+
+-   コミュニティ
+    -   メーリングリスト
+    -   フォーラム
+    -   ユーザグループ
+    -   イベント
+    -   FreeBSD ジャーナル
+    -   Q&A (外部)
+
+-   開発
+    -   プロジェクトアイディア
+    -   Git リポジトリ
+    -   Subversion リポジトリ
+    -   GitHub ミラー
+    -   コードレビュー (Phabricator)
+    -   Wiki
+    -   継続的インテグレーションサービス
+
+-   サポート
+    -   ベンダ
+    -   セキュリティ情報
+    -   障害報告
+    -   障害報告の提出
+    -   ウェブ上の情報
+
+-   財団
+    -   寄付
+    -   ハードウェアの寄贈
+
+-   FreeBSD とは
+-   特徴
+-   アプリケーション
+-   プロモーション活動
+-   マーケティング活動
+-   担当者一覧
+-   ニュース
+-   イベント
+-   ニュース記事
+-   画像
+-   ロゴ
+-   寄付・寄贈
+-   法律上の注意事項
+-   プライバシーポリシー
+
+-   RSS 2.0 Feed
+
+FreeBSD News Flash
+
+[FreeBSD News]
+
+FreeBSD
+は急速に発展を続けるオペレーティングシステムなので、最新の進歩について行くのが面倒になる時がありますよね。情報通になるために、このページを定期的にチェックするようにしましょう。ニュースは、
+freebsd-announce メーリングリスト および RSS
+フィードでもアナウンスされます。
+
+以下のプロジェクトに関する最新情報は、各プロジェクトのニュースページをご覧ください。
+
+-   KDE on FreeBSD
+
+-   GNOME on FreeBSD
+
+過去、現在、そして将来のリリースの詳細については、リリース情報
+のページをご覧ください。
+
+FreeBSD
+セキュリティ情報やセキュリティ勧告の一覧は、セキュリティ情報のページにあります。
+
+February 2023
+
+-    26 February: FreeBSD 13.2 リリースサイクルから 3
+    回目のベータ版が公開されました。FreeBSD FreeBSD ミラーサイト から
+    amd64, i386, powerpc, powerpc64, powerpc64le, powerpcspe, armv6,
+    armv7, aarch64 および riscv64 アーキテクチャの ISO イメージを 入手
+    できます。
+
+-    18 February: FreeBSD 13.2 リリースサイクルから 2
+    回目のベータ版が公開されました。FreeBSD FreeBSD ミラーサイト から
+    amd64, i386, powerpc, powerpc64, powerpc64le, powerpcspe, armv6,
+    armv7, aarch64 および riscv64 アーキテクチャの ISO イメージを 入手
+    できます。
+
+-    15 February: 新コミッタ就任: Cheng Cui (src)
+
+-    14 February: FreeBSD 13.2
+    リリースサイクルの最初のベータ版が公開されました。FreeBSD FreeBSD
+    ミラーサイト から amd64, i386, powerpc, powerpc64, powerpc64le,
+    powerpcspe, armv6, armv7, aarch74 および riscv64 アーキテクチャの
+    ISO イメージを 入手 できます。
+
+-    9 February: 新コミッタ就任: Robert Nagy (ports)
+
+-    2 February: 新コミッタ就任: Robert Clausecker (ports)
+
+January 2023
+
+-    26 January: 2022 年 10 月 - 12 月開発進捗レポート (34 エントリ)
+    が公開されました。
+
+December 2022
+
+-    5 December: FreeBSD 12.4-RELEASE が公開されました。インストール前に
+    リリースノート および リリース Errata に目を通して、12.4
+    に関する最新情報や問題点などを確認してください。FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+November 2022
+
+-    11 November: FreeBSD 12.4 リリースサイクルから 2
+    回目のリリース候補版が公開されました。FreeBSD ミラーサイト から
+    amd64, armv6, armv7, arm64, i386, powerpc, powerpc64, powerpcspe,
+    および sparc64 アーキテクチャの ISO イメージを 入手 できます。
+
+-    4 November: FreeBSD 12.4
+    リリースサイクルから最初のリリース候補版が公開されました。FreeBSD
+    ミラーサイト から amd64, armv6, armv7, arm64, i386, powerpc,
+    powerpc64, powerpcspe, および sparc64 アーキテクチャの ISO
+    イメージを 入手 できます。
+
+October 2022
+
+-    26 October: 新コミッタ就任: Corvin Köhne (src)
+
+-    21 October: FreeBSD 12.4
+    リリースサイクルから最初のベータ版が公開されました。FreeBSD
+    ミラーサイト から amd64, armv6, arvm7, arm64, i386, powerpc,
+    powerpc64, powerpcspe, および powerpc64 アーキテクチャの ISO
+    イメージを 入手 できます。
+
+-    21 October: 2022 年 7 月 - 9 月開発進捗レポート (24 エントリ)
+    が公開されました。
+
+-    16 October: 新コミッタ就任: Zhenlei Huang (src)
+
+-    16 October: 新コミッタ就任: Zhenlei Huang (src)
+
+-    8 October: コミット権限の拡大: Muhammad Moinur Rahman (doc, ports)
+
+-    6 October: 新コミッタ就任: Ronald Klop (ports)
+
+August 2022
+
+-    9 August: 2022 年 4 月 - 6 月開発進捗レポート (26 エントリ)
+    が公開されました。
+
+-    1 August: 新コミッタ就任: Felix Palmen (ports)
+
+June 2022
+
+-    29 June: 新コミッタ就任: Dmitry Salychev (src)
+
+-    22 June: 新コミッタ就任: Kornel Dulęba (src)
+
+-    18 June: プロジェクトのアクティブコミッタによる 12 期目の FreeBSD
+    コアチームの選挙が行われました。詳細については 公式アナウンス
+    を参照してください。
+
+-    9 June: 2022 年 1 月 - 3 月開発進捗レポート (22 エントリ)
+    が公開されました。
+
+-    3 June: 新コミッタ就任: Pau Amma (doc)
+
+-    1 June: 新コミッタ就任: Graham Perrin (doc)
+
+May 2022
+
+-    12 May: FreeBSD 13.1-RELEASE が公開されました。インストール前に
+    リリースノート および リリース Errata を読み、13.1
+    の最新情報や問題点などを確認してください。FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+-    5 May: FreeBSD 13.1 リリースサイクルから 6
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, i386, arm64, powerpc64, powerpc64le,
+    powerpcspe および riscv アーキテクチャの ISO
+    イメージを入手できます。
+
+April 2022
+
+-    28 April: FreeBSD 13.1 リリースサイクルから 5
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, i386, arm64, powerpc64, powerpc64le,
+    powerpcspe および riscv アーキテクチャの ISO
+    イメージを入手できます。
+
+-    21 April: FreeBSD 13.1 リリースサイクルから 4
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, i386, arm64, powerpc64, powerpc64le,
+    powerpcspe および riscv アーキテクチャの ISO
+    イメージを入手できます。
+
+-    14 April: FreeBSD 13.1 リリースサイクルから 3
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, i386, arm64, powerpc64, powerpc64le,
+    powerpcspe および riscv アーキテクチャの ISO
+    イメージを入手できます。
+
+-    7 April: FreeBSD 13.1 リリースサイクルから 2
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, i386, arm64, powerpc64, powerpcspe および
+    riscv アーキテクチャの ISO イメージを入手できます。
+
+-    1 April: FreeBSD 13.1
+    リリースサイクルから最初のリリース候補版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, i386, arm64,
+    powerpc64, powerpcspe および riscv アーキテクチャの ISO
+    イメージを入手できます。
+
+March 2022
+
+-    24 March: FreeBSD 13.1 リリースサイクルから 3
+    回目のベータ版が公開されました (アナウンス)。 FreeBSD ミラーサイト
+    から amd64, i386, arm64, powerpc64, powerpcspe および riscv
+    アーキテクチャの ISO イメージを入手できます。
+
+-    23 March: Portmgr は portmgr-lurker プログラムを再始動し、Luca
+    Pizzamiglio と Stefan Eser の 2 人が最初の lukers に選ばれました。2
+    人は、今後数ヵ月間 portmgr に加わり、portmgr
+    内部での作業のすべてを学びます。
+
+-    17 March:
+
+    FreeBSD 13.1 リリースサイクルから 2 回目のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, i386, arm64,
+    powerpc64 および powerpcspe アーキテクチャの ISO
+    イメージを入手できます。
+
+-    10 March:
+
+    FreeBSD 13.1 リリースサイクルから最初のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, arm64, powerpc64,
+    powerpcspe, powerpc64le および riscv64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    10 March: 2021 年 10 月 - 12 月開発進捗レポート (19 エントリ)
+    が公開されました。
+
+February 2022
+
+-    9 February: 新コミッタ就任: Alfonso S. Siciliano (src)
+
+December 2021
+
+-    7 December:
+
+    FreeBSD 12.3-RELEASE が公開されました。インストール前に
+    リリースノート および リリース Errata を読み、12.3
+    に関する最新情報や問題点などを確認してください。FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+November 2021
+
+-    18 November:
+
+    FreeBSD 12.3 リリースサイクルから 2
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, armv7, arm64, i386, powerpc,
+    powerpc64, powerpcspe, および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    15 November: 2021 年 7 月 - 9 月開発進捗レポート (42 エントリ)
+    が公開されました。
+
+-    11 November:
+
+    FreeBSD 12.3
+    リリースサイクルから最初のリリース候補版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, armv7, arm64,
+    i386, powerpc, powerpc64, powerpcspe, および sparc64
+    アーキテクチャの ISO イメージを入手できます。
+
+-    6 November: 新コミッタ就任: Dries Michiels (ports)
+
+-    4 November:
+
+    FreeBSD 12.3 リリースサイクルから 3 回目のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, armv7, arm64,
+    i386, powerpc, powerpc64, powerpcspe, および sparc64
+    アーキテクチャの ISO イメージを入手できます。
+
+October 2021
+
+-    29 October:
+
+    FreeBSD 12.3 リリースサイクルから 2 回目のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, armv7, arm64,
+    i386, powerpc, powerpc64, powerpcspe, および sparc64
+    アーキテクチャの ISO イメージを入手できます。
+
+-    22 October:
+
+    FreeBSD 12.3 リリースサイクルから最初のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, armv7, arm64,
+    i386, powerpc, powerpc64, powerpcspe, および sparc64
+    アーキテクチャの ISO イメージを入手できます。
+
+August 2021
+
+-    27 August: 新コミッタ就任: Yasuhiro Kimura (ports)
+
+-    18 August: コミット権限の拡大: Ed Maste (doc, src)
+
+July 2021
+
+-    31 July: コミット権限の拡大: Li-Wen Hsu (doc, ports, src)
+
+-    24 July: 2021 年 4 月 - 6 月開発進捗レポート (45 エントリ)
+    が公開されました。
+
+-    13 July: コミット権限の拡大: Philip Paeps (src, ports, doc)
+
+-    6 July: 新コミッタ就任: Daniel Engberg (ports)
+
+May 2021
+
+-    17 May: コミット権限の拡大: Guangyuan Yang (doc, ports)
+
+-    6 May:
+
+    2021 年 1 月 - 3 月開発進捗レポート が公開されました。
+
+April 2021
+
+-    29 April: 新コミッタ就任: Charlie Li (ports)
+
+-    21 April: 新コミッタ就任: Oskar Holmlund (src)
+
+-    13 April:
+
+    FreeBSD 13.0-RELEASE が公開されました。インストール前に
+    リリースノート および リリース Errata を読み、13.0
+    に関する最新情報や問題点などを確認してください。FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+-    3 April:
+
+    FreeBSD 13.0 リリースサイクルから 5
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, arm64, armv6, armv7, i386, powerpc,
+    powerpc64, powerpcspe, powerpc64le および riscv64 アーキテクチャの
+    ISO イメージを入手できます。
+
+March 2021
+
+-    29 March:
+
+    FreeBSD 13.0 リリースサイクルから 4
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, arm64, armv6, armv7, i386, powerpc,
+    powerpc64, powerpcspe, powerpc64le および riscv64 アーキテクチャの
+    ISO イメージを入手できます。
+
+-    20 March:
+
+    FreeBSD 13.0 リリースサイクルから 3
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, arm64, armv6, armv7, i386, powerpc,
+    powerpc64, powerpcspe, powerpc64le および riscv64 アーキテクチャの
+    ISO イメージを入手できます。
+
+-    15 March: 新コミッタ就任: Ka Ho Ng (src)
+
+-    12 March:
+
+    FreeBSD 13.0 リリースサイクルから 2
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, arm64, armv6, armv7, i386, powerpc,
+    powerpc64, powerpcspe, powerpc64le および riscv64 アーキテクチャの
+    ISO イメージを入手できます。
+
+-    6 March:
+
+    FreeBSD 13.0
+    リリースサイクルから最初のリリース候補版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, arm64, armv6, armv7,
+    i386, powerpc, powerpc64, powerpcspe, powerpc64le および riscv64
+    アーキテクチャの ISO イメージを入手できます。
+
+February 2021
+
+-    27 February:
+
+    FreeBSD 13.0 リリースサイクルから 4 回目のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, arm64, armv6, armv7,
+    i386, powerpc, powerpc64, powerpcspe, powerpc64le および riscv64
+    アーキテクチャの ISO イメージを入手できます。
+
+-    20 February:
+
+    FreeBSD 13.0 リリースサイクルから 3 回目のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, arm64, armv6, armv7,
+    i386, powerpc, powerpc64, powerpcspe, powerpc64le および riscv64
+    アーキテクチャの ISO イメージを入手できます。
+
+-    12 February:
+
+    FreeBSD 13.0 リリースサイクルから 2 回目のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, arm64, armv6, armv7,
+    i386, powerpc, powerpc64, powerpcspe, powerpc64le および riscv64
+    アーキテクチャの ISO イメージを入手できます。
+
+-    7 February: 新コミッタ就任: Fernando Apesteguia Santiago (doc)
+
+-    6 February:
+
+    FreeBSD 13.0 リリースサイクルから最初のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, arm64, powerpc64,
+    powerpcspe, powerpc64le および riscv64 アーキテクチャの ISO
+    イメージを入手できます。
+
+January 2021
+
+-    27 January: 新コミッタ就任: Rajesh Kumar M A (src)
+
+-    27 January: 新コミッタ就任: Nuno Teixeira (ports)
+
+-    25 January: ウェブサイトおよびドキュメンテーションが、Hugo および
+    AsciiDoctor に移行しました。
+
+January 2020
+
+-    10 January: 新コミッタ就任: Mikaël Urankar (ports)
+
+-    2 January: 新コミッタ就任: Loïc Bartoletti (ports)
+
+November 2019
+
+-    25 November:
+
+    2019 年 7 月 - 9 月開発進捗レポート が公開されました。
+
+-    4 November:
+
+    FreeBSD 12.1-RELEASE が公開されました。 インストール前に
+    リリースノート および リリース Errata を読み、12.1
+    に関する最新情報や問題点などを確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+October 2019
+
+-    18 October:
+
+    FreeBSD 12.1 リリースサイクルから 2
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, armv7, arm64, i386, powerpc,
+    powerpc64, powerpcspe および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    11 October:
+
+    FreeBSD 12.1
+    リリースサイクルから最初のリリース候補版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, armv7, arm64,
+    i386, powerpc, powerpc64, powerpcspe および sparc64 アーキテクチャの
+    ISO イメージを入手できます。
+
+-    11 October: 新コミッタ就任: Alex Samorukov (ports)
+
+-    4 October:
+
+    FreeBSD 12.1 リリースサイクルから 3 回目のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, armv7, arm64,
+    i386, powerpc, powerpc64, powerpcspe および sparc64 アーキテクチャの
+    ISO イメージを入手できます。
+
+September 2019
+
+-    29 September: 新コミッタ就任: Mateusz Piotrowski (doc)
+
+-    28 September:
+
+    FreeBSD 12.1 リリースサイクルから 2 回目のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, armv7, arm64,
+    i386, powerpc, powerpc64, powerpcspe および sparc64 アーキテクチャの
+    ISO イメージを入手できます。
+
+-    26 September: 新コミッタ就任: Pawel Biernacki (src)
+
+-    20 September:
+
+    FreeBSD 12.1 リリースサイクルから最初のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, armv7, arm64,
+    i386, powerpc, powerpc64, powerpcspe および sparc64 アーキテクチャの
+    ISO イメージを入手できます。
+
+-    15 September: 新コミッタ就任: Dmitri Goutnik (ports)
+
+-    10 September: 新コミッタ就任: Stephen Gregoratto (src)。 Google's
+    Season of Docs に参加し、 FreeBSD
+    プロジェクトのユーザマニュアルを改善しています。
+
+August 2019
+
+-    28 August: 新コミッタ就任: Santhosh Raju (ports)
+
+-    25 August:
+
+    2019 年 4 月 - 6 月開発進捗レポート が公開されました。
+
+July 2019
+
+-    16 July:
+
+    我々の管理外の環境が原因で、 FreeBSD.org メール用の SMTP
+    サーバアドレスの変更が必要となりました。 SMTP
+    送信元のレピュテーションにより、 問題が起こることがあるでしょう。
+
+    追加の情報については、 アナウンス を参照してください。
+
+-    9 July:
+
+    FreeBSD 11.3-RELEASE が公開されました。 インストール前に
+    リリースノート および リリース Errata を読み、11.3
+    に関する最新情報や問題点などを確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+June 2019
+
+-    28 June:
+
+    FreeBSD 11.3 リリースサイクルから 3
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, arm64, i386, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    21 June:
+
+    FreeBSD 11.3 リリースサイクルから 2
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, arm64, i386, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    14 June:
+
+    FreeBSD 11.3
+    リリースサイクルから最初のリリース候補版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, arm64, i386,
+    powerpc, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    7 June:
+
+    FreeBSD 11.3 リリースサイクルから 3 回目のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, arm64, i386,
+    powerpc, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    4 June:
+
+    2019 年 1 月 - 3 月開発進捗レポート が公開されました。
+
+May 2019
+
+-    31 May:
+
+    FreeBSD 11.3 リリースサイクルから 2 回目のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, arm64, i386,
+    powerpc, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    31 May: 新コミッタ就任: Brandon Bergren (src)
+
+-    29 May: 新コミッタ就任: Chuck Silvers (src)
+
+-    28 May: 新コミッタ就任: D Scott Phillips (src)
+
+-    24 May:
+
+    FreeBSD 11.3 リリースサイクルから最初のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, arm64, i386,
+    powerpc, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    16 May: 新コミッタ就任: Sergio Carlavilla Delgado (docs,
+    スペイン語翻訳)
+
+April 2019
+
+-    30 April: 新コミッタ就任: Doug Moore (src)
+
+-    28 April:
+
+    FreeBSD は、新しい取り組みである pkgbase への試験を行っています。
+    詳細については、 CFT FreeBSD pkg base メッセージをご覧ください。
+
+-    27 April:
+
+    FreeBSD 2019 Community Survey が公開されました (2019-5-13
+    に終了しました)。 本調査の URL
+    を、ぜひともあなたの雇用主、職場の仲間、 お友達、または FreeBSD
+    に興味をお持ちのコミュニティメンバーとシェアしてください。 本調査は
+    5 月 30 日の協定世界時 (UTC) の深夜 (太平洋夏時刻 (PDT)
+    では月曜の午後5 時) に終了します。
+
+-    19 April:
+
+    FreeBSD は、新しい ZFS の実装である ZFS on Linux
+    の試験を行っています。 現在 FreeBSD + ZoL (ZFS on Linux) 試験用の
+    FreeBSD 12-STABLE および 13-CURRENT のイメージが用意されています。
+    試験の詳細については、 CFT FreeBSD + ZoL をご覧ください。
+
+-    14 April: 新コミッタ就任: Piotr Kubaj (ports)
+
+-    14 April: コミット権限の拡大: Pedro Giffuni (ports, src)
+
+March 2019
+
+-    20 March: 新コミッタ就任: Mitchell Horne (src)
+
+February 2019
+
+-    1 February: 新コミッタ就任: Kai Knoblich (ports)
+
+January 2019
+
+-    19 January: 新コミッタ就任: Johannes Lundberg (src)
+
+December 2018
+
+-    24 December:
+
+    2018 年 1 月 - 9 月開発進捗レポート が公開されました。
+
+-    11 December:
+
+    FreeBSD 12.0-RELEASE が公開されました。 インストール前に
+    リリースノート および リリース Errata を読み、12.0
+    に関する最新情報や問題点などを確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+-    11 December:
+
+    Cirrus CI システムが FreeBSD に対応しました。 Cirrus CI
+    は、最新のクラウド技術を用いることで、
+    開発サイクルを迅速に、効率的そして安全に行えるようにします。 Cirrus
+    CI は、あなたのチームと連携し、
+    ソフトウェアのリリースを迅速かつ安価にします。 詳細については、
+    FreeBSD Virtual Machines ガイドをご覧ください。
+
+-    1 December:
+
+    FreeBSD 12.0 リリースサイクルから 3
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, armv7, arm64, i386, powerpc,
+    powerpc64, powerpcspe および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+November 2018
+
+-    25 November:
+
+    FreeBSD 12.0 リリースサイクルから 2
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, armv7, arm64, i386, powerpc,
+    powerpc64, powerpcspe および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    17 November:
+
+    FreeBSD 12.0
+    リリースサイクルから最初のリリース候補版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, armv7, arm64,
+    i386, powerpc, powerpc64, powerpcspe および sparc64 アーキテクチャの
+    ISO イメージを入手できます。
+
+-    10 November:
+
+    FreeBSD 12.0 リリースサイクルから 4 回目の BETA
+    ビルドが公開されました (アナウンス)。 FreeBSD ミラーサイト から
+    amd64, armv6, armv7, arm64, i386, powerpc, powerpc64, powerpcspe
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    3 November:
+
+    FreeBSD 12.0 リリースサイクルから 3 回目の BETA
+    ビルドが公開されました (アナウンス)。 FreeBSD ミラーサイト から
+    amd64, armv6, armv7, arm64, i386, powerpc, powerpc64 および sparc64
+    アーキテクチャの ISO イメージを入手できます。
+
+October 2018
+
+-    27 October:
+
+    FreeBSD 12.0 リリースサイクルから 2 回目の BETA
+    ビルドが公開されました (アナウンス)。 FreeBSD ミラーサイト から
+    amd64, armv6, armv7, arm64, i386, powerpc, powerpc64, powerpcspe
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    20 October:
+
+    FreeBSD 12.0 リリースサイクルから最初の BETA ビルドが公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, armv7, arm64,
+    i386, powerpc, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    16 October: 新コミッタ就任: Thomas Munro (src)
+
+-    9 October: 新コミッタ就任: Yuri Pankov (src)
+
+-    8 October: 新コミッタ就任: Vinícius Zavam (ports)
+
+-    1 October: 新コミッタ就任: Alexandre C. Guimaraes (ports)
+
+September 2018
+
+-    21 September: 新コミッタ就任: Sergey Kozlov (ports)
+
+-    6 September: 新コミッタ就任: Emmanuel Vadot (ports)
+
+-    2 September: 新コミッタ就任: Kevin Bowling (ports)
+
+August 2018
+
+-    9 August: コミット権限の拡大: Li-Wen Hsu (ports, src)
+
+July 2018
+
+-    16 July: 新コミッタ就任: John Hixson (ports)
+
+-    4 July:
+
+    10 回目の FreeBSD
+    コアチームの選挙がアクティブなコミッタにより行われました。
+    詳細については、 公式アナウンス をご覧ください。
+
+June 2018
+
+-    30 June: 新コミッタ就任: Jesper Schmitz Mouridsen (ports)
+
+-    27 June:
+
+    FreeBSD 11.2-RELEASE が公開されました。 インストール前に
+    リリースノート および リリース Errata を読み、11.2
+    に関する最新情報や問題点などを確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+-    27 June: 新コミッタ就任: Ben Widawsky (src)
+
+-    19 June:
+
+    1993 年 6 月 19 日は、FreeBSD という名前が公式的につけられた日です。
+    この大切な日を 一緒にお祝い しましょう。
+
+-    16 June:
+
+    FreeBSD 11.2 リリースサイクルから 3
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, arm64, i386, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    16 June: 新コミッタ就任: Mateusz Piotrowski (ports)
+
+-    9 June:
+
+    FreeBSD 11.2 リリースサイクルから 2
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, arm64, i386, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    8 June:
+
+    6 月 9 日 (土) に、FreeBSD クラスタの一部が、
+    電気工事の保守時間延長のためオフラインになります。
+    特にメーリングリストのトラフィックおよびウェブサービスの一部が影響を受けます。
+
+    保守時間は、6 月 9 日 11:00 UTC (04:00 US-Pacific) から 20:00 UTC
+    (13:00 US-Pacific) までとなります。
+
+-    2 June:
+
+    FreeBSD 11.2
+    リリースサイクルから最初のリリース候補版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, arm64, i386,
+    powerpc, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+May 2018
+
+-    26 May:
+
+    FreeBSD 11.2 リリースサイクルから 3 回目の BETA
+    ビルドが公開されました (アナウンス)。 FreeBSD ミラーサイト から
+    amd64, armv6, arm64, i386, powerpc, powerpc64 および sparc64
+    アーキテクチャの ISO イメージを入手できます。
+
+-    22 May: 新コミッタ就任: Breno Leitao (src)
+
+-    21 May: 新コミッタ就任: Leandro Lupori (src)
+
+-    19 May:
+
+    FreeBSD 11.2 リリースサイクルから 2 回目の BETA
+    ビルドが公開されました (アナウンス)。 FreeBSD ミラーサイト から
+    amd64, armv6, arm64, i386, powerpc, powerpc64 および sparc64
+    アーキテクチャの ISO イメージを入手できます。
+
+-    15 May: 新コミッタ就任: Gleb Popov (ports)
+
+-    12 May:
+
+    FreeBSD 11.2 リリースサイクルから最初の BETA ビルドが公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, arm64, i386,
+    powerpc, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+April 2018
+
+-    17 April: 新コミッタ就任: Sean Eric Fagan (src)
+
+-    7 April: 新コミッタ就任: Tom Jones (src)
+
+-    4 April: 新コミッタ就任: Ram Kishore Vegesna (src)
+
+March 2018
+
+-    23 March: 新コミッタ就任: Matthias Fechner (ports)
+
+-    17 March: 新コミッタ就任: Eric Turgeon (ports)
+
+-    16 March: 新コミッタ就任: Vincenzo Maffione (src)
+
+-    14 March: 新コミッタ就任: Koichiro Iwao (ports)
+
+-    3 March: 新コミッタ就任: Fernando Apesteguia (ports)
+
+-    1 March: 新コミッタ就任: Devin Teske (ports)
+
+February 2018
+
+-    14 February:
+
+    FreeBSD プロジェクトは Google's 2018 Summer of Code
+    プログラムに参加します。 これは夏の間に奨学金を提供し、
+    オープンソースプロジェクトに参加する学生を支援するプログラムです。
+    FreeBSD プロジェクトの参加は今年で 14 年目になります。 2005 年から
+    2017 年の間に、 長い夏の期間のコーディングプロジェクトを通して 210
+    人を越える学生の指導に成功してきました。
+
+    これまでに成功したプロジェクトには、 Linux ABI 互換機能の改善、NFSv4
+    ACLs, TCP レグレッションテスト、 FUSE ファイルシステムへの対応など、
+    その他にも数え切れないプロジェクトがあります。 多くの学生は FreeBSD
+    の開発者になったり、 FreeBSD Foundation
+    の継続的な支援を通じて、世界中で開催されている FreeBSD
+    の開発者のイベントに参加しています。
+
+    我こそは、と思う方はぜひとも応募してください!
+    申し込みや締め切りなど、詳細については FreeBSD Summer Projects
+    ページ をご覧ください。
+
+-    8 February: 新コミッタ就任: Slava Shwartsman (src)
+
+January 2018
+
+-    25 January: 新コミッタ就任: Jeb Cramer (src)
+
+-    4 January:
+
+    Meltdown および Spectre 攻撃について:FreeBSD においても 2017 年 12
+    月下旬にはこれらの問題が明らかになっていました。 現在 CPU
+    ベンダと協力し、 また公表された論文を基にこれらの攻撃の脅威を
+    FreeBSD 上で軽減する対策を進めています。
+    しかしながら、この攻撃が基本的な部分に関わっているため、
+    現時点ではパッチの公開予定日は未定です。
+
+December 2017
+
+-    25 December:
+
+    2017 年 7 月 - 9 月開発進捗レポート が公開されました。
+
+November 2017
+
+-    11 November: 新コミッタ就任: Jason W. Bacon (ports)
+
+October 2017
+
+-    30 October: 新コミッタ就任: Alex Richardson (src)
+
+-    29 October: 新コミッタ就任: Yuri Victorovich (ports)
+
+-    4 October:
+
+    FreeBSD 10.4-RELEASE が公開されました。 インストール前に
+    リリースノート および リリース Errata を読み、10.4
+    に関する最新情報や問題点などを確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+September 2017
+
+-    27 September:
+
+    2017 年 4 月 - 6 月開発進捗レポート が公開されました。
+
+-    23 September:
+
+    FreeBSD 10.4 リリースサイクルから 2
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, i386, ia64, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    19 September: 新コミッタ就任: Eugene Grosbein (src)
+
+-    18 September: 新コミッタ就任: Guangyuan Yang (doc)
+
+-    17 September:
+
+    FreeBSD 10.4
+    リリースサイクルから最初のリリース候補版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, i386, ia64,
+    powerpc, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    11 September: 新コミッタ就任: Craig Leres (ports)
+
+-    9 September: 新コミッタ就任: Dave Cottlehuber (ports)
+
+-    9 September:
+
+    FreeBSD 10.4 リリースサイクルから 4 回目の BETA
+    ビルドが公開されました (アナウンス)。 FreeBSD ミラーサイト から
+    amd64, armv6, i386, ia64, powerpc, powerpc64 および sparc64
+    アーキテクチャの ISO イメージを入手できます。
+
+-    8 September: 新コミッタ就任: Adriaan de Groot (ports)
+
+-    6 September: 新コミッタ就任: Chuck Tuffli (src)
+
+-    2 September: 新コミッタ就任: Stephen Hurd (src)
+
+-    2 September:
+
+    FreeBSD 10.4 リリースサイクルから 3 回目の BETA
+    ビルドが公開されました (アナウンス)。 FreeBSD ミラーサイト から
+    amd64, armv6, i386, ia64, powerpc, powerpc64 および sparc64
+    アーキテクチャの ISO イメージを入手できます。
+
+-    2 September: 新コミッタ就任: Ilya Bakulin (src)
+
+August 2017
+
+-    28 August: 新コミッタ就任: Fedor Uporov (src)
+
+-    26 August:
+
+    FreeBSD 10.4 リリースサイクルから 2 回目の BETA
+    ビルドが公開されました (アナウンス)。 FreeBSD ミラーサイト から
+    amd64, armv6, i386, ia64, powerpc, powerpc64 および sparc64
+    アーキテクチャの ISO イメージを入手できます。
+
+-    25 August: 新コミッタ就任: Luca Pizzamiglio (ports)
+
+-    19 August:
+
+    FreeBSD 10.4 リリースサイクルから最初の BETA ビルドが公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, i386, ia64,
+    powerpc, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+July 2017
+
+-    26 July:
+
+    FreeBSD 11.1-RELEASE が公開されました。 インストール前に
+    リリースノート および リリース Errata を読み、11.1
+    に関する最新情報や問題点などを確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+-    18 July: 新コミッタ就任: Marcin Wojtas (src)
+
+-    15 July:
+
+    FreeBSD 11.1 リリースサイクルから、 3
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, i386, aarch64, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    12 July: 新コミッタ就任: Matt Joras (src)
+
+-    8 July:
+
+    FreeBSD 11.1 リリースサイクルから、 2
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, i386, aarch64, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    1 July:
+
+    FreeBSD 11.1 リリースサイクルから、
+    最初のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, i386, aarch64, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+June 2017
+
+-    24 June:
+
+    FreeBSD 11.1 リリースサイクルから 3 回目の BETA
+    ビルドが公開されました (アナウンス)。 FreeBSD ミラーサイト から
+    amd64, armv6, i386, aarch64, powerpc, powerpc64 および sparc64
+    アーキテクチャの ISO イメージを入手できます。
+
+-    20 June: 新コミッタ就任: Kyle Evans (src)
+
+-    17 June:
+
+    FreeBSD 11.1 リリースサイクルから 2 回目の BETA
+    ビルドが公開されました (アナウンス)。 FreeBSD ミラーサイト から
+    amd64, armv6, i386, aarch64, powerpc, powerpc64 および sparc64
+    アーキテクチャの ISO イメージを入手できます。
+
+-    10 June:
+
+    FreeBSD 11.1 リリースサイクルから最初の BETA ビルドが公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, i386,
+    aarch64, powerpc, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    7 June: 新コミッタ就任: Ryan Libby (src)
+
+May 2017
+
+-    31 May: 新コミッタ就任: Richard Gallamore (ports)
+
+-    16 May: 新コミッタ就任: Jochen Neumeister (ports)
+
+-    15 May:
+
+    2017 年 1 月 - 3 月開発進捗レポート が公開されました。
+
+-    3 May: 新コミッタ就任: Danilo G. Baio (ports)
+
+April 2017
+
+-    27 April: 新コミッタ就任: Vladimir Kondratyev (src)
+
+-    18 April: 新コミッタ就任: Bradley T. Hughes (ports)
+
+March 2017
+
+-    4 March: 新コミッタ就任: Eugene Grosbein (ports)
+
+-    3 March: コミッタへの復帰: Rodney W. Grimes (src)
+
+February 2017
+
+-    27 February:
+
+    FreeBSD プロジェクトは Google's 2017 Summer of Code
+    プログラムに参加します。 これは夏の間に奨学金を提供し、
+    オープンソースプロジェクトに参加する学生を支援するプログラムです。
+    FreeBSD プロジェクトの参加は今年で 13 年目になります。 2005 年から
+    2016 年の間に、 長い夏の期間のコーディングプロジェクトを通して 200
+    人を越える学生の指導に成功してきました。
+
+    これまでに成功したプロジェクトには、 Linux ABI 互換機能の改善、NFSv4
+    ACLs, TCP レグレッションテスト、 FUSE ファイルシステムへの対応など、
+    その他にも数え切れないプロジェクトがあります。 多くの学生は FreeBSD
+    の開発者になったり、 FreeBSD Foundation
+    の継続的な支援を通じて、世界中で開催されている FreeBSD
+    の開発者のイベントに参加しています。
+
+    我こそは、と思う方はぜひとも応募してください!
+    申し込みや締め切りなど、詳細については FreeBSD Summer Projects
+    ページ をご覧ください。
+
+-    13 February:
+
+    2016 年 10 月 - 12 月開発進捗レポート が公開されました。
+
+-    10 February: 新コミッタ就任: Mahdi Mokhtari (ports)
+
+-    8 February: 新コミッタ就任: Tobias Kortkamp (ports)
+
+January 2017
+
+-    10 January: コミット権限の拡大: Jean-Sébastien Pédron (ports)
+
+-    9 January: 新コミッタ就任: Matthew Rezny (ports)
+
+-    9 January: 新コミッタ就任: Larry Rosenman (ports)
+
+-    9 January: 新コミッタ就任: Johannes Dieterich (ports)
+
+December 2016
+
+-    11 December: 新コミッタ就任: Piotr Paweł Stefaniak (src)
+
+-    11 December: 新コミッタ就任: Nikolai Lifanov (ports)
+
+November 2016
+
+-    15 November: 新コミッタ就任: Mikhail Pchelin (ports)
+
+-    13 November:
+
+    2016 年 7 月 - 9 月開発進捗レポート が公開されました。
+
+-    2 November: 新コミッタ就任: Konrad Witaszczyk (src)
+
+-    2 November: 新コミッタ就任: Michael Dexter (doc)
+
+October 2016
+
+-    22 October: 新コミッタ就任: David Bright (src)
+
+-    10 October:
+
+    FreeBSD 11.0-RELEASE が公開されました。 インストール前に
+    リリースノート および リリース Errata を読み、11.0
+    に関する最新情報や問題点などを確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+September 2016
+
+-    28 September:
+
+    11.0-RELEASE の最終版は、
+    リリースタグが打たれた後に発見されたリリース直前のいくつかの問題に対応するために、
+    再構築を予定しています。
+    詳細については、リリースエンジニアリングチームからの 公式アナウンス
+    をご覧ください。
+
+-    17 September: 新コミッタ就任: Joseph Mingrone (ports)
+
+-    17 September: 新コミッタ就任: Ruey-Cherng Yu (doc)
+
+-    17 September:
+
+    FreeBSD 11.0 リリースサイクルから 3
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, i386, aarch64, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    16 September: 新コミッタ就任: Sevan Janiyan (doc)
+
+August 2016
+
+-    25 August:
+
+    FreeBSD 11.0 リリースサイクルから 2
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, i386, aarch64, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    13 August:
+
+    FreeBSD 11.0
+    リリースサイクルから最初のリリース候補版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, i386,
+    aarch64, powerpc, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    10 August: 新コミッタ就任: Toomas Soome (src)
+
+-    10 August: FreeBSD Core チームは、最近の freebsd-update
+    および関連する脆弱性についての 声明 を発表しました。
+
+-    6 August:
+
+    FreeBSD 11.0 リリースサイクルから 4 回目の BETA
+    ビルドが公開されました (アナウンス)。 FreeBSD ミラーサイト から
+    amd64, armv6, i386, aarch64, powerpc, powerpc64 および sparc64
+    アーキテクチャの ISO イメージを入手できます。
+
+July 2016
+
+-    30 July:
+
+    FreeBSD 11.0 リリースサイクルから 3 回目の BETA
+    ビルドが公開されました (アナウンス)。 FreeBSD ミラーサイト から
+    amd64, armv6, i386, aarch64, powerpc, powerpc64 および sparc64
+    アーキテクチャの ISO イメージを入手できます。
+
+-    27 July:
+
+    2016 年 4 月 - 6 月開発進捗レポート が公開されました。
+
+-    24 July:
+
+    FreeBSD 11.0 リリースサイクルから 2 回目の BETA
+    ビルドが公開されました (アナウンス)。 FreeBSD ミラーサイト から
+    amd64, armv6, i386, aarch64, powerpc, powerpc64 および sparc64
+    アーキテクチャの ISO イメージを入手できます。
+
+-    19 July: 新コミッタ就任: Michael Zhilin (src)
+
+-    19 July: 新コミッタ就任: Imre Vadasz (src)
+
+-    18 July: 新コミッタ就任: Stephen J. Kiernan (src)
+
+-    11 July: 新コミッタ就任: Carlos J. Puga Medina (ports)
+
+-    10 July:
+
+    FreeBSD 11.0 リリースサイクルから最初の BETA ビルドが公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, i386,
+    aarch64, powerpc, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    6 July:
+
+    FreeBSD プロジェクトは、 2016 コアチーム選挙の終了をお知らせします。
+    FreeBSD コアチームは、"取締役" にあたるもので、 新しい src
+    コミッタの承認、開発者間に対立があった場合の調停、
+    特定の範囲のサブコミッタ (セキュリティオフィサ、
+    リリースエンジニア、port マネージャ、ウェブマスタなど) の任命、
+    また、必要な際は、管理や方針の決定を行います。 コアチームは、2000
+    年から 2 年おきに FreeBSD の開発者により選ばれています。
+
+    FreeBSD コアチームは、 Matthew Seaman が、 コアチーム書記
+    を継続することを発表しました。
+
+    選挙の詳細 (および新しいコアチームのメンバの一覧) については、公式
+    アナウンス をご覧ください。
+
+-    6 July: 新コミッタ就任: Tobias C. Berner (ports)
+
+-    1 July: 新コミッタ就任: Eric Badger (src)
+
+June 2016
+
+-    9 June: 新コミッタ就任: Mike Karels (src)
+
+-    4 June: 新コミッタ就任: Torsten Zuehlsdorff (ports)
+
+May 2016
+
+-    31 May: 新コミッタ就任: Landon Fuller (src)
+
+-    9 May: 新コミッタ就任: Ben Woods (ports)
+
+-    1 May:
+
+    2016 年 1 月 - 3 月開発進捗レポート が公開されました。
+
+April 2016
+
+-    23 April: 新コミッタ就任: Emmanuel Vadot (src)
+
+-    4 April:
+
+    FreeBSD 10.3-RELEASE が公開されました。 インストール前に
+    リリースノート および リリース Errata を読み、10.3
+    に関する最新情報や問題点などを確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+March 2016
+
+-    20 March:
+
+    FreeBSD 10.3 リリースサイクルから 3
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, i386, ia64, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    13 March:
+
+    FreeBSD 10.3 リリースサイクルから 2
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, i386, ia64, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    5 March:
+
+    FreeBSD 10.3
+    リリースサイクルから最初のリリース候補版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, i386, ia64,
+    powerpc, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    1 March: 新コミッタ就任: Christoph Moench-Tegeder (ports)
+
+-    1 March:
+
+    FreeBSD プロジェクトは Google's 2016 Summer of Code
+    プログラムに参加します。 これは夏の間に奨学金を提供し、
+    オープンソースプロジェクトに参加する学生を支援するプログラムです。
+    FreeBSD プロジェクトの参加は今年で 12 年目になります。 2005 年から
+    2015 年の間に、 長い夏の期間のコーディングプロジェクトを通して 180
+    人を越える学生の指導に成功してきました。
+
+    これまでに成功したプロジェクトには、 Linux ABI 互換機能の改善、NFSv4
+    ACLs, TCP レグレッションテスト、 FUSE ファイルシステムのサポートや
+    その他にも数え切れないプロジェクトがあります。 多くの学生は FreeBSD
+    の開発者になったり、 FreeBSD Foundation
+    の継続的な支援を通じて、世界中で開催されている FreeBSD
+    の開発者のイベントに参加しています。
+
+    我こそは、と思う方はぜひとも応募してください!
+    申し込みや締め切りなど、詳細については FreeBSD Summer Projects
+    ページ をご覧ください。
+
+February 2016
+
+-    28 February: 新コミッタ就任: Phil Shafer (src)
+
+-    28 February:
+
+    FreeBSD 10.3 リリースサイクルから 3 回目の BETA
+    ビルドが公開されました (アナウンス)。 FreeBSD ミラーサイト から
+    amd64, armv6, i386, ia64, powerpc, powerpc64 および sparc64
+    アーキテクチャの ISO イメージを入手できます。
+
+-    24 February: 新コミッタ就任: Jared McNeill (src)
+
+-    24 February: 新コミッタ就任: Stanislav Galabov (src)
+
+-    17 February:
+
+    Dag-Erling Smörgrav は、FreeBSD における CVE-2015-7547
+    の影響について、 FreeBSD and the recent glibc CVE-2015-7547
+    vulnerability でまとめています。
+
+-    17 February:
+
+    PVS-Studio 静的コードアナライザの開発チームは、 FreeBSD
+    カーネルを解析し、発見されたバグと疑わしい箇所についての 記事
+    を書いています。
+
+-    14 February:
+
+    FreeBSD 10.3 リリースサイクルから 2 回目の BETA
+    ビルドが公開されました (アナウンス)。 FreeBSD ミラーサイト から
+    amd64, armv6, i386, ia64, powerpc, powerpc64 および sparc64
+    アーキテクチャの ISO イメージを入手できます。
+
+-    6 February:
+
+    FreeBSD 10.3 リリースサイクルから最初の BETA ビルドが公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, i386,
+    powerpc, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    2 February: 新コミッタ就任: Olivier Cochard-Labbé (ports)
+
+-    1 February:
+
+    2015 年 10 月 - 12 月開発進捗レポート が公開されました。
+
+January 2016
+
+-    18 January: 新コミッタ就任: Wojciech Macek (src)
+
+-    6 January:
+
+    FreeBSD Foundation は、FreeBSD コミュニティのハラスメントに関する
+    最初の声明 を発表しました。
+
+-    3 January: FreeBSD コアチームは、FreeBSD
+    コミュニティのハラスメントに関する 最初の声明 を発表しました。
+
+December 2015
+
+-    13 December: 新コミッタ就任: Anish Gupta (src)
+
+November 2015
+
+-    13 November: 新コミッタ就任: Ravi Pokala (src)
+
+-    1 November: 新コミッタ就任: Michal Meloun (src)
+
+October 2015
+
+-    26 October: 新コミッタ就任: Jonathan T. Looney (src)
+
+-    25 October:
+
+    2015 年 7 月 - 9 月開発進捗レポート が公開されました。
+
+-    23 October: 新コミッタ就任: Svatopluk Kraus (src)
+
+-    21 October: 新コミッタ就任: Kurt Lidl (src)
+
+September 2015
+
+-    24 September: 新コミッタ就任: Andriy Voskoboinyk (src)
+
+August 2015
+
+-    13 August:
+
+    FreeBSD 10.2-RELEASE が公開されました。 インストール前に
+    リリースノート および リリース Errata を読み、10.2
+    に関する最新情報や問題点などを確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+-    8 August: コミット権限の拡大: Marcelo Araujo (ports, src)
+
+-    7 August:
+
+    FreeBSD 10.2 リリースサイクルから 3
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, i386, ia64, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    1 August:
+
+    FreeBSD 10.2 リリースサイクルから 2
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, i386, ia64, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+July 2015
+
+-    30 July: コミット権限の拡大: Allan Jude (src)
+
+-    27 July: 新コミッタ就任: Jason Unovitch (ports)
+
+-    26 July:
+
+    2015 年 4 月 - 6 月開発進捗レポート が公開されました。
+
+-    24 July:
+
+    FreeBSD 10.2 リリースサイクルから
+    最初のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, i386, ia64, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    17 July:
+
+    FreeBSD 10.2 リリースサイクルから 2 回目のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, i386, ia64,
+    powerpc, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    11 July:
+
+    FreeBSD 10.2 リリースサイクルから最初のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, i386, ia64,
+    powerpc, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    5 July: 新コミッタ就任: Conrad Meyer (src)
+
+June 2015
+
+-    26 June:
+
+    閏秒の取り扱いについての概要が書かれた FreeBSD Support for Leap
+    Seconds という新しい文書が追加されました。
+    次回の閏秒の調整は、2015-Jun-30 23:59:60 UTC に行われます。
+
+May 2015
+
+-    24 May: 新コミッタ就任: Bernard Spil (ports)
+
+April 2015
+
+-    30 April:
+
+    2015 年 1 月 - 3 月開発進捗レポート が公開されました。
+
+-    27 April: 新コミッタ就任: Mariusz Zaborski (src)
+
+-    21 April: 新コミッタ就任: Michael Moll (ports)
+
+-    2 April: コミット権限の拡大: Mathieu Arnold (ports, doc)
+
+March 2015
+
+-    31 March: 新コミッタ就任: Matthew Ahrens (src)
+
+-    22 March: 新コミッタ就任: Kristof Provost (src)
+
+-    8 March: 新コミッタ就任: Eric van Gyzen (src)
+
+-    8 March: 新コミッタ就任: Jason Harmening (src)
+
+February 2015
+
+-    11 February: 新コミッタ就任: Wei Hu (src)
+
+January 2015
+
+-    19 January: 新コミッタ就任: Jan Beich (ports)
+
+-    15 January:
+
+    2014 年 10 月 - 12 月開発進捗レポート が公開されました。
+
+December 2014
+
+-    14 December: 新コミッタ就任: Muhammad Moinur Rahman (ports)
+
+-    14 December: 新コミッタ就任: Eric Joyner (src)
+
+November 2014
+
+-    14 November:
+
+    FreeBSD 10.1-RELEASE が公開されました。 インストール前に
+    リリースノート および リリース Errata を読み、10.1
+    に関する最新情報や問題点などを確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+-    2 November:
+
+    FreeBSD 10.1 リリースサイクルから 4
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, i386, ia64, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    2 November:
+
+    FreeBSD の最初の公式 リリースである FreeBSD 1.0 は、21 年前の本日
+    1993 年 11 月 2 日にアナウンスされました。 オリジナルの アナウンス
+    をご覧ください。
+
+October 2014
+
+-    23 October:
+
+    FreeBSD 10.1 リリースサイクルから 3
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, i386, ia64, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    23 October: 新コミッタ就任: Björn Heidotting (doc)
+
+-    14 October:
+
+    2014 年 7 月から 9 月の開発進捗レポート が公開されました。
+
+-    13 October:
+
+    FreeBSD 10.1 リリースサイクルから 2
+    回目のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, i386, ia64, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    12 October: 新コミッタ就任: Andrew Rybchenko (src)
+
+-    4 October:
+
+    FreeBSD 10.1 リリースサイクルから
+    最初のリリース候補版が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, armv6, i386, ia64, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+September 2014
+
+-    28 September:
+
+    FreeBSD 10.1 リリースサイクルから 3 回目のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, i386, ia64,
+    powerpc, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    24 September: 新コミッタ就任: Julien Charbon (src)
+
+-    21 September:
+
+    FreeBSD 10.1 リリースサイクルから 2 回目のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, armv6, i386, ia64,
+    powerpc, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    14 September:
+
+    FreeBSD 10.1 リリースサイクルから最初のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, i386, ia64, powerpc,
+    powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    9 September: 新コミッタ就任: Dominic Fandrey (ports)
+
+August 2014
+
+-    21 August:
+
+    FreeBSD の ports ツリーは、1994 年 8 月 21 日の Jordan Hubbard
+    による以下の commit から始まりました。
+
+    "Commit my new ports make macros. Still not 100% complete yet by any
+    means but fairly usable at this stage."
+
+    このイベントを祝福するための ビデオ が用意されています!
+
+-    14 August: 新コミッタ就任: Alonso Schaich (ports)
+
+-    10 August: 新コミッタ就任: Dan Langille (ports)
+
+July 2014
+
+-    31 July:
+
+    2014 年の上半期ニューレターが発行されました!
+    このニュースレターを読むと、 FreeBSD
+    が最高のオペレーティングシステムになるよう、 The FreeBSD Foundation
+    がどのように手助けをしているかを知ることができます。
+
+    資金の補助を行なっている FreeBSD の開発プロジェクト、
+    スポンサーとなっているカンファレンス、
+    顔を付き合わせる機会となる開発者およびベンダーサミット、
+    研究の場、寄附の拡大に対しての努力、
+    そして、さらにもっと活動をしていることを知ってください!
+
+    2014 年の上半期ニュースレターはオンライン上で、 ここから
+    読むことができます。
+
+-    27 July: 新コミッタ就任: Ngie Cooper (src)
+
+-    24 July:
+
+    2014 年 4 月から 6 月の開発進捗レポート (24 エントリ)
+    が公開されました。
+
+-    16 July:
+
+    FreeBSD 9.1 および 9.2 から FreeBSD 9.3
+    へのアップグレードを容易にするため、 FreeBSD 9.2 の EoL が、2014 年
+    12 月 31 日まで延長になりました。
+
+-    16 July:
+
+    FreeBSD 9.3-RELEASE が公開されました。 インストール前に
+    リリースノート および リリース Errata を読み、9.3
+    に関する最新情報や問題点などを確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+-    9 July:
+
+    FreeBSD コアチームは、 Matthew Seaman が コアチーム Secretary
+    に就任したことをお知らせします。
+
+-    9 July:
+
+    FreeBSD プロジェクトは、 2014 コアチーム選挙の終了をお知らせします。
+    FreeBSD コアチームは、"取締役" にあたるもので、 新しい src
+    コミッタの承認、開発者間に対立があった場合の調停、
+    特定の範囲のサブコミッタ (セキュリティオフィサ、
+    リリースエンジニア、port マネージャ、ウェブマスタなど) の任命、
+    また、必要な際は、管理や方針の決定を行います。 コアチームは、2000
+    年から 2 年おきに FreeBSD の開発者により選ばれています。
+
+    選挙の詳細 (および新しいコアチームのメンバの一覧) については、公式
+    アナウンス をご覧ください。
+
+-    6 July:
+
+    FreeBSD-9.3 リリースサイクルから 3
+    回目のリリース候補が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, i386, ia64, powerpc, powerpc64 および
+    sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    4 July:
+
+    WITH_NEW_XORG で構築された packages が必要な方々のために、 pkg(8)
+    とは別のリポジトリが用意されました。
+    このリポジトリには、このオプションで構築された packages
+    のサブセットが含まれています。 詳細については アナウンスメール
+    をご覧ください。
+
+June 2014
+
+-    28 June:
+
+    FreeBSD-9.3 リリースサイクルから 2
+    回目のリリース候補が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, i386, ia64, powerpc, powerpc64 および
+    sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    21 June:
+
+    FreeBSD-9.3 リリースサイクルから最初のリリース候補が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, i386, ia64, powerpc,
+    powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    17 June: 新コミッタ就任: Bartek Rutkowski (ports)
+
+-    14 June:
+
+    FreeBSD-9.3 リリースサイクルから 3 回目のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, i386, ia64, powerpc,
+    powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    11 June: 新コミッタ就任: Stephen Hurd (ports)
+
+-    7 June:
+
+    FreeBSD-9.3 リリースサイクルから 2 回目のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, i386, ia64, powerpc,
+    powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    1 June:
+
+    FreeBSD-9.3 リリースサイクルから最初のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, i386, ia64, powerpc,
+    powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+May 2014
+
+-    29 May: 新コミッタ就任: Patrick Kelsey (src)
+
+-    17 May: 新コミッタ就任: Allan Jude (doc)
+
+-    7 May: 新コミッタ就任: Kashyap Desai (src)
+
+-    7 May: 新コミッタ就任: Stephen McConnell (src)
+
+April 2014
+
+-    24 April: 新コミッタ就任: Kurt Jaeger (ports)
+
+-    17 April:
+
+    2014 年 1 月から 3 月の開発進捗レポート (41 エントリ)
+    が公開されました。
+
+-    7 April: 新コミッタ就任: Johannes Jost Meixner (ports)
+
+March 2014
+
+-    11 March:
+
+    FreeBSD プロジェクトは Google's 2014 Summer of Code
+    プログラムに参加します。 これは夏の間に奨学金を提供し、
+    オープンソースプロジェクトに参加する学生を支援するプログラムです。
+    FreeBSD プロジェクトの参加は今年で 10 年目になります。 2005 年から
+    2013 年の間には、 長い夏の期間のコーディングプロジェクトを通して 160
+    人を越える学生の指導に成功してきました。
+
+    これまでに成功したプロジェクトには、 Linux ABI 互換機能の改善、NFSv4
+    ACLs, TCP レグレッションテスト、 FUSE ファイルシステムのサポートや
+    その他にも数え切れないプロジェクトがあります。 多くの学生は FreeBSD
+    の開発者になったり、 FreeBSD Foundation
+    の継続的な支援を通じて、世界中で開催されている FreeBSD
+    の開発者のイベントに参加しています。
+
+    我こそは、と思う方はぜひとも応募してください!
+    申し込みや締め切りなど、詳細については FreeBSD Summer Projects
+    ページ をご覧ください。
+
+February 2014
+
+-    10 February:
+
+    FreeBSD Journal の創刊をお知らせします! FreeBSD Journal は、 FreeBSD
+    Foundation が発行する FreeBSD
+    に関する新しいオンラインジャーナルです。 購入方法については こちら
+    をご覧ください。 創刊号は FreeBSD 10 の特集です。
+
+January 2014
+
+-    25 January:
+
+    2013 年 10 月から 12 月の開発進捗レポート (37 エントリ)
+    が公開されました。
+
+-    23 January: 新コミッタ就任: Rodrigo Osorio (ports)
+
+-    21 January: 新コミッタ就任: Tycho Nightingale (src)
+
+-    21 January: 新コミッタ就任: Michael Gmelin (ports)
+
+-    20 January:
+
+    FreeBSD 10.0-RELEASE が公開されました。 インストール前に
+    リリースノート および リリース Errata を読み、10.0
+    に関する最新情報や問題点などを確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+-    20 January: コミット権限の拡大: Jason Helfman (ports, doc)
+
+-    15 January: コミット権限の拡大: Steven Kreuzer (ports, doc)
+
+-    13 January: コミッタ復帰: Bruce A. Mah (ports)
+
+-    10 January: 新コミッタ就任: Thomas Zander (ports)
+
+-    9 January:
+
+    FreeBSD-10.0 のリリースサイクルから 5
+    回目のリリース候補が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, i386, ia64, powerpc, powerpc64 および
+    sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    2 January:
+
+    FreeBSD-10.0 のリリースサイクルから 4
+    回目のリリース候補が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, i386, ia64, powerpc, powerpc64 および
+    sparc64 アーキテクチャの ISO イメージを入手できます。
+
+December 2013
+
+-    26 December:
+
+    FreeBSD-10.0 のリリースサイクルから 3
+    回目のリリース候補が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, i386, ia64, powerpc, powerpc64 および
+    sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    18 December: コミット権限の拡大: Ganbold Tsagaankhuu (doc, src)
+
+-    16 December: 新コミッタ就任: Jonathan Chu (ports)
+
+-    16 December: コミット権限の拡大: Bryan Drewery (ports, src)
+
+-    16 December:
+
+    FreeBSD-10.0 のリリースサイクルから 2
+    回目のリリース候補が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, i386, ia64, powerpc, powerpc64 および
+    sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    9 December:
+
+    FreeBSD-10.0
+    のリリースサイクルから最初ののリリース候補が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, i386, ia64, powerpc,
+    powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    9 December:
+
+    EuroBSDcon 2013 FreeBSD Developer Summit のスペシャルレポート (13
+    エントリ) が公開されました。
+
+-    3 December:
+
+    FreeBSD-10.0 リリースサイクルから 4 回目のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, i386, ia64, powerpc,
+    powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+November 2013
+
+-    27 November: 新コミッタ就任: Roger Pau Monné (src)
+
+-    8 November: 新コミッタ就任: Alexey Degtyarev (ports)
+
+-    5 November:
+
+    FreeBSD-10.0 リリースサイクルから 3 回目のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, i386, ia64, powerpc,
+    powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    2 November: 新コミッタ就任: Julio Merino (src)
+
+October 2013
+
+-    30 October:
+
+    pkg の公式バイナリ package が公開されました。 FreeBSD 8.3, 8.4, 9.1,
+    9.2, 10.0 および head のバイナリ package が利用可能です。
+    詳細については、 アナウンス をご覧ください。
+
+-    28 October:
+
+    FreeBSD-10.0 リリースサイクルから 2 回目のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, i386, ia64, powerpc,
+    powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    20 October:
+
+    2013 年 7 月から 9 月の開発進捗レポート (30 エントリ)
+    が公開されました。
+
+-    14 October:
+
+    FreeBSD-10.0 リリースサイクルから最初のベータ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, i386, ia64, powerpc,
+    powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    9 October: 新コミッタ就任: Eric Davis (src)
+
+-    7 October:
+
+    FreeBSD-10.0 リリースサイクルから 5 回目のアルファ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, i386, ia64, powerpc,
+    powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+September 2013
+
+-    30 September:
+
+    FreeBSD 9.2-RELEASE が公開されました。 インストール前に
+    リリースノート および リリース Errata を読み、9.2
+    に関する最新情報や問題点などを確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+-    29 September:
+
+    FreeBSD-10.0 リリースサイクルから 4 回目のアルファ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, i386, ia64, powerpc,
+    powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    23 September: 新コミッタ就任: Danilo Egêa Gondolfo (ports)
+
+-    18 September:
+
+    FreeBSD-10.0 リリースサイクルから 2 回目のアルファ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, i386, ia64, powerpc,
+    powerpc64 および sparc64 アーキテクチャの ISO
+    イメージを入手できます。
+
+-    13 September:
+
+    FreeBSD-10.0 リリースサイクルから最初のアルファ版が公開されました
+    (アナウンス)。 FreeBSD ミラーサイト から amd64, i386, ia64, powerpc
+    および sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    12 September:
+
+    FreeBSD-9.2 リリースサイクルから 4
+    回目のリリース候補が公開されました (アナウンス)。 FreeBSD
+    ミラーサイト から amd64, i386, ia64, powerpc, powerpc64 および
+    sparc64 アーキテクチャの ISO イメージを入手できます。
+
+-    2 September: 新コミッタ就任: Ruslan Bukin (src)
+
+-    2 September: 新コミッタ就任: Zbigniew Bodek (src)
+
+August 2013
+
+-    26 August:
+
+    FreeBSD-9.2 リリースサイクルから 3
+    回目のリリース候補が公開されました。 amd64, i386, ia64, powerpc,
+    powerpc64 および sparc64 アーキテクチャの ISO イメージが、 FreeBSD
+    ミラーサイト で 公開 されています。
+
+-    16 August:
+
+    FreeBSD-9.2 リリースサイクルから 2
+    回目のリリース候補が公開されました。 amd64, i386, ia64, powerpc,
+    powerpc64 および sparc64 アーキテクチャの ISO イメージが、 FreeBSD
+    ミラーサイト で 公開 されています。
+
+-    6 August:
+
+    上半期ニューレターが発行されました! このニュースレターを読めば、
+    FreeBSD が最高のオペレーティングシステムになるよう、 The FreeBSD
+    Foundation がどのように手助けをしているかを知ることができます。
+
+    資金の補助を行なっている FreeBSD の開発プロジェクト、
+    スポンサーとなっているカンファレンス、
+    顔を付き合わせる機会となる開発者およびベンダーサミット、
+    研究の場、寄附の拡大に対しての努力、
+    そして、さらにもっと活動をしていることを知ってください!
+
+    2013 の上半期ニュースレターはオンライン上で、 ここから
+    読むことができます。
+
+-    5 August:
+
+    FreeBSD-9.2 リリースサイクルから最初のリリース候補が公開されました。
+    amd64, i386, ia64, powerpc, powerpc64 および sparc64
+    アーキテクチャの ISO イメージが、 FreeBSD ミラーサイト で 公開
+    されています。
+
+July 2013
+
+-    31 July: 新コミッタ就任: Rusmir Dusko (ports)
+
+-    29 July:
+
+    FreeBSD-9.2 リリースサイクルから 2 回目の BETA 版が公開されました。
+    amd64, i386, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージが、 FreeBSD ミラーサイト で 公開 されています。
+
+-    22 July:
+
+    FreeBSD-9.2 リリースサイクルにおける最初の BETA 版が公開されました。
+    amd64, i386 および ia64 アーキテクチャの ISO イメージが、 FreeBSD
+    ミラーサイト で 公開 されています。
+
+-    16 July:
+
+    2013 年 4 月 から 6 月の開発進捗レポート (33 エントリ)
+    が公開されました。
+
+-    4 July: 新コミッタ就任: John Marino (ports)
+
+-    3 July: 新コミッタ就任: Luiz Otavio O Souza (src)
+
+-    2 July:
+
+    BSDCan 2013 FreeBSD 開発者サミットのスペシャルレポート (6 エントリ)
+    が 公開 されました。
+
+June 2013
+
+-    25 June: 新コミッタ就任: Mark Felder (ports)
+
+-    19 June:
+
+    本日、FreeBSD は 20 歳 を迎えました。 1993 年 6 月 19 日、Jordan
+    Hubbard, Rod Grimes および David Greenman は、BSD 4.3
+    オペレーティングシステムから新しいプロジェクトがスタートしたことを世界にアナウンスしました。
+
+    FreeBSD は、Bill と Lynne Jolitz の 386BSD 0.1
+    リリースから派生し、1993 年の 11 月に 1.0 がリリースされました。
+    最初の目標は、高速、安全でかつ信頼性の高い i386
+    システムのサーバ用オペレーティングシステムを作成することでした。
+
+    それ以降、数えきれないほどのプロダクトのバックボーンに採用され、 64
+    ビットシステム、
+    組み込みデバイスおよびデスクトプをサポートするまでに成長しました。
+
+-    11 June: 新コミッタ就任: Veniamin Gvozdikov (ports)
+
+-    7 June:
+
+    FreeBSD 8.4-RELEASE が公開されました。 インストール前に
+    リリースノート (詳細版) および リリース Errata を読み、 8.4
+    に関する最新情報や問題点などを確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+-    4 June: コミット権限の拡大: Glen Barber (doc, ports, src)
+
+May 2013
+
+-    27 May: コミット権限の拡大: Chris Rees (doc, ports)
+
+-    14 May:
+
+    昨年 11 月にセキュリティインシデントが発覚し、
+    プロジェクトのバイナリ package が利用できなくなってから 6 か月
+    が過ぎてしまいましたが、本日、
+    すべてのサービスが復活したことをご報告します。
+
+    公式アナウンス をご覧ください。
+
+-    12 May:
+
+    2013 年 1 月 から 3 月の開発進捗レポート (31 エントリ) が 公開
+    されました。
+
+-    9 May:
+
+    The FreeBSD Foundation は、Ed Maste
+    が新しくパートタイムのプロジェクト開発ディレクタに就任したことをお知らせします。
+    Ed は 2 年間 Foundation のボードメンバでありましたが、
+    この新しいポジションへ就任するため、ボードメンバを退任しました。
+
+    続きを読む
+
+-    8 May:
+
+    FreeBSD-8.4 リリースサイクルの 3
+    回目のリリース候補が公開されました。 amd64, i386 および pc98
+    アーキテクチャの ISO イメージが、 FreeBSD ミラーサイト で 公開
+    されています。
+
+April 2013
+
+-    29 April:
+
+    The FreeBSD Foundation は、 Edward Tomasz Napierała
+    が二人目のテクニカルスタッフに加わったことをお知らせします。
+    これは、2013 年に Foundation
+    が継続して行っているスタッフへの投資によるものです。
+
+    続きを読む
+
+-    24 April: 新コミッタ就任: Alan Somers (src)
+
+-    24 April:
+
+    FreeBSD プロジェクトは Google's 2013 Summer of Code
+    プログラムに参加します。 これは夏の間に奨学金を提供し、
+    オープンソースプロジェクトに参加する学生を支援するプログラムです。
+    FreeBSD プロジェクトの参加は今年で 9 年目となります。 2005 年から
+    2012 年の間、 長い夏の期間のコーディングプロジェクトを通して 150
+    人を越える学生を指導してきました。
+
+    これまでに成功したプロジェクトには、 Linux ABI 互換機能の改善、NFSv4
+    ACLs, TCP レグレッションテスト、 FUSE
+    ファイルシステムのサポートがあり、
+    その他にも数え切れないプロジェクトがあります。 多くの学生は FreeBSD
+    の開発者になり、 FreeBSD Foundation
+    の継続的な支援を通じて、世界中で開催されている FreeBSD
+    の開発者のイベントにも参加しています。
+
+    我こそは、と思う方はぜひとも応募してください!
+    申し込みや締め切りなど、詳細については FreeBSD Summer Projects
+    ページ をご覧ください。
+
+-    22 April:
+
+    FreeBSD-8.4 リリースサイクルの 2
+    回目のリリース候補が公開されました。 amd64, i386 および pc98
+    アーキテクチャの ISO イメージが、 FreeBSD ミラーサイト で 公開
+    されています。
+
+-    18 April: コミット権限の拡大: Cy Schubert (src, ports)
+
+-    12 April: 新コミッタ就任: Hiren Panchasara (src)
+
+-    10 April:
+
+    FreeBSD-8.4 リリースサイクルの最初のリリース候補が公開されました。
+    amd64, i386 および pc98 アーキテクチャの ISO イメージが、 FreeBSD
+    ミラーサイト で 公開 されています。
+
+-    3 April: コミット権限の拡大: Antoine Brodin (src, ports)
+
+-    1 April: 新コミッタ就任: William Grzybowski (ports)
+
+March 2013
+
+-    27 March: コミット権の範囲の拡大: Tijl Coosemans (src, ports)
+
+-    22 March:
+
+    FreeBSD-8.4 リリースサイクルの最初のテストビルドが公開されました。
+    amd64, i386 および pc98 アーキテクチャの ISO イメージが、 FreeBSD
+    ミラーサイト で 公開 されています。
+
+-    14 March:
+
+    The FreeBSD Foundation は、 Konstantin Belousov
+    を初めてのフルタイムのテクニカルスタッフとして雇用したことをお知らせします。
+    これは、2013 年のスタッフに対する Foundation
+    の投資の中で重大な出来事です。
+
+    続きを読む
+
+-    12 March: Bryan Drewery が、新しく Ports Management
+    チームのメンバーに加わりました。
+
+-    3 March:
+
+    2012 年 10 月 から 12 月の開発進捗レポート (27 エントリ) が 公開
+    されました。
+
+-    3 March:
+
+    2012 年 7 月 から 9 月の開発進捗レポート (12 エントリ) が 公開
+    されました。
+
+February 2013
+
+-    10 February: 新コミッタ就任: Po-Chien Lin (ports)
+
+-    1 February: 新コミッタ就任: Thomas-Martin Seck (ports)
+
+January 2013
+
+-    23 January: 新コミッタ就任: Achim Leubner (src)
+
+-    22 January: 新コミッタ就任: Dru Lavigne (doc)
+
+-    16 January: 新コミッタ就任: Carl Delsey (src)
+
+-    15 January: コミット権の範囲の拡大: René Ladan (ports, full
+    doc/www)
+
+-    14 January: 新コミッタ就任: David Naylor (ports)
+
+-    13 January:
+
+    2012 年 4 月 から 6 月の開発進捗レポート (17 エントリ) が 公開
+    されました。
+
+-    10 January:
+
+    現在、FreeBSD ports の開発は Subversion で行われています。 ports
+    ツリーの CVS へのエクスポートは、 2013 年 2 月 28
+    日をもって停止します。 そのため、この日を過ぎると、 CVS, CVSup
+    または csup(1) による ports ツリーのアップデートはできません。 CVS,
+    CVSup および csup(1) を使っているすべてのユーザは portsnap(8)
+    へと移行し、 Ports Collection
+    をチェックアウトして管理することが必要なユーザは直接 Subversion
+    を使うことが推奨されます。 詳細な情報については、 FreeBSD ports
+    アナウンスメーリングリスト をご覧ください。
+
+    CVSup や csup(1) から portsnap(8) への移行に関するガイドは、 FreeBSD
+    ハンドブック にもあります。
+
+-    8 January:
+
+    Faces of FreeBSD シリーズの次のストーリーを紹介します。
+    このシリーズでは、FreeBSD に貢献し、
+    プロジェクトの開発、カンファレンスの運営やカンファレンスへの旅費、そして
+    FreeBSD の支持に対して補助を受けた、
+    さまざまな人々にスポットライトを当てています。
+
+    Thomas Abthorpe をご紹介します。 われわれは、彼が BSDCan 2009, 2011
+    および 2012 へ参加するための旅費を補助しました。 彼のストーリーを
+    ここ でご覧ください。
+
+-    7 January: 新コミッタ就任: Ian Lepore (src)
+
+December 2012
+
+-    31 December:
+
+    FreeBSD 9.1-RELEASE が公開されました。 インストール前に
+    リリースノート (リリースノートの詳細版) および Errata を読んで、9.1
+    に関する最新情報や問題点などを確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+-    24 December: 新コミッタ就任: Kubilay Kocak (ports)
+
+-    20 December:
+
+    The FreeBSD Foundation は、2012 年の End-of-Year ニュースレター
+    を発行しました。
+
+-    18 December: 新コミッタ就任: Mark Johnston (src)
+
+-    18 December:
+
+    PC-BSD チームから PC-BSD 9.1 がリリースされました (アナウンス)。
+
+-    18 December: 新コミッタ就任: Steven Hartland (src)
+
+-    17 December:
+
+    Faces of FreeBSD シリーズの次のストーリーについてご紹介します。
+    このシリーズは、
+    プロジェクトの開発、カンファレンスの運営やカンファレンスへの旅費、そして
+    FreeBSD の支持に対して補助を受けた、
+    さまざまな人々にスポットライトを当てる良い機会となっています。
+
+    Dan Langille のケースについてご紹介します。 われわれは、2006
+    年から彼が BSDCan に参加するためのスポンサーとなっています。
+    彼のストーリーは ここ でご覧ください。
+
+-    12 December:
+
+    われわれのブログの懸命なる読者であれば、 先週から FreeBSD
+    Foundation's annual year-end fundraising
+    が開始されたことをご存知でしょう。 毎年このキャンペーン中に、50%
+    を超える寄附が行われます。 続きを読む
+
+-    10 December:
+
+    FreeBSD コミュニティへのサポートが、
+    具体的にどのように役立っているかご存知でしょうか？ year-end
+    fundraising キャンペーンとあわせ、
+    われわれのウェブサイトやブログ、Facebook
+    ページにおいて、プロジェクトの開発、
+    カンファレンスの運営やカンファレンスへの旅費、そして FreeBSD
+    の支持に対して補助を受けた、
+    さまざまな人々にスポットライトを当ててみたいと思います。 続きを読む
+
+-    5 December:
+
+    あなたからの寄付は、FreeBSD が利用できる最良の OS
+    となる助けとなります! The FreeBSD Foundation
+    に投資することで、FreeBSD が高性能、安全、
+    安定したオペレーティングシステムであリ続けるための手助けとなります。
+
+    The FreeBSD Foundation は、あなたのような人々のおかげで、 12
+    年にも渡り FreeBSD プロジェクトを支援できることを誇りに思います。
+    続きを読む
+
+-    5 December:
+
+    FreeBSD プロジェクトは、
+    ウェブサイトの利用に関し、匿名化された統計情報の収集を、 Google
+    アナリティクスを用いて開始しました。 詳細については公式 アナウンス
+    をご覧ください。
+
+November 2012
+
+-    26 November: 新コミッタ就任: Takuya ASADA (src)
+
+-    25 November: 新コミッタ就任: Barbara Guida (ports)
+
+-    17 November:
+
+    11 月 11日 (日)、FreeBSD.org クラスタにある 2 台のマシンに
+    おいて不正侵入が確認されました。FreeBSD
+    利用者に影響をおよぼすような変更が加えられた形跡は見つかっていませんが、
+    https://www.freebsd.org/ja/news/2012-compromise.html
+    に書かれている報告を一読いただき、
+    必要な対応をとるようにお願いいたします。
+
+-    5 November: 新コミッタ就任: Bryan Venteicher (src)
+
+-    4 November: 新コミッタ就任: Grzegorz Blach (ports)
+
+-    3 November:
+
+    FreeBSD-9.1 リリースに向けて 3
+    回目のリリース候補版が公開されました。 FreeBSD ミラーサイト
+    において、amd64, i386, sparc64 および powerpc64 アーキテクチャの ISO
+    イメージが 公開 されています。
+
+October 2012
+
+-    24 October: コミット権の範囲の拡大: Erwin Lansing (src, ports)
+
+-    23 October: 新コミッタ就任: Simon J. Gerraty (src)
+
+-    20 October: コミット権の範囲の拡大: Eitan Adler (src, ports, doc)
+
+-    19 October: 新 Ports Managemet チームメンバ: Bernhard Fröhlich
+
+-    10 October:
+
+    FreeBSD-9.1 リリースに向けて 2
+    回目のリリース候補版が公開されました。 FreeBSD ミラーサイト
+    において、amd64, i386, ia64, powerpc および powerpc64
+    アーキテクチャの ISO イメージが 公開 されています。
+
+September 2012
+
+-    15 September: 新コミッタ就任: Peter Jeremy (src)
+
+-    13 September: 新コミッタ就任: Edson Brandi (doc/pt_BR, www/pt_BR)
+
+-    10 September: 新コミッタ就任: Jason E. Hale (ports)
+
+August 2012
+
+-    23 August:
+
+    FreeBSD-9.1 リリースサイクルの最初のリリース候補版が公開されました。
+    FreeBSD ミラーサイト において、amd64, i386 および powerpc64
+    アーキテクチャの ISO イメージが 公開 されています。
+
+-    21 August: 新コミッタ就任: Andrey Zonov (src)
+
+-    1 August: 新コミッタ就任: Bryan Drewery (ports)
+
+July 2012
+
+-    24 July:
+
+    FreeBSD コアチームは、 Gábor Páli が コアチーム Secretary
+    に就任したことをお知らせします。
+
+-    16 July:
+
+    FreeBSD-9.1 リリースサイクルの最初のテストビルドが公開されました。
+    amd64, i386, powerpc64 および sparc64 アーキテクチャの ISO
+    イメージが、 FreeBSD ミラーサイト で 公開 されています。
+
+-    11 July:
+
+    FreeBSD プロジェクトは、 2012 コアチーム選挙の終了をお知らせします。
+    FreeBSD コアチームは、"取締役" にあたるもので、 新しい src
+    コミッタの承認、開発者間に対立があった場合の調停、
+    特定の範囲のサブコミッタ (セキュリティオフィサ、
+    リリースエンジニア、port マネージャ、ウェブマスタなど) の任命、
+    また、必要な際は、管理や方針の決定を行います。 コアチームは、2000
+    年から 2 年おきに FreeBSD の開発者により選ばれています。
+
+    選挙の詳細 (および新しいコアチームのメンバの一覧) については、公式
+    アナウンス をご覧ください。
+
+-    3 July: 新コミッタ就任: Niclas Zeising (doc/www, ports)
+
+June 2012
+
+-    19 June: コミット権の範囲の拡大: Glen Barber (doc, ports)
+
+-    4 June: 新コミッタ就任: Mateusz Guzik (src)
+
+May 2012
+
+-    30 May: 新コミッタ就任: Jase Thew (ports)
+
+-    29 May: 新コミッタ就任: Olivier Duchateau (ports)
+
+-    28 May: 新コミッタ就任: Tom Judge (ports)
+
+-    12 May:
+
+    2012 年 1 月 から 3 月の開発進捗レポート (27 エントリ) が 公開
+    されました。
+
+April 2012
+
+-    26 April: 新コミッタ就任: Isabell Long (doc/www)
+
+-    22 April: 新コミッタ就任: Jeremie Le Hen (src)
+
+-    18 April:
+
+    FreeBSD 8.3-RELEASE が公開されました。 インストール前に
+    リリースノート や Errata を読んで、8.3
+    に関する最新情報や問題点などを確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+-    18 April: 新コミッタ就任: Devin Teske (src)
+
+-    15 April: 新コミッタ就任: Armin Pirkovitsch (ports)
+
+-    13 April: 新コミッタ就任: Monthadar Al Jaberi (src)
+
+-    12 April: 新コミッタ就任: Guido Falsi (ports)
+
+-    2 April:
+
+    FreeBSD-8.3 リリースサイクルにおける 2
+    回目のリリース候補版が公開されました。 amd64, i386 および pc98
+    アーキテクチャの ISO イメージが FreeBSD ミラーサイト で 公開
+    されています。
+
+March 2012
+
+-    23 March: 新コミッタ就任: Cherry G. Mathew (src)
+
+-    12 March: 新コミッタ就任: Benjamin Kaduk (doc/www)
+
+-    6 March:
+
+    FreeBSD-8.3
+    リリースサイクルにおける最初のリリース候補版のビルドが公開されました。
+    amd64, i386 および pc98 アーキテクチャの ISO イメージが、 FreeBSD
+    ミラーサイト で 公開 されています。
+
+-    1 March: 新コミッタ就任: Alex Kozlov (ports)
+
+February 2012
+
+-    20 February:
+
+    FreeBSD-8.3 リリースサイクルの最初のテストビルドが公開されました。
+    amd64, i386 および pc98 アーキテクチャの ISO イメージが、 FreeBSD
+    ミラーサイト で 公開 されています。
+
+-    16 February: 新コミッタ就任: Damjan Marion (src)
+
+-    16 February: 新コミッタ就任: Ben Gray (src)
+
+-    14 February: コミット権の範囲の拡大: Sergey Kandaurov (src, doc)
+
+-    7 February: 新コミッタ就任: Matthew Seaman (ports)
+
+January 2012
+
+-    27 January: 新コミッタ就任: Davide Italiano (src)
+
+-    27 January:
+
+    2011 年 10 月 から 12 月の開発進捗レポート (32 エントリ) が 公開
+    されました。
+
+-    12 January:
+
+    FreeBSD 9.0-RELEASE が公開されました。 インストール前に
+    リリースノート や Errata を読んで、9.0
+    に関する最新情報や問題点などを確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+December 2011
+
+-    16 December: 新コミッタ就任: Jason Helfman (ports)
+
+-    9 December:
+
+    FreeBSD-9.0 リリースサイクルの 3 回目 (そして、おそらく最後)
+    のリリース候補版が公開されました。 amd64, i386, ia64, powerpc,
+    powerpc64 および sparc64 アーキテクチャの ISO イメージが、 FreeBSD
+    ミラーサイト で 公開 されています。 9.0
+    で追加されるたくさんの新しい機能の中で、
+    新しいインストーラの試験が特に必要です。
+    ぜひ、テスト環境で新しいインストーラを試してください。 あるいは
+    freebsd-update(8) ユーティリティを利用して、
+    現在のシステムをアップグレードしてください。
+
+-    8 December: 新コミッタ就任: Pedro Giffuni (src)
+
+-    2 December: 新 Ports Manager 就任: Beat Gätzi
+
+November 2011
+
+-    30 November: 新コミッタ就任: Justin Hibbits (src)
+
+-    17 November:
+
+    FreeBSD-9.0 リリースサイクルの 2
+    回目のリリース候補版が公開されました。 amd64, i386, ia64, powerpc,
+    powerpc64 および sparc64 アーキテクチャの ISO イメージが、 FreeBSD
+    ミラーサイト から 入手 できます。 9.0
+    で追加されるたくさんの新しい機能のひとつである新インストーラの試験が必要です。
+    ぜひ、テスト環境で新しいインストーラを試してください。 あるいは
+    freebsd-update(8) ユーティリティを利用して、
+    現在のシステムからアップグレードしてください。
+
+-    12 November: 新コミッタ就任: Michael Scheidell (ports)
+
+-    11 November: 新コミッタ就任: David Chisnall (src)
+
+-    9 November: 新コミッタ就任: Ruslan Makhmatkhanov (ports)
+
+-    8 November:
+
+    2011 年 7 月 から 9 月の開発進捗レポート (28 エントリ) が 公開
+    されました。
+
+October 2011
+
+-    23 October:
+
+    FreeBSD-9.0 リリースサイクルの最初のリリース候補版が公開されました。
+    amd64, i386, ia64, powerpc, powerpc64 および sparc64
+    アーキテクチャの ISO イメージは、ほとんどの FreeBSD ミラーサイト
+    から 入手 できます。 9.0 で追加されるたくさんの新しい機能のうち、
+    新しく導入されるインストーラのテストが特に必要です。
+    ぜひ、テスト環境で新しいインストーラを試してください。 あるいは
+    freebsd-update(8) ユーティリティを利用して、
+    現在のシステムからアップグレードしてください。
+
+-    6 October: 新コミッタ就任: Alexander V. Chernikov (src)
+
+September 2011
+
+-    28 September:
+
+    FreeBSD-9.0 リリースサイクルの 3
+    回目のテストビルドが公開されました。 amd64, i386, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを FreeBSD ミラーサイト
+    から 入手 できます。 9.0 で追加されるたくさんの新しい機能のうち、
+    新しく導入されるインストーラのテストが特に必要と考えています。
+    ぜひ、テスト環境で新しいインストーラを試してください。
+
+-    27 September: 新コミッタ就任: Jakub Klama (src)
+
+-    19 September: 新コミッタ就任: Gleb Kurtsou (src)
+
+-    18 September: 新コミッタ就任: Robert Millan (src)
+
+-    14 September: 新コミッタ就任: Warren Block (doc/www)
+
+-    14 September:
+
+    2011 年 4 月 から 6 月の開発進捗レポート (36 エントリ) が 公開
+    されました。
+
+-    13 September: 新コミッタ就任: Carlo Strub (ports)
+
+-    7 September:
+
+    FreeBSD-9.0 リリースサイクルの 2
+    回目のテストビルドが公開されました。 amd64, i386, powerpc, powerpc64
+    および sparc64 アーキテクチャの ISO イメージを FreeBSD ミラーサイト
+    から 入手 できます。 9.0
+    ではたくさんの新しい機能が追加される予定ですが、
+    特に新しく導入されるインストーラのテストが必要と考えています。
+    テスト環境において、新しいインストーラをお試しください。
+
+August 2011
+
+-    22 August: 新コミッタ就任: Raphael Kubo da Costa (ports)
+
+-    17 August: 新コミッタ就任: Eitan Adler (ports)
+
+-    9 August:
+
+    FreeBSD Foundation は、今年最初の 2011 年中期ニュースレター
+    を発行しました。 このニュースレターでは、FreeBSD
+    プロジェクトに対する FreeBSD Foundation の支援がまとめられています。
+
+-    1 August:
+
+    FreeBSD-9.0 リリースサイクルの最初のテストビルドが公開されました。
+    amd64, i386, ia64, powerpc, powerpc64 および sparc64
+    アーキテクチャの ISO イメージを FreeBSD ミラーサイト から 入手
+    できます。 9.0 では新しい機能がたくさん追加されました。
+    これらの新しい機能の中で、
+    特にテストして頂きたいと考えているのが新しいインストーラです。
+    ぜひとも、テスト環境で 1 からインストールを行い、
+    新しいインストーラを試してください。
+
+July 2011
+
+-    17 July: コミット権の範囲の拡大: Gavin Atkinson (src, doc)
+
+-    15 July: 新コミッタ就任: Ryan Steinmetz (ports)
+
+June 2011
+
+-    14 June: 新コミッタ就任: Grzegorz Bernacki (src)
+
+-    13 June: 新コミッタ就任: Stephen Montgomery-Smith (ports)
+
+-    11 June: 新コミッタ就任: Chris Rees (ports)
+
+-    6 June:
+
+    FreeBSD Foundation と iXsystems は、 FreeBSD および PC-BSD の
+    IPv6-only テストイメージを アナウンス しました。
+
+-    6 June: 新コミッタ就任: Julien Laffaye (ports)
+
+May 2011
+
+-    25 May: 新コミッタ就任: Aleksandr Rybalko (src)
+
+-    18 May: 新コミッタ就任: Ben Laurie (src)
+
+-    12 May:
+
+    Baptiste Daroussin が、新しく Ports Management
+    チームのメンバーに加わりました。
+
+April 2011
+
+-    27 April:
+
+    2011 年 1 月 から 3 月における開発進捗レポート (34 エントリ) が 公開
+    されました。
+
+March 2011
+
+-    29 March: 新コミッタ就任: Artem Belevich (src)
+
+-    27 March:
+
+    FreeBSD プロジェクトは、Google's 2011 Summer of Code
+    プログラムに参加します。 このプログラムは夏の間に奨学金を提供し、
+    オープンソースプロジェクトに参加する学生を支援します。 FreeBSD
+    プロジェクトにとって今年が 7 年目の参加となり、 2005 年から 2010
+    年の間、 夏の長い期間のコーディングプロジェクトを通して 100
+    人を越える学生の指導に成功しています。
+
+    これまでに成功したプロジェクトには、 Linux ABI 互換機能の改善、NFSv4
+    ACLs, TCP レグレッションテスト、 FUSE
+    ファイルシステムのサポートがあり、
+    その他にも数え切れないプロジェクトがあります。 多くの学生は FreeBSD
+    の開発者になり、 FreeBSD Foundation
+    の継続的な支援を通じて、世界中で開催されている FreeBSD
+    の開発者のイベントにも参加しています。
+
+    我こそは、と思う方はぜひとも応募してください。
+    申し込みや締め切りなど、詳細については FreeBSD Summer Projects
+    ページ をご覧ください。
+
+-    18 March: 新コミッタ就任: Sofian Brabez (ports)
+
+-    13 March: 新コミッタ就任: Pawel Pekala (ports)
+
+-    10 March: FreeBSD Ports Management Team は、 Thomas Abthorpe
+    がすべての投票権をもつメンバーに就任したことをお知らせします。
+
+-    5 March: 新コミッタ就任: Steven G. Kargl (src)
+
+February 2011
+
+-    24 February:
+
+    FreeBSD 8.2-RELEASE が公開されました。 インストール前に
+    リリースノート および Errata を読んで、8.2
+    に関する最新情報や問題点などを確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+-    24 February:
+
+    FreeBSD 7.4-RELEASE が公開されました。 インストール前に
+    リリースノート および Errata を読んで、7.4
+    に関する最新情報や問題点などを確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+-    18 February: コミット権限の拡大: Martin Wilke (src, ports, doc)
+
+-    3 February:
+
+    FreeBSD-7.4/8.2 リリースサイクルにおける 3 回目の (おそらく最後の)
+    リリース候補版のビルドが公開されました。 8.2-RC3 は amd64, i386,
+    ia64, pc98, powerpc そして sparc64 のアーキテクチャで利用できます。
+    7.4-RC3 は amd64, i386, pc98 そして sparc64
+    アーキテクチャで利用できます。 これらのアーキテクチャの ISO
+    イメージは、 ほとんどの FreeBSD ミラーサイト
+    からダウンロードできます。
+    これらのリリースに関するより詳しい情報については、公式の アナウンス
+    をご覧ください。
+
+January 2011
+
+-    25 January:
+
+    2010 年 10 月 から 12 月における開発進捗レポート (37 エントリ) が
+    公開 されました。
+
+-    23 January:
+
+    FreeBSD-7.4 リリースサイクルにおける 2
+    回目のリリース候補版のビルドが公開されました。 Tier-1
+    アーキテクチャの ISO イメージは、 ほとんどの FreeBSD ミラーサイト
+    からダウンロードできます。
+    これらのリリースに関するより詳しい情報については、公式の アナウンス
+    をご覧ください。
+
+-    16 January:
+
+    FreeBSD-8.2 リリースサイクルにおける 2
+    回目のリリース候補版のビルドが公開されました。 Tier-1
+    アーキテクチャの ISO イメージは、 ほとんどの FreeBSD ミラーサイト
+    からダウンロードできます。
+    これらのリリースに関するより詳しい情報については、公式の アナウンス
+    をご覧ください。
+
+December 2010
+
+-    27 December:
+
+    FreeBSD-7.4/8.2
+    リリースサイクルにおける最初のリリース候補版のビルドが公開されました。
+    Tier-1 アーキテクチャの ISO イメージは、 ほとんどの FreeBSD
+    ミラーサイト からダウンロードできます。
+    これらのリリースに関するより詳しい情報については、 公式の アナウンス
+    をご覧ください。
+
+-    16 December:
+
+    FreeBSD Foundation は End-of-Year ニュースレター を発行しました。
+    このニュースレターでは、プロジェクトおよびコミュニティに対する 2010
+    年の支援についてまとめられています。
+
+-    11 December:
+
+    FreeBSD-7.4/8.2 リリースサイクルの最初の BETA
+    ビルドが公開されました。 Tier-1 アーキテクチャの ISO イメージは、
+    ほとんどの FreeBSD ミラーサイト から 入手 できます。
+
+-    7 December: 新コミッタ就任: Florian Smeets (ports)
+
+November 2010
+
+-    15 November: 新コミッタ就任: Eygene Ryabinkin (ports)
+
+-    5 November: 新コミッタ就任: Zack Kirsch (src)
+
+October 2010
+
+-    27 October:
+
+    2010 年 7 月 から 9 月における開発進捗レポート (55 エントリ) が 公開
+    されました。
+
+-    16 October: 新コミッタ就任: Frederic Culot (ports)
+
+-    7 October: 新コミッタ就任: Jonathan Anderson (src)
+
+-    5 October: 新コミッタ就任: Sergey Kandaurov (src)
+
+September 2010
+
+-    25 September: 新コミッタ就任: Ganael Laplanche (ports)
+
+-    21 September: 新コミッタ就任: Po-Chuan Hsieh (ports)
+
+-    5 September: 新コミッタ就任: Andreas Tobler (src)
+
+-    3 September: 新コミッタ就任: Steve Wills (ports)
+
+August 2010
+
+-    31 August: 新コミッタ就任: Glen Barber (full doc/www)
+
+-    30 August: 新コミッタ就任: Dimitry Andric (src)
+
+-    1 August: 新コミッタ就任: Oliver Hauer (ports)
+
+July 2010
+
+-    27 July:
+
+    FreeBSD Foundation は 2010 年中期ニュースレター を発行しました。
+    このニュースレターでは、FreeBSD Foundation が FreeBSD
+    プロジェクトに対して行ってきた支援についてまとめられています。
+
+-    27 July: 新コミッタ就任: Baptiste Daroussin (ports)
+
+-    23 July:
+
+    FreeBSD 8.1-RELEASE が公開されました。 インストール前に
+    リリースノート および Errata を読んで、8.1
+    についての最新情報を確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+-    22 July:
+
+    2010 年 4 月 から 6 月における開発進捗レポート (47 エントリ) が 公開
+    されました。
+
+-    21 July: 新コミッタ就任: Andrew Turner (src)
+
+-    20 July:
+
+    PC-BSD 8.1 がリリースされました。 PC-BSD は、FreeBSD
+    ベースのデスクトップオペレーションシステムで、
+    カジュアルなコンピュータユーザがデスクトップシステムを簡単に使えることを目指しています。
+    以前のバージョンからの新しい機能や更新の一覧は ここ にあります。
+
+    新しいリリースを ダウンロード したり DVD を 購入 できます。
+
+-    17 July: 新コミッタ就任: Tijl Coosemans (src)
+
+-    15 July: 新コミッタ就任: Joseph S. Atkinson (ports)
+
+-    14 July:
+
+    FreeBSD プロジェクトは、 2010 コアチーム選挙の終了をお知らせします。
+    FreeBSD コアチームは、"取締役" にあたるものです。 新しい src
+    コミッタの承認、開発者間の対立があった場合の調停、
+    特定の範囲のサブコミッタ
+    (セキュリティオフィサ、リリースエンジニアリング、 port
+    マネージャ、ウェブマスタなど) の任命、
+    また、必要な際は、管理および方針の決定を行います。
+    コアチームは、2000 年から 2 年おきに FreeBSD
+    の開発者により選ばれています。
+
+    選挙の詳細 (および新しいコアチームのメンバの一覧) については、 公式
+    アナウンス をご覧ください。
+
+-    2 July:
+
+    FreeBSD-8.1 リリースサイクルにおける 2 回目の (そしておそらく最後の)
+    リリース候補版のビルドが公開されました。 amd64, i386, ia64, powerpc
+    および sparc64 アーキテクチャの CD ISO イメージは、ほとんどの
+    FreeBSD ミラーサイト からダウンロードできます。
+    本リリースの詳細については、公式 アナウンス をご覧ください。
+
+June 2010
+
+-    18 June:
+
+    FreeBSD-8.1
+    リリースサイクルにおける最初のリリース候補版のビルドが公開されました。
+    Tier-1 アーキテクチャの ISO イメージは、 ほとんどの FreeBSD
+    ミラーサイト から 入手 できます。
+
+-    10 June: 新コミッタ就任: Ashish SHUKLA (ports)
+
+-    9 June: 新コミッタ就任: Brendan Fabeny (ports)
+
+-    4 June: 新コミッタ就任: Matthew Fleming (src)
+
+-    3 June: 新コミッタ就任: Andrey V. Elsukov (src)
+
+-    3 June: 新コミッタ就任: Taras Korenko (doc/ru, www/ru)
+
+May 2010
+
+-    29 May:
+
+    FreeBSD-8.1 リリースサイクルの最初の BETA ビルドが公開されました。
+    Tier-1 アーキテクチャの ISO イメージは、 ほとんどの FreeBSD
+    ミラーサイト から 入手 できます。
+
+-    24 May:
+
+    FreeBSD プロジェクトは、今年も Google's Summer of Code
+    プログラムに参加する学生たちからの質の高い応募を受けました。
+    今年は、このプログラムの一環として FreeBSD
+    プロジェクトと一緒に開発を行う 18 人の学生の提案が採用されました。
+    今年採用されなかったプロジェクトに対しても、 FreeBSD
+    プロジェクトは、
+    いつでも通常のコミュニティのメーリングリストや開発フォーラムを通して、
+    学生たちがオペレーティングシステムの開発をより多く学べるように手助けをしたいと考えています。
+
+    より詳しい情報については、公式 アナウンス をご覧ください。
+    選ばれた学生のプロジェクト一覧は、FreeBSD Summer of Code wiki
+    にあります。 コーディングは 5 月 24 日から開始します。 18
+    人の学生たちが新しく我々のコミュニティへ参加することを一緒に歓迎してください。
+
+-    19 May: 新コミッタ就任: Jayachandran C. (src)
+
+April 2010
+
+-    29 April: コミット権の範囲の拡大: Martin MatuŠka (src, ports)
+
+-    22 April:
+
+    2010 年 1 月 から 3 月における開発進捗レポート (46 エントリ) が 公開
+    されました。
+
+-    20 April: 新コミッタ就任: Randi Harper (src)
+
+-    19 April: 新コミッタ就任: Ryan Stone (src)
+
+-    14 April: 新コミッタ就任: Ana Kukec (src)
+
+-    11 April: コミット権の範囲の拡大: René Ladan (doc-nl, ports)
+
+-    11 April: 新コミッタ就任: Sahil Tandon (ports)
+
+-    5 April: 新コミッタ就任: Giuseppe Pilichi (ports)
+
+-    4 April:
+
+    FreeBSD プロジェクトは、6 年連続で Google Summer of Code
+    プログラムに参加します。
+    大学生や大学院生のみなさんはこの奨学金に応募して、 この夏は FreeBSD
+    オペレーティングシステムの改良に明け暮れてください!
+    詳しい情報については、 FreeBSD Summer of code ページ
+    をご覧ください。
+    このページにはポスターもあるので、近くの大学に張ってくださいね!
+
+March 2010
+
+-    31 March: 新コミッタ就任: Bernhard Fröhlich (ports)
+
+-    23 March:
+
+    FreeBSD 7.3-RELEASE が公開されました。 インストール前に
+    リリースノート および Errata を読んで、7.3
+    についての最新情報を確認してください。 FreeBSD
+    のリリースに関するより詳しい情報については リリース情報
+    をご覧ください。
+
+-    18 March:
+
+    FreeBSD Ports Management Team は、 Thomas Abthorpe の Ports
+    Management Team Secretary 就任をお知らせします。
+
+-    7 March: コミッタ復帰: Niels Heinen (ports)
+
+-    4 March:
+
+    FreeBSD-7.3 リリースサイクルにおける 2 回目の
+    リリース候補版のビルドが公開されました。 Tier-1 アーキテクチャの ISO
+    イメージは、 ほとんどの FreeBSD ミラーサイト から 入手 できます。
+
+-    3 March: 新コミッタ就任: Neel Natu (src)
+
+February 2010
+
+-    22 February:
+
+    PC-BSD 8.0 がリリースされました。 PC-BSD は、FreeBSD
+    ベースのデスクトップオペレーションシステムで、
+    カジュアルなコンピュータユーザがデスクトップシステムを簡単に使えることを目指しています。
+    以前のバージョンからの新しい機能や更新の一覧は ここ にあります。
+
+    新しいリリースを ダウンロード したり DVD を 購入 できます。
+
+-    15 February:
+
+    FreeBSD-7.3
+    リリースサイクルにおける最初のリリース候補版のビルドが公開されました。
+    Tier-1 アーキテクチャの ISO イメージは、 ほとんどの FreeBSD
+    ミラーサイト から 入手 できます。
+
+-    12 February: コミット権の範囲の拡大: Benedict Reuschling (full
+    doc/www)
+
+-    6 February: 新コミッタ就任: Bernhard Schmidt (src)
+
+-    2 February:
+
+    Gábor Kövesdán は、2008/2009 年の Google Summer of Code
+    に参加し、この活動により、ソースコードに対するコミット権を与えられました。
+    最初の作業は、GSoC の結果をツリーに反映させる予定です。
+
+January 2010
+
+-    30 January:
+
+    FreeBSD-7.3 リリースサイクルの最初の BETA ビルドが公開されました。
+    Tier-1 アーキテクチャの ISO イメージは、 ほとんどの FreeBSD
+    ミラーサイト から 入手 できます。
+
+-    29 January: 新コミッタ就任: Bruce Cran (src)
+
+-    28 January: 新コミッタ就任: Ulrich Spörlein (src)
+
+-    26 January: 新コミッタ就任: Romain Tartière (ports)
+
+-    26 January: 新コミッタ就任: Alberto Villa (ports)
+
+-    17 January:
+
+    2009 年 10 月 から 12 月における開発進捗レポート (38 エントリ) が
+    公開 されました。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+最終更新日: 2021年2月15日 by Ryusuke SUZUKI
+
+法律上の注意事項 | © 1995-2023 FreeBSD プロジェクト All rights reserved.
+The mark FreeBSD is a registered trademark of The FreeBSD Foundation and
+is used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact

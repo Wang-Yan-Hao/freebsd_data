@@ -1,0 +1,257 @@
+FreeBSD 4.6-RELEASE/4.6.2-RELEASE Errata
+
+Das FreeBSD Projekt
+
+Deutsche Übersetzung von Udo Erdelhoff
+
+Copyright © 2000, 2001, 2002 The FreeBSD Documentation Project
+
+Copyright © 2001, 2002 The FreeBSD German Documentation Project
+
+$FreeBSD$
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+  Dieses Dokument enthält die Errata für FreeBSD 4.6-RELEASE, also
+  wichtige Informationen, die erst nach der Veröffentlichung bekannt
+  wurden. Dazu gehöhren Ratschläge zur Sicherheit sowie Änderungen in
+  der Software oder Dokumentation, die die Stabilität und die Nutzung
+  beeinträchtigen könnten. Sie sollten immer die aktuelle Version dieses
+  Dokumentes lesen, bevor sie diese Version von FreeBSD installieren.
+
+  Wenn nicht anderes angegeben ist, treffen die hier genannten Punkte
+  auch auf FreeBSD 4.6.2-RELEASE zu. Sinn und Zweck dieser Version ist,
+  bestimmte Probleme 4.6-RELEASE zu behben (Details finden Sie in den
+  Release Notes).
+
+  Dieses Errata für FreeBSD 4.6-RELEASE wird bis zum Erscheinen von
+  FreeBSD 4.8-RELEASE weiter aktualsiert werden.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+1. Einleitung
+
+Dieses Errata enthält ``brandheiße'' Informationen über FreeBSD
+4.6-RELEASE. Bevor Sie diese Version installieren, sollten Sie auf jeden
+Fall dieses Dokument lesen, um über Probleme informiert zu werden, die
+erst nach der Veröffentlichung entdeckt (und vielleicht auch schon
+behoben) wurden.
+
+Die zusammen mit der Veröffentlichung erschienene Version dieses
+Dokumentes (zum Beispiel die Version auf der CDROM) ist per Definition
+veraltet. Allerdings sind im Internet aktualisierte Versionen verfügbar,
+die die ``aktuellen Errata'' für diese Version sind. Diese Versionen
+sind bei http://www.FreeBSD.org/releases/ und allen aktuellen Mirrors
+dieser Webseite verfügbar.
+
+Die Snapshots von FreeBSD 4-STABLE (sowohl die der Quelltexte als auch
+die der ausführbaren Programme) enthalten ebenfalls die zum Zeitpunkt
+ihrer Veröffentlichung aktuelle Version dieses Dokumentes.
+
+Die Liste der FreeBSD CERT security advisories finden Sie bei
+http://www.FreeBSD.org/security/ oder
+ftp://ftp.FreeBSD.org/pub/FreeBSD/CERT/.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+2. Sicherheitshinweise
+
+FreeBSD 4.6-RELEASE enthält eine Korrektur für den in SA-02:23
+beschriebenen Fehler (der Nutzung von Datei-Handles durch set-user-id
+und set-group-id Programme). Leider deckt diese Korrektur nicht alle
+Fälle ab, der Fehler kann immer noch auf Systemen ausgenutzt werden, die
+procfs(5) oder linprocfs(5) verwenden. Die zweite Version des Korrektur
+finden Sie in FreeBSD-SA-02:23. Dieser Fehler wurde in FreeBSD
+4.6.2-RELEASE behoben.
+
+Im Resolver existierte ein Buffer-Überlauf, der von einem entsprechend
+programmierten Domain Name Server oder durch passende DNS-Anfragen eines
+Angreifers ausgenutzt werden konnte, dieser Fehler wurde entfernt.
+Weitere Informationen finden Sie in FreeBSD-SA-02:28. Dieser Fehler
+wurde in FreeBSD 4.6.2-RELEASE behoben.
+
+In tcpdump(1) wurde ein Buffer Overflow beseitigt, der durch defekte
+NFS-Pakete ausgenutzt werden konnte. Weitere Informationen finden Sie in
+FreeBSD-SA-02:29. Dieser Fehler wurde in FreeBSD 4.6.2-RELEASE behoben.
+
+Es ist nicht mehr möglich, ktrace(1) zur Verfolgung des Ablaufs von
+Prozessen zu benutzen, wenn diese vorher priveligiert waren. Falls ein
+Prozess sensitive Informationen erhalten hat, bevor er die Privilegien
+abgegeben hat, können diese nicht mehr an die Außenwelt gelangen.
+Weitere Informationen finden Sie in FreeBSD-SA-02:30. Dieser Fehler
+wurde in FreeBSD 4.6.2-RELEASE behoben.
+
+In pppd(8) existierte eine Race Condition, durch die es möglich war, die
+Berechtigungen einer beliebigen Datei zu ändern, dieser Fehler wurde
+korrigiert. Weitere Informationen finden Sie in FreeBSD-SA-02:32. Dieser
+Fehler wurde in FreeBSD 4.6.2-RELEASE behoben.
+
+In OpenSSL wurden mehrere Buffer Overflows gefunden, die Fehler wurden
+durch ein Update der von FreeBSD verwendeten Version von OpenSSL
+beseitigt. Weitere Informationen finden Sie in FreeBSD-SA-02:33. Dieser
+Fehler wurde in FreeBSD 4.6.2-RELEASE behoben.
+
+Ein Buffer Overflow im Heap des XDR Decoders wurde beseitigt. Weitere
+Informationen finden Sie in FreeBSD-SA-02:34. Dieser Fehler wurde in
+FreeBSD 4.6.2-RELEASE behoben.
+
+Ein Fehler, durch den ein Benutzer beliebige Blöcke auf einem
+FFS-Dateisystem lesen und schreiben konnte, wurde beseitigt. Weitere
+Informationen finden Sie in FreeBSD-SA-02:35. Dieser Fehler wurde in
+FreeBSD 4.6.2-RELEASE behoben.
+
+Im NFS Server wurde ein Fehler beseitigt, durch den es möglich war, über
+das Netzwerk einen Denial-of-Service Angriff durchzuführen. Weitere
+Informationen finden Sie in FreeBSD-SA-02:36. Dieser Fehler wurde in
+FreeBSD 4.6.2-RELEASE behoben.
+
+Im kqueue(2) System wurde ein Fehler beseitigt, durch den ein lokaler
+Benutzer einen Systemabsturz herbeiführen konnte. Weitere Informationen
+finden Sie in FreeBSD-SA-02:37. Dieser Fehler wurde in FreeBSD
+4.6.2-RELEASE behoben.
+
+Bei mehrere Systemfunktionen wurden Fehler bei der Prüfung der Parameter
+beseitigt, durch die größere Teile des Kernel-Speichers an den Aufrufer
+zurückgegeben werden konnten. Weitere Informationen finden Sie in
+FreeBSD-SA-02:38. Dieser Fehler wurde kurz vor dem Erscheinen von
+FreeBSD 4.6.2-RELEASE entdeckt und trifft auch diese Version nicht zu,
+auch wenn der entsprechende Hinweis in den Release Notes fehlt.
+
+In libkvm wurde ein Fehler beseitigt, durch den Applikationen ungewollt
+schützenswerte Datei-Handles nach außen weiterleiten konnten. Weitere
+Informationen finden Sie in FreeBSD-SA-02:39.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+3. Aktuelle Informationen
+
+Bei FreeBSD 4.6-RELEASE wurde der Standardwert für die maximale
+Fenstergröße bei TCP von 65536 Byte auf 57334 Byte gesenkt, um die
+Zusammenarbeit mit bestimmten Versionen von IPFilter zu verbessern.
+
+Wird der Port archivers/zip auf einer Alpha benutzt, kann es bei der
+Zusammenarbeit mit dem Kernel zu Fehlern kommen. Nach der
+Veröffentlichung wurde eine entsprechende Korrektur in das FreeBSD Ports
+Archiv integriert, der Fehler tritt nicht mehr auf, wenn Sie mindestens
+Version 2.3_1 des Ports archivers/zip verwenden.
+
+Auf der Alpha mußten die Treiber de(4) und txp(4) aus dem Kernel aus der
+Bootdiskette entfernt werden, sie stehen jetzt als Module auf der
+mfsroot Diskette zur Verfügung. Diese Änderung war notwendig, damit der
+Kernel für die Alpha auf die Bootdiskette paßt. Diese Änderung sollte
+keine Auswirkungen auf den Betrieb haben, da sysinstall(8) automatisch
+alle Module lädt, die es auf der mfsroot Diskette findet.
+
+Das Package x11-servers/XFree86-4-Server wurde in letzter Minute
+mehrfach geändert, damit die diversen Programme zur Konfiguration des X
+Servers das von moused(8) bereitgestellte Gerät sysmouse besser
+unterstützen können. Die binären Packages auf der CD und den FTP-Servern
+enthalten die korrigierte Version mit der Versionsnummer 4.2.0_3.
+Allerdings enthält die mitgelieferte Ports Collection die Korrekturen
+nicht. Um eine aktuellere Version zu erhalten, müssen Sie Ihre Kopie der
+Ports Collection mit CVSup aktualisieren.
+
+Einige Anwender von FreeBSD/i386 haben von Problemen bei der Benutzung
+bestimmter ATAPI CD-ROMs berichtet. Dazu gehören unter anderem die
+Geräte AOpen 48x, 52x und 56x sowie das Mitsumi Slim CRMC-SR242S CDROM.
+Ein typisches Symptom ist die folgende Fehlermeldung auf der Konsole
+und/oder im dmesg(8) Speicher, die teilweise zum Systemabsturz führt:
+
+    acd0: READ_BIG command timeout - resetting
+    ata1: resetting devices .. done
+
+In einigen Fällen verhindert dieser Fehler die Installation von FreeBSD
+von einem betroffenen CD-ROM. Es kann dazu kommen, daß sich
+sysinstall(8) beim Auspacken der Distributionsdateien auf CD
+``aufhängt''.
+
+In den meisten (aber leider nicht in allen) Fällen kann der Fehler in
+zwei Schritten umgangen werden. Der erste Schritt muß vor der
+Installation von CD erfolgen:
+
+1.  Starten Sie den Rechner, während die FreeBSD Installation-CD im
+    Laufwerk ist.
+
+2.  Warten Sie, bis die folgende Meldung erscheint:
+
+        Hit [Enter] to boot immediately, or any other key for command prompt.
+        Booting [kernel] in 9 seconds...
+
+3.  Drücken Sie jetz sofort auf die Leertaste, um Sie den Startvorgang
+    zu unterbrechen.
+
+4.  Geben Sie an der Eingabeaufforderung (ok) die folgenden Befehle ein:
+
+        ok set hw.ata.ata_dma="1"
+
+        ok set hw.ata.atapi_dma="1"
+
+        ok boot
+
+5.  Setzen Sie die Installation ganz normal fort.
+
+Der zweite Teil der Korrektur erfolgt, nachdem die Installation von CD
+(oder eine Aktualisierung über die Sourcen) erfolgreich abgeschlossen
+wurde. Jetzt wird der Treiber ata(4) so konfiguriert, daß in Zukunft
+korrekt auf das CD-ROM zugegriffen werden kann:
+
+1.  Fügen Sie die beiden folgenden Zeilen in die Datei /boot/loader.conf
+    ein. Falls die Datei noch nicht existieren sollte, legen Sie sich
+    einfach an):
+
+        hw.ata.ata_dma="1"
+        hw.ata.atapi_dma="1"
+
+2.  Starten Sie den Rechner neu.
+
+Der Fehler wurde am 31. Juli 2002 in FreeBSD 4.7-RELEASE behoben, diese
+Korrektur ist auch in FreeBSD 4.6.2-RELEASE enthalten.
+
+Durch einen Fehler bei der Erzeugung der Release sind einige der
+Verzeichnisse unterhalb /usr/share/examples leer (speziell
+/usr/share/examples/cvsup). Dieses Problem kann teilweise durch die
+Installation der Distribution sshare via sysinstall(8) behoben werden.
+Wählen Sie dazu im Hauptmenü den Punkt Configure, dann Distributions,
+dann src und schließlich share. Die fehlenden Dateien stehen dann in
+/usr/src/share/examples zur Verfügung. Das Problem wurde am 16. Juli
+2002 in FreeBSD 4.7-RELEASE behoben, diese Korrektur ist auch in FreeBSD
+4.6.2-RELEASE enthalten.
+
+Weil ein Eintrag vergessen wurde, kann es dazu kommen, daß pkg_add -r
+bei 4.6-RELEASE und 4.6.2-RELEASE versucht, für FreeBSD -STABLE
+vorgesehene Packages zu kopieren, statt die für die jweilige version
+vorgesehenen Packages zu verwenden. Um diesen Fehler zu umgehen, müssen
+Sie die Variable PACKAGESITE auf den richtigen Wert setzen, bevor Sie
+pkg_add(1) aufrufen. Wenn Sie z.B. auf einem System mit 4.6.2-RELEASE
+und csh(1) arbeiten, müssen Sie den folgenden Befehl eingeben:
+
+    % setenv PACKAGESITE
+    \
+    ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/i386/packages-4.6.2-release/
+    Latest/
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Diese Datei und andere Dokumente zu dieser Version sind bei
+ftp://ftp.FreeBSD.org/verfuegbar.
+
+Wenn Sie Fragen zu FreeBSD haben, lesen Sie erst die Dokumentation,
+bevor Sie sich an <de-bsd-questions@de.FreeBSD.org> wenden.
+
+Wenn Sie Fragen zu dieser Dokumentation haben, wenden Sie sich an
+<de-bsd-translators@de.FreeBSD.org>.

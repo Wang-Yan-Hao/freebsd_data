@@ -1,0 +1,141 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 4.5 Release Process
+
+Introduction
+
+The release engineering team (re@FreeBSD.org) for FreeBSD 4.5 consists
+of Murray Stokely, Steve Price, Robert Watson, and John Baldwin.
+
+The x86 build team consists of Murray Stokely and John Baldwin.
+
+The Alpha build team consists of David O'Brien, Wilko Bulte, John
+Baldwin, and Murray Stokely.
+
+The third-party packages are handled by Steve Price and the Ports
+managers (portmgr@FreeBSD.org).
+
+General discussions about the release engineering process or quality
+assurance issues should be sent to the public freebsd-qa mailing list.
+MFC requests should be sent to re@FreeBSD.org.
+
+For an overview of the entire release engineering process, please see
+this document.
+
+Schedule
+
+  ------------------------------------- ------------- ------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Action                                Expected      Actual        Description
+  Reminder announcement                 01 Dec 2001   03 Dec 2001   Release Engineers send announcement email to developers@FreeBSD.org with a rough schedule for the FreeBSD 4.5 release.
+  4.5-PRERELEASE                        20 Dec 2001   20 Dec 2001   newvers.sh, param.h, and release.ent updated.
+  FTP site updated                      20 Dec 2001   20 Dec 2001   pkg_add -r works for 4.5-PRERELEASE machines.
+  Code freeze begins                    20 Dec 2001   20 Dec 2001   After this date, all commits to the RELENG_4 branch must be approved by re@FreeBSD.org. Certain highly active documentation committers are exempt from this rule for routine man page / release note updates. Heads-up emails should be sent to the developers@, stable@, and qa@ lists.
+  Commercial software demos updated.    05 Jan 2002   24 Jan 2002   The second disc contains commercial software demos, these demos should be updated to contain the latest versions.
+  4.5-RC                                09 Jan 2002   09 Jan 2002   newvers.sh and release.ent updated.
+  Announce the Ports Freeze             09 Jan 2002   09 Jan 2002   Someone from portmgr should email freebsd-ports@ and CC: developers@ to set a date for the tagging of the ports tree. Will set this date at January 22nd.
+  Heads up to hubs                      09 Jan 2002   09 Jan 2002   A message should be sent to freebsd-hubs@FreeBSD.org before the release is uploaded. The site administrators have frequently requested advance notice for new ISOs.
+  First release candidate               09 Jan 2002   09 Jan 2002   The first release candidate for the x86 and Alpha architecture is released. ISO images should be uploaded to ftp-master.FreeBSD.org and releng4.FreeBSD.org. A network install directory should be uploaded to ftp-master.FreeBSD.org. The packages and XF86336 directories may be symlinked to save space, as long as you're sure to use relative symlinks.
+  Heads up to -stable                   09 Jan 2002   09 Jan 2002   A message should be sent to qa@FreeBSD.org and stable@FreeBSD.org after the release is uploaded.
+  Second release candidate              ?? Jan 2002   18 Jan 2002   Note: the release date of this candidate depends on the user experience with RC1.
+  Third release candidate               23 Jan 2002   24 Jan 2002   4.5 RC3 for the x86 and Alpha architectures will be made available from ftp.FreeBSD.org and the mirrors.
+  Ports tree frozen.                    22 Jan 2002   22 Jan 2002   CVSROOT/avail locks out everyone but the person who does the tagging. It will take approximately 2 hours to tag the entire ports tree with the RELEASE_4_5_0 tag. After this time, the ports/ tree will be re-opened for commits, but commits made after tagging will not go in 4.5-RELEASE.
+  Final package build starts            22 Jan 2002   22 Jan 2002   The ports cluster and bento build final packages.
+  Package split                         23 Jan 2002   29 Jan 2002   The packages must be split so that packages with similar dependencies appear on each of the four discs, with the most popular packages appearing on the first disc.
+  doc tree tagged.                      24 Jan 2002   24 Jan 2002   RELEASE_4_5_0 tag for docs.
+  RELENG_4_5 branch                     25 Jan 2002   26 Jan 2002   The release branch is created.
+  Note to freebsd-stable@               25 Jan 2002   26 Jan 2002   A note should be sent to the freebsd-stable to let over-anxious users know that the tags have been created but the release still isn't ready. Tags may be slid before the announcement goes out. Point users to freebsd-qa@ for details.
+  Version numbers bumped.               25 Jan 2002   25 Jan 2002   The files listed here are updated to reflect the fact that this is FreeBSD 4.5.
+  src tree tagged.                      27 Jan 2002   27 Jan 2002   RELEASE_4_5_0_RELEASE tag for src.
+  Update man.cgi on the website.        25 Jan 2002   --            Make sure the 4.5 manual pages are being displayed by default for the man->web gateway.
+  Archive the errata for FreeBSD 4.4.   25 Jan 2002   25 Jan 2002   The new RELNOTESng errata file should be setup, and the old errata file archived.
+  Final builds.                         28 Jan 2002   28 Jan 2002   Final builds for x86 and Alpha in a pristine environment.
+  Warn hubs@FreeBSD.org                 28 Jan 2002   28 Jan 2002   Heads up email to hubs@FreeBSD.org to give admins time to prepare for the load spike to come.
+  Upload to ftp-master.                 28 Jan 2002   28 Jan 2002   release and packages uploaded to ftp-master.FreeBSD.org
+  Announcement                          28 Jan 2002   29 Jan 2002   Announcement sent out after a majority of the mirrors have received the bits.
+  ------------------------------------- ------------- ------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+It's been pointed out that this table is rather boring. Bruce Mah gave a
+slightly more interesting rendition of the 12 days of Code-Freeze.
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

@@ -1,0 +1,379 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   BSD Now
+-   Discord
+-   Events
+-   Forums
+-   IRC
+-   Mailing Lists
+-   Reddit
+-   Twitter
+-   User Groups
+-   YouTube
+
+-   RSS 2.0 Feed
+
+FreeBSD Events
+
+Please send details of any FreeBSD related events or events that are of
+interest for FreeBSD users which are not listed here to
+freebsd-doc@FreeBSD.org.
+
+Countries and regions displayed in dark red on the map below are hosting
+upcoming FreeBSD-related events. Countries that have hosted
+FreeBSD-related events in the past show up in yellow or orange, with
+darker colors representing a larger number of previous events.
+
+[events map]
+
+Current/Upcoming Events:
+
+September 2023
+
+-   EuroBSDcon 2023, University of Coimbra, Coimbra, Portugal
+    14 - 17 September, 2023
+    EuroBSDcon is the European annual technical conference gathering
+    users and developers working on and with 4.4BSD (Berkeley Software
+    Distribution) based operating systems family and related projects.
+
+October 2023
+
+-   Hackathon 202310, Modirum, Oslo, Norway
+    04 - 06 October, 2023
+    A FreeBSD hackathon will be held in Oslo on the 4th, 5th and 6th of
+    October 2023. Modirum MDPay has kindly offered to host us in their
+    offices in Oslo.
+
+Past Events:
+
+May 2023
+
+-   BSDCan 2023, University of Ottawa, Ottawa, Canada
+    17 - 20 May, 2023
+    A four day BSD conference held in Ottawa, Canada. BSDCan hosts talks
+    and tutorials on a range of topics based around the BSD family of
+    operating systems.
+
+April 2023
+
+-   AsiaBSDCon 2023, Tokyo University of Science, Tokyo, Japan
+    30 - 02 April, 2023
+    AsiaBSDCon is a conference for users and developers on BSD based
+    systems. The conference is for anyone developing, deploying and
+    using systems based on FreeBSD, NetBSD, OpenBSD, DragonFlyBSD,
+    Darwin and MacOS X. AsiaBSDCon is a technical conference and aims to
+    collect the best technical papers and presentations available to
+    ensure that the latest developments in our open source community are
+    shared with the widest possible audience.
+
+March 2023
+
+-   Google Summer of Code, FreeBSD Office Hours – YouTube, ,
+    22 - 22 March, 2023
+    On Wednesday March 22 at 17:00 UTC, we will share information about
+    contributing to FreeBSD through Google Summer of Code.
+
+February 2023
+
+-   FOSDEM 2023, ULB, Brussels, Belgium
+    04 - 05 February, 2023
+    Every year, thousands of developers of free and open source software
+    from all over the world gather at the event in Brussels. In 2023,
+    after 2 years of online events, they will gather in Brussels again.
+    Be sure to stop by the FreeBSD stand and BSD devroom to get the
+    latest on FreeBSD.
+
+December 2022
+
+-   An Introduction to FreeBSD Services – Drew Gurkowski, FreeBSD
+    Fridays – The FreeBSD Foundation, ,
+    16 - 16 December, 2022
+    Setting up printing, audio, and Wi-Fi on a fresh FreeBSD install.
+
+November 2022
+
+-   November 2022 FreeBSD Vendor Summit, Online, ,
+    03 - 04 November, 2022
+    Join us for the online November 2022FreeBSD Vendor Summit. The event
+    will consist of virtual, half day sessions, taking place November
+    3-4, 2022. It’s free to attend, but we ask that you register with
+    the eventbrite system to gain access to the meeting room and
+    separate hallway track. The vendor summit is sponsored by the
+    FreeBSD Foundation.
+
+October 2022
+
+-   Aberdeen Hackathon 2022, 57 North Hacklab, Aberdeen, Scotland
+    08 - 08 October, 2022
+    A FreeBSD Hackathon will take place in Aberdeen, Scotland from the
+    5th of October to the 8th of October 2022. The hackathon will be
+    hosted by 57 North Hacklab.
+
+September 2022
+
+-   EuroBSDcon 2022, The Freihaus Campus of Vienna's Technical
+    University, Vienna, Austria
+    15 - 18 September, 2022
+    EuroBSDcon is the European annual technical conference gathering
+    users and developers working on and with 4.4BSD (Berkeley Software
+    Distribution) based operating systems family and related projects.
+
+June 2022
+
+-   June 2022 FreeBSD Developer Summit, Online, ,
+    16 - 17 June, 2022
+    Join us for the online June 2022 FreeBSD Developer Summit. The event
+    will consist of virtual, half day sessions, taking place June
+    16-17, 2022. It is free to attend, but we ask that you register with
+    the conference system to gain access to the meeting room (more
+    information to come). In addition to developer discussion sessions,
+    we will also have vendor talks.
+
+-   BSDCan 2022, Online, ,
+    01 - 04 June, 2022
+    A four day BSD conference held online. BSDCan hosts talks and
+    tutorials on a range of topics based around the BSD family of
+    operating systems.
+
+March 2022
+
+-   Google Summer of Code, FreeBSD Office Hours – YouTube, ,
+    16 - 16 March, 2022
+    The then upcoming Google Summer of Code, and how mentees could
+    become involved.
+
+February 2022
+
+-   How to Track FreeBSD Using Git, Part 2 – Warner Losh, FreeBSD
+    Fridays – YouTube, ,
+    11 - 11 February, 2022
+    A primer on how to track FreeBSD using Git. The basics of obtaining
+    and compiling FreeBSD, then more advanced topics – including
+    managing local changes, and how to contribute those changes to the
+    FreeBSD Project.
+
+-   FOSDEM 2022, Online, ,
+    05 - 06 February, 2022
+    Every year, thousands of developers of free and open source software
+    from all over the world gather at the event in Brussels. In 2022,
+    they will gather online. Be sure to stop by the FreeBSD stand and
+    BSD devroom to get the latest on FreeBSD.
+
+November 2021
+
+-   FreeBSD Vendor Summit 2021, Online, ,
+    18 - 19 November, 2021
+    Join us for the online November 2021 FreeBSD Vendor Summit. The
+    event will consist of virtual, half day sessions, taking place
+    November 18-19, 2021. It’s free to attend, but we ask that you
+    register with the eventbrite system to gain access to the meeting
+    room and separate hallway track. In addition to vendor talks, we
+    will also have discussion sessions. If you have a specific topic
+    you’d like to discuss, please contact devsummit@FreeBSD.org
+
+October 2021
+
+-   FreeBSD Fridays: The Writing Scholar’s Guide to FreeBSD,
+    https://live.freebsd.org/FreeBSD/freebsdfriday/, ,
+    22 - 22 October, 2021
+    On October 22th 2021 from 17:00 UTC there will be an 1 hour live
+    streaming session of the FreeBSD Fridays. The topic of this week is:
+    "The Writing Scholar’s Guide to FreeBSD" by Corey Stephan.
+
+September 2021
+
+-   EuroBSDcon 2021, Online, ,
+    17 - 19 September, 2021
+    EuroBSDcon is the European annual technical conference gathering
+    users and developers working on and with 4.4BSD (Berkeley Software
+    Distribution) based operating systems family and related projects.
+
+-   FreeBSD Office Hours, live.FreeBSD.org, ,
+    13 - 13 September, 2021
+    Warner Losh will be leading a discussion at our next core office
+    hours from those people that have expressed an interest in moving to
+    the next set of development tools. The discussion will take place on
+    13th September 1700 hours (UTC). We would have a limited number of
+    panelists and there will be Q&A using the IRC. If you have any
+    questions that you would like to be addressed you can also send the
+    questions to core@freebsd.org beforehand.
+
+August 2021
+
+-   FreeBSD Friday: How to Track FreeBSD Using Git,
+    https://live.freebsd.org/FreeBSD/freebsdfriday/, ,
+    13 - 13 August, 2021
+    On August 13th 2021 from 17:00 UTC there will be an 1 hour live
+    streaming session of the FreeBSD Fridays. The topic of this week is:
+    "How to Track FreeBSD Using Git" by Warner Losh.
+
+June 2021
+
+-   FreeBSD Friday: How to Submit a Patch to FreeBSD,
+    https://live.freebsd.org/FreeBSD/freebsdfriday/, ,
+    18 - 18 June, 2021
+    On June 18th 2021 from 17:00 UTC there will be an 1 hour live
+    streaming session of the FreeBSD Fridays. The topic of this week is:
+    "How to Submit a Patch to #FreeBSD" by Drew Gurkowski and Ed Maste.
+
+-   June 2021 FreeBSD Developer Summit, Online, ,
+    09 - 11 June, 2021
+    Join us for the online June 2021 FreeBSD Developer Summit. The event
+    will consist of virtual, half day sessions, taking place June
+    9-11, 2021. It is free to attend, but we ask that you register with
+    the eventbrite system to gain access to the meeting room. In
+    addition to developer discussion sessions, we will also have vendor
+    talks.
+
+-   FreeBSD Friday: An Introduction to BastilleBSD,
+    https://live.freebsd.org/FreeBSD/freebsdfriday/, ,
+    04 - 04 June, 2021
+    On June 4th 2021 from 17:00 UTC there will be an 1 hour live
+    streaming session of the FreeBSD Fridays. The topic of this week is:
+    "An Introduction to BastilleBSD" by Christer Edwards.
+
+May 2021
+
+-   FreeBSD Office Hours, live.FreeBSD.org, ,
+    26 - 26 May, 2021
+    On May 26th at 02:00 UTC we will hold a "FreeBSD Office Hours", an
+    interactive online event where users, contributors, and developers
+    can ask questions or to offer comments. The topic will be "Best
+    Practices virtual panel discussion", hosted by Warner Losh. For more
+    information, please see the Office Hours page on the FreeBSD wiki.
+
+-   FreeBSD Office Hours, live.FreeBSD.org, ,
+    12 - 12 May, 2021
+    On May 12th at 18:00 UTC we will hold a "FreeBSD Office Hours", an
+    interactive online event where users, contributors, and developers
+    can ask questions or to offer comments. The topic will be "Best
+    Practices virtual panel discussion", hosted by Warner Losh. For more
+    information, please see the Office Hours page on the FreeBSD wiki.
+
+March 2021
+
+-   FreeBSD Office Hours, live.FreeBSD.org, ,
+    31 - 31 March, 2021
+    On March 31st at 18:00 UTC we will hold a "FreeBSD Office Hours", an
+    interactive online event where users, contributors, and developers
+    can ask questions or to offer comments. The topic will be "Survey
+    Results", hosted by Sean Chittenden. For more information, please
+    see the Office Hours page on the FreeBSD wiki.
+
+-   FreeBSD Office Hours, live.FreeBSD.org, ,
+    24 - 24 March, 2021
+    On March 24th at 21:00 UTC we will hold a "FreeBSD Office Hours", an
+    interactive online event where users, contributors, and developers
+    can ask questions or to offer comments. The topic will be "Bhyve
+    Q&A", hosted by Peter Grehan. For more information, please see the
+    Office Hours page on the FreeBSD wiki.
+
+February 2021
+
+-   FOSDEM 2021, Online, ,
+    06 - 07 February, 2021
+    Every year, thousands of developers of free and open source software
+    from all over the world gather at the event in Brussels. In 2021,
+    they will gather online. Be sure to stop by the FreeBSD stand and
+    BSD devroom to get the latest on FreeBSD.
+
+January 2021
+
+-   FreeBSD Office Hours, live.FreeBSD.org, ,
+    27 - 27 January, 2021
+    On January 27th at 21:00 UTC we will hold a "FreeBSD Office Hours",
+    an interactive online event where users, contributors, and
+    developers can ask questions or to offer comments. The topic will be
+    "Bhyve Q&A", hosted by Peter Grehan. For more information, please
+    see the Office Hours page on the FreeBSD wiki.
+
+Events from past years:
+
+-   2020
+-   2019
+-   2018
+-   2017
+-   2016
+-   2015
+-   2014
+-   2013
+-   2012
+-   2011
+-   2010
+-   2009
+-   2008
+-   2007
+-   2006
+-   2005
+-   2004
+-   2003
+
+------------------------------------------------------------------------
+
+Last modified on: January 26, 2021 by Sergio Carlavilla Delgado
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

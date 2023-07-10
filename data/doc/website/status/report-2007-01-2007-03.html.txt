@@ -1,0 +1,837 @@
+Skip site navigation (1) Skip section navigation (2)
+
+Header And Logo
+
+[FreeBSD]
+
+.
+
+Donate to FreeBSD
+
+.
+
+Peripheral Links
+
+Search
+
+ 
+
+Site Navigation
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+Section Navigation
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Multimedia
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Introduction
+
+This report covers FreeBSD related projects between January and March
+2007. This quarter ended with a big bang as a port of Sun's critically
+acclaimed ZFS was added to the tree and thus will be available in the
+upcoming FreeBSD 7.0 release. Earlier this year exciting benchmark
+results showed the fruits of our SMP work. Read more on the details in
+the "SMP Scalability" report.
+
+During the summer, FreeBSD will once again take part in Google's Summer
+of Code initiative. Student selection is underway and we are looking
+forward to a couple of exciting projects to come.
+
+BSDCan is approaching rapidly, and will be held May 16-19th in Ottawa.
+
+Thanks to all the reporters for the excellent work! We hope you enjoy
+reading.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Projects
+
+-   FreeBSD and ZFS
+-   SMP Scalability
+-   USB
+
+FreeBSD Team Reports
+
+-   FreeBSD Security Officer and Security Team
+-   Problem Report Database
+-   Release Engineering
+-   The FreeBSD Foundation
+
+Kernel
+
+-   Building Linux Device Drivers on FreeBSD
+-   Update of the Linux compatibility environment in the kernel
+
+Network Infrastructure
+
+-   FAST_IPSEC Upgrade
+-   Importing trunk(4) from OpenBSD
+-   Intel 3945ABG Wireless LAN Driver: wpi
+-   Multi-link PPP daemon (MPD)
+
+Userland Programs
+
+-   GCC 4.1 integration
+-   malloc(3)
+
+Ports
+
+-   Ports Collection
+-   X.Org 7.2 integration
+
+Miscellaneous
+
+-   BSDCan 2007
+-   EuroBSDCon 2007
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Projects
+
+FreeBSD and ZFS
+
+  ----------------------- ---------------------------------------------------------------------------------
+  Links                   
+  Source code.            URL: http://perforce.freebsd.org/depotTreeBrowser.cgi?FSPC=//depot/user/pjd/zfs
+  OpenSolaris ZFS site.   URL: http://www.opensolaris.org/os/community/zfs/
+  ZFS commit announce.    URL: http://lists.freebsd.org/pipermail/freebsd-current/2007-April/070544.html
+  ZFS - Quick Start.      URL: http://lists.freebsd.org/pipermail/freebsd-current/2007-April/070616.html
+  ----------------------- ---------------------------------------------------------------------------------
+
+Contact: Pawel Jakub Dawidek <pjd@FreeBSD.org>
+
+The ZFS file system in now part of the FreeBSD operating system. ZFS was
+ported from the OpenSolaris operating system and is under CDDL license.
+As an experimental feature ZFS will be available in FreeBSD 7.0-RELEASE.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+SMP Scalability
+
+  ----------------------------- ---------------------------------------------------------
+  Links                         
+  MySQL scaling                 URL: http://people.freebsd.org/~kris/scaling/mysql.html
+  Remaining Giant-locked code   URL: http://wiki.freebsd.org/SMPTODO
+  ----------------------------- ---------------------------------------------------------
+
+Contact: Kris Kennaway <kris@FreeBSD.org>
+Contact: Jeff Roberson <jeff@FreeBSD.org>
+Contact: Attilio Rao <attilio@FreeBSD.org>
+Contact: Robert Watson <rwatson@FreeBSD.org>
+
+Over the past few months there has been a substantially increased focus
+on improving scalability of FreeBSD on large SMP hardware. This has been
+driven in part by the new availability of 8-core hardware to the
+project, which allows easy profiling of scalability bottlenecks and
+benchmarking of proposed changes. Significant progress has been made on
+certain application workloads such as MySQL and PostgreSQL, with the
+result that FreeBSD 7 now has excellent scaling to at least 8-CPU
+systems with prospects for further improvements. Progress with other
+application workloads has been limited by the need to set up a suitable
+test case; please contact me if you are interested in helping. As part
+of this general effort, work is progressing steadily on removing the
+last remaining Giant-locked code from the kernel. A complete list of
+remaining Giant-locked code is found here:
+http://wiki.freebsd.org/SMPTODO Many of these sub-tasks have owners, but
+some do not. The major remaining Giant-locked subsystem with no owner is
+the TTY subsystem. In parallel, profiling of contention and bottlenecks
+in other subsystems has lead to a number of experimental changes which
+are being developed. Work is in progress by Jeff Roberson and Attilio
+Rao to break up the global scheduler spinlock in favor of a set of
+per-CPU scheduling locks, which is expected to improve performance on
+systems with many CPUs. Experimental changes by Robert Watson to allow
+for multiple netisr threads show good promise for improving loopback IP
+performance on large SMP systems, which can otherwise easily saturate a
+single netisr thread. A variety of other changes are being profiled and
+evaluated to improve SMP performance under various workloads. The
+majority of these changes are collected in the
+//depot/user/kris/contention/ Perforce branch.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+USB
+
+  ------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------
+  Links                                                         
+  Current USB files                                             URL: http://perforce.freebsd.org/depotTreeBrowser.cgi?FSPC=//depot/projects/usb/src/sys/dev/usb&HIDEDEL=NO
+  My USB Homepage                                               URL: http://www.turbocat.net/~hselasky/usb4bsd
+  Code reference for the new USB stack and USB device drivers   URL: http://www.turbocat.net/~hselasky/usb4bsd/dev_new_usb.pdf
+  ------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------
+
+Contact: Hans Petter Sirevaag Selasky <hselasky@freebsd.org>
+
+During the last three months not too much has changed. Here is a quick
+list of changes:
+
+1.  There has been some cleanups in the UCOM layer, generally to to
+    create a context for all the callbacks so that they can call
+    sleeping functions. This is achieved using the USB config thread
+    system. The reason for this is that the code becomes simpler when
+    synchronous operation is applied versus asynchronous. But
+    asynchronous behavior is the most secure, hence then all USB
+    resources are preallocated for each transfer. After the change, only
+    data transfers are done asynchronously. All configuration is now
+    done synchronously. This makes the USB device drivers look more like
+    in the old USB stack.
+2.  moscom.c has been imported from OpenBSD. It is called umoscom.c
+    under FreeBSD.
+3.  ugensa.c has been imported from NetBSD.
+4.  f_axe.c has now has support for Ax88178 and Ax88772, which is
+    derived from OpenBSD.
+
+In my last status report I asked for access to Sparc64 boxes with
+FreeBSD installed. Testing is ongoing and some problems remain with EHCI
+PCI Cards. I am not exactly sure where the problem is, but it appears
+that DMA-able memory does not get synced properly.
+
+Markus Brueffer is still working on the USB HID parser and support.
+Nothing has been committed yet.
+
+Several people have reported success with my new USB stack. Some claim
+2x improvements, others have seen more. But don't expect too much.
+
+If you want to test the new USB stack, checkout the USB perforce tree or
+download the SVN version of the USB driver from my USB homepage. At the
+moment the tarballs are a little out of date.
+
+Ideas and comments with regard to the new USB API are welcome at
+freebsd-usb@freebsd.org .
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD Team Reports
+
+FreeBSD Security Officer and Security Team
+
+  ------- -----------------------------------------------------------
+  Links   
+          URL: http://www.freebsd.org/security/
+          URL: http://www.freebsd.org/administration.html#t-secteam
+          URL: http://vuxml.freebsd.org/
+  ------- -----------------------------------------------------------
+
+Contact: Security Officer <security-officer@FreeBSD.org>
+Contact: Security Team <security-team@FreeBSD.org>
+
+In the time since the last status report, one security advisory has been
+issued concerning a problem in the base system of FreeBSD; this problem
+was in "contributed" code maintained outside of FreeBSD. In addition,
+several Errata Notices have been issued in collaboration with the
+release engineering team, including one concerning FreeBSD Update. The
+Vulnerabilities and Exposures Markup Language (VuXML) document has
+continued to be updated by the Security Team and Ports Committers
+documenting new vulnerabilities in the FreeBSD Ports Collection; since
+the last status report, 21 new entries have been added, bringing the
+total up to 890.
+
+The following FreeBSD releases are supported by the FreeBSD Security
+Team: FreeBSD 5.5, FreeBSD 6.1, and FreeBSD 6.2. Of particular note,
+FreeBSD 4.11 and FreeBSD 6.0 are no longer supported. The respective End
+of Life dates of supported releases are listed on the web site.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Problem Report Database
+
+  ------- ------------------------------------------------
+  Links   
+  GNATS   URL: http://www.freebsd.org/support.html#gnats
+  ------- ------------------------------------------------
+
+Contact: Mark Linimon <bugmeister_at_freebsd_dot_org>
+
+We have added Remko Lodder to the bugmeister team. Remko has been doing
+a great deal of work to go through antique PRs, especially in the i386
+category, and it was time to recognize that hard work. As a result of
+his work the i386 count is at a multi-year low.
+
+Remko has also been instrumental in working with some new volunteers who
+are interested in finding out how they can contribute. Our current plans
+are to ask them to look through the PR backlog and, firstly, ask for
+feedback from the submitters, and secondly, identify PRs that need
+action by committers. We also have some committers who have volunteered
+to review those PRs. If you are interested in helping, please subscribe
+to bugbusters@FreeBSD.org. Our thanks to our current helpers, including
+Harrison Grundy.
+
+The overall PR count has dropped to around 5100, a significant
+reduction.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Release Engineering
+
+  ------- ----------------------------------------
+  Links   
+          URL: http://www.FreeBSD.org/releng/
+          URL: http://www.FreeBSD.org/snapshots/
+  ------- ----------------------------------------
+
+Contact: Release Engineering Team <re@FreeBSD.org>
+
+During the past quarter, the Release Engineering team has begun planning
+and preparing for FreeBSD 7.0, which is scheduled for release later in
+2007. The HEAD codeline has been placed in a "slush" mode, meaning that
+large changes should be coordinated with the Release Engineering team
+before being committed.
+
+The RE team also produced snapshots of FreeBSD 6.2-STABLE and
+7.0-CURRENT for February and March 2007, corresponding roughly to the
+state of those development branches at the start of the respective
+months. While they have not had the benefit of extensive testing, and
+should not be used in production, they can be useful for experimenting
+with or testing new features.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+The FreeBSD Foundation
+
+  ------------------------ ---------------------------------------
+  Links                    
+  The FreeBSD Foundation   URL: http://www.freebsdfoundation.org
+  ------------------------ ---------------------------------------
+
+Contact: Deb Goodkin <deb@FreeBSD.org>
+
+The FreeBSD Foundation ended Q1 raising over $65,000. We're a quarter of
+the way to our goal of raising $250,000 this year. We continued our
+mission of supporting developer communication by helping FreeBSD
+developers attend AsiaBSDCon. We are a sponsor of BSDCan and are
+currently accepting travel grant applications for this conference.
+
+The foundation provided support that helped the ZFS file system
+development. We continued working to upgrade the project's network
+testbed with 10Gigabit interconnects. We attended SCALE where we
+received an offer from No Starch Press to include a foundation ad in
+their BSD books. Our first ad will appear in the book "Designing BSD
+Rootkits."
+
+For more information on what we've been up to, check out our website at
+http://www.freebsdfoundation.org .
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Kernel
+
+Building Linux Device Drivers on FreeBSD
+
+  ------- -----------------------------------------------------------------
+  Links   
+          URL: http://info.iet.unipi.it/~luigi/FreeBSD/linux_bsd_kld.html
+  ------- -----------------------------------------------------------------
+
+Contact: Luigi Rizzo <rizzo@icir.org>
+
+The above URL documents some work done around January to build an
+emulation layer for the Linux kernel API that would allow Linux device
+driver to be built on FreeBSD with as little as possible modifications.
+Initially the project focused on USB webcams, a category of devices for
+which there was basically no support so far. The emulation layer,
+available as a port ( devel/linux-kmod-compat ) simulates enough of the
+Linux USB stack to let us build, from unmodified Linux sources, two
+webcam drivers, also available as ports ( multimedia/linux-gspca-kmod
+and multimedia/linux-ov511-kmod ), with the former supporting over 200
+different cameras.
+
+While some of the functions map one-to-one, for others it was necessary
+to build a full emulation (e.g. collecting input from various function
+calls, and then mapping sets of Linux data structures into functionally
+equivalent sets of FreeBSD data structures). But overall, this project
+shows that the software interfaces are reasonably orthogonal to each
+other so one does not need to implement the full Linux kernel API to get
+something working. More work is necessary to cover other aspects of the
+Linux kernel API, e.g. memory mapping, PCI bus access, and the network
+stack API, so we can extend support to other families of peripherals.
+
+Open tasks:
+
+1.  Implement more subsystems (e.g. the network interface API; the
+    memory management/pci bus access API).
+2.  Address licensing issues. In the current port, the C code is
+    entirely new and under a FreeBSD license. Many of the headers have
+    been rewritten (and documented) from scratch (and so under a FreeBSD
+    license as well). Some of the other headers are still taken from
+    various Linux distributions and need to be rewritten to generate
+    BSD-licensed code that can be imported in the kernel instead of
+    being made available as a port. While this is not a concern with GNU
+    drivers, it may be an important feature for drivers that are
+    available under a dual license.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Update of the Linux compatibility environment in the kernel
+
+  ------------------------------------------------------------------- -----------------------------------------------
+  Links                                                               
+  Wiki page about the linux compatibility environment.                URL: http://wiki.FreeBSD.org/linux-kernel
+  Wiki page about the linux test project testsuite success reports.   URL: http://wiki.FreeBSD.org/linux-kernel/ltp
+  ------------------------------------------------------------------- -----------------------------------------------
+
+Contact: Alexander Leidinger <netchild@FreeBSD.org>
+Contact: Roman Divacky <rdivacky@FreeBSD.org>
+Contact: Emulation Mailinglist <emulation@FreeBSD.org>
+
+Since the last status report AMD64 was feature synced with i386. Notably
+TLS and futexes are now available on AMD64. Many thanks to Jung-Uk Kim
+for doing the TLS work.
+
+Currently the focus is to implement the *at() family of linux syscalls
+and to find and fix the remaining futex problems.
+
+We need some more testers and bug reporters. So if you have a little bit
+of time and a favorite linux application, please play around with it on
+-CURRENT. If there is a problem, have a look at the Wiki if we already
+know about it and report on emulation@. We are specially interested in
+reports about the 2.6 compatibility (sysctl
+compat.linux.osversion=2.6.16), but only with the most recent -current
+and maybe with some patches we have in the perforce repository
+(available from the wiki).
+
+We would like to thank all the people which tested the changes /
+submitted patches and thus helped improve the linux compatibility
+environment.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Network Infrastructure
+
+FAST_IPSEC Upgrade
+
+  ------------------------------ -------------------------------------------------------------
+  Links                          
+  Latest patch against CURRENT   URL: http://people.freebsd.org/~gnn/fast_ipv6.20070430.diff
+  ------------------------------ -------------------------------------------------------------
+
+Contact: George Neville-Neil <gnn@freebsd.org>
+Contact: Bjoern Zeeb <bz@freebsd.org>
+
+There are currently two p4 branches being used for this work:
+gnn_fast_ipsec: a dual stack branch which contains both Kame and
+FAST_IPSEC with v6 enabled. gnn_radical_ipsec: a single stack branch,
+still in progress, where Kame IPsec has been removed and only FAST
+remains.
+
+Open tasks:
+
+1.  Test the patch!
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Importing trunk(4) from OpenBSD
+
+  ------- ----------------------------------------------------------------
+  Links   
+          URL: http://people.freebsd.org/~thompsa/if_trunk-20070402.diff
+  ------- ----------------------------------------------------------------
+
+Contact: Andrew Thompson <thompsa@FreeBSD.org>
+
+Work has completed to port over trunk(4) from OpenBSD and this also
+includes merging 802.3ad LACP from agr(4) in NetBSD. This driver allows
+aggregation of multiple network interfaces as one virtual interface
+using a number of different protocols/algorithms.
+
+-   failover - Sends traffic through the secondary port if the master
+    becomes inactive.
+-   fec - Supports Cisco Fast EtherChannel.
+-   lacp - Supports the IEEE 802.3ad Link Aggregation Control Protocol
+    (LACP) and the Marker Protocol.
+-   loadbalance - Static loadbalancing using an outgoing hash.
+-   roundrobin - Distributes outgoing traffic using a round-robin
+    scheduler through all active ports.
+
+This will be committed shortly, further testing is welcome.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Intel 3945ABG Wireless LAN Driver: wpi
+
+  ------- ------------------------------------------------------------------------------------
+  Links   
+          URL: http://perforce.FreeBSD.org/depotTreeBrowser.cgi?FSPC=//depot/user/benjsc/wpi
+          URL: http://www.clearchain.com/wiki/Wpi
+  ------- ------------------------------------------------------------------------------------
+
+Contact: Benjamin Close <benjsc@freebsd.org>
+
+Work is slowly continuing on this driver, focusing mainly on dealing
+with the newly released firmware for the card. The old firmware was not
+redistributable, the new firmware can be redistributed but has a
+completely different API. With the new firmware changes almost complete,
+the driver is approaching a state ready for -CURRENT.
+
+Open tasks:
+
+1.  Fix mbuf leakage (potential fix pending).
+2.  Integrate s/w control of radio transmitter.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Multi-link PPP daemon (MPD)
+
+  -------------- -----------------------------------------------
+  Links          
+  Project home   URL: http://sourceforge.net/projects/mpd/
+  ChangeLog      URL: http://mpd.sourceforge.net/doc/mpd5.html
+  -------------- -----------------------------------------------
+
+Contact: Alexander Motin <mav@alkar.net>
+
+Stable release 4.1 of mpd4 branch was released in February providing
+many new features and fixes. Mpd3 branch was declared legacy.
+
+Since the release several new features have been implemented in CVS:
+
+-   Link repeater functionality (aka L2TP/PPTP Access Concentrator),
+-   Per-interface traffic filtering using ng_bpf,
+-   Very fast traffic shaping/rate-limiting using ng_car.
+
+ng_car node has been updated, to support shaping and very fast
+Cisco-like rate-limiting. ng_ppp node has been completely re-factored to
+confirm to the protocol stack model.
+
+Open tasks:
+
+1.  LAC/PAC testing.
+2.  Traffic filtering/shaping/rate-limiting testing.
+3.  PPTP modification for multiple bindings support.
+4.  Dynamic link/bundle creation.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Userland Programs
+
+GCC 4.1 integration
+
+  -------
+  Links
+  -------
+
+Contact: Alexander Kabaev <kan@FreeBSD.org>
+Contact: Kris Kennaway <kris@FreeBSD.org>
+
+A version of GCC 4.1 is being prepared for inclusion into FreeBSD
+7.0-CURRENT. Work was started late in 2006 but progress on certain
+technical points (e.g. correctly integrating and bootstrapping a shared
+libgcc_s into the build) was slow due to lack of developer time. The
+remaining outstanding issue is that compiling with -O2 is shown to lead
+to runtime failures of certain binaries (e.g. some port builds); it is
+not currently known whether these are due to application errors or GCC
+miscompilations. It is believed that the current snapshot is otherwise
+ready for inclusion, and this will likely happen within a week or two.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+malloc(3)
+
+  ----------------------------------- --------------------------------------------------------------------------------
+  Links                               
+  malloc(3) (hopefully) set for 7.0   URL: http://lists.freebsd.org/pipermail/freebsd-current/2007-March/070303.html
+  ----------------------------------- --------------------------------------------------------------------------------
+
+Contact: Jason Evans <jasone@freebsd.org>
+
+malloc(3) has recently been enhanced to reduce memory overhead,
+fragmentation, and mapped memory retention. As an added bonus, it tends
+to be a bit faster. See the above URL for my email to the -current
+mailing list for a more detailed description of the enhancements.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Ports
+
+Ports Collection
+
+  ------------------------------------------------------------------ ------------------------------------------------------------------------------
+  Links                                                              
+  The FreeBSD Ports Collection                                       URL: http://www.freebsd.org/ports/
+  Contributing to the FreeBSD Ports Collection                       URL: http://www.freebsd.org/doc/en_US.ISO8859-1/articles/contributing-ports/
+  FreeBSD ports unfetchable distfile survey (Bill Fenner's report)   URL: http://people.freebsd.org/~fenner/portsurvey/
+  FreeBSD ports monitoring system                                    URL: http://portsmon.FreeBSD.org/index.html
+  The FreeBSD Ports Management Team                                  URL: http://www.freebsd.org/portmgr/index.html
+  marcuscom tinderbox                                                URL: http://tinderbox.marcuscom.com
+  ------------------------------------------------------------------ ------------------------------------------------------------------------------
+
+Contact: Mark Linimon <linimon@FreeBSD.org>
+
+The ports count is nearing 17,000. The PR count has been stable at
+around 700. The 'new port' PR backlog is at a multi-year low. We
+appreciate all the hard work of our ports committers.
+
+Since the long 6.2 release cycle ended, portmgr has once again been able
+to do experimental ports runs. As a result of six run/commit cycles, the
+portmgr PR count is now the lowest in quite some time. Please see the
+CHANGES and UPDATING files for details. Many thanks to Pav among others
+for keeping the build cluster busy.
+
+We have received new hardware, resulting in a significant speedup of our
+package building capability: the AMD64 package builds now use 4 8-core
+machines (and one lonely UP system), which means a full AMD64 build is
+about 5 times faster than it was. Also, the i386 cluster gained an
+8-core and roughly doubled its performance too. Two of the sparc64 build
+machines have recently brought back online, so package builds there have
+been restarted there after a long period offline.
+
+linimon continues to work on improvements to portsmon to allow graphing
+of the dependent ports of ignored/failed ports. This work will be
+presented at BSDCan. In addition, pages that show the state of port
+uploads on ftp*.FreeBSD.org have been added, as well as ports that have
+NO_PACKAGE set. Also, the individual port overview page now shows the
+latest package that has been uploaded to the ftp servers for each
+buildenv.
+
+A number of absent maintainers have been replaced by some new volunteers
+who had been sending PRs to update and/or fix their ports. Welcome! This
+helps to spread the workload.
+
+Since the last report, support for FreeBSD 4.X has been dropped from the
+Ports Collection. Anyone still using RELENG_4 should have stayed with
+the ports infrastructure as of the RELEASE_4_EOL tag, as later commits
+remove that support. 4.X served us long and well but the burden of
+trying to support 4 major branches finally became too much to ask of our
+volunteers. Use of 4.X, even with the RELEASE_4_EOL tag, is no longer
+recommended; we recommend either 6.2-RELEASE or RELENG_6, depending on
+your needs.
+
+There have been new releases of the ports tinderbox code, the portmaster
+update utility, and portupgrade. A new utility, pkgupgrade, has been
+introduced by Michel Talon, which appears interesting.
+
+KDE was updated to 3.5.6.
+
+GNOME was updated to 2.18.
+
+XFree86 version 3 was removed as being years out of date.
+
+We have added 3 new committers since the last report.
+
+Open tasks:
+
+1.  Most of the remaining ports PRs are "existing port/PR assigned to
+    committer". Although the maintainer-timeout policy is helping to
+    keep the backlog down, we are going to need to do more to get the
+    ports in the shape they really need to be in.
+2.  Although we have added many maintainers, we still have many
+    unmaintained ports. The number of buildable packages on AMD64 lags
+    behind a bit; sparc64 requires even more work.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+X.Org 7.2 integration
+
+  ------- ------------------------------------------
+  Links   
+          URL: http://wiki.freebsd.org/ModularXorg
+  ------- ------------------------------------------
+
+Contact: Florent Thoumie <flz@FreeBSD.org>
+Contact: Dejan Lesjak <lesi@FreeBSD.org>
+Contact: Kris Kennaway <kris@FreeBSD.org>
+
+X.Org 7.2 is now on final approach for landing into the ports tree. Work
+had proceeded at a slow pace for the first few months of the year due to
+reduced availability of flz@, the single developer working on
+integration. Recently lesi@ was recruited back into the task and
+readiness of the ports collection was pushed to completion (i.e. there
+are no major regressions apparent on package builds). The remaining
+tasks which need to be completed are a review of the diff to make sure
+no unintentional changes or regressions slip in to the CVS tree in the
+big merge, and completion of an upgrade script to manage the migration
+from X.Org 6.9 (X.Org 7.2 is so fundamentally different that it cannot
+be upgraded "automatically" using the existing tools like portupgrade).
+We hope to have these finished within a week or two, at which stage the
+ports collection will be frozen for the integration, and we will likely
+remain in a ``mini-freeze'' for a week or two in order to focus
+committer attention on resolving the inevitable undetected problems
+which will emerge from this major change.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Miscellaneous
+
+BSDCan 2007
+
+  ------------- ----------------------------------
+  Links         
+  BSDCan 2007   URL: http://www.bsdcan.org/2007/
+  ------------- ----------------------------------
+
+Contact: Dan Langille <dan@langille.org>
+
+The Schedule and the Tutorials have been released. Once again, we have a
+very strong collection of Speakers .
+
+BSDCan: Low Cost. High Value. Something for Everyone.
+
+Everyone is going to be there. Make your plans now.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+EuroBSDCon 2007
+
+  ------- ----------------------------------
+  Links   
+          URL: http://2007.EuroBSDCon.org/
+  ------- ----------------------------------
+
+Contact: EuroBSDCon 2007 Organizing Committee <info@EuroBSDCon.dk>
+
+The sixth EuroBSDCon will take place at Symbion in Copenhagen, Denmark
+on Friday the 14th and Saturday 15th of September 2007.
+
+The estimated price for the two day conference is 200EUR, excluding
+Legoland trip and social event. The whole-day trip to Legoland is
+expected to cost around 130EUR including transportation, some food on
+the way, and entry fee. Arrangements have been made with a newly
+renovated Hostel which offers beds for 23EUR per night and 10EUR
+breakfast. A lounge with sponsored Internet connection will be available
+at the Hostel. Staying at the hostel is of course entirely optional and
+several Hotels exists in the area. Reservation for the conference and
+exact prices are expected to be ready no later than 1st of May.
+
+As of this writing 10 presentations have been accepted and more are in
+the process of being evaluated.
+
+For FreeBSD Developers, a by invitation Developers summit will be held
+in connection with the conference. Exactly when this will take place has
+not yet been decided.
+
+We are still looking for more sponsors.
+
+A public IRC channel #eurobsdcon on EFnet has been created for
+discussion and questions about the conference.
+
+More details will follow on the EuroBSDCon 2007 web site as they become
+available.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+News Home | Status Home
+
+Site Map | Legal Notices | © 1995–2021 The FreeBSD Project. All rights
+reserved.

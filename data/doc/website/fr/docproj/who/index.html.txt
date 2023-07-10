@@ -1,0 +1,107 @@
+[FreeBSD The Power to Serve]
+
+Faire un don à FreeBSD
+
+ 
+
+-   Accueil
+
+-   A propos
+    -   Introduction
+    -   Fonctionnalités
+    -   Prosélytisme
+    -   Marketing
+    -   Politique de confidentialité
+    -   Projects
+    -   Logiciels portés
+
+-   Obtenir FreeBSD
+    -   Information sur les versions
+    -   Production des versions
+
+-   Documentation
+    -   FAQ
+    -   Manuel de référence
+    -   Manuel du porteur d'application
+    -   Manuel du développeur
+    -   Committer's Guide
+    -   Pages de manuel
+    -   Présentations et papiers
+    -   Manuel d'introduction au projet de documentation
+    -   Tous les livres et articles
+
+-   Communauté
+    -   Listes de diffusion
+    -   Forums
+    -   Groupes d'utilisateurs
+    -   Événements
+    -   Journal FreeBSD
+    -   Q&R (externe)
+
+-   Développeurs
+    -   Idées de project
+    -   Dépôt Git
+    -   Dépôt Subversion
+    -   Miroir GitHub
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Revendeurs
+    -   Information de sécurité
+    -   Rapport de bogue
+    -   Envoyer un rapport de bogue
+    -   Ressources Web
+
+-   Fondation
+    -   Don d'argent
+    -   Don de matériel
+
+-   Documentation
+-   FAQ
+-   Manuel de référence
+-   Pages de manuel
+-   Présentations et papiers
+-   Livres et articles en ligne
+-   Publications
+-   Ressources Web
+-   Pour les débutants
+-   Projet de documentation
+-   Archive
+
+Le projet de documentation FreeBSD : qui sommes-nous?
+
+A l’origine du projet se trouve un groupe de personnes, plutôt bien
+soudé, et dont la seule chose en commun est d’avoir tous souscrit à la
+liste de diffusion FreeBSD-doc@FreeBSD.org.
+
+Certains d’entre eux ont le droit effectuer des changements directement
+dans l’arborescence de la documentation. Vous pouvez consulter une liste
+complète de tous les développeurs FreeBSD qui ont le droit d’effectuer
+des modifications ainsi qu’une liste des principaux participants au
+Projet de Documentation FreeBSD.
+
+D’autres personnes n’ont pas ce droit, mais ils écrivent et soumettent
+néanmoins leur travail. Une fois que la documentation a été proposée en
+suivant ces instructions, l’un des participans avec droits de
+modification la relira et l’intégrera aux documentations existantes.
+
+Si vous souhaitez aider le projet de documentation (et je souhaite
+vivement que vous le fassiez) tout ce que vous avez à faire est de
+souscrire à la liste de diffusion et de participer. Dès que cela est
+fait, vous êtes membre du projet.
+
+Le site de documentation FreeBSD
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19 juin 2021 by Danilo G. Baio
+
+Legal Notices | © 1995-2023 Le Projet FreeBSD All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of La fondation FreeBSD.
+Contact

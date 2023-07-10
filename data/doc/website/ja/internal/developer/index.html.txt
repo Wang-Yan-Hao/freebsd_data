@@ -1,0 +1,137 @@
+[FreeBSD The Power to Serve]
+
+FreeBSD への寄付
+
+ 
+
+-   ホーム
+
+-   FreeBSD とは
+    -   FreeBSD が初めてという方へ
+    -   特徴
+    -   プロモーション活動
+    -   マーケティング活動
+    -   プライバシーポリシー
+    -   Projects
+    -   Ports
+
+-   FreeBSD の入手
+    -   リリース情報
+    -   リリースエンジニアリング
+
+-   ドキュメント
+    -   FAQ
+    -   ハンドブック
+    -   port 作成者のためのハンドブック
+    -   開発者のためのハンドブック
+    -   Committer's Guide
+    -   マニュアルページ
+    -   Presentations and Papers
+    -   新しい貢献者のためのドキュメンテーションプロジェクト入門
+    -   すべての Books と Articles
+
+-   コミュニティ
+    -   メーリングリスト
+    -   フォーラム
+    -   ユーザグループ
+    -   イベント
+    -   FreeBSD ジャーナル
+    -   Q&A (外部)
+
+-   開発
+    -   プロジェクトアイディア
+    -   Git リポジトリ
+    -   Subversion リポジトリ
+    -   GitHub ミラー
+    -   コードレビュー (Phabricator)
+    -   Wiki
+    -   継続的インテグレーションサービス
+
+-   サポート
+    -   ベンダ
+    -   セキュリティ情報
+    -   障害報告
+    -   障害報告の提出
+    -   ウェブ上の情報
+
+-   財団
+    -   寄付
+    -   ハードウェアの寄贈
+
+-   ドキュメント
+-   FAQ
+-   ハンドブック
+-   Manual Pages
+-   Presentations and Papers
+-   Books and Articles Online
+-   Publications
+-   ウェブ上の情報
+-   For Newbies
+-   Documentation Project
+-   Archive
+
+FreeBSD コミッターのためのリソース
+
+コミッターのためのガイド
+
+すべての新規コミッターを対象とした、
+技術的な詳細とポリシーの詳細を含む包括的な文書です。 前者については、
+Subversion VCS, Bugzilla バグ追跡システム、および SSH Quick-Start Guide
+章をご覧ください。
+
+新しいコミッターが知るべきほとんどすべてのことが記述されています。
+より多くのことを知るために、新しい貢献者のための FreeBSD
+ドキュメンテーションプロジェクト入門や Ports ガイドも参照してください。
+
+新しい貢献者のための FreeBSD ドキュメンテーションプロジェクト入門
+
+この入門書には、FreeBSD
+ドキュメンテーションプロジェクトへの貢献を始めるために知っておくべきすべてのことが書いてあります。
+あなたが使うであろう (必須や推奨される) ツールやソフトウェアから、
+ドキュメンテーションプロジェクトの背後にある哲学まで記述しています。
+
+port 作成者のためのハンドブック
+
+FreeBSD ports 作成者のためのガイド。公式的な __FreeBSD_version
+の値のテーブル があります。
+
+FreeBSD Web ページの構築方法
+
+この文書は、FreeBSD Web ページを手動で SVN
+リポジトリから構築して更新する方法を解説しています。
+
+FreeBSD のプロジェクト
+
+-   FreeBSD ドキュメンテーションプロジェクト
+
+-   FreeBSD リリースエンジニアリング
+
+-   FreeBSD ハードウェアプラットフォームプロジェクト
+
+-   FreeBSD 開発プロジェクト
+
+その他のリソース
+
+-   ソースコードリポジトリ
+
+-   バグ報告
+
+-   FreeBSD のセキュリティ情報
+
+-   著作権
+
+-   FreeBSD Wiki
+
+FreeBSD Internal ホーム
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+最終更新日: 2021年6月19日 by Danilo G. Baio
+
+法律上の注意事項 | © 1995-2023 FreeBSD プロジェクト All rights reserved.
+The mark FreeBSD is a registered trademark of The FreeBSD Foundation and
+is used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact

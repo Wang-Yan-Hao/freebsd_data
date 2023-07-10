@@ -1,0 +1,107 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Network Interface API (IfAPI)
+
+Links:
+Original project page URL: link:https://wiki.freebsd.org/projects/ifnet
+
+Contact: Justin Hibbits <jhibbits@FreeBSD.org>
+
+Started back in 2014, the IfAPI (formerly DrvAPI) goal is to hide the
+ifnet(9) structure from network drivers. Instead, all accesses to
+members will go through accessor functions. This allows the network
+stack to be changed without recompiling drivers, as well as potentially
+allowing a single driver to support multiple versions of FreeBSD.
+
+As of now this goal has been achieved in the base system, but several
+ports need to be updated to use the IfAPI. There is a tool to automate
+most of the conversion, in tools/ifnet/convert_ifapi.sh. Documentation
+is also forthcoming, but could use help on that. ifnet(9) needs a lot of
+cleanup, as even some information in it currently is out of date.
+
+Sponsor: Juniper Networks, Inc.
+
+------------------------------------------------------------------------
+
+Last modified on: July 9, 2023 by Justin Hibbits
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

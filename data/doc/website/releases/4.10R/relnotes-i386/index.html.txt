@@ -1,0 +1,445 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD/i386 4.10-RELEASE Release Notes
+
+The FreeBSD Project
+
+Copyright © 2000, 2001, 2002, 2003, 2004 The FreeBSD Documentation
+Project
+
+$FreeBSD: src/release/doc/en_US.ISO8859-1/relnotes/common/new.sgml,v
+1.22.2.410.2.3 2004/05/22 00:22:41 hrs Exp $
+
+The release notes for FreeBSD 4.10-RELEASE contain a summary of the
+changes made to the FreeBSD base system since 4.9-RELEASE. Both changes
+for kernel and userland are listed, as well as applicable security
+advisories for the base system that were issued since the last release.
+Some brief remarks on upgrading are also presented.
+
+------------------------------------------------------------------------
+
+Table of Contents
+
+1 Introduction
+
+2 What's New
+
+2.1 Security Advisories
+
+2.2 Kernel Changes
+
+2.2.1 Platform-Specific Hardware Support
+
+2.2.2 Boot Loader Changes
+
+2.2.3 Network Interface Support
+
+2.2.4 Network Protocols
+
+2.2.5 Disks and Storage
+
+2.2.6 File Systems
+
+2.2.7 PCCARD Support
+
+2.2.8 Multimedia Support
+
+2.3 Userland Changes
+
+2.4 Contributed Software
+
+2.5 Ports/Packages Collection Infrastructure
+
+2.6 Release Engineering and Integration
+
+3 Upgrading from previous releases of FreeBSD
+
+1 Introduction
+
+This document contains the release notes for FreeBSD 4.10-RELEASE on the
+i386 hardware platform. It describes new features of FreeBSD that have
+been added (or changed) since 4.9-RELEASE. It also provides some notes
+on upgrading from previous versions of FreeBSD.
+
+This distribution of FreeBSD 4.10-RELEASE is a release distribution. It
+can be found at ftp://ftp.FreeBSD.org/ or any of its mirrors. More
+information on obtaining this (or other) release distributions of
+FreeBSD can be found in the ``Obtaining FreeBSD'' appendix in the
+FreeBSD Handbook.
+
+For significant information discovered after the release or last-minute
+changes in the release cycle to be otherwise included in the release
+documentation, please read Errata document.
+
+------------------------------------------------------------------------
+
+2 What's New
+
+This section describes the most user-visible new or changed features in
+FreeBSD since 4.9-RELEASE. Typical release note items document new
+drivers or hardware support, new commands or options, major bugfixes, or
+contributed software upgrades. Security advisories for the base system
+that were issued after 4.9-RELEASE are also listed.
+
+------------------------------------------------------------------------
+
+2.1 Security Advisories
+
+A potential denial of service in BIND has been fixed. For more
+information, see security advisory FreeBSD-SA-03:19.
+
+A bug with the System V Shared Memory interface (specifically the
+shmat(2) system call) has been fixed. This bug can cause a shared memory
+segment to reference unallocated kernel memory. In turn, this can permit
+a local attacker to gain unauthorized access to parts of kernel memory,
+possibly resulting in disclosure of sensitive information, bypass of
+access control mechanisms, or privilege escalation. More details can be
+found in security advisory FreeBSD-SA-04:02.
+
+A potential low-bandwidth denial-of-service attack against the FreeBSD
+TCP stack has been prevented by limiting the number of out-of-sequence
+TCP segments that can be held at one time. More details can be found in
+security advisory FreeBSD-SA-04:04.
+
+A bug in OpenSSL's SSL/TLS ChangeCipherSpec message processing could
+result in a null pointer dereference, has been fixed. This could allow a
+remote attacker to crash an OpenSSL-using application and cause a
+denial-of-service on the system. More details can be found in security
+advisory FreeBSD-SA-04:05.
+
+Two programming errors in CVS have been fixed. They allow a server to
+overwrite arbitrary files on the client, and a client to read arbitrary
+files on the server when accessing remote CVS repositories. More details
+can be found in security advisory FreeBSD-SA-04:07.
+
+A bugfix for Heimdal rectifies a problem in which it would not perform
+adequate checking of authentication across autonomous realms. For more
+information, see security advisory FreeBSD-SA-04:08.
+
+A fix in kadmind(8) closes a potential buffer overflow. Details can be
+found in security advisory FreeBSD-SA-04:09.
+
+------------------------------------------------------------------------
+
+2.2 Kernel Changes
+
+The cx(4) driver for Cronyx Sigma synchronous / asynchronous serial
+adapters has been updated to version 4.4.0.
+
+The ctau(4) driver has been added for Cronyx-Tau synchronous serial
+adapters. This driver was known for a long time as ``ct'' in its
+previous life outside the FreeBSD source tree.
+
+  Note: The driver name has changed, but the network interface still has
+  the ``ct'' name.
+
+The dcons(4) ``dumb console'' driver has been added to provide a local
+and remote console. It can be accessed over FireWire using the
+dcons_crom(4) driver. A dconschat(8) utility provides user access to
+dcons(4) devices.
+
+A bug in mmap(2) that pages marked as PROT_NONE may become readable
+under certain circumstances, has been fixed.
+
+The stl(4) driver has been updated to version 5.6.0b1.
+
+The umct(4) driver, which provides support for USB to RS-232 converters
+based on the Magic Control Technology USB-232 has been added.
+
+The usb(4) support has been improved, which includes a lot of bug fixes
+and early support for some USB2 devices.
+
+  Note: umodem(4) now uses /dev/ucom* instead of /dev/umodem* device
+  nodes.
+
+------------------------------------------------------------------------
+
+2.2.1 Platform-Specific Hardware Support
+
+------------------------------------------------------------------------
+
+2.2.2 Boot Loader Changes
+
+------------------------------------------------------------------------
+
+2.2.3 Network Interface Support
+
+A short hiccup in the em(4) during parameter reconfiguration, has been
+fixed.
+
+A bug, which prevents VLAN support in the nge(4) driver from working has
+been fixed.
+
+Several bugs related to polling(4) support in the rl(4) driver have been
+fixed.
+
+The ste(4) driver now supports polling(4).
+
+The hardware TX checksum support of the xl(4) driver has been disabled
+as it does not work correctly and slows down the transmission rate.
+
+------------------------------------------------------------------------
+
+2.2.4 Network Protocols
+
+The DA_OLD_QUIRKS kernel option, which is for the CAM SCSI disk driver (
+cam(4)) has been removed.
+
+The TCP implementation now includes partial (output-only) support for
+RFC 2385 (TCP-MD5) digest support. This feature, enabled with the
+TCP_SIGNATURE and FAST_IPSEC kernel options, is a TCP option for
+authenticating TCP sessions. setkey(8) now includes support for the
+TCP-MD5 class of security associations.
+
+The random ephemeral port allocation, which come from OpenBSD has been
+implemented. This is enabled by default and can be disabled using the
+net.inet.ip.portrange.randomized sysctl.
+
+The ng_vlan(4) NetGraph node type, which supports IEEE 802.1Q VLAN
+tagging has been added.
+
+------------------------------------------------------------------------
+
+2.2.5 Disks and Storage
+
+The amr(4) driver now has system crashdump support.
+
+The twa(4) driver, which supports 3ware's 9000 series PATA/SATA RAID
+controllers has been added.
+
+The umass(4) driver now supports the missing ATAPI MMC commands and
+handles the timeout properly.
+
+------------------------------------------------------------------------
+
+2.2.6 File Systems
+
+------------------------------------------------------------------------
+
+2.2.7 PCCARD Support
+
+------------------------------------------------------------------------
+
+2.2.8 Multimedia Support
+
+------------------------------------------------------------------------
+
+2.3 Userland Changes
+
+disklabel(8) now supports a -f option to work on regular files which
+contain disk images.
+
+ifconfig(8) now supports a staticarp option for an interface, which
+disables the sending of ARP requests for that interface.
+
+ifconfig(8) now prints the polling(4) status on the interface.
+
+killall(1) now supports a -e flag to make the -u operate on effective,
+rather than real, user IDs.
+
+The default mode for the lost+found directory of fsck(8) is now 0700
+instead of 01777.
+
+The libalias library, natd(8), and ppp(8) now support Cisco Skinny
+Station protocol, which is the protocol used by Cisco IP phones to talk
+to Cisco Call Managers. Note that currently having the Call Manager
+behind the NAT gateway is not supported.
+
+libdisk now uses the correct PC98 disk partition value for FreeBSD. This
+permits the sysinstall(8) disk partition editor to correctly create a
+single FreeBSD partition covering the entire disk.
+
+makewhatis(1), formerly a Perl script, has been reimplemented in C.
+
+ps(1) compatibility with POSIX/SUSv3 has been improved. The changes
+include -p for a list of process IDs, -t for a list of terminal names,
+-A which is equivalent to -ax, -G for a list of group IDs, -X which is
+the opposite of -x, and some minor improvements. For more information,
+see ps(1).
+
+pw(8) now supports a -H option, which accepts an encrypted password on a
+file descriptor.
+
+rtld(1) now has support for the dynamic mapping of shared object
+dependencies. More information on using this feature can be found in
+libmap.conf(5).
+
+The sconfig(8) utility was added as a part of cx(4) driver update. It
+replaces the cxconfig utility for managing cx(4) devices.
+
+stat(1) from NetBSD, as of 5 June 2002 has, been imported.
+
+which(1), formerly a Perl script, has been reimplemented in C.
+
+------------------------------------------------------------------------
+
+2.4 Contributed Software
+
+BIND has been updated from version 8.3.4 to version 8.3.7.
+
+OpenSSL has been updated from version 0.9.7c to version 0.9.7d.
+
+sendmail has been updated from version 8.12.9 to version 8.12.11.
+
+------------------------------------------------------------------------
+
+2.5 Ports/Packages Collection Infrastructure
+
+The SIZE attribute for distfiles, which can be used for checking file
+sizes before fetching, has been added and enabled by default.
+DISABLE_SIZE is a user control knob to disable the distfile size
+checking. This is especially useful on old FreeBSD versions which didn't
+have fetch(1) support for this, and for some FTP proxies which always
+report incorrect or bogus sizes.
+
+Two new files have been added to the ports tree to track note-worthy
+changes: ports/CHANGES lists major changes to the Ports Collection and
+its infrastructure. ports/UPDATING describes some potential pitfalls
+that can be encountered when updating certain ports, analogous to
+src/UPDATING for the base system.
+
+------------------------------------------------------------------------
+
+2.6 Release Engineering and Integration
+
+The supported release of GNOME has been updated from 2.4 to 2.6.
+
+  Note: If you are using the older GNOME desktop itself (x11/gnome2),
+  simply upgrading it from the FreeBSD Ports Collection with
+  portupgrade(1) (sysutils/portupgrade) will cause serious problems. If
+  you are a GNOME desktop user, please read the instructions carefully
+  at http://www.FreeBSD.org/gnome/docs/faq26.html, and use the
+  gnome_upgrade.sh script to properly upgrade to GNOME 2.6.
+
+  Note that if you are just a casual user of some of the GNOME
+  libraries, portupgrade(1) should be sufficient to update your ports.
+
+The supported release of KDE has been updated from 3.1.4 to 3.2.2.
+
+------------------------------------------------------------------------
+
+3 Upgrading from previous releases of FreeBSD
+
+If you're upgrading from a previous release of FreeBSD, you generally
+will have three options:
+
+-   Using the binary upgrade option of sysinstall(8). This option is
+    perhaps the quickest, although it presumes that your installation of
+    FreeBSD uses no special compilation options.
+
+-   Performing a complete reinstall of FreeBSD. Technically, this is not
+    an upgrading method, and in any case is usually less convenient than
+    a binary upgrade, in that it requires you to manually backup and
+    restore the contents of /etc. However, it may be useful in cases
+    where you want (or need) to change the partitioning of your disks.
+
+-   From source code in /usr/src. This route is more flexible, but
+    requires more disk space, time, and technical expertise. More
+    information can be found in the ``Using make world'' section of the
+    FreeBSD Handbook. Upgrading from very old versions of FreeBSD may be
+    problematic; in cases like this, it is usually more effective to
+    perform a binary upgrade or a complete reinstall.
+
+Please read the INSTALL.TXT file for more information, preferably before
+beginning an upgrade. If you are upgrading from source, please be sure
+to read /usr/src/UPDATING as well.
+
+Finally, if you want to use one of various means to track the -STABLE or
+-CURRENT branches of FreeBSD, please be sure to consult the ``-CURRENT
+vs. -STABLE'' section of the FreeBSD Handbook.
+
+  Important: Upgrading FreeBSD should, of course, only be attempted
+  after backing up all data and configuration files.
+
+------------------------------------------------------------------------
+
+This file, and other release-related documents, can be downloaded from
+ftp://ftp.FreeBSD.org/.
+
+For questions about FreeBSD, read the documentation before contacting
+<questions@FreeBSD.org>.
+
+For questions about this documentation, e-mail <doc@FreeBSD.org>.
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

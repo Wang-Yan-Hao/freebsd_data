@@ -1,0 +1,217 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   BSD Now
+-   Discord
+-   Events
+-   Forums
+-   IRC
+-   Mailing Lists
+-   Reddit
+-   Twitter
+-   User Groups
+-   YouTube
+
+-   RSS 2.0 Feed
+
+FreeBSD Past Events
+
+Please send details of any FreeBSD related events or events that are of
+interest for FreeBSD users which are not listed here to
+freebsd-doc@FreeBSD.org.
+
+Countries and regions displayed in dark red on the map below are hosting
+upcoming FreeBSD-related events. Countries that have hosted
+FreeBSD-related events in the past show up in yellow or orange, with
+darker colors representing a larger number of previous events.
+
+[events map]
+
+Past Events:
+
+November 2011
+
+-   BSDday Argentina 2011, Universidad Tecnologica Nacional, Buenos
+    Aires City, Argentina
+    05 - 05 November, 2011
+    BSDday Argentina is a conference for users, sysadmins and developers
+    of BSD software and BSD based systems. The conference is for anyone
+    developing, deploying and using systems based on FreeBSD, NetBSD,
+    OpenBSD, DragonFly BSD and other BSDs. BSDday Argentina is a
+    technical conference and aims to collect the best technical papers
+    and presentations available to ensure that the latest developments
+    in our open source community are shared with the widest possible
+    audience.
+
+-   bsd_day(2011), Slovak University of Technology, Bratislava, Slovakia
+    05 - 05 November, 2011
+    A new BSD-Day is approaching again to gather Central European BSD
+    people to meet. The event features developers so they can popularize
+    their work and communicate with users and potential future partners.
+    There are no formalities, papers, registration or participation fee,
+    however the invited developers are encouraged to give a brief talk
+    about their favorite BSD-related topic. The goal is to motivate
+    everybody, especially university students to work with BSD systems.
+
+October 2011
+
+-   EuroBSDCon 2011, , , The Netherlands
+    06 - 09 October, 2011
+    EuroBSDCon is the annual European technical conference for users and
+    developers on BSD based systems. The 10th European BSD Conference
+    will take place in the Netherlands in October, 2010, and include a
+    technical track, tutorials, and FreeBSD developer summit. Topics of
+    interest to the conference include, but are not limited to
+    applications, architecture, implementation, performance and security
+    of BSD based operating systems, as well as topics concerning the
+    economic or organizational aspects of BSD use.
+
+September 2011
+
+-   KyivBSD 2011, , Kiev, Ukraine
+    24 - 24 September, 2011
+    The third KyivBSD conference will take place in Kiev, Ukraine.
+
+June 2011
+
+-   World IPv6 Day, , ,
+    08 - 08 June, 2011
+    World IPv6 Day is a 24-hour IPv6 test-flight organized by The
+    Internet Society on 8 June 2011 0:00 UTC to 23:259 UTC. FreeBSD is
+    planning to contribute by helping to promote IPv6 and help our users
+    in case of immediate IPv6 problems. See our dedicated FreeBSD and
+    World IPv6 Day page for more information and how you can help as
+    well.
+
+May 2011
+
+-   BSDCan 2011, University of Ottawa, Ottawa, Canada
+    10 - 13 May, 2011
+    BSDCan is a developers conference with a strong focus on emerging
+    technologies, research projects, and works in progress. It also
+    features Userland infrastructure projects and invites contributions
+    from both free software developers and those from commercial
+    vendors.
+
+April 2011
+
+-   Grazer Linuxtag 2011, FH Joanneum Graz, Graz, Austria
+    09 - 09 April, 2011
+    The Grazer Linuxtag is a one day event on Linux and free software in
+    general. Besides a FreeBSD booth and the possibility to take the
+    BSDA certification exam there will also be awith live workshops
+    covering different FreeBSD topics. More information can be found
+    here.
+
+March 2011
+
+-   Indiana LinuxFest 2011, Wyndam Indianapolis West Hotel,
+    Indianapolis, USA
+    25 - 27 March, 2011
+    The Indiana LinuxFest is a community F/OSS conference, which is
+    showcasing the best the community has to offer in the way of Free
+    and Open Source Software, Open Hardware, and Free Culture. We are
+    also highlighting the best and brightest from all of these
+    communities from the hobbyist to professional level. During the
+    LinuxFest The BSD Certification Group will offer the possibility to
+    take their BSDA certification exam.
+
+-   AsiaBSDCon 2011, Tokyo University of Science, Tokyo, Japan
+    17 - 20 March, 2011
+    AsiaBSDCon is a conference for users and developers on BSD based
+    systems. The conference is for anyone developing, deploying and
+    using systems based on FreeBSD, NetBSD, OpenBSD, DragonFlyBSD,
+    Darwin and MacOS X. AsiaBSDCon is a technical conference and aims to
+    collect the best technical papers and presentations available to
+    ensure that the latest developments in our open source community are
+    shared with the widest possible audience.
+
+Events from past years:
+
+-   2020
+-   2019
+-   2018
+-   2017
+-   2016
+-   2015
+-   2014
+-   2013
+-   2012
+-   2011
+-   2010
+-   2009
+-   2008
+-   2007
+-   2006
+-   2005
+-   2004
+-   2003
+
+------------------------------------------------------------------------
+
+Last modified on: March 22, 2022 by Li-Wen Hsu
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

@@ -1,0 +1,134 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Vulnerability Mitigations
+
+Contact: Ed Maste <emaste@FreeBSD.org>
+Contact: Konstantin Belousov <kib@FreeBSD.org>
+Contact: Marcin Wojtas <mw@FreeBSD.org>
+Contact: Dawid Górecki <dgr@semihalf.com>
+
+We added support for enforcing a write XOR execute mapping policy. It is
+enabled by setting the kern.elf64.allow_wx and/or kern.elf32.allow_wx
+sysctls to 0 (for 64-bit and 32-bit binaries, respectively). Binaries
+can indicate that they requre writeable and executable mappings by
+setting the NT_FREEBSD_FCTL_WXNEEDED ELF feature bit, set via elfctl.
+
+In addition, elfctl received a few usability improvements to support use
+by ports, targeting different FreeBSD base system versions. We added a
+-i flag to ignore unknown flags (so that the same elfctl invocation
+could be used on older FreeBSD versions) as well as the ability to
+specify features by value.
+
+Flags that request opt-out of a mitigation now have a no prefix to make
+the sense clearer. For example, the flag to indicate that the binary is
+not compatible with ASLR is now named noaslr. Unprefixed flag names are
+still supported, for backwards compatibility, but will emit a warning
+and will be removed in a later version.
+
+The next step is to introduce ports infrastructure to support tagging
+binaries in ports that require special flags. Details can be found in
+PR252629.
+
+Another update is that the base system binaries are now built as
+position-independent executable (PIE) by default, for 64-bit
+architectures. PIE executables are used in conjunction with address
+randomization (ASLR) as a mitigation for certain types of security
+vulnerabilities. The ASLR feature still remains opt-in, however the
+described change allows enabling it using only sysctl knobs, without a
+need to rebuild the image. Enabling PIE results in no material
+performance impact for most workloads.
+
+It is also worth mentioning that a certain number of ports inherit the
+base systems /usr/share/mk infrastructure, and some initially failed to
+build after toggling the PIE setting. All issues detected by executing
+the exp-run were addressed. The details can be found in PR253275.
+
+The next step is to try enabling ASLR by default for 64-bit
+architectures. The patch is under discussion.
+
+Sponsor: The FreeBSD Foundation Sponsor: Stormshield
+
+------------------------------------------------------------------------
+
+Last modified on: May 1, 2021 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

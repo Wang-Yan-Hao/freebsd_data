@@ -1,0 +1,115 @@
+[FreeBSD The Power to Serve]
+
+An FreeBSD spenden
+
+ 
+
+-   Startseite
+
+-   Über FreeBSD
+    -   Für Einsteiger
+    -   Eigenschaften
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Bezugsquellen
+    -   Release Information
+    -   Release Engineering
+
+-   Dokumentation
+    -   FAQ
+    -   Handbuch
+    -   Porter-Handbuch
+    -   Entwickler-Handbuch
+    -   Committer's Guide
+    -   Manualpages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   Alle Bücher und Artikel
+
+-   Community
+    -   Mailinglisten
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Entwicklung
+    -   Projektideen
+    -   Git-Spiegelserver
+    -   Subversion-Repository
+    -   GitHub Mirror
+    -   Phabricator (Code Review)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Hilfe
+    -   Kommerzieller Support
+    -   Sicherheit
+    -   Problemberichte
+    -   Problembericht erstellen
+    -   Internet-Ressourcen
+
+-   Foundation
+    -   Geldspende
+    -   Hardwarespende
+
+-   BSD Now
+-   Discord
+-   Events
+-   Forums
+-   IRC
+-   Mailinglisten
+-   Reddit
+-   Twitter
+-   User Groups
+-   YouTube
+
+Die FreeBSD-Gemeinde
+
+Es gibt mehr als 100 Mailinglisten, dutzende Foren sowie diverse
+Newsgroups. Dazu kommen mehr als 72 User Groups in 32 Ländern.
+Zusätzlich existiert eine aktive IRC-Gemeinde. Außerdem betreiben die
+FreeBSD-Entwickler gemeinsam mit einigen der wichtigsten Unterstützer
+ein Wiki, das Informationen zur FreeBSD-Entwicklung und zu diversen
+Projekten enthält.
+
+Letztes Jahr gab es insgesamt 9 FreeBSD-Veranstaltungen in 2
+verschiedenen Ländern. Ein Kalender sowie ein RSS Feed zu bevorstehenden
+FreeBSD-spezifischen Veranstaltungen sind auf der Seite Veranstaltungen
+verfügbar. Und nicht zuletzt gibt es dutzende Videos im Youtube-Channel
+BSD Conferences.
+
+Soziale Netzwerke
+
+FreeBSD ist auf diversen sozialen Netzwerken vertreten.
+
+-   Es gibt tausende Photos von Usergroup-Treffen, Konferenzen und
+    Hackatons, die auf flickr mit dem Tag 'freebsd' versehen wurden.
+
+-   Auf YouTube gibt es hunderte Videos von Konferenzen,
+    Präsentatitionen und Vorträgen, die sich auf FreeBSD beziehen.
+    Weiters gibt es den Channel BSD Conferences, über den Sie komplette
+    Präsentationen von FreeBSD-Konferenzen verfolgen/ansehen können.
+
+-   Auf Facebook gibt es die FreeBSD Users Group, auf LinkedIn die
+    FreeBSD Group.
+
+-   Auf Twitter können Sie beispielsweise @freebsd, @freebsdhelp,
+    @freebsdblogs oder @freebsdcore folgen.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Last modified on: 19. Juni 2021 by Danilo G. Baio
+
+Rechtliches | © 1995-2023 The FreeBSD Project Alle Rechte vorbehalten.
+Die Marke FreeBSD ist eine eingetragene Marke der FreeBSD Foundation und
+wird vom FreeBSD Project mit freundlicher Genehmigung der The FreeBSD
+Foundation. Kontakt

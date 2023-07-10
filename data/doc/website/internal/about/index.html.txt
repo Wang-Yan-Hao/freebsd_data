@@ -1,0 +1,169 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Documentation
+-   FAQ
+-   Handbook
+-   Manual Pages
+-   Presentations and Papers
+-   Books and Articles Online
+-   Publications
+-   Web Resources
+-   For Newbies
+-   Documentation Project
+-   Archive
+
+About the FreeBSD WWW Server
+
+The Machine
+
+[Powered by FreeBSD]
+
+Naturally, all systems in the FreeBSD.org cluster run FreeBSD. The
+hardware and network connection have been generously provided by:
+
+-   Bytemark Hosting
+
+-   Cloud and SDN Laboratory at BroadBand Tower, Inc
+
+-   Department of Computer Science, National Yang Ming Chiao Tung
+    University
+
+-   Equinix
+
+-   Internet Association of Australia
+
+-   Internet Systems Consortium
+
+-   INX-ZA
+
+-   KDDI Web Communications Inc
+
+-   Malaysian Research & Education Network
+
+-   MetaPeer
+
+-   New York Internet
+
+-   NIC.br
+
+-   Your.Org
+
+ — and other contributors to the FreeBSD project.
+
+A list of general-access machines in the FreeBSD.org domain is available
+at the The FreeBSD.org Network page.
+
+The Software
+
+These pages are served up by the fast and flexible NGINX webserver and
+Varnish HTTP Cache. In addition, there are a few locally crafted CGI
+scripts. Indexing of the mailing list archive is provided by
+freewais-sf, a derivative of the CNIDR freewais.
+
+The Pages
+
+[Lynx Friendly logo]
+
+The original web pages were put together by John Fieber
+<jfieber@FreeBSD.org> with input from the FreeBSD community and you.
+<wosch@FreeBSD.org> was our first webmaster but this responsibility is
+now shared by a larger team of web and documentation contributors. The
+FreeBSD pages are valid XHTML 1.0 Transitional and should degrade
+gracefully on any browser.
+
+See also the FreeBSD Documentation Project
+
+Page Design
+
+The current website design was done by Emily Boyd as part of the Google
+Summer of Code program in 2005.
+
+The original page design was done by Megan McCormack.
+
+Update of the FreeBSD Web Pages
+
+The FreeBSD Web Pages on www.FreeBSD.org are currently rebuilt according
+to the following schedule:
+
++-----------------------------------+-----------------------------------+
+| Build Time (UTC)                  | Build type                        |
++===================================+===================================+
+| Every 10 minutes                  | If there is a change in the doc   |
+|                                   | repository                        |
++-----------------------------------+-----------------------------------+
+
+The document FreeBSD Documentation Project Primer for New Contributors
+describes how to build the FreeBSD documentation from the Git
+repository.
+
+FreeBSD Internal Home
+
+------------------------------------------------------------------------
+
+Last modified on: April 7, 2023 by Graham Perrin
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

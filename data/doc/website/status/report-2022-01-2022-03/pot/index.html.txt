@@ -1,0 +1,125 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Containers and FreeBSD: Pot, Potluck and Potman
+
+Links:
+Pot organization on github URL: https://github.com/bsdpot
+
+Contact: Luca Pizzamiglio (Pot) <pizzamig@freebsd.org>
+Contact: Stephan Lichtenauer (Potluck) <sl@honeyguide.eu>
+Contact: Michael Gmelin (Potman) <grembo@freebsd.org>
+
+Pot is a jail management tool that also supports orchestration through
+Nomad.
+
+As a result of production testing in a real-world cluster deployment,
+pot and related projects received stability improvements for controlling
+the pot lifecycle (i.e., pot prepare/start/stop).
+Various attributes and commands have been developed to improve support
+of nomad orchestration and batch jobs (e.g., change dns config during
+clone, ability to disable tmpfs, new last-run-stats command). A new pot
+release will follow soon.
+
+Potluck aims to be to FreeBSD and pot what Dockerhub is to Linux and
+Docker: a repository of pot flavours and complete container images for
+usage with pot and in many cases nomad.
+
+Many of the core images like Nomad, Consul and Vault that can be used to
+build a private cloud and orchestration platform, but also e.g.
+Prometheus or PostgreSQL Patroni, have reached a stable status over the
+last quarter and are in production use now.
+
+To make navigating the evolving pot ecosystem easier, most project
+resources have been centralized in a dedicated github project:
+https://github.com/bsdpot
+
+There, we plan to release ansible playbooks that allow easily creating a
+FreeBSD based orchestration environment from scratch based on all these
+tools.
+
+As always, feedback and patches are welcome.
+
+------------------------------------------------------------------------
+
+Last modified on: June 3, 2022 by Lorenzo Salvadore
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

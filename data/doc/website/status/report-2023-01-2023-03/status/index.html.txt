@@ -1,0 +1,149 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Status Team
+
+Links:
+FreeBSD status reports URL: https://www.freebsd.org/status/
+FreeBSD Status Report Process URL:
+https://docs.freebsd.org/en/articles/freebsd-status-report-process/
+Archived status reports GitHub repository URL:
+https://github.com/freebsd/freebsd-quarterly
+
+Contact: <status@FreeBSD.org>
+
+The new workflow has started
+
+In the first quarter of this year, the status team has started
+implementing the new workflow that was announced at the end of 2022.
+Here are some details.
+
+New email addresses
+
+Last quarter we have announced the creation of new email addresses:
+
+-   <status@FreeBSD.org>, for interacting with the status team directly;
+
+-   <status-submissions@FreeBSD.org, for sending reports submissions;
+
+-   <freebsd-status-calls@FreeBSD.org>, a mailing list to which you can
+    subscribe to get reminders about status report submission deadlines.
+
+Unfortunately, the mailing list does not work as expected at the moment.
+The issue has been reported but no solution could be found yet. However,
+a work around allowed to send the second and the last reminder to the
+list.
+
+Automation
+
+Some automation has been introduced to ensure that no report submission
+is lost:
+
+-   on Phabricator a herald rule automatically blocks any review
+    touching the status reports directory: even if a report submitter
+    forgets to add the status team as reviewer, salvadore@ (member of
+    the status team) will block the patch anyway. The same rule will
+    also block any review that includes the status team as reviewer, to
+    ensure that at least one member of status has reviewed the patch
+    before commit.
+
+-   a GitHub action automatically adds the newly introduced status
+    report label to any pull request touching the status reports
+    directory. The GitHub action should be easily modifiable by anyone
+    wanting to apply more labels automatically depending on the path of
+    the modified files.
+
+More automation is planned.
+
+Documentation reorganization
+
+The status report README and How To have been updated and merged in one
+unique document: the FreeBSD status report process. You can check it out
+to read details about reports submission and publication. It will be
+updated regularly as the status team proceeds with the implementation of
+its new workflow. In particular, new material about automation is coming
+soon.
+
+------------------------------------------------------------------------
+
+Last modified on: April 1, 2023 by Lorenzo Salvadore
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

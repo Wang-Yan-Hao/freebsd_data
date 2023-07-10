@@ -1,0 +1,98 @@
+[FreeBSD The Power to Serve]
+
+FreeBSD への寄付
+
+ 
+
+-   ホーム
+
+-   FreeBSD とは
+    -   FreeBSD が初めてという方へ
+    -   特徴
+    -   プロモーション活動
+    -   マーケティング活動
+    -   プライバシーポリシー
+    -   Projects
+    -   Ports
+
+-   FreeBSD の入手
+    -   リリース情報
+    -   リリースエンジニアリング
+
+-   ドキュメント
+    -   FAQ
+    -   ハンドブック
+    -   port 作成者のためのハンドブック
+    -   開発者のためのハンドブック
+    -   Committer's Guide
+    -   マニュアルページ
+    -   Presentations and Papers
+    -   新しい貢献者のためのドキュメンテーションプロジェクト入門
+    -   すべての Books と Articles
+
+-   コミュニティ
+    -   メーリングリスト
+    -   フォーラム
+    -   ユーザグループ
+    -   イベント
+    -   FreeBSD ジャーナル
+    -   Q&A (外部)
+
+-   開発
+    -   プロジェクトアイディア
+    -   Git リポジトリ
+    -   Subversion リポジトリ
+    -   GitHub ミラー
+    -   コードレビュー (Phabricator)
+    -   Wiki
+    -   継続的インテグレーションサービス
+
+-   サポート
+    -   ベンダ
+    -   セキュリティ情報
+    -   障害報告
+    -   障害報告の提出
+    -   ウェブ上の情報
+
+-   財団
+    -   寄付
+    -   ハードウェアの寄贈
+
+-   BSD Now
+-   Discord
+-   イベント
+-   フォーラム
+-   IRC
+-   メーリングリスト
+-   Reddit
+-   Twitter
+-   User Groups
+-   YouTube
+
+IRC
+
+#freebsd というチャンネルはあちこちの IRC
+のネットワーク上に存在しますが、 FreeBSD
+プロジェクトはそれらをコントロールしていませんし、 IRC
+をサポートのためのメディアとして支持しているわけでもありません。 IRC
+のチャンネルで質問しても、
+無視されたり侮辱されたり蹴り出されたりするかもしれません。 #freebsdhelp
+という名のチャンネルがあれば、 そちらの方がより運がいいかも知れません。
+FreeBSD に関連した IRC チャネルの一覧は、 FreeBSD wiki
+にまとめられています。 これらのチャンネルを IRC で試したいなら、
+あなたの責任で行動してください。 その場合,
+それらのチャンネルの維持管理に関する苦情は FreeBSD
+プロジェクトへ持ち込まないようにお願いします。 詳細は FAQ のエントリ
+を参照してください。
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+最終更新日: 2021年6月19日 by Danilo G. Baio
+
+法律上の注意事項 | © 1995-2023 FreeBSD プロジェクト All rights reserved.
+The mark FreeBSD is a registered trademark of The FreeBSD Foundation and
+is used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact

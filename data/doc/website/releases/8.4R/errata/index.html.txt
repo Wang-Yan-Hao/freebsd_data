@@ -1,0 +1,535 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 8.4-RELEASE Errata
+
+The FreeBSD Project
+
+Copyright © 2015 The FreeBSD Documentation Project
+
+FreeBSD is a registered trademark of the FreeBSD Foundation.
+
+Intel, Celeron, Centrino, Core, EtherExpress, i386, i486, Itanium,
+Pentium, and Xeon are trademarks or registered trademarks of Intel
+Corporation or its subsidiaries in the United States and other
+countries.
+
+SPARC, SPARC64, and UltraSPARC are trademarks of SPARC International,
+Inc in the United States and other countries. SPARC International, Inc
+owns all of the SPARC trademarks and under licensing agreements allows
+the proper use of these trademarks by its members.
+
+Many of the designations used by manufacturers and sellers to
+distinguish their products are claimed as trademarks. Where those
+designations appear in this document, and the FreeBSD Project was aware
+of the trademark claim, the designations have been followed by the “™”
+or the “®” symbol.
+
+Last modified on 2015-02-05 by gjb.
+
+Abstract
+
+This document lists errata items for FreeBSD 8.4-RELEASE, containing
+significant information discovered after the release or too late in the
+release cycle to be otherwise included in the release documentation.
+This information includes security advisories, as well as news relating
+to the software or documentation that could affect its operation or
+usability. An up-to-date version of this document should always be
+consulted before installing this version of FreeBSD.
+
+This errata document for FreeBSD 8.4-RELEASE will be maintained until
+the FreeBSD 8.4-RELEASE end of life.
+
+------------------------------------------------------------------------
+
+Table of Contents
+
+1. Introduction
+
+2. Security Advisories
+
+3. Errata Notices
+
+4. Open Issues
+
+5. Late-Breaking News and Corrections
+
+1. Introduction
+
+This errata document contains “late-breaking news” about FreeBSD
+8.4-RELEASE Before installing this version, it is important to consult
+this document to learn about any post-release discoveries or problems
+that may already have been found and fixed.
+
+Any version of this errata document actually distributed with the
+release (for example, on a CDROM distribution) will be out of date by
+definition, but other copies are kept updated on the Internet and should
+be consulted as the “current errata” for this release. These other
+copies of the errata are located at http://www.FreeBSD.org/releases/,
+plus any sites which keep up-to-date mirrors of this location.
+
+Source and binary snapshots of FreeBSD 8.4-STABLE also contain
+up-to-date copies of this document (as of the time of the snapshot).
+
+For a list of all FreeBSD CERT security advisories, see
+http://www.FreeBSD.org/security/ or
+ftp://ftp.FreeBSD.org/pub/FreeBSD/CERT/.
+
+2. Security Advisories
+
+Problems described in the following security advisories have been fixed
+in 8.4-RELEASE. For more information, consult the individual advisories
+available from http://security.FreeBSD.org/.
+
++---------------------------+--------------------+--------------------+
+| Advisory                  | Date               | Topic              |
++===========================+====================+====================+
+| FreeBSD-SA-13:07.bind     | 26 July 2013       | Denial of Service  |
+|                           |                    | vulnerability in   |
+|                           |                    | named(8)           |
++---------------------------+--------------------+--------------------+
+| Free                      | 21 August 2013     | Integer overflow   |
+| BSD-SA-13:09.ip_multicast |                    | in computing the   |
+|                           |                    | size of a          |
+|                           |                    | temporary buffer   |
+|                           |                    | can result in a    |
+|                           |                    | buffer which is    |
+|                           |                    | too small for the  |
+|                           |                    | requested          |
+|                           |                    | operation          |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-13:10.sctp     | 21 August 2013     | Fix a bug that     |
+|                           |                    | could lead to      |
+|                           |                    | kernel memory      |
+|                           |                    | disclosure with    |
+|                           |                    | SCTP state cookie  |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-13:12.ifioctl  | 10 September 2013  | In IPv6 and        |
+|                           |                    | NetATM, stop       |
+|                           |                    | SIOCSIFADDR,       |
+|                           |                    | SIOCSIFBRDADDR,    |
+|                           |                    | SIOCSIFDSTADDR and |
+|                           |                    | SIOCSIFNETMASK at  |
+|                           |                    | the socket layer   |
+|                           |                    | rather than pass   |
+|                           |                    | them on to the     |
+|                           |                    | link layer without |
+|                           |                    | validation or      |
+|                           |                    | credential checks  |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-13:13.nullfs   | 10 September 2013  | Prevent            |
+|                           |                    | cross-mount        |
+|                           |                    | hardlinks between  |
+|                           |                    | different nullfs   |
+|                           |                    | mounts of the same |
+|                           |                    | underlying         |
+|                           |                    | filesystem         |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:01.bsnmpd   | 14 January 2014    | bsnmpd remote      |
+|                           |                    | denial of service  |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:02.ntpd     | 14 January 2014    | ntpd distributed   |
+|                           |                    | reflection Denial  |
+|                           |                    | of Service         |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:04.bind     | 14 January 2014    | BIND remote denial |
+|                           |                    | of service         |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| F                         | 8 April 2014       | NFS deadlock       |
+| reeBSD-SA-14:05.nfsserver |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:06.openssl  | 8 April 2014       | ECDSA Cache        |
+|                           |                    | Side-channel       |
+|                           |                    | Attack in OpenSSL  |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:08.tcp      | 30 April 2014      | TCP reassembly     |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:11.sendmail | 5 June 2014        | sendmail improper  |
+|                           |                    | close-on-exec flag |
+|                           |                    | handling           |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:12.ktrace   | 5 June 2014        | ktrace memory      |
+|                           |                    | disclosure         |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:14.openssl  | 5 June 2014        | OpenSSL multiple   |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:16.file     | 5 June 2014        | Multiple           |
+|                           |                    | vulnerabilities in |
+|                           |                    | file(1) and        |
+|                           |                    | libmagic(3)        |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:17.kmem     | 8 July 2014        | kernel memory      |
+|                           |                    | disclosure in      |
+|                           |                    | control message    |
+|                           |                    | and SCTP           |
+|                           |                    | notifications      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:18.openssl  | 9 September 2014   | Multiple           |
+|                           |                    | vulnerabilities in |
+|                           |                    | OpenSSL            |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:19.tcp      | 16 September 2014  | Denial of Service  |
+|                           |                    | in TCP packet      |
+|                           |                    | processing         |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:21.routed   | 21 October 2014    | routed(8) denial   |
+|                           |                    | of service         |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:23.openssl  | 21 October 2014    | Multiple           |
+|                           |                    | vulnerabilities in |
+|                           |                    | OpenSSL            |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:25.setlogin | 4 November 2014    | kernel stack       |
+|                           |                    | disclosure in      |
+|                           |                    | setlogin(2) and    |
+|                           |                    | getlogin(2)        |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:26.ftp      | 4 November 2014    | Remote command     |
+|                           |                    | execution in       |
+|                           |                    | ftp(1)             |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:28.file     | 10 December 2014   | Multiple           |
+|                           |                    | vulnerabilities in |
+|                           |                    | file(1) and        |
+|                           |                    | libmagic(3)        |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:29.bind     | 10 December 2014   | BIND remote denial |
+|                           |                    | of service         |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-14:31.ntp      | 23 December 2014   | Multiple           |
+|                           |                    | vulnerabilities in |
+|                           |                    | NTP suite          |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:01.ntp      | 14 January 2015    | Multiple           |
+|                           |                    | vulnerabilities in |
+|                           |                    | OpenSSL            |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:02.kmem     | 27 January 2015    | Fix SCTP           |
+|                           |                    | SCTP_SS_VALUE      |
+|                           |                    | kernel memory      |
+|                           |                    | corruption and     |
+|                           |                    | disclosure         |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:03.sctp     | 27 January 2015    | Fix SCTP stream    |
+|                           |                    | reset              |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:04.igmp     | 25 February 2015   | Integer overflow   |
+|                           |                    | in IGMP protocol   |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:05.igmp     | 25 February 2015   | Remote denial of   |
+|                           |                    | service            |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:06.openssl  | 19 March 2015      | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:07.ntp      | 7 April 2015       | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:09.ipv6     | 7 April 2015       | Router             |
+|                           |                    | advertisement      |
+|                           |                    | Denial of Service  |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:10.openssl  | 16 June 2015       | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:11.bind     | 7 July 2015        | Resolver remote    |
+|                           |                    | denial of service  |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:13.tcp      | 21 July 2015       | resource           |
+|                           |                    | exhaustion due to  |
+|                           |                    | sessions stuck in  |
+|                           |                    | LAST_ACK state.    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:15.tcp      | 28 July 2015       | resource           |
+|                           |                    | exhaustion in TCP  |
+|                           |                    | reassembly         |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:16.openssh  | 28 July 2015       | Multiple           |
+|                           |                    | vulnerabilities    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-SA-15:17.bind     | 28 July 2015       | Remote denial of   |
+|                           |                    | service            |
+|                           |                    | vulnerability      |
++---------------------------+--------------------+--------------------+
+
+3. Errata Notices
+
++---------------------------+--------------------+--------------------+
+| Errata                    | Date               | Topic              |
++===========================+====================+====================+
+| FreeBSD-EN-13:01.fxp      | 28 June 2013       | Fixed a problem    |
+|                           |                    | where dhclient(8)  |
+|                           |                    | would infinitely   |
+|                           |                    | try to intialize   |
+|                           |                    | fxp(4)             |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-13:02.vtnet    | 28 June 2013       | Fixed a problem    |
+|                           |                    | frames sent to     |
+|                           |                    | additional MAC     |
+|                           |                    | addresses are not  |
+|                           |                    | forwarded to the   |
+|                           |                    | vtnet(4) interface |
++---------------------------+--------------------+--------------------+
+| FreeBS                    | 26 October 2013    | Multiple fixes     |
+| D-EN-13:04.freebsd-update |                    |                    |
++---------------------------+--------------------+--------------------+
+| FreeBS                    | 28 November 2013   | Fix INDEX          |
+| D-EN-13:05.freebsd-update |                    | generation         |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-14:01.random   | 14 January 2014    | Disable hardware   |
+|                           |                    | RNGs by default    |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-14:02.mmap     | 14 January 2014    | Fix incorrect      |
+|                           |                    | coalescing of      |
+|                           |                    | stack entry        |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-14:03.pkg      | 15 May 2014        | Add pkg            |
+|                           |                    | bootstrapping,     |
+|                           |                    | configuration and  |
+|                           |                    | public keys        |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-14:04.kldxref  | 15 May 2014        | Improve build      |
+|                           |                    | repeatability for  |
+|                           |                    | kldxref(8)         |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-14:06.exec     | 3 June 2014        | Fix triple-fault   |
+|                           |                    | when executing     |
+|                           |                    | from a threaded    |
+|                           |                    | process            |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-14:08.heimdal  | 24 June 2014       | Fix                |
+|                           |                    | g                  |
+|                           |                    | ss_pseudo_random() |
+|                           |                    | interoperability   |
+|                           |                    | issue              |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-14:09.jail     | 8 July 2014        | Fix jail fails to  |
+|                           |                    | start if           |
+|                           |                    | WITHOUT_           |
+|                           |                    | INET/WITHOUT_INET6 |
+|                           |                    | is use             |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-14:10.tzdata   | 21 October 2014    | Time zone data     |
+|                           |                    | file update        |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-14:12.zfs      | 4 November 2014    | Fix NFSv4 and ZFS  |
+|                           |                    | cache consistency  |
+|                           |                    | issue              |
++---------------------------+--------------------+--------------------+
+| FreeBS                    | 23 December 2014   | Fix directory      |
+| D-EN-14:13.freebsd-update |                    | deletion issue     |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-15:02.openssl  | 25 February 2015   | OpenSSL update     |
++---------------------------+--------------------+--------------------+
+| FreeBS                    | 25 February 2015   | freebsd-update(8)  |
+| D-EN-15:03.freebsd-update |                    | updates libraries  |
+|                           |                    | in suboptimal      |
+|                           |                    | order              |
++---------------------------+--------------------+--------------------+
+| FreeBS                    | 13 May 2015        | freebsd-update(8)  |
+| D-EN-15:04.freebsd-update |                    | does not ensure    |
+|                           |                    | the previous       |
+|                           |                    | upgrade has        |
+|                           |                    | completed          |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-15:06.file     | 9 June 2015        | Multiple denial of |
+|                           |                    | service issues     |
++---------------------------+--------------------+--------------------+
+| FreeBSD-EN-15:08.sendmail | 30 June 2015       | Sendmail TLS/DH    |
+|                           | (revised)          | interoperability   |
+|                           |                    | improvement        |
++---------------------------+--------------------+--------------------+
+
+4. Open Issues
+
+[20130613] The vtnet(4) network interface driver displays the following
+message upon configuration when using QEMU 1.4.1 and later:
+
+    vtnet0: error setting host MAC filter table
+
+This message is harmless when the interface has only one MAC address.
+The patch for this issue is filed to a PR kern/178955.
+
+[20130609] There is incompatibility in jail(8) configuration because the
+jail(8) utility and rc.d/jail script has been changed. More
+specifically, the following sysctl(8) variables cannot be used to set
+the default parameters for jails:
+
+    security.jail.mount_zfs_allowed
+    security.jail.mount_procfs_allowed
+    security.jail.mount_nullfs_allowed
+    security.jail.mount_devfs_allowed
+    security.jail.mount_allowed
+    security.jail.chflags_allowed
+    security.jail.allow_raw_sockets
+    security.jail.sysvipc_allowed
+    security.jail.socket_unixiproute_only
+    security.jail.set_hostname_allowed
+
+These could be set by manually using sysctl(8) utility, the
+sysctl.conf(5) file, or for some of them the following variables in
+rc.conf(5):
+
+    jail_set_hostname_allow="yes"
+    jail_socket_unixiproute_only="yes"
+    jail_sysvipc_allow="yes"
+
+These parameters must now be specified in jail_parameters (or
+jail_jailname_parameters for per-jail configuration) in rc.conf(5). For
+example:
+
+    jail_parameters="allow.sysvipc allow.raw_sockets"
+
+The valid keywords are the following. For more detail, see jail(8)
+manual page.
+
+    allow.set_hostname
+    allow.sysvipc
+    allow.raw_sockets
+    allow.chflags
+    allow.mount
+    allow.mount.devfs
+    allow.mount.nullfs
+    allow.mount.procfs
+    allow.mount.zfs
+    allow.quotas
+    allow.socket_af
+
+[20130608] FreeBSD 8.4-RELEASE no longer supports FreeBSD CVS
+repository. Some documents mistakenly refer to RELENG_8_4_0_RELEASE as
+CVS tag for the release and RELENG_8_4 as CVS branch tag for the
+8.4-RELEASE security branch. However, FreeBSD Project no longer supports
+FreeBSD CVS repository and 8.4-RELEASE has been released by using
+FreeBSD subversion repository instead. RELENG_8_4 corresponds to
+svn://svn.FreeBSD.org/base/releng/8.4, and RELENG_8_4_0_RELEASE
+corresponds to svn://svn.FreeBSD.org/base/release/8.4.0. Please note
+that FreeBSD source tree for 8.4-RELEASE and its security branch cannot
+be updated by using official CVSup servers.
+
+[20130607] (removed about a bge(4) network interface driver issue
+because it was incorrect)
+
+[20130606] The fxp(4) network interface driver may not work well with
+the dhclient(8) utility. More specifically, if the /etc/rc.conf has the
+following line:
+
+    ifconfig_fxp0="DHCP"
+
+to activate a DHCP client to configure the network interface, the
+following notification messages are displayed and the dhclient(8)
+utility keeps trying to initialize the network interface forever.
+
+    kernel: fxp0: link state changed to UP
+    kernel: fxp0: link state changed to DOWN
+
+A patch to fix this issue will be released as an Errata Notice.
+
+5. Late-Breaking News and Corrections
+
+[20130606] As described in FreeBSD 8.4-RELEASE Release Notes, FreeBSD
+ZFS subsystem has been updated to support feature flags for ZFS pools.
+However, the default version number of a newly created ZFS pool is still
+28.
+
+This is because FreeBSD 9.0 and 9.1 do not support the feature flags.
+This means ZFS pools with feature flag support cannot be used on FreeBSD
+9.0 and 9.1. An 8.X system with v28 ZFS pools can be upgraded to 9.X
+with no problem. Note that zfs(8) send and receive commands do not work
+between pools with different versions. Once a ZFS pool is upgraded from
+v28, there is no way to upgrade the system to FreeBSD 9.0 and 9.1.
+FreeBSD 9.2 and later will support ZFS pools with feature flags.
+
+To create a ZFS pool with feature flag support, use the zpool(8) create
+command and then the zpool(8) upgrade command.
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

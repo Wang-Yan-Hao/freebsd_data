@@ -1,0 +1,707 @@
+Skip site navigation (1) Skip section navigation (2)
+
+Header And Logo
+
+[FreeBSD]
+
+.
+
+Donate to FreeBSD
+
+.
+
+Peripheral Links
+
+Search
+
+ 
+
+Site Navigation
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+Section Navigation
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Multimedia
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Introduction
+
+Since the last Status Reports there has been interesting progress in
+FreeBSD Development. FreeBSD 7.2 was released just a few days ago. Some
+of the highlights include: Support for superpages in the FreeBSD Virtual
+Memory subsystem. The FreeBSD Kernel Virtual Address space has been
+increased to 6GB on amd64. An updated jail(8) subsystem that supports
+multi-IPv4/IPv6/noIP and much more. Lots of FreeBSD Developers are in
+Ottawa, Canada attending the FreeBSD Developer Summit that is before
+BSDCan. BSDCan officially starts tomorrow and should cover lots of
+interesting topics, see the BSDCan Website for more information.
+
+Thanks to all the reporters for the excellent work! We hope you enjoy
+reading.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Projects
+
+-   Clang replacing GCC in the base system
+-   Device mmap() Extensions
+-   OpenBSM
+-   Release Engineering
+-   Sysinfo - a set of scripts which document your system
+-   TrustedBSD MAC Framework in GENERIC
+-   VFS/NFS DTrace Probes
+-   VirtualBox on FreeBSD
+
+FreeBSD Team Reports
+
+-   FreeBSD BugBusting Team
+
+Architectures
+
+-   FreeBSD/powerpc G5 Support
+-   FreeBSD/sparc64 UltraSPARC III support
+
+Documentation
+
+-   Dutch Documentation Project
+-   German Documentation Project
+-   Hungarian Documentation Project
+
+Google Summer of Code
+
+-   BSD-licensed text-processing tools
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Projects
+
+Clang replacing GCC in the base system
+
+  ----------------------------- -------------------------------------------------------
+  Links                         
+  Building FreeBSD with Clang   URL: http://wiki.freebsd.org/BuildingFreeBSDWithClang
+  Clang patchset                URL: http://git.hoeg.nl/?p=llvm-bmake
+  Clang website                 URL: http://clang.llvm.org/
+  ----------------------------- -------------------------------------------------------
+
+Contact: Ed Schouten <ed@FreeBSD.org>
+Contact: Roman Divacky <rdivacky@FreeBSD.org>
+Contact: Brooks Davis <brooks@FreeBSD.org>
+Contact: Pawel Worach <pawel.worach@gmail.com>
+
+The last 3-4 months we've been working together with the LLVM developers
+to discuss any bugs and issues we are experiencing with their Clang
+compiler frontend. The FreeBSD project is looking at the possibility to
+replace GCC with Clang as a system compiler. It can compile 99% of the
+FreeBSD world and can compile booting kernel on i386/amd64 but it still
+contains bugs and its C++ support is still immature.
+
+Ed is maintaining a patchset for the FreeBSD sources to replace cc(1) by
+a Clang binary and bootstrap almost all sources with the Clang compiler.
+
+The LLVM developers are very helpful fixing most of the bugs we've
+reported (over 100). Unfortunately we are currently blocked on some bug
+reports that prevent us from building libc, libm, libcrypto and various
+CDDL libraries with Clang but the FreeBSD kernel itself compiles and
+boots.
+
+Open tasks:
+
+1.  Testing Clang with compilation of various applications and reporting
+    bugs.
+2.  Testing the llvm-bmake branch to find more bugs.
+3.  Arranging an experimental ports build.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Device mmap() Extensions
+
+  ------- ---------------------------------------
+  Links   
+          URL: http://www.FreeBSD.org/~jhb/pat/
+  ------- ---------------------------------------
+
+Contact: John Baldwin <jhb@FreeBSD.org>
+
+GPU device drivers are increasingly requiring more sophisticated support
+for mapping objects into both userland and the kernel. For example,
+memory used for textures often needs to be mapped Write-Combining rather
+than Write-Back. I have recently created three patches to provide
+several extensions.
+
+The first patch allows device drivers to use a different VM object to
+back specific mmap() calls instead of always using the device pager. The
+second patch introduces a new VM object type that can map an arbitrary
+set of physical address ranges. This can be used to let userland mmap
+PCI BARs, etc. The third patch allows memory mappings to use different
+caching modes (e.g. Write-Combining or Uncacheable).
+
+Together I believe these patches provide the remaining pieces needed for
+an Nvidia amd64 driver. They will also be useful for future Xorg DRM
+support as well. The current set of patches can be safely merged back to
+7.x as well.
+
+Currently I am waiting for review and feedback from several folks. I am
+hopeful that these patches will be in HEAD soon, prior to the 8.0
+freeze.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+OpenBSM
+
+  ------------------ ------------------------------
+  Links              
+  OpenBSM web page   URL: http://www.openbsm.org/
+  ------------------ ------------------------------
+
+Contact: Robert Watson <rwatson@FreeBSD.org>
+Contact: TrustedBSD audit mailing list <trustedbsd-audit@TrustedBSD.org>
+
+The TrustedBSD Project has now released OpenBSM 1.1, the second
+production release of the OpenBSM code base. OpenBSM 1.1 has been merged
+to FreeBSD 8-CURRENT, and will be merged to 7-STABLE before FreeBSD 7.3.
+Major changes since OpenBSM 1.0 include:
+
+-   Trail files now include the host where the trail is generated. Crash
+    recovery has been improved. Trail expiration based on size and date
+    is now supported; by default trail files will be expired after 10MB
+    of trails. The default individual trail limit is now 2MB.
+-   Mac OS X Snow Leopard is now a fully supported platform; launchd(8)
+    can now be used to launchd auditd(8). Command line tools and
+    libraries are now supported on Mac OS X Leopard.
+-   Extended header tokens are now supported, allowing audit trails to
+    be tagged with a host identifier. IPv6 addresses are now supported
+    in subject tokens. BSM token and record types have been further
+    synchronized to OpenSolaris; support for many new system calls has
+    been added. Local errors and socket types are mapped to and from BSM
+    values.
+
+Since the last test release, OpenBSM 1.1 beta 1, 32/64-bit compatibility
+has been fixed for the auditon(2) system call. A default "expire-after"
+of 10MB is now set in audit_control(5). Local fcntl(2) arguments are now
+mapped to wire BSM versions using new APIs. The audit_submit(3) man page
+has been fixed. A new audit event class has been added for post-login
+authentication and access control events.
+
+Open tasks:
+
+1.  Migrate to sbufs in token-encoding.
+2.  Support for auditing NFS RPCs.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Release Engineering
+
+  ------- -------------------------------------
+  Links   
+          URL: http://www.FreeBSD.org/releng/
+  ------- -------------------------------------
+
+Contact: Release Engineering Team <re@FreeBSD.org>
+
+The Release Engineering Team (with lots of help from lots of other
+people) released FreeBSD 7.2 on May 4th, 2009. During this period we
+have also begun reminding developers of the upcoming FreeBSD 8.0 release
+cycle which is scheduled to begin in early June 2009 with release
+targeted at early September 2009.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Sysinfo - a set of scripts which document your system
+
+  ----------------------------- ---------------------------------------------------------------------------------------------------------------
+  Links                         
+  Public release announcement   URL: http://danger.rulez.sk/index.php/2009/04/14/sysinfo-a-set-of-scripts-which-document-your-freebsd-system/
+  The FreeBSD Forums thread     URL: https://forums.freebsd.org/showthread.php?p=19321
+  ----------------------------- ---------------------------------------------------------------------------------------------------------------
+
+Contact: Daniel Gerzo <danger@FreeBSD.org>
+
+Sysinfo is a shell script, the purpose of which is to automatically
+gather system information and document the hardware and software
+configuration of the given host system. The goal is to provide a system
+operator with descriptive information about an unknown FreeBSD
+installation.
+
+It consists of several modules (also shell scripts), thus is easily
+extensible and provides an easy way to inspect overall system
+configuration.
+
+It has been written as part of my Bachelor thesis and its development is
+a work in progress. Therefore, I would appreciate if you could provide
+me with some feedback as I will defend my thesis soon. Your feedback is
+welcome at the forums , or alternatively you can send me a private
+email.
+
+The tool itself can now be installed using the Ports tree from the
+sysutils/sysinfo port.
+
+Open tasks:
+
+1.  Receive additional feedback.
+2.  Perform more testing.
+3.  Extend and improve the tool.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+TrustedBSD MAC Framework in GENERIC
+
+  -------------------------- -----------------------------------------
+  Links                      
+  TrustedBSD MAC home page   URL: http://www.trustedBSD.org/mac.html
+  -------------------------- -----------------------------------------
+
+Contact: Robert Watson <rwatson@FreeBSD.org>
+Contact: TrustedBSD discussion mailing list
+<trustedbsd-discuss@TrustedBSD.org>
+
+There is on-going work to allow "options MAC" to be included in the
+GENERIC kernel for 8.0. This primarily consists of performance work to
+reduce overhead when policies are used, and eliminate when none are
+configured. Work to date includes:
+
+-   The MAC Framework now detects which object types are labeled by
+    policies, and MAC label storage is not allocated when it won't be
+    used.
+-   Add MAC Framework DTrace probes so allow more easy analysis of MAC
+    Framework and policy interactions.
+-   Eliminate mutex-protected reference count used to prevent module
+    unload during entry point invocation, and replace with an sx lock
+    and an rwlock, respectively for long-sleepable and short-sleepable
+    entry points, significantly lowering the overhead of entering the
+    MAC Framework. If no dynamic policies are loaded, no locking
+    overhead is taken.
+
+Open tasks:
+
+1.  Move to rmlocks for non-sleepable entry points to reduce cache line
+    thrashing under load.
+2.  Macroize invocation of MAC Framework entry points from the kernel,
+    and perform caller-side determination of whether MAC is enabled in
+    order to avoid additional function call overhead in the caller path
+    if MAC is disabled.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+VFS/NFS DTrace Probes
+
+  -------
+  Links
+  -------
+
+Contact: Robert Watson <rwatson@FreeBSD.org>
+
+A new DTrace provider, dtnfsclient, has been added to the FreeBSD 8.x
+kernel, and will be merged to 7.x before 7.3. The following probes are
+available:
+
+-   nfsclient:{nfs2,nfs3}:{procname}:start - NFSv2 and NFSv3 RPC start
+    probes
+-   nfsclient:{nfs2,nfs3}:{procname}:done - NFSv2 and NFSv3 RPC done
+    probes
+-   nfsclient:accesscache:: - NFS access cache flush/hit/miss/load
+    probes
+-   nfsclient:attrcache:: - NFS attribute cache flush/hit/miss/done
+
+In addition, a number of VFS probes have been added:
+
+-   vfs:vop:{vopname}:entry - VOP entry probe
+-   vfs:vop:{vopname}:return - VOP return probe
+-   vfs:namei:lookup:entry - VFS name lookup entry probe
+-   vfs:namei:lookup:return - VFS name lookup return probe
+-   vfs:namecache:*:* - VFS namecache
+    enter/enter_negative/fullpath_enter/fullpath_hit/fullpath_miss/fullpath_return/lookup_hit/lookup_hit_negative/lookup_miss/purge/purge_negative/purgevfs/zap/zap_negative
+    probes
+
+These probes make it much easier to trace NFS and VFS events.
+
+Open tasks:
+
+1.  Add VFSOP tracing.
+2.  Add RPC-layer tracing, such as RPC retransmits.
+3.  Provide decoded NFS RPCs in order to expose transaction IDs and file
+    handles.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+VirtualBox on FreeBSD
+
+  ------------------------------------ ------------------------------------------------------------------------------
+  Links                                
+  Virtualbox on FreeBSD Announcement   URL: http://miwi.bsdcrew.de/2009/05/virtualbox-on-freebsd/
+  VirtualBox first Screenshots         URL: http://miwi.bsdcrew.de/2009/05/virtualbox-on-freebsd-first-screenshots/
+  SUCCESS from Bernhard Froehlich      URL: http://vbox.innotek.de/pipermail/vbox-dev/2009-May/001369.html
+  ------------------------------------ ------------------------------------------------------------------------------
+
+Contact: Beat Gaetzi <beat@FreeBSD.org>
+Contact: Bernhard Froehlich <decke@bluelife.at>
+Contact: Dennis Herrmann <dhn@FreeBSD.org>
+Contact: Martin Wilke <miwi@FreeBSD.org>
+
+After the first mail from Alexander Eichner on the vbox-dev mailinglist,
+we started the work on a VirtualBox port. 6 Days was needed to get
+VirtualBox to start with over 20 patches. We'd like to say thanks to
+Alexander Eichner, all the VirtualBox Developers, Gustau Perez and Ulf
+Lilleengen. If you like to play with the current port you can checkout
+the port here. Please do not ping us about any problems, we know about a
+lot and are still working to get them all solved before we do an
+official call for testing.
+
+Open tasks:
+
+1.  Fix kernel crashes on 7.2-RELEASE.
+2.  Code cleanup.
+3.  Fix errors on AMD64.
+4.  Fix user/permission problems.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD Team Reports
+
+FreeBSD BugBusting Team
+
+  ------- --------------------------------------------------------------------------
+  Links   
+          URL: http://www.FreeBSD.org/support.html#gnats
+          URL: http://wiki.FreeBSD.org/BugBusting
+          URL: http://people.FreeBSD.org/~linimon/studies/prs/
+          URL: http://people.freebsd.org/~linimon/studies/prs/recommended_prs.html
+  ------- --------------------------------------------------------------------------
+
+Contact: Mark Linimon <bugmeister@>
+Contact: Remko Lodder <bugmeister@>
+
+We continue to classify PRs as they arrive, with 'tags' corresponding to
+the kernel subsystem, or man page references for userland PRs. These
+tags, in turn, produce lists of PRs sorted both by tag and by manpage
+
+Mark Linimon (linimon@) has created special reports for the Release
+Engineering Team to help focus on regressions and other areas of
+interest relating to the release of FreeBSD 7.2 in the coming weeks.
+This is a refinement of the 'customized reports for developers'
+announced in the last status report.
+
+A full list of all the automatically generated reports is also
+available. Any recommendations for reports which do not currently exist
+but which would be beneficial are welcomed.
+
+Mark Linimon also continues attempting to define the general problem and
+investigating possible new work flow models, and will be presenting on
+the subject at BSDCan.
+
+The list of PRs recommended for committer evaluation by the BugBusting
+team continues to receive new additions. This list contains PRs, mostly
+with patches, that the BugBusting team feel are probably ready to be
+committed as-is, or are probably trivially resolved in the hands of a
+committer with knowledge of the particular subsystem. All committers are
+invited to take a look at this list whenever they have a spare 5 minutes
+and wish to close a PR.
+
+Since the last status report, the number of open bugs continued to hover
+around the 5600 mark, although has began to rise with the 7.2 ports
+freeze.
+
+As always, more help is appreciated, and committers and non-committers
+alike are invited to join us on #freebsd-bugbusters on EFnet and help
+close stale PRs or commit patches from valid PRs.
+
+Open tasks:
+
+1.  Try to find ways to get more committers helping us with closing PRs
+    that the team has already analyzed.
+2.  Think of some way for committers to only view PRs that have been in
+    some way 'vetted' or 'confirmed'.
+3.  Generate more publicity for what we've already got in place, and for
+    what we intend to do next.
+4.  Define new categories, classifications, and states for PRs, that
+    will better match our work flow (in progress).
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Architectures
+
+FreeBSD/powerpc G5 Support
+
+  -------
+  Links
+  -------
+
+Contact: Nathan Whitehorn <nwhitehorn@freebsd.org>
+
+FreeBSD 8.0-CURRENT now has support for PowerPC CPUs operating in the
+64-bit bridge mode. This includes the PowerPC 970 (G5) as well as the
+POWER3 and POWER4. Currently only Apple systems are known to work.
+
+Open tasks:
+
+1.  IBM systems currently are not supported due to missing northbridge
+    support.
+2.  Software fan control on SMU-based Apple G5 systems (G5 iMac, later
+    Powermac G5) is not available.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+FreeBSD/sparc64 UltraSPARC III support
+
+Contact: Marius Strobl <marius@FreeBSD.org>
+
+Like announced in the previous status report, support for sun4u-machines
+based on UltraSPARC III and beyond has been MFC'ed to stable/7 (the last
+missing piece was r190297) and thus will be present in the upcoming
+7.2-RELEASE and can be already tested with 7.2-RC1. Additionally, as of
+r191076 machfb(4) has been fixed to work with UltraSPARC III and beyond,
+that fix unfortunately did not make it into 7.2-RC1 but will be in the
+final version. The X.Org 7.4 and Firefox ports as well as some other
+gecko-based ones like Seamonkey once again have been fixed to also work
+and package on sparc64, including on UltraSPARC III and UltraSPARC IIIi
+based machines equipped with cards driven by creator(4) or machfb(4).
+The driver for the Sun Cassini/Cassini+ as well as National
+Semiconductor DP83065 Saturn Gigabit NICs found on-board for example in
+Fire V440 and as add-on cards is coming along nicely, the last thing
+which needs to be implemented before it can hit CURRENT is support for
+jumbo frames.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Documentation
+
+Dutch Documentation Project
+
+  -------------------------------------------- ------------------------------------------------------------------------------------
+  Links                                        
+  Overview of the project and current status   URL: http://wiki.freebsd.org/DutchDocumentationProject
+  Released documentation                       URL: http://www.freebsd.org/doc/nl/
+  Perforce repository                          URL: http://p4web.freebsd.org/@md=d&cd=//&c=pFl@//depot/projects/docproj_nl/?ac=83
+  -------------------------------------------- ------------------------------------------------------------------------------------
+
+Contact: Remko Lodder <remko@FreeBSD.org>
+Contact: René Ladan <rene@FreeBSD.org>
+
+The FreeBSD Dutch Documentation Project is an ongoing project to
+translate FreeBSD Documentation into the Dutch language.
+
+The translation of the Handbook was completed last January. It is kept
+up-to-date with the English version. Furthermore five articles and the
+flyer have been translated.
+
+Some initial work has been done to translate the website, but most
+likely more translators are needed to fully realize it.
+
+Open tasks:
+
+1.  Recruit more translators.
+2.  Keep the translations up-to-date with the English versions.
+3.  Finish the translation of the FAQ.
+4.  Translate more articles and maybe some books.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+German Documentation Project
+
+  ------- ------------------------------
+  Links   
+          URL: https://doc.bsdgroup.de
+  ------- ------------------------------
+
+Contact: Johann Kois <jkois@FreeBSD.org>
+Contact: Martin Wilke <miwi@FreeBSD.org>
+
+In February 2009 the German version of the FreeBSD Developer's handbook
+went online. Additionally we managed to update large areas of the FAQ
+thanks to the contributions of Benedict Reuschling.
+
+The website (at least the areas we see as relevant for a translation) is
+translated and updated constantly.
+
+More volunteers are always welcome of course, as there is still plenty
+of work to be done.
+
+Open tasks:
+
+1.  Update the existing documentation set (especially the handbook).
+2.  Read the translations. Check for problems/mistakes. Send feedback.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Hungarian Documentation Project
+
+  ---------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------
+  Links                                                            
+  Hungarian Web Page for FreeBSD                                   URL: http://www.FreeBSD.org/hu
+  Hungarian Documentation for FreeBSD                              URL: http://www.FreeBSD.org/doc/hu
+  The FreeBSD Hungarian Documentation Project's Wiki Page          URL: http://wiki.FreeBSD.org/HungarianDocumentationProject
+  Perforce Depot for the FreeBSD Hungarian Documentation Project   URL: http://p4web.freebsd.org/@md=d&cd=//depot/projects/docproj_hu/&c=aXw@//depot/projects/docproj_hu/?ac=83
+  ---------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------
+
+Contact: Gábor Kövesdán <gabor@FreeBSD.org>
+Contact: Gábor Páli <pgj@FreeBSD.org>
+
+We are proud to announce that the FreeBSD Hungarian web pages have been
+extended by the following items:
+
+-   Project news entries, staring from 2009 (HTML, RSS, RDF)
+-   Press releases, starting from 2008 (HTML, RSS)
+-   Events, starting from 2009 (HTML, RSS)
+-   Security advisories (HTML, RSS)
+
+We are still hoping that having the FDP Primer translated will encourage
+others to help our work. Feel free to contribute, every submitted line
+of translation or feedback is appreciated and is highly welcome. For
+more information on how to contribute, please read the project's
+introduction (in Hungarian).
+
+Open tasks:
+
+1.  Translate news entries, press releases.
+2.  Translate Release Notes for -CURRENT and 8.X.
+3.  Translate articles.
+4.  Translate web pages.
+5.  Read the translations, send feedback.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+Google Summer of Code
+
+BSD-licensed text-processing tools
+
+  --------------------- ----------------------------------------------------------------------------------------------------
+  Links                 
+  Perforce repository   URL: http://perforce.freebsd.org/depotTreeBrowser.cgi?FSPC=//depot/projects/soc2008/gabor_textproc
+  --------------------- ----------------------------------------------------------------------------------------------------
+
+Contact: Gábor Kövesdán <gabor@FreeBSD.org>
+
+Currently, grep is finished and is only waiting for a portbuild test. It
+is known to be more or less feature complete, while it is much smaller
+than the GNU version.
+
+As for sort, there has been some progress with the complete rewrite and
+it is lacking few options. Performance is to be measured, as well.
+
+Open tasks:
+
+1.  Test grep on pointyhat.
+2.  Complete sort with the missing features.
+3.  Do performance measurements for sort and look for possible
+    optimization opportunities.
+4.  Test sort on pointyhat.
+
+<<<<<<< HEAD
+=======
+------------------------------------------------------------------------
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
+
+News Home | Status Home
+
+Site Map | Legal Notices | © 1995–2021 The FreeBSD Project. All rights
+reserved.

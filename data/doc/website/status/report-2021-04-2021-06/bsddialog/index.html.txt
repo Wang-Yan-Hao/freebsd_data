@@ -1,0 +1,119 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+BSDDialog - TUI Widgets
+
+Links:
+BSDDialog Project URL: https://gitlab.com/alfix/bsddialog
+Dialog Project URL: https://invisible-island.net/dialog
+GPLinBase Wiki Page URL: https://wiki.freebsd.org/GPLinBase
+
+Contact: Alfonso Sabato Siciliano <alfonso.siciliano@email.com>
+
+The purpose of this project is to provide an utility and a library to
+build scripts and tools with UI Widgets in a terminal. The project is
+inspired by Dialog; however BSDDialog is released under the terms of the
+BSD-2-Clause License while Dialog is licensed as LGPL so a link of the
+project has been added to the "GPL Software in the Base System" wiki
+page.
+
+The aim is to provide full compatibility with the dialog utility (the
+challenge is to implement over seventy options and almost thirty
+widgets). The API compatibility with the library is not a priority
+because libbsddialog should meet FreeBSD’s needs, for example it
+provides the new mixedlist() function, it can take as argument a set of:
+checklists, radiolists and separators, so it could be useful for
+building a dialog4ports clone: easier to implement and not depending on
+non-permissive dependencies.
+
+BSDDialog is currently under development, no widget is really completed
+(autosizing, resizing and scrolling are missing), nevertheless runnable
+examples for the utility and the library are inside the example folders
+and described in the README.
+
+Finally, a curiosity: BSDDialog started from the MixerTUI code base,
+however the original code has been almost completely rewritten.
+
+------------------------------------------------------------------------
+
+Last modified on: July 24, 2021 by Daniel Ebdrup Jensen
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

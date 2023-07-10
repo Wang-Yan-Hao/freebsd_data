@@ -1,0 +1,136 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   Get FreeBSD
+-   Release Information
+    -   Production Release:
+        12.4
+    -   Production Release:
+        13.1
+    -   Production Release:
+        13.2
+-   Snapshot Releases
+    -   Upcoming Release:
+        14.0
+-   Ported Applications
+
+FreeBSD 4.9 Open Issues
+
+Open Issues
+
+This is a list of open issues that need to be resolved for FreeBSD 4.9.
+If you have any updates for this list, please e-mail re@FreeBSD.org.
+
+As many of these open issues involve merging bus_dma driver changes from
+-CURRENT, the busdma project page is also useful.
+
+Must Resolve Issues for 4.9-RC3
+
+  ---------------------------- -------- ------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Issue                        Status   Responsible   Description
+  FireWire load failure bug.   Done     matusita@     Reported on stable@. Did this ever work after the initial firewire commit to drivers.conf in April? If not, is there any reason to not just back out that commit and not have firewire supported during the install?
+  ---------------------------- -------- ------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Must Resolve Issues for 4.9-RELEASE
+
+  ---------------------------------------------------- ------------- -------------- ---------------------------------------------------------------------------
+  Issue                                                Status        Responsible    Description
+  if_dc tested/merged to work with PAE in 4.x          --            luoqi          
+  busdma infrastructure merges                         --            scottl         It's unclear if further bus_dma infrastructure changes need to be merged?
+  if_xl                                                Done          silby          
+  RAID drivers tested/merged to work with PAE in 4.x   --            scottl         
+  ACPI merged as optional component                    In progress   John Baldwin   ACPI will be provided as an optional component, turned off by default.
+  ---------------------------------------------------- ------------- -------------- ---------------------------------------------------------------------------
+
+Desired Features for 4.9-RELEASE
+
+  ------------------------------ ------------- ----------------- -------------------------------------------------------------------
+  Issue                          Status        Responsible       Description
+  USB updated to work with PAE   In progress   jmg, joe, luoqi   USB does not currently work with PAE enabled.
+  twe updated for bus_dma/PAE    --            ps                The 3ware twe driver needs to be updated for use with PAE in 4.X.
+  ciss updated for bus_dma/PAE   --            ps                The ciss driver needs to be updated for use with PAE in 4.X.
+  ------------------------------ ------------- ----------------- -------------------------------------------------------------------
+
+Documentation items that must be resolved for 4.9
+
+  ------- -------- ------------- -----------------------------------------------------------------------------
+  Issue   Status   Responsible   Description
+  ACPI    Done     Murray        Handbook should be updated to note that ACPI can be enabled on 4.9 systems.
+  PAE     Done     Murray        Handbook should be updated to explain the basic PAE functionality.
+  ------- -------- ------------- -----------------------------------------------------------------------------
+
+Testing focuses for 4.9
+
+  ------------- -------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -------------
+  Issue         Status   Responsible                                                                                                                                                                                                                                                                                                                                                              Description
+  PAE testing   --       More testing should be done with PAE systems to test device compatibility and performance. In particular, active systems with 12 gig of ram or more should be thoroughly tested to make sure the various memory allocation algorithms in the kernel still scale properly. There were reports of users running out of KVA space in -CURRENT with large memory machines.   
+  ------------- -------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -------------
+
+------------------------------------------------------------------------
+
+Last modified on: May 15, 2021 by Allan Jude
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)

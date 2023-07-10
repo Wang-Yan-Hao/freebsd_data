@@ -1,0 +1,112 @@
+[FreeBSD The Power to Serve]
+
+Donate to FreeBSD
+
+ 
+
+-   Home
+
+-   About
+    -   Introduction
+    -   Features
+    -   Advocacy
+    -   Marketing
+    -   Privacy Policy
+    -   Projects
+    -   Ports
+
+-   Get FreeBSD
+    -   Release Information
+    -   Release Engineering
+
+-   Documentation
+    -   FAQ
+    -   Handbook
+    -   Porter's Handbook
+    -   Developer's Handbook
+    -   Committer's Guide
+    -   Manual Pages
+    -   Presentations and Papers
+    -   Documentation Project Primer
+    -   All Books and Articles
+
+-   Community
+    -   Mailing Lists
+    -   Forums
+    -   User Groups
+    -   Events
+    -   FreeBSD Journal
+    -   Q&A (external)
+
+-   Developers
+    -   Project Ideas
+    -   Git Repository
+    -   Subversion Repository
+    -   GitHub Mirror
+    -   Code Review (Phabricator)
+    -   Wiki
+    -   Continuous Integration Service
+
+-   Support
+    -   Vendors
+    -   Security Information
+    -   Bug Reports
+    -   Submitting Bug Reports
+<<<<<<< HEAD
+=======
+    -   Web Resources
+
+-   Foundation
+    -   Monetary Donations
+    -   Hardware Donations
+
+-   About
+-   Features
+-   Applications
+-   Advocacy
+-   Marketing
+-   Administration
+-   News
+-   Events
+-   Press
+-   Artwork
+-   Logo
+-   Donations
+-   Legal Notices
+-   Privacy Policy
+
+Xfce on FreeBSD
+
+Links:
+Xfce 4.18 Upstream Release Announcement URL:
+https://xfce.org/about/news/?post=1671062400
+Xfce meta-port on FreshPorts URL:
+https://www.freshports.org/x11-wm/xfce4
+
+Contact: Xfce team <xfce@FreeBSD.org>
+Contact: Guido Falsi <madpilot@FreeBSD.org>
+
+The FreeBSD Xfce team (xfce@) works to ensure the Xfce desktop
+environment is maintained and fully functional on FreeBSD.
+
+This quarter the Xfce team members are pleased to welcome Xfce 4.18 to
+the FreeBSD ports tree!
+
+This new release includes many improvements in various parts of the
+environment, especially in the Thunar file manager.
+
+Also various upstream packages now include patches that were present in
+the ports tree.
+
+For further details, refer to the Xfce 4.18 Upstream Release
+Announcement.
+
+------------------------------------------------------------------------
+
+Last modified on: January 23, 2023 by Lorenzo Salvadore
+
+Legal Notices | © 1995-2023 The FreeBSD Project All rights reserved. The
+mark FreeBSD is a registered trademark of The FreeBSD Foundation and is
+used by The FreeBSD Project with the permission of The FreeBSD
+Foundation. Contact
+>>>>>>> b1bb5fd9 (Processing txt files in data/doc)
