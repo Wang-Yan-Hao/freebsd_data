@@ -1,8 +1,0 @@
-
-FreeBSD Porter's Handbook
-
-<<<<<<< HEAD
-=======
-------------------------------------------------------------------------
->>>>>>> b1bb5fd9 (Processing txt files in data/doc)
-
